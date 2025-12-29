@@ -9,10 +9,10 @@ const { class: className = '' } = Astro.props;
 <section class={`py-16 px-8 ${className}`}>
   <div class="max-w-2xl mx-auto text-center">
     <h2 class="font-serif text-4xl md:text-5xl text-gray-900 mb-6">
-      Primește vești bune săptămânal
+      Primește vești bune, nu breaking news
     </h2>
     <p class="text-lg text-gray-600 mb-12">
-      Abonează-te și primești în fiecare luni un email cu cele mai bune știri din România.
+      În fiecare luni dimineața, un singur email cu cele mai faine vești din România. Scurt, calm, feel-good only.
     </p>
     
     <!-- TODO: Replace with EmailOctopus embed form -->
@@ -32,13 +32,12 @@ const { class: className = '' } = Astro.props;
         type="submit"
         class="px-8 py-3 bg-coral-600 text-white font-medium hover:bg-coral-700 transition-colors"
       >
-        Abonează-te
+        Vreau în listă
       </button>
     </form>
     
     <p class="text-sm text-gray-500">
-      Sunt de acord să primesc newsletter-ul Good Brief. Mă pot dezabona oricând.
-      <a href="/privacy" class="underline hover:text-coral-600">Politica de confidențialitate</a>
+      Prin înscriere ești de acord să primești newsletter-ul Good Brief. Te poți dezabona oricând. Vezi <a href="/privacy" class="underline hover:text-coral-600">Politica de confidențialitate</a>.
     </p>
   </div>
 </section>
