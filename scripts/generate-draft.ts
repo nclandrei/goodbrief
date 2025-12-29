@@ -71,6 +71,7 @@ interface ArticleScore {
   id: string;
   summary: string;
   positivity: number;
+  category: "local-heroes" | "wins" | "green-stuff" | "quick-hits";
 }
 
 async function processArticleBatch(articles: RawArticle[]): Promise<ArticleScore[]> {
@@ -78,16 +79,37 @@ async function processArticleBatch(articles: RawArticle[]): Promise<ArticleScore
     .map((a) => `ID: ${a.id}\nTitle: ${a.title}\nContent: ${a.summary.slice(0, 300)}`)
     .join("\n\n---\n\n");
 
-  const prompt = `For each article below, provide:
-1. A 1-2 sentence summary in Romanian (concise, factual)
-2. A positivity score (0-100) where:
-   - 0-20: Crime, tragedy, corruption, death
-   - 20-40: Political conflict, economic problems
-   - 40-60: Neutral news, mixed outcomes
-   - 60-80: Positive developments, achievements
-   - 80-100: Inspiring stories, innovation, good deeds
+  const prompt = `You are writing for Good Brief, a Romanian positive news newsletter for young educated Romanians (20-30).
 
-Return ONLY valid JSON array, no markdown: [{"id": "...", "summary": "...", "positivity": N}, ...]
+VOICE & TONE:
+- Sound like a smart friend sharing good news, NOT a news outlet
+- Warm, calm, slightly witty – never cheesy or formal
+- Use "tu" (informal), never "dumneavoastră"
+- Romanian with occasional English sprinkles (max 1-2 English words per sentence)
+
+For each article, provide:
+
+1. SUMMARY (2-3 sentences in Romanian):
+   - Start with the key fact (who did what)
+   - Add context if needed (why it matters)
+   - End with impact (what this means for people)
+   - Avoid formal language ("potrivit surselor", "în cadrul", "menționăm că")
+   - Example good: "Cluj-Napoca și-a redeschis parcul central după o renovare de 2 milioane de euro. Acum are piste de biciclete, spații de joacă noi și WiFi gratuit."
+   - Example bad: "Potrivit surselor, autoritățile locale au finalizat lucrările de modernizare..."
+
+2. POSITIVITY SCORE (0-100):
+   - 80-100: Inspiring stories, community wins, innovation, good deeds
+   - 60-80: Clear positive outcomes, achievements, progress
+   - 40-60: Hopeful developments, mixed but positive
+   - 0-40: Skip these (tragedy, crime, political conflict, scandals, celebrity gossip)
+
+3. CATEGORY (one of):
+   - "local-heroes": Inițiative locale, oameni care fac bine în comunități
+   - "wins": Reușite, premii, recorduri, realizări notabile
+   - "green-stuff": Mediu, sustenabilitate, natură
+   - "quick-hits": Micro-vești bune (for shorter items)
+
+Return ONLY valid JSON array: [{"id": "...", "summary": "...", "positivity": N, "category": "..."}, ...]
 
 Articles:
 ${articlesText}`;
@@ -157,7 +179,8 @@ async function main() {
         url: raw.url,
         summary: score.summary,
         positivity: score.positivity,
-        popularity: 50, // Default, can be enhanced later
+        popularity: 50,
+        category: score.category,
         publishedAt: raw.publishedAt,
         processedAt: now,
       };

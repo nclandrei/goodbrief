@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync, readdirSync } from "fs";
 import { join } from "path";
-import type { NewsletterDraft, ProcessedArticle } from "./types.js";
+import type { NewsletterDraft, ProcessedArticle, ArticleCategory } from "./types.js";
 
 function getISOWeekId(date: Date): string {
   const tempDate = new Date(date.getTime());
@@ -37,32 +37,70 @@ function getIssueNumber(issuesDir: string): number {
   return files.length + 1;
 }
 
+const CATEGORY_CONFIG: Record<ArticleCategory, { emoji: string; title: string }> = {
+  "local-heroes": { emoji: "🌱", title: "Local Heroes" },
+  "wins": { emoji: "🏆", title: "Wins" },
+  "green-stuff": { emoji: "💚", title: "Green Stuff" },
+  "quick-hits": { emoji: "✨", title: "Quick Hits" },
+};
+
+function groupByCategory(articles: ProcessedArticle[]): Map<ArticleCategory, ProcessedArticle[]> {
+  const groups = new Map<ArticleCategory, ProcessedArticle[]>();
+  for (const article of articles) {
+    const category = article.category || "wins";
+    if (!groups.has(category)) {
+      groups.set(category, []);
+    }
+    groups.get(category)!.push(article);
+  }
+  return groups;
+}
+
 function generateMarkdown(
   articles: ProcessedArticle[],
   issueNumber: number,
   date: string
 ): string {
-  const articleSections = articles
-    .map((article) => {
-      return `## 🌟 ${article.originalTitle}
+  const grouped = groupByCategory(articles);
+  const categoryOrder: ArticleCategory[] = ["local-heroes", "wins", "green-stuff", "quick-hits"];
+
+  const sections: string[] = [];
+
+  for (const category of categoryOrder) {
+    const categoryArticles = grouped.get(category);
+    if (!categoryArticles || categoryArticles.length === 0) continue;
+
+    const config = CATEGORY_CONFIG[category];
+    sections.push(`## ${config.emoji} ${config.title}`);
+
+    for (const article of categoryArticles) {
+      sections.push(`### ${article.originalTitle}
 ${article.summary}
-[Citește mai mult →](${article.url}) · *${article.sourceName}*`;
-    })
-    .join("\n\n");
+
+→ [Citește pe ${article.sourceName}](${article.url})`);
+    }
+  }
 
   return `---
-title: "Good Brief #${issueNumber} - Ediția Săptămânală"
+title: "Good Brief #${issueNumber} – Vești bune din România"
 date: ${date}
-summary: "Cele mai bune vești din România săptămâna aceasta."
+summary: "${articles.length} vești bune din România săptămâna asta."
 ---
 
-Bun venit la **Good Brief**! Iată cele mai bune vești din România săptămâna aceasta.
+Bună dimineața! 👋
 
-${articleSections}
+Here's your weekly dose de vești bune din România. ${articles.length} știri, sub 5 minute.
 
 ---
 
-*Ai o poveste bună de împărtășit? Scrie-ne la hello@goodbrief.ro*
+${sections.join("\n\n")}
+
+---
+
+Thanks for reading! 🙏
+
+Ai o poveste bună? Reply la acest email sau scrie-ne la hello@goodbrief.ro.
+Ne ajută enorm dacă dai forward cuiva care are nevoie de vești bune azi.
 `;
 }
 
@@ -81,16 +119,18 @@ async function main() {
   try {
     const content = readFileSync(draftPath, "utf-8");
     draft = JSON.parse(content);
-  } catch (error) {
+  } catch {
     console.error(`Error: Could not read draft file at ${draftPath}`);
     process.exit(1);
   }
 
-  if (draft.selected.length !== 10) {
-    console.error(
-      `Error: Expected 10 selected articles, got ${draft.selected.length}`
-    );
+  if (draft.selected.length === 0) {
+    console.error("Error: No selected articles in draft");
     process.exit(1);
+  }
+
+  if (draft.selected.length < 10) {
+    console.warn(`Warning: Only ${draft.selected.length} selected articles (expected 10)`);
   }
 
   const issueNumber = getIssueNumber(issuesDir);

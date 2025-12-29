@@ -15,6 +15,8 @@ export interface RawArticle {
   fetchedAt: string;
 }
 
+export type ArticleCategory = "local-heroes" | "wins" | "green-stuff" | "quick-hits";
+
 export interface ProcessedArticle {
   id: string;
   sourceId: string;
@@ -24,6 +26,7 @@ export interface ProcessedArticle {
   summary: string;
   positivity: number;
   popularity: number;
+  category: ArticleCategory;
   clusterId?: string;
   publishedAt: string;
   processedAt: string;
