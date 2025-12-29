@@ -1,21 +1,28 @@
-import { readFileSync, writeFileSync, existsSync } from "fs";
-import { fileURLToPath } from "url";
-import { dirname, join } from "path";
-import { GoogleGenerativeAI } from "@google/generative-ai";
-import type { RawArticle, ProcessedArticle, WeeklyBuffer, NewsletterDraft } from "./types.js";
+import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+import { GoogleGenerativeAI } from '@google/generative-ai';
+import type {
+  RawArticle,
+  ProcessedArticle,
+  WeeklyBuffer,
+  NewsletterDraft,
+} from './types.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const ROOT_DIR = join(__dirname, "..");
+const ROOT_DIR = join(__dirname, '..');
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 if (!GEMINI_API_KEY) {
-  console.error("GEMINI_API_KEY environment variable is required");
+  console.error('GEMINI_API_KEY environment variable is required');
   process.exit(1);
 }
 
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const model = genAI.getGenerativeModel({
+  model: '	gemini-2.5-flash-lite',
+});
 
 function getISOWeekId(date: Date = new Date()): string {
   const d = new Date(date);
@@ -23,15 +30,21 @@ function getISOWeekId(date: Date = new Date()): string {
   d.setDate(d.getDate() + 3 - ((d.getDay() + 6) % 7));
   const week1 = new Date(d.getFullYear(), 0, 4);
   const weekNum = Math.round(
-    ((d.getTime() - week1.getTime()) / 86400000 - 3 + ((week1.getDay() + 6) % 7)) / 7 + 1
+    ((d.getTime() - week1.getTime()) / 86400000 -
+      3 +
+      ((week1.getDay() + 6) % 7)) /
+      7 +
+      1
   );
-  return `${d.getFullYear()}-W${weekNum.toString().padStart(2, "0")}`;
+  return `${d.getFullYear()}-W${weekNum.toString().padStart(2, '0')}`;
 }
 
-async function clusterArticles(articles: RawArticle[]): Promise<Map<string, RawArticle[]>> {
+async function clusterArticles(
+  articles: RawArticle[]
+): Promise<Map<string, RawArticle[]>> {
   const articlesText = articles
     .map((a, i) => `${i}: "${a.title}" - "${a.summary.slice(0, 200)}"`)
-    .join("\n");
+    .join('\n');
 
   const prompt = `Here are news articles from Romanian sources this week.
 Group them by the same underlying story/event. Articles about the same event should be in the same cluster.
@@ -42,14 +55,23 @@ ${articlesText}`;
 
   try {
     const result = await model.generateContent(prompt);
-    const text = result.response.text().replace(/```json\n?|\n?```/g, "").trim();
-    const parsed = JSON.parse(text) as { clusters: number[][]; unique: number[] };
+    const text = result.response
+      .text()
+      .replace(/```json\n?|\n?```/g, '')
+      .trim();
+    const parsed = JSON.parse(text) as {
+      clusters: number[][];
+      unique: number[];
+    };
 
     const clusterMap = new Map<string, RawArticle[]>();
 
     parsed.clusters.forEach((cluster, idx) => {
       const clusterId = `cluster-${idx}`;
-      clusterMap.set(clusterId, cluster.map((i) => articles[i]).filter(Boolean));
+      clusterMap.set(
+        clusterId,
+        cluster.map((i) => articles[i]).filter(Boolean)
+      );
     });
 
     parsed.unique.forEach((idx) => {
@@ -60,7 +82,7 @@ ${articlesText}`;
 
     return clusterMap;
   } catch (error) {
-    console.error("Clustering failed, treating all as unique:", error);
+    console.error('Clustering failed, treating all as unique:', error);
     const clusterMap = new Map<string, RawArticle[]>();
     articles.forEach((a, i) => clusterMap.set(`unique-${i}`, [a]));
     return clusterMap;
@@ -71,13 +93,18 @@ interface ArticleScore {
   id: string;
   summary: string;
   positivity: number;
-  category: "local-heroes" | "wins" | "green-stuff" | "quick-hits";
+  category: 'local-heroes' | 'wins' | 'green-stuff' | 'quick-hits';
 }
 
-async function processArticleBatch(articles: RawArticle[]): Promise<ArticleScore[]> {
+async function processArticleBatch(
+  articles: RawArticle[]
+): Promise<ArticleScore[]> {
   const articlesText = articles
-    .map((a) => `ID: ${a.id}\nTitle: ${a.title}\nContent: ${a.summary.slice(0, 300)}`)
-    .join("\n\n---\n\n");
+    .map(
+      (a) =>
+        `ID: ${a.id}\nTitle: ${a.title}\nContent: ${a.summary.slice(0, 300)}`
+    )
+    .join('\n\n---\n\n');
 
   const prompt = `You are writing for Good Brief, a Romanian positive news newsletter for young educated Romanians (20-30).
 
@@ -116,28 +143,31 @@ ${articlesText}`;
 
   try {
     const result = await model.generateContent(prompt);
-    const text = result.response.text().replace(/```json\n?|\n?```/g, "").trim();
+    const text = result.response
+      .text()
+      .replace(/```json\n?|\n?```/g, '')
+      .trim();
     return JSON.parse(text) as ArticleScore[];
   } catch (error) {
-    console.error("Batch processing failed:", error);
+    console.error('Batch processing failed:', error);
     return [];
   }
 }
 
 async function main() {
   const weekId = getISOWeekId();
-  const rawPath = join(ROOT_DIR, "data", "raw", `${weekId}.json`);
+  const rawPath = join(ROOT_DIR, 'data', 'raw', `${weekId}.json`);
 
   if (!existsSync(rawPath)) {
     console.error(`No raw data found for ${weekId}`);
     process.exit(1);
   }
 
-  const buffer: WeeklyBuffer = JSON.parse(readFileSync(rawPath, "utf-8"));
+  const buffer: WeeklyBuffer = JSON.parse(readFileSync(rawPath, 'utf-8'));
   console.log(`Processing ${buffer.articles.length} articles for ${weekId}`);
 
   // Step 1: Cluster articles
-  console.log("Clustering articles...");
+  console.log('Clustering articles...');
   const clusters = await clusterArticles(buffer.articles);
   console.log(`Found ${clusters.size} unique stories`);
 
@@ -153,10 +183,12 @@ async function main() {
 
   for (let i = 0; i < representatives.length; i += BATCH_SIZE) {
     const batch = representatives.slice(i, i + BATCH_SIZE);
-    console.log(`Processing batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(representatives.length / BATCH_SIZE)}...`);
+    console.log(
+      `Processing batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(representatives.length / BATCH_SIZE)}...`
+    );
     const scores = await processArticleBatch(batch);
     allScores.push(...scores);
-    
+
     // Rate limiting: wait 1 second between batches
     if (i + BATCH_SIZE < representatives.length) {
       await new Promise((r) => setTimeout(r, 1000));
@@ -202,11 +234,13 @@ async function main() {
     totalProcessed: processed.length,
   };
 
-  const draftPath = join(ROOT_DIR, "data", "drafts", `${weekId}.json`);
-  writeFileSync(draftPath, JSON.stringify(draft, null, 2), "utf-8");
+  const draftPath = join(ROOT_DIR, 'data', 'drafts', `${weekId}.json`);
+  writeFileSync(draftPath, JSON.stringify(draft, null, 2), 'utf-8');
 
   console.log(`Draft saved to ${draftPath}`);
-  console.log(`Selected: ${draft.selected.length}, Reserves: ${draft.reserves.length}, Discarded: ${discarded}`);
+  console.log(
+    `Selected: ${draft.selected.length}, Reserves: ${draft.reserves.length}, Discarded: ${discarded}`
+  );
 }
 
 main().catch(console.error);
