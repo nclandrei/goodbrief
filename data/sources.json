@@ -1,0 +1,11 @@
+[
+  { "id": "hotnews", "name": "HotNews", "url": "http://www.hotnews.ro/rss" },
+  { "id": "hotnews-actualitate", "name": "HotNews Actualitate", "url": "http://www.hotnews.ro/rss/actualitate" },
+  { "id": "dw-romania", "name": "DW România", "url": "https://rss.dw.com/rdf/rss-rom-all" },
+  { "id": "mediafax", "name": "Mediafax", "url": "https://www.mediafax.ro/rss" },
+  { "id": "biziday", "name": "Biziday", "url": "https://www.biziday.ro/feed/" },
+  { "id": "stirileprotv", "name": "Știrile ProTV", "url": "http://rss.stirileprotv.ro/" },
+  { "id": "ziare", "name": "Ziare.com", "url": "http://www.ziare.com/rss/actualitate.xml" },
+  { "id": "agerpres", "name": "Agerpres", "url": "https://api.allorigins.win/raw?url=https://createfeed.bazqux.com/extract.php?url=https%3A%2F%2Fagerpres.ro%2Fwidget&max=50&order=document&guid=0" },
+  { "id": "europa-libera", "name": "Europa Liberă", "url": "https://romania.europalibera.org/api/zvo_mml-vomx-tpeukvm_" }
+]
