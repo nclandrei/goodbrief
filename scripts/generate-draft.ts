@@ -93,6 +93,7 @@ interface ArticleScore {
   id: string;
   summary: string;
   positivity: number;
+  impact: number;
   category: 'local-heroes' | 'wins' | 'green-stuff' | 'quick-hits';
 }
 
@@ -130,13 +131,38 @@ For each article, provide:
    - 40-60: Hopeful developments, mixed but positive
    - 0-40: Skip these (tragedy, crime, political conflict, scandals, celebrity gossip)
 
-3. CATEGORY (one of):
+3. IMPACT SCORE (0-100) - How much does this story matter to our readers?
+   This combines importance (significance) with relevance (how much our audience cares).
+   Our audience: educated Romanians aged 20-30 who care about their communities, progress, and meaningful change.
+   
+   HIGH IMPACT (80-100):
+   - Local community wins (new parks, hospitals, infrastructure in Romania)
+   - Romanian achievements and innovations
+   - Health/science breakthroughs that affect people's lives
+   - Environmental progress in Romania or globally significant
+   
+   MEDIUM IMPACT (60-80):
+   - Regional success stories
+   - International news with clear Romanian relevance
+   - Cultural/educational achievements
+   
+   LOW IMPACT (40-60):
+   - Nice but distant stories (international feel-good with no Romanian connection)
+   - Entertainment news, even if positive
+   
+   VERY LOW IMPACT (0-40):
+   - Celebrity gossip, sports trivia
+   - Stories that don't affect our readers' world
+   
+   Ask yourself: "Would a 25-year-old in Cluj/București share this with friends because it matters?"
+
+4. CATEGORY (one of):
    - "local-heroes": Inițiative locale, oameni care fac bine în comunități
    - "wins": Reușite, premii, recorduri, realizări notabile
    - "green-stuff": Mediu, sustenabilitate, natură
    - "quick-hits": Micro-vești bune (for shorter items)
 
-Return ONLY valid JSON array: [{"id": "...", "summary": "...", "positivity": N, "category": "..."}, ...]
+Return ONLY valid JSON array: [{"id": "...", "summary": "...", "positivity": N, "impact": N, "category": "..."}, ...]
 
 Articles:
 ${articlesText}`;
@@ -211,7 +237,7 @@ async function main() {
         url: raw.url,
         summary: score.summary,
         positivity: score.positivity,
-        popularity: 50,
+        impact: score.impact,
         category: score.category,
         publishedAt: raw.publishedAt,
         processedAt: now,
@@ -223,7 +249,11 @@ async function main() {
   const positive = processed.filter((p) => p.positivity >= 40);
   const discarded = processed.length - positive.length;
 
-  positive.sort((a, b) => b.positivity - a.positivity);
+  positive.sort((a, b) => {
+    const scoreA = a.positivity * 0.6 + a.impact * 0.4;
+    const scoreB = b.positivity * 0.6 + b.impact * 0.4;
+    return scoreB - scoreA;
+  });
 
   const draft: NewsletterDraft = {
     weekId,

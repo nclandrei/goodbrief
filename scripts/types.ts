@@ -25,7 +25,7 @@ export interface ProcessedArticle {
   url: string;
   summary: string;
   positivity: number;
-  popularity: number;
+  impact: number;
   category: ArticleCategory;
   clusterId?: string;
   publishedAt: string;
