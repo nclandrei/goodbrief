@@ -52,7 +52,58 @@ export default {
         'headline': ['clamp(1.75rem, 3vw, 2.5rem)', { lineHeight: '1.2', fontWeight: '600' }],
         'body-lg': ['clamp(1.125rem, 1.5vw, 1.25rem)', { lineHeight: '1.6' }],
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: '#1f1b1a',
+            lineHeight: '1.75',
+            maxWidth: 'none',
+            h1: {
+              color: '#1f1b1a',
+              fontFamily: 'Fraunces, Georgia, serif',
+              marginTop: '0',
+              marginBottom: '1.5rem',
+            },
+            h2: {
+              color: '#1f1b1a',
+              fontFamily: 'Fraunces, Georgia, serif',
+              marginTop: '2.5rem',
+              marginBottom: '1rem',
+            },
+            h3: {
+              color: '#1f1b1a',
+              fontFamily: 'Fraunces, Georgia, serif',
+              marginTop: '2rem',
+              marginBottom: '0.75rem',
+            },
+            p: {
+              marginTop: '1.25rem',
+              marginBottom: '1.25rem',
+            },
+            ul: {
+              marginTop: '1.25rem',
+              marginBottom: '1.25rem',
+            },
+            li: {
+              marginTop: '0.5rem',
+              marginBottom: '0.5rem',
+            },
+            a: {
+              color: '#3d5f46',
+              textDecoration: 'underline',
+              '&:hover': {
+                color: '#2e4637',
+              },
+            },
+            strong: {
+              color: '#1f1b1a',
+            },
+          },
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
