@@ -6,44 +6,39 @@ interface Props {
 const { class: className = '' } = Astro.props;
 ---
 
-<section class={`bg-primary-50 rounded-2xl p-8 ${className}`}>
-  <h2 class="text-2xl font-bold text-gray-900 mb-2">
-    Primește vești bune săptămânal
-  </h2>
-  <p class="text-gray-600 mb-6">
-    Abonează-te și primești în fiecare luni un email cu cele mai bune știri din România.
-  </p>
-  
-  <!-- 
-    TODO: Replace with EmailOctopus embed form
-    Instructions:
-    1. Create EmailOctopus account
-    2. Create a list for Good Brief
-    3. Get the embed form code
-    4. Replace this placeholder form
-  -->
-  <form 
-    class="flex flex-col sm:flex-row gap-3"
-    action="#" 
-    method="POST"
-  >
-    <input
-      type="email"
-      name="email"
-      placeholder="adresa@email.ro"
-      required
-      class="flex-1 px-4 py-3 rounded-lg border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all"
-    />
-    <button
-      type="submit"
-      class="px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
+<section class={`bg-coral-50 py-16 px-8 ${className}`}>
+  <div class="max-w-2xl mx-auto text-center">
+    <h2 class="font-serif text-4xl md:text-5xl text-gray-900 mb-6">
+      Primește vești bune săptămânal
+    </h2>
+    <p class="text-lg text-gray-600 mb-12">
+      Abonează-te și primești în fiecare luni un email cu cele mai bune știri din România.
+    </p>
+    
+    <!-- TODO: Replace with EmailOctopus embed form -->
+    <form 
+      class="flex flex-col sm:flex-row gap-6 max-w-xl mx-auto mb-8"
+      action="#" 
+      method="POST"
     >
-      Abonează-te
-    </button>
-  </form>
-  
-  <p class="text-xs text-gray-500 mt-4">
-    Sunt de acord să primesc newsletter-ul Good Brief. Mă pot dezabona oricând.
-    <a href="/privacy" class="underline hover:text-primary-600">Politica de confidențialitate</a>
-  </p>
+      <input
+        type="email"
+        name="email"
+        placeholder="adresa@email.ro"
+        required
+        class="flex-1 px-2 py-3 bg-transparent border-b-2 border-gray-300 focus:border-coral-600 outline-none transition-colors text-center sm:text-left"
+      />
+      <button
+        type="submit"
+        class="px-8 py-3 bg-coral-600 text-white font-medium hover:bg-coral-700 transition-colors"
+      >
+        Abonează-te
+      </button>
+    </form>
+    
+    <p class="text-sm text-gray-500">
+      Sunt de acord să primesc newsletter-ul Good Brief. Mă pot dezabona oricând.
+      <a href="/privacy" class="underline hover:text-coral-600">Politica de confidențialitate</a>
+    </p>
+  </div>
 </section>

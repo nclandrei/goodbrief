@@ -1,100 +1,125 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SubscribeForm from '../components/SubscribeForm.astro';
-import IssueCard from '../components/IssueCard.astro';
 import { getCollection } from 'astro:content';
 
 const issues = await getCollection('issues');
 const latestIssues = issues
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-  .slice(0, 3);
+  .slice(0, 5);
+
+const formatDate = (date: Date) => {
+  return date.toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' });
+};
 ---
 
 <BaseLayout title="Vești Bune pentru România">
   <!-- Hero Section -->
-  <section class="py-16 md:py-24">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-        Începe săptămâna cu <span class="text-primary-600">vești bune</span>
-      </h1>
-      <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-        Un newsletter săptămânal cu cele mai frumoase știri din România. 
-        Inițiative locale, oameni remarcabili și realizări de care să fii mândru.
+  <section class="py-24 md:py-32">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <p class="text-xs uppercase tracking-wide text-neutral-500 mb-6">
+        Newsletter de știri bune
       </p>
       
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a 
-          href="#subscribe" 
-          class="px-8 py-4 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
+      <h1 class="font-serif text-display text-charcoal mb-6">
+        Începe săptămâna cu vești bune din România
+      </h1>
+      
+      <p class="text-body-lg text-neutral-600 max-w-xl mx-auto mb-10">
+        Un newsletter săptămânal cu inițiative locale, oameni remarcabili 
+        și realizări de care să fii mândru.
+      </p>
+      
+      <form 
+        class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-6"
+        action="#" 
+        method="POST"
+      >
+        <input
+          type="email"
+          name="email"
+          placeholder="adresa@email.ro"
+          required
+          class="flex-1 px-4 py-3 rounded-lg border border-neutral-200 bg-white focus:border-olive-500 focus:ring-2 focus:ring-olive-100 outline-none transition-all"
+        />
+        <button
+          type="submit"
+          class="px-6 py-3 bg-olive-600 text-white font-medium rounded-lg hover:bg-olive-700 transition-colors"
         >
-          Abonează-te gratuit
-        </a>
+          Abonează-te
+        </button>
+      </form>
+      
+      {latestIssues.length > 0 && (
         <a 
-          href="/issues" 
-          class="px-8 py-4 border border-gray-200 text-gray-700 font-medium rounded-lg hover:border-primary-300 transition-colors"
+          href={`/issues/${latestIssues[0].id}`}
+          class="inline-flex items-center text-sm text-olive-600 hover:text-olive-700 transition-colors"
         >
-          Vezi arhiva
+          Vezi ultimul număr
+          <span class="ml-1">→</span>
         </a>
-      </div>
+      )}
     </div>
   </section>
 
-  <!-- How it works -->
-  <section class="py-12 bg-gray-50">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-2xl font-bold text-center text-gray-900 mb-8">
-        Cum funcționează?
+  <!-- What You Get Section -->
+  <section class="py-16 md:py-24 border-t border-neutral-200">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="font-serif text-headline text-charcoal mb-12 text-center">
+        Ce primești?
       </h2>
       
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="text-center">
-          <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span class="text-primary-600 font-bold">1</span>
-          </div>
-          <h3 class="font-semibold text-gray-900 mb-2">Abonează-te</h3>
-          <p class="text-gray-600 text-sm">Introdu adresa de email și confirmă abonarea.</p>
-        </div>
-        
-        <div class="text-center">
-          <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span class="text-primary-600 font-bold">2</span>
-          </div>
-          <h3 class="font-semibold text-gray-900 mb-2">Primești email-ul</h3>
-          <p class="text-gray-600 text-sm">În fiecare luni dimineața, direct în inbox.</p>
-        </div>
-        
-        <div class="text-center">
-          <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <span class="text-primary-600 font-bold">3</span>
-          </div>
-          <h3 class="font-semibold text-gray-900 mb-2">Începi ziua pozitiv</h3>
-          <p class="text-gray-600 text-sm">5 minute de lectură care îți schimbă perspectiva.</p>
-        </div>
+      <div class="space-y-0 divide-y divide-neutral-200">
+        <p class="py-5 text-body-lg text-neutral-700 text-center">
+          5 minute de lectură care îți schimbă perspectiva asupra zilei
+        </p>
+        <p class="py-5 text-body-lg text-neutral-700 text-center">
+          Povești despre oameni care fac bine în comunitățile lor
+        </p>
+        <p class="py-5 text-body-lg text-neutral-700 text-center">
+          Proiecte și inițiative locale care merită atenție
+        </p>
+        <p class="py-5 text-body-lg text-neutral-700 text-center">
+          În fiecare luni dimineața, direct în inbox
+        </p>
       </div>
     </div>
   </section>
 
   <!-- Latest Issues -->
   {latestIssues.length > 0 && (
-    <section class="py-16">
-      <div class="max-w-4xl mx-auto px-4">
-        <h2 class="text-2xl font-bold text-gray-900 mb-8">
+    <section class="py-16 md:py-24 border-t border-neutral-200">
+      <div class="max-w-3xl mx-auto px-4">
+        <h2 class="font-serif text-headline text-charcoal mb-12 text-center">
           Ultimele ediții
         </h2>
         
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="divide-y divide-neutral-200">
           {latestIssues.map((issue) => (
-            <IssueCard
-              title={issue.data.title}
-              date={issue.data.date}
-              summary={issue.data.summary}
-              id={issue.id}
-            />
+            <a 
+              href={`/issues/${issue.id}`}
+              class="group flex items-center justify-between py-5 hover:bg-neutral-50 -mx-4 px-4 transition-colors"
+            >
+              <div class="flex items-center gap-6">
+                <time class="text-sm text-neutral-500 w-16 shrink-0">
+                  {formatDate(issue.data.date)}
+                </time>
+                <span class="text-charcoal group-hover:text-olive-600 transition-colors">
+                  {issue.data.title}
+                </span>
+              </div>
+              <span class="text-neutral-400 group-hover:text-olive-600 transition-colors">
+                →
+              </span>
+            </a>
           ))}
         </div>
         
-        <div class="text-center mt-8">
-          <a href="/issues" class="text-primary-600 font-medium hover:underline">
+        <div class="text-center mt-10">
+          <a 
+            href="/issues" 
+            class="text-sm text-olive-600 hover:text-olive-700 transition-colors"
+          >
             Vezi toate edițiile →
           </a>
         </div>
@@ -103,7 +128,7 @@ const latestIssues = issues
   )}
 
   <!-- Subscribe Section -->
-  <section id="subscribe" class="py-16">
+  <section id="subscribe" class="py-16 md:py-24 bg-olive-50">
     <div class="max-w-2xl mx-auto px-4">
       <SubscribeForm />
     </div>

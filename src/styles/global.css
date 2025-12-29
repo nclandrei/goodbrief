@@ -8,6 +8,16 @@
   }
 
   body {
-    @apply antialiased text-gray-900 bg-white;
+    @apply antialiased font-sans;
+    background-color: #f5f1eb;
+    color: #1f1b1a;
+  }
+
+  h1, h2, h3 {
+    @apply font-serif;
+  }
+
+  a {
+    @apply transition-colors duration-200;
   }
 }
