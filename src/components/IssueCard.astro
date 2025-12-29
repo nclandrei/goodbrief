@@ -1,0 +1,31 @@
+---
+interface Props {
+  title: string;
+  date: Date;
+  summary: string;
+  id: string;
+}
+
+const { title, date, summary, id } = Astro.props;
+
+const formattedDate = date.toLocaleDateString('ro-RO', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<article class="border border-gray-100 rounded-xl p-6 hover:border-primary-200 hover:shadow-sm transition-all">
+  <a href={`/issues/${id}`} class="block">
+    <time class="text-sm text-gray-500">{formattedDate}</time>
+    <h3 class="text-lg font-semibold text-gray-900 mt-1 hover:text-primary-600 transition-colors">
+      {title}
+    </h3>
+    <p class="text-gray-600 mt-2 line-clamp-2">
+      {summary}
+    </p>
+    <span class="inline-flex items-center text-primary-600 text-sm font-medium mt-4">
+      Citește mai mult →
+    </span>
+  </a>
+</article>

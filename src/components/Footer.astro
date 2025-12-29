@@ -1,0 +1,35 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="border-t border-gray-100 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-center md:text-left">
+        <p class="text-sm text-gray-600">
+          © {currentYear} Good Brief. Toate drepturile rezervate.
+        </p>
+        <p class="text-xs text-gray-500 mt-1">
+          Creat cu 💚 pentru o Românie mai optimistă.
+        </p>
+      </div>
+      
+      <div class="flex gap-4 text-sm">
+        <a href="/privacy" class="text-gray-600 hover:text-primary-600 transition-colors">
+          Confidențialitate
+        </a>
+        <a href="/terms" class="text-gray-600 hover:text-primary-600 transition-colors">
+          Termeni
+        </a>
+        <a 
+          href="https://ko-fi.com/goodbrief" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="text-gray-600 hover:text-primary-600 transition-colors"
+        >
+          Ko-fi ☕
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,111 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SubscribeForm from '../components/SubscribeForm.astro';
+import IssueCard from '../components/IssueCard.astro';
+import { getCollection } from 'astro:content';
+
+const issues = await getCollection('issues');
+const latestIssues = issues
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 3);
+---
+
+<BaseLayout title="Vești Bune pentru România">
+  <!-- Hero Section -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+        Începe săptămâna cu <span class="text-primary-600">vești bune</span>
+      </h1>
+      <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        Un newsletter săptămânal cu cele mai frumoase știri din România. 
+        Inițiative locale, oameni remarcabili și realizări de care să fii mândru.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a 
+          href="#subscribe" 
+          class="px-8 py-4 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
+        >
+          Abonează-te gratuit
+        </a>
+        <a 
+          href="/issues" 
+          class="px-8 py-4 border border-gray-200 text-gray-700 font-medium rounded-lg hover:border-primary-300 transition-colors"
+        >
+          Vezi arhiva
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="py-12 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-center text-gray-900 mb-8">
+        Cum funcționează?
+      </h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-primary-600 font-bold">1</span>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">Abonează-te</h3>
+          <p class="text-gray-600 text-sm">Introdu adresa de email și confirmă abonarea.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-primary-600 font-bold">2</span>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">Primești email-ul</h3>
+          <p class="text-gray-600 text-sm">În fiecare luni dimineața, direct în inbox.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-primary-600 font-bold">3</span>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">Începi ziua pozitiv</h3>
+          <p class="text-gray-600 text-sm">5 minute de lectură care îți schimbă perspectiva.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Issues -->
+  {latestIssues.length > 0 && (
+    <section class="py-16">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8">
+          Ultimele ediții
+        </h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {latestIssues.map((issue) => (
+            <IssueCard
+              title={issue.data.title}
+              date={issue.data.date}
+              summary={issue.data.summary}
+              id={issue.id}
+            />
+          ))}
+        </div>
+        
+        <div class="text-center mt-8">
+          <a href="/issues" class="text-primary-600 font-medium hover:underline">
+            Vezi toate edițiile →
+          </a>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Subscribe Section -->
+  <section id="subscribe" class="py-16">
+    <div class="max-w-2xl mx-auto px-4">
+      <SubscribeForm />
+    </div>
+  </section>
+</BaseLayout>

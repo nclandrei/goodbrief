@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import IssueCard from '../../components/IssueCard.astro';
+import { getCollection } from 'astro:content';
+
+const issues = await getCollection('issues');
+const sortedIssues = issues.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<BaseLayout title="Arhivă" description="Toate edițiile newsletter-ului Good Brief.">
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-3xl font-bold text-gray-900 mb-4">
+        Arhivă
+      </h1>
+      <p class="text-gray-600 mb-8">
+        Toate edițiile newsletter-ului Good Brief, de la cele mai recente la cele mai vechi.
+      </p>
+
+      {sortedIssues.length > 0 ? (
+        <div class="grid md:grid-cols-2 gap-6">
+          {sortedIssues.map((issue) => (
+            <IssueCard
+              title={issue.data.title}
+              date={issue.data.date}
+              summary={issue.data.summary}
+              id={issue.id}
+            />
+          ))}
+        </div>
+      ) : (
+        <div class="text-center py-12 bg-gray-50 rounded-xl">
+          <p class="text-gray-600">
+            Încă nu avem ediții publicate. Abonează-te pentru a fi primul care primește vești bune!
+          </p>
+          <a 
+            href="/#subscribe" 
+            class="inline-block mt-4 px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors"
+          >
+            Abonează-te
+          </a>
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>

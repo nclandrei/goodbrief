@@ -1,0 +1,80 @@
+# Good Brief - Agent Guidelines
+
+## Project Overview
+Romanian positive news newsletter web app (goodbrief.ro). Target audience: 20-30 year old educated Romanians.
+
+## Tech Stack
+- **Framework:** Astro 5 + TypeScript (strict)
+- **Styling:** Tailwind CSS
+- **Content:** Markdown files in `content/issues/`
+- **Hosting:** Cloudflare Pages
+
+## Commands
+
+```bash
+# Development
+npm run dev         # Start dev server (localhost:4321)
+npm run build       # Build for production
+npm run preview     # Preview production build
+npm run check       # TypeScript check
+
+# No test framework configured yet
+```
+
+## Project Structure
+
+```
+src/
+├── components/     # Reusable .astro components
+├── layouts/        # Page layouts (BaseLayout.astro)
+├── pages/          # File-based routing
+│   └── issues/     # Newsletter archive pages
+├── styles/         # Global CSS
+└── content.config.ts  # Content collection schema
+
+content/
+└── issues/         # Newsletter markdown files
+
+public/             # Static assets
+```
+
+## Code Conventions
+
+### Language
+- All user-facing content in **Romanian**
+- Code comments and technical docs in English
+
+### Astro Components
+- Use `.astro` extension
+- Props interface at top of frontmatter
+- Tailwind for styling (no separate CSS files unless global)
+
+### Content (Newsletter Issues)
+- Filename format: `YYYY-MM-DD-slug.md`
+- Required frontmatter: `title`, `date`, `summary`
+- Use emoji sparingly for section headers
+
+### Styling
+- Primary color: green (`primary-*` in Tailwind config)
+- Max content width: `max-w-4xl` for layouts, `max-w-3xl` for prose
+- Mobile-first responsive design
+
+## External Services
+
+### EmailOctopus (Newsletter)
+- Embed form in `SubscribeForm.astro`
+- Free tier: 2,500 subscribers, 10k emails/month
+- Requires DNS setup: SPF, DKIM, DMARC
+
+### Ko-fi (Donations)
+- Links in Footer and Support page
+- 0% platform fee on donations
+
+### Cloudflare
+- Pages for hosting (auto-deploy from main)
+- Web Analytics for privacy-friendly stats
+
+## Important Notes
+- Keep dependencies minimal for cost efficiency
+- No backend/database - static site + external services
+- GDPR compliance required (Romanian audience)
