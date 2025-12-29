@@ -8,16 +8,23 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "check": "astro check"
+    "check": "astro check",
+    "ingest-news": "npx tsx scripts/ingest-news.ts",
+    "generate-draft": "npx tsx scripts/generate-draft.ts",
+    "publish-issue": "npx tsx scripts/publish-issue.ts"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.0",
+    "@google/generative-ai": "^0.24.1",
     "astro": "^5.0.0",
     "typescript": "^5.7.0"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^5.1.0",
+    "@google/generative-ai": "^0.21.0",
     "@tailwindcss/typography": "^0.5.19",
-    "tailwindcss": "^3.4.0"
+    "rss-parser": "^3.13.0",
+    "tailwindcss": "^3.4.0",
+    "tsx": "^4.19.0"
   }
 }
