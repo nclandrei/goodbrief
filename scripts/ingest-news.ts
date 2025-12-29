@@ -9,7 +9,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const ROOT_DIR = join(__dirname, "..");
 
-const parser = new Parser();
+const parser = new Parser({
+  timeout: 10000, // 10 second timeout
+});
 
 function getISOWeekId(date: Date = new Date()): string {
   const d = new Date(date);
