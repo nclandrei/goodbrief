@@ -1,7 +1,6 @@
 {
+  "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "goodbrief",
   "compatibility_date": "2025-12-31",
-  "assets": {
-    "directory": "./dist"
-  }
+  "pages_build_output_dir": "./dist"
 }
