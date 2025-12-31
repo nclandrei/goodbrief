@@ -156,11 +156,33 @@ For each article, provide:
    
    Ask yourself: "Would a 25-year-old in Cluj/București share this with friends because it matters?"
 
-4. CATEGORY (one of):
-   - "local-heroes": Inițiative locale, oameni care fac bine în comunități
-   - "wins": Reușite, premii, recorduri, realizări notabile
-   - "green-stuff": Mediu, sustenabilitate, natură
-   - "quick-hits": Micro-vești bune (for shorter items)
+4. CATEGORY (alege EXACT un singur string din lista de mai jos):
+
+   REGULI GENERALE:
+   - Gândește-te la TEMA principală a știrii, nu la lungime.
+   - Verifică în ordine: green-stuff → local-heroes → wins → quick-hits.
+   - Alege prima categorie care se potrivește clar.
+
+   a) "green-stuff"
+      - Mediu, sustenabilitate, natură, climă, animale.
+      - Exemple: "Primăria plantează 10.000 de copaci", "Un sat trece pe energie solară"
+      - Dacă tema principală e ecologică, alege "green-stuff" chiar dacă apare și un erou local.
+
+   b) "local-heroes"
+      - Povești centrate pe OAMENI sau grupuri mici care fac bine direct în comunitate.
+      - Accentul e pe persoană/grup ca erou, NU pe eveniment mare sau instituție.
+      - Exemple: "O profesoară strânge bani pentru rechizite", "Voluntari renovează un spital"
+      - NU folosi pentru: festivaluri, târguri, proiecte mari de infrastructură, premii/recorduri.
+
+   c) "wins"
+      - Reușite, premii, recorduri, realizări notabile (comunitate, oraș, țară, internațional).
+      - Include aici: evenimente culturale (festivaluri, expoziții, patrimoniu), infrastructură nouă.
+      - Exemple: "Festival de film câștigă premiu", "Cluj deschide parc nou", "Săptămâna Haferland celebrează tradițiile săsești"
+
+   d) "quick-hits"
+      - Vești bune de IMPACT MIC sau FOARTE LOCAL / DE NIȘĂ.
+      - Exemple: "Un bistro oferă cafea gratis studenților", "Un liceu își modernizează laboratorul"
+      - Folosește doar dacă nu se potrivește clar la categoriile de mai sus.
 
 Return ONLY valid JSON array: [{"id": "...", "summary": "...", "positivity": N, "impact": N, "category": "..."}, ...]
 
