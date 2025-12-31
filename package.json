@@ -11,17 +11,29 @@
     "check": "astro check",
     "ingest-news": "npx tsx scripts/ingest-news.ts",
     "generate-draft": "npx tsx scripts/generate-draft.ts",
-    "publish-issue": "npx tsx scripts/publish-issue.ts"
+    "publish-issue": "npx tsx scripts/publish-issue.ts",
+    "email:dev": "email dev --dir emails --port 3001",
+    "email:preview": "npx tsx scripts/send-newsletter.ts --preview",
+    "email:test": "npx tsx scripts/send-newsletter.ts --test",
+    "email:send": "npx tsx scripts/send-newsletter.ts --send"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.0",
     "@google/generative-ai": "^0.24.1",
+    "@react-email/components": "^0.0.30",
     "astro": "^5.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "resend": "^4.8.0",
     "typescript": "^5.7.0"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^5.1.0",
+    "@cloudflare/workers-types": "^4.20251231.0",
     "@tailwindcss/typography": "^0.5.19",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "react-email": "^3.0.7",
     "rss-parser": "^3.13.0",
     "tailwindcss": "^3.4.0",
     "tsx": "^4.19.0"
