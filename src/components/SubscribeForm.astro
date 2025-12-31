@@ -18,6 +18,7 @@ const { class: className = '' } = Astro.props;
     <form 
       id="subscribe-form"
       class="flex flex-col gap-6 max-w-xl mx-auto mb-8"
+      novalidate
     >
       <div class="flex flex-col sm:flex-row gap-6">
         <input
@@ -25,13 +26,12 @@ const { class: className = '' } = Astro.props;
           name="email"
           id="subscribe-email"
           placeholder="adresa@email.ro"
-          required
-          class="flex-1 px-2 py-3 bg-transparent border-b-2 border-gray-300 focus:border-coral-600 outline-none transition-colors text-center sm:text-left"
+          class="flex-1 px-2 py-3 bg-transparent border-b-2 border-gray-300 focus:border-olive-500 outline-none transition-colors text-center sm:text-left"
         />
         <button
           type="submit"
           id="subscribe-button"
-          class="px-8 py-3 bg-coral-600 text-white font-medium hover:bg-coral-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          class="px-8 py-3 bg-olive-500 text-white font-medium hover:bg-olive-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <span id="button-text">Vreau în listă</span>
           <span id="button-loading" class="hidden">
@@ -48,12 +48,11 @@ const { class: className = '' } = Astro.props;
           type="checkbox"
           id="consent"
           name="consent"
-          required
-          class="mt-1 h-4 w-4 accent-coral-600"
+          class="mt-1 h-4 w-4 accent-olive-500"
         />
         <label for="consent" class="text-sm text-gray-600">
           Sunt de acord să primesc newsletter-ul Good Brief. Te poți dezabona oricând. 
-          Vezi <a href="/privacy" class="underline hover:text-coral-600">Politica de confidențialitate</a>.
+          Vezi <a href="/privacy" class="underline hover:text-olive-500">Politica de confidențialitate</a>.
         </label>
       </div>
       
@@ -65,6 +64,7 @@ const { class: className = '' } = Astro.props;
 <script>
   const form = document.getElementById('subscribe-form') as HTMLFormElement;
   const emailInput = document.getElementById('subscribe-email') as HTMLInputElement;
+  const consentCheckbox = document.getElementById('consent') as HTMLInputElement;
   const submitButton = document.getElementById('subscribe-button') as HTMLButtonElement;
   const buttonText = document.getElementById('button-text') as HTMLSpanElement;
   const buttonLoading = document.getElementById('button-loading') as HTMLSpanElement;
@@ -77,9 +77,9 @@ const { class: className = '' } = Astro.props;
 
   function showMessage(message: string, isSuccess: boolean) {
     formMessage.textContent = message;
-    formMessage.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800');
+    formMessage.classList.remove('hidden', 'bg-olive-100', 'text-olive-800', 'bg-red-100', 'text-red-800');
     if (isSuccess) {
-      formMessage.classList.add('bg-green-100', 'text-green-800');
+      formMessage.classList.add('bg-olive-100', 'text-olive-800');
     } else {
       formMessage.classList.add('bg-red-100', 'text-red-800');
     }
@@ -103,6 +103,11 @@ const { class: className = '' } = Astro.props;
 
     if (!isValidEmail(email)) {
       showMessage('Adresa de email nu este validă.', false);
+      return;
+    }
+
+    if (!consentCheckbox.checked) {
+      showMessage('Trebuie să fii de acord cu primirea newsletter-ului.', false);
       return;
     }
 
