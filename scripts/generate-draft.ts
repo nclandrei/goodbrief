@@ -65,17 +65,24 @@ ${articlesText}`;
     };
 
     const clusterMap = new Map<string, RawArticle[]>();
+    const seenIndices = new Set<number>();
 
     parsed.clusters.forEach((cluster, idx) => {
       const clusterId = `cluster-${idx}`;
-      clusterMap.set(
-        clusterId,
-        cluster.map((i) => articles[i]).filter(Boolean)
-      );
+      const uniqueArticles = cluster
+        .filter((i) => !seenIndices.has(i) && articles[i])
+        .map((i) => {
+          seenIndices.add(i);
+          return articles[i];
+        });
+      if (uniqueArticles.length > 0) {
+        clusterMap.set(clusterId, uniqueArticles);
+      }
     });
 
     parsed.unique.forEach((idx) => {
-      if (articles[idx]) {
+      if (!seenIndices.has(idx) && articles[idx]) {
+        seenIndices.add(idx);
         clusterMap.set(`unique-${idx}`, [articles[idx]]);
       }
     });
@@ -243,12 +250,17 @@ async function main() {
     }
   }
 
-  // Step 4: Build processed articles
+  // Step 4: Build processed articles (with deduplication by ID)
   const scoreMap = new Map(allScores.map((s) => [s.id, s]));
   const now = new Date().toISOString();
+  const seenIds = new Set<string>();
 
   const processed: ProcessedArticle[] = representatives
     .map((raw) => {
+      // Skip duplicates
+      if (seenIds.has(raw.id)) return null;
+      seenIds.add(raw.id);
+
       const score = scoreMap.get(raw.id);
       if (!score) return null;
       return {
