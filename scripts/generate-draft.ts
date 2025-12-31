@@ -55,10 +55,24 @@ ${articlesText}`;
 
   try {
     const result = await model.generateContent(prompt);
-    const text = result.response
+    let text = result.response
       .text()
       .replace(/```json\n?|\n?```/g, '')
       .trim();
+
+    // Fix common JSON issues: trailing commas, truncated responses
+    text = text
+      .replace(/,\s*]/g, ']')
+      .replace(/,\s*}/g, '}');
+
+    // If JSON appears truncated, try to fix it
+    const openBrackets = (text.match(/\[/g) || []).length;
+    const closeBrackets = (text.match(/]/g) || []).length;
+    if (openBrackets > closeBrackets) {
+      text += ']'.repeat(openBrackets - closeBrackets);
+      if (!text.endsWith('}')) text += '}';
+    }
+
     const parsed = JSON.parse(text) as {
       clusters: number[][];
       unique: number[];
