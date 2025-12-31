@@ -26,4 +26,5 @@ jobs:
           git config user.email "andrei@nicolaeandrei.com"
           git add data/drafts/
           git diff --staged --quiet || git commit -m "Generate newsletter draft"
+          git pull --rebase
           git push

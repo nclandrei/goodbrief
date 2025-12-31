@@ -24,4 +24,5 @@ jobs:
           git config user.email "andrei@nicolaeandrei.com"
           git add data/raw/
           git diff --staged --quiet || git commit -m "Update news buffer"
+          git pull --rebase
           git push
