@@ -1,0 +1,31 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 64"
+  role="img"
+  aria-label="Good Brief"
+>
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&amp;display=swap');
+    </style>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="#3d5f46"/>
+  
+  <text 
+    x="32" 
+    y="40" 
+    text-anchor="middle" 
+    font-family="Nunito, sans-serif" 
+    font-weight="800"
+    font-size="28" 
+    fill="#f5f1eb"
+  >GB</text>
+  
+  <path 
+    d="M20 48 Q32 54 44 48" 
+    fill="none" 
+    stroke="#f5f1eb" 
+    stroke-width="3" 
+    stroke-linecap="round"
+  />
+</svg>
