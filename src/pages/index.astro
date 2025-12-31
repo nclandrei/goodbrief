@@ -29,25 +29,7 @@ const formatDate = (date: Date) => {
         Good Brief scanează surse de încredere ca Biziday, Europa FM și Europa Liberă, filtrează zgomotul cu AI și îți trimite doar veștile bune. 5 minute de lectură, carefully curated, direct în inbox.
       </p>
       
-      <form 
-        class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-6"
-        action="#" 
-        method="POST"
-      >
-        <input
-          type="email"
-          name="email"
-          placeholder="adresa@email.ro"
-          required
-          class="flex-1 px-4 py-3 rounded-lg border border-neutral-200 bg-white focus:border-olive-500 focus:ring-2 focus:ring-olive-100 outline-none transition-all"
-        />
-        <button
-          type="submit"
-          class="px-6 py-3 bg-olive-600 text-white font-medium rounded-lg hover:bg-olive-700 transition-colors"
-        >
-          Vreau vești bune
-        </button>
-      </form>
+      <SubscribeForm showHeading={false} class="mb-6" />
       
       {latestIssues.length > 0 && (
         <a 

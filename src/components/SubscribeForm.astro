@@ -1,16 +1,15 @@
 ---
 interface Props {
   class?: string;
-  variant?: 'full' | 'compact';
+  showHeading?: boolean;
 }
 
-const { class: className = '', variant = 'full' } = Astro.props;
-const isCompact = variant === 'compact';
+const { class: className = '', showHeading = true } = Astro.props;
 ---
 
-<section class={`${isCompact ? '' : 'py-16 px-8'} ${className}`}>
-  <div class={`${isCompact ? '' : 'max-w-2xl'} mx-auto text-center`}>
-    {!isCompact && (
+<section class={`${showHeading ? 'py-16 px-8' : ''} ${className}`}>
+  <div class={`${showHeading ? 'max-w-2xl' : 'max-w-md'} mx-auto text-center`}>
+    {showHeading && (
       <>
         <h2 class="font-serif text-4xl md:text-5xl text-gray-900 mb-6">
           Primește vești bune, nu breaking news
@@ -22,25 +21,22 @@ const isCompact = variant === 'compact';
     )}
     
     <form 
-      id={isCompact ? 'subscribe-form-hero' : 'subscribe-form'}
-      class={`flex flex-col gap-${isCompact ? '3' : '6'} ${isCompact ? 'max-w-md' : 'max-w-xl'} mx-auto ${isCompact ? '' : 'mb-8'}`}
+      class="subscribe-form flex flex-col gap-4 mx-auto"
       novalidate
     >
-      <div class="flex flex-col sm:flex-row gap-6">
+      <div class="flex flex-col sm:flex-row gap-3">
         <input
           type="email"
           name="email"
-          id="subscribe-email"
           placeholder="adresa@email.ro"
-          class="flex-1 px-2 py-3 bg-transparent border-b-2 border-gray-300 focus:border-olive-500 outline-none transition-colors text-center sm:text-left"
+          class="subscribe-email flex-1 px-4 py-3 rounded-lg border border-neutral-200 bg-white focus:border-olive-500 focus:ring-2 focus:ring-olive-100 outline-none transition-all text-center sm:text-left"
         />
         <button
           type="submit"
-          id="subscribe-button"
-          class="px-6 py-3 bg-olive-500 text-white font-medium rounded-lg hover:bg-olive-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          class="subscribe-button px-6 py-3 bg-olive-500 text-white font-medium rounded-lg hover:bg-olive-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          <span id="button-text">Vreau vești bune</span>
-          <span id="button-loading" class="hidden">
+          <span class="button-text">Vreau vești bune</span>
+          <span class="button-loading hidden">
             <svg class="animate-spin h-5 w-5 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
               <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
               <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
@@ -52,94 +48,94 @@ const isCompact = variant === 'compact';
       <div class="flex items-start gap-3 text-left">
         <input
           type="checkbox"
-          id="consent"
           name="consent"
-          class="mt-1 h-4 w-4 accent-olive-500"
+          class="subscribe-consent mt-1 h-4 w-4 accent-olive-500"
         />
-        <label for="consent" class="text-sm text-gray-600">
+        <label class="text-sm text-gray-600">
           Sunt de acord să primesc newsletter-ul Good Brief. Te poți dezabona oricând. 
           Vezi <a href="/privacy" class="underline hover:text-olive-500">Politica de confidențialitate</a>.
         </label>
       </div>
       
-      <div id="form-message" class="hidden text-sm py-2 px-4 rounded"></div>
+      <div class="form-message hidden text-sm py-2 px-4 rounded"></div>
     </form>
   </div>
 </section>
 
 <script>
-  const form = document.getElementById('subscribe-form') as HTMLFormElement;
-  const emailInput = document.getElementById('subscribe-email') as HTMLInputElement;
-  const consentCheckbox = document.getElementById('consent') as HTMLInputElement;
-  const submitButton = document.getElementById('subscribe-button') as HTMLButtonElement;
-  const buttonText = document.getElementById('button-text') as HTMLSpanElement;
-  const buttonLoading = document.getElementById('button-loading') as HTMLSpanElement;
-  const formMessage = document.getElementById('form-message') as HTMLDivElement;
+  document.querySelectorAll('.subscribe-form').forEach((form) => {
+    const emailInput = form.querySelector('.subscribe-email') as HTMLInputElement;
+    const consentCheckbox = form.querySelector('.subscribe-consent') as HTMLInputElement;
+    const submitButton = form.querySelector('.subscribe-button') as HTMLButtonElement;
+    const buttonText = form.querySelector('.button-text') as HTMLSpanElement;
+    const buttonLoading = form.querySelector('.button-loading') as HTMLSpanElement;
+    const formMessage = form.querySelector('.form-message') as HTMLDivElement;
 
-  function isValidEmail(email: string): boolean {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  }
-
-  function showMessage(message: string, isSuccess: boolean) {
-    formMessage.textContent = message;
-    formMessage.classList.remove('hidden', 'bg-olive-100', 'text-olive-800', 'bg-red-100', 'text-red-800');
-    if (isSuccess) {
-      formMessage.classList.add('bg-olive-100', 'text-olive-800');
-    } else {
-      formMessage.classList.add('bg-red-100', 'text-red-800');
-    }
-  }
-
-  function setLoading(loading: boolean) {
-    submitButton.disabled = loading;
-    buttonText.classList.toggle('hidden', loading);
-    buttonLoading.classList.toggle('hidden', !loading);
-  }
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    
-    const email = emailInput.value.trim();
-    
-    if (!email) {
-      showMessage('Adresa de email este obligatorie.', false);
-      return;
+    function isValidEmail(email: string): boolean {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
     }
 
-    if (!isValidEmail(email)) {
-      showMessage('Adresa de email nu este validă.', false);
-      return;
-    }
-
-    if (!consentCheckbox.checked) {
-      showMessage('Trebuie să fii de acord cu primirea newsletter-ului.', false);
-      return;
-    }
-
-    setLoading(true);
-    formMessage.classList.add('hidden');
-
-    try {
-      const response = await fetch('/api/subscribe', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email }),
-      });
-
-      const data = await response.json() as { success: boolean; message: string };
-      
-      showMessage(data.message, data.success);
-      
-      if (data.success) {
-        form.reset();
+    function showMessage(message: string, isSuccess: boolean) {
+      formMessage.textContent = message;
+      formMessage.classList.remove('hidden', 'bg-olive-100', 'text-olive-800', 'bg-red-100', 'text-red-800');
+      if (isSuccess) {
+        formMessage.classList.add('bg-olive-100', 'text-olive-800');
+      } else {
+        formMessage.classList.add('bg-red-100', 'text-red-800');
       }
-    } catch (error) {
-      showMessage('A apărut o eroare. Te rugăm să încerci din nou.', false);
-    } finally {
-      setLoading(false);
     }
+
+    function setLoading(loading: boolean) {
+      submitButton.disabled = loading;
+      buttonText.classList.toggle('hidden', loading);
+      buttonLoading.classList.toggle('hidden', !loading);
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const email = emailInput.value.trim();
+      
+      if (!email) {
+        showMessage('Adresa de email este obligatorie.', false);
+        return;
+      }
+
+      if (!isValidEmail(email)) {
+        showMessage('Adresa de email nu este validă.', false);
+        return;
+      }
+
+      if (!consentCheckbox.checked) {
+        showMessage('Trebuie să fii de acord cu primirea newsletter-ului.', false);
+        return;
+      }
+
+      setLoading(true);
+      formMessage.classList.add('hidden');
+
+      try {
+        const response = await fetch('/api/subscribe', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email }),
+        });
+
+        const data = await response.json() as { success: boolean; message: string };
+        
+        showMessage(data.message, data.success);
+        
+        if (data.success) {
+          (form as HTMLFormElement).reset();
+        }
+      } catch (error) {
+        showMessage('A apărut o eroare. Te rugăm să încerci din nou.', false);
+      } finally {
+        setLoading(false);
+      }
+    });
   });
 </script>
