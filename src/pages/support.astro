@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { donations } from '../config/donations';
 ---
 
 <BaseLayout title="Susține-ne" description="Susține proiectul Good Brief.">
@@ -14,35 +15,38 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </p>
 
       <div class="grid md:grid-cols-2 gap-6 mb-12">
-        <!-- Ko-fi -->
-        <a 
-          href="https://ko-fi.com/goodbrief" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          class="block p-6 border border-gray-200 rounded-xl hover:border-primary-300 hover:shadow-sm transition-all"
-        >
-          <div class="text-3xl mb-3">☕</div>
-          <h2 class="text-xl font-semibold text-gray-900 mb-2">Ko-fi</h2>
-          <p class="text-gray-600 text-sm">
-            Cumpără-ne o cafea (sau mai multe).
-            Donații unice sau recurente, fără comision – perfect pentru un "thank you" rapid.
-          </p>
-        </a>
+        {donations.revolut.enabled && (
+          <a 
+            href={donations.revolut.url}
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="block p-6 border border-gray-200 rounded-xl hover:border-primary-300 hover:shadow-sm transition-all"
+          >
+            <div class="text-3xl mb-3">💸</div>
+            <h2 class="text-xl font-semibold text-gray-900 mb-2">Revolut</h2>
+            <p class="text-gray-600 text-sm">
+              Transfer instant prin Revolut – fără comisioane pentru transferuri Revolut-to-Revolut.
+              Simplu și rapid, ca un "mulțumesc" între prieteni.
+            </p>
+          </a>
+        )}
 
-        <!-- GitHub Sponsors (alternative) -->
-        <a 
-          href="https://github.com/sponsors/nclandrei" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          class="block p-6 border border-gray-200 rounded-xl hover:border-primary-300 hover:shadow-sm transition-all"
-        >
-          <div class="text-3xl mb-3">💜</div>
-          <h2 class="text-xl font-semibold text-gray-900 mb-2">GitHub Sponsors</h2>
-          <p class="text-gray-600 text-sm">
-            Susține proiectul direct prin GitHub Sponsors.
-            Ideal dacă ești developer și vrei să investești în partea de tech & open source.
-          </p>
-        </a>
+        <!-- Ko-fi -->
+        {donations.kofi.enabled && (
+          <a 
+            href={donations.kofi.url}
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="block p-6 border border-gray-200 rounded-xl hover:border-primary-300 hover:shadow-sm transition-all"
+          >
+            <div class="text-3xl mb-3">☕</div>
+            <h2 class="text-xl font-semibold text-gray-900 mb-2">Ko-fi</h2>
+            <p class="text-gray-600 text-sm">
+              Cumpără-ne o cafea (sau mai multe).
+              Plătești cu cardul, poți seta și donații lunare automate.
+            </p>
+          </a>
+        )}
       </div>
 
       <div class="bg-gray-50 rounded-xl p-6">
