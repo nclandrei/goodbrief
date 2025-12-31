@@ -115,6 +115,7 @@ interface ArticleScore {
   summary: string;
   positivity: number;
   impact: number;
+  romaniaRelevant: boolean;
   category: 'local-heroes' | 'wins' | 'green-stuff' | 'quick-hits';
 }
 
@@ -177,7 +178,21 @@ For each article, provide:
    
    Ask yourself: "Would a 25-year-old in Cluj/București share this with friends because it matters?"
 
-4. CATEGORY (alege EXACT un singur string din lista de mai jos):
+5. ROMANIA RELEVANCE (true/false):
+   Set to TRUE only if the article is about:
+   - Events happening IN Romania
+   - Romanian people, companies, or organizations
+   - Topics directly affecting Romania or Romanians
+   - Romanian diaspora achievements abroad
+   
+   Set to FALSE if:
+   - International news with NO Romanian connection (e.g., "Zelensky visits hospital in Ukraine")
+   - Foreign celebrities, politicians, or events not involving Romania
+   - Global stories that just happened to be reported by Romanian media
+   
+   IMPORTANT: Just because a Romanian news outlet reported the story does NOT make it Romania-relevant.
+
+6. CATEGORY (alege EXACT un singur string din lista de mai jos):
 
    REGULI GENERALE:
    - Gândește-te la TEMA principală a știrii, nu la lungime.
@@ -205,7 +220,7 @@ For each article, provide:
       - Exemple: "Un bistro oferă cafea gratis studenților", "Un liceu își modernizează laboratorul"
       - Folosește doar dacă nu se potrivește clar la categoriile de mai sus.
 
-Return ONLY valid JSON array: [{"id": "...", "summary": "...", "positivity": N, "impact": N, "category": "..."}, ...]
+Return ONLY valid JSON array: [{"id": "...", "summary": "...", "positivity": N, "impact": N, "romaniaRelevant": true/false, "category": "..."}, ...]
 
 Articles:
 ${articlesText}`;
@@ -277,6 +292,8 @@ async function main() {
 
       const score = scoreMap.get(raw.id);
       if (!score) return null;
+      // Filter out non-Romania-relevant articles
+      if (!score.romaniaRelevant) return null;
       return {
         id: raw.id,
         sourceId: raw.sourceId,
