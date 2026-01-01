@@ -6570,7 +6570,677 @@
       "summary": "Ministerul Apărării de la București anunţă că, joi dimineaţă, a avut loc un nou atac rusesc cu drone asupra porturilor ucrainene de la Dunăre și au fost ridicate două aeronave din Baza 86 Aeriană de la Feteşti.",
       "publishedAt": "2026-01-01T09:40:26.000Z",
       "fetchedAt": "2026-01-01T12:52:51.755Z"
+    },
+    {
+      "id": "88370f970e15204f",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Cine este dirijorul canadian Yannick Nézet-Séguin care a făcut spectacol și a ridicat sala în picioare la Concertul de Anul Nou de la Viena",
+      "url": "https://hotnews.ro/video-cine-este-dirijorul-canadian-yannick-nezet-seguin-care-a-facut-spectacol-si-a-ridicat-sala-in-picioare-la-concertul-de-anul-nou-de-la-viena-2142169",
+      "summary": "Dirijorul canadian Yannick Nézet-Séguin, pentru prima dată pe podiumul Concertului de Anul Nou al Filarmonicii din Viena, a marcat câteva premiere şi a transmis tuturor un mesaj de „pace şi bunătate”. Tot pentru prima dată,…",
+      "publishedAt": "2026-01-01T18:28:11.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "59844392269cb8b0",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Trump recunoaște că ia o doză zilnică de aspirină mai mare decât îi recomandă medicii: „Vreau ca prin inima mea să curgă sânge frumos”",
+      "url": "https://hotnews.ro/trump-recunoaste-ca-ia-o-doza-zilnica-de-aspirina-mai-mare-decat-ii-recomanda-medicii-vreau-ca-prin-inima-mea-sa-curga-sange-frumos-2142137",
+      "summary": "Preşedintele SUA, Donald Trump, a declarat într-un interviu acordat Wall Street Journal că ia o doză zilnică de aspirină mai mare decât recomandă medicii săi, informează Reuters. „Ei spun că aspirina este bună pentru subţierea…",
+      "publishedAt": "2026-01-01T17:35:11.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "090c1f077dca6a83",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Incendiul din staţiunea de schi Crans-Montana: Primul bilanț prezentat de oficialii elvețieni. Președintele Elveției: „Una dintre cele mai grave tragedii din țara noastră”",
+      "url": "https://hotnews.ro/incendiul-din-statiunea-de-schi-crans-montana-primul-bilant-prezentat-de-oficialii-elvetieni-presedintele-elvetiei-una-dintre-cele-mai-grave-tragedii-din-tara-noastra-2142120",
+      "summary": "Petrecerea din noaptea de Revelion într-un bar din stațiunea elvețiană de schi Crans-Montana s-a încheiat cu „una dintre cele mai grave tragedii pe care le-a trăit” Elveția, a declarat joi președintelui elvețian Guy Parmelin, într-o…",
+      "publishedAt": "2026-01-01T17:18:36.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "bfc9a76a7f1b6cc6",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Kievul anunţă că a înscenat moartea unui şef militar rus care lupta pentru Ucraina. „Felicitări pentru revenirea la viaţă”, îi transmite Kirilo Budanov – VIDEO",
+      "url": "https://hotnews.ro/kievul-anunta-ca-a-inscenat-moartea-unui-sef-militar-rus-care-lupta-pentru-ucraina-felicitari-pentru-revenirea-la-viata-ii-transmite-kirilo-budanov-video-2142121",
+      "summary": "Ucraina a dezvăluit joi că un comandant militar rus care lupta de partea Kievului, a cărui moarte fusese anunţată săptămâna trecută, este de fapt în viaţă şi că decesul său a fost pus în scenă…",
+      "publishedAt": "2026-01-01T16:45:41.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "acb60a03d6a1258a",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Cum vor circula trenurile românești în 2026 / Cât va dura călătoria cu trenul între diverse orașe din țară. București-Oradea, în 14 ore",
+      "url": "https://hotnews.ro/cum-vor-circula-trenurile-romanesti-in-2026-cat-va-dura-calatoria-cu-trenul-intre-diverse-orase-din-tara-bucuresti-oradea-in-14-ore-2140451",
+      "summary": "În 2026, un tren Intercity București-Cluj va parcurge distanța în aproximativ nouă ore, iar de la Iași la Timișoara călătoria va dura 16-17 ore. Noul Mers al Trenurilor a intrat în vigoare și a venit…",
+      "publishedAt": "2026-01-01T16:33:15.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "e3ec5a5554f0f7f5",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Femeia din Sibiu acuzată că și-a ucis mama pentru avere, cu ajutorul unei asistente medicale, contestă arestul. Când i se judecă cererea",
+      "url": "https://hotnews.ro/femeia-din-sibiu-acuzata-ca-si-a-ucis-mama-pentru-avere-cu-ajutorul-unei-asistente-medicale-contesta-arestul-cand-i-se-judeca-cererea-2142114",
+      "summary": "Curtea de Apel Alba Iulia va decide săptămâna viitoare dacă menţine sau nu decizia privind arestarea preventivă a femeii acuzate că, ajutată de o asistentă medicală, şi-a ucis mama pentru a moșteni averea. Femeia a…",
+      "publishedAt": "2026-01-01T16:17:31.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "5f5292fcb31dffed",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Plan de evitare a mult-temutului black-out în România. Stocarea dă examen critic în 2026 DOCUMENT",
+      "url": "https://hotnews.ro/plan-de-evitare-a-mult-temutului-black-out-in-romania-stocarea-da-examen-critic-in-2026-document-2142092",
+      "summary": "Industria încă incipientă, dar aflată în plină dezvoltare, a stocării de energie electrică în baterii din România se pregătește să dea un examen tehnic critic în fața operatorului de transport și sistem Transelectrica. Citește mai…",
+      "publishedAt": "2026-01-01T15:55:22.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "756fd962242f35d1",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "SuperLiga: Csikszereda și „Momentul sportiv al anului” în Ungaria",
+      "url": "https://hotnews.ro/superliga-csikszereda-si-momentul-sportiv-al-anului-in-ungaria-2142108",
+      "summary": "Promovarea celor de la Csikszereda în SuperLiga României a ajuns pe lista scurtă a celor mai importante performanțe sportive ale Ungariei în 2025, informează joi GSP.ro. Borna clubului din Miercurea Ciuc, cu identitate puternic maghiară,…",
+      "publishedAt": "2026-01-01T15:53:35.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "cee76287249db699",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Probleme pe pârtiile din Sinaia din cauza frigului. Utilaje şi toalete nefuncţionale, instalațiile au înghețat. La cât au coborât temperaturile",
+      "url": "https://hotnews.ro/probleme-pe-partiile-din-sinaia-din-cauza-frigului-utilaje-si-toalete-nefunctionale-instalatiile-au-inghetat-la-cat-au-coborat-temperaturile-2142096",
+      "summary": "Administratorii domeniului schiabil al staţiunii Sinaia se confruntă cu probleme, la început de an, din cauza temperaturilor foarte scăzute care s-au înregistrat la 2000 de metri altitudine, în Bucegi. Joi, în prima zi a anului,…",
+      "publishedAt": "2026-01-01T15:40:28.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "0d4db87be923fcd1",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Momentul în care izbucnește incendiul în barul din stațiunea elvețiană Crans-Montana",
+      "url": "https://hotnews.ro/video-momentul-in-care-izbucneste-incendiul-in-barul-din-statiunea-elvetiana-crans-montana-2142072",
+      "summary": "O înregistrare video surprinsă de martori arată momentul în care tavanul barului Le Constellation din stațiunea de schi Crans-Montana, sud-vestul Elveției, se aprinde. Imaginile, care au fost publicate pe rețelele de socializare, au fost preluate…",
+      "publishedAt": "2026-01-01T15:16:18.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "cd79ba7d44173b93",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Primul transfer al anului 2026 în SuperLiga",
+      "url": "https://hotnews.ro/primul-transfer-al-anului-2026-in-superliga-2142076",
+      "summary": "Teodor Lungu (30 de ani), fost campion al Moldovei cu Petrocub Hîncești, a fost prezentat la Unirea Slobozia, scrie DigiSport.ro. Mijlocașul care a luat titlul în 2024 în Republica Moldova a ajuns liber de contract…",
+      "publishedAt": "2026-01-01T15:10:15.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "78214a93e5370e00",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "LOTO: După tragerile speciale de Anul Nou, reportul la Joker depășește 9 milioane de euro. Când e următoarea extragere",
+      "url": "https://hotnews.ro/loto-dupa-tragerile-speciale-de-anul-nou-reportul-la-joker-depaseste-9-milioane-de-euro-cand-e-urmatoarea-extragere-2142074",
+      "summary": "Loteria Română a organizat miercuri tragerile speciale loto de Anul Nou, pentru fiecare din jocurile Loto 6/49, Joker și Loto 5/40 având loc două extrageri. Următoarele trageri loto sunt programate duminică, la Joker fiind în…",
+      "publishedAt": "2026-01-01T14:54:19.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "09fd6b55abe5d071",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Mesajul Papei Leon de Anul Nou: „Lumea nu se salvează ascuţind săbii”",
+      "url": "https://hotnews.ro/mesajul-papei-leon-de-anul-nou-lumea-nu-se-salveaza-ascutind-sabii-2142047",
+      "summary": "Papa Leon al XIV-lea a avertizat joi, 1 ianuarie, că lumea nu se salvează ascuțind săbii, ci prin iertare și înțelegere, în timpul primei Liturghii din noul an, transmite EFE, citată de Agerpres. Este prima…",
+      "publishedAt": "2026-01-01T14:42:03.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "5458f944ea4c9a58",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Rusia spune că va furniza SUA dovezi privind tentativa de atac ucrainean asupra unei reşedinţe a lui Putin",
+      "url": "https://hotnews.ro/rusia-spune-ca-va-furniza-sua-dovezi-privind-tentativa-de-atac-ucrainean-asupra-unei-resedinte-a-lui-putin-2142059",
+      "summary": "Rusia a afirmat joi că a extras şi decodat un fişier dintr-o dronă ucraineană doborâtă la începutul acestei săptămâni, despre care susţine că arată că aceasta viza o reşedinţă prezidenţială rusă şi că va preda…",
+      "publishedAt": "2026-01-01T14:36:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "a5dcdf97d31e8e6d",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Cele mai căutate cuvinte în 2025. „Suveranitate”, căutat de 100.000 de români pe Dexonline",
+      "url": "https://hotnews.ro/cele-mai-cautate-cuvinte-in-2025-suveranitate-cautat-de-100-000-de-romani-pe-dexonline-2142046",
+      "summary": "„Sinecură”, „suveranitate” și „suveranism” sunt cele mai căutate cuvinte de către români în 2025 pe Dexonline, potrivit unui bilanț publicat de administratorii site-ului. Pe primul loc în topul căutărilor se află cuvântul „sinecură”, căutat de…",
+      "publishedAt": "2026-01-01T14:34:05.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "53a731560e54ae95",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Peste 700 de persoane au avut nevoie de ambulanţă în București și Ilfov, în noaptea de Anul Nou. Numărul urgențelor, în creștere mare față de anul trecut",
+      "url": "https://hotnews.ro/peste-700-de-persoane-au-avut-nevoie-de-ambulanta-in-bucuresti-si-ilfov-in-noaptea-de-anul-nou-numarul-urgentelor-in-crestere-mare-fata-de-anul-trecut-2142026",
+      "summary": "Peste 700 de persoane au avut nevoie de ambulanţă, în noaptea de Anul Nou, iar dintre acestea, 571 persoane au prezentat urgenţe de cod roşu, ceea ce înseamnă cazuri foarte grave, şi de cod galben,…",
+      "publishedAt": "2026-01-01T14:17:29.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "f8d03f5f19b1bae3",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Noua linie feroviară de mare viteză din Regatul Unit va fi gata după 2033. Șefii proiectului HS2 vorbesc despre o „resetare fundamentală”",
+      "url": "https://hotnews.ro/noua-linie-feroviara-de-mare-viteza-din-regatul-unit-va-fi-gata-dupa-2033-sefii-proiectului-hs2-vorbesc-despre-o-resetare-fundamentala-2142048",
+      "summary": "Compania care construiește linia de mare viteză HS2 pe unde trenurile vor circula cu 360 km/h între Londra și Birmingham a admis că proiectul nu va fi gata până în 2033 din cauză că lucrurile…",
+      "publishedAt": "2026-01-01T14:11:36.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "52888733def2daf9",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Ce se știe până acum despre tragedia din Elveția. „Am încercat să sparg geamul pentru a ajuta oamenii să iasă”",
+      "url": "https://hotnews.ro/ce-se-stie-pana-acum-despre-tragedia-din-elvetia-am-incercat-sa-sparg-geamul-pentru-a-ajuta-oamenii-sa-iasa-2142019",
+      "summary": "„Aproximativ 40 de persoane” au murit și alte 115 au fost rănite, majoritatea grav, într-un incendiu care a izbucnit în barul Le Constellation, din stațiunea de schi Crans-Montana, din sud-vestul Elveției, în timpul petrecerii de…",
+      "publishedAt": "2026-01-01T14:05:19.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "4169ad872459de61",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Cel mai mare producător auto chinez a avut un an record de vânzări în afara Chinei. Care sunt planurile pentru 2026",
+      "url": "https://hotnews.ro/cel-mai-mare-producator-auto-chinez-a-avut-un-an-record-de-vanzari-in-afara-chinei-care-sunt-planurile-pentru-2026-2142031",
+      "summary": "BYD, cel mai mare producător auto chinez, a vândut anul trecut 4,6 milioane de vehicule, în creștere cu 7% față de anul trecut. Pentru prima oară compania a vândut peste un milion de mașini în…",
+      "publishedAt": "2026-01-01T13:56:43.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "cab7838245869c09",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "De ce crede Dan Negru că Antena a pierdut, din nou, lupta audiențelor de Revelion: „E al patrulea an  consecutiv. Echipa mea l-a câștigat acolo timp de 23 de ani”",
+      "url": "https://hotnews.ro/de-ce-crede-dan-negru-ca-antena-a-pierdut-din-nou-lupta-audientelor-de-revelion-e-al-patrulea-an-consecutiv-echipa-mea-l-a-castigat-acolo-timp-de-23-de-ani-2142020",
+      "summary": "Pro TV a fost televiziunea cu cele mai mari audiențe în noaptea de Revelion, în timp ce Antena 1 s-a clasat pe locul al doilea, potrivit Paginademedia.ro. Rezultatele au fost comentate public de prezentatorul Dan…",
+      "publishedAt": "2026-01-01T13:52:12.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.158Z"
+    },
+    {
+      "id": "a75e6ccde8f718ce",
+      "sourceId": "dw-romania",
+      "sourceName": "DW România",
+      "title": "Crans-Montana: Numeroşi morţi în urma unui incendiu într-o staţiune elveţiană de schi",
+      "url": "https://www.dw.com/ro/crans-montana-numero%C5%9Fi-mor%C5%A3i-%C3%AEn-urma-unui-incendiu-%C3%AEntr-o-sta%C5%A3iune-elve%C5%A3ian%C4%83-de-schi/a-75360245?maca=rum-rss-rom-all-1493-rdf",
+      "summary": "În staţiunea elveţiană de lux Crans-Montana o petrecere de anul nou s-a sfârşit într-un incendiu devastator. Se vorbeşte între timp de zeci de morţi. Elicoptere de salvare au realizat zboruri fără întrerupere.",
+      "publishedAt": "2026-01-01T12:50:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.568Z"
+    },
+    {
+      "id": "8f3772db88dc60f7",
+      "sourceId": "dw-romania",
+      "sourceName": "DW România",
+      "title": "Iată cum ne pot reuși planurile pentru noul an",
+      "url": "https://www.dw.com/ro/iat%C4%83-cum-ne-pot-reu%C8%99i-planurile-pentru-noul-an/a-75361591?maca=rum-rss-rom-all-1493-rdf",
+      "summary": "Să ne lăsăm de fumat, să facem sport, să mâncăm mai sănătos. La început de an nou, ne fixăm obiective ambițioase, iar apoi le abandonăm. Iată câteva sugestii pentru a transforma dorințele în pași reali înainte.",
+      "publishedAt": "2026-01-01T15:53:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.568Z"
+    },
+    {
+      "id": "d69a75326bf695d1",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Concertele sold-out ale anului 2026 în România",
+      "url": "https://www.mediafax.ro/cultura-media/concertele-sold-out-ale-anului-2026-in-romania-23665719",
+      "summary": "Anul 2026 se anunță unul dintre cei mai bogați pentru concerte internaționale în România: de la Metallica și Iron Maiden, la Eros Ramazzotti, Chris Isaak și ZAZ, marile scene din București și din țară vor fi ocupate aproape lunar de artiști de top.",
+      "publishedAt": "2026-01-01T18:25:38.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.066Z"
+    },
+    {
+      "id": "3683455a6ec0bde3",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Peste 41.000 de migranți au ajuns în Marea Britanie cu ambarcațiuni mici în 2025",
+      "url": "https://www.mediafax.ro/stirile-zilei/peste-41-000-de-migranti-au-ajuns-in-marea-britanie-cu-ambarcatiuni-mici-in-2025-23665714",
+      "summary": "Peste 41.000 de persoane au traversat Canalul Mânecii cu bărci mici și au ajuns în Marea Britanie în 2025, al doilea cel mai mare număr anual înregistrat vreodată, potrivit datelor publicate de Ministerul britanic de Interne, care a catalogat situația drept „rușinoasă”.",
+      "publishedAt": "2026-01-01T17:46:07.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.066Z"
+    },
+    {
+      "id": "00c3d292561b7fbc",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Un voluntar australian, ucis pe front în războiul din Ucraina. Bărbatul urma să se căsătorească",
+      "url": "https://www.mediafax.ro/externe/un-voluntar-australian-ucis-pe-front-in-razboiul-din-ucraina-barbatul-urma-sa-se-casatoreasca-23665706",
+      "summary": "Russell Allan Wilson, un voluntar australian care lupta în cadrul Forțelor Armate ale Ucrainei ar fi murit pe front, în decembrie 2025, în regiunea Donețk.",
+      "publishedAt": "2026-01-01T17:33:41.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.066Z"
+    },
+    {
+      "id": "22a38387338e05ec",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Astronomii găsesc indicii despre o „lume” ascunsă la marginea Sistemului Solar",
+      "url": "https://www.mediafax.ro/stiinta-sanatate/astronomii-gasesc-indicii-despre-o-lume-ascunsa-la-marginea-sistemului-solar-23665686",
+      "summary": "Astronomii descoperă o structură ascunsă în centura Kuiper, care contestă teoriile despre migrația lui Neptun și formarea Sistemului Solar.",
+      "publishedAt": "2026-01-01T17:27:28.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.066Z"
+    },
+    {
+      "id": "12ebfc7f609624b1",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Posturile MTV au fost deconectate în mai multe țări, printre care și România / Titlul profetic care a anunțat sfârșitul MTV încă de la început",
+      "url": "https://www.mediafax.ro/cultura-media/posturile-mtv-au-fost-deconectate-in-mai-multe-tari-printre-care-si-romania-titlul-profetic-care-a-anuntat-sfarsitul-mtv-inca-de-la-inceput-23665701",
+      "summary": "Mai multe posturi ale MTV au fost deconectate în mai multe țări, printre care și România. Paramount Global, deținătorul brandului, anunță că decizia a fost luată pe fondul unor ajustări imense de cheltuieli.",
+      "publishedAt": "2026-01-01T17:00:37.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.066Z"
+    },
+    {
+      "id": "29f6d2fbaaaf5e66",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Ucraina a înscenat moartea unui comandant rus și a încasat recompensa pusă de Kremlin",
+      "url": "https://www.mediafax.ro/externe/ucraina-a-inscenat-moartea-unui-comandant-rus-si-a-incasat-recompensa-pusa-de-kremlin-23665703",
+      "summary": "Serviciile secrete ucrainene au anunțat că Denis Kapustin, comandantul Corpului Voluntarilor Ruși, este în viață, deși fusese declarat mort într-un atac cu dronă. Moartea a fost o operațiune de dezinformare care a păcălit serviciile ruse și a adus Kievului 500.000 de dolari.",
+      "publishedAt": "2026-01-01T16:55:59.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.066Z"
+    },
+    {
+      "id": "24ae53605ac4646d",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Alexandru Dedu a anunțat că va candida la președinția Federației Române de Handbal",
+      "url": "https://www.mediafax.ro/sport/alexandru-dedu-a-anuntat-ca-va-candida-la-presedintia-federatiei-romane-de-handbal-23665682",
+      "summary": "Alexandru Dedu, actualul manager din cadrul secției de Handbal a SCM Politehnica Timișoara a anunțat că va candida din nou pentru funcția de președinte al Federației Române de Handbal.",
+      "publishedAt": "2026-01-01T16:34:35.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.066Z"
+    },
+    {
+      "id": "75921888a3a2e045",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Probleme pe domeniul schiabil Sinaia din cauza gerului extrem. Minus 25 de grade în Bucegi",
+      "url": "https://www.mediafax.ro/social/probleme-pe-domeniul-schiabil-sinaia-din-cauza-gerului-extrem-minus-25-de-grade-in-bucegi-23665690",
+      "summary": "Domeniul schiabil Sinaia se confruntă cu dificultăți majore la început de an, din cauza temperaturilor extrem de scăzute înregistrate la peste 2.000 de metri altitudine, în Munții Bucegi.",
+      "publishedAt": "2026-01-01T16:28:25.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.066Z"
+    },
+    {
+      "id": "b3ce03c9999f733d",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "SUA reduc drastic tarifele propuse pentru pastele italiene, după o reevaluare",
+      "url": "https://www.mediafax.ro/stirile-zilei/sua-reduc-drastic-tarifele-propuse-pentru-pastele-italiene-dupa-o-reevaluare-23665688",
+      "summary": "Statele Unite au redus semnificativ tarifele vamale propuse pentru mai mulți producători italieni de paste, după o reevaluare a activității acestora, a anunțat Ministerul de Externe al Italiei. Decizia vine după ce Washingtonul anunțase inițial taxe suplimentare de până la 92%.",
+      "publishedAt": "2026-01-01T16:18:19.000Z",
+      "fetchedAt": "2026-01-01T18:36:16.066Z"
+    },
+    {
+      "id": "b1fb121d5436c30d",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Iran. Mai multe persoane au fost ucise în ciocnirile dintre protestatari și forțele de ordine, din ultimele 24 de ore, marcând o escaladare gravă a celor mai ample proteste din ultimii ani, generate de înrăutățirea situației economice a țării.",
+      "url": "https://www.biziday.ro/343667-2/",
+      "summary": "Mai multe persoane au fost ucise în Iran, în ultimele 24  de ore, în timpul protestelor declanșate în urma rezultatelor economice care arată o inflație foarte ridicată, dar și în urma prăbușirii monedei naționale, rialul, în raport cu dolarul american. Demonstrațiile au început duminică la Teheran, unde comercianții dintr-un bazar au intrat în grevă. Anti […]",
+      "publishedAt": "2026-01-01T16:36:49.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.468Z"
+    },
+    {
+      "id": "8e4400b4716c8835",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Horoscopul anului 2026. Schimbări majore pentru zodii. Neti Sandu: „Începem o viață nouă”",
+      "url": "https://stirileprotv.ro/show-buzz/horoscop/horoscopul-anului-2026-schimbari-majore-pentru-zodii-neti-sandu-zincepem-o-viata-noua.html",
+      "summary": "Prima zi din an vine, ca de fiecare dată, cu speranțe, planuri și multe întrebări. Ce ne așteaptă în 2026? Va fi un an al schimbărilor, al oportunităților sau al încercărilor?",
+      "publishedAt": "2026-01-01T18:22:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "b8522ff9c7950ac2",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ce i-a nemulțumit pe străinii care au petrecut Revelionul în București. „Asta nu ne-a plăcut”",
+      "url": "https://stirileprotv.ro/stiri/actualitate/ce-nemultumiri-au-gasit-strainii-care-au-petrecut-revelionul-in-bucuresti-znu-ne-a-placut.html",
+      "summary": "Mulți străini din toată lumea au petrecut în București un Revelion românesc în aer liber sau în cluburi. Italieni, greci, columbieni, mexicani ori vietnamezi au ales România atrași de prețurile accesibile și de viața de noapte animată.",
+      "publishedAt": "2026-01-01T18:03:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "c75a9981ea5146a6",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "ProTV a fost prima alegere a publicului în noaptea de Anul Nou, la fel ca în tot anul 2025. Minutul de aur al Protevelionului",
+      "url": "https://stirileprotv.ro/stiri/actualitate/protv-a-fost-prima-alegere-a-publicului-in-noaptea-de-anul-nou-la-fel-ca-in-tot-anul-2025-minutul-de-aur-al-protevelionului.html",
+      "summary": "În noaptea de Revelion, ProTV a fost prima alegere a publicului. 6 milioane de români au urmărit cel puțin un minut din Protevelion. De altfel, în întreg anul 2025, ProTV și-a consolidat poziția de lider.",
+      "publishedAt": "2026-01-01T17:56:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "e23137605c27edcc",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Donald Trump, maestru de ceremonii la petrecerea de Revelion. Cât a scos la licitație pe o pictură cu Iisus Hristos",
+      "url": "https://stirileprotv.ro/stiri/actualitate/donald-trump-maestru-de-ceremonii-la-petrecerea-de-revelion-cat-a-scos-la-licitatie-pe-o-pictura-cu-iisus-hristos-pe-loc.html",
+      "summary": "Preşedintele Trump a fost maestru de ceremonii la petrecerea de Anul Nou pe care a dat-o la luxoasa lui reședință din Florida. A spus că are o singură dorință pentru 2026: să fie pace în lume.",
+      "publishedAt": "2026-01-01T17:51:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "510b821a58b1215c",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Trei bărbați din Constanța au deschis șampania în valurile mării, la 0 grade Celsius, de Anul Nou",
+      "url": "https://stirileprotv.ro/stiri/actualitate/trei-barbati-din-constanta-au-deschis-sampania-in-valurile-marii-la-0-grade-celsius-de-anul-nou.html",
+      "summary": "Anul Nou a început cu o baie în mare, în Constanța. Trei bărbați au vrut să sărbătorească diferit intrarea în 2026 și au deschis șampania în valuri.",
+      "publishedAt": "2026-01-01T17:50:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "12662174fa9fab40",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Primii copii născuți în 2026 în România. Sunt considerați speciali și norocoși",
+      "url": "https://stirileprotv.ro/stiri/actualitate/record-de-nasteri-in-prima-zi-din-2026-la-maternitatea-din-targu-mures-znu-mi-amintesc-sa-fi-fost-chiar-asa-de-multi-copii.html",
+      "summary": "În noaptea de Revelion, când aproape toată lumea e pusă pe distracție și voie bună, în maternități au venit pe lume primii bebeluși din 2026.",
+      "publishedAt": "2026-01-01T17:46:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "8196a3ace78bec08",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Româncă stabilită în Crans-Montana, despre tragedia cu cel putin 40 de morți: „Am prieteni care și-au pierdut ambele fetițe”",
+      "url": "https://stirileprotv.ro/stiri/actualitate/romanca-stabilita-in-crans-montana-despre-tragedia-cu-cel-putin-40-de-morti-zam-prieteni-care-si-au-pierdut-ambele-fetite.html",
+      "summary": "Autoritățile din Elveția sunt în plină anchetă și nu pot vorbi încă despre identitatea victimelor. În bar se aflau foarte mulți tineri.",
+      "publishedAt": "2026-01-01T17:45:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "fe04918607f796f5",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Românii nu au renunțat la petarde și artificii de Revelion, deși au fost interzise. Unii au ajuns cu răni la spital",
+      "url": "https://stirileprotv.ro/stiri/actualitate/romanii-nu-au-renuntat-la-petarde-si-artificii-de-revelion-desi-au-fost-interzise-unii-au-ajuns-cu-rani-la-spital.html",
+      "summary": "În noaptea de Revelion au fost persoane care nu au renunțat la petarde și artificii. Le-au manevrat greșit și au ajuns cu arsuri la camera de gardă.",
+      "publishedAt": "2026-01-01T17:44:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "e78fbaf5c8b37904",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cu cât au crescut impozitele pentru locuințe și mașini de la 1 ianuarie. În unele cazuri s-au triplat",
+      "url": "https://stirileprotv.ro/stiri/actualitate/cat-este-impozitul-in-2026-pentru-un-apartament-de-doua-camere-din-bucuresti-comparat-cu-unul-din-centrul-timisoarei.html",
+      "summary": "Prima zi din an aduce taxe majorate pentru populație și firme. Vom plăti impozite mai mari pentru locuințe și mașini, în unele cazuri dublu sau chiar triplu.",
+      "publishedAt": "2026-01-01T17:40:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "4cb7e891ad2c147b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cum au sărbătorit românii care au ales să petreacă Revelionul pe plajă, în destinații exotice",
+      "url": "https://stirileprotv.ro/stiri/actualitate/mai-multi-romani-au-sarbatorit-un-revelion-exotic-au-privit-artificiile-de-pe-plaja-sau-chiar-din-mare.html",
+      "summary": "Cu picioarele în nisip dansând printre palmieri sau pe ritmuri africane, așa au intrat în 2026 românii care au petrecut revelionul peste mări și țări.",
+      "publishedAt": "2026-01-01T17:27:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "3aaf8ad8a8b2b804",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cum arăta barul din Crans-Montana înainte de tragedia din noaptea de Revelion. „Constellation”, scena unei tragedii cumplite",
+      "url": "https://stirileprotv.ro/stiri/international/cum-arata-barul-din-crans-montana-inainte-de-tragedia-din-noaptea-de-revelion-zconstellation-scena-unei-tragedii-cumplite.html",
+      "summary": "Speriați și îngrijorați sunt și românii care locuiesc în zona stațiunii Crans-Montana ori au ajuns acolo în vacanță. Peste 2.200 de români au permise de ședere, dar numărul lor este mai mare, pentru că nu sunt incluși și cei cu dublă cetățenie.",
+      "publishedAt": "2026-01-01T17:17:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "ec33522c3f410b93",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "„Se călcau unii pe alții”. Mărturii cutremurătoare ale supraviețuitorilor tragediei din Elveția. Imaginile surprinse de ei",
+      "url": "https://stirileprotv.ro/stiri/international/zse-calcau-unii-pe-altii-marturii-cutremuratoare-ale-supravietuitorilor-tragediei-din-elvetia-imaginile-surprinse-de-ei.html",
+      "summary": "Un moment de bucurie cum este sărbătoarea anului nou s-a transformat într-o tragedie care a lovit „întreaga Elveție și comunitatea internațională”.",
+      "publishedAt": "2026-01-01T17:16:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "a25bc0dde4e53855",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Unul dintre primii copii adoptați după Revoluție a revenit în România. „Este prima oară când mă întorc”",
+      "url": "https://stirileprotv.ro/stiri/actualitate/a-doua-romanca-adoptata-in-strainatate-imediat-dupa-revolutie-a-revenit-de-revelion-zeste-pentru-prima-oara-cand-ma-intorc.html",
+      "summary": "Pârtiile s-au golit miercuri seară doar ca să se umple restaurantele și cluburile. La munte turiștii au petrecut Revelionul cu mâncare bună, concerte și dans.",
+      "publishedAt": "2026-01-01T17:13:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "46d8b821de00161d",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Noul an a fost întâmpinat în stradă, în toată țara. Jocul de lumini a ținut loc artificiilor în unele orașe",
+      "url": "https://stirileprotv.ro/stiri/actualitate/noul-an-a-fost-intampinat-in-strada-in-toata-tara-jocul-de-lumini-a-tinut-loc-artificiilor-pentru-linistea-animalelor.html",
+      "summary": "Noul an a fost primit cu bucurie și multă speranță în toată țara. Oamenii au cântat și mai ales au dansat să se mai încălzească, pentru că a fost o noapte geroasă.",
+      "publishedAt": "2026-01-01T17:07:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "759d3d50addb0bf2",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cum au petrecut bucureștenii de Revelion. „Nu uitați, nu puteți să adăugați vieții zile”",
+      "url": "https://stirileprotv.ro/stiri/actualitate/cum-au-petrecut-bucurestenii-care-nu-au-plecat-de-revelion-znu-uitati-nu-puteti-sa-adaugati-vietii-zile.html",
+      "summary": "În București, mii de oameni au ieșit în stradă, în piețe și în Centrul Vechi ca să întâmpine noul an. A fost muzică, emoție și multă înghesuială, dar și multe urări spuse din suflet.",
+      "publishedAt": "2026-01-01T17:04:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "294eebe7696b778a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ce au descoperit polițiștii din Neamț după ce un tânăr din Ucraina a lovit cu mașina un copil de 8 ani, care traversa ilegal",
+      "url": "https://stirileprotv.ro/stiri/actualitate/ce-au-descoperit-politistii-din-neamt-dupa-ce-un-tanar-din-ucraina-a-lovit-cu-masina-un-copil-de-8-ani-care-traversa-ilegal.html",
+      "summary": "Un tânăr ucrainean, care conducea un autoturism pe DN15, în localitatea Vânători, a accidentat, joi, un minor în vârstă de 8 ani, în timp ce traversa strada prin loc fără marcaj pietonal. Acesta a prezentat un permis de conducere fals.",
+      "publishedAt": "2026-01-01T15:55:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "d7d8c4669d91d5a6",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Spionajul militar ucrainean a umilit Moscova. Inamicul personal al lui Putin a „înviat”, iar Ucraina a încasat recompensa",
+      "url": "https://stirileprotv.ro/stiri/international/rusul-pacalit-de-zvulpe-inamicul-personal-al-lui-putin-a-zinviat-iar-ucraina-a-incasat-recompensa-oferita-de-kremlin.html",
+      "summary": "Serviciile speciale ruse au fost păcălite de Serviciul de spionaj al Ucrainei (GUR) și a încasat chiar și recompensa Moscovei pe o asasinare înscenată.",
+      "publishedAt": "2026-01-01T15:27:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "1dfe4f76522a4851",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Scumpiri din prima zi a anului: Taxe și impozite mai mari, accize majorate. Ce se schimbă pentru firme",
+      "url": "https://stirileprotv.ro/stiri/actualitate/cum-se-schimba-fiscalitatea-in-2026-taxe-mai-mari-conturi-obligatorii-pentru-firme-si-impact-major-pentru-populatie.html",
+      "summary": "România a intrat în 2026 cu schimbări fiscale profunde care vor afecta atât consumatorii, cât și companiile, totul începând cu cel de-al doilea pachet de reforme fiscal-bugetare al Guvernului Ilie Bolojan.",
+      "publishedAt": "2026-01-01T15:17:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "f551e130f2075e22",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ce au căutat românii pe Dexonline în 2025. Explicația cuvântului din fruntea clasamentului este pe placul tuturor",
+      "url": "https://stirileprotv.ro/stiri/actualitate/ce-au-cautat-romanii-pe-dexonline-in-2025-explicatia-cuvantului-din-fruntea-clasamentului-este-pe-placul-tuturor.html",
+      "summary": "Termenii „sinecură”, „suveranitate” și „suveranism” au fost cei mai căutați de români pe Dexonline în 2025, arată bilanțul publicat de administratorii platformei.",
+      "publishedAt": "2026-01-01T15:13:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "ffa05cb96aed48d7",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Proteste violente în Iran, față de scumpiri. Trei persoane au murit în ciocnirile cu forțele de ordine",
+      "url": "https://stirileprotv.ro/stiri/international/proteste-violente-in-iran-fata-de-scumpiri-trei-persoane-au-murit-in-ciocnirile-cu-fortele-de-ordine.html",
+      "summary": "Trei persoane şi-au pierdut viaţa joi în Iran în ciocniri între manifestanţi şi forţele de ordine, primele victime de la începutul unei mobilizări împotriva scumpirii vieţii, transmite France Presse.",
+      "publishedAt": "2026-01-01T15:02:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "58ca141cacc989e6",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Urmările virusului Covid-19. Studiile arată modificări cerebrale",
+      "url": "https://stirileprotv.ro/stiri/sanatate/urmarile-virusului-covid-19-studiile-arata-modificari-cerebrale.html",
+      "summary": "Covid-19 este cunoscută mai ales ca o afecţiune respiratorie, dar datele acumulate sugerează că poate avea efecte care se văd şi în afara plămânilor.",
+      "publishedAt": "2026-01-01T14:53:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "eb2c9fad841d237e",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "VIDEO. Momentul tragediei de Revelion din Elveția. Martorii au filmat cum a pornit incendiul în care au murit 40 de oameni",
+      "url": "https://stirileprotv.ro/stiri/international/momentul-in-care-a-izbucnit-incendiul-in-care-au-murit-40-de-oameni-de-revelion-intr-o-statiune-din-elvetia-video.html",
+      "summary": "Au apărut imagini din primele momente ale izbucnirii incendiului care a devastat un bar dintr-o stațiune de schi din Elveția în timpul unei petreceri de Revelion, provocând moartea a zeci de persoane.",
+      "publishedAt": "2026-01-01T14:25:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "d80de2267c297f84",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Tragedia din Elveția. Pompierii plângeau când au ajuns la barul din Crans-Montana, unde au ars de vii zeci de oameni",
+      "url": "https://stirileprotv.ro/stiri/international/tragedia-din-elvetia-pompierii-plangeau-cand-au-ajuns-la-barul-din-crans-montana-unde-au-ars-de-vii-zeci-de-oameni.html",
+      "summary": "Un tânăr din Geneva care a fost martor la tragedia din stațiunea elvețiană de schi Crans-Montana a povestit ceea ce a văzut.",
+      "publishedAt": "2026-01-01T14:31:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "ad819b428b7d5c70",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "De ce n-ar trebui să consumăm căpșuni când nu este sezonul lor",
+      "url": "https://stirileprotv.ro/divers/de-ce-n-ar-trebui-sa-consumam-capsuni-cand-nu-este-sezonul-lor.html",
+      "summary": "Nu de puține ori ni s-a întâmplat să vedem căpșuni mari, frumoase, pe rafturile magazinelor, dar în momentul în care le gustăm să descoperim că fie nu au niciun gust, fie au o aromă foarte slabă.",
+      "publishedAt": "2026-01-01T14:30:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "800c4cd186956d81",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Zohran Mamdani, primul primar al New York-ului care a jurat pe Coran. A fost învestit într-o stație de metrou abandonată",
+      "url": "https://stirileprotv.ro/stiri/actualitate/zohran-mamdani-primul-primar-care-a-jurat-pe-coran-a-fost-investit-intr-o-statie-de-metrou-abandonata-din-new-york.html",
+      "summary": "Zohram Mamdani a devenit oficial primar al orașului New York. Socialistul a fost primul edil care a jurat pe Coran.",
+      "publishedAt": "2026-01-01T14:27:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "1da259c5c085dbc1",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Papa Leon, mesaj la început de 2026: Lumea se salvează prin iertare şi înţelegere, nu ascuțind săbii",
+      "url": "https://stirileprotv.ro/stiri/international/mesajul-papei-leon-al-xiv-lea-de-revelion-zlumea-nu-se-salveaza-trecerea-dintre-ani-concide-cu-ziua-mondiala-a-pacii.html",
+      "summary": "Papa Leon al XIV-lea a avertizat joi că lumea nu se salvează ascuţind săbii, ci prin iertare şi înţelegere, în timpul primei Liturghii din noul an, care coincide cu cea de-a 59-a Zi Mondială a Păcii, transmite EFE.",
+      "publishedAt": "2026-01-01T14:26:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "4cd4d8f566e6c38a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Incendiu de proporții în Amsterdam, de Revelion. O biserică istorică a fost mistuită de flăcări",
+      "url": "https://stirileprotv.ro/stiri/international/incendiu-de-proportii-in-amsterdam-de-revelion-o-biserica-istorica-a-fost-mistuita-de-flacari.html",
+      "summary": "Un incendiu de proporţii a distrus, joi, o biserică din Amsterdam datând din secolul al XIX-lea, în timp ce Olanda a trecut printr-o noapte de Revelion agitată, cu două victime ale focurilor de artificii şi violenţe fără precedent împotriva poliţiei.",
+      "publishedAt": "2026-01-01T13:57:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "2ca0a11d4a9fad6a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Posibila cauză a tragediei din Elveția, în urma căreia au murit cel puțin 40 de oameni și 100 au fost grav răniți de Revelion",
+      "url": "https://stirileprotv.ro/stiri/international/posibila-cauza-a-tragediei-din-elvetia-in-urma-careia-au-murit-cel-putin-40-de-oameni-si-100-au-fost-grav-raniti-de-revelion.html",
+      "summary": "Comandantul Poliţiei Cantonale din Valais, Frederic Gisler, a confirmat joi, că \"zeci de persoane au murit\" în incendiul care a izbucnit în primele ore ale noului an într-un bar din populara staţiune de schi elveţiană Crans-Montana.",
+      "publishedAt": "2026-01-01T13:50:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "970a3128c2168113",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Rusia susține că a găsit noi dovezi că Ucraina a încercat să atace reședința lui Putin și i le va trimite lui Trump",
+      "url": "https://stirileprotv.ro/stiri/international/dovezi-suplimentare-gasite-de-rusia-despre-presupusul-atac-asupra-resedintei-lui-putin-datele-decodate-ajung-in-sua.html",
+      "summary": "Rusia susține că a decodat datele unei drone ucrainene doborâte și acuză Kievul că ar fi vizat o reședință prezidențială folosită de Vladimir Putin.",
+      "publishedAt": "2026-01-01T13:47:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "bb713569ead28493",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Șase milioane de români au dat check-in la PROTEVELION 2026. Pavel Bartoș: „Vă mulțumim”",
+      "url": "https://stirileprotv.ro/show-buzz/entertainment/sase-milioane-de-romani-au-dat-check-in-la-protevelion-2026-pavel-bartos-zva-multumim.html",
+      "summary": "Românii au ales să întâmpine Anul Nou alături de PRO TV, bucurându-se de spectacolul de la PROTEVELION 2026.",
+      "publishedAt": "2026-01-01T13:13:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "8ed40df121aa25ee",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Alertă de urs la Sinaia. A fost văzut aproape de Castelul Peleș. Avertismentul transmis turiștilor",
+      "url": "https://stirileprotv.ro/stiri/actualitate/alerta-de-urs-la-sinaia-a-fost-vazut-aproape-de-castelul-peles-avertismentul-transmis-turistilor.html",
+      "summary": "O alertă privind prezența unui urs a fost emisă, joi după-amiază, în stațiunea montană Sinaia, după ce un animal a fost văzut în apropiere de Castelul Peleș.",
+      "publishedAt": "2026-01-01T13:07:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "6104caa6b25db63a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Piperchi târgâsiti – rețeta tradițională balcanică. Cum se face acest preparat",
+      "url": "https://stirileprotv.ro/divers/piperki-targasiti-reteta-traditionala-balcanica-cum-se-face-acest-preparat.html",
+      "summary": "„Piperchi târgâsiti” este un fel de mâncare simplu și sățios. Rețeta a fost transmisă din generație în generație în comunitățile aromâne.",
+      "publishedAt": "2026-01-01T12:52:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "f8bc824ff5897472",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Trump l-a atacat dur de Revelion pe George Clooney pentru că a obținut cetățenia franceză. Ce a putut să spună despre actor",
+      "url": "https://stirileprotv.ro/show-buzz/entertainment/trump-l-a-atacat-dur-de-revelion-pe-george-clooney-pentru-ca-a-obtinut-cetatenia-franceza-ce-a-putut-sa-spuna-despre-actor.html",
+      "summary": "Donald Trump l-a atacat în noaptea de Revelion pe actorul George Clooney pentru că a obţinut cetăţenia franceză şi chiar a profitat de ocazie pentru a afirma că Franţa suferă de o \"problemă gravă de delincvenţă\" din cauza imigraţiei.",
+      "publishedAt": "2026-01-01T12:51:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "818fcd86015445c0",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Se fac demersuri pentru a afla dacă au fost români implicați în explozia de la Crans Montana, Elveția",
+      "url": "https://stirileprotv.ro/stiri/international/se-fac-demersuri-pentru-a-afla-daca-au-fost-romani-implicati-in-explozia-de-la-crans-montana-elvetia.html",
+      "summary": "Ambasadorul Italiei în Elveţia, Gian Lorenzo Cornado, a declarat că vor fi nevoie de săptămâni întregi pentru a se identifica victimele incendiului din Crans-Montana.",
+      "publishedAt": "2026-01-01T12:58:00.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.913Z"
+    },
+    {
+      "id": "af5be816d28bc597",
+      "sourceId": "europa-libera",
+      "sourceName": "Europa Liberă",
+      "title": "Ce spune Shirin Ebadi, laureată a Premiului Nobel pentru Pace, despre protestele de la Teheran: Iranienii nu mai au nimic de pierdut",
+      "url": "https://romania.europalibera.org/a/nobel-shirin-ebadi-iran-protests-interview/33637918.html",
+      "summary": "Shirin Ebadi, distinsă cu Premiul Nobel pentru Pace în 2003 pentru eforturile sale de a instaura democrația și de a proteja drepturile omului în Iran, a vorbit telefonic pe 1 ianuarie cu Radio Farda de la RFE/RL despre motivele care îi determină pe compatrioții ei să se confrunte cu autoritățile",
+      "publishedAt": "2026-01-01T15:43:10.000Z",
+      "fetchedAt": "2026-01-01T18:36:15.739Z"
     }
   ],
-  "lastUpdated": "2026-01-01T12:53:00.981Z"
+  "lastUpdated": "2026-01-01T18:36:24.032Z"
 }
