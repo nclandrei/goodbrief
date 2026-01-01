@@ -43,11 +43,8 @@ const welcomeEmailHtml = `
     </div>
     <div style="text-align: center; padding: 24px 0 32px;">
       <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 0 0 24px;">
-      <p style="font-size: 14px; color: #6b7280; margin: 0 0 8px;">
-        Good Brief · <a href="https://goodbrief.ro" style="color: #6b7280; text-decoration: underline;">goodbrief.ro</a>
-      </p>
       <p style="font-size: 14px; color: #6b7280; margin: 0;">
-        <a href="{{{RESEND_UNSUBSCRIBE_URL}}}" style="color: #6b7280; text-decoration: underline;">Dezabonare</a>
+        Good Brief · <a href="https://goodbrief.ro" style="color: #6b7280; text-decoration: underline;">goodbrief.ro</a>
       </p>
     </div>
   </div>
