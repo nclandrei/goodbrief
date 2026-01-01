@@ -310,15 +310,15 @@ async function handleSend(html: string, weekId: string, confirm: boolean): Promi
   }
 
   const apiKey = process.env.RESEND_API_KEY;
-  const audienceId = process.env.RESEND_AUDIENCE_ID;
+  const segmentId = process.env.RESEND_SEGMENT_ID || process.env.RESEND_AUDIENCE_ID;
 
   if (!apiKey) {
     console.error("Error: RESEND_API_KEY environment variable is required");
     process.exit(1);
   }
 
-  if (!audienceId) {
-    console.error("Error: RESEND_AUDIENCE_ID environment variable is required");
+  if (!segmentId) {
+    console.error("Error: RESEND_SEGMENT_ID environment variable is required");
     process.exit(1);
   }
 
@@ -327,7 +327,7 @@ async function handleSend(html: string, weekId: string, confirm: boolean): Promi
   console.log("Creating broadcast...");
 
   const { data: broadcast, error: broadcastError } = await resend.broadcasts.create({
-    audienceId,
+    segmentId,
     from: "Good Brief <buna@goodbrief.ro>",
     replyTo: "contact@goodbrief.ro",
     subject: `Good Brief ${weekId} – Vești bune din România`,
