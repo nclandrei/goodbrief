@@ -9700,7 +9700,557 @@
       "summary": "Președintele Ucrainei, Volodimir Zelenski, a anunțat vineri, 2 ianuarie, că l-a ales pe șeful Serviciilor de Informații Militare, Kirilo Budanov, ca șef al Administrației Prezidențiale. Generalul a acceptat oferta președintelui.",
       "publishedAt": "2026-01-02T13:19:36.000Z",
       "fetchedAt": "2026-01-02T18:35:58.334Z"
+    },
+    {
+      "id": "4efc1e80f3fb8cb9",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Boc postează un videoclip cu el curățând zăpada din faţa Primăriei Cluj-Napoca: „Haideţi să ne curăţăm trotuarele!”",
+      "url": "https://hotnews.ro/video-emil-boc-posteaza-un-videoclip-cu-el-curatand-zapada-din-fata-primariei-cluj-napoca-haideti-sa-ne-curatam-trotuarele-2142773",
+      "summary": "Primarul din Cluj-Napoca, Emil Boc, a postat vineri seară pe Facebook un videoclip în care apare în timp ce curăţă de zăpadă, cu o lopată, trotuarul din faţa clădirii instituţiei, îndemnându-i pe localnici să facă…",
+      "publishedAt": "2026-01-02T22:11:23.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.195Z"
+    },
+    {
+      "id": "1eafc6a183ef1307",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Un adolescent român este în stare critică, în Italia, după explozia unei petarde în noaptea de Revelion",
+      "url": "https://hotnews.ro/un-adolescent-roman-este-in-stare-critica-in-italia-dupa-explozia-unei-petarde-in-noaptea-de-revelion-2142744",
+      "summary": "Un adolescent român în vârstă de 17 ani se află în stare critică la spital în Italia, după ce a fost grav rănit de explozia unei petarde în noaptea de Revelion, informează agenţia italiană ANSA.…",
+      "publishedAt": "2026-01-02T21:57:00.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.195Z"
+    },
+    {
+      "id": "c1d4dc4162c4496b",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Ucrainenii îl privesc ca pe un erou, ruşii îl urăsc. Cine este Kirilo Budanov",
+      "url": "https://hotnews.ro/ucrainenii-il-privesc-ca-pe-un-erou-rusii-il-urasc-cine-este-kirilo-budanov-2142714",
+      "summary": "Preşedintele ucrainean Volodimir Zelenski a anunţat vineri că l-a ales pe generalul Kirilo Budanov, şeful serviciului de informaţii al armatei (GUR), pentru a-l înlocui pe Andrii Iermak, şeful cancelariei prezidenţiale, care a demisionat la sfârşitul…",
+      "publishedAt": "2026-01-02T21:44:26.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.195Z"
+    },
+    {
+      "id": "03a5d978aa57af24",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Deputat USR, atac la Guvernul Bolojan: „Nu i-a păsat nici de firme, nici de oameni”",
+      "url": "https://hotnews.ro/deputat-usr-atac-la-guvernul-bolojan-nu-i-a-pasat-nici-de-firme-nici-de-oameni-2142749",
+      "summary": "Deputatul Claudiu Năsui, aflat la al treilea mandat în Parlament din partea USR, critică dur Guvernul Bolojan, din care face parte și partidul său. Năsui susține că România „a pierdut încă o oportunitate de reformă”. …",
+      "publishedAt": "2026-01-02T21:19:34.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.195Z"
+    },
+    {
+      "id": "9a8942b40a48bdf9",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Ucraina ordonă evacuarea a mii de civili din regiunile Zaporojie și Dnipropetrovsk, unde rușii au înaintat",
+      "url": "https://hotnews.ro/ucraina-ordona-evacuarea-a-mii-de-civili-din-regiunile-zaporojie-si-dnipropetrovsk-unde-rusii-au-inaintat-2142762",
+      "summary": "Autoritățile ucrainene au ordonat vineri evacuarea a peste 3.000 de copii împreună cu părinții lor din aproximativ 40 de localități din regiunile Zaporojie și Dnipropetrovsk, unde forțele ruse au înregistrat progrese în ultimele luni. Potrivit…",
+      "publishedAt": "2026-01-02T21:04:00.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.195Z"
+    },
+    {
+      "id": "7906769e5e3b6959",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Volodimir Zelenski îl înlocuiește și pe ministrul apărării. Cine este Mihailo Fedorov, succesorul lui Denis Șmihal",
+      "url": "https://hotnews.ro/zelenski-il-inlocuieste-si-pe-ministrul-apararii-cine-ii-va-lua-locul-lui-denis-smihal-2142721",
+      "summary": "Președintele ucrainean Volodimir Zelenski a anunțat vineri că intenționează să îl înlocuiască pe actualul ministru al apărării, Denis Șmihal, și să îl numească în această funcție pe Mihailo Fedorov, în prezent prim-vicepremier și ministru al…",
+      "publishedAt": "2026-01-02T20:39:03.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.195Z"
+    },
+    {
+      "id": "b6a654e99f9d48d0",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Cinci lucruri de știut despre protestele din Iran, ajunse în ziua a șasea. Cel puțin 7 persoane au fost ucise",
+      "url": "https://hotnews.ro/cinci-lucruri-de-stiut-despre-protestele-din-iran-ajunse-in-ziua-a-sasea-cel-putin-7-persoane-au-fost-ucise-2142703",
+      "summary": "Protestele față de creșterea vertiginoasă a costului vieții din Iran au intrat în a șasea zi, după ce moneda națională, rialul, a scăzut la un minim istoric față de dolarul american, la sfârșitul lunii decembrie.…",
+      "publishedAt": "2026-01-02T20:30:29.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.195Z"
+    },
+    {
+      "id": "df54d20c4d564c12",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "SuperLiga: CFR Cluj pregătește două transferuri imediate. „Suntem în discuții avansate”",
+      "url": "https://hotnews.ro/superliga-cfr-cluj-pregateste-doua-transferuri-imediate-suntem-in-discutii-avansate-2142699",
+      "summary": "CFR Cluj este foarte aproape să oficializeze primele două transferuri din acest mercato de iarnă. Iuliu Mureșan, președintele ardelenilor, a anunțat că formația din Gruia se află în discuții avansate cu doi fotbaliști de profil…",
+      "publishedAt": "2026-01-02T20:12:11.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.195Z"
+    },
+    {
+      "id": "d5cbc906ebc6c09c",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Atac terorist de Revelion, dejucat de FBI. Unde urma să aibă loc / Tânărul care îl plănuia a vorbit cu doi agenți FBI care erau sub acoperire",
+      "url": "https://hotnews.ro/atac-terorist-de-revelion-dejucat-de-fbi-unde-urma-sa-aiba-loc-tanarul-care-il-planuia-a-vorbit-cu-doi-agenti-fbi-care-erau-sub-acoperire-2142692",
+      "summary": "Autoritățile federale americane au dejucat un posibil atentat terorist planificat pentru noaptea de Revelion într-o localitate din statul Carolina de Nord, a anunțat vineri directorul FBI, Kash Patel. Suspectul, un tânăr american de 18 ani,…",
+      "publishedAt": "2026-01-02T20:00:19.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.195Z"
+    },
+    {
+      "id": "9a5e719cb6d3bd8d",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Angelina Jolie, prezentă la punctul de trecere Rafah de lângă Fâşia Gaza. Care a fost scopul vizitei actriței, ex-emisar ONU",
+      "url": "https://hotnews.ro/video-angelina-jolie-prezenta-la-punctul-de-trecere-rafah-de-langa-fasia-gaza-care-a-fost-scopul-vizitei-actritei-ex-emisar-onu-2142683",
+      "summary": "Actriţa americană Angelina Jolie a vizitat vineri partea egipteană a punctului de trecere Rafah, care leagă Fâşia Gaza de Egipt, pentru a-şi arăta solidaritatea cu poporul palestinian şi pentru a urmări la faţa locului activităţile…",
+      "publishedAt": "2026-01-02T19:42:24.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.195Z"
+    },
+    {
+      "id": "0689c7a1350512ac",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Primele declarații ale proprietarului localului din Crans-Montana mistuit de flăcări în noaptea de Revelion",
+      "url": "https://hotnews.ro/primele-declaratii-ale-proprietarului-localului-din-crans-montana-mistuit-de-flacari-in-noaptea-de-revelion-2142673",
+      "summary": "Jacques Moretti, patronul barului „Le Constellation” din Eleveția, a spus, într-o primă declarație dată după incendiul în care au murit cel puțin 40 de oameni, iar alți 119 au fost răniți că localul a fost…",
+      "publishedAt": "2026-01-02T19:20:40.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.195Z"
+    },
+    {
+      "id": "9841e8c1f0c284fd",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Trump insistă că are o sănătate perfectă și rezultate cognitive excelente. „Am răspuns corect la toate întrebările”",
+      "url": "https://hotnews.ro/trump-insista-ca-are-o-sanatate-perfecta-si-rezultate-cognitive-excelente-am-raspuns-corect-la-toate-intrebarile-2142664",
+      "summary": "Președintele Statelor Unite, Donald Trump, a reafirmat vineri că se află într-o stare de sănătate perfectă, susținând că a obținut din nou punctaj maxim la un examen cognitiv, în contextul în care starea sa de…",
+      "publishedAt": "2026-01-02T19:02:06.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.195Z"
+    },
+    {
+      "id": "3e3f65e9f93b476f",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Rusia a atacat mai multe clădiri rezidențiale și magazine din orașul ucrainean Harkov / 25 de persoane rănite",
+      "url": "https://hotnews.ro/video-rusia-a-atacat-mai-multe-cladiri-rezidentiale-si-magazine-din-orasul-ucrainean-harkov-25-de-persoane-ranite-2142660",
+      "summary": "Mai multe rachete rusești au lovit vineri un bloc cu mai multe etaje din Harkov, în nord-estul Ucrainei. În urma atacului, clădirea a fost distrusă complet și cel puțin 25 de persoane au fost rănite,…",
+      "publishedAt": "2026-01-02T18:45:41.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.195Z"
+    },
+    {
+      "id": "0cfc3d86a5a9e2d7",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "George Clooney răspunde criticilor lui Donald Trump după obținerea cetățeniei franceze",
+      "url": "https://www.mediafax.ro/externe/george-clooney-raspunde-criticilor-lui-donald-trump-dupa-obtinerea-cetateniei-franceze-23666072",
+      "summary": "Actorul George Clooney a obținut cetățenia franceză la sfârșitul lunii decembrie, provocând o reacție caustică din partea președintelui american. Vedeta de la Hollywood a răspuns însușindu-și sloganul lui Trump, cu referire la viitoarele alegeri de la jumătatea mandatului.",
+      "publishedAt": "2026-01-03T01:48:31.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.431Z"
+    },
+    {
+      "id": "c3f1ccf9a626e471",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Garda de Coastă a SUA caută supraviețuitori de pe ambarcațiuni atacate de armata americană",
+      "url": "https://www.mediafax.ro/externe/garda-de-coasta-a-sua-cauta-supravietuitori-de-pe-ambarcatiuni-atacate-de-armata-americana-23666070",
+      "summary": "Garda de Coastă a SUA a declarat vineri că încă caută în estul Oceanului Pacific persoane care au sărit de pe presupuse ambarcațiuni de contrabandă cu droguri când armata americană a atacat ambarcațiunile cu câteva zile mai devreme, diminuând probabilitatea ca cineva să fi supraviețuit.",
+      "publishedAt": "2026-01-03T00:56:31.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.431Z"
+    },
+    {
+      "id": "0ac21c38b6233940",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Rusia a cerut pe cale diplomatică SUA să înceteze urmărirea unui petrolier",
+      "url": "https://www.mediafax.ro/externe/rusia-a-cerut-pe-cale-diplomatica-sua-sa-inceteze-urmarirea-unui-petrolier-23666068",
+      "summary": "Rusia a depus o cerere diplomatică oficială prin care Statele Unite ar trebui să înceteze urmărirea unui petrolier care se îndrepta inițial spre Venezuela și care a evitat interceptarea de către SUA timp de aproape două săptămâni, au declarat pentru CNN surse familiarizate cu situația.",
+      "publishedAt": "2026-01-02T23:52:30.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.431Z"
+    },
+    {
+      "id": "2173af3e49cd6ea3",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Argentina relaxează legislația anti-evaziune",
+      "url": "https://www.mediafax.ro/externe/argentina-relaxeaza-legislatia-anti-evaziune-23666066",
+      "summary": "Președintele Argentinei Javier Milei a promulgat vineri o lege numită „inocență fiscală”, care își propune să descurajeze oamenii să depoziteze dolarii acasă sau să îi transfere în conturi offshore, iertând evaziunea fiscală până la un anumit grad.",
+      "publishedAt": "2026-01-02T23:17:21.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.431Z"
+    },
+    {
+      "id": "fd768dc36123b06e",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Un bărbat din Târgu Mureș a murit încercând să se încălzească într-o boxă",
+      "url": "https://www.mediafax.ro/social/un-barbat-din-targu-mures-a-murit-incercand-sa-se-incalzeasca-intr-o-boxa-23666063",
+      "summary": "Un bărbat din Târgu Mureș a murit încercând să se încălzească la un foc pe care l-a aprins cu mai multe materiale textile.",
+      "publishedAt": "2026-01-02T22:10:15.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.431Z"
+    },
+    {
+      "id": "48fc99509e4eb444",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Se anunță un weekend cu ninsori la munte",
+      "url": "https://www.mediafax.ro/meteo/se-anunta-un-weekend-cu-ninsori-la-munte-23666055",
+      "summary": "Meteorologii anunță că în zilele următoare vor cădea ninsori abundente, în special în zonele de munte ale țării.",
+      "publishedAt": "2026-01-02T21:51:47.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.431Z"
+    },
+    {
+      "id": "625682c1fb743552",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Claudiu Năsui, USR: Adevărul e că guvernului Bolojan nu i-a păsat nici de firme nici de oameni",
+      "url": "https://www.mediafax.ro/politic/claudiu-nasui-usr-adevarul-e-ca-guvernului-bolojan-nu-i-a-pasat-nici-de-firme-nici-de-oameni-23666056",
+      "summary": "Deputatul USR și fost ministru al Economiei, Claudiu Năsui, a publicat pe Facebook un mesaj critic la adresa guvernului condus de Ilie Bolojan, în care își exprimă opinia potrivit căreia politicile fiscale recente au afectat grav mediul de afaceri și populația.",
+      "publishedAt": "2026-01-02T21:00:27.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.431Z"
+    },
+    {
+      "id": "bb0f541a2190c9f7",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Horoscop 3 ianuarie 2026: Leii vor atenție și apreciere, Fecioarele analizează prea mult, iar Vărsătorii sunt spontani",
+      "url": "https://www.mediafax.ro/horoscop/horoscop-3-ianuarie-2026-leii-vor-atentie-si-apreciere-fecioarele-analizeaza-prea-mult-iar-varsatorii-sunt-spontani-23666048",
+      "summary": "Taurii poartă discuții mature și fac planuri pe termen lung, Racii trebuie să evite să fie impulsivi, iar Balanțele își echilibrează bugetul. Iată ce rezervă astrele pentru ziua de sâmbătă!",
+      "publishedAt": "2026-01-02T20:58:15.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.431Z"
+    },
+    {
+      "id": "5690231c74e1d717",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Zelenski îl propune pe Mykhailo Fedorov pentru funcția de ministru al Apărării",
+      "url": "https://www.mediafax.ro/stirile-zilei/zelenski-il-propune-pe-mykhailo-fedorov-pentru-functia-de-ministru-al-apararii-23666054",
+      "summary": "Președintele Ucrainei, Volodimir Zelenski, a anunțat că îl propune pe vicepremierul Mykhailo Fedorov, ministru al transformării digitale, pentru funcția de ministru al Apărării, în cadrul unei ample remanieri politice la Kiev.",
+      "publishedAt": "2026-01-02T20:57:21.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.431Z"
+    },
+    {
+      "id": "1421cecdf1462cea",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Spectacol Disney World întrerupt după ce un angajat a fost lovit de un decor de 180 de kilograme",
+      "url": "https://www.mediafax.ro/externe/spectacol-disney-world-intrerupt-dupa-ce-un-angajat-a-fost-lovit-de-un-decor-de-180-de-kilograme-23666051",
+      "summary": "Un angajat al unui parc de distracții Disney din Florida a fost rănit după ce a reușit să oprească un bolovan fals, cu o greutate de 180 de kilograme, care se îndrepta spre public în timpul unui spectacol tematic Indiana Jones.",
+      "publishedAt": "2026-01-02T20:41:57.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.431Z"
+    },
+    {
+      "id": "0d7e095ae1306466",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Botoșani. Incendiu cu degajări mari de fum în localitatea Buimăceni. Ard un depozit de materiale combustibile, un service auto si o vopsitorie. Este afectată o suprafață de peste 250 de metri pătrați și există riscul ca focul să se extindă la casele din apropiere.",
+      "url": "https://www.biziday.ro/343765-2/",
+      "summary": "UPDATE: Focul a fost localizat. Se lucrează în continuare pentru stingerea flăcărilor și înlăturarea efectelor. Incendiul de proporții s-a produs în localitatea Buimăceni, comuna Albești, unde un depozit de materiale combustibile, un service auto si o vopsitorie au fost cuprinse de flăcări. Este vorba despre o suprafață de peste 250 de metri pătrați. Conform pompierilor, incendiul […]",
+      "publishedAt": "2026-01-02T21:42:02.000Z",
+      "fetchedAt": "2026-01-03T01:57:00.833Z"
+    },
+    {
+      "id": "17a461d48a6d9460",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Război în Ucraina. Autoritățile ucrainene au ordonat evacuarea a trei mii de copii și a părinților lor, din regiunile Zaporijie și Dnipropetrovsk. Decizia, după ce rușii au înaintat în zonă.",
+      "url": "https://www.biziday.ro/343762-2/",
+      "summary": "“Din cauza situației dificile de securitate, s-a luat decizia de a evacua forțat peste 3.000 de copii și părinții acestora din 44 de așezări din prima linie din regiunile Zaporijie și Dnipropetrovsk”, se arată în mesajul transmis de autoritățile ucrainene. Ambele regiuni sunt în sud-estul țării. Evacuări sunt în desfășurarea și în regiunea nordică Cernihiv, […]",
+      "publishedAt": "2026-01-02T20:43:57.000Z",
+      "fetchedAt": "2026-01-03T01:57:00.833Z"
+    },
+    {
+      "id": "a3b3ed7a3d844d82",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "BYD a depășit în premieră Tesla și a vândut în 2025 cele mai multe mașini electrice din lume – peste 2,2 milioane (+28%). Datele evidențiază ascensiunea producătorilor chinezi în domeniu, în condițiile în care vânzările Tesla au scăzut pentru al doilea an la rând.",
+      "url": "https://www.biziday.ro/343750-2/",
+      "summary": "Potrivit datelor anunțate de cele două companii (BYD le-a prezentat joi, Tesla vineri), BYD a vândut în 2025 aproximativ 2,26 milioane de mașini electrice cu baterie, în creștere cu aproape 28% față de anul precedent. În același timp, Tesla a livrat circa 1,64 milioane de vehicule, ceea ce înseamnă o scădere anuală de aproximativ 9%. […]",
+      "publishedAt": "2026-01-02T18:56:53.000Z",
+      "fetchedAt": "2026-01-03T01:57:00.833Z"
+    },
+    {
+      "id": "4c1a79836dba1674",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Tânărul de 18 ani care voia să ucidă cu ciocane și cuțite evrei, creștini și persoane LGBT. FBI l-a prins în capcană",
+      "url": "https://stirileprotv.ro/stiri/international/tanarul-de-18-ani-care-voia-sa-ucida-cu-ciocane-si-cutite-evrei-crestini-si-persoane-lgbt-fbi-l-a-prins-in-capcana.html",
+      "summary": "Autoritățile federale americane au anunțat dejucarea unui posibil atac terorist planificat pentru noaptea de Revelion într-o localitate din statul Carolina de Nord.",
+      "publishedAt": "2026-01-02T20:13:00.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.294Z"
+    },
+    {
+      "id": "643d095cb5688958",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Un cutremur puternic a zguduit Mexicul, în timpul conferinței de presă a președintei. Reacția șefei de stat | VIDEO",
+      "url": "https://stirileprotv.ro/stiri/international/un-cutremur-puternic-a-zguduit-mexicul-in-timpul-conferintei-de-presa-a-presedintei-reactia-sefei-de-stat-video.html",
+      "summary": "Un cutremur puternic a zguduit sudul Mexicului vineri, provocând panică în rândul a milioane de oameni după sărbătorile de Anul Nou şi întrerupând pentru scurt timp conferinţa de presă zilnică a preşedintei Claudia Sheinbaum.",
+      "publishedAt": "2026-01-02T19:59:00.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.294Z"
+    },
+    {
+      "id": "4b1073e7dd8dd946",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Horoscop 3 ianuarie 2026, cu Neti Sandu. O revedere emoționantă și planuri de viitor",
+      "url": "https://stirileprotv.ro/show-buzz/horoscop/horoscop-3-ianuarie-2026-cu-neti-sandu-o-revedere-emotionanta-si-planuri-de-viitor.html",
+      "summary": "Horoscop 3 ianuarie 2026, prezentat de Neti Sandu la Știrile PRO TV. Lună plină cu agitație. O să profităm din plin de ce ne-a mai rămas din vacanța de iarnă și o să ne întâlnim cu un prieten sau o rudă, să mai mergem la câte un party să ne distrăm.",
+      "publishedAt": "2026-01-02T19:46:00.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.294Z"
+    },
+    {
+      "id": "90e02a60b59c380c",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Prima declarație a proprietarului barului din Elveția după tragedia cu 40 de morți: „Totul era conform normelor”",
+      "url": "https://stirileprotv.ro/stiri/international/prima-declaratie-a-proprietarului-barului-din-elvetia-dupa-tragedia-cu-40-de-morti-ztotul-era-conform-normelor.html",
+      "summary": "Unul dintre proprietarii Le Constellation, barul din Elveția în care a avut loc tragedia care a dus la moartea a 40 de persoane, insistă că barul era administrat conform normelor. Aceasta este prima lui reacție publică după tragedie.",
+      "publishedAt": "2026-01-02T19:49:00.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.294Z"
+    },
+    {
+      "id": "8cb14131b6129535",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Se uita pe site-uri de adulți la 7 ani, la 12 ani era dependentă. ”Era înfricoșător. Credeam că cineva omoară pe altcineva”",
+      "url": "https://stirileprotv.ro/stiri/social/se-uita-pe-site-uri-de-adulti-la-7-ani-la-12-ani-era-dependenta-era-infricosator-credeam-ca-cineva-omoara-pe-altcineva.html",
+      "summary": "O tânără din Marea Britanie spune că a văzut pornografie pentru prima dată la vârsta de 7 ani, la 8 ani se uita deja la materiale extreme, iar la 12 ani era dependentă. Studiile arată cum copiii ”nu pot renunța la ceea ce au văzut”.",
+      "publishedAt": "2026-01-02T19:35:00.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.294Z"
+    },
+    {
+      "id": "0278bd4a4d0fad1a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "S-au pus tunurile pe Grok, cu bătaie la Elon Musk. Anchetă după mii de fotografii cu femei „dezbrăcate” la cerere",
+      "url": "https://stirileprotv.ro/stiri/international/s-au-pus-tunurile-pe-grok-cu-bataie-la-elon-musk-ancheta-dupa-mii-de-fotografii-cu-femei-zdezbracate-la-cerere.html",
+      "summary": "O femeie a declarat pentru BBC că s-a simțit „dezumanizată și redusă la un stereotip sexual” după ce Grok, chatbotul AI al lui Elon Musk a fost folosit pentru a-i elimina digital hainele.",
+      "publishedAt": "2026-01-02T19:10:00.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.294Z"
+    },
+    {
+      "id": "5e61465239fc6d4a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Un tânăr a constatat îngrozit că îi creșteau ”solzi” pe mâini de fiecare dată când le spăla și îi dispăreau după ce se uscau",
+      "url": "https://stirileprotv.ro/stiri/international/un-tanar-a-constatat-ingrozit-ca-ii-cresteau-solzi-pe-maini-de-fiecare-data-cand-le-spala-si-ii-dispareau-dupa-ce-se-uscau.html",
+      "summary": "O afecțiune rară a făcut ca unui tânăr din China să-i apară „solzi” pe mâini de fiecare dată când le spăla. Simptomul dispărea după circa 30 de minute, când se uscau mâinile. Doctorii l-au diagnosticat cu o boală foarte rară, dar tratabilă.",
+      "publishedAt": "2026-01-02T18:40:00.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.294Z"
+    },
+    {
+      "id": "3eaf875f6ac12955",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "„Betty Boop” și „Blondie\" au intrat în domeniul public. Ce înseamnă asta pentru artiștii din întreaga lume",
+      "url": "https://stirileprotv.ro/divers/zbetty-boop-si-zblondie-au-intrat-in-domeniul-public-ce-inseamna-asta-pentru-artistii-din-intreaga-lume.html",
+      "summary": "Personajele „veterane\" de benzi desenate, „Betty Boop” și „Blondie\" i se alătură lui Mickey Mouse și Winnie de pluș, intrând în domeniul public.",
+      "publishedAt": "2026-01-02T18:18:00.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.294Z"
+    },
+    {
+      "id": "14b1667f4bedfbca",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ce fac românii după petrecerile de Revelion: stau la coadă la reciclat. Problema celor 200 de grame",
+      "url": "https://stirileprotv.ro/stiri/actualitate/ce-fac-romanii-dupa-petrecerile-de-revelion-stau-la-coada-la-reciclat-problema-celor-200-de-grame.html",
+      "summary": "După mesele festive și cumpărăturile făcute pentru sărbători, mulți au revenit la magazine cu sacii plini de sticle și doze. La mai multe automate de reciclare s-au format cozi.",
+      "publishedAt": "2026-01-02T17:27:00.000Z",
+      "fetchedAt": "2026-01-03T01:57:01.294Z"
+    },
+    {
+      "id": "7281143b2450cdd3",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Hochei: Corona Brașov și SC Miercurea Ciuc au câștigat în deplasare în Erste Liga",
+      "url": "https://agerpres.ro/sport-extern/2026/01/02/hochei-corona-brasov-si-sc-miercurea-ciuc-au-castigat-in-deplasare-in-erste-liga--1516147",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
+    },
+    {
+      "id": "f70d1bdc51e3508e",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "CEC: Republica Moldova are peste 3,29 milioane de cetățeni cu drept de vot",
+      "url": "https://agerpres.ro/social-extern/2026/01/02/cec-republica-moldova-are-peste-3-29-milioane-de-cetateni-cu-drept-de-vot--1516146",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
+    },
+    {
+      "id": "b3572165cdad98dd",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "BBC plătește o compensație unor supraviețuitori ai atacului Hamas din 7 octombrie 2023 din Israel",
+      "url": "https://agerpres.ro/social-extern/2026/01/02/bbc-plateste-o-compensatie-unor-supravietuitori-ai-atacului-hamas-din-7-octombrie-2023-din-israel--1516145",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
+    },
+    {
+      "id": "f81a21285ce66b12",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Protestele continuă în Iran pentru a șasea zi",
+      "url": "https://agerpres.ro/social-extern/2026/01/02/video-protestele-continua-in-iran-pentru-a-sasea-zi--1516144",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
+    },
+    {
+      "id": "a87234dc30a66298",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Volodimir Zelenski îl înlocuiește pe ministrul apărării",
+      "url": "https://agerpres.ro/politic-extern/2026/01/02/video-volodimir-zelenski-il-inlocuieste-pe-ministrul-apararii--1516142",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
+    },
+    {
+      "id": "6c0845188a8cfa89",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Incendiul din Crans-Montana/ Răniții identificați provin din mai multe țări europene",
+      "url": "https://agerpres.ro/social-extern/2026/01/02/incendiul-din-crans-montana-ranitii-identificati-provin-din-mai-multe-tari-europene--1516141",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
+    },
+    {
+      "id": "57b852d6224bec7e",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Un angajat al Disney a fost rănit de un fals bolovan de aproximativ 180 de kilograme în timpul unui spectacol",
+      "url": "https://agerpres.ro/zigzag/2026/01/02/video-un-angajat-al-disney-a-fost-ranit-de-un-fals-bolovan-de-aproximativ-180-de-kilograme-in-timpul--1516140",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
+    },
+    {
+      "id": "ca7a96a62fafba52",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Incendiul din Crans-Montana/ Totul s-a făcut conform normelor, dă asigurări proprietarul barului",
+      "url": "https://agerpres.ro/social-extern/2026/01/02/incendiul-din-crans-montana-totul-s-a-facut-conform-normelor-da-asigurari-proprietarul-barului--1516139",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
+    },
+    {
+      "id": "956b6a8facd1a380",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Ucraina ordonă evacuarea a 3.000 de copii și a părinților lor din regiunile Zaporojie și Dnipropetrovsk",
+      "url": "https://agerpres.ro/politic-extern/2026/01/02/ucraina-ordona-evacuarea-a-3-000-de-copii-si-a-parintilor-lor-din-regiunile-zaporojie-si-dnipropetro--1516138",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
+    },
+    {
+      "id": "d8d832a236b2106f",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO FBI a dejucat un atentat terorist planificat de Revelion în Carolina de Nord; suspect de 18 ani, inspirat de Statul Islamic",
+      "url": "https://agerpres.ro/politic-extern/2026/01/02/video-fbi-a-dejucat-un-atentat-terorist-planificat-de-revelion-in-carolina-de-nord-suspect-de-18-ani--1516137",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
+    },
+    {
+      "id": "62ce2503586e079f",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Tenis: Argentina și Grecia au obținut victorii clare la debutul în United Cup",
+      "url": "https://agerpres.ro/sport-extern/2026/01/02/tenis-argentina-si-grecia-au-obtinut-victorii-clare-la-debutul-in-united-cup--1516136",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
+    },
+    {
+      "id": "074139a057d8bf15",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO MApN: Șase pacienți cu arsuri, transportați din Elveția la un spital din Paris cu o aeronavă a Forțelor Aeriene",
+      "url": "https://agerpres.ro/social/2026/01/02/video-mapn-sase-pacienti-cu-arsuri-transportati-din-elvetia-la-un-spital-din-paris-cu-o-aeronava-a-f--1516135",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
+    },
+    {
+      "id": "c3d08b8ac6cea840",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: Petrolul Ploiești l-a transferat pe portughezul Diogo Rodrigues",
+      "url": "https://agerpres.ro/sport/2026/01/02/fotbal-petrolul-ploiesti-l-a-transferat-pe-portughezul-diogo-rodrigues--1516134",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
+    },
+    {
+      "id": "7c73db3936810baa",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: Universitatea Craiova are un lot de 30 de jucători în stagiul de pregătire în Antalya",
+      "url": "https://agerpres.ro/sport/2026/01/02/fotbal-universitatea-craiova-are-un-lot-de-30-de-jucatori-in-stagiul-de-pregatire-in-antalya--1516133",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
+    },
+    {
+      "id": "44d6c04cbeeb4c9f",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO UPDATE Actrița Angelina Jolie, fost emisar ONU, în vizită la punctul de trecere Rafah din Egipt",
+      "url": "https://agerpres.ro/social-extern/2026/01/02/video-update-actrita-angelina-jolie-fost-emisar-onu-in-vizita-la-punctul-de-trecere-rafah-din-egipt--1516110",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
+    },
+    {
+      "id": "d85b51300afbad6a",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Kiril Budanov, șef al cancelariei prezidențiale a Ucrainei, Oleg Ivașcenko trece la conducerea serviciilor militare",
+      "url": "https://agerpres.ro/politic-extern/2026/01/02/kiril-budanov-sef-al-cancelariei-prezidentiale-a-ucrainei-oleg-ivascenko-trece-la-conducerea-servici--1516130",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
+    },
+    {
+      "id": "7de791bf07544678",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "A murit Șuier, unul dintre cei mai respectați câini polițiști din România",
+      "url": "https://agerpres.ro/justitie/2026/01/02/a-murit-suier-unul-dintre-cei-mai-respectati-caini-politisti-din-romania--1516128",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
+    },
+    {
+      "id": "10aafa9c6fa12aae",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Arafat: Procedurile mecanismului european de protecție civilă activate acum pentru Crans-Montana, create după 'Colectiv'",
+      "url": "https://agerpres.ro/social/2026/01/02/arafat-procedurile-mecanismului-european-de-protectie-civila-activate-acum-pentru-crans-montana-crea--1516126",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
+    },
+    {
+      "id": "afef3ed8fd0b6998",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Incendiul din Crans-Montana/ Proprietarii francezi ai barului, audiați; Bilanțul oficial actualizat - 40 de morți și 119 răniți",
+      "url": "https://agerpres.ro/social-extern/2026/01/02/video-incendiul-din-crans-montana-proprietarii-francezi-ai-barului-audiati-bilantul-oficial-actualiz--1516125",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
+    },
+    {
+      "id": "52b501a07bec97f2",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Dolj: Persoană decedată într-un incendiu de locuință la Craiova",
+      "url": "https://agerpres.ro/social/2026/01/02/dolj-persoana-decedata-intr-un-incendiu-de-locuinta-la-craiova--1516124",
+      "summary": "",
+      "publishedAt": "2026-01-03T01:57:05.028Z",
+      "fetchedAt": "2026-01-03T01:57:05.028Z"
     }
   ],
-  "lastUpdated": "2026-01-02T18:36:07.416Z"
+  "lastUpdated": "2026-01-03T01:57:05.033Z"
 }
