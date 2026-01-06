@@ -5440,7 +5440,617 @@
       "summary": "Prima doamnă a Venezuelei, Cilia Flores, a suferit „leziuni grave” – inclusiv o posibilă fractură de coastă și contuzii – când a fost capturată de forțele americane.",
       "publishedAt": "2026-01-05T18:29:00.000Z",
       "fetchedAt": "2026-01-06T02:03:35.917Z"
+    },
+    {
+      "id": "3560f8bf3a66525e",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Temperaturi neobișnuite pentru a doua jumătate a lunii ianuarie. Meteorologii anunță zonele unde va fi mai cald",
+      "url": "https://hotnews.ro/temperaturi-neobisnuite-pentru-a-doua-jumatate-a-lunii-ianuarie-meteorologii-anunta-zonele-unde-va-fi-mai-cald-2144728",
+      "summary": "Temperaturile se vor situa uşor peste cele specifice, în a doua jumătate a lunii ianuarie, în mai multe regiuni, anunţă marţi meteorologii, care precizează însă că această perioadă va fi precedată de o săptămână cu…",
+      "publishedAt": "2026-01-06T06:41:02.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.158Z"
+    },
+    {
+      "id": "e040461038d4dff4",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": " Achiziție surpriză în IT-ul din România",
+      "url": "https://hotnews.ro/achizitie-surpriza-in-it-ul-din-romania-2144727",
+      "summary": "Fondul de investiții MidEuropa, care recent a cedat în România rețeaua de centre medicale Regina Maria, cumpără pachetul majoritar de acțiuni al Romanian Business Consult (RBC), integrator IT specializat in sectoarele de retail, banking și…",
+      "publishedAt": "2026-01-06T06:38:09.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.158Z"
+    },
+    {
+      "id": "aff1b24efe1e2516",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Lidera opoziției venezuelene, Maria Corina Machado, promite că se va întoarce în Venezuela. Ce spune despre Donald Trump",
+      "url": "https://hotnews.ro/lidera-opozitiei-venezuelene-maria-corina-machado-promite-ca-se-va-intoarce-in-venezuela-ce-spune-despre-donald-trump-2144713",
+      "summary": "Lidera opoziției venezuelene, Maria Corina Machado, aflată în exil și laureată recent cu Premiul Nobel pentru Pace pentru lupta sa pentru democrație, a declarat în primul său interviu televizat după atacul SUA asupra Venezuelei că…",
+      "publishedAt": "2026-01-06T06:30:53.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.158Z"
+    },
+    {
+      "id": "9f3cfe30ec98ac70",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Un ton a fost vândut la o licitație din Tokyo cu 3,2 milioane de dolari",
+      "url": "https://hotnews.ro/un-ton-a-fost-vandut-la-o-licitatie-din-tokyo-cu-32-milioane-de-dolari-2144714",
+      "summary": "Un ton roșu prins în largul insulei Oma, prefectura Aomori, a atins un nivel record la prima licitație din 2026, desfășurată la piața angro de pește Toyosu din cartierul Koto din Tokyo, în dimineața zilei…",
+      "publishedAt": "2026-01-06T06:16:14.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.158Z"
+    },
+    {
+      "id": "44794fd2aac6e6df",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Maria Machado spune că i-ar plăcea foarte mult să împartă Premiul Nobel pentru Pace cu Trump",
+      "url": "https://hotnews.ro/maria-machado-spune-ca-i-ar-placea-foarte-mult-sa-imparta-premiul-nobel-pentru-pace-cu-trump-2144708",
+      "summary": "Lidera opoziției venezuelene, María Corina Machado, a declarat că „i-ar plăcea” să-i acorde personal președintelui Donald Trump Premiul Nobel pentru Pace, declarând la Fox News că venezuelenii cred că Trump merită această onoare pentru rolul…",
+      "publishedAt": "2026-01-06T06:07:25.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.158Z"
+    },
+    {
+      "id": "fc0d664aa5f8aa02",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Capturarea lui Maduro de către SUA testează limitele eforturilor diplomatice ale Chinei. „A fost o lovitură puternică”",
+      "url": "https://hotnews.ro/capturarea-lui-maduro-de-catre-sua-testeaza-limitele-eforturilor-diplomatice-ale-chinei-a-fost-o-lovitura-puternica-2144706",
+      "summary": "Un diplomat de seamă al Chinei a acuzat SUA că acționează ca un „judecător mondial” prin arestarea liderului venezuelean Nicolas Maduro pentru a-l judeca la New York, Beijingul confruntându-se ulterior cu Washingtonul la Națiunile Unite…",
+      "publishedAt": "2026-01-06T06:03:28.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.158Z"
+    },
+    {
+      "id": "d39fd04dddb21615",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Cum se circulă pe drumurile din țară. Avertisment Infotrafic, zonele unde șoferii trebuie să fie atenți",
+      "url": "https://hotnews.ro/fenomen-meteo-pe-autostrazile-a1-a2-a3-si-a7-dar-si-pe-drumuri-din-bucuresti-si-alte-8-judete-2144698",
+      "summary": "Centrul Infotrafic din Inspectoratul General al Poliției Române a transmis marți dimineață că nu sunt semnalate drumuri naționale sau autostrăzi cu traficul oprit din cauza vreunui accident sau a condițiilor meteorologice. Este semnalată ceață, care…",
+      "publishedAt": "2026-01-06T05:32:33.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.158Z"
+    },
+    {
+      "id": "67d3d12e4d1f6a46",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "„La mine în mașină nu accept euro!”, spune un șofer de autobuz bulgar. Ce probleme apar în țara vecină după trecerea la euro",
+      "url": "https://hotnews.ro/la-mine-in-masina-nu-accept-euro-spune-un-sofer-de-autobuz-bulgar-a-mai-aparut-si-zvonul-ca-guvernul-va-anula-trecerea-la-euro-daca-cetatenii-nu-accepta-restul-in-euro-2144682",
+      "summary": "În orașul bulgar Plovdiv, trecerea la euro a adus probleme în sistemul de transport în comun, unde oamenii pot de la 1 ianuarie să cumpere bilete cu euro. Mulți șoferi refuză să accepte moneda europeană,…",
+      "publishedAt": "2026-01-06T05:31:39.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.158Z"
+    },
+    {
+      "id": "982d9d01a6d04267",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Președintele Nicușor Dan participă la reuniunea unde vin doi emisari ai lui Donald Trump",
+      "url": "https://hotnews.ro/presedintele-nicusor-dan-participa-la-reuniunea-coalitiei-de-vointa-de-la-paris-2144680",
+      "summary": "Președintele Nicușor Dan participă, marți, la reuniunea șefilor de stat și de guvern ai „Coaliției de Voință” (Coalition of the Willing) de la Paris, Palatul Elysee, potrivit Administrației Prezidențiale. Trimisul special al președintelui american Donald…",
+      "publishedAt": "2026-01-06T05:09:03.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.158Z"
+    },
+    {
+      "id": "19c34253b6ac6d67",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "INTERVIURI EXCLUSIVE. Vorbesc cei care de regulă tac: „Coșmar”. Patru voci din Venezuela arată cât de divizată este țara cu salariul minim de 3,5 dolari pe lună în legătură cu arestarea lui Maduro.",
+      "url": "https://hotnews.ro/interviuri-exclusive-daca-vor-sa-beneficieze-de-petrol-atunci-sa-beneficieze-patru-voci-din-venezuela-arata-cat-de-divizata-este-tara-cu-salariul-minim-de-35-dolari-pe-luna-in-le-2144276",
+      "summary": "Din discuțiile despre evenimentele din Venezuela lipsesc uneori exact cei care le trăiesc pe pielea lor. Patru venezueleni, doi care se află chiar acum în țară și doi în diasporă, tot în America Latină, au…",
+      "publishedAt": "2026-01-06T05:00:11.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.158Z"
+    },
+    {
+      "id": "133430ed54dabfaf",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Bobotează 2026. Obiceiuri și tradiții",
+      "url": "https://hotnews.ro/boboteaza-2026-obiceiuri-si-traditii-2144418",
+      "summary": "Boboteaza, sărbătorită anual pe 6 ianuarie, este una dintre cele mai importante sărbători ale calendarului creștin-ortodox. În 2026, atât 6 ianuarie (Boboteaza), cât și 7 ianuarie (Sfântul Ioan Botezătorul) sunt zile libere legal în România,…",
+      "publishedAt": "2026-01-06T04:59:19.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.158Z"
+    },
+    {
+      "id": "980027fee1c05ea5",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Stomatolog găsit mort în cabinetul său din Călărași",
+      "url": "https://www.mediafax.ro/social/stomatolog-gasit-mort-in-cabinetul-sau-din-calarasi-23667257",
+      "summary": "Descoperire șocantă într-un cabinet stomatologic din Călărași: un medic în vârstă de 35 de ani a fost găsit mort. Se pare că bărbatul s-a sinucis.",
+      "publishedAt": "2026-01-06T06:15:40.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.111Z"
+    },
+    {
+      "id": "dd7f433bef5756ec",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "O destinație paradisiacă introduce reguli dure – va cere dovada fondurilor bancare pe 3 luni și bilet de întoarcere",
+      "url": "https://www.mediafax.ro/externe/o-destinatie-paradisiaca-introduce-reguli-dure-va-cere-dovada-fondurilor-bancare-pe-3-luni-si-bilet-de-intoarcere-23667255",
+      "summary": "Bali introduce reguli drastice pentru turiști - extrase bancare pe 3 luni și bilet de întoarcere. Insula indoneziană luptă împotriva turismului de masă care a transformat „paradisul” într-o destinație aglomerată și murdară.",
+      "publishedAt": "2026-01-06T06:12:06.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.111Z"
+    },
+    {
+      "id": "7d45d8afd7d29f57",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Australian Open 2026: premii record, câștigătorii iau câte 2,79 milioane de dolari",
+      "url": "https://www.mediafax.ro/sport/australian-open-2026-premii-record-castigatorii-iau-cate-279-milioane-de-dolari-23667247",
+      "summary": "Turneul de Grand Slam Australian Open va oferi în 2026 un fond total de premiere record, de 111,5 milioane de dolari australieni (aproximativ 75 de milioane de dolari), după ce organizatorii au anunțat marți o creștere de 16% față de ediția precedentă.",
+      "publishedAt": "2026-01-06T06:01:53.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.111Z"
+    },
+    {
+      "id": "48c68c2341888aa8",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "„Gerul Bobotezei” săptămâna aceasta. Când se îmblânzește vremea?",
+      "url": "https://www.mediafax.ro/meteo/gerul-bobotezei-saptamana-aceasta-cand-se-imblanzeste-vremea-23667251",
+      "summary": "Săptămâna aceasta va fi ger, temperaturile fiind mai coborâte decât cele normale. Apoi vremea devine normală și chiar mai blândă decât ar fi normal pentru luna ianuarie, potrivit prognozei pentru următoarele patru săptămâni.",
+      "publishedAt": "2026-01-06T06:00:17.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.111Z"
+    },
+    {
+      "id": "2596fbd894f040cf",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Router-ul WiFi nu trebuie ținut niciodată lângă aceste 5 obiecte – conexiunea devine extrem de lentă",
+      "url": "https://www.mediafax.ro/tehnologie/router-ul-wifi-nu-trebuie-tinut-niciodata-langa-aceste-5-obiecte-conexiunea-devine-extrem-de-lenta-23667245",
+      "summary": "WiFi-ul a devenit esențial în fiecare casă modernă. Conexiunea la internet ne permite să realizăm din ce în ce mai multe activități online.",
+      "publishedAt": "2026-01-06T05:56:50.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.111Z"
+    },
+    {
+      "id": "d295b5a77fe4039b",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Protestele din Iran continuă pentru a noua zi: cel puțin 35 de morți și peste 1.200 de arestări",
+      "url": "https://www.mediafax.ro/externe/protestele-din-iran-continua-pentru-a-noua-zi-cel-putin-35-de-morti-si-peste-1-200-de-arestari-23667242",
+      "summary": "Manifestațiile generate de criza economică din Iran s-au extins în întreaga țară, cu zeci de morți și peste o mie de persoane reținute.",
+      "publishedAt": "2026-01-06T05:49:34.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.111Z"
+    },
+    {
+      "id": "6ecf7c9e52f7b963",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Sabalenka începe noul sezon cu o victorie rapidă la Brisbane. Cîrstea o poate întâlni în optimi, dacă trece de Ostapenko",
+      "url": "https://www.mediafax.ro/sport/sabalenka-incepe-noul-sezon-cu-o-victorie-rapida-la-brisbane-cirstea-o-poate-intalni-in-optimi-daca-trece-de-ostapenko-23667236",
+      "summary": "Aryna Sabalenka, liderul mondial WTA, și-a lansat oficial sezonul de simplu din 2026 cu o victorie categorică la turneul de la Brisbane, marți, cedând un singur game, în confruntarea cu Cristina Bucșa, din Spania. Românca Sorana Cîrstea o poate întâlni în optimi, dacă trece de Jelena Ostapenko.",
+      "publishedAt": "2026-01-06T05:43:09.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.111Z"
+    },
+    {
+      "id": "5092eba24e54fbb8",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Atac masiv al Ucrainei asupra Rusiei. Dronele ucrainene au lovit mai multe instalații petroliere ruse  și clădiri rezidențiale",
+      "url": "https://www.mediafax.ro/externe/atac-masiv-al-ucrainei-asupra-rusiei-dronele-ucrainene-au-lovit-mai-multe-instalatii-petroliere-ruse-si-cladiri-rezidentiale-23667238",
+      "summary": "Dronele ucrainene au efectuat atacuri nocturne asupra mai multor regiuni rusești, în noaptea de luni spre marți, fiind raportate explozii și incendii în mai multe locații, potrivit canalelor rusești Telegram.",
+      "publishedAt": "2026-01-06T05:40:33.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.111Z"
+    },
+    {
+      "id": "499a294c5a77f287",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Utilizatorii Gmail, avertizați să dezactiveze acum două funcții",
+      "url": "https://www.mediafax.ro/tehnologie/utilizatorii-gmail-avertizati-sa-dezactiveze-acum-doua-functii-23667237",
+      "summary": "Google a activat în secret o funcție Gmail care permite scanarea tuturor e-mailurilor private. Inginerul australian Dave Jones lansează alarma pe rețelele sociale.",
+      "publishedAt": "2026-01-06T05:35:15.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.111Z"
+    },
+    {
+      "id": "1672e54876ea1110",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Trafic în condiții de ceață pe principalele drumuri naționale și autostrăzi din țară",
+      "url": "https://www.mediafax.ro/social/trafic-in-conditii-de-ceata-pe-principalele-drumuri-nationale-si-autostrazi-din-tara-23667234",
+      "summary": "Circulația rutieră se desfășoară în condiții de ceață, marți dimineața, pe principalele drumuri naționale și autostrăzi din țară, potrivit Infotrafic.",
+      "publishedAt": "2026-01-06T05:19:12.000Z",
+      "fetchedAt": "2026-01-06T06:41:12.111Z"
+    },
+    {
+      "id": "7f30c0daac2f6a10",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "SUA. Centrul pentru Controlul Bolilor, sub coordonarea secretarului Sănătății Robert Kennedy Jr (antivaccinist), a redus semnificativ lista vaccinurilor recomandate copiilor, într-o schimbare majoră a politicii de sănătate publică. Vaccinuri precum Covid, hepatita A și B, rotavirus vor fi lăsate la latitudinea părinților și a medicilor, ceea ce, conform specialiștilor, “va crea foarte mare confuzie”.",
+      "url": "https://www.biziday.ro/344076-2/",
+      "summary": "Noul calendar de vaccinare scade numărul bolilor pentru care imunizarea este recomandată universal de la 18 la 11, mutând mai multe vaccinuri în zone de “decizie medicală individuală” sau recomandare doar pentru copiii cu risc crescut. Noua listă de vaccinuri recomandate, publicată de Centrul pentru Controlul și Prevenirea Bolilor (CDC), include în continuare vaccinurile împotriva rujeolei, […]",
+      "publishedAt": "2026-01-06T06:22:04.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.415Z"
+    },
+    {
+      "id": "3cd3a2f7ce8bbc0a",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Război Rusia – Ucraina. Ucrainenii au atacat cu drone rafinării rusești, noaptea trecută. Explozii au fost raportate în mai multe regiuni din Rusia, iar în Tver fragmente dintr-o dronă au lovit un bloc. O persoană a murit.",
+      "url": "https://www.biziday.ro/344085-2/",
+      "summary": "Ucrainenii au efectuat atacuri cu drone asupra mai multor regiuni din Rusia, noaptea trecută. Explozii și incendii au fost raportate în mai multe zone, potrivit canalelor rusești Telegram. În Tver, autoritățile regionale au declarat că un fragment dintr-o dronă a lovit un bloc înalt din centrul orașului în timpul atacului. O persoană a fost ucisă […]",
+      "publishedAt": "2026-01-06T06:10:46.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.415Z"
+    },
+    {
+      "id": "cfeab3ed182838a9",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Reuniune a șefilor de stat și de guvern ai ”Coaliției de Voință”, astăzi, la Paris, la care participă și președintele Nicușor Dan. Liderii europeni, ucraineni şi americani vor discuta despre garanţiile de securitate pentru Ucraina, în cazul unui acord de pace.",
+      "url": "https://www.biziday.ro/344080-2/",
+      "summary": "Emisarul special al SUA, Steve Witkoff, și consilierul președintelui american Donald Trump, Jared Kushner, vor participa la summitul liderilor țărilor din ”Coaliția de Voință”, de marți, de la Paris. La întâlnire vor participa șefi de stat și de guvern din aproximativ 30 de țări, pentru a discuta despre garanțiile de securitate pe termen lung pentru […]",
+      "publishedAt": "2026-01-06T05:39:07.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.415Z"
+    },
+    {
+      "id": "1d1e70358da97c13",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Nicușor Dan participă la Coaliția de voință de la Paris. Istoricul reuniunilor care vor să pună capăt războiului din Ucraina",
+      "url": "https://stirileprotv.ro/stiri/international/nicusor-dan-participa-la-coalitia-de-vointa-de-la-paris-istoricul-reuniunilor-care-vor-sa-puna-capat-razboiului-din-ucraina.html",
+      "summary": "Preşedintele Nicuşor Dan participă pe 6 ianuarie 2026, la Paris, la reuniunea şefilor de stat şi de guvern ai Coaliţiei de voinţă (ţările dispuse să ajute Ucraina), potrivit Administraţiei Prezidenţiale.",
+      "publishedAt": "2026-01-06T06:28:00.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.928Z"
+    },
+    {
+      "id": "316abbf6a9869b97",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Au fost identificați toți cei 116 de răniți în tragedia din Crans-Montana. De unde sunt",
+      "url": "https://stirileprotv.ro/stiri/international/au-fost-identificati-toti-cei-116-de-raniti-in-tragedia-din-crans-montana-de-unde-sunt.html",
+      "summary": "Poliţia elveţiană a anunţat că a identificat toate cele 116 persoane rănite în incendiul devastator din barul din Crans-Montana, trei sferturi dintre acestea fiind încă internate în spital, relatează France24.",
+      "publishedAt": "2026-01-06T06:13:00.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.928Z"
+    },
+    {
+      "id": "bb2706bc6767f37f",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Temperaturi peste cele specifice în a doua jumătate a lunii ianuarie, în mai multe regiuni. Prognoza ANM",
+      "url": "https://stirileprotv.ro/stiri/vremea/temperaturi-peste-cele-specifice-in-a-doua-jumatate-a-lunii-ianuarie-in-mai-multe-regiuni-anuntul-meteorologilor.html",
+      "summary": "Meteorologii anunță temperaturi ușor peste normal în a doua jumătate a lunii ianuarie, după o perioadă mai rece și cu precipitații abundente.",
+      "publishedAt": "2026-01-06T06:05:00.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.928Z"
+    },
+    {
+      "id": "bd12b76dcd241f46",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Angajații unui spital au răscolit toate deșeurile și le-au scanat cu raze X pentru a găsi două inele aruncate de o pacientă",
+      "url": "https://stirileprotv.ro/stiri/international/angajatii-unui-spital-au-rascolit-toate-deseurile-si-le-au-scanat-cu-raze-x-pentru-a-gasit-inelele-aruncate-de-o-pacienta.html",
+      "summary": "Angajații unui spital din statul american Iowa au avut parte de o misiune incredibilă.",
+      "publishedAt": "2026-01-06T06:03:00.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.928Z"
+    },
+    {
+      "id": "b8e925617ab4da5a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cercetătorii au identificat o substanţă naturală care restabileşte funcţiile memoriei afectate în Alzheimer",
+      "url": "https://stirileprotv.ro/stiri/stiinta/cercetatorii-au-identificat-o-substanta-naturala-care-restabileste-functiile-memoriei-afectate-in-alzheimer.html",
+      "summary": "Îmbătrânirea este însoţită frecvent de declin cognitiv şi scăderea treptată a performanţelor mintale, iar în unele cazuri, de boli neurodegenerative precum Alzheimer.",
+      "publishedAt": "2026-01-06T05:57:00.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.928Z"
+    },
+    {
+      "id": "b847fd4bd9a50351",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Statele Unite reduc vaccinurile recomandate copiilor. Medicii avertizează asupra riscurilor",
+      "url": "https://stirileprotv.ro/stiri/international/statele-unite-reduc-vaccinurile-recomandate-copiilor-medicii-avertizeaza-asupra-riscurilor.html",
+      "summary": "Departamentul Sănătății din SUA, condus de Robert Kennedy Jr, a anunțat reducerea vaccinurilor recomandate copiilor, o decizie dur criticată de specialiști.",
+      "publishedAt": "2026-01-06T05:50:00.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.928Z"
+    },
+    {
+      "id": "cc1f0c8400c701f9",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "La ONU, aliați și inamici ai SUA denunță „crima de agresiune” a lui Trump în Venezuela. SUA invocă aplicarea legii",
+      "url": "https://stirileprotv.ro/stiri/international/la-onu-aliati-si-inamici-ai-sua-denunta-zcrima-de-agresiune-a-lui-trump-in-venezuela-sua-invoca-aplicarea-legii.html",
+      "summary": "SUA s-au confruntat luni cu condamnări pe scară largă pentru „crima de agresiune” din Venezuela, la o reuniune de urgență a Consiliului de Securitate al Națiunilor Unite, relatează The Guardian.",
+      "publishedAt": "2026-01-06T05:44:00.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.928Z"
+    },
+    {
+      "id": "9f8b61c84469a11f",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Expert: Trump ne readuce în lumea granițelor teoretice pentru marile puteri. Europa, ultima rămășiță a ordinii bazate pe legi",
+      "url": "https://stirileprotv.ro/stiri/international/expert-trump-ne-readuce-in-lumea-granitelor-teoretice-pentru-marile-puteri-europa-ultima-ramasita-a-ordinii-bazate-pe-legi.html",
+      "summary": "De parcă incursiunea-fulger din Venezuela și capturarea președintelui contestat al acestei țări nu ar fi bulversat suficient întreaga lume, Donald Trump plusează.",
+      "publishedAt": "2026-01-06T05:42:00.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.928Z"
+    },
+    {
+      "id": "2555df7fba1eac05",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ministrul Sănătății vrea plata pe performanță în spitale: „Unii medici cred că trebuie plătiți doar pentru că există”",
+      "url": "https://stirileprotv.ro/stiri/actualitate/ministrul-sanatatii-vrea-plata-pe-performanta-in-spitale-zunii-medici-cred-ca-trebuie-platiti-doar-pentru-ca-exista.html",
+      "summary": "Ministrul Sănătății, Alexandru Rogobete, a anunțat că vrea să introducă plata pe performanță, pentru a opri practica unor medici care părăsesc devreme spitalele publice sau își mută pacienții la privat.",
+      "publishedAt": "2026-01-06T05:44:00.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.928Z"
+    },
+    {
+      "id": "efd60e19cdde13b4",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Demonstrația de forță a lui Trump în Venezuela dă o lovitură umilitoare Rusiei lui Putin",
+      "url": "https://stirileprotv.ro/stiri/international/demonstratia-de-forta-a-lui-trump-in-venezuela-da-o-lovitura-umilitoare-rusiei-lui-putin.html",
+      "summary": "Prin raidul fulgerător în urma căruia l-a capturat pe liderul venezuelean Nicolás Maduro, președintele SUA, Donald Trump, a arătat că lumea „multipolară” proclamată de Vladimir Putin este, în esență, lipsită de forță reală, scrie Politico.",
+      "publishedAt": "2026-01-06T05:34:00.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.928Z"
+    },
+    {
+      "id": "92d8370ba218a95b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Mâncatul pe fugă și lipsa meselor regulate pot da peste cap digestia și favorizează balonarea. Explicația medicilor",
+      "url": "https://stirileprotv.ro/stiri/doctor-de-bine/mancatul-pe-fuga-si-lipsa-meselor-regulate-pot-da-peste-cap-digestia-si-favorizeaza-balonarea-explicatia-medicilor.html",
+      "summary": "Când mâncați, încercați să nu folosiți telefonul și nici să nu vă grăbiți. În caz contrar, apare haosul în complicatul sistem digestiv. Primul semn este balonarea.",
+      "publishedAt": "2026-01-06T05:27:00.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.928Z"
+    },
+    {
+      "id": "0b73c395bbbf76df",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Gospodării și case inundate în Mehedinți, după topirea zăpezii. Apa în curți a ajuns și la jumătate de metru",
+      "url": "https://stirileprotv.ro/stiri/actualitate/gospodarii-si-case-inundate-in-mehedinti-dupa-topirea-zapezii-apa-in-curti-a-ajuns-si-la-jumatate-de-metru.html",
+      "summary": "În Drobeta Turnu Severin, mai multe gospodării au fost inundate de zăpada care s-a topit. Canalizarea nu a mai făcut față, iar apa a ajuns în casele oamenilor.",
+      "publishedAt": "2026-01-06T05:23:00.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.928Z"
+    },
+    {
+      "id": "90ac73e5d72bdac1",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Vremea azi, 6 ianuarie. Se mențin condițiile de polei, iar vântul se intensifică în sud-est și pe crestele montane",
+      "url": "https://stirileprotv.ro/stiri/vremea/vremea-azi-6-ianuarie-se-mentin-conditiile-de-polei-iar-vantul-se-intensifica-in-sud-est-si-pe-crestele-montane.html",
+      "summary": "Astăzi, atmosfera se menține închisă în cea mai mare parte a țării. Doar în sud-est apare trecător soarele. La munte o să fie lapoviță, iar la altitudini mari o să ningă.",
+      "publishedAt": "2026-01-06T05:22:00.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.928Z"
+    },
+    {
+      "id": "1959a84602a45683",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Rusia pierde un aliat în Venezuela după capturarea lui Maduro, dar vede oportunități în noua politică de forță a lui Trump",
+      "url": "https://stirileprotv.ro/stiri/international/rusia-pierde-un-aliat-in-venezuela-dupa-capturarea-lui-maduro-dar-vede-oportunitati-in-noua-politica-de-forta-a-lui-trump.html",
+      "summary": "Capturarea liderului venezuelean Nicolas Maduro de către Statele Unite l-a privat pe Vladimir Putin de un aliat şi ar putea creşte „influenţa petrolieră” a SUA.",
+      "publishedAt": "2026-01-06T05:14:00.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.928Z"
+    },
+    {
+      "id": "99b505ec85fe7f9a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Avertisment ANM. Risc ridicat de avalanșe în mai multe masive montane. La Vârful Omu, stratul de zăpadă depășește 1,5 metri",
+      "url": "https://stirileprotv.ro/stiri/actualitate/avertisment-anm-risc-ridicat-de-avalanse-in-mai-multe-masive-montane-la-varful-omu-stratul-de-zapada-depaseste-1-5-metri.html",
+      "summary": "Meteorologii avertizează că, la peste 1.800 de metri altitudine, în masivele Făgăraș, Bucegi și Țarcu-Godeanu, pericolul de avalanșe este ridicat, fiind evaluat la nivelul 4 din 5. Avertizarea rămâne în vigoare până miercuri seara, la ora 20:00.",
+      "publishedAt": "2026-01-06T05:18:00.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.928Z"
+    },
+    {
+      "id": "9d0947dc00e9a613",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Agheasma Mare – puterea apei sfințite la Bobotează. Cât timp se bea după 6 ianuarie",
+      "url": "https://stirileprotv.ro/divers/agheasma-mare-puterea-apei-sfintite-la-boboteaza-cat-timp-se-bea-dupa-6-ianuarie.html",
+      "summary": "Agheasma Mare este una dintre cele mai importante ape sfințite din tradiția creștin-ortodoxă, fiind legată direct de sărbătoarea Bobotezei, prăznuită pe 6 ianuarie.",
+      "publishedAt": "2026-01-06T05:10:00.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.928Z"
+    },
+    {
+      "id": "fc4d35746f65d411",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Șefa Curții de Apel București dă vina pe Parlament și procurori pentru prescrierea marilor dosare de corupție",
+      "url": "https://stirileprotv.ro/justitie/sefa-curtii-de-apel-bucuresti-da-vina-pe-parlament-si-procurori-pentru-prescrierea-marilor-dosare-de-coruptie.html",
+      "summary": "Șefa CAB, Liana Arsenie, dă vina pe Parlament și procurori pentru prescrierea dosarelor de corupție. Judecătoarea spune că Legislativul a dat dovadă de pasivitate în modificarea Codului Penal, iar procurorii au ținut prea mult dosarele.",
+      "publishedAt": "2026-01-06T05:02:00.000Z",
+      "fetchedAt": "2026-01-06T06:41:11.928Z"
+    },
+    {
+      "id": "de86d6fa69f334b4",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "SĂRBĂTORI: Botezul Domnului - Boboteaza (6 ianuarie)",
+      "url": "https://agerpres.ro/documentare/2026/01/06/sarbatori-botezul-domnului---boboteaza-6-ianuarie--1516736",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
+    },
+    {
+      "id": "b2d3230874ba02b2",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "CITATUL ZILEI",
+      "url": "https://agerpres.ro/documentare/2026/01/06/citatul-zilei--1516738",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
+    },
+    {
+      "id": "cf40cbca66c4a322",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "SĂRBĂTORI RELIGIOASE - 6 ianuarie",
+      "url": "https://agerpres.ro/documentare/2026/01/06/sarbatori-religioase---6-ianuarie--1516740",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
+    },
+    {
+      "id": "26a1f6fa95664c2b",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "EFEMERIDE ASTRONOMICE - 6 ianuarie",
+      "url": "https://agerpres.ro/documentare/2026/01/06/efemeride-astronomice---6-ianuarie--1516737",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
+    },
+    {
+      "id": "073ad434e8fc914c",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Președintele Nicușor Dan participă la reuniunea 'Coaliției de Voință' de la Paris",
+      "url": "https://agerpres.ro/politic/2026/01/06/presedintele-nicusor-dan-participa-la-reuniunea-coalitiei-de-vointa-de-la-paris--1516742",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
+    },
+    {
+      "id": "432f688e26a3729c",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Bobotează - Patriarhul Daniel va săvârși Sfințirea Mare a Apei; vor fi distribuiți 10.000 de litri de Agheasmă Mare",
+      "url": "https://agerpres.ro/culte/2026/01/06/video-boboteaza---patriarhul-daniel-va-savarsi-sfintirea-mare-a-apei-vor-fi-distribuiti-10-000-de-li--1516741",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
+    },
+    {
+      "id": "929da68902ead1c8",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Fotbal: Nigeria s-a calificat facil în sferturile Cupei Africii pe Națiuni 2025",
+      "url": "https://agerpres.ro/sport-extern/2026/01/05/video-fotbal-nigeria-s-a-calificat-facil-in-sferturile-cupei-africii-pe-natiuni-2025--1516735",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
+    },
+    {
+      "id": "181a520d21669a73",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Volei masculin: România va juca pentru locurile 5-6 în zona balcanică a preliminariilor Europeanului Under-18",
+      "url": "https://agerpres.ro/sport-extern/2026/01/05/video-volei-masculin-romania-va-juca-pentru-locurile-5-6-in-zona-balcanica-a-preliminariilor-europea--1516734",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
+    },
+    {
+      "id": "31b35b96874b5ce2",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Alba: Peste 8.000 de abonați, în continuare fără energie electrică",
+      "url": "https://agerpres.ro/social/2026/01/05/alba-peste-8-000-de-abonati-in-continuare-fara-energie-electrica--1516733",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
+    },
+    {
+      "id": "fc53a63c6ec11c2b",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: Laurențiu Vlăsceanu a revenit la Unirea Slobozia",
+      "url": "https://agerpres.ro/sport/2026/01/05/fotbal-laurentiu-vlasceanu-a-revenit-la-unirea-slobozia--1516732",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
+    },
+    {
+      "id": "e7a2da9484ebd176",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Baschet masculin: FC Argeș și CS Vâlcea, victorioase în deplasare în Liga Națională",
+      "url": "https://agerpres.ro/sport/2026/01/05/baschet-masculin-fc-arges-si-cs-valcea-victorioase-in-deplasare-in-liga-nationala--1516731",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
+    },
+    {
+      "id": "1a7f57028007a029",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Hochei: România, învinsă dramatic la Campionatul Mondial Under-20",
+      "url": "https://agerpres.ro/sport/2026/01/05/video-hochei-romania-invinsa-dramatic-la-campionatul-mondial-under-20--1516730",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
+    },
+    {
+      "id": "94833abf026c1d1c",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Un avocat care l-a reprezentat pe fondatorul WikiLeaks, Julian Assange, îl va apăra și pe Maduro",
+      "url": "https://agerpres.ro/politic-extern/2026/01/05/video-un-avocat-care-l-a-reprezentat-pe-fondatorul-wikileaks-julian-assange-il-va-apara-si-pe-maduro--1516729",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
+    },
+    {
+      "id": "09946441098acf8a",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Șefa CAB dă vina pe Parlament și pe procurori pentru prescrierea dosarelor de corupție",
+      "url": "https://agerpres.ro/justitie/2026/01/05/sefa-cab-da-vina-pe-parlament-si-pe-procurori-pentru-prescrierea-dosarelor-de-coruptie--1516728",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
+    },
+    {
+      "id": "48c8f616ef35d26a",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: Metaloglobus l-a transferat pe Florin Purece, de la Unirea Slobozia",
+      "url": "https://agerpres.ro/sport/2026/01/05/fotbal-metaloglobus-l-a-transferat-pe-florin-purece-de-la-unirea-slobozia--1516727",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
+    },
+    {
+      "id": "814be58a1a9b4688",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Venezuela: Delcy Rodriguez, învestită ca președinte interimar",
+      "url": "https://agerpres.ro/politic-extern/2026/01/05/venezuela-delcy-rodriguez-investita-ca-presedinte-interimar--1516726",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
+    },
+    {
+      "id": "4cf0c82f086d6c29",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Hunedoara: Un urs a fost semnalat în zona telecabinei din Straja; a fost emis mesaj RO-ALERT",
+      "url": "https://agerpres.ro/social/2026/01/05/hunedoara-un-urs-a-fost-semnalat-in-zona-telecabinei-din-straja-a-fost-emis-mesaj-ro-alert--1516723",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
+    },
+    {
+      "id": "44085cfd6cb733ed",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "CAB susține că 361 de completuri de judecată și-au schimbat componența în 3 ani, dar din motive 'obiective'",
+      "url": "https://agerpres.ro/justitie/2026/01/05/cab-sustine-ca-361-de-completuri-de-judecata-si-au-schimbat-componenta-in-3-ani-dar-din-motive-obiec--1516719",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
+    },
+    {
+      "id": "b35f2d780585ac77",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Ziua Culturii Naționale deschide anul finanțărilor pentru cultură",
+      "url": "https://agerpres.ro/cultura-media/2026/01/05/ziua-culturii-nationale-deschide-anul-finantarilor-pentru-cultura--1516725",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
+    },
+    {
+      "id": "2ef40ddcc1983a47",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Pîslaru: În ultimele 6 luni, banii europeni au început să ajungă în economie de 5 ori mai rapid",
+      "url": "https://agerpres.ro/economic/2026/01/05/pislaru-in-ultimele-6-luni-banii-europeni-au-inceput-sa-ajunga-in-economie-de-5-ori-mai-rapid--1516724",
+      "summary": "",
+      "publishedAt": "2026-01-06T06:41:17.846Z",
+      "fetchedAt": "2026-01-06T06:41:17.846Z"
     }
   ],
-  "lastUpdated": "2026-01-06T02:03:44.699Z"
+  "lastUpdated": "2026-01-06T06:41:17.850Z"
 }
