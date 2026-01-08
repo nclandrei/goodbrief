@@ -10320,7 +10320,607 @@
       "summary": "Defunctul om de afaceri Fathi Taher, unul dintre cei mai puternici milionari ai României postdecembriste, dar cu legături strânse și în regimul comunist, se află în topul pagubelor suferite de SUA în ”reconstrucția” Afganistanului.",
       "publishedAt": "2026-01-07T12:31:00.000Z",
       "fetchedAt": "2026-01-07T18:39:56.248Z"
+    },
+    {
+      "id": "3c61e44a860b5666",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Oamenii lui Putin se întrec în ironii la adresa Europei după amenințările recente ale lui Trump",
+      "url": "https://hotnews.ro/oamenii-lui-putin-se-intrec-in-ironii-la-adresa-europei-dupa-amenintarile-recente-ale-lui-trump-2145703",
+      "summary": "Nu a contat prea mult că a fost ajunul Crăciunului ortodox rus. Kirill Dimitriev, trimisul special al lui Putin pentru investiții și cooperare economică, a profitat de ocazie pentru a batjocori Uniunea Europeană, după ce…",
+      "publishedAt": "2026-01-07T22:40:31.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.790Z"
+    },
+    {
+      "id": "929dedad7db2a74d",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "O scenă politică atent regizată și un pariu de 45 de miliarde de euro, pentru votul crucial. Dar încă nu se știe dacă avionul spre țările Mercosur va decola",
+      "url": "https://hotnews.ro/o-scena-politica-atent-regizata-si-un-pariu-de-45-de-miliarde-de-euro-pentru-votul-crucial-dar-inca-nu-se-stie-daca-avionul-spre-tarile-mercosur-va-decola-2145696",
+      "summary": "Țările UE urmează să ia vineri o decizie crucială cu privire la aprobarea controversatului acord cu Argentina, Brazilia, Paraguay și Uruguay, care se află în negociere de mai bine de un sfert de secol.",
+      "publishedAt": "2026-01-07T22:22:36.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.790Z"
+    },
+    {
+      "id": "e04a0fa6572a973f",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Doi țărani beți din Venezuela au fost arestați pentru că au celebrat capturarea lui Maduro",
+      "url": "https://hotnews.ro/doi-tarani-beti-din-venezuela-au-fost-arestati-pentru-ca-au-celebrat-capturarea-lui-maduro-2145683",
+      "summary": "Doi țărani au fost arestați pentru că au celebrat capturarea lui Nicolas Maduro de către Statele Unite în timpul atacului din 3 ianuarie, scrie AFP, citând un ONG din Venezuela. Cele două persoane au fost…",
+      "publishedAt": "2026-01-07T21:44:45.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.790Z"
+    },
+    {
+      "id": "49ae3ded36936f8c",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Cum a reașezat capturarea lui Maduro CIA înapoi în centrul Americii Latine",
+      "url": "https://hotnews.ro/cum-a-reasezat-capturarea-lui-maduro-cia-inapoi-in-centrul-americii-latine-2145686",
+      "summary": "Agenția de informații a Statelor Unite revine la o lungă tradiție de intervenționism în regiune, scriu miercuri jurnaliștii de la săptămânalul francez Le Point, potrivit Rador Radio România. De obicei, operațiunile CIA sunt clasificate „top…",
+      "publishedAt": "2026-01-07T21:37:00.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.790Z"
+    },
+    {
+      "id": "dcf3b283e552da5d",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Anunțul Casei Albe despre intenția lui Trump de preluare a Groenlandei",
+      "url": "https://hotnews.ro/casa-alba-despre-preluarea-groenlandei-toate-optiunile-sunt-pe-masa-presedintelui-trump-2145679",
+      "summary": "Președintele Donald Trump rămâne angajat față de Alianța Nord-Atlantică, chiar dacă el și echipa lui de securitate națională poartă „discuții active” cu privire la achiziționarea Groenlandei de către SUA, a declarat miercuri purtătoarea de cuvânt…",
+      "publishedAt": "2026-01-07T21:12:13.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.790Z"
+    },
+    {
+      "id": "1645a8ffb598c385",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Volodimir Zelenski vrea ca SUA să-l captureze și pe Ramzan Kadîrov / Replica liderului cecen",
+      "url": "https://hotnews.ro/volodimir-zelenski-vrea-ca-sua-sa-l-captureze-si-pe-ramzan-kadirov-replica-liderului-cecen-2145664",
+      "summary": "Statele Unite ar trebui să-i rezerve aceeași soartă pe care o are Nicolas Maduro și conducătorului cecen Ramzan Kadîrov ca să convingă Moscova să pună capăt războiului din Ucraina, a sugerat președintele ucrainean Volodimir Zelenski,…",
+      "publishedAt": "2026-01-07T20:57:33.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.790Z"
+    },
+    {
+      "id": "a55e316162e7ef2c",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "O cercetare realizată cu contribuția Universității din București rescrie istoria dinozaurilor de pe continentul european. Fosile descoperite în Țara Hațegului au stat la baza noului studiu, publicat acum Nature – FOTO",
+      "url": "https://hotnews.ro/o-cercetare-realizata-cu-contributia-universitatii-din-bucuresti-rescrie-istoria-dinozaurilor-de-pe-continentul-european-fosile-descoperite-in-tara-hategului-au-stat-la-baza-noului-studiu-publicat-a-2145666",
+      "summary": "Revista Nature, cel mai important jurnal științific internațional, a publicat miercuri un studiu care rescrie istoria ceratopsienilor – „dinozauri cu coarne” – aparținând Cretacicului târziu. Studiul a fost realizat de o echipă de cercetători coordonată…",
+      "publishedAt": "2026-01-07T20:48:41.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.790Z"
+    },
+    {
+      "id": "a66328055e12d3e5",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Administrația Trump vrea să schimbe radical dieta americanilor. „Declarăm război”",
+      "url": "https://hotnews.ro/administratia-trump-vrea-sa-schimbe-radical-dieta-americanilor-declaram-razboi-2145662",
+      "summary": "Administrația președintelui american Donald Trump a anunțat miercuri o nouă serie de recomandări nutriționale care îi sfătuiesc pe americani să consume mai multe proteine și mai puțin zahăr decât se recomanda anterior, consumatorii fiind, de…",
+      "publishedAt": "2026-01-07T20:34:27.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.790Z"
+    },
+    {
+      "id": "bafc4b06a278177e",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "ChatGPT a provocat anularea unei căsătorii în Olanda. „O ceremonie relaxată” a fost luată în serios de instanță",
+      "url": "https://hotnews.ro/chatgpt-a-provocat-anularea-unei-casatorii-in-olanda-o-ceremonie-relaxata-a-fost-luata-in-serios-de-instanta-2145650",
+      "summary": "Justiţia olandeză a anulat o căsătorie, hotărând că inteligenţa artificială nu are ce căuta într-un discurs de nuntă, care trebuie să fie conform cu Codul civil, relatează AFP, preluată de News.ro. În aprilie 2025, la…",
+      "publishedAt": "2026-01-07T20:12:03.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.790Z"
+    },
+    {
+      "id": "a671051ea01df259",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Cum s-au extins Statele Unite cumpărând teritorii. Principalele achiziții ale SUA din ultimii 200 de ani",
+      "url": "https://hotnews.ro/cum-s-au-extins-statele-unite-cumparand-teritorii-principalele-achizitii-ale-sua-din-ultimii-200-de-ani-2145640",
+      "summary": "Statele Unite și-au extins teritoriul de-a lungul istoriei, prin achiziții și cesiuni care au modelat harta sa actuală, și pe care acum aspiră să îl extindă din nou odată cu achiziționarea Groenlandei, scrie miercuri agenția…",
+      "publishedAt": "2026-01-07T19:50:04.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.790Z"
+    },
+    {
+      "id": "5eb0cdfeea60515b",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "„Nicușor Dan, data viitoare când ești la Paris, du-te la Airbus și cumpără un avion prezidențial. Ne facem de râs”",
+      "url": "https://hotnews.ro/indemn-pentru-nicusor-dan-din-partea-directorului-unei-mari-companii-romanesti-data-viitoare-cand-esti-la-paris-du-te-la-airbus-si-cumpara-un-avion-prezidential-ne-facem-de-ras-2145641",
+      "summary": "„Povestea cu avionul prezidențial se lălăie de mai bine de 10 ani. Este momentul să avem un avion prezidențial”, scrie Dragoș Damian, CEO al Terapia Cluj și directorul executiv al Patronatului Producătorilor Industriali de Medicamente…",
+      "publishedAt": "2026-01-07T19:32:29.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.790Z"
+    },
+    {
+      "id": "2453ccf1b9379208",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Administrația Trump renunță la recomandarea limitei de alcool pentru americani. „Permite oamenilor să socializeze”",
+      "url": "https://hotnews.ro/administratia-trump-renunta-la-recomandarea-limitei-de-alcool-pentru-americani-permite-oamenilor-sa-socializeze-2145620",
+      "summary": "Administrația președintelui Donald Trump a publicat noul ghid de nutriție, prin care se renunță la o veche recomandare ca americanii să respecte o limită a consumului de alcool de două băuturi pe zi pentru bărbați…",
+      "publishedAt": "2026-01-07T19:21:16.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.790Z"
+    },
+    {
+      "id": "129a10cfa9b37ec0",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Câteva cărți de non-ficțiune după care să vă uitați în 2026. Unul dintre titluri spune o poveste de-a dreptul cutremurătoare",
+      "url": "https://hotnews.ro/cateva-carti-de-non-fictiune-dupa-care-sa-va-uitati-in-2026-unul-dintre-titluri-spune-o-poveste-de-a-dreptul-cutremuratoare-2138780",
+      "summary": "Ziarul britanic The Guardian a realizat o selecție de cărți de non-ficțiune ce urmează să apară anul viitor. După un an în care am fost răsfățați cu memorii ale vedete precum Patti Smith sau Anthony…",
+      "publishedAt": "2026-01-07T19:09:16.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.790Z"
+    },
+    {
+      "id": "d0967c2ad63bba29",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Planul în trei etape pentru Venezuela, dezvăluit de Marco Rubio într-o ședință secretă. Democrații, șocați de „amploarea și nebunia” acestuia",
+      "url": "https://hotnews.ro/planul-in-trei-etape-pentru-venezuela-dezvaluit-de-marco-rubio-intr-o-sedinta-secreta-democratii-socati-de-amploarea-si-nebunia-acestuia-2145634",
+      "summary": "Președintele american Donald Trump a avertizat că vor urma alte operațiuni militare împotriva Venezuelei dacă membrii cercului restrâns al lui Nicolas Maduro, care au preluat conducerea țării, nu vor accepta cererile lui, care se concentrează în mare parte pe obținerea petrolului venezuelean.",
+      "publishedAt": "2026-01-07T18:58:48.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.790Z"
+    },
+    {
+      "id": "7e5b931cc3f62645",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "FOTO Escortată de avioane de vânătoare F-18, aeronava Spartan l-a adus pe Nicușor Dan înapoi în țară după ce rămăsese blocată la Paris: „Un gest de apreciere”",
+      "url": "https://hotnews.ro/foto-avioane-de-vanatoare-au-escortat-aeronava-cu-care-nicusor-dan-s-a-intors-din-franta-un-gest-de-apreciere-2145622",
+      "summary": "Președintele Nicușor Dan, care s-a întors în România de la Paris cu o întârziere de 24 de ore, a anunțat că aeronava Spartan cu care se îndrepta spre București a fost escortată de două avioane…",
+      "publishedAt": "2026-01-07T18:42:05.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.790Z"
+    },
+    {
+      "id": "c4c1f83597c4083a",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "George Simion anunță proteste: „Nu mai comentați…ieșiți în stradă”",
+      "url": "https://www.mediafax.ro/politic/george-simion-anunta-proteste-nu-mai-comentatiiesiti-in-strada-23668229",
+      "summary": "George Simion, liderul Alianței pentru Unirea Românilor (AUR), a publicat pe Facebook un mesaj video în care îi îndeamnă pe români să iasă în stradă la început de an, anunțând un protest pentru joi, 15 ianuarie 2026, în Piața Universității, „la Statui”, începând cu ora 18:00.",
+      "publishedAt": "2026-01-08T01:28:23.000Z",
+      "fetchedAt": "2026-01-08T02:03:31.173Z"
+    },
+    {
+      "id": "36880c84210af872",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Trump dă undă verde „super-sancțiunilor” pentru Rusia. Sancțiuni pentru cumpărătorii de petrol rusesc; vot posibil săptămâna viitoare în Senat",
+      "url": "https://www.mediafax.ro/externe/trump-da-unda-verde-super-sanctiunilor-pentru-rusia-sanctiuni-pentru-cumparatorii-de-petrol-rusesc-vot-posibil-saptamana-viitoare-in-senat-23668227",
+      "summary": "Senatorul republican Lindsey Graham a precizar că președintele Donald Trump a aprobat un proiect de lege „mult așteptat” care ar impune sancțiuni dure țărilor ce cumpără petrol rusesc, iar inițiativa ar putea ajunge la vot în Senat chiar săptămâna viitoare.",
+      "publishedAt": "2026-01-08T01:02:34.000Z",
+      "fetchedAt": "2026-01-08T02:03:31.173Z"
+    },
+    {
+      "id": "2f1280e343560454",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Atac al rușilor în plin val de ger în Ucraina. Mai multe regiuni fără energie la minus 20 de grade",
+      "url": "https://www.mediafax.ro/externe/atac-al-rusilor-in-plin-val-de-ger-in-ucraina-mai-multe-regiuni-fara-energie-la-minus-20-de-grade-23668224",
+      "summary": "Atacurile rusești de miercuri noaptea au întrerupt aproape complet alimentarea cu energie electrică în două regiuni din sud-estul Ucrainei, a declarat ministerul energiei.",
+      "publishedAt": "2026-01-08T00:28:39.000Z",
+      "fetchedAt": "2026-01-08T02:03:31.173Z"
+    },
+    {
+      "id": "14b178db6dfbb80b",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Trump: Venezuela va cumpăra „DOAR produse fabricate în SUA” din banii obținuți prin noul acord petrolier",
+      "url": "https://www.mediafax.ro/externe/trump-venezuela-va-cumpara-doar-produse-fabricate-in-sua-din-banii-obtinuti-prin-noul-acord-petrolier-23668222",
+      "summary": "Președintele SUA, Donald Trump, a precizat miercuri noaptea, într-o postare pe Truth Social, că Venezuela ar urma să folosească încasările rezultate din noul acord petrolier cu Statele Unite pentru a achiziționa „NUMAI produse fabricate în America”, fără a oferi detalii despre mecanismul concret prin care vor fi făcute aceste tranzacții.",
+      "publishedAt": "2026-01-07T22:48:18.000Z",
+      "fetchedAt": "2026-01-08T02:03:31.173Z"
+    },
+    {
+      "id": "bf0f2f8b896de86d",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Rezultatele serii în Premier League. Manchester United, doar egal la Burnley în primul meci după demiterea lui Amorim. Înfrângere pentru Tottenham",
+      "url": "https://www.mediafax.ro/sport/rezultatele-serii-in-premier-league-manchester-united-doar-egal-la-burnley-in-primul-meci-dupa-demiterea-lui-amorim-infrangere-pentru-tottenham-23668219",
+      "summary": "Manchester United, doar egal la Burnley în primul meci după demiterea lui Amorim: „dubla” lui Šeško n-a fost de ajuns.",
+      "publishedAt": "2026-01-07T22:32:46.000Z",
+      "fetchedAt": "2026-01-08T02:03:31.173Z"
+    },
+    {
+      "id": "23f05dc3ff58c1bc",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Au pariat pe AI și au câștigat, cel puțin pe moment: Alphabet depășește Apple la capitalizare bursieră pentru prima dată din 2019",
+      "url": "https://www.mediafax.ro/tehnologie/au-pariat-pe-ai-si-au-castigat-cel-putin-pe-moment-alphabet-depaseste-apple-la-capitalizare-bursiera-pentru-prima-data-din-2019-23668216",
+      "summary": "Alphabet o depășește pe Apple la capitalizare bursieră, pentru prima dată din 2019. Pariul pe AI schimbă ierarhia",
+      "publishedAt": "2026-01-07T22:04:34.000Z",
+      "fetchedAt": "2026-01-08T02:03:31.173Z"
+    },
+    {
+      "id": "2dd85aa482e86390",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Barcelona, show total la Jeddah: 5-0 cu Athletic și calificare în finala Supercupei Spaniei",
+      "url": "https://www.mediafax.ro/sport/barcelona-show-total-la-jeddah-5-0-cu-athletic-si-calificare-in-finala-supercupei-spaniei-23668213",
+      "summary": "Barcelona s-a calificat în finala Supercupei Spaniei după o victorie clară, obținută pe stadionul King Abdullah Sports City din Jeddah, împotriva celor de la Athletic Bilbao. Catalanii, deținătorii trofeului și campionii-record ai competiției (15 titluri), vor întâlni în ultimul act câștigătoarea duelului dintre Real Madrid și Atletico Madrid, programat joi, finala urmând să aibă loc duminică.",
+      "publishedAt": "2026-01-07T21:31:12.000Z",
+      "fetchedAt": "2026-01-08T02:03:31.173Z"
+    },
+    {
+      "id": "bf497921a059077a",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Trump se va întâlni la Casa Albă cu reprezentanți ai companiilor petroliere din SUA",
+      "url": "https://www.mediafax.ro/externe/trump-se-va-intalni-la-casa-alba-cu-reprezentanti-ai-companiilor-petroliere-din-sua-23668205",
+      "summary": "Președintele SUA, Donald Trump se va întâlni, vineri, la Casa Albă cu directorii celor mai mari trei companii petroliere din SUA, potrivit Casei Albe, citată de Sky News.",
+      "publishedAt": "2026-01-07T21:01:16.000Z",
+      "fetchedAt": "2026-01-08T02:03:31.173Z"
+    },
+    {
+      "id": "b5dfc19ef0981995",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Horoscop 8 ianuarie 2026: Două zodii găsesc soluția la o problemă veche",
+      "url": "https://www.mediafax.ro/stirile-zilei/horoscop-8-ianuarie-2026-doua-zodii-gasesc-solutia-la-o-problema-veche-23668201",
+      "summary": "Zi cu energie schimbătoare pentru toate zodiile. Luna sprijină dialogul și cooperarea, iar multe semne au șansa să rezolve în sfârșit o problemă care le urmărea de mult. Comunicarea, răbdarea și calmul fac diferența.",
+      "publishedAt": "2026-01-07T20:58:29.000Z",
+      "fetchedAt": "2026-01-08T02:03:31.173Z"
+    },
+    {
+      "id": "30c7275d11c30460",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "AI-ul lui Musk, folosit pentru a crea imagini cu copii abuzați sexual / „Ceea ce am văzut este absolut îngrozitor”",
+      "url": "https://www.mediafax.ro/tehnologie/ai-ul-lui-musk-folosit-pentru-a-crea-imagini-cu-copii-abuzati-sexual-ceea-ce-am-vazut-este-absolut-ingrozitor-23668206",
+      "summary": "Musk a anunțat recent că este gata o nouă versiune a chatbotu-ului IA, Grok, și și-a îndemnat utilizatorii s-o încerce, însă nu a specificat ce update-uri i-au fost aduse. Revolta a fost uriașă când infractorii care au folosit-o s-au și lăudat că au creat imagini în care copii de 11 ani sunt abuzați sexual folosind Grok.",
+      "publishedAt": "2026-01-07T20:56:13.000Z",
+      "fetchedAt": "2026-01-08T02:03:31.173Z"
+    },
+    {
+      "id": "2cffadfc43836da7",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Casa Albă spune că Donald Trump discută “activ” cu echipa sa variantele prin care poate să cumpere Groenlanda. Totodată, secretarul de Stat anunță că se va întâlni săptămâna viitoare cu mai mulți oficiali din Danemarca, pentru discuții privind insula.",
+      "url": "https://www.biziday.ro/344286-2/",
+      "summary": "Karoline Leavitt, purtătoarea de cuvânt a Casei Albe a declarat, în timpul unei conferințe de presă, că președintele Donald Trump discută “o serie de opțiuni” pentru achiziționarea Groenlandei, invocând din nou motivația securității naționale a SUA. “Acest lucru este discutat în prezent activ de președinte și echipa sa de securitate națională. Președintele a fost foarte […]",
+      "publishedAt": "2026-01-07T19:57:02.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.217Z"
+    },
+    {
+      "id": "ab02ed99ba84c230",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Rusia acuză SUA de „piraterie de secol XXI” după confiscarea petrolierului Marinera. Echipajul navei ar putea fi judecat",
+      "url": "https://stirileprotv.ro/stiri/international/rusia-acuza-sua-de-zpiraterie-de-secol-xxi-dupa-confiscarea-petrolierului-marinera-echipajul-navei-ar-putea-fi-judecat.html",
+      "summary": "Parlamentarul rus Leonid Sluţki a denunţat confiscarea navei Marinera de către SUA drept „piraterie de secol XXI”, iar Ministerul de Externe rus a cerut eliberarea echipajului. Casa Albă a precizat că echipajul navei ar putea fi judecaţi.",
+      "publishedAt": "2026-01-07T21:12:00.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.544Z"
+    },
+    {
+      "id": "e5baf4f7626c04c9",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "O femeie a fost ucisă de un agent federal în Minneapolis, în timpul unei operațiuni de amploare împotriva imigrației",
+      "url": "https://stirileprotv.ro/stiri/international/o-femeie-a-fost-ucisa-de-un-agent-federal-in-minneapolis-in-timpul-unei-peratiuni-de-amploare-impotriva-imigratiei.html",
+      "summary": "Un agent al Serviciului pentru Imigrare și Vamă al SUA (ICE) a împușcat mortal o femeie de 37 de ani în Minneapolis, miercuri, potrivit autorităților federale și locale.",
+      "publishedAt": "2026-01-07T21:10:00.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.544Z"
+    },
+    {
+      "id": "dafb1d34810b2443",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Patru localități din județul Alba nu au în continuare curent electric. Peste 200 de oameni „stau în întuneric”",
+      "url": "https://stirileprotv.ro/stiri/actualitate/patru-localitati-din-judetul-alba-nu-au-in-continuare-curent-electric-peste-200-de-oameni-zstau-in-intuneric.html",
+      "summary": "Autorităţile din judeţul Alba anunţă că, miercuri seară, patru localităţi sunt în continuare nealimentate cu curent electric şi se intervine pentru remedierea situaţiei.",
+      "publishedAt": "2026-01-07T20:58:00.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.544Z"
+    },
+    {
+      "id": "e340be5913b1fb25",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Prestaţie jenantă în tenisul profesionist. O jucătoare din Egipt a „reuşit” una din cele mai slabe evoluţii din istorie VIDEO",
+      "url": "https://stirileprotv.ro/stiri/sport/prestatie-jenanta-in-tenisul-profesionist-o-jucatoare-din-egipt-a-zreusit-una-din-cele-mai-slabe-evolutii-din-istorie-video.html",
+      "summary": "Jucătoarea egipteană de tenis Hajar Abdelkader a avut o prestaţie jenantă la Nairobi, într-un turneu ITF, pierzând în numai 37 de minute un meci în care a realizat doar trei puncte.",
+      "publishedAt": "2026-01-07T20:32:00.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.544Z"
+    },
+    {
+      "id": "8079b03882d4b368",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "De ce Katy Perry îl consideră pe Justin Trudeau „irezistibil de atrăgător”. Cum arată alesul inimii ei. GALERIE FOTO",
+      "url": "https://stirileprotv.ro/show-buzz/entertainment/de-ce-katy-perry-il-considera-pe-justin-trudeau-zincredibil-de-atragator-cum-arata-alesul-inimii-ei-galerie-foto.html",
+      "summary": "Katy Perry și Justin Trudeau se întâlnesc de aproape șase luni. Potrivit unor surse, cuplul merge în continuare foarte bine în anul 2026, iar Katy îl consideră „irezistibil” dintr-un motiv anume.",
+      "publishedAt": "2026-01-07T20:19:00.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.544Z"
+    },
+    {
+      "id": "afdedd3d3b09c370",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Presa din Ungaria: Ursula von der Leyen face România măreață. Ceea ce s-a întâmplat este fără precedent",
+      "url": "https://stirileprotv.ro/stiri/international/presa-din-ungaria-ursula-von-der-leyen-face-romania-mareata-ceea-ce-s-a-intamplat-este-fara-precedent.html",
+      "summary": "Presa ungară a scris despre situația economică a României și despre fondurile europene care au ajuns în ultimele luni în țara noastră, citându-l pe ministrul Investițiilor și Proiectelor Europene, Dragoș Pîslaru.",
+      "publishedAt": "2026-01-07T20:09:00.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.544Z"
+    },
+    {
+      "id": "fbe53f4271a58d5a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Inteligența artificială transformă reciclarea. Roboții încep să preia munca murdară și prost plătită",
+      "url": "https://stirileprotv.ro/stiri/financiar/inteligenta-artificiala-transforma-reciclarea-robotii-incep-sa-preia-munca-murdara-si-prost-platita.html",
+      "summary": "Inteligența artificială transformă reciclarea. Roboții au început să fie folosiți pentru sortarea deșeurilor o muncă grea, murdară și de multe ori prost plătită.",
+      "publishedAt": "2026-01-07T19:51:00.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.544Z"
+    },
+    {
+      "id": "866071f361e0f78c",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Președintele Colegiului Medicilor: „Peste 1.500 de pacienți, consultați în șase zile de doar trei medici la UPU Buzău”",
+      "url": "https://stirileprotv.ro/stiri/sanatate/presedintele-colegiului-medicilor-zpeste-1-500-de-pacienti-consultati-in-sase-zile-de-doar-trei-medici-la-upu-buzau.html",
+      "summary": "Preşedintele Colegiului Medicilor, Cătălina Poiană, afirmă, miercuri seară, că, în şase zile, peste 1.500 de pacienţi au fost consultaţi de doar trei medici pe tură la Unitatea de Primiri Urgenţe a Spitalului Judeţean de Urgenţă Buzău.",
+      "publishedAt": "2026-01-07T19:38:00.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.544Z"
+    },
+    {
+      "id": "281fc49d9d992ba7",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Protestele violente continuă în Iran. Moschee și magazin cu Corane şi cărţi de rugăciuni, atacate. Arestările se țin lanț",
+      "url": "https://stirileprotv.ro/stiri/international/protestele-violente-continua-in-iran-moschee-si-magazin-cu-corane-si-carti-de-rugaciuni-atacate-arestarile-se-tin-lant.html",
+      "summary": "Protestele nu slăbesc în Iran, unde în diferite oraşe izbucnesc confruntări uneori soldate cu morţi, în ciuda încercărilor de calmare ale preşedintelui Massoud Pezeshkian, care a cerut miercuri forţelor de securitate să nu-i atace pe protestatari.",
+      "publishedAt": "2026-01-07T19:33:00.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.544Z"
+    },
+    {
+      "id": "d25f0df079c835d5",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Căsătorie anulată în Țările de Jos după ce discursul de nuntă a fost generat de ChatGPT. Ce spune instanța",
+      "url": "https://stirileprotv.ro/stiri/actualitate/casatorie-anulata-in-olanda-dupa-ce-discursul-de-nunta-a-fost-generat-de-chatgpt-ce-spune-instanta.html",
+      "summary": "În Olanda, ChatGPT „s-a invitat” la o ceremonie de nuntă şi a sfârşit prin a distruge totul. Justiţia olandeză a anulat o uniune, hotărând că inteligenţa artificială nu are ce căuta într-un discurs de nuntă, care trebuie să fie conform cu Codul Civil.",
+      "publishedAt": "2026-01-07T19:30:00.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.544Z"
+    },
+    {
+      "id": "fc8d3667c198f6c4",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Incident feroviar între Periș și Buftea. „Dorel” a tăiat cablurile de semnalizare",
+      "url": "https://stirileprotv.ro/stiri/actualitate/incident-feroviar-intre-peris-si-buftea-zdorel-a-taiat-cablurile-de-semnalizare.html",
+      "summary": "Compania Națională de Căi Ferate „CFR” S.A. a anunțat miercuri seară producerea unui incident tehnic pe secția de circulație Periș – Buftea, în zona București, care afectează traficul feroviar.",
+      "publishedAt": "2026-01-07T19:09:00.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.544Z"
+    },
+    {
+      "id": "3c4b59ab06112fd3",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Marco Rubio a confirmat întâlniri cu oficialii danezi pe fondul interesului SUA pentru Groenlanda",
+      "url": "https://stirileprotv.ro/stiri/international/marco-rubio-a-confirmat-intalniri-cu-oficialii-danezi-pe-fondul-interesului-sua-pentru-groenlanda.html",
+      "summary": "Secretarul de stat Marco Rubio a declarat miercuri că se va întâlni cu oficialii danezi săptămâna viitoare, în urma interesului reînnoit al SUA de a prelua Groenlanda, informează CNN.",
+      "publishedAt": "2026-01-07T19:08:00.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.544Z"
+    },
+    {
+      "id": "2a9b7a21db72608f",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Casa Albă: SUA vor dicta deciziile noilor autorități din Venezuela și vor controla pe termen nelimitat exporturile de petrol",
+      "url": "https://stirileprotv.ro/stiri/international/casa-alba-sua-vor-dicta-deciziile-noilor-autoritati-din-venezuela-si-vor-controla-pe-termen-nelimitat-exporturile-de-petrol.html",
+      "summary": "Casa Albă a declarat miercuri că SUA vor continua să influențeze deciziile noilor autorități din Venezuela, iar Washingtonul va controla pe termen nelimitat exporturile de petrol și veniturile aferente",
+      "publishedAt": "2026-01-07T19:07:00.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.544Z"
+    },
+    {
+      "id": "e8d8ddb47b3d4879",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Horoscop 8 ianuarie 2026, cu Neti Sandu. Zodia care se va regla din punct de vedere financiar",
+      "url": "https://stirileprotv.ro/show-buzz/horoscop/horoscop-8-ianuarie-2026-cu-neti-sandu-zodia-care-se-va-regla-din-punct-de-vedere-financiar.html",
+      "summary": "Horoscop 8 ianuarie 2026, prezentat de Neti Sandu la Știrile PRO TV. O zi cu reușite. Mai avem chef și de treabă, că de distracție am tot avut – chef – și o să ne facem planuri cu bătaie lungă, că avem obiective de atins.",
+      "publishedAt": "2026-01-07T19:08:00.000Z",
+      "fetchedAt": "2026-01-08T02:03:30.544Z"
+    },
+    {
+      "id": "d9d2fe8234839c21",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Brazilia: Bolsonaro, fără răni grave după ce a căzut în celulă",
+      "url": "https://agerpres.ro/politic-extern/2026/01/08/brazilia-bolsonaro-fara-rani-grave-dupa-ce-a-cazut-in-celula--1516994",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "3e4db8a1a0a5bdb1",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Trump asigură că Venezuela va cumpăra doar produse americane cu veniturile din petrolul vândut de Washington",
+      "url": "https://agerpres.ro/politic-extern/2026/01/08/trump-asigura-ca-venezuela-va-cumpara-doar-produse-americane-cu-veniturile-din-petrolul-vandut-de-wa--1516993",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "cbf2d636ec246061",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Venezuela: Două persoane arestate după ce au sărbătorit capturarea lui Maduro (ONG)",
+      "url": "https://agerpres.ro/social-extern/2026/01/07/venezuela-doua-persoane-arestate-dupa-ce-au-sarbatorit-capturarea-lui-maduro-ong--1516992",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "2fe9f99726de389a",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Trump va susține pe 24 februarie, în Congres, discursul său privind starea uniunii",
+      "url": "https://agerpres.ro/politic-extern/2026/01/07/trump-va-sustine-pe-24-februarie-in-congres-discursul-sau-privind-starea-uniunii--1516991",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "81b129581a659960",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Baschet masculin: U-BT Cluj-Napoca a pierdut la Venezia, în EuroCup",
+      "url": "https://agerpres.ro/sport-extern/2026/01/07/baschet-masculin-u-bt-cluj-napoca-a-pierdut-la-venezia-in-eurocup--1516990",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "56a32aabaf3f0a94",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: Camerunezul Christ Afalna s-a transferat de la Unirea Slobozia la FC Hermannstadt",
+      "url": "https://agerpres.ro/sport/2026/01/07/fotbal-camerunezul-christ-afalna-s-a-transferat-de-la-unirea-slobozia-la-fc-hermannstadt--1516989",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "18f80c6c0f454581",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Alba: Comitetul Județean pentru Situații de Urgență, convocat în ședință extraordinară",
+      "url": "https://agerpres.ro/social/2026/01/07/alba-comitetul-judetean-pentru-situatii-de-urgenta-convocat-in-sedinta-extraordinara--1516986",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "d115dd3af5970548",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: UTA l-a transferat pe nigerianul Ime Ndon",
+      "url": "https://agerpres.ro/sport/2026/01/07/fotbal-uta-l-a-transferat-pe-nigerianul-ime-ndon--1516987",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "d8ae495f21f2a0fb",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Guvernul groenlandez va participa la întâlnirea dintre Rubio și oficiali danezi",
+      "url": "https://agerpres.ro/politic-extern/2026/01/07/guvernul-groenlandez-va-participa-la-intalnirea-dintre-rubio-si-oficiali-danezi--1516985",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "77dbbaea48bf559e",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Volei feminin: CSO Voluntari, învinsă în Germania, în Cupa CEV",
+      "url": "https://agerpres.ro/sport-extern/2026/01/07/volei-feminin-cso-voluntari-invinsa-in-germania-in-cupa-cev--1516983",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "82d0f5d54c663865",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO #Ucraina denunță atacuri rusești în porturile Odesei și salută capturarea unui petrolier rusesc de către SUA",
+      "url": "https://agerpres.ro/politic-extern/2026/01/07/video-ucraina-denunta-atacuri-rusesti-in-porturile-odesei-si-saluta-capturarea-unui-petrolier-rusesc--1516982",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "2dc0b0cb0be6166c",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Handbal feminin: Victorie fără probleme pentru Corona Brașov, la Galați",
+      "url": "https://agerpres.ro/sport/2026/01/07/handbal-feminin-victorie-fara-probleme-pentru-corona-brasov-la-galati--1516979",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "714cead585291434",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO SUA amenință că ar putea aduce în instanță echipajul petrolierului rusesc capturat",
+      "url": "https://agerpres.ro/politic-extern/2026/01/07/video-sua-ameninta-ca-ar-putea-aduce-in-instanta-echipajul-petrolierului-rusesc-capturat--1516977",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "95bf5748e65e7dd3",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Președintele Colegiului Medicilor despre cazul de la Buzău: Să nu politizăm, să așteptăm rezultatul anchetei",
+      "url": "https://agerpres.ro/sanatate/2026/01/07/presedintele-colegiului-medicilor-despre-cazul-de-la-buzau-sa-nu-politizam-sa-asteptam-rezultatul-an--1516976",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "c9cb3d8e7c899fb3",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Volei masculin: Corona Brașov s-a calificat în optimile de finală ale Cupei CEV",
+      "url": "https://agerpres.ro/sport/2026/01/07/volei-masculin-corona-brasov-s-a-calificat-in-optimile-de-finala-ale-cupei-cev--1516978",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "c747880c0d197a13",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: Ianis Hagi a marcat pentru Alanyaspor în meciul amical cu Metaloglobus (2-0)",
+      "url": "https://agerpres.ro/sport/2026/01/07/fotbal-ianis-hagi-a-marcat-pentru-alanyaspor-in-meciul-amical-cu-metaloglobus-2-0--1516974",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "1c415e0cce228f81",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Trump studiază intens ideea ca SUA să 'cumpere' Groenlanda și diplomația rămâne prima opțiune (Casa Albă)",
+      "url": "https://agerpres.ro/politic-extern/2026/01/07/video-trump-studiaza-intens-ideea-ca-sua-sa-cumpere-groenlanda-si-diplomatia-ramane-prima-optiune-ca--1516973",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "3a14770049890e2c",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "UPDATE Trenurile circulă pe ambele fire între Periş şi Buftea",
+      "url": "https://agerpres.ro/economic/2026/01/07/update-trenurile-circula-pe-ambele-fire-intre-peris-si-buftea--1516970",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "79fbc17f5c57f5a0",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Deciziile autorităților venezuelene vor fi 'dictate' de SUA, afirmă Casa Albă",
+      "url": "https://agerpres.ro/politic-extern/2026/01/07/video-deciziile-autoritatilor-venezuelene-vor-fi-dictate-de-sua-afirma-casa-alba--1516969",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "231ecd17a383f736",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: Universitatea Craiova - Konyaspor 1-0, în meci amical",
+      "url": "https://agerpres.ro/sport/2026/01/07/fotbal-universitatea-craiova---konyaspor-1-0-in-meci-amical--1516972",
+      "summary": "",
+      "publishedAt": "2026-01-08T02:03:31.757Z",
+      "fetchedAt": "2026-01-08T02:03:31.757Z"
     }
   ],
-  "lastUpdated": "2026-01-07T18:40:05.066Z"
+  "lastUpdated": "2026-01-08T02:03:31.765Z"
 }
