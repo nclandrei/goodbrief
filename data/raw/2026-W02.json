@@ -10920,7 +10920,387 @@
       "summary": "",
       "publishedAt": "2026-01-08T02:03:31.757Z",
       "fetchedAt": "2026-01-08T02:03:31.757Z"
+    },
+    {
+      "id": "716ff2163389f38a",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Un bărbat din Ploiești a sunat la 112, convins că taximetristul e băut, dar el a fost cel amendat de polițiști",
+      "url": "https://hotnews.ro/video-un-barbat-din-ploiesti-a-sunat-la-112-convins-ca-taximetristul-e-baut-dar-el-a-fost-cel-amendat-de-politisti-2145736",
+      "summary": "Un ploieștean a primit amendă 2.000 de lei după ce a sunat la 112 să reclame că șoferul de taxi cu care se deplasa era sub influența alcoolului. Testat cu etilotestul, șoferul de taxi a…",
+      "publishedAt": "2026-01-08T06:24:38.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.540Z"
+    },
+    {
+      "id": "39a14873158320d7",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Probleme medicale pentru un astronaut de pe Stația Spațială Internațională, NASA analizează readucerea echipajului său pe Pământ",
+      "url": "https://hotnews.ro/probleme-medicale-pentru-un-astronaut-de-pe-statia-spatiala-internationala-nasa-analizeaza-readucerea-echipajului-sau-pe-pamant-2145737",
+      "summary": "NASA ia în considerare o întoarcere anticipată a unui astronaut și a echipajului său de pe Stația Spațială Internațională (ISS) din cauza unei probleme medicale pe care agenția americană nu a precizat-o, transmite Reuters. Informația…",
+      "publishedAt": "2026-01-08T06:21:49.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.540Z"
+    },
+    {
+      "id": "2b51930d1bfe2747",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Câte zile libere ți-au mai rămas anul acesta. România se află în vârful clasamentului european după numărul zilelor libere legale",
+      "url": "https://hotnews.ro/cate-zile-libere-ti-au-mai-ramas-anul-acesta-romania-se-afla-in-varful-clasamentului-european-dupa-numarul-zilelor-libere-legale-2145738",
+      "summary": "Pentru anul 2026, România se află în vârful clasamentului european al țărilor după numărul zilelor libere legale, depășind Ciprul (care are 14-15 zile libere). În 2026 sunt, în principiu, 17 zile libere legale în România,…",
+      "publishedAt": "2026-01-08T06:20:36.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.540Z"
+    },
+    {
+      "id": "84400c110742ffd6",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Știați că se poate găti cu focul de la aragaz oprit? Idei neobișnuite recomandate pentru economisirea energiei",
+      "url": "https://hotnews.ro/stiati-ca-se-poate-gati-cu-focul-de-la-aragaz-oprit-idei-neobisnuite-recomandate-pentru-economisirea-energiei-2143875",
+      "summary": "Odată cu scumpirile accentuate ale energiei, care au început în perioada 2021–2022, statele europene au fost nevoite să adopte rapid măsuri de eficiență energetică. Pe lângă recomandările obișnuite privind reducerea risipei, din partea oficialilor și…",
+      "publishedAt": "2026-01-08T05:49:10.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.540Z"
+    },
+    {
+      "id": "2853bd8609e83c38",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Trump ordonă retragerea SUA din zeci de organizaţii internaţionale, inclusiv agenții ONU",
+      "url": "https://hotnews.ro/donald-trump-ordona-retragerea-sua-din-zeci-de-organizatii-internationale-inclusiv-agentii-onu-2145714",
+      "summary": "Președintele american Donald Trump a semnat miercuri un ordin executiv ce prevede retragerea Statelor Unite din 66 de organizații internaționale care „nu mai servesc interesele americane”, a anunţat Casa Albă într-un comunicat citat de Reuters. Casa…",
+      "publishedAt": "2026-01-08T05:33:01.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.540Z"
+    },
+    {
+      "id": "29892b882827b3cc",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Donald Trump face planuri pentru a prelua industria petrolieră a Venezuelei și a calculat la ce preț va ajunge astfel țițeiul",
+      "url": "https://hotnews.ro/donald-trump-face-planuri-pentru-a-prelua-industria-petroliera-a-venezuelei-si-a-calculat-la-ce-pret-va-ajunge-astfel-titeiul-2145716",
+      "summary": "Donald Trump și consilierii săi fac un plan pentru a domina industria petrolieră venezueleană în următorii ani, iar președintele Statelor Unite le-a spus consilierilor săi că eforturile sale ar putea contribui la scăderea prețului petrolului…",
+      "publishedAt": "2026-01-08T05:24:19.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.540Z"
+    },
+    {
+      "id": "512ca326cf1e20f7",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "„Sunt dezgustată să ating bancnotele!” „Euro? Mulțumim, noi voiam leva!”- Cozi, portofele duble și panică în prima zi în care pensionarii bulgari au primit pensia în euro",
+      "url": "https://hotnews.ro/sunt-dezgustata-sa-ating-bancnotele-euro-multumim-noi-voiam-leva-cozi-portofele-duble-si-panica-in-prima-zi-in-care-pensionarii-bulgari-au-primit-pensia-in-eu-2145712",
+      "summary": "În cartierul Ovcha Kupel din Sofia, o femeie s-a oprit în fața reporterilor și le-a spus direct: „Sunt dezgustată să ating noile bancnote.”, scrie publicația 24Chasa. Alții nu s-au ferit să sublinieze că nu au…",
+      "publishedAt": "2026-01-08T05:15:19.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.540Z"
+    },
+    {
+      "id": "de95542cdea43079",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "INTERVIU De ce doi dintre cei mai buni absolvenți de Medicină din România au ales să le fie greu în 2026: explică cum au luat Terapie Intensivă la rezidențiat, când mulți colegi ai lor au ales medicină de înfrumusețare",
+      "url": "https://hotnews.ro/interviu-de-ce-doi-dintre-cei-mai-buni-absolventi-de-medicina-din-romania-au-ales-sa-le-fie-greu-in-2026-explica-cum-au-luat-terapie-intensiva-la-rezidentiat-2132197",
+      "summary": "La recentul concurs de rezidențiat din noiembrie 2025, din primii 200 de rezidenți, în ordinea mediilor, 33 au ales cele două specialități care țin de medicina de înfrumusețare, doar unul a ales chirurgia generală și…",
+      "publishedAt": "2026-01-08T04:59:12.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.540Z"
+    },
+    {
+      "id": "d1a579ab9cbb2ab8",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Digi „rupe” tot în Spania. Nou record pentru compania românească",
+      "url": "https://hotnews.ro/digi-rupe-tot-in-spania-nou-record-pentru-compania-romaneasca-2145710",
+      "summary": "Digi a fost și în 2025 liderul incontestabil în atragerea clienților prin portabilitatea numerelor în Spania, pentru al cincilea an consecutiv. Operatorul român de telecomunicații, care pregătește listarea subsidiarei spaniole, și-a doborât propriul record la…",
+      "publishedAt": "2026-01-08T04:55:00.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.540Z"
+    },
+    {
+      "id": "8baf6c9e16184796",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Neurotehnologia ne va citi gândurile: Cum va deveni creierul noua interfață digitală",
+      "url": "https://www.mediafax.ro/life-inedit/neurotehnologia-ne-va-citi-gandurile-cum-va-deveni-creierul-noua-interfata-digitala-23668259",
+      "summary": "Dispozitivele portabile nu se mai rezumă la monitorizarea pașilor, pulsului sau somnului. O nouă generație de tehnologii începe să interacționeze direct cu activitatea cerebrală, anticipând intențiile și deciziile utilizatorilor înainte ca acestea să fie exprimate. The Conversation prezintă felul în care neurotehnologia, printr-o tranziție subtilă, dar profundă, transformă felul în care lucrăm, învățăm și comunicăm.",
+      "publishedAt": "2026-01-08T06:24:35.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.712Z"
+    },
+    {
+      "id": "1255805abbf5ef9c",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Decizie fără precedent: Trump retrage SUA din tratatul climatic al ONU",
+      "url": "https://www.mediafax.ro/externe/decizie-fara-precedent-trump-retrage-sua-din-tratatul-climatic-al-onu-23668267",
+      "summary": "Statele Unite ies din convenția ONU care stă la baza luptei împotriva schimbărilor climatice în lume, devenind singura țară care părăsește acest tratat.",
+      "publishedAt": "2026-01-08T06:11:42.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.712Z"
+    },
+    {
+      "id": "e3c330b42f90ed24",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Silvășan, după eșecul U-BT Cluj la Veneția: Am fost prea confortabili după șase victorii consecutive",
+      "url": "https://www.mediafax.ro/sport/silvasan-dupa-esecul-u-bt-cluj-la-venetia-am-fost-prea-confortabili-dupa-sase-victorii-consecutive-23668265",
+      "summary": "„Am fost puțin prea confortabili după șase victorii consecutive”, a spus antrenorul Mihai Silvășan, după eșecul campioanei României, U-BT Cluj, la Veneția, miercuri noapte, scor 83-90, în fața formației Umana Reyer, în etapa a XIII-a din BKT EuroCup la baschet masculin.",
+      "publishedAt": "2026-01-08T06:09:07.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.712Z"
+    },
+    {
+      "id": "d3dfe66822a4078d",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Record îngrijorător: Cel mai tânăr pacient cu Alzheimer din lume",
+      "url": "https://www.mediafax.ro/sanatate/record-ingrijorator-cel-mai-tanar-pacient-cu-alzheimer-din-lume-23668268",
+      "summary": "Cel mai tânăr pacient cu Alzheimer din lume este un băiat de 19 ani din China.",
+      "publishedAt": "2026-01-08T06:07:55.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.712Z"
+    },
+    {
+      "id": "445547adcf2ab751",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Descoperire șocantă: un virus străvechi găsit în schelete umane. Trăiește în noi și azi",
+      "url": "https://www.mediafax.ro/social/descoperire-socanta-un-virus-stravechi-gasit-in-schelete-umane-traieste-in-noi-si-azi-23668258",
+      "summary": "Oamenii de știință au descoperit un virus străvechi în ADN-ul a aproape 4.000 de schelete umane din Europa.",
+      "publishedAt": "2026-01-08T05:58:15.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.712Z"
+    },
+    {
+      "id": "e71ee91c1fc88f33",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Bărbatul acuzat de uciderea părinților pentru a finanța asasinarea lui Trump acceptă un acord de recunoaștere a vinovăției",
+      "url": "https://www.mediafax.ro/externe/barbatul-acuzat-de-uciderea-parintilor-pentru-a-finanta-asasinarea-lui-trump-accepta-un-acord-de-recunoastere-a-vinovatiei-23668255",
+      "summary": "Un bărbat din Wisconsin acuzat că și-a ucis părinții și le-a furat banii pentru a finanța un plan de asasinare a președintelui Donald Trump urmează să încheie joi o înțelegere judiciară pentru soluționarea cazului.",
+      "publishedAt": "2026-01-08T05:43:00.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.712Z"
+    },
+    {
+      "id": "f0c014c07fd259ed",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Trae Young, vedeta lui Atlanta Hawks, a fost transferat la Washington Wizards",
+      "url": "https://www.mediafax.ro/sport/trae-young-vedeta-lui-atlanta-hawks-a-fost-transferat-la-washington-wizards-23668254",
+      "summary": "Trae Young, vedeta echipei din NBA Atlanta Hawks, a fost transferat joi la Washington Wizards. În schimb, Atlanta îi primește pe CJ McCollum și Corey Kispert.",
+      "publishedAt": "2026-01-08T05:42:06.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.712Z"
+    },
+    {
+      "id": "11c5dc729f3fa2fd",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Olanda a interzis deținerea anumitor tipuri de pisici. Cum motivează autoritățile decizia",
+      "url": "https://www.mediafax.ro/externe/olanda-a-interzis-detinerea-anumitor-tipuri-de-pisici-cum-motiveaza-autoritatile-decizia-23668248",
+      "summary": "Guvernul Olandei a decis ca, începând cu 1 ianuarie 2026, deținerea anumitor rase de pisici considerate dăunătoare pentru propria lor existență, să fie interzisă, motivul principal fiind problemele genetice asociate cu aspectul acestor animale. Il Post arată că scopul măsurii este de a opri cumpărarea și reproducerea acestor rase, fără a impune confiscarea exemplarelor deja existente.",
+      "publishedAt": "2026-01-08T05:35:08.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.712Z"
+    },
+    {
+      "id": "edbeab8b115bb613",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Turiștii sunt penalizați în tot mai multe locuri. Ce destinații vă golesc portofelul",
+      "url": "https://www.mediafax.ro/externe/turistii-sunt-penalizati-in-tot-mai-multe-locuri-ce-destinatii-va-golesc-portofelul-23668247",
+      "summary": "Taxele turistice cresc în 2026 în numeroase destinații populare. Turiștii vor plăti o taxă de 2 euro pe noapte la București. Los Angeles ajunge la 15,5% din costul cazării, iar Edinburgh stabilește 5% din prețul hotelului.",
+      "publishedAt": "2026-01-08T05:26:38.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.712Z"
+    },
+    {
+      "id": "34b96d56325a6ad3",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Sorana Cîrstea pierde cu Aryna Sabalenka, liderul mondial, în optimile turneului de la Brisbane",
+      "url": "https://www.mediafax.ro/sport/sorana-cirstea-pierde-cu-aryna-sabalenka-liderul-mondial-in-optimile-turneului-de-la-brisbane-23668244",
+      "summary": "Sorana Cîrstea nu a putut realiza surpriza în optimilie de finală ale turneului WTA 500 de la Brisbane (Australia), cedând joi diminieață în două seturi cu Aryna Sabalenka (Belarus), liderul mondial.",
+      "publishedAt": "2026-01-08T05:20:17.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.712Z"
+    },
+    {
+      "id": "076b7f692383f472",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "",
+      "url": "https://www.biziday.ro/344303-2/",
+      "summary": "Poliția Română transmite că sunt impuse restricții de circulație în județul Caraș-Severin, spre Timișoara, în urma ninsorilor abundente. Traficul este oprit pe DN 6, între localitățile Armeniș și Slatina-Timiș, dar și pe DN 58, între localitățile Soceni și Brebu. În momentul de față, autoritățile acționează pentru deszăpezire. Șoferii sunt rugați să evite aceste tronsoane și să […]",
+      "publishedAt": "2026-01-08T06:40:36.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.214Z"
+    },
+    {
+      "id": "b7184287f10c2ab7",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Donald Trump cere Congresului SUA o creștere de 50% a bugetului Pentagonului pentru anul următor, ceea ce l-ar duce la o sumă record de 1.500 de miliarde de dolari. Concomitent, impune companiilor din apărare restricții privind dividendele și bonusurile pentru directori, până nu-și vor majora capacitatea de producție. Numărul de interceptoare Patriot va fi imediat triplat.",
+      "url": "https://www.biziday.ro/344291-2/",
+      "summary": "Este vorba de bugetul pentru 2027, care inițial ar fi trebuit să urce de la 900 de miliarde la 1.000 de miliarde. “Trăim vremuri tulburătoare și periculoase”, arată Donald Trump într-o postare pe rețeaua sa de socializare, în care explică majorarea substanțială a bugetului apărării. Concomitent, președintele american anunță că nu va permite companiilor de […]",
+      "publishedAt": "2026-01-08T05:54:31.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.214Z"
+    },
+    {
+      "id": "bb10b1a173fb1f5c",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Serviciile secrete chineze au spart emailurile angajaților care deservesc mai multe comisii critice ale Camerei Reprezentanților a SUA, dar nu este clar dacă au obținut acces și la cele ale deputaților. Operațiunea, desfășurată în decembrie, a vizat comunicațiile necriptate, făcute de pe telefoanele mobile, iar implicațiile acestei breșe încă sunt evaluate.",
+      "url": "https://www.biziday.ro/344292-2/",
+      "summary": "Potrivit Financial Times, serviciile secrete chineze au folosit o breșă cunoscută de mult timp (sub denumirea “Salt Typhoon”) din sistemele de telefonie mobilă din SUA, pentru a obține acces la e-mailuri necriptate trimise și primite de angajați și consilieri ai comisiilor pentru Afaceri Externe, pentru Informații, pentru Armată și chiar ai Comisiei pentru China a […]",
+      "publishedAt": "2026-01-08T05:28:40.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.214Z"
+    },
+    {
+      "id": "64c3b0172c5c18df",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Autoritățile venezuelene au raportat 100 de morți în urma atacului american",
+      "url": "https://stirileprotv.ro/stiri/international/autoritatile-venezuelene-au-raportat-100-de-morti-in-urma-atacului-american.html",
+      "summary": "Ministrul venezuelean de Interne, Diosdado Cabello, a declarat că cel puțin 100 de persoane au fost ucise în atacul condus de SUA asupra Venezuelei.",
+      "publishedAt": "2026-01-08T06:16:00.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.555Z"
+    },
+    {
+      "id": "9959871d20e7fea0",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Studiu: Conservanți frecvent întâlniți pe etichetele alimentelor, asociați cu un risc crescut de cancer și diabet de tip 2",
+      "url": "https://stirileprotv.ro/stiri/sanatate/studiu-conservanti-frecvent-intalniti-pe-etichetele-alimentelor-asociati-cu-un-risc-crescut-de-cancer-si-diabet-de-tip-2.html",
+      "summary": "Conservanții folosiți frecvent pentru a menține siguranța alimentelor și a le prelungi durata de valabilitate ar putea fi asociați unui risc mare pentru mai multe tipuri de cancer și diabet de tip 2, conform a două studii recente realizate în Franța.",
+      "publishedAt": "2026-01-08T06:01:00.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.555Z"
+    },
+    {
+      "id": "0aed069b6522e7dc",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Anemia, cea mai frecventă boală, nu se tratează doar cu fier. Explicațiile medicilor",
+      "url": "https://stirileprotv.ro/stiri/doctor-de-bine/anemia-cea-mai-frecventa-boala-nu-se-trateaza-doar-cu-fier-explicatiile-medicilor.html",
+      "summary": "Anemia este cea mai frecventă boală. Nu se tratează cu fier, ci are nevoie de investigații amănunțite.",
+      "publishedAt": "2026-01-08T06:00:00.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.555Z"
+    },
+    {
+      "id": "095c18330cc850fe",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Macron convoacă şefii de partide pentru a discuta despre garanţiile de securitate pentru Ucraina în cazul unui armistiţiu",
+      "url": "https://stirileprotv.ro/stiri/international/macron-convoaca-sefii-de-partide-pentru-a-discuta-despre-garantiile-de-securitate-pentru-ucraina-in-cazul-unui-armistitiu.html",
+      "summary": "Preşedintele Franţei, Emmanuel Macron, va convoca joi liderii partidelor politice pentru a le prezenta garanţiile de securitate oferite Kievului, inclusiv posibilitatea ca Franţa să trimită mii de militari în Ucraina, în cazul unui armistiţiu cu Rusia.",
+      "publishedAt": "2026-01-08T05:52:00.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.555Z"
+    },
+    {
+      "id": "9e70c3c3d761523b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Inter Milano a câștigat la Parma, fosta echipă a lui Cristi Chivu, scor 2-0",
+      "url": "https://stirileprotv.ro/stiri/sport/inter-milano-a-castigat-la-parma-fosta-echipa-a-lui-cristi-chivu-scor-2-0.html",
+      "summary": "Echipa italiană Inter Milano, antrenată de românul Cristian Chivu, a învins miercuri seara, în deplasare, cu scorul de 2-0, formația Parma, în etapa a 19-a din Serie A. Inter este lider în clasament.",
+      "publishedAt": "2026-01-08T05:43:00.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.555Z"
+    },
+    {
+      "id": "d3fd6053253f9b04",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Vremea de azi, 8 ianuarie. Ninsori, lapoviță și vânt puternic în majoritatea regiunilor. Minimele ating -15 grade",
+      "url": "https://stirileprotv.ro/stiri/vremea/vremea-de-azi-8-ianuarie-ninsori-lapovita-si-vant-puternic-in-majoritatea-regiunilor-minimele-ating-15-grade.html",
+      "summary": "Vremea se răcește joi în toată România. În Banat și în Crișana vor fi chiar și -7 grade pe la amiază, dar în Dobrogea încă avem valori ridicate și 10 grade pe litoral.",
+      "publishedAt": "2026-01-08T05:42:00.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.555Z"
+    },
+    {
+      "id": "92075815b94f3e2e",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Accident mortal în Cluj. Un șofer a fugit de la fața locului după ce a lovit un pieton și a fost prins ulterior de polițiști",
+      "url": "https://stirileprotv.ro/stiri/actualitate/accident-mortal-in-cluj-un-sofer-a-fugit-de-la-fata-locului-dupa-ce-a-lovit-un-pieton-si-a-fost-prins-ulterior-de-politisti.html",
+      "summary": "Un șofer de 36 de ani din județul Cluj a fost reținut după ce a fugit de la locul unui accident înfiorător. Atenție, urmează informații care vă pot afecta emoțional!",
+      "publishedAt": "2026-01-08T05:36:00.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.555Z"
+    },
+    {
+      "id": "acec30d1976e1e8a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ninsorile provoacă haos în traficul aerian din Europa. Aeroportul din Amsterdam a anulat cel puţin 800 de zboruri",
+      "url": "https://stirileprotv.ro/stiri/international/ninsorile-provoaca-haos-in-traficul-aerian-din-europa-aeroportul-din-amsterdam-a-anulat-cel-putin-800-de-zboruri.html",
+      "summary": "Ninsorile şi poleiul au continuat să creeze probleme în mai multe zone din Europa, paralizând zborurile şi traficul rutier.",
+      "publishedAt": "2026-01-08T05:32:00.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.555Z"
+    },
+    {
+      "id": "4a5981817541abdc",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Haos pe șosele din cauza vremii: circulație restricționată pe mai multe drumuri naționale din vestul și nordul țării",
+      "url": "https://stirileprotv.ro/stiri/vremea/haos-pe-sosele-din-cauza-vremii-circulatie-restrictionata-pe-mai-multe-drumuri-nationale-din-vestul-si-nordul-tarii.html",
+      "summary": "Circulaţia rutieră este restricţionată, joi dimineaţă, pe DN 6 şi DN 58, în judeţul Caraş-Severin, din cauza ninsorilor, în timp ce în judeţul Harghita, pe DN 15A, şi în Sălaj, pe DN 1F, au fost impuse restricţii.",
+      "publishedAt": "2026-01-08T05:30:00.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.555Z"
+    },
+    {
+      "id": "97ca3b9267a8fca6",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Analiză. Statele Unite au încercat să preia Groenlanda şi în trecut, dar fără succes",
+      "url": "https://stirileprotv.ro/stiri/international/analiza-statele-unite-au-incercat-sa-preia-groenlanda-si-in-trecut-dar-fara-succes.html",
+      "summary": "După capturarea liderului venezuelean Nicolás Maduro de către SUA, Donald Trump și-a intensificat retorica privind preluarea Groenlandei, reaprinzând temerile legate de o posibilă intervenție militară.",
+      "publishedAt": "2026-01-08T05:25:00.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.555Z"
+    },
+    {
+      "id": "857392dfeb6e3540",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "„M-am săturat de prostie”. Un senator republican cere concedierea consilierilor lui Trump după declarațiile despre Groenlanda",
+      "url": "https://stirileprotv.ro/stiri/international/zm-am-saturat-de-prostie-senator-republican-cere-concedierea-consilierilor-lui-trump-dupa-declaratiile-despre-groenlanda.html",
+      "summary": "Senatorul republican Thom Tillis a criticat dur, miercuri, recentele comentarii ale adjunctului şefului de cabinet al Casei Albe, Stephen Miller, care a sugerat că SUA ar trebui să preia controlul asupra Groenlandei.",
+      "publishedAt": "2026-01-08T05:23:00.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.555Z"
+    },
+    {
+      "id": "93df5985ede366ec",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Adrian Mutu împlinește 47 de ani. Cariera „Briliantului”, de la atacant la FC Argeș la idol în marile cluburi europeme. FOTO",
+      "url": "https://stirileprotv.ro/stiri/sport/adrian-mutu-implineste-47-de-ani-cariera-zbriliantului-de-la-atacant-la-fc-arges-la-idol-in-marile-cluburi-europeme-foto.html",
+      "summary": "Fostul atacant al naţionalei României, în prezent antrenor, Adrian Mutu, cel supranumit „Briliantul” sau „Il Fenomeno” în perioada în care evolua, împlineşte, joi, 47 de ani.",
+      "publishedAt": "2026-01-08T05:29:00.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.555Z"
+    },
+    {
+      "id": "a0a805d38ebf8a67",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "JD Vance, despre cazul femeii ucise de un agent federal în Minneapolis: „Este o tragedie provocată de ea însăşi”. VIDEO",
+      "url": "https://stirileprotv.ro/stiri/international/jd-vance-despre-cazul-femeii-ucise-de-un-agent-federal-in-minneapolis-zeste-o-tragedie-provocata-de-ea-insasi-foto.html",
+      "summary": "Moartea lui Renee Nicole Good, care a fost împuşcată mortal de un agent de imigrări la Minneapolis, a fost ”o tragedie provocată de ea însăşi”, a scris vicepreşedintele SUA, JD Vance, pe platforma X.",
+      "publishedAt": "2026-01-08T05:08:00.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.555Z"
+    },
+    {
+      "id": "15999b93c35d02ff",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "SUA se retrag din 66 de organizații internaționale, inclusiv agenții ONU, care „nu mai servesc intereselor americane”",
+      "url": "https://stirileprotv.ro/stiri/international/sua-se-retrage-din-66-de-organizatii-internationale-inclusiv-agentii-onu-care-znu-mai-servesc-intereselor-americane.html",
+      "summary": "Donald Trump a semnat miercuri un ordin executiv ce prevede retragerea Statelor Unite din 66 de organizații internaționale considerate că „nu mai servesc interesele americane”, a transmis Casa Albă într-un mesaj publicat pe X.",
+      "publishedAt": "2026-01-08T05:12:00.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.555Z"
+    },
+    {
+      "id": "b15f39fe99b47540",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Trump vrea să majoreze cu 50% bugetul apărării: să ajungă la 1,5 miliarde de dolari în 2027. „Pentru binele ţării noastre”",
+      "url": "https://stirileprotv.ro/stiri/international/trump-vrea-sa-majoreze-cu-50-bugetul-apararii-sa-ajunga-la-1-5-miliarde-de-dolari-in-2027-zpentru-binele-tarii-noastre.html",
+      "summary": "Președintele SUA, Donald Trump, a anunțat că, în urma discuțiilor cu senatori și alți lideri politici americani, s-a ajuns la concluzia că bugetul apărării pentru 2027 ar trebui să ajungă la 1,5 trilioane de dolari, cu 50% mai mare decât cel actual.",
+      "publishedAt": "2026-01-08T04:57:00.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.555Z"
+    },
+    {
+      "id": "fe6385741752c4fb",
+      "sourceId": "europa-libera",
+      "sourceName": "Europa Liberă",
+      "title": "Regiunile Dnipropetrovsk și Zaporojie din Ucraina, rămase fără curent electric după atacuri rusești",
+      "url": "https://romania.europalibera.org/a/regiunile-dnipropetrovsk-si-zaporojie-din-ucraina-ramase-fara-curent-electric-dupa-atacuri-rusesti/33642811.html",
+      "summary": "Un atac rusesc de amploare cu drone a întrerupt alimentarea cu energie electrică în regiunile Dnipropetrovsk și Zaporojie din Ucraina, lăsând mii de oameni fără electricitate sau încălzire, în condițiile în care temperaturile sunt sub zero grade, transmite Serviciul Ucrainean al RFE/RL.\r\n„Inamicul a efectuat un atac masiv cu drone asupra infrastructurii energetice din mai multe regiuni”, a transmis operatorul de stat Ukrenergo, cu puțin înainte de miezul nopții de miercuri.\r\n„Drept urmare,...",
+      "publishedAt": "2026-01-08T05:59:26.000Z",
+      "fetchedAt": "2026-01-08T06:40:57.295Z"
     }
   ],
-  "lastUpdated": "2026-01-08T02:03:31.765Z"
+  "lastUpdated": "2026-01-08T06:41:06.709Z"
 }
