@@ -14120,7 +14120,987 @@
       "summary": "Внаслідок нічного російського удару по Києву загинули четверо людей, серед них медик, 19 – поранені. Пошкоджені житлові будинки, об’єкти критичної інфраструктури та виникли перебої з електро-, тепло- і водопостачанням у кількох районах столиці, повідомила місцева влада",
       "publishedAt": "2026-01-09T06:04:28.000Z",
       "fetchedAt": "2026-01-09T06:41:12.129Z"
+    },
+    {
+      "id": "8e4effc7c5152af4",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Păsările kakapo, amenințate cu dispariția, au început să se reproducă după o pauză de 4 ani",
+      "url": "https://hotnews.ro/pasarile-kakapo-amenintate-cu-disparitia-au-inceput-sa-se-reproduca-dupa-o-pauza-de-4-ani-2146970",
+      "summary": "Specia de papagal kakapo din Noua Zeelandă, care nu poate să zboare și care se află în pericol critic de dispariție, a început să se reproducă săptămâna trecută pentru prima dată după o pauză de…",
+      "publishedAt": "2026-01-09T12:51:49.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "20015ea897d610d3",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Un bărbat și-a reclamat soția că l-a bătut și amenințat noaptea trecută. Femeia, obligată să poarte un dispozitiv de monitorizare electronică",
+      "url": "https://hotnews.ro/un-barbat-si-a-reclamat-sotia-ca-l-a-batut-si-amenintat-noaptea-trecuta-femeia-obligata-sa-poarte-un-dispozitiv-de-monitorizare-electronica-2146972",
+      "summary": "Poliţiştii hunedoreni fac cercetări într-un dosar penal de violenţă în familie, după ce un bărbat a reclamat că a fost agresat şi ameninţat de soţia sa. În urma evaluării situaţiei, a fost stabilit că există…",
+      "publishedAt": "2026-01-09T12:43:34.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "ec96e6097463e98f",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Suedia a înregistrat cel mai mic număr de solicitări de azil din ultimii 40 de ani. „Schimbarea nu se referă doar la cifre”",
+      "url": "https://hotnews.ro/suedia-a-inregistrat-cel-mai-mic-numar-de-solicitari-de-azil-din-ultimii-40-de-ani-schimbarea-nu-se-refera-doar-la-cifre-2146948",
+      "summary": "Numărul persoanelor care solicită azil în Suedia a scăzut cu 30% în 2025, ajungând la cel mai scăzut nivel din 1985 încoace, guvernul de centru-dreapta declarând că intenționează să înăsprească și mai mult regulile în…",
+      "publishedAt": "2026-01-09T12:30:13.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "0b73012ea19aaca0",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Luptele în cușcă ale lui Donald Trump mută în calendar summitul liderilor G7. Decizia luată de Franța",
+      "url": "https://hotnews.ro/ufc-mma-donald-trump-summit-g7-evian-franta-2146923",
+      "summary": "Următorul summit al liderilor G7 care era programat să aibă loc în perioada 14-16 iunie la Evian, stațiunea balneară franceză cunoscută pentru apa minerală ce-i poartă numele, în Haute-Savoie, din sud-estul Franței, va fi amânat…",
+      "publishedAt": "2026-01-09T12:26:03.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "1a5b95c0bf9f3beb",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Noi precizări ale Armatei din Elveția despre escortarea aeronavei în care se afla Nicușor Dan: A fost o operațiune standard, dar am profitat de ocazie să mulțumim României",
+      "url": "https://hotnews.ro/noi-precizari-ale-armatei-din-elvetia-despre-escortarea-aeronavei-in-care-se-afla-nicusor-dan-a-fost-o-operatiune-standard-dar-am-profitat-de-ocazie-sa-multumim-romaniei-2146949",
+      "summary": "Armata din Elveția explică, într-un răspuns pentru HotNews transmis vineri, că angajații serviciului civil de control al traficului aerian au folosit ocazia unei misiuni obișnuite, de „live mission” a celor două avioane de vânătoare F-18,…",
+      "publishedAt": "2026-01-09T12:18:23.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "14dc0f4fa89cc857",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "La o zi după ce fostul ministru Chițoiu a intrat la închisoare, judecătorii explică motivele condamnării și arată strategia prin care acesta a încercat să scape nevinovat: Mortul e de vină",
+      "url": "https://hotnews.ro/la-o-zi-dupa-ce-fostul-ministru-chitoiu-a-intrat-la-inchisoare-judecatorii-explica-motivele-condamnarii-si-arata-strategia-prin-care-acesta-a-incercat-sa-scape-nevinovat-mortul-e-de-vina-2146912",
+      "summary": "Daniel Chițoiu nu și-a recunoscut vreo vină în accidentul în urmă căruia au murit doi oameni, a aruncat responsabilitatea pe șoferul decedat și a pus „o presiune inoportună asupra judecătorului”, se arată în motivarea condamnării,…",
+      "publishedAt": "2026-01-09T11:50:08.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "89147420d145d68e",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "De ce România importă gaze în această perioadă geroasă, deși avem depozitele pline în proporție de 70% / Prețul gazelor pe bursa de la București, în creștere",
+      "url": "https://hotnews.ro/de-ce-romania-importa-gaze-in-aceasta-perioada-geroasa-desi-avem-depozitele-pline-in-proportie-de-70-pretul-gazelor-pe-bursa-de-la-bucuresti-in-crestere-2146880",
+      "summary": "România a importat vineri la prânz aproximativ 5 milioane de metri cubi de gaze pe zi, ceea ce înseamnă circa 10% din consumul total la nivel național. Deși depozitele de gaze ale țării sunt pline…",
+      "publishedAt": "2026-01-09T11:37:07.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "55a227e011f38fd3",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "„Războiul este din nou la modă. Forța a luat locul diplomației”. Papa Leon, discurs dur la Vatican",
+      "url": "https://hotnews.ro/razboiul-este-din-nou-la-moda-forta-a-luat-locul-diplomatiei-papa-leon-discurs-dur-la-vatican-2146875",
+      "summary": "Papa Leon a condamnat utilizarea forței militare ca mijloc de atingere a obiectivelor diplomatice, într-un discurs anual neobișnuit de dur privind politica externă, susținut vineri, în care a solicitat și protejarea drepturilor omului în Venezuela,…",
+      "publishedAt": "2026-01-09T11:36:41.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "5df38bfafd326794",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Statele UE au aprobat vineri acordul comercial cu blocul Mercosur, în ciuda unei opoziții intense / România a votat în favoarea acordului / Cine s-a opus",
+      "url": "https://hotnews.ro/statele-ue-au-dat-vineri-aprobarea-preliminara-pentru-semnarea-acordului-comercial-cu-blocul-mercosur-ce-a-spus-ministrul-roman-al-agricuturii-inainte-de-vot-2146864",
+      "summary": "Decizia care dă undă verde semnării celui mai mare acord de liber schimb încheiat vreodată de UE avea nevoie de aprobarea a 15 țări care reprezintă 65% din populația totală a blocului. Statele membre urmează…",
+      "publishedAt": "2026-01-09T11:23:26.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "de92becf6dc23680",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "„Nașul” petrolului. De la CIA la traderii care controlează fluxurile de energie",
+      "url": "https://hotnews.ro/nasul-petrolului-de-la-cia-la-traderii-care-controleaza-fluxurile-de-energie-2146842",
+      "summary": "Pe 25 aprilie 1968, pe biroul președintelui Lyndon B. Johnson, a ajuns un plic direct de la Agenția Centrală de Informații. Documentul ultrasecret este un rezumat succint al știrilor mondiale. O versiune CIA a Reader’s…",
+      "publishedAt": "2026-01-09T11:01:59.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "f155c9664405bfec",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Momentul în care o deputată din Honduras este lovită de un explozibil, în direct, în timpul unui interviu",
+      "url": "https://hotnews.ro/video-momentul-in-care-o-deputata-din-honduras-este-lovita-de-un-explozibil-in-direct-in-timpul-unui-interviu-2146829",
+      "summary": "Deputata de opoziție din Honduras, Gladys Aurora López, membră a Parlamentului Central American (Parlacen), a fost grav rănită joi în urma unui atac cu dispozitiv exploziv chiar la sediul Congresului Național, potrivit presei internaționale. Gladys Aurora…",
+      "publishedAt": "2026-01-09T10:50:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "0301a6f167075c1c",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Salariul minim brut va crește la 4.325 de lei de la 1 iulie. Câți bani vor primi „în mână” peste 1,7 milioane de angajați și ce câștigă statul",
+      "url": "https://hotnews.ro/salariul-minim-brut-va-creste-la-4-325-de-lei-de-la-1-iulie-cati-bani-vor-primi-in-mana-peste-17-milioane-de-angajati-si-ce-castiga-statul-2146845",
+      "summary": "Salariul de bază minim brut pe țară garantat în plată va fi majorat la 4.325 de lei lunar, începând cu data de 1 iulie 2026, cu 6,8% mai mult decât în luna iunie din acest…",
+      "publishedAt": "2026-01-09T10:24:16.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "f0c828a97026da84",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Cum să alegi papucii de casă potriviți pentru confort maxim?",
+      "url": "https://hotnews.ro/cum-sa-alegi-papucii-de-casa-potriviti-pentru-confort-maxim-2146849",
+      "summary": "Încălțarea papucilor de casă după o zi lungă poate oferi o senzație plăcută și relaxantă. Totuși, numeroase persoane nu acordă prea multă atenție acestui detaliu, dar alegerea corectă a papucilor de casă influențează confortul zilnic…",
+      "publishedAt": "2026-01-09T10:22:37.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "0ceb35ee6e0a6a0d",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Povara tăcută a taților. Ce nu se vede dincolo de rolul de „stâlp al familiei”",
+      "url": "https://hotnews.ro/povara-tacuta-a-tatilor-ce-nu-se-vede-dincolo-de-rolul-de-stalp-al-familiei-2146817",
+      "summary": "Vorbim mult despre povara maternității, dar și tații poartă luptele lor. La fel ca mamele, se confruntă cu așteptări contradictorii, norme de gen și constrângeri sociale. Deseori, simt o presiune constantă de a fi furnizor,…",
+      "publishedAt": "2026-01-09T10:19:14.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "494ce8217d76ebff",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "[P] Evoluția sportului modern și impactul său asupra societății",
+      "url": "https://hotnews.ro/p-evolutia-sportului-modern-si-impactul-sau-asupra-societatii-2146844",
+      "summary": "Prevederile legale aplicabile interzic minorilor participarea la jocurile de noroc. Sportul modern a devenit mult mai mult decât o simplă formă de mișcare sau divertisment. În ultimele decenii, acesta s-a transformat într-un fenomen global, cu…",
+      "publishedAt": "2026-01-09T10:11:31.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "54bbe2c1aef75f40",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Cum te poate salva AXI Card când ai cheltuieli neașteptate – plan de urgență financiară ",
+      "url": "https://hotnews.ro/cum-te-poate-salva-axi-card-cand-ai-cheltuieli-neasteptate-plan-de-urgenta-financiara-2146836",
+      "summary": "Ți s-a întâmplat să apară o cheltuială neașteptată fix într-o săptămână aglomerată? Un dinte care nu mai așteaptă, o reparație la mașină, o factură mai mare decât te așteptai sau un aparat din casă care…",
+      "publishedAt": "2026-01-09T10:04:56.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "35266bec1b8674e3",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Indiciile că Donald Trump intenționează să facă o vizită în Ungaria în timpul campaniei electorale decisive pentru Viktor Orban",
+      "url": "https://hotnews.ro/indiciile-ca-donald-trump-intentioneaza-sa-faca-o-vizita-in-ungaria-in-timpul-campaniei-electorale-decisive-pentru-viktor-orban-2146824",
+      "summary": "Președintele american Donald Trump i-a trimis o scrisoare prim-ministrului ungar, Viktor Orban, în care a confirmat dorința de a vizita Ungaria în viitorul apropiat, relatează Euronews și Reuters. Liderul de la Casa Albă a anunțat…",
+      "publishedAt": "2026-01-09T09:56:08.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "bd1bad495742d204",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Cuba este deja în pragul prăpastiei. De ce înlăturarea lui Maduro o aduce și mai aproape de colaps",
+      "url": "https://hotnews.ro/cuba-este-deja-in-pragul-prapastiei-inlaturarea-lui-maduro-o-aduce-si-mai-aproape-de-colaps-2146823",
+      "summary": "Cubanezii în vârstă scotocesc prin gunoaie după resturi de mâncare în Havana. În al doilea oraș al țării, Santiago, s-au adunat mulțimi de oameni, ascultând muzică interpretată de exilați cubanezi precum Gloria Estefan și Willy…",
+      "publishedAt": "2026-01-09T09:52:29.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "93417c3835c4757c",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Un mare producător auto va pune pe mașinile sale un asistent AI. La ce întrebări poate răspunde",
+      "url": "https://hotnews.ro/un-mare-producator-auto-va-pune-pe-masinile-sale-un-asistent-ai-la-ce-intrebari-poate-raspunde-2146802",
+      "summary": "Ford lucrează la un asistent bazat pe inteligență artificială care va debuta în aplicația de smartphone a companiei, urmând să fie extins ulterior și la mașinile sale, în 2027, a anunțat compania, la expoziția Consumer…",
+      "publishedAt": "2026-01-09T09:39:33.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "8e2eaa8252d7a973",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Imagini cu Iranul în flăcări: Instituții sub asediu, zeci de morți și izolare digitală după intervenția brutală a forțelor de ordine / Prințul exilat cheamă iranienii în stradă",
+      "url": "https://hotnews.ro/imagini-cu-iranul-in-flacari-institutii-sub-asediu-zeci-de-morti-si-izolare-digitala-dupa-interventia-brutala-a-fortelor-de-ordine-printul-exilat-cheama-iranienii-in-strada-in-ciuda-amenintarilor-2146740",
+      "summary": "În timp ce protestele din Iran împotriva regimului teocratic al ayatollahului Ali Khamenei s-au răspândit vineri seară, țara a intrat într-o paralizie totală a comunicațiilor după ce regimul a tăiat internetul. Imagini dramatice cu instituții…",
+      "publishedAt": "2026-01-09T09:31:20.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.465Z"
+    },
+    {
+      "id": "ae3e79e746c1e52a",
+      "sourceId": "dw-romania",
+      "sourceName": "DW România",
+      "title": "Germania: Dezacord față de intervenția SUA în Venezuela",
+      "url": "https://www.dw.com/ro/germania-dezacord-fa%C8%9B%C4%83-de-interven%C8%9Bia-sua-%C3%AEn-venezuela/a-75449800?maca=rum-rss-rom-all-1493-rdf",
+      "summary": "Cel mai recent sondaj ARD-Deutschlandtrend arată că germanii au puțină încredere că anul 2026 va fi unul pașnic și bun. Imaginea Statelor Unite a ajuns la un minim istoric.",
+      "publishedAt": "2026-01-09T11:50:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.364Z"
+    },
+    {
+      "id": "1697b18b4abc3c02",
+      "sourceId": "dw-romania",
+      "sourceName": "DW România",
+      "title": "Poate Germania depăși declinul economic în 2026?",
+      "url": "https://www.dw.com/ro/poate-germania-dep%C4%83%C8%99i-declinul-economic-%C3%AEn-2026/a-75433276?maca=rum-rss-rom-all-1493-rdf",
+      "summary": "Economia germană are nevoie disperată de un impuls în 2026, după ani de recul. Totuși, chiar dacă guvernul federal promite investiții masive, economiștii rămân sceptici.",
+      "publishedAt": "2026-01-09T07:35:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.364Z"
+    },
+    {
+      "id": "d7d7424afb199c4f",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Marcel Hirscher ratează Jocurile Olimpice de la Milano–Cortina",
+      "url": "https://www.mediafax.ro/sport/marcel-hirscher-rateaza-jocurile-olimpice-de-la-milano-cortina-23668932",
+      "summary": "Marcel Hirscher (36 ani) a anunțat oficial, vineri, că nu va mai concura în sezonul 2025/2026 și, implicit, va lipsi de la Jocurile Olimpice de iarnă de la Milano-Cortina, programate în perioada 6-22 februarie.",
+      "publishedAt": "2026-01-09T12:49:02.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.317Z"
+    },
+    {
+      "id": "2e5bfca809f34143",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Bolojan: Investițiile publice din 2025 au atins „cel mai ridicat nivel din istoria postdecembristă”",
+      "url": "https://www.mediafax.ro/politic/bolojan-investitiile-publice-din-2025-au-atins-cel-mai-ridicat-nivel-din-istoria-postdecembrista-23668933",
+      "summary": "Prim-ministrul Ilie Bolojan a transmis, vineri, că investițiile publice realizate în 2025 au atins 137,5 miliarde de lei, reprezentând 7,2% din PIB, cel mai ridicat nivel nu doar din ultimii cinci ani, „ci din istoria postdecembristă a României”.",
+      "publishedAt": "2026-01-09T12:45:24.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.317Z"
+    },
+    {
+      "id": "25d30a2c20f489a9",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Grecia devine un magnet pentru ultra-bogații lumii. De ce aleg milionarii stilul de viață mediteraneean?",
+      "url": "https://www.mediafax.ro/life-entertaiment/grecia-devine-un-magnet-pentru-ultra-bogatii-lumii-de-ce-aleg-milionarii-stilul-de-viata-mediteraneean-23668924",
+      "summary": "Migrația globală a averilor prinde contur într-o destinație europeană, unde taxele avantajoase, siguranța și stilul de viață mediteraneean atrag tot mai mulți milionari.",
+      "publishedAt": "2026-01-09T12:30:21.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.317Z"
+    },
+    {
+      "id": "4f9a2af77cbfaa2d",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "A crescut numărul școlilor în care cursurile nu s-au ținut din cauza vremii",
+      "url": "https://www.mediafax.ro/social/a-crescut-numarul-scolilor-in-care-cursurile-nu-s-au-tinut-din-cauza-vremii-23668928",
+      "summary": "Cursurile au fost suspendate sau s-au desfășurat online, vineri, în zeci de școli din județele Cluj, Bistrița-Năsăud, Arad, Iași, Maramureș, Mehedinți, Alba, Dolj și Botoșani.",
+      "publishedAt": "2026-01-09T12:26:47.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.317Z"
+    },
+    {
+      "id": "22082780e2eacabd",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Dan publishes dialogue between Romanian pilot and Zurich air traffic control",
+      "url": "https://www.mediafax.ro/english/dan-publishes-dialogue-between-romanian-pilot-and-zurich-air-traffic-control-23668926",
+      "summary": "On Thursday night, President Nicușor Dan published the dialogue between the Romanian pilot of the Spartan aircraft and the Zurich air traffic controller. \"You can listen to the recording of the conversation, in which the decision to escort the Romanian aircraft is communicated,\" the president posted.",
+      "publishedAt": "2026-01-09T12:24:38.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.317Z"
+    },
+    {
+      "id": "9f073d463c24c52b",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Statele Unite pregătesc operațiuni terestre împotriva cartelurilor din Mexic",
+      "url": "https://www.mediafax.ro/externe/statele-unite-pregatesc-operatiuni-terestre-impotriva-cartelurilor-din-mexic-23668921",
+      "summary": "Președintele american Donald Trump a declarat joi că forțele americane vor începe operațiuni terestre în Mexic, vizând cartelurile de droguri, după luni de atacuri navale asupra navelor narcotice.",
+      "publishedAt": "2026-01-09T12:21:28.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.317Z"
+    },
+    {
+      "id": "ed638e42aadeb497",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Romgaz e pe ultima sută de metri înainte de începerea furnizării pentru populație. Când vor veni primele oferte? Declarațiile șefului celui mai mare producător național de gaze",
+      "url": "https://www.mediafax.ro/economic/exclusiv-romgaz-e-pe-ultima-suta-de-metri-inainte-de-inceperea-furnizarii-pentru-populatie-cand-vor-veni-primele-oferte-declaratiile-sefului-celui-mai-mare-producator-national-de-gaze-23668887",
+      "summary": "Specialiștii companiei Romgaz, cel mai mare producător de gaze și operator de înmagazinare de gaze naturale din țară, dar și de energie electrică, și câștigătorul contractului pentru realizarea platformei informatice pentru gaze naturale si energie electrică lucrează în prezent pentru integrarea aplicației cu sistemele companiei, astfel încât încheierea contratelor de furnizare de gaze naturale și energie pentru populație să se poată face fără sincope în perioada următoare, după cum a declarat în exclusivitate pentru Mediafax directorul general al Romgaz, Răzvan Popescu.",
+      "publishedAt": "2026-01-09T12:14:25.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.317Z"
+    },
+    {
+      "id": "fdcf0d0dd5a48947",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Rogobete talks with Spanish counterparts on „developing drug production” in Romania",
+      "url": "https://www.mediafax.ro/english/rogobete-talks-with-spanish-counterparts-on-developing-drug-production-in-romania-23668915",
+      "summary": "Health Minister Alexandru Rogobete announced that he visited the Spanish Ministry of Industry on Friday. During this visit, he engaged in discussions with his Spanish counterparts, including management and technical teams, about strengthening domestic production of medicines and medical supplies.",
+      "publishedAt": "2026-01-09T12:09:17.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.317Z"
+    },
+    {
+      "id": "81fa67730b39e007",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "LPF a anunțat programul etapei a 23-a din Superliga de fotbal. Meciul FCSB – CFR Cluj, cap de afiș",
+      "url": "https://www.mediafax.ro/sport/lpf-a-anuntat-programul-etapei-a-23-a-din-superliga-de-fotbal-meciul-fcsb-cfr-cluj-cap-de-afis-23668910",
+      "summary": "Liga Profesionistă de Fotbal (LPF) a anunțat, vineri, programul etapei a 23-a din Superliga României, rundă care va aduce în prim-plan unul dintre cele mai așteptate dueluri ale sezonului, FCSB – CFR Cluj, primele două clasate din sezonul trecut.",
+      "publishedAt": "2026-01-09T12:00:23.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.317Z"
+    },
+    {
+      "id": "e68e972deecd4ade",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Aproape jumătate dintre europeni vor un nou loc de muncă în 2026, dar se simt nepregătiți",
+      "url": "https://www.mediafax.ro/externe/23668898-23668898",
+      "summary": "Un studiu LinkedIn evidențiază un contrast puternic pe piața muncii europene: dorința de schimbare este ridicată, mulți vor un nou loc de muncă, însă încrederea și pregătirea candidaților rămân la un nivel scăzut, în timp ce angajatorii reclamă lipsa specialiștilor potriviți, arată Euronews.",
+      "publishedAt": "2026-01-09T11:56:25.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.317Z"
+    },
+    {
+      "id": "b8e0e5cfeec8bd26",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "România a înregistrat în noiembrie cea mai mare scădere a vânzărilor magazinelor dintre ţările UE, de -4,6%, comparativ cu luna noiembrie din 2024.",
+      "url": "https://www.biziday.ro/344471-2/",
+      "summary": "România a înregistrat în noiembrie 2025 cea mai mare scădere a vânzărilor din retail dintre ţările UE, de 4,6%, faţă de perioada similară din 2024. Conform Eurostat, singurele state care au mai avut evoluţii negative au fost Slovacia (-2,8%), Austria (-2,2%) şi Luxembourg (-0,1%). Cele mai mari creșteri anuale ale volumului total al comerțului cu […]",
+      "publishedAt": "2026-01-09T11:58:35.000Z",
+      "fetchedAt": "2026-01-09T12:54:57.681Z"
+    },
+    {
+      "id": "c4f80460fb46b975",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Prețurile locuințelor în UE au crescut cu +63% în ultimul deceniu, iar chiriile cu +21%. Locuințele s-au scumpit cel mai mult în Ungaria, unde aproape s-au triplat. În România, prețurile au crescut în același ritm cu media UE, în timp ce chiriile s-au majorat cu circa +60%.",
+      "url": "https://www.biziday.ro/344477-2/",
+      "summary": "În trimestrul al treilea al anului 2025, prețurile locuințelor din UE au crescut cu +5,5%, în timp ce chiriile au crescut cu +3,1%, comparativ cu trimestrul al treilea al anului 2024. Singura țară care a înregistrat o scăderea a prețurilor locuințelor a fost Finlanda (-3,1%), în timp ce cele mai mari creșteri au fost înregistrate […]",
+      "publishedAt": "2026-01-09T12:35:02.000Z",
+      "fetchedAt": "2026-01-09T12:54:57.681Z"
+    },
+    {
+      "id": "ae56ef6dd1f2fb77",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Noua Zeelandă. Peste 50 de balene-pilot au eșuat pe o plajă. Șase dintre acestea au murit, iar voluntarii fac eforturi să salveze alte 15 mamifere blocate pe țărm. Restul au reușit să se întoarcă în larg.",
+      "url": "https://www.biziday.ro/344463-2/",
+      "summary": "Aproximativ 55 de balene-pilot au fost găsite pe plaja Farewell Spit din Noua Zeelandă. Deși majoritatea au reușit să se întoarcă în larg, șase dintre el au murit, iar alte 15 sunt în continuare eșuate pe plajă, întinse pe o suprafață de un kilometru. Voluntarii duc o luptă contra cronometru pentru a aduce înapoi în mare […]",
+      "publishedAt": "2026-01-09T11:26:14.000Z",
+      "fetchedAt": "2026-01-09T12:54:57.681Z"
+    },
+    {
+      "id": "bb0752abbfd27ed6",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Rusia confirmă că a folosit azi-noapte racheta Oreșnik împotriva Ucrainei. Ministerul rus al Apărării precizează că ar fi lovit o fabrică de drone și că decizia ar fi venit ca urmare a presupusei tentative ucrainene de a-l ucide pe Putin, de la finalul anului trecut. Între timp, SUA au determinat că tentativa nu a existat, iar rușii au orchestrat o operațiune de comunicare a unui fals atac.",
+      "url": "https://www.biziday.ro/344426-3/",
+      "summary": "UPDATE, ora 13. Oana Țoiu, ministra Afacerilor Externe, transmite că România “condamnă cu fermitate recentele atacuri lansate de Rusia împotriva Ucrainei”, inclusiv cele asupra Kievului și regiunii Liov, care “au dus la victime civile, distrugere în zonele rezidențiale și deteriorarea infrastructurii critice”. “Țintirea deliberată a civililor constituie o încălcare gravă a dreptului internațional umanitar și […]",
+      "publishedAt": "2026-01-09T05:19:54.000Z",
+      "fetchedAt": "2026-01-09T12:54:57.681Z"
+    },
+    {
+      "id": "7c51dc2c3e0c0406",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Analiză FT. Telefoanele și PC-urile se vor scumpi în acest an, pe fondul penuriei de cipuri de memorie, redirecționate spre centrele de date pentru inteligența artificială. Marii producători avertizează că, cel puțin pe termen scurt, cursa pentru dezvoltarea infrastructurii AI va continua să afecteze aprovizionarea pentru produsele de larg consum.",
+      "url": "https://www.biziday.ro/344457-2/",
+      "summary": "Prezenți la Consumer Electronics Show (CES), cel mai important târg de electronice din lume, desfășurat la Las Vegas, mai mulți experți și producători din domeniu au avertizat că piața cipurilor de memorie se confruntă cu provocări fără precedent, în contextul cererii mari pentru centrele de date AI. Rene Haas, directorul ARM – companie britanică ce […]",
+      "publishedAt": "2026-01-09T09:34:50.000Z",
+      "fetchedAt": "2026-01-09T12:54:57.681Z"
+    },
+    {
+      "id": "aaf39e9ba2ceb232",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Meteorologii au prelungit până marți dimineață informarea de ninsori, polei și ger, valabilă în toată țara. Cod Galben de ger, de sâmbătă seară și până luni dimineață, în jumătatea de nord a țării.",
+      "url": "https://www.biziday.ro/344451-2/",
+      "summary": "Administrația Națională de Meteorologie a emis o atenționare Cod Galben de ger, valabilă de sâmbătă de la ora 20, până luni la ora 10. Sunt vizate Banatul, Crișana, Transilvania, Moldova și zonele de munte. Vremea va fi deosebit de rece, geroasă, în special în timpul nopților și dimineților. Vor fi temperaturi între -12 și -3 […]",
+      "publishedAt": "2026-01-09T09:02:25.000Z",
+      "fetchedAt": "2026-01-09T12:54:57.681Z"
+    },
+    {
+      "id": "e91c56f658c8acd2",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "NASA anunță că îi va aduce imediat pe Pământ pe astronauții aflați la bordul Stației Spațiale Internaționale, deoarece unul dintre ei este “într-o stare medicală gravă”, fără a da detalii și fără a menționa identitatea acestuia. La bordul ISS sunt doi americani, un japonez și un rus.",
+      "url": "https://www.biziday.ro/344431-2/",
+      "summary": "Administratorul NASA, Jared Isaacman, a declarat că agenția caută modalități de a lansa în săptămânile următoare misiunea Crew 12, care ar fi trebui să plece pe ISS în februarie, pentru a înlocui Crew 11, din cauza unei “stări medicale grave” a unui membru al echipajului aflat acum la bordul Stației Spațiale Internaționale. Aceasta ar fi […]",
+      "publishedAt": "2026-01-09T06:44:39.000Z",
+      "fetchedAt": "2026-01-09T12:54:57.681Z"
+    },
+    {
+      "id": "894a64ebee943a80",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Donald Trump anunță că SUA vor lansa în curând “operațiuni terestre” împotriva cartelurilor de droguri. Deși nu a oferit detalii despre locațiile vizate, precizează că “cartelurile conduc Mexicul”.",
+      "url": "https://www.biziday.ro/344432-2/",
+      "summary": "În timpul unui interviu acordat joi pentru Fox News, președintele american a declarat: “Am eliminat 97% din drogurile care intrau pe apă și vom începe acum operațiunile terestre, în ceea ce privește cartelurile. Cartelurile conduc Mexicul. Este foarte, foarte trist să vezi ce s-a întâmplat cu acea țară”.  Președintele SUA nu a oferit detalii suplimentare. […]",
+      "publishedAt": "2026-01-09T06:43:39.000Z",
+      "fetchedAt": "2026-01-09T12:54:57.681Z"
+    },
+    {
+      "id": "2cc521918bf8c51e",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ţarile UE susţin semnarea acordului cu Mercosur, la peste 25 de ani de la începerea negocierilor",
+      "url": "https://stirileprotv.ro/stiri/international/tarile-ue-sustin-semnarea-acordului-cu-mercosur-la-peste-25-de-ani-de-la-inceperea-negocierilor.html",
+      "summary": "Ţările Uniunii Europene au susţinut în majoritate, vineri, în mod provizoriu, semnarea acordului de asociere cu Mercosur.",
+      "publishedAt": "2026-01-09T12:41:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "4a630dd7befe3975",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Amenda primită de o șoferiță din Alba Iulia după ce a fost prinsă conducând pe autostradă cu anvelope de vară",
+      "url": "https://stirileprotv.ro/stiri/actualitate/amenda-primita-de-o-soferita-din-alba-iulia-dupa-ce-a-fost-prinsa-conducand-pe-autostrada-cu-anvelope-de-vara.html",
+      "summary": "O femeie din Alba Iulia a fost sancționată cu o amendă de peste 1.800 de lei și a rămas fără certificatul de înmatriculare, după ce a fost prinsă conducând pe autostradă cu anvelope de vară, neadaptate condițiilor meteo.",
+      "publishedAt": "2026-01-09T12:32:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "5760233fcf096d5f",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Mai multe cartiere din Kiev au rămas fără căldură după atacuri rusești. Primarul cere evacuarea",
+      "url": "https://stirileprotv.ro/stiri/international/mai-multe-cartiere-din-kiev-au-ramas-fara-caldura-dupa-atacuri-rusesti-primarul-cere-evacuarea.html",
+      "summary": "Atacuri ruse au ucis cel puțin patru persoane și au lăsat o parte din Kiev fără căldură, primarul cerând evacuarea temporară.",
+      "publishedAt": "2026-01-09T12:16:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "eeb322cef8e7a42d",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "O deputată a opoziției din Honduras, rănită după ce un explozibil s-a detonat la „câțiva centimetri” de ea. VIDEO",
+      "url": "https://stirileprotv.ro/stiri/international/o-deputata-a-opozitiei-din-honduras-ranita-dupa-ce-un-explozibil-s-a-detonat-la-zcativa-centimetri-de-ea-video.html",
+      "summary": "Parlamentara opoziției din Honduras, Gladis Aurora Lopez, a fost rănită joi după ce un dispozitiv exploziv a fost aruncat lângă ea, în contextul tensiunilor post-alegeri prezidențiale contestate.",
+      "publishedAt": "2026-01-09T12:16:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "9dbe1daa5249837c",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Jennifer Lawrence a început anul nou cu un look îndrăzneț și a vorbit despre rolul intens din „Die My Love”. FOTO",
+      "url": "https://stirileprotv.ro/show-buzz/entertainment/jennifer-lawrence-a-inceput-anul-nou-cu-un-look-indraznet-si-a-vorbit-despre-rolul-intens-din-zdie-my-love-foto.html",
+      "summary": "Actrița, în vârstă de 35 de ani, a început anul 2026 cu o schimbare de look.",
+      "publishedAt": "2026-01-09T11:56:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "eefe3bfbfb95bb90",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Caz șocant: un bărbat este acuzat că a furat peste 100 de cranii umane din cimitire",
+      "url": "https://stirileprotv.ro/stiri/international/caz-socant-un-barbat-este-acuzat-ca-a-furat-peste-100-de-cranii-umane-din-cimitire.html",
+      "summary": "Un bărbat a fost pus sub acuzare pentru furt, după ce peste 100 de cranii umane și alte rămășițe au fost descoperite în statul Pennsylvania, scrie Sky News.",
+      "publishedAt": "2026-01-09T11:51:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "c157b5f4e256db6a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cerul din Birmingham s-a luminat într-un roz aprins în timpul furtunii Goretti. Cauza fenomenului spectaculos. FOTO și VIDEO",
+      "url": "https://stirileprotv.ro/stiri/international/cerul-din-birmingham-s-a-luminat-intr-un-roz-aprins-in-timpul-furtunii-goretti-cauza-fenomenului-spectaculos-foto-si-video.html",
+      "summary": "Cerul din regiunea West Midlands din Birmingham a căpătat joi seară o nuanță spectaculoasă de roz, pe fondul ninsorilor abundente provocate de furtuna Goretti.",
+      "publishedAt": "2026-01-09T11:51:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "83bb9b156ca49597",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Paris Hilton a atras toate privirile pe străzile din New York, cu o ținută inspirată din anii 2000. GALERIE FOTO",
+      "url": "https://stirileprotv.ro/show-buzz/entertainment/paris-hilton-a-atras-toate-privirile-pe-strazile-din-new-york-cu-o-tinuta-inspirata-din-anii-2000-galerie-foto.html",
+      "summary": "Miercuri, Paris Hilton a fost surprinsă la New York, unde a purtat un top multicolor, care a adus un plus de energie ținutelor sobre de iarnă.",
+      "publishedAt": "2026-01-09T11:40:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "24836f101fd0010b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Pixelul roșu. Cum a descoperit AI un alpinist dispărut în Alpi, într-o poză oarecare. Era invizibil pentru ochiul uman",
+      "url": "https://stirileprotv.ro/stiri/international/pixelul-rosu-cum-a-descoperit-ai-un-alpinist-disparut-in-alpi-intr-o-poza-oarecare-era-invizibil-pentru-ochiul-uman.html",
+      "summary": "Căutarea zonelor îndepărtate în căutarea drumeților și alpiniștilor dispăruți poate dura săptămâni și uneori luni pentru salvatori. Inteligența artificială poate face treaba în câteva ore în unele cazuri - și poate salva vieți.",
+      "publishedAt": "2026-01-09T11:39:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "0af7b408abbda300",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Două persoane au fost rănite în Portland după ce polițiștii federali au deschis focul, în timpul unui control rutier",
+      "url": "https://stirileprotv.ro/stiri/international/doua-persoane-au-fost-ranite-in-portland-dupa-ce-politistii-federali-au-deschis-focul-autoritatile-sunt-in-alerta.html",
+      "summary": "În Statele Unite, două persoane au fost rănite în Portland de focuri de armă ale polițiștilor federali.",
+      "publishedAt": "2026-01-09T11:39:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "0a8fd5bf9fada6b2",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Globurile de Aur dau startul sezonului premiilor la Hollywood. Când are loc gala și unde poate fi văzută live",
+      "url": "https://stirileprotv.ro/show-buzz/entertainment/globurile-de-aur-dau-startul-sezonului-premiilor-la-hollywood-cand-are-loc-gala-si-unde-poate-fi-vazuta-live.html",
+      "summary": "Până la Oscaruri, cea mai importantă petrecere de la Hollywood va avea loc duminică noaptea, la Los Angeles.",
+      "publishedAt": "2026-01-09T11:38:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "bbfd9546eb946671",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Bătută de soț, o femeie din Craiova a cerut ajutor unui străin, pe internet, care a alertat Poliția și a salvat-o",
+      "url": "https://stirileprotv.ro/stiri/actualitate/mesaj-disperat-pe-retelele-sociale-o-femeie-din-craiova-salvata-de-sotul-agresor-de-un-strain-din-sibiu.html",
+      "summary": "Un apel venit de la sute de kilometri a salvat o femeie din Craiova care era bătută de soţ.",
+      "publishedAt": "2026-01-09T11:34:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "bf36e32dab962445",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Avertisment CFA România: consumul a scăzut puternic, economia ar putea intra în recesiune tehnică",
+      "url": "https://stirileprotv.ro/stiri/financiar/avertisment-cfa-romania-consumul-a-scazut-puternic-economia-ar-putea-intra-in-recesiune-tehnica.html",
+      "summary": "Scăderea consumului s-a accentuat în noiembrie, astfel că există riscul să înregistrăm o reducere a PIB şi în trimestrul IV din 2025 faţă de trimestrul anterior şi să avem recesiune tehnică, consideră preşedintele CFA România, Adrian Codirlaşu.",
+      "publishedAt": "2026-01-09T11:32:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "bf5bdb159594466e",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Anchetă la o grădiniță din Baia Mare, după ce un dulap a căzut peste un copil de 4 ani, care a fost rănit la cap",
+      "url": "https://stirileprotv.ro/stiri/actualitate/ancheta-la-o-gradinita-din-baia-mare-dupa-ce-un-dulap-a-cazut-peste-un-copil-de-4-ani-acesta-a-fost-ranit-la-cap.html",
+      "summary": "Este anchetă la o grădiniță din Baia Mare după ce un copil de 4 ani a fost rănit acolo.",
+      "publishedAt": "2026-01-09T11:31:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "89167b5337679f70",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "X a limitat editarea imaginilor cu AI în Grok, după scandalul deepfake-urilor sexuale. Doar abonații pot folosi serviciul",
+      "url": "https://stirileprotv.ro/stiri/international/x-a-limitat-editarea-imaginilor-cu-ai-in-grok-dupa-scandalul-deepfake-urilor-sexuale-doar-abonatii-pot-folosi-serviciul.html",
+      "summary": "Platforma X a lui Elon Musk a restricționat editarea imaginilor cu ajutorul instrumentului său de inteligență artificială, Grok, doar pentru utilizatorii plătitori, după ce a fost criticată pentru că permitea crearea de deepfake-uri sexualizate.",
+      "publishedAt": "2026-01-09T11:26:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "37b8decc6ff955fc",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Trei cazuri de scabie au fost depistate la un spital din Timiş. DSP Timiș a declanșat o anchetă epidemiologică",
+      "url": "https://stirileprotv.ro/stiri/actualitate/trei-cazuri-de-scabie-au-fost-depistate-la-un-spital-din-timis-dsp-timis-a-declansat-o-ancheta-epidemiologica.html",
+      "summary": "Direcţia de Sănătate Publică (DSP) Timiş a demarat o anchetă epidemiologică la Spitalul de Psihiatrie din Jebel, unde au fost depistate cu scabie trei persoane internate.",
+      "publishedAt": "2026-01-09T11:00:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "7d2c3b12642f43ce",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Un bărbat din Brăila și-a înjunghiat în gât un prieten, după ce au băut la o petrecere. Se cunoșteau de peste 30 de ani",
+      "url": "https://stirileprotv.ro/stiri/actualitate/un-barbat-din-braila-si-a-injunghiat-in-gat-un-prieten-dupa-ce-au-baut-la-o-petrecere-se-cunosteau-de-peste-30-de-ani.html",
+      "summary": "O ceartă între doi bărbați s-a transformat într-un episod de o violență extremă, într-o localitate din județul Brăila. Unul dintre ei a scos un cuțit și l-a înjunghiat pe celălalt în zona gâtului.",
+      "publishedAt": "2026-01-09T11:05:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "80301068672098f8",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Un „munte” de gunoaie s-a prăbușit într-un oraș din Filipine, 100 de oameni au fost îngropați de vii | FOTO & VIDEO",
+      "url": "https://stirileprotv.ro/stiri/international/un-munte-de-gunoi-s-a-prabusit-intr-un-oras-din-filipine-100-de-oameni-au-fost-ingropati-de-vii-foto-video.html",
+      "summary": "Cel puțin doi oameni au murit, iar alții 36 au fost dați dispăruți după ce un ”munte” de gunoi s-a prăbușit peste un oraș cu aproape un milion de locuitori din Filipine. Potrivit autorităților, circa 100 de persoane au fost îngropate de vii.",
+      "publishedAt": "2026-01-09T10:37:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "ade44d206461d89d",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Mesajul transmis de Donald Trump lui Viktor Orban, aflat într-o campanie electorală dificilă",
+      "url": "https://stirileprotv.ro/stiri/international/mesajul-transmis-de-donald-trump-lui-viktor-orban-aflat-intr-o-campanie-electorala-dificila.html",
+      "summary": "Preşedintele american Donald Trump i-a urat \"mult succes\" prim-ministrului ungar Viktor Orban, vechi aliat al său, în campania lui electorală, într-o scrisoare postată vineri pe pagina sa de Facebook, informează Reuters.",
+      "publishedAt": "2026-01-09T10:36:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "4a39b477ce612454",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "MAE al Rusiei a anunțat că Donald Trump a decis eliberarea a doi cetățeni ruși de pe petrolierul capturat de SUA",
+      "url": "https://stirileprotv.ro/stiri/international/mae-al-rusiei-a-anuntat-ca-donald-trump-a-decis-eliberarea-a-doi-cetateni-rusi-de-pe-petrolierul-capturat-de-sua.html",
+      "summary": "Donald Trump a decis să elibereze doi cetățeni ai Federației Ruse din rândul echipajului petrolierului „Bella 1” („Marinera”), reținut de armata americană în Oceanul Atlantic. Informația a fost transmisă de Ministerul Afacerilor Externe al Rusiei.",
+      "publishedAt": "2026-01-09T10:35:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "64ef89f8b3a0ddd3",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Filmul „One Battle After Another”, despre extremismul american, își confirmă statutul de favorit înainte de Oscaruri",
+      "url": "https://stirileprotv.ro/show-buzz/entertainment/filmul-zone-battle-after-another-despre-extremismul-american-isi-confirma-statutul-de-favorit-inainte-de-oscaruri.html",
+      "summary": "Hollywood va intra în plin sezon al premiilor cu Globurile de Aur de duminică, unde filmul despre extremismul american „One Battle After Another” își va confirma statutul de favorit, cu două luni înainte de Oscaruri.",
+      "publishedAt": "2026-01-09T10:20:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "e8e1446936654c5b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "De ce se pune o cană de apă pe calorifer iarna. Soluția la îndemâna oricui",
+      "url": "https://stirileprotv.ro/divers/de-ce-este-util-sa-pui-o-cana-de-apa-pe-calorifer-iarna-solutii-simple-pentru-a-mentine-un-ambient-placut-in-casa.html",
+      "summary": "Pe măsură ce temperaturile scad în timpul iernii, mulți dintre noi observăm că aerul devine mai uscat în casă.",
+      "publishedAt": "2026-01-09T10:11:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "174776521ab1b74a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Un șofer a ignorat semnalul unor polițiști din Agigea și apoi a fost urmărit în trafic. Ce au descoperit când l-au oprit",
+      "url": "https://stirileprotv.ro/stiri/actualitate/un-sofer-a-ignorat-semnalul-unor-politisti-din-agigea-si-apoi-a-fost-urmarit-in-trafic-ce-au-descoperit-cand-l-au-oprit.html",
+      "summary": "Un şofer care a refuzat să oprească la semnalul poliţiştilor, pe DN 39, a fost urmărit şi blocat pe o stradă din Agigea. El a fost testat cu aparatul etilotest şi a rezultat o valoare de 1,56 mg/l alcool pur în aerul expirat.",
+      "publishedAt": "2026-01-09T10:03:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "23290fc95c7b544b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Un botoșănean, amendat după ce a sunat repetat la 112 și a amenințat că va da foc blocului. Polițiștii l-au imobilizat",
+      "url": "https://stirileprotv.ro/stiri/actualitate/un-botosanean-amendat-dupa-ce-a-sunat-repetat-la-112-si-a-amenintat-ca-va-da-foc-blocului-politistii-l-au-imobilizat.html",
+      "summary": "Un bărbat din Botoșani a sunat de mai multe ori la 112 fără motiv, punând muzică, jignind polițiștii și amenințând că va da foc blocului său, oferind informații false despre locuință, dar a fost localizat de polițiști.",
+      "publishedAt": "2026-01-09T10:07:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "c344bbe109ed6324",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "O boală misterioasă a apărut la bordul Stației Spațiale Internaționale. NASA readuce de urgență echipajul înapoi pe Pământ",
+      "url": "https://stirileprotv.ro/stiri/stiinta/o-boala-misterioasa-a-aparut-la-bordul-statiei-spatiale-internationale-nasa-readuce-de-urgenta-echipajul-inapoi-pe-pamant.html",
+      "summary": "NASA readuce de urgență înapoi pe Pământ echipajul de pe Stația Spațială Internațională (ISS), după ce un astronaut s-a îmbolnăvit. Ar fi pentru prima dată în istoria spațială când s-ar recurge la această măsură de urgență.",
+      "publishedAt": "2026-01-09T09:54:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "20142a82350ea191",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "UNSAR: Cea mai mare despăgubire pentru pagube provocate de zăpadă a depășit 30.000 de euro",
+      "url": "https://stirileprotv.ro/stiri/actualitate/unsar-cea-mai-mare-despagubire-pentru-pagube-provocate-de-zapada-a-depasit-30-000-de-euro.html",
+      "summary": "Pe timpul iernii, ninsorile abundente și topirea zăpezii provoacă frecvent pagube. Potrivit UNSAR, cea mai mare despăgubire plătită în ultimii ani unui proprietar de locuință a depășit 30.000 de euro.",
+      "publishedAt": "2026-01-09T09:36:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "a99fc3119401c2b9",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "CES Las Vegas: roboți care urcă scările, strâng obiecte și spală treptele, noile vedete ale tehnologiei pentru casă",
+      "url": "https://stirileprotv.ro/stiri/ilikeit/ces-las-vegas-roboti-care-urca-scarile-strang-obiecte-si-spala-treptele-noile-vedete-ale-tehnologiei-pentru-casa.html",
+      "summary": "La târgul de tehnologie din Las Vegas au fost prezentate noi generații ale roboților care ne pot ajuta prin casă.",
+      "publishedAt": "2026-01-09T09:30:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "763023fbc8cdcacb",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Un bărbat a făcut 100 de flotări în fiecare zi, timp de un an. Ce efecte a avut acest obicei asupra corpului său",
+      "url": "https://stirileprotv.ro/divers/un-barbat-a-facut-100-de-flotari-in-fiecare-zi-timp-de-un-an-ce-efecte-a-avut-acest-obicei-asupra-corpului-sau.html",
+      "summary": "Un bărbat a dezvăluit ce impact a avut asupra corpului său faptul că a făcut 100 de flotări în fiecare zi, timp de un an.",
+      "publishedAt": "2026-01-09T09:18:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "4a447156f262a085",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cât valora economia României la sfârșitul trimestrului III din 2025. Domeniile de activitate și contribuția la PIB | DOCUMENT",
+      "url": "https://stirileprotv.ro/stiri/financiar/cati-bani-avea-romania-la-sfarsitul-trimestrului-iii-din-2025-domeniile-de-activitate-si-contributia-la-pib-document.html",
+      "summary": "România avea la sfârșitul trimestrului III din 2025 un PIB de peste 1,3 miliarde de lei (circa 268 miliarde de euro), în creștere cu 0,9% față de aceeași perioadă din 2024, potrivit INS.",
+      "publishedAt": "2026-01-09T09:15:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "2dcd76f8941544d8",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "iPhone 17 Pro și Pro Max, la primării de comune cu câteva mii de locuitori. Cum justifică primarii achizițiile",
+      "url": "https://stirileprotv.ro/stiri/actualitate/iphone-17-pro-si-pro-max-la-primarii-de-comune-cu-cateva-mii-de-locuitori-cum-justifica-primarii-achizitiile.html",
+      "summary": "Pentru mai mulți primari de comune mici, finalul de an a venit cu achiziții surprinzătoare: telefoane mobile de top, iPhone Pro și Pro Max, cumpărate din bani publici.",
+      "publishedAt": "2026-01-09T09:11:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "367f54d82f5832ef",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Claudiu Năsui: Guvernul nu va face reforme în 2026. Capitalul politic a fost folosit pentru creșteri de taxe",
+      "url": "https://stirileprotv.ro/stiri/politic/claudiu-nasui-guvernul-nu-va-face-reforme-in-2026-capitalul-politic-a-fost-folosit-pentru-cresteri-de-taxe.html",
+      "summary": "Guvernul nu va face nici o reformă în 2026, estimează la RFI deputatul USR Claudiu Năsui. Fostul ministru al Economiei spune că nu există perspective în acest sens, pentru că nici anul trecut nu au avut loc schimbări în administraţia centrală.",
+      "publishedAt": "2026-01-09T09:08:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "30dca5c4965338f8",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "„Campion” la datorii. Un bărbat din Buzău trebuie să plătească Primăriei peste 1 milion de lei, strânși din amenzi",
+      "url": "https://stirileprotv.ro/stiri/actualitate/zcampion-la-datorii-un-barbat-din-buzau-trebuie-sa-plateasca-primariei-peste-1-milion-de-lei-stransi-din-amenzi.html",
+      "summary": "Primăria Buzău trebuie să recupereze peste 12 milioane de euro de la persoanele fizice restante la plata taxelor și impozitelor din anii anteriori, dintre care aproximativ 1,1 milioane de lei revin unui singur contribuabil.",
+      "publishedAt": "2026-01-09T09:08:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "cfd3460a467b0e99",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Bărbat reținut după ce a aruncat cu ulei pe poarta și mașina unei femei și a amenințat că îi va da foc, în Dolj",
+      "url": "https://stirileprotv.ro/stiri/actualitate/barbat-retinut-dupa-ce-a-aruncat-cu-ulei-pe-poarta-si-masina-unei-femei-si-a-amenintat-ca-ii-va-da-foc-in-dolj.html",
+      "summary": "Un bărbat din judeţul Dolj a fost reţinut pentru 24 de ore după ce a aruncat cu ulei pe porţile de acces de la locuinţa vecinei, dar şi pe maşina femeii, şi a ameninţat că va da foc.",
+      "publishedAt": "2026-01-09T08:59:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "136c92ee03654267",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Un bărbat din Țările de Jos a murit în urma unui conflict cu doi adolescenți care aruncau bulgări de zăpadă în mașini",
+      "url": "https://stirileprotv.ro/stiri/international/un-barbat-din-tarile-de-jos-a-murit-in-urma-unui-conflict-cu-doi-adolescenti-care-aruncau-bulgari-de-zapada-in-masini.html",
+      "summary": "Poliția olandeză a reținut doi adolescenți în cadrul unei investigații privind decesul unui bărbat de 60 de ani, posibil victima unei agresiuni survenite după o dispută legată de aruncarea bulgărilor de zăpadă, informează AFP.",
+      "publishedAt": "2026-01-09T08:56:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "ce36b20558ec1e2d",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Temperatura optimă în casă. Câte grade trebuie să fie în locuință pe timp de iarnă",
+      "url": "https://stirileprotv.ro/divers/temperatura-optima-in-casa-tarile-care-trec-iarna-cu-centrala-termica-setata-chiar-si-la-17-grade.html",
+      "summary": "Care e temperatura optimă în casă? Este întrebarea pe care toți cei care plătesc facturi la căldura și-o pun când vremea rece începe să își facă apariția.",
+      "publishedAt": "2026-01-09T08:40:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "6da664ab683a7254",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "O adolescentă a căzut dintr-o ambulanță aflată în mers, pe o autostradă din Anglia",
+      "url": "https://stirileprotv.ro/divers/o-adolescenta-a-cazut-dintr-o-ambulanta-aflata-in-mers-pe-o-autostrada-din-anglia.html",
+      "summary": "O adolescentă a căzut din partea din spate a unei ambulanțe pe autostradă, în timp ce era transportată de urgență la spital.",
+      "publishedAt": "2026-01-09T08:36:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "e3e54d78cf73793b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ce nu trebuie să lipsească din bagaj atunci când călătorești cu avionul. Obiecte necesare dacă zborul este anulat",
+      "url": "https://stirileprotv.ro/stiri/international/ce-nu-trebuie-sa-lipseasca-din-bagaj-atunci-cand-calatoresti-cu-avionul-obiecte-necesare-daca-zborul-este-anulat.html",
+      "summary": "Zborurile nu sunt întotdeauna previzibile. Problemele, întârzierile și chiar anulările pot apărea, mai ales din cauza vremii, a lipsei de personal sau a problemelor tehnice, scrie Daily Mail.",
+      "publishedAt": "2026-01-09T08:31:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "87957961770c4d01",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "CTP: Criminalul Trump are discurs al urii cum n-am mai văzut de la diatribele sălbatice ale lui Hitler la adresa evreilor",
+      "url": "https://stirileprotv.ro/stiri/social/ctp-criminalul-trump-are-discurs-al-urii-cum-n-am-mai-vazut-de-la-diatribele-salbatice-ale-lui-hitler-la-adresa-evreilor.html",
+      "summary": "Trump este un ”criminal” care transformă lumea într-un cuib de tâlhari, ”violatori de stat și ucigași”, consideră CTP. Gazetarul crede că Trump ”a aruncat otrava violenței” peste America și are un discurs al urii cum nu s-a mai întâlnit de la Hitler.",
+      "publishedAt": "2026-01-09T08:29:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "e18a4db51e1651bc",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "ANM prelungește avertizările: Val de frig și ninsori în România. Temperaturile scad până la -18 grade",
+      "url": "https://stirileprotv.ro/stiri/vremea/anm-vremea-va-deveni-deosebit-de-rece-in-toata-romania-ninsori-ger-polei-si-vant-puternic-pana-pe-13-ianuarie.html",
+      "summary": "Vremea va deveni deosebit de rece în toată ţara în acest sfârşit de săptămână, iar în nordul Moldovei sunt estimate temperaturi de minus 10 grade pe parcursul zilei de sâmbătă.",
+      "publishedAt": "2026-01-09T08:19:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "88064f235158148b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Papa Leon al XIV-lea și Donald Trump, pe traiectorie de coliziune: Vaticanul contestă politica SUA",
+      "url": "https://stirileprotv.ro/stiri/international/papa-leon-al-xiv-lea-si-donald-trump-pe-traiectorie-de-coliziune-vaticanul-contesta-politica-sua.html",
+      "summary": "Primul papă american se află pe un curs de coliziune cu președintele SUA, Donald Trump, scrie Politico.",
+      "publishedAt": "2026-01-09T08:19:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "eb5de7eb8cd97fba",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "O insulă pustie angajează doi oameni pe o perioadă de 7 luni și asigură mâncare și cazare. Există însă o condiție",
+      "url": "https://stirileprotv.ro/divers/o-insula-pustie-angajeaza-doi-oameni-pe-o-perioada-de-7-luni-si-asigura-mancare-si-cazare-exista-insa-o-conditie.html",
+      "summary": "Cei care caută un nou loc de muncă și o aventură inedită ar putea fi interesați de o oportunitate unică pe o insulă izolată din Irlanda, deosebit de frumoasă, pe durata primăverii și verii.",
+      "publishedAt": "2026-01-09T08:13:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "568f8c0a3fc06d3e",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Prima autostradă din România dotată cu dușuri și stații de încărcare a mașinilor electrice",
+      "url": "https://stirileprotv.ro/stiri/social/prima-autostrada-din-romania-dotata-cu-dusuri-si-statii-de-incarcare-a-masinilor-electrice.html",
+      "summary": "Autostrada A0, care va înconjura orașul București și se va conecta cu autostrăzile A1, A2 și A3, va fi dotată inclusiv cu dușuri și stații de încărcare pentru mașinile electrice. Facilitățile vor fi construite în spațiile pentru servicii din Balotești.",
+      "publishedAt": "2026-01-09T07:55:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "0d89f8069e9457c0",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Paris Saint-Germain a cucerit Supercupa Franţei, după ce a învins-o pe rivala Olympique Marseille cu 4-1",
+      "url": "https://stirileprotv.ro/stiri/sport/paris-saint-germain-a-cucerit-supercupa-frantei-dupa-ce-a-invins-o-pe-rivala-olympique-marseille-cu-4-1.html",
+      "summary": "Paris Saint-Germain a cucerit Supercupa Franței (Trophée des Champions), după ce a învins-o pe rivala Olympique Marseille cu 4-1 la loviturile de departajare, joi seara, la Kuweit City.",
+      "publishedAt": "2026-01-09T07:55:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "2376033969d19e93",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Bilanț IGSU: 15 județe afectate de ninsori. Copaci doborâți, inundații și peste 1.000 de oameni fără energie electrică",
+      "url": "https://stirileprotv.ro/stiri/actualitate/ninsorile-si-viscolul-au-afectat-15-judete-copaci-doborati-inundatii-si-peste-1-000-de-oameni-fara-energie-electrica.html",
+      "summary": "Vântul puternic, ninsorile și viscolul au afectat 32 de localități din 15 județe; intervenții au avut loc în Hunedoara și Botoșani, unde mai multe persoane au fost salvate.",
+      "publishedAt": "2026-01-09T07:53:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "7f7e5e53441386b7",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cum ar putea arăta Bucureștiul în 2035. Albia betonată a Dâmboviței va „înverzi”, Splaiul Unirii - eliberat de trafic",
+      "url": "https://stirileprotv.ro/stiri/pro-verde/cum-va-arata-bucurestiul-in-2035-albia-betonata-a-dambovitei-va-inverzi-splaiul-unirii-eliberat-de-trafic-galerie-foto.html",
+      "summary": "Albia betonată a râului Dâmbovița, care “despică” Bucureștiul în două, se va transforma dintr-o “barieră” între sectoare într-un adevărat coridor verde-albastru, capabil să răcorească orașul, să aducă biodiversitate și să conecteze cartierele capitalei.",
+      "publishedAt": "2026-01-09T07:34:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "eb1067c28b443b39",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Franța, lovită de furtuna Goretti cu rafale de peste 200 km/h. Peste 380.000 de locuințe au rămas fără electricitate. FOTO",
+      "url": "https://stirileprotv.ro/stiri/international/franta-lovita-de-furtuna-goretti-cu-rafale-de-peste-200-km-h-peste-380-000-de-locuinte-au-ramas-fara-electricitate-foto.html",
+      "summary": "Vineri dimineață, aproximativ 380.000 de gospodării din Franța au rămas fără electricitate, în urma furtunii Goretti, care a lovit puternic nord-vestul țării, cu rafale ce au depășit izolat 200 km/h, potrivit Enedis, gestionarul rețelei, citat de AFP.",
+      "publishedAt": "2026-01-09T07:27:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "392de6439b58e4b8",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "„Navele rusești au plecat foarte repede când am ajuns noi”. Trump, despre capturarea petrolierului sub pavilion rusesc",
+      "url": "https://stirileprotv.ro/stiri/international/znavele-rusesti-au-plecat-foarte-repede-cand-am-ajuns-noi-trump-despre-capturarea-petrolierului-sub-pavilion-rusesc.html",
+      "summary": "Submarinul și distrugătorul trimise de Rusia pentru a escorta petrolierul Bella 1, în timp ce acesta era urmărit de Statele Unite, „au plecat foarte repede”, a declarat Donald Trump într-un interviu acordat lui Sean Hannity pe postul Fox News.",
+      "publishedAt": "2026-01-09T07:13:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "086ec7e580977d7d",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Manipulare șocantă a lui Viktor Orban: Ucraina vrea pensiile maghiarilor pentru 40 de ani",
+      "url": "https://stirileprotv.ro/stiri/international/manipulare-socanta-a-lui-viktor-orban-ucraina-vrea-pensiile-maghiarilor-pentru-40-de-ani.html",
+      "summary": "Ucraina vrea banii de pensii ale maghiarilor pentru 40 de ani, a declarat Viktor Orban, într-un nou discurs agresiv și manipulator la adresa Uniunii Europene. Premierul Ungariei consideră că Europa este responsabilă de războiul din Ucraina.",
+      "publishedAt": "2026-01-09T07:09:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "37e4ac657bbf769a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cristiano Ronaldo a înscris primul său gol din 2026. Este al 25-lea an consecutiv în care marchează. VIDEO",
+      "url": "https://stirileprotv.ro/stiri/sport/cristiano-ronaldo-a-inscris-primul-sau-gol-din-2026-este-al-25-lea-an-consecutiv-in-care-marcheaza-video.html",
+      "summary": "Cristiano Ronaldo a marcat primul său gol din anul 2026, joi, împotriva echipei Al Qadsiah. A marcat astfel în fiecare dintre ultimii 25 de ani.",
+      "publishedAt": "2026-01-09T07:03:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "05e6489951b826ef",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "IGSU, mesaj pentru populaţie: „Lasă acasă pantofii pentru vreme bună. Pe gheaţă contează aderenţa, nu stilul!”",
+      "url": "https://stirileprotv.ro/stiri/actualitate/igsu-mesaj-pentru-populatie-zlasa-acasa-pantofii-pentru-vreme-buna-pe-gheata-conteaza-aderenta-nu-stilul.html",
+      "summary": "Autorităţile transmit un mesaj populaţiei în contextul vremii nefavorabile, atrăgând atenţia că există risc de căzături din cauza gheţii.",
+      "publishedAt": "2026-01-09T07:03:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "09be013ea6ddbecc",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Rusia a lovit a doua oară Ucraina cu racheta Oreşnik, care prinde o viteză de 13.000 km/h. „O ameninţare gravă pentru Europa”",
+      "url": "https://stirileprotv.ro/stiri/international/rusia-spune-ca-a-lovit-a-doua-oara-ucraina-cu-racheta-oresnik-care-prinde-o-viteza-de-13-000-km-h.html",
+      "summary": "Joi noaptea, Rusia a lansat unul dintre cele mai puternice atacuri aeriene asupra orașelor ucrainene, din ultimele luni. Cel puțin 4 persoane au murit și alte 19 au fost rănite în Kiev.",
+      "publishedAt": "2026-01-09T07:01:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "38a51475c6a3a763",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Kim Jong Un susține necondiționat politicile lui Putin. Coreea de Nord continuă sprijinul militar și strategic pentru Rusia",
+      "url": "https://stirileprotv.ro/stiri/international/kim-jong-un-sustine-neconditionat-politicile-lui-putin-coreea-de-nord-continua-sprijinul-militar-si-strategic-pentru-rusia.html",
+      "summary": "Liderul nord-coreean Kim Jong Un s-a angajat să sprijine \"necondiţionat\" toate politicile şi deciziile preşedintelui rus Vladimir Putin, a relatat agenţia oficială de presă a regimului de la Phenian, KCNA, citată de AFP.",
+      "publishedAt": "2026-01-09T06:58:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "56d29be930d7c72a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Un pilot renumit de wingsuit a murit după ce s-a prăbușit cu o viteză de 200 km/h de pe un munte, în Africa de Sud",
+      "url": "https://stirileprotv.ro/stiri/international/un-pilot-de-wingsuit-a-murit-dupa-ce-s-a-prabusit-cu-o-viteza-de-200-km-h-de-pe-un-munte-din-africa-de-sud.html",
+      "summary": "Brendan Weinstein, unul dintre cei mai renumiți piloți de wingsuit din lume a murit după ce s-a prăbușit în timp ce sărea de pe Muntele Table din Africa de Sud, scrie Metro.",
+      "publishedAt": "2026-01-09T06:43:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "2f591eded6495b75",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Rusia susține că 500.000 de oameni au rămas fără curent, după un atac masiv ucrainean în regiunea Belgorod",
+      "url": "https://stirileprotv.ro/stiri/international/rusia-sustine-ca-500-000-de-oameni-au-ramas-fara-curent-dupa-un-atac-masiv-ucrainean-in-regiunea-belgorod.html",
+      "summary": "Mai mult de 500.000 de persoane sunt private de energie electrică în urma unui atac ucrainean asupra regiunii ruse Belgorod, a anunţat vineri guvernatorul local, Viatcheslav Gladkov.",
+      "publishedAt": "2026-01-09T06:41:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "fdff151c0b4b17a5",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Una din cele mai populare destinații de vacanță va controla conturile turiștilor să vadă dacă au suficienți bani de cheltuit",
+      "url": "https://stirileprotv.ro/stiri/travel/una-din-cele-mai-populare-destinatii-de-vacanta-va-controla-conturile-turistilor-sa-vada-daca-au-suficienti-bani-de-cheltuit.html",
+      "summary": "Bali va verifica economiile turiștilor care vor să vină pe insulă pentru a vedea dacă aceștia au suficienți bani de cheltuit. Măsura face parte din noul proiect de reglementare a turismului în zonă, care urmează a fi aprobat.",
+      "publishedAt": "2026-01-09T06:36:00.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.185Z"
+    },
+    {
+      "id": "16eb9af016f737a6",
+      "sourceId": "europa-libera",
+      "sourceName": "Europa Liberă",
+      "title": "ONU prognozează pentru 2026 o creștere economică globală în scădere, de 2,7%",
+      "url": "https://romania.europalibera.org/a/onu-preconizeaza-pentru-2026-o-crestere-economica-globala-in-scadere-pana-la-2-7-/33643942.html",
+      "summary": "Economia mondială se află într-o etapă de stabilitate fragilă, afectată de politici comerciale schimbătoare și provocări fiscale persistente. Conform celui mai recent raport al Organizației Națiunilor Unite, creșterea economică globală este prognozată să scadă la 2,7% în 2026, de la 2,8% anul trecut.\r\nÎn 2027, economia globală ar putea reveni la o creștere de 2,9%, arată autorii raportului. Aceste cifre rămân însă sub media de 3,2% înregistrată în perioada pre-pandemică...",
+      "publishedAt": "2026-01-09T11:42:28.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.216Z"
+    },
+    {
+      "id": "e57554c97c84e33a",
+      "sourceId": "europa-libera",
+      "sourceName": "Europa Liberă",
+      "title": "Președintele Emmanuel Macron critică politica externă a SUA, despre care spune că „se îndepărtează treptat de aliați”",
+      "url": "https://romania.europalibera.org/a/presedintele-emmanuel-macron-critica-politica-externa-a-sua-despre-care-spune-ca-se-indeparteaza-treptat-de-aliati-/33643868.html",
+      "summary": "Președintele francez Emmanuel Macron a avertizat joi, la o întâlnire cu ambasadorii francezi, că Statele Unite se „îndepărtează treptat” de unii dintre aliații săi și „se eliberează de regulile internaționale”. Criticile președintelui Franței vin în contextul în care țările europene se străduiesc să formuleze un răspuns coordonat la capturarea liderului venezuelean Nicolas Maduro de către SUA și la intențiile anunțate ale președintelui american de a prelua Groenlanda.\r\n„Statele Unite sunt o...",
+      "publishedAt": "2026-01-09T10:12:30.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.216Z"
+    },
+    {
+      "id": "6bd400db6f7d1d8b",
+      "sourceId": "europa-libera",
+      "sourceName": "Europa Liberă",
+      "title": "Proteste în Iran. Autoritățile de la Teheran blochează internetul pe fondul manifestațiilor violente",
+      "url": "https://romania.europalibera.org/a/proteste-in-iran-autoritatile-blocheaza-internetul-pe-fondul-manifestatiilor-violente/33643753.html",
+      "summary": "Autoritățile iraniene au întrerupt accesul la internet la nivel național, joi, în timp ce protestele cauzate de nemulțumirile față de condițiile economice devastatoare s-au extins în marile orașe ale țării, în a 12-a zi de manifestații.\r\nȚara se confruntă cu întreruperea totală a accesului la internet, potrivit companiei NetBlocks, care a transmis că întreruperea a urmat unei serii de „măsuri de cenzură digitală”.\r\nDatele companiei de internet Cloudflare au arătat o scădere de aproximativ...",
+      "publishedAt": "2026-01-09T07:32:12.000Z",
+      "fetchedAt": "2026-01-09T12:54:58.216Z"
     }
   ],
-  "lastUpdated": "2026-01-09T06:41:21.266Z"
+  "lastUpdated": "2026-01-09T12:55:07.309Z"
 }
