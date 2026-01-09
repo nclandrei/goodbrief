@@ -13740,7 +13740,387 @@
       "summary": "La târgul de tehnologie din Las Vegas au fost prezentate noi generații ale roboților care ne pot ajuta prin casă. Roboții care fac curățenie știu acum să urce scările ori să adune obiecte aruncate la întâmplare.",
       "publishedAt": "2026-01-08T18:32:00.000Z",
       "fetchedAt": "2026-01-09T02:04:54.084Z"
+    },
+    {
+      "id": "a666c06522333b81",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "SUA vor „începe atacuri terestre” împotriva cartelurilor de droguri. Anunțul lui Donald Trump",
+      "url": "https://hotnews.ro/sua-vor-incepe-atacuri-terestre-impotriva-cartelurilor-de-droguri-anuntul-lui-donald-trump-2146641",
+      "summary": "Președintele american Donald Trump a anunţat joi că va continua atacurile împotriva cartelurilor de droguri cu lovituri „terestre”, după mai multe luni în care SUA a bombardat nave maritime din Caraibe şi Pacific. „Vom începe…",
+      "publishedAt": "2026-01-09T06:10:41.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.581Z"
+    },
+    {
+      "id": "4003d0a5d94eb8bb",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Rușii au atacat Ucraina cu racheta balistică hipersonică Oreşnik. Bombardamente în Kiev și vestul țării",
+      "url": "https://hotnews.ro/rusii-au-atacat-ucraina-cu-o-racheta-balistica-care-se-deplasa-cu-o-viteza-hipersonica-de-13-000-km-h-bombardamente-in-kiev-si-vestul-tarii-2146624",
+      "summary": "Întreg teritoriul Ucrainei a fost sub alertă aeriană în noaptea de joi spre vineri, ca răspuns la un atac cu rachete rusești, mai multe victime fiind anunțate la Kiev de către autorități, informează AFP, Reuters…",
+      "publishedAt": "2026-01-09T05:46:58.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.581Z"
+    },
+    {
+      "id": "a3d0ce3b9d2e1989",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Goana nebună după petrolul venezuelean: cine ajunge primul?",
+      "url": "https://hotnews.ro/goana-nebuna-dupa-petrolul-venezuelean-cine-ajunge-primul-2146591",
+      "summary": "„Vânătorii” de petrol, cunoscuți și sub numele de „wildcatters” (antreprenori independenți care forează în zone neexplorate), se întrec pentru a obține acorduri în Venezuela, încercând să ajungă din urmă marile grupuri energetice care cântăresc riscurile…",
+      "publishedAt": "2026-01-09T05:34:56.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.581Z"
+    },
+    {
+      "id": "2f159989fd24f3ff",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Ger, ninsori și viscol în România, până sâmbătă. Zonele vizate de alertele meteo",
+      "url": "https://hotnews.ro/ger-ninsori-si-viscol-in-romania-pana-sambata-zonele-vizate-de-alertele-meteo-2146598",
+      "summary": "Meteorologii avertizează că, începând de sâmbătă, vremea va continua să se răcească la început în nord-estul și centrul țării, apoi și în rest, astfel că îndeosebi pe parcursul nopților și al dimineților va fi ger…",
+      "publishedAt": "2026-01-09T05:19:47.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.581Z"
+    },
+    {
+      "id": "47544db11ab3f539",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Circulație îngreunată de ninsoare în țară. Traficul este oprit pe un drum național din cauza viscolului",
+      "url": "https://hotnews.ro/circulatie-ingreunata-din-cauza-ninsorii-in-tara-traficul-este-oprit-pe-un-drum-national-din-cauza-viscolului-2146601",
+      "summary": "Mai multe zone din România se află sub avertizare meteo vineri dimineață de vânt puternic, ninsori viscolite și ger. Se circulă în condiții se iarnă pe mai multe șosele din țară, conform Centrului INFOTRAFIC din…",
+      "publishedAt": "2026-01-09T05:16:13.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.581Z"
+    },
+    {
+      "id": "8b6ba0790b9150d4",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Operațiunile legendare în care a fost implicat Delta Force, comandoul care l-a adus pe Maduro în SUA",
+      "url": "https://hotnews.ro/operatiunile-legendare-in-care-a-fost-implicat-delta-force-comandoul-care-l-a-adus-pe-maduro-in-sua-2146593",
+      "summary": "Terapeutul Dragan Dabic tocmai se întorsese acasă din New York, după o despărțire urâtă de soția sa. Acest bărbat cu o barbă albă lungă și părul legat cu o panglică neagră era dornic să devină…",
+      "publishedAt": "2026-01-09T05:09:35.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.581Z"
+    },
+    {
+      "id": "bb69944305363ad8",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "ULTIMA ORĂ Guvernul Bolojan a tăiat peste 25.000 posturi ocupate. Aproape 18.000 sunt, însă, tăieri de la sectorul „prioritar” Educație, în timp ce a crescut numărul la Mediu, CCR, Curtea de Conturi, Președinție și chiar SGG",
+      "url": "https://hotnews.ro/ultima-ora-guvernul-bolojan-a-taiat-peste-25-000-posturi-ocupate-aproape-18-000-sunt-insa-taieri-de-la-sectorul-prioritar-educatie-in-timp-ce-a-crescut-numarul-la-mediu-ccr-curtea-de-2146599",
+      "summary": "Numărul posturilor ocupate în sectorul public a scăzut semnificativ în primele cinci luni de mandat ale guvernului condus de Ilie Bolojan, dar această reducere, cu peste 25.000 de posturi, a aparatului bugetar s-a realizat în…",
+      "publishedAt": "2026-01-09T05:08:16.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.581Z"
+    },
+    {
+      "id": "464a4302bf759058",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Marea de „gunoi” creat de AI din online nu e un accident, ci produsul final logic al algoritmilor marilor platforme",
+      "url": "https://hotnews.ro/marea-de-gunoi-creat-de-ai-din-online-nu-e-un-accident-ci-produsul-final-logic-al-algoritmilor-marilor-platforme-2144907",
+      "summary": "Peste 20% din videoclipurile care le apar noilor utilizatori de pe YouTube reprezintă conținut de proastă calitate generat în totalitate cu inteligența artificială („AI slop”). Sute dintre cele mai populare canale de pe platformă publică…",
+      "publishedAt": "2026-01-09T05:00:25.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.581Z"
+    },
+    {
+      "id": "3d9662127009bbb0",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Stan Wawrinka revine la Australian Open: wildcard special pentru campionul din 2014",
+      "url": "https://www.mediafax.ro/sport/stan-wawrinka-revine-la-australian-open-wildcard-special-pentru-campionul-din-2014-23668745",
+      "summary": "Stan Wawrinka va fi prezent pe tabloul principal de simplu masculin la Australian Open 2026, după ce organizatorii au anunțat vineri că i-au acordat un wildcard – o invitație cu simbolică pentru elvețian, aflat în ultimul sezon al carierei.",
+      "publishedAt": "2026-01-09T06:35:56.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.315Z"
+    },
+    {
+      "id": "6312cfed087114aa",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Cel mai periculos aeroport din lume. Majoritatea piloților nu pot ateriza aici. VIDEO",
+      "url": "https://www.mediafax.ro/externe/cel-mai-periculos-aeroport-din-lume-majoritatea-pilotilor-nu-pot-ateriza-aici-video-23668737",
+      "summary": "Aeroportul Tenzing-Hillary din Lukla, Nepal, este considerat cel mai periculos aeroport din lume.",
+      "publishedAt": "2026-01-09T06:22:25.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.315Z"
+    },
+    {
+      "id": "9aec42f8481268d7",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Încă o săptămână cu ger. Prognoza meteo pentru următoarele 4 săptămâni",
+      "url": "https://www.mediafax.ro/social/inca-o-saptamana-cu-ger-prognoza-meteo-pentru-urmatoarele-4-saptamani-23668738",
+      "summary": "Urmează încă o săptămână cu temperaturi mai mici decât cele normale, spun meteorologii din cadrul Administrației Naționale de Meteorologie (ANM).",
+      "publishedAt": "2026-01-09T06:13:40.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.315Z"
+    },
+    {
+      "id": "6991b051ae551ca8",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Stephen Marche avertizează: ICE funcționează ca o unitate paramilitară fascistă. Ținta este un stat fără lege",
+      "url": "https://www.mediafax.ro/externe/stephen-marche-avertizeaza-ice-functioneaza-ca-o-unitate-paramilitara-fascista-tinta-este-un-stat-fara-lege-23668731",
+      "summary": "După uciderea unei femei de către un agent al Immigration and Customs Enforcement (ICE) în Minneapolis, scriitorul canadian Stephen Marche consideră că Statele Unite au intrat într-un moment critic: violența începe să fie percepută ca un instrument legitim, iar premisele pentru desfășurarea unor alegeri libere se estompează rapid, titrează cotidianul La Stampa.",
+      "publishedAt": "2026-01-09T06:13:03.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.315Z"
+    },
+    {
+      "id": "0dd07ea837727722",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Industria farmaceutică cere reguli clare, după ce SUA au modificat schema de vaccinare",
+      "url": "https://www.mediafax.ro/sanatate/industria-farmaceutica-cere-reguli-clare-dupa-ce-sua-au-modificat-schema-de-vaccinare-23668730",
+      "summary": "Statele Unite au schimbat statutul unor vaccinuri pentru copii, lăsând decizia la latitudinea medicilor și părinților. Direct afectată de modificări, industria farmaceutică cere date validate de experți pentru protecția copiilor.",
+      "publishedAt": "2026-01-09T06:02:42.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.315Z"
+    },
+    {
+      "id": "5b6b8abdcceba897",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Ger în toată România. Prognoza ANM până în februarie",
+      "url": "https://www.mediafax.ro/social/ger-in-toata-romania-prognoza-anm-pana-in-februarie-23668732",
+      "summary": "Administrația Națională de Meteorologie a publicat estimările meteorologice pentru intervalul 12 ianuarie - 9 februarie. Prima săptămână aduce temperaturi mai coborâte decât normalul, iar apoi vremea se stabilizează.",
+      "publishedAt": "2026-01-09T05:57:56.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.315Z"
+    },
+    {
+      "id": "5b7c685e9035767d",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Bruno Mars lansează single-ul „I Just Might”, primul de pe al patrulea său album, „The Romantic”",
+      "url": "https://www.mediafax.ro/life-entertaiment/bruno-mars-lanseaza-single-ul-i-just-might-primul-de-pe-al-patrulea-sau-album-the-romantic-23668727",
+      "summary": "Bruno Mars a revenit oficial în prim-planul industriei muzicale vineri, odată cu lansarea noului său single, „I Just Might”, piesă inclusă pe cel de-al patrulea său album, „The Romantic”, primul album solo al cântărețului după aproape un deceniu, care va fi lansat în februarie.",
+      "publishedAt": "2026-01-09T05:55:48.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.315Z"
+    },
+    {
+      "id": "c5346cc9c7c15857",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Cranii umane, trunchiuri în descompunere și oase. Un bărbat, acuzat de furtul a sute de rămășițe",
+      "url": "https://www.mediafax.ro/externe/cranii-umane-trunchiuri-in-descompunere-si-oase-un-barbat-acuzat-de-furtul-a-sute-de-ramasite-23668725",
+      "summary": "Un bărbat a fost pus sub acuzare pentru furt, după ce în Pennsylvania au fost descoperite peste 100 de cranii umane și alte rămășițe omenești. Polițiștii au mai găsit numeroase alte oase lungi, mâini și picioare mumificate, trunchiuri aflate în stare de descompunere și alte elemente scheletice.",
+      "publishedAt": "2026-01-09T05:47:54.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.315Z"
+    },
+    {
+      "id": "d5e817936950ed2f",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Nicușor Dan publică dialogul dintre pilotul român al aeronavei Spartan și controlorul de trafic din Zürich",
+      "url": "https://www.mediafax.ro/politic/nicusor-dan-publica-dialogul-dintre-pilotul-roman-al-aeronavei-spartan-si-controlorul-de-trafic-din-zurich-23668719",
+      "summary": "Președintele Nicușor Dan a publicat, în noaptea de joi spre vineri, dialogul dintre pilotul român al aeronavei Spartan și controlorul de trafic din Zürich.",
+      "publishedAt": "2026-01-09T05:42:43.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.315Z"
+    },
+    {
+      "id": "03be8da342dc4c2e",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Aryna Sabalenka trece de Madison Keys și se califică în semifinale la turneul WTA500 de la Brisbane",
+      "url": "https://www.mediafax.ro/sport/aryna-sabalenka-trece-de-madison-keys-si-se-califica-in-semifinale-la-turneul-wta500-de-la-brisbane-23668718",
+      "summary": "Aryna Sabalenka (Belarus), lider mondial în tenisul feminin, a trecut de americanca Madison Keys, a șaptea jucătoarea a lumii, vineri dimineață, în sferturile de finală la turneul WTA500 de la Brisbane (Australia), calificându-se în semifinale.",
+      "publishedAt": "2026-01-09T05:41:54.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.315Z"
+    },
+    {
+      "id": "2281991fc75dbc77",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Rusia pare a fi utilizat din nou racheta hipersonică Oreșnik împotriva Ucrainei. Multiple focoase, dar care nu par a fi purtat niciun fel de încărcătură, au lovit azi-noapte orașul Liov, aproape de granița cu Polonia, cu o viteză de 13 mii de km/h. Armata Ucraineană a confirmat deocamdată doar viteza țintei aeriene, nu și tipul de rachetă, iar presa locală susține că aceasta a lovit “elemente de infrastructură critică”. Nu sunt rapoarte privind eventuale distrugeri masive.",
+      "url": "https://www.biziday.ro/344426-2/",
+      "summary": "Imaginile surprinse de camerele de supraveghere arată momentele în care proiectile de mare viteză lovesc Liovul, fără a fi clară nici ținta acestora, nici pagubele făcute.    🇷🇺🇺🇦 | Rusia atacó la región de Lviv, en el oeste de Ucrania, con misiles balísticos de mediano alcance Oreshnik. pic.twitter.com/YVLkhkT78W — AlertaNewsPlus (@AlertaNewsPlus) January 9, 2026 Ulterior, Armata […]",
+      "publishedAt": "2026-01-09T05:19:54.000Z",
+      "fetchedAt": "2026-01-09T06:41:11.898Z"
+    },
+    {
+      "id": "eca66bb1cd8c6a98",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Există o „amenințare reală” a unei acțiuni militare americane împotriva Columbiei, spune președintele",
+      "url": "https://stirileprotv.ro/stiri/international/exista-o-zamenintare-reala-a-unei-actiuni-militare-americane-impotriva-columbiei-spune-presedintele.html",
+      "summary": "Președintele Columbiei, Gustavo Petro, a declarat pentru BBC că, în opinia sa, există acum o „amenințare reală” a unei acțiuni militare a Statelor Unite împotriva Columbiei.",
+      "publishedAt": "2026-01-09T06:33:00.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.235Z"
+    },
+    {
+      "id": "c5a5158245f1f794",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Copiii care se îngrașă nu se tratează cu diete și interdicții alimentare. Ce trebuie făcut",
+      "url": "https://stirileprotv.ro/stiri/doctor-de-bine/copiii-care-se-ingrasa-nu-se-trateaza-cu-diete-si-interdictii-alimentare-ce-trebuie-facut.html",
+      "summary": "În copilărie nu vorbim despre diete alimentare, ci despre controlul hormonilor. Discutăm despre situațiile în care cei mici se îngrașă, la „Doctor de bine”.",
+      "publishedAt": "2026-01-09T06:13:00.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.235Z"
+    },
+    {
+      "id": "25c34d282e48f67d",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Când scăpăm de ger. Meteorologii anunță cum va fi vremea în următoarele patru săptămâni",
+      "url": "https://stirileprotv.ro/stiri/vremea/cand-scapam-de-ger-meteorologii-anunta-cum-va-fi-vremea-in-urmatoarele-patru-saptamani.html",
+      "summary": "Administrația Națională de Meteorologie anunță temperaturi sub normalul perioadei în săptămâna 12-19 ianuarie, la nivel național, urmate de o încălzire ușoară spre finalul lunii, mai ales la munte și în vestul și sudul țării.",
+      "publishedAt": "2026-01-09T06:03:00.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.235Z"
+    },
+    {
+      "id": "dc0fdbda07ba83e0",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Tânărul de 25 de ani, internat la Spitalul Județean Buzău, ar fi murit din cauza unui cheag de sânge. Ancheta continuă",
+      "url": "https://stirileprotv.ro/stiri/actualitate/tanar-de-25-de-ani-internat-la-spitalul-judetean-buzau-ar-fi-murit-din-cauza-unui-cheag-de-sange-ancheta-continua.html",
+      "summary": "Tânărul de 25 de ani cu o fractură de femur, internat la Spitalul Județean Buzău, ar fi murit din cauza unui cheag de sânge care ar fi blocat o arteră pulmonară, spun surse medicale.",
+      "publishedAt": "2026-01-09T05:59:00.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.235Z"
+    },
+    {
+      "id": "ff3c1082cea9f5df",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "SUA anexează Venezuela: ”Vom prelua tot petrolul pe care îl au”. Banii intră direct în conturile Statelor Unite",
+      "url": "https://stirileprotv.ro/stiri/international/sua-anexeaza-venezuela-vom-prelua-tot-petrolul-pe-care-il-au-banii-intra-direct-in-conturile-statelor-unite.html",
+      "summary": "Ministerul de externe chinez a acuzat Statele Unite de încălcare serioasă a dreptului internațional, după ce a confiscat două petroliere legate de Venezuela.",
+      "publishedAt": "2026-01-09T05:58:00.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.235Z"
+    },
+    {
+      "id": "0530c9570ac628cb",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Vremea azi, 9 ianuarie. Frig accentuat în toată țara, ninsori și polei spre seară, cu vânt puternic în mai multe regiuni",
+      "url": "https://stirileprotv.ro/stiri/vremea/vremea-azi-9-ianuarie-frig-accentuat-in-toata-tara-ninsori-si-polei-spre-seara-cu-vant-puternic-in-mai-multe-regiuni.html",
+      "summary": "Vineri se face mai frig decât în mod obișnuit la această dată. Temperaturile pleacă de la minus 8 grade în depresiuni și vor ajunge până la 3 grade în sudul și sud-estul României",
+      "publishedAt": "2026-01-09T05:50:00.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.235Z"
+    },
+    {
+      "id": "5fda5463e9dd8675",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Îngrijorare în Europa după declarațiile SUA despre Groenlanda. Liderii UE spun că viitorul insulei aparține locuitorilor săi",
+      "url": "https://stirileprotv.ro/stiri/international/ingrijorare-in-europa-dupa-declaratiile-sua-despre-groenlanda-liderii-ue-spun-ca-viitorul-insulei-apartine-locuitorilor-sai.html",
+      "summary": "Declarațiile americanilor privind Groenlanda provoacă îngrijorare. Șefa diplomației europene, Kaja Kallas, spune că statele membre discută deja pașii de urmat, în cazul în care Washingtonul va merge mai departe cu această idee.",
+      "publishedAt": "2026-01-09T05:47:00.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.235Z"
+    },
+    {
+      "id": "055b54963f8344d0",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Jumătate de țară, paralizată de viscol și nămeți. Drumuri închise, șoferi blocați și cursuri suspendate din cauza vremii",
+      "url": "https://stirileprotv.ro/stiri/actualitate/jumatate-de-tara-paralizata-de-viscol-si-nameti-drumuri-inchise-soferi-blocati-si-scoli-suspendate-din-cauza-vremii.html",
+      "summary": "Jumătate de țară este sub un strat consistent de zăpadă. Mulți șoferi au rămas blocați în nămeți ori au derapat și s-au accidentat.",
+      "publishedAt": "2026-01-09T05:43:00.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.235Z"
+    },
+    {
+      "id": "85c90557406836c3",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Accident grav în Dolj. O femeie a murit, iar alta a ajuns la spital după ce au fost lovite de o mașină",
+      "url": "https://stirileprotv.ro/stiri/actualitate/accident-grav-in-dolj-o-femeie-a-murit-iar-alta-a-ajuns-la-spital-dupa-ce-au-fost-lovite-de-o-masina.html",
+      "summary": "O femeie a murit, iar alta a ajuns la spital după ce au fost lovite de o mașină pe un drum național din județul Dolj. Atenție, urmează informații care vă pot afecta emoțional!",
+      "publishedAt": "2026-01-09T05:40:00.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.235Z"
+    },
+    {
+      "id": "0d5c1d7da535bd5f",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Nicușor Dan a postat convorbirea dintre pilotul român al aeronavei Spartan și controlorul de trafic din Zürich",
+      "url": "https://stirileprotv.ro/stiri/actualitate/mapn-dupa-controversele-legate-de-zborul-intarziat-al-lui-nicusor-dan-de-la-paris-zavionul-nu-a-avut-nicio-problema.html",
+      "summary": "După controversele legate de zborul întârziat al președintelui Nicușor Dan de la Paris, ministrul Apărării a venit cu explicații.",
+      "publishedAt": "2026-01-09T05:43:00.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.235Z"
+    },
+    {
+      "id": "90d0a7c6d10a57be",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "UE creşte presiunea asupra platformei X din cauza imaginilor sexuale cu copii generate de Inteligenţa Artificială",
+      "url": "https://stirileprotv.ro/stiri/international/ue-creste-presiunea-asupra-platformei-x-din-cauza-imaginilor-sexuale-cu-copii-generate-de-inteligenta-artificiala.html",
+      "summary": "Uniunea Europeană îşi intensifică investigaţia asupra X din cauza unor imagini sexuale explicite cu copii generate de Inteligenţa Artificială distribuite pe platforma socială a lui Elon Musk, relatează dpa.",
+      "publishedAt": "2026-01-09T05:31:00.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.235Z"
+    },
+    {
+      "id": "3ceb8895b2e30e69",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Prințesa Kate împlinește 44 de ani. Cum a devenit una dintre cele mai respectate figuri regale. GALERIE FOTO",
+      "url": "https://stirileprotv.ro/show-buzz/entertainment/printesa-kate-implineste-44-de-ani-cum-a-devenit-una-dintre-cele-mai-respectate-figuri-regale-galerie-foto.html",
+      "summary": "Prințesa Kate împlinește pe 9 ianuarie 44 de ani. Catherine, Prințesa de Wales, este una dintre cele mai cunoscute figuri ale familiei regale britanice, cu un parcurs marcat de discreție, influență publică și angajamente caritabile.",
+      "publishedAt": "2026-01-09T05:21:00.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.235Z"
+    },
+    {
+      "id": "eeb80c2909601bf5",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Reuters: SUA au discutat despre plăți de până la 100.000 de dolari pentru fiecare groenlandez, pentru separarea de Danemarca",
+      "url": "https://stirileprotv.ro/stiri/international/reuters-sua-au-discutat-despre-plati-de-pana-la-100-000-de-dolari-pentru-fiecare-groenlandez-pentru-separarea-de-danemarca.html",
+      "summary": "Oficiali americani au discutat despre plăți directe către groenlandezi, pentru a-i convinge să se separe de Danemarca și să se alăture SUA, potrivit Reuters.",
+      "publishedAt": "2026-01-09T05:17:00.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.235Z"
+    },
+    {
+      "id": "cb3665ee4d1ad141",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Patru morți și 10 răniți într-un atac cu rachete în Kiev. Rusia a lovit Ucraina cu rachete balistice hipersonice",
+      "url": "https://stirileprotv.ro/stiri/international/patru-morti-si-10-raniti-intr-un-atac-cu-rachete-in-kiev-rusia-a-lovit-ucraina-cu-rachete-balistice-hipersonice.html",
+      "summary": "Rusia a lansat joi noaptea un nou atac cu rachete asupra Ucrainei, ucigând cel puțin patru persoane la Kiev și lovind infrastructura din vest cu o rachetă balistică, au anunțat autoritățile, pe fondul temperaturilor extrem de scăzute.",
+      "publishedAt": "2026-01-09T05:05:00.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.235Z"
+    },
+    {
+      "id": "737a51109524baf3",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Trump anunță atacuri terestre împotriva cartelurilor de droguri. ”Este foarte, foarte trist să vezi ce se întâmplă în Mexic”",
+      "url": "https://stirileprotv.ro/stiri/international/trump-anunta-atacuri-terestre-impotriva-cartelurilor-de-droguri-este-foarte-foarte-trist-sa-vezi-ce-se-intampla-in-mexic.html",
+      "summary": "Preşedintele american Donald Trump a anunţat joi că, după atacurile asupra unor ambarcaţiuni maritime în Caraibe şi Pacific, Statele Unite vor efectua atacuri \"terestre\" împotriva cartelurilor, fără a preciza exact unde, scrie AFP.",
+      "publishedAt": "2026-01-09T05:11:00.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.235Z"
+    },
+    {
+      "id": "da84ff1edc3f60bf",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Donald Trump se va întâlni cu liderii marilor companii petroliere pentru a-i atrage de partea strategiei sale în Venezuela",
+      "url": "https://stirileprotv.ro/stiri/international/donald-trump-se-va-intalni-cu-liderii-marilor-companii-petroliere-pentru-a-i-atrage-de-partea-strategiei-sale-in-venezuela.html",
+      "summary": "Donald Trump îi primește vineri pe liderii marilor companii petroliere pentru a încerca să îi convingă să adere la strategia sa în Venezuela, unde intenționează să impună un control asupra petrolului pentru mulți ani.",
+      "publishedAt": "2026-01-09T05:10:00.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.235Z"
+    },
+    {
+      "id": "dd9b659b38464f44",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Internet întrerupt la nivel național în Iran, pe fondul protestelor declanșate de criza economică",
+      "url": "https://stirileprotv.ro/stiri/international/internet-intrerupt-la-nivel-national-in-iran-pe-fondul-protestelor-declansate-de-criza-economica.html",
+      "summary": "Iranul s-a confruntat joi cu o întrerupere a internetului la nivel naţional, potrivit grupului de monitorizare a internetului NetBlocks, în timp ce protestele împotriva dificultăţilor economice au continuat în toată ţara, relatează Reuters.",
+      "publishedAt": "2026-01-09T05:10:00.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.235Z"
+    },
+    {
+      "id": "e56c2e6fb6d850ab",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Donald Trump se va întâlni cu Maria Corina Machado şi spune că ar fi o „onoare” ca ea să-i acorde premiul Nobel",
+      "url": "https://stirileprotv.ro/stiri/international/donald-trump-se-va-intalni-cu-maria-corina-machado-si-spune-ca-ar-fi-o-zonoare-ca-ea-sa-i-acorde-premiul-nobel.html",
+      "summary": "Donald Trump a anunţat joi că opozanta venezueleană Maria Corina Machado va fi la Washington săptămâna viitoare şi s-a declarat „nerăbdător” să o întâlnească, adăugând că ar fi „o mare onoare” dacă ea i-ar înmâna Premiul Nobel pentru Pace.",
+      "publishedAt": "2026-01-09T05:05:00.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.235Z"
+    },
+    {
+      "id": "6740c8d8d5ec3852",
+      "sourceId": "europa-libera",
+      "sourceName": "Europa Liberă",
+      "title": "Atac masiv rus asupra Ucrainei. Cel puțin 4 morți și aproape 20 de răniți la Kiev. Lovitură cu rachetă balistică Oreșnik la Liov",
+      "url": "https://romania.europalibera.org/a/atac-masiv-rus-asupra-ucrainei-cel-putin-4-morti-la-kiev-lovitura-cu-racheta-balistica-la-lviv/33643706.html",
+      "summary": "Внаслідок нічного російського удару по Києву загинули четверо людей, серед них медик, 19 – поранені. Пошкоджені житлові будинки, об’єкти критичної інфраструктури та виникли перебої з електро-, тепло- і водопостачанням у кількох районах столиці, повідомила місцева влада",
+      "publishedAt": "2026-01-09T06:04:28.000Z",
+      "fetchedAt": "2026-01-09T06:41:12.129Z"
     }
   ],
-  "lastUpdated": "2026-01-09T02:05:03.220Z"
+  "lastUpdated": "2026-01-09T06:41:21.266Z"
 }
