@@ -129,6 +129,26 @@ interface ArticleScore {
   category: 'local-heroes' | 'wins' | 'green-stuff' | 'quick-hits';
 }
 
+async function callWithRetry<T>(
+  fn: () => Promise<T>,
+  maxRetries: number = 3
+): Promise<T> {
+  let lastError: Error | undefined;
+  for (let attempt = 0; attempt < maxRetries; attempt++) {
+    try {
+      return await fn();
+    } catch (error) {
+      lastError = error instanceof Error ? error : new Error(String(error));
+      if (attempt < maxRetries - 1) {
+        const delay = Math.pow(2, attempt) * 1000;
+        console.log(`Attempt ${attempt + 1} failed, retrying in ${delay}ms...`);
+        await new Promise((r) => setTimeout(r, delay));
+      }
+    }
+  }
+  throw lastError;
+}
+
 async function processArticleBatch(
   articles: RawArticle[]
 ): Promise<ArticleScore[]> {
@@ -236,11 +256,13 @@ Articles:
 ${articlesText}`;
 
   try {
-    const result = await model.generateContent(prompt);
-    const text = result.response.text();
-    return JSON.parse(text) as ArticleScore[];
+    return await callWithRetry(async () => {
+      const result = await model.generateContent(prompt);
+      const text = result.response.text();
+      return JSON.parse(text) as ArticleScore[];
+    });
   } catch (error) {
-    console.error('Batch processing failed:', error);
+    console.error('Batch processing failed after retries:', error);
     return [];
   }
 }

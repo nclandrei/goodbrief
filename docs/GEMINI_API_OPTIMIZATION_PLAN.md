@@ -71,30 +71,9 @@
 
 ---
 
-### Task 4: Add Pre-processing Filters (Optional Enhancement)
+### Task 4: Add Retry Logic with Exponential Backoff
 
-**Status:** 🔲 Not Started
-
-**Objective:** Reduce article count before AI processing using local heuristics.
-
-**Implementation:**
-1. Filter out articles older than 5 days (stale news)
-2. Remove articles with very short titles/summaries (likely low quality)
-3. Deduplicate by URL before title similarity check
-4. Add configurable filters in a separate `filterArticles()` function
-
-**Files to modify:**
-- `scripts/generate-draft.ts`
-
-**Verification:**
-- Log article count before/after filtering
-- Ensure no high-quality articles are incorrectly filtered
-
----
-
-### Task 5: Add Retry Logic with Exponential Backoff
-
-**Status:** 🔲 Not Started
+**Status:** ✅ Completed
 
 **Objective:** Handle transient API failures gracefully.
 
@@ -126,5 +105,5 @@
 ## Notes
 
 - Tasks 1-3 are **required** to stay within limits
-- Tasks 4-5 are **optional** but improve reliability
+- Task 4 (retry logic) improves reliability
 - If JSON parsing still fails at 120 articles, reduce to 100 and accept slightly more calls
