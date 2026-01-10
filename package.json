@@ -22,6 +22,8 @@
     "@google/generative-ai": "^0.24.1",
     "@react-email/components": "^0.0.30",
     "astro": "^5.0.0",
+    "dotenv": "^17.2.3",
+    "fastest-levenshtein": "^1.0.16",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "resend": "^6.6.0",

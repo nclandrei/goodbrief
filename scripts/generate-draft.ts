@@ -1,7 +1,9 @@
+import 'dotenv/config';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import { distance } from 'fastest-levenshtein';
 import type {
   RawArticle,
   ProcessedArticle,
@@ -39,75 +41,58 @@ function getISOWeekId(date: Date = new Date()): string {
   return `${d.getFullYear()}-W${weekNum.toString().padStart(2, '0')}`;
 }
 
-async function clusterArticles(
-  articles: RawArticle[]
-): Promise<Map<string, RawArticle[]>> {
-  const articlesText = articles
-    .map((a, i) => `${i}: "${a.title}" - "${a.summary.slice(0, 200)}"`)
-    .join('\n');
+function normalizeTitle(title: string): string {
+  return title
+    .toLowerCase()
+    .replace(/[^\w\s]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
 
-  const prompt = `Here are news articles from Romanian sources this week.
-Group them by the same underlying story/event. Articles about the same event should be in the same cluster.
-Return ONLY valid JSON, no markdown: { "clusters": [[0,5,12], [3,8], ...], "unique": [1,2,4,...] }
+function titleSimilarity(a: string, b: string): number {
+  const normA = normalizeTitle(a);
+  const normB = normalizeTitle(b);
+  const maxLen = Math.max(normA.length, normB.length);
+  if (maxLen === 0) return 1;
+  return 1 - distance(normA, normB) / maxLen;
+}
 
-Articles:
-${articlesText}`;
+function deduplicateArticles(articles: RawArticle[]): RawArticle[] {
+  const SIMILARITY_THRESHOLD = 0.7;
+  const groups: RawArticle[][] = [];
+  const assigned = new Set<number>();
 
-  try {
-    const result = await model.generateContent(prompt);
-    let text = result.response
-      .text()
-      .replace(/```json\n?|\n?```/g, '')
-      .trim();
+  for (let i = 0; i < articles.length; i++) {
+    if (assigned.has(i)) continue;
 
-    // Fix common JSON issues: trailing commas, truncated responses
-    text = text
-      .replace(/,\s*]/g, ']')
-      .replace(/,\s*}/g, '}');
+    const group: RawArticle[] = [articles[i]];
+    assigned.add(i);
 
-    // If JSON appears truncated, try to fix it
-    const openBrackets = (text.match(/\[/g) || []).length;
-    const closeBrackets = (text.match(/]/g) || []).length;
-    if (openBrackets > closeBrackets) {
-      text += ']'.repeat(openBrackets - closeBrackets);
-      if (!text.endsWith('}')) text += '}';
+    for (let j = i + 1; j < articles.length; j++) {
+      if (assigned.has(j)) continue;
+
+      const similarity = titleSimilarity(articles[i].title, articles[j].title);
+      if (similarity >= SIMILARITY_THRESHOLD) {
+        group.push(articles[j]);
+        assigned.add(j);
+      }
     }
 
-    const parsed = JSON.parse(text) as {
-      clusters: number[][];
-      unique: number[];
-    };
-
-    const clusterMap = new Map<string, RawArticle[]>();
-    const seenIndices = new Set<number>();
-
-    parsed.clusters.forEach((cluster, idx) => {
-      const clusterId = `cluster-${idx}`;
-      const uniqueArticles = cluster
-        .filter((i) => !seenIndices.has(i) && articles[i])
-        .map((i) => {
-          seenIndices.add(i);
-          return articles[i];
-        });
-      if (uniqueArticles.length > 0) {
-        clusterMap.set(clusterId, uniqueArticles);
-      }
-    });
-
-    parsed.unique.forEach((idx) => {
-      if (!seenIndices.has(idx) && articles[idx]) {
-        seenIndices.add(idx);
-        clusterMap.set(`unique-${idx}`, [articles[idx]]);
-      }
-    });
-
-    return clusterMap;
-  } catch (error) {
-    console.error('Clustering failed, treating all as unique:', error);
-    const clusterMap = new Map<string, RawArticle[]>();
-    articles.forEach((a, i) => clusterMap.set(`unique-${i}`, [a]));
-    return clusterMap;
+    groups.push(group);
   }
+
+  const representatives = groups.map((group) => {
+    return group.reduce((best, current) => {
+      const bestScore =
+        best.summary.length + new Date(best.publishedAt).getTime() / 1e12;
+      const currentScore =
+        current.summary.length +
+        new Date(current.publishedAt).getTime() / 1e12;
+      return currentScore > bestScore ? current : best;
+    });
+  });
+
+  return representatives;
 }
 
 interface ArticleScore {
@@ -250,19 +235,15 @@ async function main() {
   const buffer: WeeklyBuffer = JSON.parse(readFileSync(rawPath, 'utf-8'));
   console.log(`Processing ${buffer.articles.length} articles for ${weekId}`);
 
-  // Step 1: Cluster articles
-  console.log('Clustering articles...');
-  const clusters = await clusterArticles(buffer.articles);
-  console.log(`Found ${clusters.size} unique stories`);
+  // Step 1: Deduplicate articles locally (no API call)
+  console.log('Deduplicating articles...');
+  const representatives = deduplicateArticles(buffer.articles);
+  console.log(
+    `Deduplicated ${buffer.articles.length} articles to ${representatives.length} unique stories`
+  );
 
-  // Step 2: Pick representative from each cluster and process
-  const representatives: RawArticle[] = [];
-  for (const articles of clusters.values()) {
-    representatives.push(articles[0]);
-  }
-
-  // Step 3: Process in batches of 15
-  const BATCH_SIZE = 15;
+  // Step 3: Process in batches of 50 (optimized for 15 requests/day limit)
+  const BATCH_SIZE = 50;
   const allScores: ArticleScore[] = [];
 
   for (let i = 0; i < representatives.length; i += BATCH_SIZE) {
