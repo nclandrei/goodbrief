@@ -220,9 +220,11 @@ scripts/
 
 ---
 
-### Phase 2: Build test harness (5 tasks)
+### Phase 2: Build test harness (5 tasks) ✅ COMPLETED
 
-#### Task 2.1: Create directory structure and gitignore
+**Status:** All tasks completed on 2026-01-10. Pipeline test harness works with cache and refresh modes.
+
+#### Task 2.1: Create directory structure and gitignore ✅
 - **Work:**
   - Create `scripts/test/cache/.gitkeep`
   - Create `scripts/test/output/.gitkeep`
@@ -232,7 +234,7 @@ scripts/
     scripts/test/output/*.json
     ```
 
-#### Task 2.2: Create CLI argument parser
+#### Task 2.2: Create CLI argument parser ✅
 - **File:** `scripts/test/run-pipeline.ts`
 - **Work:**
   - Parse `--limit=N` (default: 20)
@@ -240,7 +242,7 @@ scripts/
   - Helper to get current week ID
   - Load articles from `data/raw/{weekId}.json`, slice to limit
 
-#### Task 2.3: Implement pipeline runner
+#### Task 2.3: Implement pipeline runner ✅
 - **File:** `scripts/test/run-pipeline.ts`
 - **Work:**
   - Call `deduplicateArticles()`, capture result
@@ -249,7 +251,7 @@ scripts/
   - Call `rankArticles()`, capture result
   - Build `PipelineTrace` object with all stages
 
-#### Task 2.4: Implement output writer
+#### Task 2.4: Implement output writer ✅
 - **File:** `scripts/test/run-pipeline.ts`
 - **Work:**
   - Write `PipelineTrace` to `test/output/latest-run.json`
@@ -260,7 +262,7 @@ scripts/
       Output: scripts/test/output/latest-run.json
     ```
 
-#### Task 2.5: Add npm scripts
+#### Task 2.5: Add npm scripts ✅
 - **File:** `package.json`
 - **Work:**
   - Add `"test:pipeline": "npx tsx scripts/test/run-pipeline.ts"`
