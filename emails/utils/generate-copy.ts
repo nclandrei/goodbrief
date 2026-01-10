@@ -32,7 +32,24 @@ export async function generateWrapperCopy(
   }
 
   const genAI = new GoogleGenerativeAI(apiKey);
-  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash-lite" });
+
+  const wrapperCopySchema = {
+    type: "object",
+    properties: {
+      greeting: { type: "string", description: "Greeting variation" },
+      intro: { type: "string", description: "2-3 sentences intro" },
+      signOff: { type: "string", description: "Closing message" },
+    },
+    required: ["greeting", "intro", "signOff"],
+  };
+
+  const model = genAI.getGenerativeModel({
+    model: "gemini-2.5-flash-lite",
+    generationConfig: {
+      responseMimeType: "application/json",
+      responseSchema: wrapperCopySchema,
+    } as any,
+  });
 
   const articleSummaries = articles
     .slice(0, 10)
@@ -68,10 +85,7 @@ Return only the JSON object, no markdown code blocks.`;
   }
 
   try {
-    const cleanedContent = content
-      .replace(/```json\n?|\n?```/g, "")
-      .trim();
-    const parsed = JSON.parse(cleanedContent) as WrapperCopy;
+    const parsed = JSON.parse(content) as WrapperCopy;
     if (!parsed.greeting || !parsed.intro || !parsed.signOff) {
       throw new Error("Missing required fields in response");
     }

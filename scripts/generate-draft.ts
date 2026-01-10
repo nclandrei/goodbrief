@@ -22,8 +22,33 @@ if (!GEMINI_API_KEY) {
 }
 
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
+
+const articleScoreSchema = {
+  type: 'array',
+  items: {
+    type: 'object',
+    properties: {
+      id: { type: 'string', description: 'Article ID' },
+      summary: { type: 'string', description: 'Romanian summary 2-3 sentences' },
+      positivity: { type: 'integer', description: 'Positivity score 0-100' },
+      impact: { type: 'integer', description: 'Impact score 0-100' },
+      romaniaRelevant: { type: 'boolean', description: 'Is the article about Romania' },
+      category: {
+        type: 'string',
+        enum: ['local-heroes', 'wins', 'green-stuff', 'quick-hits'],
+        description: 'Article category',
+      },
+    },
+    required: ['id', 'summary', 'positivity', 'impact', 'romaniaRelevant', 'category'],
+  },
+};
+
 const model = genAI.getGenerativeModel({
-  model: '	gemini-2.5-flash-lite',
+  model: 'gemini-2.5-flash-lite',
+  generationConfig: {
+    responseMimeType: 'application/json',
+    responseSchema: articleScoreSchema,
+  } as any,
 });
 
 function getISOWeekId(date: Date = new Date()): string {
@@ -212,10 +237,7 @@ ${articlesText}`;
 
   try {
     const result = await model.generateContent(prompt);
-    const text = result.response
-      .text()
-      .replace(/```json\n?|\n?```/g, '')
-      .trim();
+    const text = result.response.text();
     return JSON.parse(text) as ArticleScore[];
   } catch (error) {
     console.error('Batch processing failed:', error);
