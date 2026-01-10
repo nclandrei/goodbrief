@@ -35,8 +35,18 @@ src/
 content/
 └── issues/         # Newsletter markdown files
 
+docs/               # Plans, specs, and documentation
+├── PLAN.md                     # Main implementation plan
+├── NEWS_AGGREGATION_PLAN.md    # RSS/AI news processing
+├── COPY_PLAN.md                # Copy guidelines and brand voice
+└── EMAIL_IMPLEMENTATION_PLAN.md # React Email + Resend setup
+
 public/             # Static assets
 ```
+
+## Documentation
+
+All plans and implementation specs live in `docs/`. When creating new plans or design documents, add them there to keep the root directory clean.
 
 ## Code Conventions
 
