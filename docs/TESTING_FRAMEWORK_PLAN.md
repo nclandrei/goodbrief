@@ -270,21 +270,20 @@ scripts/
 
 ---
 
-### Phase 3: Add reasoning to schema (2 tasks)
+### Phase 3: Add reasoning to schema (2 tasks) ✅ COMPLETED
 
-#### Task 3.1: Update types
-- **File:** `scripts/types.ts`
+**Status:** All tasks completed on 2026-01-10. Reasoning field added to schema and Gemini prompt.
+
+#### Task 3.1: Update types ✅
+- **File:** `scripts/lib/types.ts`
 - **Work:**
-  - Add `reasoning?: string` to `ArticleScore` interface
+  - Added `reasoning?: string` to `ArticleScore` interface
 
-#### Task 3.2: Update Gemini prompt for reasoning
+#### Task 3.2: Update Gemini prompt for reasoning ✅
 - **File:** `scripts/lib/gemini.ts`
 - **Work:**
-  - When `includeReasoning: true`, append to prompt:
-    ```
-    Also include a "reasoning" field (2-3 sentences) explaining your positivity and impact scores.
-    ```
-  - Update schema to include `reasoning: { type: 'string' }` when in test mode
+  - `getPrompt()` appends reasoning instruction when `includeReasoning: true`
+  - `getArticleScoreSchema()` includes `reasoning` property in schema when in test mode
 
 ---
 
