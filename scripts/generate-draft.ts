@@ -242,8 +242,8 @@ async function main() {
     `Deduplicated ${buffer.articles.length} articles to ${representatives.length} unique stories`
   );
 
-  // Step 3: Process in batches of 50 (optimized for 15 requests/day limit)
-  const BATCH_SIZE = 50;
+  // Step 3: Process in batches of 200 (optimized for 15 requests/day limit)
+  const BATCH_SIZE = 200;
   const allScores: ArticleScore[] = [];
 
   for (let i = 0; i < representatives.length; i += BATCH_SIZE) {

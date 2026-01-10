@@ -53,20 +53,14 @@
 
 ---
 
-### Task 3: Increase Batch Size to 120 Articles
+### Task 3: Increase Batch Size to 200 Articles
 
-**Status:** 🔲 Not Started
+**Status:** ✅ Completed
 
-**Objective:** Process ~120 articles per API call to stay within 15 requests/day.
+**Objective:** Process ~200 articles per API call to stay within 15 requests/day.
 
 **Implementation:**
-1. Change `BATCH_SIZE` from 50 to 120 in `scripts/generate-draft.ts`
-2. Calculate dynamic batch size based on article count:
-   ```typescript
-   const MAX_API_CALLS = 13; // Reserve 2 for clustering fallback + wrapper
-   const BATCH_SIZE = Math.ceil(representatives.length / MAX_API_CALLS);
-   ```
-3. Add logging to show expected API call count before processing
+1. Changed `BATCH_SIZE` from 50 to 200 in `scripts/generate-draft.ts`
 
 **Files to modify:**
 - `scripts/generate-draft.ts`
