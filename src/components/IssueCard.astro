@@ -1,4 +1,6 @@
 ---
+import { formatDateLong } from '../utils/date';
+
 interface Props {
   title: string;
   date: Date;
@@ -8,11 +10,7 @@ interface Props {
 
 const { title, date, summary, id } = Astro.props;
 
-const formattedDate = date.toLocaleDateString('ro-RO', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-});
+const formattedDate = formatDateLong(date);
 ---
 
 <article class="py-6 border-b border-charcoal/10">

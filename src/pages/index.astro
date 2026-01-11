@@ -2,15 +2,12 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SubscribeForm from '../components/SubscribeForm.astro';
 import { getCollection } from 'astro:content';
+import { formatDateShort } from '../utils/date';
 
 const issues = await getCollection('issues');
 const latestIssues = issues
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0, 5);
-
-const formatDate = (date: Date) => {
-  return date.toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' });
-};
 ---
 
 <BaseLayout title="Vești Bune pentru România">
@@ -83,7 +80,7 @@ const formatDate = (date: Date) => {
             >
               <div class="flex items-center gap-6">
                 <time class="text-sm text-neutral-500 w-16 shrink-0">
-                  {formatDate(issue.data.date)}
+                  {formatDateShort(issue.data.date)}
                 </time>
                 <span class="text-charcoal group-hover:text-olive-600 transition-colors">
                   {issue.data.title}
