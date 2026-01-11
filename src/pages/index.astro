@@ -1,13 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SubscribeForm from '../components/SubscribeForm.astro';
-import { getCollection } from 'astro:content';
 import { formatDateShort } from '../utils/date';
+import { getSortedIssues } from '../utils/issues';
 
-const issues = await getCollection('issues');
-const latestIssues = issues
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-  .slice(0, 5);
+const sortedIssues = await getSortedIssues();
+const latestIssues = sortedIssues.slice(0, 5);
 ---
 
 <BaseLayout title="Vești Bune pentru România">

@@ -1,10 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import IssueCard from '../../components/IssueCard.astro';
-import { getCollection } from 'astro:content';
+import { getSortedIssues } from '../../utils/issues';
 
-const issues = await getCollection('issues');
-const sortedIssues = issues.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const sortedIssues = await getSortedIssues();
 ---
 
 <BaseLayout title="Arhivă" description="Toate edițiile newsletter-ului Good Brief.">
