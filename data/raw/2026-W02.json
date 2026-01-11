@@ -18200,7 +18200,487 @@
       "summary": "La o săptămână de la operațiunea militară americană desfășurată asupra capitalei venezuelene Caracas și a zonelor învecinate, amploarea pagubelor provocate principalului institut științific al țării nu a fost încă stabilită în totalitate.",
       "publishedAt": "2026-01-10T18:35:00.000Z",
       "fetchedAt": "2026-01-11T02:19:39.342Z"
+    },
+    {
+      "id": "96ec8664fa831325",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Ninsori, polei și ger în București. Avertizare meteo transmisă în timpul nopții",
+      "url": "https://hotnews.ro/ninsori-polei-si-ger-in-bucuresti-avertizare-meteo-transmisa-in-timpul-noptii-2147656",
+      "summary": "Meteorologii au actualizat prognoza pentru Capitală în timpul nopții. Duminică dimineața, străzile și drumurile din București sunt acoperite de un strat de zăpadă. Pe princpalele artere se circulă bine. Meteorologii au transmis că începând de…",
+      "publishedAt": "2026-01-11T06:32:05.000Z",
+      "fetchedAt": "2026-01-11T06:38:39.426Z"
+    },
+    {
+      "id": "9a32e2a18abdd702",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "România, sub alertă de ninsori, ger și viscol: Cum se circulă după ninsorile de azi-noapte / Harta zonelor afectate și prognoza ANM",
+      "url": "https://hotnews.ro/cad-galben-ninsori-viscol-ger-meteo-vreme-drumuri-cum-se-circula-2147632",
+      "summary": "Pe străzile principale din București, mașinile circulă bine dupa ce în timpul nopții a nins. România trece printr-un episod autentic de iarnă, cu mai multe atenționări de vreme severă emise de meteorologi. Este cea mai…",
+      "publishedAt": "2026-01-11T05:56:44.000Z",
+      "fetchedAt": "2026-01-11T06:38:39.426Z"
+    },
+    {
+      "id": "ddbcbab66739aa46",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Masacru în Iran sub „blackout” digital: Forțele de securitate trag în protestatari. Martorii descriu „cadavre îngrămădite” în spitale și scene dramatice pe străzile din Teheran",
+      "url": "https://hotnews.ro/masacru-in-iran-sub-blackout-digital-fortele-de-securitate-trag-in-protestatari-martorii-descriu-cadavre-ingramadite-in-spitale-si-scene-dramatice-pe-strazile-din-2147613",
+      "summary": "Protestele în Iran au continuat pentru a 14-a seară, cu forțele de securitate iraniene care au folosit forța letală împotriva protestatarilor din toată țara. Imaginile din Teheran și Kahrizak arată zeci de cadavre în saci…",
+      "publishedAt": "2026-01-11T05:31:09.000Z",
+      "fetchedAt": "2026-01-11T06:38:39.426Z"
+    },
+    {
+      "id": "4de0c523124f7eb0",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Demonstrații masive în Minneapolis după împușcarea fatală a unei femei de către un agent ICE: „Cerem dreptate pentru Renee”",
+      "url": "https://hotnews.ro/proteste-masive-in-minneapolis-dupa-impuscarea-fatala-a-unei-femei-de-catre-un-agent-ice-cerem-dreptate-pentru-renee-2147616",
+      "summary": "Zeci de mii de oameni au mărșăluit sâmbătă prin Minneapolis pentru a condamna împușcarea mortală a unei femei de către un agent al serviciului de imigrări din SUA, parte a celor peste 1.000 de mitinguri…",
+      "publishedAt": "2026-01-11T05:29:20.000Z",
+      "fetchedAt": "2026-01-11T06:38:39.426Z"
+    },
+    {
+      "id": "2895482193ad1cab",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Cartea de referință pe care internetul aproape a scos-o de pe piață. În 1983 se tipăreau peste un milion de exemplare, acum s-a ajuns la sub 30.000. Nu e Cartea de Telefoane",
+      "url": "https://hotnews.ro/cartea-de-referinta-pe-care-internetul-aproape-a-scos-o-de-pe-piata-in-1983-se-tipareau-peste-un-milion-de-exemplare-acum-s-a-ajuns-la-sub-30-000-nu-e-cartea-de-telefoane-2146898",
+      "summary": "Una dintre cele mai vândute cărți din România secolului XX aproape a dispărut de pe piață. Tipărită în peste un milion de exemplare în anii ’80, abia mai ajunge azi la 30.000. Timp de un…",
+      "publishedAt": "2026-01-11T05:02:05.000Z",
+      "fetchedAt": "2026-01-11T06:38:39.426Z"
+    },
+    {
+      "id": "f518e978dec89d70",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Târgurile de artă ale anului 2026 – De la Art Basel, Frieze și ARCOmadrid la evenimente din București",
+      "url": "https://hotnews.ro/targurile-de-arta-ale-anului-2026-de-la-art-basel-frieze-si-arcomadrid-la-evenimente-din-bucuresti-2147003",
+      "summary": "Art Basel și Frieze, cu ramificații consacrate și noi, TEFAF, ARCOmadrid și Armory Show, dar și RAD și MOBU de la București sunt cele mai de interes târguri de artă internaționale și naționale care au…",
+      "publishedAt": "2026-01-11T04:59:00.000Z",
+      "fetchedAt": "2026-01-11T06:38:39.426Z"
+    },
+    {
+      "id": "1980be8635cb78c5",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Compania nemțească Zalando își închide un centru de distribuție: 2,700 de posturi de muncă, în pericol",
+      "url": "https://www.mediafax.ro/externe/compania-nemteasca-zalando-isi-inchide-un-centru-de-distributie-2700-de-posturi-de-munca-in-pericol-23669468",
+      "summary": "Gigantul german al comerțului online de modă Zalando a anunțat o decizie importantă care va afecta mii de angajați și va marca o schimbare semnificativă în structura sa operațională din Europa. La sfârșitul lunii septembrie 2026, compania va închide centrul logistic din Erfurt, un centru major din estul Germaniei, ceea ce va pune în pericol aproximativ 2,700 de locuri de muncă.",
+      "publishedAt": "2026-01-11T06:32:44.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.890Z"
+    },
+    {
+      "id": "6920813dfbf069f1",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "A apărut gadgetul pentru dependenții de rețele sociale. Cât costă și cum funcționează",
+      "url": "https://www.mediafax.ro/stirile-zilei/a-aparut-gadgetul-pentru-dependentii-de-retele-sociale-cat-costa-si-cum-functioneaza-23669463",
+      "summary": "În era TikTok, Instagram și notificări care apar la fiecare minut, mulți oameni descoperă cu uimire cât timp pierd pe telefon fără să își dea seama. În Statele Unite, un nou dispozitiv simplu, numit Brick, începe să fie lăudat ca soluție pentru cei care simt că nu își mai pot controla obiceiul de a derula la nesfârșit.",
+      "publishedAt": "2026-01-11T06:01:22.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.890Z"
+    },
+    {
+      "id": "f5c7d985050d860a",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Japonia: Un partener de coaliție anunță că premierul Takaichi ar putea convoca alegeri anticipate",
+      "url": "https://www.mediafax.ro/stirile-zilei/japonia-un-partener-de-coalitie-anunta-ca-premierul-takaichi-ar-putea-convoca-alegeri-anticipate-23669464",
+      "summary": "Premierul japonez Sanae Takaichi ia în calcul organizarea de alegeri anticipate, a anunțat un partener de coaliție. Un eventual scrutin ar putea afecta adoptarea unui buget și inițiativele economice ale actualului guvern.",
+      "publishedAt": "2026-01-11T05:59:53.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.890Z"
+    },
+    {
+      "id": "d5012b37950dc8c9",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Australia: Mii de oameni au rămas fără curent după ce un ciclon tropical a lovit statul Queensland",
+      "url": "https://www.mediafax.ro/stirile-zilei/australia-mii-de-oameni-au-ramas-fara-curent-dupa-ce-un-ciclon-tropical-a-lovit-statul-queensland-23669461",
+      "summary": "Mii de australieni din nord-estul țării au rămas fără curent electric, duminică, după ce ciclonul tropical Koji a atins coasta statului Queensland, aducând ploi torențiale și rafale puternice de vânt, relatează Reuters.",
+      "publishedAt": "2026-01-11T05:29:27.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.890Z"
+    },
+    {
+      "id": "ff682f1010f9527c",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "India caută să încheie noi acorduri comerciale după deteriorarea relațiilor cu SUA",
+      "url": "https://www.mediafax.ro/externe/india-cauta-sa-incheie-noi-acorduri-comerciale-dupa-deteriorarea-relatiilor-cu-sua-23669458",
+      "summary": "India caută cu insistență acorduri comerciale pentru a deschide piețele pentru exportatori și a atenua impactul tarifelor americane ridicate, în timp ce eforturile de a obține un acord cu Washingtonul rămân evazive, potrivit AFP.",
+      "publishedAt": "2026-01-11T04:52:55.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.890Z"
+    },
+    {
+      "id": "8728ed9c0eb0feb5",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Meghan Markle se va întoarce în Marea Britanie cu Prințul Harry pentru prima dată după patru ani",
+      "url": "https://www.mediafax.ro/externe/meghan-markle-se-va-intoarce-in-marea-britanie-cu-printul-harry-pentru-prima-data-in-patru-ani-23669455",
+      "summary": "Ducesa de Sussex intenționează să se întoarcă în Marea Britanie în iulie, pentru prima dată în ultimii patru ani, potrivit The Sun.",
+      "publishedAt": "2026-01-11T04:24:33.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.890Z"
+    },
+    {
+      "id": "fa8c4aacde470162",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Luptătorii kurzi din Siria sunt de acord să evacueze Alepul",
+      "url": "https://www.mediafax.ro/externe/luptatorii-kurzi-din-siria-sunt-de-acord-sa-evacueze-alepul-23669452",
+      "summary": "Forțele kurde din Siria au anunțat duminică evacuarea luptătorilor lor din cele două districte în care aceștia erau înrădăcinați în Alep, după  câteva zile de lupte împotriva forțelor guvernamentale.",
+      "publishedAt": "2026-01-11T03:58:31.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.890Z"
+    },
+    {
+      "id": "af1bf7ae38deed18",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Pandantivele cu inteligență artificială revin la modă",
+      "url": "https://www.mediafax.ro/externe/pandantivele-cu-inteligenta-artificiala-revin-la-moda-23669449",
+      "summary": "Pandantive și broșe dotate cu inteligență artificială au fost prezente la Expoziția de Electronice de larg consum (CES), din Las Vegas, unde camerele și microfoanele au fost folosite pentru a urmări și asculta pe parcursul zilei, asemenea unui asistent personal vigilent.",
+      "publishedAt": "2026-01-11T03:43:14.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.890Z"
+    },
+    {
+      "id": "cd2171139a68b8b1",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Trump a semnat un ordin executiv ce protejează banii proveniți din petrolul venezuelean",
+      "url": "https://www.mediafax.ro/externe/trump-a-semnat-un-ordin-executiv-ce-protejeaza-banii-proveniti-din-petrolul-venezuelean-23669445",
+      "summary": "Președintele american Donald Trump a semnat un ordin executiv privind veniturile din petrolul venezuelean. Ordinul are scopul de a proteja banii împotriva utilizării în proceduri judiciare.",
+      "publishedAt": "2026-01-11T02:46:18.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.890Z"
+    },
+    {
+      "id": "6aa8f686a3216649",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "",
+      "url": "https://www.biziday.ro/344583-2/",
+      "summary": "Centrul Infotrafic al Poliției Române informează că, duminică dimineața, se circulă în condiții de iarnă, fiind semnalate precipitații sub formă de ninsoare, în general în județele aflate în partea sudică a țării. Din acest motiv, se acționează atât cu utilaje de deszăpezire, cât și cu material antiderapant. Pe arterele rutiere principale, respectiv: autostrăzile A 1 […]",
+      "publishedAt": "2026-01-11T05:15:30.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.361Z"
+    },
+    {
+      "id": "fe9cdba9b3e05373",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Londra. Un protestatar s-a urcat pe ambasada Iranului și a dat jos steagul de pe clădire, după care a afișat drapelul monarhiei care a precedat actualul regim de la Teheran. Ulterior, a fost arestat.",
+      "url": "https://www.biziday.ro/344573-2/",
+      "summary": "🚨BREAKING: The flag on Iran’s embassy in London has just been replaced with the lion and sun flag by a protester The Islamists are furious right now! The Iranian revolution has officially begun! 🔥 pic.twitter.com/mn6NjLXpLf — Inevitable West (@Inevitablewest) January 10, 2026 Un protestatar a coborât steagul național al Iranului de pe clădirea ambasadei iraniene […]",
+      "publishedAt": "2026-01-11T05:03:26.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.361Z"
+    },
+    {
+      "id": "b13fdd3d6bad5a01",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Un bărbat de 73 de ani din Oradea a fost bătut cu pumnii, picioarele și bâtele de trei tineri. De la ce au pornit violențele",
+      "url": "https://stirileprotv.ro/stiri/actualitate/un-barbat-de-73-de-ani-din-oradea-a-fost-batut-cu-pumnii-picioarele-si-batele-de-trei-tineri-de-la-ce-au-pornit-violentele.html",
+      "summary": "Doi tineri au fost duși la audieri, după ce împreună cu un alt prieten au atacat un bărbat de 73 de ani, într-un cartier din Oradea.",
+      "publishedAt": "2026-01-11T06:27:00.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.851Z"
+    },
+    {
+      "id": "7a873a32f3b27f9d",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Capitala intră într-un episod de iarnă, avertizează ANM. Vor fi temperaturi de până la -10 grade",
+      "url": "https://stirileprotv.ro/stiri/actualitate/capitala-intra-intr-un-episod-de-iarna-avertizeaza-anm-vor-fi-temperaturi-de-pana-la-10-grade.html",
+      "summary": "Capitala se află sub incidenţa unui mesaj de informare meteorologică ce vizează vreme deosebit de rece, precipitaţii mixte şi polei, ninsori şi strat de zăpadă, anunţă meteorologii.",
+      "publishedAt": "2026-01-11T06:18:00.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.851Z"
+    },
+    {
+      "id": "38a7104a7fe16e8a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cum au reușit pasagerii români să se salveze din autocarul care a luat foc în Mureș: „Așa ceva n-am văzut în viața mea”",
+      "url": "https://stirileprotv.ro/stiri/actualitate/cum-au-reusit-pasagerii-romani-sa-se-salveze-din-autocarul-care-a-luat-foc-in-mures-zasa-ceva-n-am-vazut-in-viata-mea.html",
+      "summary": "Au fost momente de panică pentru 46 de pasageri români, după ce autocarul cu care se întorceau la muncă în străinătate a luat foc în mers.",
+      "publishedAt": "2026-01-11T06:06:00.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.851Z"
+    },
+    {
+      "id": "51f4b1cbec3e9578",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ninsoare în București. Șoferii s-au confruntat cu probleme în trafic chiar daca s-a deszăpezit. „Exagerat de prost”",
+      "url": "https://stirileprotv.ro/stiri/actualitate/ninsoare-in-bucuresti-soferii-s-au-confruntat-cu-probleme-in-trafic-chiar-daca-s-a-deszapezit-zexagerat-de-prost.html",
+      "summary": "Capitala s-a îmbrăcat în alb peste noapte. Pentru pietoni, ninsoarea a fost o bucurie, dar șoferii s-au confruntat cu dificultăți în trafic - chiar dacă s-a intervenit cu utilaje de deszăpezire.",
+      "publishedAt": "2026-01-11T05:59:00.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.851Z"
+    },
+    {
+      "id": "d2a69d0f33e44acf",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Vremea azi, 11 ianuarie. Va fi ger în toată țara. Temperaturile ajung și la - 9 grade. Zonele unde va ninge",
+      "url": "https://stirileprotv.ro/stiri/vremea/vremea-azi-11-ianuarie-va-fi-ger-in-toata-tara-temperaturile-ajung-si-la-9-grade-zonele-unde-va-ninge.html",
+      "summary": "Duminică se face foarte frig în toată țara. Atmosfera se menține închisă și o să ningă în multe zone.",
+      "publishedAt": "2026-01-11T05:49:00.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.851Z"
+    },
+    {
+      "id": "99014bf94d6cba4b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "TikToker din UK, condamnat la 9 ani de închisoare după ce a ucis o bunică cu maşina. A încercat să arunce vina pe un român",
+      "url": "https://stirileprotv.ro/stiri/international/tiktoker-din-uk-condamnat-la-9-ani-dupa-ce-a-ucis-o-bunica-cu-masina-a-incercat-sa-arunce-vina-pe-un-roman.html",
+      "summary": "Un TikToker din Marea Britanie care a ucis o bunică în timp ce conducea o mașină care avea frânele defecte, a fost condamnat la nouă ani de închisoare.",
+      "publishedAt": "2026-01-11T05:46:00.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.851Z"
+    },
+    {
+      "id": "12c89d4e0be3f397",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Mărturia părinților ai căror copii au intrat în moarte cerebrală la Spitalul Constanța. Ce le-au spus medicii din Capitală",
+      "url": "https://stirileprotv.ro/stiri/actualitate/marturia-parintilor-ai-caror-copii-au-intrat-in-moarte-cerebrala-la-spitalul-constanta-ce-le-au-spus-medicii-din-capitala.html",
+      "summary": "Acuzații grave la adresa Spitalului Judeţean din Constanța. Părinții a doi copii, un băiețel de 2 ani şi o fetiță de 6 ani, susțin că micii pacienți au ajuns în moarte cerebrală după ce au fost operaţi acolo.",
+      "publishedAt": "2026-01-11T05:44:00.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.851Z"
+    },
+    {
+      "id": "82aa97226fd876a3",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "De ce nu reușesc tinerii din Generația Z să se angajeze. Aproape un milion de persoane din Marea Britanie nu au loc de muncă",
+      "url": "https://stirileprotv.ro/stiri/international/de-ce-nu-reusesc-tinerii-din-generatia-z-sa-se-angajeze-aproape-un-milion-de-persoane-din-marea-britanie-nu-au-loc-de-munca.html",
+      "summary": "Tot mai mulţi tineri din Generaţia Z întâmpină dificultăţi serioase în obţinerea primului loc de muncă, iar explicaţiile merg dincolo de contextul economic",
+      "publishedAt": "2026-01-11T05:34:00.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.851Z"
+    },
+    {
+      "id": "4931a89a39503c42",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Bob Weir, chitaristul legendarei trupe rock Grateful Dead, a murit la 78 de ani. Momente iconice de pe scenă. GALERIE FOTO",
+      "url": "https://stirileprotv.ro/stiri/international/bob-weir-chitaristul-legendarei-trupe-rock-grateful-dead-a-murit-la-78-de-ani-momente-iconice-de-pe-scena-galerie-foto.html",
+      "summary": "Bob Weir, chitaristul legendarei trupe rock americane Greateful Dead, a murit la vârsta de 78 de ani, a anunţat familia sa.",
+      "publishedAt": "2026-01-11T05:19:00.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.851Z"
+    },
+    {
+      "id": "1af570fe2c388848",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Celulă de criză după avaria de la Electrocentrale Craiova. Compania nu mai poate asigura parametrii optimi de temperatură",
+      "url": "https://stirileprotv.ro/stiri/actualitate/celula-de-criza-dupa-avaria-de-la-electrocentrale-craiova-compania-nu-mai-poate-asigura-parametrii-optimi-de-temperatura.html",
+      "summary": "Electrocentrale Craiova a informat Ministerul Energiei că, din cauza unei avarii tehnice, nu mai poate asigura, temporar, parametrii optimi de temperatură ai agentului termic livrat în reţeaua de termoficare.",
+      "publishedAt": "2026-01-11T05:27:00.000Z",
+      "fetchedAt": "2026-01-11T06:38:38.851Z"
+    },
+    {
+      "id": "dee869a52f68c235",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "",
+      "url": "https://agerpres.ro/",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "7e45e82c588db3b7",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Fotbal: Fenerbahce a cucerit Supercupa Turciei",
+      "url": "https://agerpres.ro/sport-extern/2026/01/11/video-fotbal-fenerbahce-a-cucerit-supercupa-turciei--1517685",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "c8384bfdaa6405bf",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: Tony Strata a câștigat Cupa Ligii portugheze cu Vitoria Guimaraes",
+      "url": "https://agerpres.ro/sport-extern/2026/01/11/fotbal-tony-strata-a-castigat-cupa-ligii-portugheze-cu-vitoria-guimaraes--1517684",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "6bf4745b174115d1",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Volei masculin: Victorii pe linie ale oaspeților în Divizia A1",
+      "url": "https://agerpres.ro/sport/2026/01/11/volei-masculin-victorii-pe-linie-ale-oaspetilor-in-divizia-a1--1517682",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "045b0dc101c130f0",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Fotbal: Egiptul a învins Cote d'Ivoire, deținătoarea trofeului, în sferturile CAN 2025",
+      "url": "https://agerpres.ro/sport-extern/2026/01/11/video-fotbal-egiptul-a-invins-cote-d-ivoire-detinatoarea-trofeului-in-sferturile-can-2025--1517680",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "04fc0f5298a8ae55",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Hochei: România a încheiat cu o înfrângere Campionatul Mondial Under-20 de la București",
+      "url": "https://agerpres.ro/sport/2026/01/10/hochei-romania-a-incheiat-cu-o-infrangere-campionatul-mondial-under-20-de-la-bucuresti--1517679",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "92929193dee9c6a1",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Handbal feminin: Minaur Baia Mare a câștigat în Norvegia, în EHF European League",
+      "url": "https://agerpres.ro/sport-extern/2026/01/10/video-handbal-feminin-minaur-baia-mare-a-castigat-in-norvegia-in-ehf-european-league--1517678",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "f4008748ea57a7b1",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Ministerul Energiei: Electrocentrale Craiova a informat că nu mai poate livra, temporar, agentul termic la parametrii optimi, din cauza unei avarii",
+      "url": "https://agerpres.ro/social/2026/01/10/ministerul-energiei-electrocentrale-craiova-a-informat-ca-nu-mai-poate-livra-temporar-agentul-termic--1517677",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "995d55a33671fda6",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Baschet masculin: U-BT Cluj-Napoca, învinsă după prelungiri în ABA League",
+      "url": "https://agerpres.ro/sport-extern/2026/01/10/video-baschet-masculin-u-bt-cluj-napoca-invinsa-dupa-prelungiri-in-aba-league--1517676",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "4ac51e07b036d42b",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Fotbal: Nigeria s-a calificat în semifinalele Cupei Africii pe Națiuni 2025",
+      "url": "https://agerpres.ro/sport-extern/2026/01/10/video-fotbal-nigeria-s-a-calificat-in-semifinalele-cupei-africii-pe-natiuni-2025--1517675",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "8b959be9bc2e5790",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Iranul 'aspiră la libertate', Statele Unite sunt 'pregătite să ajute', spune Trump",
+      "url": "https://agerpres.ro/politic-extern/2026/01/10/iranul-aspira-la-libertate-statele-unite-sunt-pregatite-sa-ajute-spune-trump--1517674",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "c1150dbfbc6c0e02",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: FK Csikszereda - Arka Gdynia 1-1, în meci amical",
+      "url": "https://agerpres.ro/sport/2026/01/10/fotbal-fk-csikszereda---arka-gdynia-1-1-in-meci-amical--1517673",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "8d144fa98e49e824",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Prahova: Turist căzut peste 70 de metri cu ATV-ul într-o râpă din Munții Baiului",
+      "url": "https://agerpres.ro/social/2026/01/10/prahova-turist-cazut-peste-70-de-metri-cu-atv-ul-intr-o-rapa-din-muntii-baiului--1517671",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "212dfec9ffb50a1a",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Siria: SUA fac apel la guvernul de la Damasc și la kurzi să reia dialogul după luptele de la Alep",
+      "url": "https://agerpres.ro/politic-extern/2026/01/10/siria-sua-fac-apel-la-guvernul-de-la-damasc-si-la-kurzi-sa-reia-dialogul-dupa-luptele-de-la-alep--1517672",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "c1677be8c12f645c",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Nicaragua: Guvernul a eliberat 'zeci de persoane' după apelul ambasadei SUA",
+      "url": "https://agerpres.ro/politic-extern/2026/01/10/nicaragua-guvernul-a-eliberat-zeci-de-persoane-dupa-apelul-ambasadei-sua--1517670",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "4bd431725ca4f4d1",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Trump a semnat un decret pentru a proteja veniturile din petrolul venezuelean deținute în SUA",
+      "url": "https://agerpres.ro/politic-extern/2026/01/10/trump-a-semnat-un-decret-pentru-a-proteja-veniturile-din-petrolul-venezuelean-detinute-in-sua--1517669",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "04cc3b979fd05f69",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: Farul Constanța - Cerno More Varna 1-2, în meci amical",
+      "url": "https://agerpres.ro/sport/2026/01/10/fotbal-farul-constanta---cerno-more-varna-1-2-in-meci-amical--1517668",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "95251f38860a84ce",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Handbal feminin: Gloria Bistrița, învinsă acasă în Liga Campionilor",
+      "url": "https://agerpres.ro/sport/2026/01/10/video-handbal-feminin-gloria-bistrita-invinsa-acasa-in-liga-campionilor--1517667",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "d4d92964e8b2ad93",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Drapelul Republicii Islamice Iran, înlocuit câteva minute de un manifestant cu un drapel al fostei monarhii, la ambasada de la Londra",
+      "url": "https://agerpres.ro/politic-extern/2026/01/10/video-drapelul-republicii-islamice-iran-inlocuit-cateva-minute-de-un-manifestant-cu-un-drapel-al-fos--1517666",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "7348d5200f4ddf02",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Prahova: Accident între mai multe autovehicule pe DN 1A, la Țânțăreni; traficul este deviat",
+      "url": "https://agerpres.ro/social/2026/01/10/prahova-accident-intre-mai-multe-autovehicule-pe-dn-1a-la-tantareni-traficul-este-deviat--1517665",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
+    },
+    {
+      "id": "fb438ad330258363",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Principalul institut științific din Venezuela, una din țintele atacurilor americane (EFE)",
+      "url": "https://agerpres.ro/politic-extern/2026/01/10/video-principalul-institut-stiintific-din-venezuela-una-din-tintele-atacurilor-americane-efe--1517664",
+      "summary": "",
+      "publishedAt": "2026-01-11T06:38:43.942Z",
+      "fetchedAt": "2026-01-11T06:38:43.942Z"
     }
   ],
-  "lastUpdated": "2026-01-11T02:19:48.351Z"
+  "lastUpdated": "2026-01-11T06:38:43.952Z"
 }
