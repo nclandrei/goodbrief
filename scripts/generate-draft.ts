@@ -10,6 +10,7 @@ import type {
 import { deduplicateArticles } from './lib/deduplication.js';
 import { processArticleBatch, createGeminiModel } from './lib/gemini.js';
 import type { ArticleScore } from './lib/types.js';
+import { generateWrapperCopy } from '../emails/utils/generate-copy.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -110,6 +111,10 @@ async function main() {
     return scoreB - scoreA;
   });
 
+  console.log('Generating wrapper copy...');
+  const wrapperCopy = await generateWrapperCopy(positive.slice(0, 10), weekId);
+  console.log('✓ Generated wrapper copy');
+
   const draft: NewsletterDraft = {
     weekId,
     generatedAt: now,
@@ -117,6 +122,7 @@ async function main() {
     reserves: positive.slice(10, 30),
     discarded,
     totalProcessed: processed.length,
+    wrapperCopy,
   };
 
   const draftPath = join(ROOT_DIR, 'data', 'drafts', `${weekId}.json`);
