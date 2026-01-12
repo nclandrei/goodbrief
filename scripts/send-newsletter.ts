@@ -10,11 +10,8 @@ import type {
   NewsletterDraft,
   ProcessedArticle,
   ArticleCategory,
+  WrapperCopy,
 } from './types.js';
-import {
-  generateWrapperCopy,
-  type WrapperCopy,
-} from '../emails/utils/generate-copy.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -25,6 +22,7 @@ interface CliArgs {
   mode: 'preview' | 'test' | 'send';
   week: string;
   confirm: boolean;
+  automated: boolean;
 }
 
 function parseArgs(): CliArgs {
@@ -33,6 +31,7 @@ function parseArgs(): CliArgs {
   let mode: 'preview' | 'test' | 'send' = 'preview';
   let week = '';
   let confirm = false;
+  let automated = false;
 
   for (let i = 0; i < args.length; i++) {
     const arg = args[i];
@@ -47,6 +46,9 @@ function parseArgs(): CliArgs {
       i++;
     } else if (arg === '--confirm') {
       confirm = true;
+    } else if (arg === '--automated') {
+      automated = true;
+      confirm = true;
     }
   }
 
@@ -60,7 +62,7 @@ function parseArgs(): CliArgs {
     process.exit(1);
   }
 
-  return { mode, week, confirm };
+  return { mode, week, confirm, automated };
 }
 
 // Load draft from data/drafts/
@@ -394,10 +396,17 @@ async function main(): Promise<void> {
     `✓ Grouped: ${grouped['local-heroes'].length} local-heroes, ${grouped.wins.length} wins, ${grouped['green-stuff'].length} green-stuff, ${grouped['quick-hits'].length} quick-hits`
   );
 
-  // Generate AI copy
-  console.log('Generating AI wrapper copy...');
-  const copy = await generateWrapperCopy(articles, args.week);
-  console.log('✓ Generated greeting, intro, and sign-off');
+  // Get wrapper copy from draft or generate if missing
+  let copy: WrapperCopy;
+  if (draft.wrapperCopy) {
+    console.log('Using wrapper copy from draft');
+    copy = draft.wrapperCopy;
+  } else {
+    console.log('Generating AI wrapper copy (draft missing copy)...');
+    const { generateWrapperCopy } = await import('../emails/utils/generate-copy.js');
+    copy = await generateWrapperCopy(articles, args.week);
+    console.log('✓ Generated greeting, intro, and sign-off');
+  }
 
   // Render HTML
   console.log('Rendering email HTML...');
