@@ -17,6 +17,12 @@ export interface RawArticle {
 
 export type ArticleCategory = "local-heroes" | "wins" | "green-stuff" | "quick-hits";
 
+export interface WrapperCopy {
+  greeting: string;
+  intro: string;
+  signOff: string;
+}
+
 export interface ProcessedArticle {
   id: string;
   sourceId: string;
@@ -45,4 +51,5 @@ export interface NewsletterDraft {
   reserves: ProcessedArticle[];
   discarded: number;
   totalProcessed: number;
+  wrapperCopy?: WrapperCopy;
 }
