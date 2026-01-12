@@ -2920,7 +2920,417 @@
       "summary": "Autoritățile locale din orașul elvețian în care a avut loc tragedia din noaptea de Anul Nou au precizat marți, într-o conferință de presă, că barul Le Constellation – în care a avut loc incendiul în care și-au pierdut viața 40 de persoane – nu mai fusese verificat de cinci ani.",
       "publishedAt": "2026-01-06T10:13:18.000Z",
       "fetchedAt": "2026-01-12T02:09:25.700Z"
+    },
+    {
+      "id": "dbb4748b57ba3eb9",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Disponibilizări la una dintre instituțiile de stat cu cele mai mari salarii: pleacă 14 angajați din 300",
+      "url": "https://hotnews.ro/disponibilizari-la-una-dintre-institutiile-de-stat-cu-cele-mai-mari-salarii-pleaca-14-angajati-din-300-2146927",
+      "summary": "În paralel cu planul de restructurare, conducerea ANRE a făcut, în ultimul an, angajări. Ea a înființat un Compartimentul de Documente Clasificate, unde șef este generalul SPP în rezervă Gabriel Crețu, care cumulează pensia specială…",
+      "publishedAt": "2026-01-12T06:41:45.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.957Z"
+    },
+    {
+      "id": "f95abfa4d4b840d8",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Cum se aranjează un meci la pariuri",
+      "url": "https://hotnews.ro/video-cum-se-aranjeaza-un-meci-la-pariuri-2148071",
+      "summary": "Un film documentar realizat de o mare televiziune arată culisele incredibile ale rețelelor de aranjare a meciurilor. Foști fotbaliști de top explică pas cu pas cum au fost atrași și apoi forțați să participe la…",
+      "publishedAt": "2026-01-12T06:27:15.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.957Z"
+    },
+    {
+      "id": "7afb8433acdd6a20",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Explozii şi incendii la Kiev, după un nou bombardament al Rusiei. Mii de oameni sunt în continuare fără căldură",
+      "url": "https://hotnews.ro/video-explozii-si-incendii-la-kiev-dupa-un-nou-bombardament-al-rusiei-mii-de-oameni-sunt-in-continuare-fara-caldura-2148046",
+      "summary": "Rusia a lansat în noaptea de duminică spre luni un val de drone asupra Kievului, lovind o clădire din oraş, au anunţat oficialii locali, transmite Kyiv Independent. Atacul vine la câteva zile după cel care…",
+      "publishedAt": "2026-01-12T06:06:08.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.957Z"
+    },
+    {
+      "id": "e2944c1ab83ab207",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Globurile de Aur 2026: „The Pitt” și „The Studio” au dominat categoria TV / Celebrul serial care a avut cele mai multe nominalizări a plecat cu mâna goală",
+      "url": "https://hotnews.ro/globurile-de-aur-2026-the-pitt-si-the-studio-au-dominat-categoria-tv-celebrul-serial-care-a-avut-cele-mai-multe-nominalizari-a-plecat-cu-mana-goala-2148047",
+      "summary": "Serialul medical „The Pitt” al HBO Max, care pune în lumină situația tensionată din camerele de urgență din America, a câștigat duminică premiul pentru cel mai bun serial dramatic la Globurile de Aur, în timp…",
+      "publishedAt": "2026-01-12T05:53:29.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.957Z"
+    },
+    {
+      "id": "599c0ab15b068fdc",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Ger în România: Noaptea cu temperaturi de -16 grade. Unde a fost cea mai friguroasă dimineață / Cum arată prognoza zilei",
+      "url": "https://hotnews.ro/vreme-romania-12-ianuarie-ger-temperaturi-2148024",
+      "summary": "Vremea a fost geroasă în toată țara, noaptea trecută, iar temperaturile s-au simțit și mai scăzute decât temperatura reală, din cauza vântului. La ora 07.00 dimineață, în mare parte a României s-au resimțit temperaturi între…",
+      "publishedAt": "2026-01-12T05:33:06.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.957Z"
+    },
+    {
+      "id": "86842efef1517542",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "OFICIAL Vești mari pentru cine are centrală de apartament",
+      "url": "https://hotnews.ro/oficial-vesti-mari-pentru-cine-are-centrala-de-apartament-2148025",
+      "summary": "Până la 1 ianuarie 2030, nu există un text de lege care poate fi interpretat ca limitativ în ceea ce privește utilizarea centralelor individuale de apartament alimentate cu gaz, în clădirile rezidențiale noi, arată Ministerul…",
+      "publishedAt": "2026-01-12T05:25:52.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.957Z"
+    },
+    {
+      "id": "6dd288248bc273d2",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Globurile de Aur 2026: Lista completă a câștigătorilor / Filmul care a fost vedeta serii",
+      "url": "https://hotnews.ro/globurile-de-aur-2026-lista-completa-a-premiilor-filmul-care-a-fost-vedeta-serii-2148023",
+      "summary": "Iată lista completă a câștigătorilor premiilor pentru film și televiziune la cea de-a 83-a ediție a Globurilor de Aur, care a avut loc duminică noapte. Filmul „One Battle After Another”, care este și unul din…",
+      "publishedAt": "2026-01-12T05:11:45.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.957Z"
+    },
+    {
+      "id": "4dfe872d1c08134e",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Revoltele din Iran: Cel puțin 500 de oameni au fost uciși, potrivit unui ONG / Trump anunță că Teheranul „vrea să negocieze”",
+      "url": "https://hotnews.ro/revoltele-din-iran-cel-putin-500-de-oameni-au-fost-ucisi-potrivit-unui-ong-trump-anunta-ca-teheranul-vrea-sa-negocieze-2148017",
+      "summary": "Protestele din Iran au provocat moartea a peste 500 de persoane, a afirmat un grup pentru drepturile omului, în timp ce Teheranul a amenințat că va ataca bazele militare americane dacă Donald Trump își va…",
+      "publishedAt": "2026-01-12T04:34:58.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.957Z"
+    },
+    {
+      "id": "f2708c3228c48aaf",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Globurile de Aur 2026: Chalamet a câștigat în fața lui DiCaprio și Clooney / „One Battle After Another” a luat patru premii majore / Două Globuri pentru fenomenul „K-Pop Demon Hunters”",
+      "url": "https://hotnews.ro/globurile-de-aur-2026-timothee-chalamet-a-castigat-in-fata-lui-dicaprio-si-clooney-premiul-luat-de-fenomenul-k-pop-demon-hunters-2148006",
+      "summary": "Timothee Chalamet a triumfat duminică într-una dintre cele mai disputate categorii la Globurile de Aur, câștigând trofeul pentru cel mai bun actor într-un film muzical sau comedie pentru rolul său de jucător profesionist de tenis…",
+      "publishedAt": "2026-01-12T03:52:22.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.957Z"
+    },
+    {
+      "id": "fde54213847707b6",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Miniștrii acuzați de plagiat. Scandalurile care au zguduit guvernele României. Câți dintre ei au demisionat în urma acuzațiilor",
+      "url": "https://hotnews.ro/ministrii-acuzati-de-plagiat-scandalurile-care-au-zguduit-guvernele-romaniei-cati-dintre-ei-au-demisionat-in-urma-acuzatiilor-2147948",
+      "summary": "În ultimii 15 ani, nouă miniștri din guvernele României au fost acuzați de plagiat. Au existat și premieri vizați de astfel de acuzații: Nicolae Ciucă, Victor Ponta și Mihai Tudose. Dintre miniștrii acuzați de plagiat,…",
+      "publishedAt": "2026-01-12T03:31:50.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.957Z"
+    },
+    {
+      "id": "7fbaf1992ea1b20f",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Cine este Radu Marinescu, ministrul acuzat că a plagiat în teza de doctorat",
+      "url": "https://hotnews.ro/cine-este-radu-marinescu-ministrul-acuzat-ca-a-plagiat-in-teza-de-doctorat-2147968",
+      "summary": "Radu Marinescu, avocat de profesie, a devenit deputat PSD la alegerile din 1 decembrie 2024, iar câteva săptămâni mai târziu a fost nominalizat de partid pentru Ministerul Justiției, în Guvernul Ciolacu 2. El este acuzat…",
+      "publishedAt": "2026-01-12T03:26:14.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.957Z"
+    },
+    {
+      "id": "791e837122c80650",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Ministrul PSD al Justiției, Radu Marinescu, acuzat că și-a plagiat teza de doctorat / Metoda „copy-paste”, folosită pe calupuri de text de până la 25 de pagini",
+      "url": "https://hotnews.ro/ministrul-psd-al-justitiei-radu-marinescu-acuzat-ca-si-a-plagiat-teza-de-doctorat-2147977",
+      "summary": "Mai mult de jumătate din teza de doctorat în Drept a ministrului Justiției, Radu Marinescu, este plagiată, scrie jurnalista Emilia Șercan în PressOne. Potrivit analizei cel puțin 56,68% dintre paginile lucrării cu titlul Sistemul mijloacelor de…",
+      "publishedAt": "2026-01-12T03:10:13.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.957Z"
+    },
+    {
+      "id": "57a946c806192ab0",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Marea Britanie va dezvolta noi rachete balistice pentru a ajuta Ucraina să se apere în fața Rusiei",
+      "url": "https://www.mediafax.ro/externe/marea-britanie-va-dezvolta-noi-rachete-balistice-pentru-a-ajuta-ucraina-sa-se-apere-in-fata-rusiei-23669788",
+      "summary": "Marea Britanie va dezvolta noi rachete balistice cu rază lungă de acțiune pentru Ucraina, pentru a se apăra în fața Rusiei. Rachetele vor putea lovi ținte aflate mult în spatele liniei frontului, a anunțat ministerul britanic al Apărării într-un comunicat de presă.",
+      "publishedAt": "2026-01-12T06:36:32.000Z",
+      "fetchedAt": "2026-01-12T06:44:15.036Z"
+    },
+    {
+      "id": "be8469716f2d0d8b",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Khamenei îl ironizează pe Trump într-o caricatură. Liderul american, înfățișat ca un sarcofag distrus",
+      "url": "https://www.mediafax.ro/externe/khamenei-il-ironizeaza-pe-trump-intr-o-caricatura-liderul-american-infatisat-ca-un-sarcofag-distrus-23669794",
+      "summary": "O caricatură cu Donald Trump publicată pe rețeaua socială X a generat reacții puternice la nivel internațional, după ce liderul suprem al Iranului, ayatolahul Ali Khamenei, a distribuit o imagine în care președintele Statelor Unite este reprezentat sub forma unui sarcofag egiptean care se sparge.",
+      "publishedAt": "2026-01-12T06:32:27.000Z",
+      "fetchedAt": "2026-01-12T06:44:15.036Z"
+    },
+    {
+      "id": "2276e25341ecfa23",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Tragedie în județul Brașov: copil de 16 ani găsit decedat într-o locuință cuprinsă de flăcări",
+      "url": "https://www.mediafax.ro/social/tragedie-in-judetul-brasov-copil-de-16-ani-gasit-decedat-intr-o-locuinta-cuprinsa-de-flacari-23669795",
+      "summary": "Un copil de 16 ani și-a pierdut viața într-un incendiu izbucnit în această dimineață într-o locuință din Satul Nou, județul Brașov. Pompierii au intervenit cu mai multe autospeciale și un echipaj SMURD, însă, din păcate, nu au putut salva minorul.",
+      "publishedAt": "2026-01-12T06:30:55.000Z",
+      "fetchedAt": "2026-01-12T06:44:15.036Z"
+    },
+    {
+      "id": "c1245e98ef0fee5c",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Globurile de Aur 2026. Care au fost cele mai bune ținute purtate de celebrități pe covorul roșu",
+      "url": "https://www.mediafax.ro/life-entertaiment/globurile-de-aur-2026-care-au-fost-cele-mai-bune-tinute-purtate-de-celebritati-pe-covorul-rosu-23669757",
+      "summary": "Ediția cu numărul 83 a Globurilor de Aur a marcat începutul sezonului premiilor, cu vedete care au impresionat pe covorul roșu prin ținute spectaculoase și extravagante, în stilurile lor autentice, dar cu un touch surpriză.",
+      "publishedAt": "2026-01-12T06:28:39.000Z",
+      "fetchedAt": "2026-01-12T06:44:15.036Z"
+    },
+    {
+      "id": "27286472c6620cea",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Revolta puburilor britanice împotriva guvernului: De ce au interzis accesul pentru parlamentarii din Marea Britanie",
+      "url": "https://www.mediafax.ro/life-inedit/revolta-puburilor-britanice-impotriva-guvernului-de-ce-au-interzis-accesul-pentru-parlamentarii-din-marea-britanie-23669779",
+      "summary": "Peste o mie de puburi din Marea Britanie au interzis accesul parlamentarilor laburiști, aflați la guvernare, ca formă de protest împotriva creșterii taxelor. Acțiunea și-a atins scopul: executivul a anunțat că va tempera majorarea planificată, titrează Il Post.",
+      "publishedAt": "2026-01-12T06:23:19.000Z",
+      "fetchedAt": "2026-01-12T06:44:15.036Z"
+    },
+    {
+      "id": "e26faeafc8d8c6a1",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Una dintre cele mai populare zone din lume, abandonată brusc de turiști. Mai multe afaceri se închid",
+      "url": "https://www.mediafax.ro/externe/una-dintre-cele-mai-populare-zone-din-lume-abandonata-brusc-de-turisti-mai-multe-afaceri-se-inchid-23669772",
+      "summary": "Una dintre cele mai populare zone turistice din lume a fost abandonată brusc de turiști. Culmea, turiștii au început să ocolească zonă după realizarea unei investiții de peste 37 de milioane de euro. Mai multe afaceri, în special baruri și restaurante, sunt la un pas de faliment.",
+      "publishedAt": "2026-01-12T06:09:15.000Z",
+      "fetchedAt": "2026-01-12T06:44:15.036Z"
+    },
+    {
+      "id": "5b88abf3fea8b799",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Întârzieri la trenuri în Gara de Nord București. Probleme la sosiri și plecări în această dimineață",
+      "url": "https://www.mediafax.ro/social/intarzieri-la-trenuri-in-gara-de-nord-bucuresti-probleme-la-sosiri-si-plecari-in-aceasta-dimineata-23669767",
+      "summary": "Trafic feroviar intens și întârzieri sunt înregistrate în această dimineață în Gara de Nord București, unde mai multe trenuri, atât la sosire, cât și la plecare, figurează cu decalaje față de orarul programat, potrivit informațiilor afișate pe panourile din stație.",
+      "publishedAt": "2026-01-12T05:53:49.000Z",
+      "fetchedAt": "2026-01-12T06:44:15.036Z"
+    },
+    {
+      "id": "33d11abe0cea67af",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Proteste Iran. Peste 500 de morți în urma represiunii regimului. SUA analizează opțiuni de intervenție",
+      "url": "https://www.mediafax.ro/externe/proteste-iran-peste-500-de-morti-in-urma-represiunii-regimului-sua-analizeaza-optiuni-de-interventie-23669765",
+      "summary": "Numărul persoanelor ucise în protestele violente din Iran a crescut alarmant, depășind pragul de 500 de morți, potrivit Human Rights Activists News Agency, organizație cu sediul în Statele Unite, notează SkyNews.",
+      "publishedAt": "2026-01-12T05:52:19.000Z",
+      "fetchedAt": "2026-01-12T06:44:15.036Z"
+    },
+    {
+      "id": "b532efe9f0272fb3",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Mattel lansează prima păpușă Barbie cu autism",
+      "url": "https://www.mediafax.ro/externe/mattel-lanseaza-prima-papusa-barbie-cu-autism-23669763",
+      "summary": "Mattel a lansat prima păpușă Barbie care reprezintă o persoană cu autism, ca parte a extinderii gamei Fashionistas și a strategiei companiei de a promova diversitatea și incluziunea în rândul copiilor.",
+      "publishedAt": "2026-01-12T05:46:20.000Z",
+      "fetchedAt": "2026-01-12T06:44:15.036Z"
+    },
+    {
+      "id": "9f5478645e331ed9",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Donald Trump se autoproclamă „președinte interimar al Venezuelei” într-o postare virală",
+      "url": "https://www.mediafax.ro/externe/donald-trump-se-autoproclama-presedinte-interimar-al-venezuelei-intr-o-postare-virala-23669754",
+      "summary": "Președintele american Donald Trump a stârnit controverse, după ce a postat, pe Truth Social, o fotografie care părea să-l prezinte drept președintele interimar al Venezuelei. Postarea vine la mai bine de o săptămână după ce Nicolas Maduro a fost capturat de forțele speciale americane și dus în fața instanței din New York.",
+      "publishedAt": "2026-01-12T05:35:36.000Z",
+      "fetchedAt": "2026-01-12T06:44:15.036Z"
+    },
+    {
+      "id": "27cb5b7becd23e84",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Răscoală violentă în Iran. Numărul morților a depășit 500, ca urmare a intervenției brutale a autorităților împotriva demonstranților care cer schimbarea regimului mulahilor, potrivit unei agenții pentru drepturile omului. Președintele american declară că Iranul ar “vrea să negocieze”, fără să fie clar cine sau ce anume.",
+      "url": "https://www.biziday.ro/344641-2/",
+      "summary": "Deși internetul și orice legătură externă sunt tăiate de joi, Human Rights Activists News Agency, care susține că are activiști în interiorul Iranului, a evaluat că numărul deceselor a urcat, după acest weekend la 544, din care 496 de protestatari și 48 de oameni din rândul forțelor de ordine care au intervenit împotriva acestora. Peste […]",
+      "publishedAt": "2026-01-12T05:41:14.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.077Z"
+    },
+    {
+      "id": "b37c9da430c69eb8",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Globurile de Aur. Miniseria “Adolescence”, produsă de Netflix, și filmul “One Battle After Another” au câștigat cele mai multe premii, câte patru de fiecare. “Hamnet”, despre viața familiei lui William Shakespeare, a fost desemnat cel mai bun film.",
+      "url": "https://www.biziday.ro/344643-2/",
+      "summary": "Gala “Globurile de Aur” s-a desfășurat în această dimineață, la Los Angeles. Miniseria “Adolescence”, produsă de serviciul de streaming Netflix, a fost premiat la categoriile: cel mai bun serial, actor de serial în rol principal – Stephen Graham, actor și actriță de serial în rol secundar – Owen Cooper, respectiv Erin Doherty. Comedia neagră “One […]",
+      "publishedAt": "2026-01-12T05:32:40.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.077Z"
+    },
+    {
+      "id": "da6e0919b676ebe7",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Tehnologia care digitalizează mișcarea maxilarului și permite lucrări dentare precise. „Nu vor exista tensiuni la implanturi”",
+      "url": "https://stirileprotv.ro/stiri/doctor-de-bine/tehnologia-care-digitalizeaza-miscarea-maxilarului-si-permite-lucrari-dentare-precise-znu-vor-exista-tensiuni-la-implanturi.html",
+      "summary": "Mișcarea rezultată din vorbit sau mestecat poate fi înregistrată digital. Cum se mișcă maxilarul? Cum se mișcă mandibula? Din aceste informații, a fost posibilă digitalizarea tuturor manevrelor stomatologice.",
+      "publishedAt": "2026-01-12T06:33:00.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.525Z"
+    },
+    {
+      "id": "f34b05ee60f503ab",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ședința Comandamentului Energetic, convocată luni de ministrul Energiei. Tema principală, prognoza meteo",
+      "url": "https://stirileprotv.ro/stiri/actualitate/sedinta-comandamentului-energetic-convocata-luni-de-ministrul-energiei-tema-principala-prognoza-meteo.html",
+      "summary": "Ministrul Energiei, Bogdan Ivan, a dispus convocarea, luni, la ora 12:00, a Comandamentului Energetic Naţional, având în vedere prognoza meteo pentru următoarele zile.",
+      "publishedAt": "2026-01-12T06:33:00.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.525Z"
+    },
+    {
+      "id": "831dacd14ca1107e",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Peste jumătate din teza ministrului Justiției ar fi plagiată. Cum se apără Radu Marinescu",
+      "url": "https://stirileprotv.ro/stiri/politic/peste-jumatate-din-teza-ministrului-justitiei-ar-fi-plagiata-cum-se-apara-radu-marinescu.html",
+      "summary": "Mai mult de jumătate din teza de doctorat a ministrului Justiției ar fi plagiată. Radu Marinescu susține că lucrarea a respectat „condițiile timpului”",
+      "publishedAt": "2026-01-12T06:35:00.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.525Z"
+    },
+    {
+      "id": "3b0c4e267a1bc98b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "La ce truc a apelat soțul Selenei Gomez ca să pară mai înalt. Mai multe cupluri de la Golden Globes 2026 au făcut asta",
+      "url": "https://www.protv.ro/articol/121410-cand-iubirea-nu-ajunge-la-aceeasi-inaltime-la-ce-truc-a-apelat-sotul-selenei-gomez-ca-sa-para-mai-inalt-in-poze?amp%3Butm_medium=cross_intern&amp%3Butm_campaign=stirileprotvro_hp",
+      "summary": "Golden Globes 2026 a fost, ca de obicei, un spectacol de glamour, rochii couture și costume perfect croite. Dar, dincolo de diamante și blitz-uri, un detaliu a furat discret privirile: diferențele de înălțime dintre unele cupluri celebre.",
+      "publishedAt": "2026-01-12T06:28:00.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.525Z"
+    },
+    {
+      "id": "31604cb61d48d8e4",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Întâlnire de „gradul zero” în Parcul Național Defileul Jiului. Un mistreț și un urs s-au trezit față în față",
+      "url": "https://stirileprotv.ro/stiri/actualitate/intalnire-de-zgradul-zero-in-parcul-national-defileul-jiului-un-mistret-si-un-urs-s-au-trezit-fata-in-fata.html",
+      "summary": "Întâlnire de gradul zero în Parcul Național Defileul Jiului. Un mistreț care se plimba liniștit prin pădure, a dat nas în nas cu un urs.",
+      "publishedAt": "2026-01-12T06:26:00.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.525Z"
+    },
+    {
+      "id": "f3691e5ce92182d3",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Vremea azi, 12 ianuarie 2026. Temperaturile ajung și la -20 de grade, cu ger persistent, ninsori și viscol",
+      "url": "https://stirileprotv.ro/stiri/vremea/vremea-azi-12-ianuarie-2026-temperaturile-ajung-si-la-20-de-grade-cu-ger-persistent-ninsori-si-viscol.html",
+      "summary": "Luni, vremea se menține deosebit de rece. În ținuturile sudice iese soarele, dar în rest vor fi înnorări. În nord, în centru și la munte mai apar câteva ninsori, iar vântul are intensificări în Oltenia și în zona montană.",
+      "publishedAt": "2026-01-12T06:25:00.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.525Z"
+    },
+    {
+      "id": "65cf30a331d5aa6c",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cum au reușit olandezii să scadă semnificativ facturile la gaze. Familiile plătesc și de trei ori mai puțin",
+      "url": "https://stirileprotv.ro/stiri/international/cum-a-reusit-un-cartier-din-olanda-sa-scada-semnificativ-pretul-facturilor-la-gaz-familiile-platesc-si-de-trei-ori-mai-putin.html",
+      "summary": "În Olanda, tot mai mulți oameni își unesc forțele în cooperative de energie. Sunt grupuri de simpli cetățeni care investesc în mori de vânt sau pompe de căldură de cartier.",
+      "publishedAt": "2026-01-12T06:06:00.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.525Z"
+    },
+    {
+      "id": "bab8bb9ae005f178",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Anchete la spitalul din Constanța, după ce doi copii operați au ajuns în moarte cerebrală. Mai mulți medici, scutiți de gărzi",
+      "url": "https://stirileprotv.ro/stiri/actualitate/anchete-la-spitalul-din-constanta-dupa-ce-doi-copii-operati-au-ajuns-in-moarte-cerebrala-mai-multi-medici-scutiti-de-garzi.html",
+      "summary": "Anchete în lanț la Spitalul Județean Constanța. Părinții a doi copii care au fost operați acolo cer explicații în ceea ce privește tratamentul, pentru că fetița și băiețelul au ajuns în moarte cerebrală.",
+      "publishedAt": "2026-01-12T06:05:00.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.525Z"
+    },
+    {
+      "id": "f1852057e2169cfa",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cum arată o nuntă în 2026. Sunt două mari tendințe. „Miresele nu mai doresc neapărat stilul acela de prințesă”",
+      "url": "https://stirileprotv.ro/divers/ce-este-la-moda-in-nuntile-din-2026-zmiresele-nu-mai-doresc-neaparat-stilul-acela-de-printesa.html",
+      "summary": "Nunțile în 2026 vor fi organizate în jurul a două mari tendințe, bugetul fiind cel care primează. În timp ce unii tineri aleg evenimente cu decoruri ample, alții se orientează spre locații neconvenționale, unde elementele naturale sunt în prim-plan.",
+      "publishedAt": "2026-01-12T05:57:00.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.525Z"
+    },
+    {
+      "id": "97edf4a500a146ac",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "„E ca o zonă de război, străzile sunt pline de sânge”. Regimul de la Teheran reprimă brutal protestele: Peste 500 de morți",
+      "url": "https://stirileprotv.ro/stiri/international/strazile-iranului-transformate-in-camp-de-lupta-de-regimul-de-la-teheran-trump-vorbeste-despre-o-posibila-interventie.html",
+      "summary": "În Iran, protestatarii continuă să iasă în stradă, în ciuda represiunii brutale. Pe rețelele de socializare au apărut imagini în care din mulțime se aud voci care cer ajutor în limba engleză.",
+      "publishedAt": "2026-01-12T05:48:00.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.525Z"
+    },
+    {
+      "id": "ba01ce3c97c71f33",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Surpriză pentru un șofer din județul Bihor. O haită de lupi i-a apărut în fața mașinii. Ce a făcut unul dintre animale",
+      "url": "https://stirileprotv.ro/stiri/actualitate/surpriza-pentru-un-sofer-din-judetul-bihor-o-haita-de-lupi-i-a-aparut-in-fata-masinii-ce-a-facut-unul-dintre-animale.html",
+      "summary": "Surpriză pentru un șofer pe un drum județean dintr-o comună din Bihor. O haită de șase lupi i-a tăiat calea.",
+      "publishedAt": "2026-01-12T05:43:00.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.525Z"
+    },
+    {
+      "id": "d20cc575b1a66466",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Globurile de Aur 2026. Lista completă a câștigătorilor. Marile premii au ajuns la „One Battle After Another\" și „Hamnet”",
+      "url": "https://stirileprotv.ro/show-buzz/entertainment/ce-filme-au-dominat-cea-de-a-83-a-editie-a-globurilor-de-aur-lista-completa-a-premiilor-video.html",
+      "summary": "„One Battle After Another”, o satiră usturătoare despre politica radicală, şi „Hamnet”, o privire asupra vieţii de familie complicate a lui William Shakespeare, au câştigat premiile principale a Globurilor de Aur 2026.",
+      "publishedAt": "2026-01-12T05:29:00.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.525Z"
+    },
+    {
+      "id": "d8262f6efc105782",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Proteste în Iran. O filmare arată zeci de cadavre în fața unei morgi. O studentă a fost împușcată în cap | VIDEO",
+      "url": "https://stirileprotv.ro/stiri/international/proteste-in-iran-un-video-arata-zeci-de-cadavre-in-fata-unei-morgi-o-studenta-a-fost-impuscata-in-cap-video.html",
+      "summary": "O înregistrare video, a cărei locaţie a fost autentificată de AFP duminică, arată zeci de cadavre îngrămădite în faţa unei morgi la sud de Teheran, pe care ONG-uri pentru drepturile omului le identifică drept victime ale represiunii manifestaţiilor din Ir",
+      "publishedAt": "2026-01-12T05:25:00.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.525Z"
+    },
+    {
+      "id": "6c66aed6324be314",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Trump se gândește la o intervenție militară în Iran și analizează „opţiuni foarte puternice”. „Au sunat pentru a negocia”",
+      "url": "https://stirileprotv.ro/stiri/international/iranul-cere-negocieri-cu-trump-pe-fondul-protestelor-soldate-cu-victime-zcred-ca-s-au-saturat-sa-fie-batuti-de-sua.html",
+      "summary": "Preşedintele SUA Donald Trump a declarat duminică faptul că liderii iranieni - care se confruntă în prezent cu proteste soldate cu victime şi cu tensiuni cu Statele Unite - l-au sunat sâmbătă pentru a negocia, relatează CNN.",
+      "publishedAt": "2026-01-12T05:20:00.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.525Z"
+    },
+    {
+      "id": "9b00415d0371235a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "O caricatură cu Donald Trump, publicată de liderul suprem al Iranului: „Și acesta va fi înlăturat”. Ce semnifică imaginea",
+      "url": "https://stirileprotv.ro/stiri/international/o-caricatura-publicata-de-liderul-suprem-al-iranului-cu-donald-trump-zsi-acesta-va-fi-inlaturat-ce-semnifica-imaginea.html",
+      "summary": "Contul oficial de pe reţelele sociale al liderului suprem al Iranului, ayatolahul Ali Khamenei, a publicat pe X o caricatură care îl înfăţişează pe preşedintele SUA, Donald Trump, sub forma unui sarcofag care se sparge în bucăţi.",
+      "publishedAt": "2026-01-12T05:10:00.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.525Z"
+    },
+    {
+      "id": "86cb6afcc337cb97",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Șefa CAB acuză „un plan matematic” de controlare a puterii judecătoreşti. Ce spune despre magistrații care merg la Cotroceni",
+      "url": "https://stirileprotv.ro/justitie/sefa-cab-acuza-zun-plan-matematic-de-controlare-a-puterii-judecatoresti-ce-spune-despre-magistratii-care-merg-la-cotroceni.html",
+      "summary": "Preşedinta Curţii de Apel Bucureşti (CAB), Liana Arsenie, a declarat, că este de părere că există un plan „matematic” de preluare a controlului asupra puterii judecătoreşti. Ea a vorbit și despre magistrații care se întâlnesc cu Nicușor Dan.",
+      "publishedAt": "2026-01-12T05:21:00.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.525Z"
+    },
+    {
+      "id": "22735bdec92f49df",
+      "sourceId": "europa-libera",
+      "sourceName": "Europa Liberă",
+      "title": "Donald Trump spune că Iranul a solicitat discuții după amenințările americane și creșterea numărului de morți în timpul protestelor",
+      "url": "https://romania.europalibera.org/a/trump-spune-ca-iranul-a-solicitat-discutii-dupa-amenintarile-americane-si-cresterea-numarului-de-morti-in-timpul-protestelor/33645735.html",
+      "summary": "Președintele SUA, Donald Trump, a declarat că liderii iranieni au solicitat discuții cu Washingtonul după amenințărilor sale cu acțiuni militare, ca răspuns la reprimarea brutală de către Teheran a protestelor masive anti-guvernamentale.",
+      "publishedAt": "2026-01-12T06:16:01.000Z",
+      "fetchedAt": "2026-01-12T06:44:14.414Z"
     }
   ],
-  "lastUpdated": "2026-01-12T02:09:26.722Z"
+  "lastUpdated": "2026-01-12T06:44:15.961Z"
 }
