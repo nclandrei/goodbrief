@@ -3330,7 +3330,847 @@
       "summary": "Președintele SUA, Donald Trump, a declarat că liderii iranieni au solicitat discuții cu Washingtonul după amenințărilor sale cu acțiuni militare, ca răspuns la reprimarea brutală de către Teheran a protestelor masive anti-guvernamentale.",
       "publishedAt": "2026-01-12T06:16:01.000Z",
       "fetchedAt": "2026-01-12T06:44:14.414Z"
+    },
+    {
+      "id": "6a5c251e3df21f96",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Când scăpăm de ger. ANM anunță prognoza meteo pentru următoarele două săptămâni",
+      "url": "https://hotnews.ro/cand-scapam-de-ger-anm-anunta-prognoza-meteo-pentru-urmatoarele-doua-saptamani-2148387",
+      "summary": "Vremea se va încălzi în toată țara de la jumătatea acestei săptămâni, după ce, în primele zile, vor fi în continuare ger și temperaturi negative atât ziua, cât și pe timpul nopților, reiese din prognoza…",
+      "publishedAt": "2026-01-12T12:43:52.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "f79d4e255a4cd1a0",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Maia Sandu afirmă în premieră că ar vota pentru unirea Republicii Moldova cu România, dar vede o altă soluție „realistă”",
+      "url": "https://hotnews.ro/maia-sandu-afirma-in-premiera-ca-ar-vota-pentru-unirea-republicii-moldova-cu-romania-dar-vede-o-alta-solutie-realista-2148416",
+      "summary": "„Dacă s-ar organiza un referendum, aș vota pentru unirea cu România”, a declarat președinta Republicii Moldova, Maia Sandu în podcastul britanic „The Rest Is Politics”, realizat la sediul președinției de la Chișinău, relatează PressHub. „Vedeți…",
+      "publishedAt": "2026-01-12T12:39:09.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "44e069800d52b8f6",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "[P] Top 10 obiective turistice de neratat în Sri Lanka",
+      "url": "https://hotnews.ro/p-top-10-obiective-turistice-de-neratat-in-sri-lanka-2148408",
+      "summary": "Vrei să descoperi Asia profundă, de o fascinantă spiritualitate și o natură spectaculoasă? Alege Sri Lanka, o insulă exotică ce îmbină peisaje tropicale, temple antice, orașe istorice și plaje sălbatice. Iată ce poți să vizitezi…",
+      "publishedAt": "2026-01-12T12:14:51.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "688d794090e3a04f",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Administrația Trump a recurs la o acțiune fără precedent împotriva președintelui Rezervei Federale, pe care vrea să-l schimbe",
+      "url": "https://hotnews.ro/administratia-trump-a-recurs-la-o-actiune-fara-precedent-impotriva-presedintelui-rezervei-federale-pe-care-vrea-sa-l-schimbe-2148397",
+      "summary": "Administrația președintelui american Donald Trump și-a intensificat campania de presiuni asupra Rezervei Federale (Fed), banca centrală a Statelor Unite, amenințând cu inculparea președintelui acesteia, Jerome Powell, din cauza unor declarații făcute în fața Congresului despre…",
+      "publishedAt": "2026-01-12T12:14:50.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "c97e5c17e200ee58",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Trump e sub presiunea de a acționa în Iran, pe fondul represiunii sângeroase. Ce poate face, e complicat și interesant",
+      "url": "https://hotnews.ro/trump-e-sub-presiunea-de-a-actiona-in-iran-pe-fondul-represiunii-sangeroase-ce-poate-face-e-complicat-si-interesant-2148222",
+      "summary": "Există puține precedente pentru lansarea unei ofensive militare în sprijinul protestatarilor pașnici. Oricât de mult ar dori să-și pună în aplicare cuvântul dat, că-i va sprijini pe manifestanții din Iran, opțiunile lui Donald Trump în…",
+      "publishedAt": "2026-01-12T12:00:04.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "e28060a7fe7f52d4",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Atac dur al PSD la adresa Emiliei Șercan, care l-a acuzat de plagiat pe Radu Marinescu",
+      "url": "https://hotnews.ro/atac-dur-al-psd-la-adresa-emiliei-sercan-care-l-a-acuzat-de-plagiat-pe-radu-marinesu-o-impostoare-2148286",
+      "summary": "În prima reacție publică după articolul din PressOne în care ministrul Justiției este acuzat că și-a plagiat teza de doctorat, partidul condus de Sorin Grindeanu o atacă dur pe jurnalista Emilia Șercan și acuză o…",
+      "publishedAt": "2026-01-12T11:59:10.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "b41536679bc1a27b",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "După ce a trecut la Euro, Bulgaria se pregătește din nou de alegeri anticipate",
+      "url": "https://hotnews.ro/dupa-ce-a-trecut-la-euro-bulgaria-se-pregateste-din-nou-de-alegeri-anticipate-2148382",
+      "summary": "Cel mai mare grup parlamentar din Bulgaria, alianța de centru-dreapta GERB-SDS, a refuzat luni o solicitare a președintelui de a încerca să formeze un nou guvern, sporind probabilitatea unor noi alegeri anticipate, transmite agenția Reuters.…",
+      "publishedAt": "2026-01-12T11:45:10.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "15dfb0ba7fec648d",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Unul dintre cei mai cunoscuți avocați din SUA a ajuns în boxa acuzaților din cauza vieții duble demne de un serial Netflix",
+      "url": "https://hotnews.ro/unul-dintre-cei-mai-cunoscuti-avocati-din-sua-a-ajuns-in-boxa-acuzatilor-din-cauza-vietii-duble-demne-de-un-serial-netflix-2148343",
+      "summary": "Tom Goldstein a fost un avocat proeminent la Washington, care a pledat în zeci de cauze în fața Curții Supreme a SUA, până când o viață dublă, marcată de jocuri de poker pe mize foarte…",
+      "publishedAt": "2026-01-12T11:29:10.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "df5d7e809481175f",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Franţa a început campania de recrutare pentru serviciul militar voluntar. Ce salariu primesc tinerii care fac pregătirea militară",
+      "url": "https://hotnews.ro/franta-a-inceput-campania-de-recrutare-pentru-serviciu-militar-voluntar-ce-salariu-primesc-tinerii-care-fac-pregatirea-militara-2148325",
+      "summary": "Franţa a început luni campania de recrutare pentru noul serviciu militar voluntar naţional, care va dura zece luni și este plătit. Programul, adresat în special tinerilor de 18-19 ani, a fost anunțat în noiembrie 2025…",
+      "publishedAt": "2026-01-12T11:24:15.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "62ce03009f04a97e",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Sancțiuni în premieră pe piața muncii: Opt companii, amendate cu 32,15 milioane de euro pentru înțelegeri la recrutarea angajaților / Reacția Renault",
+      "url": "https://hotnews.ro/sanctiuni-in-premiera-pe-piata-muncii-opt-companii-amendate-cu-3215-milioane-de-euro-pentru-intelegeri-la-recrutarea-angajatilor-2148352",
+      "summary": "Consiliul Concurenței a anunțat luni că a sancționat opt companii cu amenzi în valoare totală de 163,71 milioane lei (aproximativ 32,15 milioane euro) pentru participarea la o înțelegere anticoncurențială constând în împărțirea pieței forței de…",
+      "publishedAt": "2026-01-12T11:20:40.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "1f9b9fbeeb80096b",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Comisia de Etică a Universității Craiova decide astăzi dacă se autosesizează în cazul acuzațiilor de plagiat la adresa ministrului Radu Marinescu",
+      "url": "https://hotnews.ro/comisia-de-etica-a-universitatii-craiova-decide-astazi-daca-se-autosesizeaza-in-cazul-acuzatiilor-de-plagiat-la-adresa-ministrului-radu-marinescu-2148320",
+      "summary": "Președintele Comisiei de Etică a Universității din Craiova, Sorin Enache, a declarat pentru HotNews că membrii comisiei vor decide luni dacă instituția se va autosesiza în cazul acuzațiilor de plagiat la adresa ministrului Justiției. Radu…",
+      "publishedAt": "2026-01-12T11:16:50.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "48bfa11abd9cca38",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Prima păpușă Barbie cu autism, lansată de Mattel. Cum arată păpușa",
+      "url": "https://hotnews.ro/prima-papusa-barbie-cu-autism-lansata-de-mattel-cum-arata-papusa-2148296",
+      "summary": "Mattel a lansat luni prima sa păpușă Barbie cu autism, ca parte a strategiei companiei de a promova diversitatea și incluziunea în rândul copiilor, transmite The Guardian. Autismul este o deficiență de dezvoltare a creierului,…",
+      "publishedAt": "2026-01-12T10:53:47.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "67fb0320e07ef4e2",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Piața auto a crescut în 2025, deși anul a fost marcat de „un grad ridicat de impredictibilitate”, spune șeful celei mai importante asociații din domeniul auto. Care a fost cea mai mare problemă",
+      "url": "https://hotnews.ro/piata-auto-a-crescut-in-2025-desi-anul-a-fost-marcat-de-un-grad-ridicat-de-impredictibilitate-spune-seful-celei-mai-importante-asociatii-din-domeniul-auto-care-a-fost-cea-mai-mare-2148290",
+      "summary": "Anul 2025 a fost unul record pentru mașinile hibride în România, cele full-electrice au scăzut, însă piața totală a automobilelor noi a fost pe plus. Întreg anul a fost plin de lucruri neprevăzute, iar programul…",
+      "publishedAt": "2026-01-12T10:51:22.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "25797be70d2cb194",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Unde pot fi văzute în România filmele si serialele premiate la Globurile de Aur din 2026: Filmul vedetă este pe o platformă de streaming",
+      "url": "https://hotnews.ro/unde-pot-fi-vazute-in-romania-filmele-si-serialele-premiate-la-globurile-de-aur-din-2026-filmul-vedeta-este-pe-o-platforma-de-streaming-2148168",
+      "summary": "Unele dintre filmele și serialele premiate la ediția din 2026 a Globurilor de Aur pot fi văzute în streaming pe platformele disponibile și în România. Este vorba inclusiv despre lungmetrajul „One Battle After Another”, care…",
+      "publishedAt": "2026-01-12T10:50:38.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "45fc6fcf0c76bc33",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Finlanda a eliberat nava provenită din Rusia ce era suspectată că și-a târât ancora de fundul mării zeci de kilometri și a agățat un cablu de comunicații",
+      "url": "https://hotnews.ro/finlanda-a-eliberat-provenita-din-rusia-ce-era-suspectata-ca-si-a-tarat-ancora-de-fundul-marii-zeci-de-kilometri-si-a-agatat-un-cablu-de-comunicatii-2148299",
+      "summary": "Poliția finlandeză a anunțat luni că a ridicat sechestrul asupra unei nave care fusese reținută sub suspiciunea de sabotare a unui cablu submarin de telecomunicații care leagă țara de Estonia prin Golful Finlandei, deși ancheta…",
+      "publishedAt": "2026-01-12T10:42:05.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "5512313256270108",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Acuzațiile de plagiat aduse lui Radu Marinescu. Deputat USR: „Cum pot să continui ca ministru dacă ai furat?”",
+      "url": "https://hotnews.ro/acuzatiile-de-plagiat-aduse-lui-radu-marinescu-deputat-usr-cum-pot-sa-continui-ca-ministru-daca-ai-furat-2148282",
+      "summary": "Deputatul USR Alexandru Dimitriu, membru al Comisiei juridice din Camera Deputaților, susține într-un dialog cu HotNews că dacă ministrul Radu Marinescu va refuza să demisioneze, iar PSD îl va menține în funcție, social-democrații vor răspunde…",
+      "publishedAt": "2026-01-12T10:32:53.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "37b9ac1b87edbcc5",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Avertisment despre ascensiunea ideilor comuniste printre tineri: „Generația părinților nu e deloc curioasă să afle cum de lumea nu funcționează pentru copiii lor” ",
+      "url": "https://hotnews.ro/avertisment-despre-ascensiunea-ideilor-comuniste-printre-tineri-2148253",
+      "summary": "În general, presupunem că neîncrederea tinerilor în capitalism și atracția pentru stânga radicală vine din deficitul de cunoștințe despre ce e în realitate „comunismul”. Dacă ar putea să facă o comparație, lucrurile s-ar lămuri, credem.…",
+      "publishedAt": "2026-01-12T09:56:33.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "b808f88295eb73b4",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Cancelarul Merz s-a dus în India și a dat de înțeles că alt mare anunț economic ar putea fi făcut luna aceasta",
+      "url": "https://hotnews.ro/cancelarul-merz-s-a-dus-in-india-si-a-dat-de-inteles-ca-alt-mare-anunt-economic-ar-putea-fi-facut-luna-aceasta-2148234",
+      "summary": "Cancelarul german Friedrich Merz a sugerat posibilitatea ca Uniunea Europeană și India să semneze un acord de liber schimb încă de la sfârșitul lui ianuarie, declarațiile fiind făcute după ce s-a întâlnit luni cu premierul…",
+      "publishedAt": "2026-01-12T09:56:25.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "3a2f8707c1fa0d95",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "România importă cantități uriașe de gaze, din cauza gerului / Ministrul Energiei a convocat Comandamentul Energetic Național",
+      "url": "https://hotnews.ro/romania-importa-cantitati-uriase-de-gaze-din-cauza-gerului-ministrul-energiei-a-convocat-comandamentul-energetic-national-2148195",
+      "summary": "România aduce din import o cantitate de 8,5 milioane de metri cubi de gaze pe zi luni dimineață, în contextul în care consumul național, de 58 de milioane de metri cubi pe zi, este unul…",
+      "publishedAt": "2026-01-12T09:56:13.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "9b4fa86bd2304074",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Primele reacții din PSD după ce ministrul Justiției a fost acuzat de plagiat: „O încercare de compromitere pentru că a declanșat procedura de numire a  procurorilor șefi” / Ironii și atacuri la adresa jurnalistei Emilia Șercan",
+      "url": "https://hotnews.ro/primele-reactii-din-psd-dupa-ce-ministrul-justitiei-a-fost-acuzat-de-plagiat-o-incercare-de-compromitere-pentru-ca-a-declansat-procedura-de-numire-a-procurorilor-sefi-ironii-si-a-2148199",
+      "summary": "Liderul senatorilor social-democrați, Daniel Zamfir, susține că în cazul ministrului PSD al Justiției, Radu Marinescu, acuzat că și-a plagiat teza de doctorat, este vorba despre „o acțiune de compromitere, tocmai pentru că acesta a declanșat…",
+      "publishedAt": "2026-01-12T09:55:05.000Z",
+      "fetchedAt": "2026-01-12T12:57:46.096Z"
+    },
+    {
+      "id": "56694cf3126e6ab2",
+      "sourceId": "dw-romania",
+      "sourceName": "DW România",
+      "title": "Vrea România o relație mai bună cu Rusia? Cum s-a ajuns aici",
+      "url": "https://www.dw.com/ro/vrea-rom%C3%A2nia-o-rela%C8%9Bie-mai-bun%C4%83-cu-rusia-cum-s-a-ajuns-aici/a-75471903?maca=rum-rss-rom-all-1493-rdf",
+      "summary": "Analiză: Jumătate dintre români nu sunt îngrijorați de o vecinătate cu Rusia și ar vrea o relație economică mai apropiată cu rușii, iar oficialii români par să se îndrepte în această direcție prin non-acțiune.",
+      "publishedAt": "2026-01-12T11:07:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.226Z"
+    },
+    {
+      "id": "f87d1f9401b8f9bb",
+      "sourceId": "dw-romania",
+      "sourceName": "DW România",
+      "title": "\"Operațiunea specială\" a Rusiei în Ucraina a egalat războiul URSS cu Germania nazistă",
+      "url": "https://www.dw.com/ro/opera%C8%9Biunea-special%C4%83-a-rusiei-%C3%AEn-ucraina-a-egalat-r%C4%83zboiul-urss-cu-germania-nazist%C4%83/a-75473730?maca=rum-rss-rom-all-1493-rdf",
+      "summary": "Spotmedia.ro: Războiul Rusiei împotriva Ucrainei a intrat duminică în a 1418-a zi, același număr de zile în care Germania nazistă a luptat împotriva Uniunii Sovietice în timpul celui de-al Doilea Război Mondial.",
+      "publishedAt": "2026-01-12T11:27:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.226Z"
+    },
+    {
+      "id": "a7b4c84310678145",
+      "sourceId": "dw-romania",
+      "sourceName": "DW România",
+      "title": "Din Guatemala până în Panama: Invaziile SUA în America Latină",
+      "url": "https://www.dw.com/ro/din-guatemala-p%C3%A2n%C4%83-%C3%AEn-panama-invaziile-sua-%C3%AEn-america-latin%C4%83/a-75440861?maca=rum-rss-rom-all-1493-rdf",
+      "summary": "Atacul asupra Venezuelei se înscrie într-un lung şir de invazii militare şi imixtiuni politice ale SUA în America Latină. Iată cinci exemple.",
+      "publishedAt": "2026-01-12T08:01:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.226Z"
+    },
+    {
+      "id": "bfc867d8e0fa681a",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "North Bucharest Investments încheie 2025 cu vânzări de peste 320 milioane de euro și anticipează o creștere de 35% a volumului tranzacționat în 2026",
+      "url": "https://www.mediafax.ro/comunicate/north-bucharest-investments-incheie-2025-cu-vanzari-de-peste-320-milioane-de-euro-si-anticipeaza-o-crestere-de-35-a-volumului-tranzactionat-in-2026-23670024",
+      "summary": "North Bucharest Investments încheie anul 2025 cu un volum total al vânzărilor de peste 320 milioane de euro, realizat prin 1.922 de tranzacții, confirmând poziția companiei ca jucător relevant pe segmentul rezidențial din nordul Bucureștiului, într-un an marcat de ajustare și maturizare a pieței.",
+      "publishedAt": "2026-01-12T12:52:36.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.882Z"
+    },
+    {
+      "id": "9ca2ba15f9f5e5b2",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Papa Leon s-a întâlnit la Vatican cu Maria Corina Machado, lidera opoziției din Venezuela",
+      "url": "https://www.mediafax.ro/externe/papa-leon-s-a-intalnit-la-vatican-cu-maria-corina-machado-lidera-opozitiei-din-venezuela-23670010",
+      "summary": "Papa Leon s-a întâlnit luni cu lidera opoziției din Venezuela și laureata Premiului Nobel pentru Pace, Maria Corina Machado, a anunțat Vaticanul, fără a oferi detalii suplimentare.",
+      "publishedAt": "2026-01-12T12:45:51.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.882Z"
+    },
+    {
+      "id": "97fcb77c5f2f2c4d",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Oligarhul Plahotniuc, chemat ca martor al acuzării în dosarul în care este judecat fostul președinte Igor Dodon",
+      "url": "https://www.mediafax.ro/politic/oligarhul-plahotniuc-chemat-ca-martor-al-acuzarii-in-dosarul-in-care-este-judecat-fostul-presedinte-igor-dodon-23670015",
+      "summary": "Curtea Supremă de Justiție (CSJ) din Republica Moldova a dispus audierea lui Vladimir Plahotniuc și Serghei Iaralov în calitate de martori din partea acuzării în cauza penală denumită generic „kuliok”, în care este judecat fostul președinte Igor Dodon. Decizia a fost luată în ședința din 12 ianuarie 2026.",
+      "publishedAt": "2026-01-12T12:43:50.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.882Z"
+    },
+    {
+      "id": "60dfa93d41e22ec4",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "The Times: Ce urmează pentru Iran? Printre scenarii se află și cel al unui atac al SUA asupra Teheranului",
+      "url": "https://www.mediafax.ro/externe/the-times-ce-urmeaza-pentru-iran-printre-scenarii-se-afla-si-cel-al-unui-atac-al-sua-asupra-teheranului-23669998",
+      "summary": "În Iran au loc, de trei săptămâni, proteste, pe fondul prăbușirii monedei naționale, Rialul. Până acum, peste 544 de iranieni au murit în timpul violențelor, iar alte 579 de decese sunt în curs de verificare, ceea ce ar putea duce bilanțul total la peste 1.100 de victime. Publicația The Times trece în revistă șase scenarii pentru Iran, în contextul acestor violențe.",
+      "publishedAt": "2026-01-12T12:40:20.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.882Z"
+    },
+    {
+      "id": "0aa5fba3db116d00",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Mario Iorgulescu: „În clinici e mai greu decât în pușcărie”",
+      "url": "https://www.mediafax.ro/justitie/mario-iorgulescu-in-clinici-e-mai-greu-decat-in-puscarie-23670004",
+      "summary": "Mario Iorgulescu a făcut declarații tulburătoare într-un interviu exclusiv acordat lui Dan Capatos, în care a vorbit deschis despre anii petrecuți în clinici, starea sa medicală și percepția asupra propriei pedepse.",
+      "publishedAt": "2026-01-12T12:32:40.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.882Z"
+    },
+    {
+      "id": "cdb7dd07eb34f180",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Gălățenii nu au decât șapte adăposturi de protecție civilă complet funcționale. În județ sunt 206 adăposturi",
+      "url": "https://www.mediafax.ro/social/galatenii-nu-au-decat-sapte-adaposturi-de-protectie-civila-complet-functionale-in-judet-sunt-206-adaposturi-23670003",
+      "summary": "Gălățenii nu au decât șapte adăposturi de protecție civilă complet funcționale. Asta deși în județul Galați sunt 206 adăposturi. Autoritățile vor să modernizeze mai multe adăposturi cu fonduri europene și prin PNRR.",
+      "publishedAt": "2026-01-12T12:29:49.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.882Z"
+    },
+    {
+      "id": "c0fafc2a6f54d82a",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Ursula von der Leyen acuză platforma X pentru folosirea inteligenței artificiale în crearea de imagini sexuale false",
+      "url": "https://www.mediafax.ro/justitie/ursula-von-der-leyen-acuza-platforma-x-pentru-folosirea-inteligentei-artificiale-in-crearea-de-imagini-sexuale-false-23669995",
+      "summary": "Ursula von der Leyen a acuzat platforma X a lui Elon Musk pentru folosirea inteligenței artificiale în crearea de deepfake-uri sexuale ilegale cu femei și adolescente.",
+      "publishedAt": "2026-01-12T12:27:47.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.882Z"
+    },
+    {
+      "id": "fbd0190b5e6c53d9",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Norvegia alocă 400 de milioane de dolari pentru sprijinirea Ucrainei",
+      "url": "https://www.mediafax.ro/externe/norvegia-aloca-400-de-milioane-de-dolari-pentru-sprijinirea-ucrainei-23669994",
+      "summary": "Norvegia va oferi Ucrainei un nou pachet de sprijin în valoare de 400 de milioane de dolari, jumătate din sumă fiind destinată nevoilor urgente din sezonul rece, iar restul pentru susținerea bugetului de stat, a anunțat ministrul norvegian de Externe, Espen Barth Eide, la Kiev.",
+      "publishedAt": "2026-01-12T12:12:19.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.882Z"
+    },
+    {
+      "id": "228f82a401535e98",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "UBB, precizări cu privire la experiența lui Dacian Dragoș în învățământul juridic superior",
+      "url": "https://www.mediafax.ro/social/ubb-precizari-cu-privire-la-experienta-lui-dacian-dragos-in-invatamantul-juridic-superior-23669976",
+      "summary": "Universitatea Babeș-Bolyai din Cluj-Napoca (UBB) face, luni, precizări privind experiența în învățământul juridic superior al judecătorului CCR, Dacian Dragoș.",
+      "publishedAt": "2026-01-12T12:08:16.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.882Z"
+    },
+    {
+      "id": "c28d939fbaf87996",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Lift panoramic pentru palmierii din Galați. Platforma de observație are înălțimea de 20 de metri",
+      "url": "https://www.mediafax.ro/life-entertaiment/lift-panoramic-pentru-palmierii-din-galati-platforma-de-observatie-are-inaltimea-de-20-de-metri-23669982",
+      "summary": "Palmierii din orașul Galați vor fi admirați de la mare înălțime. Accesul pe platforma aflată la 20 de metri înălțime se face cu un lift panoramic. Sera se află în Grădina Botanică din Galați.",
+      "publishedAt": "2026-01-12T12:04:44.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.882Z"
+    },
+    {
+      "id": "cf39682837b829ba",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Maia Sandu declară, pentru prima dată, că ar vota pentru reunirea Moldovei cu România, pentru că “devine din ce în ce mai dificil pentru o țară ca Republica Moldova să supraviețuiască, să existe ca democrație, ca țară suverană”. Dar, pentru că nu există o majoritate care să sprijine unirea, “aderarea la UE este un obiectiv mult mai realist”, a adăugat ea.",
+      "url": "https://www.biziday.ro/344702-2/",
+      "summary": "Maia Sandu a făcut declarațiile în cadrul unui podcast realizat de jurnaliștii britanici Rory Stewart și Alastair Campbell, la sediul președinției de la Chișinău, în care au fost abordate subiecte legate de situația geopolitică a Republicii Moldova, relația cu România și parcursul european al țării. Președinta a explicat că, în contextul actual de securitate regională […]",
+      "publishedAt": "2026-01-12T12:49:50.000Z",
+      "fetchedAt": "2026-01-12T12:57:44.823Z"
+    },
+    {
+      "id": "fb6f83395e482281",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Automobile Dacia, Renault și alte șase companii din industria auto au fost amendate cu 32 de milioane de euro. Consiliul Concurenței a constatat că s-au înțeles pentru a nu concura pentru recrutarea angajaților. Automobile Dacia a primit cea mai mare sancțiune, de 16 milioane de euro.",
+      "url": "https://www.biziday.ro/344692-2/",
+      "summary": "Consiliul Concurenței precizează următoarele: “În urma unei investigații, autoritatea de concurență a constatat că Alten Si-Techno Romania SRL, Akkodis Romania SRL, Automobile-Dacia SA, Bertrandt Engineering Technologies Romania SRL, Expleo Romania SRL, FEV ECE Automotive SRL, Renault Technologie Roumanie SRL și Segula Technologies Romania SRL au stabilit să nu se concureze pentru recrutarea și angajarea reciprocă […]",
+      "publishedAt": "2026-01-12T11:36:35.000Z",
+      "fetchedAt": "2026-01-12T12:57:44.823Z"
+    },
+    {
+      "id": "d9219ae495e6c581",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Australia. Meta a șters peste jumătate de milion de conturi de Facebook, Instagram și Threads, ale utilizatorilor cu vârste de sub 16 ani, pentru a se conforma noii legislații privind rețelele sociale.",
+      "url": "https://www.biziday.ro/344685-2/",
+      "summary": "Legea a intrat în vigoare pe 10 decembrie și interzice conturile de socializare pentru copiii sub 16 ani. Impune platformelor mari, inclusiv Meta, TikTok și YouTube, să dezactiveze conturi pentru cei sub această vârstă. Meta a declarat că între 4 și 11 decembrie a dezactivat 544.052 de conturi despre care credea că sunt deținute de […]",
+      "publishedAt": "2026-01-12T10:52:58.000Z",
+      "fetchedAt": "2026-01-12T12:57:44.823Z"
+    },
+    {
+      "id": "9e0dfeda3af21139",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "SUA. Procurorii federali au deschis o anchetă penală împotriva guvernatorului Rezervei Federale, privind costurile de renovare a două clădiri istorice ale Fed. Oficialul respinge acuzațiile, despre care spune că sunt o urmare a refuzului de a reduce dobânda de referință, la cererea lui Trump.",
+      "url": "https://www.biziday.ro/344669-2/",
+      "summary": "Procurorii din Districtul Columbia au deschis o anchetă penală împotriva lui Jerome Powell în legătură cu lucrările de renovare a două clădiri istorice și cu privire la posibilitatea ca acesta să fi mințit Congresul despre amploarea proiectului, a relatat duminică New York Times. Guvernatorul Rezervei Federale, Jerome Powell, a reacționat rapid la acuzațiile procurorilor americani: […]",
+      "publishedAt": "2026-01-12T09:20:07.000Z",
+      "fetchedAt": "2026-01-12T12:57:44.823Z"
+    },
+    {
+      "id": "c709b80496485723",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Asociația ”Forumul Judecătorilor” reclamă derapaje grave și atacuri verbale la adresa magistraților care au semnalat problemele din Justiție, unele chiar din partea unor membri CSM. Anunță că va sesiza “organismele internaționale relevante” și îi cere președintelui Dan să intervină.",
+      "url": "https://www.biziday.ro/344679-2/",
+      "summary": "“Forumul Judecătorilor din România” a emis un punct de vedere prin care transmite că, în ultimele zile, spațiul public “a fost invadat de atacuri individuale ale unor membri ai CSM și ale unor site-uri controversate” la adresa asociației, a reprezentanților săi și a altor ONG-uri care au cerut promovarea rapidă a unei reforme a justiției. […]",
+      "publishedAt": "2026-01-12T09:58:04.000Z",
+      "fetchedAt": "2026-01-12T12:57:44.823Z"
+    },
+    {
+      "id": "3b7f786c4e48a73c",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Programul Tezaur. Ministerul de Finanțe a lansat prima emisiune din acest an de titluri de stat pentru populație. Scadențele sunt la 1, 3 și 5 ani, iar dobânzile anuale de 6,40%, 7%, respectiv, 7,40%.",
+      "url": "https://www.biziday.ro/344675-2/",
+      "summary": "Ministerul Finanțelor a lansat astăzi, 12 ianuarie 2026, prima ediție a Programului de titluri de stat TEZAUR din acest an. În perioada 12 ianuarie 2026 – 6 februarie 2026, românii pot investi în titlurile de stat TEZAUR, cu maturități de 1, 3 și 5 ani și dobânzi anuale de 6,40%, 7%, respectiv, 7,40%. Veniturile obținute […]",
+      "publishedAt": "2026-01-12T09:31:43.000Z",
+      "fetchedAt": "2026-01-12T12:57:44.823Z"
+    },
+    {
+      "id": "745d98f53b86dfa6",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Comisarul european pentru Apărare propune înființarea unei armate permanente a UE, formată din cel puțin o sută de mii de militari care să înlocuiască, treptat, trupele americane prezente în Europa. Consideră că principalul element care blochează un asemenea demers este “lipsa voinței politice”.",
+      "url": "https://www.biziday.ro/344665-2/",
+      "summary": "Andrius Kubilius, comisarul european pentru Apărare, a declarat, în cadrul unei conferințe de securitate din Suedia, că statele membre ale Uniunii Europene ar trebui să ia în considerare înființarea unei forțe armate comune, care ar putea, în viitor, să îi înlocuiască pe cei circa o sută de mii de militari americani prezenți pe continent. Acesta […]",
+      "publishedAt": "2026-01-12T08:47:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:44.823Z"
+    },
+    {
+      "id": "5e58bad2b2960988",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Guvernul britanic anunță Proiectul “Nightfall”, o rachetă balistică tactică, dezvoltată special pentru a fi furnizată Ucrainei în termen de un an de zile. Ar urma să aibă o rază de până la 500 km, ceea ce înseamnă că ar fi capabilă să lovească Moscova. “În loc să negocieze pacea la modul serios, Putin escaladează războiul său ilegal”, a explicat ministrul britanic al Apărării.",
+      "url": "https://www.biziday.ro/344657-2/",
+      "summary": "Ministerul Apărării a făcut anunțul duminică seara, precizând însă că trei echipe ale unor firme concurente din industria militară au semnat și au primit comanda încă de pe 19 decembrie 2025, cu termen limită pentru primirea propunerilor de dezvoltare a rachetelor Nightfall pe 9 februarie 2026. Contractul de dezvoltare va fi atribuit în martie, iar […]",
+      "publishedAt": "2026-01-12T06:51:27.000Z",
+      "fetchedAt": "2026-01-12T12:57:44.823Z"
+    },
+    {
+      "id": "f7244b64df64423e",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Sezonul 2 al serialului Tătuțu’ va putea fi urmărit la PRO TV din 14 ianuarie",
+      "url": "https://stirileprotv.ro/show-buzz/entertainment/sezonul-2-al-serialului-tatutu-va-putea-fi-urmarit-la-pro-tv-din-14-ianuarie.html",
+      "summary": "Bebe Măcelaru revine la PRO TV cu sezonul 2 din TĂTUȚU’, începând de miercuri, 14 ianuarie, de la ora 20:30. Povestea temutului mafiot, care își consolida puterea la începutul anilor 2000, continuă.",
+      "publishedAt": "2026-01-12T12:46:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "89f064ebe5deee05",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Când se încălzește vremea în România. Prognoza meteo pentru următoarele două săptămâni",
+      "url": "https://stirileprotv.ro/stiri/vremea/cand-se-incalzeste-vremea-in-romania-prognoza-meteo-pentru-urmatoarele-doua-saptamani.html",
+      "summary": "Vremea va intra într-un proces de încălzire la nivelul întregii ţări, de la jumătatea acestei săptămâni, după ce, în primele zile, se va semnala în continuare ger şi valori termice negative atât ziua, cât şi pe timpul nopţilor, arată ANM.",
+      "publishedAt": "2026-01-12T12:39:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "2262a776b5d571c4",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Autorul unui omor din Tulcea, trimis în judecată pe baza profilului genetic. A fost prins după 26 de ani",
+      "url": "https://stirileprotv.ro/justitie/autorul-unui-omor-din-tulcea-trimis-in-judecata-pe-baza-profilului-genetic-a-fost-prins-dupa-26-de-ani.html",
+      "summary": "Autorul omorului comis în anul 1999 în judeţul Tulcea şi prins în toamna anului trecut a fost trimis în judecată.",
+      "publishedAt": "2026-01-12T12:39:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "c4673adbea405280",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Încăierare violentă într-o închisoare din Georgia. Trei deținuți au murit, iar alți 12 au fost răniți",
+      "url": "https://stirileprotv.ro/stiri/international/incaierare-violenta-intr-o-inchisoare-din-georgia-trei-detinuti-au-murit-iar-alti-12-au-fost-raniti.html",
+      "summary": "O încăierare izbucnită duminică într-o închisoare din Georgia, în sudul Statelor Unite, s-a soldat cu trei morţi în rândul deţinuţilor şi 12 răniţi, între care un gardian, au relatat luni media locale americane, preluate de AFP.",
+      "publishedAt": "2026-01-12T12:24:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "9af1faa1b80af39c",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "România bifează un jalon-cheie din PNRR. Primim peste 375 milioane euro pentru semiconductori și proiecte strategice",
+      "url": "https://stirileprotv.ro/stiri/actualitate/romania-bifeaza-un-jalon-cheie-din-pnrr-primim-peste-375-milioane-euro-pentru-semiconductori-si-proiecte-strategice.html",
+      "summary": "România a atins la termen un jalon major din Planul Național de Redresare și Reziliență (PNRR) în domeniul semiconductorilor, cu proiecte de inovare care depășesc 375 de milioane de euro.",
+      "publishedAt": "2026-01-12T12:26:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "d05c6c71692664a7",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cel mai mare partid din Bulgaria refuză propunerea de a forma un nou guvern. Ar putea avea loc noi alegeri anticipate",
+      "url": "https://stirileprotv.ro/stiri/international/cel-mai-mare-partid-din-bulgaria-refuza-propunerea-de-a-forma-un-nou-guvern-ar-putea-avea-loc-noi-alegeri-anticipate.html",
+      "summary": "Cel mai mare grup parlamentar din Bulgaria, GERB-SDS, de centru-dreapta, a respins luni o solicitare din partea preşedintelui de a încerca să formeze un nou guvern, crescând probabilitatea unor noi alegeri anticipate, relatează Reuters.",
+      "publishedAt": "2026-01-12T12:13:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "a658d4bbf0bdbb23",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ce spune televiziunea controlată de regimul de la Teheran despre zecile de cadavre filmate în fața unei morgi",
+      "url": "https://stirileprotv.ro/stiri/international/raspunsul-lui-trump-dupa-ce-teheranul-a-cerut-negocieri-corespondent-cnn-zin-spitale-erau-gramezi-de-cadavre.html",
+      "summary": "Donald Trump și-a reînnoit amenințarea de a interveni militar în Iran, dacă regimul ucide manifestanți.",
+      "publishedAt": "2026-01-12T12:04:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "f0f5686d27fa2b97",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Motivul pentru care unul dintre minori ar fi intrat in moarte cerebrală după operația de la Spitalul din Constanța",
+      "url": "https://stirileprotv.ro/stiri/actualitate/ancheta-la-spitalul-judetean-constanta-doi-copii-au-ajuns-in-moarte-cerebrala-dupa-interventii-chirurgicale.html",
+      "summary": "Reprezentanţii Spitalului Clinic Judeţean de Urgenţă Constanţa au anunţat, luni, că au demarat o anchetă internă, după ce doi copii au intrat în moarte cerebrală în urma unor intervenţii chirurgicale în unitatea medicală.",
+      "publishedAt": "2026-01-12T11:54:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "339d566301eb9628",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Și-au trimis iubitele și familia să se prostitueze la Londra ca să se îmbogățească. Trei proxeneți români au fost arestați",
+      "url": "https://stirileprotv.ro/justitie/mai-multi-romani-si-au-trimis-rudele-si-prietenele-in-londra-sa-practice-prostitutia-trei-dintre-ei-arestati.html",
+      "summary": "O rețea internațională de proxenetism care recruta și exploata tinere în Anglia a fost destructurată de autoritățile române și britanice. Polițiștii au descins simultan în mai multe locuințe din România, dar și din capitala Regatului Unit.",
+      "publishedAt": "2026-01-12T11:50:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "45e8c65280a29055",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Bucureștenii îngheață în case. Circa 3.500 de blocuri nu au căldură în cele mai friguroase zile din această iarnă",
+      "url": "https://stirileprotv.ro/stiri/actualitate/mii-de-bucuresteni-au-probleme-cu-apa-calda-si-caldura-de-mai-mult-de-o-saptamana-ce-spune-termoenergetica.html",
+      "summary": "În timp ce meteorologii anunță temperaturi tot mai scăzute, mii de bucureșteni stau în frig. Peste o treime din blocurile din Capitală au probleme cu apa caldă și căldura de mai bine de o săptămână.",
+      "publishedAt": "2026-01-12T11:38:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "36ffd0b0b3a776e3",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Recomandările INSP pentru perioada de ger din România. Cum se pot proteja oamenii",
+      "url": "https://stirileprotv.ro/stiri/actualitate/recomandarile-insp-pentru-perioada-de-ger-din-romania-cum-se-pot-proteja-oamenii.html",
+      "summary": "Institutul Naţional de Sănătate Publică a transmis, luni, o serie de recomandări pentru perioada codului galben de ger şi avertisează populaţia să evite expunerea prelungită la frig.",
+      "publishedAt": "2026-01-12T11:37:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "60f8273f4f3ea6a5",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cozi pentru plata impozitelor majorate, la -10 grade. Contribuabilii au ajuns cu trei ore înainte de deschiderea ghișeelor",
+      "url": "https://stirileprotv.ro/stiri/actualitate/romanii-sufocati-de-taxe-cozi-imense-la-ghisee-in-intreaga-tara-zne-a-ingenuncheat-de-tot.html",
+      "summary": "Haos la direcțiile de impozite și taxe locale din toată țara. La Galați, oamenii au venit luni cu trei ore înainte de deschiderea ghișeelor.",
+      "publishedAt": "2026-01-12T11:29:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "fcd8b2593d9be854",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Iarna anului 1954, când România a fost îngropată sub zăpadă. „Vântul din februarie a fost de o intensitate extremă”",
+      "url": "https://stirileprotv.ro/stiri/actualitate/iarna-anului-1954-cand-romania-a-fost-ingropata-sub-zapada-zvantul-din-februarie-a-fost-de-o-intensitate-extrema.html",
+      "summary": "Temperaturile consemnate până în prezent, dar și episoadele de viscol, nu indică neapărat iarnă geroasă. În memoria colectivă au rămas însă iernile aspre, devenite repere istorice, precum cele din 1954, 1967, 1985, 1995 sau 2012.",
+      "publishedAt": "2026-01-12T11:27:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "76be996ea9324880",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "PSD, despre plagiatul lui Radu Marinescu: Se încearcă înlăturarea ministrului înainte de numirea șefilor de parchete",
+      "url": "https://stirileprotv.ro/stiri/politic/psd-despre-plagiatul-lui-radu-marinescu-se-incearca-inlaturarea-ministrului-inainte-de-numirea-sefilor-de-parchete.html",
+      "summary": "PSD anunţă că îl susţine pe ministrul, Justiţiei Radu Marinescu, şi „condamnă manevra josnică prin care acesta a fost acuzat de plagiat, imediat după ce a anunţat că numirile şefilor la parchetele de rang înalt nu vor fi de natură politică”.",
+      "publishedAt": "2026-01-12T11:25:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "017487ed2457ee75",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Planul Germaniei pentru a izola Rusia de unul dintre cei mai apropiați aliați. Primul pas, un acord de 8 miliarde de euro",
+      "url": "https://stirileprotv.ro/stiri/international/planul-germaniei-pentru-a-izola-rusia-de-unul-dintre-cei-mai-apropiati-aliati-primul-pas-un-acord-de-8-miliarde-de-euro.html",
+      "summary": "Germania vrea să coopereze mai strâns cu India în probleme de securitate pentru a reduce dependenţa acesteia de Rusia, a declarat cancelarul german Friedrich Merz, în India, alături de prim-ministrul indian Narendra Modi.",
+      "publishedAt": "2026-01-12T10:40:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "4c4f3a69969e5daa",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Trei membri ai consiliilor de administrație ale unor spitale, vizați de ANI pentru incompatibilități. Ce funcții au cumulat",
+      "url": "https://stirileprotv.ro/stiri/actualitate/trei-membri-ai-consiliilor-de-administratie-ale-unor-spitale-vizati-de-ani-pentru-incompatibilitati-ce-functii-au-cumulat.html",
+      "summary": "Inspectorii de integritate au identificat trei cazuri de încălcare a regimului incompatibilităţilor, privind persoane care au deţinut simultan funcţii în consilii de administraţie ale unor spitale şi în structuri de partid.",
+      "publishedAt": "2026-01-12T10:28:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "6bd33a2990c05db0",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Numărul bugetarilor a scăzut cu aproape 32.000 față de începutul anului 2025. Instituțiile cu cei mai mulți angajați",
+      "url": "https://stirileprotv.ro/stiri/actualitate/numarul-bugetarilor-a-scazut-cu-aproape-32-000-fata-de-inceputul-anului-institutiile-cu-cei-mai-multi-angajati.html",
+      "summary": "Numărul posturilor ocupate în instituţiile şi autorităţile publice din România era, în noiembrie 2025, de 1.280.562, cu 290 mai puţine comparativ cu luna precedentă, conform datelor publicate pe site-ul Ministerului Finanţelor (MF).",
+      "publishedAt": "2026-01-12T10:27:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "f5489a03487f8e7c",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Viața în cel mai friguros oraș, unde primele semne de degerături apar în 10 minute. Cum trăiesc locuitorii la -40 de grade",
+      "url": "https://stirileprotv.ro/stiri/international/viata-in-cel-mai-friguros-oras-unde-primele-semne-de-degeraturi-apar-in-10-minute-cum-traiesc-locuitorii-la-40-de-grade.html",
+      "summary": "Temperaturile scad regulat până la -40 de grade în acest oraș, iar pielea expusă poate prezenta primele semne de degerături în decurs de 10 minute.",
+      "publishedAt": "2026-01-12T10:23:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "aa44032430f27080",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "GALERIE FOTO cu cele mai spectaculoase apariții la Globurile de Aur 2026. Actrițele care au uimit publicul cu ținutele lor",
+      "url": "https://stirileprotv.ro/show-buzz/entertainment/galerie-foto-cu-cele-mai-spectaculoase-aparitii-la-globurile-de-aur-2026-actritele-care-au-uimit-publicul-cu-tinutele-lor.html",
+      "summary": "Vedetele de la Hollywood s-au adunat, duminică, la faimosul hotel Beverly Hilton pentru a participa la cea de-a 83-a ediție a premiilor Globurile de Aur 2026.",
+      "publishedAt": "2026-01-12T10:13:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "f2191148981f38f4",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ce pot face UE şi NATO pentru a-l opri pe Trump să preia Groenlanda. Experţii analizează opţiuni militare şi economice",
+      "url": "https://stirileprotv.ro/stiri/international/ce-poate-face-ue-si-nato-pentru-a-l-opri-pe-trump-sa-preia-groenlanda-expertii-analizeaza-optiuni-militare-si-economice.html",
+      "summary": "SUA a afirmat în repetate rânduri că trebuie să preia controlul asupra Groenlandei, justificându-şi pretenţia din „punctul de vedere al securităţii naţionale” şi avertizând că va „face ceva” în legătură cu teritoriul, „fie că le place sau nu”.",
+      "publishedAt": "2026-01-12T09:54:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "1844febe22cac4fb",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "De la promisiuni la asfalt: Autostrada Moldovei A7 ajunge la 70%, în acest an. Ce se întâmplă, dincolo de Pașcani",
+      "url": "https://stirileprotv.ro/stiri/actualitate/de-la-promisiuni-la-asfalt-autostrada-moldovei-a7-ajunge-la-70-in-acest-an-ce-se-intampla-dincolo-de-pascani.html",
+      "summary": "Până la finalul acestui an, urmează să fie inaugurați încă 123 de kilometri din Autostrada A7.",
+      "publishedAt": "2026-01-12T09:51:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "1216cc17555a3d8c",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Filmul PRO a fost lider de audiență.\r\nRomânii și-au încheiat săptămâna cu o seară plină de acțiune și suspans",
+      "url": "https://stirileprotv.ro/divers/aseara-filmul-pro-a-fost-lider-de-audienta-romanii-si-au-incheiat-saptamana-cu-o-seara-plina-de-actiune-si-suspans.html",
+      "summary": "Aseară, PRO TV a fost lider de audiență cu Filmul PRO. Românii s-au bucurat de o seară de film, plină de acțiune, suspans și personaje memorabile.",
+      "publishedAt": "2026-01-12T09:51:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "1fa54daa6d87be87",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "FOTO. Unele vedete de la Hollywood au protestat față de agenții ICE la Globurile de Aur 2026. Cum a apărut Ariana Grande",
+      "url": "https://stirileprotv.ro/show-buzz/entertainment/fii-bun-cum-au-protestat-unele-vedete-de-la-hollywood-fata-de-agentii-ice-la-globurile-de-aur-2026.html",
+      "summary": "Câteva vedete prezente la gala premiilor Globul de Aur 2026 au purtat insigne cu mesajele „Ice Out” şi „Be Good”, în memoria lui Renée Macklin Good, care a fost ucisă de agenții ICE în Minneapolis, scrie Variety, potrivit News.ro.",
+      "publishedAt": "2026-01-12T09:38:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "fbba70a45b899e3d",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Expert: România a transformat plafonarea energiei într-un instrument bugetar. Costurile suplimentare generate de măsură",
+      "url": "https://stirileprotv.ro/stiri/financiar/expert-romania-a-transformat-plafonarea-energiei-intr-un-instrument-bugetar-costurile-suplimentare-generate-de-masura.html",
+      "summary": "Plafonarea prețurilor la energie și gaze, introdusă inițial ca o măsură de protecție pentru populație în timpul crizei energetice din 2022 – 2023, a încetat să mai funcționeze ca un instrument social real.",
+      "publishedAt": "2026-01-12T09:36:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "0dc9a22a84df9ae0",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Iranul îi transmite lui Donald Trump că „nu caută războiul” cu SUA, dar că este „perfect pregătit” pentru asta",
+      "url": "https://stirileprotv.ro/stiri/international/iranul-ii-transmite-lui-donald-trump-ca-znu-cauta-razboiul-cu-sua-dar-ca-este-zperfect-pregatit-pentru-asta.html",
+      "summary": "Iranul este pe deplin pregătit pentru război, dar şi pentru negocieri, a declarat luni ministrul iranian de externe Abbas Araghchi. Reacția sa vine după ce Donald Trump a amenințat că va interveni militar pentru a salva protestatarii.",
+      "publishedAt": "2026-01-12T09:22:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "fa73267d13bf9486",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Record de scumpiri în Bulgaria după trecerea la euro. Pâinea și produsele de bază aproape s-au dublat în doar 48 de ore",
+      "url": "https://stirileprotv.ro/stiri/international/record-de-scumpiri-in-bulgaria-dupa-trecerea-la-euro-painea-si-produsele-de-baza-aproape-s-au-dublat-in-doar-48-de-ore.html",
+      "summary": "Introducerea monedei euro în Bulgaria a dus la creșteri drastice a prețurilor. Pâinea, produsele de bază și taxele pe parcare aproape s-au dublat în doar 48 de ore.",
+      "publishedAt": "2026-01-12T09:03:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "e9d6ce8c264aac95",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ger cumplit în toată țara și ninsori în următoarele zile. Temperaturile scad până la -19 grade. ANM a emis cod galben",
+      "url": "https://stirileprotv.ro/stiri/vremea/vreme-extrem-de-rece-in-romania-in-noaptea-de-luni-spre-marti-se-vor-intregistra-chiar-si-19-grade-celsius-harta.html",
+      "summary": "Meteorologii au emis mai multe atenționări de Cod Galben pentru zilele următoare. Vom avea parte de ger extrem, temperaturi deosebit de scăzute și ninsori locale.",
+      "publishedAt": "2026-01-12T09:14:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "25eded122705254b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Secretarul general al Guvernului: ”Îmi exprim îngrijorarea cu privire la acordul comercial cu Mercosur. Ce e de făcut?”",
+      "url": "https://stirileprotv.ro/stiri/politic/secretarul-general-al-guvernului-imi-exprim-ingrijorarea-cu-privire-la-acordul-comercial-cu-mercosur-ce-e-de-facut.html",
+      "summary": "Secretarul general al Guvernului, Ștefan Radu Oprea (PSD), susține că este ”îngrijorat” cu privire la Acordul Comercial UE - Mercosur, deoarece, în opinia sa, România va obține în urma semnării acestui acord ”doar cu amenițarile asupra fermierilor”.",
+      "publishedAt": "2026-01-12T08:56:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "cbc3fd5f67fb06f5",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Titluri de stat. Prima ediţie TEZAUR din 2026 oferă dobânzi neimpozabile de până la 7,40% pentru persoanele fizice",
+      "url": "https://stirileprotv.ro/stiri/financiar/titluri-de-stat-prima-editie-tezaur-din-2026-ofera-dobanzi-neimpozabile-de-pana-la-7-40-pentru-persoanele-fizice.html",
+      "summary": "Ministerul Finanţelor a lansat, luni, prima ediţie din acest an a Programului de titluri de stat TEZAUR pentru persoanele fizice, potrivit unui comunicat al Ministerului Finanţelor.",
+      "publishedAt": "2026-01-12T08:48:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "34a5b8d8bfe914c2",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Aeroporturile se plâng de noile norme UE de frontieră. Călătorii din țări terțe trebuie să-și înregistreze amprenta și chipul",
+      "url": "https://stirileprotv.ro/stiri/international/aeroporturile-se-plang-de-noile-norme-ue-de-frontiera-calatorii-din-tari-terte-trebuie-sa-si-inregistreze-amprenta-si-chipul.html",
+      "summary": "O nouă regulă a UE care impune ca o proporţie mai mare de pasageri să treacă prin controale electronice de identitate la frontieră riscă să „provoace un disconfort semnificativ călătorilor”.",
+      "publishedAt": "2026-01-12T08:47:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "30cb005b0c740ace",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ședință la Palatul Victoria. Ilie Bolojan discută cu vicepremierii bugetul, reforma administrației și a companiilor de stat",
+      "url": "https://stirileprotv.ro/stiri/politic/sedinta-la-palatul-victoria-ilie-bolojan-discuta-cu-vicepremierii-bugetul-reforma-administratiei-si-a-companiilor-de-stat.html",
+      "summary": "La Palatul Victoria are loc astăzi, începând cu ora 12:00, o ședință de lucru a prim-ministrului Ilie Bolojan cu viceprim-miniștrii. Întâlnirea are ca scop discutarea priorităților guvernamentale pentru perioada următoare.",
+      "publishedAt": "2026-01-12T08:26:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "c894b0b96adabc29",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Rusia înăsprește controlul asupra avortului pentru a crește natalitatea. „Dacă bărbatul decide, femeia va naște”",
+      "url": "https://stirileprotv.ro/stiri/international/rusia-inaspreste-controlul-asupra-avortului-pentru-a-creste-natalitatea-zdaca-barbatul-decide-femeia-va-naste.html",
+      "summary": "Campania Rusiei de creștere a natalității a devenit mult mai agresivă în ultimul an. Statul a intensificat presiunea asupra femeilor și fetelor, îngreunând accesul la avort și promovând sarcina ca normă socială, nu ca alegere personală.",
+      "publishedAt": "2026-01-12T08:16:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "825511d45996f31b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Roboții umanoizi, tema principală la CES în Las Vegas. Care a fost cea mai interesantă tehnologie prezentată",
+      "url": "https://stirileprotv.ro/stiri/ilikeit/robotii-umanoizi-tema-principala-la-ces-in-las-vegas-care-a-fost-cea-mai-interesanta-tehnologie-prezentata.html",
+      "summary": "Tema acestui CES din Las Vegas a fost roboții umanoizi și încă un termen de marketing care va fi exploatat anul acesta este „AI Fizics”.",
+      "publishedAt": "2026-01-12T08:12:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "0266f9a482d4a49b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "O fostă fabrică de bere din Turda, scoasă la vânzare pentru aproape trei milioane de euro. Are o vechime de peste două secole",
+      "url": "https://stirileprotv.ro/divers/o-fosta-fabrica-de-bere-din-turda-scoasa-la-vanzare-pentru-aproape-trei-milioane-de-euro-are-o-vechime-de-peste-doua-secole.html",
+      "summary": "O fostă fabrică de bere din Turda a fost scoasă la vânzare pentru aproape trei milioane de euro. Istoria ei se întinde pe mai bine de două secole.",
+      "publishedAt": "2026-01-12T08:03:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "348ed342bc6d4137",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cât plătea o gospodărie din România cu venit mediu pe taxe și impozite, înainte de majorări",
+      "url": "https://stirileprotv.ro/stiri/financiar/veniturile-romanilor-au-scazut-pe-trimestrul-iii-cheltuielile-absorb-aproape-86-din-banii-familiei.html",
+      "summary": "Veniturile totale medii lunare ale gospodăriilor din România au fost în trimestrul III din 2025 la 9.420 lei pe gospodărie, respectiv 3.789 lei pe persoană, în scădere cu 0,9% față de trimestrul II al anului.",
+      "publishedAt": "2026-01-12T07:39:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "98e2aaeace94287c",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Câștiguri record la Pilonul II în 2025. Câți bani s-au strâns în contul unui român care a cotizat din 2008",
+      "url": "https://stirileprotv.ro/stiri/ibani/castiguri-record-la-pilonul-ii-in-2025-cati-bani-s-au-strans-in-contul-unui-roman-care-a-cotizat-din-2008.html",
+      "summary": "În 2025, Pilonul II a avut cel mai bun an de când există. Fondurile de pensii private obligatorii au obținut un randament mediu de aproape 20%.",
+      "publishedAt": "2026-01-12T07:33:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "7ac72996421be4ee",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Persoanele cu risc crescut sunt îndemnate să se vaccineze antigripal. Medicii avertizează asupra formelor severe",
+      "url": "https://stirileprotv.ro/stiri/sanatate/persoanele-cu-risc-crescut-sunt-indemnate-sa-se-vaccineze-antigripal-medicii-avertizeaza-asupra-formelor-severe.html",
+      "summary": "Persoanele eligibile pentru vaccinarea antigripală, în special cele cu risc crescut de boală severă, ar trebui să se vaccineze fără întârziere, recomandă specialiştii din cadrul Institutului Naţional de Sănătate Publică (INSP).",
+      "publishedAt": "2026-01-12T07:17:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "a5f5e2fba739464e",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cum vrea Guvernul să facă „curățenie în politica de proprietate a statului”. Gheorghiu: Sunt circa 185 de companii inactive",
+      "url": "https://stirileprotv.ro/stiri/politic/cum-ar-vrea-guvernul-sa-faca-zcuratenie-in-politica-de-proprietate-a-statului-oana-gheorghiu-zstatul-trebuie-sa-decida.html",
+      "summary": "Vicepremierul Oana Gheorghiu a declarat, duminică, că ceea ce îşi propune Guvernul este să facă curăţenie în politica de proprietate a statului.",
+      "publishedAt": "2026-01-12T07:02:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "c6a17e190e331a22",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Medicamentele de slăbit schimbă coșurile de cumpărături ale britanicilor. Retailerii resimt deja impactul în vânzări",
+      "url": "https://stirileprotv.ro/stiri/international/medicamentele-de-slabit-schimba-cosurile-de-cumparaturi-ale-britanicilor-retailerii-resimt-deja-impactul-in-vanzari.html",
+      "summary": "Marile lanţuri de retail alimentar din Marea Britanie încep să observe schimbări vizibile în comportamentul de cumpărare, pe fondul popularităţii tot mai mari a medicamentelor care reduc apetitul, relatează Reuters.",
+      "publishedAt": "2026-01-12T06:58:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "23c55a750e0fa611",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Când va fi semnat acordul UE-Mercosur. Pașii care urmează după vizita Ursulei von der Leyen în America de Sud",
+      "url": "https://stirileprotv.ro/stiri/international/cand-va-fi-semnat-acordul-ue-mercosur-pasii-care-urmeaza-dupa-vizita-ursulei-von-der-leyen-in-america-de-sud.html",
+      "summary": "Preşedinta Comisiei Europene, Ursula von der Leyen, va semna sâmbătă la Asuncion, capitala Paraguayului, acordul de liber schimb cu Mercosur, a anunţat Bruxellesul duminică, relatează AFP.",
+      "publishedAt": "2026-01-12T06:53:00.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.287Z"
+    },
+    {
+      "id": "934a7e65e7609471",
+      "sourceId": "europa-libera",
+      "sourceName": "Europa Liberă",
+      "title": "Vicepremierul Oana Gheorghiu anunță că în 2026 începe reforma companiilor de stat. „Pierderile acumulate sunt de 14 miliarde de lei”",
+      "url": "https://romania.europalibera.org/a/vicepremierul-oana-gheorghiu-anunta-ca-in-2026-incep-reforma-companiilor-de-stat-pierderile-acumulate-sunt-de-14-miliarde-de-lei-/33645916.html",
+      "summary": "Vicepremierul Oana Gheorgiu a declarat, că reforma companiilor de stat a început deja, odată cu activarea Agenției pentru Monitorizarea și Evaluarea Performanței Întreprinderilor Publice (AMEPIP).",
+      "publishedAt": "2026-01-12T10:38:39.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.250Z"
+    },
+    {
+      "id": "8ce28f064780d863",
+      "sourceId": "europa-libera",
+      "sourceName": "Europa Liberă",
+      "title": "Noi atacuri aeriene rusești lovesc Odesa, Dnipropetrovsk, Jitomir și Kiev. Infrastructura energetică, grav afectată",
+      "url": "https://romania.europalibera.org/a/noi-atacuri-aeriene-rusesti-lovesc-odesa-dnipropetrovsk-jitomir-si-kiev-infrastructura-energetica-grav-afectata/33645874.html",
+      "summary": "Forțele armate ruse au intensificat atacurile cu drone și tiruri de artilerie asupra teritoriului ucrainean în noapte de 11 spre 12 ianuarie, provocând pagube semnificative infrastructurii civile și rănind civili.",
+      "publishedAt": "2026-01-12T10:08:55.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.250Z"
+    },
+    {
+      "id": "e8c2c1180dfdb01c",
+      "sourceId": "europa-libera",
+      "sourceName": "Europa Liberă",
+      "title": "PressOne: Ministrul Justiției, Radu Marinescu, a plagiat peste 55% din lucrarea sa de doctorat. PSD îl susține pe Marinescu „fără rezerve”",
+      "url": "https://romania.europalibera.org/a/pressone-ministrul-justitiei-radu-marinescu-a-plagiat-peste-50-din-lucrarea-sa-de-doctorat/33645780.html",
+      "summary": "O analiză publicată de PressOne, semnată de jurnalista Emilia Șercan, arată că peste 56% din lucrarea de doctorat a ministrului Justiției, Radu Marinescu, conține texte preluate din alte surse, fără respectarea regulilor academice. Astfel, aproximativ 140 de pagini din totalul de 247 ale tezei intitulate „Sistemul mijloacelor de probă în procesul civil” ar conține texte plagiate.\r\nRadu Marinescu a obținut titlul de doctor în Drept în anul 2009, la Universitatea din Craiova, sub coordonarea...",
+      "publishedAt": "2026-01-12T07:30:22.000Z",
+      "fetchedAt": "2026-01-12T12:57:45.250Z"
     }
   ],
-  "lastUpdated": "2026-01-12T06:44:15.961Z"
+  "lastUpdated": "2026-01-12T12:57:54.423Z"
 }
