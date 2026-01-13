@@ -17,6 +17,7 @@
     "email:test": "npx tsx scripts/send-newsletter.ts --test",
     "email:send": "npx tsx scripts/send-newsletter.ts --send",
     "notify-draft": "npx tsx scripts/notify-draft.ts",
+    "alert-missing-draft": "npx tsx scripts/alert-missing-draft.ts",
     "test:pipeline": "npx tsx scripts/test/run-pipeline.ts",
     "test:pipeline:refresh": "npx tsx scripts/test/run-pipeline.ts --refresh"
   },
