@@ -1,0 +1,60 @@
+name: Send Newsletter
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'  # Monday at 08:00 UTC (10:00 Romania)
+  workflow_dispatch:
+    inputs:
+      week:
+        description: 'Week ID (e.g., 2026-W02). Leave empty for current week.'
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+
+      - name: Determine week ID
+        id: week
+        run: |
+          if [ -n "${{ inputs.week }}" ]; then
+            echo "id=${{ inputs.week }}" >> $GITHUB_OUTPUT
+          else
+            # Calculate current ISO week
+            WEEK_ID=$(date -u +%G-W%V)
+            echo "id=$WEEK_ID" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check draft exists
+        id: check
+        run: |
+          DRAFT_PATH="data/drafts/${{ steps.week.outputs.id }}.json"
+          if [ -f "$DRAFT_PATH" ]; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Send newsletter
+        if: steps.check.outputs.exists == 'true'
+        run: npm run email:send -- --week ${{ steps.week.outputs.id }} --automated
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_SEGMENT_ID: ${{ secrets.RESEND_SEGMENT_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Alert on missing draft
+        if: steps.check.outputs.exists == 'false'
+        run: npm run alert-missing-draft -- ${{ steps.week.outputs.id }} "Draft file not found"
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
