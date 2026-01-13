@@ -18,6 +18,18 @@ npm run build       # Build for production
 npm run preview     # Preview production build
 npm run check       # TypeScript check
 
+# Email Development & Testing (requires RESEND_API_KEY, TEST_EMAIL env vars)
+npm run email:dev                           # React Email dev server (localhost:3001)
+npm run email:preview -- --week 2026-W02    # Preview newsletter HTML in browser
+npm run email:test -- --week 2026-W02       # Send test newsletter to TEST_EMAIL
+npm run email:send -- --week 2026-W02 --confirm  # Send to all subscribers
+npx tsx scripts/send-welcome-test.ts        # Send test welcome email to TEST_EMAIL
+
+# Newsletter Pipeline
+npm run ingest-news      # Fetch news from RSS feeds
+npm run generate-draft   # Generate newsletter draft with AI
+npm run publish-issue    # Publish issue to content/issues/
+
 # No test framework configured yet
 ```
 
@@ -34,6 +46,15 @@ src/
 
 content/
 └── issues/         # Newsletter markdown files
+
+data/
+└── drafts/         # Newsletter draft JSON files (YYYY-WXX.json)
+
+emails/
+├── components/     # Reusable React Email components (Header, Footer, etc.)
+├── newsletter.tsx  # Newsletter email template
+├── welcome.tsx     # Welcome email template
+└── utils/          # Email utilities (generate-copy.ts)
 
 docs/               # Plans, specs, and documentation
 ├── PLAN.md                     # Main implementation plan
