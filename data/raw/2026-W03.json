@@ -5590,7 +5590,387 @@
       "summary": "Cel mai devreme din februarie, românii se vor putea înscrie voluntar să facă armata, iar într-o primă etapă  vor fi înscriși o mie de militari voluntari, a declarat  ministrul Apărării, Radu Miruţă, la Antena 3.",
       "publishedAt": "2026-01-12T19:36:16.000Z",
       "fetchedAt": "2026-01-13T02:01:14.002Z"
+    },
+    {
+      "id": "9ac17cb4ed410102",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "SUA au atacat o ambarcațiune cu un avion secret care arăta ca unul civil. De ce este „perfidia” crimă de război",
+      "url": "https://hotnews.ro/sua-au-atacat-o-ambarcatiune-cu-un-avion-secret-care-arata-ca-unul-civil-de-ce-este-perfidia-crima-de-razboi-2148840",
+      "summary": "Armata americană a folosit un avion secret deghizat în aeronavă civilă în timpul primului său atac împotriva unei nave suspectate de trafic de droguri, care a făcut 11 morți în septembrie, notează The New York…",
+      "publishedAt": "2026-01-13T06:25:53.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.986Z"
+    },
+    {
+      "id": "bfcdcf7fbe7def44",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Un fost pilot al Marinei SUA și astronaut, luat la țintă de administraţia Trump, a depus plângere împotriva șefului Pentagonului",
+      "url": "https://hotnews.ro/un-fost-pilot-al-marinei-sua-si-astronaut-luat-la-tinta-de-administratia-trump-a-depus-plangere-impotriva-sefului-pentagonului-2148834",
+      "summary": "Senatorul democrat Mark Kelly, fost pilot de vânătoare al Marinei SUA, a anunțat luni că a depus plângere împotriva secretarului american al apărării, Pete Hegseth, după ce acesta a inițiat proceduri disciplinare împotriva lui pentru…",
+      "publishedAt": "2026-01-13T06:25:12.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.986Z"
+    },
+    {
+      "id": "de7b4284ca130083",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Unul dintre oamenii de bază ai lui Putin susține că Groenlanda ar putea vota să se alăture Rusiei: „Și atunci s-a terminat”",
+      "url": "https://hotnews.ro/unul-dintre-oamenii-de-baza-ai-lui-putin-sustine-ca-groenlanda-ar-putea-vota-sa-se-alature-rusiei-si-atunci-s-a-terminat-2148823",
+      "summary": "Vicepreședintele Consiliului de Securitate al Rusiei, Dmitri Medvedev, a susținut că locuitorii Groenlandei ar putea vota pentru aderarea la Rusia dacă președintele american Donald Trump nu va acționa rapid pentru a asigura controlul asupra insulei…",
+      "publishedAt": "2026-01-13T05:42:31.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.986Z"
+    },
+    {
+      "id": "fa67ddcc1519f553",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Cea mai rece noapte de la începutul acestei ierni. Până la cât au scăzut temperaturile / Când scăpăm de valul de ger",
+      "url": "https://hotnews.ro/cea-mai-rece-noapte-de-la-inceputul-acestei-ierni-pana-la-cat-au-scazut-temperaturile-si-unde-a-fost-cea-mai-friguroasa-dimineata-2148818",
+      "summary": "Toată țara se află până astăzi, la ora 10.00, sub alertă cod galben de ger, iar noaptea trecută a fost cea mai geroasă de la începutul acestui sezon de iarnă, potrivit meteorologilor. La ora 07.00 dimineața, în…",
+      "publishedAt": "2026-01-13T05:42:15.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.986Z"
+    },
+    {
+      "id": "357a780028b8f369",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Răsturnare de situație în cazul unui profesor acuzat de abuz sexual asupra unor eleve",
+      "url": "https://hotnews.ro/rasturnare-de-situatie-in-cazul-unui-profesor-acuzat-de-abuz-sexual-asupra-unor-eleve-2148435",
+      "summary": "Dosarul penal în care un profesor de matematică din Turceni este acuzat de abuz sexual asupra unor eleve minore a fost redeschis, după publicarea unei investigații Snoop. Cazul fusese clasat de procurori la finalul anului…",
+      "publishedAt": "2026-01-13T05:15:27.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.986Z"
+    },
+    {
+      "id": "d383c4bbc1688a23",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Mărirea impozitelor pe proprietate: episodul ascuns pe care îl știu toate partidele, dar preferă să nu mai vorbească despre el",
+      "url": "https://hotnews.ro/marirea-impozitelor-pe-proprietate-episodul-ascuns-pe-care-il-stiu-toate-partidele-dar-prefera-sa-nu-mai-vorbeasca-despre-el-2148315",
+      "summary": "Un moment bântuie politica la vârf a României, dar puțină lume vrea să pună degetul pe el, pentru că atinge trei partide de la guvernare. Adevărul e însă că majorarea cu 50% a impozitelor pe…",
+      "publishedAt": "2026-01-13T05:11:36.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.986Z"
+    },
+    {
+      "id": "3a0b1e9718b81e22",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Oprirea emisiunii lui Măruță de la ProTV și a zecilor de oameni din spatele lui: un indiciu despre epoca Inteligenței Artificiale în România – nu doar în industria de televiziune",
+      "url": "https://hotnews.ro/oprirea-emisiunii-lui-maruta-de-la-protv-si-a-zecilor-de-oameni-din-spatele-lui-un-indiciu-despre-epoca-inteligentei-artificiale-in-romania-nu-doar-in-industria-de-televiziune-2148810",
+      "summary": "10 lucruri nu doar despre „La Măruță”, ci și despre ce se pot aștepta oamenii cu privire la schimbările locurilor de muncă din multe profesii, în noua economie.  Cum arată câteva fapte mai puțin cunoscute…",
+      "publishedAt": "2026-01-13T05:10:34.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.986Z"
+    },
+    {
+      "id": "e8ea52ed99ebc458",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Liderul din Corsica ucis la înmormântarea mamei sale a jucat un rol foarte important în viața unui român cunoscut în toată lumea",
+      "url": "https://hotnews.ro/liderul-din-corsica-ucis-la-inmormantarea-mamei-sale-a-jucat-un-rol-foarte-important-in-viata-unui-roman-cunoscut-in-toata-lumea-2148811",
+      "summary": "Alain Orsoni (71 de ani), fostul președinte de la AC Ajaccio, a fost asasinat în Franța, chiar la înmormântarea mamei sale. Citește mai mult pe GOLAZO.ro",
+      "publishedAt": "2026-01-13T05:09:10.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.986Z"
+    },
+    {
+      "id": "f08a98417fb1f151",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Val de super-gripă K în România: Numărul de cazuri, de 4 ori mai mare decât în ultimii ani. Doi medici explică fenomenul care face ca și cei vaccinați să se îmbolnăvească: „Se numește drift”",
+      "url": "https://hotnews.ro/val-de-super-gripa-k-in-romania-numarul-de-cazuri-de-4-ori-mai-mare-decat-in-ultimii-ani-doi-medici-explica-fenomenul-care-face-ca-si-cei-vaccinati-sa-se-imbolnaveasca-se-numeste-drift-2148579",
+      "summary": "Sentimentul din ultimele săptămâni că „toți suntem răciți” are justificare în realitatea că super-gripa K, tulpina de virus gripal cea mai răspândită în acest sezon în Europa, a ajuns și în România. E contagioasă și…",
+      "publishedAt": "2026-01-13T04:57:30.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.986Z"
+    },
+    {
+      "id": "7e75f8f77002c779",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "ULTIMA ORĂ Americanii închid în România o fabrică, peste 1.000 de angajați vor fi concediați",
+      "url": "https://hotnews.ro/ultima-ora-americanii-inchid-in-romania-o-fabrica-peste-1-000-de-angajati-vor-fi-concediati-2148800",
+      "summary": "Producătorul american de scaune pentru automobile Adient plc., cel mai mare din lume pe această nișă, a decis închiderea fabricii de la Ploiești și disponibilizarea angajaților. Citește mai mult pe Profit.ro Foto: DreamsTime.com",
+      "publishedAt": "2026-01-13T04:52:00.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.986Z"
+    },
+    {
+      "id": "54db873362986f5b",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Un senator american dă în judecată Departamentul Apărării al SUA pentru „represalii punitive”",
+      "url": "https://www.mediafax.ro/justitie/un-senator-american-da-in-judecata-departamentul-apararii-al-sua-pentru-represalii-punitive-23670316",
+      "summary": "Senatorul Mark Kelly dă în judecată Pentagonul și conducerea sa, susținând că este ținta unor represalii politice care îi încalcă libertatea de exprimare.",
+      "publishedAt": "2026-01-13T06:39:04.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.930Z"
+    },
+    {
+      "id": "ebe5388bedde779d",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Vești proaste. Se scumpesc vacanțele în una dintre cele mai populare zone turistice din Europa",
+      "url": "https://www.mediafax.ro/life-entertaiment/vesti-proaste-se-scumpesc-vacantele-in-una-dintre-cele-mai-populare-zone-turistice-din-europa-23670320",
+      "summary": "Vacanțele în una dintre cele mai populare zone turistice din Europa ar putea fi mai scumpe anul acesta. Avertismentul vizează Mallorca și vine de la reprezentanții industriei turismului. De vină este turismul excesiv, cele mai multe locuri de cazare pentru vara următoare fiind deja rezervate.",
+      "publishedAt": "2026-01-13T06:37:12.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.930Z"
+    },
+    {
+      "id": "27fb4dd754c98f3c",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Produsul revoluționar de la Apple care s-a transformat într-un eșec: De ce nu au avut succes ochelarii Vision Pro",
+      "url": "https://www.mediafax.ro/externe/produsul-revolutionar-de-la-apple-care-s-a-transformat-intr-un-esec-de-ce-nu-au-avut-succes-ochelarii-vision-pro-23670313",
+      "summary": "La aproape doi ani de la lansare, Apple Vision Pro - prezentat inițial ca unul dintre cele mai îndrăznețe proiecte din istoria companiei - pare să fi fost un pariu nereușit. Datele din Financial Times arată că vânzările sunt modeste, interesul din partea consumatorilor este limitat, iar tehnologia care ar fi trebuit să marcheze începutul unei noi etape pentru Apple nu a reușit să câștige încrederea pieței, scrie Il Post.",
+      "publishedAt": "2026-01-13T06:19:33.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.930Z"
+    },
+    {
+      "id": "9a93b549ecd8950a",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Criza din Iran zguduie marile puteri. Ce ar însemna căderea regimului pentru Putin, Trump și Orientul Mijlociu",
+      "url": "https://www.mediafax.ro/externe/criza-din-iran-zguduie-marile-puteri-ce-ar-insemna-caderea-regimului-pentru-putin-trump-si-orientul-mijlociu-23670309",
+      "summary": "Iranul traversează una dintre cele mai grave crize interne de la Revoluția Islamică din 1979, pe fondul unor proteste masive care se desfășoară de peste două săptămâni în Teheran și în zeci de orașe din întreaga țară.",
+      "publishedAt": "2026-01-13T05:53:54.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.930Z"
+    },
+    {
+      "id": "37b0b96a84b59855",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Vești proaste. Meteorologii anunță că perioada cu vreme foarte rece se prelungește, în unele zone ar putea ninge",
+      "url": "https://www.mediafax.ro/meteo/vesti-proaste-meteorologii-anunta-ca-perioada-cu-vreme-foarte-rece-se-prelungeste-in-unele-zone-ar-putea-ninge-23670299",
+      "summary": "Administrația Națională de Meteorologie anunță că perioada cu vreme foarte rece se va prelungi până spre mijlocul lunii februarie. De asemenea, în unele zone ar putea să ningă, transmite ANM.",
+      "publishedAt": "2026-01-13T05:45:10.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.930Z"
+    },
+    {
+      "id": "b8d9507553da75fe",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Atac masiv al Rusiei cu rachete asupra Kievului și Harkovului, cel mai intens din acest an",
+      "url": "https://www.mediafax.ro/social/atac-masiv-al-rusiei-cu-rachete-asupra-kievului-si-harkovului-cel-mai-intens-din-acest-an-23670298",
+      "summary": "Rusia a lansat marți dimineață cel mai puternic atac cu rachete din acest an asupra Kievului și Harkovului, provocând victime în rândul populației.",
+      "publishedAt": "2026-01-13T05:43:40.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.930Z"
+    },
+    {
+      "id": "52bde1ce5ae6c98b",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Lidera opoziției din Venezuela se va întâlni cu Trump la Casa Albă",
+      "url": "https://www.mediafax.ro/externe/lidera-opozitiei-din-venezuela-se-va-intalni-cu-trump-la-casa-alba-23670295",
+      "summary": "Lidera opoziției din Venezuela, María Corina Machado, urmează să se întâlnească joi cu președintele american Donald Trump, informează CNN.",
+      "publishedAt": "2026-01-13T05:42:40.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.930Z"
+    },
+    {
+      "id": "dffc900d76857ee9",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Șeful armatei dezvăluie că Marea Britanie nu are niciun plan de apărare a regatului în caz de război",
+      "url": "https://www.mediafax.ro/externe/seful-armatei-dezvaluie-ca-marea-britanie-nu-are-niciun-plan-de-aparare-a-regatului-in-caz-de-razboi-23670293",
+      "summary": "Șeful armatei britanice a dezvăluit că Marea Britanie nu are niciun plan de apărare a regatului în caz de război. De asemenea, britanicii nu au un plan privind mobilizarea cadrelor medicale în cazul unui conflict, iar armata nu deține fondurile necesare pentru achiziția de echipamente.",
+      "publishedAt": "2026-01-13T05:30:04.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.930Z"
+    },
+    {
+      "id": "e24cb4b965900d0b",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Ucraina depune eforturi pentru a restabili alimentarea cu energie electrică și căldură",
+      "url": "https://www.mediafax.ro/externe/ucraina-depune-eforturi-pentru-a-restabili-alimentarea-cu-energie-electrica-si-caldura-23670270",
+      "summary": "Echipele de urgență din Ucraina au lucrat din greu luni pentru a restabili căldura și energia electrică pentru locuitorii asediați din Kiev, la mai mult de trei zile după atacurile rusești asupra obiectivelor energetice, iar președintele Volodimir Zelenski a avertizat că noi atacuri aeriene ar putea fi iminent.",
+      "publishedAt": "2026-01-13T04:00:24.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.930Z"
+    },
+    {
+      "id": "eb290b602229f410",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Legiuitorii americani planifică o vizită în Danemarca. Trump amenință cu preluarea Groenlandei",
+      "url": "https://www.mediafax.ro/externe/legiuitorii-americani-planifica-o-vizita-in-danemarca-trump-ameninta-cu-preluarea-groenlandei-23670268",
+      "summary": "Un grup bipartid de legiuitori americani va vizita Danemarca săptămâna aceasta, în contextul în care președintele Donald Trump amenință cu preluarea Groenlandei, o parte autonomă a regatului Danemarcei care găzduiește o bază aeriană americană.",
+      "publishedAt": "2026-01-13T03:32:42.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.930Z"
+    },
+    {
+      "id": "02aff65e0d51cfc5",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Ministrul german de Externe declară, după întâlnirea cu omologul american, că nu a primit “nicio indicație că SUA iau în serios” folosirea forței armate pentru preluarea controlului asupra Groenlandei.",
+      "url": "https://www.biziday.ro/344777-2/",
+      "summary": "Johann Wadephul, ministrul german de Externe, s-a întâlnit luni cu omologul american, Marco Rubio. La finalul discuției, a declarat, despre posibilitatea ca SUA să preia controlul asupra Groenlandei, că “nu am nicio indicație că acest lucru este luat în considerare serios. Mai degrabă, cred că există un interes comun în abordarea problemelor de securitate care […]",
+      "publishedAt": "2026-01-13T06:40:09.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.264Z"
+    },
+    {
+      "id": "9a6945e8b9cd3fac",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Donald Trump intensifică presiunile asupra Iranului. Anunță că SUA vor aplica, “cu efect imediat”, un tarif de 25% pentru importurile din țările care fac comerț cu Iranul. Americanii analizează și alte răspunsuri la reprimarea protestelor.",
+      "url": "https://www.biziday.ro/344772-2/",
+      "summary": "Președintele Statelor Unite a scris pe rețeaua sa socială, Truth Social, că “orice țară care face afaceri cu Iranul va plăti un tarif de 25% pentru toate afacerile cu Statele Unite”. Trump a spus că tariful are efect imediat. Reuters pune în vedere că țara din Orientul Mijlociu, care este membră a grupului producătorilor de […]",
+      "publishedAt": "2026-01-13T06:06:09.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.264Z"
+    },
+    {
+      "id": "3ad44e2abaa910c8",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Vremea azi, 13 ianuarie 2026. Temperaturi cu minus, ninsori și viscol în aproape toată țara",
+      "url": "https://stirileprotv.ro/stiri/vremea/vremea-azi-13-ianuarie-2026-temperaturi-cu-minus-ninsori-si-viscol-in-aproape-toata-tara.html",
+      "summary": "Marți avem o dimineață geroasă. O să ningă în cea mai mare parte a țării – mai consistent în zona intracarpatică și în regiunile montane, pe unde stratul de zăpadă continuă să crească.",
+      "publishedAt": "2026-01-13T06:33:00.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.601Z"
+    },
+    {
+      "id": "95441ded02a730e0",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Proiect de lege depus în Congresul SUA pentru anexarea Groenlandei. Regiunea autonomă ar putea fi deveni al 51-lea stat",
+      "url": "https://stirileprotv.ro/stiri/international/proiect-de-lege-depus-in-congresul-sua-pentru-anexarea-groenlandei-regiunea-autonoma-ar-putea-fi-deveni-al-51-lea-stat.html",
+      "summary": "Un proiect de lege care vizează transformarea Groenlandei în cel de-al 51-lea stat al SUA, în urma recentei inițiative a președintelui Trump de a achiziționa teritoriul danez, a fost depus deja în Congres.",
+      "publishedAt": "2026-01-13T06:31:00.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.601Z"
+    },
+    {
+      "id": "94bc241504e32116",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Gerul năprasnic a înghețat toată România. Temperaturile au scăzut până la -19 grade, iar frigul intens a făcut victime",
+      "url": "https://stirileprotv.ro/stiri/actualitate/gerul-a-paralizat-romania-temperaturile-au-scazut-pana-la-19-grade-si-frigul-intens-a-facut-victime.html",
+      "summary": "Gerul mușcă necruțător toată România. Râurile sunt bocnă, la fel și multe șosele. De luni, de la ora 20, este în vigoare un Cod galben de ger în toată țara, valabil până la ora 10. Temperaturile au scăzut până la -19 grade Celsius.",
+      "publishedAt": "2026-01-13T06:21:00.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.601Z"
+    },
+    {
+      "id": "9e7f0b246973fcb6",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Vreme mai rece decât normalul în următoarele patru săptămâni. Zonele în care vor fi mai puține ninsori și ploi",
+      "url": "https://stirileprotv.ro/stiri/vremea/vreme-mai-rece-decat-normalul-in-urmatoarele-patru-saptamani-zonele-in-care-vor-fi-mai-putine-ninsori-si-ploi.html",
+      "summary": "Vremea din următoarele patru săptămâni va fi, în general, mai rece decât normalul perioadei în aproape toată țara.",
+      "publishedAt": "2026-01-13T06:22:00.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.601Z"
+    },
+    {
+      "id": "e3bc225cc4512052",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "A ajuns în România cârtița „importată” din China. Va fora Tunelul Poiana de pe Autostrada Sibiu-Pitești",
+      "url": "https://stirileprotv.ro/stiri/actualitate/a-ajuns-in-romania-cartita-zimportata-din-china-va-fora-tunelul-poiana-de-pe-autostrada-sibiu-pitesti.html",
+      "summary": "Cârtița adusă din China a ajuns în Portul Constanța. Vorbim despre instalația care va fora primul tunel rutier de autostradă executat în România cu această tehnologie.",
+      "publishedAt": "2026-01-13T06:02:00.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.601Z"
+    },
+    {
+      "id": "f45943d89d985795",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "„NATO se va destrăma”. Scenariul care anunță ruptura definitivă a Alianței. Diplomații UE confirmă în privat",
+      "url": "https://stirileprotv.ro/stiri/international/znato-se-va-destrama-scenariul-care-anunta-ruptura-definitiva-a-aliantei-diplomatii-ue-confirma-in-privat.html",
+      "summary": "O intervenție militară americană în Groenlanda ar însemna sfârșitul NATO, a declarat comisarul pentru apărare Andrius Kubilius, repetând opinia liderului danez Mette Frederiksen.",
+      "publishedAt": "2026-01-13T06:01:00.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.601Z"
+    },
+    {
+      "id": "f67ae839a5b08a3d",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ger în toată țara. La Timișoara temperatura a ajuns la - 12 grade. Un copac căzut și a blocat ușa unui magazin, în Baia Mare",
+      "url": "https://stirileprotv.ro/stiri/actualitate/ger-in-toata-tara-la-timisoara-temperatura-a-ajuns-la-12-grade-un-copac-cazut-si-a-blocat-usa-unui-magazin-in-baia-mare.html",
+      "summary": "Zăpada și frigul năprasnic - așa cum nu s-au mai văzut de câțiva ani - au făcut probleme în mai multe zone din țară. Gerul i-a pus la încercare pe cei care au avut drumuri de făcut - pietoni, șoferi sau livratori pe biciclete.",
+      "publishedAt": "2026-01-13T05:46:00.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.601Z"
+    },
+    {
+      "id": "bf7e4d80fb7b68fb",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "„Vacanța de la istorie” s-a încheiat. Europa intră în 2026 sub presiuni externe majore și cu lideri slabi - Politico",
+      "url": "https://stirileprotv.ro/stiri/international/zvacanta-de-la-istorie-s-a-incheiat-europa-intra-in-2026-sub-presiuni-externe-majore-si-cu-lideri-slabi-politico.html",
+      "summary": "„Vacanța de la istorie” a Europei s-a încheiat. Continentul este supus presiunilor externe majore din partea Rusiei, Chinei și a SUA, de slăbiciunea liderilor săi și de erodarea ordinii internaționale",
+      "publishedAt": "2026-01-13T05:51:00.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.601Z"
+    },
+    {
+      "id": "feaf7a2fabe94cc8",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "S-au dat cu sania în mijlocul străzii și au ajuns la spital. Doi tineri, grav răniți în Constanța",
+      "url": "https://stirileprotv.ro/stiri/actualitate/s-au-dat-cu-sania-in-mijlocul-strazii-si-au-ajuns-la-spital-doi-tineri-grav-raniti-in-constanta.html",
+      "summary": "Doi tineri care se dădeau cu sania pe stradă, într-un sat din județul Constanța, au fost loviţi în plin de o mașină. Atenție, urmează imagini și informații care vă pot afecta emoțional.",
+      "publishedAt": "2026-01-13T05:43:00.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.601Z"
+    },
+    {
+      "id": "6b174214ee3c1c93",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "O echipă de muncitori a găsit în pământ un sac plin cu bani. Ar putea proveni de la cel mai mare jaf din istoria Norvegiei",
+      "url": "https://stirileprotv.ro/stiri/international/un-sac-de-bani-gasiti-in-norvegia-ar-putea-proveni-de-la-cel-mai-mare-jaf-din-istoria-tarii-nokas-din-2004.html",
+      "summary": "Un sac plin cu bani a fost descoperit în orașul Sandnes din Norvegia, în timpul unor lucrări de excavare. Poliția ia în calcul posibilitatea ca suma să provină din jaful Nokas din 2004, considerat cel mai mare jaf din istoria țării.",
+      "publishedAt": "2026-01-13T05:43:00.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.601Z"
+    },
+    {
+      "id": "a3dc3bf888a7dedd",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Un gigant american își închide fabrica din Ploiești, lăsând șomeri peste 1000 de angajați. Nu mai are „nicio opțiune viabilă”",
+      "url": "https://stirileprotv.ro/stiri/financiar/un-gigant-american-isi-inchide-fabrica-din-ploiesti-lasand-someri-peste-1000-de-angajati-nu-mai-are-znicio-optiune-viabila.html",
+      "summary": "Producătorul american de scaune auto Adient plc., lider mondial pe acest segment, a decis închiderea fabricii din Ploiești și disponibilizarea angajaților, în contextul unei restructurări ample a operațiunilor sale europene.",
+      "publishedAt": "2026-01-13T05:28:00.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.601Z"
+    },
+    {
+      "id": "af56eb18bfef07df",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Colegiul Medicilor vrea o nouă lege a malpraxisului: Actuala formă avantajează doar asiguratorii",
+      "url": "https://stirileprotv.ro/stiri/sanatate/colegiul-medicilor-vrea-o-noua-lege-a-malpraxisului-actuala-forma-avantajeaza-doar-asiguratorii.html",
+      "summary": "Una dintre priorităţile Colegiului Medicilor din România (CMR) pentru anul 2026 o reprezintă adoptarea unei noi legi a malpraxisului, spune preşedintele forului, Cătălina Poiană.",
+      "publishedAt": "2026-01-13T05:27:00.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.601Z"
+    },
+    {
+      "id": "c25a854672ab26c5",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Trump a anunțat o taxă vamală pentru țările care fac afaceri cu Iranul. „Va intra în vigoare imediat”",
+      "url": "https://stirileprotv.ro/stiri/international/trump-a-anuntat-o-taxa-vamala-pentru-tarile-care-fac-afaceri-cu-iranul-tariful-zintra-in-vigoare-imediat.html",
+      "summary": "Trump a declarat luni că a impus o taxă vamală de 25% asupra mărfurilor provenite din ţările care au legături comerciale cu Iranul, o măsură care ar putea exercita presiuni asupra Teheranului.",
+      "publishedAt": "2026-01-13T05:22:00.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.601Z"
+    },
+    {
+      "id": "f3dedbdba89e975b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ce spun iranienii care au fugit în SUA despre protestele anti-regim din Statul islamic. Amestec de sentimente peste Ocean",
+      "url": "https://stirileprotv.ro/stiri/international/ce-spun-iranienii-care-au-fugit-in-sua-despre-protestele-anti-regim-din-statul-islamic-amestec-de-sentimente-peste-ocean.html",
+      "summary": "Cel puţin 512 protestatari, dintre care nouă copii, au fost ucişi în peste două săptămâni de proteste în Iran, potrivit Agenţiei de ştiri pentru drepturile omului (HRANA) din SUA, relatează CNN.",
+      "publishedAt": "2026-01-13T05:17:00.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.601Z"
+    },
+    {
+      "id": "643ea38c6c3b8b8c",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "SUA acuză fățiș Rusia la Consiliul de Securitate al ONU, după atacul cu Oreșnik. „Ridiculizează cauza păcii”",
+      "url": "https://stirileprotv.ro/stiri/international/sua-acuza-fatis-rusia-la-consiliul-de-securitate-al-onu-dupa-atacul-cu-oresnik-zridiculizeaza-cauza-pacii.html",
+      "summary": "Statele Unite au acuzat luni Rusia, în Consiliul de Securitate al ONU, de o „escaladare periculoasă şi inexplicabilă” a războiului din Ucraina, după folosirea rachetei balistice de ultimă generaţie Oreşnik.",
+      "publishedAt": "2026-01-13T05:14:00.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.601Z"
+    },
+    {
+      "id": "6c62f21d99e571ea",
+      "sourceId": "europa-libera",
+      "sourceName": "Europa Liberă",
+      "title": "Donald Trump anunță tarife de 25% pentru orice țară care face comerț cu Iranul, pe fondul protestelor de amploare din țară",
+      "url": "https://romania.europalibera.org/a/donald-trump-anunta-tarife-de-25-pentru-orice-tara-care-face-tarilor-care-fac-afaceri-cu-iranul-pe-fondul-protestelor-de-amploare-din-tara/33646691.html",
+      "summary": "Președintele american Donald Trump a anunțat că orice țară care face afaceri cu Iranul va fi supusă unor tarife de 25% în comerțul cu Statele Unite.",
+      "publishedAt": "2026-01-13T06:12:03.000Z",
+      "fetchedAt": "2026-01-13T06:41:26.354Z"
     }
   ],
-  "lastUpdated": "2026-01-13T02:01:22.702Z"
+  "lastUpdated": "2026-01-13T06:41:35.518Z"
 }
