@@ -1,5 +1,6 @@
 #!/usr/bin/env npx tsx
 
+import 'dotenv/config';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
