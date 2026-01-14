@@ -8090,7 +8090,467 @@
       "summary": "Ministrul Apărării Naționale, Radu Miruță, a declarant într-un interviu pentru Antena 3 că reprezentanții Ministerului Apărării și cei ai Ministerului de Interne vor elabora până la finalul săptămânii viitoare un proiect pentru creșterea vârstei de pensionare în structurile proprii.",
       "publishedAt": "2026-01-13T14:32:17.000Z",
       "fetchedAt": "2026-01-13T18:37:28.050Z"
+    },
+    {
+      "id": "e2e0ea486c749d66",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Patriarhia Ecumenică reacționează după acuzațiile lansate de spionajul rusesc la adresa lui Bartolomeu: „Injurii și informații fabricate”",
+      "url": "https://hotnews.ro/patriarhia-ecumenica-reactioneaza-dupa-acuzatiile-lansate-de-spionajul-rusesc-la-adresa-lui-bartolomeu-injurii-si-informatii-fabricate-2149516",
+      "summary": "Patriarhia Ecumenică își „exprimă profunda tristețe” față de atacul lansat împotriva Patriarhului Bartolomeu de către Serviciul de Informații Externe (SVR) al Rusiei. Biserica Ortodoxă a Constantinopolului, cunoscută și sub numele de Patriarhia Ecumenică, este considerată…",
+      "publishedAt": "2026-01-13T23:03:00.000Z",
+      "fetchedAt": "2026-01-14T02:08:19.001Z"
+    },
+    {
+      "id": "ee95d936ded8eeab",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Trump amenință cu „măsuri foarte dure” din partea SUA dacă Iranul va începe să spânzure protestatari",
+      "url": "https://hotnews.ro/trump-ameninta-cu-masuri-foarte-dure-din-partea-sua-daca-iranul-va-incepe-sa-spanzure-protestatari-2149509",
+      "summary": "Președintele american Donald Trump a afirmat marți seară că Statele Unite vor lua „măsuri foarte dure” în curând dacă guvernul iranian va începe să spânzure protestatari săptămâna aceasta, dar nu a dat detalii despre natura…",
+      "publishedAt": "2026-01-13T22:11:03.000Z",
+      "fetchedAt": "2026-01-14T02:08:19.001Z"
+    },
+    {
+      "id": "9fc95b746f7e7b51",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Bill și Hillary Clinton refuză să depună mărturie în dosarul Epstein. Amenințați cu o procedură de „sfidare a Congresului”",
+      "url": "https://hotnews.ro/bill-si-hillary-clinton-refuza-sa-depuna-marturie-in-congresul-american-in-dosarul-epstein-2149492",
+      "summary": "Fostul președinte democrat al SUA, Bill Clinton, și soția sa Hillary Clinton, care a condus diplomația americană și a candidat fără succes la președinție în 2016, au refuzat să depună mărturie în fața unei comisii…",
+      "publishedAt": "2026-01-13T21:57:46.000Z",
+      "fetchedAt": "2026-01-14T02:08:19.001Z"
+    },
+    {
+      "id": "f6c4f699a37acc50",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Premierul susține achiziționarea unei aeronave prezidențiale. „Pot să-l folosească toți demnitarii/ Nu trebuie luate niște avioane foarte mari”",
+      "url": "https://hotnews.ro/premierul-sustine-achizitionarea-unei-aeronave-prezidentiale-pot-sa-l-foloseasca-toti-demnitarii-nu-trebuie-luate-niste-avioane-foarte-mari-2149458",
+      "summary": "Premierul Ilie Bolojan a declarat, marţi, la TVR 1, că aproape toate ţările europene au avioane oficiale, folosite pentru reprezentarea statului, iar România poate să aibă şi ea un astfel de avion. Bolojan a fost…",
+      "publishedAt": "2026-01-13T21:51:02.000Z",
+      "fetchedAt": "2026-01-14T02:08:19.001Z"
+    },
+    {
+      "id": "e5328edecc6a5efb",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Mărturie din mijlocul protestelor sângeroase de pe străzile din Teheran: Atât bogații, cât și săracii sunt „flămânzi și furioși”",
+      "url": "https://hotnews.ro/marturie-din-mijlocul-protestelor-sangeroase-de-pe-strazile-din-teheran-atat-bogatii-cat-si-saracii-sunt-flamanzi-si-furiosi-2149490",
+      "summary": "„Ziua este straniu de liniștită” înainte ca protestele să reînceapă noaptea.",
+      "publishedAt": "2026-01-13T21:35:51.000Z",
+      "fetchedAt": "2026-01-14T02:08:19.001Z"
+    },
+    {
+      "id": "0774c55a0727903b",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "DOCUMENT Proiectul de lege privind reducerea cheltuielilor administrației publice cu 10% a fost publicat. Care sunt principalele prevederi",
+      "url": "https://hotnews.ro/document-proiectul-de-lege-privind-reducerea-cheltuielilor-administratiei-publice-cu-10-a-fost-publicat-de-ministerul-dezvoltarii-care-sunt-principalele-prevederi-2149468",
+      "summary": "Proiectul de lege prin care urmează să fie reduse cheltuielile administrației publice centrale și locale a fost pus, marți seară, în dezbatere publică de către Ministerul Dezvoltării. Legea propusă modifică mai multe acte normative, având…",
+      "publishedAt": "2026-01-13T21:31:11.000Z",
+      "fetchedAt": "2026-01-14T02:08:19.001Z"
+    },
+    {
+      "id": "5021d2ed2e8ffc94",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Curtea de Apel București respinge extrădarea unui turc, membru al unei bande care executa atacuri armate în Istanbul. Motivele invocate de judecători",
+      "url": "https://hotnews.ro/curtea-de-apel-bucuresti-respinge-extradarea-unui-interlop-turc-membru-al-unei-bande-care-executa-atacuri-armate-in-istanbul-motivele-invocate-de-judecatori-2149484",
+      "summary": "Judecătorii de la Curtea de Apel București au respins cererea autorităților turce privind extrădarea unui interlop, membru al unei bande criminale care a executat atacuri armate în Istanbul împotriva rivalilor, folosind pistoale și arme automate,…",
+      "publishedAt": "2026-01-13T21:06:00.000Z",
+      "fetchedAt": "2026-01-14T02:08:19.001Z"
+    },
+    {
+      "id": "6be0a97924e2afa6",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "O insectă de doar 1,5 milimetri amenință să invadeze Franța",
+      "url": "https://hotnews.ro/o-insecta-de-doar-15-milimetri-ameninta-sa-invadeze-franta-2149479",
+      "summary": "Originară din America de Sud, a invadat Africa centrală și a provocat pagube importante în Statele Unite: reperată în Franța metropolitană pentru prima dată în 2022, „furnica electrică”, specie exotică invazivă, amenință să se prolifereze…",
+      "publishedAt": "2026-01-13T20:52:39.000Z",
+      "fetchedAt": "2026-01-14T02:08:19.001Z"
+    },
+    {
+      "id": "d9ed5980e6ae45f1",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Acordul USMCA, de care depind producătorii „Big Three”, este „irelevant”, susține Trump",
+      "url": "https://hotnews.ro/acordul-usmca-de-care-depind-producatorii-big-three-este-irelevant-sustine-trump-2149465",
+      "summary": "Președintele Donald Trump a declarat marți că acordul comercial dintre Statele Unite, Mexic și Canada (USMCA) nu este relevant pentru SUA, dar Canada „îl dorește”, în contextul în care el a făcut presiuni asupra companiilor…",
+      "publishedAt": "2026-01-13T20:30:34.000Z",
+      "fetchedAt": "2026-01-14T02:08:19.001Z"
+    },
+    {
+      "id": "a15a41a732dd1003",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "UTA l-a împrumutat pe Luka Gojkovic de la Rapid",
+      "url": "https://hotnews.ro/uta-l-a-imprumutat-pe-luka-gojkovic-de-la-rapid-2149459",
+      "summary": "UTA Arad anunţă transferul sub formă de împrumut al jucătorului Luka Gojković de la Rapid Bucureşti. Înţelegerea este valabilă până la finalul sezonului, în vara acestui an. Sârbul are 26 de ani, evoluează pe postul…",
+      "publishedAt": "2026-01-13T20:13:41.000Z",
+      "fetchedAt": "2026-01-14T02:08:19.001Z"
+    },
+    {
+      "id": "7aa28e7858330039",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Trump păstrează misterul despre adevăratele sale intenții în privința Iranului. Întrebarea la care le-a spus jurnaliștilor „să-și dea seama singuri”",
+      "url": "https://hotnews.ro/trump-pastreaza-misterul-despre-adevaratele-sale-intentii-in-privinta-iranului-intrebarea-la-care-le-a-spus-jurnalistilor-sa-si-dea-seama-singuri-2149453",
+      "summary": "Întrebat ce a vrut să spună în postarea sa de pe rețelele de socializare în care a afirmat că „ajutorul este pe drum” pentru protestatarii din Iran, președintele SUA, Donald Trump, le-a spus marți reporterilor…",
+      "publishedAt": "2026-01-13T19:57:15.000Z",
+      "fetchedAt": "2026-01-14T02:08:19.001Z"
+    },
+    {
+      "id": "f29c2b9e05edaa90",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Aeronavă Wizz Air, implicată într-un incident la sol, după aterizarea pe Aeroportul din Sibiu",
+      "url": "https://hotnews.ro/aeronava-wizz-air-implicata-intr-un-incident-la-sol-dupa-aterizarea-pe-aeroportul-din-sibiu-2149443",
+      "summary": "O aeronavă Wizz Air care operase un zbor pe ruta Bergamo-Sibiu a fost implicată, marţi, într-un incident la sol, după aterizarea pe Aeroportul din Sibiu. În timpul manevrei de întoarcere pentru a intra pe calea…",
+      "publishedAt": "2026-01-13T19:51:47.000Z",
+      "fetchedAt": "2026-01-14T02:08:19.001Z"
+    },
+    {
+      "id": "1b4c90a73c40bf90",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Când va fi numit noul ministru al Educației. Scenariile luate în calcul de premier",
+      "url": "https://hotnews.ro/cand-va-fi-numit-noul-ministru-al-educatiei-scenariile-luate-in-calcul-de-premier-2149432",
+      "summary": "Președintele PNL Ilie Bolojan a afirmat, într-o emisiune la TVR, liberalii iau în calcul două variante pentru desemnarea viitorului ministru al Educației: fie o personalitate cu o reputație de tehniocrat, fie un un membru de…",
+      "publishedAt": "2026-01-13T19:45:06.000Z",
+      "fetchedAt": "2026-01-14T02:08:19.001Z"
+    },
+    {
+      "id": "3c312e4316153106",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Ilie Bolojan, prima reacție la acuzațiile aduse lui Radu Marinescu: „Plagiatul este o formă de furt”. În ce condiții ministrul Justiției își va pierde funcția",
+      "url": "https://hotnews.ro/ilie-bolojan-despre-acuzatiile-la-adresa-lui-marinescu-plagiatul-este-o-forma-de-furt-in-ce-conditii-ministrul-justitiei-isi-va-pierde-functia-2149424",
+      "summary": "Premierul Ilie Bolojan a declarat, la TVR, că este nevoie ca „o entitate independentă” să aprecieze dacă în cazul tezei de doctorat a lui Radu Marinescu este vorba de plagiat sau nu. Totodată, șeful guvernului…",
+      "publishedAt": "2026-01-13T19:23:40.000Z",
+      "fetchedAt": "2026-01-14T02:08:19.001Z"
+    },
+    {
+      "id": "d6cab6852ea1aea0",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Emilia Șercan dă în judecată România TV, din nou. „M-au hărțuit pretinzând că fac jurnalism”",
+      "url": "https://hotnews.ro/emilia-sercan-da-in-judecata-romania-tv-din-nou-m-au-hartuit-pretinzand-ca-fac-jurnalism-2149442",
+      "summary": "Jurnalista de la PressOne amintește că în 2025 a câștigat un proces de defăimare împotriva România TV, în care a primit 10.000 de euro daune morale, plus cheltuieli de judecată.",
+      "publishedAt": "2026-01-13T19:21:54.000Z",
+      "fetchedAt": "2026-01-14T02:08:19.001Z"
+    },
+    {
+      "id": "593623a209d0eb9d",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Anchetă și dosar penal, la Iași, după ce un copil de 4 ani pe care mama îl lăsase la grădiniţă a fost găsit singur pe stradă",
+      "url": "https://hotnews.ro/ancheta-si-dosar-penal-la-iasi-dupa-ce-un-copil-de-4-ani-pe-care-mama-il-lasase-la-gradinita-a-fost-gasit-singur-pe-strada-2149435",
+      "summary": "Inspectoratul Judeţean de Poliţie Iaşi a informat că a fost demarată o anchetă şi s-a întocmit un dosar penal pentru „neglijenţă în serviciu” după ce un copil de 4 ani a fost găsit în cursul…",
+      "publishedAt": "2026-01-13T19:09:42.000Z",
+      "fetchedAt": "2026-01-14T02:08:19.001Z"
+    },
+    {
+      "id": "08e14c0eaa47949d",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Ilie Bolojan pregătește noi tăieri în educație. Planurile premierului pentru anul 2026: „Ajustări financiare importante”",
+      "url": "https://hotnews.ro/ilie-bolojan-pregateste-noi-taieri-in-educatie-planurile-premierului-pentru-anul-2026-ajustari-financiare-importante-2149429",
+      "summary": "Premierul Ilie Bolojan, care tocmai ce a preluat interimar funcția de ministru al Educației, după demisia lui Daniel David, plănuiește în anul 2026 noi modificări în sistemul de învățământ, cu scopul de a face economii…",
+      "publishedAt": "2026-01-13T18:56:21.000Z",
+      "fetchedAt": "2026-01-14T02:08:19.001Z"
+    },
+    {
+      "id": "1ce9d6e00c7c52f9",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Zoe Saldana, actriţa ale cărei filme au obţinut cele mai mari încasări din istorie",
+      "url": "https://hotnews.ro/zoe-saldana-actrita-mari-incasari-din-toate-timpurile-filmele-care-au-propulsat-o-in-top-2149398",
+      "summary": "Zoe Saldaña, câştigătoare a premiului Oscar, a devenit în mod oficial actrița ale cărei filme au obținut cele mai mari încasări din toate timpurile, după succesul la box-office înregistrat recent de lungmetrajul „Avatar: Fire and…",
+      "publishedAt": "2026-01-13T18:18:43.000Z",
+      "fetchedAt": "2026-01-14T02:08:19.001Z"
+    },
+    {
+      "id": "9500269f1c76c85f",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Atac cu drone al Rusiei provoacă pene de curent în Krîvîi Rih, Ucraina",
+      "url": "https://www.mediafax.ro/externe/atac-cu-drone-al-rusiei-provoaca-pene-de-curent-in-krivii-rih-ucraina-23670882",
+      "summary": "Infrastructura orașului central ucrainean Krîvîi Rih a fost atacată miercuri de drone rusești, provocând pene de curent, afectând peste 45.000 de clienți și perturbând aprovizionarea cu căldură, a anunțat șeful administrației militare locale, Oleksandr Vilkul.",
+      "publishedAt": "2026-01-14T01:40:15.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.857Z"
+    },
+    {
+      "id": "7204792b90300223",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Actorul Kiefer Sutherland, arestat la Hollywood după un incident cu un șofer de rideshare",
+      "url": "https://www.mediafax.ro/life-entertaiment/actorul-kiefer-sutherland-arestat-la-hollywood-dupa-un-incident-cu-un-sofer-de-rideshare-23670880",
+      "summary": "Actorul Kiefer Sutherland, în vârstă de 59 de ani, cunoscut pentru rolul agentului Jack Bauer din serialul 24, a fost arestat după ce ar fi avut o altercație cu un șofer de rideshare la Hollywood, a confirmat poliția din Los Angeles (LAPD).",
+      "publishedAt": "2026-01-14T01:05:45.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.857Z"
+    },
+    {
+      "id": "1304f5c2d4fdf500",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Creatorul „Squid Game”, Hwang Dong-hyuk, pregătește un nou serial pentru Netflix, „The Dealer”",
+      "url": "https://www.mediafax.ro/life-entertaiment/creatorul-squid-game-hwang-dong-hyuk-pregateste-un-nou-serial-pentru-netflix-the-dealer-23670877",
+      "summary": "Hwang Dong-hyuk, creatorul fenomenului global „Squid Game” („Jocul Calamarului”), a dezvăluit primul său proiect după încheierea seriei de succes. Netflix a confirmat miercuri că producția pentru „The Dealer”, o nouă serie originală sud-coreeană, este în desfășurare.",
+      "publishedAt": "2026-01-14T00:29:13.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.857Z"
+    },
+    {
+      "id": "ef748768171d8da5",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Trump cere Iranului să trateze protestatarii cu omenie, pe fondul unui număr tot mai mare de victime",
+      "url": "https://www.mediafax.ro/externe/trump-cere-iranului-sa-trateze-protestatarii-cu-omenie-pe-fondul-unui-numar-tot-mai-mare-de-victime-23670875",
+      "summary": "Președintele Donald Trump s-a consultat marți cu echipa sa de securitate națională pentru a decide următorii pași în relația cu Iranul, pe fondul protestelor din țară, care durează de mai bine de două săptămâni și în urma cărora mii de persoane au fost arestate sau ucise.",
+      "publishedAt": "2026-01-13T23:46:31.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.857Z"
+    },
+    {
+      "id": "11ae5748e74cc75e",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Atlético de Madrid, calificare în sferturile Cupei Regelui grație golului lui Griezmann",
+      "url": "https://www.mediafax.ro/sport/atletico-de-madrid-calificare-in-sferturile-cupei-regelui-gratie-golului-lui-griezmann-23670871",
+      "summary": "Antoine Griezmann a fost eroul serii pentru Atlético de Madrid, marcând golul victoriei în meciul cu Deportivo de La Coruña, scor 1-0, marți noapte, în optimile Cupei Regelui și trimițând echipa în sferturile de finală.",
+      "publishedAt": "2026-01-13T23:16:50.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.857Z"
+    },
+    {
+      "id": "7f64b2d1e6d19f53",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Torino elimină Roma și se califică în sferturile Cupei Italiei, unde va întâlni Interul lui Chivu",
+      "url": "https://www.mediafax.ro/sport/torino-elimina-roma-si-se-califica-in-sferturile-cupei-italiei-unde-va-intalni-interul-lui-chivu-23670868",
+      "summary": "Torino a produs surpriza în optimile de finală ale Cupei Italiei, învingând, marți noapte, pe terenul Olimpico, pe AS Roma, cu scorul de 3-2, și obținând calificarea în sferturile de finală, unde va întâlni Inter Milano, echipă antrenată de românul Cristian Chivu.",
+      "publishedAt": "2026-01-13T22:49:09.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.857Z"
+    },
+    {
+      "id": "a6890219afd59ce7",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Borussia Dortmund învinge clar Werder Bremen și își consolidează locul secund în Bundesliga",
+      "url": "https://www.mediafax.ro/sport/borussia-dortmund-invinge-clar-werder-bremen-si-isi-consolideaza-locul-secund-in-bundesliga-23670865",
+      "summary": "Borussia Dortmund a obținut marți noapte o victorie clară pe teren propriu, scor 3-0, în fața formației Werder Bremen, și și-a consolidat poziția a doua în clasamentul Bundesligii, la opt puncte în urma liderului Bayern Munchen.",
+      "publishedAt": "2026-01-13T22:34:23.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.857Z"
+    },
+    {
+      "id": "e1677a27081dc000",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Manchester City câștigă pe terenul lui Newcastle, în manșa tur din semifinalele Cupei Ligii",
+      "url": "https://www.mediafax.ro/sport/manchester-city-castiga-pe-terenul-lui-newcastle-in-mansa-tur-din-semifinalele-cupei-ligii-23670862",
+      "summary": "Manchester City a făcut un pas important spre calificarea în finala Cupei Ligii Angliei, după ce s-a impus marți noapte, scor 2-0, pe terenul lui Newcastle, în prima manșă a semifinalelor competiției. Returul este programat pe 4 februarie, pe Etihad Stadium.",
+      "publishedAt": "2026-01-13T22:19:36.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.857Z"
+    },
+    {
+      "id": "792496b14af1a331",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Mikaela Shiffrin câștigă slalomul de la Flachau și ajunge la 107 victorii în Cupa Mondială de schi alpin",
+      "url": "https://www.mediafax.ro/sport/mikaela-shiffrin-castiga-slalomul-de-la-flachau-si-ajunge-la-107-victorii-in-cupa-mondiala-de-schi-alpin-23670858",
+      "summary": "Mikaela Shiffrin a obținut marți seară victoria în etapa de slalom de la Flachau (Austria), bifând astfel al 107-lea succes din carieră în Cupa Mondială de schi alpin, al 70-lea în proba de slalom și al șaselea din actualul sezon.",
+      "publishedAt": "2026-01-13T22:03:23.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.857Z"
+    },
+    {
+      "id": "12124971159113e8",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Hamas își va alege un nou lider după moartea lui Yahya Sinwar. Cine sunt principalii favoriți",
+      "url": "https://www.mediafax.ro/externe/hamas-isi-va-alege-un-nou-lider-dupa-moartea-lui-yahya-sinwar-cine-sunt-principalii-favoriti-23670854",
+      "summary": "Gruparea Hamas este așteptată să își aleagă un nou lider în cursul acestei luni, au declarat două surse din interiorul grupării pentru Reuters, funcție rămasă vacantă după ce Israelul l-a ucis pe Yahya Sinwar, în 2024.",
+      "publishedAt": "2026-01-13T21:51:11.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.857Z"
+    },
+    {
+      "id": "48203ad0502e9cfb",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Analiză. În ciuda promisiunii că “ajutorul este pe drum”, Donald Trump are opțiuni mult prea limitate pentru a interveni militar în Iran, din cauza prezenței strategice reduse a SUA în regiune și a riscurilor majore de escaladare. Loviturile aeriene, atacurile cibernetice sau eliminarea liderilor iranieni ar avea eficiență redusă și ar provoca victime în rândul civililor.",
+      "url": "https://www.biziday.ro/344876-2/",
+      "summary": "O analiză realizată de The Guardian relevă că, deși președintele american Donald Trump le-a transmis protestatarilor iranieni că “ajutorul este pe drum”, realitatea strategică arată că SUA au opțiuni militare viabile foarte limitate pentru a interveni în Iran, iar orice acțiune de forță ar avea șanse reduse de succes și riscuri majore de escaladare. Potrivit […]",
+      "publishedAt": "2026-01-13T21:25:45.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.288Z"
+    },
+    {
+      "id": "b6a22e5f36c3d36c",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "SUA. Bill și Hillary Clinton au refuzat să depună mărturie în fața unei comisii a Camerei Reprezentanților în cadrul investigației privind dosarele prădătorului sexual Jeffrey Epstein. Cei doi au fost citați, după apariția fostului președinte în mai multe imagini și documente.",
+      "url": "https://www.biziday.ro/344868-2/",
+      "summary": "“Orice persoană trebuie să decidă momentul când consideră că a văzut sau a făcut destul și când este pregătită să lupte pentru această țară, pentru principiile și poporul ei, indiferent de consecințe. Pentru noi, acest moment a sosit acum”, au precizat soții Clinton într-o scrisoare de patru pagini adresată președintelui Comisiei de Supraveghere a Camerei […]",
+      "publishedAt": "2026-01-13T20:31:05.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.288Z"
+    },
+    {
+      "id": "ca1454b313aabbd5",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Bolojan anunță reorganizări la Cancelarie și ANPC: personalul poate fi redus „fără probleme”",
+      "url": "https://stirileprotv.ro/stiri/politic/bolojan-anunta-reorganizari-la-cancelarie-si-anpc-personalul-poate-fi-redus-zfara-probleme.html",
+      "summary": "Premierul Ilie Bolojan afirmă că sunt domenii, precum Educaţia, sau instituţii publice, precum Senatul României, care au făcut deja reduceri de personal şi de cheltuieli şi cărora nu li se poate cere să facă noi economii la bugete.",
+      "publishedAt": "2026-01-13T20:48:00.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.816Z"
+    },
+    {
+      "id": "fea6081d23e7b6b2",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ilie Bolojan cere adoptarea urgentă a reformei administrației publice: „Întârzierea înseamnă cheltuieli mai mari”",
+      "url": "https://stirileprotv.ro/stiri/politic/ilie-bolojan-cere-adoptarea-urgenta-a-reformei-administratiei-publice-zintarzierea-inseamna-cheltuieli-mai-mari.html",
+      "summary": "Premierul Ilie Bolojan spune că pachetul de reforme din administrația publică trebuie adoptat rapid, deoarece întârzierea duce la cheltuieli mai mari și prelungirea problemelor.",
+      "publishedAt": "2026-01-13T20:29:00.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.816Z"
+    },
+    {
+      "id": "b38e0a76067f8a44",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Proiectul privind măsurile administrative din România a fost pus în transparenţă decizională",
+      "url": "https://stirileprotv.ro/stiri/politic/proiectul-privind-masurile-administrative-din-romania-a-fost-pus-in-transparenta-decizionala.html",
+      "summary": "Ministerul Dezvoltării a anunţat, marţi, că a pus în transparenţă decizională publică proiectul de lege privind măsurile administrative pentru creşterea capacităţii financiare şi eficientizarea activităţii administraţiei publice centrale şi locale.",
+      "publishedAt": "2026-01-13T20:21:00.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.816Z"
+    },
+    {
+      "id": "a4ac7de5e7accd42",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Axios: Emisarul special al lui Trump s-a întâlnit în secret cu fiul ultimului șah al Iranului, Reza Pahlavi",
+      "url": "https://stirileprotv.ro/stiri/international/axios-emisarul-special-al-lui-trump-s-a-intalnit-in-secret-cu-fiul-ultimului-sah-al-iranului-reza-pahlavi.html",
+      "summary": "Emisarul prezidențial american Steve Witkoff s-a întâlnit în secret cu moștenitorul șahului Iranului, Reza Pahlavi, în weekendul 10-11 ianuarie, relatează Axios, citând un oficial american de rang înalt.",
+      "publishedAt": "2026-01-13T20:21:00.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.816Z"
+    },
+    {
+      "id": "4ac0e5da7bbc7123",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Adevăratul cod al lui da Vinci. Cercetătorii cred că au depistat ADN-ul lui Leonardo da Vinci într-un desen al acestuia",
+      "url": "https://stirileprotv.ro/stiri/stiinta/adevaratul-cod-al-lui-da-vinci-cercetatorii-cred-ca-au-depistat-adn-ul-lui-leonardo-da-vinci-intr-un-desen-al-acestuia.html",
+      "summary": "Oamenii de știință au extras în premieră ADN dintr-un desen din epoca Renașterii atribuit lui Leonardo da Vinci, dar nu pot fi siguri că materialul genetic aparține polimatului italian.",
+      "publishedAt": "2026-01-13T20:04:00.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.816Z"
+    },
+    {
+      "id": "d15f50a924627b20",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Un cuib de dinozaur, cu ouă vechi de 150 de milioane de ani, a fost descoperit în Portugalia",
+      "url": "https://stirileprotv.ro/stiri/international/un-cuib-de-dinozaur-cu-oua-vechi-de-150-de-milioane-de-ani-a-fost-descoperit-in-portugalia.html",
+      "summary": "Un cuib de dinozaur conţinând ouă ce datează din urmă cu 150 de milioane de ani, din Jurasicul târziu, a fost descoperit în zona stâncilor de pe plaja Santa Cruz, în apropiere de oraşul Torres Vedras, la aproximativ 50 kilometri nord de Lisabona.",
+      "publishedAt": "2026-01-13T19:51:00.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.816Z"
+    },
+    {
+      "id": "99072824875aa3f8",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ilie Bolojan, despre plagiatul lui Radu Marinescu: „Lucrurile de care este acuzat nu s-au întâmplat în mandatul de ministru”",
+      "url": "https://stirileprotv.ro/stiri/actualitate/bolojan-despre-plagiatul-lui-radu-marinescu-zlucrurile-de-care-este-acuzat-nu-s-au-intamplat-in-mandatul-de-ministru.html",
+      "summary": "Premierul Ilie Bolojan a declarat că speră ca o entitate independentă să stabilească dacă ministrul Justiției, Radu Marinescu, se face sau nu vinovat de plagiat.",
+      "publishedAt": "2026-01-13T19:55:00.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.816Z"
+    },
+    {
+      "id": "500b983f6df2e4b5",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Horoscop 14 ianuarie 2026, cu Neti Sandu. Veți face și unele achiziții pentru casă",
+      "url": "https://stirileprotv.ro/show-buzz/horoscop/horoscop-14-ianuarie-2026-cu-neti-sandu-veti-face-si-unele-achizitii-pentru-casa.html",
+      "summary": "Horoscop 14 ianuarie 2026, prezentat de Neti Sandu la Știrile PRO TV. O zi cu rezolvări. Se îmbină frumos lucrurile astăzi și vom avea spor la ce ne-am propus să facem, având parte de succes.",
+      "publishedAt": "2026-01-13T19:39:00.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.816Z"
+    },
+    {
+      "id": "3acd2637599cf30d",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Acidul gastric este atât de coroziv încât poate dizolva metalul. Motivul pentru care nu ne distruge totuși stomacul",
+      "url": "https://stirileprotv.ro/stiri/sanatate/acidul-gastric-este-atat-de-coroziv-incat-poate-dizolva-metalul-motivul-pentru-care-nu-ne-distruge-totusi-stomacul.html",
+      "summary": "Acidul clorhidric din stomac poate arde metalul - așa că de ce nu arde și stomacul?",
+      "publishedAt": "2026-01-13T19:37:00.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.816Z"
+    },
+    {
+      "id": "5197bc88f2932552",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Municipiul care a anunțat că nu mărește impozitul pe locuințe. ”Locuirea este drept fundamental, mersul cu mașina e opțional”",
+      "url": "https://stirileprotv.ro/stiri/social/municipiul-care-a-anuntat-ca-nu-mareste-impozitul-pe-locuinte-locuirea-este-drept-fundamental-mersul-cu-masina-e-optional.html",
+      "summary": "Primarul din Sfântu Gheorghe a anunțat că va păstra la nivelul minim impozitul pe locuință, întrucât consideră ”locuirea” reprezintă un drept fundamental al omului. Nu se opune însă unui impozit mai mare pentru mașini, care sunt ”opționale”.",
+      "publishedAt": "2026-01-13T19:18:00.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.816Z"
+    },
+    {
+      "id": "6554dfefa4e06d6a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Incident la sol cu o aeronavă Wizz Air pe Aeroportul din Sibiu. Avionul a ajuns la marginea pistei. S-a deschis o anchetă",
+      "url": "https://stirileprotv.ro/stiri/actualitate/incident-la-sol-cu-o-aeronava-wizz-air-pe-aeroportul-din-sibiu-avionul-a-ajuns-la-marginea-pistei-s-a-deschis-o-ancheta.html",
+      "summary": "O aeronavă Wizz Air care operase un zbor pe ruta Bergamo-Sibiu a fost implicată, marţi într-un incident la sol, după aterizarea pe Aeroportul din Sibiu.",
+      "publishedAt": "2026-01-13T19:18:00.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.816Z"
+    },
+    {
+      "id": "428fa51f116efe9a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Mark Ruffalo l-a criticat pe Donald Trump: „Cea mai rea ființă umană. Este un infractor condamnat, un pedofil”",
+      "url": "https://stirileprotv.ro/stiri/international/mark-ruffalo-l-a-criticat-pe-donald-trump-zcea-mai-rea-fiinta-umana-este-un-infractor-condamnat-un-pedofil.html",
+      "summary": "Mark Ruffalo l-a criticat dur pe Donald Trump, numindu-l „cea mai rea ființă umană”, într-un interviu pe covorul roșu la Globurile de Aur.",
+      "publishedAt": "2026-01-13T19:03:00.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.816Z"
+    },
+    {
+      "id": "0c3af7458c71c5f2",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "”Furnica electrică” amenință Europa. Cât de periculoasă este una dintre cele mai agresive specii invazive din lume",
+      "url": "https://stirileprotv.ro/stiri/international/furnica-electrica-ameninta-europa-cat-de-periculoasa-este-una-dintre-cele-mai-agresive-specii-invazive-din-lume.html",
+      "summary": "”Furnica electrică”, una dintre cele mai agresive specii invazive din lume, periculoasă pentru om și care poate provoca orbirea la câini și pisici, a luat cu asalt Franța și devine o amenințare și în Europa. Furnica face deja ravagii în Africa și SUA.",
+      "publishedAt": "2026-01-13T18:52:00.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.816Z"
+    },
+    {
+      "id": "848b48c24292a181",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Polonia riscă amenzi de milioane de euro din partea UE după ce președintele a blocat legea privind tehnologia",
+      "url": "https://stirileprotv.ro/stiri/international/polonia-risca-amenzi-de-milioane-de-euro-din-partea-ue-dupa-ce-presedintele-a-blocat-legea-privind-tehnologia.html",
+      "summary": "Un conflict între președintele de dreapta al Poloniei și coaliția de guvernare de centru, pe tema legii emblematice a Uniunii Europene privind rețelele sociale, expune țara unui risc crescut de amenzi de ordinul milioanelor de euro, scrie Politico.",
+      "publishedAt": "2026-01-13T18:45:00.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.816Z"
+    },
+    {
+      "id": "9dc9d144d7964238",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Un bărbat a încercat să-și urce în avion soția decedată, pe aeroportul din Tenerife. Femeia se afla într-un scaun cu rotile",
+      "url": "https://stirileprotv.ro/divers/un-barbat-a-incercat-sa-si-urce-in-avion-sotia-decedata-pe-aeroportul-din-tenerife-femeia-se-afla-intr-un-scaun-cu-rotile.html",
+      "summary": "O femeie de 75 de ani a fost găsită moartă într-un scaun cu rotile pe Aeroportul Tenerife Sud, după ce soțul ei de 85 de ani a încercat să o îmbarce.",
+      "publishedAt": "2026-01-13T18:37:00.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.816Z"
+    },
+    {
+      "id": "95f4a37c5ff0d01c",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Studiu: Una dintre cele mai comune infecții în rândul tinerilor provoacă scleroza multiplă, maladie incurabilă",
+      "url": "https://stirileprotv.ro/stiri/sanatate/studiu-una-dintre-cele-mai-comune-infectii-in-randul-tinerilor-provoaca-scleroza-multipla-maladie-incurabila.html",
+      "summary": "Virusul Epstein-Barr, care provoacă mononucleoza, iniţiază o reacţie a sistemului imunitar ce poate afecta creierul şi contribui astfel de declanşarea sclerozei multiple (SM), conform unei noi cercetări a Institutului Karolinska din Suedia.",
+      "publishedAt": "2026-01-13T18:32:00.000Z",
+      "fetchedAt": "2026-01-14T02:08:18.816Z"
     }
   ],
-  "lastUpdated": "2026-01-13T18:37:29.589Z"
+  "lastUpdated": "2026-01-14T02:08:27.823Z"
 }
