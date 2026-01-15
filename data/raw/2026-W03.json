@@ -11060,7 +11060,687 @@
       "summary": "Comisia Europeană a anunțat oficial un împrumut de 90 de miliarde de euro (105 milioane de dolari) pentru Ucraina, menit să acopere o mare parte din nevoile de finanțare ale Kievului pentru următorii doi ani.\r\nMăsura vine în ianuarie, după ce liderii UE au optat în decembrie pentru un împrumut garantat de bugetul UE în locul unui „împrumut reparatoriu” mult mediatizat, care ar fi folosit drept garanție active rusești blocate în țările membre.\r\nAnul trecut, Fondul Monetar Internațional (FMI)...",
       "publishedAt": "2026-01-14T15:20:54.000Z",
       "fetchedAt": "2026-01-14T18:39:56.204Z"
+    },
+    {
+      "id": "126009b8e80c8d0c",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Anunțul nopții, venit de la vârful puterii de la Teheran, a fost făcut chiar la televiziunea preferată a lui Trump",
+      "url": "https://hotnews.ro/ministrul-iranian-de-externe-abbas-araqchi-nu-exista-planuri-de-spanzurare-a-protestatarilor-din-iran-2150220",
+      "summary": "Ministrul de externe iranian, Abbas Araqchi, a declarat miercuri că „nu există niciun plan” din partea autorităților de la Teheran de a spânzura oameni, când a fost întrebat despre protestele antiguvernamentale care au cuprins țara…",
+      "publishedAt": "2026-01-15T00:52:30.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.673Z"
+    },
+    {
+      "id": "9ba654a21b62b868",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Iranul tocmai și-a închis spațiul aerian",
+      "url": "https://hotnews.ro/iranul-si-a-inchis-spatiul-aerian-2150213",
+      "summary": "Iranul tocmai a emis o nouă notificare NOTAM prin care anunță că spațiul său aerian va fi închis pentru toate zborurile, cu excepția zborurilor internaționale către și dinspre această țară care au permisiune, potrivit platformei…",
+      "publishedAt": "2026-01-14T23:27:17.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.673Z"
+    },
+    {
+      "id": "b646f1271233d472",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "De ce transportul public în București costă „de două ori mai mult decât pe timpul lui Firea?”. STB, amenințată cu o decizie radicală",
+      "url": "https://hotnews.ro/ciprian-ciucu-ameninta-stb-cu-insolventa-2150210",
+      "summary": "Primarul general al Capitalei, Ciprian Ciucu, a anunțat că va comanda un audit la Societatea de Transport București, iar dacă nu se va „înțelege” cu STB și cu „ce se întâmplă acolo”, soluția pe care…",
+      "publishedAt": "2026-01-14T22:57:14.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.673Z"
+    },
+    {
+      "id": "0d3e45c652994052",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Avertisment emis de Germania, după decizia celei mai mari companii aeriene din țară în privința Iranulului",
+      "url": "https://hotnews.ro/avertisment-emis-de-germania-dupa-decizia-celei-mai-mari-companii-aeriene-din-tara-in-privinta-iranulului-2150208",
+      "summary": "Germania a emis o nouă directivă prin care avertizează companiile aeriene din țară să nu intre în spațiul aerian iranian, a anunțat miercuri platforma Flightradar24, la scurt timp după ce Lufthansa și-a reorganizat operațiunile de…",
+      "publishedAt": "2026-01-14T22:34:25.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.673Z"
+    },
+    {
+      "id": "ba54ca2fc2f9d12c",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Șefa diplomației UE, verdict ironic despre situația de pe glob: Un „moment bun” pentru a te apuca de băut",
+      "url": "https://hotnews.ro/sefa-diplomatiei-ue-verdict-ironic-despre-situatia-de-pe-glob-un-moment-bun-pentru-a-te-apuca-de-baut-2150195",
+      "summary": "Șefa politicii externe a UE, Kaja Kallas, le-a spus în privat eurodeputaților că actuala situație din lume poate reprezenta un „moment bun” pentru a se apuca de băut, potrivit Politico. Într-o discuție cu liderii grupurilor…",
+      "publishedAt": "2026-01-14T22:08:21.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.673Z"
+    },
+    {
+      "id": "14659f9cd47b4fa5",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Tensiuni tot mai mari în Iran. Ambasada Marii Britanii din Teheran, închisă temporar. Mai multe state europene își îndeamnă cetățenii să părăsească țara",
+      "url": "https://hotnews.ro/tensiuni-tot-mai-mari-in-iran-ambasada-marii-britanii-din-teheran-inchisa-temporar-mai-multe-state-europene-isi-indeamna-cetatenii-sa-paraseasca-tara-2150188",
+      "summary": "Ambasada Marii Britanii din Teheran a fost închisă temporar, iar mai multe state europene le recomandă cetățenilor să părăsească Iranul, pe fondul deteriorării situației de securitate și al represiunii autorităților față de proteste. În același…",
+      "publishedAt": "2026-01-14T21:47:17.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.673Z"
+    },
+    {
+      "id": "fac869560a9ec2c3",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "SuperLiga: Căpitanul lui Dinamo, sfătuit de un fost atacant să nu meargă în Ucraina. „Pentru club suma este amețitoare”",
+      "url": "https://hotnews.ro/superliga-capitanul-lui-dinamo-sfatuit-de-un-fost-atacant-sa-nu-mearga-in-ucraina-pentru-club-suma-este-ametitoare-2150202",
+      "summary": "Fostul internațional Ciprian Marica, care a jucat pentru Șahtior Donețk între 2004 și 2007, a comentat oferta primită de Dinamo București pentru Cătălin Cârjan de la Metalist Harkov, ocupanta locului 7 în Ucraina. Marica a…",
+      "publishedAt": "2026-01-14T21:38:00.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.673Z"
+    },
+    {
+      "id": "4424b255f4034bba",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Anunțul lui Trump despre Iran. Ce asigurări a primit de la „surse sigure”",
+      "url": "https://hotnews.ro/anuntul-lui-trump-despre-iran-ce-asigurari-a-primit-de-la-surse-sigure-2150184",
+      "summary": "Întrebat miercuri de reporteri, în Biroul Oval de la Casa Albă, cine i-au spus că uciderile din Iran au încetat, Trump a descris aceste persoane ca fiind „surse foarte importante din partea cealaltă”.",
+      "publishedAt": "2026-01-14T21:29:32.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.673Z"
+    },
+    {
+      "id": "dd5cd94520c1fe1e",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Donald Trump, despre Groenlanda, după întâlnirea de la Washington: „Cred că se va rezolva ceva”",
+      "url": "https://hotnews.ro/donald-trump-despre-groenlanda-dupa-intalnirea-de-la-washington-cred-ca-se-va-rezolva-ceva-2150180",
+      "summary": "Președintele american Donald Trump a declarat încă o dată că „Groenlanda este foarte importantă pentru securitatea națională”, miercuri, după întâlnirea pe care au avut-o la Washington ministrul de externe danez și cel groenlandez cu oficiali…",
+      "publishedAt": "2026-01-14T21:19:22.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.673Z"
+    },
+    {
+      "id": "239d99ea472e5a4d",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Mutarea Germaniei: Berlinul trimite trupe de recunoaștere în Groenlanda",
+      "url": "https://hotnews.ro/mutarea-germaniei-berlinul-trimite-trupe-de-recunoastere-in-groenlanda-2150175",
+      "summary": "Germania va trimite joi 13 soldați în Groenlanda, în cadrul unei misiuni de recunoaștere derulată împreună cu alte națiuni europene, au anunțat miercuri guvernul și ministerul Apărării de la Berlin, în contextul presiunilor din partea…",
+      "publishedAt": "2026-01-14T20:48:14.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.673Z"
+    },
+    {
+      "id": "49ff990ae1ca2f73",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Ciprian Ciucu avertizează: Cazanul de la CET Sud „poate exploda” dacă e repornit. Mesaj despre „cel mai lung cârnat din lume și alte sindrofii”",
+      "url": "https://hotnews.ro/cazanul-de-la-cet-sud-poate-exploda-daca-e-repornit-ciucu-daca-fiecare-primar-inlocuia-din-retea-in-loc-sa-faca-sindrofii-si-carnati-nu-ajungeam-aici-2150171",
+      "summary": "Primarul general al Capitalei, Ciprian Ciucu, a declarat miercuri la Digi24 că a fost luată decizia de a fi introdus în rețea mai mult agent termic din CET Vest, deoarece „CET Sud nu este funcțional”,…",
+      "publishedAt": "2026-01-14T20:42:54.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.673Z"
+    },
+    {
+      "id": "36a9c72cef5f9c02",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Șefa CAB acuză o „imixtiune politică” în Justiție: „Președintele a împărțit judecătorii în buni și răi”",
+      "url": "https://hotnews.ro/video-sefa-cab-acuza-o-imixtiune-politica-in-justitie-presedintele-a-impartit-judecatorii-in-buni-si-rai-cum-raspunde-la-intrebarea-din-cadrul-referendumului-pe-2150152",
+      "summary": "Președinta Curții de Apel București (CAB), Liana Arsenie, a declarat miercuri, într-un interviu acordat Euronews, că declarațiile președintelui Nicușor Dan privind sistemul judiciar reprezintă o imixtiune în activitatea judecătorilor și i-a reproșat că a împărțit…",
+      "publishedAt": "2026-01-14T20:27:14.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.673Z"
+    },
+    {
+      "id": "e69dd5a3d7fefd88",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Prima veste despre soarta protestatarului iranian condamnat la moarte, a cărui execuție este programată astăzi",
+      "url": "https://hotnews.ro/prima-veste-despre-soarta-protestatarului-iranian-condamnat-la-moarte-a-carui-executie-este-programata-astazi-2150159",
+      "summary": "Tânărul de 26 de ani a fost arestat joia trecută. Organizația norvegiană pentru drepturile omului Hengaw a anunțat că acesta se află în închisoarea Qezel Hesar.",
+      "publishedAt": "2026-01-14T20:06:19.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.673Z"
+    },
+    {
+      "id": "eb576c925598e1c7",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Ședință de ultimă oră la MAE despre situația din Iran. Românii, îndemnați „să părăsească această țară imediat”",
+      "url": "https://hotnews.ro/scenariile-posibile-in-iran-evaluate-la-mae-romanii-indemnati-sa-paraseasca-aceasta-tara-imediat-2150153",
+      "summary": "Ministrul Afacerilor Externe, Oana Țoiu, a convocat miercuri o ședință de coordonare cu echipa MAE, în contextul evoluțiilor de securitate din Iran, iar instituția i-a îndemnat pe românii care se află acolo „să părăsească această…",
+      "publishedAt": "2026-01-14T19:58:31.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.673Z"
+    },
+    {
+      "id": "43fddb6f310902c6",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Măsură împotriva șoferilor vitezomani, impusă de o mare capitală europeană",
+      "url": "https://hotnews.ro/roma-a-impus-limita-de-viteza-de-30-km-h-in-centrul-orasului-urmand-exemplul-altor-capitale-europene-2150119",
+      "summary": "Roma este pe cale să devină cea mai nouă capitală europeană care reduce drastic limitele de viteză pentru deplasarea mașinilor, introducând o lege prin care italienii, cunoscuți pentru stilul lor de conducere periculos, vor fi…",
+      "publishedAt": "2026-01-14T19:37:19.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.673Z"
+    },
+    {
+      "id": "514d7826694ff56c",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Julio Iglesias, acuzat de trafic de persoane și abuz sexual. Două femei vor depune mărturie în fața procurorilor spanioli",
+      "url": "https://hotnews.ro/julio-iglesias-acuzat-de-trafic-de-persoane-si-abuz-sexual-doua-femei-vor-depune-marturie-in-fata-procurorilor-spanioli-2150121",
+      "summary": "Două femei care susțin că au fost agresate sexual de cântărețul Julio Iglesias vor depune mărturie în fața procurorilor spanioli, a anunțat miercuri organizația pentru drepturile femeilor care a depus o plângere în numele lor,…",
+      "publishedAt": "2026-01-14T19:16:53.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.673Z"
+    },
+    {
+      "id": "b0b1266dd5060107",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Raport îngrijorător: România este pe primul loc în UE la decese din cauze tratabile / Cele mai frecvente afecțiuni",
+      "url": "https://hotnews.ro/raport-ingrijorator-romania-este-pe-primul-loc-in-ue-la-decese-din-cauze-tratabile-cele-mai-frecvente-afectiuni-2141012",
+      "summary": "La fiecare 100.000 de români, 215 mor, în medie, din cauze tratabile, arată raportul „State of Health in the EU. Romania – Country Health Profile 2025”, publicat recent de Comisia Europeană și Organizația pentru Cooperare…",
+      "publishedAt": "2026-01-14T19:04:17.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.673Z"
+    },
+    {
+      "id": "3cc2abcf7763452e",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Suedia anunță trimiterea de ofițeri militari în Groenlanda pentru a pregăti manevrele aliate",
+      "url": "https://hotnews.ro/suedia-anunta-trimiterea-de-ofiteri-militari-in-groenlanda-pentru-a-pregati-manevrele-aliate-2150115",
+      "summary": "Prim-ministrul suedez Ulf Kristersson a anunțat că miercuri vor ajunge în Groenlanda ofițeri ai armatei suedeze, trimiși la cererea Danemarcei pentru a participa la pregătirea de manevre militare, informează EFE, conform Agerpres. „Astăzi sosesc în…",
+      "publishedAt": "2026-01-14T18:51:56.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.673Z"
+    },
+    {
+      "id": "a0a1228ca0eba4da",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Fiul unei doctorițe ucise în Franța a fost arestat la Cluj. Tânărul român este acuzat că și-a omorât mama",
+      "url": "https://www.mediafax.ro/justitie/fiul-unei-doctorite-ucise-in-franta-a-fost-arestat-la-cluj-tanarul-roman-este-acuzat-ca-si-a-omorat-mama-23671411",
+      "summary": "Un tânăr în vârstă de 23 de ani, căutat în Franța pentru uciderea mamei sale la sfârșitul lunii octombrie în localitatea Molsheim, a fost arestat joi în România, la Cluj, au anunțat autoritățile locale și parchetul de la Strasbourg.",
+      "publishedAt": "2026-01-15T01:44:36.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.417Z"
+    },
+    {
+      "id": "caa2ccc2cfd56d62",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Senatul SUA a respins rezoluția privind puterile de război ale președintelui Trump în Venezuela",
+      "url": "https://www.mediafax.ro/externe/senatul-sua-a-respins-rezolutia-privind-puterile-de-razboi-ale-presedintelui-trump-in-venezuela-23671407",
+      "summary": "Senatul a respins miercuri o rezoluție privind puterile de război care ar fi pus capăt capacității președintelui Donald Trump de a efectua alte atacuri militare asupra Venezuelei, în timp ce președintele a pus presiuni intense asupra colegilor săi republicani pentru a vota împotriva măsurii, potrivit AP.",
+      "publishedAt": "2026-01-15T00:57:34.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.417Z"
+    },
+    {
+      "id": "d61dfd87b65bf6a7",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Iranul și-a închis spațiul aerian",
+      "url": "https://www.mediafax.ro/externe/iranul-si-a-inchis-spatiul-aerian-23671403",
+      "summary": "Iranul a emis joi dimineață un ordin de închidere a spațiului său aerian, fără nicio explicație. Ordinul a venit pe fondul tensiunilor sporite legate de reprimarea sângeroasă a protestatarilor în timpul manifestațiilor la nivel național și de posibilitatea unor atacuri americane ca răspuns, transmite CNN.",
+      "publishedAt": "2026-01-15T00:08:48.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.417Z"
+    },
+    {
+      "id": "7ff42c963c6c533a",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "6 căței au fost salvați de pompierii din Washington după ce au fost expuși la o supradoză de droguri",
+      "url": "https://www.mediafax.ro/externe/6-catei-au-fost-salvati-de-pompierii-din-washington-dupa-ce-au-fost-expusi-la-o-supradoza-de-droguri-23671399",
+      "summary": "Șase căței din statul Washington vor fi în curând disponibili pentru adopție, după ce au fost resuscitați după o presupusă supradoză de droguri, iar unii dintre ei ar putea merge acasă cu personalul stației de pompieri care i-a salvat.",
+      "publishedAt": "2026-01-14T23:56:44.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.417Z"
+    },
+    {
+      "id": "6101c9804656f709",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Cea mai mare fraudă bancară din istoria Braziliei. Active în valoare de aproximativ un miliard de euro, confiscate",
+      "url": "https://www.mediafax.ro/externe/cea-mai-mare-frauda-bancara-din-istoria-braziliei-active-in-valoare-de-aproximativ-un-miliard-de-euro-confiscate-23671397",
+      "summary": "Poliția braziliană a confiscat active în valoare de aproape un miliard de euro și a efectuat descinderi miercuri, în cadrul unei anchete privind ceea ce guvernul consideră că ar putea fi „cea mai mare fraudă bancară din istoria Braziliei”.",
+      "publishedAt": "2026-01-14T23:14:24.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.417Z"
+    },
+    {
+      "id": "7a8f9cef5f633b60",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Franța și Germania vor participa la o misiune militară europeană în Groenlanda. „Primii operatori au sosit deja la fața locului”",
+      "url": "https://www.mediafax.ro/externe/franta-si-germania-vor-participa-la-o-misiune-militara-europeana-in-groenlanda-primii-operatori-au-sosit-deja-la-fata-locului-23671395",
+      "summary": "Armata franceză va trimite soldați în Groenlanda. „Primii operatori au sosit deja la fața locului”, a declarat o sursă militară pentru Le Figaro. Și Germania va trimite 13 soldați în Groenlanda într-o misiune de recunoaștere alături de alte națiuni europene, au anunțat Guvernul german și Ministerul Apărării.",
+      "publishedAt": "2026-01-14T22:48:45.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.417Z"
+    },
+    {
+      "id": "457b55b930f875cb",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Trump, după ce a vorbit cu președinta interimară a Venezuelei: „este o persoană extraordinară”",
+      "url": "https://www.mediafax.ro/externe/trump-dupa-ce-a-vorbit-cu-presedinta-interimara-a-venezuelei-este-o-persoana-extraordinara-23671390",
+      "summary": "Președintele SUA, Donald Trump, a declarat miercuri că a vorbit în cursul zilei cu președinta interimară a Venezuelei, Delcy Rodriguez. El a descris conversația într-un mod pozitiv, spunând: „Ne înțelegem foarte bine cu Venezuela”.",
+      "publishedAt": "2026-01-14T21:59:40.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.417Z"
+    },
+    {
+      "id": "155a23eed38b3a6e",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Experți ONU pentru drepturile omului invocă temeri de „dominație colonială” în privința preluării Groenlandei de către SUA",
+      "url": "https://www.mediafax.ro/externe/experti-onu-pentru-drepturile-omului-invoca-temeri-de-dominatie-coloniala-in-privinta-preluarii-groenlandei-de-catre-sua-23671387",
+      "summary": "Un grup de experți ONU a susținut dreptul la autodeterminare al poporului Groenlandei, în urma „îngrijorărilor profunde” legate de intenția declarată a președintelui american Donald Trump de a prelua controlul asupra teritoriului autonom al Danemarcei.",
+      "publishedAt": "2026-01-14T21:37:26.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.417Z"
+    },
+    {
+      "id": "9858c629168230e8",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Trump susține că execuțiile protestatarilor arestați din Iran s-a oprit",
+      "url": "https://www.mediafax.ro/externe/trump-sustine-ca-executiile-protestatarilor-arestati-din-iran-s-a-oprit-23671379",
+      "summary": "Președintele Donald Trump a declarat miercuri că a fost informat „din surse sigure” că planurile de execuții în Iran au încetat, chiar dacă Teheranul a semnalat procese și execuții rapide în cadrul represiunii împotriva protestatarilor.",
+      "publishedAt": "2026-01-14T21:14:52.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.417Z"
+    },
+    {
+      "id": "0f918176640c70ae",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "La Washington, Danemarca și Groenlanda resping din nou ideea anexării teritoriului arctic de către SUA",
+      "url": "https://www.mediafax.ro/externe/la-washington-danemarca-si-groenlanda-resping-din-nou-ideea-anexarii-teritoriului-arctic-de-catre-sua-23671382",
+      "summary": "Discuțiile de la Washington privind viitorul Groenlandei s-au încheiat fără un acord, pe fondul unor poziții divergente între SUA, Danemarca și autoritățile de la Nuuk.",
+      "publishedAt": "2026-01-14T20:58:20.000Z",
+      "fetchedAt": "2026-01-15T02:03:12.417Z"
+    },
+    {
+      "id": "be316570235c32f1",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Raport. Anul trecut a fost al treilea cel mai călduros din istoria măsurătorilor meteorologice. Temperatura medie globală a fost cu 1,4 grade Celsius peste nivelurile preindustriale.",
+      "url": "https://www.biziday.ro/345036-2/",
+      "summary": "Datele publicate de serviciul european Copernicus Climate Change Service și de Met Office din Marea Britanie relevă că temperaturile globale din 2025 nu au atins nivelurile record din 2024, în principal datorită modelului meteorologic natural La Niña, de răcire.  Cu toate acestea, 2025 a fost al treilea cel mai cald an înregistrat vreodată. Chiar și […]",
+      "publishedAt": "2026-01-14T22:07:45.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.470Z"
+    },
+    {
+      "id": "62a0069e793fdb6a",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Ministrul danez de Externe declară, după întâlnirea cu oficialii americani, că “nu este deloc necesar” ca SUA să controleze Groenlanda și că părțile au poziții fundamental diferite. Spune că va fi creat un grup de lucru, care să identifice o soluție de compromis.",
+      "url": "https://www.biziday.ro/345005-2/",
+      "summary": "UPDATE, ora 23:25. Într-o conferință de presă în Biroul Oval, Donald Trump a declarat că va fi informat de Marco Rubio despre întâlnirea cu oficialii din Danemarca și Groenlanda. Președintele american a mai spus că Danemarca nu ar putea face nimic, dacă Rusia sau China ar ocupa Groenlanda. Știrea în formă inițială. Miniștrii de Externe din […]",
+      "publishedAt": "2026-01-14T19:38:03.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.470Z"
+    },
+    {
+      "id": "bdb58b1b876b7665",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "SUA vor suspenda, de săptămâna viitoare, procesarea vizelor pentru solicitanții din 75 de țări. Printre acestea, se numără Republica Moldova, Rusia, Iran, Afganistan, Brazilia și Thailanda.",
+      "url": "https://www.biziday.ro/345021-2/",
+      "summary": "Un purtător de cuvânt al Departamentului american de Stat a anunțat că suspendarea va fi implementată de pe 21 ianuarie. Acesta a declarat că “Departamentul își va folosi autoritatea pentru a considera neeligibili potențialii imigranți care ar deveni o povară pentru SUA și ar exploata generozitatea poporului american. Procesarea vizelor va fi suspendată, în timp […]",
+      "publishedAt": "2026-01-14T20:50:54.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.470Z"
+    },
+    {
+      "id": "dfd47645306012ee",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Ministerul român de Externe le recomandă cetățenilor români să părăsească imediat Iranul. A emis o alertă de călătorie de nivel maxim pe fondul protestelor și al intensificării tensiunilor în țară.",
+      "url": "https://www.biziday.ro/345014-2/",
+      "summary": "Update, ora 23:10. Italia, Spania și Polonia au făcut apel la cetățenii lor să părăsească Iranul. Știrea în formă inițială. Ministerul român al Afacerilor Externe informează cetățenii că a ridicat avertismentul de călătorie pentru Iran la “nivelul maxim, 9/9, Părăsiți imediat țara!” Instituția le recomandă românilor să părăsească imediat țara, pe orice rută sigură existentă, […]",
+      "publishedAt": "2026-01-14T19:59:36.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.470Z"
+    },
+    {
+      "id": "93a28a426731d99b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Donald Trump asigură: „Uciderile s-au terminat în Iran. Nu sunt planificate execuții”. Intervenția SUA, mai puțin probabilă",
+      "url": "https://stirileprotv.ro/stiri/international/donald-trump-asigura-zuciderile-s-au-terminat-in-iran-nu-sunt-planificate-executii-interventia-sua-mai-putin-probabila.html",
+      "summary": "Preşedintele SUA, Donald Trump, a declarat miercuri că „uciderile s-au terminat” în Iran și că autoritățile „nu au planificat” execuții, reducând riscul unei intervenții militare americane.",
+      "publishedAt": "2026-01-14T20:36:00.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.970Z"
+    },
+    {
+      "id": "a8da655fbdc37d08",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cine e vinovat pentru criza termoficării? Ciprian Ciucu mută responsabilitatea spre foștii primari ai Capitalei",
+      "url": "https://stirileprotv.ro/stiri/politic/cine-e-vinovat-pentru-criza-termoficarii-ciprian-ciucu-muta-responsabilitatea-spre-fostii-primari-ai-capitalei.html",
+      "summary": "Primarul general al Capitalei, Ciprian Ciucu, consideră că nu predecesorul său, Nicuşor Dan, este responsabil pentru faptul că mii de blocuri din Bucureşti nu sunt alimentate cu apă caldă, din cauza avariei produse la CET Sud.",
+      "publishedAt": "2026-01-14T20:10:00.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.970Z"
+    },
+    {
+      "id": "79c906d7fb622261",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Acel moment în care Universul te faci să exclami ”uau!”. O stea zombie creează un curcubeu în apropierea Pământului",
+      "url": "https://stirileprotv.ro/stiri/stiinta/acel-moment-in-care-universul-te-faci-sa-exclami-uau-o-stea-zombie-creeaza-un-curcubeu-in-apropierea-pamantului.html",
+      "summary": "O stea zombie, aflată în ultimele stadii ale existenței sale, a emis o undă de șoc precum un curcubeu, fenomen care nu ar fi trebuit să aibă loc, potrivit astronomilor citați de Live Science.",
+      "publishedAt": "2026-01-14T20:02:00.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.970Z"
+    },
+    {
+      "id": "d8db5d9c5459f318",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Criza termoficării în București: infrastructura veche împiedică repornirea cazanului care alimenta 3.500 de blocuri",
+      "url": "https://stirileprotv.ro/stiri/actualitate/criza-a-termoficarii-in-bucuresti-infrastructura-veche-impiedica-repornirea-cazanului-care-alimenta-3-500-de-blocuri.html",
+      "summary": "Primarul general al Capitalei, Ciprian Ciucu, avertizează că repornirea cazanului cu apă fierbinte (CAF), care deservește 3.500 de blocuri, ar putea provoca explozii din cauza infrastructurii vechi și ar afecta o zonă mult mai extinsă din București.",
+      "publishedAt": "2026-01-14T19:59:00.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.970Z"
+    },
+    {
+      "id": "09c548394b38f652",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "MAE cere cetățenilor români să părăsească imediat Iranul. Italia, Polonia şi Spania au transmis același mesaj cetățenilor lor",
+      "url": "https://stirileprotv.ro/stiri/actualitate/mae-cere-cetatenilor-romani-sa-paraseasca-imediat-iranul.html",
+      "summary": "MAE a emis miercuri seara un avertisment prin care le cere cetățenilor români să părăsească imediat Iranul. Ministerul a ridicat astfel nivelul de avertisment la 9/9, nivelul maxim.",
+      "publishedAt": "2026-01-14T19:53:00.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.970Z"
+    },
+    {
+      "id": "a3b181d7eeabdd04",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ambasada SUA în România preia o postare a lui Nicușor Dan: ”Susținem cu convingere această inițiativă, domnule președinte!”",
+      "url": "https://stirileprotv.ro/stiri/politic/ambasada-sua-in-romania-preia-o-postare-a-lui-nicusor-dan-sustinem-cu-convingere-aceasta-initiativa-domnule-presedinte.html",
+      "summary": "Ambasada SUA în România a distribuit postarea lui Nicușor Dan cu privire la programul educațional româno-american FLEX și precizează că susține ”cu convingere această inițiativă”.",
+      "publishedAt": "2026-01-14T19:36:00.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.970Z"
+    },
+    {
+      "id": "bbe40f0c745c9613",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Doi hoți români, condamnați în Anglia. Au jefuit case și dormitoarele unor copii, la o zi după ce au ajuns în Marea Britanie",
+      "url": "https://stirileprotv.ro/divers/doi-hoti-romani-condamnati-in-anglia-au-jefuit-case-si-dormitoarele-unor-copii-la-o-zi-dupa-ce-au-ajuns-in-marea-britanie.html",
+      "summary": "O pereche de hoți români a jefuit mai multe locuințe și a devastat inclusiv dormitoare de copii, la doar o zi după ce a intrat în Marea Britanie.",
+      "publishedAt": "2026-01-14T19:36:00.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.970Z"
+    },
+    {
+      "id": "23a409d9592967cb",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Horoscop 15 ianuarie 2026, cu Neti Sandu. Șanse mari să atrageți succesul prin parteneriat",
+      "url": "https://stirileprotv.ro/show-buzz/horoscop/horoscop-15-ianuarie-2026-cu-neti-sandu-sanse-mari-sa-atrageti-succesul-prin-parteneriat.html",
+      "summary": "Horoscop 15 ianuarie 2026, prezentat de Neti Sandu la Știrile PRO TV. O zi cu vești bune, Este o zi cu exuberanță și elan creator, iar prezența unor oameni inspiraționali ne va motiva și ne va aduce idei noi.",
+      "publishedAt": "2026-01-14T19:26:00.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.970Z"
+    },
+    {
+      "id": "c75cca4efadb3dec",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Groenlanda poate fi aliat al SUA fără a fi „deținută” de Statele Unite, afirmă ministrul de externe al Groenlandei",
+      "url": "https://stirileprotv.ro/stiri/international/groenlanda-poate-fi-aliat-al-sua-fara-a-fi-zdetinuta-de-statele-unite-afirma-ministrul-de-externe-al-groenlandei.html",
+      "summary": "Miniștrii de externe danez ars Løkke Rasmussen și groenlandez Vivian Motzfeldt au susținut o conferință de presă în urma discuțiilor de la Casa Albă cu vicepreședintele și secretarul de stat al SUA.",
+      "publishedAt": "2026-01-14T19:24:00.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.970Z"
+    },
+    {
+      "id": "1c750a76f5c3af0c",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Bild: Germania se pregătește să trimită primele trupe în Groenlanda zilele viitoare, independent de NATO",
+      "url": "https://stirileprotv.ro/stiri/international/bild-germania-se-pregateste-sa-trimita-primele-trupe-in-groenlanda-zilele-viitoare-independent-de-nato.html",
+      "summary": "Germania se pregătește să trimită o unitate de recunoaștere a Bundeswehr în Groenlanda chiar de joi, potrivit informațiilor obținute de publicația Bild.",
+      "publishedAt": "2026-01-14T19:18:00.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.970Z"
+    },
+    {
+      "id": "434d7c9e9f3582e0",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ursula Von der Leyen, răspuns dur pentru Donald Trump pe tema preluării Groenlandei",
+      "url": "https://stirileprotv.ro/stiri/international/ursula-von-der-leyen-raspuns-dur-pentru-donald-trump-pe-tema-preluarii-groenlandei.html",
+      "summary": "Preşedinta Comisiei Europene, Ursula Von der Leyen, a declarat miercuri că cetăţenii din Groenlanda pot să conteze pe Uniunea Europeană, după ameninţările preşedintelui american Donald Trump de a prelua acest teritoriu autonom al Danemarcei.",
+      "publishedAt": "2026-01-14T19:05:00.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.970Z"
+    },
+    {
+      "id": "f077607b25fb9cca",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Unul dintre cele mai mari orașe din România anunță o măsură inedită: ”Nu plănuim să avem concerte de manele”",
+      "url": "https://stirileprotv.ro/stiri/social/unul-dintre-cele-mai-mari-orase-din-romania-anunta-o-masura-inedita-nu-planuim-sa-avem-concerte-de-manele.html",
+      "summary": "BT Arena din Cluj-Napoca a interzis concertele de manele și își propune să rămână o instituție de cultură, dedicată doar evenimentelor artistice și sportive de calitate, ”care să aducă un plus de imagine orașului”.",
+      "publishedAt": "2026-01-14T18:58:00.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.970Z"
+    },
+    {
+      "id": "95fe5e709d5737dd",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Peste 3.400 de morți și 10.000 de arestări în Iran de la începutul protestelor, estimează ONG-ul Iran Human Rights",
+      "url": "https://stirileprotv.ro/stiri/international/peste-3-400-de-morti-si-10-000-de-arestari-in-iran-de-la-inceputul-protestelor-estimeaza-ong-ul-iran-human-rights.html",
+      "summary": "Organizația nonguvernamentală Iran Human Rights anunță că cel puțin 3.428 de persoane au fost ucise în Iran de la începutul protestelor, la 28 decembrie, iar peste 10.000 au fost arestate, potrivit AFP.",
+      "publishedAt": "2026-01-14T18:54:00.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.970Z"
+    },
+    {
+      "id": "f8043214db6344dc",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Criză în sistemul sanitar din Buzău: sindicaliștii Sanitas vorbesc despre demnitate și plecări în bloc",
+      "url": "https://stirileprotv.ro/stiri/actualitate/criza-in-sistemul-sanitar-din-buzau-sindicalistii-sanitas-vorbesc-despre-demnitate-si-plecari-in-bloc.html",
+      "summary": "Sindicatul Sanitas Buzău transmite un mesaj dur autorităţilor şi decidenţilor din sistemul sanitar, reclamând ani de promisiuni încălcate, salarii diminuate şi lipsa de respect faţă de personalul medical.",
+      "publishedAt": "2026-01-14T18:42:00.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.970Z"
+    },
+    {
+      "id": "7a1c52d030ad4754",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Chiar și cei mai sedentari oameni vor trăi mai mult dacă fac asta doar 5 minute pe zi. Bonus: Rețeta pentru 10 ani în plus",
+      "url": "https://stirileprotv.ro/stiri/sanatate/chiar-si-cei-mai-sedentari-oameni-vor-trai-mai-mult-daca-fac-asta-doar-5-minute-pe-zi-bonus-reteta-pentru-10-ani-in-plus.html",
+      "summary": "Persoanele inactive pot reduce riscul de deces cu 30% cu doar 5 minute de exerciții fizice pe zi, se arată într-un amplu studiu, realizat pe 135.000 de persoane. Cercetarea propune și o rețetă pentru prelungirea cu cel puțin 10 ani sănătoși a vieții.",
+      "publishedAt": "2026-01-14T18:27:00.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.970Z"
+    },
+    {
+      "id": "634802dd58d8cade",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Femeie găsită calcinată în Alsacia: Suspectul a fost arestat în România",
+      "url": "https://agerpres.ro/social-extern/2026/01/15/femeie-gasita-calcinata-in-alsacia-suspectul-a-fost-arestat-in-romania--1518836",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "4b2879d57f7a4590",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Iran: Execuția anunțată a unui manifestant a fost amânată",
+      "url": "https://agerpres.ro/politic-extern/2026/01/15/video-iran-executia-anuntata-a-unui-manifestant-a-fost-amanata--1518833",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "ac629f962d9cdb58",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Fotbal: Marocul s-a calificat în finala Cupei Africii pe Națiuni 2025, după loviturile de departajare",
+      "url": "https://agerpres.ro/sport-extern/2026/01/15/video-fotbal-marocul-s-a-calificat-in-finala-cupei-africii-pe-natiuni-2025-dupa-loviturile-de-depart--1518832",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "102a5373e85a693f",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Mai multe trupe NATO în Groenlanda 'în următoarele zile' (vicepremier)",
+      "url": "https://agerpres.ro/politic-extern/2026/01/15/mai-multe-trupe-nato-in-groenlanda-in-urmatoarele-zile-vicepremier--1518831",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "5dd445373ac94904",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Nici nave, nici investiții chineze în Groenlanda, asigură ministrul danez de externe",
+      "url": "https://agerpres.ro/politic-extern/2026/01/14/nici-nave-nici-investitii-chineze-in-groenlanda-asigura-ministrul-danez-de-externe--1518829",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "c85fa44bc258b679",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: Portarul Otto Hindrich, transferat de la CFR Cluj la Legia Varșovia",
+      "url": "https://agerpres.ro/sport/2026/01/14/fotbal-portarul-otto-hindrich-transferat-de-la-cfr-cluj-la-legia-varsovia--1518830",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "10357b9f0cb3ab4f",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Regatul Unit și-a 'închis temporar' ambasada la Teheran",
+      "url": "https://agerpres.ro/politic-extern/2026/01/14/regatul-unit-si-a-inchis-temporar-ambasada-la-teheran--1518828",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "40a3a83dc6d20bc2",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Ciucu dorește ca jumătate din impozitele locale încasate la sectoare să vină la bugetul Primăriei Capitalei",
+      "url": "https://agerpres.ro/administratie/2026/01/14/ciucu-doreste-ca-jumatate-din-impozitele-locale-incasate-la-sectoare-sa-vina-la-bugetul-primariei-ca--1518827",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "123144a27aaf0dcc",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Ciucu: În unele blocuri nu va ajunge apa caldă; există și această posibilitate",
+      "url": "https://agerpres.ro/administratie/2026/01/14/ciucu-in-unele-blocuri-nu-va-ajunge-apa-calda-exista-si-aceasta-posibilitate--1518826",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "9108c3799ad74091",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Volei feminin: România, victorioasă în fața Serbiei, în preliminariile Europeanului Under-18",
+      "url": "https://agerpres.ro/sport-extern/2026/01/14/volei-feminin-romania-victorioasa-in-fata-serbiei-in-preliminariile-europeanului-under-18--1518825",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "0f96904935b5738a",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Tenis: Două perechi românești, calificate în sferturile probei de dublu la Buenos Aires (challenger)",
+      "url": "https://agerpres.ro/sport-extern/2026/01/14/tenis-doua-perechi-romanesti-calificate-in-sferturile-probei-de-dublu-la-buenos-aires-challenger--1518824",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "21caee058c8d0b77",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Franța, Germania și Suedia vor participa la o misiune militară europeană în Groenlanda",
+      "url": "https://agerpres.ro/politic-extern/2026/01/14/franta-germania-si-suedia-vor-participa-la-o-misiune-militara-europeana-in-groenlanda--1518823",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "5c7c6c3b499bad9b",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Trump 'crede că va fi găsită o soluție' în privința Groenlandei",
+      "url": "https://agerpres.ro/politic-extern/2026/01/14/trump-crede-ca-va-fi-gasita-o-solutie-in-privinta-groenlandei--1518822",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "2e97606007387c8d",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Venezuela: Președinta interimară nu va merge în SUA din cauza 'pașaportului expirat', glumește fratele ei",
+      "url": "https://agerpres.ro/politic-extern/2026/01/14/video-venezuela-presedinta-interimara-nu-va-merge-in-sua-din-cauza-pasaportului-expirat-glumeste-fra--1518819",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "4325eba29efb976e",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Volei masculin: Arcada Galați și Știința Explorări Baia Mare, calificate în sferturile Cupei României",
+      "url": "https://agerpres.ro/sport/2026/01/14/volei-masculin-arcada-galati-si-stiinta-explorari-baia-mare-calificate-in-sferturile-cupei-romaniei--1518820",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "07fdd6432332c168",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Vaslui: Femeie de 74 de ani, carbonizată într-un incendiu izbucnit într-o locuință din Gugești",
+      "url": "https://agerpres.ro/social/2026/01/14/vaslui-femeie-de-74-de-ani-carbonizata-intr-un-incendiu-izbucnit-intr-o-locuinta-din-gugesti--1518818",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "9ec6b4e84dc32605",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: Dennis Man a marcat pentru PSV, care s-a calificat în sferturile Cupei Olandei",
+      "url": "https://agerpres.ro/sport-extern/2026/01/14/fotbal-dennis-man-a-marcat-pentru-psv-care-s-a-calificat-in-sferturile-cupei-olandei--1518817",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "56ff5ba989562767",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Italia, Polonia și Spania le cer cetățenilor lor să părăsească imediat Iranul",
+      "url": "https://agerpres.ro/politic-extern/2026/01/14/italia-polonia-si-spania-le-cer-cetatenilor-lor-sa-paraseasca-imediat-iranul--1518816",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "5dcbf043fc854d4e",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Ciucu: Dacă nu o să mă înțeleg cu STB și cu ce se întâmplă acolo, alternativa este insolvența",
+      "url": "https://agerpres.ro/administratie/2026/01/14/ciucu-daca-nu-o-sa-ma-inteleg-cu-stb-si-cu-ce-se-intampla-acolo-alternativa-este-insolventa--1518815",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "a82f0d4546ff523f",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Trump afirmă că 'uciderile s-au terminat' în Iran",
+      "url": "https://agerpres.ro/politic-extern/2026/01/14/trump-afirma-ca-uciderile-s-au-terminat-in-iran--1518814",
+      "summary": "",
+      "publishedAt": "2026-01-15T02:03:13.380Z",
+      "fetchedAt": "2026-01-15T02:03:13.380Z"
+    },
+    {
+      "id": "a2f274b2fee8a5aa",
+      "sourceId": "europa-libera",
+      "sourceName": "Europa Liberă",
+      "title": "Groenlanda | Șeful diplomației daneze: N-am reușit să schimbăm poziția SUA. Franța, Germania, Norvegia contribuie cu trupe la forțele daneze",
+      "url": "https://romania.europalibera.org/a/sua-intalnire-casa-alba-donald-trump-danemarca-groenlanda/33647930.html",
+      "summary": "Ministrul danez de externe a declarat că Donald Trump rămâne hotărât să „cucerească” Groenlanda, în contextul în care discuțiile cruciale cu oficialii americani nu au reușit să rezolve un „dezacord fundamental” care a dus la tensiuni fără precedent între Washington și un aliat al NATO.",
+      "publishedAt": "2026-01-14T21:02:44.000Z",
+      "fetchedAt": "2026-01-15T02:03:11.934Z"
     }
   ],
-  "lastUpdated": "2026-01-14T18:39:58.362Z"
+  "lastUpdated": "2026-01-15T02:03:13.386Z"
 }
