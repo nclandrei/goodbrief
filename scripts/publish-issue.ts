@@ -87,20 +87,7 @@ date: ${date}
 summary: "${articles.length} vești bune din România săptămâna asta."
 ---
 
-Bună dimineața! 👋
-
-Here's your weekly dose de vești bune din România. ${articles.length} știri, sub 5 minute.
-
----
-
 ${sections.join("\n\n")}
-
----
-
-Thanks for reading! 🙏
-
-Ai o poveste bună? Reply la acest email sau scrie-ne la hello@goodbrief.ro.
-Ne ajută enorm dacă dai forward cuiva care are nevoie de vești bune azi.
 `;
 }
 
