@@ -8,7 +8,7 @@
       "sourceName": "Știrile ProTV",
       "originalTitle": "România devine din 2027 cel mai mare producător de gaze naturale din Uniunea Europeană. Cât extragem din Marea Neagră",
       "url": "https://stirileprotv.ro/stiri/social/romania-devine-din-2027-cel-mai-mare-producator-de-gaze-naturale-din-uniunea-europeana-cat-extragem-din-marea-neagra.html",
-      "summary": "România va deveni cel mai mare producător de gaze naturale din UE din 2027, odată cu începerea extracției din perimetrul Neptun Deep. Aceasta reprezintă o realizare strategică majoră pentru securitatea energetică a țării.",
+      "summary": "România devine din 2027 cel mai mare producător de gaze din UE, odată cu exploatarea Neptun Deep. Înseamnă independență energetică și facturi mai stabile pe termen lung.",
       "positivity": 90,
       "impact": 90,
       "category": "wins",
@@ -16,16 +16,16 @@
       "processedAt": "2026-01-17T10:43:44.442Z"
     },
     {
-      "id": "98e2aaeace94287c",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Câștiguri record la Pilonul II în 2025. Câți bani s-au strâns în contul unui român care a cotizat din 2008",
-      "url": "https://stirileprotv.ro/stiri/ibani/castiguri-record-la-pilonul-ii-in-2025-cati-bani-s-au-strans-in-contul-unui-roman-care-a-cotizat-din-2008.html",
-      "summary": "Pilonul II de pensii private a înregistrat câștiguri record în 2025, cu un randament mediu de aproape 20%. Aceasta înseamnă o performanță excelentă pentru economiile românilor acumulate pentru pensie.",
-      "positivity": 85,
-      "impact": 80,
+      "id": "3e5fb3e3b5dee03d",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "originalTitle": "Investitorii la bursa din București au înregistrat un an excepțional în 2025.",
+      "url": "https://www.biziday.ro/344965-2/",
+      "summary": "Bursa de la București a avut un an record în 2025, cu creșteri solide ale acțiunilor românești. O veste bună pentru cine a început să investească.",
+      "positivity": 80,
+      "impact": 75,
       "category": "wins",
-      "publishedAt": "2026-01-12T07:33:00.000Z",
+      "publishedAt": "2026-01-14T16:51:02.000Z",
       "processedAt": "2026-01-17T10:43:44.442Z"
     },
     {
@@ -76,7 +76,7 @@
       "summary": "O instalație din Cluj, o invenție românească, transformă deșeurile în energie electrică și termică, putând alimenta orașul în caz de avarie. Acest proiect ar putea deveni un model național.",
       "positivity": 85,
       "impact": 80,
-      "category": "local-heroes",
+      "category": "green-stuff",
       "publishedAt": "2026-01-16T17:17:00.000Z",
       "processedAt": "2026-01-17T10:43:44.442Z"
     },
@@ -94,16 +94,16 @@
       "processedAt": "2026-01-17T10:43:44.442Z"
     },
     {
-      "id": "a7bbc4f05728efec",
-      "sourceId": "mediafax",
-      "sourceName": "Mediafax",
-      "originalTitle": "Un suflet nevinovat salvat din incendiu: pompierii din Bistrița-Năsăud au resuscitat un cățel cu oxigen",
-      "url": "https://www.mediafax.ro/social/un-suflet-nevinovat-salvat-din-incendiu-pompierii-din-bistrita-nasaud-au-resuscitat-un-catel-cu-oxigen-23671951",
-      "summary": "Pompierii din Bistrița-Năsăud au salvat și resuscitat cu oxigen un cățel dintr-un incendiu. E o poveste emoționantă despre animale.",
-      "positivity": 90,
-      "impact": 70,
+      "id": "495fd56fd1d3a297",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Medicii plecați în afară încep să se reîntoarcă în România. După cinci ani în Franța, Septimiu a revenit acasă: „Nu regret"",
+      "url": "https://stirileprotv.ro/stiri/sanatate/medicii-plecati-in-afara-incep-sa-se-reintoarca-in-romania-dupa-cinci-ani-in-franta-septimiu-a-revenit-acasa-znu-regret.html",
+      "summary": "Tot mai mulți medici români revin acasă după ani în Vest. Septimiu s-a întors din Franța după 5 ani: „Nu regret." E un semn că brain drain-ul poate fi reversibil.",
+      "positivity": 80,
+      "impact": 75,
       "category": "local-heroes",
-      "publishedAt": "2026-01-15T17:15:28.000Z",
+      "publishedAt": "2026-01-14T17:04:00.000Z",
       "processedAt": "2026-01-17T10:43:44.442Z"
     },
     {
@@ -399,7 +399,7 @@
   "totalProcessed": 816,
   "wrapperCopy": {
     "greeting": "Salutare! 👋",
-    "intro": "Hei! O săptămână plină de vești bune: România devine lider la gaze în UE, Pilonul II a avut un an record, iar Popovici e din nou cel mai bun din Europa. Let's go.",
+    "intro": "Hei! Săptămâna asta: România devine lider la gaze în UE, bursa a avut un an record, iar Popovici e din nou cel mai bun din Europa. Let's go.",
     "signOff": "Asta a fost pentru săptămâna asta. Până data viitoare, ai grijă de tine! 🙏"
   }
 }
