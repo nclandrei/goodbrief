@@ -29,16 +29,16 @@
       "processedAt": "2026-01-17T10:43:44.442Z"
     },
     {
-      "id": "cb66eeaa2efd3d80",
+      "id": "7728fee8cfaa1755",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
-      "originalTitle": "An record pentru pensiile private. Cât are în medie un român în conturi la Pilonul 2: ”Plec într-o croazieră”",
-      "url": "https://stirileprotv.ro/stiri/social/an-record-pentru-pensiile-private-cat-are-in-medie-un-roman-in-conturi-la-pilonul-2-plec-intr-o-croaziera.html",
-      "summary": "Fondurile de pensii private, Pilonul 2, au înregistrat un an record în 2025, cu un randament mediu de aproape 20%. Această performanță solidă le oferă beneficiarilor perspective financiare pozitive.",
-      "positivity": 85,
+      "originalTitle": "A ajuns în România cârtița uriașă care va străpunge Carpații. Are dimensiunea unui teren de fotbal și va săpa 20 de m pe zi",
+      "url": "https://stirileprotv.ro/stiri/actualitate/a-ajuns-in-romania-cartita-uriasa-care-va-strapunge-carpatii-are-dimensiunea-unui-teren-de-fotbal-si-va-sapa-20-de-m-pe-zi.html",
+      "summary": "A ajuns în România cârtița uriașă care va fora un tunel rutier de autostradă prin Carpați, cu o tehnică nouă. E o veste majoră pentru infrastructura de transport.",
+      "positivity": 80,
       "impact": 80,
       "category": "wins",
-      "publishedAt": "2026-01-12T17:17:00.000Z",
+      "publishedAt": "2026-01-15T17:08:00.000Z",
       "processedAt": "2026-01-17T10:43:44.442Z"
     },
     {
@@ -81,16 +81,16 @@
       "processedAt": "2026-01-17T10:43:44.442Z"
     },
     {
-      "id": "2496247592cd1bb3",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Peste patru miliarde de euro din fonduri europene pentru agricultura românească. Record de absorbție a fondurilor UE",
-      "url": "https://stirileprotv.ro/stiri/actualitate/peste-patru-miliarde-de-euro-din-fonduri-europene-pentru-agricultura-romaneasca-record-de-absorbtie-a-fondurilor-ue.html",
-      "summary": "Peste patru miliarde de euro din fonduri europene au fost livrate pentru agricultura românească, un record de absorbție. România va mai primi peste un miliard de euro. Această performanță subliniază succesul în atragerea fondurilor UE. Este o veste excelentă pentru agricultură.",
-      "positivity": 90,
+      "id": "41a72672e619deda",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "originalTitle": "Zacuscă și roboți. 100 de copii din familii vulnerabile deprind taineleprogramării și cum să controleze noile tehnologii",
+      "url": "https://hotnews.ro/zacusca-si-roboti-100-de-copii-din-familii-vulnerabile-deprind-taineleprogramarii-si-cum-sa-controleze-noile-tehnologii-2149157",
+      "summary": "100 de copii din familii vulnerabile învață programare și tainele tehnologiilor noi prin proiectul „Zacuscă și roboți”. Un elev de 13 ani a construit o mașinuță autonomă, demonstrând potențialul educațional.",
+      "positivity": 85,
       "impact": 70,
-      "category": "wins",
-      "publishedAt": "2026-01-13T13:32:00.000Z",
+      "category": "local-heroes",
+      "publishedAt": "2026-01-13T12:54:05.000Z",
       "processedAt": "2026-01-17T10:43:44.442Z"
     },
     {
@@ -120,31 +120,31 @@
       "processedAt": "2026-01-17T10:43:44.442Z"
     },
     {
-      "id": "a875d464d9f4d4cc",
-      "sourceId": "biziday",
-      "sourceName": "Biziday",
-      "originalTitle": "Comisia Europeană a aprobat planul României pentru reînarmare și investiții în infrastructura critică, în valoare de 16,7 miliarde de euro. Urmează o decizie din partea Consiliului UE, iar primele alocări ar putea fi făcute în martie.",
-      "url": "https://www.biziday.ro/345089-2/",
-      "summary": "Comisia Europeană aprobă planul de apărare al României, în valoare de 16,7 miliarde de euro, prin programul SAFE. Urmează decizia Consiliului UE. E o veste importantă pentru securitate.",
+      "id": "0cdbbc55de22ab51",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "originalTitle": "Sala de teatru de la Cotroceni, deschisă în premieră pentru trupe independente de tineri și liceeni",
+      "url": "https://hotnews.ro/sala-de-teatru-de-la-cotroceni-deschisa-in-premiera-pentru-trupe-independente-de-tineri-si-liceeni-2150400",
+      "summary": "Sala de teatru de la Cotroceni va fi deschisă gratuit pentru trupe independente de tineri și liceeni, ca premieră. E o inițiativă culturală pozitivă.",
       "positivity": 80,
-      "impact": 80,
+      "impact": 70,
       "category": "wins",
-      "publishedAt": "2026-01-15T18:10:43.000Z",
+      "publishedAt": "2026-01-15T10:14:46.000Z",
       "processedAt": "2026-01-17T10:43:44.442Z"
     }
   ],
   "reserves": [
     {
-      "id": "7728fee8cfaa1755",
+      "id": "cb66eeaa2efd3d80",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
-      "originalTitle": "A ajuns în România cârtița uriașă care va străpunge Carpații. Are dimensiunea unui teren de fotbal și va săpa 20 de m pe zi",
-      "url": "https://stirileprotv.ro/stiri/actualitate/a-ajuns-in-romania-cartita-uriasa-care-va-strapunge-carpatii-are-dimensiunea-unui-teren-de-fotbal-si-va-sapa-20-de-m-pe-zi.html",
-      "summary": "A ajuns în România cârtița uriașă care va fora un tunel rutier de autostradă prin Carpați, cu o tehnică nouă. E o veste majoră pentru infrastructura de transport.",
-      "positivity": 80,
+      "originalTitle": "An record pentru pensiile private. Cât are în medie un român în conturi la Pilonul 2: ”Plec într-o croazieră”",
+      "url": "https://stirileprotv.ro/stiri/social/an-record-pentru-pensiile-private-cat-are-in-medie-un-roman-in-conturi-la-pilonul-2-plec-intr-o-croaziera.html",
+      "summary": "Fondurile de pensii private, Pilonul 2, au înregistrat un an record în 2025, cu un randament mediu de aproape 20%. Această performanță solidă le oferă beneficiarilor perspective financiare pozitive.",
+      "positivity": 85,
       "impact": 80,
       "category": "wins",
-      "publishedAt": "2026-01-15T17:08:00.000Z",
+      "publishedAt": "2026-01-12T17:17:00.000Z",
       "processedAt": "2026-01-17T10:43:44.442Z"
     },
     {
@@ -226,16 +226,16 @@
       "processedAt": "2026-01-17T10:43:44.442Z"
     },
     {
-      "id": "41a72672e619deda",
-      "sourceId": "hotnews",
-      "sourceName": "HotNews",
-      "originalTitle": "Zacuscă și roboți. 100 de copii din familii vulnerabile deprind taineleprogramării și cum să controleze noile tehnologii",
-      "url": "https://hotnews.ro/zacusca-si-roboti-100-de-copii-din-familii-vulnerabile-deprind-taineleprogramarii-si-cum-sa-controleze-noile-tehnologii-2149157",
-      "summary": "100 de copii din familii vulnerabile învață programare și tainele tehnologiilor noi prin proiectul „Zacuscă și roboți”. Un elev de 13 ani a construit o mașinuță autonomă, demonstrând potențialul educațional.",
-      "positivity": 85,
+      "id": "2496247592cd1bb3",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Peste patru miliarde de euro din fonduri europene pentru agricultura românească. Record de absorbție a fondurilor UE",
+      "url": "https://stirileprotv.ro/stiri/actualitate/peste-patru-miliarde-de-euro-din-fonduri-europene-pentru-agricultura-romaneasca-record-de-absorbtie-a-fondurilor-ue.html",
+      "summary": "Peste patru miliarde de euro din fonduri europene au fost livrate pentru agricultura românească, un record de absorbție. România va mai primi peste un miliard de euro. Această performanță subliniază succesul în atragerea fondurilor UE. Este o veste excelentă pentru agricultură.",
+      "positivity": 90,
       "impact": 70,
-      "category": "local-heroes",
-      "publishedAt": "2026-01-13T12:54:05.000Z",
+      "category": "wins",
+      "publishedAt": "2026-01-13T13:32:00.000Z",
       "processedAt": "2026-01-17T10:43:44.442Z"
     },
     {
@@ -343,16 +343,16 @@
       "processedAt": "2026-01-17T10:43:44.442Z"
     },
     {
-      "id": "0cdbbc55de22ab51",
-      "sourceId": "hotnews",
-      "sourceName": "HotNews",
-      "originalTitle": "Sala de teatru de la Cotroceni, deschisă în premieră pentru trupe independente de tineri și liceeni",
-      "url": "https://hotnews.ro/sala-de-teatru-de-la-cotroceni-deschisa-in-premiera-pentru-trupe-independente-de-tineri-si-liceeni-2150400",
-      "summary": "Sala de teatru de la Cotroceni va fi deschisă gratuit pentru trupe independente de tineri și liceeni, ca premieră. E o inițiativă culturală pozitivă.",
+      "id": "a875d464d9f4d4cc",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "originalTitle": "Comisia Europeană a aprobat planul României pentru reînarmare și investiții în infrastructura critică, în valoare de 16,7 miliarde de euro. Urmează o decizie din partea Consiliului UE, iar primele alocări ar putea fi făcute în martie.",
+      "url": "https://www.biziday.ro/345089-2/",
+      "summary": "Comisia Europeană aprobă planul de apărare al României, în valoare de 16,7 miliarde de euro, prin programul SAFE. Urmează decizia Consiliului UE. E o veste importantă pentru securitate.",
       "positivity": 80,
-      "impact": 70,
+      "impact": 80,
       "category": "wins",
-      "publishedAt": "2026-01-15T10:14:46.000Z",
+      "publishedAt": "2026-01-15T18:10:43.000Z",
       "processedAt": "2026-01-17T10:43:44.442Z"
     },
     {
@@ -399,7 +399,7 @@
   "totalProcessed": 816,
   "wrapperCopy": {
     "greeting": "Salutare! 👋",
-    "intro": "Ce faceai? Săptămâna asta am strâns niște vești tare faine, de la gazul din Marea Neagră care ne pune pe hartă, la pensii private care au avut un an record și un înotător de top. E bine să știi că lucrurile bune se întâmplă, chiar și când nu te aștepți.",
+    "intro": "Hei! O săptămână plină de vești bune: România devine lider la gaze în UE, Pilonul II a avut un an record, iar Popovici e din nou cel mai bun din Europa. Let's go.",
     "signOff": "Asta a fost pentru săptămâna asta. Până data viitoare, ai grijă de tine! 🙏"
   }
 }
