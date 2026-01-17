@@ -26,7 +26,7 @@ async function main() {
 
   const { data, error } = await resend.emails.send({
     from: 'Good Brief <buna@goodbrief.ro>',
-    replyTo: 'contact@goodbrief.ro',
+    replyTo: 'hello@goodbrief.ro',
     to: testEmail,
     subject: '[TEST] Bine ai venit la Good Brief! 🎉',
     html,

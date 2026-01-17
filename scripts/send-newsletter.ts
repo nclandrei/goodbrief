@@ -224,7 +224,7 @@ function renderEmailHtml(
                 ${copy.signOff}
               </p>
               <p style="margin: 0; font-size: 14px; color: ${grayText}; line-height: 1.6;">
-                Ai o poveste bună? Reply la acest email sau scrie-ne la <a href="mailto:contact@goodbrief.ro" style="color: ${brandGreen};">contact@goodbrief.ro</a>.
+                Ai o poveste bună? Reply la acest email sau scrie-ne la <a href="mailto:hello@goodbrief.ro" style="color: ${brandGreen};">hello@goodbrief.ro</a>.
               </p>
             </td>
           </tr>
@@ -305,7 +305,7 @@ async function handleTest(html: string, weekId: string): Promise<void> {
 
   const { data, error } = await resend.emails.send({
     from: 'Good Brief <buna@goodbrief.ro>',
-    replyTo: 'contact@goodbrief.ro',
+    replyTo: 'hello@goodbrief.ro',
     to: testEmail,
     subject: `[TEST] Good Brief ${weekId} – Vești bune din România`,
     html,
@@ -353,7 +353,7 @@ async function handleSend(
     await resend.broadcasts.create({
       segmentId,
       from: 'Good Brief <buna@goodbrief.ro>',
-      replyTo: 'contact@goodbrief.ro',
+      replyTo: 'hello@goodbrief.ro',
       subject: `Good Brief ${weekId} – Vești bune din România`,
       html,
     });

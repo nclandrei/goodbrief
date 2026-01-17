@@ -37,8 +37,8 @@ export function SignOff({ signOffText }: SignOffProps) {
       <Text style={styles.signOff}>{signOffText}</Text>
       <Text style={styles.cta}>
         Ai o poveste bună? Reply la acest email sau scrie-ne la{" "}
-        <Link href="mailto:contact@goodbrief.ro" style={styles.link}>
-          contact@goodbrief.ro
+        <Link href="mailto:hello@goodbrief.ro" style={styles.link}>
+          hello@goodbrief.ro
         </Link>
       </Text>
     </Section>

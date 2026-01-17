@@ -44,7 +44,7 @@ Replace manual email workflow with a code-first, agent-editable system using Rea
 | Item | Decision |
 |------|----------|
 | **From address** | `buna@goodbrief.ro` |
-| **Reply-to** | `contact@goodbrief.ro` |
+| **Reply-to** | `hello@goodbrief.ro` |
 | **Logo** | PNG image (`public/logo.png`) |
 | **API approach** | Cloudflare Functions (no Astro SSR needed) |
 | **Domain** | Already verified in Resend |
@@ -150,7 +150,7 @@ npm run email:send -- --week 2026-W01 --confirm
 RESEND_API_KEY=re_xxxxxxxxxx
 RESEND_AUDIENCE_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 RESEND_FROM_EMAIL=buna@goodbrief.ro
-RESEND_REPLY_TO=contact@goodbrief.ro
+RESEND_REPLY_TO=hello@goodbrief.ro
 OPENAI_API_KEY=sk-xxxxxxxxxx  # For AI copy generation
 ```
 

@@ -209,7 +209,7 @@ function renderProofEmail(draft: NewsletterDraft): string {
                 ${copy.signOff}
               </p>
               <p style="margin: 0; font-size: 14px; color: ${grayText}; line-height: 1.6;">
-                Ai o poveste bună? Reply la acest email sau scrie-ne la <a href="mailto:contact@goodbrief.ro" style="color: ${brandGreen};">contact@goodbrief.ro</a>.
+                Ai o poveste bună? Reply la acest email sau scrie-ne la <a href="mailto:hello@goodbrief.ro" style="color: ${brandGreen};">hello@goodbrief.ro</a>.
               </p>
             </td>
           </tr>

@@ -38,7 +38,7 @@ const welcomeEmailHtml = `
       <p style="font-size: 16px; line-height: 1.6; color: #1f2937; margin: 24px 0 0;">
         Thanks for joining! 🙏<br><br>
         Ai o poveste bună? Reply la acest email sau scrie-ne la 
-        <a href="mailto:contact@goodbrief.ro" style="color: #3d5f46; text-decoration: underline;">contact@goodbrief.ro</a>.
+        <a href="mailto:hello@goodbrief.ro" style="color: #3d5f46; text-decoration: underline;">hello@goodbrief.ro</a>.
       </p>
     </div>
     <div style="text-align: center; padding: 24px 0 32px;">
@@ -54,7 +54,7 @@ const welcomeEmailHtml = `
 
 async function sendWelcomeEmail(email: string, env: Env): Promise<void> {
   const fromEmail = env.RESEND_FROM_EMAIL || "buna@goodbrief.ro";
-  const replyTo = env.RESEND_REPLY_TO || "contact@goodbrief.ro";
+  const replyTo = env.RESEND_REPLY_TO || "hello@goodbrief.ro";
 
   await fetch("https://api.resend.com/emails", {
     method: "POST",
