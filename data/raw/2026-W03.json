@@ -17910,7 +17910,917 @@
       "summary": "The teenage son of Chechnya's Moscow-backed leader Ramzan Kadyrov, Adam Kadyrov, is in serious condition following a car accident in the republic's capital, Grozny, two sources told RFE/RL's North Caucasus Service.",
       "publishedAt": "2026-01-17T09:37:34.000Z",
       "fetchedAt": "2026-01-17T12:49:35.218Z"
+    },
+    {
+      "id": "9c59a92cdc0c00d9",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO După Maia Sandu, și premierul moldovean spune că ar susține unirea cu România. „Ca o decizie personală, aș vota pentru”",
+      "url": "https://hotnews.ro/video-dupa-maia-sandu-si-premierul-moldovean-spune-ca-ar-sustine-unirea-cu-romania-ca-o-decizie-personala-as-vota-pentru-2151990",
+      "summary": "Premierul Republicii Moldova, Alexandru Munteanu, a declarat, întrebat cu privire la afirmaţia preşedintelui Maia Sandu care a spus că ar vota pentru unirea cu România la un referendum pe această temă, că, personal, ar vota…",
+      "publishedAt": "2026-01-17T18:29:18.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "a87eb4c073ae2b41",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Dorinel Munteanu, după ce FC Hermannstadt a fost egalată pe final de Farul Constanța: „Meritam cele trei puncte”. Mesajul antrenorului pentru șefii clubului",
+      "url": "https://hotnews.ro/dorinel-munteanu-dupa-ce-fc-hermannstadt-a-fost-egalata-pe-final-de-farul-constanta-meritam-cele-trei-puncte-ce-le-a-transmis-conducatorilor-clubului-2151985",
+      "summary": "Dorinel Munteanu, antrenorul echipei FC Hermannstadt, consideră că elevii săi meritau să obțină victoria pe terenul celor de la Farul Constanța. Meciul din etapa cu numărul 22 a SuperLigii s-a terminat la egalitate, scor 1-1.…",
+      "publishedAt": "2026-01-17T18:14:21.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "09f6715099cfa389",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Avalanșe în Austria: cinci schiori au murit, după ce au fost îngropați de zăpadă",
+      "url": "https://hotnews.ro/avalansele-fac-victime-in-alpii-austrieci-sapte-schiori-prinsi-intr-o-singura-alunecare-a-zapezii-2151970",
+      "summary": "Cinci persoane și-au pierdut viața, sâmbătă, în două avalanșe care au avut loc în Alpii austrieci, a relatat televiziunea publică din Austria, ORF, citată de AFP. Mai multe persoane au fost surprinse în avalanșele din…",
+      "publishedAt": "2026-01-17T17:53:52.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "2175ca24ece36d81",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Von der Leyen a semnat acordul UE-Mercosur: „Alegem un comerț echitabil în locul tarifelor vamale”",
+      "url": "https://hotnews.ro/video-ursula-von-der-leyen-a-semnat-acordul-ue-mercosur-alegem-un-comert-echitabil-in-locul-tarifelor-vamale-2151968",
+      "summary": "„Un comerț echitabil, mai degrabă decât tarife vamale”, a declarat sâmbătă, la Asuncion, în Paraguay, președinta Comisiei Europene, Ursula von der Leyen, în timp ce se pregătea să semneze acordul comercial între Uniunea Europeană (UE)…",
+      "publishedAt": "2026-01-17T17:44:34.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "98ce92e56d34dad2",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Trump a anunțat taxe vamale pentru opt țări europene care s-au opus anexării Groenlandei. „Miza e pacea mondială”, spune președintele american",
+      "url": "https://hotnews.ro/trump-a-anuntat-taxe-vamale-pentru-opt-tari-europene-care-s-au-opus-anexarii-groenlandei-2151944",
+      "summary": "Președintele Donald Trump a anunțat, într-o postare pe rețeaua Truth Social, că impune taxe vamale de 10% pentru opt țări europene care se opun intenției SUA de a cumpăra Groenlanda. Nivelul taxei va fi crescut…",
+      "publishedAt": "2026-01-17T17:17:36.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "c5e95a18d7c93d83",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Accident produs în Capitală de un tânăr care nu avea permis, era beat, iar maşina era furată",
+      "url": "https://hotnews.ro/accident-produs-in-capitala-de-un-tanar-care-nu-avea-permis-era-beat-iar-masina-era-furata-2151955",
+      "summary": "Un tânăr de 25 de ani a produs un accident rutier pe o stradă din Sectorul 2 al Capitalei, iar poliţiştii au descoperit că el nu avea permis de conducere, consumase alcool, iar maşina era…",
+      "publishedAt": "2026-01-17T17:09:59.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "029d2f5eee1e6024",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "„Așa era cutuma: să nu vorbim despre asta în public”. Ce a convins o tânără de 24 de ani să ofere gratuit lecții adolescenților despre sănătatea și educația sexuală ",
+      "url": "https://hotnews.ro/asa-era-cutuma-sa-nu-vorbim-despre-asta-in-public-ce-a-convins-o-tanara-de-24-de-ani-sa-ofere-gratuit-lectii-adolescentilor-despre-sanatatea-si-educatia-sexuala-2149744",
+      "summary": "„Realitatea este că adolescenții fac sex. Ar trebui măcar să aibă informații să se protejeze”, spune Ana Niculescu. Are 24 de ani și este studentă în ultimul an la Universitatea de Medicină din București. De…",
+      "publishedAt": "2026-01-17T17:00:43.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "8845d45faefa573f",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Şefa opoziţiei belaruse în exil, Svetlana Tihanovskaia, va părăsi Lituania şi se va stabili în Polonia",
+      "url": "https://hotnews.ro/sefa-opozitiei-belaruse-in-exil-svetlana-tihanovskaia-va-parasi-lituania-si-se-va-stabili-in-polonia-2151947",
+      "summary": "Şefa opoziţiei belaruse, Svetlana Tihanovskaia, va părăsi Lituania, unde se află în exil după ce a fost forţată să fugă de represiunea din ţara sa în 2020, şi se va stabili în Polonia, potrivit mai…",
+      "publishedAt": "2026-01-17T16:51:31.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "613f2014656e196a",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO „Groenlanda nu este de vânzare”. Mii de persoane au protestat la Copenhaga și la Nuuk împotriva planurilor lui Trump",
+      "url": "https://hotnews.ro/groenlanda-nu-este-de-vanzare-mii-de-persoane-au-protestat-la-copenhaga-si-la-nuuk-impotriva-planurilor-lui-trump-video-foto-2151932",
+      "summary": "Câteva mii de persoane s-au adunat sâmbătă la Copenhaga şi în alte oraşe din Danemarca pentru a denunţa ambiţiile teritoriale ale preşedintelui american Donald Trump, care continuă să-şi exprime intenţia de a prelua Groenlanda. Și…",
+      "publishedAt": "2026-01-17T16:17:42.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "d455f04bd9c4d575",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Polițiștii locali pot utiliza camere video în exercitarea atribuțiilor. Legea a fost promulgată de președintele Nicușor Dan",
+      "url": "https://hotnews.ro/politistii-locali-pot-utiliza-camere-video-in-exercitarea-atributiilor-legea-a-fost-promulgata-de-presedintele-nicusor-dan-2151931",
+      "summary": "Preşedintele Nicuşor Dan a promulgat legea care permite poliţiştilor locali să utilizeze camere foto-video-audio portabile în exercitarea atribuţiilor de serviciu, informează Agerpres. „Noua reglementare stabileşte clar situaţiile în care aceste sisteme pot fi folosite în…",
+      "publishedAt": "2026-01-17T16:05:36.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "749e4811fb4ade71",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Cel mai citat cercetător din lume afirmă că a devenit mult mai încrezător în viitorul omenirii și că lucrează la o „soluție tehnică” pentru pericolul reprezentat de AI",
+      "url": "https://hotnews.ro/cel-mai-citat-cercetator-din-lume-afirma-ca-a-devenit-mult-mai-increzator-in-viitorul-omenirii-si-ca-lucreaza-la-o-solutie-tehnica-pentru-pericolul-reprezentat-de-ai-2151306",
+      "summary": "Yoshua Bengio, profesorul de la Universitatea Montreal ale cărui cercetări au contribuit la punerea bazelor învățării automate moderne („deep learning”), a fost în ultimii ani una dintre cele mai alarmiste voci din industria inteligenței artificiale,…",
+      "publishedAt": "2026-01-17T15:54:28.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "25a6528f049fb1b3",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "FOTO&VIDEO Ford Puma Gen-E sau VW ID.3? Prima mașină electrică produsă în România vs cea mai accesibilă de la VW",
+      "url": "https://hotnews.ro/fotovideo-ford-puma-gen-e-sau-vw-id-3-prima-masina-electrica-produsa-in-romania-vs-cea-mai-accesibila-de-la-vw-2151927",
+      "summary": "Încă de la lansarea oficială a versiunii electrice a micului crossover Ford Puma, un detaliu a atras atenția în materialele de prezentare. Printre modelele cu care mașina era comparată, din punct de vedere al performanțelor…",
+      "publishedAt": "2026-01-17T15:33:55.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "780b69f9f80e1346",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Premierul Ilie Bolojan a fost huiduit și la Botoșani. Cu o zi în urmă, a avut parte de aceeași primire la Iași",
+      "url": "https://hotnews.ro/video-premierul-ilie-bolojan-a-fost-huiduit-si-la-botosani-dupa-ce-a-fost-apostrofat-la-iasi-2151922",
+      "summary": "Premierul Ilie Bolojan a fost huduit, sâmbătă, la sosirea la sediul Primăriei Botoşani, mai multe persoane strigându-i „Demisia” şi „Trădătorule”, informează News.ro. Ilie Bolojan a sosit, sâmbătă, la Botoşani, pentru a se întâlni cu primarii…",
+      "publishedAt": "2026-01-17T15:25:05.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "6042c20c00fbff7b",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Siria: Președintele recunoaște prin decret drepturile naționale ale kurzilor, limba lor devine oficială / Între timp au loc ciocniri intense între armată și forțele kurde în nordul țării",
+      "url": "https://hotnews.ro/siria-presedintele-al-sharaa-recunoaste-drepturile-nationale-ale-kurzilor-limba-lor-devine-oficiala-intre-timp-au-loc-ciocniri-intense-intre-armata-si-fortele-kurde-in-nordul-tarii-2151920",
+      "summary": "Armata siriană a anunțat sâmbătă dimineață că a preluat controlul asupra orașului Deir Hafer, la est de Alep, pe care forțele kurde au fost de acord să îl evacueze cu o zi înainte în urma…",
+      "publishedAt": "2026-01-17T15:21:10.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "9175eac0cc1a657e",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Un fost președinte al PNL acuză opoziția unor liberali față de Bolojan. „Nu este în regulă”",
+      "url": "https://hotnews.ro/un-fost-presedinte-al-pnl-acuza-opozitia-unor-liberali-fata-de-bolojan-nu-este-in-regula-2151913",
+      "summary": "Fostul preşedinte al PNL Valeriu Stoica a afirmat, la Digi24, că liberalii se află de vreo opt ani într-o convieţuire mai apropiată sau mai îndepărtată cu PSD, iar acest lucru a creat legături şi consolidări…",
+      "publishedAt": "2026-01-17T14:49:58.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "208a38a5e2f9330c",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Atacurile ucrainene obligă o vecină a Rusiei să înființeze o școală de operatori de drone",
+      "url": "https://hotnews.ro/atacurile-ucrainene-obliga-o-vecina-a-rusiei-sa-infiinteze-o-scoala-de-operatori-de-drone-2151899",
+      "summary": "Kazahstanul a înfiinţat o şcoală de operatori de drone militare în urma recentelor atacuri ucrainene asupra terminalelor sale petroliere de la Marea Neagră şi asupra petrolierelor închiriate de acest stat care şi-a menţinut până acum…",
+      "publishedAt": "2026-01-17T14:24:59.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "d4d5dfd6342609ba",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Mobilizare impresionantă: peste 2,3 milioane de dolari, strânși în 8 zile pentru Andreea, o tânără care suferă de cancer. „România a dat tot ce a avut mai bun”",
+      "url": "https://hotnews.ro/campanie-andreea-anita-alexandru-lungu-daniel-ceclan-2151883",
+      "summary": "În opt zile, o tânără din orașul Fălticeni a ajuns în atenția românilor cu povestea ei: suferă de o formă de cancer și tratamentul care o poate ajuta este doar în Statele Unite. În cele…",
+      "publishedAt": "2026-01-17T14:16:58.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "968f28eba57493f7",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Companiile aeriene, atenționate să evite deocamdată spaţiul aerian al Iranului. „Există un risc ridicat pentru zborurile civile”",
+      "url": "https://hotnews.ro/companiile-aeriene-atentionate-sa-evite-deocamdata-spatiul-aerian-al-iranului-exista-un-risc-ridicat-pentru-zborurile-civile-2151901",
+      "summary": "Agenţia Europeană pentru Securitate Aeriană (EASA) a cerut companiilor aeriene să evite deocamdată spaţiul aerian iranian, invocând „situaţia actuală şi potenţialul unei acţiuni militare americane”, informează sâmbătă DPA și Agerpres. EASA a sfătuit operatorii aerieni…",
+      "publishedAt": "2026-01-17T14:05:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "313d2cc857cae544",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Statele Unite, invitate să participe la exerciţii militare în Groenlanda. „În calitate de membru NATO”",
+      "url": "https://hotnews.ro/statele-unite-invitate-sa-participe-la-exercitii-militare-in-groenlanda-in-calitate-de-membru-nato-2151885",
+      "summary": "Statele Unite au fost invitate să participe la exerciţii militare în Groenlanda, a declarat vineri şeful Comandamentului Arctic Danez, precizând că aceste exerciţii au legătură cu Rusia, relatează AFP. „Desigur, Statele Unite, în calitate de…",
+      "publishedAt": "2026-01-17T13:42:12.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "a9b05777b7c6f5e6",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Revoltă a bolnavilor de cancer, după proiectul de lege inițiat de un senator. „Înseamnă moarte sigură”",
+      "url": "https://hotnews.ro/revolta-a-bolnavilor-de-cancer-dupa-ce-un-senator-a-propus-ca-acestia-sa-plateasca-o-parte-din-serviciile-care-sunt-acum-decontate-inseamna-moarte-sigura-2151882",
+      "summary": "Un proiect de lege depus recent de un senator POT prevede introducerea unei coplăți de 5% din valoarea serviciilor medicale decontate de CNAS pentru adulții bolnavi de cancer. Inițiativa legislativă este criticată dur de pacienți.…",
+      "publishedAt": "2026-01-17T13:32:26.000Z",
+      "fetchedAt": "2026-01-17T18:34:41.753Z"
+    },
+    {
+      "id": "19a5b00b1ba7e3cc",
+      "sourceId": "dw-romania",
+      "sourceName": "DW România",
+      "title": "SUA: Administrația Trump, vânătoare de critici ai ICE?",
+      "url": "https://www.dw.com/ro/sua-administra%C8%9Bia-trump-v%C3%A2n%C4%83toare-de-critici-ai-ice/a-75548023?maca=rum-rss-rom-all-1493-rdf",
+      "summary": "Relatări media îngrijorătoare după focurile de armă mortale trase de un agent ICE la Minneapolis: în SUA ar fi în desfășurare anchete împotriva celor care critică agenția pentru imigrație.",
+      "publishedAt": "2026-01-17T15:04:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.732Z"
+    },
+    {
+      "id": "5d4c771058920b73",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "U-BT Cluj-Napoca pierde cu BC Dubai în BTarena, într-un meci din Liga Adriatică la baschet",
+      "url": "https://www.mediafax.ro/sport/u-bt-cluj-napoca-pierde-cu-bc-dubai-in-btarena-intr-un-meci-din-liga-adriatica-la-baschet-23672744",
+      "summary": "U-BT Cluj-Napoca a fost învinsă de BC Dubai, scor 93-110, sâmbătă seara, într-o BTarena arhiplină, la ultimul meci pe teren propriu din sezonul regulat al Ligii Adriatice. Formația din Emiratele Arabe Unite, care evoluează și în Euroligă, rămâne neînvinsă în Grupa A, după 13 partide.",
+      "publishedAt": "2026-01-17T18:20:15.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.625Z"
+    },
+    {
+      "id": "eed4b7c01653971b",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Lovitură grea pentru o echipă de tradiție din Italia. Proprietarul clubului a murit",
+      "url": "https://www.mediafax.ro/sport/lovitura-grea-pentru-o-echipa-de-traditie-din-italia-proprietarul-clubului-a-murit-23672736",
+      "summary": "Proprietarul clubului de fotbal Fiorentina a murit. Rocco Commisso avea 76 de ani. El deținea și compania Mediacom.",
+      "publishedAt": "2026-01-17T17:41:26.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.625Z"
+    },
+    {
+      "id": "39db4463586f63a5",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Farul Constanța și Hermannstadt remizează în etapa a 22-a din Superliga de fotbal, scor 1-1",
+      "url": "https://www.mediafax.ro/sport/farul-constanta-si-hermannstadt-remizeaza-in-etapa-a-22-a-din-superliga-de-fotbal-scor-1-1-23672735",
+      "summary": "Farul Constanța și Hermannstadt au terminat la egalitate, scor 1-1, meciul disputat sâmbătă pe stadionul „Academia Gheorghe Hagi” din Ovidiu, în etapa a 22-a a Superligii de fotbal.",
+      "publishedAt": "2026-01-17T17:33:01.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.625Z"
+    },
+    {
+      "id": "2692f420a4e319a4",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Donald Trump anunță noi tarife vamale împotriva a opt țări europene care susțin Groenlanda",
+      "url": "https://www.mediafax.ro/breaking-news/donald-trump-anunta-noi-tarife-vamale-impotriva-a-opt-tari-europene-care-sustin-groenlanda-23672731",
+      "summary": "Președintele SUA, Donald Trump, a anunțat sâmbătă că va impune tarife vamale țărilor care susțin Groenlanda. Sunt vizate opt țări europene care s-au poziționat împotriva preluării de către Trump a insulei. Tarifele vor intra în vigoare de la 1 februarie.",
+      "publishedAt": "2026-01-17T17:10:17.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.625Z"
+    },
+    {
+      "id": "23b73974e326c214",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Guvernul israelian critică anunțul SUA privind liderii care vor supraveghea pașii următori în Gaza",
+      "url": "https://www.mediafax.ro/externe/guvernul-israelian-critica-anuntul-sua-privind-liderii-care-vor-supraveghea-pasii-urmatori-in-gaza-23672732",
+      "summary": "Guvernul israelian a exprimat sâmbătă obiecții față de anunțul Casei Albe privind liderii care vor juca un rol în gestionarea etapelor următoare în Gaza.",
+      "publishedAt": "2026-01-17T17:09:22.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.625Z"
+    },
+    {
+      "id": "cbe1171a153e8e4e",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "UE și Mercosur au semnat un acord istoric de liber schimb după 25 de ani de negocieri",
+      "url": "https://www.mediafax.ro/economic/ue-si-mercosur-au-semnat-un-acord-istoric-de-liber-schimb-dupa-25-de-ani-de-negocieri-23672729",
+      "summary": "Uniunea Europeană și blocul Mercosur, format din Brazilia, Argentina, Paraguay, Uruguay și Bolivia, au semnat sâmbătă un acord comercial istoric, după negocieri care au durat mai mult de 25 de ani. Documentul are ca obiectiv crearea celei mai mari zone de liber schimb la nivel global.",
+      "publishedAt": "2026-01-17T16:47:07.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.625Z"
+    },
+    {
+      "id": "c457c8bc1b3340d6",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Lucian Bute, impresionat de două personalități ale României: „Ne-au făcut tot timpul cea mai bună imagine în lume”",
+      "url": "https://www.mediafax.ro/life-inedit/lucian-bute-impresionat-de-doua-personalitati-ale-romaniei-ne-au-facut-tot-timpul-cea-mai-buna-imagine-in-lume-23672725",
+      "summary": "Lucian Bute s-a declarat impresionat de două personalități marcante ale României. „Ne-au făcut tot timpul cea mai bună imagine în lume\", a spus fostul mare boxer.",
+      "publishedAt": "2026-01-17T16:34:34.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.625Z"
+    },
+    {
+      "id": "6c90bb6758bf9e00",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Victorie importantă pentru Chivu. Inter învinge Udinese și se distanțează în fruntea Serie A",
+      "url": "https://www.mediafax.ro/sport/victorie-importanta-pentru-chivu-inter-invinge-udinese-si-se-distanteaza-in-fruntea-serie-a-23672723",
+      "summary": "Inter Milano s-a impus cu scorul de 1-0, sâmbătă seară, pe terenul lui Udinese, în etapa a 21-a din Serie A, și echipa antrenată de Cristian Chivu s-a distanțat la șase puncte în fruntea clasamentului față de ocupanta locului secund, AC Milan.",
+      "publishedAt": "2026-01-17T16:21:45.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.625Z"
+    },
+    {
+      "id": "92e5b683c7acb4eb",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Strada care trece prin fața proprietății din Florida a liderului SUA a primit numele „President Donald J. Trump Boulevard”",
+      "url": "https://www.mediafax.ro/externe/strada-care-trece-prin-fata-proprietatii-din-florida-a-liderului-sua-a-primit-numele-president-donald-j-trump-boulevard-23672719",
+      "summary": "Strada care trece prin fața proprietății din Florida a liderului SUA a primit un alt nume. Dacă până în prezent s-a numit Southern Boulevard, de acum încolo numele străzii va fi „President Donald J. Trump Boulevard”. La ceremonie a participat și președintele Donald Trump.",
+      "publishedAt": "2026-01-17T16:11:49.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.625Z"
+    },
+    {
+      "id": "c100ce37b3173156",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Dinamo București învinge campioana Volei Alba Blaj în Divizia A1 la volei feminin",
+      "url": "https://www.mediafax.ro/sport/dinamo-bucuresti-invinge-campioana-volei-alba-blaj-in-divizia-a1-la-volei-feminin-23672720",
+      "summary": "Dinamo București a învins, sâmbătă, pe teren propriu, campioana României la volei feminin, Volei Alba Blaj, în meciul care a ținut capul de afiș al etapei a 11-a din Divizia A1.",
+      "publishedAt": "2026-01-17T16:01:07.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.625Z"
+    },
+    {
+      "id": "0ce8ebb28573cb26",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "SUA vor impune taxe vamale suplimentare pentru importurile din opt țări europene, între care Germania, Marea Britanie și Franța, care nu susțin planul lui Donald Trump de a prelua controlul Groenlandei.",
+      "url": "https://www.biziday.ro/sua-vor-impune-taxa-vamale/",
+      "summary": "Donald Trump a anunțat că Statele Unite impun tarife vamale de 10% pentru opt țări europene care se opun controlului SUA asupra Groenlandei. Într-o postare pe Truth Social, Trump a spus că ”Danemarca, Norvegia, Suedia, Franța, Germania, Marea Britanie, Olanda și Finlanda au trimis trupe în Groenlanda, în scopuri necunoscute. Aceasta este o situație foarte […]",
+      "publishedAt": "2026-01-17T16:48:40.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.173Z"
+    },
+    {
+      "id": "9e38cd0939c68b75",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "FT: SUA iau în considerare înființarea unui “Consiliu pentru pace”, asemănător cu cel pentru Gaza, care să supravegheze implementarea unui viitor acord de încheiere a războiului din Ucraina. Detaliile nu au fost clarificate deocamdată.",
+      "url": "https://www.biziday.ro/345252-2/",
+      "summary": "Deși nu au fost oferite prea multe detalii, un oficial familiarizat cu discuțiile, citat sub protecția anonimatului de către Financial Times, a precizat că Administrația Trump consideră Consiliul de pace, înființat inițial pentru Gaza, ca fiind “un potențial substitut al ONU, un fel de organism paralel neoficial care să se ocupe de alte conflicte din […]",
+      "publishedAt": "2026-01-17T14:10:03.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.173Z"
+    },
+    {
+      "id": "e91e53983f477194",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Astăzi intră în vigoare Tratatul privind marea liberă, primul cadru juridic cuprinzător ce vizează protejarea biodiversității în zonele internaționale maritime, prin crearea de arii marine protejate și reglementarea activităților economice. Acordul a fost convenit în martie 2023, după două decenii de negocieri.",
+      "url": "https://www.biziday.ro/345256-2/",
+      "summary": "Tratatul privind marea liberă, cunoscut oficial sub denumirea de “Acordul întemeiat pe Convenția Națiunilor Unite asupra dreptului mării și referitor la conservarea și utilizarea durabilă a biodiversității marine în zonele care nu intră sub jurisdicție națională (Acordul BBNJ)”, oferă primul cadru juridic global pentru protejarea mării libere. “Marea liberă nu va mai fi un Vest […]",
+      "publishedAt": "2026-01-17T13:02:38.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.173Z"
+    },
+    {
+      "id": "5c82a055af0fe869",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Trump: „Este timpul să căutăm o nouă conducere în Iran”",
+      "url": "https://stirileprotv.ro/stiri/international/trump-zeste-timpul-sa-cautam-o-noua-conducere-in-iran.html",
+      "summary": "Președintele SUA, Donald Trump, a cerut sâmbătă încheierea celor 37 de ani de domnie a ayatollahului Ali Khamenei.",
+      "publishedAt": "2026-01-17T17:54:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "3a3cf15395ebe8d0",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Donald Trump ”pedepsește” opt țări europene cu un tarif de 10%, pentru că nu susțin acapararea Groenlandei de către SUA",
+      "url": "https://stirileprotv.ro/stiri/financiar/donald-trump-pedepseste-opt-tari-europene-cu-un-tarif-de-10-pentru-ca-nu-sustin-acapararea-groenlandei-de-catre-sua.html",
+      "summary": "Președintele Donald Trump a anunțat sâmbătă că va impune o taxă de import de 10% asupra a opt țări europene, până când „se va ajunge la un acord pentru achiziționarea completă și totală a Groenlandei”.",
+      "publishedAt": "2026-01-17T17:27:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "76a361cf96db3f32",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Maria Corina Machado, lidera opoziției din Venezuela: ”Cred că voi fi prima femeie președinte din această țară”",
+      "url": "https://stirileprotv.ro/stiri/international/fuga-spectaculoasa-a-mariei-corina-machado-din-venezuela-si-gestul-neasteptat-fata-de-trump.html",
+      "summary": "Deși i-a dăruit medalia premiului Nobel pentru pace Donald Trump NU și-a declarat sprijinul pentru lidera opoziției din Venezuela.",
+      "publishedAt": "2026-01-17T17:26:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "18327269d9800cd8",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Tensiuni transatlantice pe tema Groenlandei. Donald Trump amenință cu tarife suplimentare, NATO își consolidează prezența",
+      "url": "https://stirileprotv.ro/stiri/international/tensiuni-transatlantice-pe-tema-groenlandei-trump-ameninta-cu-tarife-nato-isi-consolideaza-prezenta.html",
+      "summary": "Jos mâinile de pe Groenlanda! Nu este de vânzare! Așa au scandat protestatarii la demonstrațiile care au avut loc în Danemarca după ameninţările lui Donald Trump de a anexa marea insulă arctică.",
+      "publishedAt": "2026-01-17T17:20:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "6dd50775dbb4fb16",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Zi perfectă la munte. S-au deschis pârtiile de schi din Poiana Brașov și Bușteni: ”Stratul de zăpadă, aproximativ 40 cm”",
+      "url": "https://stirileprotv.ro/stiri/actualitate/zi-perfecta-la-munte-s-au-deschis-partiile-din-poiana-brasov-si-busteni.html",
+      "summary": "A fost o zi grozavă în staţiunile de munte. Deși gerul te ciupea de obraji, soarele le-a dat curaj turiștilor să se urce pe schiuri şi pe placă.",
+      "publishedAt": "2026-01-17T17:19:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "4298bce30974a91a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Studiu. Între speranță și anxietate: tinerii sunt cei mai optimiști, iar o treime dintre români vor un nou loc de muncă",
+      "url": "https://stirileprotv.ro/stiri/actualitate/studiu-intre-speranta-si-anxietate-tinerii-sunt-cei-mai-optimisti-iar-o-treime-dintre-romani-vor-un-nou-loc-de-munca.html",
+      "summary": "De la tineri preocupați de examene sau dornici să-și întemeieze o familie până la cei care pun sănătatea pe primul loc, începutul lui 2026 îi găsește pe români atenți la ce urmează.",
+      "publishedAt": "2026-01-17T17:15:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "1eee64aee243dc21",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Analiză statistică. Studenții români, forțați să muncească pentru a se întreține: costuri lunare de cel puțin 2.000 de lei",
+      "url": "https://stirileprotv.ro/stiri/actualitate/studentii-romani-fortati-sa-munceasca-pentru-a-se-intretine-costuri-lunare-de-cel-putin-2-000-de-lei.html",
+      "summary": "Confruntați cu cheltuieli în creștere, studenții români își caută - în număr tot mai mare - locuri de muncă.",
+      "publishedAt": "2026-01-17T17:14:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "7c4b7ef1e5242c6f",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Atac șocant între copii, la Brăila. Un băiat de 10 ani a fost înjunghiat de un coleg de zeci de ori, pentru o jucărie Kendama",
+      "url": "https://stirileprotv.ro/stiri/actualitate/atac-socant-intre-copii-la-braila-baiat-de-10-ani-injunghiat-de-un-coleg-de-zeci-de-ori-pentru-o-kendama.html",
+      "summary": "Continuăm cu un caz înfricoşător, petrecut în Brăila. Un băiețel de 10 ani a fost atacat cu un cuțit de un coleg de clasă, după ce s-au certat de la o jucărie Kendama.",
+      "publishedAt": "2026-01-17T17:11:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "9fd6567d4fc31850",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Pericol pe șosele, din cauza gerului extrem. O șoferiță a scăpat la limită după ce o bucată de gheață i-a spart parbrizul",
+      "url": "https://stirileprotv.ro/stiri/actualitate/pericol-pe-sosele-din-cauza-gerului-extrem-o-soferita-a-scapat-ca-prin-minune-dupa-ce-o-bucata-de-gheata-i-a-spart-parbrizul.html",
+      "summary": "A fost ger năprasnic în jumătate din țară și nu sunt semne că ne mai slăbește. În zori, la polul frigului, s-au înregistrat minus 21 de grade Celsius. La țară, oamenii se tem să nu rămână fără lemne și să nu li se prăpădească animalele.",
+      "publishedAt": "2026-01-17T17:06:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "d4c263e244766754",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "ANIMAȚIA exploziei din Alba Iulia. Un tânăr a suferit arsuri pe jumătate de corp, după ce apartamentul lui a sărit în aer",
+      "url": "https://stirileprotv.ro/stiri/actualitate/animatia-exploziei-din-alba-iulia-un-tanar-a-suferit-arsuri-pe-jumatate-de-corp-dupa-ce-apartamentul-lui-a-sarit-in-aer.html",
+      "summary": "În Alba Iulia, doi oameni au fost răniți, iar câteva zeci s-au speriat îngrozitor și au ieșit în fugă pe scări. Blocul în care locuiesc a fost zguduit de o explozie violentă provocată, cel mai probabil, potrivit pompierilor, de o acumulare de gaze.",
+      "publishedAt": "2026-01-17T17:05:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "479d7668bf07e02d",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "O fetiță de 5 ani, salvată dintr-un lac înghețat din Craiova. Un cetățean nepalez a sărit în apă și a ținut-o la suprafață",
+      "url": "https://stirileprotv.ro/stiri/actualitate/o-fetita-de-5-ani-salvata-dintr-un-lac-inghetat-din-craiova-un-cetatean-nepalez-a-sarit-in-apa-si-a-tinut-o-la-suprafata.html",
+      "summary": "S-au derulat scene de infarct în Craiova. O fetiță de 5 ani, aflată împreună cu tatăl în Parcul \"Nicolae Romanescu\", a căzut în lac. Părintele a sărit imediat să o salveze, însă a rămas blocat în gheață.",
+      "publishedAt": "2026-01-17T16:59:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "218c624339388656",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cristi Chivu și Inter Milano obțin a șasea victorie consecutivă în deplasare, 1-0 la Udinese, și păstrează avansul în Serie A",
+      "url": "https://stirileprotv.ro/stiri/sport/cristi-chivu-si-inter-milano-obtin-a-sasea-victorie-consecutiva-in-deplasare-1-0-la-udinese-si-pastreaza-avansul-in-serie-a.html",
+      "summary": "Inter Milano, antrenată de românul Cristian Chivu, a câștigat sâmbătă în deplasare, 1-0 cu Udinese, în etapa a 21-a din Serie A.",
+      "publishedAt": "2026-01-17T16:46:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "83c9f8c0095b9d07",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "România și SUA discută extinderea investițiilor și a cooperării economice strategice",
+      "url": "https://stirileprotv.ro/stiri/international/romania-si-sua-discuta-extinderea-investitiilor-si-a-cooperarii-economice-strategice.html",
+      "summary": "Ministrul Economiei, Irineu Darău, a discutat cu Charge d'Affaires al Ambasadei SUA la Bucureşti, Michael L. Dickerson, despre extinderea investiţiilor bilaterale, crearea de locuri de muncă şi consolidarea infrastructurii economice.",
+      "publishedAt": "2026-01-17T15:29:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "4fdb2252f1a796df",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Elon Musk, luat peste picior de gameri după ce își numește fiica după o vrajă din Elden Ring",
+      "url": "https://stirileprotv.ro/stiri/international/elon-musk-luat-peste-picior-de-gameri-dupa-ce-isi-numeste-fiica-dupa-o-vraja-din-elden-ring.html",
+      "summary": "Patronul Tesla şi X Elon Musk este ironizat pe Internet, în ultimele zile, după ce a dezvăluit săptămâna trecută că i-a dat fiicei sale în vârstă de patru ani - Comet Azure -, numele ”celei mai puternice vrăji din Elden Ring”.",
+      "publishedAt": "2026-01-17T15:07:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "e2177ed2bd422689",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Moment istoric. După două decenii de negocieri, a intrat în vigoare primul acord din lume pentru protejarea vieții marine",
+      "url": "https://stirileprotv.ro/stiri/international/moment-istoric-dupa-doua-decenii-de-negocieri-a-intrat-in-vigoare-primul-acord-din-lume-pentru-protejarea-vietii-marine.html",
+      "summary": "Primul acord din lume, care are caracter juridic obligatoriu, pentru protejarea vieții marine în apele internaționale, a intrat în vigoare, marcând un moment istoric pentru conservarea oceanelor, după aproape două decenii de negocieri.",
+      "publishedAt": "2026-01-17T15:02:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "86ed2a76433b930f",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Legea care permite polițiștilor locali să folosească bodycam-uri a fost promulgată. Situaţiile când cetățenii pot fi filmați",
+      "url": "https://stirileprotv.ro/stiri/actualitate/legea-care-permite-politistilor-locali-sa-foloseasca-bodycam-uri-a-fost-promulgata-situatiile-cand-cetatenii-pot-fi-filmati.html",
+      "summary": "Președintele Nicușor Dan a anunțat sâmbătă după-amiază promulgarea legii care permite polițiștilor locali să folosească camere portabile foto, video și audio în timpul serviciului.",
+      "publishedAt": "2026-01-17T14:55:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "5e22554110a41535",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "”Cel mai important capitol de investiţii”. Guvernul își propune să absoarbă, în 2026, zece miliarde de euro din PNRR",
+      "url": "https://stirileprotv.ro/stiri/financiar/cel-mai-important-capitol-de-investitii-guvernul-isi-propune-sa-absoarba-in-2026-zece-miliarde-de-euro-din-pnrr.html",
+      "summary": "Guvernul îşi propune să absoarbă în 2026 cele zece miliarde de euro din Planul Naţional de Redresare şi Rezilienţă (PNRR), a declarat, sâmbătă, la Botoşani, premierul Ilie Bolojan.",
+      "publishedAt": "2026-01-17T14:48:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "ab3b30a089145131",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Un aeroport abandonat va fi transformat într-un oraș de 21 miliarde de dolari. Ar putea găzdui până la 83.500 de locuitori",
+      "url": "https://stirileprotv.ro/divers/un-aeroport-abandonat-va-fi-transformat-intr-un-oras-de-21-miliarde-de-dolari-ar-putea-gazdui-pana-la-83-500-de-locuitori.html",
+      "summary": "Un aeroport abandonat din Toronto, deschis acum aproape 100 de ani, va fi transformat într-un oraș, iar lucrările de modernizare au început la începutul acestui an.",
+      "publishedAt": "2026-01-17T14:44:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "984c2a34f50e951c",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Valeriu Stoica: Conviețuirea îndelungată PNL–PSD a creat legături periculoase care subminează sprijinul pentru Bolojan",
+      "url": "https://stirileprotv.ro/stiri/politic/valeriu-stoica-convietuirea-indelungata-pnl-psd-a-creat-legaturi-periculoase-care-submineaza-sprijinul-pentru-bolojan.html",
+      "summary": "Fostul preşedinte al PNL Valeriu Stoica a afirmat că liberalii se află de vreo opt ani într-o convieţuire mai apropiată sau mai îndepărtată cu PSD.",
+      "publishedAt": "2026-01-17T14:19:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "81fc9e553197a07e",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Proteste masive la Copenhaga împotriva planurilor lui Trump pentru Groenlanda: „Make America Go Away”",
+      "url": "https://stirileprotv.ro/stiri/international/proteste-masive-la-copenhaga-impotriva-planurilor-lui-trump-pentru-groenlanda-zmake-america-go-away.html",
+      "summary": "Mii de manifestanţi s-au adunat sâmbătă la Copenhaga, în Danemarca, pentru a denunţa ambiţiile teritoriale ale lui Donald Trump, care continuă să-şi afişeze intenţia de a pune mâna pe Groenlanda, relatează AFP.",
+      "publishedAt": "2026-01-17T14:14:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "68d1e20dd6982c2d",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Un avion cu 11 persoane la bord a dispărut subit de pe radare, în munții Indoneziei. Încotro se îndrepta aeronava",
+      "url": "https://stirileprotv.ro/stiri/international/un-avion-cu-11-persoane-la-bord-a-disparut-subit-de-pe-radare-in-muntii-indoneziei-incotro-se-indrepta-aeronava.html",
+      "summary": "Un avion de mici dimensiuni, care transporta 11 persoane, este căutat de autoritățile indoneziene după ce contactul cu aeronava s-a pierdut în timpul unui zbor deasupra estului țării, au precizat oficiali ai serviciilor de salvare pentru AFP.",
+      "publishedAt": "2026-01-17T14:08:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "24e117a1fb40b021",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Liderul suprem al Iranului îl sfidează pe Donald Trump și îl numește ”criminal”: ”El este vinovat pentru aceste victime”",
+      "url": "https://stirileprotv.ro/stiri/international/liderul-suprem-al-iranului-il-sfideaza-pe-donald-trump-si-il-numeste-criminal-el-este-vinovat-pentru-aceste-victime.html",
+      "summary": "Liderul suprem al Iranului, ayatollahul Ali Khamenei, le-a cerut autorităţilor ”să le rupă spatele răzvrătiţilor” şi a dat vina pe președintele Donald Trump pentru victimele din Iran.",
+      "publishedAt": "2026-01-17T13:49:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "1176e5014cd02d77",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Satul medieval din România numit „muntele mierii”. De unde provine numele și de ce merită vizitat",
+      "url": "https://stirileprotv.ro/stiri/travel/harman-satul-medieval-din-tara-barsei-cu-biserica-fortificata-si-traditii-de-poveste-de-ce-merita-vizitat.html",
+      "summary": "Satul medieval din România supranumit „Muntele Mierii”, situat în inima Țării Bârsei, păstrează farmecul autentic al Transilvaniei de odinioară.",
+      "publishedAt": "2026-01-17T13:49:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "5b32f438c0770b82",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "5 locuri de poveste pentru vacanța de iarnă. Destinații cu peisaje spectaculoase pentru poze unice",
+      "url": "https://stirileprotv.ro/stiri/travel/5-locuri-de-poveste-pentru-vacanta-de-iarna-destinatii-cu-peisaje-spectaculoase-pentru-poze-unice.html",
+      "summary": "În fiecare iarnă, Europa se transformă într-un tablou spectaculos de peisaje înghețate, lumini strălucitoare și tradiții care încălzesc sufletul.",
+      "publishedAt": "2026-01-17T13:47:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "e348674865cf37a2",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Peștera Liliecilor – mistere subterane și lilieci într-un spectacol natural unic în România. De ce merită vizitată",
+      "url": "https://stirileprotv.ro/stiri/travel/pestera-liliecilor-mistere-subterane-si-lilieci-intr-un-spectacol-natural-unic-in-romania-cum-poate-fi-vizitata.html",
+      "summary": "Peștera Liliecilor este una dintre cele mai fascinante atracții naturale din România, un loc unde misterele subterane se împletesc cu prezența impresionantă a coloniilor de lilieci.",
+      "publishedAt": "2026-01-17T13:47:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "0a7ed10c2928b3b0",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cum să-ți protejezi animalele de companie în timpul gerului. Cum să-ți păstrezi câinele și pisica în siguranță în zilele reci",
+      "url": "https://stirileprotv.ro/divers/cum-sa-ti-protejezi-animalele-de-companie-in-timpul-gerului-cum-sa-ti-pastrezi-cainele-si-pisica-in-siguranta-in-zilele-reci.html",
+      "summary": "Iarna autentică te face să îți alini dorul de copilărie, însă aduce cu ea și probleme, mai ales pentru stăpânii animalelor de companie.",
+      "publishedAt": "2026-01-17T13:46:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "48048b48397f4d07",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Remediul naturist pentru stres și anxietate. Ce să folosești pentru ameliorarea acestor stări",
+      "url": "https://stirileprotv.ro/stiri/sanatate/remediul-naturist-pentru-stres-si-anxietate-ce-sa-folosesti-pentru-ameliorarea-acestor-stari.html",
+      "summary": "Stresul și anxietatea sunt probleme cu care mulți dintre oameni se confruntă în zilele noastre.",
+      "publishedAt": "2026-01-17T13:46:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "759215bd7ff98b67",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Pisică dispărută de aproape un an, regăsită după ce a fost lovită de cinci mașini, în UK. „Avea șanse 50-50”",
+      "url": "https://stirileprotv.ro/divers/pisica-disparuta-de-aproape-un-an-regasita-dupa-ce-a-fost-lovita-de-cinci-masini-in-uk-zavea-sanse-50-50.html",
+      "summary": "O pisică dispărută în urmă cu aproape un an s-a reunit cu stăpânii săi după ce a fost lovită de cinci vehicule, în Marea Britanie.",
+      "publishedAt": "2026-01-17T13:43:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "6a8adc595dbd8e50",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Turcia, cooptată în inițiativa lui Trump pentru Gaza: Erdogan, invitat ca membru fondator al Consiliului de Pace",
+      "url": "https://stirileprotv.ro/stiri/international/turcia-cooptata-in-initiativa-lui-trump-pentru-gaza-erdogan-invitat-ca-membru-fondator-al-consiliului-de-pace.html",
+      "summary": "Preşedintele american Donald Trump l-a \"invitat\" pe omologul său turc Recep Tayyip Erdogan să facă parte din Consiliul de Pace pentru Gaza, a anunţat sâmbătă serviciul de comunicare al Republicii Turce, relatează AFP.",
+      "publishedAt": "2026-01-17T13:34:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "de5075cb555ef192",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "”Nu pot respira”. Un imigrant cubanez a murit în detenție în Texas. ICE afirmă că s-a sinucis, un martor spune că a fost ucis",
+      "url": "https://stirileprotv.ro/stiri/international/nu-pot-respira-un-imigrant-cubanez-a-murit-in-detentie-in-texas-ice-afirma-ca-s-a-sinucis-un-martor-spune-ca-a-fost-ucis.html",
+      "summary": "Un cetățean cubanez a murit într-un centru de detenție pentru imigranți din Texas la începutul lunii ianuarie 2026, în timpul unei altercații cu gardienii, iar medicul legist local afirmă că moartea sa va fi, probabil, clasificată ca omucidere.",
+      "publishedAt": "2026-01-17T13:21:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "47cf16902f7c5f3a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Un băiat de 11 ani din SUA , acuzat că și-a ucis tatăl după ce i-a confiscat consola de jocuri. Mărturia șocantă a copilului",
+      "url": "https://stirileprotv.ro/stiri/international/un-baiat-de-11-ani-din-sua-acuzat-ca-si-a-ucis-tatal-dupa-ce-i-a-confiscat-consola-de-jocuri-marturia-socanta-a-copilului.html",
+      "summary": "Un băiat de 11 ani din statul Pennsylvania este acuzat că și-ar fi împușcat mortal tatăl, după ce anterior i-ar fi fost confiscată consola portabilă de jocuri Nintendo Switch.",
+      "publishedAt": "2026-01-17T12:59:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "f5530ae5673b26bf",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Danemarca face presiuni asupra Congresului SUA pentru a evita un vot la limită privind Groenlanda",
+      "url": "https://stirileprotv.ro/stiri/international/danemarca-face-presiuni-asupra-congresului-sua-pentru-a-evita-un-vot-la-limita-privind-groenlanda.html",
+      "summary": "Oficiali danezi le-au transmis în această săptămână parlamentarilor americani să evite un vot privind puterile de război în cazul Groenlandei, scrie Politico.",
+      "publishedAt": "2026-01-17T12:53:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "6ac5f36dd3a7cdd9",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Formația românească de doom/gothic/symphonic metal Green Eyes of Darkness a lansat albumul ”Fire Waves”",
+      "url": "https://stirileprotv.ro/show-buzz/entertainment/formatia-romaneasca-de-doom-gothic-symphonic-metal-green-eyes-of-darkness-a-lansat-albumul-fire-waves.html",
+      "summary": "Formația românească de doom/gothic/symphonic metal Green Eyes of Darkness a lansat recent, sub egida casei de discuri Loud Rage Music, albumul ”Fire Waves”.",
+      "publishedAt": "2026-01-17T12:45:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "415a0d979c0c0004",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Doliu în teatrul românesc. Actorul Răzvan Ionescu a murit la vârsta de 71 de ani",
+      "url": "https://stirileprotv.ro/stiri/actualitate/doliu-in-teatrul-romanesc-actorul-razvan-ionescu-a-murit-la-varsta-de-71-de-ani.html",
+      "summary": "Actorul Răzvan Ionescu a încetat din viaţă la vârsta de 71 de ani, conform Teatrului Naţional Bucureşti.",
+      "publishedAt": "2026-01-17T12:45:00.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.662Z"
+    },
+    {
+      "id": "f6361071705d71ea",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Mulino apără acordul UE-Mercosur și critică 'reglementările extreme' privind comerțul",
+      "url": "https://agerpres.ro/economic-extern/2026/01/17/mulino-apara-acordul-ue-mercosur-si-critica-reglementarile-extreme-privind-comertul--1519652",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "f287122fb6bf6d92",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Patriarhia - mesaj la moartea actorului Răzvan Ionescu: A fost un artist desăvârșit, dar și un distins teolog",
+      "url": "https://agerpres.ro/cultura-media/2026/01/17/patriarhia---mesaj-la-moartea-actorului-razvan-ionescu-a-fost-un-artist-desavarsit-dar-si-un-distins--1519650",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "962b65628d382959",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Baschet masculin: U-BT Cluj-Napoca a pierdut acasă cu Dubai Basketball, în ABA League",
+      "url": "https://agerpres.ro/sport/2026/01/17/baschet-masculin-u-bt-cluj-napoca-a-pierdut-acasa-cu-dubai-basketball-in-aba-league--1519651",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "f34b4125a1663ecf",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: Borussia Dortmund, victorie cu St Pauli, în Bundesliga",
+      "url": "https://agerpres.ro/sport-extern/2026/01/17/fotbal-borussia-dortmund-victorie-cu-st-pauli-in-bundesliga--1519648",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "802dce304e1a1e13",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "MApN: Vânătorul de mine M 270 - misiune în Marea Neagră, alături de nave din Bulgaria și Turcia",
+      "url": "https://agerpres.ro/social/2026/01/17/mapn-vanatorul-de-mine-m-270---misiune-in-marea-neagra-alaturi-de-nave-din-bulgaria-si-turcia--1519647",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "f5ec114b6475d35f",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Ministrul de Externe al Braziliei speră ca acordul UE-Mercosur să se implementeze 'în mod corect'",
+      "url": "https://agerpres.ro/economic-extern/2026/01/17/ministrul-de-externe-al-braziliei-spera-ca-acordul-ue-mercosur-sa-se-implementeze-in-mod-corect--1519646",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "108cde17f39ec654",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Handbal feminin: Minaur, la a doua sa victorie în EHF European League",
+      "url": "https://agerpres.ro/sport/2026/01/17/handbal-feminin-minaur-la-a-doua-sa-victorie-in-ehf-european-league--1519649",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "9a3a9d175c125eae",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Costa afirmă că acordul UE-Mercosur combate utilizarea comerțului drept 'armă geopolitică'",
+      "url": "https://agerpres.ro/economic-extern/2026/01/17/costa-afirma-ca-acordul-ue-mercosur-combate-utilizarea-comertului-drept-arma-geopolitica--1519644",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "e0309320b78336ba",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: Farul Constanța - FC Hermannstadt 1-1, în Superligă",
+      "url": "https://agerpres.ro/sport/2026/01/17/fotbal-farul-constanta---fc-hermannstadt-1-1-in-superliga--1519643",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "c42dcffc5b3f4abb",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO UE și Mercosur au semnat un acord comercial istoric după 25 de ani de negocieri",
+      "url": "https://agerpres.ro/economic-extern/2026/01/17/video-ue-si-mercosur-au-semnat-un-acord-comercial-istoric-dupa-25-de-ani-de-negocieri--1519642",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "0662f826baaa6a83",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "ARF: Două rame electrice regionale PESA sunt în curs de livrare către România",
+      "url": "https://agerpres.ro/economic/2026/01/17/arf-doua-rame-electrice-regionale-pesa-sunt-in-curs-de-livrare-catre-romania--1519641",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "456c3a43c8a8b257",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Dolj: Copil de 5 ani, salvat după ce a căzut în lacul din Parcul 'Romanescu' în Craiova",
+      "url": "https://agerpres.ro/social/2026/01/17/video-dolj-copil-de-5-ani-salvat-dupa-ce-a-cazut-in-lacul-din-parcul-romanescu-in-craiova--1519640",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "cb09540384636514",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Vaslui: Incendiu la o locuință în Roșiești; un bărbat a suferit arsuri pe 80% din suprafața corpului",
+      "url": "https://agerpres.ro/social/2026/01/17/vaslui-incendiu-la-o-locuinta-in-rosiesti-un-barbat-a-suferit-arsuri-pe-80-din-suprafata-corpului--1519636",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "83c10ce5caa544e3",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Accident produs în Capitală de un tânăr care nu avea permis, era beat, iar mașina era furată",
+      "url": "https://agerpres.ro/social/2026/01/17/accident-produs-in-capitala-de-un-tanar-care-nu-avea-permis-era-beat-iar-masina-era-furata--1519635",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "660bb8107ca7e743",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Acord UE-Mercosur: 'Un comerț echitabil, mai degrabă decât tarife vamale' (von der Leyen)",
+      "url": "https://agerpres.ro/politic-extern/2026/01/17/video-acord-ue-mercosur-un-comert-echitabil-mai-degraba-decat-tarife-vamale-von-der-leyen--1519634",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "20c812adfe127178",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: Inter Milano, victorie cu Udinese, în Serie A",
+      "url": "https://agerpres.ro/sport-extern/2026/01/17/fotbal-inter-milano-victorie-cu-udinese-in-serie-a--1519631",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "afbc661fbcc76b48",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: Real Madrid a învins pe Levante, în La Liga",
+      "url": "https://agerpres.ro/sport-extern/2026/01/17/fotbal-real-madrid-a-invins-pe-levante-in-la-liga--1519628",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "4df5f999acfec63c",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Șefa opoziției belaruse în exil, Svetlana Tihanovskaia, va părăsi Lituania și se va stabili în Polonia",
+      "url": "https://agerpres.ro/politic-extern/2026/01/17/sefa-opozitiei-belaruse-in-exil-svetlana-tihanovskaia-va-parasi-lituania-si-se-va-stabili-in-polonia--1519627",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "d4bb81ff68f15d36",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Grecia: Aeroporturile regionale au înregistrat anul trecut o creștere a numărului de pasageri",
+      "url": "https://agerpres.ro/economic-extern/2026/01/17/grecia-aeroporturile-regionale-au-inregistrat-anul-trecut-o-crestere-a-numarului-de-pasageri--1519626",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "62cd4c43e4c24c85",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Biatlon: Suedezul Sebastian Samuelsson, învingător în sprintul de la Ruhpolding (Germania), în Cupa Mondială",
+      "url": "https://agerpres.ro/sport-extern/2026/01/17/biatlon-suedezul-sebastian-samuelsson-invingator-in-sprintul-de-la-ruhpolding-germania-in-cupa-mondi--1519625",
+      "summary": "",
+      "publishedAt": "2026-01-17T18:34:43.272Z",
+      "fetchedAt": "2026-01-17T18:34:43.272Z"
+    },
+    {
+      "id": "d8500db5c7f4cf59",
+      "sourceId": "europa-libera",
+      "sourceName": "Europa Liberă",
+      "title": "Medicii și martorii iranieni descriu numărul mare de victime după proteste",
+      "url": "https://romania.europalibera.org/a/iran-martori-represiune-protestelor-mortale/33652504.html",
+      "summary": "Autoritățile iraniene au aruncat țara într-o situație pe care martorii o descriu ca o pană de curent digitală aproape totală, ca răspuns la protestele de la nivel național împotriva republicii islamice, limitând drastic fluxul de informații din interiorul țării.",
+      "publishedAt": "2026-01-17T13:57:20.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.437Z"
+    },
+    {
+      "id": "513e4889b9f1c21d",
+      "sourceId": "europa-libera",
+      "sourceName": "Europa Liberă",
+      "title": "O delegație ucraineană a ajuns în SUA pentru discuții cu oficialii americani ",
+      "url": "https://romania.europalibera.org/a/delegatie-ucraina-discutii-in-sua/33652475.html",
+      "summary": "Українська делегація прибула до США для переговорів про мирну угоду, гарантії безпеки та економічну допомогу на суму до 800 мільярдів доларів, які можуть бути затверджені на форумі в Давосі",
+      "publishedAt": "2026-01-17T13:09:18.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.437Z"
+    },
+    {
+      "id": "0ccfe19bf46eee94",
+      "sourceId": "europa-libera",
+      "sourceName": "Europa Liberă",
+      "title": "V. Zelenski: Trei regiuni ale Ucrainei au cea mai dificilă situație în sectorul energetic de când a început războiul",
+      "url": "https://romania.europalibera.org/a/stiri-zelenski-sectorul-energetic/33652476.html",
+      "summary": "Зеленський заявив про найскладнішу ситуацію в енергетиці на Київщині, Харківщині та Запоріжжі після нових російських ударів, закликавши прискорити імпорт електрики та залучення обладнання для підтримки постраждалих регіонів",
+      "publishedAt": "2026-01-17T12:46:12.000Z",
+      "fetchedAt": "2026-01-17T18:34:40.437Z"
     }
   ],
-  "lastUpdated": "2026-01-17T12:49:44.134Z"
+  "lastUpdated": "2026-01-17T18:34:43.280Z"
 }
