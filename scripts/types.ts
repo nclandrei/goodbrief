@@ -21,6 +21,7 @@ export interface WrapperCopy {
   greeting: string;
   intro: string;
   signOff: string;
+  shortSummary: string;
 }
 
 export interface ProcessedArticle {

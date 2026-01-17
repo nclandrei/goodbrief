@@ -150,6 +150,7 @@ function renderProofEmail(draft: NewsletterDraft): string {
     greeting: 'Bună dimineața! 👋',
     intro: 'Iată veștile bune din această săptămână.',
     signOff: 'Săptămână frumoasă!\nEchipa Good Brief',
+    shortSummary: 'Vești bune din România.',
   };
 
   return `

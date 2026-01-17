@@ -32,6 +32,18 @@ function formatDate(date: Date): string {
   return `${year}-${month}-${day}`;
 }
 
+const ROMANIAN_MONTHS_SHORT = [
+  "ian", "feb", "mar", "apr", "mai", "iun",
+  "iul", "aug", "sep", "oct", "nov", "dec"
+];
+
+function formatDateRomanian(date: Date): string {
+  const day = date.getDate();
+  const month = ROMANIAN_MONTHS_SHORT[date.getMonth()];
+  const year = date.getFullYear();
+  return `${day} ${month} ${year}`;
+}
+
 function getIssueNumber(issuesDir: string): number {
   const files = readdirSync(issuesDir).filter((f) => f.endsWith(".md"));
   return files.length + 1;
@@ -59,7 +71,9 @@ function groupByCategory(articles: ProcessedArticle[]): Map<ArticleCategory, Pro
 function generateMarkdown(
   articles: ProcessedArticle[],
   issueNumber: number,
-  date: string
+  date: string,
+  displayDate: string,
+  intro: string
 ): string {
   const grouped = groupByCategory(articles);
   const categoryOrder: ArticleCategory[] = ["local-heroes", "wins", "green-stuff", "quick-hits"];
@@ -82,9 +96,9 @@ ${article.summary}
   }
 
   return `---
-title: "Good Brief #${issueNumber} – Vești bune din România"
+title: "Good Brief #${issueNumber} · ${displayDate}"
 date: ${date}
-summary: "${articles.length} vești bune din România săptămâna asta."
+summary: "${intro}"
 ---
 
 ${sections.join("\n\n")}
@@ -123,10 +137,16 @@ async function main() {
   const issueNumber = getIssueNumber(issuesDir);
   const monday = getMondayOfWeek(now);
   const dateStr = formatDate(monday);
+  const displayDate = formatDateRomanian(monday);
   const filename = `${dateStr}-issue.md`;
   const outputPath = join(issuesDir, filename);
 
-  const markdown = generateMarkdown(draft.selected, issueNumber, dateStr);
+  if (!draft.wrapperCopy) {
+    console.error("Error: Draft is missing wrapperCopy");
+    process.exit(1);
+  }
+  const summary = draft.wrapperCopy.shortSummary || draft.wrapperCopy.intro;
+  const markdown = generateMarkdown(draft.selected, issueNumber, dateStr, displayDate, summary);
 
   writeFileSync(outputPath, markdown, "utf-8");
   console.log(`Published issue #${issueNumber} to ${outputPath}`);
