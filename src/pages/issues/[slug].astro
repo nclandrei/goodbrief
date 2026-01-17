@@ -25,30 +25,27 @@ const formattedDate = issue.data.date.toLocaleDateString('ro-RO', {
 ---
 
 <BaseLayout title={issue.data.title} description={issue.data.summary}>
-  <article class="py-16">
+  <article class="py-12 md:py-20">
     <div class="max-w-3xl mx-auto px-4">
-      <header class="mb-8">
+      <header class="mb-12">
         <a 
           href="/issues" 
-          class="text-primary-600 text-sm font-medium hover:underline mb-4 inline-block"
+          class="text-primary-600 text-sm font-medium hover:underline mb-6 inline-block"
         >
           ← Înapoi la arhivă
         </a>
         
-        <time class="block text-gray-500 text-sm mb-2">{formattedDate}</time>
+        <time class="block text-gray-500 text-sm mb-3">{formattedDate}</time>
         <h1 class="text-3xl md:text-4xl font-bold text-gray-900">
           {issue.data.title}
         </h1>
-        <p class="text-xl text-gray-600 mt-4">
-          {issue.data.summary}
-        </p>
       </header>
 
       <div class="prose prose-lg">
         <Content />
       </div>
 
-      <footer class="mt-12 pt-8 border-t border-gray-100">
+      <footer class="mt-8 pt-6 border-t border-gray-200">
         <p class="text-gray-600 mb-4">
           Ți-a plăcut această ediție? Abonează-te pentru a primi vești bune în fiecare luni!
         </p>
