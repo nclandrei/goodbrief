@@ -11,7 +11,7 @@ on:
         type: string
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   send:
@@ -51,6 +51,23 @@ jobs:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           RESEND_SEGMENT_ID: ${{ secrets.RESEND_SEGMENT_ID }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      - name: Publish issue to website
+        if: steps.check.outputs.exists == 'true'
+        run: npm run publish-issue
+
+      - name: Commit and push published issue
+        if: steps.check.outputs.exists == 'true'
+        run: |
+          git config user.name "Andrei-Mihai Nicolae"
+          git config user.email "andrei@nicolaeandrei.com"
+          git add content/issues/
+          if git diff --cached --quiet; then
+            echo "No new issue to commit"
+          else
+            git commit -m "chore: publish issue for ${{ steps.week.outputs.id }}"
+            git push
+          fi
 
       - name: Alert on missing draft
         if: steps.check.outputs.exists == 'false'
