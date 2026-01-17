@@ -16,12 +16,6 @@ interface Props {
 
 const { issue } = Astro.props;
 const { Content } = await render(issue);
-
-const formattedDate = issue.data.date.toLocaleDateString('ro-RO', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-});
 ---
 
 <BaseLayout title={issue.data.title} description={issue.data.summary}>
@@ -35,7 +29,6 @@ const formattedDate = issue.data.date.toLocaleDateString('ro-RO', {
           ← Înapoi la arhivă
         </a>
         
-        <time class="block text-gray-500 text-sm mb-3">{formattedDate}</time>
         <h1 class="text-3xl md:text-4xl font-bold text-gray-900">
           {issue.data.title}
         </h1>
