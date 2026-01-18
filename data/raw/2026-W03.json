@@ -18820,7 +18820,477 @@
       "summary": "Зеленський заявив про найскладнішу ситуацію в енергетиці на Київщині, Харківщині та Запоріжжі після нових російських ударів, закликавши прискорити імпорт електрики та залучення обладнання для підтримки постраждалих регіонів",
       "publishedAt": "2026-01-17T12:46:12.000Z",
       "fetchedAt": "2026-01-17T18:34:40.437Z"
+    },
+    {
+      "id": "20774bfc9a78c4ac",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "SUA vor să înființeze un „Consiliu al Păcii” pentru Ucraina, după modelul planului pentru Gaza",
+      "url": "https://hotnews.ro/sua-vor-sa-infiinteze-un-consiliu-al-pacii-pentru-ucraina-dupa-modelul-planului-pentru-gaza-2152068",
+      "summary": "Oficialii americani au propus extinderea „Consiliului pentru pace” din Gaza pentru a include şi alte ţări afectate de război şi conflicte, printre care Ucraina şi Venezuela, a relatat ziarul Financial Times, citat de The Kyiv…",
+      "publishedAt": "2026-01-17T21:40:29.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.290Z"
+    },
+    {
+      "id": "e30aa59e475a73e0",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "„Este cea mai mare realizare a Mercosur”. Javier Milei salută acordul de liber schimb cu UE",
+      "url": "https://hotnews.ro/este-cea-mai-mare-realizare-a-mercosur-javier-milei-saluta-acordul-de-liber-schimb-cu-ue-2152045",
+      "summary": "Președintele Argentinei, Javier Milei, a subliniat sâmbătă că acordul de liber schimb semnat la Asuncion de Uniunea Europeană și Mercosur este „cea mai mare realizare” a blocului de integrare latino-american, din care mai fac parte…",
+      "publishedAt": "2026-01-17T21:03:24.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.290Z"
+    },
+    {
+      "id": "1ad5e77d46f72dc7",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Un cleric iranian cere executarea protestatarilor, după ce ayatollahul Khameniei a promis să „frângă spinarea răzvrătiților”",
+      "url": "https://hotnews.ro/un-cleric-iranian-cere-executarea-protestatarilor-dupa-ce-ayatollahul-khameniei-a-promis-sa-franga-spinarea-razvratitilor-2152028",
+      "summary": "Ayatollahul Ali Khamenei, liderul suprem al Iranului, a admis pentru prima dată că mii de oameni au fost uciși în timpul protestelor care au zguduit țara în ultimele două săptămâni. Un alt cleric, Ahmad Khatami,…",
+      "publishedAt": "2026-01-17T20:50:28.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.290Z"
+    },
+    {
+      "id": "fe4080fedc52a042",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Netanyahu contestă componența unui consiliu executiv pentru Gaza anunțat de SUA: „Este împotriva politicii israeliene”",
+      "url": "https://hotnews.ro/netanyahu-contesta-componenta-unui-consiliu-executiv-pentru-gaza-anuntat-de-sua-este-impotriva-politicii-israeliene-2152033",
+      "summary": "Cabinetul prim-ministrului israelian Benjamin Netanyahu a transmis sâmbătă că anunțul de săptămâna aceasta al administrației președintelui american Donald Trump privind componența unui consiliu executiv pentru Gaza nu a fost coordonat cu Israelul și contravine politicii…",
+      "publishedAt": "2026-01-17T20:23:00.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.290Z"
+    },
+    {
+      "id": "a18476da2d334186",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Represalii în Iran. Autoritățile de la Teheran anunță măsuri împotriva unei minorități religioase",
+      "url": "https://hotnews.ro/represalii-in-iran-autoritatile-de-la-teheran-anunta-masuri-impotriva-unei-minoritati-religioase-2152021",
+      "summary": "Autoritățile iraniene au anunțat că au identificat și arestat membri ai minorității Bahai, care ar fi fost activi în manifestațiilor îndreptate împotriva regimului, a anunțat agenția de presă iraniană Tasnim, citată de AFP. Comunitatea Bahai,…",
+      "publishedAt": "2026-01-17T19:53:33.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.290Z"
+    },
+    {
+      "id": "4d7553093a86443c",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Consumul enorm de electricitate al Chinei. Pragul depășit anul trecut",
+      "url": "https://hotnews.ro/consumul-enorm-de-electricitate-al-chinei-pragul-depasit-anul-trecut-2152017",
+      "summary": "Consumul total de energie electrică al Chinei a depășit anul trecut, pentru prima dată, pragul de 10.000 de miliarde de kilowați-oră (kWh), mai mult decât dublu față de cel al SUA, conform cifrelor publicate sâmbătă…",
+      "publishedAt": "2026-01-17T19:35:10.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.290Z"
+    },
+    {
+      "id": "9a4d4cd839992eb9",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "DSU avertizează aupra pericolului de îngheţ pe lacuri: „Nu păşiţi pe gheaţă” / În Craiova, un copil de 5 ani a fost salvat după ce a căzut în lacul din Parcul Romanescu – VIDEO",
+      "url": "https://hotnews.ro/dsu-avertizeaza-aupra-pericolului-de-inghet-pe-lacuri-nu-pasiti-pe-gheata-in-craiova-un-copil-de-5-ani-a-fost-salvat-dupa-ce-a-cazut-in-lacul-din-parcul-romanescu-video-2152006",
+      "summary": "Departamentul pentru Situaţii de Urgenţă atrage atenţia asupra pericolului de îngheţ pe lacuri şi acumulările de apă în această perioadă, venind cu o serie de recomandări pentru populaţie. „ATENŢIE! Pericol de îngheţ pe lacuri şi…",
+      "publishedAt": "2026-01-17T19:12:57.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.290Z"
+    },
+    {
+      "id": "b8fb0543e6a8bfd3",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "„Amenințările sunt inacceptabile”. UE a reacționat imediat după ce Trump a anunțat taxe împotriva a opt țări europene",
+      "url": "https://hotnews.ro/primele-reactii-din-ue-dupa-tarifele-anuntate-de-trump-impotriva-tarilor-care-se-opun-anexarii-groenlandei-amenintarile-sunt-inacceptabile-2151995",
+      "summary": "Președintele Consiliului European Antonio Costa a afirmat că UE este fermă în ce privește apărarea dreptului internațional, iar președintele Franței Emmanuel Macron a spus că amenințarea cu taxe vamale este inacceptabilă, referindu-se la anunțul lui…",
+      "publishedAt": "2026-01-17T19:00:53.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.290Z"
+    },
+    {
+      "id": "4e8b0263382bc6e7",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "JD Vance, din nou în fruntea unui mare marș contra avortului desfășurat în capitala SUA",
+      "url": "https://hotnews.ro/jd-vance-din-nou-in-fruntea-unui-mare-mars-contra-avortului-desfasurat-in-capitala-sua-2151992",
+      "summary": "Vicepreședintele Statelor Unite, JD Vance, va fi capul de afiș al Marșului pentru Viață, un miting anual împotriva avortului, care va avea loc vinerea viitoare la Washington, DC, potrivit unui purtător de cuvânt al vicepreședintelui,…",
+      "publishedAt": "2026-01-17T18:41:52.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.290Z"
+    },
+    {
+      "id": "04262687be09ae8f",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Marile producții revin în cinematografe în 2026. Disney domină industria filmului",
+      "url": "https://www.mediafax.ro/life-entertaiment/marile-productii-revin-in-cinematografe-in-2026-disney-domina-industria-filmului-23672789",
+      "summary": "Evoluția pieței nord-americane este urmărită atent în Europa, deoarece succesul marilor lansări influențează ulterior încasările din cinematografe în întreaga lume.",
+      "publishedAt": "2026-01-18T02:09:55.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.327Z"
+    },
+    {
+      "id": "396f13cd71f94d2a",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "O femeie guvernator rupe protocolul istoric al învestirii",
+      "url": "https://www.mediafax.ro/politic/o-femeie-guvernator-rupe-protocolul-istoric-al-investirii-23672786",
+      "summary": "Ceremonia de învestire a noului guvernator al Virginiei a ieșit din tipare, după ce protocolul respectat de generații a fost încălcat în mod deliberat.",
+      "publishedAt": "2026-01-18T01:10:11.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.327Z"
+    },
+    {
+      "id": "0ea636c2f4b9867f",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Protestele studenților se extind în Serbia: presiuni pentru alegeri anticipate",
+      "url": "https://www.mediafax.ro/externe/protestele-studentilor-se-extind-in-serbia-presiuni-pentru-alegeri-anticipate-23672784",
+      "summary": "Studenții din Serbia anunță trecerea de la proteste la un demers politic organizat, după ce mii de persoane au ieșit din nou în stradă, acuzând corupția și cerând alegeri anticipate.",
+      "publishedAt": "2026-01-18T00:28:26.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.327Z"
+    },
+    {
+      "id": "814874e61b394761",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Elon Musk dă în judecată OpenAI și Microsoft pentru „câștiguri obținute pe nedrept”",
+      "url": "https://www.mediafax.ro/externe/elon-musk-da-in-judecata-openai-si-microsoft-pentru-castiguri-obtinute-pe-nedrept-23672782",
+      "summary": "Musk acuză OpenAI și Microsoft că au profitat de sprijinul său timpuriu și cere instanței să îi acorde câștigurile rezultate din acea implicare.",
+      "publishedAt": "2026-01-17T23:48:58.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.327Z"
+    },
+    {
+      "id": "59ea39dc03f4d6a0",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Orbán pune alegerile din Ungaria sub semnul „războiului sau păcii”",
+      "url": "https://www.mediafax.ro/externe/orban-pune-alegerile-din-ungaria-sub-semnul-razboiului-sau-pacii-23672780",
+      "summary": "Un miting anti-război organizat de o rețea civică apropiată de Fidesz, partidul conservator aflat la guvernare în Ungaria, a marcat începutul mobilizării electorale a lui Viktor Orbán înaintea alegerilor parlamentare.",
+      "publishedAt": "2026-01-17T23:06:14.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.327Z"
+    },
+    {
+      "id": "bab5ee711d0a78b0",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "UE își cheamă ambasadorii la Bruxelles, după amenințările lui Trump cu noi taxe vamale",
+      "url": "https://www.mediafax.ro/externe/ue-isi-cheama-ambasadorii-la-bruxelles-dupa-amenintarile-lui-trump-cu-noi-taxe-vamale-23672777",
+      "summary": "Tensiunile dintre Washington și capitalele europene cresc, după ce Donald Trump a amenințat cu taxe vamale statele care susțin Groenlanda, forțând UE să caute rapid un front comun.",
+      "publishedAt": "2026-01-17T21:39:00.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.327Z"
+    },
+    {
+      "id": "2d14581d9bbea467",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "România pierde clar disputa cu Croația, în faza a doua de la Europenele de polo pe apă",
+      "url": "https://www.mediafax.ro/sport/romania-pierde-clar-disputa-cu-croatia-in-faza-a-doua-de-la-europenele-de-polo-pe-apa-23672774",
+      "summary": "Echipa națională de polo pe apă a României a pierdut clar prima partidă din faza a doua a Campionatului European de la Belgrad, scor 9-17, în cadrul Grupei F.",
+      "publishedAt": "2026-01-17T21:05:57.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.327Z"
+    },
+    {
+      "id": "50a7b139c573a435",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Horoscop 18 ianuarie 2026. Taurii iau o decizie spontană perfectă, Gemenii descoperă o oportunitate pe care alții o ignoră",
+      "url": "https://www.mediafax.ro/horoscop/horoscop-18-ianuarie-2026-taurii-iau-o-decizie-spontana-perfecta-gemenii-descopera-o-oportunitate-pe-care-altii-o-ignora-23672671",
+      "summary": "Horoscop 18 ianuarie 2026. Unele zodii vor beneficia de intuiție puternică, în timp ce altele vor simți nevoia să închidă capitol vechilor probleme.",
+      "publishedAt": "2026-01-17T20:30:23.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.327Z"
+    },
+    {
+      "id": "3d5ff0e33a50717e",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Șefa UE îi răspunde lui Trump: Tarifele vamale ar submina relațiile transatlantice",
+      "url": "https://www.mediafax.ro/externe/sefa-ue-ii-raspunde-lui-trump-tarifele-vamale-ar-submina-relatiile-transatlantice-23672768",
+      "summary": "Șefa UE, Ursula von der Leyen, i-a răspuns președintelui SUA, Donald Trump după anunțul privind impunerea de noi tarife vamale țărilor care se opun intrării Groenlandei sub autoritatea SUA. Tarifele vamale ar submina relațiile transatlantice, a spus Ursula von der Leyen.",
+      "publishedAt": "2026-01-17T20:26:13.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.327Z"
+    },
+    {
+      "id": "67baa8eda71ac2ce",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Bundesliga. Bayern München revine spectaculos și învinge Leipzig cu 5-1",
+      "url": "https://www.mediafax.ro/sport/bundesliga-bayern-munchen-revine-spectaculos-si-invinge-leipzig-cu-5-1-23672769",
+      "summary": "Bayern München, lider neînvins în Bundesliga, a produs o revenire spectaculoasă în partea a doua și a câștigat pe terenul lui RB Leipzig cu scorul de 5-1, sâmbătă seară, în etapa a 18-a a campionatului german.",
+      "publishedAt": "2026-01-17T20:25:45.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.327Z"
+    },
+    {
+      "id": "a031554499937cc8",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "”Oscarurile europene”. Renate Reinsve a câştigat premiul pentru cea mai bună actriţă în 2025 la gala Academiei Europene",
+      "url": "https://stirileprotv.ro/show-buzz/entertainment/oscarurile-europene-renate-reinsve-a-castigat-premiul-pentru-cea-mai-buna-actrita-in-2025-la-gala-academiei-europene.html",
+      "summary": "Renate Reinsve, protagonista filmului \"Sentimental Value\", regizat de Joachim Trier, a câştigat premiul pentru cea mai bună actriţă la cea de-a 38-a gală anuală organizată de Academia Europeană de Film (EFA) la Berlin.",
+      "publishedAt": "2026-01-17T19:43:00.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.022Z"
+    },
+    {
+      "id": "7f31ba74362c4385",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cluj: Bărbat arestat după ce a șantajat o femeie pentru codul telefonului și a sechestrat-o în locuință",
+      "url": "https://stirileprotv.ro/stiri/actualitate/cluj-barbat-arestat-dupa-ce-a-santajat-o-femeie-pentru-codul-telefonului-si-a-sechestrat-o-in-locuinta.html",
+      "summary": "Un bărbat din judeţul Cluj a fost arestat preventiv pentru 30 de zile, după i-a luat telefonul unei femei de 27 de ani, cu care se afla în locuinţă, iar prin ameninţări a obţinut codul de acces al dispozitivului.",
+      "publishedAt": "2026-01-17T19:24:00.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.022Z"
+    },
+    {
+      "id": "29ef640e484255ad",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "11 lideri din lume s-au filmat pentru a-i face publicitate electorală lui Viktor Orban. Lipsește, însă, cel mai important",
+      "url": "https://stirileprotv.ro/stiri/international/11-lideri-din-lume-s-au-filmat-pentru-a-i-face-publicitate-electorala-lui-viktor-orban-lipseste-insa-cel-mai-important.html",
+      "summary": "Lideri de extremă dreapta și populiști din întreaga lume apar într-o înregistrare video în care transmit că îl susțin pe premierul ungar Viktor Orbán, înaintea alegerilor care, potrivit sondajelor, ar putea pune capăt lungii sale cariere de premier.",
+      "publishedAt": "2026-01-17T19:22:00.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.022Z"
+    },
+    {
+      "id": "242ec976e06aed4f",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Horoscop 18 ianuarie 2026, cu Neti Sandu. Zodia pentru care sună clopote de nuntă",
+      "url": "https://stirileprotv.ro/show-buzz/horoscop/horoscop-18-ianuarie-2026-cu-neti-sandu-zodia-pentru-care-suna-clopote-de-nunta.html",
+      "summary": "Horoscop 18 ianuarie 2026, prezentat de Neti Sandu la Știrile PRO TV. Luna nouă, cu vești de tot felul. O să ne gândim serios la ce e important pentru noi și pentru ai noștri, ca să nu greșim direcția.",
+      "publishedAt": "2026-01-17T19:17:00.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.022Z"
+    },
+    {
+      "id": "a6109668d46aa64d",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Un nou război comercial între SUA și UE, după noile ”tarife-pedeapsă” anunțate de Donald Trump. Prima reacție europeană",
+      "url": "https://stirileprotv.ro/stiri/international/un-nou-razboi-comercial-intre-sua-si-ue-dupa-noile-tarife-pedeapsa-anuntate-de-donald-trump-prima-reactie-europeana.html",
+      "summary": "Europa va „fi foarte fermă în apărarea dreptului internațional”, a avertizat președintele Consiliului European, António Costa, adresându-se Washingtonului.",
+      "publishedAt": "2026-01-17T19:05:00.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.022Z"
+    },
+    {
+      "id": "aa2ca8105023a643",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Întreruperi de energie electrică în opt localități din Harghita, posibil din cauza vremii. 1.500 de consumatori, afectați",
+      "url": "https://stirileprotv.ro/stiri/actualitate/intreruperi-de-energie-electrica-in-opt-localitati-din-harghita-posibil-din-cauza-vremii-1-500-de-consumatori-afectati.html",
+      "summary": "Aproximativ 1.500 de consumatori din opt localități sunt afectați de întreruperi de energie electrică, posibil din cauza vremii, anunță ISU Harghita.",
+      "publishedAt": "2026-01-17T18:58:00.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.022Z"
+    },
+    {
+      "id": "ade6c19ceb8f6bbc",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Președintele Panama apără acordul UE–Mercosur și critică reglementările comerciale „extreme”",
+      "url": "https://stirileprotv.ro/stiri/international/presedintele-panama-apara-acordul-ue-mercosur-si-critica-reglementarile-comerciale-zextreme.html",
+      "summary": "Preşedintele Panama, Jose Mulino, a apărat, sâmbătă, în Paraguay, acordul de asociere între Mercosur şi Uniunea Europeană, susţinând că acesta favorizează libertatea comerţului în faţa \"intervenţionismului\" şi reglementărilor extreme\".",
+      "publishedAt": "2026-01-17T18:38:00.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.022Z"
+    },
+    {
+      "id": "38fa948c118d8999",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Premierul Republicii Moldova: „Aș vota pentru unirea cu România, dar prioritatea țării rămâne integrarea europeană”",
+      "url": "https://stirileprotv.ro/stiri/international/premierul-republicii-moldova-zas-vota-pentru-unirea-cu-romania-dar-prioritatea-tarii-ramane-integrarea-europeana.html",
+      "summary": "Premierul Republicii Moldova, Alexandru Munteanu, a declarat că personal ar vota pentru unirea cu România, dar ca prim-ministru respectă voința majorității, care susține integrarea europeană.",
+      "publishedAt": "2026-01-17T18:31:00.000Z",
+      "fetchedAt": "2026-01-18T02:12:21.022Z"
+    },
+    {
+      "id": "900b3f7c85e593c8",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Racheta gigantică SLS, transportată de NASA spre rampa de lansare înainte de a doua misiune lunară Artemis",
+      "url": "https://agerpres.ro/stiinta/2026/01/18/racheta-gigantica-sls-transportata-de-nasa-spre-rampa-de-lansare-inainte-de-a-doua-misiune-lunara-ar--1519679",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
+    },
+    {
+      "id": "d97c7f948fc4fa70",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Handbal masculin: Germania, învinsă surprinzător de Serbia, la EURO 2026",
+      "url": "https://agerpres.ro/sport-extern/2026/01/18/handbal-masculin-germania-invinsa-surprinzator-de-serbia-la-euro-2026--1519678",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
+    },
+    {
+      "id": "269b6bb4b3822f63",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Premiile EFA 2026: Filmul 'Sentimental Value', marele câștigător al galei, cu șase trofee",
+      "url": "https://agerpres.ro/cultura/2026/01/18/premiile-efa-2026-filmul-sentimental-value-marele-castigator-al-galei-cu-sase-trofee--1519677",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
+    },
+    {
+      "id": "03fcccb6bc852572",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Hochei: Steaua a realizat scorul campionatului, 33-0 cu Sportul Studențesc",
+      "url": "https://agerpres.ro/sport/2026/01/17/hochei-steaua-a-realizat-scorul-campionatului-33-0-cu-sportul-studentesc--1519676",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
+    },
+    {
+      "id": "23da5ad076dcbfc5",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Volei masculin: Steaua, noul lider al Diviziei A1",
+      "url": "https://agerpres.ro/sport/2026/01/17/volei-masculin-steaua-noul-lider-al-diviziei-a1--1519675",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
+    },
+    {
+      "id": "8868a2f3f7957b02",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Baschet masculin: FC Argeș și Poli Timișoara, victorioase pe teren propriu în campionat",
+      "url": "https://agerpres.ro/sport/2026/01/17/baschet-masculin-fc-arges-si-poli-timisoara-victorioase-pe-teren-propriu-in-campionat--1519673",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
+    },
+    {
+      "id": "f49215e38e0a95cb",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Lista completă a premiilor Academiei Europene de Film 2026",
+      "url": "https://agerpres.ro/cultura/2026/01/17/lista-completa-a-premiilor-academiei-europene-de-film-2026--1519671",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
+    },
+    {
+      "id": "1b6228558bbb6df9",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Polo masculin: România, învinsă de Croația cu 17-9, la Campionatul European 2026",
+      "url": "https://agerpres.ro/sport-extern/2026/01/17/polo-masculin-romania-invinsa-de-croatia-cu-17-9-la-campionatul-european-2026--1519672",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
+    },
+    {
+      "id": "4aa70b0911efed73",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Premiile EFA 2026: Lungmetrajul 'Sentimental Value', desemnat cel mai bun film european",
+      "url": "https://agerpres.ro/life/2026/01/17/premiile-efa-2026-lungmetrajul-sentimental-value-desemnat-cel-mai-bun-film-european--1519670",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
+    },
+    {
+      "id": "d3538294dde9233f",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Handbal feminin: CS Rapid București a scăpat printre degete victoria cu Lokomotiva Zagreb, în EHF European League",
+      "url": "https://agerpres.ro/sport-extern/2026/01/17/handbal-feminin-cs-rapid-bucuresti-a-scapat-printre-degete-victoria-cu-lokomotiva-zagreb-in-ehf-euro--1519669",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
+    },
+    {
+      "id": "bc07a3eb7602e8b3",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Premiile EFA 2026: Cineastul Joachim Trier a câștigat premiul pentru cel mai bun regizor",
+      "url": "https://agerpres.ro/life/2026/01/17/premiile-efa-2026-cineastul-joachim-trier-a-castigat-premiul-pentru-cel-mai-bun-regizor--1519668",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
+    },
+    {
+      "id": "1a51147e7924c6a9",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: Nigeria a obținut bronzul la Cupa Africii pe Națiuni 2025",
+      "url": "https://agerpres.ro/sport-extern/2026/01/17/fotbal-nigeria-a-obtinut-bronzul-la-cupa-africii-pe-natiuni-2025--1519667",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
+    },
+    {
+      "id": "a9865593326ce015",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: Rapid a învins-o pe Metaloglobus și e lider provizoriu în Superligă",
+      "url": "https://agerpres.ro/sport/2026/01/17/fotbal-rapid-a-invins-o-pe-metaloglobus-si-e-lider-provizoriu-in-superliga--1519666",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
+    },
+    {
+      "id": "07f35e6ae8a11934",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Israelul contestă componența unui organism al Consiliului de Pace pentru Gaza anunțat de Trump",
+      "url": "https://agerpres.ro/politic-extern/2026/01/17/israelul-contesta-componenta-unui-organism-al-consiliului-de-pace-pentru-gaza-anuntat-de-trump--1519665",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
+    },
+    {
+      "id": "587dc3d672bd1d4a",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Premiile EFA 2026: Renate Reinsve, desemnată cea mai bună actriță europeană",
+      "url": "https://agerpres.ro/life/2026/01/17/video-premiile-efa-2026-renate-reinsve-desemnata-cea-mai-buna-actrita-europeana--1519663",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
+    },
+    {
+      "id": "871b91521377c7bc",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Pena afirmă că acordul UE- Mercosur demonstrează că dialogul 'este singura cale'",
+      "url": "https://agerpres.ro/economic-extern/2026/01/17/pena-afirma-ca-acordul-ue--mercosur-demonstreaza-ca-dialogul-este-singura-cale--1519664",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
+    },
+    {
+      "id": "504247d66cedefcd",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Premiile EFA 2026: Stellan Skarsgard, desemnat cel mai bun actor european",
+      "url": "https://agerpres.ro/life/2026/01/17/premiile-efa-2026-stellan-skarsgard-desemnat-cel-mai-bun-actor-european--1519662",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
+    },
+    {
+      "id": "ee982165e442513d",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Acordul de liber schimb cu UE este 'cea mai mare realizare' a Mercosur, subliniază Milei",
+      "url": "https://agerpres.ro/economic-extern/2026/01/17/acordul-de-liber-schimb-cu-ue-este-cea-mai-mare-realizare-a-mercosur-subliniaza-milei--1519661",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
+    },
+    {
+      "id": "0cc9b67bce28574f",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Handbal feminin: Victorie dramatică pentru SCM Râmnicu Vâlcea în campionat",
+      "url": "https://agerpres.ro/sport/2026/01/17/handbal-feminin-victorie-dramatica-pentru-scm-ramnicu-valcea-in-campionat--1519660",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
+    },
+    {
+      "id": "2b812c2aff894fdc",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Modă masculină: Dolce & Gabbana, în căutarea autenticității",
+      "url": "https://agerpres.ro/zigzag/2026/01/17/video-moda-masculina-dolce-gabbana-in-cautarea-autenticitatii--1519659",
+      "summary": "",
+      "publishedAt": "2026-01-18T02:12:25.068Z",
+      "fetchedAt": "2026-01-18T02:12:25.068Z"
     }
   ],
-  "lastUpdated": "2026-01-17T18:34:43.280Z"
+  "lastUpdated": "2026-01-18T02:12:25.076Z"
 }
