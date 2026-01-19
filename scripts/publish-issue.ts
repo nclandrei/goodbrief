@@ -2,12 +2,25 @@ import { readFileSync, writeFileSync, readdirSync } from "fs";
 import { join } from "path";
 import type { NewsletterDraft, ProcessedArticle, ArticleCategory } from "./types.js";
 
-function getMondayOfWeek(date: Date): Date {
-  const d = new Date(date);
-  const day = d.getDay();
-  const diff = d.getDate() - day + (day === 0 ? -6 : 1);
-  d.setDate(diff);
-  return d;
+function getMondayOfISOWeek(weekId: string): Date {
+  // weekId format: "2026-W03"
+  const [yearStr, weekStr] = weekId.split("-W");
+  const year = parseInt(yearStr, 10);
+  const week = parseInt(weekStr, 10);
+  
+  // Jan 4th is always in week 1
+  const jan4 = new Date(year, 0, 4);
+  const jan4Day = jan4.getDay() || 7; // Convert Sunday (0) to 7
+  
+  // Monday of week 1
+  const week1Monday = new Date(jan4);
+  week1Monday.setDate(jan4.getDate() - jan4Day + 1);
+  
+  // Add weeks to get to target week's Monday
+  const targetMonday = new Date(week1Monday);
+  targetMonday.setDate(week1Monday.getDate() + (week - 1) * 7);
+  
+  return targetMonday;
 }
 
 function formatDate(date: Date): string {
@@ -136,7 +149,7 @@ async function main() {
   }
 
   const issueNumber = getIssueNumber(issuesDir);
-  const monday = getMondayOfWeek(new Date());
+  const monday = getMondayOfISOWeek(weekId);
   const dateStr = formatDate(monday);
   const displayDate = formatDateRomanian(monday);
   const filename = `${dateStr}-issue.md`;
