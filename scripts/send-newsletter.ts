@@ -307,7 +307,7 @@ async function handleTest(html: string, weekId: string): Promise<void> {
     from: 'Good Brief <buna@goodbrief.ro>',
     replyTo: 'hello@goodbrief.ro',
     to: testEmail,
-    subject: `[TEST] Good Brief ${weekId} – Vești bune din România`,
+    subject: `[TEST] Good Brief – Your weekly dose de vești bune`,
     html,
   });
 
@@ -354,7 +354,7 @@ async function handleSend(
       segmentId,
       from: 'Good Brief <buna@goodbrief.ro>',
       replyTo: 'hello@goodbrief.ro',
-      subject: `Good Brief ${weekId} – Vești bune din România`,
+      subject: `Good Brief – Your weekly dose de vești bune`,
       html,
     });
 
