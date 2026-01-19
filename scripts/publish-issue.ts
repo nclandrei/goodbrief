@@ -160,9 +160,12 @@ async function main() {
   }
 
   const issueNumber = getIssueNumber(issuesDir);
-  const monday = getMondayOfISOWeek(weekId);
-  const dateStr = formatDate(monday);
-  const displayDate = formatDateRomanian(monday);
+  // Issue is sent on Monday of the NEXT week after the draft week
+  const draftMonday = getMondayOfISOWeek(weekId);
+  const sendMonday = new Date(draftMonday);
+  sendMonday.setDate(draftMonday.getDate() + 7);
+  const dateStr = formatDate(sendMonday);
+  const displayDate = formatDateRomanian(sendMonday);
   const filename = `${dateStr}-issue.md`;
   const outputPath = join(issuesDir, filename);
 
