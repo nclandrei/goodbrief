@@ -29,16 +29,22 @@ jobs:
           if [ -n "${{ inputs.week }}" ]; then
             echo "id=${{ inputs.week }}" >> $GITHUB_OUTPUT
           else
-            # Calculate current ISO week
-            WEEK_ID=$(date -u +%G-W%V)
-            echo "id=$WEEK_ID" >> $GITHUB_OUTPUT
+            # Use latest draft file (generated Saturday for previous week, sent Monday)
+            LATEST_DRAFT=$(ls -1 data/drafts/*.json 2>/dev/null | sort -r | head -1)
+            if [ -n "$LATEST_DRAFT" ]; then
+              WEEK_ID=$(basename "$LATEST_DRAFT" .json)
+              echo "id=$WEEK_ID" >> $GITHUB_OUTPUT
+            else
+              echo "id=" >> $GITHUB_OUTPUT
+            fi
           fi
 
       - name: Check draft exists
         id: check
         run: |
-          DRAFT_PATH="data/drafts/${{ steps.week.outputs.id }}.json"
-          if [ -f "$DRAFT_PATH" ]; then
+          if [ -z "${{ steps.week.outputs.id }}" ]; then
+            echo "exists=false" >> $GITHUB_OUTPUT
+          elif [ -f "data/drafts/${{ steps.week.outputs.id }}.json" ]; then
             echo "exists=true" >> $GITHUB_OUTPUT
           else
             echo "exists=false" >> $GITHUB_OUTPUT
