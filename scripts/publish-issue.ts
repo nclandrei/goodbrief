@@ -103,17 +103,24 @@ ${sections.join("\n\n")}
 `;
 }
 
-function getLatestDraftFile(draftsDir: string): { weekId: string; path: string } | null {
+function parseArgs(): string | null {
+  const args = process.argv.slice(2);
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] === '--week' && args[i + 1]) {
+      return args[i + 1];
+    }
+  }
+  return null;
+}
+
+function getLatestDraftWeekId(draftsDir: string): string | null {
   const files = readdirSync(draftsDir)
     .filter((f) => f.endsWith(".json"))
     .sort()
     .reverse();
   
   if (files.length === 0) return null;
-  
-  const latestFile = files[0];
-  const weekId = latestFile.replace(".json", "");
-  return { weekId, path: join(draftsDir, latestFile) };
+  return files[0].replace(".json", "");
 }
 
 async function main() {
@@ -121,13 +128,17 @@ async function main() {
   const issuesDir = join(projectRoot, "content", "issues");
   const draftsDir = join(projectRoot, "data", "drafts");
 
-  const latestDraft = getLatestDraftFile(draftsDir);
-  if (!latestDraft) {
-    console.error("Error: No draft files found in data/drafts/");
-    process.exit(1);
+  // Use --week arg if provided, otherwise find latest draft
+  let weekId = parseArgs();
+  if (!weekId) {
+    weekId = getLatestDraftWeekId(draftsDir);
+    if (!weekId) {
+      console.error("Error: No draft files found in data/drafts/");
+      process.exit(1);
+    }
   }
 
-  const { weekId, path: draftPath } = latestDraft;
+  const draftPath = join(draftsDir, `${weekId}.json`);
   console.log(`Reading draft for week ${weekId}...`);
 
   let draft: NewsletterDraft;

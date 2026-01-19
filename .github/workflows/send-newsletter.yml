@@ -60,7 +60,7 @@ jobs:
 
       - name: Publish issue to website
         if: steps.check.outputs.exists == 'true'
-        run: npm run publish-issue
+        run: npm run publish-issue -- --week ${{ steps.week.outputs.id }}
 
       - name: Commit and push published issue
         if: steps.check.outputs.exists == 'true'
