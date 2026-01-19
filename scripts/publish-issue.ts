@@ -2,21 +2,6 @@ import { readFileSync, writeFileSync, readdirSync } from "fs";
 import { join } from "path";
 import type { NewsletterDraft, ProcessedArticle, ArticleCategory } from "./types.js";
 
-function getISOWeekId(date: Date): string {
-  const tempDate = new Date(date.getTime());
-  tempDate.setHours(0, 0, 0, 0);
-  tempDate.setDate(tempDate.getDate() + 3 - ((tempDate.getDay() + 6) % 7));
-  const week1 = new Date(tempDate.getFullYear(), 0, 4);
-  const weekNumber = Math.round(
-    ((tempDate.getTime() - week1.getTime()) / 86400000 -
-      3 +
-      ((week1.getDay() + 6) % 7)) /
-      7 +
-      1
-  );
-  return `${tempDate.getFullYear()}-W${String(weekNumber).padStart(2, "0")}`;
-}
-
 function getMondayOfWeek(date: Date): Date {
   const d = new Date(date);
   const day = d.getDay();
@@ -105,15 +90,31 @@ ${sections.join("\n\n")}
 `;
 }
 
+function getLatestDraftFile(draftsDir: string): { weekId: string; path: string } | null {
+  const files = readdirSync(draftsDir)
+    .filter((f) => f.endsWith(".json"))
+    .sort()
+    .reverse();
+  
+  if (files.length === 0) return null;
+  
+  const latestFile = files[0];
+  const weekId = latestFile.replace(".json", "");
+  return { weekId, path: join(draftsDir, latestFile) };
+}
+
 async function main() {
   const projectRoot = join(import.meta.dirname!, "..");
   const issuesDir = join(projectRoot, "content", "issues");
   const draftsDir = join(projectRoot, "data", "drafts");
 
-  const now = new Date();
-  const weekId = getISOWeekId(now);
-  const draftPath = join(draftsDir, `${weekId}.json`);
+  const latestDraft = getLatestDraftFile(draftsDir);
+  if (!latestDraft) {
+    console.error("Error: No draft files found in data/drafts/");
+    process.exit(1);
+  }
 
+  const { weekId, path: draftPath } = latestDraft;
   console.log(`Reading draft for week ${weekId}...`);
 
   let draft: NewsletterDraft;
@@ -135,7 +136,7 @@ async function main() {
   }
 
   const issueNumber = getIssueNumber(issuesDir);
-  const monday = getMondayOfWeek(now);
+  const monday = getMondayOfWeek(new Date());
   const dateStr = formatDate(monday);
   const displayDate = formatDateRomanian(monday);
   const filename = `${dateStr}-issue.md`;
