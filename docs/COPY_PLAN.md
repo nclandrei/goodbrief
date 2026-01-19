@@ -156,13 +156,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <li><strong>Gratuit</strong> – free to read, powered by community.</li>
         </ul>
 
-        <h2>Open Source</h2>
-        <p>
-          Good Brief este un proiect open source. Codul este pe
-          <a href="https://github.com/nclandrei/goodbrief" target="_blank" rel="noopener">GitHub</a>,
-          ready for pull requests.
-        </p>
-
         <h2>Contact</h2>
         <p>
           Ai o poveste bună? Ai găsit o greșeală? Scrie-ne la
@@ -215,7 +208,7 @@ Susține proiectul direct prin GitHub. Ideal pentru developeri.
 **AFTER:**
 ```
 Susține proiectul direct prin GitHub Sponsors.
-Ideal dacă ești developer și vrei să investești în partea de tech & open source.
+Ideal dacă ești developer și vrei să investești în partea de tech.
 ```
 
 #### "Alte moduri de a ajuta"

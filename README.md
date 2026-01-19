@@ -80,7 +80,7 @@ Contribuțiile sunt binevenite! Poți:
 
 ## Susține proiectul
 
-Good Brief este gratuit și open source. Dacă îți place ce facem:
+Good Brief este gratuit. Dacă îți place ce facem:
 
 - ☕ [Ko-fi](https://ko-fi.com/goodbrief)
 - ⭐ Dă o stea pe GitHub
