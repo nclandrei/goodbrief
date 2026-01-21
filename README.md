@@ -15,7 +15,7 @@
 - **Framework:** [Astro](https://astro.build/) + TypeScript
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 - **Hosting:** [Cloudflare Pages](https://pages.cloudflare.com/) (gratuit)
-- **Email:** [EmailOctopus](https://emailoctopus.com/) (gratuit până la 2,500 abonați)
+- **Email:** [Resend](https://resend.com/)
 - **Donații:** [Ko-fi](https://ko-fi.com/)
 
 ## Dezvoltare locală
