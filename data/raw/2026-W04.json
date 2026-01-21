@@ -10830,7 +10830,407 @@
       "summary": "",
       "publishedAt": "2026-01-21T02:07:51.184Z",
       "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "56b4671f6757c033",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Sesizarea lui Nicuşor Dan pe legea privind utilizarea plajei Mării Negre, analizată de CCR. Care sunt obiecțiile președintelui",
+      "url": "https://hotnews.ro/sesizarea-lui-nicusor-dan-pe-legea-privind-utilizarea-plajei-marii-negre-analizata-de-ccr-care-sunt-obiectiile-presedintului-2153916",
+      "summary": "Curtea Constituţională a României dezbate, miercuri, sesizarea preşedintelui Nicuşor Dan asupra legii care permite atribuirea gratuită către autoritățile locale a unor suprafețe din plajele Mării Negre. În luna noiembrie 2025, Nicușor Dan a trimis Curţii…",
+      "publishedAt": "2026-01-21T06:26:42.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.256Z"
+    },
+    {
+      "id": "703283a5ea5f5a59",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Justiția japoneză a decis pedeapsa pentru bărbatul care l-a ucis pe fostul premier Shinzo Abe",
+      "url": "https://hotnews.ro/justitia-japoneza-a-decis-pedeapsa-pentru-barbatul-care-l-a-ucis-pe-fostul-premier-shinzo-abe-2153918",
+      "summary": "O instanță japoneză l-a condamnat miercuri la închisoare pe viață pe bărbatul care l-a ucis în 2022 pe pe premierul Shinzo Abe, a anunțat postul public de televiziune NHK, decizia instanței venind la trei ani…",
+      "publishedAt": "2026-01-21T06:10:37.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.256Z"
+    },
+    {
+      "id": "af3ab15be633a8f4",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Inovația care scapă bolnavii de cancer de stomă permanentă. Prof. dr. Vafi Atalay, Anadolu Medical Center: „Am tratat foarte mulți pacienți din toată lumea”",
+      "url": "https://hotnews.ro/inovatia-care-scapa-bolnavii-de-cancer-de-stoma-permanenta-prof-dr-vafi-atalay-anadolu-medical-center-am-tratat-foarte-multi-pacienti-din-toata-lumea-2151848",
+      "summary": "Profund impresionat de suferința fizică și psihică a pacienților care în urma operațiilor rămâneau cu stomă (n.r. un orificiu creat chirurgical pe suprafața abdomenului pentru a permite eliminarea deșeurilor corporale), prof. dr. Vafi Atalay, chirurg…",
+      "publishedAt": "2026-01-21T06:02:00.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.256Z"
+    },
+    {
+      "id": "f20b2357ba85982a",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Reacția lui Trump după ce un general iranian l-a amenințat cu moartea: „Am dat ordine foarte clare”",
+      "url": "https://hotnews.ro/reactia-lui-trump-dupa-ce-un-general-iranian-l-a-amenintat-cu-moartea-am-dat-ordine-foarte-clare-2153913",
+      "summary": "Donald Trump a anunțat marți că Iranul va fi „șters” de pe hartă dacă Teheranul va orchestra asasinarea sa, reacția președintelui american venind după amenințările unui înalt oficial militar iranian, potrivit France Presse. „Am dat…",
+      "publishedAt": "2026-01-21T05:44:18.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.256Z"
+    },
+    {
+      "id": "4140c1e07148632a",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Avionul Air Force care-l ducea pe Donald Trump către Davos s-a întors din drum. Președintele american a schimbat aeronava",
+      "url": "https://hotnews.ro/avionul-air-force-care-l-ducea-pe-donald-trump-catre-davos-s-a-intors-din-drum-presedintele-american-a-schimbat-aeronava-2153896",
+      "summary": "Avionul Air Force One al preşedintelui american Donald Trump s-a întors marți seară la baza militară Joint Base Andrews din Maryland, la aproximativ o oră după ce decolat spre Elveția, după ce a întâmpinat o…",
+      "publishedAt": "2026-01-21T05:32:48.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.256Z"
+    },
+    {
+      "id": "4fc9c917d66817c1",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "FOTO Brand hotelier celebru revine în România, într-un fost palat emblematic",
+      "url": "https://hotnews.ro/foto-brand-hotelier-celebru-revine-in-romania-intr-un-fost-palat-emblematic-2153897",
+      "summary": "Brandul hotelier Sofitel, care a mai operat în România lângă Romexpo, la World Trade Center, actualul Pullman, revine în România, mișcare anunțată de Profit.ro din primăvara anului trecut. Citește mai mult pe Profit.ro",
+      "publishedAt": "2026-01-21T05:25:07.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.256Z"
+    },
+    {
+      "id": "ced7585bd1ec17c9",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Marea Britanie aprobă o „mega” ambasadă chineză, deși toți spun că sediul va deveni o bază de spionaj",
+      "url": "https://hotnews.ro/marea-britanie-aproba-o-mega-ambasada-chineza-desi-toti-spun-ca-sediul-va-deveni-o-baza-de-spionaj-2153890",
+      "summary": "Guvernul britanic a aprobat marți deschiderea unei noi ambasade chineze, de dimensiuni considerabile, în centrul Londrei, în ciuda criticilor vehemente formulate de parlamentari din întreg spectrul politic, conform cărora aceasta ar putea deveni o bază…",
+      "publishedAt": "2026-01-21T05:09:30.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.256Z"
+    },
+    {
+      "id": "a3ee4707afa7412d",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "EXCLUSIV Una dintre instituțiile cu cel mai bine plătiți angajați se plânge că tăierile lui Bolojan îi vor afecta activitatea. Cât au scăzut salariile și câți oameni au fost concediați de la 1 ianuarie 2026",
+      "url": "https://hotnews.ro/exclusiv-una-dintre-institutiile-cu-cel-mai-bine-platiti-angajati-se-plange-ca-taierile-lui-bolojan-ii-vor-afecta-activitatea-cat-au-scazut-salariile-si-cati-oameni-au-fost-concediati-de-la-1-ianuari-2153491",
+      "summary": "Salariul net lunar al președintelui Autorității de Supraveghere Financiară (ASF), Alexandru Petrescu, a scăzut de la peste 12.500 de euro în luna decembrie a anului trecut la aproximativ 8.800 de euro de la 1 ianuarie…",
+      "publishedAt": "2026-01-21T05:02:42.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.256Z"
+    },
+    {
+      "id": "bdb65d73fa7bfe43",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "INTERVIU Într-un scenariu militar în Groenlanda, „nu-l vom putea opri cu adevărat pe Trump”. O voce de la Copenhaga explică cine sunt cei care îl pot opri pe președintele SUA",
+      "url": "https://hotnews.ro/interviu-intr-un-scenariu-militar-in-groenlanda-nu-l-vom-putea-opri-cu-adevarat-pe-trump-o-voce-de-la-copenhaga-explica-cine-sunt-cei-care-il-pot-opri-pe-presedintele-sua-2153075",
+      "summary": "„Putem încerca să creștem costurile politice pentru orice fel de acțiune militară. Putem să-i îngreunăm situația. Dar, în cele din urmă, nu-l putem opri cu adevărat pe Trump. (…) Singurii care îl pot opri cu…",
+      "publishedAt": "2026-01-21T04:57:35.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.256Z"
+    },
+    {
+      "id": "e11cd395dbafa348",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Disputa dintre Elon Musk și O’Leary de la Ryanair se adâncește. Musk sugerează că va cumpăra Ryanair",
+      "url": "https://hotnews.ro/disputa-dintre-elon-musk-si-oleary-de-la-ryanair-se-adanceste-musk-sugereaza-ca-va-cumpara-ryanair-2153886",
+      "summary": "Elon Musk a sugerat că ar putea cumpăra Ryanair și a cerut demiterea directorului executiv pe fondul unei dispute tot mai profunde dintre cei doi. Compania aeriană low-cost l-a etichetat marți pe directorul executiv al…",
+      "publishedAt": "2026-01-21T04:54:50.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.256Z"
+    },
+    {
+      "id": "d1098c569c14efc7",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Parlamentul European ar putea anunța miercuri suspendarea acordului comercial cu SUA din iulie",
+      "url": "https://hotnews.ro/parlamentul-european-ar-putea-anunta-miercuri-suspendarea-acordului-comercial-cu-sua-din-iulie-2153884",
+      "summary": "Piețele globale sunt în alertă, deoarece Europa suspendă aprobarea acordului comercial cu SUA, scrie BBC. Parlamentul European intenționează să suspende aprobarea acordului comercial cu SUA încheiat în iulie, potrivit unor surse apropiate comisiei sale pentru…",
+      "publishedAt": "2026-01-21T04:19:04.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.256Z"
+    },
+    {
+      "id": "8e08cf40d16ec85b",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Bărbatul care l-a asasinat pe fostul premier japonez, Shinzo Abe, condamnat la închisoare pe viață",
+      "url": "https://www.mediafax.ro/externe/barbatul-care-l-a-asasinat-pe-fostul-premier-japonez-shinzo-abe-condamnat-la-inchisoare-pe-viata-23674170",
+      "summary": "Un tribunal din Japonia l-a condamnat, miercuri, la închisoare pe viață pe bărbatul care a recunoscut că l-a asasinat pe fostul prim-ministru al Japoniei, Shinzo Abe, potrivit televiziunii publice NHK.",
+      "publishedAt": "2026-01-21T06:30:34.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.055Z"
+    },
+    {
+      "id": "91861372c56d806c",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Israelul și-a transformat închisorile în „lagăre de tortură” pentru palestinieni, denunță ONG-ul israelian B’Tselem",
+      "url": "https://www.mediafax.ro/externe/israelul-si-a-transformat-inchisorile-in-lagare-de-tortura-pentru-palestinieni-denunta-ong-ul-israelian-btselem-23674192",
+      "summary": "Tortura, abuzul sexual și privarea de somn, hrană sau îngrijiri medicale sunt câteva dintre practicile la care palestinienii continuă să fie supuși în închisorile israeliene, conform unei actualizări a raportului „Bun venit în iad” realizat de ONG-ul israelian B'Tselem.",
+      "publishedAt": "2026-01-21T06:15:18.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.055Z"
+    },
+    {
+      "id": "1fcd6cc40bdf944b",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Accident feroviar lângă Barcelona: Un mort și zeci de răniți, la doar două zile după tragedia din sudul Spaniei",
+      "url": "https://www.mediafax.ro/externe/accident-feroviar-langa-barcelona-un-mort-si-zeci-de-raniti-la-doar-doua-zile-dupa-tragedia-din-sudul-spaniei-23674179",
+      "summary": "Un tren de navetiști din zona metropolitană Barcelona a deraiat marți dimineață, după ce un zid de sprijin s-a prăbușit peste șine în apropierea localității Gelida, la circa 35 de minute de capitala catalană. Accidentul feroviar s-a soldat cu moartea unei persoane și rănirea a cel puțin 37 de pasageri, scrie CNN.",
+      "publishedAt": "2026-01-21T06:13:48.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.055Z"
+    },
+    {
+      "id": "82f808f7f3db8b0a",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Abia decolat spre Davos, avionul lui Trump s-a întors din drum din cauza unor probleme electrice",
+      "url": "https://www.mediafax.ro/externe/abia-decolat-spre-davos-avionul-lui-trump-s-a-intors-din-drum-din-cauza-unor-probleme-electrice-23674177",
+      "summary": "Avionul lui Donald Trump a fost nevoit să facă drum întors după ce, la scurtă vreme de la decolare, piloții au identificat ceea ce Casa Albă a denumit „o problemă electrică minoră”.",
+      "publishedAt": "2026-01-21T06:01:08.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.055Z"
+    },
+    {
+      "id": "806f6b2531395b1f",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Cum încearcă administrația Trump să oprească protestele din Minneapolis",
+      "url": "https://www.mediafax.ro/externe/cum-incearca-administratia-trump-sa-opreasca-protestele-din-minneapolis-23674163",
+      "summary": "În ultimele săptămâni, Minneapolis a devenit punctul central al unei confruntări intense între autoritățile federale din SUA și societatea civilă. De mai bine de trei săptămâni, protestatarii denunță metodele considerate abuzive ale agenților ICE (Immigration and Customs Enforcement), în timp ce administrația președintelui Donald Trump răspunde prin intervenții ferme pe teren, acțiuni judiciare și amenințări legale fără precedent, arată Il Post.",
+      "publishedAt": "2026-01-21T05:42:35.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.055Z"
+    },
+    {
+      "id": "6bda5355ef512086",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Accident grav pe A1, lângă Simeria. Un mort și doi răniți. Traficul a fost deviat",
+      "url": "https://www.mediafax.ro/social/accident-grav-pe-a1-langa-simeria-un-mort-si-doi-raniti-traficul-a-fost-deviat-23674171",
+      "summary": "Un accident grav în care au fost implicate un TIR și un autoturism a avut loc miercuri dimineața pe autostrada A1, lângă Simeria.",
+      "publishedAt": "2026-01-21T05:40:12.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.055Z"
+    },
+    {
+      "id": "101e6eab6c2790f7",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Silvășan, după eșecul lui U-BT din Slovenia: Nu avem valoarea necesară pentru a câștiga fiecare meci",
+      "url": "https://www.mediafax.ro/sport/silvasan-dupa-esecul-lui-u-bt-din-slovenia-nu-avem-valoarea-necesara-pentru-a-castiga-fiecare-meci-23674165",
+      "summary": "Antrenorul campioanei României la baschet masculin, Mihai Silvășan, crede că U-BT Cluj-Napoca mai are șanse să termine pe locurile 4-6 grupa A din Eurocup și să ajungă astfel în optimi, după eșecul de marți din Slovenia.",
+      "publishedAt": "2026-01-21T05:30:55.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.055Z"
+    },
+    {
+      "id": "546818555e8907a2",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Usha Vance, soția vicepreședintelui JD Vance, anunță că este însărcinată cu al patrulea copil",
+      "url": "https://www.mediafax.ro/externe/usha-vance-sotia-vicepresedintelui-jd-vance-anunta-ca-este-insarcinata-cu-al-patrulea-copil-23674162",
+      "summary": "Usha Vance, soția vicepreședintelui american JD Vance, a anunțat că este însărcinată cu al patrulea copil.",
+      "publishedAt": "2026-01-21T05:29:05.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.055Z"
+    },
+    {
+      "id": "3f147e2d61c81881",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Vizibilitate redusă din cauza ceții pe drumuri din mai multe județe",
+      "url": "https://www.mediafax.ro/social/vizibilitate-redusa-din-cauza-cetii-pe-drumuri-din-mai-multe-judete-2-23674160",
+      "summary": "Vizibilitatea este scăzută din cauza ceții, miercuri dimineața, pe drumurile din mai multe județe din țară.",
+      "publishedAt": "2026-01-21T05:15:22.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.055Z"
+    },
+    {
+      "id": "16765671536529df",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "„Make America Go Away”: Cum a devenit Groenlanda un slogan anti-Trump în Danemarca",
+      "url": "https://www.mediafax.ro/externe/make-america-go-away-cum-a-devenit-groenlanda-un-slogan-anti-trump-in-danemarca-23674156",
+      "summary": "Un mesaj scurt, imprimat pe o șapcă roșie, s-a transformat într-unul dintre cele mai vizibile semne ale protestelor din Danemarca și Groenlanda împotriva intențiilor teritoriale ale administrației Trump. Inspirat de cunoscutul slogan „Make America Great Again”, noul text transmite un mesaj direct: „America, pleacă!”, scrie Il Post.",
+      "publishedAt": "2026-01-21T04:57:49.000Z",
+      "fetchedAt": "2026-01-21T06:43:20.055Z"
+    },
+    {
+      "id": "603b461688d91646",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Spania. Un nou accident feroviar, de data aceasta în apropiere de Barcelona. Un zid lateral, prăbușit pe calea ferată din cauza ploilor abundente, a fost lovit în plin de un tren regional de pasageri, care a deraiat. Mecanicul a murit, iar alte circa 40 de persoane sunt rănite, cinci în stare gravă.",
+      "url": "https://www.biziday.ro/345722-2/",
+      "summary": "Accidentul a avut loc la 35 de kilometri de Barcelona, în Gelida, în jurul orei locale 21 (22 ora României). Autoritățile au transmis că un zid de sprijin s-a prăbușit pe calea ferată, iar, la impact, locomotiva trenului a sărit de pe șine și s-a deformat grav. Salvatorii l-au găsit pe mecanicul trenului decedat, iar […]",
+      "publishedAt": "2026-01-21T04:46:48.000Z",
+      "fetchedAt": "2026-01-21T06:43:19.006Z"
+    },
+    {
+      "id": "543d454d8e1150bc",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cine și câte conducte magistrale a înlocuit, în fiecare din ultimii 10 ani, în București",
+      "url": "https://stirileprotv.ro/stiri/actualitate/cine-si-cate-conducte-magistrale-a-inlocuit-in-fiecare-din-ultimii-10-ani-in-bucuresti.html?category_slug=stiri%2Factualitate",
+      "summary": "După ani de creștere constantă, ritmul de înlocuire a conductelor magistrale de termoficare vechi a scăzut ușor, în 2025, comparativ cu 2024.",
+      "publishedAt": "2026-01-21T06:36:39.000Z",
+      "fetchedAt": "2026-01-21T06:43:19.617Z"
+    },
+    {
+      "id": "3c113b6325d3ff37",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Momentul în care o mașină este spulberată de tren în Chiajna. Șoferul a fost târât aproape un kilometru și se află în stare gravă la spital",
+      "url": "https://stirileprotv.ro/stiri/actualitate/momentul-in-care-o-masina-este-spulberata-de-tren-in-chiajna-soferul-a-fost-tarat-aproape-un-kilometru-si-se-afla-in-stare-grava-la-spital.html?category_slug=stiri%2Factualitate",
+      "summary": "Scene dramatice, surprinse de o cameră de supraveghere, s-au petrecut marți seară în Chiajna, lângă București. O mașină condusă de un bărbat de 30 de ani a fost lovită de un tren și târâtă pe calea ferată aproape un kilometru.",
+      "publishedAt": "2026-01-21T06:29:11.000Z",
+      "fetchedAt": "2026-01-21T06:43:19.617Z"
+    },
+    {
+      "id": "8bc34029526ac087",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Donald Trump ameninţă că Iranul va fi „şters de pe hartă” dacă Teheranul îi orchestrează asasinarea",
+      "url": "https://stirileprotv.ro/stiri/international/donald-trump-amenin-a-ca-iranul-va-fi-sters-de-pe-harta-daca-teheranul-ii-orchestreaza-asasinarea.html?category_slug=stiri%2Finternational",
+      "summary": "Preşedintele SUA Donald Trump a anunţat marţi că Iranul ar fi „şters de pe hartă” dacă Teheranul i-ar orchestra asasinarea, ca răspuns la ameninţările unui ofiţer iranian de rang înalt.",
+      "publishedAt": "2026-01-21T06:28:47.000Z",
+      "fetchedAt": "2026-01-21T06:43:19.617Z"
+    },
+    {
+      "id": "12bb2bfc39a8fac4",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Curtea Supremă a SUA ar putea anula tarifele cu care Trump amenință țările din Europa care îi refuză anexarea Groenlandei",
+      "url": "https://stirileprotv.ro/stiri/international/curtea-suprema-a-sua-ar-putea-anula-tarifele-cu-care-trump-ameninta-tarile-din-europa-care-ii-refuza-anexarea-groenlandei.html?category_slug=stiri%2Finternational",
+      "summary": "Curtea Supremă a SUA ar putea anula chiar săptămâna aceasta tarifele pe care Donald Trump amenință că le va impune aliaților NATO din Europa care refuză să accepte anexarea Groenlandei de către Washington.",
+      "publishedAt": "2026-01-21T06:26:28.000Z",
+      "fetchedAt": "2026-01-21T06:43:19.617Z"
+    },
+    {
+      "id": "a4330e803dea0936",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Povestea tulburătoare a unei fetițe de 6 ani, singura supraviețuitoare dintr-o familie aflată în trenul distrus în Spania",
+      "url": "https://stirileprotv.ro/stiri/international/povestea-emotionanta-a-fetitei-de-sase-ani-singura-supravietuitoare-dintr-o-familie-distrusa-in-dezastrul-feroviar-din-spania.html?category_slug=stiri%2Finternational",
+      "summary": "O fetiță de șase ani, aflată într-o excursie la Madrid, este singura supraviețuitoare din familia sa după dezastrul feroviar din sudul Spaniei.",
+      "publishedAt": "2026-01-21T06:17:30.000Z",
+      "fetchedAt": "2026-01-21T06:43:19.617Z"
+    },
+    {
+      "id": "8684b1332ae9b405",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cum s-a produs catastrofa feroviară din Spania. Uzură la infrastructură, avertismente ignorate și mărturii șocante",
+      "url": "https://stirileprotv.ro/stiri/international/noi-detalii-despre-catastrofa-feroviara-din-spania-uzura-la-infrastructura-avertismente-ignorate-si-marturii-cutremuratoare-ale-supravietuitorilor.html?category_slug=stiri%2Finternational",
+      "summary": "În Cordoba echipele de intervenție continuă căutările și au început să taie vagoanele pentru a putea ajunge la trupurile fără viață. Sunt 42 de morți, potrivit celui mai nou bilanț.",
+      "publishedAt": "2026-01-21T06:08:14.000Z",
+      "fetchedAt": "2026-01-21T06:43:19.617Z"
+    },
+    {
+      "id": "c557ab1e67f48919",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Primul ghid de sprijin pentru doliu din spitalele din România, deja aplicat în patru unități sanitare",
+      "url": "https://stirileprotv.ro/stiri/sanatate/primul-ghid-de-sprijin-pentru-doliu-din-spitalele-din-romania-deja-aplicat-in-patru-unitati-sanitare.html?category_slug=stiri%2Fsanatate",
+      "summary": "În cazul pierderii unei persoane dragi, este important să primim ajutor pentru ca suferința să nu se transforme în boală. De aceea, a fost creat primul ghid de organizare a serviciilor de sprijin pentru doliu în spitalele din România.",
+      "publishedAt": "2026-01-21T06:04:30.000Z",
+      "fetchedAt": "2026-01-21T06:43:19.617Z"
+    },
+    {
+      "id": "f4c8635d914f4a76",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Accident grav pe un drum național din Dolj: trei persoane rănite după un impact frontal",
+      "url": "https://stirileprotv.ro/stiri/actualitate/accident-grav-pe-un-drum-national-din-dolj-trei-persoane-ranite-dupa-un-impact-frontal.html?category_slug=stiri%2Factualitate",
+      "summary": "3 persoane au ajuns în stare gravă la spital în urma unui impact devastator petrecut pe un drum național din județul Dolj.",
+      "publishedAt": "2026-01-21T05:55:47.000Z",
+      "fetchedAt": "2026-01-21T06:43:19.617Z"
+    },
+    {
+      "id": "ed0d964548cf4626",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Vremea azi, 21 ianuarie 2026. De la ger, România trece brusc la temperaturi mai mari decât ar fi normal",
+      "url": "https://stirileprotv.ro/stiri/vremea/vremea-azi-21-ianuarie-2026-de-la-ger-romania-trece-brusc-la-temperaturi-mai-mari-decat-ar-fi-normal.html?category_slug=stiri%2Fvremea",
+      "summary": "Astăzi avem încă o dimineață geroasă în cea mai mare parte a țării. Amiaza, însă, aduce vreme frumoasă și cer senin aproape peste tot. De această dată, soarele reușește să ridice temperaturile spre valori normale în multe zone.",
+      "publishedAt": "2026-01-21T05:50:31.000Z",
+      "fetchedAt": "2026-01-21T06:43:19.617Z"
+    },
+    {
+      "id": "add3b705f8fa2689",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cristi Chivu, după eșecul cu Arsenal: „Anumite momente pot schimba starea de spirit a echipei. Am avut și ghinion”",
+      "url": "https://stirileprotv.ro/stiri/sport/cristi-chivu-dupa-esecul-cu-arsenal-anumite-momente-pot-schimba-starea-de-spirit-a-echipei-am-avut-si-ghinion.html?category_slug=stiri%2Fsport",
+      "summary": "Inter a suferit o înfrângere cu 3-1 în fața lui Arsenal pe San Siro, în etapa a șaptea a fazei ligii din Liga Campionilor, iar „tunarii” rămân pe primul loc în clasament, cu punctaj maxim.",
+      "publishedAt": "2026-01-21T05:46:16.000Z",
+      "fetchedAt": "2026-01-21T06:43:19.617Z"
+    },
+    {
+      "id": "93599813f40e06f3",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Încă o tragedie feroviară în Spania: un mort și 37 de răniți, după ce un tren a lovit un zid, lângă Barcelona",
+      "url": "https://stirileprotv.ro/stiri/international/noua-tragedie-feroviara-in-spania-un-mort-si-37-de-raniti-dupa-ce-un-tren-a-lovit-un-zid-langa-barcelona.html?category_slug=stiri%2Finternational",
+      "summary": "Spania trăiește coșmarul unui al doilea accident feroviar, la două zile de la tragedia din Cordoba. Un om a murit și cel puțin 37 de persoane au fost rănite, dintre care 5 grav, după ce un tren de navetiști a deraiat lângă Barcelona.",
+      "publishedAt": "2026-01-21T05:42:39.000Z",
+      "fetchedAt": "2026-01-21T06:43:19.617Z"
+    },
+    {
+      "id": "94df35629c672db1",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cetățeanul indian care și-a riscat viața să salveze o fetiță de 6 ani din Craiova din lacul înghețat a fost externat",
+      "url": "https://stirileprotv.ro/stiri/actualitate/cetateanul-indian-care-si-a-riscat-viata-sa-salveze-o-fetita-de-6-ani-din-craiova-externat-din-spital.html?category_slug=stiri%2Factualitate",
+      "summary": "Cetățeanul indian care și-a riscat viața ca s-o salveze pe fetița de 6 ani din Craiova a fost externat.",
+      "publishedAt": "2026-01-21T05:32:15.000Z",
+      "fetchedAt": "2026-01-21T06:43:19.617Z"
+    },
+    {
+      "id": "0376dead7f3075d7",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Donald Trump: „Cred cu tărie că Norvegia controlează Premiul Nobel. Mi-am pierdut mult din respectul pentru această țară”",
+      "url": "https://stirileprotv.ro/stiri/international/donald-trump-cred-cu-tarie-ca-norvegia-controleaza-premiul-nobel-mi-am-pierdut-mult-din-respectul-pentru-aceasta-tara.html?category_slug=stiri%2Finternational",
+      "summary": "Donald Trump a declarat marți că și-a pierdut „o mare parte din respectul pentru Norvegia”, pe fondul frustrării legate de faptul că nu a câștigat Premiul Nobel pentru Pace, deși a admis că această distincție nu ar schimba viața americanilor.",
+      "publishedAt": "2026-01-21T05:28:25.000Z",
+      "fetchedAt": "2026-01-21T06:43:19.617Z"
+    },
+    {
+      "id": "1d8e66d77ee4924e",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Donald Trump despre Groenlanda: Vom găsi o soluţie care să mulţumească NATO. Nimeni n-a făcut mai mult pentru NATO decât mine",
+      "url": "https://stirileprotv.ro/stiri/international/donald-trump-despre-groenlanda-vom-gasi-o-solu-ie-care-sa-mul-umeasca-nato-nimeni-n-a-facut-mai-mult-pentru-nato-decat-mine.html?category_slug=stiri%2Finternational",
+      "summary": "Președintele Donald Trump a declarat marți că SUA vor elabora un plan pentru a obține proprietatea asupra Groenlandei care „va mulțumi foarte mult NATO”, relatează Reuters și CNN.",
+      "publishedAt": "2026-01-21T05:21:02.000Z",
+      "fetchedAt": "2026-01-21T06:43:19.617Z"
+    },
+    {
+      "id": "cc7939b4185cf62c",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "ONU avertizează: Lumea a intrat în „faliment hidric global”, după decenii de supraexploatare a apei",
+      "url": "https://stirileprotv.ro/stiri/international/onu-avertizeaza-lumea-a-intrat-in-faliment-hidric-global-dupa-decenii-de-supraexploatare-a-apei.html?category_slug=stiri%2Finternational",
+      "summary": "Lumea intră într-o eră de ”faliment hidric global”, râurile, lacurile şi acviferele epuizându-se mai repede decât natura le poate reumple, a anunţat, marţi, un institut de cercetare al Naţiunilor Unite, potrivit AFP.",
+      "publishedAt": "2026-01-21T05:14:05.000Z",
+      "fetchedAt": "2026-01-21T06:43:19.617Z"
+    },
+    {
+      "id": "25874d82b1cc1685",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Avionul cu care Donald Trump zbura la Davos are probleme tehnice. Air Force One s-a întors la Washington",
+      "url": "https://stirileprotv.ro/stiri/international/avionul-cu-care-donald-trump-zbura-la-davos-are-probleme-tehnice-air-force-one-s-a-intors-la-washington.html?category_slug=stiri%2Finternational",
+      "summary": "Avionul Air Force One cu care președintele Donald Trump se deplasa la Davos s-a întors din drum la baza sa din Washington, din cauza unei probleme tehnice, a anunțat Casa Albă.",
+      "publishedAt": "2026-01-21T05:11:35.000Z",
+      "fetchedAt": "2026-01-21T06:43:19.617Z"
+    },
+    {
+      "id": "df418f824e780ad6",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ruptură la Davos: Aliații SUA trasează o linie roșie față de Donald Trump, pe fondul crizei Groenlandei",
+      "url": "https://stirileprotv.ro/stiri/international/ruptura-la-davos-aliatii-sua-traseaza-o-linie-rosie-fata-de-donald-trump-pe-fondul-crizei-groenlandei.html?category_slug=stiri%2Finternational",
+      "summary": "Aliaţii cei mai apropiaţi ai Americii au proclamat marţi sfârşitul ordinii globale conduse de SUA, ajungând la concluzia că neîncetata coerciţie a preşedintelui Trump a scos la iveală defectele sale fatale, scrie Axios.",
+      "publishedAt": "2026-01-21T05:02:20.000Z",
+      "fetchedAt": "2026-01-21T06:43:19.617Z"
+    },
+    {
+      "id": "351750d42d42191b",
+      "sourceId": "europa-libera",
+      "sourceName": "Europa Liberă",
+      "title": "Spania. O persoană a murit într-un nou accident feroviar. Bilanțul coliziunii din Andaluzia a ajuns la 42 de morți",
+      "url": "https://romania.europalibera.org/a/o-persoana-a-murit-intr-un-nou-accident-feroviar-produs-in-spania-in-decurs-de-cateva-zile/33655445.html",
+      "summary": "Un tren de navetă din apropierea Barcelonei s-a izbit marți de dărâmăturile unui zid prăbușit, ucigând o persoană și rănind 37 de oameni. \r\nEste al doilea accident feroviar mortal produs în Spania. În urmă cu două zile, două trenuri de mare viteză s-au ciocnit în regiunea Andaluzia. Cel puțin 42 de persoane au murit în acel accident, potrivit celui mai recent bilanț oficial.\r\nAccidentul de marți seara s-a produs după ce un zid de sprijin s-a prăbușit peste șine în timpul furtunii Harry....",
+      "publishedAt": "2026-01-21T05:57:20.000Z",
+      "fetchedAt": "2026-01-21T06:43:19.493Z"
     }
   ],
-  "lastUpdated": "2026-01-21T02:07:51.190Z"
+  "lastUpdated": "2026-01-21T06:43:28.547Z"
 }
