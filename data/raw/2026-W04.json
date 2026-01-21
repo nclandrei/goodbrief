@@ -10200,7 +10200,637 @@
       "summary": "Proiectul de buget pe anul 2026 prevede investiții totale de aproximativ 20 de miliarde de euro, a anunțat ministrul Finanțelor, Alexandru Nazare. În ceea ce privește deficitul bugetar, el a spus că ținta de deficit spre 6% e „în discuție” în interiorul coaliției de guvernare.",
       "publishedAt": "2026-01-20T14:03:55.000Z",
       "fetchedAt": "2026-01-20T18:45:19.217Z"
+    },
+    {
+      "id": "c09c1741d88e167e",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Compania germană care produce 70% din submarinele NATO are un plan de 12 miliarde de dolari în imediata vecinătate a SUA",
+      "url": "https://hotnews.ro/compania-germana-care-produce-70-din-submarinele-nato-are-un-plan-de-peste-12-miliarde-de-dolari-in-imediata-vecinatate-a-sua-2153876",
+      "summary": "Planul reflectă eforturile intensificate ale Germaniei pentru consolidarea cooperării în domeniul apărării, în contextul tensiunilor geopolitice crescânde.",
+      "publishedAt": "2026-01-20T23:10:36.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.385Z"
+    },
+    {
+      "id": "4e600197f2a196ee",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "„Panzerele” germane iau în calcul o soluție radicală ca să-l aducă pe Trump „la rațiune”",
+      "url": "https://hotnews.ro/germania-ia-in-considerare-boicotarea-cupei-mondiale-din-statele-unite-in-fata-amenintarilor-lui-trump-2153856",
+      "summary": "În contextul tensiunilor generate de dorinţa lui Trump de a prelua controlul asupra Groenlandei şi de ameninţările cu majorarea taxelor vamale împotriva statelor europene care se opun acestui demers, în ultimele zile au început să se audă în Germania primele voci care evocă un boicot – sau chiar o anulare – a evenimentului fotbalistic al anului 2026.",
+      "publishedAt": "2026-01-20T22:20:00.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.385Z"
+    },
+    {
+      "id": "a7d5b775510f0f03",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Un fost ministru de Externe al României face o comparație surprinzătoare între NATO și Tratatul de la Varșovia",
+      "url": "https://hotnews.ro/un-fost-ministru-de-externe-al-romaniei-face-o-comparatie-suprinzatoare-intre-nato-si-tratatul-de-la-varsovia-2153857",
+      "summary": "Falia dintre Uniunea Europeană și administrația Trump „este foarte gravă, pentru că este fără precedent”, a comentat fostul șef al diplomației române, marți seară, în contextul tensiunilor care există între aliați după declarațiile președintelui american despre Groenlanda.",
+      "publishedAt": "2026-01-20T21:57:56.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.385Z"
+    },
+    {
+      "id": "865bdc053f1b3e92",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Lumea a intrat în era „falimentului global” al apei",
+      "url": "https://hotnews.ro/lumea-a-intrat-in-era-falimentului-global-al-apei-2153852",
+      "summary": "După decenii de supraexploatare, poluare și presiuni climatice, lumea intră într-o eră de „faliment global al apei”. Cantitățile de apă din râuri, lacuri și straturi acvifere se epuizează mai repede decât le poate regenera natura,…",
+      "publishedAt": "2026-01-20T21:45:11.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.385Z"
+    },
+    {
+      "id": "84615908c39d260b",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Donald Trump spune că noul său „Consiliu pentru Pace” poate înlocui ONU: „Ar fi trebuit să rezolve războaiele pe care le-am rezolvat eu”",
+      "url": "https://hotnews.ro/donald-trump-sugereaza-ca-noul-sau-consiliu-pentru-pace-poate-inlocui-onu-ar-fi-trebuit-sa-rezolve-razboaiele-pe-care-le-am-rezolvat-eu-2153841",
+      "summary": "Președintele american Donald Trump a declarat marți că noul său „Consiliu pentru Pace” ar putea, „eventual”, să înlocuiască Organizația Națiunilor Unite, pe care a criticat-o pentru lipsa de eficiență în a pune capăt războaielor, notează…",
+      "publishedAt": "2026-01-20T21:22:35.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.385Z"
+    },
+    {
+      "id": "bf62e0cc712065b4",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Cât de departe este dispus Trump să meargă pentru preluarea Groenlandei? Răspuns scurt, dat într-o conferință-maraton",
+      "url": "https://hotnews.ro/cat-de-departe-este-dispus-trump-sa-mearga-pentru-preluarea-groenlandei-raspuns-scurt-dat-intr-o-conferinta-maraton-2153839",
+      "summary": "Întrebat marți cât de departe este dispus să meargă pentru a „dobândi” Groenlanda, răspunsul lui Donald Trump a fost scurt, în cadrul conferinței sale de presă de la Casa Albă organizată cu ocazia împlinirii unui…",
+      "publishedAt": "2026-01-20T21:05:37.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.385Z"
+    },
+    {
+      "id": "6c3ef1887f080007",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Trump lansează un nou atac la adresa NATO, chiar înaintea summitului crucial de la Davos",
+      "url": "https://hotnews.ro/trump-lanseaza-un-nou-atac-la-adresa-nato-chiar-inaintea-summitului-crucial-de-la-davos-2153837",
+      "summary": "Președintele american Donald Trump, care urmează să aibă o întâlnire cu liderii mondiali la Davos, în Elveția, a pus încă o dată la îndoială angajamentul NATO față de apărarea Statelor Unite și susține că el…",
+      "publishedAt": "2026-01-20T21:00:06.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.385Z"
+    },
+    {
+      "id": "6a1e46fbfd9cdef4",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Discuție de două ore între reprezentanții Statelor Unite și Rusiei, la Davos. Primele reacții",
+      "url": "https://hotnews.ro/discutie-de-doua-ore-intre-reprezentantii-statelor-unite-si-rusiei-la-davos-primele-reactii-2153831",
+      "summary": "Trimisul președintelui american Donald Trump și emisarul liderului rus Vladimir Putin au declarat, marți, că discuția purtată la Davos cu privire la un posibil acord de pace pentru încheierea războiului din Ucraina a fost „foarte…",
+      "publishedAt": "2026-01-20T20:32:25.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.385Z"
+    },
+    {
+      "id": "bf9a8fa0b38a34eb",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Trump și-a reluat „refrenul” preferat la conferința despre realizările din primul an de mandat: „Cel mai prost președinte” din istorie",
+      "url": "https://hotnews.ro/trump-si-a-reluat-refrenul-preferat-la-conferinta-despre-realizarile-din-primul-an-de-mandat-cel-mai-prost-presedinte-din-istorie-2153825",
+      "summary": "Pentru președintele Donald Trump, responsabilitatea pentru problemele din SUA revine în continuare predecesorului său, Joe Biden, scrie CNN. Într-o lungă conferință de presă susținută marți, la Casa Albă, Trump a vorbit despre primul an din…",
+      "publishedAt": "2026-01-20T20:14:29.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.385Z"
+    },
+    {
+      "id": "9f79db0fb8375db9",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Donald Trump ia în calcul implicarea Mariei Corina Machado în viitorul Venezuelei: „O femeie incredibil de drăguță care a făcut și un lucru cu adevărat extraordinar”",
+      "url": "https://hotnews.ro/donald-trump-ia-in-calcul-implicarea-mariei-corina-machado-in-viitorul-venezuelei-o-femeie-incredibil-de-draguta-care-a-facut-si-un-lucru-cu-adevarat-extraordinar-2153824",
+      "summary": "Președintele american Donald Trump a declarat marți că ia în calcul implicarea, într-o formă sau alta, a liderei opoziției din Venezuela, Maria Corina Machado, în viața politică a Venezuelei, fără a preciza ce rol ar…",
+      "publishedAt": "2026-01-20T20:14:19.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.385Z"
+    },
+    {
+      "id": "ee2df737ebc4cd61",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Groenlanda nu exclude varianta unui atac american / Pentagonul nu a primit deocamdată ordine pentru planificarea unei invazii",
+      "url": "https://hotnews.ro/groenlanda-nu-exclude-varianta-unui-atac-american-pentagonul-nu-a-primit-deocamdata-ordine-pentru-planificarea-unei-invazii-2153820",
+      "summary": "Prim-ministrul groenlandez Jens-Frederik Nielsen a declarat, marți, că este improbabil ca SUA să folosească forța militară împotriva Groenlandei, dar că scenariul unui atac nu poate fi exclus complet. Nielsen a susținut o conferință de presă…",
+      "publishedAt": "2026-01-20T20:05:05.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.385Z"
+    },
+    {
+      "id": "a9d681233baded76",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Primar din județul Giurgiu, reținut pentru pornografie infantilă și corupere sexuală a minorilor / A încercat să cumpere tăcerea părinților cu un teren agricol",
+      "url": "https://hotnews.ro/primar-din-judetul-giurgiu-retinut-pentru-pornografie-infantila-si-corupere-sexuala-a-minorilor-a-incercat-sa-cumpere-tacerea-parintilor-cu-un-teren-agricol-2153809",
+      "summary": "Primarul comunei Izvoarele din județul Giurgiu, Silviu Marius Cazacu, a fost reținut marți de DIICOT într-un dosar vizând infracțiunile de pornografie infantilă, corupere sexuală a minorilor și influențarea declarațiilor. În urmă cu o zi au…",
+      "publishedAt": "2026-01-20T19:49:29.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.385Z"
+    },
+    {
+      "id": "c29f394ed40bcccf",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Anunțul lui Trump, la un an de la preluarea celui de-al doilea mandat",
+      "url": "https://hotnews.ro/video-trump-la-un-an-de-la-preluarea-celui-de-al-doilea-mandat-aceasta-administratie-a-realizat-mult-mai-multe-decat-oricare-alta-2153801",
+      "summary": "Președintele american Donald Trump a susținut marți o conferință de presă în care și-a lăudat cel de-al doilea mandat la Casa Albă, spunând că ultimul an a fost „o perioadă uimitoare”, relatează CNN, Sky News…",
+      "publishedAt": "2026-01-20T19:34:13.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.385Z"
+    },
+    {
+      "id": "be9c4cffe0b13b0f",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Cele „două variante” propuse de ministrul Muncii pentru sprijinirea pensionarilor",
+      "url": "https://hotnews.ro/cele-doua-variante-propuse-de-ministrul-muncii-pentru-sprijinirea-pensionarilor-2153806",
+      "summary": "Ministrul Muncii, Florin Manole, a declarat marți la Antena 3 că trebuie să existe „un sprijin pentru pensionarii care au fost afectați de inflație” și că va propune „două variante” în acest sens. Oficialul a…",
+      "publishedAt": "2026-01-20T19:15:03.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.385Z"
+    },
+    {
+      "id": "26a3fe69f071a219",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Donald Trump: „Dacă nu aş fi venit eu, NATO nu ar mai fi existat”. Liderul american spune că fără el Alianţa ar fi „căzut în uitarea istoriei”",
+      "url": "https://hotnews.ro/donald-trump-daca-nu-as-fi-venit-eu-nato-nu-ar-mai-fi-existat-liderul-american-spune-ca-fara-el-alianta-ar-fi-cazut-in-uitarea-istoriei-2153800",
+      "summary": "Președintele american Donald Trump a susținut marți că „nicio persoană, sau niciun președinte, nu a făcut pentru NATO mai mult” decât a făcut el, într-un nou mesaj pe social media adresat țărilor membre ale Alianței…",
+      "publishedAt": "2026-01-20T18:54:40.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.385Z"
+    },
+    {
+      "id": "a9dcab28ff61634e",
+      "sourceId": "dw-romania",
+      "sourceName": "DW România",
+      "title": "Davos 2026: Europa îl primește pe Trump cu linii roșii clare",
+      "url": "https://www.dw.com/ro/davos-2026-europa-%C3%AEl-prime%C8%99te-pe-trump-cu-linii-ro%C8%99ii-clare/a-75584815?maca=rum-rss-rom-all-1493-rdf",
+      "summary": "Înaintea sosirii președintelui american la Forumul Economic Mondial, UE avertizează că suveranitatea Groenlandei este ”nenegociabilă” și promite un răspuns ”neclintit” la presiunile Washingtonului.",
+      "publishedAt": "2026-01-20T18:38:00.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.036Z"
+    },
+    {
+      "id": "225961bf97ac9d0a",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Avantajele de a nu posta pe social media. De ce oamenii fericiți nu caută validare online",
+      "url": "https://www.mediafax.ro/stiinta-sanatate/avantajele-de-a-nu-posta-pe-social-media-de-ce-oamenii-fericiti-nu-cauta-validare-online-23674147",
+      "summary": "Un nou studiu arată că persoanele care aleg să nu își publice viața pe social media pot dezvolta o încredere interioară mai puternică și relații mai sănătoase. Psihologii explică că abstinența de la postări online nu înseamnă izolare, ci o formă de protecție a sănătății mintale și a vieții private.",
+      "publishedAt": "2026-01-21T01:38:59.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.638Z"
+    },
+    {
+      "id": "78ca0ba97ae3d890",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "G4Media. Dominic Fritz: „Bugetul pe 2026 va tăia risipa și va deschide companiile de stat către privat”",
+      "url": "https://www.mediafax.ro/politic/g4media-dominic-fritz-bugetul-pe-2026-va-taia-risipa-si-va-deschide-companiile-de-stat-catre-privat-23674142",
+      "summary": "Discuțiile despre bugetul pe 2026 aduc în prim-plan măsurile pe care USR le consideră esențiale pentru menținerea disciplinei bugetare și reducerea deficitului public.",
+      "publishedAt": "2026-01-21T00:42:35.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.638Z"
+    },
+    {
+      "id": "3f9b2862931c26ea",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "G4Media. Dominic Fritz despre impozite: „Nu primesc flori, dar sunt decizii necesare pentru comunitate”",
+      "url": "https://www.mediafax.ro/politic/g4media-dominic-fritz-despre-impozite-nu-primesc-flori-dar-sunt-decizii-necesare-pentru-comunitate-23674138",
+      "summary": "Majorările recente ale impozitelor locale au stârnit discuții aprinse în întreaga țară, iar Dominic Fritz, președintele USR, a explicat într-un interviu exclusiv pentru G4Media contextul și rațiunile din spatele acestor decizii.",
+      "publishedAt": "2026-01-21T00:11:03.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.638Z"
+    },
+    {
+      "id": "cf2dd538ac3d5ae0",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Dominic Fritz despre Consiliul pentru Pace al lui Trump: „Nu poate exista un cec în alb”",
+      "url": "https://www.mediafax.ro/politic/dominic-fritz-despre-consiliul-pentru-pace-al-lui-trump-nu-poate-exista-un-cec-in-alb-23674134",
+      "summary": "Invitația lansată de președintele american Donald Trump către mai mulți lideri internaționali, inclusiv către președintele României, Nicușor Dan, pentru a face parte din așa-numitul „Consiliu pentru Pace”, în care ar urma să fie implicat și președintele Rusiei, Vladimir Putin, ridică semne de întrebare majore în plan diplomatic.",
+      "publishedAt": "2026-01-20T23:31:44.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.638Z"
+    },
+    {
+      "id": "5645b29784f9b242",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "G4Media. Dominic Fritz: „Prudența nu înseamnă distanțare de UE. România va fi alături de aliați când va veni momentul”",
+      "url": "https://www.mediafax.ro/politic/g4media-dominic-fritz-prudenta-nu-inseamna-distantare-de-ue-romania-va-fi-alaturi-de-aliati-cand-va-veni-momentul-23674126",
+      "summary": "Absența președintelui Nicușor Dan de la Forumul Economic Mondial de la Davos și lipsa unei poziționări publice ferme alături de alți lideri europeni au alimentat, în spațiul public, speculații privind o posibilă distanțare a României față de Uniunea Europeană.",
+      "publishedAt": "2026-01-20T22:49:10.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.638Z"
+    },
+    {
+      "id": "cc291b206a8e9c0a",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Trump spune că „vom afla” până unde va merge SUA pentru a obține Groenlanda",
+      "url": "https://www.mediafax.ro/externe/trump-spune-ca-vom-afla-pana-unde-va-merge-sua-pentru-a-obtine-groenlanda-23674128",
+      "summary": "Întrebat cât de departe ar merge pentru a obține Groenlanda, Donald Trump a răspuns „Veți afla”, refuzând să excludă forța militară, deși lideri europeni spun că nu cred într-o asemenea acțiune.",
+      "publishedAt": "2026-01-20T22:16:53.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.638Z"
+    },
+    {
+      "id": "142656e41659a0e3",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "G4Media. Dominic Fritz: „Nu putem apăra securitatea Arcticii încălcând dreptul internațional”",
+      "url": "https://www.mediafax.ro/politic/g4media-dominic-fritz-nu-putem-apara-securitatea-arcticii-incalcand-dreptul-international-23674123",
+      "summary": "Tema Groenlandei și declarațiile controversate ale președintelui american Donald Trump privind o posibilă anexare a insulei au fost abordate de Dominic Fritz, președintele USR, într-un interviu exclusiv acordat G4Media.",
+      "publishedAt": "2026-01-20T21:59:01.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.638Z"
+    },
+    {
+      "id": "fd6286a771aad1bc",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "G4Media. Dominic Fritz: Coaliția trebuie să livreze pentru români, nu să facă teatru politic",
+      "url": "https://www.mediafax.ro/politic/g4media-dominic-fritz-coalitia-trebuie-sa-livreze-pentru-romani-nu-sa-faca-teatru-politic-23674119",
+      "summary": "Președintele USR, Dominic Fritz, a declarat că tensiunile permanente din interiorul coaliției de guvernare afectează capacitatea acesteia de a livra soluții reale pentru cetățeni, într-un context economic tot mai dificil.",
+      "publishedAt": "2026-01-20T21:35:07.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.638Z"
+    },
+    {
+      "id": "7efedfbc4c7c761b",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Danemarca solicită prezența permanentă a NATO în Groenlanda, în contextul amenințărilor lui Trump",
+      "url": "https://www.mediafax.ro/externe/danemarca-solicita-prezenta-permanenta-a-nato-in-groenlanda-in-contextul-amenintarilor-lui-trump-23674114",
+      "summary": "Șefa guvernului danez, Mette Frederiksen, a cerut o prezenţă permanentă a NATO în Groenlanda, după modelul celei din statele baltice, în contextul amenințărilor lui Trump privind anexarea insulei.",
+      "publishedAt": "2026-01-20T21:03:15.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.638Z"
+    },
+    {
+      "id": "83300d772e5c8c07",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Donald Trump afirmă că noul Consiliu al Păcii „ar putea” lua locul ONU",
+      "url": "https://www.mediafax.ro/externe/donald-trump-afirma-ca-noul-consiliu-al-pacii-ar-putea-lua-locul-onu-23674102",
+      "summary": "Președintele american Donald Trump susține că noul Consiliu al Păcii ar putea înlocui ONU, pe care o consideră ineficientă.",
+      "publishedAt": "2026-01-20T20:38:00.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.638Z"
+    },
+    {
+      "id": "762320e8bf1835a9",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Donald Trump pune sub semnul întrebării rolul ONU și solidaritatea NATO, spunând despre alianța militară că “nu știe dacă ar sări în ajutorul Statelor Unite, deși SUA ar face acest lucru”. Reiterează interesul pentru preluarea Groenlandei, sugerând că lucrează la un plan ce “va face foarte fericite atât SUA, cât și NATO”.",
+      "url": "https://www.biziday.ro/345710-2/",
+      "summary": "Donald Trump a ținut un discurs la Casa Albă, la un an de când a preluat cel de-al doilea mandat de președinte și înainte de a pleca spre Europa, unde este așteptat să participe la Forumul Economic de la Davos. În cadrul discursului, liderul american a făcut o serie de declarații ce ridică semne de […]",
+      "publishedAt": "2026-01-20T21:33:10.000Z",
+      "fetchedAt": "2026-01-21T02:07:47.708Z"
+    },
+    {
+      "id": "283070962f113901",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Raport ONU. Lumea a intrat într-o “eră de faliment global al apei”, din cauza supraexploatării resurselor, poluării și schimbărilor climatice. Aproximativ 75% din populația globului trăiește în prezent în zone considerate nesigure din punct de vedere al aprovizionării cu apă.",
+      "url": "https://www.biziday.ro/345704-2/",
+      "summary": "Cel mai recent raport al ONU relevă că acest fenomen are loc din cauza supraexploatării – numeroase societăți folosesc apa mai rapid decât poate fi reînnoită anual în râuri și soluri, în timp ce rezervele pe termen lung din acvifere și zone umede sunt distruse sau folosite excesiv – și poluării resurselor de apă. Alți […]",
+      "publishedAt": "2026-01-20T20:47:28.000Z",
+      "fetchedAt": "2026-01-21T02:07:47.708Z"
+    },
+    {
+      "id": "85a69f6e9cf2c50c",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Iranul a blocat zeci de mii de terminale Starlink. Accesul protestatarilor la internet a fost restricționat",
+      "url": "https://stirileprotv.ro/stiri/international/iranul-a-blocat-zeci-de-mii-de-terminale-starlink-accesul-protestatarilor-la-internet-a-fost-restrictionat.html?category_slug=stiri%2Finternational",
+      "summary": "Autorităţile din Iran au neutralizat circa 40.000 de terminale de internet ale Starlink, compania deţinută de miliardarul american Elon Musk.",
+      "publishedAt": "2026-01-20T21:11:05.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.352Z"
+    },
+    {
+      "id": "c2d4cce80b3d5742",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cuba intră în „stare de război” și antrenează „întregul popor”. Actualul președinte merge pe doctrina lui Fidel Castro",
+      "url": "https://stirileprotv.ro/stiri/international/cuba-intra-in-stare-de-razboi-si-antreneaza-intregul-popor-actualul-presedinte-merge-pe-doctrina-lui-fidel-castro.html?category_slug=stiri%2Finternational",
+      "summary": "Cuba va intra în „stare de război” în încercarea de a face față amenințărilor lui Donald Trump de la intervenția SUA în Venezuela.",
+      "publishedAt": "2026-01-20T21:10:42.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.352Z"
+    },
+    {
+      "id": "3f0ca15f1f690644",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Locuitorii Groenlandei, îndemnați să se pregătească pentru o invazie. Trump pune „o presiune foarte mare”  pe insulă",
+      "url": "https://stirileprotv.ro/stiri/international/locuitorii-groenlandei-indemnati-sa-se-pregateasca-pentru-o-invazie-trump-pune-o-presiune-foarte-mare-pe-insula.html?category_slug=stiri%2Finternational",
+      "summary": "Prim-ministrul Groenlandei a declarat că populația insulei trebuie să înceapă să se pregătească pentru o posibilă invazie militară, chiar dacă acest scenariu rămâne improbabil, întrucât președintele Donald Trump își continuă amenințările.",
+      "publishedAt": "2026-01-20T21:10:12.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.352Z"
+    },
+    {
+      "id": "b681023fc7af711c",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Trump vrea să desființeze una dintre cele mai importante organizații din lume. A găsit rapid varianta de rezervă",
+      "url": "https://stirileprotv.ro/stiri/international/lui-trump-i-s-a-pus-pata-pe-onu-care-a-devenit-ineficienta-cu-ce-ar-putea-sa-inlocuiasca-organizatia.html?category_slug=stiri%2Finternational",
+      "summary": "Preşedintele SUA Donald Trump a declarat marţi, într-o conferinţă de presă la Casa Albă, că preconizatul Consiliu al Păcii pe care intenţionează să îl înfiinţeze ar putea înlocui Organizaţia Naţiunilor Unite, pe care o consideră ineficientă.",
+      "publishedAt": "2026-01-20T20:53:07.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.352Z"
+    },
+    {
+      "id": "a2cee9c4504818a7",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Val de tentative de fraude online prin linkuri către site-uri false. Cum se pot proteja utilizatorii",
+      "url": "https://stirileprotv.ro/stiri/actualitate/val-de-tentative-de-fraude-online-prin-linkuri-catre-site-uri-false-cum-se-pot-proteja-utilizatorii.html?category_slug=stiri%2Factualitate",
+      "summary": "Directoratul Naţional de Securitate Cibernetică (DNSC) recomandă atenţie sporită în cazul comenzilor online, precizând că tot mai mulţi utilizatorii sunt supuşi unor tentative de fraudă, prin atragerea lor pe site-uri false.",
+      "publishedAt": "2026-01-20T20:43:06.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.352Z"
+    },
+    {
+      "id": "abb3c568cdc0d6cf",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "„Ziua Zero” devine realitate. ONU avertizează că supraexploatarea a dus la un „faliment global al apei”",
+      "url": "https://stirileprotv.ro/stiri/stiinta/lumea-a-intrat-intr-un-faliment-global-al-apei-averizeaza-onu-raurile-lacurile-si-panzele-freatice-se-epuizeaza-ireversibil.html?category_slug=stiri%2Fstiinta",
+      "summary": "După decenii de supraexploatare, poluare şi presiuni climatice, lumea intră într-o eră de „faliment global al apei”.",
+      "publishedAt": "2026-01-20T20:40:19.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.352Z"
+    },
+    {
+      "id": "c88f8edde9870bdf",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Elon Musk vrea să cumpere Ryanair, după ce l-a făcut „idiot” pe director. Ce se află în spatele disputei",
+      "url": "https://stirileprotv.ro/stiri/international/elon-musk-vrea-sa-cumpere-ryanair-dupa-ce-l-a-facut-idiot-pe-director-ce-se-afla-in-spatele-disputei.html?category_slug=stiri%2Finternational",
+      "summary": "Elon Musk a lansat ideea de a cumpăra compania aeriană low-cost Ryanair, intensificând disputa publică cu șeful companiei aeriene irlandeze, Michael O'Leary.",
+      "publishedAt": "2026-01-20T20:36:04.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.352Z"
+    },
+    {
+      "id": "4c4c9da6d4db0401",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Serghei Lavrov spune că Marea Britanie ar trebui să renunțe la cuvântul „Mare” din denumirea sa: „Fără supărare”",
+      "url": "https://stirileprotv.ro/stiri/international/lavrov-spune-ca-marea-britanie-ar-trebui-sa-renunte-la-cuvantul-mare-din-denumirea-sa.html?category_slug=stiri%2Finternational",
+      "summary": "Ministrul rus de Externe, Serghei Lavrov, a declarat marți că Regatul Unit ar trebui numit simplu „Britania”, susținând că este singura țară care își atribuie în mod explicit calificativul de „mare” în propria denumire oficială.",
+      "publishedAt": "2026-01-20T20:16:14.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.352Z"
+    },
+    {
+      "id": "94ac0222a83b2930",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Șoc în Liga Campionilor. Manchester City, eșec răsunător în confruntarea de la Cercul Polar",
+      "url": "https://stirileprotv.ro/stiri/sport/soc-in-liga-campionilor-manchester-city-esec-rasunator-in-confruntarea-de-la-cercul-polar.html?category_slug=stiri%2Fsport",
+      "summary": "Manchester City, câştigătoarea ediţiei din 2023, a fost învinsă surprinzător de echipa norvegiană Bodo/Glimt cu scorul de 3-1, marţi seara, la Cercul Polar, într-un meci din etapa a şaptea a Ligii Campionilor la fotbal.",
+      "publishedAt": "2026-01-20T19:51:07.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.352Z"
+    },
+    {
+      "id": "43a52c963a7c7f17",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Germania ar putea boicota Cupa Mondială din SUA, în fața amenințărilor lui Trump. DFB și FIFA decid autonom",
+      "url": "https://stirileprotv.ro/stiri/international/germania-ar-putea-boicota-cupa-mondiala-din-sua-in-fata-amenintarilor-lui-trump-dfb-si-fifa-decide.html?category_slug=stiri%2Finternational",
+      "summary": "DFB şi FIFA vor decide în mod „autonom” dacă vor boicota sau nu Cupa Mondială organizată în această vară în mare parte în SUA, a declarat guvernul german pentru AFP, după apelurile în acest sens ca răspuns la ameninţările lui Trump.",
+      "publishedAt": "2026-01-20T19:37:00.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.352Z"
+    },
+    {
+      "id": "4275695b79f043fd",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Votul din PE asupra trimiterii acordului UE-Mercosur la CJUE este incert. Eurodeputații francezi caută sprijinul românilor",
+      "url": "https://stirileprotv.ro/stiri/international/votul-din-pe-asupra-trimiterii-acordului-ue-mercosur-la-cjue-este-incert-eurodeputatii-francezi-cauta-sprijin-romanilor.html?category_slug=stiri%2Finternational",
+      "summary": "Rezultatul votului de miercuri din Parlamentul European privind trimiterea acordului cu Curtea de Justiţie a UE este incert în momentul de faţă şi în prezent se poartă discuţii intense în cadrul grupurilor politice.",
+      "publishedAt": "2026-01-20T19:20:00.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.352Z"
+    },
+    {
+      "id": "8246520232a58ff9",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Trump a explicat de ce a publicat mesajele private cu Macron și Rutte. „Mi-au dat dreptate”",
+      "url": "https://stirileprotv.ro/stiri/international/trump-a-explicat-de-ce-a-publicat-mesajele-private-cu-macron-si-rutte-mi-au-dat-dreptate.html?category_slug=stiri%2Finternational",
+      "summary": "Președintele Trump a declarat pentru The Post că a publicat mesaje private ale președintelui francez Emmanuel Macron și ale secretarului general al NATO, Mark Rutte, deoarece acestea „îmi susțineau punctul de vedere”.",
+      "publishedAt": "2026-01-20T19:17:08.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.352Z"
+    },
+    {
+      "id": "a69d3fbc2d291375",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Horoscop 21 ianuarie 2026, cu Neti Sandu. Zodia care va intra la cheltuială",
+      "url": "https://stirileprotv.ro/show-buzz/horoscop/horoscop-21-ianuarie-2026-cu-neti-sandu-zodia-care-va-intra-la-cheltuiala.html?category_slug=show-buzz%2Fhoroscop",
+      "summary": "Horoscop 21 ianuarie 2026, prezentat de Neti Sandu la Știrile PRO TV. Confirmări azi. O să ne bucurăm că primim ok-ul pentru diverse lucruri și o să ne asigurăm că urmăm un traseu de succes.",
+      "publishedAt": "2026-01-20T19:11:00.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.352Z"
+    },
+    {
+      "id": "a51047350014ea03",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Rusia susține că deține adevărul despre Groenlanda: „Nu a fost nici a Norvegiei, nici a Danemarcei”. Ce crede, de fapt",
+      "url": "https://stirileprotv.ro/stiri/international/ce-crede-rusia-de-fapt-despre-groenlanda-nu-a-fost-nici-o-parte-naturala-a-norvegiei-nici-o-parte-naturala-a-danemarcei.html?category_slug=stiri%2Finternational",
+      "summary": "Ministrul de Externe al Rusiei, Serghei Lavrov, a declarat marți că „Groenlanda nu este o parte naturală a Danemarcei”, negând totodată orice interes al Moscovei asupra insulei.",
+      "publishedAt": "2026-01-20T18:51:47.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.352Z"
+    },
+    {
+      "id": "d1f467f07693c973",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Acces gratuit la muzeu, teatru și operă, cu „trimitere culturală” de la medic. Explicația pentru aceste prescripții",
+      "url": "https://stirileprotv.ro/stiri/sanatate/spitalul-de-boli-infectioase-cluj-testeaza-un-proiect-inedit-pentru-vindecare-si-bunastare.html?category_slug=stiri%2Fsanatate",
+      "summary": "Spitalul de Boli Infecțioase Cluj testează în premieră națională un proiect prin intermediul căruia pacienții vor primi de la medic o trimitere culturală, pe lângă tratament.",
+      "publishedAt": "2026-01-20T18:34:37.000Z",
+      "fetchedAt": "2026-01-21T02:07:48.352Z"
+    },
+    {
+      "id": "11be1c16c1bf2ba1",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Bolivia: Susținătorii lui Evo Morales se tem de arestarea și extrădarea lui în SUA",
+      "url": "https://agerpres.ro/politic-extern/2026/01/21/bolivia-sustinatorii-lui-evo-morales-se-tem-de-arestarea-si-extradarea-lui-in-sua--1520508",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "85abf7d12a972004",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Washingtonul anunță că a sechestrat al șaptelea petrolier cu legături în Venezuela",
+      "url": "https://agerpres.ro/politic-extern/2026/01/21/video-washingtonul-anunta-ca-a-sechestrat-al-saptelea-petrolier-cu-legaturi-in-venezuela--1520507",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "3d3aa991816a341e",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Venezuela: 300 de milioane de petrodolari americani încasați pentru a apăra bolivarul",
+      "url": "https://agerpres.ro/economic-extern/2026/01/21/venezuela-300-de-milioane-de-petrodolari-americani-incasati-pentru-a-apara-bolivarul--1520504",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "238670267572b6bd",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Fotbal: Inter Milano, învinsă de Arsenal, în Liga Campionilor; Victorie la scor pentru Real Madrid",
+      "url": "https://agerpres.ro/sport-extern/2026/01/21/video-fotbal-inter-milano-invinsa-de-arsenal-in-liga-campionilor-victorie-la-scor-pentru-real-madrid--1520502",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "3fcc76eedafacbb3",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Spania: Un tren lovește un zid prăbușit peste calea ferată în Catalonia, mai mulți răniți",
+      "url": "https://agerpres.ro/social-extern/2026/01/20/video-spania-un-tren-loveste-un-zid-prabusit-peste-calea-ferata-in-catalonia-mai-multi-raniti--1520501",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "f06df8ebf75c8b0a",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Washingtonul aprobă vânzarea de avioane și torpile către Singapore",
+      "url": "https://agerpres.ro/politic-extern/2026/01/20/washingtonul-aproba-vanzarea-de-avioane-si-torpile-catre-singapore--1520500",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "cc02f137d47f0f95",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Trump respinge invitația lansată de Macron de a participa la o reuniune a G7",
+      "url": "https://agerpres.ro/politic-extern/2026/01/20/trump-respinge-invitatia-lansata-de-macron-de-a-participa-la-o-reuniune-a-g7--1520499",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "0691e72dcdb9ca56",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Kaiac-canoe: Fostul vicecampion mondial Eugen Botez a decedat la 77 de ani",
+      "url": "https://agerpres.ro/sport/2026/01/20/kaiac-canoe-fostul-vicecampion-mondial-eugen-botez-a-decedat-la-77-de-ani--1520498",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "0d750ca45e7fc79a",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Trump despre Groenlanda: Vom găsi ceva care să facă SUA și NATO 'foarte mulțumite'",
+      "url": "https://agerpres.ro/politic-extern/2026/01/20/trump-despre-groenlanda-vom-gasi-ceva-care-sa-faca-sua-si-nato-foarte-multumite--1520496",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "814cc108eb74b5ce",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Baschet masculin: U-BT Cluj-Napoca a pierdut în Slovenia, în EuroCup",
+      "url": "https://agerpres.ro/sport-extern/2026/01/20/video-baschet-masculin-u-bt-cluj-napoca-a-pierdut-in-slovenia-in-eurocup--1520495",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "bd65eeaeaae95a38",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "VIDEO Trump: Avem o mulțime de întâlniri programate la Davos privind Groenlanda",
+      "url": "https://agerpres.ro/politic-extern/2026/01/20/video-trump-avem-o-multime-de-intalniri-programate-la-davos-privind-groenlanda--1520494",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "6e8bb1fe84ee7ef1",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Vicepremierul Radu Miruță: Suntem, în sfârșit, pe un drum mult mai corect pentru bugetul țării noastre",
+      "url": "https://agerpres.ro/politic/2026/01/20/vicepremierul-radu-miruta-suntem-in-sfarsit-pe-un-drum-mult-mai-corect-pentru-bugetul-tarii-noastre--1520493",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "a75b4316d74d6a85",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Dolj: Craiova, din nou fără căldură pentru 30 de ore din cauza unei avarii",
+      "url": "https://agerpres.ro/social/2026/01/20/dolj-craiova-din-nou-fara-caldura-pentru-30-de-ore-din-cauza-unei-avarii--1520492",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "a1bc1ef9acd0e776",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Hochei: Victorii în deplasare pentru Corona și SC Miercurea Ciuc, în campionat",
+      "url": "https://agerpres.ro/sport/2026/01/20/hochei-victorii-in-deplasare-pentru-corona-si-sc-miercurea-ciuc-in-campionat--1520491",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "6b003bd3c8210271",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Cartea '150 de Proeme' de Varujan Vosganian - lansată la TNB; Autorul: O incursiune către miezul condiției umane",
+      "url": "https://agerpres.ro/cultura-media/2026/01/20/cartea-150-de-proeme-de-varujan-vosganian---lansata-la-tnb-autorul-o-incursiune-catre-miezul-conditi--1520489",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "5e85e535ce634990",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Târg de produse tradiționale în curtea Ministerului Agriculturii, de Ziua Unirii Principatelor Române",
+      "url": "https://agerpres.ro/economic/2026/01/20/targ-de-produse-traditionale-in-curtea-ministerului-agriculturii-de-ziua-unirii-principatelor-romane--1520490",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "a283ed499cfe38ea",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Harghita: Un pompier și un muncitor au suferit arsuri în urma incendiului de la abatorul din Gheorgheni",
+      "url": "https://agerpres.ro/social/2026/01/20/harghita-un-pompier-si-un-muncitor-au-suferit-arsuri-in-urma-incendiului-de-la-abatorul-din-gheorghe--1520488",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "250d4c11bf9fb6db",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Fotbal: Manchester City, umilită de Bodo/Glimt, la Cercul Polar, în Liga Campionilor",
+      "url": "https://agerpres.ro/sport-extern/2026/01/20/fotbal-manchester-city-umilita-de-bodo-glimt-la-cercul-polar-in-liga-campionilor--1520487",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "53b7698a9237e312",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Apa se află într-o stare de 'faliment global', estimează un raport al ONU",
+      "url": "https://agerpres.ro/planeta/2026/01/20/apa-se-afla-intr-o-stare-de-faliment-global-estimeaza-un-raport-al-onu--1520486",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
+    },
+    {
+      "id": "df4e878ded7efd12",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "ISUBIF: Bărbatul aflat în mașina lovită de tren a fost transportat la spital, inconștient",
+      "url": "https://agerpres.ro/social/2026/01/20/isubif-barbatul-aflat-in-masina-lovita-de-tren-a-fost-transportat-la-spital-inconstient--1520485",
+      "summary": "",
+      "publishedAt": "2026-01-21T02:07:51.184Z",
+      "fetchedAt": "2026-01-21T02:07:51.184Z"
     }
   ],
-  "lastUpdated": "2026-01-20T18:45:23.525Z"
+  "lastUpdated": "2026-01-21T02:07:51.190Z"
 }
