@@ -97,10 +97,6 @@ All plans and implementation specs live in `docs/`. When creating new plans or d
 - Free tier: 2,500 subscribers, 10k emails/month
 - Requires DNS setup: SPF, DKIM, DMARC
 
-### Ko-fi (Donations)
-- Links in Footer and Support page
-- 0% platform fee on donations
-
 ### Cloudflare
 - Pages for hosting (auto-deploy from main)
 - Web Analytics for privacy-friendly stats

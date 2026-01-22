@@ -16,7 +16,6 @@
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 - **Hosting:** [Cloudflare Pages](https://pages.cloudflare.com/) (gratuit)
 - **Email:** [Resend](https://resend.com/)
-- **Donații:** [Ko-fi](https://ko-fi.com/)
 
 ## Dezvoltare locală
 
@@ -82,7 +81,6 @@ Contribuțiile sunt binevenite! Poți:
 
 Good Brief este gratuit. Dacă îți place ce facem:
 
-- ☕ [Ko-fi](https://ko-fi.com/goodbrief)
 - ⭐ Dă o stea pe GitHub
 - 📧 Trimite povești bune la hello@goodbrief.ro
 
