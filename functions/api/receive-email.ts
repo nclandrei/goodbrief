@@ -98,7 +98,7 @@ async function getEmailContent(
   apiKey: string
 ): Promise<ReceivedEmail> {
   const response = await fetch(
-    `https://api.resend.com/emails/${emailId}`,
+    `https://api.resend.com/emails/receiving/${emailId}`,
     {
       headers: {
         Authorization: `Bearer ${apiKey}`,
