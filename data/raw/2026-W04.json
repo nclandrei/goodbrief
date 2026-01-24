@@ -18580,7 +18580,367 @@
       "summary": "Iliana Iotova a devenit prima femeie președinte al Bulgariei după ce Curtea Constituțională (CC) de la Sofia a încheiat mandatul lui Rumen Radev. Decizia CC a venit după ce Radev a anunțat luni, într-un discurs adresat națiunii, că demisionează din funcția de președinte după nouă ani de mandat.",
       "publishedAt": "2026-01-23T13:50:29.000Z",
       "fetchedAt": "2026-01-23T18:40:47.079Z"
+    },
+    {
+      "id": "7d704649da04c482",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Budapesta acuză Kievul că „se amestecă foarte dur și direct” în alegerile din Ungaria",
+      "url": "https://hotnews.ro/budapesta-acuza-kievul-ca-se-amesteca-foarte-dur-si-direct-in-alegerile-din-ungaria-2156329",
+      "summary": "Ucraina a început să se amestece dur în alegerile din Ungaria, deoarece își dorește un guvern care să spună da Bruxelles-ului în ceea ce privește războiul, dar guvernul ungar va continua să-și protejeze țara și…",
+      "publishedAt": "2026-01-23T21:46:21.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.967Z"
+    },
+    {
+      "id": "ebb3c8eac7010b11",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Kopic, după ce a urcat cu Dinamo pe primul loc. „I-am zis că e brazilianul nostru”",
+      "url": "https://hotnews.ro/kopic-dupa-ce-a-urcat-cu-dinamo-pe-primul-loc-i-am-zis-ca-e-brazilianul-nostru-2156330",
+      "summary": "Dinamo București s-a impus vineri seară pe terenul lui Hermannstadt, scor 2-1, și a urcat cel puțin pentru moment pe prima poziție în SuperLiga. Ambele goluri ale oaspeților au fost înscrise de fundașul stânga Raul…",
+      "publishedAt": "2026-01-23T21:44:25.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.967Z"
+    },
+    {
+      "id": "244f840658a83db1",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "VIDEO Beatles, detronată. Recordul stabilit de Robbie Williams cu cel mai recent album al său",
+      "url": "https://hotnews.ro/video-beatles-detronata-recordul-stabilit-de-robbie-williams-cu-cel-mai-recent-album-al-sau-2156324",
+      "summary": "Solistul pop Robbie Williams are oficial un al 16-lea album pe locul 1 în topurile muzicale britanice, depășind astfel recordul stabilit de Beatles în 2000, potrivit The Guardian și AFP. Cel mai recent album al…",
+      "publishedAt": "2026-01-23T21:24:47.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.967Z"
+    },
+    {
+      "id": "3862ac31f24089bd",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Câți bani a cheltuit Rusia cu atacul care a lăsat Kievul fără căldură și electricitate, în plină iarnă",
+      "url": "https://hotnews.ro/cati-bani-a-cheltuit-rusia-cu-atacul-care-a-lasat-kievul-fara-caldura-si-electricitate-in-plina-iarna-2156320",
+      "summary": "Rusia a cheltuit peste 10,2 miliarde de ruble (aproximativ 131 de milioane de dolari) pentru atacul aerian din 20 ianuarie, care a lovit rețelele de electricitate și încălzire ale Kievului în plină iarnă, a anunțat…",
+      "publishedAt": "2026-01-23T21:13:19.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.967Z"
+    },
+    {
+      "id": "334e34042fc4a0b3",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Metafora aleasă de Traian Băsescu pentru a descrie starea relației dintre România și SUA. „Poate e puțin forțată”",
+      "url": "https://hotnews.ro/metafora-aleasa-de-traian-basescu-pentru-a-descrie-starea-relatiei-dintre-romania-si-sua-poate-e-putin-fortata-2156318",
+      "summary": "Fostul președinte Traian Băsescu a declarat, vineri, pe B1 TV, că România trebuie să devină atractivă pentru Statele Unite „din toate punctele de vedere, nu numai din punct de vedere strategic, și să se țină…",
+      "publishedAt": "2026-01-23T20:46:36.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.967Z"
+    },
+    {
+      "id": "1f137dd4494081c6",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Chivu va purta torța olimpică. Anunțul făcut de Inter Milano",
+      "url": "https://hotnews.ro/chivu-va-cara-torta-olimpica-anuntul-facut-de-inter-milano-2156310",
+      "summary": "Inter Milano, clubul de fotbal la care antrenează Cristian Chivu, a anunțat vineri seară că românul va fi unul dintre purtătorii torței olimpice la Jocurile de Iarnă de la Milano-Cortina. „Cristian Chivu va purta torţa…",
+      "publishedAt": "2026-01-23T20:29:57.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.967Z"
+    },
+    {
+      "id": "4d99a7c907c37d9a",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Prințul Harry, mesaj după ce Trump a minimalizat rolul aliaților în Afganistan: „Aceste sacrificii merită discutate cu onestitate și respect”",
+      "url": "https://hotnews.ro/printul-harry-mesaj-dupa-ce-trump-a-minimalizat-rolul-aliatilor-in-afganistan-aceste-sacrificii-merita-discutate-cu-onestitate-si-respect-2156305",
+      "summary": "Prințul Harry a transmis vineri seară un mesaj în care afirmă că sacrificiile făcute de trupele NATO în Afganistan „merită să fie discutate cu onestitate și respect”, ca reacție la declarațiile lui Trump, care a…",
+      "publishedAt": "2026-01-23T20:27:58.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.967Z"
+    },
+    {
+      "id": "68ae70b42541662d",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Judecătorul Laurențiu Beșu, despre efectele investigației Recorder: „În sistem nu s-a întâmplat nimic” / „Singura reacție concretă a fost să ne atace pe noi”",
+      "url": "https://hotnews.ro/judecatorul-laurentiu-besu-despre-efectele-investigatiei-recorder-in-sistem-nu-s-a-intamplat-nimic-despre-numirea-de-tribunalul-bucuresti-acest-grup-isi-pregateste-viit-2156290",
+      "summary": "Laurențiu Beșu, judecător al Tribunalului București și unul dintre magistrații intervievați în investigația Recorder „Justiție capturată”, a declarat vineri pe B1 TV că în sistemul de justiție nu s-a produs nicio schimbare după apariția materialului…",
+      "publishedAt": "2026-01-23T19:54:25.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.967Z"
+    },
+    {
+      "id": "afdbb088585a4527",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Meloni spune că vrea să-l nominalizeze pe Trump la Premiul Nobel pentru Pace, dacă obține pacea în Ucraina",
+      "url": "https://hotnews.ro/meloni-spune-ca-vrea-sa-l-nominalizeze-pe-trump-la-premiul-nobel-pentru-pace-daca-obtine-pacea-in-ucraina-2156280",
+      "summary": "Premierul Italiei, Giorgia Meloni, a declarat vineri că speră ca președintele american Donald Trump să pună capăt conflictului din Ucraina, astfel încât să îl poată propune pentru Premiul Nobel pentru Pace. „Sper ca, într-o zi,…",
+      "publishedAt": "2026-01-23T19:38:27.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.967Z"
+    },
+    {
+      "id": "8e2fdb42c1afe11c",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Negocieri cruciale privind războiul din Ucraina: Întâlnirea dintre Moscova și Kiev, mediată de SUA, s-a încheiat. Primul mesaj după prima zi de discuții, din tabăra ucraineană",
+      "url": "https://hotnews.ro/ucraina-rusia-sua-intalnire-abu-dhabi-trilaterala-negocieri-2155810",
+      "summary": "Delegațiile SUA, Ucrainei și Rusiei s-au întâlnit, vineri, în Abu Dhabi pentru primele discuții trilaterale din timpul războiului care durează de aproape 4 ani. Reuniunea s-a încheiat fără să fie anunțate detalii sau concluzii, iar…",
+      "publishedAt": "2026-01-23T19:30:00.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.967Z"
+    },
+    {
+      "id": "2ff623882c4db4f1",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Bolojan spune că niciun lider din coaliție nu i-a cerut demisia în ședințe: „Scenaritele sunt la ordinea zilei” / Cum explică declarația lui Nicușor Dan despre problemele din coaliție",
+      "url": "https://hotnews.ro/bolojan-spune-ca-niciun-lider-din-coalitie-nu-i-a-cerut-demisia-in-sedinte-scenaritele-sunt-la-ordinea-zilei-cum-explica-declaratia-lui-nicusor-dan-despre-problemele-din-coalitie-2156267",
+      "summary": "Premierul Ilie Bolojan a declarat, vineri, la Digi24, că nu are „niciun fel de emoție” cu privire la posibilitatea de a fi înlăturat din funcție și că actuala majoritate parlamentară „va fi testată” cu ocazia…",
+      "publishedAt": "2026-01-23T19:05:02.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.967Z"
+    },
+    {
+      "id": "46dd9b14d939bbdc",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Patronul barului din Crans-Montana, unde 40 de oameni au murit în incendiu, eliberat pentru o cauțiune de 200.000 de franci elvețieni",
+      "url": "https://hotnews.ro/patronul-barului-din-crans-montana-unde-40-de-oameni-au-murit-in-incendiu-eliberat-pentru-o-cautiune-de-200-000-de-franci-elvetieni-2156257",
+      "summary": "Un tribunal din cantonul elvețian Valais a ordonat vineri punerea în libertate sub cauțiune a lui Jacques Moretti, co-proprietar împreună cu soția sa al barului din stațiunea de schi Crans-Montana, unde un incendiu a provocat…",
+      "publishedAt": "2026-01-23T19:04:41.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.967Z"
+    },
+    {
+      "id": "6e01680b01d435ab",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Ministerul Energiei cere ca luna viitoare să fie luată decizia finală de investiție în mini-reactoarele de la Doicești",
+      "url": "https://hotnews.ro/ministerul-energiei-cere-ca-luna-viitoare-sa-fie-luata-decizia-finala-de-investitie-in-mini-reactoarele-de-la-doicesti-2156264",
+      "summary": "Nuclearelectrica a anunțat, vineri seara, pe BVB, că a primit o solicitare din partea Ministerului Energiei pentru a completa ordinea de zi a ședinței acționarilor din 12 februarie, cu un punct legat de mini-reactoarele de…",
+      "publishedAt": "2026-01-23T18:48:15.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.967Z"
+    },
+    {
+      "id": "ca23b04e83e74036",
+      "sourceId": "dw-romania",
+      "sourceName": "DW România",
+      "title": "O lobbyistă activă și posibilă spioană a Moscovei",
+      "url": "https://www.dw.com/ro/o-lobbyist%C4%83-activ%C4%83-%C8%99i-posibil%C4%83-spioan%C4%83-a-moscovei/a-75634329?maca=rum-rss-rom-all-1493-rdf",
+      "summary": "Germania expulzează un angajat al ambasadei ruse și convoacă ambasadorul în urma demascării unei presupuse agente.",
+      "publishedAt": "2026-01-23T20:00:00.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.474Z"
+    },
+    {
+      "id": "bb6f43b63da5baa4",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Culisele reuniunii de la Bruxelles: Giorgia Meloni le-a spus liderilor UE că lupta împotriva lui Trump este o idee proastă",
+      "url": "https://www.mediafax.ro/externe/culisele-reuniunii-de-la-bruxelles-giorgia-meloni-le-a-spus-liderilor-ue-ca-lupta-impotriva-lui-trump-este-o-idee-proasta-23675756",
+      "summary": "La summitul de joi de la Bruxelles, premierul italian Giorgia Meloni le-a spus omologilor săi din UE, în spatele ușilor închise, că lupta împotriva președintelui american Donald Trump este o idee proastă. În plus, Meloni i-a îndemnat pe aceștia să nu-l considere pe Trump „nebun sau imprevizibil”, așa cum l-au descris în privat unii oficiali.",
+      "publishedAt": "2026-01-24T01:31:10.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.680Z"
+    },
+    {
+      "id": "bbbab4db14cb36de",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Aproximativ 100 de membri ai comunităților religioase, arestați la protestele anti-ICE din Minneapolis",
+      "url": "https://www.mediafax.ro/externe/aproximativ-100-de-membri-ai-comunitatilor-religioase-arestati-la-protestele-anti-ice-din-minneapolis-23675753",
+      "summary": "Aproximativ 100 de membri care fac parte din mai multe comunități religioase au fost arestați, vineri, la aeroportul Minneapolis St Paul, pe fondul intensificării protestelor anti-ICE.",
+      "publishedAt": "2026-01-24T00:49:45.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.680Z"
+    },
+    {
+      "id": "0a9523f7d2498694",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "„Trebuie să luptăm”. Sentiment de unitate în Danemarca, în contextul amenințărilor lui Trump privind Groenlanda",
+      "url": "https://www.mediafax.ro/externe/trebuie-sa-luptam-sentiment-de-unitate-in-danemarca-in-contextul-amenintarilor-lui-trump-privind-groenlanda-23675750",
+      "summary": "Președintele american Donald Trump și-a intensificat retorica privind dorința de a prelua controlul asupra Groenlandei. Planul său a fost criticat de mulți lideri mondiali, iar Danemarca a fost cuprinsă de discuțiile privind posibilitatea ca insula să fie invadată de SUA.",
+      "publishedAt": "2026-01-24T00:02:02.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.680Z"
+    },
+    {
+      "id": "b8fe285fcb46a78a",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Armata SUA anunță că a atacat o nouă ambarcațiune în estul Pacificului. Două persoane, ucise",
+      "url": "https://www.mediafax.ro/externe/armata-sua-anunta-ca-a-atacat-o-ambarcatiune-in-estul-pacificului-doua-persoane-ucise-23675744",
+      "summary": "Armata SUA a atacat, vineri, o ambarcațiune suspectată de trafic de droguri în estul Oceanului Pacific. În urma atacului, două persoane au fost ucise, potrivit Comandamentului Sud al SUA.",
+      "publishedAt": "2026-01-23T23:22:49.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.680Z"
+    },
+    {
+      "id": "9f0295a96877be16",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Julio Iglesias scapă de ancheta din Spania. Plângerea de agresiune sexuală formulată în cazul său, clasată de justiția spaniolă",
+      "url": "https://www.mediafax.ro/cultura-media/julio-iglesias-scapa-de-ancheta-din-spania-plangerea-de-agresiune-sexuala-formulata-in-cazul-sau-clasata-de-justitia-spaniola-23675740",
+      "summary": "Cântărețul spaniol Julio Iglesias scapă de ancheta din Spania privind acuzațiile de agresiune sexuală care îl vizează. Justiția spaniolă a clasat plângerea formulată de două foste angajate la reședințele sale din Republica Dominicană și Bahamas.",
+      "publishedAt": "2026-01-23T22:55:37.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.680Z"
+    },
+    {
+      "id": "fece9357e9a3a4ec",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Zelenski, după prima zi de negocieri SUA-Ucraina-Rusia: Este încă prea devreme pentru a trage concluzii",
+      "url": "https://www.mediafax.ro/externe/zelenski-dupa-prima-zi-de-negocieri-sua-ucraina-rusia-este-inca-prea-devreme-pentru-a-trage-concluzii-23675729",
+      "summary": "Președintele ucrainean Volodimir Zelenski a afirmat vineri seara, după prima zi de negocieri dintre Rusia, Ucraina și SUA, că „este încă prea devreme pentru a trage concluzii”. Discuțiile vor continua sâmbătă, la Abu Dhabi, capitala Emiratelor Arabe Unite.",
+      "publishedAt": "2026-01-23T22:25:16.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.680Z"
+    },
+    {
+      "id": "d603d54dd9934bcb",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Constanța: Minor de 13 ani, agresat de un alt copil în zona unui loc de joacă. Poliția a deschis dosar penal",
+      "url": "https://www.mediafax.ro/social/constanta-minor-de-13-ani-agresat-de-un-alt-copil-politia-a-deschis-dosar-penal-23675735",
+      "summary": "Un minor în vârstă de 13 ani s-a prezentat, vineri seară, la Spitalul Clinic Județean de Urgență Constanța, după ce ar fi fost agresat fizic, fapt pentru care unitatea medicală a sesizat Poliția Municipiului Constanța. Minorul în cauză ar fi fost agresat de un alt copil, iar polițiștii au deschis un dosar penal.",
+      "publishedAt": "2026-01-23T22:19:27.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.680Z"
+    },
+    {
+      "id": "b56afb1e91ed8a9a",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Oana Țoiu, după Forumul de la Davos: România importă anual bunuri de aproximativ 120 de miliarde de euro și exportăm de 90 de miliarde. Avem o problemă",
+      "url": "https://www.mediafax.ro/politic/oana-toiu-dupa-forumul-de-la-davos-romania-importa-anual-bunuri-de-aproximativ-120-de-miliarde-de-euro-si-exportam-de-90-de-miliarde-avem-o-problema-23675731",
+      "summary": "Ministra de Externe, Oana Țoiu, a afirmat, vineri, că deși s-a vorbit mult despre securitate anul acesta la Forumul Economic Mondial de la Davos, conferința a rămas, în esență, despre economie și colaborare.",
+      "publishedAt": "2026-01-23T21:54:35.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.680Z"
+    },
+    {
+      "id": "c242861790d68035",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Giorgia Meloni: Sper că Trump va pune capăt războiului din Ucraina, ca să-l putem nominaliza la Premiul Nobel pentru Pace",
+      "url": "https://www.mediafax.ro/externe/giorgia-meloni-sper-ca-trump-va-pune-capat-razboiului-din-ucraina-ca-sa-l-putem-nominaliza-la-premiul-nobel-pentru-pace-23675726",
+      "summary": "Premierul italian Giorgia Meloni a declarat, vineri, că speră ca președintele american Donald Trump să pună capăt conflictului din Ucraina, astfel încât să îl poată nominaliza pentru Premiul Nobel pentru Pace.",
+      "publishedAt": "2026-01-23T21:21:36.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.680Z"
+    },
+    {
+      "id": "7d21b81e602df8be",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Prima zi de negocieri trilaterale între Rusia, Ucraina și SUA s-a încheiat la Abu Dhabi. Ce a transmis președintele Zelenski astăzi",
+      "url": "https://www.mediafax.ro/externe/prima-zi-de-negocieri-trilaterale-intre-rusia-ucraina-si-sua-s-a-incheiat-la-abu-dhabi-ce-a-transmis-presedintele-zelenski-astazi-23675358",
+      "summary": "Negocierile de pace dintre Rusia, Ucraina și SUA au ajuns vineri la final, în Abu Dhabi, capitala Emiratelor Arabe Unite. Negocierile care se desfășoară vineri și sâmbătă devin primele negocieri în format trilateral petrecute încă de la începutul Invaziei din Ucraina, în 2022.",
+      "publishedAt": "2026-01-23T20:30:49.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.680Z"
+    },
+    {
+      "id": "86ae1a9476bc85b8",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cristian Chivu va purta torţa olimpică pentru JO de iarnă Milano Cortina. Cine va fi portdrapelul României",
+      "url": "https://stirileprotv.ro/stiri/sport/cristian-chivu-va-purta-tor-a-olimpica-pentru-jo-milano-cortina.html?category_slug=stiri%2Fsport",
+      "summary": "Tehnicianul echipei Inter Milano, Cristian Chivu, va purta torţa olimpică pentru Jocurile Olimpice de iarnă Milano Cortina.",
+      "publishedAt": "2026-01-23T20:17:04.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.536Z"
+    },
+    {
+      "id": "0c052be8f5824d96",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Decizia procurorilor după ce suspectul de 13 ani în cazul crimei din Timiș a fost testat pozitiv la substanțe interzise",
+      "url": "https://stirileprotv.ro/stiri/actualitate/decizia-procurorilor-dupa-ce-suspectul-de-13-ani-in-cazul-crimei-din-timis-a-fost-testat-pozitiv-la-substante-interzise.html?category_slug=stiri%2Factualitate",
+      "summary": "Direcția de Investigare a Infracțiunilor de Criminalitate Organizată și Terorism a anunțat deschiderea unui dosar penal la Timișoara, în urma unor date rezultate dintr-o cauză instrumentată de Parchetul de pe lângă Tribunalul Timiș.",
+      "publishedAt": "2026-01-23T20:13:00.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.536Z"
+    },
+    {
+      "id": "3457900d920e5004",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Bolojan, după ce a fost acuzat că a lăsat Craiova în frig: „168 de milioane de euro alocate pentru CET, fără nicio lucrare”",
+      "url": "https://stirileprotv.ro/stiri/actualitate/bolojan-dupa-ce-a-fost-acuzat-ca-a-lasat-craiova-in-frig-168-de-milioane-de-euro-alocate-pentru-cet-fara-nicio-lucrare.html?category_slug=stiri%2Factualitate",
+      "summary": "Prim-ministrul Ilie Bolojan a declarat că la Craiova au fost alocate 168 milioane de euro, pentru termoficare, dar că nu s-au făcut lucrări, iar el n-a avut nicio vină şi nicio implicare.",
+      "publishedAt": "2026-01-23T19:56:36.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.536Z"
+    },
+    {
+      "id": "cc1c0b815e95fafc",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Giorgia Meloni speră ca Donald Trump să aducă pacea în Ucraina. „L-am putea nominaliza la Premiul Nobel de Pace”",
+      "url": "https://stirileprotv.ro/stiri/international/giorgia-meloni-spera-ca-trump-sa-aduca-pacea-in-ucraina-l-am-putea-nominaliza-la-premiul-nobel-de-pace.html?category_slug=stiri%2Finternational",
+      "summary": "Prim-ministrul italian Giorgia Meloni a declarat vineri că speră ca preşedintele american Donald Trump să pună capăt conflictului din Ucraina, astfel încât să-l poată nominaliza pentru Premiul Nobel pentru Pace, relatează The Guardian.",
+      "publishedAt": "2026-01-23T19:21:46.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.536Z"
+    },
+    {
+      "id": "1d4910bf07622c7a",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Bilanțul forumului de la Davos, scenă deschisă pentru Donald Trump. „A fost foarte pe față împotriva Europei”",
+      "url": "https://stirileprotv.ro/stiri/international/bilantul-forumului-de-la-davos-scena-deschisa-pentru-donald-trump-a-fost-foarte-pe-fata-impotriva-europei.html?category_slug=stiri%2Finternational",
+      "summary": "Revenirea lui Donald Trump pe scena de la Davos a lăsat în urmă un amestec de neliniște, iritare și resemnare printre participanții la Forumul Economic Mondial.",
+      "publishedAt": "2026-01-23T19:14:20.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.536Z"
+    },
+    {
+      "id": "3c0df4877351236b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "România sărbătorește 167 de ani de la Unirea Principatelor. Președintele Nicușor Dan, așteptat la Focșani și Iași",
+      "url": "https://stirileprotv.ro/stiri/politic/romania-sarbatoreste-167-de-ani-de-la-unirea-principatelor-presedintele-nicusor-dan-asteptat-la-focsani-si-iasi.html?category_slug=stiri%2Fpolitic",
+      "summary": "Sâmbătă, 24 ianuarie, sărbătorim 167 de ani, de la Unirea Principatelor Române. Festivitățile vor debuta la Focșani, dimineața, după care se vor muta la Iași. Președintele Nicușor Dan va fi prezent la ambele evenimente.",
+      "publishedAt": "2026-01-23T19:02:19.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.536Z"
+    },
+    {
+      "id": "03e4c55cecbf1ff1",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Horoscop 24 ianuarie 2026, cu Neti Sandu. O zi cu revederi emoționante",
+      "url": "https://stirileprotv.ro/show-buzz/horoscop/horoscop-24-ianuarie-2026-cu-neti-sandu-o-zi-cu-revederi-emotionante.html?category_slug=show-buzz%2Fhoroscop",
+      "summary": "Horoscop 24 ianuarie 2026, prezentat de Neti Sandu la Știrile PRO TV. O zi cu revederi emoționante. O să ne bucurăm de vești bune, de întâlnirile cu acei oameni care ne-au lipsit și o să facem puțină ordine în viața noastră.",
+      "publishedAt": "2026-01-23T19:02:00.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.536Z"
+    },
+    {
+      "id": "e03afafa318dc99c",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Procurorii spanioli renunță la cazul împotriva lui Julio Iglesias. Motivul pentru care s-au sucit",
+      "url": "https://stirileprotv.ro/stiri/international/procurorii-spanioli-renunta-la-cazul-impotriva-lui-julio-iglesias-motivul-pentru-care-s-au-sucit.html?category_slug=stiri%2Finternational",
+      "summary": "Justiţia spaniolă a clasat vineri plângerea pentru delicte sexuale formulată împotriva cântăreţului Julio Iglesias, Parchetul considerând că acest caz nu este de competenţa sa deoarece faptele nu ar fi fost comise în Spania.",
+      "publishedAt": "2026-01-23T18:51:32.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.536Z"
+    },
+    {
+      "id": "8d3841c28ea81dec",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "„Europa nu mai are cale de întoarcere”. Liderii UE strâng rândurile, după avertizarea lui Trump. Bruxelles-ul are un plan",
+      "url": "https://stirileprotv.ro/stiri/international/europa-nu-mai-are-cale-de-intoarcere-liderii-ue-strang-randurile-dupa-avertizarea-lui-trump-bruxelles-ul-are-un-plan.html?category_slug=stiri%2Finternational",
+      "summary": "Donald Trump a făcut anunțul: „SUA vor colabora cu NATO, în privința Groenlandei”. Însă, chiar dacă tensiunile dintre SUA și UE s-au mai atenuat, amenințările lui Trump în legătură cu insula arctică au zguduit puternic încrederea Europei în americani.",
+      "publishedAt": "2026-01-23T18:43:00.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.536Z"
+    },
+    {
+      "id": "27ded5669774e071",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Valentino Garavani a fost condus pe ultimul drum la Roma. Zeci de vedete și personalități l-au omagiat. „El este viața mea”",
+      "url": "https://stirileprotv.ro/show-buzz/entertainment/valentino-garavani-a-fost-condus-pe-ultimul-drum-la-roma-zeci-de-vedete-si-personalitati-l-au-omagiat.html?category_slug=show-buzz%2Fentertainment",
+      "summary": "Mii de persoane, printre care și numeroase personalități din lumea modei, cinematografiei și aristocrației europene, au luat parte la funeraliile celebrului designer Valentino Garavani, care au avut loc la o bazilică istorică din centrul Romei.",
+      "publishedAt": "2026-01-23T18:36:00.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.536Z"
+    },
+    {
+      "id": "6aed00ce94ecadb9",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Autoritățile franceze investighează moartea a doi bebeluși după ce ar fi consumat lapte praf retras preventiv",
+      "url": "https://stirileprotv.ro/stiri/international/autoritatile-franceze-investigheaza-moartea-a-doi-bebelusi-dupa-ce-au-consumat-lapte-praf-retras-preventiv.html?category_slug=stiri%2Finternational",
+      "summary": "Autorităţile franceze investighează moartea a doi sugari care ar fi consumat formule de lapte pentru bebeluşi retrase preventiv de pe piaţă la începutul lunii, a anunţat vineri Ministerul Sănătăţii.",
+      "publishedAt": "2026-01-23T18:32:11.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.536Z"
+    },
+    {
+      "id": "b5bf3792639eb7a9",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Scrisul de mână spune multe despre personalitate. Ce spun experții despre cei care notează doar pe telefon sau laptop",
+      "url": "https://stirileprotv.ro/stiri/actualitate/felul-caligrafiei-spune-multe-despre-personalitate-scrisul-de-mana-tot-mai-rar-in-era-tehnologiei.html?category_slug=stiri%2Factualitate",
+      "summary": "În era tehnologiei, oamenii apelează tot mai rar la foaie și pix. Nu își mai scriu gândurile pe hârtie, ci în telefon.",
+      "publishedAt": "2026-01-23T18:25:00.000Z",
+      "fetchedAt": "2026-01-24T02:01:08.536Z"
     }
   ],
-  "lastUpdated": "2026-01-23T18:40:47.195Z"
+  "lastUpdated": "2026-01-24T02:01:17.108Z"
 }
