@@ -93,6 +93,19 @@ function isValidEmail(email: string): boolean {
   return emailRegex.test(email);
 }
 
+async function contactExists(email: string, env: Env): Promise<boolean> {
+  const response = await fetch(
+    `https://api.resend.com/audiences/${env.RESEND_AUDIENCE_ID}/contacts/${encodeURIComponent(email)}`,
+    {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${env.RESEND_API_KEY}`,
+      },
+    }
+  );
+  return response.ok;
+}
+
 export const onRequestOptions: PagesFunction = async () => {
   return new Response(null, {
     status: 204,
@@ -119,6 +132,14 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
       );
     }
 
+    const alreadySubscribed = await contactExists(email, context.env);
+    if (alreadySubscribed) {
+      return jsonResponse({
+        success: true,
+        message: "Ești deja abonat! 🎉",
+      });
+    }
+
     const response = await fetch(
       `https://api.resend.com/audiences/${context.env.RESEND_AUDIENCE_ID}/contacts`,
       {
@@ -137,14 +158,6 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({}));
       console.error("Resend API error:", errorData);
-      
-      if (response.status === 409) {
-        return jsonResponse(
-          { success: true, message: "Ești deja abonat! 🎉" },
-          200
-        );
-      }
-
       return jsonResponse(
         { success: false, message: "A apărut o eroare. Te rugăm să încerci din nou." },
         500
