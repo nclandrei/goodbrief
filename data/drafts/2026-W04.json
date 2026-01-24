@@ -3,58 +3,6 @@
   "generatedAt": "2026-01-24T10:50:31.858Z",
   "selected": [
     {
-      "id": "54cf860141555258",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Cine este eroul care și-a riscat viața pentru a salva fetița căzută într-un lac în Craiova. Primele declarații din spital",
-      "url": "https://stirileprotv.ro/stiri/actualitate/cine-este-eroul-care-si-a-riscat-viata-pentru-a-salva-fetita-cazuta-intr-un-lac-primele-declaratii-de-pe-patul-de-spital.html",
-      "summary": "Eroul care și-a riscat viața pentru a salva o fetiță căzută într-un lac înghețat în Craiova este Vipan Kumar, un cetățean indian. El va fi numit cetățean de onoare al orașului, iar fetița și el sunt internați.",
-      "positivity": 95,
-      "impact": 85,
-      "category": "local-heroes",
-      "publishedAt": "2026-01-18T17:02:00.000Z",
-      "processedAt": "2026-01-24T10:50:31.858Z"
-    },
-    {
-      "id": "a88d032bf1d904e6",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Salvatorul fetiţei de 5 ani căzute într-un lac înghețat este indian și va primi titlul de cetăţean de onoare al Craiovei",
-      "url": "https://stirileprotv.ro/stiri/actualitate/salvatorul-fetitei-de-5-ani-cazute-intr-un-lac-inghetat-este-indian-si-va-primi-titlul-de-cetatean-de-onoare-al-craiovei.html",
-      "summary": "Salavatorul fetiței din Craiova, Vipan Kumar, un cetățean indian, va primi titlul de cetățean de onoare al orașului. Primarul Lia Olguța Vasilescu a anunțat gestul, apreciind curajul său.",
-      "positivity": 95,
-      "impact": 85,
-      "category": "local-heroes",
-      "publishedAt": "2026-01-18T13:22:00.000Z",
-      "processedAt": "2026-01-24T10:50:31.858Z"
-    },
-    {
-      "id": "026d1b0c93c4206c",
-      "sourceId": "hotnews",
-      "sourceName": "HotNews",
-      "originalTitle": "ULTIMA ORĂ OFICIAL Dacia Sandero, cel mai vândut automobil din Europa",
-      "url": "https://hotnews.ro/ultima-ora-oficial-dacia-sandero-cel-mai-vandut-automobil-din-europa-2153210",
-      "summary": "Dacia Sandero a devenit cel mai vândut automobil din Europa anul trecut, depășind modele consacrate precum Renault Clio. Acest succes subliniază popularitatea și competitivitatea mărcii românești.",
-      "positivity": 90,
-      "impact": 85,
-      "category": "wins",
-      "publishedAt": "2026-01-20T04:56:32.000Z",
-      "processedAt": "2026-01-24T10:50:31.858Z"
-    },
-    {
-      "id": "3fbccf32607a5b1e",
-      "sourceId": "hotnews",
-      "sourceName": "HotNews",
-      "originalTitle": "Primele declarații ale indianului care a salvat fetița din Craiova, căzută într-un lac înghețat. „Și ea a avut mult curaj”",
-      "url": "https://hotnews.ro/primele-declaratii-ale-indianului-care-a-salvat-copilul-din-craiova-si-fetita-a-avut-mult-curaj-2152441",
-      "summary": "Indianul Vipan Kumar, care a salvat o fetiță dintr-un lac înghețat din Craiova, a declarat că și copilul a dat dovadă de mult curaj. Gestul său eroic a fost apreciat de întreaga comunitate.",
-      "positivity": 90,
-      "impact": 80,
-      "category": "local-heroes",
-      "publishedAt": "2026-01-18T18:45:13.000Z",
-      "processedAt": "2026-01-24T10:50:31.858Z"
-    },
-    {
       "id": "984524e78db8fc4c",
       "sourceId": "hotnews",
       "sourceName": "HotNews",
@@ -68,29 +16,122 @@
       "processedAt": "2026-01-24T10:50:31.858Z"
     },
     {
-      "id": "51d2303b6003b2a3",
+      "id": "3d9ec27c32707796",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
-      "originalTitle": "O nouă șansă la viață pentru o tânără bolnavă de cancer. În doar 8 zile, s-au strâns 2,3 milioane de dolari pentru tratament",
-      "url": "https://stirileprotv.ro/stiri/social/o-noua-sansa-la-viata-pentru-o-tanara-bolnava-de-cancer-in-doar-8-zile-s-au-strans-2-3-milioane-de-dolari-pentru-tratament.html",
-      "summary": "O tânără bolnavă de cancer din Suceava primește o nouă șansă la viață după ce s-au strâns 2,3 milioane de dolari în doar 8 zile pentru tratament. Campania umanitară a mobilizat rapid comunitatea.",
+      "originalTitle": "Performanță istorică. Dacia a câștigat legendarul Raliu Dakar",
+      "url": "https://stirileprotv.ro/stiri/sport/performanta-istorica-dacia-a-castigat-legendarul-raliu-dakar.html",
+      "summary": "Dacia a obținut o performanță istorică, câștigând al șaselea său Raliu Dakar cu pilotul Nasser Al Attiyah. Victoria marchează un moment de referință pentru constructorul auto.",
       "positivity": 90,
-      "impact": 70,
-      "category": "local-heroes",
-      "publishedAt": "2026-01-18T06:33:00.000Z",
+      "impact": 60,
+      "category": "wins",
+      "publishedAt": "2026-01-17T11:22:00.000Z",
       "processedAt": "2026-01-24T10:50:31.858Z"
     },
     {
-      "id": "479d7668bf07e02d",
+      "id": "6f8d9a3fafc5664b",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
-      "originalTitle": "O fetiță de 5 ani, salvată dintr-un lac înghețat din Craiova. Un cetățean străin a sărit în apă și a ținut-o la suprafață",
-      "url": "https://stirileprotv.ro/stiri/actualitate/o-fetita-de-5-ani-salvata-dintr-un-lac-inghetat-din-craiova-un-cetatean-nepalez-a-sarit-in-apa-si-a-tinut-o-la-suprafata.html",
-      "summary": "O fetiță de 5 ani din Craiova a căzut într-un lac înghețat, dar a fost salvată de un cetățean străin care a sărit în apă. Tatăl ei a rămas blocat în gheață încercând să o ajute.",
-      "positivity": 90,
+      "originalTitle": "Guvernul vrea relansare economică finanțată, pe jumătate, cu bani din PNRR. Proiectele în care ar ajunge fondurile",
+      "url": "https://stirileprotv.ro/stiri/financiar/guvernul-vrea-relansare-economica-finantata-pe-jumatate-cu-bani-din-pnrr-proiectele-in-care-ar-ajunge-fondurile.html?category_slug=stiri%2Ffinanciar",
+      "summary": "Guvernul anunță investiții record de 20 de miliarde de euro pentru relansarea economiei românești, finanțate pe jumătate din PNRR.\nPlanul vizează proiecte strategice pentru dezvoltarea țării.",
+      "positivity": 75,
+      "impact": 80,
+      "category": "wins",
+      "publishedAt": "2026-01-22T18:29:46.000Z",
+      "processedAt": "2026-01-24T10:50:31.858Z"
+    },
+    {
+      "id": "24309821309f0f28",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "originalTitle": "Demeter András: Frankfurt 2028 este „șansa de neratat” care pune România la masa marilor competitori",
+      "url": "https://www.mediafax.ro/cultura-media/demeter-andras-frankfurt-2028-este-sansa-de-neratat-care-pune-romania-la-masa-marilor-competitori-23675166",
+      "summary": "România va participa ca Țară Invitat de Onoare la Târgul de Carte de la Frankfurt 2028, un eveniment major pentru cultura românească.\nMinistrul Culturii, Demeter András, consideră acest eveniment o „șansă de neratat” pentru țară.",
+      "positivity": 80,
+      "impact": 75,
+      "category": "wins",
+      "publishedAt": "2026-01-22T18:16:46.000Z",
+      "processedAt": "2026-01-24T10:50:31.858Z"
+    },
+    {
+      "id": "852123ac72993bbb",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Lege pentru accesul la vaccinarea anti-HPV și testare gratuite. Cancerul aproape eradicat la alții face ravagii la noi",
+      "url": "https://stirileprotv.ro/stiri/sanatate/lege-pentru-accesul-gratuit-la-vaccinarea-anti-hpv-al-fetelor-si-baietilor-intre-11-si-26-de-ani.html",
+      "summary": "A fost promulgată o lege pentru acces gratuit la vaccinarea anti-HPV și testarea pentru cancerul de col uterin. Această măsură vine în contextul în care boala face ravagii în România, fiind aproape eradicată în alte țări.",
+      "positivity": 80,
+      "impact": 70,
+      "category": "wins",
+      "publishedAt": "2026-01-17T10:33:00.000Z",
+      "processedAt": "2026-01-24T10:50:31.858Z"
+    },
+    {
+      "id": "54cf860141555258",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Cine este eroul care și-a riscat viața pentru a salva fetița căzută într-un lac în Craiova. Primele declarații din spital",
+      "url": "https://stirileprotv.ro/stiri/actualitate/cine-este-eroul-care-si-a-riscat-viata-pentru-a-salva-fetita-cazuta-intr-un-lac-primele-declaratii-de-pe-patul-de-spital.html",
+      "summary": "Eroul care și-a riscat viața pentru a salva o fetiță căzută într-un lac înghețat în Craiova este Vipan Kumar, un cetățean indian. El va fi numit cetățean de onoare al orașului, iar fetița și el sunt internați.",
+      "positivity": 95,
+      "impact": 85,
+      "category": "local-heroes",
+      "publishedAt": "2026-01-18T17:02:00.000Z",
+      "processedAt": "2026-01-24T10:50:31.858Z"
+    },
+    {
+      "id": "8e411f54d6fa43d8",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Veteranul din Gorj care a împlinit 104 ani. Ororile la care l-au supus rușii în Siberia și secretul longevității sale",
+      "url": "https://stirileprotv.ro/stiri/social/veteranul-din-groj-care-a-implinit-104-ani-ororile-la-care-l-au-supus-rusii-in-siberia-si-secretul-longevitatii-sale.html?category_slug=stiri%2Fsocial",
+      "summary": "Cel mai în vârstă veteran de război din Gorj a împlinit 104 ani, rememorând ororile din Siberia și împărtășind secretul longevității sale. Povestea sa este un testament al rezilienței umane.",
+      "positivity": 85,
       "impact": 70,
       "category": "local-heroes",
-      "publishedAt": "2026-01-17T16:59:00.000Z",
+      "publishedAt": "2026-01-20T05:38:56.000Z",
+      "processedAt": "2026-01-24T10:50:31.858Z"
+    },
+    {
+      "id": "1359336aa3b68cc3",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "originalTitle": "Un segment al autostrăzii Sibiu–Pitești se poate deschide anul acesta. Șeful CNAIR: „În ritmul actual, terminăm mai devreme”",
+      "url": "https://hotnews.ro/un-segment-al-autostrazii-sibiu-pitesti-se-poate-deschide-anul-acesta-seful-cnair-in-ritmul-actual-terminam-mai-devreme-2153059",
+      "summary": "Un segment al autostrăzii Sibiu–Pitești ar putea fi deschis anul acesta, stadiul lucrărilor fiind avansat. Șeful CNAIR estimează finalizarea mai devreme decât termenul inițial.",
+      "positivity": 80,
+      "impact": 80,
+      "category": "wins",
+      "publishedAt": "2026-01-19T16:26:50.000Z",
+      "processedAt": "2026-01-24T10:50:31.858Z"
+    },
+    {
+      "id": "33bbf8eb5220300e",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "originalTitle": "Comandatul trupelor NATO din Europa laudă Armata Română: „Rusia a fost descurajată de a ataca”",
+      "url": "https://hotnews.ro/comandatul-trupelor-nato-din-europa-lauda-armata-romana-rusia-a-fost-descurajata-de-a-ataca-2153543",
+      "summary": "Comandantul trupelor NATO din Europa laudă Armata Română, afirmând că Rusia a fost descurajată să atace datorită nivelului de pregătire al acesteia. Această apreciere subliniază importanța strategică a României în regiune.",
+      "positivity": 80,
+      "impact": 75,
+      "category": "wins",
+      "publishedAt": "2026-01-20T12:54:47.000Z",
+      "processedAt": "2026-01-24T10:50:31.858Z"
+    }
+  ],
+  "reserves": [
+    {
+      "id": "026d1b0c93c4206c",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "originalTitle": "ULTIMA ORĂ OFICIAL Dacia Sandero, cel mai vândut automobil din Europa",
+      "url": "https://hotnews.ro/ultima-ora-oficial-dacia-sandero-cel-mai-vandut-automobil-din-europa-2153210",
+      "summary": "Dacia Sandero a devenit cel mai vândut automobil din Europa anul trecut, depășind modele consacrate precum Renault Clio. Acest succes subliniază popularitatea și competitivitatea mărcii românești.",
+      "positivity": 90,
+      "impact": 85,
+      "category": "wins",
+      "publishedAt": "2026-01-20T04:56:32.000Z",
       "processedAt": "2026-01-24T10:50:31.858Z"
     },
     {
@@ -106,34 +147,6 @@
       "publishedAt": "2026-01-20T17:41:00.000Z",
       "processedAt": "2026-01-24T10:50:31.858Z"
     },
-    {
-      "id": "94df35629c672db1",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Cetățeanul indian care și-a riscat viața să salveze o fetiță de 6 ani din Craiova din lacul înghețat a fost externat",
-      "url": "https://stirileprotv.ro/stiri/actualitate/cetateanul-indian-care-si-a-riscat-viata-sa-salveze-o-fetita-de-6-ani-din-craiova-externat-din-spital.html?category_slug=stiri%2Factualitate",
-      "summary": "Cetățeanul indian care și-a riscat viața pentru a salva o fetiță dintr-un lac înghețat din Craiova a fost externat. Actul său de curaj a fost lăudat de comunitate.",
-      "positivity": 90,
-      "impact": 70,
-      "category": "local-heroes",
-      "publishedAt": "2026-01-21T05:32:15.000Z",
-      "processedAt": "2026-01-24T10:50:31.858Z"
-    },
-    {
-      "id": "ab4996f0b5210e48",
-      "sourceId": "hotnews",
-      "sourceName": "HotNews",
-      "originalTitle": "Ce se întâmplă cu „Drumul Morții” acum că autostrada Moldovei se apropie de finalizare / Planul companiei de drumuri și blocajul întâmpinat: „Este mega-important, trebuie să fie o prioritate”",
-      "url": "https://hotnews.ro/ce-se-intampla-cu-drumul-mortii-acum-ca-autostrada-moldovei-se-apropie-de-finalizare-planul-companiei-de-drumuri-si-blocajul-intampinat-este-mega-important-trebuie-sa-fi-2151263",
-      "summary": "Autostrada A7, supranumită „coloana vertebrală a Moldovei”, se apropie de finalizare, cu peste 210 km deja deschiși. Acest proiect major de infrastructură va fluidiza traficul și va stimula dezvoltarea regională. E un pas important pentru conectivitate.",
-      "positivity": 80,
-      "impact": 85,
-      "category": "wins",
-      "publishedAt": "2026-01-23T05:05:20.000Z",
-      "processedAt": "2026-01-24T10:50:31.858Z"
-    }
-  ],
-  "reserves": [
     {
       "id": "e2d7c0dc58f2923a",
       "sourceId": "stirileprotv",
@@ -158,19 +171,6 @@
       "impact": 80,
       "category": "wins",
       "publishedAt": "2026-01-19T07:34:00.000Z",
-      "processedAt": "2026-01-24T10:50:31.858Z"
-    },
-    {
-      "id": "1359336aa3b68cc3",
-      "sourceId": "hotnews",
-      "sourceName": "HotNews",
-      "originalTitle": "Un segment al autostrăzii Sibiu–Pitești se poate deschide anul acesta. Șeful CNAIR: „În ritmul actual, terminăm mai devreme”",
-      "url": "https://hotnews.ro/un-segment-al-autostrazii-sibiu-pitesti-se-poate-deschide-anul-acesta-seful-cnair-in-ritmul-actual-terminam-mai-devreme-2153059",
-      "summary": "Un segment al autostrăzii Sibiu–Pitești ar putea fi deschis anul acesta, stadiul lucrărilor fiind avansat. Șeful CNAIR estimează finalizarea mai devreme decât termenul inițial.",
-      "positivity": 80,
-      "impact": 80,
-      "category": "wins",
-      "publishedAt": "2026-01-19T16:26:50.000Z",
       "processedAt": "2026-01-24T10:50:31.858Z"
     },
     {
@@ -213,19 +213,6 @@
       "processedAt": "2026-01-24T10:50:31.858Z"
     },
     {
-      "id": "8e411f54d6fa43d8",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Veteranul din Gorj care a împlinit 104 ani. Ororile la care l-au supus rușii în Siberia și secretul longevității sale",
-      "url": "https://stirileprotv.ro/stiri/social/veteranul-din-groj-care-a-implinit-104-ani-ororile-la-care-l-au-supus-rusii-in-siberia-si-secretul-longevitatii-sale.html?category_slug=stiri%2Fsocial",
-      "summary": "Cel mai în vârstă veteran de război din Gorj a împlinit 104 ani, rememorând ororile din Siberia și împărtășind secretul longevității sale. Povestea sa este un testament al rezilienței umane.",
-      "positivity": 85,
-      "impact": 70,
-      "category": "local-heroes",
-      "publishedAt": "2026-01-20T05:38:56.000Z",
-      "processedAt": "2026-01-24T10:50:31.858Z"
-    },
-    {
       "id": "3935ac0ea5e8b0ad",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
@@ -265,19 +252,6 @@
       "processedAt": "2026-01-24T10:50:31.858Z"
     },
     {
-      "id": "3d9ec27c32707796",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Performanță istorică. Dacia a câștigat legendarul Raliu Dakar",
-      "url": "https://stirileprotv.ro/stiri/sport/performanta-istorica-dacia-a-castigat-legendarul-raliu-dakar.html",
-      "summary": "Dacia a obținut o performanță istorică, câștigând al șaselea său Raliu Dakar cu pilotul Nasser Al Attiyah. Victoria marchează un moment de referință pentru constructorul auto.",
-      "positivity": 90,
-      "impact": 60,
-      "category": "wins",
-      "publishedAt": "2026-01-17T11:22:00.000Z",
-      "processedAt": "2026-01-24T10:50:31.858Z"
-    },
-    {
       "id": "aa1c7d1dab54660e",
       "sourceId": "mediafax",
       "sourceName": "Mediafax",
@@ -304,19 +278,6 @@
       "processedAt": "2026-01-24T10:50:31.858Z"
     },
     {
-      "id": "33bbf8eb5220300e",
-      "sourceId": "hotnews",
-      "sourceName": "HotNews",
-      "originalTitle": "Comandatul trupelor NATO din Europa laudă Armata Română: „Rusia a fost descurajată de a ataca”",
-      "url": "https://hotnews.ro/comandatul-trupelor-nato-din-europa-lauda-armata-romana-rusia-a-fost-descurajata-de-a-ataca-2153543",
-      "summary": "Comandantul trupelor NATO din Europa laudă Armata Română, afirmând că Rusia a fost descurajată să atace datorită nivelului de pregătire al acesteia. Această apreciere subliniază importanța strategică a României în regiune.",
-      "positivity": 80,
-      "impact": 75,
-      "category": "wins",
-      "publishedAt": "2026-01-20T12:54:47.000Z",
-      "processedAt": "2026-01-24T10:50:31.858Z"
-    },
-    {
       "id": "790aa9c82c93fa54",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
@@ -327,19 +288,6 @@
       "impact": 75,
       "category": "wins",
       "publishedAt": "2026-01-20T11:56:25.000Z",
-      "processedAt": "2026-01-24T10:50:31.858Z"
-    },
-    {
-      "id": "24309821309f0f28",
-      "sourceId": "mediafax",
-      "sourceName": "Mediafax",
-      "originalTitle": "Demeter András: Frankfurt 2028 este „șansa de neratat” care pune România la masa marilor competitori",
-      "url": "https://www.mediafax.ro/cultura-media/demeter-andras-frankfurt-2028-este-sansa-de-neratat-care-pune-romania-la-masa-marilor-competitori-23675166",
-      "summary": "România va participa ca Țară Invitat de Onoare la Târgul de Carte de la Frankfurt 2028, un eveniment major pentru cultura românească.\nMinistrul Culturii, Demeter András, consideră acest eveniment o „șansă de neratat” pentru țară.",
-      "positivity": 80,
-      "impact": 75,
-      "category": "wins",
-      "publishedAt": "2026-01-22T18:16:46.000Z",
       "processedAt": "2026-01-24T10:50:31.858Z"
     },
     {
@@ -356,32 +304,6 @@
       "processedAt": "2026-01-24T10:50:31.858Z"
     },
     {
-      "id": "6f8d9a3fafc5664b",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Guvernul vrea relansare economică finanțată, pe jumătate, cu bani din PNRR. Proiectele în care ar ajunge fondurile",
-      "url": "https://stirileprotv.ro/stiri/financiar/guvernul-vrea-relansare-economica-finantata-pe-jumatate-cu-bani-din-pnrr-proiectele-in-care-ar-ajunge-fondurile.html?category_slug=stiri%2Ffinanciar",
-      "summary": "Guvernul anunță investiții record de 20 de miliarde de euro pentru relansarea economiei românești, finanțate pe jumătate din PNRR.\nPlanul vizează proiecte strategice pentru dezvoltarea țării.",
-      "positivity": 75,
-      "impact": 80,
-      "category": "wins",
-      "publishedAt": "2026-01-22T18:29:46.000Z",
-      "processedAt": "2026-01-24T10:50:31.858Z"
-    },
-    {
-      "id": "852123ac72993bbb",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Lege pentru accesul la vaccinarea anti-HPV și testare gratuite. Cancerul aproape eradicat la alții face ravagii la noi",
-      "url": "https://stirileprotv.ro/stiri/sanatate/lege-pentru-accesul-gratuit-la-vaccinarea-anti-hpv-al-fetelor-si-baietilor-intre-11-si-26-de-ani.html",
-      "summary": "A fost promulgată o lege pentru acces gratuit la vaccinarea anti-HPV și testarea pentru cancerul de col uterin. Această măsură vine în contextul în care boala face ravagii în România, fiind aproape eradicată în alte țări.",
-      "positivity": 80,
-      "impact": 70,
-      "category": "green-stuff",
-      "publishedAt": "2026-01-17T10:33:00.000Z",
-      "processedAt": "2026-01-24T10:50:31.858Z"
-    },
-    {
       "id": "71913046fdcaa945",
       "sourceId": "agerpres",
       "sourceName": "Agerpres",
@@ -393,14 +315,92 @@
       "category": "wins",
       "publishedAt": "2026-01-20T02:05:11.785Z",
       "processedAt": "2026-01-24T10:50:31.858Z"
+    },
+    {
+      "id": "a88d032bf1d904e6",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Salvatorul fetiţei de 5 ani căzute într-un lac înghețat este indian și va primi titlul de cetăţean de onoare al Craiovei",
+      "url": "https://stirileprotv.ro/stiri/actualitate/salvatorul-fetitei-de-5-ani-cazute-intr-un-lac-inghetat-este-indian-si-va-primi-titlul-de-cetatean-de-onoare-al-craiovei.html",
+      "summary": "Salavatorul fetiței din Craiova, Vipan Kumar, un cetățean indian, va primi titlul de cetățean de onoare al orașului. Primarul Lia Olguța Vasilescu a anunțat gestul, apreciind curajul său.",
+      "positivity": 95,
+      "impact": 85,
+      "category": "local-heroes",
+      "publishedAt": "2026-01-18T13:22:00.000Z",
+      "processedAt": "2026-01-24T10:50:31.858Z"
+    },
+    {
+      "id": "3fbccf32607a5b1e",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "originalTitle": "Primele declarații ale indianului care a salvat fetița din Craiova, căzută într-un lac înghețat. „Și ea a avut mult curaj”",
+      "url": "https://hotnews.ro/primele-declaratii-ale-indianului-care-a-salvat-copilul-din-craiova-si-fetita-a-avut-mult-curaj-2152441",
+      "summary": "Indianul Vipan Kumar, care a salvat o fetiță dintr-un lac înghețat din Craiova, a declarat că și copilul a dat dovadă de mult curaj. Gestul său eroic a fost apreciat de întreaga comunitate.",
+      "positivity": 90,
+      "impact": 80,
+      "category": "local-heroes",
+      "publishedAt": "2026-01-18T18:45:13.000Z",
+      "processedAt": "2026-01-24T10:50:31.858Z"
+    },
+    {
+      "id": "479d7668bf07e02d",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "O fetiță de 5 ani, salvată dintr-un lac înghețat din Craiova. Un cetățean străin a sărit în apă și a ținut-o la suprafață",
+      "url": "https://stirileprotv.ro/stiri/actualitate/o-fetita-de-5-ani-salvata-dintr-un-lac-inghetat-din-craiova-un-cetatean-nepalez-a-sarit-in-apa-si-a-tinut-o-la-suprafata.html",
+      "summary": "O fetiță de 5 ani din Craiova a căzut într-un lac înghețat, dar a fost salvată de un cetățean străin care a sărit în apă. Tatăl ei a rămas blocat în gheață încercând să o ajute.",
+      "positivity": 90,
+      "impact": 70,
+      "category": "local-heroes",
+      "publishedAt": "2026-01-17T16:59:00.000Z",
+      "processedAt": "2026-01-24T10:50:31.858Z"
+    },
+    {
+      "id": "94df35629c672db1",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Cetățeanul indian care și-a riscat viața să salveze o fetiță de 6 ani din Craiova din lacul înghețat a fost externat",
+      "url": "https://stirileprotv.ro/stiri/actualitate/cetateanul-indian-care-si-a-riscat-viata-sa-salveze-o-fetita-de-6-ani-din-craiova-externat-din-spital.html?category_slug=stiri%2Factualitate",
+      "summary": "Cetățeanul indian care și-a riscat viața pentru a salva o fetiță dintr-un lac înghețat din Craiova a fost externat. Actul său de curaj a fost lăudat de comunitate.",
+      "positivity": 90,
+      "impact": 70,
+      "category": "local-heroes",
+      "publishedAt": "2026-01-21T05:32:15.000Z",
+      "processedAt": "2026-01-24T10:50:31.858Z"
+    },
+    {
+      "id": "ab4996f0b5210e48",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "originalTitle": "Ce se întâmplă cu „Drumul Morții” acum că autostrada Moldovei se apropie de finalizare / Planul companiei de drumuri și blocajul întâmpinat: „Este mega-important, trebuie să fie o prioritate”",
+      "url": "https://hotnews.ro/ce-se-intampla-cu-drumul-mortii-acum-ca-autostrada-moldovei-se-apropie-de-finalizare-planul-companiei-de-drumuri-si-blocajul-intampinat-este-mega-important-trebuie-sa-fi-2151263",
+      "summary": "Autostrada A7, supranumită „coloana vertebrală a Moldovei”, se apropie de finalizare, cu peste 210 km deja deschiși. Acest proiect major de infrastructură va fluidiza traficul și va stimula dezvoltarea regională. E un pas important pentru conectivitate.",
+      "positivity": 80,
+      "impact": 85,
+      "category": "wins",
+      "publishedAt": "2026-01-23T05:05:20.000Z",
+      "processedAt": "2026-01-24T10:50:31.858Z"
+    },
+    {
+      "id": "51d2303b6003b2a3",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "O nouă șansă la viață pentru o tânără bolnavă de cancer. În doar 8 zile, s-au strâns 2,3 milioane de dolari pentru tratament",
+      "url": "https://stirileprotv.ro/stiri/social/o-noua-sansa-la-viata-pentru-o-tanara-bolnava-de-cancer-in-doar-8-zile-s-au-strans-2-3-milioane-de-dolari-pentru-tratament.html",
+      "summary": "O tânără bolnavă de cancer din Suceava primește o nouă șansă la viață după ce s-au strâns 2,3 milioane de dolari în doar 8 zile pentru tratament. Campania umanitară a mobilizat rapid comunitatea.",
+      "positivity": 90,
+      "impact": 70,
+      "category": "local-heroes",
+      "publishedAt": "2026-01-18T06:33:00.000Z",
+      "processedAt": "2026-01-24T10:50:31.858Z"
     }
   ],
   "discarded": 269,
   "totalProcessed": 718,
   "wrapperCopy": {
     "greeting": "Salutare! 👋",
-    "intro": "Săptămâna asta ne arată cât de frumos poate fi curajul și solidaritatea, fie că vorbim de eroi din viața reală care salvează vieți sau de inovații medicale care schimbă destine. Și, ce zici, am reușit să facem și un constructor auto românesc să se simtă mândru. 😉",
-    "signOff": "Până data viitoare, ai grijă de tine și de cei dragi! 🙏",
-    "shortSummary": "Eroism, inovație medicală și Dacia, cel mai vândut model în Europa."
+    "intro": "Săptămâna asta e una de care putem fi mândri: medici români au realizat o premieră mondială în chirurgie cardiacă, Dacia a câștigat Dakarul, iar Guvernul anunță investiții de 20 de miliarde de euro. Pe lângă vești mari, avem și povești despre oameni care ne inspiră — de la un erou care a sărit într-un lac înghețat, la un veteran de 104 ani care ne arată ce înseamnă reziliența.",
+    "signOff": "Până săptămâna viitoare, ai grijă de tine! 🙏",
+    "shortSummary": "Premieră mondială în medicină, Dacia câștigă Dakarul, investiții record și povești de curaj."
   }
 }

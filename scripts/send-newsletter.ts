@@ -208,10 +208,10 @@ function renderEmailHtml(
           <tr>
             <td style="padding: 0 24px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-                ${renderSection('local-heroes', grouped['local-heroes'])}
                 ${renderSection('wins', grouped.wins)}
                 ${renderSection('green-stuff', grouped['green-stuff'])}
                 ${renderSection('quick-hits', grouped['quick-hits'])}
+                ${renderSection('local-heroes', grouped['local-heroes'])}
               </table>
             </td>
           </tr>
