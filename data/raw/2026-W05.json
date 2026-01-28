@@ -7910,7 +7910,657 @@
       "summary": "România a aplicat cu 21 de proiecte pentru finanțare prin programul SAFE, în valoare totală de peste 9,5 miliarde de euro. Proiectele sunt destinate modernizării Armatei și relansării industriei de Apărare.",
       "publishedAt": "2026-01-26T17:34:11.000Z",
       "fetchedAt": "2026-01-27T18:46:48.075Z"
+    },
+    {
+      "id": "6df9970fa837e17a",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Trump afirmă că Alex Pretti nu ar fi trebuit poarte armă, deși legea îi permitea. „Avea două încărcătoare pline. Asta e foarte grav”",
+      "url": "https://hotnews.ro/trump-afirma-ca-alex-pretti-nu-ar-fi-trebuit-poarte-arma-desi-legea-ii-permitea-avea-doua-incarcatoare-pline-asta-e-foarte-grav-2159851",
+      "summary": "Președintele american Donald Trump a declarat marți că Alex Pretti, bărbatul împușcat mortal de un agent federal al poliției de imigrare (ICE) în timpul confruntării din Minneapolis, nu ar fi trebuit să poarte o armă…",
+      "publishedAt": "2026-01-27T23:45:04.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.445Z"
+    },
+    {
+      "id": "14f7f0e881e5c3b0",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Eurovision: După controversa privind participarea Israelului în concurs, televiziunea italiană cere prezenţa unui artist palestinian",
+      "url": "https://hotnews.ro/eurovision-dupa-controversa-privind-participarea-israelului-in-concurs-televiziunea-italiana-cere-prezenta-unui-artist-palestinian-2159844",
+      "summary": "Continuă să escaladeze tensiunile provocate de participarea Israelului la concursul Eurovision 2026, iar în urma apelurilor sindicatelor italiene de a boicota evenimentul, televiziunea publică italiană RAI a cerut oficial ca la ediția din acest an…",
+      "publishedAt": "2026-01-27T22:44:00.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.445Z"
+    },
+    {
+      "id": "eebdfc61d21bcaaf",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "FOTO/VIDEO Tren de pasageri, cu peste 200 de oameni în el, în flăcări după un bombardament cu drone al rușilor, în Harkov. Bilanțul victimelor",
+      "url": "https://hotnews.ro/foto-video-tren-de-pasageri-cu-peste-200-de-oameni-in-el-lovit-de-un-bombardament-cu-drone-al-rusilor-in-harkov-bilantul-victimelor-2159831",
+      "summary": "Un bombardament cu drone rusești asupra unui tren de pasageri, efectuat în nord-estul Ucrainei, a provocat moartea a cinci persoane, potrivit procurorilor ucraineni, atacul fiind condamnat drept un act de terorism de către președintele Volodimir…",
+      "publishedAt": "2026-01-27T22:18:59.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.445Z"
+    },
+    {
+      "id": "85f0c87f6feda792",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Ministrul Sănătăţii anunță înfiinţarea unui Centru de Management al Obezităţii la Institutul Parhon",
+      "url": "https://hotnews.ro/ministrul-sanatatii-anunta-infiintarea-unui-centru-de-management-al-obezitatii-la-institutul-parhon-2159828",
+      "summary": "Ministrul Sănătăţii, Alexandru Rogobete, anunță înfiinţarea, în cadrul Institutului Naţional de Endocrinologie „C.I. Parhon” din București, a unui Centru de Management al Obezităţii, unde această afecţiune va fi abordată interdisciplinar. „Înființăm Centrul de Management al…",
+      "publishedAt": "2026-01-27T22:09:49.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.445Z"
+    },
+    {
+      "id": "440100fc7f63fe2c",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Un cardinal american cere respingerea bugetului ICE în Congresul SUA: „O organizație fără credință și fără lege”",
+      "url": "https://hotnews.ro/un-cardinal-american-cere-respingerea-bugetului-ice-in-congresul-sua-o-organizatie-fara-credinta-si-fara-lege-2159784",
+      "summary": "Un cardinal american, apropiat al papei Leon XIV le-a cerut credincioșilor să facă presiuni asupra aleșilor lor din Congres să nu voteze bugetul poliției de federale a imigrației (ICE), pe care a catalogat-o drept „o…",
+      "publishedAt": "2026-01-27T21:53:27.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.445Z"
+    },
+    {
+      "id": "cfaf8b92da9a28c4",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "„Nu mai există aproape nimic normal în Statele Unite”, spune politicianul aplaudat la Davos",
+      "url": "https://hotnews.ro/nu-mai-exista-aproape-nimic-normal-in-statele-unite-spune-politicianul-aplaudat-la-davos-2159779",
+      "summary": "„Lumea s-a schimbat, Washingtonul s-a schimbat. Nu mai există aproape nimic normal în Statele Unite – acesta este adevărul”, a declarat premierul în fața Camerei Comunelor.",
+      "publishedAt": "2026-01-27T21:34:44.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.445Z"
+    },
+    {
+      "id": "37212e91651cc7f2",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Spania monitorizează în Mediterana un petrolier din flota fantomă a Rusiei. Nava are probleme tehnice",
+      "url": "https://hotnews.ro/spania-monitorizeaza-in-mediterana-un-petrolier-din-flota-fantoma-a-rusiei-nava-are-probleme-tehnice-2159764",
+      "summary": "Spania a anunţat marţi că monitorizează situaţia unui petrolier confruntat cu probleme tehnice în Marea Mediterană şi care este suspectat că aparţine „flotei din umbră” a Rusiei, prin care Moscova exportă petrol ocolind sancţiunile impuse…",
+      "publishedAt": "2026-01-27T21:15:06.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.445Z"
+    },
+    {
+      "id": "937249da936e8a33",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Cerere pentru Elon Musk din partea Poloniei. „Să faci bani din crime de război îți afectează imaginea”",
+      "url": "https://hotnews.ro/cerere-pentru-elon-musk-din-partea-poloniei-sa-faci-bani-din-crime-de-razboi-iti-afecteaza-imaginea-2159760",
+      "summary": "Şeful diplomaţiei poloneze, Radoslaw Sikorski, i-a cerut marţi lui Elon Musk, şeful reţelei de telecomunicaţii prin satelit Starlink, să întrerupă accesul Rusiei la serviciul respectiv care este folosit în războiul său împotriva Ucrainei, relatează AFP.…",
+      "publishedAt": "2026-01-27T21:01:42.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.445Z"
+    },
+    {
+      "id": "caada1331f74ebcc",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Ce trebuie să semneze Ucraina ca să obțină garanțiile de securitate ale SUA. O sursă de la Washington atrage atenția asupra unei percepții „eronate”",
+      "url": "https://hotnews.ro/ce-trebuie-sa-semneze-ucraina-ca-sa-obtina-garantiile-de-securitate-ale-sua-o-sursa-de-la-washington-atrage-atentia-asupra-unei-perceptii-eronate-2159761",
+      "summary": "Statele Unite au comunicat oficialilor de la Kiev că Ucraina trebuie să semneze un acord de pace cu Rusia pentru a obține garanțiile de securitate din partea SUA, a declarat marți pentru agenția de presă…",
+      "publishedAt": "2026-01-27T20:52:50.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.445Z"
+    },
+    {
+      "id": "0a572bcff035f569",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Germania cere o Europă „cu două viteze”. Care sunt țările pe care Berlinul vrea să le includă în grupul central al UE",
+      "url": "https://hotnews.ro/germania-cere-o-europa-cu-doua-viteze-care-sunt-tarile-pe-care-le-berlinul-vrea-sa-le-includa-in-grupul-central-al-ue-2159381",
+      "summary": "Germania va insista pentru o Uniune Europeană cu „două viteze” spre a rupe inerţia decizională în blocul Celor 27 şi a le impulsiona economiile, chemând ca un grup central de state membre să avanseze în…",
+      "publishedAt": "2026-01-27T20:31:04.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.445Z"
+    },
+    {
+      "id": "f6bb7290629cef0d",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Poliția americană de frontieră, implicată într-un incident armat, în Arizona. O persoană se află în stare critică",
+      "url": "https://hotnews.ro/politia-americana-de-frontiera-implicata-intr-un-incident-armat-in-arizona-o-persoana-se-afla-in-stare-critica-2159058",
+      "summary": "Poliția de frontieră a SUA a fost implicată într-un schimb de focuri în Arizona marți, a anunțat șeriful Chris Nanos din comitatul Pima, într-un comunicat, adăugând că biroul său colaborează cu FBI și cu Serviciul…",
+      "publishedAt": "2026-01-27T20:15:47.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.445Z"
+    },
+    {
+      "id": "9d0bfdf2f8cc35e5",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Trump nu are de gând să o demită pe șefa Securității Interne, după tulburările din Minneapolis: „Face o treabă foarte bună”",
+      "url": "https://hotnews.ro/trump-nu-are-de-gand-sa-o-demita-pe-sefa-securitatii-interne-dupa-tulburarile-din-minneapolis-face-o-treaba-foarte-buna-2158463",
+      "summary": "Președintele american Donald Trump a declarat marți că șefa Departamentul pentru Securitate Internă, Kristi Noem, va rămâne în funcție, în pofida apelurilor opoziției care cer demisia acesteia. Liderul de la Casa Albă consideră că Noem…",
+      "publishedAt": "2026-01-27T20:08:00.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.445Z"
+    },
+    {
+      "id": "042c495cf62f1cea",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Președintele Trump anunță că Iranul vrea să negocieze. Care sunt variantele pentru o intervenție militară",
+      "url": "https://hotnews.ro/trump-anunta-ca-iranul-vrea-sa-negocieze-presedintele-nu-a-vrut-sa-detalieze-o-eventuala-interventie-militara-2158465",
+      "summary": "Preşedintele american Donald Trump a declarat marţi că regimul iranian caută dialogul, dar a lăsat totuşi să planeze ameninţarea unei acţiuni militare asupra Iranului odată cu desfăşurarea unei forţe navale americane în Golf, relatează AFP,…",
+      "publishedAt": "2026-01-27T19:53:50.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.445Z"
+    },
+    {
+      "id": "479189a73d399249",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Aproape 2 milioane de oameni au murit, au fost răniți sau au  dispărut, în cei patru ani de lupte ai războiului din Ucraina",
+      "url": "https://hotnews.ro/4-ani-de-vieti-pierdute-in-razboi-frontul-a-inghitit-un-numar-total-de-militari-echivalent-cu-doua-treimi-din-populatia-kievului-2158458",
+      "summary": "După aproape patru ani de lupte grele, numărul total al pierderilor militare, incluzând aici soldații uciși, răniți sau dispăruți, se apropie de un prag sumbru.",
+      "publishedAt": "2026-01-27T19:33:28.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.445Z"
+    },
+    {
+      "id": "225c4f3706d2fd0f",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Hamas vrea să-și transforme militanții în polițiști în Gaza. Amenințare cu repetarea scenariului ce a dus la apariția Statului Islamic",
+      "url": "https://hotnews.ro/hamas-vrea-sa-si-transforme-militantii-in-politisti-in-gaza-amenintare-cu-repetarea-scenariului-ce-a-dus-la-aparitia-statului-islamic-2158456",
+      "summary": "Hamas vizează ca 10.000 de membri ai personalului său de securitate să fie incluşi într-o viitoare administraţie palestiniană pentru Fâşia Gaza, a declarat marţi pentru DPA un oficial al Hamas implicat în această problemă, transmite…",
+      "publishedAt": "2026-01-27T19:27:49.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.445Z"
+    },
+    {
+      "id": "5618a0aad93a2392",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "În criză de bani, guvernul rus vrea să recurgă la taxarea unei activități pe care anterior a interzis-o",
+      "url": "https://hotnews.ro/in-criza-de-bani-guvernul-rus-vrea-sa-recurga-la-taxarea-unei-activitati-pe-care-anterior-a-interzis-o-2158451",
+      "summary": "Rusia ar putea ridica o interdicţie care vizează cazinourile online şi ar putea impune o taxă de 30% pe veniturile acestora, în încercarea de a aduce la bugetul de stat până la 100 de miliarde…",
+      "publishedAt": "2026-01-27T19:01:06.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.445Z"
+    },
+    {
+      "id": "ad441951eb86e35a",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Donald Trump, descris de un fost premier spaniol. „Nimic nu este mai rău decât un prost ajuns la putere”",
+      "url": "https://hotnews.ro/donald-trump-descris-de-un-fost-premier-spaniol-nimic-nu-este-mai-rau-decat-un-prost-ajuns-la-putere-2158444",
+      "summary": "Fostul premier socialist spaniol Felipe Gonzalez a estimat marți că Donald Trump este un președinte „complet nebun”, care tratează lumea întreagă ca și cum ar fi „servitoarea sa” și a reușit să „tulbure tot ceea…",
+      "publishedAt": "2026-01-27T18:50:49.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.445Z"
+    },
+    {
+      "id": "0a038af67c2203fd",
+      "sourceId": "dw-romania",
+      "sourceName": "DW România",
+      "title": "Grav accident rutier în Timiș: șapte suporteri greci au murit",
+      "url": "https://www.dw.com/ro/grav-accident-rutier-%C3%AEn-timi%C8%99-%C8%99apte-suporteri-greci-au-murit/a-75685048?maca=rum-rss-rom-all-1493-rdf",
+      "summary": "Un accident rutier deosebit de grav a avut loc marți pe drumul european E70/DN6, în apropierea localității Lugojel, județul Timiș. Șapte persoane și-au pierdut viața și alte trei au fost rănite, au anunțat autoritățile.",
+      "publishedAt": "2026-01-27T19:09:00.000Z",
+      "fetchedAt": "2026-01-28T02:07:27.620Z"
+    },
+    {
+      "id": "462b727dbde02d2a",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Niko Kovac spune că Inter este mai bună sub comanda lui Cristi Chivu",
+      "url": "https://www.mediafax.ro/sport/niko-kovac-spune-ca-inter-este-mai-buna-sub-comanda-lui-cristi-chivu-23677585",
+      "summary": "Antrenorul Borussiei Dortmund, Niko Kovac, a declarat că Inter Milano este o formație mai bună sub comanda lui Cristian Chivu, înaintea duelului direct de miercuri din Liga Campionilor.",
+      "publishedAt": "2026-01-28T01:16:45.000Z",
+      "fetchedAt": "2026-01-28T02:07:27.750Z"
+    },
+    {
+      "id": "e18cfa46e6af0a93",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Rubio afirmă că Statele Unite sunt pregătite să folosească forța dacă Venezuela nu cooperează",
+      "url": "https://www.mediafax.ro/externe/rubio-afirma-ca-statele-unite-sunt-pregatite-sa-foloseasca-forta-daca-venezuela-nu-coopereaza-23677580",
+      "summary": "Secretarul de stat Marco Rubio a declarat că administrația Trump este pregătită să folosească forța pentru a se asigura că președinta interimară a Venezuelei, Delcy Rodríguez, cooperează cu Statele Unite.",
+      "publishedAt": "2026-01-28T00:26:40.000Z",
+      "fetchedAt": "2026-01-28T02:07:27.750Z"
+    },
+    {
+      "id": "143895666b01b815",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Trump spune că nu este îngrijorat de scăderea dolarului: „cred că este grozav”",
+      "url": "https://www.mediafax.ro/economic/trump-spune-ca-nu-este-ingrijorat-de-scaderea-dolarului-cred-ca-este-grozav-23677577",
+      "summary": "Președintele Donald Trump a declarat marți că nu este îngrijorat de scăderea dolarului, declanșată de turbulențele de pe piețele globale de obligațiuni și de scepticismul tot mai mare privind încrederea în Statele Unite ca partener comercial.",
+      "publishedAt": "2026-01-27T23:43:23.000Z",
+      "fetchedAt": "2026-01-28T02:07:27.750Z"
+    },
+    {
+      "id": "ebf22aaafd45639c",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Zelenski condamnă atacul cu drone asupra unui tren de pasageri în regiunea Harkov",
+      "url": "https://www.mediafax.ro/externe/zelenski-condamna-atacul-cu-drone-asupra-unui-tren-de-pasageri-in-regiunea-harkov-23677574",
+      "summary": "Președintele Ucrainei, Volodimir Zelenski, a condamnat atacul rusesc cu drone asupra unui tren de pasageri în regiunea Harkov.",
+      "publishedAt": "2026-01-27T23:02:44.000Z",
+      "fetchedAt": "2026-01-28T02:07:27.750Z"
+    },
+    {
+      "id": "7e54b356b5cd6231",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Bogdan Ivan: Am deblocat proiectul hidroenergetic de la Cerna–Motru–Tismana",
+      "url": "https://www.mediafax.ro/economic/bogdan-ivan-am-deblocat-proiectul-hidroenergetic-de-la-cerna-motru-tismana-23677570",
+      "summary": "Proiectul hidroenergetic Cerna–Motru–Tismana a primit acordul de mediu, iar lucrările pot fi reluate, a transmis ministrul Energiei, Bogdan Ivan.",
+      "publishedAt": "2026-01-27T22:23:39.000Z",
+      "fetchedAt": "2026-01-28T02:07:27.750Z"
+    },
+    {
+      "id": "07ba7fbfcb92c7fe",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Germania propune o Uniune Europeană „cu două viteze”. Berlinul vrea coordonare mai strânsă între principalele șase economii ale blocului",
+      "url": "https://www.mediafax.ro/externe/germania-propune-o-uniune-europeana-cu-doua-viteze-berlinul-vrea-coordonare-mai-stransa-intre-principalele-sase-economii-ale-blocului-23677563",
+      "summary": "Germania va promova o Uniune Europeană „cu două viteze” pentru a depăși blocajele decizionale din blocul comunitar cu 27 de state membre și pentru a le impulsiona economiile.",
+      "publishedAt": "2026-01-27T21:42:21.000Z",
+      "fetchedAt": "2026-01-28T02:07:27.750Z"
+    },
+    {
+      "id": "1ebf9efcab06bbf4",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Buzoianu: Noi toți plătim cu patru ani din viață din cauza poluării aerului. Infractorii de mediu trebuie condamnați",
+      "url": "https://www.mediafax.ro/politic/buzoianu-noi-toti-platim-cu-patru-ani-din-viata-din-cauza-poluarii-aerului-infractorii-de-mediu-trebuie-condamnati-23677559",
+      "summary": "Infractorii de mediu trebuie condamnați, nu mai putem să stăm să se prescrie dosarele în instanțe, susține ministra Mediului Diana Buzoianu, care adaugă că altfel mesajul este: „noi toți plătim cu patru ani din viață din cauza poluării aerului, iar cei care ne otrăvesc arzând toate deșeurile lângă casa noastră scapă”.",
+      "publishedAt": "2026-01-27T21:02:56.000Z",
+      "fetchedAt": "2026-01-28T02:07:27.750Z"
+    },
+    {
+      "id": "2274cef5ba218c6e",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Lyon: O adolescentă a fost răpită și torturată. Patru persoane au fost arestate",
+      "url": "https://www.mediafax.ro/stirile-zilei/lyon-o-adolescenta-a-fost-rapita-si-torturata-patru-persoane-au-fost-arestate-23677558",
+      "summary": "O fată în vârstă de 15 ani a fost răpită, sechestrată și torturată într-un subsol din sudul orașului Lyon. În urma incidentului, patru minori au fost arestați.",
+      "publishedAt": "2026-01-27T21:01:59.000Z",
+      "fetchedAt": "2026-01-28T02:07:27.750Z"
+    },
+    {
+      "id": "4f889ff66d24ce86",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Raport: Elevii bucureșteni vin la școală cu țigări, droguri, arme și spray-uri lacrimogene",
+      "url": "https://www.mediafax.ro/social/raport-elevii-bucuresteni-vin-la-scoala-cu-tigari-droguri-arme-si-spray-uri-lacrimogene-23677541",
+      "summary": "Un procent însemnat de elevi bucureșteni fumează sau dețin tutun sau alte produse din tutun la școală, evidențiază Raportul privind implementarea Statutului elevului la nivelul Municipiului București (RISEMB), realizat de Consiliul Municipal al Elevilor București pentru anul școlar 2024 - 2025. În cazuri izolate, raportul a semnalat prezența alcoolului și a armelor.",
+      "publishedAt": "2026-01-27T20:55:51.000Z",
+      "fetchedAt": "2026-01-28T02:07:27.750Z"
+    },
+    {
+      "id": "2997a59143a8fafb",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Rețelele sociale așa cum le știai dispar. Feedul „Pentru tine” a schimbat complet internetul",
+      "url": "https://www.mediafax.ro/stirile-zilei/retelele-sociale-asa-cum-le-stiai-dispar-feedul-pentru-tine-a-schimbat-complet-internetul-23677553",
+      "summary": "Etapa post-rețelelor sociale înlocuiește feedul de postări ale prietenilor cu sisteme „Pentru tine”, care recomandă conținut la scară largă pe baza unor micro-semnale precum oprirea din scroll, o pauză scurtă sau o privire rapidă și construiesc o ofertă menită să maximizeze timpul petrecut în aplicație.",
+      "publishedAt": "2026-01-27T20:55:29.000Z",
+      "fetchedAt": "2026-01-28T02:07:27.750Z"
+    },
+    {
+      "id": "7a8953c4b87d1489",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Război în Ucraina. Rusia a lovit cu drone un tren de pasageri, marți seara, în regiunea Harkov. Patru persoane au fost ucise, iar alte patru sunt date dispărute.",
+      "url": "https://www.biziday.ro/346299-2/",
+      "summary": "Autoritățile din Harkov au anunțat că atacul asupra trenului de pasageri a avut loc în apropierea satului Yazykove. Două explozii au fost raportat în apropierea trenului, iar aparent o dronă a lovit garnitura. Today, Russia struck a passenger train in the Kharkiv region with attack drones. In any country, a drone strike on a civilian […]",
+      "publishedAt": "2026-01-27T20:30:12.000Z",
+      "fetchedAt": "2026-01-28T02:07:27.415Z"
+    },
+    {
+      "id": "bd422c403ab2177a",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Dolarul american a scăzut în raport cu principalele valute, la cel mai mic nivel din ultimii patru ani. Investitorii și-au pierdut încrederea în moneda și economia americană, pe fondul politicilor lui Donald Trump.",
+      "url": "https://www.biziday.ro/346300-2/",
+      "summary": "Dolarul american a scăzut, marți, la minimul ultimilor patru ani, pe fondul politicilor externe ale lui Donald Trump, care au subminat încrederea investitorilor în economia americană. Dolarul american a scăzut cu 0,9% față de un coș de valute importante, iar pe întreagă lună ianuarie depreciere este de 2%. Prin urmare, lira sterlină și euro au […]",
+      "publishedAt": "2026-01-27T20:27:37.000Z",
+      "fetchedAt": "2026-01-28T02:07:27.415Z"
+    },
+    {
+      "id": "4b86aa75d7f60b73",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Interviu Victor Armășelu, vicepreședinte Samsung Electronics România și Bulgaria. (P)",
+      "url": "https://www.biziday.ro/346292-2/",
+      "summary": "Viziunea Samsung: Tehnologia ca partener discret: Ce înseamnă, concret, direcția „Your Companion to AI Living” pentru utilizatori? Conceptul marchează o schimbare importantă de perspectivă: trecem de la tehnologia care doar impresionează prin specificații, la cea care ajută cu adevărat în viața de zi cu zi. Concret, înseamnă un AI care funcționează discret, în fundal, simplificând […]",
+      "publishedAt": "2026-01-27T20:01:47.000Z",
+      "fetchedAt": "2026-01-28T02:07:27.415Z"
+    },
+    {
+      "id": "ded072ba122bd485",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Franța va interzice funcționarilor publici utilizarea platformelor americane de comunicații, inclusiv Google Meet, Zoom și Teams. Potrivit Politico, o notificare în acest sens va fi publicată în zilele următoare și urmărește reducerea dependenței europene de tehnologia companiilor din SUA.",
+      "url": "https://www.biziday.ro/346287-2/",
+      "summary": "Informația a fost oficial confirmată de un purtător de cuvânt și vine chiar în ziua în care Henna Virkkunen, vicepreședinta Comisiei Europene, a declarat că “dependența de tehnologia străină poate fi folosită ca armă împotriva noastră”. Guvernul francez le interzice doar funcționarilor publici (nu și publicului larg) să utilizeze platformele americane pentru conferință (Google Meet, […]",
+      "publishedAt": "2026-01-27T19:48:54.000Z",
+      "fetchedAt": "2026-01-28T02:07:27.415Z"
+    },
+    {
+      "id": "517acf0efca97178",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "California. TikTok a acceptat să soluționeze, cel mai probabil plătind bani, primul proces privind dependența de rețelele sociale, în care o adolescentă încearcă să demonstreze că acestea sunt concepute să creeze adicție și afectează sănătatea mintală. În urma înțelegerii, compania chinezească nu se va mai expune publicității negative și recurente pe care procesul îl va aduce.",
+      "url": "https://www.biziday.ro/346283-2/",
+      "summary": "Informația a fost transmisă de unul dintre avocații reclamantei, o tânără de 19 din California, identificată în documentele judiciare cu inițialele KGM. Aceasta susține că a devenit dependentă de aplicațiile de socializare încă de la o vârstă fragedă, din cauza designului conceput să capteze și să mențină atenția utilizatorilor și mai ales a copiilor. Procesul […]",
+      "publishedAt": "2026-01-27T19:20:16.000Z",
+      "fetchedAt": "2026-01-28T02:07:27.415Z"
+    },
+    {
+      "id": "d0537a287b37d4e9",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "PAOK e blestemată. Un fan din Grecia a murit când a aflat că unul dintre cei 7 suporteri pieriți în România era prietenul său",
+      "url": "https://stirileprotv.ro/stiri/sport/paok-e-blestemata-un-fan-din-grecia-a-murit-cand-a-aflat-ca-unul-dintre-cei-7-suporteri-pieriti-in-romania-era-prietenul-sau.html?category_slug=stiri%2Fsport",
+      "summary": "PAOK este lovită de o serie de tragedii incredibile. Un suporter din Grecia a murit marți seara, după ce a aflat că unul dintre cei șapte susținători ai echipei care au pierit în accidentul din Timiș era un prieten apropiat de-al său.",
+      "publishedAt": "2026-01-27T21:14:46.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.025Z"
+    },
+    {
+      "id": "eb48aacae350b1fb",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Sportul în care România tocmai a stabilit unul dintre cele mai mari scoruri din istorie. Meci oficial, la Campionatul Mondial",
+      "url": "https://stirileprotv.ro/stiri/sport/sportul-la-care-romania-a-stabilit-unul-dintre-cele-mai-mari-scoruri-din-istorie-meci-oficial-la-campionatul-mondial.html?category_slug=stiri%2Fsport",
+      "summary": "România a stabilit marți unul dintre cele mai mari scoruri din istoria hocheiului feminin, după ce a învins Africa de Sud cu 30-0 la Campionatul Mondial de hochei pe gheață feminin Under-18. Potrivit Guiness Book, cel mai mare scor din istorie este 82-0.",
+      "publishedAt": "2026-01-27T20:55:19.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.025Z"
+    },
+    {
+      "id": "8b4bc0435e962ed3",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Iranul amenință UE cu „consecințe distrugătoare” dacă Gardienii Revoluției sunt declarați organizație teroristă",
+      "url": "https://stirileprotv.ro/stiri/international/iranul-ameninta-ue-cu-consecinte-distrugatoare-daca-gardienii-revolutiei-sunt-declarati-organizatie-terorista.html?category_slug=stiri%2Finternational",
+      "summary": "Iranul a amenințat marți cu „consecințe distrugătoare” dacă Uniunea Europeană va desemna Corpul Gardienilor Revoluției drept organizație teroristă, potrivit presei de stat iraniene.",
+      "publishedAt": "2026-01-27T20:44:47.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.025Z"
+    },
+    {
+      "id": "661dc7690ff6a269",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Reacția unui șofer care a rămas fără BMW după ce s-a filmat conducând cu 320 km/ h pe autostradă, în Polonia",
+      "url": "https://stirileprotv.ro/stiri/international/reactia-unui-sofer-care-a-ramas-fara-bmw-dupa-ce-s-a-filmat-conducand-cu-320-km-h-pe-autostrada-in-polonia.html?category_slug=stiri%2Finternational",
+      "summary": "Un șofer s-a filmat conducând cu viteza de 320 km/h pe o autostradă din Polonia, iar înregistrarea a fost postată pe rețelele sociale. Ulterior, tânărul a fost identificat, iar vehiculul a fost confiscat de procuratura din Chorzów.",
+      "publishedAt": "2026-01-27T20:35:25.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.025Z"
+    },
+    {
+      "id": "bd294c966e46e569",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Germania propune o UE „cu două viteze” pentru a debloca deciziile și a întări economiile europene",
+      "url": "https://stirileprotv.ro/stiri/international/germania-propune-o-ue-cu-doua-viteze-pentru-a-debloca-deciziile-si-a-intari-economiile-europene.html?category_slug=stiri%2Finternational",
+      "summary": "Germania va insista pentru o Uniune Europeană cu 'două viteze' spre a rupe inerţia decizională în blocul Celor 27 şi a le impulsiona economiile, chemând ca un grup central de state membre să avanseze în ce priveşte politici cheie.",
+      "publishedAt": "2026-01-27T20:22:26.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.025Z"
+    },
+    {
+      "id": "a90c8c398b2e96ec",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "România va construi împreună cu Franța uriașa hidrocentrală de un miliard de euro de la Tarnița",
+      "url": "https://stirileprotv.ro/stiri/financiar/romania-va-construi-impreuna-cu-franta-uriasa-hidrocentrala-de-un-miliard-de-euro-de-la-tarnita.html?category_slug=stiri%2Ffinanciar",
+      "summary": "Hidroelectrica, producătorul de energie deținut de statul român, s-a asociat cu gigantul energetic francez EDF, controlat, de asemenea, de stat, în proiectul Tarnița. Uriașa hidrocentrală Tarnița are costuri estimate la peste un miliard de euro.",
+      "publishedAt": "2026-01-27T20:18:05.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.025Z"
+    },
+    {
+      "id": "eaec51582ab2d979",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Actor celebru, amendat cu 140 de lire după ce a depășit viteza cu 8 km/h pe un scuter, în Londra",
+      "url": "https://stirileprotv.ro/show-buzz/entertainment/actor-celebru-amendat-cu-140-de-lire-dupa-ce-a-depasit-viteza-cu-8-km-h-pe-un-scuter-in-londra-cine-este.html?category_slug=show-buzz%2Fentertainment",
+      "summary": "Actorul englez Idris Elba a fost condamnat și amendat pentru depășirea vitezei legale, fiind surprins circulând cu 28 km/h pe scuterul său BMW, într-o zonă cu limită de 20 km/h.",
+      "publishedAt": "2026-01-27T20:16:37.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.025Z"
+    },
+    {
+      "id": "3645bb47505ae5ec",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Donald Trump, după moartea lui Alex Pretti, împușcat de 10 ori în 5 secunde de agenții ICE: „Un incident foarte nefericit”",
+      "url": "https://stirileprotv.ro/stiri/international/donald-trump-dupa-moartea-lui-alex-pretti-impuscat-de-10-ori-in-5-secunde-de-agentii-ice-un-incident-foarte-nefericit.html?category_slug=stiri%2Finternational",
+      "summary": "Președintele SUA, Donald Trump, a catalogat drept „foarte tristă” moartea lui Alex Pretti, un infirmier american de 37 de ani ucis de agenți federali la Minneapolis.",
+      "publishedAt": "2026-01-27T19:52:07.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.025Z"
+    },
+    {
+      "id": "22947626cf5ee907",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "„Cu toții cunoaștem pe cineva care a fost ucis” – protestatari din Iran povestesc despre represiunea brutală",
+      "url": "https://stirileprotv.ro/stiri/international/cu-totii-cunoastem-pe-cineva-care-a-fost-ucis-protestatari-din-iran-povestesc-despre-represiunea-brutala.html?category_slug=stiri%2Finternational",
+      "summary": "„Toți prietenii mei sunt ca mine. Cu toții cunoaștem pe cineva care a fost ucis în proteste.” Pentru Parisa, o tânără de 29 de ani din Teheran, represiunea forțelor de securitate din Iran de la începutul acestei luni a fost fără precedent, scrie BBC.",
+      "publishedAt": "2026-01-27T19:50:36.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.025Z"
+    },
+    {
+      "id": "b83998de4bddacf6",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Un german a fost nevoit să plătească 42.000 de euro pentru un transplant de rinichi, pentru că nu a vrut să aștepte 9 ani",
+      "url": "https://stirileprotv.ro/stiri/international/un-german-a-fost-nevoit-sa-plateasca-42-000-de-euro-pentru-un-transplant-de-rinichi-pentru-ca-nu-a-vrut-sa-astepte-9-ani.html?category_slug=stiri%2Finternational",
+      "summary": "Un bărbat de 66 de ani din Germania nu va primi înapoi cei 42.000 de euro plătiți pentru un transplant de rinichi în Olanda. O instanță a decis că asigurările nu trebuie să deconteze tratamente externe cât timp există alternative medicale în țară.",
+      "publishedAt": "2026-01-27T19:38:00.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.025Z"
+    },
+    {
+      "id": "430d0f79c4a6e46b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Poliomielita, o boală îngrozitoare, a reapărut în Europa. Cu atâția români care fug de vaccin, țara noastră e în mare pericol",
+      "url": "https://stirileprotv.ro/stiri/sanatate/poliomielita-o-boala-ingrozitoare-a-reaparut-in-europa-romania-este-in-pericol-din-cauza-rate-de-vaccinare-extrem-de-mici.html?category_slug=stiri%2Fsanatate",
+      "summary": "Poliomielita, o boală foarte gravă și incurabilă, a reapărut în Europa, iar România este în pericol pentru că are una dintre cele mai mici rate de vaccinare, de numai 60%, în condițiile în care media europeană este de peste 90-95%.",
+      "publishedAt": "2026-01-27T19:37:14.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.025Z"
+    },
+    {
+      "id": "d30e8d09c98bb555",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "PAOK Salonic, mesaj sfâșietor după moartea a șapte suporteri în accidentul din Timiș: „Doar o dorință… Niciodată din nou”",
+      "url": "https://stirileprotv.ro/stiri/actualitate/paok-salonic-mesaj-sfasietor-dupa-moartea-a-sapte-suporteri-in-accidentul-din-timis-doar-o-dorinta-niciodata-din-nou.html?category_slug=stiri%2Factualitate",
+      "summary": "Clubul PAOK Salonic a postat un mesaj emoţionant în social media, după moartea a şapte suporteri ai echipei lui Răzvan Lucescu într-un accident rutier în Timiş.",
+      "publishedAt": "2026-01-27T19:35:45.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.025Z"
+    },
+    {
+      "id": "31f4b95ef0d37334",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Insula „fantomă” unde mii de oameni au murit înainte să devină un sanatoriu. E la doi pași de o destinație celebră din Europa",
+      "url": "https://stirileprotv.ro/stiri/travel/insula-fantoma-unde-mii-de-oameni-au-murit-inainte-sa-devina-un-azil-e-la-doi-pasi-de-o-destinatie-celebra-din-europa.html?category_slug=stiri%2Ftravel",
+      "summary": "Timp de secole, insula Poveglia din Laguna Veneției, Italia, a fost asociată cu frica și groaza, după ce a fost folosită ca loc de carantină pentru bolnavii de ciumă, iar ulterior ca spital de psihiatrie.",
+      "publishedAt": "2026-01-27T19:31:18.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.025Z"
+    },
+    {
+      "id": "3348f8dccbf64b64",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Horoscop 28 ianuarie 2026, cu Neti Sandu. Cine are șanse să bată palma pentru un contract bănos",
+      "url": "https://stirileprotv.ro/show-buzz/horoscop/horoscop-28-ianuarie-2026-cu-neti-sandu-o-zi-cu-succes-si-spor.html?category_slug=show-buzz%2Fhoroscop",
+      "summary": "Horoscop 28 ianuarie 2026, prezentat de Neti Sandu la Știrile PRO TV. O zi chiar frumoasă. Mai sunt și astfel de zile-cadou și o să ne bucurăm, pur și simplu, de viață și o să fim recunoscători pentru tot ce am primit.",
+      "publishedAt": "2026-01-27T19:19:35.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.025Z"
+    },
+    {
+      "id": "e0ef9c3781c7aee7",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ceasul Apocalipsei, dat înainte: Omenirea nu s-a aflat niciodată mai aproape de sfârșitul lumii. Cât arăta la inaugurarea sa",
+      "url": "https://stirileprotv.ro/stiri/social/orologiul-apocalipsei-ticaie-omenirea-nu-s-a-aflat-niciodata-mai-aproape-de-sfarsitul-lumii-cat-arata-la-inaugurarea-sa.html?category_slug=stiri%2Fsocial",
+      "summary": "Orologiul Apocalipsei, care simbolizează din 1947 iminenţa unui cataclism planetar, s-a apropiat marţi de miezul nopţii mai mult ca niciodată, în timp ce cresc îngrijorările cu privire la armamentul nuclear, la modificările climatice şi la dezinformare.",
+      "publishedAt": "2026-01-27T19:13:16.000Z",
+      "fetchedAt": "2026-01-28T02:07:28.025Z"
+    },
+    {
+      "id": "21b384cedba75920",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Venezuela: Președinta interimară afirmă că SUA deblochează fondurile vizate de sancțiuni",
+      "url": "https://agerpres.ro/politic-extern/2026/01/28/venezuela-presedinta-interimara-afirma-ca-sua-deblocheaza-fondurile-vizate-de-sanctiuni--1522602",
+      "summary": "",
+      "publishedAt": "2026-01-28T02:07:28.573Z",
+      "fetchedAt": "2026-01-28T02:07:28.573Z"
+    },
+    {
+      "id": "5a0a8b4c6aa27aef",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Coreea de Nord: Kim Jong Un va dezvălui 'următoarea etapă' a programului său de descurajare nucleară la congresul partidului",
+      "url": "https://agerpres.ro/politic-extern/2026/01/28/coreea-de-nord-kim-jong-un-va-dezvalui-urmatoarea-etapa-a-programului-sau-de-descurajare-nucleara-la--1522601",
+      "summary": "",
+      "publishedAt": "2026-01-28T02:07:28.573Z",
+      "fetchedAt": "2026-01-28T02:07:28.573Z"
+    },
+    {
+      "id": "0c989121f6495fd7",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Olanda ar putea avea un nou guvern luna viitoare",
+      "url": "https://agerpres.ro/politic-extern/2026/01/28/olanda-ar-putea-avea-un-nou-guvern-luna-viitoare--1522599",
+      "summary": "",
+      "publishedAt": "2026-01-28T02:07:28.573Z",
+      "fetchedAt": "2026-01-28T02:07:28.573Z"
+    },
+    {
+      "id": "7a07b83475800435",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Israel: Organizarea alegerilor acum ar fi 'o greșeală', spune Netanyahu",
+      "url": "https://agerpres.ro/politic-extern/2026/01/27/israel-organizarea-alegerilor-acum-ar-fi-o-greseala-spune-netanyahu--1522596",
+      "summary": "",
+      "publishedAt": "2026-01-28T02:07:28.573Z",
+      "fetchedAt": "2026-01-28T02:07:28.573Z"
+    },
+    {
+      "id": "6aa054e7816d18e2",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Volei masculin: CS Dinamo București, eliminată dramatic din Cupa CEV",
+      "url": "https://agerpres.ro/sport-extern/2026/01/27/volei-masculin-cs-dinamo-bucuresti-eliminata-dramatic-din-cupa-cev--1522592",
+      "summary": "",
+      "publishedAt": "2026-01-28T02:07:28.573Z",
+      "fetchedAt": "2026-01-28T02:07:28.573Z"
+    },
+    {
+      "id": "86bf987eaa302eb7",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Tragedia din Timiș/Bolojan transmite condoleanțe familiilor victimelor: Gândurile noastre se îndreaptă către cei afectați",
+      "url": "https://agerpres.ro/politic/2026/01/27/tragedia-din-timis-bolojan-transmite-condoleante-familiilor-victimelor-gandurile-noastre-se-indreapt--1522590",
+      "summary": "",
+      "publishedAt": "2026-01-28T02:07:28.573Z",
+      "fetchedAt": "2026-01-28T02:07:28.573Z"
+    },
+    {
+      "id": "7f7c28f8aded3cd3",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Varșovia îl îndeamnă pe Musk să deconecteze armata rusă de la rețeaua sa Starlink",
+      "url": "https://agerpres.ro/politic-extern/2026/01/27/varsovia-il-indeamna-pe-musk-sa-deconecteze-armata-rusa-de-la-reteaua-sa-starlink--1522591",
+      "summary": "",
+      "publishedAt": "2026-01-28T02:07:28.573Z",
+      "fetchedAt": "2026-01-28T02:07:28.573Z"
+    },
+    {
+      "id": "ade3a81774cdc2be",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Hochei feminin: Victorie la scor astronomic pentru România, la Campionatul Mondial Under-18",
+      "url": "https://agerpres.ro/sport-extern/2026/01/27/hochei-feminin-victorie-la-scor-astronomic-pentru-romania-la-campionatul-mondial-under-18--1522593",
+      "summary": "",
+      "publishedAt": "2026-01-28T02:07:28.573Z",
+      "fetchedAt": "2026-01-28T02:07:28.573Z"
+    },
+    {
+      "id": "a27dd072f20f687f",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "'Sinners' și 'One Battle After Another', printre filmele nominalizate la premiile Sindicatului scenariștilor americani (WGA)",
+      "url": "https://agerpres.ro/cultura/2026/01/27/sinners-si-one-battle-after-another-printre-filmele-nominalizate-la-premiile-sindicatului-scenaristi--1522589",
+      "summary": "",
+      "publishedAt": "2026-01-28T02:07:28.573Z",
+      "fetchedAt": "2026-01-28T02:07:28.573Z"
+    },
+    {
+      "id": "1865e0ee0a73b32a",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Germania propune o UE 'cu două viteze', în care grupul principalelor șase economii să avanseze în politici cheie",
+      "url": "https://agerpres.ro/politic-extern/2026/01/27/germania-propune-o-ue-cu-doua-viteze-in-care-grupul-principalelor-sase-economii-sa-avanseze-in-polit--1522588",
+      "summary": "",
+      "publishedAt": "2026-01-28T02:07:28.573Z",
+      "fetchedAt": "2026-01-28T02:07:28.573Z"
+    },
+    {
+      "id": "7eb8e321b2a18d5d",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Volei feminin: CSO Voluntari, victorioasă în Polonia, în Cupa CEV",
+      "url": "https://agerpres.ro/sport-extern/2026/01/27/volei-feminin-cso-voluntari-victorioasa-in-polonia-in-cupa-cev--1522587",
+      "summary": "",
+      "publishedAt": "2026-01-28T02:07:28.573Z",
+      "fetchedAt": "2026-01-28T02:07:28.573Z"
+    },
+    {
+      "id": "10ae41888f92bfd1",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Rogobete: Înființăm Centrul de Management al Obezității în cadrul Institutului 'C.I. Parhon'",
+      "url": "https://agerpres.ro/sanatate/2026/01/27/rogobete-infiintam-centrul-de-management-al-obezitatii-in-cadrul-institutului-c-i-parhon--1522584",
+      "summary": "",
+      "publishedAt": "2026-01-28T02:07:28.573Z",
+      "fetchedAt": "2026-01-28T02:07:28.573Z"
+    },
+    {
+      "id": "09d9ec832c904531",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Timiș: Doi bărbați, reținuți pentru braconaj cinegetic și deținere ilegală de arme și muniție letale",
+      "url": "https://agerpres.ro/justitie/2026/01/27/timis-doi-barbati-retinuti-pentru-braconaj-cinegetic-si-detinere-ilegala-de-arme-si-munitie-letale--1522585",
+      "summary": "",
+      "publishedAt": "2026-01-28T02:07:28.573Z",
+      "fetchedAt": "2026-01-28T02:07:28.573Z"
+    },
+    {
+      "id": "e343ccad335101cc",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Premierul - întrevedere la Berlin cu reprezentanții Camerei de Comerț și Industrie a Germaniei: România - interesată de atragerea de noi investiții",
+      "url": "https://agerpres.ro/politic/2026/01/27/premierul---intrevedere-la-berlin-cu-reprezentantii-camerei-de-comert-si-industrie-a-germaniei-roman--1522583",
+      "summary": "",
+      "publishedAt": "2026-01-28T02:07:28.573Z",
+      "fetchedAt": "2026-01-28T02:07:28.573Z"
+    },
+    {
+      "id": "6b96cd9b79120f97",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "SUA: Trump spune că șefa Departamentului Securității Interne va rămâne în funcție, după incidentele de la Minneapolis",
+      "url": "https://agerpres.ro/politic-extern/2026/01/27/sua-trump-spune-ca-sefa-departamentului-securitatii-interne-va-ramane-in-functie-dupa-incidentele-de--1522582",
+      "summary": "",
+      "publishedAt": "2026-01-28T02:07:28.573Z",
+      "fetchedAt": "2026-01-28T02:07:28.573Z"
+    },
+    {
+      "id": "c171080f423510ba",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "Cătălin Țone (specialist antidrog): În centrele de sănătate mintală nu se poate face combaterea consumului de droguri",
+      "url": "https://agerpres.ro/social/2026/01/27/catalin-tone-specialist-antidrog-in-centrele-de-sanatate-mintala-nu-se-poate-face-combaterea-consumu--1522581",
+      "summary": "",
+      "publishedAt": "2026-01-28T02:07:28.573Z",
+      "fetchedAt": "2026-01-28T02:07:28.573Z"
+    },
+    {
+      "id": "1488930e2af170c0",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "title": "A murit medicul Nicolae Poiană, pionier în reproducerea asistată în România; Firea: Medicina românească e mai săracă",
+      "url": "https://agerpres.ro/sanatate/2026/01/27/a-murit-medicul-nicolae-poiana-pionier-in-reproducerea-asistata-in-romania-firea-medicina-romaneasca--1522580",
+      "summary": "",
+      "publishedAt": "2026-01-28T02:07:28.573Z",
+      "fetchedAt": "2026-01-28T02:07:28.573Z"
     }
   ],
-  "lastUpdated": "2026-01-27T18:46:49.775Z"
+  "lastUpdated": "2026-01-28T02:07:28.579Z"
 }
