@@ -8560,7 +8560,347 @@
       "summary": "",
       "publishedAt": "2026-01-28T02:07:28.573Z",
       "fetchedAt": "2026-01-28T02:07:28.573Z"
+    },
+    {
+      "id": "3faa23485c4361b4",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Entez finalizează achiziția Superpont și își extinde prezența pe piața iGaming din România",
+      "url": "https://hotnews.ro/entez-finalizeaza-achizitia-superpont-si-isi-extinde-prezenta-pe-piata-igaming-din-romania-2159892",
+      "summary": "Grupul Entez, activ în domeniul marketingului afiliat pentru industria iGaming, anunță finalizarea achiziției integrale a Superpont, unul dintre cei mai bine poziționați afiliați de gambling online din România. Valoarea tranzacției nu a fost făcută publică. În urma…",
+      "publishedAt": "2026-01-28T06:37:43.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.577Z"
+    },
+    {
+      "id": "fab4dda7458f674d",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Franța elimină giganții SUA, Microsoft Teams și Zoom, în favoarea unei „platforme suverane” / „Dependențele pot fi folosite împotriva noastră”",
+      "url": "https://hotnews.ro/franta-elimina-gigantii-sua-microsoft-teams-si-zoom-in-favoarea-unei-platforme-suverane-dependentele-pot-fi-folosite-impotriva-noastra-2159877",
+      "summary": "Funcționarii publici francezi vor fi obligați să utilizeze exclusiv platforma națională „Visio” până în anul 2027, după ce Guvernul de la Paris a decis să interzică giganții americani Microsoft Teams, Zoom și Google Meet în…",
+      "publishedAt": "2026-01-28T06:08:39.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.577Z"
+    },
+    {
+      "id": "8cb67cc293434b70",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Misiune tragică pentru un pompier, care a intervenit la accidentul în care propria fiică de 14 ani și-a pierdut viața. Mesajul DSU",
+      "url": "https://hotnews.ro/pompier-brasov-accident-fiica-14-ani-dsu-2159885",
+      "summary": "Departamentul pentru Situaţii de Urgenţă (DSU) a transmis mesaj de condoleanţe, după ce un pompier din judeţul Braşov a intervenit chiar la accidentul în care a fost implicată fiica sa de 14 ani. „Sunt misiuni…",
+      "publishedAt": "2026-01-28T05:53:26.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.577Z"
+    },
+    {
+      "id": "5cfa15157f9e1e51",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Sute de suporterii PAOK Salonic s-au întors din drumul spre Lyon, după ce șapte microbiști greci au murit în accidentul grav de la Lugoj",
+      "url": "https://hotnews.ro/sute-de-suporterii-paok-salonic-s-au-intors-din-drumul-spre-lyon-dupa-ce-sapte-microbisti-greci-au-murit-in-accidentul-grav-de-la-lugoj-2159878",
+      "summary": "Sute de suporteri ai echipei PAOK Salonic, antrenată de Răzvan Lucescu, au sosit în cursul serii de marţi la Lugoj, pentru a afla care este starea răniților din accidentul teribil, în care au murit șapte…",
+      "publishedAt": "2026-01-28T05:37:20.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.577Z"
+    },
+    {
+      "id": "472181a288e01e20",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "Digi a devenit „un paradis al locurilor de muncă, adăpost de lucru al angajaților”, mergând împotriva curentului și ignorând regula de aur în Spania",
+      "url": "https://hotnews.ro/digi-a-devenit-un-paradis-al-locurilor-de-munca-adapost-de-lucru-al-angajatilor-mergand-impotriva-curentului-si-ignorand-regula-de-aur-in-spania-2159874",
+      "summary": "Operatorul român de telecomunicații Digi își triplează forța de muncă în Spania în timp ce concurenții ajustează schema de personal. Citește mai mult pe Profit.ro.",
+      "publishedAt": "2026-01-28T05:12:55.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.577Z"
+    },
+    {
+      "id": "8758185ebf0b0d6a",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "De ce partidele de dreapta radicală obțin scoruri tot mai mari în rândul celei mai numeroase minorități din România",
+      "url": "https://hotnews.ro/de-ce-partidele-de-dreapta-radicala-obtin-scoruri-tot-mai-mari-in-randul-celei-mai-numeroase-minoritati-din-romania-2158305",
+      "summary": "După nenumărate cicluri electorale, din 1992 încoace, România a ajuns într-un punct în care oboseala democratică este mai vizibilă decât încrederea. Mulți cetățeni au sentimentul că votul nu schimbă nimic, că puterea rămâne blocată în aceleași…",
+      "publishedAt": "2026-01-28T05:00:33.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.577Z"
+    },
+    {
+      "id": "fa35ca5cf3118a17",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "INTERVIU cu Lisa-Maria Tănase, românca de la Cambridge a cărei cercetare a fost discutată în Parlamentul Marii Britanii. Cum pot ajunge politicienii să evite „inițiative ambițioase”",
+      "url": "https://hotnews.ro/interviu-cu-lisa-maria-tanase-romanca-de-la-cambridge-a-carei-cercetare-a-fost-discutata-in-parlamentul-marii-britanii-2157330",
+      "summary": "Lisa-Maria Tănase este cercetătoare în psihologie politică la University of Cambridge și autoarea unui studiu din teza sa de doctorat, citat în Parlamentul britanic și analizat de The Guardian. Cercetarea sa arată că politicienii din…",
+      "publishedAt": "2026-01-28T05:00:24.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.577Z"
+    },
+    {
+      "id": "dde953c9189a8366",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "INTERVIU Un personaj extrem de apropiat de Zelenski folosește un interviu din România ca să vorbească pozitiv despre delegația trimisă de Putin la negocierile de pace de la Abu Dhabi: „Este pregătită să asculte, să formuleze argumente și să accepte argumente”",
+      "url": "https://hotnews.ro/interviu-un-personaj-extrem-de-apropiat-de-zelenski-foloseste-un-interviu-din-romania-ca-sa-vorbeasca-pozitiv-despre-delegatia-trimisa-de-putin-la-negocierile-de-pace-de-la-abu-dhabi-este-pr-2158400",
+      "summary": "„Delegația rusă condusă de Kostyukov arată diferit față de delegațiile pe care Rusia le-a trimis anterior la întâlnirile cu ai noștri. Este pregătită să asculte, să formuleze argumente și să accepte argumente. Nu mai există acea aroganță specifică grupului Medinski, care vorbea despre distrugerea tuturor”, a spus un personaj extrem de apropiat de Volodimir Zelenski.",
+      "publishedAt": "2026-01-28T05:00:11.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.577Z"
+    },
+    {
+      "id": "8a5b28d171c87f97",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "title": "De ce amenință China și India să arunce în aer datoria națională a SUA",
+      "url": "https://hotnews.ro/de-ce-ameninta-china-si-india-sa-arunce-in-aer-datoria-nationala-a-sua-2159871",
+      "summary": "Cele două țări continuă să „scape” treptat de obligațiunile americane din trezoreriile lor. A doua și a cincea cea mai mare economie a lumii continuă să vândă obligațiuni americane din trezoreriile lor, ceea ce provoacă…",
+      "publishedAt": "2026-01-28T04:26:56.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.577Z"
+    },
+    {
+      "id": "01d11c0d8c29cb96",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "NBA. Kawhi Leonard intră într-un club select al echipei LA Clippers, în victoria cu Utah Jazz",
+      "url": "https://www.mediafax.ro/sport/nba-kawhi-leonard-intra-intr-un-club-select-al-echipei-la-clippers-in-victoria-cu-utah-jazz-23677650",
+      "summary": "Los Angeles Clippers a învins miercuri, în deplasare, pe Utah Jazz, scor 111-99, obținând a noua victorie în ultimele zece meciuri disputate în NBA. Kawhi Leonard a fost principalul marcator de la Clippers, cu 21 de puncte, reușind al 25-lea meci consecutiv în care înscrie cel puțin 20 de puncte.",
+      "publishedAt": "2026-01-28T06:38:06.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.881Z"
+    },
+    {
+      "id": "830cc56c000743f1",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Fosta primă doamnă a Coreei de Sud ar putea fi condamnată la închisoare pentru luare de mită",
+      "url": "https://www.mediafax.ro/externe/fosta-prima-doamna-a-coreei-de-sud-ar-putea-fi-condamnata-la-inchisoare-pentru-luare-de-mita-23677648",
+      "summary": "Un tribunal districtual din Coreea de Sud urmează să pronunțe miercuri hotărârea în procesul lui Kim Keon Hee, soția fostului președinte destituit Yoon Suk Yeol, care ar putea fi condamnată la închisoare dacă va fi găsită vinovată de acuzații care includ luarea de mită.",
+      "publishedAt": "2026-01-28T06:38:06.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.881Z"
+    },
+    {
+      "id": "8c4d1c250ba9e52b",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Rogobete, despre starea victimelor de la accidentul din Timiș:  Sunt în prezent stabili hemodinamic",
+      "url": "https://www.mediafax.ro/social/rogobete-despre-starea-victimelor-de-la-accidentul-din-timis-sunt-in-prezent-stabili-hemodinamic-23677649",
+      "summary": "Ministrul Sănătății, Alexandru Rogobete, a anunțat, miercuri, că cei trei supraviețuitori ai accidentului din județul Timiș sunt în prezent stabili sub supraveghere medicală, după evenimentul rutier tragic soldat cu șapte decese.",
+      "publishedAt": "2026-01-28T06:37:07.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.881Z"
+    },
+    {
+      "id": "7f0c338df6eb2c9a",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Congresmana Ilhan Omar, atacată cu un lichid necunoscut în timpul unei întâlniri publice în Minnesota",
+      "url": "https://www.mediafax.ro/externe/congresmana-ilhan-omar-atacata-cu-un-lichid-necunoscut-in-timpul-unei-intalniri-publice-in-minnesota-23677635",
+      "summary": "În timpul unei întâlniri cu alegătorii desfășurate la Minneapolis, reprezentanta democrată Ilhan Omar a fost ținta unui atac din partea unui bărbat aflat în public. Potrivit declarațiilor autorităților locale, relatate de BBC, incidentul a avut loc marți seară, când un individ a utilizat o seringă pentru a pulveriza un lichid necunoscut asupra congresmanei, în timp ce aceasta se afla la pupitru.",
+      "publishedAt": "2026-01-28T06:29:19.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.881Z"
+    },
+    {
+      "id": "1df689581d1c9d00",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Swiatek, apel pentru mai multă intimitate, la Australian Open: Suntem jucători sau animale la zoo?",
+      "url": "https://www.mediafax.ro/sport/swiatek-apel-pentru-mai-multa-intimitate-la-australian-open-suntem-jucatori-sau-animale-la-zoo-23677642",
+      "summary": "Iga Swiatek, locul 2 mondial, a reluat, miercuri, tema lansată de Coco Gauff la Australian Open privind lipsa de intimitate a jucătorilor, afirmând că sportivii ar avea nevoie de mai mult spațiu pentru a-și gestiona emoțiile și rutina, fără a fi permanent sub supravegherea camerelor de filmat.",
+      "publishedAt": "2026-01-28T06:26:14.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.881Z"
+    },
+    {
+      "id": "c3e1a3e9b4e89aa2",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Un endocrinolog dezvăluie secretul orezului alb",
+      "url": "https://www.mediafax.ro/sanatate/un-endocrinolog-dezvaluie-secretul-orezului-alb-23677633",
+      "summary": "Orezul integral are o capacitate de creștere a glicemiei de două ori mai mică decât pâinea, afirmă endocrinologul Francisco Rosero. Medicul oferă și sfaturi esențiale pentru consumul corect al orezului alb.",
+      "publishedAt": "2026-01-28T06:23:23.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.881Z"
+    },
+    {
+      "id": "e762febf700c8d90",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Greenpeace: Franța continuă să importe uraniu îmbogățit din Rusia",
+      "url": "https://www.mediafax.ro/externe/greenpeace-franta-continua-sa-importe-uraniu-imbogatit-din-rusia-23677640",
+      "summary": "Franța și Rusia nu au rupt complet relațiile. La aproape patru ani de la invadarea Ucrainei, Greenpeace denunță într-un nou raport publicat, miercuri, continuarea comerțului nuclear între Franța și Rusia, un domeniu care nu a fost afectat de sancțiunile internaționale.",
+      "publishedAt": "2026-01-28T06:21:56.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.881Z"
+    },
+    {
+      "id": "87740cb0b15b5b02",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "22 de companii de stat, în centrul reformei cerute prin PNRR",
+      "url": "https://www.mediafax.ro/economic/22-de-companii-de-stat-in-centrul-reformei-cerute-prin-pnrr-23677631",
+      "summary": "Guvernul a selectat 22 de companii de stat care vor intra primele într-un proces de restructurare, parte a angajamentelor asumate de România prin Planul Național de Redresare și Reziliență.",
+      "publishedAt": "2026-01-28T06:08:03.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.881Z"
+    },
+    {
+      "id": "37b249fe996551a7",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Termenul oficial pentru evaluarea îndeplinirii jaloanelor din PNRR și apoi eliberarea tranșei a treia de plată expiră azi. Care este stadiul? Răspunsul Comisiei Europene",
+      "url": "https://www.mediafax.ro/economic/termenul-oficial-pentru-evaluarea-indeplinirii-jaloanelor-din-pnrr-si-apoi-eliberarea-transei-a-treia-de-plata-expira-azi-care-este-stadiul-raspunsul-comisiei-europene-23677543",
+      "summary": "Comisie Europeană trebuie să verifice dacă România a îndeplinit obligațiile asumate prin jaloanele din Planul Național de Redresare și Reziliență (PNRR) aferente celei de-a treia tranșe de plată în valoare totală de 809,4 milioane de euro, înainte de a debloca aceste sume.",
+      "publishedAt": "2026-01-28T06:00:21.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.881Z"
+    },
+    {
+      "id": "3f36db1371ce40df",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "SUA: Dovezile contrazic relatările oficialilor responsabili cu imigrația în 6 confruntări violente",
+      "url": "https://www.mediafax.ro/externe/sua-dovezile-contrazic-relatarile-oficialilor-responsabili-cu-imigratia-in-6-confruntari-violente-23677623",
+      "summary": "Înalții oficiali ai administrației Trump responsabili cu imigrația au făcut în repetate rânduri declarații după incidente violente în care au fost implicați agenți federali, inclusiv 2 soldate cu moartea unor cetățeni americani în Minneapolis în această lună, care au fost apoi contrazise de de probe.",
+      "publishedAt": "2026-01-28T05:54:39.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.881Z"
+    },
+    {
+      "id": "897daad8a07a4a39",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Spania. Guvernul va permite unui număr de până la 500 de mii de imigranți ilegali să solicite rezidența, dacă nu au antecedente penale și se află în țară de cel puțin cinci luni. A aprobat un plan în acest sens.",
+      "url": "https://www.biziday.ro/346317-2/",
+      "summary": "Guvernul de stânga condus de Pedro Sanchez a anunțat că a aprobat un plan accelerat privind situația imigranților, majoritatea lor fiind din America Latină și din Africa. Măsura este una dintre cele mai importante de acest fel din Europa, din ultimii ani, și contravine tendințelor multor guverne europene de a adopta poziții dure în ceea […]",
+      "publishedAt": "2026-01-28T05:50:47.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.371Z"
+    },
+    {
+      "id": "2a0c85c60e7cdadc",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "title": "Accident rutier grav în localitatea Pietroasele, pe drumul dintre Buzău și Accident rutier grav în localitatea Pietroasele, pe drumul dintre Buzău și Ploiești (DN1B). Două persoane au murit și cinci au fost rănite, după ce un autoturism și o autoutilitară s-au ciocnit, la intersecția cu DJ203C.(DN1B). Două persoane au murit și cinci au fost rănite, după ce un autoturism și o autoutilitară s-au ciocnit, la intersecția cu DJ203C.",
+      "url": "https://www.biziday.ro/346320-2/",
+      "summary": "UPDATE, ora 8:30. Două persoane și-au pierdut viața – o tânără de 29 de ani și un bărbat de 46 de ani, șoferul unuia dintre autovehicule, conform ISU Buzău, citat de News.ro. Știrea în formă inițială. Centrul Infotrafic al Poliției Române anunță că s-a produs un accident rutier grav la intersecția celor două drumuri. Se […]",
+      "publishedAt": "2026-01-28T05:24:12.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.371Z"
+    },
+    {
+      "id": "a88f2de3378216e4",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Bilanțul dezastrelor provocate de ploile torențiale din ultimele zile: „Niciodată nu am văzut așa ceva”",
+      "url": "https://stirileprotv.ro/stiri/actualitate/bilantul-dezastrelor-provocate-de-ploile-torentiale-din-ultimele-zile-niciodata-nu-am-vazut-asa-ceva.html?category_slug=stiri%2Factualitate",
+      "summary": "Ploile torențiale din ultimele zile au provocat deja pagube serioase. În Dolj, pompierii au salvat la limită un tânăr surprins de viitură, după ce acesta a încercat să traverseze un râu.",
+      "publishedAt": "2026-01-28T06:26:57.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.753Z"
+    },
+    {
+      "id": "7162b9b190564a70",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Șofer decedat în Olt, după un impact pe contrasens. A făcut și victime colaterale",
+      "url": "https://stirileprotv.ro/stiri/actualitate/sofer-decedat-in-olt-dupa-un-impact-pe-contrasens-a-facut-si-victime-colaterale.html?category_slug=stiri%2Factualitate",
+      "summary": "Un șofer de 57 de ani, din Olt, a murit după ce a intrat pe sensul opus de mers și s-a izbit de o autoutilitară. Impactul i-a proiectat mașina în alta, condusă de o femeie.",
+      "publishedAt": "2026-01-28T06:04:54.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.753Z"
+    },
+    {
+      "id": "a1714d9510a3bf9d",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Bugetul României pe 2026, sub lupa agențiilor de rating. Noua evaluare a ratingului de țară va fi anunțată în februarie",
+      "url": "https://stirileprotv.ro/stiri/financiar/cand-va-anunta-fitch-ratingul-romaniei-ministrul-finantelor-am-incredere-ca-acest-raport-ne-va-confirma-ratingul.html?category_slug=stiri%2Ffinanciar",
+      "summary": "Guvernul face calcule pentru bugetul pe anul acesta sub lupa agențiilor de rating. Premierul Ilie Bolojan a discutat cu specialiștii Fitch care urmează să decidă dacă România își păstrează actualul calificativ atât de important pentru investitorii.",
+      "publishedAt": "2026-01-28T05:59:24.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.753Z"
+    },
+    {
+      "id": "1c72cfe25db82c50",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Cum au scăpat cu viață doi bărbați din Bacău după ce căruța în care erau a fost lovită de tren",
+      "url": "https://stirileprotv.ro/stiri/actualitate/cum-au-scapat-cu-viata-doi-barbati-din-bacau-dupa-ce-caruta-in-care-erau-a-fost-lovita-de-tren.html?category_slug=stiri%2Factualitate",
+      "summary": "Doi bărbați din Bacău au scăpat cu viață după ce căruța în care se aflau a fost lovită de tren. Cel mai în vârstă s-a ales cu o fractură la gleznă, în timp ce fiul său, doar cu o sperietură îngrozitoare.",
+      "publishedAt": "2026-01-28T05:48:48.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.753Z"
+    },
+    {
+      "id": "445ea6df23b805f7",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ministerul Justiției analizează schimbarea Codului Penal după crima din Timiș. Minorii sub 16 ani ar putea fi limitați online",
+      "url": "https://stirileprotv.ro/stiri/actualitate/se-schimba-raspunderea-penala-a-minorilor-ministerul-justitiei-analizeaza-modificarea-codului-penal.html?category_slug=stiri%2Factualitate",
+      "summary": "Pragul minim al vârstei de la care copiii pot răspunde penal pentru infracțiuni foarte grave ar putea să dispară, iar minorii ar putea fi acuzați doar pe baza discernământului.",
+      "publishedAt": "2026-01-28T05:47:58.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.753Z"
+    },
+    {
+      "id": "66731ace1aff61a4",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Venezuela începe să-și primească banii înapoi. SUA deblochează fondurile, dar cu avertismente explicite către președintă",
+      "url": "https://stirileprotv.ro/stiri/international/venezuela-incepe-sa-si-primeasca-banii-inapoi-sua-deblocheaza-fondurile-dar-cu-avertismente-explicite-catre-presedinta.html?category_slug=stiri%2Finternational",
+      "summary": "Washingtonul a făcut un prim pas concret spre relaxarea sancţiunilor impuse Venezuelei, începând procesul de deblocare a unor fonduri ale statului sud-american îngheţate în ultimii ani.",
+      "publishedAt": "2026-01-28T05:41:56.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.753Z"
+    },
+    {
+      "id": "453b7c62fb7f42ea",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ce au observat martorii înaintea accidentului cu 7 fani PAOK morți, din Timiș. „Se vedea clar că nu avea nicio șansă”",
+      "url": "https://stirileprotv.ro/stiri/actualitate/martorii-accidentului-tragic-din-timis-soldat-cu-7-morti-nu-avea-nicio-sansa-sa-termine-depasirea.html?category_slug=stiri%2Factualitate",
+      "summary": "Șapte oameni au murit marți și trei au ajuns la spital, după o manevră fatală, pe un drum din Timiș. Un microbuz cu cetățeni greci s-a izbit de un TIR, în timpul unei depășiri periculoase.",
+      "publishedAt": "2026-01-28T05:35:49.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.753Z"
+    },
+    {
+      "id": "2dd8827781cd412c",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Vremea azi, 28 ianuarie 2026. Temperaturi de primăvară, urmate de ploi și vânt puternic",
+      "url": "https://stirileprotv.ro/stiri/vremea/vremea-azi-28-ianuarie-2026-temperaturi-de-primavara-urmate-de-ploi-si-vant-puternic.html?category_slug=stiri%2Fvremea",
+      "summary": "Miercuri, vremea se încălzește și avem temperaturi mai ridicate decât ar fi normal, în special în vest și în ținuturile sudice. Maximele pleacă de la 4 grade în Transilvania și ajung pe la 13 grade în sudul Banatului, pe la Reșița.",
+      "publishedAt": "2026-01-28T05:33:48.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.753Z"
+    },
+    {
+      "id": "0d74f4605ac2923c",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Sute de suporteri ai echipei PAOK au venit la Timișoara, după accidentul soldat cu șapte fani morți",
+      "url": "https://stirileprotv.ro/stiri/actualitate/sute-de-suporteri-ai-echipei-paok-au-venit-la-timisoara-dupa-accidentul-soldat-cu-7-microbisti-morti.html?category_slug=stiri%2Factualitate",
+      "summary": "Sute de suporteri ai echipei PAOK Salonic au sosit în cursul serii de marţi la Lugoj, pentru a vedea locul accidentului în care șapte bărbaţi au murit, iar alţi trei au fost răniţi.",
+      "publishedAt": "2026-01-28T05:24:00.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.753Z"
+    },
+    {
+      "id": "2cfde3345157f644",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Unde va avea loc finala Cupei Mondiale de fotbal din 2030. „Și-a dovedit capacitatea organizatorică de-a lungul multor ani”",
+      "url": "https://stirileprotv.ro/stiri/sport/unde-va-avea-loc-finala-cupei-mondiale-de-fotbal-din-2030-am-vazut-scene-care-dauneaza-imaginii-fotbalului-mondial.html?category_slug=stiri%2Fsport",
+      "summary": "Finala Cupei Mondiale de fotbal din 2030 va avea loc în Spania, a declarat preşedintele federaţiei de fotbal iberice, citat de BBC, preluat de News.ro.",
+      "publishedAt": "2026-01-28T05:21:04.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.753Z"
+    },
+    {
+      "id": "2f774b86014580f3",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Reacția pompierilor după drama colegului lor, care a intervenit chiar la accidentul în care i-a murit fiica, în Brașov",
+      "url": "https://stirileprotv.ro/stiri/actualitate/reactia-pompierilor-dupa-drama-colegului-lor-care-a-intervenit-chiar-la-accidentul-in-care-i-a-murit-fiica-in-brasov.html?category_slug=stiri%2Factualitate",
+      "summary": "O tragedie care a cutremurat sistemul de intervenţie de urgenţă din România a fost amintită public de pompierii de la DSU.",
+      "publishedAt": "2026-01-28T05:15:15.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.753Z"
+    },
+    {
+      "id": "0c51c4c9f45effcb",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Ilie Bolojan se întâlnește cu Friedrich Merz la Berlin. Premierul va discuta și cu reprezentanți ai comunității românești",
+      "url": "https://stirileprotv.ro/stiri/politic/ilie-bolojan-se-intalneste-cu-friedrich-merz-la-berlin-el-va-discuta-si-cu-reprezentanti-ai-comunitatii-romanesti.html?category_slug=stiri%2Fpolitic",
+      "summary": "Premierul Ilie Bolojan, care se află într-o vizită oficială de două zile în Germania, se va întâlni miercuri cu cancelarul federal Friedrich Merz.",
+      "publishedAt": "2026-01-28T05:14:41.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.753Z"
+    },
+    {
+      "id": "9192bcdd5fb8c561",
+      "sourceId": "europa-libera",
+      "sourceName": "Europa Liberă",
+      "title": "Cel puțin cinci morți după un atac rusesc asupra unui tren de pasageri din Ucraina. Zelenski cere sancțiuni mai dure împotriva Rusiei",
+      "url": "https://romania.europalibera.org/a/atac-rusesc-asupra-unui-tren-de-pasageri-in-ucraina-cinci-morti-si-apeluri-la-presiuni-internationale/33661935.html",
+      "summary": "Un atac cu drone lansat de Rusia asupra unui tren de pasageri din nord-estul Ucrainei a ucis cel puțin cinci persoane, potrivit procurorilor ucraineni. Președintele ucrainean, Volodimir Zelenski, a calificat drept atacul drept „terorism”.",
+      "publishedAt": "2026-01-28T05:51:54.000Z",
+      "fetchedAt": "2026-01-28T06:42:59.223Z"
     }
   ],
-  "lastUpdated": "2026-01-28T02:07:28.579Z"
+  "lastUpdated": "2026-01-28T06:43:08.500Z"
 }
