@@ -57,6 +57,7 @@ jobs:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           RESEND_SEGMENT_ID: ${{ secrets.RESEND_SEGMENT_ID }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
 
       - name: Publish issue to website
         if: steps.check.outputs.exists == 'true'
@@ -81,3 +82,13 @@ jobs:
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
+
+      - name: Alert on workflow failure
+        if: failure()
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
+        run: |
+          npm run alert-workflow-failure -- \
+            --workflow "Send Newsletter" \
+            --run-url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

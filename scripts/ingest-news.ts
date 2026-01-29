@@ -1,9 +1,11 @@
+import 'dotenv/config';
 import { createHash } from "crypto";
 import { readFileSync, writeFileSync, existsSync } from "fs";
 import { fileURLToPath } from "url";
 import { dirname, join } from "path";
 import Parser from "rss-parser";
 import type { RssSource, RawArticle, WeeklyBuffer } from "./types.js";
+import { sendAlert } from "./lib/alert.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -39,13 +41,19 @@ function hashArticle(sourceId: string, url: string): string {
   return createHash("sha256").update(`${sourceId}:${normalizeUrl(url)}`).digest("hex").slice(0, 16);
 }
 
-async function fetchFeed(source: RssSource): Promise<RawArticle[]> {
+interface FetchResult {
+  source: RssSource;
+  articles: RawArticle[];
+  error?: string;
+}
+
+async function fetchFeed(source: RssSource): Promise<FetchResult> {
   try {
     console.log(`Fetching ${source.name}...`);
     const feed = await parser.parseURL(source.url);
     const now = new Date().toISOString();
 
-    return (feed.items || []).map((item) => ({
+    const articles = (feed.items || []).map((item) => ({
       id: hashArticle(source.id, item.link || ""),
       sourceId: source.id,
       sourceName: source.name,
@@ -55,9 +63,11 @@ async function fetchFeed(source: RssSource): Promise<RawArticle[]> {
       publishedAt: item.isoDate || item.pubDate || now,
       fetchedAt: now,
     }));
+    return { source, articles };
   } catch (error) {
-    console.error(`Error fetching ${source.name}:`, error instanceof Error ? error.message : error);
-    return [];
+    const errorMsg = error instanceof Error ? error.message : String(error);
+    console.error(`Error fetching ${source.name}:`, errorMsg);
+    return { source, articles: [], error: errorMsg };
   }
 }
 
@@ -81,9 +91,28 @@ async function main() {
 
   console.log(`Fetching from ${sources.length} sources...`);
   const results = await Promise.all(sources.map(fetchFeed));
-  const allArticles = results.flat();
 
-  console.log(`Fetched ${allArticles.length} articles total`);
+  const failedFeeds = results.filter((r) => r.error);
+  const successfulFeeds = results.filter((r) => !r.error);
+  const allArticles = results.flatMap((r) => r.articles);
+
+  console.log(`Fetched ${allArticles.length} articles from ${successfulFeeds.length}/${sources.length} sources`);
+
+  // Alert only if ALL feeds failed - this needs human attention
+  if (failedFeeds.length === sources.length) {
+    await sendAlert({
+      title: "News ingestion failed",
+      reason: "All RSS feeds failed to fetch",
+      details: failedFeeds.map((f) => `${f.source.name}: ${f.error}`).join("\n"),
+      actionItems: [
+        "Check if there's a network issue with the GitHub Actions runner",
+        "Verify the RSS feed URLs are still valid in <code>data/sources.json</code>",
+        "Try running <code>npm run ingest-news</code> locally to debug",
+        "Check if the news sources have changed their RSS feed URLs",
+      ],
+    });
+    process.exit(1);
+  }
 
   const weekId = getISOWeekId();
   const buffer = loadWeeklyBuffer(weekId);
@@ -91,6 +120,12 @@ async function main() {
 
   const newArticles = allArticles.filter((a) => !existingIds.has(a.id));
   console.log(`Found ${newArticles.length} new articles`);
+
+  // Log failed feeds for visibility (but don't alert - partial failure is expected)
+  if (failedFeeds.length > 0) {
+    console.log(`\nNote: ${failedFeeds.length} feed(s) failed:`);
+    failedFeeds.forEach((f) => console.log(`  - ${f.source.name}: ${f.error}`));
+  }
 
   buffer.articles.push(...newArticles);
   buffer.lastUpdated = new Date().toISOString();

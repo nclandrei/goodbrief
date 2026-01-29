@@ -13,6 +13,7 @@ import type {
   ArticleCategory,
   WrapperCopy,
 } from './types.js';
+import { sendAlert } from './lib/alert.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -359,6 +360,18 @@ async function handleSend(
     });
 
   if (broadcastError || !broadcast) {
+    await sendAlert({
+      title: 'Newsletter send failed',
+      weekId,
+      reason: 'Failed to create Resend broadcast',
+      details: JSON.stringify(broadcastError, null, 2),
+      actionItems: [
+        'Check the Resend dashboard at <a href="https://resend.com/broadcasts">resend.com/broadcasts</a>',
+        'Verify the RESEND_API_KEY and RESEND_SEGMENT_ID are correct',
+        'Check if your Resend account has sending limits',
+        `Run manually: <code>npm run email:send -- --week ${weekId} --confirm</code>`,
+      ],
+    });
     console.error('Error creating broadcast:', broadcastError);
     process.exit(1);
   }
@@ -369,6 +382,18 @@ async function handleSend(
   const { error: sendError } = await resend.broadcasts.send(broadcast.id);
 
   if (sendError) {
+    await sendAlert({
+      title: 'Newsletter send failed',
+      weekId,
+      reason: 'Broadcast created but failed to send',
+      details: `Broadcast ID: ${broadcast.id}\nError: ${JSON.stringify(sendError, null, 2)}`,
+      actionItems: [
+        `Check the broadcast status at <a href="https://resend.com/broadcasts/${broadcast.id}">Resend dashboard</a>`,
+        'The broadcast may have been created but not sent - check if you can retry from the dashboard',
+        'Verify your Resend account has enough sending quota',
+        `If the broadcast shows as "draft", you can send it manually from the Resend dashboard`,
+      ],
+    });
     console.error('Error sending broadcast:', sendError);
     process.exit(1);
   }

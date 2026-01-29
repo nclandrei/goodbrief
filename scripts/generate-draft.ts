@@ -9,10 +9,11 @@ import type {
   WrapperCopy,
 } from './types.js';
 import { deduplicateArticles } from './lib/deduplication.js';
-import { processArticleBatch, createGeminiModel } from './lib/gemini.js';
+import { processArticleBatch, createGeminiModel, GeminiQuotaError } from './lib/gemini.js';
 import type { ArticleScore } from './lib/types.js';
 import { generateWrapperCopy } from '../emails/utils/generate-copy.js';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import { sendAlert } from './lib/alert.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -173,12 +174,37 @@ async function main() {
   const rawPath = join(ROOT_DIR, 'data', 'raw', `${weekId}.json`);
 
   if (!existsSync(rawPath)) {
+    await sendAlert({
+      title: 'Draft generation failed',
+      weekId,
+      reason: 'No raw data found for this week',
+      actionItems: [
+        'Check if the ingest-news workflow ran successfully',
+        `Verify the file exists at <code>data/raw/${weekId}.json</code>`,
+        'Run <code>npm run ingest-news</code> manually if needed',
+      ],
+    });
     console.error(`No raw data found for ${weekId}`);
     process.exit(1);
   }
 
   const buffer: WeeklyBuffer = JSON.parse(readFileSync(rawPath, 'utf-8'));
   console.log(`Processing ${buffer.articles.length} articles for ${weekId}`);
+
+  if (buffer.articles.length === 0) {
+    await sendAlert({
+      title: 'Draft generation failed',
+      weekId,
+      reason: 'Raw data file is empty (no articles ingested this week)',
+      actionItems: [
+        'Check if RSS feeds are working correctly',
+        'Run <code>npm run ingest-news</code> manually to debug',
+        'Consider if this is a holiday week with less news coverage',
+      ],
+    });
+    console.error('No articles to process');
+    process.exit(1);
+  }
 
   console.log('Deduplicating articles...');
   const dedupResult = deduplicateArticles(buffer.articles);
@@ -190,17 +216,37 @@ async function main() {
   const BATCH_SIZE = 200;
   const allScores: ArticleScore[] = [];
 
-  for (let i = 0; i < representatives.length; i += BATCH_SIZE) {
-    const batch = representatives.slice(i, i + BATCH_SIZE);
-    console.log(
-      `Processing batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(representatives.length / BATCH_SIZE)}...`
-    );
-    const scores = await processArticleBatch(batch, model, false);
-    allScores.push(...scores);
+  try {
+    for (let i = 0; i < representatives.length; i += BATCH_SIZE) {
+      const batch = representatives.slice(i, i + BATCH_SIZE);
+      console.log(
+        `Processing batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(representatives.length / BATCH_SIZE)}...`
+      );
+      const scores = await processArticleBatch(batch, model, false);
+      allScores.push(...scores);
 
-    if (i + BATCH_SIZE < representatives.length) {
-      await new Promise((r) => setTimeout(r, 1000));
+      if (i + BATCH_SIZE < representatives.length) {
+        await new Promise((r) => setTimeout(r, 1000));
+      }
     }
+  } catch (error) {
+    if (error instanceof GeminiQuotaError) {
+      await sendAlert({
+        title: 'Gemini API quota exhausted',
+        weekId,
+        reason: 'The Gemini API free tier quota has been exceeded',
+        details: error.message,
+        actionItems: [
+          'Wait for the quota to reset (usually resets daily)',
+          'Check usage at <a href="https://aistudio.google.com/">Google AI Studio</a>',
+          'Consider upgrading to a paid plan if this happens frequently',
+          'Run <code>npm run generate-draft</code> manually after quota resets',
+        ],
+      });
+      console.error('Gemini quota exhausted:', error.message);
+      process.exit(1);
+    }
+    throw error;
   }
 
   const scoreMap = new Map(allScores.map((s) => [s.id, s]));
@@ -233,6 +279,24 @@ async function main() {
 
   const positive = processed.filter((p) => p.positivity >= 40);
   const discarded = processed.length - positive.length;
+
+  // Alert if we don't have enough positive articles for a newsletter
+  if (positive.length < 5) {
+    await sendAlert({
+      title: 'Not enough positive articles',
+      weekId,
+      reason: `Only ${positive.length} positive articles found (need at least 5)`,
+      details: `Total processed: ${processed.length}, Discarded (low positivity): ${discarded}`,
+      actionItems: [
+        'Review the raw articles manually to see if scores are too strict',
+        'Consider lowering the positivity threshold temporarily',
+        'Check if news sources are providing enough positive content',
+        'The newsletter may need to be skipped this week',
+      ],
+    });
+    console.error(`Not enough positive articles: ${positive.length}`);
+    process.exit(1);
+  }
 
   positive.sort((a, b) => {
     const scoreA = a.positivity * 0.6 + a.impact * 0.4;
@@ -269,4 +333,18 @@ async function main() {
   );
 }
 
-main().catch(console.error);
+main().catch(async (error) => {
+  // Send alert for unexpected errors
+  await sendAlert({
+    title: 'Draft generation crashed',
+    reason: 'An unexpected error occurred during draft generation',
+    details: error instanceof Error ? error.stack || error.message : String(error),
+    actionItems: [
+      'Check the GitHub Actions logs for more details',
+      'Run <code>npm run generate-draft</code> locally to debug',
+      'If the error persists, check for code issues in <code>scripts/generate-draft.ts</code>',
+    ],
+  });
+  console.error('Fatal error:', error);
+  process.exit(1);
+});

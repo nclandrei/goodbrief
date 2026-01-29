@@ -145,6 +145,24 @@ Articles:
 ${articlesText}`;
 }
 
+export class GeminiQuotaError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = 'GeminiQuotaError';
+  }
+}
+
+function isQuotaError(error: unknown): boolean {
+  const errorStr = String(error).toLowerCase();
+  return (
+    errorStr.includes('quota') ||
+    errorStr.includes('rate limit') ||
+    errorStr.includes('resource exhausted') ||
+    errorStr.includes('429') ||
+    errorStr.includes('403')
+  );
+}
+
 export async function callWithRetry<T>(
   fn: () => Promise<T>,
   maxRetries: number = 3
@@ -155,6 +173,12 @@ export async function callWithRetry<T>(
       return await fn();
     } catch (error) {
       lastError = error instanceof Error ? error : new Error(String(error));
+
+      // Don't retry quota errors - they won't recover
+      if (isQuotaError(error)) {
+        throw new GeminiQuotaError(lastError.message);
+      }
+
       if (attempt < maxRetries - 1) {
         const delay = Math.pow(2, attempt) * 1000;
         console.log(`Attempt ${attempt + 1} failed, retrying in ${delay}ms...`);
@@ -201,6 +225,10 @@ export async function processArticleBatch(
       return JSON.parse(text) as ArticleScore[];
     });
   } catch (error) {
+    // Re-throw quota errors so they can be handled by the caller
+    if (error instanceof GeminiQuotaError) {
+      throw error;
+    }
     console.error('Batch processing failed after retries:', error);
     return [];
   }

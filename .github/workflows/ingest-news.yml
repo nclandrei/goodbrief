@@ -17,7 +17,11 @@ jobs:
         with:
           node-version: '20'
       - run: npm ci
-      - run: npm run ingest-news
+      - name: Ingest news
+        run: npm run ingest-news
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
       - name: Commit changes
         run: |
           git config user.name "Andrei-Mihai Nicolae"
@@ -26,3 +30,13 @@ jobs:
           git diff --staged --quiet || git commit -m "Update news buffer"
           git pull --rebase
           git push
+
+      - name: Alert on workflow failure
+        if: failure()
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
+        run: |
+          npm run alert-workflow-failure -- \
+            --workflow "Ingest News" \
+            --run-url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

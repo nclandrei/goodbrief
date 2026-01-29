@@ -17,9 +17,12 @@ jobs:
         with:
           node-version: '20'
       - run: npm ci
-      - run: npm run generate-draft
+      - name: Generate draft
+        run: npm run generate-draft
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
       - name: Commit draft
         run: |
           git config user.name "Andrei-Mihai Nicolae"
@@ -33,3 +36,13 @@ jobs:
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
+
+      - name: Alert on workflow failure
+        if: failure()
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
+        run: |
+          npm run alert-workflow-failure -- \
+            --workflow "Generate Newsletter Draft" \
+            --run-url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
