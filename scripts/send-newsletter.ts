@@ -324,13 +324,29 @@ async function handleTest(html: string, weekId: string): Promise<void> {
 async function handleSend(
   html: string,
   weekId: string,
-  confirm: boolean
+  confirm: boolean,
+  automated: boolean
 ): Promise<void> {
   if (!confirm) {
     console.error(
       'Error: --confirm flag is required to send to all subscribers'
     );
     console.error('Run: npm run email:send -- --week ' + weekId + ' --confirm');
+    process.exit(1);
+  }
+
+  // Only allow sending from GitHub Actions (CI environment)
+  const isCI = process.env.CI === 'true' || process.env.GITHUB_ACTIONS === 'true';
+  if (!isCI) {
+    console.error('Error: Newsletter can only be sent from GitHub Actions.');
+    console.error('This prevents accidental sends outside the scheduled Monday delivery.');
+    console.error('');
+    console.error('Use --preview or --test mode for local testing.');
+    process.exit(1);
+  }
+
+  if (!automated) {
+    console.error('Error: --automated flag is required when running in CI.');
     process.exit(1);
   }
 
@@ -448,7 +464,7 @@ async function main(): Promise<void> {
       await handleTest(html, args.week);
       break;
     case 'send':
-      await handleSend(html, args.week, args.confirm);
+      await handleSend(html, args.week, args.confirm, args.automated);
       break;
   }
 
