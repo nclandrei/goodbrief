@@ -55,16 +55,16 @@
       "processedAt": "2026-01-31T10:45:04.670Z"
     },
     {
-      "id": "bc49330ee41085f7",
+      "id": "93c64e6b46090fbb",
       "sourceId": "mediafax",
       "sourceName": "Mediafax",
-      "originalTitle": "București candidează pentru găzduirea sediului Autorității Vamale a Uniunii Europene",
-      "url": "https://www.mediafax.ro/stirile-zilei/bucuresti-candideaza-pentru-gazduirea-sediului-autoritatii-vamale-a-uniunii-europene-23678077",
-      "summary": "Bucureștiul candidează oficial pentru a găzdui sediul Autorității Vamale a Uniunii Europene, o poziție care ar aduce numeroase beneficii economice și administrative. Ministrul de Finanțe a susținut candidatura în fața Parlamentului European.",
-      "positivity": 80,
-      "impact": 85,
+      "originalTitle": "Ana Bărbosu, recorduri personale în victoria echipei Stanford în campionatul universitar american",
+      "url": "https://www.mediafax.ro/sport/ana-barbosu-recorduri-personale-in-victoria-echipei-stanford-in-campionatul-universitar-american-23676385",
+      "summary": "Gimnasta română Ana Bărbosu a avut o evoluție remarcabilă în campionatul universitar american, stabilind recorduri personale la sărituri, sol și compus în victoria echipei Stanford. Felicitări!",
+      "positivity": 90,
+      "impact": 60,
       "category": "wins",
-      "publishedAt": "2026-01-28T17:12:26.000Z",
+      "publishedAt": "2026-01-26T06:25:45.000Z",
       "processedAt": "2026-01-31T10:45:04.670Z"
     },
     {
@@ -120,16 +120,29 @@
       "processedAt": "2026-01-31T10:45:04.670Z"
     },
     {
-      "id": "02d9117229795022",
-      "sourceId": "hotnews",
-      "sourceName": "HotNews",
-      "originalTitle": "Mărturia șoferului STB care a găsit copilul dat dispărut prin RO-Alert, într-un troleibuz din București: „A avut încredere cel mai mult în mine”",
-      "url": "https://hotnews.ro/marturia-soferului-stb-care-a-gasit-copilul-dat-disparut-prin-ro-alert-intr-un-troleibuz-din-bucuresti-a-avut-incredere-cel-mai-mult-in-mine-2156898",
-      "summary": "Șoferul unui troleibuz STB a povestit emoționant cum a găsit copilul de 11 ani dat dispărut prin RO-Alert, într-un vehicul din București. Minorul s-a simțit în siguranță alături de el.",
+      "id": "7f4c61da5304ce9b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "O comună din Bihor vrea să se încălzească cu apă termală printr-un proiect de peste șapte milioane de euro. „O mână de aur”",
+      "url": "https://stirileprotv.ro/stiri/actualitate/o-comuna-din-bihor-vrea-sa-se-incalzeasca-cu-apa-termala-printr-un-proiect-de-peste-sapte-milioane-de-euro-o-mana-de-aur.html?category_slug=stiri%2Factualitate",
+      "summary": "O comună din Bihor intenționează să se încălzească cu apă termală printr-un proiect de peste șapte milioane de euro. Aceasta este a doua localitate din vestul țării care depune un astfel de proiect pentru finanțare.",
+      "positivity": 80,
+      "impact": 80,
+      "category": "wins",
+      "publishedAt": "2026-01-26T07:31:00.000Z",
+      "processedAt": "2026-01-31T10:45:04.670Z"
+    },
+    {
+      "id": "f1992d089802f0b9",
+      "sourceId": "dw-romania",
+      "sourceName": "DW România",
+      "originalTitle": "Spotmedia.ro: Nicușor Dan deschide gratuit Palatul Cotroceni pentru trupele de teatru",
+      "url": "https://www.dw.com/ro/spotmedia-ro-nicu%C8%99or-dan-deschide-gratuit-palatul-cotroceni-pentru-trupele-de-teatru/a-75525723?maca=rum-rss-rom-all-1493-rdf",
+      "summary": "Președintele Nicușor Dan oferă gratuit sala de teatru din Palatul Cotroceni trupelor de tineri actori independenți. Anunțul a fost făcut de Ziua Culturii Naționale.",
       "positivity": 85,
-      "impact": 75,
+      "impact": 70,
       "category": "local-heroes",
-      "publishedAt": "2026-01-25T19:01:09.000Z",
+      "publishedAt": "2026-01-15T16:16:00.000Z",
       "processedAt": "2026-01-31T10:45:04.670Z"
     }
   ],
@@ -239,29 +252,16 @@
       "processedAt": "2026-01-31T10:45:04.670Z"
     },
     {
-      "id": "7f4c61da5304ce9b",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "O comună din Bihor vrea să se încălzească cu apă termală printr-un proiect de peste șapte milioane de euro. „O mână de aur”",
-      "url": "https://stirileprotv.ro/stiri/actualitate/o-comuna-din-bihor-vrea-sa-se-incalzeasca-cu-apa-termala-printr-un-proiect-de-peste-sapte-milioane-de-euro-o-mana-de-aur.html?category_slug=stiri%2Factualitate",
-      "summary": "O comună din Bihor intenționează să se încălzească cu apă termală printr-un proiect de peste șapte milioane de euro. Aceasta este a doua localitate din vestul țării care depune un astfel de proiect pentru finanțare.",
-      "positivity": 80,
-      "impact": 80,
-      "category": "wins",
-      "publishedAt": "2026-01-26T07:31:00.000Z",
-      "processedAt": "2026-01-31T10:45:04.670Z"
-    },
-    {
-      "id": "f1992d089802f0b9",
-      "sourceId": "dw-romania",
-      "sourceName": "DW România",
-      "originalTitle": "Spotmedia.ro: Nicușor Dan deschide gratuit Palatul Cotroceni pentru trupele de teatru",
-      "url": "https://www.dw.com/ro/spotmedia-ro-nicu%C8%99or-dan-deschide-gratuit-palatul-cotroceni-pentru-trupele-de-teatru/a-75525723?maca=rum-rss-rom-all-1493-rdf",
-      "summary": "Președintele Nicușor Dan oferă gratuit sala de teatru din Palatul Cotroceni trupelor de tineri actori independenți. Anunțul a fost făcut de Ziua Culturii Naționale.",
+      "id": "02d9117229795022",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "originalTitle": "Mărturia șoferului STB care a găsit copilul dat dispărut prin RO-Alert, într-un troleibuz din București: „A avut încredere cel mai mult în mine”",
+      "url": "https://hotnews.ro/marturia-soferului-stb-care-a-gasit-copilul-dat-disparut-prin-ro-alert-intr-un-troleibuz-din-bucuresti-a-avut-incredere-cel-mai-mult-in-mine-2156898",
+      "summary": "Șoferul unui troleibuz STB a povestit emoționant cum a găsit copilul de 11 ani dat dispărut prin RO-Alert, într-un vehicul din București. Minorul s-a simțit în siguranță alături de el.",
       "positivity": 85,
-      "impact": 70,
+      "impact": 75,
       "category": "local-heroes",
-      "publishedAt": "2026-01-15T16:16:00.000Z",
+      "publishedAt": "2026-01-25T19:01:09.000Z",
       "processedAt": "2026-01-31T10:45:04.670Z"
     },
     {
@@ -291,16 +291,16 @@
       "processedAt": "2026-01-31T10:45:04.670Z"
     },
     {
-      "id": "93c64e6b46090fbb",
+      "id": "bc49330ee41085f7",
       "sourceId": "mediafax",
       "sourceName": "Mediafax",
-      "originalTitle": "Ana Bărbosu, recorduri personale în victoria echipei Stanford în campionatul universitar american",
-      "url": "https://www.mediafax.ro/sport/ana-barbosu-recorduri-personale-in-victoria-echipei-stanford-in-campionatul-universitar-american-23676385",
-      "summary": "Gimnasta română Ana Bărbosu a avut o evoluție remarcabilă în campionatul universitar american, stabilind recorduri personale la sărituri, sol și compus în victoria echipei Stanford. Felicitări!",
-      "positivity": 90,
-      "impact": 60,
+      "originalTitle": "București candidează pentru găzduirea sediului Autorității Vamale a Uniunii Europene",
+      "url": "https://www.mediafax.ro/stirile-zilei/bucuresti-candideaza-pentru-gazduirea-sediului-autoritatii-vamale-a-uniunii-europene-23678077",
+      "summary": "Bucureștiul candidează oficial pentru a găzdui sediul Autorității Vamale a Uniunii Europene, o poziție care ar aduce numeroase beneficii economice și administrative. Ministrul de Finanțe a susținut candidatura în fața Parlamentului European.",
+      "positivity": 80,
+      "impact": 85,
       "category": "wins",
-      "publishedAt": "2026-01-26T06:25:45.000Z",
+      "publishedAt": "2026-01-28T17:12:26.000Z",
       "processedAt": "2026-01-31T10:45:04.670Z"
     },
     {
@@ -399,8 +399,8 @@
   "totalProcessed": 839,
   "wrapperCopy": {
     "greeting": "Salutare! 👋",
-    "intro": "Săptămâna asta aducem vești bune din sănătate — Brașovul va avea primul spital public construit după 1990. Hidroelectrica a atins un record istoric la bursă, iar România se apropie de 60% energie curată. La Cluj s-a deschis o \"fabrică de startup-uri\" cu tehnologie pentru persoane cu dizabilități, și avem planuri mari pentru trenuri de mare viteză și candidatura București pentru Autoritatea Vamală a UE.",
+    "intro": "Săptămâna asta avem vești bune pe toate fronturile: Brașovul va avea primul spital public construit după 1990, Hidroelectrica a atins un record istoric la bursă, iar Ana Bărbosu strălucește la Stanford. Pe infrastructură, avem progrese concrete — drum expres Oradea-Arad și încălzire cu apă termală în Bihor. Plus: Nicușor Dan deschide Palatul Cotroceni pentru tinerii actori, iar România se apropie de 60% energie curată.",
     "signOff": "Să ai o săptămână faină! Ne auzim curând. 🙏",
-    "shortSummary": "Spital nou la Brașov, record Hidroelectrica, energie verde și planuri mari de infrastructură."
+    "shortSummary": "Spital Brașov, record Hidroelectrica, Ana Bărbosu la Stanford, infrastructură verde și cultură."
   }
 }
