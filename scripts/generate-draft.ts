@@ -87,13 +87,15 @@ async function refineDraft(
 
   const prompt = `You are reviewing a Good Brief newsletter draft for week ${weekId}.
 
+IMPORTANT: All text output (intro, shortSummary, reasoning) MUST be in Romanian. This is a Romanian newsletter.
+
 CURRENT SELECTION (top 10):
 ${selected.map((a, i) => `${i + 1}. [ID: ${a.id}] "${a.originalTitle}"`).join('\n')}
 
-CURRENT INTRO:
+CURRENT INTRO (in Romanian):
 "${wrapperCopy.intro}"
 
-CURRENT SHORT SUMMARY:
+CURRENT SHORT SUMMARY (in Romanian):
 "${wrapperCopy.shortSummary}"
 
 ALL AVAILABLE ARTICLES (selected + reserves):
@@ -104,19 +106,19 @@ REVIEW CRITERIA:
 2. Category balance: Aim for mix of wins, local-heroes, green-stuff, quick-hits
 3. Impact vs fluff: Prefer substantive stories over feel-good fluff
 4. Recency: Prefer more recent stories when quality is similar
-5. Intro quality: Should be warm, engaging, capture the week's essence
+5. Intro quality: Should be warm, engaging, capture the week's essence (IN ROMANIAN)
 6. Avoid promotional content or sponsored articles (marked with "(P)")
 
 TASK:
 - Review the current selection critically
 - If you find issues (duplicates, weak stories, imbalance), swap articles from reserves
-- If the intro could be sharper or better reflect the final selection, improve it
+- If the intro could be sharper or better reflect the final selection, improve it (KEEP IT IN ROMANIAN)
 - Return 9-12 article IDs in your preferred order
 
 Return JSON with:
 - selectedIds: array of 9-12 article IDs in display order
-- intro: the intro (improved if needed, keep original if good)
-- shortSummary: the short summary (improved if needed)
+- intro: the intro IN ROMANIAN (improved if needed, keep original if good)
+- shortSummary: the short summary IN ROMANIAN (improved if needed)
 - reasoning: brief explanation of what you changed and why (or "No changes needed")`;
 
   console.log('Reviewing draft for improvements...');
