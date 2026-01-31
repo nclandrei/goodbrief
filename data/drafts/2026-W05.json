@@ -16,45 +16,6 @@
       "processedAt": "2026-01-31T10:45:04.670Z"
     },
     {
-      "id": "b49d9ce2a800cd5b",
-      "sourceId": "hotnews",
-      "sourceName": "HotNews",
-      "originalTitle": "Record pe bursă pentru Hidroelectrica. Acțiunile companiei au ajuns la cel mai înalt nivel de la listare, anunță firma de stat",
-      "url": "https://hotnews.ro/record-pe-bursa-pentru-hidroelectrica-actiunile-companiei-au-ajuns-la-cel-mai-inalt-nivel-de-la-listare-anunta-firma-de-stat-2158419",
-      "summary": "Acțiunile Hidroelectrica au atins un nou maxim istoric la bursă, ajungând la cel mai înalt nivel de la listare. Această performanță financiară este un semn bun pentru compania de stat și pentru investitori.",
-      "positivity": 85,
-      "impact": 80,
-      "category": "wins",
-      "publishedAt": "2026-01-27T17:40:13.000Z",
-      "processedAt": "2026-01-31T10:45:04.670Z"
-    },
-    {
-      "id": "ccbbaa69be379fad",
-      "sourceId": "hotnews",
-      "sourceName": "HotNews",
-      "originalTitle": "Cum arată „fabrica de startup-uri”, deschisă la Cluj de un important om de afaceri, cu fonduri europene (VIDEO)",
-      "url": "https://hotnews.ro/cum-arata-fabrica-de-startup-uri-deschisa-la-cluj-de-un-important-om-de-afaceri-cu-fonduri-europene-video-2161443",
-      "summary": "La Cluj s-a deschis o \"fabrică de startup-uri\" dezvoltată de antreprenorul Voicu Oprean, cu fonduri europene. Tehnologia de aici ajută persoanele cu dizabilități, precum cele de vedere sau auz, să rezolve cuburi Rubik sau să asculte muzică.",
-      "positivity": 85,
-      "impact": 80,
-      "category": "local-heroes",
-      "publishedAt": "2026-01-30T06:14:15.000Z",
-      "processedAt": "2026-01-31T10:45:04.670Z"
-    },
-    {
-      "id": "e6a524ea99257974",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "UE intră într-o nouă eră energetică. Energia verde ajunge la 50%. România, aproape de 60% producție curată",
-      "url": "https://stirileprotv.ro/stiri/financiar/ue-intra-intr-o-noua-era-energetica-energia-verde-ajunge-la-50-romania-aproape-de-60-productie-curata.html?category_slug=stiri%2Ffinanciar",
-      "summary": "UE intră într-o eră verde, cu energia regenerabilă ajungând la 50% în producție. România se apropie de 60% producție curată, o veste excelentă pentru mediu!",
-      "positivity": 90,
-      "impact": 70,
-      "category": "green-stuff",
-      "publishedAt": "2026-01-24T11:33:41.000Z",
-      "processedAt": "2026-01-31T10:45:04.670Z"
-    },
-    {
       "id": "93c64e6b46090fbb",
       "sourceId": "mediafax",
       "sourceName": "Mediafax",
@@ -68,29 +29,16 @@
       "processedAt": "2026-01-31T10:45:04.670Z"
     },
     {
-      "id": "953b40ca2aa75eb9",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Primul tren de mare viteză din România va lega două mari orașe. Viteze de până la 250 de km/h pe un traseu de 800 de km",
-      "url": "https://stirileprotv.ro/stiri/actualitate/primul-tren-de-mare-viteza-din-romania-va-lega-doua-mari-orase-viteze-de-pana-la-250-de-km-h-pe-un-traseu-de-800-de-km.html?category_slug=stiri%2Factualitate",
-      "summary": "România va construi o cale ferată de mare viteză de aproape 800 de kilometri, cu viteze de până la 250 km/h. Costul estimat al proiectului este de aproximativ 15 miliarde de euro.",
-      "positivity": 70,
-      "impact": 90,
-      "category": "wins",
-      "publishedAt": "2026-01-26T08:12:00.000Z",
-      "processedAt": "2026-01-31T10:45:04.670Z"
-    },
-    {
-      "id": "424e984d4a47fd95",
+      "id": "b49d9ce2a800cd5b",
       "sourceId": "hotnews",
       "sourceName": "HotNews",
-      "originalTitle": "Independența începe cu un pas și cu tehnologia potrivită: parteneriatul Orange Romania și .lumen pentru mobilitatea independentă a persoanelor nevăzătoare",
-      "url": "https://hotnews.ro/independenta-incepe-cu-un-pas-si-cu-tehnologia-potrivita-parteneriatul-orange-romania-si-lumen-pentru-mobilitatea-independenta-a-persoanelor-nevazatoare-2161659",
-      "summary": "Orange România și .lumen colaborează pentru a dezvolta tehnologie ce sporește mobilitatea independentă a persoanelor nevăzătoare. Parteneriatul promite soluții inovatoare pentru integrarea socială a acestora.",
+      "originalTitle": "Record pe bursă pentru Hidroelectrica. Acțiunile companiei au ajuns la cel mai înalt nivel de la listare, anunță firma de stat",
+      "url": "https://hotnews.ro/record-pe-bursa-pentru-hidroelectrica-actiunile-companiei-au-ajuns-la-cel-mai-inalt-nivel-de-la-listare-anunta-firma-de-stat-2158419",
+      "summary": "Acțiunile Hidroelectrica au atins un nou maxim istoric la bursă, ajungând la cel mai înalt nivel de la listare. Această performanță financiară este un semn bun pentru compania de stat și pentru investitori.",
       "positivity": 85,
       "impact": 80,
-      "category": "local-heroes",
-      "publishedAt": "2026-01-30T10:48:34.000Z",
+      "category": "wins",
+      "publishedAt": "2026-01-27T17:40:13.000Z",
       "processedAt": "2026-01-31T10:45:04.670Z"
     },
     {
@@ -104,6 +52,19 @@
       "impact": 85,
       "category": "wins",
       "publishedAt": "2026-01-29T12:29:12.000Z",
+      "processedAt": "2026-01-31T10:45:04.670Z"
+    },
+    {
+      "id": "953b40ca2aa75eb9",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Primul tren de mare viteză din România va lega două mari orașe. Viteze de până la 250 de km/h pe un traseu de 800 de km",
+      "url": "https://stirileprotv.ro/stiri/actualitate/primul-tren-de-mare-viteza-din-romania-va-lega-doua-mari-orase-viteze-de-pana-la-250-de-km-h-pe-un-traseu-de-800-de-km.html?category_slug=stiri%2Factualitate",
+      "summary": "România va construi o cale ferată de mare viteză de aproape 800 de kilometri, cu viteze de până la 250 km/h. Costul estimat al proiectului este de aproximativ 15 miliarde de euro.",
+      "positivity": 70,
+      "impact": 90,
+      "category": "wins",
+      "publishedAt": "2026-01-26T08:12:00.000Z",
       "processedAt": "2026-01-31T10:45:04.670Z"
     },
     {
@@ -130,6 +91,45 @@
       "impact": 70,
       "category": "local-heroes",
       "publishedAt": "2026-01-15T16:16:00.000Z",
+      "processedAt": "2026-01-31T10:45:04.670Z"
+    },
+    {
+      "id": "ccbbaa69be379fad",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "originalTitle": "Cum arată „fabrica de startup-uri”, deschisă la Cluj de un important om de afaceri, cu fonduri europene (VIDEO)",
+      "url": "https://hotnews.ro/cum-arata-fabrica-de-startup-uri-deschisa-la-cluj-de-un-important-om-de-afaceri-cu-fonduri-europene-video-2161443",
+      "summary": "La Cluj s-a deschis o \"fabrică de startup-uri\" dezvoltată de antreprenorul Voicu Oprean, cu fonduri europene. Tehnologia de aici ajută persoanele cu dizabilități, precum cele de vedere sau auz, să rezolve cuburi Rubik sau să asculte muzică.",
+      "positivity": 85,
+      "impact": 80,
+      "category": "local-heroes",
+      "publishedAt": "2026-01-30T06:14:15.000Z",
+      "processedAt": "2026-01-31T10:45:04.670Z"
+    },
+    {
+      "id": "424e984d4a47fd95",
+      "sourceId": "hotnews",
+      "sourceName": "HotNews",
+      "originalTitle": "Independența începe cu un pas și cu tehnologia potrivită: parteneriatul Orange Romania și .lumen pentru mobilitatea independentă a persoanelor nevăzătoare",
+      "url": "https://hotnews.ro/independenta-incepe-cu-un-pas-si-cu-tehnologia-potrivita-parteneriatul-orange-romania-si-lumen-pentru-mobilitatea-independenta-a-persoanelor-nevazatoare-2161659",
+      "summary": "Orange România și .lumen colaborează pentru a dezvolta tehnologie ce sporește mobilitatea independentă a persoanelor nevăzătoare. Parteneriatul promite soluții inovatoare pentru integrarea socială a acestora.",
+      "positivity": 85,
+      "impact": 80,
+      "category": "local-heroes",
+      "publishedAt": "2026-01-30T10:48:34.000Z",
+      "processedAt": "2026-01-31T10:45:04.670Z"
+    },
+    {
+      "id": "e6a524ea99257974",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "UE intră într-o nouă eră energetică. Energia verde ajunge la 50%. România, aproape de 60% producție curată",
+      "url": "https://stirileprotv.ro/stiri/financiar/ue-intra-intr-o-noua-era-energetica-energia-verde-ajunge-la-50-romania-aproape-de-60-productie-curata.html?category_slug=stiri%2Ffinanciar",
+      "summary": "UE intră într-o eră verde, cu energia regenerabilă ajungând la 50% în producție. România se apropie de 60% producție curată, o veste excelentă pentru mediu!",
+      "positivity": 90,
+      "impact": 70,
+      "category": "green-stuff",
+      "publishedAt": "2026-01-24T11:33:41.000Z",
       "processedAt": "2026-01-31T10:45:04.670Z"
     },
     {
@@ -399,8 +399,8 @@
   "totalProcessed": 839,
   "wrapperCopy": {
     "greeting": "Salutare! 👋",
-    "intro": "Săptămâna asta avem vești bune pe toate fronturile: Brașovul va avea primul spital public construit după 1990, Hidroelectrica a atins un record istoric la bursă, iar Ana Bărbosu strălucește la Stanford. Pe infrastructură, avem progrese concrete cu drumul expres Oradea-Arad. Plus: Nicușor Dan deschide Palatul Cotroceni pentru tinerii actori, iar România se apropie de 60% energie curată.",
+    "intro": "Săptămâna asta: Brașovul va avea primul spital construit după 1990, Ana Bărbosu bate recorduri la Stanford, iar Hidroelectrica atinge un maxim istoric. Nicușor Dan deschide Cotroceni pentru tinerii actori, România trece de 60% energie curată — și am bătut Africa de Sud cu 30-0 la hochei. Da, ai citit bine.",
     "signOff": "Să ai o săptămână faină! Ne auzim curând. 🙏",
-    "shortSummary": "Spital Brașov, record Hidroelectrica, Ana Bărbosu la Stanford, infrastructură verde și cultură."
+    "shortSummary": "Spital Brașov, Ana Bărbosu la Stanford, record Hidroelectrica, cultură și hochei 30-0."
   }
 }
