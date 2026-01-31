@@ -22,6 +22,8 @@ jobs:
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
+      - name: Cleanup old raw data
+        run: npm run cleanup-raw-data
       - name: Commit changes
         run: |
           git config user.name "Andrei-Mihai Nicolae"
