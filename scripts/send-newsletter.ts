@@ -413,8 +413,8 @@ async function main(): Promise<void> {
   const draft = loadDraft(args.week);
   console.log(`✓ Loaded ${draft.selected.length} articles`);
 
-  // Get first 10 selected articles
-  const articles = draft.selected.slice(0, 10);
+  // Get first 12 selected articles
+  const articles = draft.selected.slice(0, 12);
 
   // Group by category
   const grouped = groupByCategory(articles);

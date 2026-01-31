@@ -120,19 +120,6 @@
       "processedAt": "2026-01-31T10:45:04.670Z"
     },
     {
-      "id": "7f4c61da5304ce9b",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "O comună din Bihor vrea să se încălzească cu apă termală printr-un proiect de peste șapte milioane de euro. „O mână de aur”",
-      "url": "https://stirileprotv.ro/stiri/actualitate/o-comuna-din-bihor-vrea-sa-se-incalzeasca-cu-apa-termala-printr-un-proiect-de-peste-sapte-milioane-de-euro-o-mana-de-aur.html?category_slug=stiri%2Factualitate",
-      "summary": "O comună din Bihor intenționează să se încălzească cu apă termală printr-un proiect de peste șapte milioane de euro. Aceasta este a doua localitate din vestul țării care depune un astfel de proiect pentru finanțare.",
-      "positivity": 80,
-      "impact": 80,
-      "category": "wins",
-      "publishedAt": "2026-01-26T07:31:00.000Z",
-      "processedAt": "2026-01-31T10:45:04.670Z"
-    },
-    {
       "id": "f1992d089802f0b9",
       "sourceId": "dw-romania",
       "sourceName": "DW România",
@@ -143,6 +130,19 @@
       "impact": 70,
       "category": "local-heroes",
       "publishedAt": "2026-01-15T16:16:00.000Z",
+      "processedAt": "2026-01-31T10:45:04.670Z"
+    },
+    {
+      "id": "eb48aacae350b1fb",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Sportul în care România tocmai a stabilit unul dintre cele mai mari scoruri din istorie. Meci oficial, la Campionatul Mondial",
+      "url": "https://stirileprotv.ro/stiri/sport/sportul-la-care-romania-a-stabilit-unul-dintre-cele-mai-mari-scoruri-din-istorie-meci-oficial-la-campionatul-mondial.html?category_slug=stiri%2Fsport",
+      "summary": "România a stabilit un scor record în hocheiul feminin la Campionatul Mondial Under-18, învingând Africa de Sud cu 30-0. Aceasta este una dintre cele mai mari victorii din istoria acestui sport.",
+      "positivity": 90,
+      "impact": 60,
+      "category": "quick-hits",
+      "publishedAt": "2026-01-27T20:55:19.000Z",
       "processedAt": "2026-01-31T10:45:04.670Z"
     }
   ],
@@ -343,19 +343,6 @@
       "processedAt": "2026-01-31T10:45:04.670Z"
     },
     {
-      "id": "eb48aacae350b1fb",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Sportul în care România tocmai a stabilit unul dintre cele mai mari scoruri din istorie. Meci oficial, la Campionatul Mondial",
-      "url": "https://stirileprotv.ro/stiri/sport/sportul-la-care-romania-a-stabilit-unul-dintre-cele-mai-mari-scoruri-din-istorie-meci-oficial-la-campionatul-mondial.html?category_slug=stiri%2Fsport",
-      "summary": "România a stabilit un scor record în hocheiul feminin la Campionatul Mondial Under-18, învingând Africa de Sud cu 30-0. Aceasta este una dintre cele mai mari victorii din istoria acestui sport.",
-      "positivity": 90,
-      "impact": 60,
-      "category": "wins",
-      "publishedAt": "2026-01-27T20:55:19.000Z",
-      "processedAt": "2026-01-31T10:45:04.670Z"
-    },
-    {
       "id": "ade3a81774cdc2be",
       "sourceId": "agerpres",
       "sourceName": "Agerpres",
@@ -393,13 +380,26 @@
       "category": "wins",
       "publishedAt": "2026-01-29T10:21:00.000Z",
       "processedAt": "2026-01-31T10:45:04.670Z"
+    },
+    {
+      "id": "7f4c61da5304ce9b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "O comună din Bihor vrea să se încălzească cu apă termală printr-un proiect de peste șapte milioane de euro. „O mână de aur”",
+      "url": "https://stirileprotv.ro/stiri/actualitate/o-comuna-din-bihor-vrea-sa-se-incalzeasca-cu-apa-termala-printr-un-proiect-de-peste-sapte-milioane-de-euro-o-mana-de-aur.html?category_slug=stiri%2Factualitate",
+      "summary": "O comună din Bihor intenționează să se încălzească cu apă termală printr-un proiect de peste șapte milioane de euro. Aceasta este a doua localitate din vestul țării care depune un astfel de proiect pentru finanțare.",
+      "positivity": 80,
+      "impact": 80,
+      "category": "wins",
+      "publishedAt": "2026-01-26T07:31:00.000Z",
+      "processedAt": "2026-01-31T10:45:04.670Z"
     }
   ],
   "discarded": 321,
   "totalProcessed": 839,
   "wrapperCopy": {
     "greeting": "Salutare! 👋",
-    "intro": "Săptămâna asta avem vești bune pe toate fronturile: Brașovul va avea primul spital public construit după 1990, Hidroelectrica a atins un record istoric la bursă, iar Ana Bărbosu strălucește la Stanford. Pe infrastructură, avem progrese concrete — drum expres Oradea-Arad și încălzire cu apă termală în Bihor. Plus: Nicușor Dan deschide Palatul Cotroceni pentru tinerii actori, iar România se apropie de 60% energie curată.",
+    "intro": "Săptămâna asta avem vești bune pe toate fronturile: Brașovul va avea primul spital public construit după 1990, Hidroelectrica a atins un record istoric la bursă, iar Ana Bărbosu strălucește la Stanford. Pe infrastructură, avem progrese concrete cu drumul expres Oradea-Arad. Plus: Nicușor Dan deschide Palatul Cotroceni pentru tinerii actori, iar România se apropie de 60% energie curată.",
     "signOff": "Să ai o săptămână faină! Ne auzim curând. 🙏",
     "shortSummary": "Spital Brașov, record Hidroelectrica, Ana Bărbosu la Stanford, infrastructură verde și cultură."
   }
