@@ -283,7 +283,7 @@ async function handlePreview(html: string, weekId: string): Promise<void> {
   console.log('✓ Opened preview in browser');
 }
 
-// Test mode: send to test email
+// Test mode: send to test email(s)
 async function handleTest(html: string, weekId: string): Promise<void> {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
@@ -291,23 +291,26 @@ async function handleTest(html: string, weekId: string): Promise<void> {
     process.exit(1);
   }
 
-  const testEmail = process.env.TEST_EMAIL;
-  if (!testEmail) {
+  const testEmailEnv = process.env.TEST_EMAIL;
+  if (!testEmailEnv) {
     console.error(
       'Error: TEST_EMAIL environment variable is required for test mode'
     );
     console.error('Set it with: export TEST_EMAIL=your@email.com');
+    console.error('For multiple recipients: export TEST_EMAIL="email1@example.com,email2@example.com"');
     process.exit(1);
   }
 
+  const testEmails = testEmailEnv.split(',').map(e => e.trim()).filter(Boolean);
+
   const resend = new Resend(apiKey);
 
-  console.log(`Sending test email to ${testEmail}...`);
+  console.log(`Sending test email to ${testEmails.join(', ')}...`);
 
   const { data, error } = await resend.emails.send({
     from: 'Good Brief <buna@goodbrief.ro>',
     replyTo: 'hello@goodbrief.ro',
-    to: testEmail,
+    to: testEmails,
     subject: `[TEST] Good Brief – Your weekly dose de vești bune`,
     html,
   });
