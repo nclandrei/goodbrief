@@ -1,5 +1,5 @@
 import 'dotenv/config';
-import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import type {
@@ -8,7 +8,7 @@ import type {
   NewsletterDraft,
   WrapperCopy,
 } from './types.js';
-import { deduplicateArticles } from './lib/deduplication.js';
+import { deduplicateArticles, titleSimilarity } from './lib/deduplication.js';
 import { processArticleBatch, createGeminiModel, GeminiQuotaError } from './lib/gemini.js';
 import type { ArticleScore } from './lib/types.js';
 import { generateWrapperCopy } from '../emails/utils/generate-copy.js';
@@ -42,6 +42,49 @@ function getISOWeekId(date: Date = new Date()): string {
   return `${d.getFullYear()}-W${weekNum.toString().padStart(2, '0')}`;
 }
 
+interface HistoricalArticle {
+  id: string;
+  title: string;
+  url: string;
+}
+
+function loadPreviousWeeksArticles(weeksToLoad: number = 2): HistoricalArticle[] {
+  const allPrevious: HistoricalArticle[] = [];
+  const currentWeekId = getISOWeekId();
+
+  // Get all draft files
+  const draftsDir = join(ROOT_DIR, 'data', 'drafts');
+  if (!existsSync(draftsDir)) return [];
+
+  const draftFiles = readdirSync(draftsDir)
+    .filter((f: string) => f.endsWith('.json') && f !== `${currentWeekId}.json`)
+    .sort()
+    .reverse() // Most recent first
+    .slice(0, weeksToLoad);
+
+  for (const file of draftFiles) {
+    try {
+      const draft = JSON.parse(
+        readFileSync(join(draftsDir, file), 'utf-8')
+      );
+
+      // Extract selected articles
+      if (draft.selected && Array.isArray(draft.selected)) {
+        allPrevious.push(...draft.selected.map((a: any) => ({
+          id: a.id,
+          title: a.originalTitle || a.title,
+          url: a.url,
+        })));
+      }
+    } catch (error) {
+      console.warn(`Failed to load ${file}:`, error);
+    }
+  }
+
+  console.log(`Loaded ${allPrevious.length} articles from ${draftFiles.length} previous weeks`);
+  return allPrevious;
+}
+
 interface RefinementResult {
   selectedIds: string[];
   intro: string;
@@ -53,7 +96,8 @@ async function refineDraft(
   selected: ProcessedArticle[],
   reserves: ProcessedArticle[],
   wrapperCopy: WrapperCopy,
-  weekId: string
+  weekId: string,
+  previousArticles: HistoricalArticle[] = []
 ): Promise<{ selected: ProcessedArticle[]; reserves: ProcessedArticle[]; wrapperCopy: WrapperCopy }> {
   const genAI = new GoogleGenerativeAI(GEMINI_API_KEY!);
 
@@ -85,9 +129,16 @@ async function refineDraft(
     .map((a, i) => `${i + 1}. [ID: ${a.id}] [${a.category}] (pos:${a.positivity}, impact:${a.impact}) "${a.originalTitle}"\n   Summary: ${a.summary}`)
     .join('\n\n');
 
+  const previousWeeksContext = previousArticles.length > 0
+    ? `\n\nPREVIOUSLY PUBLISHED (last 2 weeks - DO NOT SELECT similar stories):
+${previousArticles.slice(0, 20).map((a, i) => `${i + 1}. "${a.title}"`).join('\n')}
+${previousArticles.length > 20 ? `... and ${previousArticles.length - 20} more` : ''}`
+    : '';
+
   const prompt = `You are reviewing a Good Brief newsletter draft for week ${weekId}.
 
 IMPORTANT: All text output (intro, shortSummary, reasoning) MUST be in Romanian. This is a Romanian newsletter.
+${previousWeeksContext}
 
 CURRENT SELECTION (top 10):
 ${selected.map((a, i) => `${i + 1}. [ID: ${a.id}] "${a.originalTitle}"`).join('\n')}
@@ -103,15 +154,16 @@ ${articleList}
 
 REVIEW CRITERIA:
 1. Story variety: Avoid duplicate stories or very similar topics. Look for redundant coverage.
-2. Category balance: Aim for mix of wins, local-heroes, green-stuff, quick-hits
-3. Impact vs fluff: Prefer substantive stories over feel-good fluff
-4. Recency: Prefer more recent stories when quality is similar
-5. Intro quality: Should be warm, engaging, capture the week's essence (IN ROMANIAN)
-6. Avoid promotional content or sponsored articles (marked with "(P)")
+2. NO REPEATS: Do NOT select articles similar to previously published stories (see list above)
+3. Category balance: Aim for mix of wins, local-heroes, green-stuff, quick-hits
+4. Impact vs fluff: Prefer substantive stories over feel-good fluff
+5. Recency: Prefer more recent stories when quality is similar
+6. Intro quality: Should be warm, engaging, capture the week's essence (IN ROMANIAN)
+7. Avoid promotional content or sponsored articles (marked with "(P)")
 
 TASK:
 - Review the current selection critically
-- If you find issues (duplicates, weak stories, imbalance), swap articles from reserves
+- If you find issues (duplicates, weak stories, imbalance, REPEATS from previous weeks), swap articles from reserves
 - If the intro could be sharper or better reflect the final selection, improve it (KEEP IT IN ROMANIAN)
 - Return 9-12 article IDs in your preferred order
 
@@ -210,10 +262,39 @@ async function main() {
 
   console.log('Deduplicating articles...');
   const dedupResult = deduplicateArticles(buffer.articles);
-  const representatives = dedupResult.outputArticles;
+  let representatives = dedupResult.outputArticles;
   console.log(
     `Deduplicated ${buffer.articles.length} articles to ${representatives.length} unique stories`
   );
+
+  // Pre-filter against previous weeks
+  console.log('Filtering out articles from previous weeks...');
+  const previousArticles = loadPreviousWeeksArticles(2); // Last 2 weeks
+  const previousIds = new Set(previousArticles.map(a => a.id));
+  const previousTitles = previousArticles.map(a => a.title);
+
+  const beforeFilter = representatives.length;
+  representatives = representatives.filter(article => {
+    // Check exact ID match
+    if (previousIds.has(article.id)) {
+      return false;
+    }
+
+    // Check title similarity against all previous titles
+    for (const prevTitle of previousTitles) {
+      const similarity = titleSimilarity(article.title, prevTitle);
+      if (similarity >= 0.8) { // Stricter threshold for cross-week duplicates
+        console.log(`  Filtered: "${article.title}" (${Math.round(similarity * 100)}% similar to previous week)`);
+        return false;
+      }
+    }
+
+    return true;
+  });
+
+  const filtered = beforeFilter - representatives.length;
+  console.log(`Filtered out ${filtered} articles that appeared in previous weeks`);
+  console.log(`Remaining: ${representatives.length} articles to process`);
 
   const BATCH_SIZE = 200;
   const allScores: ArticleScore[] = [];
@@ -314,7 +395,14 @@ async function main() {
   console.log('✓ Generated wrapper copy');
 
   console.log('\n--- Pass 2: Self-review ---');
-  const refined = await refineDraft(initialSelected, initialReserves, initialWrapperCopy, weekId);
+  const previousArticlesForReview = loadPreviousWeeksArticles(2); // Load last 2 weeks
+  const refined = await refineDraft(
+    initialSelected,
+    initialReserves,
+    initialWrapperCopy,
+    weekId,
+    previousArticlesForReview
+  );
 
   const draft: NewsletterDraft = {
     weekId,
