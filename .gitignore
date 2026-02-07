@@ -30,3 +30,4 @@ pnpm-debug.log*
 # pipeline test cache and output
 scripts/test/cache/*.json
 scripts/test/output/*.json
+.worktrees/
