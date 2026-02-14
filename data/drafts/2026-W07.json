@@ -16,32 +16,6 @@
       "processedAt": "2026-02-14T10:40:07.900Z"
     },
     {
-      "id": "a0f8365185632acf",
-      "sourceId": "biziday",
-      "sourceName": "Biziday",
-      "originalTitle": "Ministrul Sănătății estimează că Centrul de Arși Gravi de la Târgu Mureș va fi dat în folosință în toamna acestui an. Totodată, anunță și finalizarea construcției centrului de mari arși de la Timișoara, care va fi dat în folosință “în scurt timp”.",
-      "url": "https://www.biziday.ro/347603-2/",
-      "summary": "Centrul pentru Arși Gravi de la Târgu Mureș va fi dat în folosință în toamna acestui an, după finalizarea dotării cu echipamente. Un centru similar de la Timișoara este aproape gata.",
-      "positivity": 85,
-      "impact": 75,
-      "category": "wins",
-      "publishedAt": "2026-02-08T18:41:09.000Z",
-      "processedAt": "2026-02-14T10:40:07.900Z"
-    },
-    {
-      "id": "13e6574085341653",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Un bărbat de 39 de ani a primit o inimă nouă la Spitalul Floreasca din București",
-      "url": "https://stirileprotv.ro/stiri/sanatate/un-barbat-de-39-de-ani-a-primit-o-inima-noua-la-spitalul-floreasca-din-bucuresti.html?category_slug=stiri%2Fsanatate",
-      "summary": "Un bărbat de 39 de ani a primit o nouă inimă la Spitalul Floreasca din București. Transplantul de succes îi oferă o nouă șansă la viață pacientului.",
-      "positivity": 85,
-      "impact": 80,
-      "category": "wins",
-      "publishedAt": "2026-02-12T13:51:29.000Z",
-      "processedAt": "2026-02-14T10:40:07.900Z"
-    },
-    {
       "id": "6faa50852e057682",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
@@ -65,19 +39,6 @@
       "impact": 80,
       "category": "wins",
       "publishedAt": "2026-02-09T17:25:33.000Z",
-      "processedAt": "2026-02-14T10:40:07.900Z"
-    },
-    {
-      "id": "53f33dec4ad604e3",
-      "sourceId": "agerpres",
-      "sourceName": "Agerpres",
-      "originalTitle": "STS: Un nou sistem de localizare de o mai mare acuratețe și un serviciu dedicat persoanelor cu deficiențe de auz",
-      "url": "https://agerpres.ro/social/2026/02/10/sts-un-nou-sistem-de-localizare-de-o-mai-mare-acuratete-si-un-serviciu-dedicat-persoanelor-cu-defici--1526707",
-      "summary": "STS a lansat un nou sistem de localizare mai precis și un serviciu dedicat persoanelor cu deficiențe de auz. Aceste inovații vor îmbunătăți siguranța și accesibilitatea serviciilor de urgență pentru anumite categorii de cetățeni.",
-      "positivity": 85,
-      "impact": 80,
-      "category": "local-heroes",
-      "publishedAt": "2026-02-10T13:25:03.762Z",
       "processedAt": "2026-02-14T10:40:07.900Z"
     },
     {
@@ -120,6 +81,45 @@
       "processedAt": "2026-02-14T10:40:07.900Z"
     },
     {
+      "id": "a0f8365185632acf",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "originalTitle": "Ministrul Sănătății estimează că Centrul de Arși Gravi de la Târgu Mureș va fi dat în folosință în toamna acestui an. Totodată, anunță și finalizarea construcției centrului de mari arși de la Timișoara, care va fi dat în folosință “în scurt timp”.",
+      "url": "https://www.biziday.ro/347603-2/",
+      "summary": "Centrul pentru Arși Gravi de la Târgu Mureș va fi dat în folosință în toamna acestui an, după finalizarea dotării cu echipamente. Un centru similar de la Timișoara este aproape gata.",
+      "positivity": 85,
+      "impact": 75,
+      "category": "wins",
+      "publishedAt": "2026-02-08T18:41:09.000Z",
+      "processedAt": "2026-02-14T10:40:07.900Z"
+    },
+    {
+      "id": "74f833c09c226012",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "originalTitle": "8 centre de siguranță și sprijin pentru familii vulnerabile, finanțate prin cooperare elvețiano-română",
+      "url": "https://agerpres.ro/social/2026/02/12/opt-centre-dedicate-victimelor-violentei-domestice-vor-fi-dezvoltate-cu-fonduri-din-programul-de-coo--1527502",
+      "summary": "România va avea 8 centre noi de siguranță și sprijin pentru familii vulnerabile, finanțate prin cooperare elvețiano-română. Proiectul oferă un nou început și adăpost pentru persoane aflate în situații dificile.",
+      "positivity": 75,
+      "impact": 80,
+      "category": "wins",
+      "publishedAt": "2026-02-12T13:19:33.404Z",
+      "processedAt": "2026-02-14T10:40:07.900Z"
+    },
+    {
+      "id": "60cc05808c72429b",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "originalTitle": "Premieră națională. Comisia Europeană sprijină un proiect de reducere a riscului de inundații în județul Galați",
+      "url": "https://www.mediafax.ro/social/premiera-nationala-comisia-europeana-sprijina-un-proiect-de-reducere-a-riscului-de-inundatii-in-judetul-galati-23684925",
+      "summary": "Comisia Europeană sprijină un proiect inedit de reducere a riscului de inundații în județul Galați, oferind un suport fără precedent unei autorități locale. Această inițiativă va crește siguranța locuitorilor din zonă.",
+      "positivity": 80,
+      "impact": 75,
+      "category": "local-heroes",
+      "publishedAt": "2026-02-10T19:03:54.000Z",
+      "processedAt": "2026-02-14T10:40:07.900Z"
+    },
+    {
       "id": "717ad9fda5ef5bc3",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
@@ -130,6 +130,47 @@
       "impact": 80,
       "category": "wins",
       "publishedAt": "2026-02-12T17:23:42.000Z",
+      "processedAt": "2026-02-14T10:40:07.900Z"
+    },
+    {
+      "id": "fc2c7082d173218f",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Bal caritabil la Iași pentru copiii din medii defavorizate. Peste 10.000 de copii primesc haine și hrană",
+      "url": "https://stirileprotv.ro/stiri/actualitate/bal-caritabil-la-iasi-pentru-copiii-din-medii-defavorizate-peste-10-000-de-copii-primesc-haine-si-hrana.html?category_slug=stiri%2Factualitate",
+      "summary": "Un bal caritabil la Iași a strâns fonduri pentru copiii din medii defavorizate, prin licitații de artă și bijuterii. Banii vor ajunge la asociația părintelui Dan Damaschin, ajutând peste 10.000 de copii cu haine și hrană.",
+      "positivity": 80,
+      "impact": 70,
+      "category": "local-heroes",
+      "publishedAt": "2026-02-08T06:50:43.000Z",
+      "processedAt": "2026-02-14T10:40:07.900Z"
+    }
+  ],
+  "reserves": [
+    {
+      "id": "13e6574085341653",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Un bărbat de 39 de ani a primit o inimă nouă la Spitalul Floreasca din București",
+      "url": "https://stirileprotv.ro/stiri/sanatate/un-barbat-de-39-de-ani-a-primit-o-inima-noua-la-spitalul-floreasca-din-bucuresti.html?category_slug=stiri%2Fsanatate",
+      "summary": "Un bărbat de 39 de ani a primit o nouă inimă la Spitalul Floreasca din București. Transplantul de succes îi oferă o nouă șansă la viață pacientului.",
+      "positivity": 85,
+      "impact": 80,
+      "category": "wins",
+      "publishedAt": "2026-02-12T13:51:29.000Z",
+      "processedAt": "2026-02-14T10:40:07.900Z"
+    },
+    {
+      "id": "53f33dec4ad604e3",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "originalTitle": "STS: Un nou sistem de localizare de o mai mare acuratețe și un serviciu dedicat persoanelor cu deficiențe de auz",
+      "url": "https://agerpres.ro/social/2026/02/10/sts-un-nou-sistem-de-localizare-de-o-mai-mare-acuratete-si-un-serviciu-dedicat-persoanelor-cu-defici--1526707",
+      "summary": "STS a lansat un nou sistem de localizare mai precis și un serviciu dedicat persoanelor cu deficiențe de auz. Aceste inovații vor îmbunătăți siguranța și accesibilitatea serviciilor de urgență pentru anumite categorii de cetățeni.",
+      "positivity": 85,
+      "impact": 80,
+      "category": "local-heroes",
+      "publishedAt": "2026-02-10T13:25:03.762Z",
       "processedAt": "2026-02-14T10:40:07.900Z"
     },
     {
@@ -144,9 +185,7 @@
       "category": "local-heroes",
       "publishedAt": "2026-02-05T15:33:00.000Z",
       "processedAt": "2026-02-14T10:40:07.900Z"
-    }
-  ],
-  "reserves": [
+    },
     {
       "id": "c0ea39d31a159a6c",
       "sourceId": "dw-romania",
@@ -252,19 +291,6 @@
       "processedAt": "2026-02-14T10:40:07.900Z"
     },
     {
-      "id": "60cc05808c72429b",
-      "sourceId": "mediafax",
-      "sourceName": "Mediafax",
-      "originalTitle": "Premieră națională. Comisia Europeană sprijină un proiect de reducere a riscului de inundații în județul Galați",
-      "url": "https://www.mediafax.ro/social/premiera-nationala-comisia-europeana-sprijina-un-proiect-de-reducere-a-riscului-de-inundatii-in-judetul-galati-23684925",
-      "summary": "Comisia Europeană sprijină un proiect inedit de reducere a riscului de inundații în județul Galați, oferind un suport fără precedent unei autorități locale. Această inițiativă va crește siguranța locuitorilor din zonă.",
-      "positivity": 80,
-      "impact": 75,
-      "category": "local-heroes",
-      "publishedAt": "2026-02-10T19:03:54.000Z",
-      "processedAt": "2026-02-14T10:40:07.900Z"
-    },
-    {
       "id": "26dd86c62676f055",
       "sourceId": "agerpres",
       "sourceName": "Agerpres",
@@ -317,19 +343,6 @@
       "processedAt": "2026-02-14T10:40:07.900Z"
     },
     {
-      "id": "74f833c09c226012",
-      "sourceId": "agerpres",
-      "sourceName": "Agerpres",
-      "originalTitle": "Opt centre dedicate victimelor violenței domestice vor fi dezvoltate cu fonduri din Programul de Cooperare Elvețiano-Român",
-      "url": "https://agerpres.ro/social/2026/02/12/opt-centre-dedicate-victimelor-violentei-domestice-vor-fi-dezvoltate-cu-fonduri-din-programul-de-coo--1527502",
-      "summary": "Opt centre pentru victimele violenței domestice vor fi dezvoltate în România cu fonduri din Programul de Cooperare Elvețiano-Român. Proiectul vizează sprijinirea persoanelor vulnerabile și combaterea violenței.",
-      "positivity": 75,
-      "impact": 80,
-      "category": "wins",
-      "publishedAt": "2026-02-12T13:19:33.404Z",
-      "processedAt": "2026-02-14T10:40:07.900Z"
-    },
-    {
       "id": "3a81746061bf50bb",
       "sourceId": "dw-romania",
       "sourceName": "DW România",
@@ -340,19 +353,6 @@
       "impact": 70,
       "category": "wins",
       "publishedAt": "2025-09-16T18:13:00.000Z",
-      "processedAt": "2026-02-14T10:40:07.900Z"
-    },
-    {
-      "id": "fc2c7082d173218f",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Bal caritabil la Iași pentru copiii din medii defavorizate. Peste 10.000 de copii primesc haine și hrană",
-      "url": "https://stirileprotv.ro/stiri/actualitate/bal-caritabil-la-iasi-pentru-copiii-din-medii-defavorizate-peste-10-000-de-copii-primesc-haine-si-hrana.html?category_slug=stiri%2Factualitate",
-      "summary": "Un bal caritabil la Iași a strâns fonduri pentru copiii din medii defavorizate, prin licitații de artă și bijuterii. Banii vor ajunge la asociația părintelui Dan Damaschin, ajutând peste 10.000 de copii cu haine și hrană.",
-      "positivity": 80,
-      "impact": 70,
-      "category": "local-heroes",
-      "publishedAt": "2026-02-08T06:50:43.000Z",
       "processedAt": "2026-02-14T10:40:07.900Z"
     },
     {
@@ -399,8 +399,8 @@
   "totalProcessed": 652,
   "wrapperCopy": {
     "greeting": "Salutare, și bine te-am găsit! 👋",
-    "intro": "Săptămâna aceasta aduce vești remarcabile din țară și din lume! De la avansuri în energia nucleară și inovații medicale, la succese academice și solidaritate internațională, România demonstrează forță și ingeniozitate. Descoperiți poveștile care ne inspiră și ne dau motive de optimism.",
+    "intro": "Săptămâna aceasta e plină de vești bune: România devine lider european în energia nucleară, studenții din Iași sunt campioni europeni la programare, iar serviciul 112 primește o upgradare majoră. Pe plan social, un bal caritabil ajută 10.000 de copii, iar 8 centre noi vor oferi sprijin familiilor vulnerabile. Plus: UE ne ajută să prevenim inundațiile în Galați și The Guardian ne laudă pentru progresul în mediu.",
     "signOff": "Atât pentru astăzi! Sperăm că ți-am adus un strop de optimism și că ne citim săptămâna viitoare. 🙏",
-    "shortSummary": "Energie nucleară, inovații medicale și succese academice."
+    "shortSummary": "Energie nucleară, campioni la programare, 112 modernizat și solidaritate."
   }
 }
