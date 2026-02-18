@@ -1,89 +1,41 @@
-# Good Brief 🌱
+# Good Brief
 
-> Vești bune pentru România. Newsletter săptămânal cu știri pozitive.
+> Vesti bune pentru Romania. Newsletter saptamanal cu stiri pozitive.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-
-## Despre
-
-**Good Brief** este un newsletter săptămânal care aduce în atenție veștile bune din România. Într-o lume în care știrile negative domină, oferim o alternativă: inițiative locale care funcționează, oameni care fac diferența, și realizări de care merită să știi.
-
-🌐 **Website:** [goodbrief.ro](https://goodbrief.ro)
+**Website:** [goodbrief.ro](https://goodbrief.ro)
 
 ## Tech Stack
 
 - **Framework:** [Astro](https://astro.build/) + TypeScript
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **Hosting:** [Cloudflare Pages](https://pages.cloudflare.com/) (gratuit)
+- **Hosting:** [Cloudflare Pages](https://pages.cloudflare.com/)
 - **Email:** [Resend](https://resend.com/)
 
-## Dezvoltare locală
+## Dezvoltare locala
 
 ```bash
-# Clonează repository-ul
-git clone https://github.com/nclandrei/goodbrief.git
-cd goodbrief
-
-# Instalează dependențele
 npm install
-
-# Pornește serverul de dezvoltare
-npm run dev
-
-# Build pentru producție
-npm run build
-
-# Preview build
-npm run preview
+npm run dev       # Server de dezvoltare
+npm run build     # Build pentru productie
+npm run preview   # Preview build
 ```
 
-## Structura proiectului
+## Adaugarea unei editii noi
 
-```
-goodbrief/
-├── src/
-│   ├── components/     # Componente Astro reutilizabile
-│   ├── layouts/        # Layout-uri de pagină
-│   ├── pages/          # Pagini (routing automat)
-│   └── styles/         # CSS global
-├── content/
-│   └── issues/         # Edițiile newsletter-ului (Markdown)
-├── public/             # Fișiere statice
-└── astro.config.mjs    # Configurare Astro
-```
-
-## Adăugarea unei ediții noi
-
-1. Creează un fișier nou în `content/issues/`:
+Creaza un fisier Markdown in `content/issues/`:
 
 ```markdown
 ---
-title: "Good Brief #X - Titlul Ediției"
+title: "Good Brief #X - Titlul Editiei"
 date: 2025-01-13
-summary: "O scurtă descriere a ediției."
+summary: "O scurta descriere a editiei."
 ---
 
-Conținutul ediției aici...
+Continutul editiei aici...
 ```
 
-2. Commit și push - site-ul se actualizează automat.
+Commit si push -- site-ul se actualizeaza automat.
 
-## Contribuții
+## Licenta
 
-Contribuțiile sunt binevenite! Poți:
-
-- 🐛 Raporta bug-uri
-- 💡 Sugera îmbunătățiri
-- 📝 Trimite pull request-uri
-- 📣 Distribui prietenilor
-
-## Susține proiectul
-
-Good Brief este gratuit. Dacă îți place ce facem:
-
-- ⭐ Dă o stea pe GitHub
-- 📧 Trimite povești bune la hello@goodbrief.ro
-
-## Licență
-
-[MIT](LICENSE) - folosește codul liber pentru proiectele tale!
+[MIT](LICENSE)
