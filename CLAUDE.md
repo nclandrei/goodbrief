@@ -29,8 +29,16 @@ npx tsx scripts/send-welcome-test.ts        # Send test welcome email to TEST_EM
 npm run ingest-news      # Fetch news from RSS feeds
 npm run generate-draft   # Generate newsletter draft with AI
 npm run publish-issue    # Publish issue to content/issues/
+npm run cleanup-raw-data # Clean up old raw data files
 
-# No test framework configured yet
+# Notifications & Alerts
+npm run notify-draft           # Notify when draft is ready
+npm run alert-missing-draft    # Alert if draft is missing
+npm run alert-workflow-failure # Alert on workflow failure
+
+# Testing
+npm run test:pipeline          # Run pipeline integration tests
+npm run test:pipeline:refresh  # Run pipeline tests with cache refresh
 ```
 
 ## Project Structure
