@@ -35,10 +35,6 @@ npm run cleanup-raw-data # Clean up old raw data files
 npm run notify-draft           # Notify when draft is ready
 npm run alert-missing-draft    # Alert if draft is missing
 npm run alert-workflow-failure # Alert on workflow failure
-
-# Testing
-npm run test:pipeline          # Run pipeline integration tests
-npm run test:pipeline:refresh  # Run pipeline tests with cache refresh
 ```
 
 ## Project Structure
