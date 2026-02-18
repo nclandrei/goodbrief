@@ -22,7 +22,7 @@ npm run check       # TypeScript check
 npm run email:dev                           # React Email dev server (localhost:3001)
 npm run email:preview -- --week 2026-W02    # Preview newsletter HTML in browser
 npm run email:test -- --week 2026-W02       # Send test newsletter to TEST_EMAIL
-npm run email:send -- --week 2026-W02 --confirm  # Send to all subscribers
+npm run email:send -- --week 2026-W02 --confirm  # Send to all subscribers (CI only)
 npx tsx scripts/send-welcome-test.ts        # Send test welcome email to TEST_EMAIL
 
 # Newsletter Pipeline
@@ -109,3 +109,4 @@ All plans and implementation specs live in `docs/`. When creating new plans or d
 - Keep dependencies minimal for cost efficiency
 - No backend/database - static site + external services
 - GDPR compliance required (Romanian audience)
+- Newsletter sending (`email:send`) is blocked locally - only runs in GitHub Actions
