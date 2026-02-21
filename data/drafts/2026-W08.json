@@ -29,42 +29,68 @@
       "processedAt": "2026-02-21T10:39:55.981Z"
     },
     {
-      "id": "5caa0f3ef6c733d3",
-      "sourceId": "mediafax",
-      "sourceName": "Mediafax",
-      "originalTitle": "Bogdan Ivan anunță semnarea unui acord cu o companie din SUA pentru metale rare: Primul proiect integrat între extracție, rafinare și consum ulterior",
-      "url": "https://www.mediafax.ro/stirile-zilei/bogdan-ivan-anunta-semnarea-unui-acord-cu-o-companie-din-sua-pentru-metale-rare-primul-proiect-integrat-intre-extractie-rafinare-si-consum-ulterior-23687952",
-      "summary": "România ar putea deveni un jucător global în domeniul metalelor rare, datorită unui proiect integrat de extracție, rafinare și utilizare industrială, realizat în parteneriat cu o companie americană.\nAceastă colaborare marchează un pas important pentru sectorul energetic și tehnologic.",
-      "positivity": 90,
+      "id": "adc6f4def7633c7c",
+      "sourceId": "europa-libera",
+      "sourceName": "Europa Liberă",
+      "originalTitle": "Portul Constanţa va prelua portul Giurgiuleşti din Republica Moldova. Ministru: România consolidează un culoar strategic",
+      "url": "https://romania.europalibera.org/a/portul-constan%c5%a3a-va-prelua-portul-giurgiule%c5%9fti-din-republica-moldova/33676948.html",
+      "summary": "Portul Constanța va prelua activitatea Portului Internațional Liber Giurgiulești din Republica Moldova. Această extindere strategică consolidează un culoar economic important pentru România.",
+      "positivity": 80,
+      "impact": 75,
+      "category": "wins",
+      "publishedAt": "2026-02-13T11:36:51.000Z",
+      "processedAt": "2026-02-21T10:39:55.981Z"
+    },
+    {
+      "id": "fa6249620e1bb0af",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Carrefour anunță vânzarea operațiunilor din România către Pavăl Holding (Dedeman), într-o tranzacție de 823 de milioane de euro",
+      "url": "https://stirileprotv.ro/stiri/actualitate/carrefour-se-vinde-de-data-asta-oficial-dedeman-preia-controlul-in-romania.html?category_slug=stiri%2Factualitate",
+      "summary": "Carrefour a anunțat vânzarea operațiunilor sale din România către Pavăl Holding, proprietarul Dedeman, într-o tranzacție evaluată la 823 de milioane de euro. Mutarea face parte din revizuirea portofoliului începută în 2025 de grupul francez.",
+      "positivity": 82,
       "impact": 80,
       "category": "wins",
-      "publishedAt": "2026-02-16T23:31:29.000Z",
+      "publishedAt": "2026-02-12T07:29:57.000Z",
       "processedAt": "2026-02-21T10:39:55.981Z"
     },
     {
-      "id": "1a9051de1bc66ee9",
+      "id": "7b47b84d8e5f4108",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
-      "originalTitle": "Sahara, racheta românească nedetectabilă de radar care e „pilotată” de AI. A fost produsă de o companie din Cluj",
-      "url": "https://stirileprotv.ro/stiri/actualitate/sahara-racheta-romaneasca-nedetectabila-de-radar-care-e-pilotata-de-ai-a-fost-produsa-de-o-companie-din-cluj-si-e-in-teste.html?category_slug=stiri%2Factualitate",
-      "summary": "O companie românească din Cluj a dezvoltat „Sahara”, prima rachetă de croazieră din lume dotată cu inteligență artificială, nedetectabilă de radar.\nAceastă inovație marchează un avans semnificativ în domeniul tehnologiei militare.",
-      "positivity": 90,
-      "impact": 85,
+      "originalTitle": "JO de iarnă: Tentea și Iordache au reușit locul 5 la proba de bob, cel mai bun rezultat al României din ultimii 34 de ani",
+      "url": "https://stirileprotv.ro/stiri/sport/jo-de-iarna-tentea-si-iordache-au-reusit-locul-5-la-proba-de-bob-cel-mai-bun-rezultat-al-romaniei-la-din-ultimii-34-de-ani.html?category_slug=stiri%2Fsport",
+      "summary": "Boberii români Mihai Tentea și George Iordache au obținut locul 5 la proba de bob-2 masculin la Jocurile Olimpice de iarnă, cel mai bun rezultat al României din ultimii 34 de ani.",
+      "positivity": 85,
+      "impact": 70,
       "category": "wins",
-      "publishedAt": "2026-02-17T17:46:24.000Z",
+      "publishedAt": "2026-02-18T06:39:52.000Z",
       "processedAt": "2026-02-21T10:39:55.981Z"
     },
     {
-      "id": "254268846b005c81",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "O şansă la viaţă pentru cinci pacienţi în urma unor transplanturi. Organele au fost prelevate la Iași",
-      "url": "https://stirileprotv.ro/stiri/actualitate/o-sansa-la-via-a-pentru-cinci-pacien-i-in-urma-unor-transplanturi-organele-au-fost-prelevate-la-iasi.html?category_slug=stiri%2Factualitate",
-      "summary": "Cinci pacienți vor primi o nouă șansă la viață datorită transplanturilor de organe prelevate la Iași de la o femeie aflată în moarte cerebrală. Aceste intervenții chirurgicale salvatoare vor fi efectuate în București și Târgu Mureș.",
-      "positivity": 90,
-      "impact": 85,
-      "category": "local-heroes",
-      "publishedAt": "2026-02-14T11:19:59.000Z",
+      "id": "2a802e508764f444",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "originalTitle": "ANRE a aprobat a doua cea mai mare centrală electrică din țară, după Mintia. În premieră, i-a suspendat pentru trei luni autorizația unui producător",
+      "url": "https://www.mediafax.ro/economic/anre-a-aprobat-a-doua-cea-mai-mare-centrala-electrica-din-tara-dupa-mintia-in-premiera-i-a-suspendat-pentru-trei-luni-autorizatia-unui-producator-23689025",
+      "summary": "Comitetului de reglementare al Autorității Naționale de Reglementare în domeniul Energiei (ANRE) a aprobat, în ședința de marți, înființarea unor capacități de producție de energie electrică de 850 MW, ceea ce înseamnă cu 150 MW peste capacitatea unui reactor de la Cernavodă.",
+      "positivity": 84,
+      "impact": 82,
+      "category": "wins",
+      "publishedAt": "2026-02-18T12:49:47.000Z",
+      "processedAt": "2026-02-21T10:39:55.981Z"
+    },
+    {
+      "id": "7d2221d9f7c43ec5",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "originalTitle": "Scrimă: Medalie de argint pentru România la Campionatul European de Cadeți și Juniori de la Tbilisi",
+      "url": "https://www.mediafax.ro/sport/scrima-medalie-de-argint-pentru-romania-la-campionatul-european-de-cadeti-si-juniori-de-la-tbilisi-23690453",
+      "summary": "Alexandra Adoch a obținut medalia de argint la floretă la Campionatul European de Cadeți și Juniori de la Tbilisi.",
+      "positivity": 86,
+      "impact": 72,
+      "category": "wins",
+      "publishedAt": "2026-02-20T18:22:33.000Z",
       "processedAt": "2026-02-21T10:39:55.981Z"
     },
     {
@@ -107,16 +133,109 @@
       "processedAt": "2026-02-21T10:39:55.981Z"
     },
     {
-      "id": "7b47b84d8e5f4108",
+      "id": "254268846b005c81",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
-      "originalTitle": "JO de iarnă: Tentea și Iordache au reușit locul 5 la proba de bob, cel mai bun rezultat al României din ultimii 34 de ani",
-      "url": "https://stirileprotv.ro/stiri/sport/jo-de-iarna-tentea-si-iordache-au-reusit-locul-5-la-proba-de-bob-cel-mai-bun-rezultat-al-romaniei-la-din-ultimii-34-de-ani.html?category_slug=stiri%2Fsport",
-      "summary": "Boberii români Mihai Tentea și George Iordache au obținut locul 5 la proba de bob-2 masculin la Jocurile Olimpice de iarnă, cel mai bun rezultat al României din ultimii 34 de ani.",
+      "originalTitle": "Gest de solidaritate la Iași: cinci pacienți primesc o nouă șansă la viață prin transplant",
+      "url": "https://stirileprotv.ro/stiri/actualitate/o-sansa-la-via-a-pentru-cinci-pacien-i-in-urma-unor-transplanturi-organele-au-fost-prelevate-la-iasi.html?category_slug=stiri%2Factualitate",
+      "summary": "Datorită deciziei unei familii din Iași de a dona organe, cinci pacienți primesc o nouă șansă la viață prin transplanturi realizate la București și Târgu Mureș.",
+      "positivity": 90,
+      "impact": 85,
+      "category": "local-heroes",
+      "publishedAt": "2026-02-14T11:19:59.000Z",
+      "processedAt": "2026-02-21T10:39:55.981Z"
+    }
+  ],
+  "reserves": [
+    {
+      "id": "9fb5ff7a780e864b",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Sprijinul de 50 lei/lună pentru energie electrică, prelungit până la finalul lui 2026: câți români beneficiază",
+      "url": "https://stirileprotv.ro/stiri/actualitate/sprijinul-de-50-lei-luna-pentru-energie-electrica-prelungit-pana-la-finalul-lui-2026-cati-romani-beneficiaza.html?category_slug=stiri%2Factualitate",
+      "summary": "Măsura de compensare pentru consumatorii vulnerabili de energie electrică continuă până la 31 decembrie 2026, anunță Agenția Națională pentru Plăți și Inspecție Socială (ANPIS).",
+      "positivity": 84,
+      "impact": 78,
+      "category": "wins",
+      "publishedAt": "2026-02-20T15:51:58.000Z",
+      "processedAt": "2026-02-21T10:39:55.981Z"
+    },
+    {
+      "id": "6666b7df719f5928",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Programele pentru Limba şi literatura română, clasa a IX-a, au fost aprobate. Ce prevăd",
+      "url": "https://stirileprotv.ro/educatie/ministerul-educa-iei-anun-a-ca-au-fost-aprobate-programele-pentru-limba-si-literatura-romana-clasa-a-ix-a-ce-prevad.html?category_slug=educatie",
+      "summary": "Ministerul Educaţiei şi Cercetării (MEC) anunţă, joi, că a aprobat programele pentru disciplina limba şi literatura română - clasa a IX-a, învăţământ liceal. Acestea urmează să fie publicate în Monitorul Oficial.",
+      "positivity": 80,
+      "impact": 75,
+      "category": "wins",
+      "publishedAt": "2026-02-19T16:10:31.000Z",
+      "processedAt": "2026-02-21T10:39:55.981Z"
+    },
+    {
+      "id": "1a9051de1bc66ee9",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Sahara, racheta românească nedetectabilă de radar care e „pilotată” de AI. A fost produsă de o companie din Cluj",
+      "url": "https://stirileprotv.ro/stiri/actualitate/sahara-racheta-romaneasca-nedetectabila-de-radar-care-e-pilotata-de-ai-a-fost-produsa-de-o-companie-din-cluj-si-e-in-teste.html?category_slug=stiri%2Factualitate",
+      "summary": "O companie românească din Cluj a dezvoltat „Sahara”, prima rachetă de croazieră din lume dotată cu inteligență artificială, nedetectabilă de radar.\nAceastă inovație marchează un avans semnificativ în domeniul tehnologiei militare.",
+      "positivity": 90,
+      "impact": 85,
+      "category": "wins",
+      "publishedAt": "2026-02-17T17:46:24.000Z",
+      "processedAt": "2026-02-21T10:39:55.981Z"
+    },
+    {
+      "id": "4aad4751bb2593d8",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Primul robot controlat vocal din România a fost creat la Timișoara. Poate executa sarcini doar prin comenzi rostite",
+      "url": "https://stirileprotv.ro/stiri/ilikeit/primul-robot-controlat-vocal-din-romania-a-fost-creat-la-timisoara-poate-executa-sarcini-doar-prin-comenzi-rostite.html?category_slug=stiri%2Filikeit",
+      "summary": "Primul robot controlat vocal din România a fost creat la Timișoara, la universitate. Echipa de cercetători a realizat un robot capabil să execute sarcini prin comenzi rostite, un pas important în robotică.",
+      "positivity": 85,
+      "impact": 75,
+      "category": "wins",
+      "publishedAt": "2026-02-16T05:34:15.000Z",
+      "processedAt": "2026-02-21T10:39:55.981Z"
+    },
+    {
+      "id": "77d1cc5498962b85",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "JO de iarnă: Reacția reprezentantei României, Julia Sauter, după cele 190 de puncte: „Am fost atât de fericită”. VIDEO",
+      "url": "https://stirileprotv.ro/stiri/sport/jo-de-iarna-reactia-reprezentantei-romaniei-julia-sauter-dupa-cele-190-de-puncte-am-fost-atat-de-fericita.html?category_slug=stiri%2Fsport",
+      "summary": "Sportiva română Julia Sauter s-a declarat extrem de fericită după ce a obținut un punctaj record la patinaj artistic la Jocurile Olimpice de iarnă. Performanța sa personală reprezintă un succes notabil.",
       "positivity": 85,
       "impact": 70,
       "category": "wins",
-      "publishedAt": "2026-02-18T06:39:52.000Z",
+      "publishedAt": "2026-02-20T06:08:10.000Z",
+      "processedAt": "2026-02-21T10:39:55.981Z"
+    },
+    {
+      "id": "728275fd2780c352",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Cum arată Brașovul de acum 500 de ani prin ochelari VR. ”Te fac să te simți de parcă ai fi în acea poveste”",
+      "url": "https://stirileprotv.ro/stiri/ilikeit/cum-arata-brasovul-de-acum-500-de-ani-prin-ochelari-vr-te-fac-sa-te-simti-de-parca-ai-fi-in-acea-poveste.html?category_slug=stiri%2Filikeit",
+      "summary": "Brașovul din urmă cu 500 de ani poate fi explorat acum prin realitate virtuală (VR). Această tehnologie modernă ajută la înțelegerea mai profundă a istoriei, transformând lecțiile într-o experiență captivantă.",
+      "positivity": 80,
+      "impact": 70,
+      "category": "wins",
+      "publishedAt": "2026-02-14T08:27:08.000Z",
+      "processedAt": "2026-02-21T10:39:55.981Z"
+    },
+    {
+      "id": "5caa0f3ef6c733d3",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "originalTitle": "Bogdan Ivan anunță semnarea unui acord cu o companie din SUA pentru metale rare: Primul proiect integrat între extracție, rafinare și consum ulterior",
+      "url": "https://www.mediafax.ro/stirile-zilei/bogdan-ivan-anunta-semnarea-unui-acord-cu-o-companie-din-sua-pentru-metale-rare-primul-proiect-integrat-intre-extractie-rafinare-si-consum-ulterior-23687952",
+      "summary": "România ar putea deveni un jucător global în domeniul metalelor rare, datorită unui proiect integrat de extracție, rafinare și utilizare industrială, realizat în parteneriat cu o companie americană.\nAceastă colaborare marchează un pas important pentru sectorul energetic și tehnologic.",
+      "positivity": 90,
+      "impact": 80,
+      "category": "wins",
+      "publishedAt": "2026-02-16T23:31:29.000Z",
       "processedAt": "2026-02-21T10:39:55.981Z"
     },
     {
@@ -144,9 +263,7 @@
       "category": "local-heroes",
       "publishedAt": "2026-01-06T06:42:00.000Z",
       "processedAt": "2026-02-21T10:39:55.981Z"
-    }
-  ],
-  "reserves": [
+    },
     {
       "id": "f1992d089802f0b9",
       "sourceId": "dw-romania",
@@ -187,19 +304,6 @@
       "processedAt": "2026-02-21T10:39:55.981Z"
     },
     {
-      "id": "4aad4751bb2593d8",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Primul robot controlat vocal din România a fost creat la Timișoara. Poate executa sarcini doar prin comenzi rostite",
-      "url": "https://stirileprotv.ro/stiri/ilikeit/primul-robot-controlat-vocal-din-romania-a-fost-creat-la-timisoara-poate-executa-sarcini-doar-prin-comenzi-rostite.html?category_slug=stiri%2Filikeit",
-      "summary": "Primul robot controlat vocal din România a fost creat la Timișoara, la universitate. Echipa de cercetători a realizat un robot capabil să execute sarcini prin comenzi rostite, un pas important în robotică.",
-      "positivity": 85,
-      "impact": 75,
-      "category": "wins",
-      "publishedAt": "2026-02-16T05:34:15.000Z",
-      "processedAt": "2026-02-21T10:39:55.981Z"
-    },
-    {
       "id": "e26c24c934f5bba7",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
@@ -226,19 +330,6 @@
       "processedAt": "2026-02-21T10:39:55.981Z"
     },
     {
-      "id": "77d1cc5498962b85",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "JO de iarnă: Reacția reprezentantei României, Julia Sauter, după cele 190 de puncte: „Am fost atât de fericită”. VIDEO",
-      "url": "https://stirileprotv.ro/stiri/sport/jo-de-iarna-reactia-reprezentantei-romaniei-julia-sauter-dupa-cele-190-de-puncte-am-fost-atat-de-fericita.html?category_slug=stiri%2Fsport",
-      "summary": "Sportiva română Julia Sauter s-a declarat extrem de fericită după ce a obținut un punctaj record la patinaj artistic la Jocurile Olimpice de iarnă. Performanța sa personală reprezintă un succes notabil.",
-      "positivity": 85,
-      "impact": 70,
-      "category": "wins",
-      "publishedAt": "2026-02-20T06:08:10.000Z",
-      "processedAt": "2026-02-21T10:39:55.981Z"
-    },
-    {
       "id": "d3f3f442cdd020fe",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
@@ -262,19 +353,6 @@
       "impact": 60,
       "category": "quick-hits",
       "publishedAt": "2026-02-14T05:20:25.000Z",
-      "processedAt": "2026-02-21T10:39:55.981Z"
-    },
-    {
-      "id": "adc6f4def7633c7c",
-      "sourceId": "europa-libera",
-      "sourceName": "Europa Liberă",
-      "originalTitle": "Portul Constanţa va prelua portul Giurgiuleşti din Republica Moldova. Ministru: România consolidează un culoar strategic",
-      "url": "https://romania.europalibera.org/a/portul-constan%c5%a3a-va-prelua-portul-giurgiule%c5%9fti-din-republica-moldova/33676948.html",
-      "summary": "Portul Constanța va prelua activitatea Portului Internațional Liber Giurgiulești din Republica Moldova. Această extindere strategică consolidează un culoar economic important pentru România.",
-      "positivity": 80,
-      "impact": 75,
-      "category": "wins",
-      "publishedAt": "2026-02-13T11:36:51.000Z",
       "processedAt": "2026-02-21T10:39:55.981Z"
     },
     {
@@ -343,19 +421,6 @@
       "processedAt": "2026-02-21T10:39:55.981Z"
     },
     {
-      "id": "728275fd2780c352",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Cum arată Brașovul de acum 500 de ani prin ochelari VR. ”Te fac să te simți de parcă ai fi în acea poveste”",
-      "url": "https://stirileprotv.ro/stiri/ilikeit/cum-arata-brasovul-de-acum-500-de-ani-prin-ochelari-vr-te-fac-sa-te-simti-de-parca-ai-fi-in-acea-poveste.html?category_slug=stiri%2Filikeit",
-      "summary": "Brașovul din urmă cu 500 de ani poate fi explorat acum prin realitate virtuală (VR). Această tehnologie modernă ajută la înțelegerea mai profundă a istoriei, transformând lecțiile într-o experiență captivantă.",
-      "positivity": 80,
-      "impact": 70,
-      "category": "wins",
-      "publishedAt": "2026-02-14T08:27:08.000Z",
-      "processedAt": "2026-02-21T10:39:55.981Z"
-    },
-    {
       "id": "7c9168a43e35d37f",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
@@ -399,8 +464,8 @@
   "totalProcessed": 653,
   "wrapperCopy": {
     "greeting": "Salutare! 👋",
-    "intro": "Săptămâna aceasta, veștile bune din România ne inspiră: de la performanțe sportive de excepție și inovații tehnologice de vârf, la gesturi de solidaritate umană și descoperiri arheologice remarcabile. Pregătiți-vă cafeaua, pentru că avem multe motive de mândrie.",
+    "intro": "Săptămâna aceasta, România are motive solide de optimism: rezultate sportive care ne pun în prim-plan, proiecte strategice în economie și infrastructură care capătă tracțiune, plus inițiative din sănătate care aduc impact direct în viețile oamenilor.",
     "signOff": "Numai bine și spor la tot ce faci! 🙏",
-    "shortSummary": "Performanțe sportive, inovații tehnologice și descoperiri: vești bune din România."
+    "shortSummary": "Sport, investiții strategice și sănătate: vești bune din România, cu impact real."
   }
 }
