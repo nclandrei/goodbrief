@@ -8,7 +8,12 @@ import type {
   NewsletterDraft,
   WrapperCopy,
 } from './types.js';
-import { deduplicateArticles, titleSimilarity } from './lib/deduplication.js';
+import {
+  deduplicateArticles,
+  findCrossWeekDuplicate,
+  canonicalizeStoryUrl,
+  normalizeTitle,
+} from './lib/deduplication.js';
 import { processArticleBatch, createGeminiModel, GeminiQuotaError } from './lib/gemini.js';
 import type { ArticleScore } from './lib/types.js';
 import { generateWrapperCopy } from '../emails/utils/generate-copy.js';
@@ -18,6 +23,14 @@ import { sendAlert } from './lib/alert.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const ROOT_DIR = join(__dirname, '..');
+
+function parseLookbackEnv(value: string | undefined, fallback: number): number {
+  const parsed = Number.parseInt(value ?? '', 10);
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback;
+}
+
+const PUBLISHED_ISSUE_LOOKBACK = parseLookbackEnv(process.env.PUBLISHED_ISSUE_LOOKBACK, 8);
+const DRAFT_LOOKBACK = parseLookbackEnv(process.env.DRAFT_LOOKBACK, 2);
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 if (!GEMINI_API_KEY) {
@@ -43,46 +56,162 @@ function getISOWeekId(date: Date = new Date()): string {
 }
 
 interface HistoricalArticle {
-  id: string;
+  id?: string;
   title: string;
   url: string;
+  source: 'draft' | 'issue';
+  origin: string;
 }
 
-function loadPreviousWeeksArticles(weeksToLoad: number = 2): HistoricalArticle[] {
-  const allPrevious: HistoricalArticle[] = [];
-  const currentWeekId = getISOWeekId();
+interface HistoricalLoadResult {
+  articles: HistoricalArticle[];
+  draftFilesLoaded: number;
+  issueFilesLoaded: number;
+}
 
-  // Get all draft files
+interface DraftFileShape {
+  selected?: Array<{
+    id?: string;
+    title?: string;
+    originalTitle?: string;
+    url?: string;
+  }>;
+}
+
+function loadPreviousDraftArticles(
+  currentWeekId: string,
+  weeksToLoad: number
+): { articles: HistoricalArticle[]; filesLoaded: number } {
+  const allPrevious: HistoricalArticle[] = [];
+  let filesLoaded = 0;
+
   const draftsDir = join(ROOT_DIR, 'data', 'drafts');
-  if (!existsSync(draftsDir)) return [];
+  if (!existsSync(draftsDir)) {
+    return { articles: [], filesLoaded: 0 };
+  }
 
   const draftFiles = readdirSync(draftsDir)
     .filter((f: string) => f.endsWith('.json') && f !== `${currentWeekId}.json`)
-    .sort()
-    .reverse() // Most recent first
+    .sort((a, b) => b.localeCompare(a))
     .slice(0, weeksToLoad);
 
   for (const file of draftFiles) {
     try {
-      const draft = JSON.parse(
-        readFileSync(join(draftsDir, file), 'utf-8')
-      );
+      const draft = JSON.parse(readFileSync(join(draftsDir, file), 'utf-8')) as DraftFileShape;
 
-      // Extract selected articles
-      if (draft.selected && Array.isArray(draft.selected)) {
-        allPrevious.push(...draft.selected.map((a: any) => ({
-          id: a.id,
-          title: a.originalTitle || a.title,
-          url: a.url,
-        })));
+      if (Array.isArray(draft.selected)) {
+        for (const article of draft.selected) {
+          const title = article.originalTitle || article.title;
+          if (!title || !article.url) {
+            continue;
+          }
+          allPrevious.push({
+            id: article.id,
+            title,
+            url: article.url,
+            source: 'draft',
+            origin: file,
+          });
+        }
       }
+      filesLoaded += 1;
     } catch (error) {
       console.warn(`Failed to load ${file}:`, error);
     }
   }
 
-  console.log(`Loaded ${allPrevious.length} articles from ${draftFiles.length} previous weeks`);
-  return allPrevious;
+  return { articles: allPrevious, filesLoaded };
+}
+
+function parseIssueMarkdown(markdown: string): Array<{ title: string; url: string }> {
+  const items: Array<{ title: string; url: string }> = [];
+  const lines = markdown.split('\n');
+  let pendingTitle: string | null = null;
+
+  for (const line of lines) {
+    if (line.startsWith('### ')) {
+      pendingTitle = line.replace(/^###\s+/, '').trim();
+      continue;
+    }
+
+    if (!pendingTitle || !line.startsWith('→ [')) {
+      continue;
+    }
+
+    const linkMatch = line.match(/\((https?:\/\/.+)\)\s*$/);
+    if (!linkMatch) {
+      continue;
+    }
+
+    items.push({ title: pendingTitle, url: linkMatch[1] });
+    pendingTitle = null;
+  }
+
+  return items;
+}
+
+function loadPublishedIssueArticles(
+  issuesToLoad: number
+): { articles: HistoricalArticle[]; filesLoaded: number } {
+  const issuesDir = join(ROOT_DIR, 'content', 'issues');
+  if (!existsSync(issuesDir)) {
+    return { articles: [], filesLoaded: 0 };
+  }
+
+  const issueFiles = readdirSync(issuesDir)
+    .filter((file) => file.endsWith('.md'))
+    .sort((a, b) => b.localeCompare(a))
+    .slice(0, issuesToLoad);
+
+  const history: HistoricalArticle[] = [];
+  let filesLoaded = 0;
+
+  for (const file of issueFiles) {
+    try {
+      const markdown = readFileSync(join(issuesDir, file), 'utf-8');
+      const issueItems = parseIssueMarkdown(markdown);
+      for (const item of issueItems) {
+        history.push({
+          title: item.title,
+          url: item.url,
+          source: 'issue',
+          origin: file,
+        });
+      }
+      filesLoaded += 1;
+    } catch (error) {
+      console.warn(`Failed to load issue ${file}:`, error);
+    }
+  }
+
+  return { articles: history, filesLoaded };
+}
+
+function loadHistoricalArticles(
+  currentWeekId: string,
+  issueLookback: number = PUBLISHED_ISSUE_LOOKBACK,
+  draftLookback: number = DRAFT_LOOKBACK
+): HistoricalLoadResult {
+  const fromIssues = loadPublishedIssueArticles(issueLookback);
+  const fromDrafts = loadPreviousDraftArticles(currentWeekId, draftLookback);
+
+  const merged = [...fromIssues.articles, ...fromDrafts.articles];
+  const deduped = new Map<string, HistoricalArticle>();
+
+  for (const article of merged) {
+    const canonicalUrl = canonicalizeStoryUrl(article.url);
+    const normalizedTitle = normalizeTitle(article.title);
+    const key = `${canonicalUrl || article.url}::${normalizedTitle}`;
+    if (!deduped.has(key)) {
+      deduped.set(key, article);
+    }
+  }
+
+  return {
+    articles: [...deduped.values()],
+    draftFilesLoaded: fromDrafts.filesLoaded,
+    issueFilesLoaded: fromIssues.filesLoaded,
+  };
 }
 
 interface RefinementResult {
@@ -97,7 +226,8 @@ async function refineDraft(
   reserves: ProcessedArticle[],
   wrapperCopy: WrapperCopy,
   weekId: string,
-  previousArticles: HistoricalArticle[] = []
+  previousArticles: HistoricalArticle[] = [],
+  lookbackLabel: string = 'last editions'
 ): Promise<{ selected: ProcessedArticle[]; reserves: ProcessedArticle[]; wrapperCopy: WrapperCopy }> {
   const genAI = new GoogleGenerativeAI(GEMINI_API_KEY!);
 
@@ -130,7 +260,7 @@ async function refineDraft(
     .join('\n\n');
 
   const previousWeeksContext = previousArticles.length > 0
-    ? `\n\nPREVIOUSLY PUBLISHED (last 2 weeks - DO NOT SELECT similar stories):
+    ? `\n\nPREVIOUSLY PUBLISHED (${lookbackLabel} - DO NOT SELECT similar stories):
 ${previousArticles.slice(0, 20).map((a, i) => `${i + 1}. "${a.title}"`).join('\n')}
 ${previousArticles.length > 20 ? `... and ${previousArticles.length - 20} more` : ''}`
     : '';
@@ -267,33 +397,33 @@ async function main() {
     `Deduplicated ${buffer.articles.length} articles to ${representatives.length} unique stories`
   );
 
-  // Pre-filter against previous weeks
-  console.log('Filtering out articles from previous weeks...');
-  const previousArticles = loadPreviousWeeksArticles(2); // Last 2 weeks
-  const previousIds = new Set(previousArticles.map(a => a.id));
-  const previousTitles = previousArticles.map(a => a.title);
+  // Pre-filter against historical issues + drafts
+  console.log('Loading historical stories from previous editions...');
+  const historical = loadHistoricalArticles(weekId);
+  const previousArticles = historical.articles;
+  console.log(
+    `Loaded ${previousArticles.length} historical stories (${historical.issueFilesLoaded} issue files, ${historical.draftFilesLoaded} draft files)`
+  );
+
+  console.log('Filtering out articles already covered in recent editions...');
 
   const beforeFilter = representatives.length;
-  representatives = representatives.filter(article => {
-    // Check exact ID match
-    if (previousIds.has(article.id)) {
-      return false;
+  representatives = representatives.filter((article) => {
+    const duplicate = findCrossWeekDuplicate(article, previousArticles);
+    if (!duplicate) {
+      return true;
     }
 
-    // Check title similarity against all previous titles
-    for (const prevTitle of previousTitles) {
-      const similarity = titleSimilarity(article.title, prevTitle);
-      if (similarity >= 0.8) { // Stricter threshold for cross-week duplicates
-        console.log(`  Filtered: "${article.title}" (${Math.round(similarity * 100)}% similar to previous week)`);
-        return false;
-      }
-    }
-
-    return true;
+    const similarityPct = Math.round(duplicate.titleSimilarity * 100);
+    const tokenOverlapPct = Math.round(duplicate.tokenOverlap * 100);
+    console.log(
+      `  Filtered (${duplicate.reason}): "${article.title}" ↔ "${duplicate.previousTitle}" [title:${similarityPct}% tokens:${tokenOverlapPct}%]`
+    );
+    return false;
   });
 
   const filtered = beforeFilter - representatives.length;
-  console.log(`Filtered out ${filtered} articles that appeared in previous weeks`);
+  console.log(`Filtered out ${filtered} articles that were likely covered before`);
   console.log(`Remaining: ${representatives.length} articles to process`);
 
   const BATCH_SIZE = 200;
@@ -395,13 +525,13 @@ async function main() {
   console.log('✓ Generated wrapper copy');
 
   console.log('\n--- Pass 2: Self-review ---');
-  const previousArticlesForReview = loadPreviousWeeksArticles(2); // Load last 2 weeks
   const refined = await refineDraft(
     initialSelected,
     initialReserves,
     initialWrapperCopy,
     weekId,
-    previousArticlesForReview
+    previousArticles,
+    `last ${PUBLISHED_ISSUE_LOOKBACK} published issues + ${DRAFT_LOOKBACK} draft weeks`
   );
 
   const draft: NewsletterDraft = {
