@@ -28,66 +28,6 @@ function loadDraft(weekId: string): NewsletterDraft | null {
   return JSON.parse(readFileSync(draftPath, 'utf-8')) as NewsletterDraft;
 }
 
-function groupByCategory(articles: ProcessedArticle[]): Record<ArticleCategory, number> {
-  const counts: Record<ArticleCategory, number> = {
-    'local-heroes': 0,
-    'wins': 0,
-    'green-stuff': 0,
-    'quick-hits': 0,
-  };
-  for (const article of articles) {
-    if (counts[article.category] !== undefined) {
-      counts[article.category]++;
-    }
-  }
-  return counts;
-}
-
-function renderNotificationEmail(draft: NewsletterDraft): string {
-  const counts = groupByCategory(draft.selected);
-  const githubUrl = `https://github.com/nclandrei/goodbrief/blob/main/data/drafts/${draft.weekId}.json`;
-
-  return `
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Draft Ready - ${draft.weekId}</title>
-</head>
-<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-  <h1 style="color: #3d5f46;">📝 Draft Ready for Review</h1>
-  <p><strong>Week:</strong> ${draft.weekId}</p>
-  <p><strong>Generated:</strong> ${new Date(draft.generatedAt).toLocaleString('ro-RO')}</p>
-  
-  <h2 style="margin-top: 24px;">Article Summary</h2>
-  <ul>
-    <li>🌱 Local Heroes: ${counts['local-heroes']}</li>
-    <li>🏆 Wins: ${counts['wins']}</li>
-    <li>💚 Green Stuff: ${counts['green-stuff']}</li>
-    <li>✨ Quick Hits: ${counts['quick-hits']}</li>
-  </ul>
-  <p><strong>Total selected:</strong> ${draft.selected.length}</p>
-  <p><strong>Reserves:</strong> ${draft.reserves.length}</p>
-  
-  <h2 style="margin-top: 24px;">Actions</h2>
-  <p>
-    <a href="${githubUrl}" style="background: #3d5f46; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; display: inline-block;">
-      Edit Draft on GitHub
-    </a>
-  </p>
-  <p style="color: #666; font-size: 14px; margin-top: 16px;">
-    A proof email with the rendered newsletter will follow this message.
-  </p>
-  
-  <hr style="margin-top: 32px; border: none; border-top: 1px solid #e5e7eb;">
-  <p style="color: #666; font-size: 12px;">
-    This email was automatically sent by the Good Brief draft generation workflow.
-  </p>
-</body>
-</html>
-  `.trim();
-}
-
 function renderProofEmail(draft: NewsletterDraft): string {
   const brandGreen = '#3d5f46';
   const darkText = '#1f2937';
@@ -237,7 +177,7 @@ function renderProofEmail(draft: NewsletterDraft): string {
 async function main(): Promise<void> {
   const weekId = process.argv[2] || getISOWeekId();
   
-  console.log(`\n📬 Good Brief Draft Notification`);
+  console.log(`\n📬 Good Brief Proof Notification`);
   console.log(`Week: ${weekId}\n`);
 
   const apiKey = process.env.RESEND_API_KEY;
@@ -262,22 +202,6 @@ async function main(): Promise<void> {
   console.log(`✓ Loaded draft with ${draft.selected.length} articles`);
 
   const resend = new Resend(apiKey);
-
-  // Send notification email
-  console.log('Sending notification email...');
-  const notificationHtml = renderNotificationEmail(draft);
-  const { error: notifError } = await resend.emails.send({
-    from: 'Good Brief <buna@goodbrief.ro>',
-    to: editorEmail,
-    subject: `[Action Required] Good Brief ${weekId} draft ready`,
-    html: notificationHtml,
-  });
-
-  if (notifError) {
-    console.error('Error sending notification:', notifError);
-    process.exit(1);
-  }
-  console.log('✓ Notification email sent');
 
   // Send proof email
   console.log('Sending proof email...');

@@ -33,7 +33,7 @@ jobs:
           git diff --staged --quiet || git commit -m "Generate newsletter draft"
           git pull --rebase
           git push
-      - name: Send notification emails
+      - name: Send proof email
         run: npm run notify-draft
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
