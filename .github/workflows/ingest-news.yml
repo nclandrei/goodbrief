@@ -11,7 +11,7 @@ permissions:
 jobs:
   ingest:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
@@ -23,9 +23,9 @@ jobs:
       - name: Ingest news
         uses: nick-fields/retry@v3
         with:
-          timeout_minutes: 30
-          max_attempts: 3
-          retry_wait_seconds: 60
+          timeout_minutes: 5
+          max_attempts: 2
+          retry_wait_seconds: 20
           command: npm run ingest-news
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}

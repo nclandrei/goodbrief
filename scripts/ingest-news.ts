@@ -11,9 +11,12 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const ROOT_DIR = join(__dirname, "..");
 
-const parser = new Parser({
-  timeout: 10000, // 10 second timeout
-});
+const DEFAULT_SOURCE_TIMEOUT_MS = 6000;
+const SOURCE_TIMEOUT_MS: Record<string, number> = {
+  agerpres: 4000,
+};
+
+const parser = new Parser();
 
 function getISOWeekId(date: Date = new Date()): string {
   const d = new Date(date);
@@ -47,10 +50,44 @@ interface FetchResult {
   error?: string;
 }
 
+function getSourceTimeoutMs(source: RssSource): number {
+  return SOURCE_TIMEOUT_MS[source.id] ?? DEFAULT_SOURCE_TIMEOUT_MS;
+}
+
+function getFetchErrorMessage(error: unknown, timeoutMs: number): string {
+  const isAbortError =
+    typeof error === "object" &&
+    error !== null &&
+    "name" in error &&
+    (error as { name?: string }).name === "AbortError";
+
+  if (isAbortError) {
+    return `Request timed out after ${timeoutMs}ms`;
+  }
+
+  return error instanceof Error ? error.message : String(error);
+}
+
 async function fetchFeed(source: RssSource): Promise<FetchResult> {
+  const timeoutMs = getSourceTimeoutMs(source);
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
   try {
     console.log(`Fetching ${source.name}...`);
-    const feed = await parser.parseURL(source.url);
+    const response = await fetch(source.url, {
+      signal: controller.signal,
+      headers: {
+        "User-Agent": "goodbrief-ingest/1.0 (+https://goodbrief.ro)",
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error(`Status code ${response.status}`);
+    }
+
+    const xml = await response.text();
+    const feed = await parser.parseString(xml);
     const now = new Date().toISOString();
 
     const articles = (feed.items || []).map((item) => ({
@@ -65,9 +102,11 @@ async function fetchFeed(source: RssSource): Promise<FetchResult> {
     }));
     return { source, articles };
   } catch (error) {
-    const errorMsg = error instanceof Error ? error.message : String(error);
+    const errorMsg = getFetchErrorMessage(error, timeoutMs);
     console.error(`Error fetching ${source.name}:`, errorMsg);
     return { source, articles: [], error: errorMsg };
+  } finally {
+    clearTimeout(timeoutId);
   }
 }
 
@@ -133,4 +172,11 @@ async function main() {
   saveWeeklyBuffer(buffer);
 }
 
-main().catch(console.error);
+main()
+  .then(() => {
+    process.exit(0);
+  })
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
