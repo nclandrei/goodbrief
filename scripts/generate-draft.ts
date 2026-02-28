@@ -15,6 +15,7 @@ import {
   normalizeTitle,
 } from './lib/deduplication.js';
 import { processArticleBatch, createGeminiModel, GeminiQuotaError } from './lib/gemini.js';
+import { deduplicateProcessedArticlesSemantically } from './lib/semantic-dedup.js';
 import type { ArticleScore } from './lib/types.js';
 import { generateWrapperCopy } from '../emails/utils/generate-copy.js';
 import { GoogleGenerativeAI } from '@google/generative-ai';
@@ -31,6 +32,10 @@ function parseLookbackEnv(value: string | undefined, fallback: number): number {
 
 const PUBLISHED_ISSUE_LOOKBACK = parseLookbackEnv(process.env.PUBLISHED_ISSUE_LOOKBACK, 8);
 const DRAFT_LOOKBACK = parseLookbackEnv(process.env.DRAFT_LOOKBACK, 2);
+const SEMANTIC_DEDUP_POOL_SIZE = parseLookbackEnv(process.env.SEMANTIC_DEDUP_POOL_SIZE, 60);
+const FINAL_SELECTED_COUNT = parseLookbackEnv(process.env.FINAL_SELECTED_COUNT, 10);
+const FINAL_RESERVES_COUNT = parseLookbackEnv(process.env.FINAL_RESERVES_COUNT, 30);
+const FINAL_SHORTLIST_COUNT = FINAL_SELECTED_COUNT + FINAL_RESERVES_COUNT;
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 if (!GEMINI_API_KEY) {
@@ -490,7 +495,7 @@ async function main() {
     })
     .filter((p): p is ProcessedArticle => p !== null);
 
-  const positive = processed.filter((p) => p.positivity >= 40);
+  let positive = processed.filter((p) => p.positivity >= 40);
   const discarded = processed.length - positive.length;
 
   // Alert if we don't have enough positive articles for a newsletter
@@ -517,8 +522,58 @@ async function main() {
     return scoreB - scoreA;
   });
 
-  const initialSelected = positive.slice(0, 10);
-  const initialReserves = positive.slice(10, 30);
+  if (positive.length > 1) {
+    // Always deduplicate at least the full final shortlist (selected + reserves).
+    const semanticPoolTarget = Math.max(SEMANTIC_DEDUP_POOL_SIZE, FINAL_SHORTLIST_COUNT);
+    const semanticPoolSize = Math.min(semanticPoolTarget, positive.length);
+    const semanticPool = positive.slice(0, semanticPoolSize);
+    const semanticPoolById = new Map(semanticPool.map((article) => [article.id, article]));
+
+    console.log(`Running semantic deduplication on top ${semanticPoolSize} candidates...`);
+
+    try {
+      const semanticDedup = await deduplicateProcessedArticlesSemantically(
+        semanticPool,
+        GEMINI_API_KEY!,
+        weekId
+      );
+
+      if (semanticDedup.removed.length > 0) {
+        const removedIds = new Set(semanticDedup.removed.map((article) => article.id));
+        positive = positive.filter((article) => !removedIds.has(article.id));
+
+        console.log(
+          `Removed ${semanticDedup.removed.length} semantically duplicate stories`
+        );
+        for (const cluster of semanticDedup.clusters) {
+          const keepTitle =
+            semanticPoolById.get(cluster.keepId)?.originalTitle || cluster.keepId;
+          const dropTitles = cluster.dropIds
+            .map((id) => semanticPoolById.get(id)?.originalTitle || id)
+            .join(' | ');
+
+          console.log(`  Keep: "${keepTitle}"`);
+          console.log(`  Drop: ${dropTitles}`);
+        }
+      } else {
+        console.log('No semantic duplicates found in top candidates');
+      }
+    } catch (error) {
+      if (error instanceof GeminiQuotaError) {
+        console.log(`Semantic deduplication skipped (quota): ${error.message}`);
+      } else {
+        const message = error instanceof Error ? error.message : String(error);
+        console.log(`Semantic deduplication skipped (error): ${message}`);
+      }
+    }
+  }
+
+  const initialSelected = positive.slice(0, FINAL_SELECTED_COUNT);
+  const initialReserves = positive.slice(FINAL_SELECTED_COUNT, FINAL_SHORTLIST_COUNT);
+
+  console.log(
+    `Final shortlist for review: ${initialSelected.length} selected + ${initialReserves.length} reserves`
+  );
 
   console.log('Generating wrapper copy...');
   const initialWrapperCopy = await generateWrapperCopy(initialSelected, weekId);
