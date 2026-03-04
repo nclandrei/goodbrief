@@ -33,13 +33,31 @@ jobs:
       - name: Cleanup old raw data
         run: npm run cleanup-raw-data
       - name: Commit changes
+        id: commit_changes
         run: |
           git config user.name "Andrei-Mihai Nicolae"
           git config user.email "andrei@nicolaeandrei.com"
           git add data/raw/
-          git diff --staged --quiet || git commit -m "Update news buffer"
-          git pull --rebase
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "Update news buffer"
+          echo "has_changes=true" >> "$GITHUB_OUTPUT"
+
+      - name: Push changes
+        if: steps.commit_changes.outputs.has_changes == 'true'
+        uses: nick-fields/retry@v3
+        with:
+          timeout_minutes: 4
+          max_attempts: 3
+          retry_wait_seconds: 30
+          command: |
+            git config lfs.transfer.maxretries 12
+            git config lfs.transfer.maxretrydelay 30
+            git pull --rebase
+            git push
 
       - name: Alert on workflow failure
         if: failure()
