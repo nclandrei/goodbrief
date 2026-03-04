@@ -29,6 +29,10 @@ npx tsx scripts/send-welcome-test.ts        # Send test welcome email to TEST_EM
 npm run ingest-news      # Fetch news from RSS feeds
 npm run generate-draft   # Generate newsletter draft with AI
 npm run publish-issue    # Publish issue to content/issues/
+npm run notify-draft     # Send editor notification/proof email for generated draft
+npm run alert-missing-draft -- <week> <reason>  # Alert when Monday send has no draft
+npm run alert-workflow-failure -- --workflow "<name>" --run-url "<url>"  # Alert on GH workflow failure
+npm run cleanup-raw-data # Remove old data/raw/*.json files
 
 # No test framework configured yet
 ```
@@ -92,16 +96,22 @@ All plans and implementation specs live in `docs/`. When creating new plans or d
 
 ## External Services
 
-### EmailOctopus (Newsletter)
-- Embed form in `SubscribeForm.astro`
-- Free tier: 2,500 subscribers, 10k emails/month
+### Resend (Newsletter + Transactional Email)
+- Subscribe form posts to `/api/subscribe` (Cloudflare Function: `functions/api/subscribe.ts`)
+- Audience-based newsletter sending uses `RESEND_AUDIENCE_ID` and `RESEND_SEGMENT_ID`
 - Requires DNS setup: SPF, DKIM, DMARC
 
 ### Cloudflare
 - Pages for hosting (auto-deploy from main)
 - Web Analytics for privacy-friendly stats
 
+## CI/CD Workflows
+- `ingest-news.yml`: every 6 hours + manual trigger; retries `npm run ingest-news` and runs `npm run cleanup-raw-data`
+- `generate-newsletter.yml`: Saturday 10:00 UTC + manual trigger; runs draft generation and `npm run notify-draft`
+- `send-newsletter.yml`: Monday 08:00 UTC + manual trigger; sends newsletter, publishes issue, alerts if draft missing
+- Failure alerting in scheduled workflows uses `npm run alert-workflow-failure`
+
 ## Important Notes
 - Keep dependencies minimal for cost efficiency
-- No backend/database - static site + external services
+- No persistent custom backend/database - static site + Cloudflare Functions + external services
 - GDPR compliance required (Romanian audience)
