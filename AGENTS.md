@@ -106,7 +106,7 @@ All plans and implementation specs live in `docs/`. When creating new plans or d
 - Web Analytics for privacy-friendly stats
 
 ## CI/CD Workflows
-- `ingest-news.yml`: every 6 hours + manual trigger; retries `npm run ingest-news` and runs `npm run cleanup-raw-data`
+- `ingest-news.yml`: every 6 hours + manual trigger; retries `npm run ingest-news`, runs `npm run cleanup-raw-data`, and retries `git pull --rebase && git push` with Git LFS retry tuning
 - `generate-newsletter.yml`: Saturday 10:00 UTC + manual trigger; runs draft generation and `npm run notify-draft`
 - `send-newsletter.yml`: Monday 08:00 UTC + manual trigger; sends newsletter, publishes issue, alerts if draft missing
 - Failure alerting in scheduled workflows uses `npm run alert-workflow-failure`
