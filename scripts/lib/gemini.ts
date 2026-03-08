@@ -209,6 +209,19 @@ export async function processArticleBatch(
   model: any,
   includeReasoning: boolean = false
 ): Promise<ArticleScore[]> {
+  const mockPath = process.env.GOODBRIEF_GEMINI_SCORES_PATH;
+  if (mockPath) {
+    const parsed = JSON.parse(readFileSync(mockPath, 'utf-8')) as
+      | ArticleScore[]
+      | { scores?: ArticleScore[] };
+    const scores = Array.isArray(parsed) ? parsed : parsed.scores || [];
+    const scoresById = new Map(scores.map((score) => [score.id, score]));
+
+    return articles
+      .map((article) => scoresById.get(article.id))
+      .filter((score): score is ArticleScore => score !== undefined);
+  }
+
   const articlesText = articles
     .map(
       (a) =>

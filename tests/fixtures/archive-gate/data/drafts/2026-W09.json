@@ -1,0 +1,36 @@
+{
+  "weekId": "2026-W09",
+  "generatedAt": "2026-03-01T08:00:00.000Z",
+  "selected": [
+    {
+      "id": "recent-draft-match",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "originalTitle": "Biblioteci vii pentru liceeni din trei orașe",
+      "url": "https://www.mediafax.ro/educatie/biblioteci-vii-pentru-liceeni-din-trei-orase-23690001",
+      "summary": "Trei licee transformă bibliotecile în spații deschise pentru mentorat și întâlniri cu profesioniști.",
+      "positivity": 82,
+      "impact": 70,
+      "category": "wins",
+      "publishedAt": "2026-02-26T10:00:00.000Z",
+      "processedAt": "2026-03-01T08:00:00.000Z"
+    }
+  ],
+  "reserves": [
+    {
+      "id": "draft-reserve-ignored",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Acest reserve nu ar trebui încărcat în istoric",
+      "url": "https://stirileprotv.ro/stiri/actualitate/acest-reserve-nu-ar-trebui-incarcat-in-istoric.html",
+      "summary": "Articol de rezervă pentru test.",
+      "positivity": 80,
+      "impact": 60,
+      "category": "quick-hits",
+      "publishedAt": "2026-02-27T10:00:00.000Z",
+      "processedAt": "2026-03-01T08:00:00.000Z"
+    }
+  ],
+  "discarded": 0,
+  "totalProcessed": 2
+}

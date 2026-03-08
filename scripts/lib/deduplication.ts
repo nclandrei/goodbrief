@@ -43,6 +43,19 @@ export interface HistoricalArticleCandidate {
   id?: string;
   title: string;
   url: string;
+  summary?: string;
+}
+
+export interface StoryLike {
+  title: string;
+  summary?: string;
+}
+
+export interface StoryComparison {
+  titleSimilarity: number;
+  titleTokenOverlap: number;
+  summaryTokenOverlap: number;
+  combinedScore: number;
 }
 
 type CrossWeekDuplicateReason =
@@ -106,6 +119,35 @@ export function tokenOverlap(a: string, b: string): { score: number; commonToken
     score: unionSize === 0 ? 0 : intersection / unionSize,
     commonTokens: intersection,
   };
+}
+
+export function compareStories(a: StoryLike, b: StoryLike): StoryComparison {
+  const titleSimilarityScore = titleSimilarity(a.title, b.title);
+  const titleTokenOverlapScore = tokenOverlap(a.title, b.title).score;
+  const summaryTokenOverlapScore =
+    a.summary && b.summary ? tokenOverlap(a.summary, b.summary).score : 0;
+
+  const combinedScore =
+    titleSimilarityScore * 0.55 +
+    titleTokenOverlapScore * 0.3 +
+    summaryTokenOverlapScore * 0.15;
+
+  return {
+    titleSimilarity: titleSimilarityScore,
+    titleTokenOverlap: titleTokenOverlapScore,
+    summaryTokenOverlap: summaryTokenOverlapScore,
+    combinedScore,
+  };
+}
+
+export function isHighConfidenceStoryMatch(comparison: StoryComparison): boolean {
+  return (
+    comparison.titleSimilarity >= 0.92 ||
+    (comparison.titleSimilarity >= 0.8 &&
+      comparison.titleTokenOverlap >= 0.45 &&
+      comparison.summaryTokenOverlap >= 0.12) ||
+    (comparison.titleTokenOverlap >= 0.75 && comparison.summaryTokenOverlap >= 0.3)
+  );
 }
 
 export function canonicalizeStoryUrl(url: string): string {

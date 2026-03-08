@@ -1,3 +1,4 @@
+import { readFileSync } from 'fs';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import type { ProcessedArticle } from '../types.js';
 import { callWithRetry } from './gemini.js';
@@ -156,6 +157,20 @@ export async function deduplicateProcessedArticlesSemantically(
   apiKey: string,
   weekId: string
 ): Promise<SemanticDeduplicationResult> {
+  if (process.env.GOODBRIEF_DISABLE_SEMANTIC_DEDUP === '1') {
+    return {
+      kept: articles,
+      removed: [],
+      clusters: [],
+    };
+  }
+
+  const mockPath = process.env.GOODBRIEF_SEMANTIC_DEDUP_PATH;
+  if (mockPath) {
+    const mock = JSON.parse(readFileSync(mockPath, 'utf-8')) as SemanticDeduplicationResult;
+    return mock;
+  }
+
   if (articles.length < 2) {
     return {
       kept: articles,

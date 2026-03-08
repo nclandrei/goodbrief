@@ -2,8 +2,7 @@
 
 import 'dotenv/config';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import { join } from 'path';
 import { tmpdir, platform } from 'os';
 import { exec } from 'child_process';
 import { Resend } from 'resend';
@@ -14,11 +13,11 @@ import type {
   WrapperCopy,
 } from './types.js';
 import { sendAlert } from './lib/alert.js';
+import { resolveProjectRoot } from './lib/project-root.js';
+import { assertDraftValidated } from './lib/draft-delivery.js';
 import { formatValidationNotesForConsole } from './lib/validation-notes.js';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-const ROOT_DIR = join(__dirname, '..');
+const ROOT_DIR = resolveProjectRoot(import.meta.url);
 
 // CLI argument parsing
 interface CliArgs {
@@ -285,7 +284,7 @@ async function handlePreview(html: string, weekId: string): Promise<void> {
 }
 
 // Test mode: send to test email(s)
-async function handleTest(html: string, weekId: string): Promise<void> {
+async function handleTest(html: string): Promise<void> {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
     console.error('Error: RESEND_API_KEY environment variable is required');
@@ -329,7 +328,8 @@ async function handleSend(
   html: string,
   weekId: string,
   confirm: boolean,
-  automated: boolean
+  automated: boolean,
+  draft: NewsletterDraft
 ): Promise<void> {
   if (!confirm) {
     console.error(
@@ -353,6 +353,8 @@ async function handleSend(
     console.error('Error: --automated flag is required when running in CI.');
     process.exit(1);
   }
+
+  assertDraftValidated(draft, 'newsletter delivery');
 
   const apiKey = process.env.RESEND_API_KEY;
   const segmentId =
@@ -471,10 +473,10 @@ async function main(): Promise<void> {
       await handlePreview(html, args.week);
       break;
     case 'test':
-      await handleTest(html, args.week);
+      await handleTest(html);
       break;
     case 'send':
-      await handleSend(html, args.week, args.confirm, args.automated);
+      await handleSend(html, args.week, args.confirm, args.automated, draft);
       break;
   }
 

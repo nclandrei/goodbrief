@@ -1,0 +1,100 @@
+{
+  "scores": [
+    {
+      "id": "raw-stradivarius",
+      "summary": "Violonistul român Răzvan Stoica primește dreptul de a cânta 25 de ani pe un Stradivarius rar. E un semn clar de încredere și recunoaștere pe scena internațională.",
+      "positivity": 95,
+      "impact": 85,
+      "romaniaRelevant": true,
+      "category": "local-heroes"
+    },
+    {
+      "id": "raw-kovesi",
+      "summary": "Laura Codruța Kovesi primește un premiu european pentru democrație și spune că donația merge mai departe spre o cauză publică. Povestea are greutate și dincolo de simbol.",
+      "positivity": 90,
+      "impact": 80,
+      "romaniaRelevant": true,
+      "category": "local-heroes"
+    },
+    {
+      "id": "raw-online-hate",
+      "summary": "O inițiativă românească încearcă să oprească hate-ul din online prin instrumente și educație publică. E genul de proiect mic care poate schimba reflexe mari.",
+      "positivity": 84,
+      "impact": 72,
+      "romaniaRelevant": true,
+      "category": "local-heroes"
+    },
+    {
+      "id": "raw-sport-fara-etichete",
+      "summary": "Un proiect pilot din Capitală aduce sport adaptat pentru copii cu nevoi speciale. Pentru familii, asta înseamnă mai mult decât mișcare: înseamnă incluziune reală.",
+      "positivity": 85,
+      "impact": 75,
+      "romaniaRelevant": true,
+      "category": "local-heroes"
+    },
+    {
+      "id": "raw-moodys",
+      "summary": "Moody's confirmă stabilitatea economiei României și vede o traiectorie mai bună pentru deficit. Pentru piață, e un semnal de încredere care contează.",
+      "positivity": 80,
+      "impact": 85,
+      "romaniaRelevant": true,
+      "category": "wins"
+    },
+    {
+      "id": "raw-barbosu",
+      "summary": "Ana Bărbosu este desemnată gimnasta anului 2025 după un sezon excelent. E încă o confirmare că România livrează performanță în sportul mare.",
+      "positivity": 85,
+      "impact": 70,
+      "romaniaRelevant": true,
+      "category": "wins"
+    },
+    {
+      "id": "raw-cardiac-network",
+      "summary": "Încă patru spitale intră în rețeaua pentru pacienții cardiaci cronici. Extinderea înseamnă acces mai bun la monitorizare și tratament în mai multe regiuni.",
+      "positivity": 80,
+      "impact": 78,
+      "romaniaRelevant": true,
+      "category": "wins"
+    },
+    {
+      "id": "raw-seismic-buildings",
+      "summary": "Peste 200 de milioane de lei merg spre consolidarea unor școli, spitale și clădiri istorice vulnerabile. E infrastructură utilă, nu doar promisiune.",
+      "positivity": 82,
+      "impact": 79,
+      "romaniaRelevant": true,
+      "category": "wins"
+    },
+    {
+      "id": "raw-casa-verde",
+      "summary": "Casa Verde începe să finanțeze și baterii, nu doar panouri. Asta face energia solară mai utilă pentru gospodăriile care chiar vor autonomie.",
+      "positivity": 81,
+      "impact": 68,
+      "romaniaRelevant": true,
+      "category": "green-stuff"
+    },
+    {
+      "id": "raw-neurodiverse-services",
+      "summary": "Mai multe instituții din Bistrița își schimbă semnalizarea și interacțiunea la ghișeu pentru persoanele cu autism. Inițiativa sună proaspăt, dar în esență reia aceeași poveste locală deja apărută în edițiile recente.",
+      "positivity": 88,
+      "impact": 84,
+      "romaniaRelevant": true,
+      "category": "local-heroes"
+    },
+    {
+      "id": "raw-school-orchestra",
+      "summary": "O orchestră de liceu din Cluj merge pentru prima dată la un festival european de tineret din Berlin. E genul de veste care arată că școala publică mai produce și bucurii mari.",
+      "positivity": 79,
+      "impact": 65,
+      "romaniaRelevant": true,
+      "category": "wins"
+    },
+    {
+      "id": "raw-solar-village",
+      "summary": "Un sat din Apuseni trece pe microrețele solare pentru școală și dispensar. Când proiectele mici sunt bine făcute, impactul local se vede imediat.",
+      "positivity": 78,
+      "impact": 64,
+      "romaniaRelevant": true,
+      "category": "green-stuff"
+    }
+  ]
+}

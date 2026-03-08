@@ -27,7 +27,7 @@ export async function sendAlert(options: AlertOptions): Promise<boolean> {
   const time = new Date().toLocaleString('ro-RO', { timeZone: 'Europe/Bucharest' });
 
   const actionList = options.actionItems
-    .map((item, i) => `<li style="margin-bottom: 8px;">${item}</li>`)
+    .map((item) => `<li style="margin-bottom: 8px;">${item}</li>`)
     .join('\n');
 
   const workflowLink = options.workflowRunUrl

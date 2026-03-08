@@ -13,6 +13,7 @@
     "ingest-news": "npx tsx scripts/ingest-news.ts",
     "generate-draft": "npx tsx scripts/generate-draft.ts",
     "validate-draft": "npx tsx scripts/validate-draft.ts",
+    "validate-draft-freshness": "npx tsx scripts/validate-draft-freshness.ts",
     "publish-issue": "npx tsx scripts/publish-issue.ts",
     "email:dev": "email dev --dir emails --port 3001",
     "email:preview": "npx tsx scripts/send-newsletter.ts --preview",

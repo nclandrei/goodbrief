@@ -1,7 +1,6 @@
 import 'dotenv/config';
-import { readFileSync, writeFileSync, existsSync, readdirSync } from 'fs';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { join } from 'path';
 import type {
   DraftValidation,
   ProcessedArticle,
@@ -12,8 +11,6 @@ import type {
 import {
   deduplicateArticles,
   findCrossWeekDuplicate,
-  canonicalizeStoryUrl,
-  normalizeTitle,
 } from './lib/deduplication.js';
 import { processArticleBatch, createGeminiModel, GeminiQuotaError } from './lib/gemini.js';
 import { deduplicateProcessedArticlesSemantically } from './lib/semantic-dedup.js';
@@ -27,10 +24,13 @@ import { getRankingScore } from './lib/ranking.js';
 import { generateWrapperCopy } from '../emails/utils/generate-copy.js';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { sendAlert } from './lib/alert.js';
+import { resolveProjectRoot } from './lib/project-root.js';
+import {
+  loadHistoricalArticles,
+  type HistoricalArticle,
+} from './lib/story-history.js';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-const ROOT_DIR = join(__dirname, '..');
+const ROOT_DIR = resolveProjectRoot(import.meta.url);
 
 function parseLookbackEnv(value: string | undefined, fallback: number): number {
   const parsed = Number.parseInt(value ?? '', 10);
@@ -67,165 +67,6 @@ function getISOWeekId(date: Date = new Date()): string {
   return `${d.getFullYear()}-W${weekNum.toString().padStart(2, '0')}`;
 }
 
-interface HistoricalArticle {
-  id?: string;
-  title: string;
-  url: string;
-  source: 'draft' | 'issue';
-  origin: string;
-}
-
-interface HistoricalLoadResult {
-  articles: HistoricalArticle[];
-  draftFilesLoaded: number;
-  issueFilesLoaded: number;
-}
-
-interface DraftFileShape {
-  selected?: Array<{
-    id?: string;
-    title?: string;
-    originalTitle?: string;
-    url?: string;
-  }>;
-}
-
-function loadPreviousDraftArticles(
-  currentWeekId: string,
-  weeksToLoad: number
-): { articles: HistoricalArticle[]; filesLoaded: number } {
-  const allPrevious: HistoricalArticle[] = [];
-  let filesLoaded = 0;
-
-  const draftsDir = join(ROOT_DIR, 'data', 'drafts');
-  if (!existsSync(draftsDir)) {
-    return { articles: [], filesLoaded: 0 };
-  }
-
-  const draftFiles = readdirSync(draftsDir)
-    .filter((f: string) => f.endsWith('.json') && f !== `${currentWeekId}.json`)
-    .sort((a, b) => b.localeCompare(a))
-    .slice(0, weeksToLoad);
-
-  for (const file of draftFiles) {
-    try {
-      const draft = JSON.parse(readFileSync(join(draftsDir, file), 'utf-8')) as DraftFileShape;
-
-      if (Array.isArray(draft.selected)) {
-        for (const article of draft.selected) {
-          const title = article.originalTitle || article.title;
-          if (!title || !article.url) {
-            continue;
-          }
-          allPrevious.push({
-            id: article.id,
-            title,
-            url: article.url,
-            source: 'draft',
-            origin: file,
-          });
-        }
-      }
-      filesLoaded += 1;
-    } catch (error) {
-      console.warn(`Failed to load ${file}:`, error);
-    }
-  }
-
-  return { articles: allPrevious, filesLoaded };
-}
-
-function parseIssueMarkdown(markdown: string): Array<{ title: string; url: string }> {
-  const items: Array<{ title: string; url: string }> = [];
-  const lines = markdown.split('\n');
-  let pendingTitle: string | null = null;
-
-  for (const line of lines) {
-    if (line.startsWith('### ')) {
-      pendingTitle = line.replace(/^###\s+/, '').trim();
-      continue;
-    }
-
-    if (!pendingTitle || !line.startsWith('→ [')) {
-      continue;
-    }
-
-    const linkMatch = line.match(/\((https?:\/\/.+)\)\s*$/);
-    if (!linkMatch) {
-      continue;
-    }
-
-    items.push({ title: pendingTitle, url: linkMatch[1] });
-    pendingTitle = null;
-  }
-
-  return items;
-}
-
-function loadPublishedIssueArticles(
-  issuesToLoad: number
-): { articles: HistoricalArticle[]; filesLoaded: number } {
-  const issuesDir = join(ROOT_DIR, 'content', 'issues');
-  if (!existsSync(issuesDir)) {
-    return { articles: [], filesLoaded: 0 };
-  }
-
-  const issueFiles = readdirSync(issuesDir)
-    .filter((file) => file.endsWith('.md'))
-    .sort((a, b) => b.localeCompare(a))
-    .slice(0, issuesToLoad);
-
-  const history: HistoricalArticle[] = [];
-  let filesLoaded = 0;
-
-  for (const file of issueFiles) {
-    try {
-      const markdown = readFileSync(join(issuesDir, file), 'utf-8');
-      const issueItems = parseIssueMarkdown(markdown);
-      for (const item of issueItems) {
-        history.push({
-          title: item.title,
-          url: item.url,
-          source: 'issue',
-          origin: file,
-        });
-      }
-      filesLoaded += 1;
-    } catch (error) {
-      console.warn(`Failed to load issue ${file}:`, error);
-    }
-  }
-
-  return { articles: history, filesLoaded };
-}
-
-function loadHistoricalArticles(
-  currentWeekId: string,
-  issueLookback: number = PUBLISHED_ISSUE_LOOKBACK,
-  draftLookback: number = DRAFT_LOOKBACK
-): HistoricalLoadResult {
-  const fromIssues = loadPublishedIssueArticles(issueLookback);
-  const fromDrafts = loadPreviousDraftArticles(currentWeekId, draftLookback);
-
-  const merged = [...fromIssues.articles, ...fromDrafts.articles];
-  const deduped = new Map<string, HistoricalArticle>();
-
-  for (const article of merged) {
-    const canonicalUrl = canonicalizeStoryUrl(article.url);
-    const normalizedTitle = normalizeTitle(article.title);
-    const key = `${canonicalUrl || article.url}::${normalizedTitle}`;
-    if (!deduped.has(key)) {
-      deduped.set(key, article);
-    }
-  }
-
-  return {
-    articles: [...deduped.values()],
-    draftFilesLoaded: fromDrafts.filesLoaded,
-    issueFilesLoaded: fromIssues.filesLoaded,
-  };
-}
-
 interface RefinementResult {
   selectedIds: string[];
   intro: string;
@@ -242,6 +83,39 @@ async function refineDraft(
   previousArticles: HistoricalArticle[] = [],
   lookbackLabel: string = 'last editions'
 ): Promise<{ selected: ProcessedArticle[]; reserves: ProcessedArticle[]; wrapperCopy: WrapperCopy }> {
+  if (process.env.GOODBRIEF_DISABLE_DRAFT_REFINEMENT === '1') {
+    return { selected, reserves, wrapperCopy };
+  }
+
+  const mockPath = process.env.GOODBRIEF_DRAFT_REFINEMENT_PATH;
+  if (mockPath) {
+    const refinement = JSON.parse(readFileSync(mockPath, 'utf-8')) as RefinementResult;
+    const allArticles = [...selected, ...reserves];
+    const articleMap = new Map(allArticles.map((article) => [article.id, article]));
+    const usedIds = new Set<string>();
+    const newSelected: ProcessedArticle[] = [];
+
+    for (const id of refinement.selectedIds) {
+      const article = articleMap.get(id);
+      if (article && !usedIds.has(id)) {
+        newSelected.push(article);
+        usedIds.add(id);
+      }
+    }
+
+    if (newSelected.length >= 9 && newSelected.length <= 12) {
+      return {
+        selected: newSelected,
+        reserves: allArticles.filter((article) => !usedIds.has(article.id)),
+        wrapperCopy: {
+          ...wrapperCopy,
+          intro: refinement.intro,
+          shortSummary: refinement.shortSummary,
+        },
+      };
+    }
+  }
+
   const genAI = new GoogleGenerativeAI(GEMINI_API_KEY!);
 
   const refinementSchema = {
@@ -441,7 +315,12 @@ async function main() {
 
   // Pre-filter against historical issues + drafts
   console.log('Loading historical stories from previous editions...');
-  const historical = loadHistoricalArticles(weekId);
+  const historical = loadHistoricalArticles({
+    rootDir: ROOT_DIR,
+    currentWeekId: weekId,
+    issueLookback: PUBLISHED_ISSUE_LOOKBACK,
+    draftLookback: DRAFT_LOOKBACK,
+  });
   const previousArticles = historical.articles;
   console.log(
     `Loaded ${previousArticles.length} historical stories (${historical.issueFilesLoaded} issue files, ${historical.draftFilesLoaded} draft files)`

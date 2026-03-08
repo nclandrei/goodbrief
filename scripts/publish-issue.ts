@@ -1,6 +1,8 @@
 import { readFileSync, writeFileSync, readdirSync } from "fs";
 import { join } from "path";
 import type { NewsletterDraft, ProcessedArticle, ArticleCategory } from "./types.js";
+import { resolveProjectRoot } from "./lib/project-root.js";
+import { assertDraftValidated } from "./lib/draft-delivery.js";
 
 function getMondayOfISOWeek(weekId: string): Date {
   // weekId format: "2026-W03"
@@ -124,7 +126,7 @@ function getLatestDraftWeekId(draftsDir: string): string | null {
 }
 
 async function main() {
-  const projectRoot = join(import.meta.dirname!, "..");
+  const projectRoot = resolveProjectRoot(import.meta.url);
   const issuesDir = join(projectRoot, "content", "issues");
   const draftsDir = join(projectRoot, "data", "drafts");
 
@@ -152,6 +154,13 @@ async function main() {
 
   if (draft.selected.length === 0) {
     console.error("Error: No selected articles in draft");
+    process.exit(1);
+  }
+
+  try {
+    assertDraftValidated(draft, "issue publishing");
+  } catch (error) {
+    console.error(error instanceof Error ? error.message : String(error));
     process.exit(1);
   }
 

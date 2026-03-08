@@ -36,12 +36,42 @@ export interface CounterSignalFlag {
   generatedAt: string;
 }
 
+export type DraftValidationStatus = 'passed' | 'failed';
+export type DraftValidationVerdict = 'fresh' | 'duplicate' | 'follow_up';
+
+export interface DraftValidationBlockedArticle {
+  articleId: string;
+  reason: string;
+  matchedOrigin?: string;
+  matchedTitle?: string;
+}
+
+export interface DraftValidationReplacement {
+  removedArticleId: string;
+  replacementArticleId: string;
+}
+
+export interface DraftValidationAgentReviewedArticle {
+  articleId: string;
+  verdict: DraftValidationVerdict;
+  notes: string;
+  matchedOrigin?: string;
+  matchedTitle?: string;
+}
+
 export interface DraftValidation {
   generatedAt: string;
   candidateCount: number;
   flagged: CounterSignalFlag[];
+  status?: DraftValidationStatus;
+  checkedAt?: string;
+  freshnessWindowDays?: number;
+  publishedHistoryCount?: number;
+  recentDraftCount?: number;
+  blockedArticles?: DraftValidationBlockedArticle[];
+  replacements?: DraftValidationReplacement[];
+  agentReviewed?: DraftValidationAgentReviewedArticle[];
 }
-
 export interface ProcessedArticle {
   id: string;
   sourceId: string;

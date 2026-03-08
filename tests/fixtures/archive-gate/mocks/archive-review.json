@@ -1,0 +1,66 @@
+{
+  "reviews": [
+    {
+      "articleId": "raw-stradivarius",
+      "verdict": "fresh",
+      "notes": "New cultural achievement, no archive conflict."
+    },
+    {
+      "articleId": "raw-kovesi",
+      "verdict": "fresh",
+      "notes": "Distinct current recognition."
+    },
+    {
+      "articleId": "raw-online-hate",
+      "verdict": "fresh",
+      "notes": "Different topic from archive."
+    },
+    {
+      "articleId": "raw-sport-fara-etichete",
+      "verdict": "fresh",
+      "notes": "Inclusive education project is fresh."
+    },
+    {
+      "articleId": "raw-moodys",
+      "verdict": "fresh",
+      "notes": "Macroeconomic signal, unrelated to archive items."
+    },
+    {
+      "articleId": "raw-barbosu",
+      "verdict": "fresh",
+      "notes": "Sports recognition not seen in archive."
+    },
+    {
+      "articleId": "raw-cardiac-network",
+      "verdict": "fresh",
+      "notes": "Healthcare network expansion is fresh."
+    },
+    {
+      "articleId": "raw-seismic-buildings",
+      "verdict": "fresh",
+      "notes": "Infrastructure funding is fresh."
+    },
+    {
+      "articleId": "raw-casa-verde",
+      "verdict": "fresh",
+      "notes": "Energy storage support is fresh."
+    },
+    {
+      "articleId": "raw-neurodiverse-services",
+      "verdict": "duplicate",
+      "notes": "This is a rewrite of the earlier Bistrița autism accessibility story.",
+      "matchedOrigin": "2026-03-02-issue.md",
+      "matchedTitle": "Bistrița face mai ușor accesul la servicii pentru persoanele cu autism"
+    },
+    {
+      "articleId": "raw-school-orchestra",
+      "verdict": "fresh",
+      "notes": "Festival invitation is a new story."
+    },
+    {
+      "articleId": "raw-solar-village",
+      "verdict": "fresh",
+      "notes": "Microgrid story is fresh."
+    }
+  ]
+}

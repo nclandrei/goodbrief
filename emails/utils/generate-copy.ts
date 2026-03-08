@@ -1,3 +1,4 @@
+import { readFileSync } from "fs";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import type { ProcessedArticle } from "../../scripts/types";
 
@@ -27,6 +28,11 @@ export async function generateWrapperCopy(
   articles: ProcessedArticle[],
   weekId: string
 ): Promise<WrapperCopy> {
+  const mockPath = process.env.GOODBRIEF_WRAPPER_COPY_PATH;
+  if (mockPath) {
+    return JSON.parse(readFileSync(mockPath, "utf-8")) as WrapperCopy;
+  }
+
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
     throw new Error("GEMINI_API_KEY environment variable is required");

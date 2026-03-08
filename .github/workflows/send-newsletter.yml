@@ -52,6 +52,20 @@ jobs:
             echo "exists=false" >> $GITHUB_OUTPUT
           fi
 
+      - name: Check draft validation
+        if: steps.check.outputs.exists == 'true'
+        env:
+          WEEK_ID: ${{ steps.week.outputs.id }}
+        run: |
+          node --input-type=module - <<'NODE'
+          import { readFileSync } from 'fs';
+          const draft = JSON.parse(readFileSync(`data/drafts/${process.env.WEEK_ID}.json`, 'utf-8'));
+          if (draft.validation?.status !== 'passed') {
+            console.error(`Draft ${process.env.WEEK_ID} is not validated for sending.`);
+            process.exit(1);
+          }
+          NODE
+
       - name: Send newsletter
         if: steps.check.outputs.exists == 'true'
         run: npm run email:send -- --week ${{ steps.week.outputs.id }} --automated

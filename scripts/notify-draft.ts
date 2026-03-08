@@ -1,19 +1,25 @@
 #!/usr/bin/env npx tsx
 
 import 'dotenv/config';
-import { readFileSync, existsSync } from 'fs';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import { readFileSync, existsSync, writeFileSync } from 'fs';
+import { join } from 'path';
+import { tmpdir } from 'os';
 import { Resend } from 'resend';
 import type { NewsletterDraft, ProcessedArticle, ArticleCategory, WrapperCopy } from './types.js';
+import { resolveProjectRoot } from './lib/project-root.js';
+import { assertDraftValidated } from './lib/draft-delivery.js';
 import {
   formatValidationNotesForConsole,
   renderValidationNotesHtml,
 } from './lib/validation-notes.js';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-const ROOT_DIR = join(__dirname, '..');
+const ROOT_DIR = resolveProjectRoot(import.meta.url);
+
+interface CliArgs {
+  weekId: string;
+  dryRun: boolean;
+  outputPath?: string;
+}
 
 function getISOWeekId(date: Date = new Date()): string {
   const d = new Date(date);
@@ -24,6 +30,34 @@ function getISOWeekId(date: Date = new Date()): string {
     ((d.getTime() - week1.getTime()) / 86400000 - 3 + ((week1.getDay() + 6) % 7)) / 7 + 1
   );
   return `${d.getFullYear()}-W${weekNum.toString().padStart(2, '0')}`;
+}
+
+function parseArgs(): CliArgs {
+  const args = process.argv.slice(2);
+  let weekId = '';
+  let dryRun = false;
+  let outputPath: string | undefined;
+
+  for (let i = 0; i < args.length; i++) {
+    const arg = args[i];
+    if (arg === '--week' && args[i + 1]) {
+      weekId = args[i + 1];
+      i += 1;
+    } else if (arg === '--dry-run') {
+      dryRun = true;
+    } else if (arg === '--output' && args[i + 1]) {
+      outputPath = args[i + 1];
+      i += 1;
+    } else if (!arg.startsWith('--') && !weekId) {
+      weekId = arg;
+    }
+  }
+
+  return {
+    weekId: weekId || getISOWeekId(),
+    dryRun,
+    outputPath,
+  };
 }
 
 function loadDraft(weekId: string): NewsletterDraft | null {
@@ -182,10 +216,29 @@ function renderProofEmail(draft: NewsletterDraft): string {
 }
 
 async function main(): Promise<void> {
-  const weekId = process.argv[2] || getISOWeekId();
+  const args = parseArgs();
+  const weekId = args.weekId;
   
   console.log(`\n📬 Good Brief Proof Notification`);
   console.log(`Week: ${weekId}\n`);
+
+  const draft = loadDraft(weekId);
+  if (!draft) {
+    console.error(`Error: No draft found for ${weekId}`);
+    process.exit(1);
+  }
+
+  assertDraftValidated(draft, 'proof delivery');
+  console.log(`✓ Loaded draft with ${draft.selected.length} articles`);
+
+  const proofHtml = renderProofEmail(draft);
+  if (args.dryRun) {
+    const outputPath = args.outputPath || join(tmpdir(), `goodbrief-${weekId}-proof.html`);
+    writeFileSync(outputPath, proofHtml, 'utf-8');
+    console.log(`✓ Dry-run proof saved to ${outputPath}`);
+    console.log('\n✨ Done!');
+    return;
+  }
 
   const apiKey = process.env.RESEND_API_KEY;
   const editorEmailEnv = process.env.TEST_EMAIL;
@@ -204,24 +257,12 @@ async function main(): Promise<void> {
     .split(',')
     .map((email) => email.trim())
     .filter(Boolean);
-
-  const draft = loadDraft(weekId);
-  if (!draft) {
-    console.error(`Error: No draft found for ${weekId}`);
-    process.exit(1);
-  }
-
-  console.log(`✓ Loaded draft with ${draft.selected.length} articles`);
   const validationNotes = formatValidationNotesForConsole(draft);
   if (validationNotes) {
     console.log(`${validationNotes}\n`);
   }
-
   const resend = new Resend(apiKey);
-
-  // Send proof email
   console.log('Sending proof email...');
-  const proofHtml = renderProofEmail(draft);
   const { error: proofError } = await resend.emails.send({
     from: 'Good Brief <buna@goodbrief.ro>',
     to: editorEmails,
