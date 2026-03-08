@@ -42,6 +42,19 @@
       "processedAt": "2026-03-07T10:48:02.731Z"
     },
     {
+      "id": "f5a6aa4aef0a89ab",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Peste 100 de copii cu nevoi speciale au participat la proiectul pilot „Educație fizică fără etichete” din Capitală",
+      "url": "https://stirileprotv.ro/stiri/social/educatie-fizica-fara-etichete-peste-100-de-copii-cu-nevoi-speciale-participa-la-proiectul-pilot-din-capitala.html?category_slug=stiri%2Fsocial",
+      "summary": "Pentru zeci de copii diagnosticați cu tulburări din spectrul autist și ADHD, sportul nu înseamnă doar mișcare, ci devine o șansă la integrare și la o viață cât mai aproape de normalitate.",
+      "positivity": 85,
+      "impact": 75,
+      "category": "local-heroes",
+      "publishedAt": "2026-03-01T06:25:32.000Z",
+      "processedAt": "2026-03-07T10:48:02.731Z"
+    },
+    {
       "id": "48b181754e2a84cd",
       "sourceId": "mediafax",
       "sourceName": "Mediafax",
@@ -65,19 +78,6 @@
       "impact": 70,
       "category": "wins",
       "publishedAt": "2026-03-04T06:48:00.000Z",
-      "processedAt": "2026-03-07T10:48:02.731Z"
-    },
-    {
-      "id": "aba877351359ba72",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Ionuț Radu, erou pentru Celta Vigo în victoria cu Girona. Marca: „A oferit un recital de parade”",
-      "url": "https://stirileprotv.ro/stiri/sport/ionut-radu-erou-pentru-celta-vigo-in-victoria-cu-girona-marca-a-oferit-un-recital-de-parade.html?category_slug=stiri%2Fsport",
-      "summary": "Portarul român Ionuț Radu a fost erou pentru Celta Vigo, oferind un recital de parade în victoria cu Girona. Performanța sa a fost esențială pentru echipa sa.",
-      "positivity": 80,
-      "impact": 70,
-      "category": "wins",
-      "publishedAt": "2026-03-02T08:24:36.000Z",
       "processedAt": "2026-03-07T10:48:02.731Z"
     },
     {
@@ -107,29 +107,16 @@
       "processedAt": "2026-03-07T10:48:02.731Z"
     },
     {
-      "id": "95fcbe66ff71173c",
+      "id": "f82f879896f628a0",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
-      "originalTitle": "Guvernul României lansează platforma „Fără hârtie” pentru reducerea birocrației și digitalizarea administrației",
-      "url": "https://stirileprotv.ro/stiri/actualitate/guvernul-romaniei-lanseaza-platforma-fara-hartie-pentru-reducerea-birocratiei-si-digitalizarea-administratiei.html?category_slug=stiri%2Factualitate",
-      "summary": "Guvernul lansează platforma „Fără hârtie” pentru a reduce birocrația și a digitaliza administrația. Cetățenii sunt invitați să contribuie la acest proces interactiv.",
+      "originalTitle": "Prima decizie a noului ministru al Educației: „A fost aprobat memorandumul”",
+      "url": "https://stirileprotv.ro/educatie/prima-decizie-a-noului-ministru-al-educatiei-este-nevoie-de-mai-multa-corectitudine.html?category_slug=educatie",
+      "summary": "Noul ministru al Educației, Mihai Dimian, a anunțat aprobarea memorandumului pentru scoaterea la concurs a peste 400 de posturi necesare pentru 23 de creșe aproape finalizate. Acesta este primul pas concret al noului mandat.",
       "positivity": 80,
       "impact": 70,
       "category": "wins",
-      "publishedAt": "2026-03-03T09:58:43.000Z",
-      "processedAt": "2026-03-07T10:48:02.731Z"
-    },
-    {
-      "id": "fde88f2398d81da1",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Alexandra Căpitănescu, cu piesa rock „Choke Me\", va reprezenta România la Eurovision 2026",
-      "url": "https://stirileprotv.ro/show-buzz/muzica/alexandra-capitanescu-cu-piesa-rock-choke-me-va-reprezenta-romania-la-eurovision-2026.html?category_slug=show-buzz%2Fmuzica",
-      "summary": "Alexandra Căpitănescu va reprezenta România la Eurovision 2026 cu piesa rock „Choke Me”. Artista a câștigat selecția națională și și-a exprimat dorința ca muzica sa să ajungă la cât mai mulți oameni.",
-      "positivity": 80,
-      "impact": 70,
-      "category": "wins",
-      "publishedAt": "2026-03-04T21:06:49.000Z",
+      "publishedAt": "2026-03-05T17:37:16.000Z",
       "processedAt": "2026-03-07T10:48:02.731Z"
     },
     {
@@ -278,16 +265,42 @@
       "processedAt": "2026-03-07T10:48:02.731Z"
     },
     {
-      "id": "f82f879896f628a0",
+      "id": "95fcbe66ff71173c",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
-      "originalTitle": "Prima decizie a noului ministru al Educației: „A fost aprobat memorandumul”",
-      "url": "https://stirileprotv.ro/educatie/prima-decizie-a-noului-ministru-al-educatiei-este-nevoie-de-mai-multa-corectitudine.html?category_slug=educatie",
-      "summary": "Noul ministru al Educației, Mihai Dimian, a anunțat aprobarea memorandumului pentru scoaterea la concurs a peste 400 de posturi necesare pentru 23 de creșe aproape finalizate. Acesta este primul pas concret al noului mandat.",
+      "originalTitle": "Guvernul României lansează platforma „Fără hârtie” pentru reducerea birocrației și digitalizarea administrației",
+      "url": "https://stirileprotv.ro/stiri/actualitate/guvernul-romaniei-lanseaza-platforma-fara-hartie-pentru-reducerea-birocratiei-si-digitalizarea-administratiei.html?category_slug=stiri%2Factualitate",
+      "summary": "Guvernul lansează platforma „Fără hârtie” pentru a reduce birocrația și a digitaliza administrația. Cetățenii sunt invitați să contribuie la acest proces interactiv.",
       "positivity": 80,
       "impact": 70,
       "category": "wins",
-      "publishedAt": "2026-03-05T17:37:16.000Z",
+      "publishedAt": "2026-03-03T09:58:43.000Z",
+      "processedAt": "2026-03-07T10:48:02.731Z"
+    },
+    {
+      "id": "aba877351359ba72",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Ionuț Radu, erou pentru Celta Vigo în victoria cu Girona. Marca: „A oferit un recital de parade”",
+      "url": "https://stirileprotv.ro/stiri/sport/ionut-radu-erou-pentru-celta-vigo-in-victoria-cu-girona-marca-a-oferit-un-recital-de-parade.html?category_slug=stiri%2Fsport",
+      "summary": "Portarul român Ionuț Radu a fost erou pentru Celta Vigo, oferind un recital de parade în victoria cu Girona. Performanța sa a fost esențială pentru echipa sa.",
+      "positivity": 80,
+      "impact": 70,
+      "category": "wins",
+      "publishedAt": "2026-03-02T08:24:36.000Z",
+      "processedAt": "2026-03-07T10:48:02.731Z"
+    },
+    {
+      "id": "fde88f2398d81da1",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Alexandra Căpitănescu, cu piesa rock „Choke Me\", va reprezenta România la Eurovision 2026",
+      "url": "https://stirileprotv.ro/show-buzz/muzica/alexandra-capitanescu-cu-piesa-rock-choke-me-va-reprezenta-romania-la-eurovision-2026.html?category_slug=show-buzz%2Fmuzica",
+      "summary": "Alexandra Căpitănescu va reprezenta România la Eurovision 2026 cu piesa rock „Choke Me”. Artista a câștigat selecția națională și și-a exprimat dorința ca muzica sa să ajungă la cât mai mulți oameni.",
+      "positivity": 80,
+      "impact": 70,
+      "category": "wins",
+      "publishedAt": "2026-03-04T21:06:49.000Z",
       "processedAt": "2026-03-07T10:48:02.731Z"
     },
     {
@@ -529,8 +542,8 @@
   "totalProcessed": 587,
   "wrapperCopy": {
     "greeting": "Salutare! 👋",
-    "intro": "Săptămâna asta lista arată mai curat și mai bine echilibrat: un Stradivarius pentru Răzvan Stoica, recunoaștere internațională pentru Laura Codruța Kovesi, pași concreți în spitale și infrastructură, dar și vești bune din sport și muzică care nu par puse doar ca umplutură. Sunt 11 povești care arată binele exact unde vrei să-l vezi: în oameni care livrează, în instituții care funcționează și în proiecte care chiar se mișcă.",
+    "intro": "Săptămâna asta are mai multă substanță decât spectacol: de la Stradivariusul ajuns la Răzvan Stoica și recunoașterea Laurei Codruța Kovesi până la copii care găsesc un loc mai prietenos în sport, spitale care își extind rețeaua, creșe aproape gata care primesc personal și investiții care ajung în clădiri mai sigure și energie verde. Sunt 10 știri bune care spun același lucru simplu: când oameni competenți și instituții decente își fac treaba, se vede.",
     "signOff": "Până data viitoare, zâmbește și caută binele. 🙏",
-    "shortSummary": "Stradivarius, Kovesi, spitale, sport, muzică, energie verde."
+    "shortSummary": "Stradivarius, Kovesi, incluziune, spitale, educație, energie verde."
   }
 }
