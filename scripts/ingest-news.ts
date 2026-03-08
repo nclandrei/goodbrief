@@ -113,7 +113,12 @@ async function fetchFeed(source: RssSource): Promise<FetchResult> {
 function loadWeeklyBuffer(weekId: string): WeeklyBuffer {
   const filePath = join(ROOT_DIR, "data", "raw", `${weekId}.json`);
   if (existsSync(filePath)) {
-    return JSON.parse(readFileSync(filePath, "utf-8"));
+    const content = readFileSync(filePath, "utf-8");
+    if (content.startsWith("version https://git-lfs.github.com/spec/v1")) {
+      console.log(`Ignoring Git LFS pointer at ${filePath} and starting a fresh weekly buffer`);
+      return { weekId, articles: [], lastUpdated: new Date().toISOString() };
+    }
+    return JSON.parse(content);
   }
   return { weekId, articles: [], lastUpdated: new Date().toISOString() };
 }

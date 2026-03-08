@@ -24,6 +24,24 @@ export interface WrapperCopy {
   shortSummary: string;
 }
 
+export type CounterSignalVerdict = 'none' | 'borderline' | 'strong';
+
+export interface CounterSignalFlag {
+  candidateId: string;
+  verdict: Exclude<CounterSignalVerdict, 'none'>;
+  penaltyApplied: number;
+  reason: string;
+  relatedArticleIds: string[];
+  relatedArticleTitles: string[];
+  generatedAt: string;
+}
+
+export interface DraftValidation {
+  generatedAt: string;
+  candidateCount: number;
+  flagged: CounterSignalFlag[];
+}
+
 export interface ProcessedArticle {
   id: string;
   sourceId: string;
@@ -53,4 +71,5 @@ export interface NewsletterDraft {
   discarded: number;
   totalProcessed: number;
   wrapperCopy?: WrapperCopy;
+  validation?: DraftValidation;
 }

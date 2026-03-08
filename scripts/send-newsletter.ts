@@ -14,6 +14,7 @@ import type {
   WrapperCopy,
 } from './types.js';
 import { sendAlert } from './lib/alert.js';
+import { formatValidationNotesForConsole } from './lib/validation-notes.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -431,6 +432,12 @@ async function main(): Promise<void> {
   console.log('Loading draft...');
   const draft = loadDraft(args.week);
   console.log(`✓ Loaded ${draft.selected.length} articles`);
+  if (args.mode !== 'send') {
+    const validationNotes = formatValidationNotesForConsole(draft);
+    if (validationNotes) {
+      console.log(`${validationNotes}\n`);
+    }
+  }
 
   // Get first 12 selected articles
   const articles = draft.selected.slice(0, 12);

@@ -27,4 +27,5 @@ pnpm-debug.log*
 # astro
 .astro/
 
+.workspaces/
 .worktrees/

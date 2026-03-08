@@ -6,6 +6,10 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { Resend } from 'resend';
 import type { NewsletterDraft, ProcessedArticle, ArticleCategory, WrapperCopy } from './types.js';
+import {
+  formatValidationNotesForConsole,
+  renderValidationNotesHtml,
+} from './lib/validation-notes.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -92,6 +96,7 @@ function renderProofEmail(draft: NewsletterDraft): string {
     signOff: 'Săptămână frumoasă!\nEchipa Good Brief',
     shortSummary: 'Vești bune din România.',
   };
+  const validationNotesHtml = renderValidationNotesHtml(draft);
 
   return `
 <!DOCTYPE html>
@@ -128,6 +133,8 @@ function renderProofEmail(draft: NewsletterDraft): string {
               </p>
             </td>
           </tr>
+
+          ${validationNotesHtml}
 
           <!-- Articles -->
           <tr>
@@ -181,17 +188,22 @@ async function main(): Promise<void> {
   console.log(`Week: ${weekId}\n`);
 
   const apiKey = process.env.RESEND_API_KEY;
-  const editorEmail = process.env.TEST_EMAIL;
+  const editorEmailEnv = process.env.TEST_EMAIL;
 
   if (!apiKey) {
     console.error('Error: RESEND_API_KEY environment variable is required');
     process.exit(1);
   }
 
-  if (!editorEmail) {
+  if (!editorEmailEnv) {
     console.error('Error: TEST_EMAIL environment variable is required');
     process.exit(1);
   }
+
+  const editorEmails = editorEmailEnv
+    .split(',')
+    .map((email) => email.trim())
+    .filter(Boolean);
 
   const draft = loadDraft(weekId);
   if (!draft) {
@@ -200,6 +212,10 @@ async function main(): Promise<void> {
   }
 
   console.log(`✓ Loaded draft with ${draft.selected.length} articles`);
+  const validationNotes = formatValidationNotesForConsole(draft);
+  if (validationNotes) {
+    console.log(`${validationNotes}\n`);
+  }
 
   const resend = new Resend(apiKey);
 
@@ -208,7 +224,7 @@ async function main(): Promise<void> {
   const proofHtml = renderProofEmail(draft);
   const { error: proofError } = await resend.emails.send({
     from: 'Good Brief <buna@goodbrief.ro>',
-    to: editorEmail,
+    to: editorEmails,
     subject: `[PROOF] Good Brief ${weekId} – Vești bune din România`,
     html: proofHtml,
   });

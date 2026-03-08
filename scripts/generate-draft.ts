@@ -3,6 +3,7 @@ import { readFileSync, writeFileSync, existsSync, readdirSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import type {
+  DraftValidation,
   ProcessedArticle,
   WeeklyBuffer,
   NewsletterDraft,
@@ -17,6 +18,12 @@ import {
 import { processArticleBatch, createGeminiModel, GeminiQuotaError } from './lib/gemini.js';
 import { deduplicateProcessedArticlesSemantically } from './lib/semantic-dedup.js';
 import type { ArticleScore } from './lib/types.js';
+import {
+  COUNTER_SIGNAL_VALIDATION_POOL_SIZE,
+  filterValidationForArticles,
+  validateSameWeekCounterSignals,
+} from './lib/counter-signal-validation.js';
+import { getRankingScore } from './lib/ranking.js';
 import { generateWrapperCopy } from '../emails/utils/generate-copy.js';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { sendAlert } from './lib/alert.js';
@@ -231,6 +238,7 @@ async function refineDraft(
   reserves: ProcessedArticle[],
   wrapperCopy: WrapperCopy,
   weekId: string,
+  validation: DraftValidation,
   previousArticles: HistoricalArticle[] = [],
   lookbackLabel: string = 'last editions'
 ): Promise<{ selected: ProcessedArticle[]; reserves: ProcessedArticle[]; wrapperCopy: WrapperCopy }> {
@@ -260,8 +268,18 @@ async function refineDraft(
   });
 
   const allArticles = [...selected, ...reserves];
+  const articleById = new Map(allArticles.map((article) => [article.id, article]));
+  const validationById = new Map(
+    (validation.flagged || []).map((flag) => [flag.candidateId, flag])
+  );
   const articleList = allArticles
-    .map((a, i) => `${i + 1}. [ID: ${a.id}] [${a.category}] (pos:${a.positivity}, impact:${a.impact}) "${a.originalTitle}"\n   Summary: ${a.summary}`)
+    .map((a, i) => {
+      const flag = validationById.get(a.id);
+      const validationNote = flag
+        ? `\n   Same-week validation: ${flag.verdict.toUpperCase()} — ${flag.reason}`
+        : '';
+      return `${i + 1}. [ID: ${a.id}] [${a.category}] (pos:${a.positivity}, impact:${a.impact}) "${a.originalTitle}"\n   Summary: ${a.summary}${validationNote}`;
+    })
     .join('\n\n');
 
   const previousWeeksContext = previousArticles.length > 0
@@ -270,10 +288,27 @@ ${previousArticles.slice(0, 20).map((a, i) => `${i + 1}. "${a.title}"`).join('\n
 ${previousArticles.length > 20 ? `... and ${previousArticles.length - 20} more` : ''}`
     : '';
 
+  const validationContext = validation.flagged.length > 0
+    ? `\n\nSAME-WEEK VALIDATION FLAGS:
+${validation.flagged
+  .map((flag, index) => {
+    const articleTitle = articleById.get(flag.candidateId)?.originalTitle || flag.candidateId;
+    return `${index + 1}. [${flag.verdict.toUpperCase()}] [ID: ${flag.candidateId}] "${articleTitle}"
+   Reason: ${flag.reason}`;
+  })
+  .join('\n')}
+
+IMPORTANT VALIDATION RULES:
+- STRONG flags should stay out of selected by default.
+- BORDERLINE flags may stay only if alternatives are clearly weaker.
+- If a flagged story survives, make sure the rest of the selection is still strong enough to justify it.`
+    : '';
+
   const prompt = `You are reviewing a Good Brief newsletter draft for week ${weekId}.
 
 IMPORTANT: All text output (intro, shortSummary, reasoning) MUST be in Romanian. This is a Romanian newsletter.
 ${previousWeeksContext}
+${validationContext}
 
 CURRENT SELECTION (top 10):
 ${selected.map((a, i) => `${i + 1}. [ID: ${a.id}] "${a.originalTitle}"`).join('\n')}
@@ -295,6 +330,7 @@ REVIEW CRITERIA:
 5. Recency: Prefer more recent stories when quality is similar
 6. Intro quality: Should be warm, engaging, capture the week's essence (IN ROMANIAN)
 7. Avoid promotional content or sponsored articles (marked with "(P)")
+8. Respect same-week validation flags: strong flags should normally be excluded; borderline flags need a clear editorial reason to stay
 
 TASK:
 - Review the current selection critically
@@ -397,7 +433,8 @@ async function main() {
 
   console.log('Deduplicating articles...');
   const dedupResult = deduplicateArticles(buffer.articles);
-  let representatives = dedupResult.outputArticles;
+  const sameWeekRepresentatives = dedupResult.outputArticles;
+  let representatives = [...sameWeekRepresentatives];
   console.log(
     `Deduplicated ${buffer.articles.length} articles to ${representatives.length} unique stories`
   );
@@ -517,8 +554,8 @@ async function main() {
   }
 
   positive.sort((a, b) => {
-    const scoreA = a.positivity * 0.6 + a.impact * 0.4;
-    const scoreB = b.positivity * 0.6 + b.impact * 0.4;
+    const scoreA = getRankingScore(a);
+    const scoreB = getRankingScore(b);
     return scoreB - scoreA;
   });
 
@@ -568,8 +605,91 @@ async function main() {
     }
   }
 
+  let fullValidation: DraftValidation = {
+    generatedAt: now,
+    candidateCount: 0,
+    flagged: [],
+  };
+
+  const validationPoolSize = Math.min(
+    COUNTER_SIGNAL_VALIDATION_POOL_SIZE,
+    positive.length
+  );
+  if (validationPoolSize > 0) {
+    console.log(
+      `Running same-week counter-signal validation on top ${validationPoolSize} candidates...`
+    );
+
+    try {
+      fullValidation = await validateSameWeekCounterSignals({
+        weekId,
+        candidates: positive.slice(0, validationPoolSize),
+        rawArticles: sameWeekRepresentatives,
+        apiKey: GEMINI_API_KEY!,
+        generatedAt: now,
+      });
+
+      const validationById = new Map(
+        fullValidation.flagged.map((flag) => [flag.candidateId, flag])
+      );
+
+      positive.sort((a, b) => {
+        const adjustedA =
+          getRankingScore(a) - (validationById.get(a.id)?.penaltyApplied || 0);
+        const adjustedB =
+          getRankingScore(b) - (validationById.get(b.id)?.penaltyApplied || 0);
+
+        if (adjustedB !== adjustedA) {
+          return adjustedB - adjustedA;
+        }
+
+        return getRankingScore(b) - getRankingScore(a);
+      });
+
+      const strongFlags = fullValidation.flagged.filter(
+        (flag) => flag.verdict === 'strong'
+      ).length;
+      const borderlineFlags = fullValidation.flagged.filter(
+        (flag) => flag.verdict === 'borderline'
+      ).length;
+
+      console.log(
+        `Counter-signal validation flagged ${fullValidation.flagged.length} candidates (${strongFlags} strong, ${borderlineFlags} borderline)`
+      );
+
+      const shortlistIds = new Set(
+        positive.slice(0, FINAL_SHORTLIST_COUNT).map((article) => article.id)
+      );
+      const penalizedShortlist = fullValidation.flagged.filter((flag) =>
+        shortlistIds.has(flag.candidateId)
+      );
+
+      if (penalizedShortlist.length > 0) {
+        for (const flag of penalizedShortlist) {
+          const title =
+            positive.find((article) => article.id === flag.candidateId)?.originalTitle ||
+            flag.candidateId;
+          console.log(
+            `  ${flag.verdict.toUpperCase()}: "${title}" (-${flag.penaltyApplied})`
+          );
+        }
+      }
+    } catch (error) {
+      if (error instanceof GeminiQuotaError) {
+        console.log(`Counter-signal validation skipped (quota): ${error.message}`);
+      } else {
+        const message = error instanceof Error ? error.message : String(error);
+        console.log(`Counter-signal validation skipped (error): ${message}`);
+      }
+    }
+  }
+
   const initialSelected = positive.slice(0, FINAL_SELECTED_COUNT);
   const initialReserves = positive.slice(FINAL_SELECTED_COUNT, FINAL_SHORTLIST_COUNT);
+  const shortlistValidation = filterValidationForArticles(fullValidation, [
+    ...initialSelected,
+    ...initialReserves,
+  ]);
 
   console.log(
     `Final shortlist for review: ${initialSelected.length} selected + ${initialReserves.length} reserves`
@@ -585,9 +705,15 @@ async function main() {
     initialReserves,
     initialWrapperCopy,
     weekId,
+    shortlistValidation,
     previousArticles,
     `last ${PUBLISHED_ISSUE_LOOKBACK} published issues + ${DRAFT_LOOKBACK} draft weeks`
   );
+
+  const draftValidation = filterValidationForArticles(fullValidation, [
+    ...refined.selected,
+    ...refined.reserves,
+  ]);
 
   const draft: NewsletterDraft = {
     weekId,
@@ -597,6 +723,7 @@ async function main() {
     discarded,
     totalProcessed: processed.length,
     wrapperCopy: refined.wrapperCopy,
+    validation: draftValidation,
   };
 
   const draftPath = join(ROOT_DIR, 'data', 'drafts', `${weekId}.json`);

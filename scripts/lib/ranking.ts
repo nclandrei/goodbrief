@@ -1,8 +1,14 @@
 import type { ArticleScore, FilterResult, RankingResult, DiscardReason, RankedArticle } from './types.js';
 
 const POSITIVITY_THRESHOLD = 40;
-const POSITIVITY_WEIGHT = 0.6;
-const IMPACT_WEIGHT = 0.4;
+export const POSITIVITY_WEIGHT = 0.6;
+export const IMPACT_WEIGHT = 0.4;
+
+export function getRankingScore(
+  article: Pick<ArticleScore, 'positivity' | 'impact'>
+): number {
+  return article.positivity * POSITIVITY_WEIGHT + article.impact * IMPACT_WEIGHT;
+}
 
 export function filterArticles(articles: ArticleScore[]): FilterResult {
   const passed: ArticleScore[] = [];
@@ -43,7 +49,7 @@ export function rankArticles(
 ): RankingResult {
   const ranked: RankedArticle[] = articles.map((article) => ({
     id: article.id,
-    score: article.positivity * POSITIVITY_WEIGHT + article.impact * IMPACT_WEIGHT,
+    score: getRankingScore(article),
     positivity: article.positivity,
     impact: article.impact,
   }));

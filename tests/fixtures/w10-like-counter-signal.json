@@ -1,0 +1,116 @@
+{
+  "rawArticles": [
+    {
+      "id": "fara-hartie",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Guvernul României lansează platforma „Fără hârtie” pentru reducerea birocrației și digitalizarea administrației",
+      "url": "https://example.ro/fara-hartie-lansare",
+      "summary": "Guvernul anunță lansarea unei platforme noi pentru reducerea birocrației și digitalizarea serviciilor publice.",
+      "publishedAt": "2026-03-05T08:00:00.000Z",
+      "fetchedAt": "2026-03-05T08:05:00.000Z"
+    },
+    {
+      "id": "fara-hartie-complaint",
+      "sourceId": "ziare",
+      "sourceName": "Ziare.com",
+      "title": "Platforma „Fără hârtie” pentru reducerea birocrației a Guvernului a strâns deja reclamații și sesizări despre erori și blocaje",
+      "url": "https://example.ro/fara-hartie-reclamatii",
+      "summary": "La scurt timp după lansare au apărut plângeri privind erori, blocaje și pași neclari pentru utilizatori.",
+      "publishedAt": "2026-03-06T10:00:00.000Z",
+      "fetchedAt": "2026-03-06T10:05:00.000Z"
+    },
+    {
+      "id": "educatie-fara-etichete",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Peste 100 de copii cu nevoi speciale au participat la proiectul pilot „Educație fizică fără etichete” din Capitală",
+      "url": "https://example.ro/educatie-fizica-fara-etichete",
+      "summary": "Copiii cu autism și ADHD au participat la activități sportive adaptate, gândite pentru integrare și socializare.",
+      "publishedAt": "2026-03-01T06:25:32.000Z",
+      "fetchedAt": "2026-03-01T06:30:00.000Z"
+    },
+    {
+      "id": "casa-verde",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "title": "Programul „Casa Verde” se schimbă. Statul vrea să finanțeze baterii pentru stocarea energiei solare",
+      "url": "https://example.ro/casa-verde-baterii",
+      "summary": "Programul capătă o componentă nouă pentru stocarea energiei și creșterea randamentului instalațiilor solare.",
+      "publishedAt": "2026-03-03T17:48:17.000Z",
+      "fetchedAt": "2026-03-03T18:00:00.000Z"
+    },
+    {
+      "id": "spitale-cardio",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "title": "Încă patru spitale au intrat în rețeaua de supraveghere și tratament a bolnavilor cronici cardiaci",
+      "url": "https://example.ro/spitale-cardiace",
+      "summary": "Patru spitale noi intră într-o rețea națională pentru îngrijirea bolnavilor cardiaci.",
+      "publishedAt": "2026-03-06T05:49:39.000Z",
+      "fetchedAt": "2026-03-06T06:00:00.000Z"
+    },
+    {
+      "id": "consolidari",
+      "sourceId": "ziare",
+      "sourceName": "Ziare.com",
+      "title": "Ministerul Dezvoltării va aloca peste 200 de milioane de lei pentru consolidarea clădirilor cu risc seismic",
+      "url": "https://example.ro/consolidari-seismice",
+      "summary": "Sunt vizate școli, spitale, clădiri istorice și blocuri de locuințe din mai multe orașe.",
+      "publishedAt": "2026-03-05T11:06:29.000Z",
+      "fetchedAt": "2026-03-05T11:10:00.000Z"
+    }
+  ],
+  "processedCandidates": [
+    {
+      "id": "fara-hartie",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "originalTitle": "Guvernul României lansează platforma „Fără hârtie” pentru reducerea birocrației și digitalizarea administrației",
+      "url": "https://example.ro/fara-hartie-lansare",
+      "summary": "Guvernul lansează platforma „Fără hârtie” pentru a reduce birocrația și a digitaliza administrația.",
+      "positivity": 80,
+      "impact": 70,
+      "category": "wins",
+      "publishedAt": "2026-03-05T08:00:00.000Z",
+      "processedAt": "2026-03-07T10:48:02.731Z"
+    },
+    {
+      "id": "educatie-fara-etichete",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Peste 100 de copii cu nevoi speciale au participat la proiectul pilot „Educație fizică fără etichete” din Capitală",
+      "url": "https://example.ro/educatie-fizica-fara-etichete",
+      "summary": "Pentru zeci de copii diagnosticați cu tulburări din spectrul autist și ADHD, sportul devine o șansă la integrare.",
+      "positivity": 85,
+      "impact": 75,
+      "category": "local-heroes",
+      "publishedAt": "2026-03-01T06:25:32.000Z",
+      "processedAt": "2026-03-07T10:48:02.731Z"
+    },
+    {
+      "id": "spitale-cardio",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "originalTitle": "Încă patru spitale au intrat în rețeaua de supraveghere și tratament a bolnavilor cronici cardiaci",
+      "url": "https://example.ro/spitale-cardiace",
+      "summary": "Patru noi spitale din țară intră într-o rețea națională de tratament cardiac.",
+      "positivity": 80,
+      "impact": 70,
+      "category": "wins",
+      "publishedAt": "2026-03-06T05:49:39.000Z",
+      "processedAt": "2026-03-07T10:48:02.731Z"
+    }
+  ],
+  "repeatCandidate": {
+    "id": "antibiotice-iasi",
+    "title": "Ursula von der Leyen a anunțat că noi medicamente vor fi produse în România. Vom avea un nou centru de cercetare",
+    "url": "https://stirileprotv.ro/stiri/sanatate/o-companie-romaneasca-de-medicamente-va-dezvolta-mai-multe-pastile-noi-si-tehnologii-inovative-cu-sprijin-european.html?category_slug=stiri%2Fsanatate"
+  },
+  "historicalArticles": [
+    {
+      "title": "Ursula von der Leyen a anunțat că noi medicamente vor fi produse în România. Vom avea un nou centru de cercetare",
+      "url": "https://stirileprotv.ro/stiri/sanatate/o-companie-romaneasca-de-medicamente-va-dezvolta-mai-multe-pastile-noi-si-tehnologii-inovative-cu-sprijin-european.html?category_slug=stiri%2Fsanatate"
+    }
+  ]
+}
