@@ -3,7 +3,7 @@
 import 'dotenv/config';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
-import { SATURDAY_PIPELINE_SCRIPTS, runScriptSequence } from './lib/pipeline-commands.js';
+import { VERIFY_LOCAL_SCRIPTS, runScriptSequence } from './lib/pipeline-commands.js';
 import { getRootDir, resolveWeekId } from './lib/pipeline-artifacts.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -13,9 +13,9 @@ const DATA_ROOT_DIR = getRootDir(__dirname);
 
 async function main(): Promise<void> {
   const weekId = resolveWeekId(process.argv.slice(2));
-  console.log(`Running full draft pipeline for ${weekId}...`);
-  await runScriptSequence(COMMAND_ROOT_DIR, DATA_ROOT_DIR, SATURDAY_PIPELINE_SCRIPTS, weekId);
-  console.log(`✓ Full draft pipeline finished for ${weekId}`);
+  console.log(`Running local draft pipeline verification for ${weekId}...`);
+  await runScriptSequence(COMMAND_ROOT_DIR, DATA_ROOT_DIR, VERIFY_LOCAL_SCRIPTS, weekId);
+  console.log(`✓ Local verification finished for ${weekId}`);
 }
 
 main().catch((error) => {

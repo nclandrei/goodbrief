@@ -1,11 +1,16 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { mkdtempSync, mkdirSync, readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
-import type { NewsletterDraft, WeeklyBuffer } from '../scripts/types.js';
+import type {
+  DraftPipelineArtifact,
+  NewsletterDraft,
+  PreparedPipelineData,
+  WeeklyBuffer,
+} from '../scripts/types.js';
 
 const execFileAsync = promisify(execFile);
 
@@ -26,6 +31,7 @@ test('validate-draft rewrites only the validation block', async () => {
   const tempRoot = mkdtempSync(join(tmpdir(), 'goodbrief-validate-draft-'));
   mkdirSync(join(tempRoot, 'data', 'drafts'), { recursive: true });
   mkdirSync(join(tempRoot, 'data', 'raw'), { recursive: true });
+  mkdirSync(join(tempRoot, 'data', 'pipeline', '2026-W10'), { recursive: true });
 
   const draft: NewsletterDraft = {
     weekId: '2026-W10',
@@ -55,10 +61,39 @@ test('validate-draft rewrites only the validation block', async () => {
 
   const draftPath = join(tempRoot, 'data', 'drafts', '2026-W10.json');
   const rawPath = join(tempRoot, 'data', 'raw', '2026-W10.json');
+  const prepareArtifactPath = join(
+    tempRoot,
+    'data',
+    'pipeline',
+    '2026-W10',
+    '01-prepared.json'
+  );
   const mockPath = join(tempRoot, 'counter-signal-mock.json');
 
   writeFileSync(draftPath, JSON.stringify(draft, null, 2), 'utf-8');
   writeFileSync(rawPath, JSON.stringify(rawBuffer, null, 2), 'utf-8');
+  const prepareArtifact: DraftPipelineArtifact<PreparedPipelineData, 'prepare'> = {
+    weekId: '2026-W10',
+    phase: 'prepare',
+    generatedAt: '2026-03-08T10:00:00.000Z',
+    inputFile: rawPath,
+    data: {
+      sameWeekRepresentatives: fixture.rawArticles,
+      preparedArticles: fixture.rawArticles,
+      deduplication: {
+        inputCount: fixture.rawArticles.length,
+        outputCount: fixture.rawArticles.length,
+        clusters: [],
+      },
+      historicalFilter: {
+        inputCount: fixture.rawArticles.length,
+        outputCount: fixture.rawArticles.length,
+        filteredOut: 0,
+        historicalCount: 0,
+      },
+    },
+  };
+  writeFileSync(prepareArtifactPath, JSON.stringify(prepareArtifact, null, 2), 'utf-8');
   writeFileSync(
     mockPath,
     JSON.stringify(
@@ -109,4 +144,8 @@ test('validate-draft rewrites only the validation block', async () => {
   assert.deepEqual(updated.validation?.flagged[0].relatedArticleIds, [
     'fara-hartie-complaint',
   ]);
+  assert.equal(
+    existsSync(join(tempRoot, 'data', 'pipeline', '2026-W10', '04-counter-signals.json')),
+    true
+  );
 });

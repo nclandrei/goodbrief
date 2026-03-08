@@ -26,6 +26,23 @@ export interface WrapperCopy {
 
 export type CounterSignalVerdict = 'none' | 'borderline' | 'strong';
 
+export type DraftPipelinePhase =
+  | 'prepare'
+  | 'score'
+  | 'semantic-dedup'
+  | 'counter-signal-validate'
+  | 'select'
+  | 'wrapper-copy'
+  | 'refine';
+
+export interface DraftPipelineArtifact<TData, TPhase extends DraftPipelinePhase = DraftPipelinePhase> {
+  weekId: string;
+  phase: TPhase;
+  generatedAt: string;
+  inputFile: string;
+  data: TData;
+}
+
 export interface CounterSignalFlag {
   candidateId: string;
   verdict: Exclude<CounterSignalVerdict, 'none'>;
@@ -102,4 +119,67 @@ export interface NewsletterDraft {
   totalProcessed: number;
   wrapperCopy?: WrapperCopy;
   validation?: DraftValidation;
+}
+
+export interface PipelineDeduplicationSummary {
+  inputCount: number;
+  outputCount: number;
+  clusters: Array<{
+    kept: string;
+    merged: string[];
+    similarity: number;
+  }>;
+}
+
+export interface PipelineHistoricalFilterSummary {
+  inputCount: number;
+  outputCount: number;
+  filteredOut: number;
+  historicalCount: number;
+}
+
+export interface PreparedPipelineData {
+  sameWeekRepresentatives: RawArticle[];
+  preparedArticles: RawArticle[];
+  deduplication: PipelineDeduplicationSummary;
+  historicalFilter: PipelineHistoricalFilterSummary;
+}
+
+export interface ScoredPipelineData {
+  articles: ProcessedArticle[];
+  totalProcessed: number;
+  discarded: number;
+}
+
+export interface SemanticDedupPipelineData {
+  articles: ProcessedArticle[];
+  totalProcessed: number;
+  discarded: number;
+  removed: ProcessedArticle[];
+  clusters: Array<{
+    keepId: string;
+    dropIds: string[];
+    reason: string;
+  }>;
+}
+
+export interface CounterSignalPipelineData {
+  validation: DraftValidation;
+}
+
+export interface ShortlistPipelineData {
+  selected: ProcessedArticle[];
+  reserves: ProcessedArticle[];
+  totalProcessed: number;
+  discarded: number;
+  validation: DraftValidation;
+}
+
+export interface WrapperCopyPipelineData {
+  wrapperCopy: WrapperCopy;
+}
+
+export interface RefinedDraftPipelineData {
+  draft: NewsletterDraft;
+  reasoning: string;
 }

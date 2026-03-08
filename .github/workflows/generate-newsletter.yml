@@ -4,13 +4,44 @@ on:
   schedule:
     - cron: '0 10 * * 6'  # Saturday at 10:00 UTC
   workflow_dispatch:
+    inputs:
+      week:
+        description: 'Week ID (e.g. 2026-W10). Leave empty for current week.'
+        required: false
+        type: string
 
 permissions:
   contents: write
 
 jobs:
-  generate:
+  determine_week:
     runs-on: ubuntu-latest
+    outputs:
+      id: ${{ steps.week.outputs.id }}
+    steps:
+      - name: Determine week ID
+        id: week
+        run: |
+          if [ -n "${{ inputs.week }}" ]; then
+            echo "id=${{ inputs.week }}" >> "$GITHUB_OUTPUT"
+          else
+            WEEK_ID=$(node - <<'NODE'
+            const d = new Date();
+            d.setHours(0, 0, 0, 0);
+            d.setDate(d.getDate() + 3 - ((d.getDay() + 6) % 7));
+            const week1 = new Date(d.getFullYear(), 0, 4);
+            const weekNum = Math.round(
+              ((d.getTime() - week1.getTime()) / 86400000 - 3 + ((week1.getDay() + 6) % 7)) / 7 + 1
+            );
+            process.stdout.write(`${d.getFullYear()}-W${weekNum.toString().padStart(2, '0')}`);
+            NODE
+            )
+            echo "id=$WEEK_ID" >> "$GITHUB_OUTPUT"
+          fi
+
+  prepare:
+    runs-on: ubuntu-latest
+    needs: determine_week
     steps:
       - uses: actions/checkout@v4
         with:
@@ -19,34 +50,220 @@ jobs:
         with:
           node-version: '20'
       - run: npm ci
-      - name: Generate draft
-        run: npm run generate-draft
+      - name: Prepare candidates
+        run: npm run pipeline:prepare -- --week ${{ needs.determine_week.outputs.id }}
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-prepare-${{ needs.determine_week.outputs.id }}
+          path: data/pipeline/${{ needs.determine_week.outputs.id }}
+
+  score:
+    runs-on: ubuntu-latest
+    needs: [determine_week, prepare]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: pipeline-prepare-${{ needs.determine_week.outputs.id }}
+          path: data/pipeline/${{ needs.determine_week.outputs.id }}
+      - name: Score candidates
+        run: npm run pipeline:score -- --week ${{ needs.determine_week.outputs.id }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-score-${{ needs.determine_week.outputs.id }}
+          path: data/pipeline/${{ needs.determine_week.outputs.id }}
+
+  semantic_dedup:
+    runs-on: ubuntu-latest
+    needs: [determine_week, score]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: pipeline-score-${{ needs.determine_week.outputs.id }}
+          path: data/pipeline/${{ needs.determine_week.outputs.id }}
+      - name: Semantic dedup
+        run: npm run pipeline:semantic-dedup -- --week ${{ needs.determine_week.outputs.id }}
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-semantic-dedup-${{ needs.determine_week.outputs.id }}
+          path: data/pipeline/${{ needs.determine_week.outputs.id }}
+
+  counter_signal_validate:
+    runs-on: ubuntu-latest
+    needs: [determine_week, semantic_dedup]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: pipeline-semantic-dedup-${{ needs.determine_week.outputs.id }}
+          path: data/pipeline/${{ needs.determine_week.outputs.id }}
+      - name: Counter-signal validation
+        run: npm run pipeline:validate -- --week ${{ needs.determine_week.outputs.id }}
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-counter-signal-validate-${{ needs.determine_week.outputs.id }}
+          path: data/pipeline/${{ needs.determine_week.outputs.id }}
+
+  select:
+    runs-on: ubuntu-latest
+    needs: [determine_week, counter_signal_validate]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: pipeline-counter-signal-validate-${{ needs.determine_week.outputs.id }}
+          path: data/pipeline/${{ needs.determine_week.outputs.id }}
+      - name: Select shortlist
+        run: npm run pipeline:select -- --week ${{ needs.determine_week.outputs.id }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-select-${{ needs.determine_week.outputs.id }}
+          path: data/pipeline/${{ needs.determine_week.outputs.id }}
+
+  wrapper_copy:
+    runs-on: ubuntu-latest
+    needs: [determine_week, select]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: pipeline-select-${{ needs.determine_week.outputs.id }}
+          path: data/pipeline/${{ needs.determine_week.outputs.id }}
+      - name: Generate wrapper copy
+        run: npm run pipeline:wrapper-copy -- --week ${{ needs.determine_week.outputs.id }}
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-wrapper-copy-${{ needs.determine_week.outputs.id }}
+          path: data/pipeline/${{ needs.determine_week.outputs.id }}
+
+  refine:
+    runs-on: ubuntu-latest
+    needs: [determine_week, wrapper_copy]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: pipeline-wrapper-copy-${{ needs.determine_week.outputs.id }}
+          path: data/pipeline/${{ needs.determine_week.outputs.id }}
+      - name: Refine final draft
+        run: npm run pipeline:refine -- --week ${{ needs.determine_week.outputs.id }}
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-refine-${{ needs.determine_week.outputs.id }}
+          path: data/pipeline/${{ needs.determine_week.outputs.id }}
+
+  commit_outputs:
+    runs-on: ubuntu-latest
+    needs: [determine_week, refine]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: pipeline-refine-${{ needs.determine_week.outputs.id }}
+          path: data/pipeline/${{ needs.determine_week.outputs.id }}
+      - name: Materialize final draft
+        run: npx tsx scripts/materialize-draft-from-pipeline.ts --week ${{ needs.determine_week.outputs.id }}
       - name: Validate draft freshness
-        run: npm run validate-draft-freshness
+        run: npm run validate-draft-freshness -- --week ${{ needs.determine_week.outputs.id }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
-      - name: Commit draft
+      - name: Commit pipeline outputs
         run: |
           git config user.name "Andrei-Mihai Nicolae"
           git config user.email "andrei@nicolaeandrei.com"
-          git add data/drafts/
-          git diff --staged --quiet || git commit -m "Generate newsletter draft"
+          git add data/pipeline/${{ needs.determine_week.outputs.id }} data/drafts/${{ needs.determine_week.outputs.id }}.json
+          git diff --staged --quiet || git commit -m "chore: generate draft pipeline for ${{ needs.determine_week.outputs.id }}"
           git pull --rebase
           git push
+
+  proof_email:
+    runs-on: ubuntu-latest
+    needs: [determine_week, commit_outputs]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: pipeline-refine-${{ needs.determine_week.outputs.id }}
+          path: data/pipeline/${{ needs.determine_week.outputs.id }}
+      - name: Materialize final draft
+        run: npx tsx scripts/materialize-draft-from-pipeline.ts --week ${{ needs.determine_week.outputs.id }}
       - name: Send proof email
-        run: npm run notify-draft
+        run: npm run notify-draft -- ${{ needs.determine_week.outputs.id }}
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
 
+  alert_failure:
+    runs-on: ubuntu-latest
+    needs:
+      - determine_week
+      - prepare
+      - score
+      - semantic_dedup
+      - counter_signal_validate
+      - select
+      - wrapper_copy
+      - refine
+      - commit_outputs
+      - proof_email
+    if: failure()
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
       - name: Alert on workflow failure
-        if: failure()
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
