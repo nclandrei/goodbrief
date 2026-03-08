@@ -42,19 +42,6 @@
       "processedAt": "2026-03-07T10:48:02.731Z"
     },
     {
-      "id": "1fde26750afa25a3",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Ursula von der Leyen a anunțat că noi medicamente vor fi produse în România. Vom avea un nou centru de cercetare",
-      "url": "https://stirileprotv.ro/stiri/sanatate/o-companie-romaneasca-de-medicamente-va-dezvolta-mai-multe-pastile-noi-si-tehnologii-inovative-cu-sprijin-european.html?category_slug=stiri%2Fsanatate",
-      "summary": "Ursula von der Leyen a confirmat că noi medicamente și tehnologii inovative vor fi produse în România, la Antibiotice Iași. Se va înființa și un nou centru de cercetare.",
-      "positivity": 80,
-      "impact": 85,
-      "category": "wins",
-      "publishedAt": "2026-03-02T18:37:48.000Z",
-      "processedAt": "2026-03-07T10:48:02.731Z"
-    },
-    {
       "id": "48b181754e2a84cd",
       "sourceId": "mediafax",
       "sourceName": "Mediafax",
@@ -78,6 +65,19 @@
       "impact": 70,
       "category": "wins",
       "publishedAt": "2026-03-04T06:48:00.000Z",
+      "processedAt": "2026-03-07T10:48:02.731Z"
+    },
+    {
+      "id": "aba877351359ba72",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Ionuț Radu, erou pentru Celta Vigo în victoria cu Girona. Marca: „A oferit un recital de parade”",
+      "url": "https://stirileprotv.ro/stiri/sport/ionut-radu-erou-pentru-celta-vigo-in-victoria-cu-girona-marca-a-oferit-un-recital-de-parade.html?category_slug=stiri%2Fsport",
+      "summary": "Portarul român Ionuț Radu a fost erou pentru Celta Vigo, oferind un recital de parade în victoria cu Girona. Performanța sa a fost esențială pentru echipa sa.",
+      "positivity": 80,
+      "impact": 70,
+      "category": "wins",
+      "publishedAt": "2026-03-02T08:24:36.000Z",
       "processedAt": "2026-03-07T10:48:02.731Z"
     },
     {
@@ -120,16 +120,16 @@
       "processedAt": "2026-03-07T10:48:02.731Z"
     },
     {
-      "id": "13ff689997677a7d",
-      "sourceId": "ziare",
-      "sourceName": "Ziare.com",
-      "originalTitle": "Peste 30 de medicamente intră pe lista de gratuite și compensate. Anunțul făcut de ministrul Sănătății",
-      "url": "https://ziare.com/lista-medicamente-compensate/extindere-alexandru-rogobete-1998383",
-      "summary": "Lista medicamentelor gratuite și compensate se extinde cu 33 de noi denumiri, iar alte 19 vor avea noi indicații terapeutice. Ministrul Sănătății, Alexandru Rogobete, a făcut anunțul, facilitând accesul pacienților la tratamente.",
+      "id": "fde88f2398d81da1",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Alexandra Căpitănescu, cu piesa rock „Choke Me\", va reprezenta România la Eurovision 2026",
+      "url": "https://stirileprotv.ro/show-buzz/muzica/alexandra-capitanescu-cu-piesa-rock-choke-me-va-reprezenta-romania-la-eurovision-2026.html?category_slug=show-buzz%2Fmuzica",
+      "summary": "Alexandra Căpitănescu va reprezenta România la Eurovision 2026 cu piesa rock „Choke Me”. Artista a câștigat selecția națională și și-a exprimat dorința ca muzica sa să ajungă la cât mai mulți oameni.",
       "positivity": 80,
       "impact": 70,
       "category": "wins",
-      "publishedAt": "2026-03-05T12:48:46.000Z",
+      "publishedAt": "2026-03-04T21:06:49.000Z",
       "processedAt": "2026-03-07T10:48:02.731Z"
     },
     {
@@ -187,16 +187,16 @@
       "processedAt": "2026-03-07T10:48:02.731Z"
     },
     {
-      "id": "aba877351359ba72",
+      "id": "1fde26750afa25a3",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
-      "originalTitle": "Ionuț Radu, erou pentru Celta Vigo în victoria cu Girona. Marca: „A oferit un recital de parade”",
-      "url": "https://stirileprotv.ro/stiri/sport/ionut-radu-erou-pentru-celta-vigo-in-victoria-cu-girona-marca-a-oferit-un-recital-de-parade.html?category_slug=stiri%2Fsport",
-      "summary": "Portarul român Ionuț Radu a fost erou pentru Celta Vigo, oferind un recital de parade în victoria cu Girona. Performanța sa a fost esențială pentru echipa sa.",
+      "originalTitle": "Ursula von der Leyen a anunțat că noi medicamente vor fi produse în România. Vom avea un nou centru de cercetare",
+      "url": "https://stirileprotv.ro/stiri/sanatate/o-companie-romaneasca-de-medicamente-va-dezvolta-mai-multe-pastile-noi-si-tehnologii-inovative-cu-sprijin-european.html?category_slug=stiri%2Fsanatate",
+      "summary": "Ursula von der Leyen a confirmat că noi medicamente și tehnologii inovative vor fi produse în România, la Antibiotice Iași. Se va înființa și un nou centru de cercetare.",
       "positivity": 80,
-      "impact": 70,
+      "impact": 85,
       "category": "wins",
-      "publishedAt": "2026-03-02T08:24:36.000Z",
+      "publishedAt": "2026-03-02T18:37:48.000Z",
       "processedAt": "2026-03-07T10:48:02.731Z"
     },
     {
@@ -226,16 +226,16 @@
       "processedAt": "2026-03-07T10:48:02.731Z"
     },
     {
-      "id": "fde88f2398d81da1",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Alexandra Căpitănescu, cu piesa rock „Choke Me\", va reprezenta România la Eurovision 2026",
-      "url": "https://stirileprotv.ro/show-buzz/muzica/alexandra-capitanescu-cu-piesa-rock-choke-me-va-reprezenta-romania-la-eurovision-2026.html?category_slug=show-buzz%2Fmuzica",
-      "summary": "Alexandra Căpitănescu va reprezenta România la Eurovision 2026 cu piesa rock „Choke Me”. Artista a câștigat selecția națională și și-a exprimat dorința ca muzica sa să ajungă la cât mai mulți oameni.",
+      "id": "13ff689997677a7d",
+      "sourceId": "ziare",
+      "sourceName": "Ziare.com",
+      "originalTitle": "Peste 30 de medicamente intră pe lista de gratuite și compensate. Anunțul făcut de ministrul Sănătății",
+      "url": "https://ziare.com/lista-medicamente-compensate/extindere-alexandru-rogobete-1998383",
+      "summary": "Lista medicamentelor gratuite și compensate se extinde cu 33 de noi denumiri, iar alte 19 vor avea noi indicații terapeutice. Ministrul Sănătății, Alexandru Rogobete, a făcut anunțul, facilitând accesul pacienților la tratamente.",
       "positivity": 80,
       "impact": 70,
       "category": "wins",
-      "publishedAt": "2026-03-04T21:06:49.000Z",
+      "publishedAt": "2026-03-05T12:48:46.000Z",
       "processedAt": "2026-03-07T10:48:02.731Z"
     },
     {
@@ -529,8 +529,8 @@
   "totalProcessed": 587,
   "wrapperCopy": {
     "greeting": "Salutare! 👋",
-    "intro": "Săptămâna asta avem una dintre cele mai solide selecții de până acum: un Stradivarius pentru Răzvan Stoica, recunoaștere internațională pentru Laura Codruța Kovesi, pași concreți în sănătate, administrație mai simplă și investiții care ajung în spitale, clădiri și energie verde. Sunt 11 vești bune care nu sună a promisiuni goale, ci a lucruri care chiar încep să se miște.",
+    "intro": "Săptămâna asta lista arată mai curat și mai bine echilibrat: un Stradivarius pentru Răzvan Stoica, recunoaștere internațională pentru Laura Codruța Kovesi, pași concreți în spitale și infrastructură, dar și vești bune din sport și muzică care nu par puse doar ca umplutură. Sunt 11 povești care arată binele exact unde vrei să-l vezi: în oameni care livrează, în instituții care funcționează și în proiecte care chiar se mișcă.",
     "signOff": "Până data viitoare, zâmbește și caută binele. 🙏",
-    "shortSummary": "Stradivarius, Kovesi, sănătate, spitale, stat mai simplu, energie verde."
+    "shortSummary": "Stradivarius, Kovesi, spitale, sport, muzică, energie verde."
   }
 }
