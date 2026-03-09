@@ -55,6 +55,9 @@ export interface CounterSignalFlag {
 
 export type DraftValidationStatus = 'passed' | 'failed';
 export type DraftValidationVerdict = 'fresh' | 'duplicate' | 'follow_up';
+export type DraftValidationApprovalSource =
+  | 'legacy-backfill'
+  | 'validation-pipeline';
 
 export interface DraftValidationBlockedArticle {
   articleId: string;
@@ -81,6 +84,7 @@ export interface DraftValidation {
   candidateCount: number;
   flagged: CounterSignalFlag[];
   status?: DraftValidationStatus;
+  approvalSource?: DraftValidationApprovalSource;
   checkedAt?: string;
   freshnessWindowDays?: number;
   publishedHistoryCount?: number;

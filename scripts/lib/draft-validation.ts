@@ -420,6 +420,7 @@ function buildValidationMetadata(options: {
   previousValidation?: DraftValidation;
   candidateCount: number;
   status: NonNullable<DraftValidation['status']>;
+  approvalSource: NonNullable<DraftValidation['approvalSource']>;
   checkedAt: string;
   freshnessWindowDays: number;
   publishedHistoryCount: number;
@@ -435,6 +436,7 @@ function buildValidationMetadata(options: {
       options.previousValidation?.candidateCount ?? options.candidateCount,
     flagged: options.previousValidation?.flagged || [],
     status: options.status,
+    approvalSource: options.approvalSource,
     checkedAt: options.checkedAt,
     freshnessWindowDays: options.freshnessWindowDays,
     publishedHistoryCount: options.publishedHistoryCount,
@@ -546,6 +548,7 @@ export async function validateDraftFreshness(
     previousValidation: options.draft.validation,
     candidateCount: pool.length,
     status,
+    approvalSource: 'validation-pipeline',
     checkedAt,
     freshnessWindowDays,
     publishedHistoryCount: options.publishedHistoryCount,

@@ -467,5 +467,16 @@
     "intro": "Săptămâna aceasta, România are motive solide de optimism: rezultate sportive care ne pun în prim-plan, proiecte strategice în economie și infrastructură care capătă tracțiune, plus inițiative din sănătate care aduc impact direct în viețile oamenilor.",
     "signOff": "Numai bine și spor la tot ce faci! 🙏",
     "shortSummary": "Sport, investiții strategice și sănătate: vești bune din România, cu impact real."
+  },
+  "validation": {
+    "generatedAt": "2026-02-21T10:39:55.981Z",
+    "candidateCount": 35,
+    "flagged": [],
+    "status": "passed",
+    "approvalSource": "legacy-backfill",
+    "checkedAt": "2026-03-09T11:29:25.406Z",
+    "blockedArticles": [],
+    "replacements": [],
+    "agentReviewed": []
   }
 }

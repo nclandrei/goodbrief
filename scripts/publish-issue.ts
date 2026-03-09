@@ -1,65 +1,27 @@
-import { readFileSync, writeFileSync, readdirSync } from "fs";
-import { join } from "path";
-import type { NewsletterDraft, ProcessedArticle, ArticleCategory } from "./types.js";
-import { resolveProjectRoot } from "./lib/project-root.js";
-import { assertDraftValidated } from "./lib/draft-delivery.js";
-
-function getMondayOfISOWeek(weekId: string): Date {
-  // weekId format: "2026-W03"
-  const [yearStr, weekStr] = weekId.split("-W");
-  const year = parseInt(yearStr, 10);
-  const week = parseInt(weekStr, 10);
-  
-  // Jan 4th is always in week 1
-  const jan4 = new Date(year, 0, 4);
-  const jan4Day = jan4.getDay() || 7; // Convert Sunday (0) to 7
-  
-  // Monday of week 1
-  const week1Monday = new Date(jan4);
-  week1Monday.setDate(jan4.getDate() - jan4Day + 1);
-  
-  // Add weeks to get to target week's Monday
-  const targetMonday = new Date(week1Monday);
-  targetMonday.setDate(week1Monday.getDate() + (week - 1) * 7);
-  
-  return targetMonday;
-}
-
-function formatDate(date: Date): string {
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, "0");
-  const day = String(date.getDate()).padStart(2, "0");
-  return `${year}-${month}-${day}`;
-}
-
-const ROMANIAN_MONTHS_SHORT = [
-  "ian", "feb", "mar", "apr", "mai", "iun",
-  "iul", "aug", "sep", "oct", "nov", "dec"
-];
-
-function formatDateRomanian(date: Date): string {
-  const day = date.getDate();
-  const month = ROMANIAN_MONTHS_SHORT[date.getMonth()];
-  const year = date.getFullYear();
-  return `${day} ${month} ${year}`;
-}
+import { existsSync, readFileSync, writeFileSync, readdirSync } from 'fs';
+import { join } from 'path';
+import type { NewsletterDraft, ProcessedArticle, ArticleCategory } from './types.js';
+import { assertDraftValidated } from './lib/draft-delivery.js';
+import { renderIssueFrontmatter } from './lib/issue-frontmatter.js';
+import { getIssuePublicationInfo } from './lib/newsletter-week.js';
+import { resolveProjectRoot } from './lib/project-root.js';
 
 function getIssueNumber(issuesDir: string): number {
-  const files = readdirSync(issuesDir).filter((f) => f.endsWith(".md"));
+  const files = readdirSync(issuesDir).filter((f) => f.endsWith('.md'));
   return files.length + 1;
 }
 
 const CATEGORY_CONFIG: Record<ArticleCategory, { emoji: string; title: string }> = {
-  "local-heroes": { emoji: "🌱", title: "Local Heroes" },
-  "wins": { emoji: "🏆", title: "Wins" },
-  "green-stuff": { emoji: "💚", title: "Green Stuff" },
-  "quick-hits": { emoji: "✨", title: "Quick Hits" },
+  'local-heroes': { emoji: '🌱', title: 'Local Heroes' },
+  wins: { emoji: '🏆', title: 'Wins' },
+  'green-stuff': { emoji: '💚', title: 'Green Stuff' },
+  'quick-hits': { emoji: '✨', title: 'Quick Hits' },
 };
 
 function groupByCategory(articles: ProcessedArticle[]): Map<ArticleCategory, ProcessedArticle[]> {
   const groups = new Map<ArticleCategory, ProcessedArticle[]>();
   for (const article of articles) {
-    const category = article.category || "wins";
+    const category = article.category || 'wins';
     if (!groups.has(category)) {
       groups.set(category, []);
     }
@@ -73,10 +35,11 @@ function generateMarkdown(
   issueNumber: number,
   date: string,
   displayDate: string,
-  intro: string
+  intro: string,
+  validatedAt: string
 ): string {
   const grouped = groupByCategory(articles);
-  const categoryOrder: ArticleCategory[] = ["local-heroes", "wins", "green-stuff", "quick-hits"];
+  const categoryOrder: ArticleCategory[] = ['local-heroes', 'wins', 'green-stuff', 'quick-hits'];
 
   const sections: string[] = [];
 
@@ -95,13 +58,18 @@ ${article.summary}
     }
   }
 
-  return `---
-title: "Good Brief #${issueNumber} · ${displayDate}"
-date: ${date}
-summary: "${intro}"
----
+  const frontmatter = renderIssueFrontmatter({
+    title: `Good Brief #${issueNumber} · ${displayDate}`,
+    date,
+    summary: intro,
+    validated: true,
+    validationSource: 'validation-pipeline',
+    validatedAt,
+  });
 
-${sections.join("\n\n")}
+  return `${frontmatter}
+
+${sections.join('\n\n')}
 `;
 }
 
@@ -117,18 +85,18 @@ function parseArgs(): string | null {
 
 function getLatestDraftWeekId(draftsDir: string): string | null {
   const files = readdirSync(draftsDir)
-    .filter((f) => f.endsWith(".json"))
+    .filter((f) => f.endsWith('.json'))
     .sort()
     .reverse();
   
   if (files.length === 0) return null;
-  return files[0].replace(".json", "");
+  return files[0].replace('.json', '');
 }
 
 async function main() {
   const projectRoot = resolveProjectRoot(import.meta.url);
-  const issuesDir = join(projectRoot, "content", "issues");
-  const draftsDir = join(projectRoot, "data", "drafts");
+  const issuesDir = join(projectRoot, 'content', 'issues');
+  const draftsDir = join(projectRoot, 'data', 'drafts');
 
   // Use --week arg if provided, otherwise find latest draft
   let weekId = parseArgs();
@@ -169,24 +137,35 @@ async function main() {
   }
 
   const issueNumber = getIssueNumber(issuesDir);
-  // Issue is sent on Monday of the NEXT week after the draft week
-  const draftMonday = getMondayOfISOWeek(weekId);
-  const sendMonday = new Date(draftMonday);
-  sendMonday.setDate(draftMonday.getDate() + 7);
-  const dateStr = formatDate(sendMonday);
-  const displayDate = formatDateRomanian(sendMonday);
-  const filename = `${dateStr}-issue.md`;
-  const outputPath = join(issuesDir, filename);
+  const issueInfo = getIssuePublicationInfo(projectRoot, weekId);
+
+  if (existsSync(issueInfo.outputPath)) {
+    console.log(`Issue already exists at ${issueInfo.outputPath}, skipping publish.`);
+    return;
+  }
 
   if (!draft.wrapperCopy) {
     console.error("Error: Draft is missing wrapperCopy");
     process.exit(1);
   }
   const summary = draft.wrapperCopy.shortSummary || draft.wrapperCopy.intro;
-  const markdown = generateMarkdown(draft.selected, issueNumber, dateStr, displayDate, summary);
+  const validatedAt = draft.validation?.checkedAt || draft.validation?.generatedAt;
+  if (!validatedAt) {
+    console.error('Error: Draft is missing validation timestamp');
+    process.exit(1);
+  }
 
-  writeFileSync(outputPath, markdown, "utf-8");
-  console.log(`Published issue #${issueNumber} to ${outputPath}`);
+  const markdown = generateMarkdown(
+    draft.selected,
+    issueNumber,
+    issueInfo.date,
+    issueInfo.displayDate,
+    summary,
+    validatedAt
+  );
+
+  writeFileSync(issueInfo.outputPath, markdown, 'utf-8');
+  console.log(`Published issue #${issueNumber} to ${issueInfo.outputPath}`);
 }
 
 main();

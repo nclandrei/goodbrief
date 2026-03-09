@@ -545,5 +545,16 @@
     "intro": "Săptămâna asta are mai multă substanță decât spectacol: de la Stradivariusul ajuns la Răzvan Stoica și recunoașterea Laurei Codruța Kovesi până la copii care găsesc un loc mai prietenos în sport, spitale care își extind rețeaua, creșe aproape gata care primesc personal și investiții care ajung în clădiri mai sigure și energie verde. Sunt 10 știri bune care spun același lucru simplu: când oameni competenți și instituții decente își fac treaba, se vede.",
     "signOff": "Până data viitoare, zâmbește și caută binele. 🙏",
     "shortSummary": "Stradivarius, Kovesi, incluziune, spitale, educație, energie verde."
+  },
+  "validation": {
+    "generatedAt": "2026-03-07T10:48:02.731Z",
+    "candidateCount": 41,
+    "flagged": [],
+    "status": "passed",
+    "approvalSource": "legacy-backfill",
+    "checkedAt": "2026-03-09T11:29:25.406Z",
+    "blockedArticles": [],
+    "replacements": [],
+    "agentReviewed": []
   }
 }

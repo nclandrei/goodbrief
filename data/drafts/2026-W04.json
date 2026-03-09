@@ -402,5 +402,16 @@
     "intro": "Săptămâna asta e una de care putem fi mândri: medici români au realizat o premieră mondială în chirurgie cardiacă, Dacia a câștigat Dakarul, iar Guvernul anunță investiții de 20 de miliarde de euro. Pe lângă vești mari, avem și povești despre oameni care ne inspiră — de la un erou care a sărit într-un lac înghețat, la un veteran de 104 ani care ne arată ce înseamnă reziliența.",
     "signOff": "Până săptămâna viitoare, ai grijă de tine! 🙏",
     "shortSummary": "Premieră mondială în medicină, Dacia câștigă Dakarul, investiții record și povești de curaj."
+  },
+  "validation": {
+    "generatedAt": "2026-01-24T10:50:31.858Z",
+    "candidateCount": 30,
+    "flagged": [],
+    "status": "passed",
+    "approvalSource": "legacy-backfill",
+    "checkedAt": "2026-03-09T11:29:25.406Z",
+    "blockedArticles": [],
+    "replacements": [],
+    "agentReviewed": []
   }
 }

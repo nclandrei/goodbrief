@@ -53,6 +53,7 @@ test('Saturday pipeline generates, validates, and renders a proof without sendin
   const proofHtml = readFileSync(proofOutputPath, 'utf-8');
 
   assert.equal(draft.validation.status, 'passed');
+  assert.equal(draft.validation.approvalSource, 'validation-pipeline');
   assert.deepEqual(draft.validation.replacements, [
     {
       removedArticleId: 'raw-neurodiverse-services',

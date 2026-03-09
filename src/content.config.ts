@@ -7,6 +7,9 @@ const issues = defineCollection({
     title: z.string(),
     date: z.date(),
     summary: z.string(),
+    validated: z.boolean(),
+    validationSource: z.enum(['legacy-backfill', 'validation-pipeline']),
+    validatedAt: z.string(),
   }),
 });
 

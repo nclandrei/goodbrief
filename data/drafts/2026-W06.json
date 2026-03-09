@@ -428,5 +428,16 @@
     "intro": "Săptămâna aceasta vine încărcată cu vești bune: un geniu matematic din Caracal, rezervele de apă refăcute după ani de secetă, România salvând Moldova de blackout, și gesturi eroice de salvare. Avem dreptate pentru Ana Maria Bărbosu, curaj în jurnalism, filme românești peste hotare, cantină socială pentru vârstnici, și tineri pasionați de robotică. Hai să vedem ce s-a mai întâmplat bun!",
     "signOff": "Zâmbește și fii bine! Ne citim curând. 🙏",
     "shortSummary": "Eroi, natură, solidaritate și cultură românească în lume."
+  },
+  "validation": {
+    "generatedAt": "2026-02-07T11:32:48.216Z",
+    "candidateCount": 32,
+    "flagged": [],
+    "status": "passed",
+    "approvalSource": "legacy-backfill",
+    "checkedAt": "2026-03-09T11:29:25.406Z",
+    "blockedArticles": [],
+    "replacements": [],
+    "agentReviewed": []
   }
 }

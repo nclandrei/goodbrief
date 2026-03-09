@@ -402,5 +402,16 @@
     "intro": "În ediția de săptămâna asta ai câteva vești care chiar schimbă ceva în viața reală: meditații gratuite pentru elevi, servicii mai accesibile pentru persoane cu autism și măsuri economice cu impact pentru firme mici. Pe lângă ele, vin și semnale bune pentru România în plan regional, plus câteva povești locale care merită citite pe îndelete.",
     "signOff": "Pe curând și să ai o săptămână bună! 🙏",
     "shortSummary": "11 vești bune, fără umplutură: educație, economie și exemple locale care chiar contează."
+  },
+  "validation": {
+    "generatedAt": "2026-02-28T10:38:53.691Z",
+    "candidateCount": 30,
+    "flagged": [],
+    "status": "passed",
+    "approvalSource": "legacy-backfill",
+    "checkedAt": "2026-03-09T11:29:25.406Z",
+    "blockedArticles": [],
+    "replacements": [],
+    "agentReviewed": []
   }
 }

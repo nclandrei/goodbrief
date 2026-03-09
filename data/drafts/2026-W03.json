@@ -402,5 +402,16 @@
     "intro": "Hei! Săptămâna asta: România devine lider la gaze în UE, bursa a avut un an record, iar Popovici e din nou cel mai bun din Europa. Let's go.",
     "signOff": "Asta a fost pentru săptămâna asta. Până data viitoare, ai grijă de tine! 🙏",
     "shortSummary": "Gaze din Marea Neagră, bursa record, Popovici cel mai bun din Europa."
+  },
+  "validation": {
+    "generatedAt": "2026-01-17T10:43:44.442Z",
+    "candidateCount": 30,
+    "flagged": [],
+    "status": "passed",
+    "approvalSource": "legacy-backfill",
+    "checkedAt": "2026-03-09T11:29:25.406Z",
+    "blockedArticles": [],
+    "replacements": [],
+    "agentReviewed": []
   }
 }

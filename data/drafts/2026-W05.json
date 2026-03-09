@@ -402,5 +402,16 @@
     "intro": "Săptămâna asta: Brașovul va avea primul spital construit după 1990, Ana Bărbosu bate recorduri la Stanford, iar Hidroelectrica atinge un maxim istoric. Nicușor Dan deschide Cotroceni pentru tinerii actori, România trece de 60% energie curată — și am bătut Africa de Sud cu 30-0 la hochei. Da, ai citit bine.",
     "signOff": "Să ai o săptămână faină! Ne auzim curând. 🙏",
     "shortSummary": "Spital Brașov, Ana Bărbosu la Stanford, record Hidroelectrica, cultură și hochei 30-0."
+  },
+  "validation": {
+    "generatedAt": "2026-01-31T10:45:04.670Z",
+    "candidateCount": 30,
+    "flagged": [],
+    "status": "passed",
+    "approvalSource": "legacy-backfill",
+    "checkedAt": "2026-03-09T11:29:25.406Z",
+    "blockedArticles": [],
+    "replacements": [],
+    "agentReviewed": []
   }
 }

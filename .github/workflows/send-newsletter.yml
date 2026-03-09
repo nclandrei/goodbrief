@@ -13,6 +13,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: send-newsletter-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   send:
     runs-on: ubuntu-latest
@@ -41,33 +45,23 @@ jobs:
             fi
           fi
 
-      - name: Check draft exists
-        id: check
+      - name: Check send preflight
+        id: preflight
+        if: steps.week.outputs.id != ''
+        run: npx tsx scripts/check-send-preflight.ts --week ${{ steps.week.outputs.id }}
+
+      - name: Skip already published issue
+        if: steps.preflight.outputs.issue_exists == 'true'
         run: |
-          if [ -z "${{ steps.week.outputs.id }}" ]; then
-            echo "exists=false" >> $GITHUB_OUTPUT
-          elif [ -f "data/drafts/${{ steps.week.outputs.id }}.json" ]; then
-            echo "exists=true" >> $GITHUB_OUTPUT
-          else
-            echo "exists=false" >> $GITHUB_OUTPUT
-          fi
+          echo "Issue already exists at ${{ steps.preflight.outputs.issue_path }}."
+          echo "Skipping send to avoid duplicate delivery."
 
       - name: Check draft validation
-        if: steps.check.outputs.exists == 'true'
-        env:
-          WEEK_ID: ${{ steps.week.outputs.id }}
-        run: |
-          node --input-type=module - <<'NODE'
-          import { readFileSync } from 'fs';
-          const draft = JSON.parse(readFileSync(`data/drafts/${process.env.WEEK_ID}.json`, 'utf-8'));
-          if (draft.validation?.status !== 'passed') {
-            console.error(`Draft ${process.env.WEEK_ID} is not validated for sending.`);
-            process.exit(1);
-          }
-          NODE
+        if: steps.preflight.outputs.draft_exists == 'true' && steps.preflight.outputs.issue_exists != 'true'
+        run: npx tsx scripts/assert-draft-ready.ts --week ${{ steps.week.outputs.id }} --action "newsletter delivery"
 
       - name: Send newsletter
-        if: steps.check.outputs.exists == 'true'
+        if: steps.preflight.outputs.draft_exists == 'true' && steps.preflight.outputs.issue_exists != 'true'
         run: npm run email:send -- --week ${{ steps.week.outputs.id }} --automated
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
@@ -76,11 +70,11 @@ jobs:
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
 
       - name: Publish issue to website
-        if: steps.check.outputs.exists == 'true'
+        if: steps.preflight.outputs.draft_exists == 'true' && steps.preflight.outputs.issue_exists != 'true'
         run: npm run publish-issue -- --week ${{ steps.week.outputs.id }}
 
       - name: Commit and push published issue
-        if: steps.check.outputs.exists == 'true'
+        if: steps.preflight.outputs.draft_exists == 'true' && steps.preflight.outputs.issue_exists != 'true'
         run: |
           git config user.name "Andrei-Mihai Nicolae"
           git config user.email "andrei@nicolaeandrei.com"
@@ -93,7 +87,7 @@ jobs:
           fi
 
       - name: Alert on missing draft
-        if: steps.check.outputs.exists == 'false'
+        if: steps.week.outputs.id == '' || steps.preflight.outputs.draft_exists == 'false'
         run: npm run alert-missing-draft -- ${{ steps.week.outputs.id }} "Draft file not found"
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}

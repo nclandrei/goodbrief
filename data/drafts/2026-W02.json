@@ -396,5 +396,16 @@
     }
   ],
   "discarded": 229,
-  "totalProcessed": 653
+  "totalProcessed": 653,
+  "validation": {
+    "generatedAt": "2026-01-10T12:50:22.487Z",
+    "candidateCount": 30,
+    "flagged": [],
+    "status": "passed",
+    "approvalSource": "legacy-backfill",
+    "checkedAt": "2026-03-09T11:29:25.406Z",
+    "blockedArticles": [],
+    "replacements": [],
+    "agentReviewed": []
+  }
 }
