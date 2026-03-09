@@ -1,187 +1,63 @@
+#!/usr/bin/env npx tsx
+
 import 'dotenv/config';
-import { createHash } from "crypto";
-import { readFileSync, writeFileSync, existsSync } from "fs";
-import { fileURLToPath } from "url";
-import { dirname, join } from "path";
-import Parser from "rss-parser";
-import type { RssSource, RawArticle, WeeklyBuffer } from "./types.js";
-import { sendAlert } from "./lib/alert.js";
+import { mkdirSync } from 'fs';
+import { join } from 'path';
+import { sendAlert } from './lib/alert.js';
+import { resolveProjectRoot } from './lib/project-root.js';
+import { ingestNews, saveWeeklyBuffer } from './lib/news-ingest.js';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-const ROOT_DIR = join(__dirname, "..");
+const ROOT_DIR = resolveProjectRoot(import.meta.url);
 
-const DEFAULT_SOURCE_TIMEOUT_MS = 6000;
-const SOURCE_TIMEOUT_MS: Record<string, number> = {
-  agerpres: 4000,
-};
+async function main(): Promise<void> {
+  console.log('Fetching configured RSS feeds...');
+  const result = await ingestNews({ rootDir: ROOT_DIR });
 
-const parser = new Parser();
-
-function getISOWeekId(date: Date = new Date()): string {
-  const d = new Date(date);
-  d.setHours(0, 0, 0, 0);
-  d.setDate(d.getDate() + 3 - ((d.getDay() + 6) % 7));
-  const week1 = new Date(d.getFullYear(), 0, 4);
-  const weekNum = Math.round(
-    ((d.getTime() - week1.getTime()) / 86400000 - 3 + ((week1.getDay() + 6) % 7)) / 7 + 1
+  console.log(
+    `Fetched ${result.totalFetched} usable articles from ${result.successfulFeeds.length}/${result.fetchResults.length} sources`
   );
-  return `${d.getFullYear()}-W${weekNum.toString().padStart(2, "0")}`;
-}
 
-function normalizeUrl(url: string): string {
-  try {
-    const u = new URL(url);
-    const paramsToRemove = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "fbclid", "gclid"];
-    paramsToRemove.forEach((p) => u.searchParams.delete(p));
-    return u.toString();
-  } catch {
-    return url;
-  }
-}
-
-function hashArticle(sourceId: string, url: string): string {
-  return createHash("sha256").update(`${sourceId}:${normalizeUrl(url)}`).digest("hex").slice(0, 16);
-}
-
-interface FetchResult {
-  source: RssSource;
-  articles: RawArticle[];
-  error?: string;
-}
-
-function getSourceTimeoutMs(source: RssSource): number {
-  return SOURCE_TIMEOUT_MS[source.id] ?? DEFAULT_SOURCE_TIMEOUT_MS;
-}
-
-function getFetchErrorMessage(error: unknown, timeoutMs: number): string {
-  const isAbortError =
-    typeof error === "object" &&
-    error !== null &&
-    "name" in error &&
-    (error as { name?: string }).name === "AbortError";
-
-  if (isAbortError) {
-    return `Request timed out after ${timeoutMs}ms`;
-  }
-
-  return error instanceof Error ? error.message : String(error);
-}
-
-async function fetchFeed(source: RssSource): Promise<FetchResult> {
-  const timeoutMs = getSourceTimeoutMs(source);
-  const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
-
-  try {
-    console.log(`Fetching ${source.name}...`);
-    const response = await fetch(source.url, {
-      signal: controller.signal,
-      headers: {
-        "User-Agent": "goodbrief-ingest/1.0 (+https://goodbrief.ro)",
-      },
-    });
-
-    if (!response.ok) {
-      throw new Error(`Status code ${response.status}`);
-    }
-
-    const xml = await response.text();
-    const feed = await parser.parseString(xml);
-    const now = new Date().toISOString();
-
-    const articles = (feed.items || []).map((item) => ({
-      id: hashArticle(source.id, item.link || ""),
-      sourceId: source.id,
-      sourceName: source.name,
-      title: item.title || "",
-      url: normalizeUrl(item.link || ""),
-      summary: item.contentSnippet || item.content || "",
-      publishedAt: item.isoDate || item.pubDate || now,
-      fetchedAt: now,
-    }));
-    return { source, articles };
-  } catch (error) {
-    const errorMsg = getFetchErrorMessage(error, timeoutMs);
-    console.error(`Error fetching ${source.name}:`, errorMsg);
-    return { source, articles: [], error: errorMsg };
-  } finally {
-    clearTimeout(timeoutId);
-  }
-}
-
-function loadWeeklyBuffer(weekId: string): WeeklyBuffer {
-  const filePath = join(ROOT_DIR, "data", "raw", `${weekId}.json`);
-  if (existsSync(filePath)) {
-    const content = readFileSync(filePath, "utf-8");
-    if (content.startsWith("version https://git-lfs.github.com/spec/v1")) {
-      console.log(`Ignoring Git LFS pointer at ${filePath} and starting a fresh weekly buffer`);
-      return { weekId, articles: [], lastUpdated: new Date().toISOString() };
-    }
-    return JSON.parse(content);
-  }
-  return { weekId, articles: [], lastUpdated: new Date().toISOString() };
-}
-
-function saveWeeklyBuffer(buffer: WeeklyBuffer): void {
-  const filePath = join(ROOT_DIR, "data", "raw", `${buffer.weekId}.json`);
-  writeFileSync(filePath, JSON.stringify(buffer, null, 2), "utf-8");
-  console.log(`Saved ${buffer.articles.length} articles to ${filePath}`);
-}
-
-async function main() {
-  const sourcesPath = join(ROOT_DIR, "data", "sources.json");
-  const sources: RssSource[] = JSON.parse(readFileSync(sourcesPath, "utf-8"));
-
-  console.log(`Fetching from ${sources.length} sources...`);
-  const results = await Promise.all(sources.map(fetchFeed));
-
-  const failedFeeds = results.filter((r) => r.error);
-  const successfulFeeds = results.filter((r) => !r.error);
-  const allArticles = results.flatMap((r) => r.articles);
-
-  console.log(`Fetched ${allArticles.length} articles from ${successfulFeeds.length}/${sources.length} sources`);
-
-  // Alert only if ALL feeds failed - this needs human attention
-  if (failedFeeds.length === sources.length) {
+  if (result.failedFeeds.length === result.fetchResults.length) {
     await sendAlert({
-      title: "News ingestion failed",
-      reason: "All RSS feeds failed to fetch",
-      details: failedFeeds.map((f) => `${f.source.name}: ${f.error}`).join("\n"),
+      title: 'News ingestion failed',
+      reason: 'All RSS feeds failed to fetch',
+      details: result.failedFeeds
+        .map((feed) => `${feed.source.name}: ${feed.error}`)
+        .join('\n'),
       actionItems: [
-        "Check if there's a network issue with the GitHub Actions runner",
-        "Verify the RSS feed URLs are still valid in <code>data/sources.json</code>",
-        "Try running <code>npm run ingest-news</code> locally to debug",
-        "Check if the news sources have changed their RSS feed URLs",
+        'Check if there is a network issue with the GitHub Actions runner',
+        'Verify the RSS feed URLs are still valid in <code>data/sources.json</code>',
+        'Try running <code>npm run ingest-news</code> locally to debug',
+        'Check if the news sources have changed their RSS feed URLs',
       ],
     });
     process.exit(1);
   }
 
-  const weekId = getISOWeekId();
-  const buffer = loadWeeklyBuffer(weekId);
-  const existingIds = new Set(buffer.articles.map((a) => a.id));
-
-  const newArticles = allArticles.filter((a) => !existingIds.has(a.id));
-  console.log(`Found ${newArticles.length} new articles`);
-
-  // Log failed feeds for visibility (but don't alert - partial failure is expected)
-  if (failedFeeds.length > 0) {
-    console.log(`\nNote: ${failedFeeds.length} feed(s) failed:`);
-    failedFeeds.forEach((f) => console.log(`  - ${f.source.name}: ${f.error}`));
+  if (result.failedFeeds.length > 0) {
+    console.log(`\nNote: ${result.failedFeeds.length} feed(s) failed:`);
+    for (const failed of result.failedFeeds) {
+      console.log(`  - ${failed.source.name}: ${failed.error}`);
+    }
   }
 
-  buffer.articles.push(...newArticles);
-  buffer.lastUpdated = new Date().toISOString();
+  console.log(`Current week: ${result.weekId}`);
+  console.log(`Previous week loaded for dedupe: ${result.previousWeekId}`);
+  console.log(`Found ${result.newArticles.length} new articles to append`);
 
-  saveWeeklyBuffer(buffer);
+  console.log('\nPer-source ingest stats:');
+  for (const stats of result.sourceStats) {
+    console.log(
+      `  - ${stats.sourceName}: fetched=${stats.fetched} kept=${stats.kept} stale=${stats.droppedStale} duplicate_current=${stats.droppedDuplicateCurrentWeek} duplicate_previous=${stats.droppedDuplicatePreviousWeek} unknown_age=${stats.unknownAge}`
+    );
+  }
+
+  mkdirSync(join(ROOT_DIR, 'data', 'raw'), { recursive: true });
+  const outputPath = saveWeeklyBuffer(ROOT_DIR, result.buffer);
+  console.log(`Saved ${result.buffer.articles.length} articles to ${outputPath}`);
 }
 
-main()
-  .then(() => {
-    process.exit(0);
-  })
-  .catch((error) => {
-    console.error(error);
-    process.exit(1);
-  });
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
