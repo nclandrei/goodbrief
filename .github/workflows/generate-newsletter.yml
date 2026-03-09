@@ -237,6 +237,12 @@ jobs:
           path: data/pipeline/${{ needs.determine_week.outputs.id }}
       - name: Materialize final draft
         run: npx tsx scripts/materialize-draft-from-pipeline.ts --week ${{ needs.determine_week.outputs.id }}
+      - name: Validate draft freshness
+        run: npm run validate-draft-freshness -- --week ${{ needs.determine_week.outputs.id }}
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
       - name: Send proof email
         run: npm run notify-draft -- ${{ needs.determine_week.outputs.id }}
         env:
