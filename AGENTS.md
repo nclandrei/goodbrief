@@ -17,6 +17,7 @@ npm run dev         # Start dev server (localhost:4321)
 npm run build       # Build for production
 npm run preview     # Preview production build
 npm run check       # TypeScript check
+npm run test        # Run Node.js test suite (tests/**/*.test.ts)
 
 # Email Development & Testing (requires RESEND_API_KEY, TEST_EMAIL env vars)
 npm run email:dev                           # React Email dev server (localhost:3001)
@@ -28,13 +29,21 @@ npx tsx scripts/send-welcome-test.ts        # Send test welcome email to TEST_EM
 # Newsletter Pipeline
 npm run ingest-news      # Fetch news from RSS feeds
 npm run generate-draft   # Generate newsletter draft with AI
+npm run pipeline:prepare # Run pipeline prepare phase
+npm run pipeline:score   # Run pipeline scoring phase
+npm run pipeline:semantic-dedup  # Run semantic dedup phase
+npm run pipeline:validate        # Run counter-signal validation phase
+npm run pipeline:select  # Run shortlist selection phase
+npm run pipeline:wrapper-copy    # Generate wrapper copy phase
+npm run pipeline:refine  # Run final refine phase
+npm run pipeline:verify-local -- --week 2026-W02  # Verify phase outputs locally
+npm run validate-draft -- --week 2026-W02         # Validate draft quality/rules
+npm run validate-draft-freshness -- --week 2026-W02  # Validate archive freshness gate
 npm run publish-issue    # Publish issue to content/issues/
 npm run notify-draft     # Send editor notification/proof email for generated draft
 npm run alert-missing-draft -- <week> <reason>  # Alert when Monday send has no draft
 npm run alert-workflow-failure -- --workflow "<name>" --run-url "<url>"  # Alert on GH workflow failure
 npm run cleanup-raw-data # Remove old data/raw/*.json files
-
-# No test framework configured yet
 ```
 
 ## Project Structure
@@ -107,7 +116,7 @@ All plans and implementation specs live in `docs/`. When creating new plans or d
 
 ## CI/CD Workflows
 - `ingest-news.yml`: every 6 hours + manual trigger; retries `npm run ingest-news`, runs `npm run cleanup-raw-data`, and retries `git pull --rebase && git push` with Git LFS retry tuning
-- `generate-newsletter.yml`: Saturday 10:00 UTC + manual trigger; runs draft generation and `npm run notify-draft`
+- `generate-newsletter.yml`: Saturday 10:00 UTC + manual trigger; runs staged pipeline jobs (`prepare` → `score` → `semantic-dedup` → `counter-signal-validate` → `select` → `wrapper-copy` → `refine`), materializes draft output, validates freshness, commits `data/pipeline/` + `data/drafts/`, then sends proof email via `npm run notify-draft`
 - `send-newsletter.yml`: Monday 08:00 UTC + manual trigger; sends newsletter, publishes issue, alerts if draft missing
 - Failure alerting in scheduled workflows uses `npm run alert-workflow-failure`
 
