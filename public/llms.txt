@@ -1,0 +1,25 @@
+# Good Brief
+> Good Brief is a Romanian weekly newsletter and public archive focused on positive news from Romania.
+
+Content on this site is primarily in Romanian. Start with the homepage, about page, and archive. Each issue contains short summaries and links to the original reporting source.
+
+Good Brief is not an original newsroom. The site curates and summarizes articles from other publishers, and links back to those sources.
+
+The site currently exposes curated HTML pages. It does not yet publish markdown mirrors for each linked page.
+
+## Main Pages
+- [Homepage](https://goodbrief.ro/): Overview of the newsletter, subscription entrypoint, and links to the latest published issues.
+- [About Good Brief](https://goodbrief.ro/about): What the project is, how it works, how AI is used, editorial boundaries, source trust, and contact details.
+- [Issue Archive](https://goodbrief.ro/issues): Full public archive of published issues, ordered from newest to oldest.
+
+## Recent Issues
+- [Good Brief #8 · 9 mar 2026](https://goodbrief.ro/issues/2026-03-09-issue): Stradivarius, Kovesi, incluziune, spitale, educație, energie verde.
+- [Good Brief #7 · 2 mar 2026](https://goodbrief.ro/issues/2026-03-02-issue): 11 vești bune, fără umplutură: educație, economie și exemple locale care chiar contează.
+- [Good Brief #6 · 23 feb 2026](https://goodbrief.ro/issues/2026-02-23-issue): Sport, investiții strategice și sănătate: vești bune din România, cu impact real.
+
+## Policies
+- [Privacy Policy](https://goodbrief.ro/privacy): Data collected on subscription, analytics usage, storage, GDPR rights, and contact details.
+- [Terms and Conditions](https://goodbrief.ro/terms): Service description, content and copyright terms, change policy, and contact details.
+
+## Optional
+- [Subscribe](https://goodbrief.ro/#subscribe): Newsletter signup form on the homepage.
