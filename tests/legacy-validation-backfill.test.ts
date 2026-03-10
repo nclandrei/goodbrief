@@ -55,10 +55,10 @@ test('legacy backfill updates drafts through W10 and annotates published issues'
     'utf-8'
   );
   writeFileSync(
-    join(tempRoot, 'content', 'issues', '2026-03-02-issue.md'),
+    join(tempRoot, 'content', 'issues', '2026-03-09-issue.md'),
     `---
-title: "Good Brief #7 · 2 mar 2026"
-date: 2026-03-02
+title: "Good Brief #8 · 9 mar 2026"
+date: 2026-03-09
 summary: "Rezumat"
 ---
 
@@ -68,6 +68,16 @@ summary: "Rezumat"
 Legacy summary
 
 → [Citește pe Source](https://example.com/legacy-story)
+`,
+    'utf-8'
+  );
+  writeFileSync(
+    join(tempRoot, 'content', 'issues', '2026-03-16-issue.md'),
+    `---
+title: "Good Brief #9 · 16 mar 2026"
+date: 2026-03-16
+summary: "Rezumat"
+---
 `,
     'utf-8'
   );
@@ -88,7 +98,11 @@ Legacy summary
     readFileSync(join(tempRoot, 'data', 'drafts', '2026-W11.json'), 'utf-8')
   ) as NewsletterDraft;
   const issueMarkdown = readFileSync(
-    join(tempRoot, 'content', 'issues', '2026-03-02-issue.md'),
+    join(tempRoot, 'content', 'issues', '2026-03-09-issue.md'),
+    'utf-8'
+  );
+  const futureIssueMarkdown = readFileSync(
+    join(tempRoot, 'content', 'issues', '2026-03-16-issue.md'),
     'utf-8'
   );
 
@@ -105,4 +119,5 @@ Legacy summary
   assert.match(issueMarkdown, /validated: true/);
   assert.match(issueMarkdown, /validationSource: "legacy-backfill"/);
   assert.match(issueMarkdown, /validatedAt: "2026-03-09T13:30:00.000Z"/);
+  assert.doesNotMatch(futureIssueMarkdown, /validated:/);
 });

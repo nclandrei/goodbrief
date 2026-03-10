@@ -6,6 +6,7 @@ import { join } from 'path';
 import { upsertIssueValidationFrontmatter } from './lib/issue-frontmatter.js';
 import {
   compareWeekIds,
+  getIssuePublicationInfo,
   LEGACY_VALIDATION_CUTOFF_WEEK,
 } from './lib/newsletter-week.js';
 import { resolveProjectRoot } from './lib/project-root.js';
@@ -81,6 +82,7 @@ function main(): void {
   const draftFiles = readdirSync(draftsDir)
     .filter((file) => file.endsWith('.json'))
     .sort();
+  const backfilledWeeks = new Set<string>();
   let updatedDrafts = 0;
 
   for (const file of draftFiles) {
@@ -90,17 +92,25 @@ function main(): void {
     }
 
     const result = updateDraft(join(draftsDir, file), validatedAt);
+    backfilledWeeks.add(result.weekId);
     if (result.changed) {
       updatedDrafts += 1;
     }
   }
 
+  const targetIssueFilenames = new Set(
+    Array.from(backfilledWeeks, (weekId) => getIssuePublicationInfo(rootDir, weekId).filename)
+  );
   const issueFiles = readdirSync(issuesDir)
     .filter((file) => file.endsWith('.md'))
     .sort();
   let updatedIssues = 0;
 
   for (const file of issueFiles) {
+    if (!targetIssueFilenames.has(file)) {
+      continue;
+    }
+
     const issuePath = join(issuesDir, file);
     const current = readFileSync(issuePath, 'utf-8');
     const next = upsertIssueValidationFrontmatter(current, {
