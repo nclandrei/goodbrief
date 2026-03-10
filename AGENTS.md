@@ -28,6 +28,7 @@ npx tsx scripts/send-welcome-test.ts        # Send test welcome email to TEST_EM
 
 # Newsletter Pipeline
 npm run ingest-news      # Fetch news from RSS feeds
+npm run check-feed-health # Verify RSS feed health and parser readiness
 npm run generate-draft   # Generate newsletter draft with AI
 npm run pipeline:prepare # Run pipeline prepare phase
 npm run pipeline:score   # Run pipeline scoring phase
@@ -37,8 +38,10 @@ npm run pipeline:select  # Run shortlist selection phase
 npm run pipeline:wrapper-copy    # Generate wrapper copy phase
 npm run pipeline:refine  # Run final refine phase
 npm run pipeline:verify-local -- --week 2026-W02  # Verify phase outputs locally
+npm run pipeline:verify-ingest-e2e  # Verify ingest + feed-health pipeline flow
 npm run validate-draft -- --week 2026-W02         # Validate draft quality/rules
 npm run validate-draft-freshness -- --week 2026-W02  # Validate archive freshness gate
+npm run backfill-legacy-validation -- --through-week 2026-W09  # Backfill validation metadata for legacy drafts/issues
 npm run publish-issue    # Publish issue to content/issues/
 npm run notify-draft     # Send editor notification/proof email for generated draft
 npm run alert-missing-draft -- <week> <reason>  # Alert when Monday send has no draft
@@ -117,7 +120,7 @@ All plans and implementation specs live in `docs/`. When creating new plans or d
 ## CI/CD Workflows
 - `ingest-news.yml`: every 6 hours + manual trigger; retries `npm run ingest-news`, runs `npm run cleanup-raw-data`, and retries `git pull --rebase && git push` with Git LFS retry tuning
 - `generate-newsletter.yml`: Saturday 10:00 UTC + manual trigger; runs staged pipeline jobs (`prepare` → `score` → `semantic-dedup` → `counter-signal-validate` → `select` → `wrapper-copy` → `refine`), materializes draft output, validates freshness, commits `data/pipeline/` + `data/drafts/`, then sends proof email via `npm run notify-draft`
-- `send-newsletter.yml`: Monday 08:00 UTC + manual trigger; sends newsletter, publishes issue, alerts if draft missing
+- `send-newsletter.yml`: Monday 08:00 UTC + manual trigger; adds send concurrency guard, runs preflight checks (`check-send-preflight` + `assert-draft-ready`), skips duplicate sends when issue already exists, sends with `--automated`, publishes issue, alerts if draft missing
 - Failure alerting in scheduled workflows uses `npm run alert-workflow-failure`
 
 ## Important Notes
