@@ -1,6 +1,6 @@
 # Good Brief Copy Guidelines
 
-> For the weekly curation job that fetches, summarizes, and publishes newsletter issues.
+> For newsletter summaries, wrapper copy, welcome emails, and site copy.
 
 ---
 
@@ -31,56 +31,6 @@
 - Corporate/news outlet language
 - Clickbait or sensational phrasing
 - "Dumneavoastră" – always use "tu"
-
----
-
-## Newsletter Issue Structure
-
-```markdown
----
-title: "Good Brief #X – Vești bune din România"
-date: YYYY-MM-DD
-summary: "X vești bune din România săptămâna asta."
----
-
-Bună dimineața! 👋
-
-Here's your weekly dose de vești bune din România. X știri, sub 5 minute.
-
----
-
-## 🌱 Local Heroes
-
-### [Titlu articol]
-Rezumat în 2-3 fraze clare și concise.
-
-→ [Citește pe Biziday](link-original)
-
----
-
-## 🏆 Wins
-
-### [Titlu articol]
-Rezumat în 2-3 fraze clare și concise.
-
-→ [Citește pe Europa FM](link-original)
-
----
-
-## 💚 Green Stuff
-
-### [Titlu articol]
-Rezumat în 2-3 fraze clare și concise.
-
-→ [Citește pe Europa Liberă](link-original)
-
----
-
-Thanks for reading! 🙏
-
-Ai o poveste bună? Reply la acest email sau scrie-ne la hello@goodbrief.ro.
-Ne ajută enorm dacă dai forward cuiva care are nevoie de vești bune azi.
-```
 
 ---
 
@@ -189,6 +139,15 @@ When the AI assigns a "positivity score", prioritize stories that:
 
 ---
 
+## Wrapper Copy
+
+- Greeting, intro, sign-off, and short summary should sound light and human.
+- Keep intros compact. They should frame the week, not repeat every story.
+- Sign-offs should feel warm, not promotional.
+- Avoid hard-coded slogans that make each issue sound identical.
+
+---
+
 ## Quick Reference
 
 ```
@@ -198,22 +157,9 @@ When the AI assigns a "positivity score", prioritize stories that:
 ✓ "feel-good only"
 ✗ "doar știri care te fac să te simți bine"
 
-✓ "Thanks for reading!"
+✓ "Salut! Uite câteva vești bune care chiar merită atenție."
 ✗ "Vă mulțumim pentru lectură!"
 
 ✓ "Citește pe Biziday"
 ✗ "Click aici pentru articolul complet"
 ```
-
----
-
-## File Naming
-
-Newsletter issues: `YYYY-MM-DD-slug.md`
-
-Example: `2025-01-13-local-heroes.md`
-
-Slug should be:
-- Lowercase
-- Hyphens instead of spaces
-- Short and descriptive

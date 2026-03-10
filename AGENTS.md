@@ -73,17 +73,14 @@ emails/
 └── utils/          # Email utilities (generate-copy.ts)
 
 docs/               # Plans, specs, and documentation
-├── PLAN.md                     # Main implementation plan
-├── NEWS_AGGREGATION_PLAN.md    # RSS/AI news processing
-├── COPY_PLAN.md                # Copy guidelines and brand voice
-└── EMAIL_IMPLEMENTATION_PLAN.md # React Email + Resend setup
+└── ARCHITECTURE.md             # Current pipeline and system architecture
 
 public/             # Static assets
 ```
 
 ## Documentation
 
-All plans and implementation specs live in `docs/`. When creating new plans or design documents, add them there to keep the root directory clean.
+Current system architecture lives in `docs/ARCHITECTURE.md`. Avoid adding new planning docs unless the task explicitly asks for them.
 
 ## Code Conventions
 
@@ -97,8 +94,8 @@ All plans and implementation specs live in `docs/`. When creating new plans or d
 - Tailwind for styling (no separate CSS files unless global)
 
 ### Content (Newsletter Issues)
-- Filename format: `YYYY-MM-DD-slug.md`
-- Required frontmatter: `title`, `date`, `summary`
+- Filename format: `YYYY-MM-DD-issue.md`
+- Required frontmatter: `title`, `date`, `summary`, `validated`, `validationSource`, `validatedAt`
 - Use emoji sparingly for section headers
 
 ### Styling
