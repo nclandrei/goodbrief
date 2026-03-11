@@ -64,7 +64,9 @@ content/
 └── issues/         # Newsletter markdown files
 
 data/
-└── drafts/         # Newsletter draft JSON files (YYYY-WXX.json)
+├── drafts/         # Newsletter draft JSON files (YYYY-WXX.json)
+├── pipeline/       # Per-phase pipeline artifacts (data/pipeline/<week>/)
+└── raw/            # Ingested RSS buffers (weekly JSON snapshots)
 
 emails/
 ├── components/     # Reusable React Email components (Header, Footer, etc.)
