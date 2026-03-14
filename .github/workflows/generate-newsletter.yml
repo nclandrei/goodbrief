@@ -25,18 +25,8 @@ jobs:
           if [ -n "${{ inputs.week }}" ]; then
             echo "id=${{ inputs.week }}" >> "$GITHUB_OUTPUT"
           else
-            WEEK_ID=$(node - <<'NODE'
-            const d = new Date();
-            d.setHours(0, 0, 0, 0);
-            d.setDate(d.getDate() + 3 - ((d.getDay() + 6) % 7));
-            const week1 = new Date(d.getFullYear(), 0, 4);
-            const weekNum = Math.round(
-              ((d.getTime() - week1.getTime()) / 86400000 - 3 + ((week1.getDay() + 6) % 7)) / 7 + 1
-            );
-            process.stdout.write(`${d.getFullYear()}-W${weekNum.toString().padStart(2, '0')}`);
-            NODE
-            )
-            echo "id=$WEEK_ID" >> "$GITHUB_OUTPUT"
+            # GitHub cron schedules run in UTC, so derive the ISO week in UTC too.
+            echo "id=$(date -u +%G-W%V)" >> "$GITHUB_OUTPUT"
           fi
 
   prepare:
