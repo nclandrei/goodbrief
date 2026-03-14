@@ -17,7 +17,7 @@ import {
   isHighConfidenceStoryMatch,
   normalizeTitle,
 } from './deduplication.js';
-import { callWithRetry } from './gemini.js';
+import { callWithRetry, DEFAULT_GEMINI_MODEL } from './gemini.js';
 import type { HistoricalArticle } from './story-history.js';
 
 export const DEFAULT_FRESHNESS_WINDOW_DAYS = 14;
@@ -368,7 +368,7 @@ export async function reviewDraftPoolAgainstArchive(
 
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({
-    model: 'gemini-2.5-flash-lite',
+    model: DEFAULT_GEMINI_MODEL,
     generationConfig: {
       responseMimeType: 'application/json',
       responseSchema,

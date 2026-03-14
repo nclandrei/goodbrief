@@ -11,7 +11,7 @@ import {
   titleSimilarity,
   tokenOverlap,
 } from './deduplication.js';
-import { callWithRetry } from './gemini.js';
+import { callWithRetry, DEFAULT_GEMINI_MODEL } from './gemini.js';
 
 const SAME_WEEK_TITLE_SIMILARITY_THRESHOLD = 0.45;
 const SAME_WEEK_TOKEN_OVERLAP_THRESHOLD = 0.25;
@@ -187,7 +187,7 @@ export function createGeminiCounterSignalClassifier(
   };
 
   const model = genAI.getGenerativeModel({
-    model: 'gemini-2.5-flash-lite',
+    model: DEFAULT_GEMINI_MODEL,
     generationConfig: {
       responseMimeType: 'application/json',
       responseSchema,

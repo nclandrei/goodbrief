@@ -1,7 +1,7 @@
 import { readFileSync } from 'fs';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import type { ProcessedArticle } from '../types.js';
-import { callWithRetry } from './gemini.js';
+import { callWithRetry, DEFAULT_GEMINI_MODEL } from './gemini.js';
 
 interface SemanticDedupGroupResponse {
   ids: string[];
@@ -206,7 +206,7 @@ export async function deduplicateProcessedArticlesSemantically(
 
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({
-    model: 'gemini-2.5-flash-lite',
+    model: DEFAULT_GEMINI_MODEL,
     generationConfig: {
       responseMimeType: 'application/json',
       responseSchema,

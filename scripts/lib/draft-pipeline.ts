@@ -30,7 +30,12 @@ import {
   type CounterSignalClassifier,
   validateSameWeekCounterSignals,
 } from './counter-signal-validation.js';
-import { createGeminiModel, GeminiQuotaError, processArticleBatch } from './gemini.js';
+import {
+  createGeminiModel,
+  DEFAULT_GEMINI_MODEL,
+  GeminiQuotaError,
+  processArticleBatch,
+} from './gemini.js';
 import { loadHistoricalArticles, type HistoricalArticle } from './historical-articles.js';
 import { getRankingScore } from './ranking.js';
 import { deduplicateProcessedArticlesSemantically } from './semantic-dedup.js';
@@ -187,7 +192,7 @@ async function refineShortlist(options: {
   };
 
   const model = genAI.getGenerativeModel({
-    model: 'gemini-2.5-flash-lite',
+    model: DEFAULT_GEMINI_MODEL,
     generationConfig: {
       responseMimeType: 'application/json',
       responseSchema: refinementSchema,

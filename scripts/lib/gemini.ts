@@ -3,6 +3,8 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 import type { RawArticle } from '../types.js';
 import type { ArticleScore, GeminiOptions, GeminiCache } from './types.js';
 
+export const DEFAULT_GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-3-flash-preview';
+
 function getArticleScoreSchema(includeReasoning: boolean) {
   const properties: Record<string, any> = {
     id: { type: 'string', description: 'Article ID' },
@@ -256,7 +258,7 @@ export async function processArticles(
   const schema = getArticleScoreSchema(options.includeReasoning);
   
   const model = genAI.getGenerativeModel({
-    model: 'gemini-2.5-flash-lite',
+    model: DEFAULT_GEMINI_MODEL,
     generationConfig: {
       responseMimeType: 'application/json',
       responseSchema: schema,
@@ -329,7 +331,7 @@ export function createGeminiModel(apiKey: string, includeReasoning: boolean = fa
   const schema = getArticleScoreSchema(includeReasoning);
   
   return genAI.getGenerativeModel({
-    model: 'gemini-2.5-flash-lite',
+    model: DEFAULT_GEMINI_MODEL,
     generationConfig: {
       responseMimeType: 'application/json',
       responseSchema: schema,
