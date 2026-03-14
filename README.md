@@ -34,5 +34,4 @@ npm run publish-issue -- --week 2026-W10
 
 ## Documentatie
 
-- Arhitectura curenta: `docs/ARCHITECTURE.md`
 - Instructiuni pentru agenti: `AGENTS.md`

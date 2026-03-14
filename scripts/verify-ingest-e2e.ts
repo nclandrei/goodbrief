@@ -14,7 +14,8 @@ import {
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { promisify } from 'node:util';
-import type { ArticleCategory, RawArticle } from './types.js';
+import type { ArticleCategory, ProcessedArticle, RawArticle } from './types.js';
+import type { ArticleScore } from './lib/types.js';
 import { checkConfiguredFeedHealth } from './lib/feed-health.js';
 import {
   getISOWeekId,
@@ -28,7 +29,55 @@ import { resolveProjectRoot } from './lib/project-root.js';
 
 const execFileAsync = promisify(execFile);
 const ROOT_DIR = resolveProjectRoot(import.meta.url);
-const NEW_SOURCE_IDS = ['economedia', 'edupedu', 'startup-ro', 'startupcafe'];
+const EXPECTED_KEPT_SOURCE_IDS = [
+  'dw-romania',
+  'europa-libera',
+  'republica',
+  'economedia',
+  'edupedu',
+  'startup-ro',
+  'startupcafe',
+];
+const EDITORIAL_SIGNAL_KEYS = [
+  'feltImpact',
+  'certainty',
+  'humanCloseness',
+  'bureaucraticDistance',
+  'promoRisk',
+] as const;
+const SIGNAL_TEMPLATES: Record<
+  ArticleCategory,
+  Required<Pick<ArticleScore, (typeof EDITORIAL_SIGNAL_KEYS)[number]>>
+> = {
+  wins: {
+    feltImpact: 58,
+    certainty: 66,
+    humanCloseness: 42,
+    bureaucraticDistance: 36,
+    promoRisk: 22,
+  },
+  'local-heroes': {
+    feltImpact: 90,
+    certainty: 92,
+    humanCloseness: 95,
+    bureaucraticDistance: 8,
+    promoRisk: 4,
+  },
+  'green-stuff': {
+    feltImpact: 84,
+    certainty: 87,
+    humanCloseness: 76,
+    bureaucraticDistance: 16,
+    promoRisk: 8,
+  },
+  'quick-hits': {
+    feltImpact: 66,
+    certainty: 78,
+    humanCloseness: 58,
+    bureaucraticDistance: 24,
+    promoRisk: 12,
+  },
+};
 
 function writeJson(path: string, value: unknown): void {
   mkdirSync(dirname(path), { recursive: true });
@@ -54,14 +103,7 @@ function pickSeedArticles(
     .filter((article): article is RawArticle => article !== undefined);
 }
 
-function createScoreMock(articles: RawArticle[]): Array<{
-  id: string;
-  summary: string;
-  positivity: number;
-  impact: number;
-  romaniaRelevant: boolean;
-  category: ArticleCategory;
-}> {
+function createScoreMock(articles: RawArticle[]): ArticleScore[] {
   const categories: ArticleCategory[] = [
     'wins',
     'local-heroes',
@@ -69,14 +111,27 @@ function createScoreMock(articles: RawArticle[]): Array<{
     'quick-hits',
   ];
 
-  return articles.map((article, index) => ({
-    id: article.id,
-    summary: article.summary?.trim() || article.title,
-    positivity: 90 - (index % 8),
-    impact: 82 - (index % 6),
-    romaniaRelevant: true,
-    category: categories[index % categories.length],
-  }));
+  return articles.map((article, index) => {
+    const category = categories[index % categories.length];
+
+    return {
+      id: article.id,
+      summary: article.summary?.trim() || article.title,
+      positivity: 90 - (index % 8),
+      impact: 82 - (index % 6),
+      ...SIGNAL_TEMPLATES[category],
+      romaniaRelevant: true,
+      category,
+    };
+  });
+}
+
+function isCommunityCentered(article: ProcessedArticle): boolean {
+  return (
+    article.category === 'local-heroes' ||
+    (article.humanCloseness || 0) >= 75 ||
+    ((article.feltImpact || 0) >= 72 && (article.certainty || 0) >= 65)
+  );
 }
 
 async function runScript(
@@ -147,7 +202,7 @@ async function main(): Promise<void> {
     'Expected previous-week duplicate drops during isolated ingest verification'
   );
 
-  for (const sourceId of NEW_SOURCE_IDS) {
+  for (const sourceId of EXPECTED_KEPT_SOURCE_IDS) {
     const stats = ingestResult.sourceStats.find((entry) => entry.sourceId === sourceId);
     assert.ok(stats, `Missing ingest stats for ${sourceId}`);
     assert.ok(
@@ -225,11 +280,29 @@ async function main(): Promise<void> {
   assert.equal(existsSync(proofOutputPath), true, 'Expected proof HTML to be created');
 
   const draft = JSON.parse(readFileSync(draftPath, 'utf-8')) as {
-    selected: RawArticle[];
+    selected: ProcessedArticle[];
+    reserves: ProcessedArticle[];
     validation?: { status?: string };
   };
   assert.ok(draft.selected.length > 0, 'Expected selected stories in generated draft');
   assert.equal(draft.validation?.status, 'passed');
+
+  const shortlisted = [...draft.selected, ...draft.reserves];
+  assert.ok(shortlisted.length > 0, 'Expected selected or reserve stories in generated draft');
+  assert.ok(
+    shortlisted.every((article) =>
+      EDITORIAL_SIGNAL_KEYS.every((key) => typeof article[key] === 'number')
+    ),
+    'Expected all shortlisted draft articles to keep detailed editorial signal scores'
+  );
+  assert.ok(
+    draft.selected.filter((article) => article.category === 'green-stuff').length >= 1,
+    'Expected the selected draft to keep at least one green story'
+  );
+  assert.ok(
+    draft.selected.filter(isCommunityCentered).length >= 2,
+    'Expected the selected draft to keep at least two community-centered stories'
+  );
 
   console.log(`Temporary verification root: ${tempRoot}`);
   console.log(`Week verified: ${weekId}`);

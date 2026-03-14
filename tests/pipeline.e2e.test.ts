@@ -57,7 +57,7 @@ test('Saturday pipeline generates, validates, and renders a proof without sendin
   assert.deepEqual(draft.validation.replacements, [
     {
       removedArticleId: 'raw-neurodiverse-services',
-      replacementArticleId: 'raw-cardiac-network',
+      replacementArticleId: 'raw-seismic-buildings',
     },
   ]);
   assert.equal(
@@ -65,8 +65,48 @@ test('Saturday pipeline generates, validates, and renders a proof without sendin
     true
   );
   assert.equal(
+    draft.selected.some((article: { id: string }) => article.id === 'raw-seismic-buildings'),
+    true
+  );
+  assert.equal(
     draft.selected.some((article: { id: string }) => article.id === 'raw-neurodiverse-services'),
     false
+  );
+  assert.ok(
+    draft.selected.every(
+      (article: {
+        feltImpact?: number;
+        certainty?: number;
+        humanCloseness?: number;
+        bureaucraticDistance?: number;
+        promoRisk?: number;
+      }) =>
+        typeof article.feltImpact === 'number' &&
+        typeof article.certainty === 'number' &&
+        typeof article.humanCloseness === 'number' &&
+        typeof article.bureaucraticDistance === 'number' &&
+        typeof article.promoRisk === 'number'
+    )
+  );
+  const cardiacNetwork = draft.selected.find(
+    (article: { id: string }) => article.id === 'raw-cardiac-network'
+  );
+  assert.ok(cardiacNetwork);
+  assert.deepEqual(
+    {
+      feltImpact: cardiacNetwork.feltImpact,
+      certainty: cardiacNetwork.certainty,
+      humanCloseness: cardiacNetwork.humanCloseness,
+      bureaucraticDistance: cardiacNetwork.bureaucraticDistance,
+      promoRisk: cardiacNetwork.promoRisk,
+    },
+    {
+      feltImpact: 74,
+      certainty: 91,
+      humanCloseness: 68,
+      bureaucraticDistance: 22,
+      promoRisk: 8,
+    }
   );
   assert.match(proofHtml, /pacienții cardiaci cronici|pacientii cardiaci cronici|rețeaua pentru pacienții cardiaci|reteaua pentru pacientii cardiaci/i);
   assert.doesNotMatch(proofHtml, /neurodivergenți/);

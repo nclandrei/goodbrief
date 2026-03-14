@@ -16,6 +16,7 @@ import type {
   DraftPipelineArtifact,
   ProcessedArticle,
   RawArticle,
+  ScoredPipelineData,
   SemanticDedupPipelineData,
   CounterSignalPipelineData,
 } from '../scripts/types.js';
@@ -30,6 +31,13 @@ import {
 const execFileAsync = promisify(execFile);
 const REPO_ROOT = process.cwd();
 const WEEK_ID = '2026-W10';
+const EDITORIAL_SIGNAL_KEYS = [
+  'feltImpact',
+  'certainty',
+  'humanCloseness',
+  'bureaucraticDistance',
+  'promoRisk',
+] as const;
 
 function writeJson(path: string, value: unknown): void {
   mkdirSync(dirname(path), { recursive: true });
@@ -206,6 +214,11 @@ function setupPipelineRoot(rootDir: string): {
       summary: 'Alpha summary scored',
       positivity: 90,
       impact: 80,
+      feltImpact: 72,
+      certainty: 78,
+      humanCloseness: 68,
+      bureaucraticDistance: 18,
+      promoRisk: 10,
       romaniaRelevant: true,
       category: 'wins',
     },
@@ -214,6 +227,11 @@ function setupPipelineRoot(rootDir: string): {
       summary: 'Beta summary scored',
       positivity: 88,
       impact: 78,
+      feltImpact: 86,
+      certainty: 92,
+      humanCloseness: 94,
+      bureaucraticDistance: 8,
+      promoRisk: 4,
       romaniaRelevant: true,
       category: 'wins',
     },
@@ -222,6 +240,11 @@ function setupPipelineRoot(rootDir: string): {
       summary: 'Gamma summary scored',
       positivity: 86,
       impact: 76,
+      feltImpact: 88,
+      certainty: 90,
+      humanCloseness: 92,
+      bureaucraticDistance: 12,
+      promoRisk: 6,
       romaniaRelevant: true,
       category: 'local-heroes',
     },
@@ -230,6 +253,11 @@ function setupPipelineRoot(rootDir: string): {
       summary: 'Delta summary scored',
       positivity: 84,
       impact: 74,
+      feltImpact: 82,
+      certainty: 88,
+      humanCloseness: 74,
+      bureaucraticDistance: 18,
+      promoRisk: 8,
       romaniaRelevant: true,
       category: 'wins',
     },
@@ -238,6 +266,11 @@ function setupPipelineRoot(rootDir: string): {
       summary: 'Epsilon summary scored',
       positivity: 82,
       impact: 72,
+      feltImpact: 78,
+      certainty: 84,
+      humanCloseness: 70,
+      bureaucraticDistance: 16,
+      promoRisk: 6,
       romaniaRelevant: true,
       category: 'quick-hits',
     },
@@ -310,6 +343,46 @@ test('each phase fails clearly when its required input is missing', async () => 
       }
     );
   }
+});
+
+test('score phase preserves detailed editorial signals from score mocks', async () => {
+  const tempRoot = mkdtempSync(join(tmpdir(), 'goodbrief-score-signals-'));
+  const { env } = setupPipelineRoot(tempRoot);
+
+  await runPhase(tempRoot, 'prepare');
+  await runPhase(tempRoot, 'score', env);
+
+  const scoredArtifact = JSON.parse(
+    readFileSync(
+      join(tempRoot, 'data', 'pipeline', WEEK_ID, PIPELINE_ARTIFACT_FILENAMES.score),
+      'utf-8'
+    )
+  ) as DraftPipelineArtifact<ScoredPipelineData, 'score'>;
+
+  assert.ok(
+    scoredArtifact.data.articles.every((article) =>
+      EDITORIAL_SIGNAL_KEYS.every((key) => typeof article[key] === 'number')
+    )
+  );
+
+  const gamma = scoredArtifact.data.articles.find((article) => article.id === 'gamma');
+  assert.ok(gamma);
+  assert.deepEqual(
+    {
+      feltImpact: gamma.feltImpact,
+      certainty: gamma.certainty,
+      humanCloseness: gamma.humanCloseness,
+      bureaucraticDistance: gamma.bureaucraticDistance,
+      promoRisk: gamma.promoRisk,
+    },
+    {
+      feltImpact: 88,
+      certainty: 90,
+      humanCloseness: 92,
+      bureaucraticDistance: 12,
+      promoRisk: 6,
+    }
+  );
 });
 
 test('select phase overwrites only its own artifact and leaves upstream artifacts unchanged', async () => {

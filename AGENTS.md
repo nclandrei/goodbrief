@@ -74,15 +74,14 @@ emails/
 ├── welcome.tsx     # Welcome email template
 └── utils/          # Email utilities (generate-copy.ts)
 
-docs/               # Plans, specs, and documentation
-└── ARCHITECTURE.md             # Current pipeline and system architecture
+docs/               # Optional plans/specs only when a task explicitly asks for them
 
 public/             # Static assets
 ```
 
 ## Documentation
 
-Current system architecture lives in `docs/ARCHITECTURE.md`. Avoid adding new planning docs unless the task explicitly asks for them.
+Avoid adding new planning docs unless the task explicitly asks for them.
 
 ## Code Conventions
 
