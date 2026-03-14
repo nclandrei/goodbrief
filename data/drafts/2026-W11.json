@@ -1,0 +1,756 @@
+{
+  "weekId": "2026-W11",
+  "generatedAt": "2026-03-14T16:30:21.232Z",
+  "selected": [
+    {
+      "id": "d69cd8bd740c5d80",
+      "sourceId": "startupcafe",
+      "sourceName": "StartupCafe",
+      "originalTitle": "10 milioane de euro pentru turism local, prin organizațiile de destinație",
+      "url": "https://startupcafe.ro/pnrr-10-milioane-eur-pentru-promovarea-turismului-local-prin-organizatiile-de-management-al-destinatiilor-omd-96198",
+      "summary": "Statul deschide un apel de 10 milioane de euro pentru organizațiile care pot promova mai bine destinațiile locale. Dacă banii sunt folosiți bine, pot apărea mai multe locuri din România care știu să se vândă mai clar și mai profesionist.",
+      "positivity": 90,
+      "impact": 92,
+      "category": "wins",
+      "publishedAt": "2026-03-13T09:34:21.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "381731e099400b5a",
+      "sourceId": "edupedu",
+      "sourceName": "Edupedu",
+      "originalTitle": "Se deschid înscrierile pentru școlile-pilot din 2026-2027",
+      "url": "https://www.edupedu.ro/calendar-inscriere-scoli-pilot-pentru-anul-scolar-2026-2027-proiectele-pot-fi-depuse-intre-16-martie-si-29-mai-anunta-ministerul-educatiei/",
+      "summary": "Ministerul deschide apelul pentru școlile care vor să testeze modele noi de organizare, curriculum sau evaluare. Nu schimbă tot sistemul peste noapte, dar e unul dintre puținele locuri unde se poate încerca ceva diferit.",
+      "positivity": 88,
+      "impact": 92,
+      "category": "wins",
+      "publishedAt": "2026-03-09T09:00:02.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "3dfec55cf1aebbbf",
+      "sourceId": "economedia",
+      "sourceName": "Economedia",
+      "originalTitle": "Nouă spitale primesc bani europeni ca să fie duse la capăt",
+      "url": "https://economedia.ro/bani-pentru-spitalele-scoase-din-pnrr-prin-programul-sanatate-2021-2027-522-de-milioane-de-euro-sunt-vizate-9-spitale.html",
+      "summary": "Nouă spitale care riscau să rămână blocate după recalibrările din PNRR primesc o nouă sursă de finanțare prin Programul Sănătate. Partea importantă e simplă: proiectele nu se opresc.",
+      "positivity": 84,
+      "impact": 92,
+      "category": "wins",
+      "publishedAt": "2026-03-10T05:24:27.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "ce39000391ff7590",
+      "sourceId": "startupcafe",
+      "sourceName": "StartupCafe",
+      "originalTitle": "Granturi de 100.000 EUR pentru startup-uri lansate de femei",
+      "url": "https://startupcafe.ro/inscrieri-2026-granturi-de-100-000-eur-pentru-startup-uri-lansate-de-femei-prin-programul-prosus-found-her-challenge-romania-95918",
+      "summary": "Antreprenoarele românce pot aplica la un program care oferă granturi totale de 100.000 EUR pentru startup-uri aflate la început. E una dintre puținele oportunități concrete de finanțare timpurie din săptămâna asta.",
+      "positivity": 89,
+      "impact": 83,
+      "category": "wins",
+      "publishedAt": "2026-03-09T07:59:15.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "2b14a56056357cf5",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Tot mai multe instituții publice își reduc facturile cu panouri fotovoltaice",
+      "url": "https://stirileprotv.ro/stiri/actualitate/mai-multe-institutiile-publice-au-ales-sa-investeasca-in-panouri-fotovoltaice-au-ajutat-la-reducerea-facturilor.html?category_slug=stiri%2Factualitate",
+      "summary": "Școli, spitale și primării își taie din costurile la energie cu investiții în solar. Când factura scade, rămân mai mulți bani pentru lucrurile care se simt direct în serviciile publice.",
+      "positivity": 82,
+      "impact": 88,
+      "category": "green-stuff",
+      "publishedAt": "2026-03-12T05:46:04.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "52824b7b64bca131",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "originalTitle": "La Timișoara începe un proiect serios de imunoterapie personalizată",
+      "url": "https://agerpres.ro/sanatate/2026/03/12/timis-centrul-oncogen-a-lansat-un-proiect-de-imunoterapie-revolutionara-personalizata-pentru-bolnavi--1536615",
+      "summary": "OncoGen pornește un proiect de 15 milioane de euro pentru terapii celulare personalizate, inclusiv CAR-T. E genul de veste care contează nu doar pentru Timișoara, ci pentru câtă cercetare medicală reușim să facem aici.",
+      "positivity": 70,
+      "impact": 76,
+      "category": "wins",
+      "publishedAt": "2026-03-12T13:12:23.003Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "c2d6b59547ef73b8",
+      "sourceId": "startup-ro",
+      "sourceName": "start-up.ro",
+      "originalTitle": "Giggle intră în România și țintește 1 milion de utilizatori",
+      "url": "https://start-up.ro/giggle-startup-care-digitalizeaza-munca-blue-collar-intra-in-romania-si-tinteste-1-milion-de-utilizatori-pana-in-2027/",
+      "summary": "Giggle, o platformă de recrutare pentru munca în ture, se extinde în România după o rundă de finanțare. Pariul lor e mare: să digitalizeze o parte din piața blue-collar care încă se mișcă greu și fragmentat.",
+      "positivity": 81,
+      "impact": 83,
+      "category": "quick-hits",
+      "publishedAt": "2026-03-10T06:05:01.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "ff1bbb798c6c9d51",
+      "sourceId": "startup-ro",
+      "sourceName": "start-up.ro",
+      "originalTitle": "Investiție de 20,4 milioane de euro în rețeaua românească 18GYM",
+      "url": "https://start-up.ro/fondul-enterprise-investors-investeste-20-4-milioane-de-euro-in-reteaua-romaneasca-de-fitness-18gym-pentru-a-sustine-extinderea/",
+      "summary": "Enterprise Investors pune 20,4 milioane de euro în 18GYM, un lanț românesc de fitness care vrea să se extindă mai repede. E una dintre investițiile concrete care arată că businessurile locale încă pot atrage capital serios.",
+      "positivity": 78,
+      "impact": 82,
+      "category": "wins",
+      "publishedAt": "2026-03-06T09:14:13.000Z",
+      "processedAt": "2026-03-14T15:59:21.596Z"
+    },
+    {
+      "id": "4b2f5dfdfe195524",
+      "sourceId": "economedia",
+      "sourceName": "Economedia",
+      "originalTitle": "CFR începe modernizarea liniei București - Giurgiu",
+      "url": "https://economedia.ro/cfr-incepe-lucrarile-de-modernizare-pe-linia-feroviara-bucuresti-progresu-jilava-giurgiu-nord-frontiera.html",
+      "summary": "Încep lucrările pe una dintre liniile feroviare care au nevoie clară de restart. Nu e o poveste spectaculoasă, dar e infrastructură reală și, dacă merge înainte, contează direct pentru sudul țării și pentru legătura cu frontiera.",
+      "positivity": 77,
+      "impact": 83,
+      "category": "wins",
+      "publishedAt": "2026-03-12T09:34:14.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "a94324231908fa1d",
+      "sourceId": "edupedu",
+      "sourceName": "Edupedu",
+      "originalTitle": "O nouă specie de dinozaur a fost descoperită în Țara Hațegului",
+      "url": "https://www.edupedu.ro/o-noua-specie-de-dinozaur-erbivor-descoperita-de-paleontologi-romani-si-maghiari-in-geoparcul-international-unesco-tara-hategului-al-universitatii-din-bucuresti/",
+      "summary": "Paleontologi români și maghiari au identificat o specie nouă în Geoparcul Țara Hațegului. E o veste rară, memorabilă și una dintre acele descoperiri care îți amintesc că știința făcută aici poate încă surprinde.",
+      "positivity": 67,
+      "impact": 70,
+      "category": "quick-hits",
+      "publishedAt": "2026-03-09T08:55:00.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    }
+  ],
+  "reserves": [
+    {
+      "id": "4b50eef9dc0fa215",
+      "sourceId": "edupedu",
+      "sourceName": "Edupedu",
+      "originalTitle": "UAIC Iași oferă pregătire gratuită pentru Bac și admitere",
+      "url": "https://www.edupedu.ro/universitatea-alexandru-ioan-cuza-din-iasi-organizeaza-sesiuni-gratuite-de-pregatire-pentru-bacalaureat-si-admitere-in-cadrul-proiectului-fii-pregatit-2026/",
+      "summary": "Facultatea de Informatică din Iași reia sesiunile gratuite pentru elevii care se pregătesc de Bac și de admitere. E genul de ajutor concret care contează mai ales pentru cine nu-și permite meditații.",
+      "positivity": 88,
+      "impact": 84,
+      "category": "local-heroes",
+      "publishedAt": "2026-03-10T06:20:00.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "115a114a04dfd4d5",
+      "sourceId": "startupcafe",
+      "sourceName": "StartupCafe",
+      "originalTitle": "Românii de la Dexory au deschis în SUA un centru pentru roboți cu AI",
+      "url": "https://startupcafe.ro/romani-dexory-centru-dezvoltare-roboti-ai-sua-96046",
+      "summary": "Dexory, startup fondat de trei antreprenori originari din România, a deschis la Nashville un centru de implementare și dezvoltare pentru roboți cu inteligență artificială. Know-how românesc dus mai departe într-o industrie mare, foarte concretă.",
+      "positivity": 85,
+      "impact": 83,
+      "category": "local-heroes",
+      "publishedAt": "2026-03-11T05:00:00.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "e3ce70fcb54633e2",
+      "sourceId": "startup-ro",
+      "sourceName": "start-up.ro",
+      "originalTitle": "Un startup românesc pune socată la doză",
+      "url": "https://start-up.ro/startup-ul-romanesc-care-vinde-socata-la-doza/",
+      "summary": "Fermentit transformă una dintre băuturile clasice ale verii într-un produs gata de pus la raft, făcut din ingrediente naturale. O idee mică, locală și suficient de bună încât să-ți rămână în cap.",
+      "positivity": 72,
+      "impact": 70,
+      "category": "quick-hits",
+      "publishedAt": "2026-03-09T06:05:02.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "d69cd8bd740c5d80",
+      "sourceId": "startupcafe",
+      "sourceName": "StartupCafe",
+      "originalTitle": "PNRR: 10 milioane EUR pentru promovarea turismului local prin organizațiile de management al destinațiilor (OMD)",
+      "url": "https://startupcafe.ro/pnrr-10-milioane-eur-pentru-promovarea-turismului-local-prin-organizatiile-de-management-al-destinatiilor-omd-96198",
+      "summary": "Ministerul Economiei, Digitalizării, Antreprenoriatului și Turismului (MEDAT) deschide luni, 16 martie 2026, un apel de proiecte în valoare de 10 milioane de euro pentru sprijinirea operaționalizării Organizațiilor de Management al Destinației (OMD). Programul, finanțat prin Plan",
+      "positivity": 90,
+      "impact": 92,
+      "category": "local-heroes",
+      "publishedAt": "2026-03-13T09:34:21.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "94542e6e9f5751e8",
+      "sourceId": "startupcafe",
+      "sourceName": "StartupCafe",
+      "originalTitle": "Noi titluri de stat Tezaur 2026: A treia ediție se lansează luni, 9 martie. Ce dobânzi sunt",
+      "url": "https://startupcafe.ro/noi-titluri-de-stat-tezaur-2026-a-treia-editie-se-lanseaza-luni-9-martie-ce-dobanzi-sunt-95931",
+      "summary": "Ministerul Finanțelor lansează luni, 9 martie 2026, a treia ediție a programului de titluri de stat Tezaur din acest an. Astfel, în perioada 9 martie 2026 – 3 aprilie 2026, românii pot subscrie în titlurile de stat cu maturități de 1, 3 și 5 ani și dobânzi anuale de 5,85%, 6,5%,",
+      "positivity": 84,
+      "impact": 92,
+      "category": "wins",
+      "publishedAt": "2026-03-09T11:35:55.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "ce39000391ff7590",
+      "sourceId": "startupcafe",
+      "sourceName": "StartupCafe",
+      "originalTitle": "Înscrieri 2026: Granturi de 100.000 EUR pentru startup-uri lansate de femei, prin programul Prosus Found-HER Challenge România",
+      "url": "https://startupcafe.ro/inscrieri-2026-granturi-de-100-000-eur-pentru-startup-uri-lansate-de-femei-prin-programul-prosus-found-her-challenge-romania-95918",
+      "summary": "Antreprenoarele românce vor putea obține granturi în valoare totală de 100.000 EUR pentru startup-urile lor, în anumite condiții, prin programul Prosus Found-HER Challenge România, la care se fac înscrieri online, au anunțat, luni, organizatorii, într-un comunicat transmis comuni",
+      "positivity": 89,
+      "impact": 83,
+      "category": "local-heroes",
+      "publishedAt": "2026-03-09T07:59:15.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "320d1452fbf91763",
+      "sourceId": "economedia",
+      "sourceName": "Economedia",
+      "originalTitle": "România ar putea mobiliza 60-70 miliarde euro în economie prin atragerea capitalului privat, susține ministrul Investițiilor",
+      "url": "https://economedia.ro/romania-ar-putea-mobiliza-60-70-miliarde-euro-in-economie-prin-atragerea-capitalului-privat-sustine-ministrul-investitiilor.html",
+      "summary": "România ar putea mobiliza între 60 şi 70 de miliarde de euro în economie, în următorul cadru financiar european, dacă fondurile UE vor fi utilizate pentru a atrage investiţii private, a declarat ministrul Investiţiilor şi Proiectelor Europene, Dragoş Pîslaru, la o conferinţă de s",
+      "positivity": 84,
+      "impact": 92,
+      "category": "wins",
+      "publishedAt": "2026-03-10T16:18:24.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "df996d36578bef1f",
+      "sourceId": "startupcafe",
+      "sourceName": "StartupCafe",
+      "originalTitle": "Deloitte colaborează cu startup-ul AI ElevenLabs pentru agenți conversaționali",
+      "url": "https://startupcafe.ro/deloitte-colaborare-startup-ai-elevenlabs-agenti-conversationali-95926",
+      "summary": "Compania de servicii profesionale Deloitte, prezentă și în România, anunță un parteneriat cu startup-ul ElevenLabs, care dezvoltă platforme de agenți conversaționali bazați pe AI, prin care oferă soluții menite să sprijine companiile în transformarea experienței clienților, potri",
+      "positivity": 90,
+      "impact": 78,
+      "category": "green-stuff",
+      "publishedAt": "2026-03-09T08:58:01.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "260b38fb75d4881d",
+      "sourceId": "startupcafe",
+      "sourceName": "StartupCafe",
+      "originalTitle": "Grupul românesc Simtel își aduce un director care a lucrat și la Enel, pentru afacerea de monaj panouri solare",
+      "url": "https://startupcafe.ro/grupul-romanesc-simtel-isi-aduce-un-director-care-a-lucrat-si-la-enel-pentru-afacerea-de-monaj-panouri-solare-95908",
+      "summary": "Grupul românesc de inginerie și tehnologie Simtel a anunțat, luni, într-un comunicat transmis comunității antreprenoriale StartupCafe.ro, că a numit un inginer energetician în funcția de director general al companiei sale principale, Simtel Team S.A., axate pe instalarea de centr",
+      "positivity": 90,
+      "impact": 78,
+      "category": "green-stuff",
+      "publishedAt": "2026-03-09T07:17:54.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "55a2091f3ea3f0f7",
+      "sourceId": "economedia",
+      "sourceName": "Economedia",
+      "originalTitle": "Grupul antreprenorial românesc Simtel îl numește pe Petre Stoian în funcția de CEO al Simtel Team SA",
+      "url": "https://economedia.ro/grupul-antreprenorial-romanesc-simtel-il-numeste-pe-petre-stoian-in-functia-de-ceo-al-simtel-team-sa.html",
+      "summary": "Grupul antreprenorial românesc Simtel, companie de inginerie și tehnologie listată pe piața principală a Bursei de Valori București, anunță că îl numește pe Petre Stoian în funcția de Director General (CEO) al Simtel Team SA, compania principală a grupului în zona de inginerie, p",
+      "positivity": 81,
+      "impact": 83,
+      "category": "local-heroes",
+      "publishedAt": "2026-03-10T05:13:09.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "c2d6b59547ef73b8",
+      "sourceId": "startup-ro",
+      "sourceName": "start-up.ro",
+      "originalTitle": "<span class=\"title-highlight\">Giggle </span>e startup-ul care vrea să-ți găsească angajați \"mâine dimineață\" |  Intră în România și țintește 1 mil. de utilizatori",
+      "url": "https://start-up.ro/giggle-startup-care-digitalizeaza-munca-blue-collar-intra-in-romania-si-tinteste-1-milion-de-utilizatori-pana-in-2027/",
+      "summary": "Giggle, platforma de recrutare din Budapesta care conectează muncitorii blue-collar cu firmele care oferă locuri de muncă în ture, își accelerează expansiunea în România după o rundă de finanțare...",
+      "positivity": 81,
+      "impact": 83,
+      "category": "local-heroes",
+      "publishedAt": "2026-03-10T06:05:01.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "52adceda8712d5ef",
+      "sourceId": "edupedu",
+      "sourceName": "Edupedu",
+      "originalTitle": "Viitorii directori de școală trebuie să aibă competențe extinse, de la management curricular la coaching și de la medierea conflictelor la fundraising / Profilul profesional al managementului școlar, cu 5 competențe profesionale generale și 20 de competențe specifice, a fost lansat în consultare publică",
+      "url": "https://www.edupedu.ro/viitorii-directori-de-scoala-trebuie-sa-aiba-competente-extinse-de-la-management-curricular-la-coaching-si-de-la-medierea-conflictelor-la-fundraising-profilul-profesional-al-managementului-scolar/",
+      "summary": "Ministerul Educației și Cercetării a lansat astăzi, 11 martie 2026, în consultare publică, Profilul profesional al managerului școlar. „Documentul conturează rolul directorului de școală ca lider educațional și manager al organizației…",
+      "positivity": 81,
+      "impact": 83,
+      "category": "local-heroes",
+      "publishedAt": "2026-03-11T17:21:23.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "2ed2a6144cc249b3",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Nouă spitale din România vor fi finalizate cu 522 milioane euro din fonduri UE. PNRR, extins până în 2030",
+      "url": "https://stirileprotv.ro/stiri/actualitate/noua-spitale-din-romania-vor-fi-finalizate-cu-522-milioane-euro-din-fonduri-ue-pnrr-extins-pana-in-2030.html?category_slug=stiri%2Factualitate",
+      "summary": "Roxana Mînzatu a anunțat aprobarea transferului a 522 milioane euro către Programul Sănătate 2021-2027 pentru finalizarea a nouă spitale din România.",
+      "positivity": 77,
+      "impact": 88,
+      "category": "wins",
+      "publishedAt": "2026-03-09T18:25:21.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "5595c4f5a207d718",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Grădina Icoanei, parcul boem din centrul Bucureștiului, perfect pentru o pauză urbană. De ce merită vizitat",
+      "url": "https://stirileprotv.ro/stiri/travel/gradina-icoanei-parcul-boem-din-centrul-bucurestiului-perfect-pentru-o-pauza-urbana.html?category_slug=stiri%2Ftravel",
+      "summary": "Grădina Icoanei este un parc elegant în centrul Capitalei, aproape de Piața Romană și de Colegiul Național Școala Centrală.",
+      "positivity": 77,
+      "impact": 88,
+      "category": "wins",
+      "publishedAt": "2026-03-09T13:57:54.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "d4fac9d8237fcd64",
+      "sourceId": "economedia",
+      "sourceName": "Economedia",
+      "originalTitle": "Darău, Ministrul Economiei: „Start-Up Nation va merge înainte”. Schemele de ajutor de stat vor fi analizate",
+      "url": "https://economedia.ro/darau-ministrul-economiei-start-up-nation-va-merge-inainte-schemele-de-ajutor-de-stat-vor-fi-analizate.html",
+      "summary": "Programul Start-Up Nation va merge mai departe, însă Ministerul Economiei intenţionează să analizeze eficienţa tuturor schemelor de ajutor de stat pentru a le optimiza, a declarat ministrul de resort, Irineu Darău, la o conferinţă de specialitate, citat de Agerpres. Acesta spune",
+      "positivity": 82,
+      "impact": 80,
+      "category": "green-stuff",
+      "publishedAt": "2026-03-10T10:41:38.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "15df6d66ba97d08c",
+      "sourceId": "startupcafe",
+      "sourceName": "StartupCafe",
+      "originalTitle": "Afacere de 4 milioane EUR, lansată de doi antreprenori români, vândută acum norvegienilor",
+      "url": "https://startupcafe.ro/afacere-de-4-milioane-eur-lansata-de-doi-antreprenori-romani-vanduta-acum-norvegienilor-96085",
+      "summary": "Grupul NETOPIA, fondat de antreprenorii români Antonio Eram și Felix Crișan și achiziționat majoritar de fondul de investiții polonez Innova Capital, vinde acum un business de mesagerie SMS evaluat la 4 milioane EUR către un cumpărător din Norvegia. Într-un comunicat transmis, mi",
+      "positivity": 82,
+      "impact": 79,
+      "category": "local-heroes",
+      "publishedAt": "2026-03-11T11:07:56.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "6513173c9f111674",
+      "sourceId": "economedia",
+      "sourceName": "Economedia",
+      "originalTitle": "Cine sunt românii din topul Forbes? Trei dintre ei au afaceri în domeniul Tehnologiei",
+      "url": "https://economedia.ro/cine-sunt-romanii-din-topul-forbes-trei-dintre-ei-au-afaceri-in-domeniul-tehnologiei.html",
+      "summary": "România are, la fel ca anul trecut, șase reprezentanți în topul celor mai bogați oameni din lume, întocmit de Forbes, relevă datele consultate de Economedia. Omul de afaceri Elon Musk, acţionarul majoritar de la producătorul auto Tesla, compania spaţială SpaceX, reţeaua socială X",
+      "positivity": 81,
+      "impact": 78,
+      "category": "local-heroes",
+      "publishedAt": "2026-03-11T06:06:14.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "47d2eac47b08f5f1",
+      "sourceId": "economedia",
+      "sourceName": "Economedia",
+      "originalTitle": "Compania de transport și logistică Gebrüder Weiss, cu afaceri și în România, a încheiat anul financiar 2025 cu venituri nete de 2,73 miliarde de euro, în creștere față de 2024",
+      "url": "https://economedia.ro/compania-de-transport-si-logistica-gebruder-weiss-cu-afaceri-si-in-romania-a-incheiat-anul-financiar-2025-cu-venituri-nete-de-273-miliarde-de-euro-in-crestere-fata-de-2024.html",
+      "summary": "Compania internațională de transport și logistică Gebrüder Weiss anunță că a încheiat anul financiar 2025 cu venituri nete de 2,73 miliarde de euro, în ușoară creștere față de anul precedent (2024: 2,71 miliarde de euro). Gebrüder Weiss Holding AG, cu sediul în Lauterach, Austria",
+      "positivity": 77,
+      "impact": 83,
+      "category": "wins",
+      "publishedAt": "2026-03-11T10:41:02.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "de4da7f8ecb4aeb4",
+      "sourceId": "economedia",
+      "sourceName": "Economedia",
+      "originalTitle": "VIDEO Autostrada Moldovei A7 Bacău – Pașcani. Cum avansează lucrările pe lotul 3 Mircești – Pașcani, cel care este finanțat din împrumuturi PNRR și nu din fonduri nerambursabile PNRR / Când ar trebui finalizat",
+      "url": "https://economedia.ro/video-autostrada-moldovei-a7-bacau-pascani-cum-avanseaza-lucrarile-pe-lotul-3-mircesti-pascani-cel-care-este-finantat-din-imprumuturi-pnrr-si-nu-din-fonduri-nerambursabile-pnrr-cand-ar.html",
+      "summary": "Imagini cu lotul 3 Mircești – Pașcani al Autostrăzii Moldovei A7 Bacău – Pașcani, cel care este finanțat din împrumuturi PNRR și nu din fonduri nerambursabile, au fost publicate pe contul de YouTube al unui pasionat de infrastructură, Răducu P Drum. Este un clip de aproape 9 minu",
+      "positivity": 77,
+      "impact": 83,
+      "category": "wins",
+      "publishedAt": "2026-03-12T11:52:44.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "37df907c82143beb",
+      "sourceId": "economedia",
+      "sourceName": "Economedia",
+      "originalTitle": "Banca Mondială: România și alte state din estul Europei pot îmbunătăți productivitatea muncii dacă adoptă tehnologii digitale",
+      "url": "https://economedia.ro/banca-mondiala-romania-si-alte-state-din-estul-europei-pot-imbunatati-productivitatea-muncii-daca-adopta-tehnologii-digitale.html",
+      "summary": "România, Bulgaria, Croaţia și Polonia ar putea îmbunătăţi productivitatea muncii, cu până la 10-15%, prin adoptarea pe scară largă a tehnologiilor digitale, în special software şi instrumente bazate pe inteligenţă artificială, potrivit raportului „Innovation Rising: Lifting Centr",
+      "positivity": 77,
+      "impact": 83,
+      "category": "wins",
+      "publishedAt": "2026-03-12T11:18:01.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "41e303a90284c5aa",
+      "sourceId": "economedia",
+      "sourceName": "Economedia",
+      "originalTitle": "Energia, între geopolitică și economie: de ce noua realitate energetică a Europei contează pentru România",
+      "url": "https://economedia.ro/energia-intre-geopolitica-si-economie.html",
+      "summary": "În ultimii ani, energia a revenit în centrul marilor dezbateri economice și geopolitice. Creșterea costurilor, volatilitatea piețelor și tensiunile internaționale au demonstrat cât de vulnerabile pot deveni economiile moderne atunci când accesul la energie devine incert.",
+      "positivity": 77,
+      "impact": 83,
+      "category": "wins",
+      "publishedAt": "2026-03-13T05:00:38.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "dbc893f070c85c99",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "originalTitle": "G4Media lansează „Chat cu G4”, primul asistent cu Inteligență Artificială din presa românească bazat exclusiv pe știri verificate",
+      "url": "https://www.mediafax.ro/stirile-zilei/g4media-lanseaza-chat-cu-g4-primul-asistent-cu-inteligenta-artificiala-din-presa-romaneasca-bazat-exclusiv-pe-stiri-verificate-23701214",
+      "summary": "G4Media marchează o nouă etapă de inovație pe piața media din România prin lansarea „Chat cu G4”, un asistent conversațional bazat pe Inteligență Artificială Generativă. Noul instrument este conceput pentru a schimba complet modul în care cititorii interacționează cu informația d",
+      "positivity": 77,
+      "impact": 75,
+      "category": "wins",
+      "publishedAt": "2026-03-11T17:45:40.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "9884207bf9ec1092",
+      "sourceId": "startup-ro",
+      "sourceName": "start-up.ro",
+      "originalTitle": "Cine sunt câștigătorii Romania Startup Awards 2026 - în curs de actualizare",
+      "url": "https://start-up.ro/cine-sunt-castigatorii-romania-startup-awards-20206-in-curs-de-actualizare/",
+      "summary": "Gala Romania Startup Awards, organizată de ROTSA (Romanian Tech Startups Association), premiază în această seară cele mai bune companii tech din 2025 în categoriile Best Innovators și Best...",
+      "positivity": 74,
+      "impact": 79,
+      "category": "local-heroes",
+      "publishedAt": "2026-03-12T18:01:43.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "7c67bec45ffe419f",
+      "sourceId": "edupedu",
+      "sourceName": "Edupedu",
+      "originalTitle": "Elevii care nu dau simularea Evaluării Naționale 2026 ar putea să dea testarea, ulterior, la nivel de școală, spune secretarul de stat în Ministerul Educației, Sorin Ion",
+      "url": "https://www.edupedu.ro/elevii-care-nu-dau-simularea-evaluarii-nationale-2026-ar-putea-sa-dea-testarea-ulterior-la-nivel-de-scoala-spune-secretarul-de-stat-in-ministerul-educatiei-sorin-ion/",
+      "summary": "„Pentru elevii care nu dau simularea Evaluării Naționale 2026 care începe luni, 16 martie, ar putea exista soluții ulterioare, la nivel de școală”, spune secretarul de stat în Ministerul Educației…",
+      "positivity": 74,
+      "impact": 79,
+      "category": "local-heroes",
+      "publishedAt": "2026-03-13T12:52:43.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "c8e2266c8775a6da",
+      "sourceId": "edupedu",
+      "sourceName": "Edupedu",
+      "originalTitle": "Experiment muzical, realizat de profesorul Richard Constantinescu: Niciun student nu a recunoscut compoziția Bolero / Personalitățile din domeniul muzicii și nu numai trebuie „umanizate” atunci când sunt prezentate, pentru a-i atrage pe tineri",
+      "url": "https://www.edupedu.ro/experiment-muzical-realizat-de-profesorul-richard-constantinescu-niciun-student-nu-a-recunoscut-compozitia-bolero-personalitatile-din-domeniul-muzicii-si-nu-numai-trebuie-umanizate/",
+      "summary": "Richard Constantinescu, profesor de istorie a medicinei la Universitatea de Medicină și Farmacie „Grigore T. Popa” din Iași, a explicat la Radio Cultural că, în cadrul unui experiment muzical derulat…",
+      "positivity": 79,
+      "impact": 70,
+      "category": "local-heroes",
+      "publishedAt": "2026-03-12T09:05:00.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "a99a34b12aeb379c",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "originalTitle": "Bihor: Activități culturale și venituri proprii în creștere la Centrul de Cultură al Județului",
+      "url": "https://agerpres.ro/cultura-media/2026/03/09/bihor-activitati-culturale-si-venituri-proprii-in-crestere-la-centrul-de-cultura-al-judetului--1535395",
+      "summary": "Bihor: Activități culturale și venituri proprii în creștere la Centrul de Cultură al Județului",
+      "positivity": 70,
+      "impact": 79,
+      "category": "wins",
+      "publishedAt": "2026-03-09T13:14:40.025Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "a7ed7d2842a0a639",
+      "sourceId": "edupedu",
+      "sourceName": "Edupedu",
+      "originalTitle": "Simulările nu se organizează deloc în 10% dintre școli. Evaluarea Națională de la finalul clasei a VIII-a nu este pentru elevi, ci pentru sistem, iar acum se vede autonomia profesorului român",
+      "url": "https://www.edupedu.ro/simularile-nu-se-organizeaza-deloc-in-10-dintre-scoli-evaluarea-nationala-de-la-finalul-clasei-a-viii-a-nu-este-pentru-elevi-ci-pentru-sistem-iar-acum-se-vede-autonomia-profesorului-roman/",
+      "summary": "De câteva zile ministrul Educației, Mihai Dimian, spune în mesaje publicate pe Facebook că simularea Evaluării Naționale din 2026 va fi organizată în peste 90% dintre școli. Mesajul oficialului este…",
+      "positivity": 71,
+      "impact": 70,
+      "category": "local-heroes",
+      "publishedAt": "2026-03-12T16:08:00.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "9edfb0a4b341dbf4",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "originalTitle": "Conferință despre oportunitățile de finanțare în industria de apărare, marți, la București",
+      "url": "https://agerpres.ro/economic/2026/03/10/conferinta-despre-oportunitatile-de-finantare-in-industria-de-aparare-marti-la-bucuresti--1535598",
+      "summary": "Conferință despre oportunitățile de finanțare în industria de apărare, marți, la București",
+      "positivity": 70,
+      "impact": 71,
+      "category": "wins",
+      "publishedAt": "2026-03-10T06:57:45.022Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "be1ae4a5673f9de9",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "originalTitle": "O nouă specie de dinozaur erbivor a fost descoperită în Geoparcul Internațional UNESCO Țara Hațegului",
+      "url": "https://www.mediafax.ro/life-inedit/o-noua-specie-de-dinozaur-erbivor-a-fost-descoperita-in-geoparcul-international-unesco-tara-hategului-23699663",
+      "summary": "Paleontologi de la Universitatea din București și de la Universitatea „Eötvös Loránd” din Budapesta au descoperit o nouă specie de dinozaur pe teritoriul Geoparcului Internațional UNESCO Țara Hațegului.",
+      "positivity": 67,
+      "impact": 70,
+      "category": "local-heroes",
+      "publishedAt": "2026-03-09T13:02:44.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    },
+    {
+      "id": "7219a12a62e7600e",
+      "sourceId": "edupedu",
+      "sourceName": "Edupedu",
+      "originalTitle": "Olimpiada de Științe socio-umane 2026, etapa județeană: Subiectele și baremele de notare la Educație Socială, Logică, Psihologie, Sociologie, Economie, Filosofie",
+      "url": "https://www.edupedu.ro/olimpiada-de-stiinte-socio-umane-2026-etapa-judeteana-subiectele-si-baremele-de-notare-la-educatie-sociala-logica-psihologie-sociologie-economie-filosofie/",
+      "summary": "Subiectele primite de elevi la Olimpiada de Științe Socio-umane 2026 și baremele de corectare de la etapa județeană susținută duminică, 8 martie, au fost publicate de Inspectoratul Şcolar Judeţean Braşov.…",
+      "positivity": 67,
+      "impact": 70,
+      "category": "local-heroes",
+      "publishedAt": "2026-03-09T11:21:00.000Z",
+      "processedAt": "2026-03-14T10:55:09.953Z"
+    }
+  ],
+  "discarded": 0,
+  "totalProcessed": 40,
+  "wrapperCopy": {
+    "greeting": "Salut,",
+    "intro": "Săptămâna asta vine cu lucruri concrete: bani pentru spitale, școli-pilot, turism local, infrastructură feroviară, solar, un proiect oncologic serios la Timișoara și câteva semne că antreprenoriatul local nu doar rezistă, ci și apasă pe accelerație. La final, rămâne și o veste de știință care merită ținută minte: un dinozaur nou descoperit în Țara Hațegului.",
+    "signOff": "Pe curând și să ai o săptămână bună! 🙏",
+    "shortSummary": "OMD, școli-pilot, spitale, Found-HER, solar, OncoGen, Giggle, 18GYM, CFR și un dinozaur nou în Țara Hațegului."
+  },
+  "validation": {
+    "generatedAt": "2026-03-14T10:55:20.263Z",
+    "candidateCount": 40,
+    "flagged": [],
+    "status": "passed",
+    "approvalSource": "validation-pipeline",
+    "checkedAt": "2026-03-14T11:04:35.432Z",
+    "freshnessWindowDays": 14,
+    "publishedHistoryCount": 85,
+    "recentDraftCount": 0,
+    "blockedArticles": [],
+    "replacements": [],
+    "agentReviewed": [
+      {
+        "articleId": "d69cd8bd740c5d80",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "381731e099400b5a",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "94542e6e9f5751e8",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "3dfec55cf1aebbbf",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "ce39000391ff7590",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "4b50eef9dc0fa215",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "28c0ec169edaf9e3",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "2b14a56056357cf5",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "115a114a04dfd4d5",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "52824b7b64bca131",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "320d1452fbf91763",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "df996d36578bef1f",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "260b38fb75d4881d",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "55a2091f3ea3f0f7",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "c2d6b59547ef73b8",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "52adceda8712d5ef",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "22490640d10aea76",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "41d30e33e095584e",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "2ed2a6144cc249b3",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "5595c4f5a207d718",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "d4fac9d8237fcd64",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "15df6d66ba97d08c",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "6513173c9f111674",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "47d2eac47b08f5f1",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "de4da7f8ecb4aeb4",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "37df907c82143beb",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "4b2f5dfdfe195524",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "41e303a90284c5aa",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "dbc893f070c85c99",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "9884207bf9ec1092",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "7c67bec45ffe419f",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "c8e2266c8775a6da",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "a99a34b12aeb379c",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "e3ce70fcb54633e2",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "ad57f87567cc9e3e",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "a7ed7d2842a0a639",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "9edfb0a4b341dbf4",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "be1ae4a5673f9de9",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "a94324231908fa1d",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "7219a12a62e7600e",
+        "verdict": "fresh",
+        "notes": "Manual fallback review: kept as fresh for proof distribution."
+      },
+      {
+        "articleId": "ff1bbb798c6c9d51",
+        "verdict": "fresh",
+        "notes": "Manual editor addition from prepare artifact: kept for proof distribution."
+      }
+    ]
+  }
+}
