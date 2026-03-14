@@ -102,6 +102,11 @@ export interface ProcessedArticle {
   summary: string;
   positivity: number;
   impact: number;
+  feltImpact?: number;
+  certainty?: number;
+  humanCloseness?: number;
+  bureaucraticDistance?: number;
+  promoRisk?: number;
   category: ArticleCategory;
   clusterId?: string;
   publishedAt: string;

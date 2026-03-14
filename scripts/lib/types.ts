@@ -5,6 +5,11 @@ export interface ArticleScore {
   summary: string;
   positivity: number;
   impact: number;
+  feltImpact?: number;
+  certainty?: number;
+  humanCloseness?: number;
+  bureaucraticDistance?: number;
+  promoRisk?: number;
   romaniaRelevant: boolean;
   category: ArticleCategory;
   reasoning?: string;

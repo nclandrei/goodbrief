@@ -45,6 +45,13 @@ import {
   writePipelineArtifact,
 } from './pipeline-artifacts.js';
 import { sendAlert } from './alert.js';
+import {
+  isBureaucraticStory,
+  isCommunityCentered,
+  isGreenPreferred,
+  rebalancePreferredSelection,
+  selectBalancedShortlist,
+} from './editorial-balance.js';
 
 function parseLookbackEnv(value: string | undefined, fallback: number): number {
   const parsed = Number.parseInt(value ?? '', 10);
@@ -121,6 +128,26 @@ function sortArticlesByAdjustedScore(
   });
 }
 
+function formatSignal(value: number | undefined): string {
+  return typeof value === 'number' ? String(value) : 'n/a';
+}
+
+function getEditorialTags(article: ProcessedArticle): string[] {
+  const tags: string[] = [];
+
+  if (isCommunityCentered(article)) {
+    tags.push('community');
+  }
+  if (isGreenPreferred(article)) {
+    tags.push('green');
+  }
+  if (isBureaucraticStory(article)) {
+    tags.push('bureaucratic-risk');
+  }
+
+  return tags;
+}
+
 async function refineShortlist(options: {
   apiKey: string;
   weekId: string;
@@ -156,24 +183,79 @@ async function refineShortlist(options: {
     };
   }
 
-  const mockRefinement = loadMockJson<RefinementResult>('GOODBRIEF_REFINEMENT_MOCK_FILE');
-  if (mockRefinement) {
-    const allArticles = [...selected, ...reserves];
-    const articleById = new Map(allArticles.map((article) => [article.id, article]));
-    const nextSelected = mockRefinement.selectedIds
-      .map((id) => articleById.get(id))
-      .filter((article): article is ProcessedArticle => article !== undefined);
+  const allArticles = [...selected, ...reserves];
+  const articleById = new Map(allArticles.map((article) => [article.id, article]));
+  const validationById = new Map(
+    validation.flagged.map((flag) => [flag.candidateId, flag])
+  );
+  const applyRefinementResult = (
+    refinement: RefinementResult
+  ): {
+    selected: ProcessedArticle[];
+    reserves: ProcessedArticle[];
+    wrapperCopy: WrapperCopy;
+    reasoning: string;
+  } => {
+    if (refinement.selectedIds.length < 9 || refinement.selectedIds.length > 12) {
+      console.log(
+        `Warning: Expected 9-12 articles, got ${refinement.selectedIds.length}. Keeping original.`
+      );
+      return {
+        selected,
+        reserves,
+        wrapperCopy,
+        reasoning: `Invalid selection size: ${refinement.selectedIds.length}`,
+      };
+    }
+
+    const refinedSelection: ProcessedArticle[] = [];
+    const usedIds = new Set<string>();
+    for (const id of refinement.selectedIds) {
+      const article = articleById.get(id);
+      if (article && !usedIds.has(id)) {
+        refinedSelection.push(article);
+        usedIds.add(id);
+      }
+    }
+
+    if (refinedSelection.length < 9 || refinedSelection.length > 12) {
+      console.log(
+        `Warning: Could only find ${refinedSelection.length} valid articles. Keeping original.`
+      );
+      return {
+        selected,
+        reserves,
+        wrapperCopy,
+        reasoning: `Could only find ${refinedSelection.length} refined articles`,
+      };
+    }
+
+    const balancedSelection = rebalancePreferredSelection({
+      preferredArticles: refinedSelection,
+      allArticles,
+      validation,
+    });
+    const balanceAdjusted =
+      balancedSelection.selected.map((article) => article.id).join('|') !==
+      refinedSelection.map((article) => article.id).join('|');
 
     return {
-      selected: nextSelected,
-      reserves: allArticles.filter((article) => !mockRefinement.selectedIds.includes(article.id)),
+      selected: balancedSelection.selected,
+      reserves: balancedSelection.reserves,
       wrapperCopy: {
         ...wrapperCopy,
-        intro: mockRefinement.intro,
-        shortSummary: mockRefinement.shortSummary,
+        intro: refinement.intro,
+        shortSummary: refinement.shortSummary,
       },
-      reasoning: mockRefinement.reasoning,
+      reasoning: balanceAdjusted
+        ? `${refinement.reasoning} Echilibrul editorial a fost păstrat automat pentru a evita reintroducerea știrilor speculative sau birocratice.`
+        : refinement.reasoning,
     };
+  };
+
+  const mockRefinement = loadMockJson<RefinementResult>('GOODBRIEF_REFINEMENT_MOCK_FILE');
+  if (mockRefinement) {
+    return applyRefinementResult(mockRefinement);
   }
 
   const genAI = new GoogleGenerativeAI(apiKey);
@@ -199,18 +281,23 @@ async function refineShortlist(options: {
     } as any,
   });
 
-  const allArticles = [...selected, ...reserves];
-  const articleById = new Map(allArticles.map((article) => [article.id, article]));
-  const validationById = new Map(
-    validation.flagged.map((flag) => [flag.candidateId, flag])
-  );
   const articleList = allArticles
     .map((article, index) => {
       const flag = validationById.get(article.id);
+      const adjustedScore = Math.round(
+        (getRankingScore(article) - (flag?.penaltyApplied || 0)) * 10
+      ) / 10;
+      const tags = getEditorialTags(article);
       const validationNote = flag
         ? `\n   Same-week validation: ${flag.verdict.toUpperCase()} — ${flag.reason}`
         : '';
-      return `${index + 1}. [ID: ${article.id}] [${article.category}] (pos:${article.positivity}, impact:${article.impact}) "${article.originalTitle}"\n   Summary: ${article.summary}${validationNote}`;
+      const signalLine =
+        `pos:${article.positivity} structural:${article.impact} felt:${formatSignal(article.feltImpact)} ` +
+        `certainty:${formatSignal(article.certainty)} human:${formatSignal(article.humanCloseness)} ` +
+        `bureau:${formatSignal(article.bureaucraticDistance)} promo:${formatSignal(article.promoRisk)} ` +
+        `adjusted:${adjustedScore}`;
+
+      return `${index + 1}. [ID: ${article.id}] [${article.category}] [${tags.join(', ') || 'no-tags'}] (${signalLine}) "${article.originalTitle}"\n   Summary: ${article.summary}${validationNote}`;
     })
     .join('\n\n');
 
@@ -263,6 +350,11 @@ REVIEW CRITERIA:
 6. Intro quality: Should be warm, engaging, capture the week's essence (IN ROMANIAN)
 7. Avoid promotional content or sponsored articles (marked with "(P)")
 8. Respect same-week validation flags: strong flags should normally be excluded; borderline flags need a clear editorial reason to stay
+9. Source diversity: do not let one niche source family dominate the issue
+10. Concrete over speculative: prefer stories that are already happening over promises, calls for applications, or funding announcements
+11. Human closeness: prefer stories readers can feel in communities, schools, neighborhoods, hospitals, or daily life over ministry/process stories
+12. Preserve the balanced shape: keep at least two clearly community-centered stories and at least one green story when strong options exist
+13. Do not swap in a grant, funding call, pilot program, or ministerial announcement just because it sounds more substantial; only keep those if they are concrete and clearly stronger than tangible alternatives
 
 TASK:
 - Review the current selection critically
@@ -288,51 +380,7 @@ Return JSON with:
   try {
     const refinement = JSON.parse(content) as RefinementResult;
     console.log(`✓ Review complete: ${refinement.reasoning}`);
-
-    if (refinement.selectedIds.length < 9 || refinement.selectedIds.length > 12) {
-      console.log(
-        `Warning: Expected 9-12 articles, got ${refinement.selectedIds.length}. Keeping original.`
-      );
-      return {
-        selected,
-        reserves,
-        wrapperCopy,
-        reasoning: `Invalid selection size: ${refinement.selectedIds.length}`,
-      };
-    }
-
-    const newSelected: ProcessedArticle[] = [];
-    const usedIds = new Set<string>();
-    for (const id of refinement.selectedIds) {
-      const article = articleById.get(id);
-      if (article && !usedIds.has(id)) {
-        newSelected.push(article);
-        usedIds.add(id);
-      }
-    }
-
-    if (newSelected.length < 9 || newSelected.length > 12) {
-      console.log(
-        `Warning: Could only find ${newSelected.length} valid articles. Keeping original.`
-      );
-      return {
-        selected,
-        reserves,
-        wrapperCopy,
-        reasoning: `Could only find ${newSelected.length} refined articles`,
-      };
-    }
-
-    return {
-      selected: newSelected,
-      reserves: allArticles.filter((article) => !usedIds.has(article.id)),
-      wrapperCopy: {
-        ...wrapperCopy,
-        intro: refinement.intro,
-        shortSummary: refinement.shortSummary,
-      },
-      reasoning: refinement.reasoning,
-    };
+    return applyRefinementResult(refinement);
   } catch (error) {
     console.log('Failed to parse refinement response, keeping original draft');
     return {
@@ -498,7 +546,7 @@ export async function runScorePhase(
         return null;
       }
 
-      return {
+      const processedArticle: ProcessedArticle = {
         id: raw.id,
         sourceId: raw.sourceId,
         sourceName: raw.sourceName,
@@ -510,7 +558,25 @@ export async function runScorePhase(
         category: score.category,
         publishedAt: raw.publishedAt,
         processedAt,
-      } satisfies ProcessedArticle;
+      };
+
+      if (score.feltImpact !== undefined) {
+        processedArticle.feltImpact = score.feltImpact;
+      }
+      if (score.certainty !== undefined) {
+        processedArticle.certainty = score.certainty;
+      }
+      if (score.humanCloseness !== undefined) {
+        processedArticle.humanCloseness = score.humanCloseness;
+      }
+      if (score.bureaucraticDistance !== undefined) {
+        processedArticle.bureaucraticDistance = score.bureaucraticDistance;
+      }
+      if (score.promoRisk !== undefined) {
+        processedArticle.promoRisk = score.promoRisk;
+      }
+
+      return processedArticle;
     })
     .filter((article): article is ProcessedArticle => article !== null);
 
@@ -721,11 +787,12 @@ export async function runSelectPhase(rootDir: string, weekId: string): Promise<s
     semantic.data.articles,
     counterSignals.data.validation
   );
-  const selected = rankedArticles.slice(0, FINAL_SELECTED_COUNT);
-  const reserves = rankedArticles.slice(
-    FINAL_SELECTED_COUNT,
-    FINAL_SHORTLIST_COUNT
-  );
+  const { selected, reserves } = selectBalancedShortlist({
+    rankedArticles,
+    validation: counterSignals.data.validation,
+    selectedCount: FINAL_SELECTED_COUNT,
+    reserveCount: FINAL_RESERVES_COUNT,
+  });
   const shortlistValidation = filterValidationForArticles(
     counterSignals.data.validation,
     [...selected, ...reserves]

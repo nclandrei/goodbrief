@@ -2,6 +2,7 @@ import { readFileSync } from 'fs';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import type { ProcessedArticle } from '../types.js';
 import { callWithRetry, DEFAULT_GEMINI_MODEL } from './gemini.js';
+import { getRankingScore } from './ranking.js';
 
 interface SemanticDedupGroupResponse {
   ids: string[];
@@ -30,7 +31,7 @@ interface ValidDuplicateGroup {
 }
 
 function scoreArticleForDedup(article: ProcessedArticle): number {
-  const rankingScore = article.positivity * 0.6 + article.impact * 0.4;
+  const rankingScore = getRankingScore(article);
   const publishedAt = new Date(article.publishedAt).getTime();
   const recencyBonus = Number.isFinite(publishedAt) ? publishedAt / 1e12 : 0;
   return rankingScore + recencyBonus;

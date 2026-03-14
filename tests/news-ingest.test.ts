@@ -159,9 +159,12 @@ test('loadSources reflects the refreshed source roster', () => {
   assert.deepEqual(ids, [
     'agerpres',
     'biziday',
+    'dw-romania',
     'economedia',
     'edupedu',
+    'europa-libera',
     'mediafax',
+    'republica',
     'startup-ro',
     'startupcafe',
     'stirileprotv',

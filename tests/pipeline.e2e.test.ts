@@ -57,17 +57,17 @@ test('Saturday pipeline generates, validates, and renders a proof without sendin
   assert.deepEqual(draft.validation.replacements, [
     {
       removedArticleId: 'raw-neurodiverse-services',
-      replacementArticleId: 'raw-school-orchestra',
+      replacementArticleId: 'raw-cardiac-network',
     },
   ]);
   assert.equal(
-    draft.selected.some((article: { id: string }) => article.id === 'raw-school-orchestra'),
+    draft.selected.some((article: { id: string }) => article.id === 'raw-cardiac-network'),
     true
   );
   assert.equal(
     draft.selected.some((article: { id: string }) => article.id === 'raw-neurodiverse-services'),
     false
   );
-  assert.match(proofHtml, /festival european/);
+  assert.match(proofHtml, /pacienții cardiaci cronici|pacientii cardiaci cronici|rețeaua pentru pacienții cardiaci|reteaua pentru pacientii cardiaci/i);
   assert.doesNotMatch(proofHtml, /neurodivergenți/);
 });
