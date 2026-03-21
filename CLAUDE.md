@@ -1,129 +1,131 @@
 # Good Brief - Agent Guidelines
 
-## Project Overview
-Romanian positive news newsletter web app (goodbrief.ro). Target audience: 20-30 year old educated Romanians.
+## Overview
+Romanian positive news newsletter (goodbrief.ro). Static site + automated pipeline. Target: 20-30yo educated Romanians.
 
 ## Tech Stack
-- **Framework:** Astro 5 + TypeScript (strict)
-- **Styling:** Tailwind CSS
-- **Content:** Markdown files in `content/issues/`
-- **Hosting:** Cloudflare Pages
+- **Framework:** Astro 5 + TypeScript (strict, `@/*` → `src/*` path alias)
+- **Styling:** Tailwind CSS (custom tokens: olive, cream, charcoal, coral; fonts: Inter sans, Fraunces serif)
+- **Content:** Markdown in `content/issues/`, Zod-validated via `src/content.config.ts`
+- **Email:** React Email `.tsx` templates in `emails/`, sent via Resend
+- **AI:** Google Gemini (`@google/generative-ai`) for draft scoring + copy generation
+- **Hosting:** Cloudflare Pages (auto-deploy from main) + Functions (`functions/api/`)
+- **Tests:** Node.js native test runner (`node --import tsx --test tests/**/*.test.ts`)
 
 ## Commands
 
 ```bash
 # Development
-npm run dev         # Start dev server (localhost:4321)
-npm run build       # Build for production
-npm run preview     # Preview production build
-npm run check       # TypeScript check
-npm run test        # Run Node.js test suite (tests/**/*.test.ts)
+npm run dev              # Astro dev server (localhost:4321)
+npm run build            # Production build
+npm run preview          # Preview production build
+npm run check            # Astro + TypeScript type check
+npm run test             # Run test suite
 
-# Email Development & Testing (requires RESEND_API_KEY, TEST_EMAIL env vars)
-npm run email:dev                           # React Email dev server (localhost:3001)
-npm run email:preview -- --week 2026-W02    # Preview newsletter HTML in browser
-npm run email:test -- --week 2026-W02       # Send test newsletter to TEST_EMAIL
-npm run email:send -- --week 2026-W02 --confirm  # Send to all subscribers
-npx tsx scripts/send-welcome-test.ts        # Send test welcome email to TEST_EMAIL
+# Email (requires RESEND_API_KEY, TEST_EMAIL)
+npm run email:dev                            # React Email dev server (localhost:3001)
+npm run email:preview -- --week 2026-W12     # Preview newsletter HTML in browser
+npm run email:test -- --week 2026-W12        # Send test to TEST_EMAIL
+npm run email:send -- --week 2026-W12 --confirm  # Send to all subscribers
 
-# Newsletter Pipeline
-npm run ingest-news      # Fetch news from RSS feeds
-npm run check-feed-health # Verify RSS feed health and parser readiness
-npm run generate-draft   # Generate newsletter draft with AI
-npm run pipeline:prepare # Run pipeline prepare phase
-npm run pipeline:score   # Run pipeline scoring phase
-npm run pipeline:semantic-dedup  # Run semantic dedup phase
-npm run pipeline:validate        # Run counter-signal validation phase
-npm run pipeline:select  # Run shortlist selection phase
-npm run pipeline:wrapper-copy    # Generate wrapper copy phase
-npm run pipeline:refine  # Run final refine phase
-npm run pipeline:verify-local -- --week 2026-W02  # Verify phase outputs locally
-npm run pipeline:verify-ingest-e2e  # Verify ingest + feed-health pipeline flow
-npm run validate-draft -- --week 2026-W02         # Validate draft quality/rules
-npm run validate-draft-freshness -- --week 2026-W02  # Validate archive freshness gate
-npm run backfill-legacy-validation -- --through-week 2026-W09  # Backfill validation metadata for legacy drafts/issues
-npm run publish-issue    # Publish issue to content/issues/
-npm run notify-draft     # Send editor notification/proof email for generated draft
-npm run alert-missing-draft -- <week> <reason>  # Alert when Monday send has no draft
-npm run alert-workflow-failure -- --workflow "<name>" --run-url "<url>"  # Alert on GH workflow failure
-npm run cleanup-raw-data # Remove old data/raw/*.json files
+# Pipeline (staged, each phase reads previous output)
+npm run ingest-news           # Fetch RSS feeds → data/raw/
+npm run check-feed-health     # Verify RSS feed health
+npm run pipeline:prepare      # Collect + deduplicate candidates
+npm run pipeline:score        # AI scoring (needs GEMINI_API_KEY)
+npm run pipeline:semantic-dedup
+npm run pipeline:validate     # Counter-signal validation
+npm run pipeline:select       # Shortlist finalization
+npm run pipeline:wrapper-copy # AI-generated greeting/intro/signoff
+npm run pipeline:refine       # Final refinement
+npm run validate-draft -- --week 2026-W12          # Validate draft quality
+npm run validate-draft-freshness -- --week 2026-W12 # Archive freshness gate
+npm run publish-issue         # Publish draft → content/issues/ markdown
+npm run notify-draft          # Send proof email to editor
+npm run pipeline:verify-local -- --week 2026-W12   # Verify phase outputs
+npm run cleanup-raw-data      # Remove old data/raw/ files
 ```
 
 ## Project Structure
 
 ```
 src/
-├── components/     # Reusable .astro components
-├── layouts/        # Page layouts (BaseLayout.astro)
-├── pages/          # File-based routing
-│   └── issues/     # Newsletter archive pages
-├── styles/         # Global CSS
-└── content.config.ts  # Content collection schema
+├── components/        # .astro components (PascalCase)
+├── layouts/           # BaseLayout.astro, ProsePageLayout.astro
+├── pages/             # File-based routing (issues/[slug].astro)
+├── styles/global.css  # Tailwind directives only
+├── utils/             # date.ts, issues.ts helpers
+└── content.config.ts  # Zod schema for issues collection
 
-content/
-└── issues/         # Newsletter markdown files
-
-data/
-└── drafts/         # Newsletter draft JSON files (YYYY-WXX.json)
-
-emails/
-├── components/     # Reusable React Email components (Header, Footer, etc.)
-├── newsletter.tsx  # Newsletter email template
-├── welcome.tsx     # Welcome email template
-└── utils/          # Email utilities (generate-copy.ts)
-
-docs/               # Plans, specs, and documentation
-├── PLAN.md                     # Main implementation plan
-├── NEWS_AGGREGATION_PLAN.md    # RSS/AI news processing
-├── COPY_PLAN.md                # Copy guidelines and brand voice
-└── EMAIL_IMPLEMENTATION_PLAN.md # React Email + Resend setup
-
-public/             # Static assets
+content/issues/        # Published newsletter markdown (YYYY-MM-DD-issue.md)
+data/drafts/           # Draft JSON files (YYYY-WXX.json)
+data/pipeline/         # Pipeline phase outputs (YYYY-WXX/01-prepared.json → 07-refined-draft.json)
+data/raw/              # Raw RSS feed data (weekly, auto-cleaned)
+data/sources.json      # RSS feed configuration
+emails/                # React Email templates + components
+  ├── newsletter.tsx   # Main newsletter template
+  ├── welcome.tsx      # Welcome email template
+  ├── components/      # Header, Footer, NewsItem, SectionHeader, Intro, SignOff
+  └── utils/           # render.ts, generate-copy.ts
+scripts/               # CLI scripts (TypeScript, run via tsx)
+  ├── lib/             # Shared pipeline logic (draft-pipeline, ranking, gemini, etc.)
+  └── *.ts             # Entry points for each npm script
+functions/api/         # Cloudflare Functions
+  ├── subscribe.ts     # POST /api/subscribe → Resend audience
+  └── receive-email.ts # Webhook for incoming email forwarding
+tests/                 # *.test.ts files + fixtures/
+docs/                  # Plans and specs (PLAN.md, COPY_PLAN.md, etc.)
 ```
 
-## Documentation
+## Environment Variables
 
-All plans and implementation specs live in `docs/`. When creating new plans or design documents, add them there to keep the root directory clean.
+```
+GEMINI_API_KEY         # Required for AI pipeline phases
+RESEND_API_KEY         # Required for email sending
+RESEND_AUDIENCE_ID     # Newsletter audience
+RESEND_SEGMENT_ID      # Targeted sending segment
+TEST_EMAIL             # Test recipient for dev/preview
+```
 
 ## Code Conventions
 
 ### Language
-- All user-facing content in **Romanian**
-- Code comments and technical docs in English
+- **User-facing content: Romanian** (informal "tu" form, never "Dumneavoastră")
+- Code comments and docs: English
 
-### Astro Components
-- Use `.astro` extension
-- Props interface at top of frontmatter
-- Tailwind for styling (no separate CSS files unless global)
+### Components
+- Astro: `.astro`, PascalCase, `interface Props {}` at top of frontmatter, Tailwind inline
+- React Email: `.tsx`, functional components, inline `styles` objects, system font stack
 
 ### Content (Newsletter Issues)
-- Filename format: `YYYY-MM-DD-slug.md`
-- Required frontmatter: `title`, `date`, `summary`
-- Use emoji sparingly for section headers
+- Filename: `YYYY-MM-DD-issue.md`
+- Frontmatter: `title`, `date`, `summary`, `validated`, `validationSource`, `validatedAt`
+- Sections: 🌱 Local Heroes, 🏆 Wins, 💚 Green Stuff, ✨ Quick Hits
+- Link format: `→ [Citește pe SourceName](url)`
+
+### Draft JSON (`data/drafts/YYYY-WXX.json`)
+- `{ weekId, generatedAt, selected: [{ id, sourceId, sourceName, originalTitle, url, summary, category, positivity, impact, ... }] }`
+- Categories: `"local-heroes"`, `"wins"`, `"green-stuff"`
 
 ### Styling
-- Primary color: green (`primary-*` in Tailwind config)
-- Max content width: `max-w-4xl` for layouts, `max-w-3xl` for prose
-- Mobile-first responsive design
+- Colors: `olive-500` (primary), `cream`, `charcoal`, `coral`
+- Layout widths: `max-w-5xl` (full), `max-w-3xl` (content/prose)
+- Typography: Fraunces for headings, Inter for body, `clamp()` responsive sizes
+- Mobile-first responsive
 
-## External Services
-
-### Resend (Newsletter + Transactional Email)
-- Subscribe form posts to `/api/subscribe` (Cloudflare Function: `functions/api/subscribe.ts`)
-- Audience-based newsletter sending uses `RESEND_AUDIENCE_ID` and `RESEND_SEGMENT_ID`
-- Requires DNS setup: SPF, DKIM, DMARC
-
-### Cloudflare
-- Pages for hosting (auto-deploy from main)
-- Web Analytics for privacy-friendly stats
+### Brand Voice
+- Calm, warm, slightly witty — never cheesy or corporate
+- "A smart friend" curating positive news
+- Low-medium energy, slow-news vibe
 
 ## CI/CD Workflows
-- `ingest-news.yml`: every 6 hours + manual trigger; retries `npm run ingest-news`, runs `npm run cleanup-raw-data`, and retries `git pull --rebase && git push` with Git LFS retry tuning
-- `generate-newsletter.yml`: Saturday 10:00 UTC + manual trigger; runs staged pipeline jobs (`prepare` → `score` → `semantic-dedup` → `counter-signal-validate` → `select` → `wrapper-copy` → `refine`), materializes draft output, validates freshness, commits `data/pipeline/` + `data/drafts/`, then sends proof email via `npm run notify-draft`
-- `send-newsletter.yml`: Monday 08:00 UTC + manual trigger; adds send concurrency guard, runs preflight checks (`check-send-preflight` + `assert-draft-ready`), skips duplicate sends when issue already exists, sends with `--automated`, publishes issue, alerts if draft missing
-- Failure alerting in scheduled workflows uses `npm run alert-workflow-failure`
 
-## Important Notes
-- Keep dependencies minimal for cost efficiency
-- No persistent custom backend/database - static site + Cloudflare Functions + external services
-- GDPR compliance required (Romanian audience)
+- **ingest-news.yml**: Every 6h — `ingest-news` → `cleanup-raw-data` → commit + push
+- **generate-newsletter.yml**: Saturday 10:00 UTC — staged pipeline (prepare → score → semantic-dedup → validate → select → wrapper-copy → refine) → materialize draft → validate freshness → commit → proof email
+- **send-newsletter.yml**: Monday 08:00 UTC — preflight checks → send (with concurrency guard) → publish issue → commit; alerts if draft missing
+
+## Key Constraints
+- No persistent backend — static site + edge functions + external services
+- Keep dependencies minimal
+- GDPR compliance required
+- Week IDs use ISO format: `YYYY-WXX`
