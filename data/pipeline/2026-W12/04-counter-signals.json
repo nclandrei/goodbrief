@@ -1,27 +1,13 @@
 {
   "weekId": "2026-W12",
   "phase": "counter-signal-validate",
-  "generatedAt": "2026-03-21T10:45:19.478Z",
-  "inputFile": "03-semantic-dedup.json + 01-prepared.json",
+  "generatedAt": "2026-03-21T12:26:09.069Z",
+  "inputFile": "draft:2026-W12",
   "data": {
     "validation": {
-      "generatedAt": "2026-03-21T10:44:35.751Z",
-      "candidateCount": 60,
-      "flagged": [
-        {
-          "candidateId": "25c5969262e653e3",
-          "verdict": "borderline",
-          "penaltyApplied": 10,
-          "reason": "Deși progresul de 95% pe Lotul 4 este o veste foarte bună, includerea sa ca știre pur pozitivă este nuanțată de criticile oficiale concomitente (menționate și în titlul candidatului) privind mobilizarea slabă de pe Lotul 3 al aceleiași autostrăzi. Articolul corelat (1f8b0e5b83c7fdf0) subliniază nemulțumirea autorităților, ceea ce transformă subiectul dintr-un succes deplin într-unul mixt.",
-          "relatedArticleIds": [
-            "1f8b0e5b83c7fdf0"
-          ],
-          "relatedArticleTitles": [
-            "VIDEO Autostrada A0 Nord. Șeful CNAIR, nemulțumit de mobilizarea de pe lotul 3, cel construit de chinezi"
-          ],
-          "generatedAt": "2026-03-21T10:44:35.751Z"
-        }
-      ]
+      "generatedAt": "2026-03-21T12:25:47.523Z",
+      "candidateCount": 40,
+      "flagged": []
     }
   }
 }

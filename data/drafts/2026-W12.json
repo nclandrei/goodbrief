@@ -181,7 +181,9 @@
       "humanCloseness": 90,
       "bureaucraticDistance": 10,
       "promoRisk": 5
-    },
+    }
+  ],
+  "reserves": [
     {
       "id": "3366be56c37d1a8f",
       "sourceId": "dw-romania",
@@ -217,9 +219,7 @@
       "humanCloseness": 95,
       "bureaucraticDistance": 10,
       "promoRisk": 10
-    }
-  ],
-  "reserves": [
+    },
     {
       "id": "f9b9c61b336b48bb",
       "sourceId": "economedia",
@@ -729,17 +729,17 @@
   "totalProcessed": 114,
   "wrapperCopy": {
     "greeting": "Salutare! 👋",
-    "intro": "Săptămâna asta vine cu un Oscar românesc, transplanturi-record și România prezentă la Târgul de Carte de la Leipzig. Plus vești bune din sănătate, educație și mediu — hai să le luăm pe rând.",
-    "signOff": "Ne citim săptămâna viitoare! Până atunci, ai grijă de tine. 🙏",
-    "shortSummary": "Oscar românesc, transplanturi-record și România la Leipzig!"
+    "intro": "Săptămâna asta avem știri care îți vor încălzi sufletul: de la transplanturi realizate în timp record și un Oscar pentru cinematografia românească, la noi oportunități pentru sănătatea ta și a planetei. Pregătește-ți cafeaua și hai să pornim în aventura veștilor bune.",
+    "signOff": "Ne vedem săptămâna viitoare cu noi motive de optimism. Până atunci, ai grijă de tine! 🙏",
+    "shortSummary": "Transplanturi record, Oscar românesc, sănătate și un Oscar românesc."
   },
   "validation": {
-    "generatedAt": "2026-03-21T10:44:35.751Z",
+    "generatedAt": "2026-03-21T12:25:47.523Z",
     "candidateCount": 40,
     "flagged": [],
     "status": "passed",
     "approvalSource": "validation-pipeline",
-    "checkedAt": "2026-03-21T10:47:42.199Z",
+    "checkedAt": "2026-03-21T12:26:14.468Z",
     "freshnessWindowDays": 14,
     "publishedHistoryCount": 95,
     "recentDraftCount": 0,
@@ -749,204 +749,202 @@
       {
         "articleId": "afea74cc3e562e93",
         "verdict": "fresh",
-        "notes": "Medical achievement regarding a high number of transplants in a short time; no previous coverage."
+        "notes": "A specific medical achievement involving multiple transplants in a short timeframe across several cities."
       },
       {
         "articleId": "561058c5ddd39fc4",
         "verdict": "fresh",
-        "notes": "Historical moment for Romanian cinematography with an Oscar win; unrelated to Dakar performance in archive."
-      },
-      {
-        "articleId": "2ee1678266e220d9",
-        "verdict": "fresh",
-        "notes": "Announcement of the National Cleanup Day; unrelated to infrastructure tunneling in archive."
-      },
-      {
-        "articleId": "c4379b2fa132d19a",
-        "verdict": "fresh",
-        "notes": "National Geographic ranking for Fagaras Mountains; no previous matches."
-      },
-      {
-        "articleId": "d5725912f43be339",
-        "verdict": "fresh",
-        "notes": "Full lineup reveal for Electric Castle 2026; no previous coverage found."
+        "notes": "Historical news regarding a Romanian-American director winning an Oscar."
       },
       {
         "articleId": "ea383bbb338bd975",
         "verdict": "fresh",
-        "notes": "New medical service launch in Sibiu for oncology patients."
-      },
-      {
-        "articleId": "90c846fb0e86a521",
-        "verdict": "fresh",
-        "notes": "International interest in Romania's recycling system; archive match was about a different corporate partnership."
+        "notes": "Announcement of new medical testing services at SJU Sibiu."
       },
       {
         "articleId": "5c21ab0a2241ed15",
         "verdict": "fresh",
-        "notes": "New state-funded dental healthcare program in public hospitals."
-      },
-      {
-        "articleId": "502cfae332b098d3",
-        "verdict": "fresh",
-        "notes": "Educational technology project by students; no historical matches."
-      },
-      {
-        "articleId": "a0129647f6e7a634",
-        "verdict": "fresh",
-        "notes": "Unique cultural export event involving a Maramures church in Japan."
-      },
-      {
-        "articleId": "f9b9c61b336b48bb",
-        "verdict": "fresh",
-        "notes": "Market expansion story of a regional retailer to the capital."
-      },
-      {
-        "articleId": "10ca20e8afb41c8a",
-        "verdict": "fresh",
-        "notes": "Construction update on the A7 motorway; no previous progress reports on this specific lot in archive."
-      },
-      {
-        "articleId": "5065b340521c9dce",
-        "verdict": "fresh",
-        "notes": "First artist announcements for UNTOLD 2026; no previous coverage of this edition."
-      },
-      {
-        "articleId": "883e127a4a898057",
-        "verdict": "fresh",
-        "notes": "New regional health screening initiative in Brasov."
-      },
-      {
-        "articleId": "3cf6fe6459d5e8aa",
-        "verdict": "fresh",
-        "notes": "Human interest story and tribute to an influential educator."
-      },
-      {
-        "articleId": "834655cdd84e90f5",
-        "verdict": "fresh",
-        "notes": "Local environmental and community story about a foreign citizen's impact."
-      },
-      {
-        "articleId": "e54a388904ba8973",
-        "verdict": "fresh",
-        "notes": "New commercial partnership focused on sustainability and reducing food waste."
-      },
-      {
-        "articleId": "b44b0bada12df0ed",
-        "verdict": "fresh",
-        "notes": "Announcement of a new digital tool for health service appointments."
-      },
-      {
-        "articleId": "4ada3d9f097a2d7f",
-        "verdict": "fresh",
-        "notes": "Cultural and educational initiative for youth at Teatrul Excelsior."
-      },
-      {
-        "articleId": "eeca21fd68bba947",
-        "verdict": "fresh",
-        "notes": "Seasonal weather forecast for upcoming holidays; no previous seasonal forecast found."
+        "notes": "New health policy regarding dental offices in public hospitals."
       },
       {
         "articleId": "33767b90d123ee54",
         "verdict": "fresh",
-        "notes": "Launch of a digital school safety reporting system in Constanta."
+        "notes": "Launch of a local safety reporting project in Constanța schools."
       },
       {
-        "articleId": "e60b8291cb7efd75",
+        "articleId": "502cfae332b098d3",
         "verdict": "fresh",
-        "notes": "Announcement of an upcoming science festival at Politehnica Bucharest."
-      },
-      {
-        "articleId": "1fa801d64a13d96e",
-        "verdict": "fresh",
-        "notes": "Upcoming art exhibition announcement; no historical matches."
-      },
-      {
-        "articleId": "4c4ebf8ab6f0ad86",
-        "verdict": "fresh",
-        "notes": "Informational piece on the spring equinox timing."
-      },
-      {
-        "articleId": "fe4a1ac7013d8295",
-        "verdict": "fresh",
-        "notes": "Educational funding update regarding social scholarships across 44 universities."
-      },
-      {
-        "articleId": "d7ae1def221f8b1c",
-        "verdict": "fresh",
-        "notes": "Cultural performance series announcement at Teatrul Coquette."
-      },
-      {
-        "articleId": "3d59d2de9805dfd3",
-        "verdict": "fresh",
-        "notes": "Milestone report on the first year of electronic ID cards; no launch coverage in archive."
-      },
-      {
-        "articleId": "53ce1710934bee6e",
-        "verdict": "fresh",
-        "notes": "Civic/educational event in Alba Iulia; unrelated to the robotics competition in archive."
-      },
-      {
-        "articleId": "192ca24aa72286be",
-        "verdict": "fresh",
-        "notes": "Launch of a new mental health accessibility platform."
-      },
-      {
-        "articleId": "a3e599ccd654f7f5",
-        "verdict": "fresh",
-        "notes": "Announcement of the 30th anniversary edition of the French Film Festival."
-      },
-      {
-        "articleId": "5c8e533fc43e0326",
-        "verdict": "fresh",
-        "notes": "Recurring international cat show event; no previous coverage in archive."
-      },
-      {
-        "articleId": "a8c35ccf19d08dbf",
-        "verdict": "fresh",
-        "notes": "Launch of a new financial tool for public service payments."
-      },
-      {
-        "articleId": "57ff8a07388c7d92",
-        "verdict": "fresh",
-        "notes": "Entrepreneurial success story; no previous matches found."
+        "notes": "A student-led digital initiative for the Școala Altfel program."
       },
       {
         "articleId": "1e717a8f279469a5",
         "verdict": "fresh",
-        "notes": "New cybersecurity awareness tool released by DNSC."
+        "notes": "Release of a new digital literacy tool/test by the DNSC."
       },
       {
-        "articleId": "69cf420ebed1b596",
+        "articleId": "2ee1678266e220d9",
         "verdict": "fresh",
-        "notes": "Seasonal agricultural report on early local crops."
+        "notes": "Announcement of the specific date and scale for the 2026 national cleanup day."
       },
       {
-        "articleId": "67c0b70be8b22503",
+        "articleId": "90c846fb0e86a521",
         "verdict": "fresh",
-        "notes": "Civic gesture by the president; different from the theater initiative mentioned in archive.",
-        "matchedOrigin": "2026-02-02-issue.md",
-        "matchedTitle": "Nicușor Dan deschide gratuit Palatul Cotroceni pentru trupele de teatru"
+        "notes": "Report on international interest in Romania's recycling system and plans for its expansion."
+      },
+      {
+        "articleId": "c4379b2fa132d19a",
+        "verdict": "fresh",
+        "notes": "Făgăraș Mountains recognized in a new National Geographic ranking."
       },
       {
         "articleId": "3366be56c37d1a8f",
         "verdict": "fresh",
-        "notes": "Cultural promotion event for Romanian literature in Germany."
+        "notes": "Coverage of Romanian presence at the Leipzig Book Fair."
+      },
+      {
+        "articleId": "a0129647f6e7a634",
+        "verdict": "fresh",
+        "notes": "Unique cultural story about a Maramureș church transported to Japan."
+      },
+      {
+        "articleId": "f9b9c61b336b48bb",
+        "verdict": "fresh",
+        "notes": "Business analysis of a regional retailer's expansion into the Bucharest market."
+      },
+      {
+        "articleId": "10ca20e8afb41c8a",
+        "verdict": "fresh",
+        "notes": "Update on construction progress milestones for the A7 motorway."
+      },
+      {
+        "articleId": "5065b340521c9dce",
+        "verdict": "fresh",
+        "notes": "First major lineup announcements for the 2026 edition of Untold."
+      },
+      {
+        "articleId": "883e127a4a898057",
+        "verdict": "fresh",
+        "notes": "Launch of a free cancer screening campaign specific to Brașov."
+      },
+      {
+        "articleId": "3cf6fe6459d5e8aa",
+        "verdict": "fresh",
+        "notes": "Feature story/tribute to a notable educator."
+      },
+      {
+        "articleId": "834655cdd84e90f5",
+        "verdict": "fresh",
+        "notes": "Local interest story about environmental protection efforts in Cârlibaba."
+      },
+      {
+        "articleId": "e54a388904ba8973",
+        "verdict": "fresh",
+        "notes": "New commercial partnership aimed at reducing food waste."
+      },
+      {
+        "articleId": "b44b0bada12df0ed",
+        "verdict": "fresh",
+        "notes": "Announcement of a new digital health scheduling application by CNAS."
+      },
+      {
+        "articleId": "4ada3d9f097a2d7f",
+        "verdict": "fresh",
+        "notes": "Event announcement for free youth theater readings at Teatrul Excelsior."
+      },
+      {
+        "articleId": "eeca21fd68bba947",
+        "verdict": "fresh",
+        "notes": "Specific medium-term weather forecast for the upcoming Easter period."
+      },
+      {
+        "articleId": "e60b8291cb7efd75",
+        "verdict": "fresh",
+        "notes": "Announcement of the 2026 ChemistryFEST science event."
+      },
+      {
+        "articleId": "1fa801d64a13d96e",
+        "verdict": "fresh",
+        "notes": "Announcement of an upcoming art exhibition at ARCUB."
+      },
+      {
+        "articleId": "4c4ebf8ab6f0ad86",
+        "verdict": "fresh",
+        "notes": "Educational/seasonal news regarding the 2026 spring equinox."
+      },
+      {
+        "articleId": "fe4a1ac7013d8295",
+        "verdict": "fresh",
+        "notes": "Selection of universities for a new round of EU-funded social scholarships."
+      },
+      {
+        "articleId": "d7ae1def221f8b1c",
+        "verdict": "fresh",
+        "notes": "Announcement of a specific musical performance at Teatrul Coquette."
+      },
+      {
+        "articleId": "3d59d2de9805dfd3",
+        "verdict": "fresh",
+        "notes": "Statistical milestone report on the first year of electronic ID adoption."
+      },
+      {
+        "articleId": "53ce1710934bee6e",
+        "verdict": "fresh",
+        "notes": "Report on a local vocational engagement event for students in Alba Iulia."
+      },
+      {
+        "articleId": "192ca24aa72286be",
+        "verdict": "fresh",
+        "notes": "Launch of a new digital platform for mental health services."
+      },
+      {
+        "articleId": "a3e599ccd654f7f5",
+        "verdict": "fresh",
+        "notes": "Announcement of the 30th edition of the French Film Festival."
+      },
+      {
+        "articleId": "5c8e533fc43e0326",
+        "verdict": "fresh",
+        "notes": "Event announcement for a recurring feline exhibition in Bucharest."
+      },
+      {
+        "articleId": "a8c35ccf19d08dbf",
+        "verdict": "fresh",
+        "notes": "New digital banking feature for tax payments launched by Salt Bank."
+      },
+      {
+        "articleId": "57ff8a07388c7d92",
+        "verdict": "fresh",
+        "notes": "Entrepreneurial profile of a local furniture business owner."
+      },
+      {
+        "articleId": "69cf420ebed1b596",
+        "verdict": "fresh",
+        "notes": "Seasonal report on the first harvest of local early potatoes."
+      },
+      {
+        "articleId": "67c0b70be8b22503",
+        "verdict": "fresh",
+        "notes": "A specific public health awareness gesture by a high-profile official."
       },
       {
         "articleId": "4e1e0f9e5da5c13c",
         "verdict": "fresh",
-        "notes": "Profile of an art market professional; archive matches were about different industries."
+        "notes": "Feature profile on an individual's impact on the contemporary art market."
       },
       {
         "articleId": "6ce9b623471698d2",
         "verdict": "fresh",
-        "notes": "Startup profile story; archive match was about a government subsidy program."
+        "notes": "Success story of a Romanian tech entrepreneur returning from Google."
       },
       {
         "articleId": "4fb13e7c1554046b",
         "verdict": "fresh",
-        "notes": "Announcement of major state investment in emergency medical technology."
+        "notes": "New large-scale centralized government procurement for emergency medical gear."
+      },
+      {
+        "articleId": "d5725912f43be339",
+        "verdict": "fresh",
+        "notes": "Complete lineup reveal for the 2026 Electric Castle festival."
       }
     ]
   }
