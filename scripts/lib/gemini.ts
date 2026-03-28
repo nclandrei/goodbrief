@@ -287,7 +287,7 @@ function isQuotaError(error: unknown): boolean {
 
 export async function callWithRetry<T>(
   fn: () => Promise<T>,
-  maxRetries: number = 3
+  maxRetries: number = 5
 ): Promise<T> {
   let lastError: Error | undefined;
   for (let attempt = 0; attempt < maxRetries; attempt++) {
@@ -302,9 +302,12 @@ export async function callWithRetry<T>(
       }
 
       if (attempt < maxRetries - 1) {
-        const delay = Math.pow(2, attempt) * 1000;
-        console.log(`Attempt ${attempt + 1} failed, retrying in ${delay}ms...`);
-        await new Promise((r) => setTimeout(r, delay));
+        const baseDelay = Math.pow(2, attempt) * 2000;
+        const jitter = baseDelay * (0.75 + Math.random() * 0.5); // ±25%
+        console.log(
+          `Attempt ${attempt + 1}/${maxRetries} failed (${lastError.message}), retrying in ${Math.round(jitter)}ms...`
+        );
+        await new Promise((r) => setTimeout(r, jitter));
       }
     }
   }

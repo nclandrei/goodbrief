@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W13",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-03-28T14:34:55.058Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare și o zi bună! 👋",
+      "intro": "Săptămâna asta avem vești care îți vor încălzi sufletul: de la campanii de solidaritate înainte de Paște și victorii pentru siguranța femeilor, la soluții smart pentru transport și acces la apă potabilă. E o combinație perfectă de spirit comunitar și progrese importante pentru viața de zi cu zi.",
+      "signOff": "Zile bune și sperăm să ne regăsim și săptămâna viitoare! 🙏",
+      "shortSummary": "Paște, siguranța femeilor, apă potabilă, solidaritate."
+    }
+  }
+}

@@ -1,7 +1,7 @@
 #!/usr/bin/env npx tsx
 
 import 'dotenv/config';
-import { readFileSync } from 'fs';
+import { existsSync, readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import type { DraftPipelinePhase } from './types.js';
@@ -16,6 +16,7 @@ import {
   runWrapperCopyPhase,
 } from './lib/draft-pipeline.js';
 import {
+  getPipelineArtifactPath,
   getRootDir,
   requireGeminiApiKey,
   resolveWeekId,
@@ -59,10 +60,24 @@ function parsePhase(args: string[]): DraftPipelinePhase {
   throw new Error('Missing required --phase argument');
 }
 
+function hasFlag(args: string[], flag: string): boolean {
+  return args.includes(flag);
+}
+
 async function main(): Promise<void> {
   const args = process.argv.slice(2);
   const phase = parsePhase(args);
   const weekId = resolveWeekId(args);
+  const skipExisting = hasFlag(args, '--skip-existing');
+
+  if (skipExisting) {
+    const artifactPath = getPipelineArtifactPath(ROOT_DIR, weekId, phase);
+    if (existsSync(artifactPath)) {
+      console.log(`Phase "${phase}" artifact already exists at ${artifactPath}, skipping.`);
+      return;
+    }
+  }
+
   const mockClassifier = loadMockClassifier();
 
   switch (phase) {

@@ -61,10 +61,11 @@ jobs:
       - run: npm ci
       - uses: actions/download-artifact@v4
         with:
-          name: pipeline-prepare-${{ needs.determine_week.outputs.id }}
+          pattern: pipeline-*-${{ needs.determine_week.outputs.id }}
           path: data/pipeline/${{ needs.determine_week.outputs.id }}
+          merge-multiple: true
       - name: Score candidates
-        run: npm run pipeline:score -- --week ${{ needs.determine_week.outputs.id }}
+        run: npm run pipeline:score -- --week ${{ needs.determine_week.outputs.id }} --skip-existing
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
@@ -85,10 +86,11 @@ jobs:
       - run: npm ci
       - uses: actions/download-artifact@v4
         with:
-          name: pipeline-score-${{ needs.determine_week.outputs.id }}
+          pattern: pipeline-*-${{ needs.determine_week.outputs.id }}
           path: data/pipeline/${{ needs.determine_week.outputs.id }}
+          merge-multiple: true
       - name: Semantic dedup
-        run: npm run pipeline:semantic-dedup -- --week ${{ needs.determine_week.outputs.id }}
+        run: npm run pipeline:semantic-dedup -- --week ${{ needs.determine_week.outputs.id }} --skip-existing
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       - uses: actions/upload-artifact@v4
@@ -107,10 +109,11 @@ jobs:
       - run: npm ci
       - uses: actions/download-artifact@v4
         with:
-          name: pipeline-semantic-dedup-${{ needs.determine_week.outputs.id }}
+          pattern: pipeline-*-${{ needs.determine_week.outputs.id }}
           path: data/pipeline/${{ needs.determine_week.outputs.id }}
+          merge-multiple: true
       - name: Counter-signal validation
-        run: npm run pipeline:validate -- --week ${{ needs.determine_week.outputs.id }}
+        run: npm run pipeline:validate -- --week ${{ needs.determine_week.outputs.id }} --skip-existing
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       - uses: actions/upload-artifact@v4
@@ -129,10 +132,11 @@ jobs:
       - run: npm ci
       - uses: actions/download-artifact@v4
         with:
-          name: pipeline-counter-signal-validate-${{ needs.determine_week.outputs.id }}
+          pattern: pipeline-*-${{ needs.determine_week.outputs.id }}
           path: data/pipeline/${{ needs.determine_week.outputs.id }}
+          merge-multiple: true
       - name: Select shortlist
-        run: npm run pipeline:select -- --week ${{ needs.determine_week.outputs.id }}
+        run: npm run pipeline:select -- --week ${{ needs.determine_week.outputs.id }} --skip-existing
       - uses: actions/upload-artifact@v4
         with:
           name: pipeline-select-${{ needs.determine_week.outputs.id }}
@@ -149,10 +153,11 @@ jobs:
       - run: npm ci
       - uses: actions/download-artifact@v4
         with:
-          name: pipeline-select-${{ needs.determine_week.outputs.id }}
+          pattern: pipeline-*-${{ needs.determine_week.outputs.id }}
           path: data/pipeline/${{ needs.determine_week.outputs.id }}
+          merge-multiple: true
       - name: Generate wrapper copy
-        run: npm run pipeline:wrapper-copy -- --week ${{ needs.determine_week.outputs.id }}
+        run: npm run pipeline:wrapper-copy -- --week ${{ needs.determine_week.outputs.id }} --skip-existing
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       - uses: actions/upload-artifact@v4
@@ -171,10 +176,11 @@ jobs:
       - run: npm ci
       - uses: actions/download-artifact@v4
         with:
-          name: pipeline-wrapper-copy-${{ needs.determine_week.outputs.id }}
+          pattern: pipeline-*-${{ needs.determine_week.outputs.id }}
           path: data/pipeline/${{ needs.determine_week.outputs.id }}
+          merge-multiple: true
       - name: Refine final draft
-        run: npm run pipeline:refine -- --week ${{ needs.determine_week.outputs.id }}
+        run: npm run pipeline:refine -- --week ${{ needs.determine_week.outputs.id }} --skip-existing
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       - uses: actions/upload-artifact@v4
