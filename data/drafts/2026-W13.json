@@ -181,7 +181,9 @@
       "humanCloseness": 80,
       "bureaucraticDistance": 20,
       "promoRisk": 5
-    },
+    }
+  ],
+  "reserves": [
     {
       "id": "da109319177eeb63",
       "sourceId": "stirileprotv",
@@ -199,9 +201,7 @@
       "humanCloseness": 75,
       "bureaucraticDistance": 20,
       "promoRisk": 5
-    }
-  ],
-  "reserves": [
+    },
     {
       "id": "305dbe71739cf8fb",
       "sourceId": "economedia",
@@ -728,14 +728,224 @@
   "discarded": 0,
   "totalProcessed": 114,
   "wrapperCopy": {
-    "greeting": "Salutare și o zi bună! 👋",
-    "intro": "Săptămâna asta vine cu vești care se simt direct: ratele la credite scad de la 1 aprilie, o lege nouă îi ține pe agresorii sexuali departe de școli și spitale, iar peste 300.000 de români își produc deja propria energie. Mai avem donații de Paște, apă gratuită pe aeroport și un elev care a dat olimpiada din spital. Enjoy!",
-    "signOff": "Zile bune și sperăm să ne regăsim și săptămâna viitoare! 🙏",
-    "shortSummary": "Siguranță, solidaritate, digitalizare, sănătate."
+    "greeting": "Ce mai faci? 👋",
+    "intro": "Săptămâna asta am strâns vești care ne pun pe suflet. De la unioni de tineri care fac aeroporturile mai prietenoase, la români care primesc rate mai mici și noi speranțe pe șosele. E plin de inspirație și de mici victorii care contează.",
+    "signOff": "Cam atât pentru azi. Până data viitoare, ai grijă de tine și de cei din jur! 🙏",
+    "shortSummary": "Aeroporturi cu apă gratis, rate mai mici și șosele mai sigure."
   },
   "validation": {
-    "generatedAt": "2026-03-28T14:32:20.691Z",
+    "generatedAt": "2026-03-30T10:26:43.898Z",
     "candidateCount": 40,
-    "flagged": []
+    "flagged": [],
+    "status": "passed",
+    "approvalSource": "validation-pipeline",
+    "checkedAt": "2026-03-30T10:27:12.950Z",
+    "freshnessWindowDays": 14,
+    "publishedHistoryCount": 105,
+    "recentDraftCount": 0,
+    "blockedArticles": [],
+    "replacements": [],
+    "agentReviewed": [
+      {
+        "articleId": "915a7be2179ee91b",
+        "verdict": "fresh",
+        "notes": "New report on a youth organization's success in providing free water at specific airports."
+      },
+      {
+        "articleId": "e1e1a2648fc30118",
+        "verdict": "fresh",
+        "notes": "Specific seasonal charity campaign for food donations."
+      },
+      {
+        "articleId": "beece4940e8ca2fb",
+        "verdict": "fresh",
+        "notes": "Feature on cancer survivor support groups."
+      },
+      {
+        "articleId": "b0b31dcd55965407",
+        "verdict": "fresh",
+        "notes": "Individual human interest story about a student's achievement from a hospital bed."
+      },
+      {
+        "articleId": "5295ea4b51951f40",
+        "verdict": "fresh",
+        "notes": "Announcement of the new IRCC index value effective April 1st."
+      },
+      {
+        "articleId": "6a01f6ac6647bcb9",
+        "verdict": "fresh",
+        "notes": "Specific incident report of a life saved via a public defibrillator."
+      },
+      {
+        "articleId": "d5eb664566076434",
+        "verdict": "fresh",
+        "notes": "New legislative development regarding employment bans for sexual offenders."
+      },
+      {
+        "articleId": "94a49d4700c0cf5d",
+        "verdict": "fresh",
+        "notes": "New digital tool launched by ANAF for the 2026 fiscal year."
+      },
+      {
+        "articleId": "bbf0ba09bedde19c",
+        "verdict": "fresh",
+        "notes": "News of a local city ordinance banning gambling venues."
+      },
+      {
+        "articleId": "0f2af7489869943e",
+        "verdict": "fresh",
+        "notes": "Fresh European Commission report on road safety statistics."
+      },
+      {
+        "articleId": "da109319177eeb63",
+        "verdict": "fresh",
+        "notes": "New statistics and milestones regarding prosumers in Romania."
+      },
+      {
+        "articleId": "305dbe71739cf8fb",
+        "verdict": "fresh",
+        "notes": "Report on local transit trends in Arad."
+      },
+      {
+        "articleId": "5295ea4b51951f40",
+        "verdict": "fresh",
+        "notes": "Announcement of the new IRCC index value effective April 1st."
+      },
+      {
+        "articleId": "be256efa13e1bb59",
+        "verdict": "fresh",
+        "notes": "Legal victory report for an individual student."
+      },
+      {
+        "articleId": "be8e4f2409ed3b01",
+        "verdict": "fresh",
+        "notes": "National legislative update regarding free water in public institutions."
+      },
+      {
+        "articleId": "cc228255f718f11e",
+        "verdict": "fresh",
+        "notes": "Launch of a new AI-based career advisor by researchers in Cluj."
+      },
+      {
+        "articleId": "1d03f28cc4723cc8",
+        "verdict": "fresh",
+        "notes": "Human interest story about a local canteen in Brasov."
+      },
+      {
+        "articleId": "cb55986633ee7207",
+        "verdict": "fresh",
+        "notes": "Technical progress report on the A3 motorway segment."
+      },
+      {
+        "articleId": "f1d2e7605c36753a",
+        "verdict": "fresh",
+        "notes": "Music industry award report for Don Diablo's performance in Romania."
+      },
+      {
+        "articleId": "50a147d6c4ca73d1",
+        "verdict": "fresh",
+        "notes": "Update on the activation of 17 new electric trains by CFR."
+      },
+      {
+        "articleId": "4a073af4cc7948f4",
+        "verdict": "fresh",
+        "notes": "Report on the 'Cartea Daliei' volunteer programming initiative."
+      },
+      {
+        "articleId": "800e43d33d88bbd7",
+        "verdict": "fresh",
+        "notes": "Case study on hospital modernization in Sibiu."
+      },
+      {
+        "articleId": "0350b5ed956d309e",
+        "verdict": "fresh",
+        "notes": "Announcement of the new Art Safari location and program."
+      },
+      {
+        "articleId": "c3dfb52a33137664",
+        "verdict": "fresh",
+        "notes": "Specific sports match result for U-BT Cluj."
+      },
+      {
+        "articleId": "1e41681139db7638",
+        "verdict": "fresh",
+        "notes": "Specific milestone regarding the delivery of two Alstom Coradia Stream trains."
+      },
+      {
+        "articleId": "ed1c8319fd0844e8",
+        "verdict": "fresh",
+        "notes": "Announcement of an upcoming gaming festival dedicated to women."
+      },
+      {
+        "articleId": "a57d7ee4db05f7fb",
+        "verdict": "fresh",
+        "notes": "Annual performance report for Oradea Airport for 2025."
+      },
+      {
+        "articleId": "0b9f4700a2a6c823",
+        "verdict": "fresh",
+        "notes": "Status update on the government's anti-bureaucracy platform."
+      },
+      {
+        "articleId": "875dc3eb080fe776",
+        "verdict": "fresh",
+        "notes": "Career update on a prominent Romanian tech entrepreneur."
+      },
+      {
+        "articleId": "6caf3fefa6a55753",
+        "verdict": "fresh",
+        "notes": "Report on the outcome of the Global Money Week 2026 educational event."
+      },
+      {
+        "articleId": "771ddc1859e4625d",
+        "verdict": "fresh",
+        "notes": "News of students qualifying for international robotics competitions."
+      },
+      {
+        "articleId": "c36da4b7e74a22ea",
+        "verdict": "fresh",
+        "notes": "Report on a successful digital management implementation at a Bucharest school."
+      },
+      {
+        "articleId": "b118f8d175dc8a7f",
+        "verdict": "fresh",
+        "notes": "Environmental initiative marking the anniversary of the Jandarmeria."
+      },
+      {
+        "articleId": "309592da10e4a9b8",
+        "verdict": "fresh",
+        "notes": "Events related to the World Theater Day celebrations."
+      },
+      {
+        "articleId": "6bb9bc1209b05d10",
+        "verdict": "fresh",
+        "notes": "Success story of a local entrepreneur winning international culinary awards."
+      },
+      {
+        "articleId": "e2eec824f6737efa",
+        "verdict": "fresh",
+        "notes": "Coverage of the 2026 edition of the Innovation Labs hackathon."
+      },
+      {
+        "articleId": "c3056c0b2b074d03",
+        "verdict": "fresh",
+        "notes": "Salary negotiation advice based on recent expert commentary."
+      },
+      {
+        "articleId": "fcc3f4447e74a684",
+        "verdict": "fresh",
+        "notes": "Trend report on digital payment adoption among small businesses."
+      },
+      {
+        "articleId": "f09625c638640b6b",
+        "verdict": "fresh",
+        "notes": "Report on the growing popularity of digital detox tourism."
+      },
+      {
+        "articleId": "376fbce3b1f22219",
+        "verdict": "fresh",
+        "notes": "Science-based nutrition tips for cognitive optimization."
+      }
+    ]
   }
 }
