@@ -7,13 +7,13 @@ export function assertDraftValidated(draft: NewsletterDraft, action: string): vo
       return;
     }
 
-    if (draft.validation.approvalSource === 'validation-pipeline') {
+    if (draft.validation.approvalSource === 'validation-pipeline' || draft.validation.approvalSource === 'editor-review') {
       return;
     }
 
     const approvalSource = draft.validation.approvalSource || 'missing';
     throw new Error(
-      `Draft ${draft.weekId} is not validated for ${action}. Expected validation-pipeline approval for post-W10 drafts, got ${approvalSource}.`
+      `Draft ${draft.weekId} is not validated for ${action}. Expected validation-pipeline or editor-review approval for post-W10 drafts, got ${approvalSource}.`
     );
   }
 

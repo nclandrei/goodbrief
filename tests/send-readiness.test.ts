@@ -30,7 +30,33 @@ test('post-W10 drafts require validation-pipeline approval', () => {
 
   assert.throws(
     () => assertDraftValidated(invalidFutureDraft, 'newsletter delivery'),
-    /validation-pipeline approval/
+    /validation-pipeline or editor-review approval/
+  );
+});
+
+test('post-W10 drafts with editor-review approval pass validation', () => {
+  const editorReviewedDraft: NewsletterDraft = {
+    weekId: '2026-W11',
+    generatedAt: '2026-03-14T10:00:00.000Z',
+    selected: [],
+    reserves: [],
+    discarded: 0,
+    totalProcessed: 0,
+    validation: {
+      generatedAt: '2026-03-14T10:00:00.000Z',
+      candidateCount: 0,
+      flagged: [],
+      status: 'passed',
+      approvalSource: 'editor-review',
+      checkedAt: '2026-03-14T11:00:00.000Z',
+      blockedArticles: [],
+      replacements: [],
+      agentReviewed: [],
+    },
+  };
+
+  assert.doesNotThrow(
+    () => assertDraftValidated(editorReviewedDraft, 'newsletter delivery')
   );
 });
 

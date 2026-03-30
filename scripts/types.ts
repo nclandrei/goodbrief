@@ -57,7 +57,8 @@ export type DraftValidationStatus = 'passed' | 'failed';
 export type DraftValidationVerdict = 'fresh' | 'duplicate' | 'follow_up';
 export type DraftValidationApprovalSource =
   | 'legacy-backfill'
-  | 'validation-pipeline';
+  | 'validation-pipeline'
+  | 'editor-review';
 
 export interface DraftValidationBlockedArticle {
   articleId: string;

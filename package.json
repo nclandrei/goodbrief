@@ -22,6 +22,7 @@
     "pipeline:refine": "npx tsx scripts/run-draft-phase.ts --phase refine",
     "pipeline:verify-local": "npx tsx scripts/pipeline-verify-local.ts",
     "pipeline:verify-ingest-e2e": "npx tsx scripts/verify-ingest-e2e.ts",
+    "approve-draft": "npx tsx scripts/approve-draft.ts",
     "validate-draft": "npx tsx scripts/validate-draft.ts",
     "validate-draft-freshness": "npx tsx scripts/validate-draft-freshness.ts",
     "backfill-legacy-validation": "npx tsx scripts/backfill-legacy-validation.ts",

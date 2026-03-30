@@ -1,0 +1,67 @@
+name: Check Draft Approval
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/drafts/*.json'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Skip automated pipeline commits
+        id: skip
+        run: |
+          MSG=$(git log -1 --format='%s')
+          if echo "$MSG" | grep -q '^chore: generate draft pipeline for'; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-node@v4
+        if: steps.skip.outputs.skip != 'true'
+        with:
+          node-version: '20'
+      - run: npm ci
+        if: steps.skip.outputs.skip != 'true'
+
+      - name: Find modified drafts
+        id: drafts
+        if: steps.skip.outputs.skip != 'true'
+        run: |
+          CHANGED=$(git diff --name-only HEAD~1 HEAD -- 'data/drafts/*.json' || true)
+          echo "files=$CHANGED" >> "$GITHUB_OUTPUT"
+
+      - name: Assert each modified draft is approved
+        if: steps.skip.outputs.skip != 'true' && steps.drafts.outputs.files != ''
+        run: |
+          FAILED=0
+          for file in ${{ steps.drafts.outputs.files }}; do
+            WEEK_ID=$(basename "$file" .json)
+            echo "Checking $WEEK_ID..."
+            if ! npx tsx scripts/assert-draft-ready.ts --week "$WEEK_ID" --action "post-edit validation"; then
+              FAILED=1
+            fi
+          done
+          if [ "$FAILED" -ne 0 ]; then
+            echo ""
+            echo "One or more drafts are missing approval."
+            echo "After editing a draft, run: npm run approve-draft -- --week <WEEK_ID>"
+            exit 1
+          fi
+
+      - name: Alert on unapproved draft
+        if: failure() && steps.skip.outputs.skip != 'true'
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
+        run: |
+          npm run alert-workflow-failure -- \
+            --workflow "Check Draft Approval" \
+            --run-url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
