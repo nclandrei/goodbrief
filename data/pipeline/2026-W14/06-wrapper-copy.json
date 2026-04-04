@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W14",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-04-04T10:54:36.853Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare! 👋",
+      "intro": "Săptămâna asta aduce vești de campioni, de la premii Oscar și calificări mondiale la fotbal, la gesturi mici de eroism local care fac o diferență uriașă. Pregătește-ți cafeaua și hai să explorăm împreună ce anume ne-a făcut să zâmbim.",
+      "signOff": "Ține-te bine și ne auzim săptămâna viitoare! 🙏",
+      "shortSummary": "Oscaruri, Cupa Mondială & eroi locali - veștile bune ale săptămânii."
+    }
+  }
+}
