@@ -1,7 +1,189 @@
 {
   "weekId": "2026-W14",
-  "generatedAt": "2026-04-04T10:55:26.582Z",
+  "generatedAt": "2026-04-05T11:53:33.197Z",
   "selected": [
+    {
+      "id": "96ecdf7157bb9e3f",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Pădurarul care le-a salvat pe Rebeca și Melisa: „Cred că încă o noapte nu puteau să supraviețuiască”",
+      "url": "https://stirileprotv.ro/stiri/actualitate/padurarul-care-le-a-salvat-pe-rebeca-si-melisa-cred-ca-inca-o-noapte-nu-puteau-sa-supravietuiasca.html",
+      "summary": "Rebeca și Melisa, cele două fetițe dispărute în județul Mureș, au fost găsite teafere de un pădurar după o zi de căutări intense. Efortul colectiv al autorităților și voluntarilor a dus la acest happy end care a liniștit toată țara. E vestea care ne amintește cât de mult contează solidaritatea în momente critice.",
+      "positivity": 100,
+      "impact": 60,
+      "category": "local-heroes",
+      "publishedAt": "2026-03-31T05:23:42.000Z",
+      "processedAt": "2026-04-04T10:49:53.473Z",
+      "feltImpact": 80,
+      "certainty": 100,
+      "humanCloseness": 100,
+      "bureaucraticDistance": 10,
+      "promoRisk": 0
+    },
+    {
+      "id": "d62caaf908a42c92",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "O echipă de liceeni din Arad a obținut o calificare istorică la campionatul mondial de robotică din Houston",
+      "url": "https://stirileprotv.ro/educatie/o-echipa-de-liceeni-din-arad-a-ajuns-la-campionatul-mondial-de-robotica-din-houston-cu-un-robot-construit-de-la-zero.html",
+      "summary": "O echipă de liceeni din Arad a obținut o calificare istorică la campionatul mondial de robotică din Houston, SUA. Tinerii au demonstrat un nivel de tech savvy impresionant și vor reprezenta România pe cea mai mare scenă a inovației pentru elevi. E genul de veste care ne arată că viitorul tehnologic local arată chiar promițător.",
+      "positivity": 100,
+      "impact": 75,
+      "category": "local-heroes",
+      "publishedAt": "2026-04-03T04:54:06.000Z",
+      "processedAt": "2026-04-04T10:49:53.473Z",
+      "feltImpact": 70,
+      "certainty": 100,
+      "humanCloseness": 90,
+      "bureaucraticDistance": 10,
+      "promoRisk": 10
+    },
+    {
+      "id": "c102f92ec54bcaca",
+      "sourceId": "edupedu",
+      "sourceName": "Edupedu",
+      "originalTitle": "România, pe primul loc la nivel european la participarea studenților la stagii de practică prin programul Erasmus+ / O treime dintre tinerii români au participat la mobilități internaționale de orice fel / Ingineria, Afacerile și Medicina domină „piața” mobilităților în străinătate",
+      "url": "https://www.edupedu.ro/romania-pe-primul-loc-la-nivel-european-la-participarea-studentilor-la-stagii-de-practica-prin-programul-erasmus-o-treime-dintre-tinerii-romani-au-participat-la-mobilitati-internationale-de-orice/",
+      "summary": "România ocupă primul loc în Europa la studenți care pleacă în stagii de practică prin programul Erasmus+. E un semn excelent că tinerii noștri caută experiență reală în afară, mai ales în medicină și inginerie. Asta înseamnă specialiști cu un vibe internațional care se întorc cu skill-uri super fresh.",
+      "positivity": 95,
+      "impact": 90,
+      "category": "wins",
+      "publishedAt": "2026-04-04T05:30:00.000Z",
+      "processedAt": "2026-04-04T10:49:53.473Z",
+      "feltImpact": 85,
+      "certainty": 100,
+      "humanCloseness": 80,
+      "bureaucraticDistance": 30,
+      "promoRisk": 10
+    },
+    {
+      "id": "7304327f477ce053",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "originalTitle": "Scriitorul Viorel Boldiș vrea să meargă la copiii din sate cu furgonul ''BiblioTheCar-ul''",
+      "url": "https://agerpres.ro/cultura-media/2026/04/02/reportaj-bihor-scriitorul-viorel-boldis-vrea-sa-mearga-la-copiii-din-sate-cu-furgonul-bibliothecar-u--1543575",
+      "summary": "Scriitorul Viorel Boldiș a transformat un furgon într-o bibliotecă mobilă numită „BiblioTheCar” pentru copiii din satele bihorene. El vrea să ducă poveștile direct la poarta micuților care nu au acces ușor la cărți, transformând lectura într-o aventură accesibilă. E o inițiativă de suflet care pune educația pe roți și o duce fix acolo unde e cea mai mare nevoie.",
+      "positivity": 98,
+      "impact": 60,
+      "category": "local-heroes",
+      "publishedAt": "2026-04-02T07:20:11.569Z",
+      "processedAt": "2026-04-04T10:49:53.473Z",
+      "feltImpact": 70,
+      "certainty": 90,
+      "humanCloseness": 100,
+      "bureaucraticDistance": 0,
+      "promoRisk": 0
+    },
+    {
+      "id": "a4a292dc276b0254",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Locul din România numit „orașul florilor”. Plimbare printre magnolii, cireși japonezi și lalele într-un peisaj boem",
+      "url": "https://stirileprotv.ro/stiri/travel/locul-din-romania-numit-orasul-florilor-plimbare-printre-magnolii-ciresi-japonezi-si-lalele-intr-un-peisaj-boem.html",
+      "summary": "Timișoara s-a transformat zilele astea într-un veritabil „oraș al florilor”, cu străzi pline de magnolii, lalele și cireși japonezi înfloriți. Peisajul boem e perfect pentru o plimbare lungă sau niște poze faine de Instagram dacă ești prin zonă. Orașul are acum un vibe magic care îți dă instant o stare de bine.",
+      "positivity": 95,
+      "impact": 50,
+      "category": "green-stuff",
+      "publishedAt": "2026-03-30T08:45:19.000Z",
+      "processedAt": "2026-04-04T10:49:53.473Z",
+      "feltImpact": 85,
+      "certainty": 100,
+      "humanCloseness": 90,
+      "bureaucraticDistance": 0,
+      "promoRisk": 0
+    },
+    {
+      "id": "1bbf5a48e89ac620",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Bucureștenii s-au reorientat spre transportul public după scumpirea carburanților. Traseele unde sunt creșteri",
+      "url": "https://stirileprotv.ro/stiri/actualitate/bucurestenii-s-au-reorientat-spre-transportul-public-dupa-scumpirea-carburantilor-traseele-unde-sunt-cresteri.html",
+      "summary": "Bucureștenii au început să lase mașinile acasă, STB înregistrând o creștere record a vânzărilor de abonamente și bilete. Pe lângă economia la portofel, această schimbare ajută enorm la reducerea poluării și a aglomerației din oraș. E dovada clară că putem adopta obiceiuri mai eco atunci când avem alternative și motivația potrivită.",
+      "positivity": 85,
+      "impact": 75,
+      "category": "green-stuff",
+      "publishedAt": "2026-03-30T16:58:35.000Z",
+      "processedAt": "2026-04-04T10:49:53.473Z",
+      "feltImpact": 80,
+      "certainty": 100,
+      "humanCloseness": 70,
+      "bureaucraticDistance": 10,
+      "promoRisk": 5
+    },
+    {
+      "id": "63064299440d4096",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Colecta de Paște a Băncilor de Alimente. Copii care își dau ciocolata din mână și bătrâni ce donează, cu lacrimi în ochi",
+      "url": "https://stirileprotv.ro/stiri/social/colecta-de-paste-a-bancilor-de-alimente-copii-care-isi-dau-ciocolata-din-mana-si-batrani-ce-doneaza-cu-lacrimi-in-ochi.html",
+      "summary": "Colecta Națională de Alimente de Paște a strâns mii de produse pentru cei aflați în nevoie, datorită mobilizării românilor în supermarketuri. De la bătrâni la copii, mulți au donat cu inima deschisă pentru a pune o masă caldă altora. Campania transformă un simplu drum la cumpărături într-un real lanț al binelui.",
+      "positivity": 95,
+      "impact": 75,
+      "category": "local-heroes",
+      "publishedAt": "2026-04-01T11:28:25.000Z",
+      "processedAt": "2026-04-04T10:49:53.473Z",
+      "feltImpact": 65,
+      "certainty": 100,
+      "humanCloseness": 95,
+      "bureaucraticDistance": 10,
+      "promoRisk": 15
+    },
+    {
+      "id": "7aea070c8f1b12b0",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Lista nominalizărilor la premiile GOPO 2026",
+      "url": "https://stirileprotv.ro/show-buzz/gopo-anunta-nominalizarile-intr-o-competitie-stransa-gala-va-avea-loc-pe-4-mai-si-va-fi-difuzata-pe-voyo.html",
+      "summary": "Premiile Gopo 2026 și-au anunțat nominalizările, punând reflectoarele pe cele mai bune filme românești ale anului, precum 'Dinți de lapte' sau 'Cravata galbenă'. Gala de pe 4 mai va celebra creativitatea și succesul cinematografiei autohtone. E momentul perfect să-ți faci lista de vizionări cu povești locale de calitate.",
+      "positivity": 90,
+      "impact": 70,
+      "category": "wins",
+      "publishedAt": "2026-03-31T17:20:51.000Z",
+      "processedAt": "2026-04-04T10:49:53.473Z",
+      "feltImpact": 75,
+      "certainty": 100,
+      "humanCloseness": 70,
+      "bureaucraticDistance": 10,
+      "promoRisk": 10
+    },
+    {
+      "id": "bc8705bbe51f5acf",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Primăria Timișoarei transformă fostele hale de tramvai într-un centru cultural - concerte și expoziții - cu fonduri europene",
+      "url": "https://stirileprotv.ro/stiri/financiar/municipalitatea-timisoarei-transforma-fostele-hale-de-tramvai-intr-un-centru-cultural-cu-fonduri-europene.html",
+      "summary": "Vechile hale de tramvai din Timișoara se transformă într-un cultural hub modern, unde arta se va întâlni cu tehnologia și experimentul. Primăria folosește fonduri europene pentru a crea acest spațiu deschis comunității, perfect pentru expoziții și evenimente out of the box. E un upgrade urban care salvează istoria orașului și îi dă un vibe nou, contemporan.",
+      "positivity": 92,
+      "impact": 82,
+      "category": "wins",
+      "publishedAt": "2026-03-30T12:16:21.000Z",
+      "processedAt": "2026-04-04T10:49:53.473Z",
+      "feltImpact": 88,
+      "certainty": 85,
+      "humanCloseness": 85,
+      "bureaucraticDistance": 20,
+      "promoRisk": 10
+    },
+    {
+      "id": "f0e6fb4f45fed3eb",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "originalTitle": "Record de viteză stabilit pe un tronson de cale ferată din România",
+      "url": "https://www.mediafax.ro/economic/record-de-viteza-stabilit-pe-un-tronson-de-cale-ferata-din-romania-23712317",
+      "summary": "Un tren modern a stabilit un nou record de viteză pe ruta Sighișoara-Simeria, parcurgând distanța cu o medie de 125 km/h. Această performanță ne apropie în sfârșit de standardele europene și arată că infrastructura noastră feroviară chiar poate progresa. Asta înseamnă că, în curând, vei petrece mult mai puțin timp pe drum și mai mult timp la destinație.",
+      "positivity": 90,
+      "impact": 80,
+      "category": "quick-hits",
+      "publishedAt": "2026-03-30T17:57:09.000Z",
+      "processedAt": "2026-04-04T10:49:53.473Z",
+      "feltImpact": 75,
+      "certainty": 100,
+      "humanCloseness": 55,
+      "bureaucraticDistance": 15,
+      "promoRisk": 0
+    }
+  ],
+  "reserves": [
     {
       "id": "752a43adb9881e42",
       "sourceId": "mediafax",
@@ -39,24 +221,6 @@
       "promoRisk": 5
     },
     {
-      "id": "96ecdf7157bb9e3f",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Pădurarul care le-a salvat pe Rebeca și Melisa: „Cred că încă o noapte nu puteau să supraviețuiască”. În ce stare sunt fetele",
-      "url": "https://stirileprotv.ro/stiri/actualitate/padurarul-care-le-a-salvat-pe-rebeca-si-melisa-cred-ca-inca-o-noapte-nu-puteau-sa-supravietuiasca.html",
-      "summary": "Rebeca și Melisa, cele două fetițe dispărute în județul Mureș, au fost găsite teafere de un pădurar după o zi de căutări intense. Efortul colectiv al autorităților și voluntarilor a dus la acest happy end care a liniștit toată țara. E vestea care ne amintește cât de mult contează solidaritatea în momente critice.",
-      "positivity": 100,
-      "impact": 60,
-      "category": "local-heroes",
-      "publishedAt": "2026-03-31T05:23:42.000Z",
-      "processedAt": "2026-04-04T10:49:53.473Z",
-      "feltImpact": 80,
-      "certainty": 100,
-      "humanCloseness": 100,
-      "bureaucraticDistance": 10,
-      "promoRisk": 0
-    },
-    {
       "id": "e49943982d8dedd8",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
@@ -73,42 +237,6 @@
       "humanCloseness": 100,
       "bureaucraticDistance": 0,
       "promoRisk": 0
-    },
-    {
-      "id": "d62caaf908a42c92",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "O echipă de liceeni din Arad a obținut o calificare istorică la campionatul mondial de robotică din Houston",
-      "url": "https://stirileprotv.ro/educatie/o-echipa-de-liceeni-din-arad-a-ajuns-la-campionatul-mondial-de-robotica-din-houston-cu-un-robot-construit-de-la-zero.html",
-      "summary": "O echipă de liceeni din Arad a obținut o calificare istorică la campionatul mondial de robotică din Houston, SUA. Tinerii au demonstrat un nivel de tech savvy impresionant și vor reprezenta România pe cea mai mare scenă a inovației pentru elevi. E genul de veste care ne arată că viitorul tehnologic local arată chiar promițător.",
-      "positivity": 100,
-      "impact": 75,
-      "category": "local-heroes",
-      "publishedAt": "2026-04-03T04:54:06.000Z",
-      "processedAt": "2026-04-04T10:49:53.473Z",
-      "feltImpact": 70,
-      "certainty": 100,
-      "humanCloseness": 90,
-      "bureaucraticDistance": 10,
-      "promoRisk": 10
-    },
-    {
-      "id": "c102f92ec54bcaca",
-      "sourceId": "edupedu",
-      "sourceName": "Edupedu",
-      "originalTitle": "România, pe primul loc la nivel european la participarea studenților la stagii de practică prin programul Erasmus+ / O treime dintre tinerii români au participat la mobilități internaționale de orice fel / Ingineria, Afacerile și Medicina domină „piața” mobilităților în străinătate – Raport Eurostudent",
-      "url": "https://www.edupedu.ro/romania-pe-primul-loc-la-nivel-european-la-participarea-studentilor-la-stagii-de-practica-prin-programul-erasmus-o-treime-dintre-tinerii-romani-au-participat-la-mobilitati-internationale-de-orice/",
-      "summary": "România ocupă primul loc în Europa la studenți care pleacă în stagii de practică prin programul Erasmus+. E un semn excelent că tinerii noștri caută experiență reală în afară, mai ales în medicină și inginerie. Asta înseamnă specialiști cu un vibe internațional care se întorc cu skill-uri super fresh.",
-      "positivity": 95,
-      "impact": 90,
-      "category": "wins",
-      "publishedAt": "2026-04-04T05:30:00.000Z",
-      "processedAt": "2026-04-04T10:49:53.473Z",
-      "feltImpact": 85,
-      "certainty": 100,
-      "humanCloseness": 80,
-      "bureaucraticDistance": 30,
-      "promoRisk": 10
     },
     {
       "id": "dfb84c191e38c39c",
@@ -147,24 +275,6 @@
       "promoRisk": 5
     },
     {
-      "id": "7304327f477ce053",
-      "sourceId": "agerpres",
-      "sourceName": "Agerpres",
-      "originalTitle": "REPORTAJ Bihor: Scriitorul Viorel Boldiș vrea să meargă la copiii din sate cu furgonul ''BiblioTheCar-ul''",
-      "url": "https://agerpres.ro/cultura-media/2026/04/02/reportaj-bihor-scriitorul-viorel-boldis-vrea-sa-mearga-la-copiii-din-sate-cu-furgonul-bibliothecar-u--1543575",
-      "summary": "Scriitorul Viorel Boldiș a transformat un furgon într-o bibliotecă mobilă numită „BiblioTheCar” pentru copiii din satele bihorene. El vrea să ducă poveștile direct la poarta micuților care nu au acces ușor la cărți, transformând lectura într-o aventură accesibilă. E o inițiativă de suflet care pune educația pe roți și o duce fix acolo unde e cea mai mare nevoie.",
-      "positivity": 98,
-      "impact": 60,
-      "category": "local-heroes",
-      "publishedAt": "2026-04-02T07:20:11.569Z",
-      "processedAt": "2026-04-04T10:49:53.473Z",
-      "feltImpact": 70,
-      "certainty": 90,
-      "humanCloseness": 100,
-      "bureaucraticDistance": 0,
-      "promoRisk": 0
-    },
-    {
       "id": "cd0190d030bfa7d1",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
@@ -180,26 +290,6 @@
       "certainty": 100,
       "humanCloseness": 90,
       "bureaucraticDistance": 10,
-      "promoRisk": 0
-    }
-  ],
-  "reserves": [
-    {
-      "id": "a4a292dc276b0254",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Locul din România numit „orașul florilor”. Plimbare printre magnolii, cireși japonezi și lalele într-un peisaj boem",
-      "url": "https://stirileprotv.ro/stiri/travel/locul-din-romania-numit-orasul-florilor-plimbare-printre-magnolii-ciresi-japonezi-si-lalele-intr-un-peisaj-boem.html",
-      "summary": "Timișoara s-a transformat zilele astea într-un veritabil „oraș al florilor”, cu străzi pline de magnolii, lalele și cireși japonezi înfloriți. Peisajul boem e perfect pentru o plimbare lungă sau niște poze faine de Instagram dacă ești prin zonă. Orașul are acum un vibe magic care îți dă instant o stare de bine.",
-      "positivity": 95,
-      "impact": 50,
-      "category": "green-stuff",
-      "publishedAt": "2026-03-30T08:45:19.000Z",
-      "processedAt": "2026-04-04T10:49:53.473Z",
-      "feltImpact": 85,
-      "certainty": 100,
-      "humanCloseness": 90,
-      "bureaucraticDistance": 0,
       "promoRisk": 0
     },
     {
@@ -293,24 +383,6 @@
       "promoRisk": 0
     },
     {
-      "id": "bc8705bbe51f5acf",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Primăria Timișoarei transformă fostele hale de tramvai într-un centru cultural - concerte și expoziții - cu fonduri europene",
-      "url": "https://stirileprotv.ro/stiri/financiar/municipalitatea-timisoarei-transforma-fostele-hale-de-tramvai-intr-un-centru-cultural-cu-fonduri-europene.html",
-      "summary": "Vechile hale de tramvai din Timișoara se transformă într-un cultural hub modern, unde arta se va întâlni cu tehnologia și experimentul. Primăria folosește fonduri europene pentru a crea acest spațiu deschis comunității, perfect pentru expoziții și evenimente out of the box. E un upgrade urban care salvează istoria orașului și îi dă un vibe nou, contemporan.",
-      "positivity": 92,
-      "impact": 82,
-      "category": "wins",
-      "publishedAt": "2026-03-30T12:16:21.000Z",
-      "processedAt": "2026-04-04T10:49:53.473Z",
-      "feltImpact": 88,
-      "certainty": 85,
-      "humanCloseness": 85,
-      "bureaucraticDistance": 20,
-      "promoRisk": 10
-    },
-    {
       "id": "285317fe7e06fbe5",
       "sourceId": "agerpres",
       "sourceName": "Agerpres",
@@ -327,24 +399,6 @@
       "humanCloseness": 85,
       "bureaucraticDistance": 20,
       "promoRisk": 5
-    },
-    {
-      "id": "63064299440d4096",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Colecta de Paște a Băncilor de Alimente. Copii care își dau ciocolata din mână și bătrâni ce donează, cu lacrimi în ochi",
-      "url": "https://stirileprotv.ro/stiri/social/colecta-de-paste-a-bancilor-de-alimente-copii-care-isi-dau-ciocolata-din-mana-si-batrani-ce-doneaza-cu-lacrimi-in-ochi.html",
-      "summary": "Colecta Națională de Alimente de Paște a strâns mii de produse pentru cei aflați în nevoie, datorită mobilizării românilor în supermarketuri. De la bătrâni la copii, mulți au donat cu inima deschisă pentru a pune o masă caldă altora. Campania transformă un simplu drum la cumpărături într-un real lanț al binelui.",
-      "positivity": 95,
-      "impact": 75,
-      "category": "local-heroes",
-      "publishedAt": "2026-04-01T11:28:25.000Z",
-      "processedAt": "2026-04-04T10:49:53.473Z",
-      "feltImpact": 65,
-      "certainty": 100,
-      "humanCloseness": 95,
-      "bureaucraticDistance": 10,
-      "promoRisk": 15
     },
     {
       "id": "91ebe83e194a77d3",
@@ -437,24 +491,6 @@
       "promoRisk": 0
     },
     {
-      "id": "1bbf5a48e89ac620",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Bucureștenii s-au reorientat spre transportul public după scumpirea carburanților. Traseele unde sunt creșteri",
-      "url": "https://stirileprotv.ro/stiri/actualitate/bucurestenii-s-au-reorientat-spre-transportul-public-dupa-scumpirea-carburantilor-traseele-unde-sunt-cresteri.html",
-      "summary": "Bucureștenii au început să lase mașinile acasă, STB înregistrând o creștere record a vânzărilor de abonamente și bilete. Pe lângă economia la portofel, această schimbare ajută enorm la reducerea poluării și a aglomerației din oraș. E dovada clară că putem adopta obiceiuri mai eco atunci când avem alternative și motivația potrivită.",
-      "positivity": 85,
-      "impact": 75,
-      "category": "green-stuff",
-      "publishedAt": "2026-03-30T16:58:35.000Z",
-      "processedAt": "2026-04-04T10:49:53.473Z",
-      "feltImpact": 80,
-      "certainty": 100,
-      "humanCloseness": 70,
-      "bureaucraticDistance": 10,
-      "promoRisk": 5
-    },
-    {
       "id": "3506e7d7fadaeb90",
       "sourceId": "economedia",
       "sourceName": "Economedia",
@@ -507,42 +543,6 @@
       "humanCloseness": 70,
       "bureaucraticDistance": 5,
       "promoRisk": 20
-    },
-    {
-      "id": "f0e6fb4f45fed3eb",
-      "sourceId": "mediafax",
-      "sourceName": "Mediafax",
-      "originalTitle": "Record de viteză stabilit pe un tronson de cale ferată din România",
-      "url": "https://www.mediafax.ro/economic/record-de-viteza-stabilit-pe-un-tronson-de-cale-ferata-din-romania-23712317",
-      "summary": "Un tren modern a stabilit un nou record de viteză pe ruta Sighișoara-Simeria, parcurgând distanța cu o medie de 125 km/h. Această performanță ne apropie în sfârșit de standardele europene și arată că infrastructura noastră feroviară chiar poate progresa. Asta înseamnă că, în curând, vei petrece mult mai puțin timp pe drum și mai mult timp la destinație.",
-      "positivity": 90,
-      "impact": 80,
-      "category": "wins",
-      "publishedAt": "2026-03-30T17:57:09.000Z",
-      "processedAt": "2026-04-04T10:49:53.473Z",
-      "feltImpact": 75,
-      "certainty": 100,
-      "humanCloseness": 55,
-      "bureaucraticDistance": 15,
-      "promoRisk": 0
-    },
-    {
-      "id": "7aea070c8f1b12b0",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Lista nominalizărilor la premiile GOPO 2026. Gala va avea loc pe 4 mai și va fi difuzată pe VOYO",
-      "url": "https://stirileprotv.ro/show-buzz/gopo-anunta-nominalizarile-intr-o-competitie-stransa-gala-va-avea-loc-pe-4-mai-si-va-fi-difuzata-pe-voyo.html",
-      "summary": "Premiile Gopo 2026 și-au anunțat nominalizările, punând reflectoarele pe cele mai bune filme românești ale anului, precum 'Dinți de lapte' sau 'Cravata galbenă'. Gala de pe 4 mai va celebra creativitatea și succesul cinematografiei autohtone. E momentul perfect să-ți faci lista de vizionări cu povești locale de calitate.",
-      "positivity": 90,
-      "impact": 70,
-      "category": "wins",
-      "publishedAt": "2026-03-31T17:20:51.000Z",
-      "processedAt": "2026-04-04T10:49:53.473Z",
-      "feltImpact": 75,
-      "certainty": 100,
-      "humanCloseness": 70,
-      "bureaucraticDistance": 10,
-      "promoRisk": 10
     },
     {
       "id": "27d73ddf22b072a9",
@@ -657,231 +657,16 @@
   "totalProcessed": 123,
   "wrapperCopy": {
     "greeting": "Salutare! 👋",
-    "intro": "Săptămâna asta e plină de victorii mari și mici: de la puștii nostri de la U17 care merg la Cupa Mondială, la povești inspiraționale despre oameni care fac bine în comunitățile lor. Pregătește-ți cafeaua, că avem motive de zâmbet.",
-    "signOff": "Pe data viitoare! Sperăm că ai plecat cu o doză bună de optimism. 🙏",
-    "shortSummary": "România la Cupa Mondială U17, eroi locali și drepturi pentru animale."
+    "intro": "Weekend lung, vești bune. Liceeni din Arad care își iau robotul la Houston, un pădurar care a salvat două fete, și un scriitor cu furgoneta plină de cărți pentru copiii din Bihor. România face treabă în liniște — ia-ți cafeaua și stai cu noi zece minute.",
+    "signOff": "Îți mulțumim că ai fost alături de noi și săptămâna asta. Să ai o zi superbă! 🙏",
+    "shortSummary": "Pădurar-erou, liceeni la robotică, furgoneta cu cărți."
   },
   "validation": {
-    "generatedAt": "2026-04-04T10:51:06.475Z",
-    "candidateCount": 40,
+    "generatedAt": "2026-04-05T12:24:16.331Z",
+    "candidateCount": 36,
     "flagged": [],
     "status": "passed",
-    "approvalSource": "validation-pipeline",
-    "checkedAt": "2026-04-04T10:56:01.217Z",
-    "freshnessWindowDays": 14,
-    "publishedHistoryCount": 115,
-    "recentDraftCount": 0,
-    "blockedArticles": [
-      {
-        "articleId": "834655cdd84e90f5",
-        "reason": "stale-published-at"
-      },
-      {
-        "articleId": "7a6ee00e68c85639",
-        "reason": "stale-published-at"
-      },
-      {
-        "articleId": "cba2d695e0d38ca5",
-        "reason": "stale-published-at"
-      },
-      {
-        "articleId": "6788eff0eaab0b48",
-        "reason": "agent-duplicate",
-        "matchedOrigin": "2026-03-30-issue.md",
-        "matchedTitle": "Un oraș din România a interzis jocurile de noroc"
-      }
-    ],
-    "replacements": [],
-    "agentReviewed": [
-      {
-        "articleId": "752a43adb9881e42",
-        "verdict": "fresh",
-        "notes": "Romania U17's first-ever qualification for the World Cup is a new sports milestone."
-      },
-      {
-        "articleId": "7ebadc1a37b058a3",
-        "verdict": "fresh",
-        "notes": "Human interest story about community solidarity in Iasi for a fire-affected family."
-      },
-      {
-        "articleId": "96ecdf7157bb9e3f",
-        "verdict": "fresh",
-        "notes": "Rescue story of two missing girls in Mures county."
-      },
-      {
-        "articleId": "e49943982d8dedd8",
-        "verdict": "fresh",
-        "notes": "Rescue story involving a medical student saving a child in Bacau."
-      },
-      {
-        "articleId": "d62caaf908a42c92",
-        "verdict": "fresh",
-        "notes": "Arad high school robotics team's qualification for the World Championship is a specific new achievement."
-      },
-      {
-        "articleId": "c102f92ec54bcaca",
-        "verdict": "fresh",
-        "notes": "New Eurostudent report findings regarding Romania's leadership in Erasmus+ internships."
-      },
-      {
-        "articleId": "dfb84c191e38c39c",
-        "verdict": "fresh",
-        "notes": "New legislative proposal regarding wage transparency and hiring rules."
-      },
-      {
-        "articleId": "aa9b918abad69b5f",
-        "verdict": "fresh",
-        "notes": "Significant cultural heritage news about the recovery and official UNESCO delisting of the Cotofenesti helmet."
-      },
-      {
-        "articleId": "7304327f477ce053",
-        "verdict": "fresh",
-        "notes": "Story about a local mobile library initiative in Bihor."
-      },
-      {
-        "articleId": "cd0190d030bfa7d1",
-        "verdict": "fresh",
-        "notes": "Specific legal outcome (prison sentence) for animal cruelty in Bucharest."
-      },
-      {
-        "articleId": "a4a292dc276b0254",
-        "verdict": "fresh",
-        "notes": "Seasonal lifestyle feature on Timisoara's blooming flowers."
-      },
-      {
-        "articleId": "c52846d41fa25e16",
-        "verdict": "fresh",
-        "notes": "Announcement of the upcoming school holiday schedule."
-      },
-      {
-        "articleId": "b333f7b481f32655",
-        "verdict": "fresh",
-        "notes": "NGO equipment donation to Mures hospitals; distinct from previous state infrastructure projects in the same city."
-      },
-      {
-        "articleId": "21f460b4d7cea640",
-        "verdict": "fresh",
-        "notes": "Individual profile of a Romanian successful in the tech industry abroad."
-      },
-      {
-        "articleId": "aa1ca0b3c11332cb",
-        "verdict": "fresh",
-        "notes": "Article on the digital transformation of dentistry via AI."
-      },
-      {
-        "articleId": "80bec83016160b71",
-        "verdict": "fresh",
-        "notes": "Story of a gendarme providing life-saving first aid in Mures."
-      },
-      {
-        "articleId": "6788eff0eaab0b48",
-        "verdict": "duplicate",
-        "notes": "This topic of cities banning gambling halls was already covered in the previous week's issue.",
-        "matchedOrigin": "2026-03-30-issue.md",
-        "matchedTitle": "Un oraș din România a interzis jocurile de noroc"
-      },
-      {
-        "articleId": "bc8705bbe51f5acf",
-        "verdict": "fresh",
-        "notes": "New urban regeneration project in Timisoara using EU funds."
-      },
-      {
-        "articleId": "285317fe7e06fbe5",
-        "verdict": "fresh",
-        "notes": "Report on new trends in the Romanian restaurant industry regarding local sourcing."
-      },
-      {
-        "articleId": "63064299440d4096",
-        "verdict": "follow_up",
-        "notes": "Reporting on the results and stories from the food collection campaign announced in the previous issue.",
-        "matchedOrigin": "2026-03-30-issue.md",
-        "matchedTitle": "Românii pot dona alimente pentru familii vulnerabile înainte de Paște în peste 1.000 de magazine"
-      },
-      {
-        "articleId": "91ebe83e194a77d3",
-        "verdict": "fresh",
-        "notes": "Inspiring story of repatriated entrepreneurs opening a factory in Bailesti."
-      },
-      {
-        "articleId": "a8de542bec7a755d",
-        "verdict": "fresh",
-        "notes": "Official adoption of the new university nomenclature for the 2026-2027 academic year."
-      },
-      {
-        "articleId": "5e4c118b77bc987d",
-        "verdict": "fresh",
-        "notes": "Wizz Air reopening its base in Targu Mures is a new aviation milestone."
-      },
-      {
-        "articleId": "d7d72c093d4f3d98",
-        "verdict": "fresh",
-        "notes": "News report on the specific increase in electric car adoption driven by fuel prices."
-      },
-      {
-        "articleId": "9f448b215974f5c9",
-        "verdict": "fresh",
-        "notes": "Operational update for the Giurgiu-Ruse bridge specifically for the Easter holiday period."
-      },
-      {
-        "articleId": "1bbf5a48e89ac620",
-        "verdict": "fresh",
-        "notes": "Report on the shift to public transport usage in Bucharest."
-      },
-      {
-        "articleId": "3506e7d7fadaeb90",
-        "verdict": "fresh",
-        "notes": "Launch of a specific new flight route from Timisoara to Istanbul."
-      },
-      {
-        "articleId": "9a5266112a5a9217",
-        "verdict": "fresh",
-        "notes": "Specific price milestone for fuel following government intervention."
-      },
-      {
-        "articleId": "01358476ca787ad5",
-        "verdict": "fresh",
-        "notes": "Announcement of a major international eSports tournament in Bucharest."
-      },
-      {
-        "articleId": "f0e6fb4f45fed3eb",
-        "verdict": "fresh",
-        "notes": "Report on a specific new speed record on a modernized railway section."
-      },
-      {
-        "articleId": "7aea070c8f1b12b0",
-        "verdict": "fresh",
-        "notes": "Announcement of the 2026 GOPO award nominations."
-      },
-      {
-        "articleId": "27d73ddf22b072a9",
-        "verdict": "fresh",
-        "notes": "First edition of the National AI Olympiad and its county stage details."
-      },
-      {
-        "articleId": "57ca7c15b411f9f3",
-        "verdict": "fresh",
-        "notes": "Local policy proposal in Arad to lower transport costs."
-      },
-      {
-        "articleId": "42b05b723ae4d0eb",
-        "verdict": "fresh",
-        "notes": "Timişoara's specific humanitarian aid (generators) for Kyiv."
-      },
-      {
-        "articleId": "ac55468ccafc1107",
-        "verdict": "fresh",
-        "notes": "Public health/mental health awareness message from Mirabela Grădinaru."
-      },
-      {
-        "articleId": "ad1a554f5dc1a229",
-        "verdict": "fresh",
-        "notes": "Educational innovation (3D molecular modeling tool) developed by UAIC researchers."
-      },
-      {
-        "articleId": "228cf47ffb49a719",
-        "verdict": "fresh",
-        "notes": "Announcement of the 2026 One World Romania festival program."
-      }
-    ]
+    "approvalSource": "editor-review",
+    "checkedAt": "2026-04-05T12:24:57.513Z"
   }
 }
