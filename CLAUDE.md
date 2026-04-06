@@ -122,7 +122,7 @@ TEST_EMAIL             # Test recipient for dev/preview
 
 - **ingest-news.yml**: Every 6h — `ingest-news` → `cleanup-raw-data` → commit + push
 - **generate-newsletter.yml**: Saturday 10:00 UTC — staged pipeline (prepare → score → semantic-dedup → validate → select → wrapper-copy → refine) → materialize draft → validate freshness → commit → proof email
-- **send-newsletter.yml**: Monday 08:00 UTC — preflight checks → send (with concurrency guard) → publish issue → commit; alerts if draft missing
+- **send-newsletter.yml**: Monday 05:00 UTC (~08:00 Romania) — preflight checks → send (with concurrency guard) → publish issue → commit; alerts if draft missing
 
 ## Key Constraints
 - No persistent backend — static site + edge functions + external services

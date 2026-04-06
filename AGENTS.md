@@ -118,7 +118,7 @@ Avoid adding new planning docs unless the task explicitly asks for them.
 ## CI/CD Workflows
 - `ingest-news.yml`: every 6 hours + manual trigger; retries `npm run ingest-news`, runs `npm run cleanup-raw-data`, and retries `git pull --rebase && git push` with Git LFS retry tuning
 - `generate-newsletter.yml`: Saturday 10:00 UTC + manual trigger; runs staged pipeline jobs (`prepare` → `score` → `semantic-dedup` → `counter-signal-validate` → `select` → `wrapper-copy` → `refine`), materializes draft output, validates freshness, commits `data/pipeline/` + `data/drafts/`, then sends proof email via `npm run notify-draft`
-- `send-newsletter.yml`: Monday 08:00 UTC + manual trigger; adds send concurrency guard, runs preflight checks (`check-send-preflight` + `assert-draft-ready`), skips duplicate sends when issue already exists, sends with `--automated`, publishes issue, alerts if draft missing
+- `send-newsletter.yml`: Monday 05:00 UTC (~08:00 Romania) + manual trigger; adds send concurrency guard, runs preflight checks (`check-send-preflight` + `assert-draft-ready`), skips duplicate sends when issue already exists, sends with `--automated`, publishes issue, alerts if draft missing
 - Failure alerting in scheduled workflows uses `npm run alert-workflow-failure`
 
 ## Important Notes
