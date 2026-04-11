@@ -21,6 +21,7 @@
     "pipeline:wrapper-copy": "npx tsx scripts/run-draft-phase.ts --phase wrapper-copy",
     "pipeline:refine": "npx tsx scripts/run-draft-phase.ts --phase refine",
     "pipeline:run-all": "npx tsx scripts/pipeline-run-all.ts",
+    "recover-week": "bash scripts/recover-week.sh",
     "pipeline:verify-local": "npx tsx scripts/pipeline-verify-local.ts",
     "pipeline:verify-ingest-e2e": "npx tsx scripts/verify-ingest-e2e.ts",
     "approve-draft": "npx tsx scripts/approve-draft.ts",
