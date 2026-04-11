@@ -61,6 +61,18 @@ const DEFAULT_RETRY_DELAY_MS = Number.parseInt(
   process.env.OPENROUTER_RETRY_DELAY_MS || '2000',
   10
 );
+// Default output cap. Reasoning-capable models like `openai/gpt-oss-120b`
+// will happily burn their entire output budget on internal `<think>` traces
+// and return `content: null` with `finish_reason: "stop"` if the cap is too
+// small (documented vLLM issue vllm-project/vllm#30498 and reported across
+// multiple inference servers). We default high so the score batch schema
+// (up to 25 article scores per call) has plenty of headroom, and we
+// additionally set `reasoning.exclude: true` so the reasoning tokens don't
+// clobber the structured JSON output.
+const DEFAULT_MAX_TOKENS = Number.parseInt(
+  process.env.OPENROUTER_MAX_TOKENS || '16000',
+  10
+);
 
 // ---------- HTTP abstraction (injectable for tests) ----------
 
@@ -90,12 +102,14 @@ interface OpenRouterChoiceMessage {
   role?: string;
   content?: string | null;
   refusal?: string | null;
+  reasoning?: string | null;
 }
 
 interface OpenRouterChoice {
   index?: number;
   message?: OpenRouterChoiceMessage;
   finish_reason?: string | null;
+  native_finish_reason?: string | null;
   /**
    * OpenRouter sometimes returns an HTTP-200 envelope where the upstream
    * provider failed mid-stream. In that case the choice carries its own
@@ -156,6 +170,15 @@ export function buildOpenRouterRequestBody(
         schema: options.schema,
       },
     },
+    // `reasoning.exclude: true` tells OpenRouter to keep reasoning tokens
+    // server-side so the final `choices[0].message.content` receives the
+    // structured JSON output (not the `<think>` trace). Without this, models
+    // like `openai/gpt-oss-120b:free` may exhaust `max_tokens` on reasoning
+    // and return `content: null` with `finish_reason: "stop"`. This is a
+    // no-op for non-reasoning models.
+    reasoning: { exclude: true },
+    // Generous output cap. See DEFAULT_MAX_TOKENS comment above.
+    max_tokens: DEFAULT_MAX_TOKENS,
     // Hard cost ceiling: OpenRouter rejects any upstream whose per-token
     // price exceeds zero before billing. Combined with a `:free` model id (or
     // the `openrouter/free` meta-router), this guarantees $0 spend.
@@ -226,9 +249,11 @@ export function parseOpenRouterResponse<T = unknown>(rawBody: string): T {
 
   const content = choice?.message?.content;
   if (typeof content !== 'string' || content.trim().length === 0) {
+    const finishReason = choice?.finish_reason ?? 'unknown';
+    const nativeFinishReason = choice?.native_finish_reason ?? 'unknown';
     throw new LlmProviderError(
       'openrouter',
-      `OpenRouter response content is empty or non-string: ${JSON.stringify(
+      `OpenRouter response content is empty or non-string (finish_reason=${finishReason} native_finish_reason=${nativeFinishReason}): ${JSON.stringify(
         choice
       ).slice(0, 300)}`
     );
@@ -353,6 +378,29 @@ export function inspectOpenRouterEnvelope(
       message: `choice-level error (code=${
         choice.error.code ?? 'unknown'
       }): ${message}`,
+    };
+  }
+
+  // No explicit error, but the choice may still be unusable if the model
+  // returned null/empty content. This is the `gpt-oss-120b:free` failure
+  // mode reproduced on 2026-W15 batch 2 — `finish_reason: "stop"` with
+  // `content: null` because the model burned its output budget on
+  // reasoning tokens (or cold-started without producing output). OpenRouter's
+  // own errors-and-debugging guide explicitly recommends retrying with a
+  // simple retry mechanism when no content is generated, so we classify
+  // this as `transient`.
+  //
+  // Refs:
+  //   - https://openrouter.ai/docs/api/reference/errors-and-debugging
+  //     ("When No Content is Generated")
+  //   - https://github.com/vllm-project/vllm/issues/30498
+  const content = choice?.message?.content;
+  if (typeof content !== 'string' || content.trim().length === 0) {
+    const finishReason = choice?.finish_reason ?? 'unknown';
+    const nativeFinishReason = choice?.native_finish_reason ?? 'unknown';
+    return {
+      kind: 'transient',
+      message: `empty content (finish_reason=${finishReason} native_finish_reason=${nativeFinishReason}) — model returned null/empty output`,
     };
   }
 
@@ -714,30 +762,32 @@ OUTPUT RULES (OpenRouter structured output):
         // (e.g. provider_unavailable, upstream 5xx). Inspect the body so
         // those failures get retried instead of crashing the pipeline.
         const envelopeStatus = inspectOpenRouterEnvelope(response.body);
+        const diag = summarizeEnvelopeForLog(response.body);
 
         if (envelopeStatus.kind === 'ok') {
           console.error(
-            `${logPrefix} ${attemptLabel} ok status=${response.status} elapsedMs=${elapsed} bodyLen=${response.body.length}`
+            `${logPrefix} ${attemptLabel} ok status=${response.status} elapsedMs=${elapsed} bodyLen=${response.body.length} finish_reason=${diag.finishReason} native_finish_reason=${diag.nativeFinishReason} contentLen=${diag.contentLen}`
           );
           return response.body;
         }
 
         if (envelopeStatus.kind === 'quota') {
           console.error(
-            `${logPrefix} ${attemptLabel} quota-in-200-envelope elapsedMs=${elapsed} message=${envelopeStatus.message}`
+            `${logPrefix} ${attemptLabel} quota-in-200-envelope elapsedMs=${elapsed} finish_reason=${diag.finishReason} message=${envelopeStatus.message}`
           );
           throw new LlmQuotaError('openrouter', envelopeStatus.message);
         }
 
         if (envelopeStatus.kind === 'transient') {
+          // Always emit a body preview on transient errors — we need to
+          // see what the upstream actually returned when the pipeline
+          // fails on CI (where OPENROUTER_DEBUG is typically unset).
           console.error(
-            `${logPrefix} ${attemptLabel} transient-in-200-envelope elapsedMs=${elapsed} message=${envelopeStatus.message}`
+            `${logPrefix} ${attemptLabel} transient-in-200-envelope elapsedMs=${elapsed} bodyLen=${response.body.length} finish_reason=${diag.finishReason} native_finish_reason=${diag.nativeFinishReason} contentLen=${diag.contentLen} usage=${diag.usage} message=${envelopeStatus.message}`
           );
-          if (process.env.OPENROUTER_DEBUG === '1') {
-            console.error(
-              `${logPrefix} ${attemptLabel} body-preview=${response.body.slice(0, 800)}`
-            );
-          }
+          console.error(
+            `${logPrefix} ${attemptLabel} body-preview=${response.body.slice(0, 1000)}`
+          );
           lastError = new LlmProviderError(
             'openrouter',
             `OpenRouter transient choice error: ${envelopeStatus.message}`
@@ -751,7 +801,10 @@ OUTPUT RULES (OpenRouter structured output):
 
         // kind === 'terminal' — bail out without retrying.
         console.error(
-          `${logPrefix} ${attemptLabel} terminal-in-200-envelope elapsedMs=${elapsed} message=${envelopeStatus.message}`
+          `${logPrefix} ${attemptLabel} terminal-in-200-envelope elapsedMs=${elapsed} finish_reason=${diag.finishReason} message=${envelopeStatus.message}`
+        );
+        console.error(
+          `${logPrefix} ${attemptLabel} body-preview=${response.body.slice(0, 1000)}`
         );
         throw new LlmProviderError(
           'openrouter',
@@ -762,13 +815,13 @@ OUTPUT RULES (OpenRouter structured output):
       // Non-2xx: decide whether to retry, map to quota, or bail out.
       const message = extractErrorMessage(response.body) ||
         `OpenRouter HTTP ${response.status}`;
-      const bodyPreview = response.body.slice(0, 800);
+      const bodyPreview = response.body.slice(0, 1000);
       console.error(
         `${logPrefix} ${attemptLabel} non-2xx status=${response.status} elapsedMs=${elapsed} message=${message}`
       );
-      if (process.env.OPENROUTER_DEBUG === '1') {
-        console.error(`${logPrefix} ${attemptLabel} body-preview=${bodyPreview}`);
-      }
+      // Always emit the body preview on non-2xx errors — we need to see
+      // what the upstream actually returned when CI fails.
+      console.error(`${logPrefix} ${attemptLabel} body-preview=${bodyPreview}`);
 
       if (isQuotaStatusCode(response.status) || isQuotaMessage(message)) {
         throw new LlmQuotaError('openrouter', message);
@@ -823,6 +876,41 @@ function extractErrorMessage(body: string): string | null {
     /* ignore */
   }
   return body.slice(0, 300);
+}
+
+/**
+ * Pull a few high-signal fields out of an OpenRouter response body for
+ * logging. Returns `'n/a'` strings on parse failure rather than throwing so
+ * the log line never replaces the real error the caller is trying to print.
+ */
+export function summarizeEnvelopeForLog(rawBody: string): {
+  finishReason: string;
+  nativeFinishReason: string;
+  contentLen: number;
+  usage: string;
+} {
+  try {
+    const parsed = JSON.parse(rawBody) as OpenRouterEnvelope & {
+      usage?: Record<string, unknown>;
+    };
+    const choice = parsed.choices?.[0];
+    const content = choice?.message?.content;
+    const contentLen =
+      typeof content === 'string' ? content.length : content == null ? 0 : -1;
+    return {
+      finishReason: String(choice?.finish_reason ?? 'n/a'),
+      nativeFinishReason: String(choice?.native_finish_reason ?? 'n/a'),
+      contentLen,
+      usage: parsed.usage ? JSON.stringify(parsed.usage) : 'n/a',
+    };
+  } catch {
+    return {
+      finishReason: 'parse-error',
+      nativeFinishReason: 'parse-error',
+      contentLen: -1,
+      usage: 'parse-error',
+    };
+  }
 }
 
 function createDefaultFetcher(timeoutMs: number): OpenRouterFetcher {
