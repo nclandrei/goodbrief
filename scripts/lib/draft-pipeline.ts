@@ -425,15 +425,21 @@ export async function runScorePhase(
       }
     } catch (error) {
       if (error instanceof GeminiQuotaError || error instanceof LlmQuotaError) {
+        const providerLabel =
+          llm.name === 'claude-cli'
+            ? 'Claude Code'
+            : llm.name === 'openrouter'
+              ? 'OpenRouter'
+              : 'Gemini';
         await sendAlert({
-          title: `${llm.name === 'claude-cli' ? 'Claude Code' : 'Gemini'} quota exhausted`,
+          title: `${providerLabel} quota exhausted`,
           weekId,
           reason: `The ${llm.name} provider is out of quota or rate-limited`,
           details: error.message,
           actionItems: [
             'Wait for the quota to reset',
-            'Re-run the pipeline with a different provider (<code>--llm claude-cli</code> or <code>--llm gemini</code>)',
-            'Or set <code>LLM_FALLBACK=claude-cli</code> to auto-fall-back on quota errors',
+            'Re-run the pipeline with a different provider (<code>--llm gemini</code>, <code>--llm claude-cli</code>, or <code>--llm openrouter</code>)',
+            'Or set <code>LLM_FALLBACK=claude-cli</code> (or <code>openrouter</code>) to auto-fall-back on quota errors',
             'For full recovery, run <code>npm run pipeline:run-all -- --week ' + weekId + ' --llm claude-cli</code> locally',
           ],
         });

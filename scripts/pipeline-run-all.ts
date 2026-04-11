@@ -3,11 +3,13 @@
  * Orchestrator that runs the full draft pipeline for a given week in a
  * single process. Designed for local recovery when the Gemini quota is
  * exhausted: invoke with `--llm claude-cli` and Claude Code will handle
- * every LLM-using phase without an Anthropic API key.
+ * every LLM-using phase without an Anthropic API key, or `--llm openrouter`
+ * to route through OpenRouter's OpenAI-compatible API.
  *
  * Example:
  *   npm run pipeline:run-all -- --week 2026-W15 --llm claude-cli
- *   npm run pipeline:run-all -- --week 2026-W15 --llm gemini --fallback claude-cli
+ *   npm run pipeline:run-all -- --week 2026-W15 --llm openrouter
+ *   npm run pipeline:run-all -- --week 2026-W15 --llm gemini --fallback openrouter
  */
 
 import 'dotenv/config';
