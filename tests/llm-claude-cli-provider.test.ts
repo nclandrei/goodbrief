@@ -115,32 +115,36 @@ const PROCESSED: ProcessedArticle = {
 };
 
 test('scoreArticles: parses Claude structured_output and filters hallucinated IDs', async () => {
+  // Anthropic's --json-schema requires the top-level type to be 'object', so
+  // the provider wraps the array in { scores: [...] } (see commit 050310f).
   const envelope = {
     type: 'result',
-    structured_output: [
-      {
-        id: 'raw-1',
-        summary: 'rezumat',
-        positivity: 85,
-        impact: 70,
-        feltImpact: 72,
-        certainty: 80,
-        humanCloseness: 60,
-        bureaucraticDistance: 20,
-        promoRisk: 10,
-        romaniaRelevant: true,
-        category: 'wins',
-      },
-      // Hallucinated ID that wasn't in the batch — must be filtered out.
-      {
-        id: 'hallucinated',
-        summary: 'x',
-        positivity: 50,
-        impact: 50,
-        romaniaRelevant: true,
-        category: 'wins',
-      },
-    ],
+    structured_output: {
+      scores: [
+        {
+          id: 'raw-1',
+          summary: 'rezumat',
+          positivity: 85,
+          impact: 70,
+          feltImpact: 72,
+          certainty: 80,
+          humanCloseness: 60,
+          bureaucraticDistance: 20,
+          promoRisk: 10,
+          romaniaRelevant: true,
+          category: 'wins',
+        },
+        // Hallucinated ID that wasn't in the batch — must be filtered out.
+        {
+          id: 'hallucinated',
+          summary: 'x',
+          positivity: 50,
+          impact: 50,
+          romaniaRelevant: true,
+          category: 'wins',
+        },
+      ],
+    },
   };
 
   const provider = makeProvider(async () => JSON.stringify(envelope));
@@ -155,7 +159,7 @@ test('scoreArticles: passes --json-schema and --tools "" and --model to the runn
   let capturedArgs: string[] = [];
   const provider = makeProvider(async (_prompt, args) => {
     capturedArgs = args;
-    return JSON.stringify({ structured_output: [] });
+    return JSON.stringify({ structured_output: { scores: [] } });
   });
   await provider.scoreArticles([RAW], { includeReasoning: false });
 

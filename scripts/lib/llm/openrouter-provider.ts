@@ -35,8 +35,30 @@ const DEFAULT_MODEL =
 const DEFAULT_REFERER =
   process.env.OPENROUTER_HTTP_REFERER || 'https://goodbrief.ro';
 const DEFAULT_APP_TITLE = process.env.OPENROUTER_APP_TITLE || 'Good Brief';
+// Per-attempt timeout. 15 minutes is generous but realistic for free-tier
+// models like `openai/gpt-oss-120b:free` that queue requests during peak
+// hours. Because we use `:free` models with a `max_price` guard, slow
+// requests are literally free — so we err on the side of patience.
+// Combined with `maxRetries=4` (5 total attempts) and bounded backoff this
+// gives ~75 minutes of wall clock per batch in the worst case. The `score`
+// job sets `timeout-minutes` to absorb this.
 const DEFAULT_TIMEOUT_MS = Number.parseInt(
-  process.env.OPENROUTER_TIMEOUT_MS || '120000',
+  process.env.OPENROUTER_TIMEOUT_MS || '900000',
+  10
+);
+// How many retries to attempt on transient failures (AbortError, network
+// errors, HTTP 5xx). Total attempts = maxRetries + 1. Set to 0 to disable.
+// Default is intentionally generous because the failure mode we see on
+// `:free` upstream models is intermittent queue timeouts, which almost
+// always succeed on a subsequent attempt.
+const DEFAULT_MAX_RETRIES = Number.parseInt(
+  process.env.OPENROUTER_MAX_RETRIES || '4',
+  10
+);
+// Base delay for exponential backoff between retries (ms). Actual delay is
+// base * 2^attempt, capped at 8x base.
+const DEFAULT_RETRY_DELAY_MS = Number.parseInt(
+  process.env.OPENROUTER_RETRY_DELAY_MS || '2000',
   10
 );
 
@@ -232,6 +254,10 @@ export interface OpenRouterProviderOptions {
   fetcher?: OpenRouterFetcher;
   /** Per-request timeout in milliseconds. */
   timeoutMs?: number;
+  /** Max retries on transient failures (abort, network, HTTP 5xx). */
+  maxRetries?: number;
+  /** Base delay for exponential backoff between retries, in ms. */
+  retryDelayMs?: number;
 }
 
 const SCORE_SCHEMA_CACHE = {
@@ -301,6 +327,8 @@ export class OpenRouterProvider implements LlmProvider {
   private readonly appTitle: string;
   private readonly fetcher: OpenRouterFetcher;
   private readonly timeoutMs: number;
+  private readonly maxRetries: number;
+  private readonly retryDelayMs: number;
 
   constructor(options: OpenRouterProviderOptions) {
     if (!options.apiKey) {
@@ -313,7 +341,12 @@ export class OpenRouterProvider implements LlmProvider {
     this.httpReferer = options.httpReferer ?? DEFAULT_REFERER;
     this.appTitle = options.appTitle ?? DEFAULT_APP_TITLE;
     this.timeoutMs = options.timeoutMs ?? DEFAULT_TIMEOUT_MS;
+    this.maxRetries = options.maxRetries ?? DEFAULT_MAX_RETRIES;
+    this.retryDelayMs = options.retryDelayMs ?? DEFAULT_RETRY_DELAY_MS;
     this.fetcher = options.fetcher ?? createDefaultFetcher(this.timeoutMs);
+    console.error(
+      `[openrouter] provider ready model=${this.model} timeoutMs=${this.timeoutMs} maxRetries=${this.maxRetries} retryDelayMs=${this.retryDelayMs}`
+    );
   }
 
   async scoreArticles(
@@ -512,39 +545,108 @@ OUTPUT RULES (OpenRouter structured output):
       headers['X-Title'] = this.appTitle;
     }
 
-    let response: OpenRouterHttpResponse;
-    try {
-      response = await this.fetcher(OPENROUTER_URL, {
-        method: 'POST',
-        headers,
-        body,
-      });
-    } catch (error) {
-      const message = error instanceof Error ? error.message : String(error);
-      if (isQuotaMessage(message)) {
-        throw new LlmQuotaError('openrouter', message, { cause: error });
+    const totalAttempts = this.maxRetries + 1;
+    const logPrefix = `[openrouter] schema=${options.schemaName} model=${model} promptLen=${prompt.length}`;
+    let lastError: unknown;
+
+    for (let attempt = 1; attempt <= totalAttempts; attempt++) {
+      const attemptLabel = `attempt=${attempt}/${totalAttempts}`;
+      const startedAt = Date.now();
+      console.error(`${logPrefix} ${attemptLabel} starting`);
+
+      let response: OpenRouterHttpResponse | undefined;
+      try {
+        response = await this.fetcher(OPENROUTER_URL, {
+          method: 'POST',
+          headers,
+          body,
+        });
+      } catch (error) {
+        const elapsed = Date.now() - startedAt;
+        const message = error instanceof Error ? error.message : String(error);
+        const isAbort =
+          error instanceof Error && error.name === 'AbortError';
+        console.error(
+          `${logPrefix} ${attemptLabel} fetch-error elapsedMs=${elapsed} abort=${isAbort} message=${message}`
+        );
+
+        // Quota / rate-limit is terminal for this provider.
+        if (isQuotaMessage(message)) {
+          throw new LlmQuotaError('openrouter', message, { cause: error });
+        }
+
+        // Transient (abort, network) errors are retryable.
+        lastError = error;
+        if (attempt < totalAttempts) {
+          await this.sleepBackoff(attempt);
+          continue;
+        }
+        throw new LlmProviderError(
+          'openrouter',
+          `OpenRouter call failed after ${totalAttempts} attempts: ${message}`,
+          { cause: error }
+        );
       }
-      throw new LlmProviderError('openrouter', message, { cause: error });
+
+      const elapsed = Date.now() - startedAt;
+
+      if (response.status >= 200 && response.status < 300) {
+        console.error(
+          `${logPrefix} ${attemptLabel} ok status=${response.status} elapsedMs=${elapsed} bodyLen=${response.body.length}`
+        );
+        return response.body;
+      }
+
+      // Non-2xx: decide whether to retry, map to quota, or bail out.
+      const message = extractErrorMessage(response.body) ||
+        `OpenRouter HTTP ${response.status}`;
+      const bodyPreview = response.body.slice(0, 800);
+      console.error(
+        `${logPrefix} ${attemptLabel} non-2xx status=${response.status} elapsedMs=${elapsed} message=${message}`
+      );
+      if (process.env.OPENROUTER_DEBUG === '1') {
+        console.error(`${logPrefix} ${attemptLabel} body-preview=${bodyPreview}`);
+      }
+
+      if (isQuotaStatusCode(response.status) || isQuotaMessage(message)) {
+        throw new LlmQuotaError('openrouter', message);
+      }
+
+      // 5xx → retry; 4xx → terminal.
+      if (response.status >= 500 && response.status < 600) {
+        lastError = new LlmProviderError(
+          'openrouter',
+          `OpenRouter HTTP ${response.status}: ${message}`
+        );
+        if (attempt < totalAttempts) {
+          await this.sleepBackoff(attempt);
+          continue;
+        }
+      }
+
+      throw new LlmProviderError(
+        'openrouter',
+        `OpenRouter HTTP ${response.status}: ${message}`
+      );
     }
 
-    if (response.status >= 200 && response.status < 300) {
-      return response.body;
-    }
-
-    if (process.env.OPENROUTER_DEBUG === '1') {
-      console.error('[openrouter] non-2xx', response.status, response.body.slice(0, 800));
-    }
-
-    const message = extractErrorMessage(response.body) ||
-      `OpenRouter HTTP ${response.status}`;
-
-    if (isQuotaStatusCode(response.status) || isQuotaMessage(message)) {
-      throw new LlmQuotaError('openrouter', message);
-    }
+    // Unreachable in practice — the loop either returns or throws.
     throw new LlmProviderError(
       'openrouter',
-      `OpenRouter HTTP ${response.status}: ${message}`
+      `OpenRouter call exhausted ${totalAttempts} attempts: ${
+        lastError instanceof Error ? lastError.message : String(lastError)
+      }`,
+      { cause: lastError }
     );
+  }
+
+  private async sleepBackoff(attempt: number): Promise<void> {
+    if (this.retryDelayMs <= 0) return;
+    // attempt is 1-indexed; delay = base * 2^(attempt-1), capped at 8x base.
+    const factor = Math.min(2 ** (attempt - 1), 8);
+    const delay = this.retryDelayMs * factor;
+    console.error(`[openrouter] backing off ${delay}ms before retry #${attempt + 1}`);
+    await new Promise((resolve) => setTimeout(resolve, delay));
   }
 }
 
