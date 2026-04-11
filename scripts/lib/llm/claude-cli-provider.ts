@@ -423,7 +423,10 @@ OUTPUT RULES (Claude Code headless mode):
       '--json-schema',
       JSON.stringify(options.schema),
     ];
-    if (this.fallbackModel) {
+    // claude rejects --fallback-model when it matches the main model, so only
+    // attach it when the two differ. Phases like `score` pin themselves to
+    // `sonnet`, which collides with the default fallback of `sonnet`.
+    if (this.fallbackModel && this.fallbackModel !== model) {
       args.push('--fallback-model', this.fallbackModel);
     }
 
@@ -545,7 +548,22 @@ function spawnAndCollect(
       });
     });
 
-    proc.stdin.write(stdin);
-    proc.stdin.end();
+    // Without an error listener, an EPIPE on stdin (claude closed its stdin
+    // before we finished writing) becomes an unhandled 'error' event and
+    // crashes the whole pipeline. Swallow EPIPE here and let the `close`
+    // handler surface claude's real exit code + stderr instead.
+    proc.stdin.on('error', (error) => {
+      const errno = (error as NodeJS.ErrnoException).code;
+      if (errno === 'EPIPE') return;
+      clearTimeout(timeout);
+      reject(
+        new LlmProviderError('claude-cli', error.message, { cause: error })
+      );
+    });
+
+    // `end(payload)` writes + closes in one shot and handles backpressure
+    // properly (the previous `write` + immediate `end` could race for large
+    // prompts).
+    proc.stdin.end(stdin);
   });
 }
