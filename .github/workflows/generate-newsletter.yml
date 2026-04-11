@@ -104,7 +104,17 @@ jobs:
           # truncation in OpenRouterProvider.scoreArticles) this makes the
           # score phase self-healing for unexpectedly long outputs.
           OPENROUTER_MAX_TOKENS: '32000'
-          SCORE_BATCH_SIZE: '25'
+          # Post-2026-W15 tuning: bumped from 25 → 50 now that the default
+          # model is DeepSeek V3.1 (non-reasoning, ~8k reliable output on
+          # free routes) instead of gpt-oss-120b (reasoning, which burned
+          # the output budget on <think> traces). At ~200 output tokens per
+          # article this puts each batch at ~10k output tokens — still well
+          # inside the practical free-tier cap, and the truncation-split
+          # recovery path in OpenRouterProvider.scoreArticles catches any
+          # provider that silently clamps lower. Halving the request count
+          # also stays comfortably inside the OpenRouter free-tier 1000
+          # req/day ceiling even with reruns.
+          SCORE_BATCH_SIZE: '50'
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
       - uses: actions/upload-artifact@v4
