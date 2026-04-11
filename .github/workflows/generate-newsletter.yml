@@ -90,7 +90,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
-          OPENROUTER_TIMEOUT_MS: '180000'
+          OPENROUTER_TIMEOUT_MS: '600000'
           SCORE_BATCH_SIZE: '25'
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
@@ -120,7 +120,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
-          OPENROUTER_TIMEOUT_MS: '180000'
+          OPENROUTER_TIMEOUT_MS: '600000'
       - uses: actions/upload-artifact@v4
         with:
           name: pipeline-semantic-dedup-${{ needs.determine_week.outputs.id }}
@@ -147,7 +147,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
-          OPENROUTER_TIMEOUT_MS: '180000'
+          OPENROUTER_TIMEOUT_MS: '600000'
       - uses: actions/upload-artifact@v4
         with:
           name: pipeline-counter-signal-validate-${{ needs.determine_week.outputs.id }}
@@ -195,7 +195,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
-          OPENROUTER_TIMEOUT_MS: '180000'
+          OPENROUTER_TIMEOUT_MS: '600000'
       - uses: actions/upload-artifact@v4
         with:
           name: pipeline-wrapper-copy-${{ needs.determine_week.outputs.id }}
@@ -222,7 +222,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
-          OPENROUTER_TIMEOUT_MS: '180000'
+          OPENROUTER_TIMEOUT_MS: '600000'
       - uses: actions/upload-artifact@v4
         with:
           name: pipeline-refine-${{ needs.determine_week.outputs.id }}

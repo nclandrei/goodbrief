@@ -76,7 +76,14 @@ function errorResponse(status: number, message: string) {
 
 function makeProvider(
   fakeFetcher: OpenRouterFetcher,
-  overrides: { apiKey?: string; model?: string; referer?: string; title?: string } = {}
+  overrides: {
+    apiKey?: string;
+    model?: string;
+    referer?: string;
+    title?: string;
+    maxRetries?: number;
+    retryDelayMs?: number;
+  } = {}
 ): OpenRouterProvider {
   return new OpenRouterProvider({
     apiKey: overrides.apiKey ?? 'test-or-key',
@@ -84,7 +91,19 @@ function makeProvider(
     httpReferer: overrides.referer,
     appTitle: overrides.title,
     fetcher: fakeFetcher,
+    // Tests that don't care about retry still see the production default, but
+    // tests that exercise retry pass maxRetries explicitly AND set
+    // retryDelayMs=0 so the suite stays fast.
+    maxRetries: overrides.maxRetries,
+    retryDelayMs: overrides.retryDelayMs,
   });
+}
+
+/** Mimics what the default fetcher throws when its AbortController fires. */
+function makeAbortError(): Error {
+  const err = new Error('This operation was aborted');
+  err.name = 'AbortError';
+  return err;
 }
 
 // ---------- request body builder ----------
@@ -379,6 +398,122 @@ test('Fetcher throwing ENOTFOUND is mapped to LlmProviderError (not quota)', asy
     (err: unknown) =>
       err instanceof LlmProviderError && !(err instanceof LlmQuotaError)
   );
+});
+
+// ---------- retry on transient failures ----------
+//
+// These tests pin the behavior that a single slow / hung request on a free-
+// tier OpenRouter model must not kill the whole draft pipeline. The original
+// bug reproduced on 2026-W15 when `openai/gpt-oss-120b:free` took longer
+// than OPENROUTER_TIMEOUT_MS (180s), the AbortController fired, and the
+// score phase exited with "This operation was aborted".
+
+test('call retries on AbortError and succeeds on the second attempt', async () => {
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      if (attempts === 1) {
+        throw makeAbortError();
+      }
+      return okResponse(chatEnvelope([]));
+    },
+    { maxRetries: 2, retryDelayMs: 0 }
+  );
+
+  const scores = await provider.scoreArticles([RAW], { includeReasoning: false });
+  assert.deepEqual(scores, []);
+  assert.equal(attempts, 2, 'expected one retry after the initial AbortError');
+});
+
+test('call retries on generic network error ("fetch failed") and eventually succeeds', async () => {
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      if (attempts < 3) {
+        throw new Error('fetch failed');
+      }
+      return okResponse(chatEnvelope([]));
+    },
+    { maxRetries: 3, retryDelayMs: 0 }
+  );
+
+  await provider.scoreArticles([RAW], { includeReasoning: false });
+  assert.equal(attempts, 3);
+});
+
+test('call retries on HTTP 502 (bad gateway) and succeeds when the next attempt is 200', async () => {
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      if (attempts === 1) {
+        return errorResponse(502, 'Bad gateway');
+      }
+      return okResponse(chatEnvelope([]));
+    },
+    { maxRetries: 2, retryDelayMs: 0 }
+  );
+
+  await provider.scoreArticles([RAW], { includeReasoning: false });
+  assert.equal(attempts, 2);
+});
+
+test('call exhausts retries on persistent AbortError and throws LlmProviderError (not quota)', async () => {
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      throw makeAbortError();
+    },
+    { maxRetries: 2, retryDelayMs: 0 }
+  );
+
+  await assert.rejects(
+    () => provider.scoreArticles([RAW], { includeReasoning: false }),
+    (err: unknown) => {
+      if (!(err instanceof LlmProviderError)) return false;
+      if (err instanceof LlmQuotaError) return false;
+      return /abort/i.test(err.message);
+    }
+  );
+  assert.equal(attempts, 3, 'initial attempt + 2 retries = 3 total');
+});
+
+test('call does NOT retry HTTP 429 (quota) — surfaces immediately as LlmQuotaError', async () => {
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      return errorResponse(429, 'Rate limit exceeded');
+    },
+    { maxRetries: 3, retryDelayMs: 0 }
+  );
+
+  await assert.rejects(
+    () => provider.scoreArticles([RAW], { includeReasoning: false }),
+    (err: unknown) => err instanceof LlmQuotaError
+  );
+  assert.equal(attempts, 1, 'quota errors must never be retried');
+});
+
+test('call does NOT retry HTTP 401 (bad auth) — surfaces immediately as non-quota LlmProviderError', async () => {
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      return errorResponse(401, 'Invalid api key');
+    },
+    { maxRetries: 3, retryDelayMs: 0 }
+  );
+
+  await assert.rejects(
+    () => provider.scoreArticles([RAW], { includeReasoning: false }),
+    (err: unknown) =>
+      err instanceof LlmProviderError && !(err instanceof LlmQuotaError)
+  );
+  assert.equal(attempts, 1, 'auth errors must never be retried');
 });
 
 // ---------- identity ----------
