@@ -33,10 +33,18 @@ import type {
 import { LlmProviderError, LlmQuotaError, isQuotaMessage } from './provider.js';
 
 const DEFAULT_CLAUDE_BIN = process.env.CLAUDE_CLI_BIN || 'claude';
-const DEFAULT_MODEL = process.env.CLAUDE_CLI_MODEL || 'opus';
-const DEFAULT_FALLBACK_MODEL = process.env.CLAUDE_CLI_FALLBACK_MODEL || 'sonnet';
+// Use the 1M-context Sonnet 4.6 variant by default. The bracket suffix is the
+// Claude Code CLI's selector for the long-context variant — natively 1M, no
+// beta header, no API key required (works with subscription OAuth).
+const DEFAULT_MODEL =
+  process.env.CLAUDE_CLI_MODEL || 'claude-sonnet-4-6[1m]';
+const DEFAULT_FALLBACK_MODEL =
+  process.env.CLAUDE_CLI_FALLBACK_MODEL || 'sonnet';
+// 30 minutes. Score batches of 200 articles can blow past 15 min on sonnet,
+// and the score phase has no per-batch checkpoint, so a single timeout costs
+// the whole phase. Combine with SCORE_BATCH_SIZE=50 for fast, safe runs.
 const DEFAULT_TIMEOUT_MS = Number.parseInt(
-  process.env.CLAUDE_CLI_TIMEOUT_MS || '900000',
+  process.env.CLAUDE_CLI_TIMEOUT_MS || '1800000',
   10
 );
 
@@ -267,7 +275,7 @@ OUTPUT RULES (Claude Code headless mode):
     const stdout = await this.callClaude(prompt, {
       label: 'score',
       schema,
-      model: process.env.CLAUDE_CLI_SCORE_MODEL || 'sonnet',
+      model: process.env.CLAUDE_CLI_SCORE_MODEL || 'claude-sonnet-4-6[1m]',
     });
 
     const parsed = parseClaudeEnvelope<{ scores?: unknown }>(stdout);
