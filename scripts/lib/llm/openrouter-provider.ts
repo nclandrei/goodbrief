@@ -30,8 +30,23 @@ import { LlmProviderError, LlmQuotaError, isQuotaMessage } from './provider.js';
 
 const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions';
 
-const DEFAULT_MODEL =
-  process.env.OPENROUTER_MODEL || 'anthropic/claude-sonnet-4.5';
+/**
+ * Literal fallback used when neither `OPENROUTER_MODEL` nor a per-phase
+ * override is set. Picked for the Good Brief pipeline based on the
+ * 2026-W15 post-mortem:
+ *
+ * - **Free** (`:free` suffix), so it works under the OpenRouter free tier
+ *   and with our `max_price: { prompt: 0, completion: 0 }` guard.
+ * - **Non-reasoning** — unlike `openai/gpt-oss-120b:free`, DeepSeek V3.1
+ *   does not burn its output-token budget on internal `<think>` traces,
+ *   so large structured outputs (e.g. 25-article score batches) fit
+ *   comfortably in the default 16k `max_tokens` cap without truncation.
+ * - **Strong multilingual** (incl. Romanian) and supports OpenAI-style
+ *   `response_format: json_schema` structured outputs.
+ */
+export const DEFAULT_FALLBACK_MODEL = 'deepseek/deepseek-chat-v3.1:free';
+
+const DEFAULT_MODEL = process.env.OPENROUTER_MODEL || DEFAULT_FALLBACK_MODEL;
 const DEFAULT_REFERER =
   process.env.OPENROUTER_HTTP_REFERER || 'https://goodbrief.ro';
 const DEFAULT_APP_TITLE = process.env.OPENROUTER_APP_TITLE || 'Good Brief';
@@ -404,6 +419,19 @@ export function inspectOpenRouterEnvelope(
     };
   }
 
+  // Content is non-empty but `finish_reason: "length"` means the model ran
+  // out of `max_tokens` mid-output. The payload will be structurally
+  // truncated JSON (unbalanced braces/strings) and retrying the same prompt
+  // will re-truncate at the same place — this is the 2026-W15 batch 9
+  // failure mode. Classify as `terminal` with a message that points at the
+  // real fix: reduce batch size or raise `OPENROUTER_MAX_TOKENS`.
+  if (choice?.finish_reason === 'length') {
+    return {
+      kind: 'terminal',
+      message: `output truncated (finish_reason=length, contentLen=${content.length}) — the model hit max_tokens mid-output. Reduce batch size (e.g. SCORE_BATCH_SIZE) or raise OPENROUTER_MAX_TOKENS, or switch to a non-reasoning model with a larger output budget.`,
+    };
+  }
+
   return { kind: 'ok' };
 }
 
@@ -577,6 +605,7 @@ OUTPUT RULES (OpenRouter structured output):
     const raw = await this.call(prompt, {
       schema: SEMANTIC_DEDUP_SCHEMA,
       schemaName: 'semantic_dedup',
+      model: process.env.OPENROUTER_DEDUP_MODEL || this.model,
     });
 
     const parsed = parseOpenRouterResponse<SemanticDedupResponse>(raw);
@@ -602,6 +631,7 @@ OUTPUT RULES (OpenRouter structured output):
     const raw = await this.call(prompt, {
       schema: COUNTER_SIGNAL_SCHEMA,
       schemaName: 'counter_signal',
+      model: process.env.OPENROUTER_COUNTER_SIGNAL_MODEL || this.model,
     });
 
     const parsed = parseOpenRouterResponse<CounterSignalClassifierResult>(raw);
@@ -633,6 +663,7 @@ OUTPUT RULES (OpenRouter structured output):
     const raw = await this.call(prompt, {
       schema: WRAPPER_COPY_SCHEMA,
       schemaName: 'wrapper_copy',
+      model: process.env.OPENROUTER_WRAPPER_COPY_MODEL || this.model,
     });
 
     const parsed = parseOpenRouterResponse<Partial<WrapperCopy>>(raw);

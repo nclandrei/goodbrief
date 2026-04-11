@@ -4,6 +4,7 @@ import {
   OpenRouterProvider,
   buildOpenRouterRequestBody,
   parseOpenRouterResponse,
+  DEFAULT_FALLBACK_MODEL,
 } from '../scripts/lib/llm/openrouter-provider.js';
 import type { OpenRouterFetcher } from '../scripts/lib/llm/openrouter-provider.js';
 import {
@@ -847,4 +848,205 @@ test('call does NOT retry HTTP 401 (bad auth) — surfaces immediately as non-qu
 test('provider name is "openrouter"', () => {
   const provider = makeProvider(async () => okResponse(chatEnvelope([])));
   assert.equal(provider.name, 'openrouter');
+});
+
+// ---------- default fallback model ----------
+//
+// The default fallback must be a genuinely free, reliable, non-reasoning
+// model. Reasoning models like gpt-oss-120b:free exhausted their output
+// budget on internal reasoning tokens and truncated structured JSON output
+// (reproduced on 2026-W15 batch 9). DeepSeek V3.1 is non-reasoning by
+// default, supports structured outputs, handles Romanian well, and is free.
+test('DEFAULT_FALLBACK_MODEL points to a free non-reasoning model', () => {
+  assert.equal(DEFAULT_FALLBACK_MODEL, 'deepseek/deepseek-chat-v3.1:free');
+});
+
+// ---------- per-phase model overrides ----------
+//
+// Each phase of the draft pipeline can optionally pick a specialized model
+// via an env var, falling back to `OPENROUTER_MODEL` (the provider's
+// default). This lets us route cheap analytical phases (dedup,
+// counter-signal) to a small fast model like `google/gemma-3-27b-it:free`
+// while keeping voice-sensitive phases on DeepSeek V3.1.
+//
+// Existing tests already cover the fallback path (they never set phase
+// env vars), so here we only pin the "env var is honored" half.
+
+function withEnv<T>(key: string, value: string, fn: () => Promise<T> | T): Promise<T> {
+  const prev = process.env[key];
+  process.env[key] = value;
+  return Promise.resolve()
+    .then(fn)
+    .finally(() => {
+      if (prev === undefined) {
+        delete process.env[key];
+      } else {
+        process.env[key] = prev;
+      }
+    });
+}
+
+test('semanticDedup honors OPENROUTER_DEDUP_MODEL when set', async () => {
+  await withEnv('OPENROUTER_DEDUP_MODEL', 'google/gemma-3-27b-it:free', async () => {
+    let capturedModel = '';
+    const provider = makeProvider(
+      async (_url, init) => {
+        capturedModel = JSON.parse(init.body).model;
+        return okResponse(chatEnvelope({ groups: [] }));
+      },
+      { model: 'base/model' }
+    );
+    await provider.semanticDedup('2026-W15', [
+      PROCESSED,
+      { ...PROCESSED, id: 'p-2' },
+    ]);
+    assert.equal(capturedModel, 'google/gemma-3-27b-it:free');
+  });
+});
+
+test('classifyCounterSignal honors OPENROUTER_COUNTER_SIGNAL_MODEL when set', async () => {
+  await withEnv(
+    'OPENROUTER_COUNTER_SIGNAL_MODEL',
+    'google/gemma-3-27b-it:free',
+    async () => {
+      let capturedModel = '';
+      const provider = makeProvider(
+        async (_url, init) => {
+          capturedModel = JSON.parse(init.body).model;
+          return okResponse(
+            chatEnvelope({ verdict: 'none', reason: 'ok', relatedArticleIds: [] })
+          );
+        },
+        { model: 'base/model' }
+      );
+      await provider.classifyCounterSignal({
+        weekId: '2026-W15',
+        candidate: PROCESSED,
+        relatedArticles: [RAW],
+      });
+      assert.equal(capturedModel, 'google/gemma-3-27b-it:free');
+    }
+  );
+});
+
+test('generateWrapperCopy honors OPENROUTER_WRAPPER_COPY_MODEL when set', async () => {
+  await withEnv(
+    'OPENROUTER_WRAPPER_COPY_MODEL',
+    'deepseek/deepseek-chat-v3.1:free',
+    async () => {
+      let capturedModel = '';
+      const provider = makeProvider(
+        async (_url, init) => {
+          capturedModel = JSON.parse(init.body).model;
+          return okResponse(
+            chatEnvelope({
+              greeting: 'Bună',
+              intro: 'intro',
+              signOff: 'pa',
+              shortSummary: 'teaser',
+            })
+          );
+        },
+        { model: 'base/model' }
+      );
+      await provider.generateWrapperCopy('2026-W15', [PROCESSED]);
+      assert.equal(capturedModel, 'deepseek/deepseek-chat-v3.1:free');
+    }
+  );
+});
+
+// ---------- truncation detection (finish_reason=length with non-empty content) ----------
+//
+// 2026-W15 batch 9 failed with: contentLen=18063 finish_reason=length,
+// followed by "Unbalanced JSON value in LLM response". The model hit its
+// max_tokens cap mid-JSON and the parser then choked on the truncated
+// payload. The existing empty-content handler (line ~720) covers the case
+// where length-cutoff yields null/empty content (retryable cold-start),
+// but truncated non-empty content is a different failure mode:
+//
+//   1. Retrying the same prompt will re-truncate at the same place, so
+//      retry is wasted budget on the free tier.
+//   2. The root cause is "batch too big for max_tokens" — the fix is to
+//      reduce SCORE_BATCH_SIZE or switch to a larger-output model, not
+//      to retry.
+//
+// So we classify it as `terminal` and surface an error message that points
+// at the real cause instead of the misleading "Unbalanced JSON".
+test('call treats finish_reason=length with truncated non-empty content as terminal (no retry)', async () => {
+  const truncatedContent =
+    '[{"id":"raw-1","summary":"rezumat lung","positivity":85,"impact":70,"feltImp';
+  const truncatedBody = JSON.stringify({
+    id: 'gen-truncated',
+    object: 'chat.completion',
+    choices: [
+      {
+        index: 0,
+        finish_reason: 'length',
+        native_finish_reason: 'length',
+        message: {
+          role: 'assistant',
+          content: truncatedContent,
+          refusal: null,
+        },
+      },
+    ],
+  });
+
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      return okResponse(truncatedBody);
+    },
+    { maxRetries: 3, retryDelayMs: 0 }
+  );
+
+  await assert.rejects(
+    () => provider.scoreArticles([RAW], { includeReasoning: false }),
+    (err: unknown) => {
+      if (!(err instanceof LlmProviderError)) return false;
+      if (err instanceof LlmQuotaError) return false;
+      // Message must clearly call out truncation + finish_reason, not
+      // "Unbalanced JSON value".
+      return (
+        /truncat/i.test(err.message) &&
+        /length|max_tokens/i.test(err.message)
+      );
+    }
+  );
+  assert.equal(
+    attempts,
+    1,
+    'truncation must not be retried — the same prompt will re-truncate at the same place'
+  );
+});
+
+test('inspectOpenRouterEnvelope: length cutoff with null content remains transient (retryable)', async () => {
+  // Guards against regressions in the existing empty-content retry path —
+  // the new truncation detection must NOT swallow the null-content case.
+  const emptyLengthBody = JSON.stringify({
+    id: 'gen-empty-length',
+    object: 'chat.completion',
+    choices: [
+      {
+        index: 0,
+        finish_reason: 'length',
+        native_finish_reason: 'length',
+        message: { role: 'assistant', content: null },
+      },
+    ],
+  });
+
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      if (attempts === 1) return okResponse(emptyLengthBody);
+      return okResponse(chatEnvelope([]));
+    },
+    { maxRetries: 2, retryDelayMs: 0 }
+  );
+
+  await provider.scoreArticles([RAW], { includeReasoning: false });
+  assert.equal(attempts, 2, 'null-content length cutoffs stay retryable');
 });
