@@ -784,6 +784,93 @@ test('call exhausts retries on persistent null content and throws LlmProviderErr
   assert.equal(attempts, 3, 'initial + 2 retries = 3 total');
 });
 
+// Repro for the 2026-W15 batch-11 failure: HTTP-200 envelope with
+// `finish_reason: "stop"` and a non-empty content field (5.7KB), but the JSON
+// inside `message.content` was structurally truncated — unbalanced braces /
+// strings. `inspectOpenRouterEnvelope` classified it as `ok`, the retry loop
+// returned, and the downstream `parseJsonPayload` crashed the whole score
+// phase with "Unbalanced JSON value in LLM response".
+//
+// This happens on free-tier upstreams that stop streaming mid-output without
+// setting `finish_reason: "length"`. OpenRouter's own guidance for no/partial
+// content is "retry with a simple retry mechanism", so we must classify
+// unparseable content as transient and retry it inside the existing loop.
+test('call retries when content is non-empty but structurally truncated JSON (unbalanced)', async () => {
+  const truncatedBody = JSON.stringify({
+    id: 'gen-truncated',
+    object: 'chat.completion',
+    choices: [
+      {
+        index: 0,
+        finish_reason: 'stop',
+        native_finish_reason: 'stop',
+        message: {
+          role: 'assistant',
+          // Unbalanced: the string value never closes, so `parseJsonPayload`
+          // throws "Unbalanced JSON value in LLM response".
+          content: '[{"id":"raw-1","positivity":85,"summary":"unfinished',
+          refusal: null,
+        },
+      },
+    ],
+  });
+
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      if (attempts === 1) return okResponse(truncatedBody);
+      return okResponse(chatEnvelope([]));
+    },
+    { maxRetries: 2, retryDelayMs: 0 }
+  );
+
+  const scores = await provider.scoreArticles([RAW], { includeReasoning: false });
+  assert.deepEqual(scores, []);
+  assert.equal(attempts, 2, 'expected one retry after the truncated-JSON response');
+});
+
+test('call exhausts retries on persistent truncated JSON and throws non-quota LlmProviderError mentioning parse failure', async () => {
+  const persistentTruncated = JSON.stringify({
+    id: 'gen-persistent-truncated',
+    object: 'chat.completion',
+    choices: [
+      {
+        index: 0,
+        finish_reason: 'stop',
+        native_finish_reason: 'stop',
+        message: {
+          role: 'assistant',
+          content: '[{"id":"raw-1","positivity":85',
+          refusal: null,
+        },
+      },
+    ],
+  });
+
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      return okResponse(persistentTruncated);
+    },
+    { maxRetries: 2, retryDelayMs: 0 }
+  );
+
+  await assert.rejects(
+    () => provider.scoreArticles([RAW], { includeReasoning: false }),
+    (err: unknown) => {
+      if (!(err instanceof LlmProviderError)) return false;
+      if (err instanceof LlmQuotaError) return false;
+      return (
+        /unbalanced|parse|truncat|unparseable/i.test(err.message) &&
+        /finish_reason|stop/i.test(err.message)
+      );
+    }
+  );
+  assert.equal(attempts, 3, 'initial + 2 retries = 3 total');
+});
+
 test('parseOpenRouterResponse: empty-content body surfaces LlmProviderError mentioning finish_reason', () => {
   const body = JSON.stringify({
     choices: [
