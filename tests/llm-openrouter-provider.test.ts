@@ -549,6 +549,115 @@ test('call does NOT retry HTTP 429 (quota) — surfaces immediately as LlmQuotaE
   assert.equal(attempts, 1, 'quota errors must never be retried');
 });
 
+// Repro for the 2026-W15 counter-signal-validate failure:
+//
+//   HTTP 429 with body:
+//   {"error":{"message":"Provider returned error","code":429,"metadata":{
+//     "raw":"google/gemma-3-27b-it:free is temporarily rate-limited upstream.
+//            Please retry shortly, or add your own key ...",
+//     "provider_name":"Google AI Studio","is_byok":false}}}
+//
+// This is NOT our account being out of quota — it's the upstream provider
+// briefly throttling a free-tier model. OpenRouter itself explicitly says
+// "Please retry shortly", so the whole draft pipeline crashing after one
+// attempt is wrong. The call loop must classify `metadata.raw`-flagged
+// transient upstream rate-limits as retryable and honor maxRetries.
+test('call retries HTTP 429 when metadata.raw reports transient upstream rate-limit', async () => {
+  const transientRateLimitBody = JSON.stringify({
+    error: {
+      message: 'Provider returned error',
+      code: 429,
+      metadata: {
+        raw: 'google/gemma-3-27b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits.',
+        provider_name: 'Google AI Studio',
+        is_byok: false,
+      },
+    },
+  });
+
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      if (attempts < 3) {
+        return { status: 429, body: transientRateLimitBody };
+      }
+      return okResponse(chatEnvelope([]));
+    },
+    { maxRetries: 3, retryDelayMs: 0 }
+  );
+
+  const scores = await provider.scoreArticles([RAW], { includeReasoning: false });
+  assert.deepEqual(scores, []);
+  assert.equal(
+    attempts,
+    3,
+    'transient upstream rate-limit must be retried until success'
+  );
+});
+
+test('call exhausts retries on persistent transient upstream rate-limit and throws non-quota LlmProviderError', async () => {
+  const transientRateLimitBody = JSON.stringify({
+    error: {
+      message: 'Provider returned error',
+      code: 429,
+      metadata: {
+        raw: 'google/gemma-3-27b-it:free is temporarily rate-limited upstream. Please retry shortly.',
+        provider_name: 'Google AI Studio',
+        is_byok: false,
+      },
+    },
+  });
+
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      return { status: 429, body: transientRateLimitBody };
+    },
+    { maxRetries: 2, retryDelayMs: 0 }
+  );
+
+  await assert.rejects(
+    () => provider.scoreArticles([RAW], { includeReasoning: false }),
+    (err: unknown) => {
+      if (!(err instanceof LlmProviderError)) return false;
+      // Must NOT surface as a quota error — the pipeline would otherwise
+      // bail out without ever falling back or retrying.
+      if (err instanceof LlmQuotaError) return false;
+      return /rate.?limit|upstream/i.test(err.message);
+    }
+  );
+  assert.equal(attempts, 3, 'initial + 2 retries = 3 total');
+});
+
+test('call still surfaces HTTP 429 without transient metadata as LlmQuotaError (terminal)', async () => {
+  // Regression guard: generic 429 with no transient hint in metadata.raw
+  // still means our account is out of quota and must NOT be retried.
+  const terminalQuotaBody = JSON.stringify({
+    error: {
+      message: 'Rate limit exceeded. Please add credits.',
+      code: 429,
+      metadata: { raw: 'daily free-tier quota exhausted', provider_name: 'OpenRouter' },
+    },
+  });
+
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      return { status: 429, body: terminalQuotaBody };
+    },
+    { maxRetries: 3, retryDelayMs: 0 }
+  );
+
+  await assert.rejects(
+    () => provider.scoreArticles([RAW], { includeReasoning: false }),
+    (err: unknown) => err instanceof LlmQuotaError
+  );
+  assert.equal(attempts, 1, 'terminal quota errors must never be retried');
+});
+
 // Repro for 2026-W15: an HTTP-200 envelope whose single choice carries
 // `error.code: 502` + `metadata.error_type: provider_unavailable` is the
 // exact failure mode that killed the score phase. The transport doesn't
