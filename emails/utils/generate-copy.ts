@@ -24,6 +24,39 @@ Language rules:
 
 Generate wrapper copy for the newsletter email. Output valid JSON only.`;
 
+export function buildWrapperCopyPrompt(
+  articles: ProcessedArticle[],
+  weekId: string
+): string {
+  const articleSummaries = articles
+    .slice(0, 10)
+    .map((a, i) => `${i + 1}. [${a.category}] ${a.originalTitle}: ${a.summary}`)
+    .join("\n");
+
+  return `${PROMPT_PREFIX}
+
+Generate wrapper copy for Good Brief newsletter week ${weekId}.
+
+This week's articles:
+${articleSummaries}
+
+Generate JSON with:
+1. "greeting" - Variation on "Bună dimineața!" (can include 👋)
+2. "intro" - 2-3 sentences themed to this week's stories, friendly and engaging
+3. "signOff" - Fresh closing message (can include 🙏), warm but not cheesy
+4. "shortSummary" - A short teaser (60-80 characters max) highlighting 2-3 key topics, for archive listing
+
+Example format:
+{
+  "greeting": "Bună dimineața! 👋",
+  "intro": "Săptămâna asta avem de toate: de la un ONG care a salvat o pădure întreagă, până la un startup românesc care cucerește Europa. Grab your coffee și hai să vedem ce vești bune avem.",
+  "signOff": "Thanks for reading! Sperăm că ți-am făcut ziua puțin mai bună. 🙏",
+  "shortSummary": "ONG salvează o pădure, startup cucerește Europa."
+}
+
+Return only the JSON object, no markdown code blocks.`;
+}
+
 export async function generateWrapperCopy(
   articles: ProcessedArticle[],
   weekId: string
@@ -59,33 +92,7 @@ export async function generateWrapperCopy(
     } as any,
   });
 
-  const articleSummaries = articles
-    .slice(0, 10)
-    .map((a, i) => `${i + 1}. [${a.category}] ${a.originalTitle}: ${a.summary}`)
-    .join("\n");
-
-  const prompt = `${PROMPT_PREFIX}
-
-Generate wrapper copy for Good Brief newsletter week ${weekId}.
-
-This week's articles:
-${articleSummaries}
-
-Generate JSON with:
-1. "greeting" - Variation on "Bună dimineața!" (can include 👋)
-2. "intro" - 2-3 sentences themed to this week's stories, friendly and engaging
-3. "signOff" - Fresh closing message (can include 🙏), warm but not cheesy
-4. "shortSummary" - A short teaser (60-80 characters max) highlighting 2-3 key topics, for archive listing
-
-Example format:
-{
-  "greeting": "Bună dimineața! 👋",
-  "intro": "Săptămâna asta avem de toate: de la un ONG care a salvat o pădure întreagă, până la un startup românesc care cucerește Europa. Grab your coffee și hai să vedem ce vești bune avem.",
-  "signOff": "Thanks for reading! Sperăm că ți-am făcut ziua puțin mai bună. 🙏",
-  "shortSummary": "ONG salvează o pădure, startup cucerește Europa."
-}
-
-Return only the JSON object, no markdown code blocks.`;
+  const prompt = buildWrapperCopyPrompt(articles, weekId);
 
   const result = await model.generateContent(prompt);
   const content = result.response.text();

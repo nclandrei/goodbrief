@@ -13,6 +13,8 @@ interface SemanticDedupResponse {
   groups: SemanticDedupGroupResponse[];
 }
 
+export { normalizeGroups, mergeOverlappingGroups };
+
 export interface SemanticDuplicateCluster {
   keepId: string;
   dropIds: string[];
@@ -122,7 +124,7 @@ function mergeOverlappingGroups(groups: ValidDuplicateGroup[]): ValidDuplicateGr
   return merged;
 }
 
-function getSemanticDedupPrompt(weekId: string, articles: ProcessedArticle[]): string {
+export function getSemanticDedupPrompt(weekId: string, articles: ProcessedArticle[]): string {
   const articleList = articles
     .map((article, index) => {
       const shortSummary = article.summary.replace(/\s+/g, ' ').slice(0, 220);

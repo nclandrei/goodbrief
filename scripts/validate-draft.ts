@@ -5,11 +5,14 @@ import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import { refreshDraftValidation } from './lib/draft-pipeline.js';
+import {
+  createLlmProvider,
+  resolveProviderSpecFromArgs,
+} from './lib/llm/factory.js';
 import { type CounterSignalClassifier } from './lib/counter-signal-validation.js';
 import {
   getRootDir,
   resolveDraftWeekId,
-  requireGeminiApiKey,
 } from './lib/pipeline-artifacts.js';
 import { GeminiQuotaError } from './lib/gemini.js';
 
@@ -49,10 +52,13 @@ async function main(): Promise<void> {
   console.log(`Re-validating draft candidates for ${weekId}...`);
 
   try {
+    const llm = createLlmProvider(
+      resolveProviderSpecFromArgs(process.argv.slice(2))
+    );
     const validation = await refreshDraftValidation({
       rootDir: ROOT_DIR,
       weekId,
-      apiKey: requireGeminiApiKey(),
+      llm,
       classifier: mockClassifier,
     });
 

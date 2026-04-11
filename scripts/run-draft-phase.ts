@@ -18,9 +18,13 @@ import {
 import {
   getPipelineArtifactPath,
   getRootDir,
-  requireGeminiApiKey,
   resolveWeekId,
 } from './lib/pipeline-artifacts.js';
+import {
+  createLlmProvider,
+  resolveProviderSpecFromArgs,
+} from './lib/llm/factory.js';
+import type { LlmProvider } from './lib/llm/provider.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -64,6 +68,20 @@ function hasFlag(args: string[], flag: string): boolean {
   return args.includes(flag);
 }
 
+function resolveLlm(args: string[], phase: DraftPipelinePhase): LlmProvider | null {
+  // Phases that don't touch the LLM don't need a provider.
+  if (phase === 'prepare' || phase === 'select') {
+    return null;
+  }
+
+  const spec = resolveProviderSpecFromArgs(args);
+  const provider = createLlmProvider(spec);
+  console.log(
+    `[llm] phase=${phase} provider=${spec.provider}${spec.fallback ? ` (fallback=${spec.fallback})` : ''}`
+  );
+  return provider;
+}
+
 async function main(): Promise<void> {
   const args = process.argv.slice(2);
   const phase = parsePhase(args);
@@ -79,22 +97,23 @@ async function main(): Promise<void> {
   }
 
   const mockClassifier = loadMockClassifier();
+  const llm = resolveLlm(args, phase);
 
   switch (phase) {
     case 'prepare':
       await runPreparePhase(ROOT_DIR, weekId);
       break;
     case 'score':
-      await runScorePhase(ROOT_DIR, weekId, requireGeminiApiKey());
+      await runScorePhase(ROOT_DIR, weekId, llm!);
       break;
     case 'semantic-dedup':
-      await runSemanticDedupPhase(ROOT_DIR, weekId, requireGeminiApiKey());
+      await runSemanticDedupPhase(ROOT_DIR, weekId, llm!);
       break;
     case 'counter-signal-validate':
       await runCounterSignalValidatePhase({
         rootDir: ROOT_DIR,
         weekId,
-        apiKey: requireGeminiApiKey(),
+        llm: llm!,
         classifier: mockClassifier,
       });
       break;
@@ -102,11 +121,10 @@ async function main(): Promise<void> {
       await runSelectPhase(ROOT_DIR, weekId);
       break;
     case 'wrapper-copy':
-      requireGeminiApiKey();
-      await runWrapperCopyPhase(ROOT_DIR, weekId);
+      await runWrapperCopyPhase(ROOT_DIR, weekId, llm!);
       break;
     case 'refine':
-      await runRefinePhase(ROOT_DIR, weekId, requireGeminiApiKey());
+      await runRefinePhase(ROOT_DIR, weekId, llm!);
       break;
     default:
       throw new Error(`Unsupported phase: ${phase}`);
