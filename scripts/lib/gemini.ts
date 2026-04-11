@@ -74,6 +74,21 @@ function getArticleScoreSchema(includeReasoning: boolean) {
   };
 }
 
+export function formatArticlesForScoring(articles: RawArticle[]): string {
+  return articles
+    .map(
+      (a) =>
+        `ID: ${a.id}\nTitle: ${a.title}\nContent: ${a.summary.slice(0, 300)}`
+    )
+    .join('\n\n---\n\n');
+}
+
+export function getScoringPrompt(articlesText: string, includeReasoning: boolean): string {
+  return getPrompt(articlesText, includeReasoning);
+}
+
+export { getArticleScoreSchema, withDefaultSignals };
+
 function getPrompt(articlesText: string, includeReasoning: boolean): string {
   const reasoningInstruction = includeReasoning
     ? `\n\n11. REASONING (2-3 sentences):

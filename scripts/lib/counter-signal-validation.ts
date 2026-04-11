@@ -106,7 +106,9 @@ export function findRelatedRawArticles(
     .slice(0, MAX_RELATED_ARTICLES);
 }
 
-function buildCounterSignalPrompt(
+export { normalizeVerdict };
+
+export function buildCounterSignalPrompt(
   weekId: string,
   candidate: ProcessedArticle,
   relatedArticles: RawArticle[]

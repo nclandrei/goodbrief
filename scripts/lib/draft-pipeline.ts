@@ -1,10 +1,11 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
-import { GoogleGenerativeAI } from '@google/generative-ai';
-import { generateWrapperCopy } from '../../emails/utils/generate-copy.js';
 import type {
   ArticleScore,
 } from './types.js';
+import type { LlmProvider } from './llm/provider.js';
+import { LlmQuotaError } from './llm/provider.js';
+import { buildRefinePrompt } from './llm/refine-prompt.js';
 import type {
   CounterSignalPipelineData,
   DraftPipelineArtifact,
@@ -30,15 +31,9 @@ import {
   type CounterSignalClassifier,
   validateSameWeekCounterSignals,
 } from './counter-signal-validation.js';
-import {
-  createGeminiModel,
-  DEFAULT_GEMINI_MODEL,
-  GeminiQuotaError,
-  processArticleBatch,
-} from './gemini.js';
+import { GeminiQuotaError } from './gemini.js';
 import { loadHistoricalArticles, type HistoricalArticle } from './historical-articles.js';
 import { getRankingScore } from './ranking.js';
-import { deduplicateProcessedArticlesSemantically } from './semantic-dedup.js';
 import {
   PIPELINE_ARTIFACT_FILENAMES,
   readPipelineArtifact,
@@ -46,9 +41,6 @@ import {
 } from './pipeline-artifacts.js';
 import { sendAlert } from './alert.js';
 import {
-  isBureaucraticStory,
-  isCommunityCentered,
-  isGreenPreferred,
   rebalancePreferredSelection,
   selectBalancedShortlist,
 } from './editorial-balance.js';
@@ -128,28 +120,52 @@ function sortArticlesByAdjustedScore(
   });
 }
 
-function formatSignal(value: number | undefined): string {
-  return typeof value === 'number' ? String(value) : 'n/a';
-}
+function clustersFromDedupGroups(
+  groups: Array<{ ids: string[]; reason: string }>,
+  pool: ProcessedArticle[]
+): {
+  removed: ProcessedArticle[];
+  clusters: Array<{ keepId: string; dropIds: string[]; reason: string }>;
+} {
+  const articleById = new Map(pool.map((article) => [article.id, article]));
+  const scoreFor = (article: ProcessedArticle): number => {
+    const publishedAt = new Date(article.publishedAt).getTime();
+    const recencyBonus = Number.isFinite(publishedAt) ? publishedAt / 1e12 : 0;
+    return getRankingScore(article) + recencyBonus;
+  };
 
-function getEditorialTags(article: ProcessedArticle): string[] {
-  const tags: string[] = [];
+  const clusters: Array<{ keepId: string; dropIds: string[]; reason: string }> = [];
+  const removedIds = new Set<string>();
 
-  if (isCommunityCentered(article)) {
-    tags.push('community');
-  }
-  if (isGreenPreferred(article)) {
-    tags.push('green');
-  }
-  if (isBureaucraticStory(article)) {
-    tags.push('bureaucratic-risk');
+  for (const group of groups) {
+    const members = (group.ids || [])
+      .map((id) => articleById.get(id))
+      .filter((article): article is ProcessedArticle => Boolean(article));
+    if (members.length < 2) continue;
+    members.sort((a, b) => scoreFor(b) - scoreFor(a));
+    const keep = members[0];
+    const dropIds: string[] = [];
+    for (const article of members.slice(1)) {
+      if (!removedIds.has(article.id)) {
+        removedIds.add(article.id);
+        dropIds.push(article.id);
+      }
+    }
+    if (dropIds.length > 0) {
+      clusters.push({
+        keepId: keep.id,
+        dropIds,
+        reason: group.reason?.trim() || 'Same underlying story',
+      });
+    }
   }
 
-  return tags;
+  const removed = pool.filter((article) => removedIds.has(article.id));
+  return { removed, clusters };
 }
 
 async function refineShortlist(options: {
-  apiKey: string;
+  llm: LlmProvider;
   weekId: string;
   selected: ProcessedArticle[];
   reserves: ProcessedArticle[];
@@ -164,7 +180,7 @@ async function refineShortlist(options: {
   reasoning: string;
 }> {
   const {
-    apiKey,
+    llm,
     weekId,
     selected,
     reserves,
@@ -185,9 +201,6 @@ async function refineShortlist(options: {
 
   const allArticles = [...selected, ...reserves];
   const articleById = new Map(allArticles.map((article) => [article.id, article]));
-  const validationById = new Map(
-    validation.flagged.map((flag) => [flag.candidateId, flag])
-  );
   const applyRefinementResult = (
     refinement: RefinementResult
   ): {
@@ -258,131 +271,30 @@ async function refineShortlist(options: {
     return applyRefinementResult(mockRefinement);
   }
 
-  const genAI = new GoogleGenerativeAI(apiKey);
-  const refinementSchema = {
-    type: 'object',
-    properties: {
-      selectedIds: {
-        type: 'array',
-        items: { type: 'string' },
-      },
-      intro: { type: 'string' },
-      shortSummary: { type: 'string' },
-      reasoning: { type: 'string' },
-    },
-    required: ['selectedIds', 'intro', 'shortSummary', 'reasoning'],
-  };
-
-  const model = genAI.getGenerativeModel({
-    model: DEFAULT_GEMINI_MODEL,
-    generationConfig: {
-      responseMimeType: 'application/json',
-      responseSchema: refinementSchema,
-    } as any,
+  const prompt = buildRefinePrompt({
+    weekId,
+    selected,
+    reserves,
+    wrapperCopy,
+    validation,
+    previousArticles,
+    lookbackLabel,
   });
 
-  const articleList = allArticles
-    .map((article, index) => {
-      const flag = validationById.get(article.id);
-      const adjustedScore = Math.round(
-        (getRankingScore(article) - (flag?.penaltyApplied || 0)) * 10
-      ) / 10;
-      const tags = getEditorialTags(article);
-      const validationNote = flag
-        ? `\n   Same-week validation: ${flag.verdict.toUpperCase()} — ${flag.reason}`
-        : '';
-      const signalLine =
-        `pos:${article.positivity} structural:${article.impact} felt:${formatSignal(article.feltImpact)} ` +
-        `certainty:${formatSignal(article.certainty)} human:${formatSignal(article.humanCloseness)} ` +
-        `bureau:${formatSignal(article.bureaucraticDistance)} promo:${formatSignal(article.promoRisk)} ` +
-        `adjusted:${adjustedScore}`;
-
-      return `${index + 1}. [ID: ${article.id}] [${article.category}] [${tags.join(', ') || 'no-tags'}] (${signalLine}) "${article.originalTitle}"\n   Summary: ${article.summary}${validationNote}`;
-    })
-    .join('\n\n');
-
-  const previousWeeksContext = previousArticles.length > 0
-    ? `\n\nPREVIOUSLY PUBLISHED (${lookbackLabel} - DO NOT SELECT similar stories):
-${previousArticles.slice(0, 20).map((article, index) => `${index + 1}. "${article.title}"`).join('\n')}
-${previousArticles.length > 20 ? `... and ${previousArticles.length - 20} more` : ''}`
-    : '';
-
-  const validationContext = validation.flagged.length > 0
-    ? `\n\nSAME-WEEK VALIDATION FLAGS:
-${validation.flagged
-  .map((flag, index) => {
-    const articleTitle = articleById.get(flag.candidateId)?.originalTitle || flag.candidateId;
-    return `${index + 1}. [${flag.verdict.toUpperCase()}] [ID: ${flag.candidateId}] "${articleTitle}"
-   Reason: ${flag.reason}`;
-  })
-  .join('\n')}
-
-IMPORTANT VALIDATION RULES:
-- STRONG flags should stay out of selected by default.
-- BORDERLINE flags may stay only if alternatives are clearly weaker.
-- If a flagged story survives, make sure the rest of the selection is still strong enough to justify it.`
-    : '';
-
-  const prompt = `You are reviewing a Good Brief newsletter draft for week ${weekId}.
-
-IMPORTANT: All text output (intro, shortSummary, reasoning) MUST be in Romanian. This is a Romanian newsletter.
-${previousWeeksContext}
-${validationContext}
-
-CURRENT SELECTION (top 10):
-${selected.map((article, index) => `${index + 1}. [ID: ${article.id}] "${article.originalTitle}"`).join('\n')}
-
-CURRENT INTRO (in Romanian):
-"${wrapperCopy.intro}"
-
-CURRENT SHORT SUMMARY (in Romanian):
-"${wrapperCopy.shortSummary}"
-
-ALL AVAILABLE ARTICLES (selected + reserves):
-${articleList}
-
-REVIEW CRITERIA:
-1. Story variety: Avoid duplicate stories or very similar topics. Look for redundant coverage.
-2. NO REPEATS: Do NOT select articles similar to previously published stories (see list above)
-3. Category balance: Aim for mix of wins, local-heroes, green-stuff, quick-hits
-4. Impact vs fluff: Prefer substantive stories over feel-good fluff
-5. Recency: Prefer more recent stories when quality is similar
-6. Intro quality: Should be warm, engaging, capture the week's essence (IN ROMANIAN)
-7. Avoid promotional content or sponsored articles (marked with "(P)")
-8. Respect same-week validation flags: strong flags should normally be excluded; borderline flags need a clear editorial reason to stay
-9. Source diversity: do not let one niche source family dominate the issue
-10. Concrete over speculative: prefer stories that are already happening over promises, calls for applications, or funding announcements
-11. Human closeness: prefer stories readers can feel in communities, schools, neighborhoods, hospitals, or daily life over ministry/process stories
-12. Preserve the balanced shape: keep at least two clearly community-centered stories and at least one green story when strong options exist
-13. Do not swap in a grant, funding call, pilot program, or ministerial announcement just because it sounds more substantial; only keep those if they are concrete and clearly stronger than tangible alternatives
-
-TASK:
-- Review the current selection critically
-- If you find issues (duplicates, weak stories, imbalance, REPEATS from previous weeks), swap articles from reserves
-- If the intro could be sharper or better reflect the final selection, improve it (KEEP IT IN ROMANIAN)
-- Return 9-12 article IDs in your preferred order
-
-Return JSON with:
-- selectedIds: array of 9-12 article IDs in display order
-- intro: the intro IN ROMANIAN
-- shortSummary: the short summary IN ROMANIAN
-- reasoning: brief explanation of what you changed and why (or "No changes needed")`;
-
   console.log('Reviewing draft for improvements...');
-  const result = await model.generateContent(prompt);
-  const content = result.response.text();
-
-  if (!content) {
-    console.log('No refinement response, keeping original draft');
-    return { selected, reserves, wrapperCopy, reasoning: 'No refinement response' };
-  }
-
   try {
-    const refinement = JSON.parse(content) as RefinementResult;
+    const refinement = await llm.refineDraft({ weekId, prompt });
     console.log(`✓ Review complete: ${refinement.reasoning}`);
     return applyRefinementResult(refinement);
   } catch (error) {
-    console.log('Failed to parse refinement response, keeping original draft');
+    if (error instanceof LlmQuotaError || error instanceof GeminiQuotaError) {
+      throw error;
+    }
+    console.log(
+      `Failed to refine draft, keeping original: ${
+        error instanceof Error ? error.message : String(error)
+      }`
+    );
     return {
       selected,
       reserves,
@@ -484,7 +396,7 @@ export async function runPreparePhase(rootDir: string, weekId: string): Promise<
 export async function runScorePhase(
   rootDir: string,
   weekId: string,
-  apiKey: string
+  llm: LlmProvider
 ): Promise<string> {
   const prepared = readPipelineArtifact<PreparedPipelineData, 'prepare'>(
     rootDir,
@@ -492,7 +404,6 @@ export async function runScorePhase(
     'prepare'
   );
   const mockScores = loadMockJson<ArticleScore[]>('GOODBRIEF_SCORE_MOCK_FILE');
-  const model = mockScores ? null : createGeminiModel(apiKey, false);
   const BATCH_SIZE = 200;
   const allScores: ArticleScore[] = [];
 
@@ -505,7 +416,7 @@ export async function runScorePhase(
         console.log(
           `Processing batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(prepared.data.preparedArticles.length / BATCH_SIZE)}...`
         );
-        const scores = await processArticleBatch(batch, model, false);
+        const scores = await llm.scoreArticles(batch, { includeReasoning: false });
         allScores.push(...scores);
 
         if (i + BATCH_SIZE < prepared.data.preparedArticles.length) {
@@ -513,17 +424,17 @@ export async function runScorePhase(
         }
       }
     } catch (error) {
-      if (error instanceof GeminiQuotaError) {
+      if (error instanceof GeminiQuotaError || error instanceof LlmQuotaError) {
         await sendAlert({
-          title: 'Gemini API quota exhausted',
+          title: `${llm.name === 'claude-cli' ? 'Claude Code' : 'Gemini'} quota exhausted`,
           weekId,
-          reason: 'The Gemini API free tier quota has been exceeded',
+          reason: `The ${llm.name} provider is out of quota or rate-limited`,
           details: error.message,
           actionItems: [
-            'Wait for the quota to reset (usually resets daily)',
-            'Check usage at <a href="https://aistudio.google.com/">Google AI Studio</a>',
-            'Consider upgrading to a paid plan if this happens frequently',
-            'Run <code>npm run generate-draft</code> manually after quota resets',
+            'Wait for the quota to reset',
+            'Re-run the pipeline with a different provider (<code>--llm claude-cli</code> or <code>--llm gemini</code>)',
+            'Or set <code>LLM_FALLBACK=claude-cli</code> to auto-fall-back on quota errors',
+            'For full recovery, run <code>npm run pipeline:run-all -- --week ' + weekId + ' --llm claude-cli</code> locally',
           ],
         });
       }
@@ -621,7 +532,7 @@ export async function runScorePhase(
 export async function runSemanticDedupPhase(
   rootDir: string,
   weekId: string,
-  apiKey: string
+  llm: LlmProvider
 ): Promise<string> {
   const scored = readPipelineArtifact<ScoredPipelineData, 'score'>(rootDir, weekId, 'score');
   let articles = [...scored.data.articles];
@@ -645,24 +556,17 @@ export async function runSemanticDedupPhase(
 
     console.log(`Running semantic deduplication on top ${semanticPoolSize} candidates...`);
     try {
-      const semanticDedup = await deduplicateProcessedArticlesSemantically(
-        semanticPool,
-        apiKey,
-        weekId
-      );
+      const dedupResponse = await llm.semanticDedup(weekId, semanticPool);
+      const clusterResult = clustersFromDedupGroups(dedupResponse.groups, semanticPool);
 
-      if (semanticDedup.removed.length > 0) {
-        const removedIds = new Set(semanticDedup.removed.map((article) => article.id));
+      if (clusterResult.removed.length > 0) {
+        const removedIds = new Set(clusterResult.removed.map((article) => article.id));
         articles = articles.filter((article) => !removedIds.has(article.id));
-        removed = semanticDedup.removed;
-        clusters = semanticDedup.clusters.map((cluster) => ({
-          keepId: cluster.keepId,
-          dropIds: cluster.dropIds,
-          reason: cluster.reason,
-        }));
+        removed = clusterResult.removed;
+        clusters = clusterResult.clusters;
 
-        console.log(`Removed ${semanticDedup.removed.length} semantically duplicate stories`);
-        for (const cluster of semanticDedup.clusters) {
+        console.log(`Removed ${clusterResult.removed.length} semantically duplicate stories`);
+        for (const cluster of clusters) {
           const keepTitle = semanticPoolById.get(cluster.keepId)?.originalTitle || cluster.keepId;
           const dropTitles = cluster.dropIds
             .map((id) => semanticPoolById.get(id)?.originalTitle || id)
@@ -674,7 +578,7 @@ export async function runSemanticDedupPhase(
         console.log('No semantic duplicates found in top candidates');
       }
     } catch (error) {
-      if (error instanceof GeminiQuotaError) {
+      if (error instanceof GeminiQuotaError || error instanceof LlmQuotaError) {
         console.log(`Semantic deduplication skipped (quota): ${error.message}`);
       } else {
         const message = error instanceof Error ? error.message : String(error);
@@ -705,7 +609,7 @@ export async function runSemanticDedupPhase(
 export async function runCounterSignalValidatePhase(options: {
   rootDir: string;
   weekId: string;
-  apiKey: string;
+  llm: LlmProvider;
   classifier?: CounterSignalClassifier;
   candidates?: ProcessedArticle[];
   artifactInputFile?: string;
@@ -735,12 +639,15 @@ export async function runCounterSignalValidatePhase(options: {
     `Running same-week counter-signal validation on top ${candidates.length} candidates...`
   );
 
+  const classifier: CounterSignalClassifier =
+    options.classifier ??
+    ((input) => options.llm.classifyCounterSignal(input));
+
   const validation = await validateSameWeekCounterSignals({
     weekId: options.weekId,
     candidates,
     rawArticles: prepared.data.sameWeekRepresentatives,
-    apiKey: options.apiKey,
-    classifier: options.classifier,
+    classifier,
     generatedAt: new Date().toISOString(),
   });
 
@@ -822,7 +729,8 @@ export async function runSelectPhase(rootDir: string, weekId: string): Promise<s
 
 export async function runWrapperCopyPhase(
   rootDir: string,
-  weekId: string
+  weekId: string,
+  llm: LlmProvider
 ): Promise<string> {
   const shortlist = readPipelineArtifact<ShortlistPipelineData, 'select'>(
     rootDir,
@@ -833,7 +741,7 @@ export async function runWrapperCopyPhase(
   console.log('Generating wrapper copy...');
   const wrapperCopy =
     loadMockJson<WrapperCopy>('GOODBRIEF_WRAPPER_COPY_MOCK_FILE') ||
-    (await generateWrapperCopy(shortlist.data.selected, weekId));
+    (await llm.generateWrapperCopy(weekId, shortlist.data.selected));
   console.log('✓ Generated wrapper copy');
 
   const artifact: DraftPipelineArtifact<WrapperCopyPipelineData, 'wrapper-copy'> = {
@@ -854,7 +762,7 @@ export async function runWrapperCopyPhase(
 export async function runRefinePhase(
   rootDir: string,
   weekId: string,
-  apiKey: string
+  llm: LlmProvider
 ): Promise<string> {
   const shortlist = readPipelineArtifact<ShortlistPipelineData, 'select'>(
     rootDir,
@@ -869,7 +777,7 @@ export async function runRefinePhase(
   console.log('\n--- Pass 2: Self-review ---');
   const historical = loadHistoricalArticles(rootDir, weekId);
   const refined = await refineShortlist({
-    apiKey,
+    llm,
     weekId,
     selected: shortlist.data.selected,
     reserves: shortlist.data.reserves,
@@ -930,7 +838,7 @@ export function materializeDraftFromRefinedArtifact(
 export async function refreshDraftValidation(options: {
   rootDir: string;
   weekId: string;
-  apiKey: string;
+  llm: LlmProvider;
   classifier?: CounterSignalClassifier;
 }): Promise<DraftValidation> {
   const draftPath = getDraftPath(options.rootDir, options.weekId);
@@ -944,7 +852,7 @@ export async function refreshDraftValidation(options: {
   await runCounterSignalValidatePhase({
     rootDir: options.rootDir,
     weekId: options.weekId,
-    apiKey: options.apiKey,
+    llm: options.llm,
     classifier: options.classifier,
     candidates: shortlist,
     artifactInputFile: `draft:${options.weekId}`,
