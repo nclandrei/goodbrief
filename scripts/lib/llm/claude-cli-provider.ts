@@ -150,9 +150,22 @@ export interface ClaudeCliProviderOptions {
   runner?: ClaudeRunner;
 }
 
+// Anthropic's `--json-schema` requires an object at the top level, but the
+// shared score schema is an array. Wrap it in a `{ scores: [...] }` envelope
+// for the claude-cli path and unwrap after parsing.
+function wrapScoreSchema(includeReasoning: boolean): unknown {
+  return {
+    type: 'object',
+    properties: {
+      scores: getArticleScoreSchema(includeReasoning),
+    },
+    required: ['scores'],
+  };
+}
+
 const SCORE_RESPONSE_SCHEMA_CACHE = {
-  withReasoning: getArticleScoreSchema(true),
-  withoutReasoning: getArticleScoreSchema(false),
+  withReasoning: wrapScoreSchema(true),
+  withoutReasoning: wrapScoreSchema(false),
 };
 
 const SEMANTIC_DEDUP_RESPONSE_SCHEMA = {
@@ -243,9 +256,9 @@ export class ClaudeCliProvider implements LlmProvider {
     const prompt = `${basePrompt}
 
 OUTPUT RULES (Claude Code headless mode):
-- Respond with ONLY the JSON array described above.
-- No markdown, no code fences, no prose before or after the JSON.
-- The JSON array MUST contain exactly one object per input article ID.`;
+- Respond with ONLY a JSON object of shape { "scores": [ ... ] }.
+- The "scores" array MUST contain exactly one object per input article ID.
+- No markdown, no code fences, no prose before or after the JSON.`;
 
     const schema = options.includeReasoning
       ? SCORE_RESPONSE_SCHEMA_CACHE.withReasoning
@@ -257,16 +270,17 @@ OUTPUT RULES (Claude Code headless mode):
       model: process.env.CLAUDE_CLI_SCORE_MODEL || 'sonnet',
     });
 
-    const parsed = parseClaudeEnvelope<unknown>(stdout);
-    if (!Array.isArray(parsed)) {
+    const parsed = parseClaudeEnvelope<{ scores?: unknown }>(stdout);
+    const scores = parsed?.scores;
+    if (!Array.isArray(scores)) {
       throw new LlmProviderError(
         'claude-cli',
-        `scoreArticles: expected JSON array, got ${typeof parsed}`
+        `scoreArticles: expected { scores: [...] }, got ${typeof parsed}`
       );
     }
 
     const sentIds = new Set(articles.map((article) => article.id));
-    return (parsed as ArticleScore[])
+    return (scores as ArticleScore[])
       .filter((score): score is ArticleScore =>
         Boolean(score && typeof score.id === 'string' && sentIds.has(score.id))
       )
