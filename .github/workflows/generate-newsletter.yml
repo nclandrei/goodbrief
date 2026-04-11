@@ -10,13 +10,13 @@ on:
         required: false
         type: string
       llm_provider:
-        description: 'LLM provider for pipeline phases. Default: gemini. claude-cli is NOT allowed in CI.'
+        description: 'LLM provider for pipeline phases. Default: openrouter. claude-cli is NOT allowed in CI.'
         required: false
         type: choice
-        default: gemini
+        default: openrouter
         options:
-          - gemini
           - openrouter
+          - gemini
 
 permissions:
   contents: write
@@ -39,11 +39,12 @@ jobs:
           fi
 
           # LLM provider: workflow_dispatch input wins; scheduled runs default
-          # to gemini. claude-cli is deliberately not offered here — it runs
-          # only in local recovery mode (see recover-week.sh).
+          # to openrouter (gemini quota is exhausted on the default project).
+          # claude-cli is deliberately not offered here — it runs only in local
+          # recovery mode (see recover-week.sh).
           LLM="${{ inputs.llm_provider }}"
           if [ -z "$LLM" ]; then
-            LLM="gemini"
+            LLM="openrouter"
           fi
           echo "llm_provider=$LLM" >> "$GITHUB_OUTPUT"
 
@@ -89,6 +90,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
+          OPENROUTER_TIMEOUT_MS: '180000'
+          SCORE_BATCH_SIZE: '25'
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
       - uses: actions/upload-artifact@v4
@@ -117,6 +120,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
+          OPENROUTER_TIMEOUT_MS: '180000'
       - uses: actions/upload-artifact@v4
         with:
           name: pipeline-semantic-dedup-${{ needs.determine_week.outputs.id }}
@@ -143,6 +147,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
+          OPENROUTER_TIMEOUT_MS: '180000'
       - uses: actions/upload-artifact@v4
         with:
           name: pipeline-counter-signal-validate-${{ needs.determine_week.outputs.id }}
@@ -190,6 +195,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
+          OPENROUTER_TIMEOUT_MS: '180000'
       - uses: actions/upload-artifact@v4
         with:
           name: pipeline-wrapper-copy-${{ needs.determine_week.outputs.id }}
@@ -216,6 +222,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
+          OPENROUTER_TIMEOUT_MS: '180000'
       - uses: actions/upload-artifact@v4
         with:
           name: pipeline-refine-${{ needs.determine_week.outputs.id }}

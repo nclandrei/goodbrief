@@ -404,7 +404,10 @@ export async function runScorePhase(
     'prepare'
   );
   const mockScores = loadMockJson<ArticleScore[]>('GOODBRIEF_SCORE_MOCK_FILE');
-  const BATCH_SIZE = 200;
+  const BATCH_SIZE = Number.parseInt(
+    process.env.SCORE_BATCH_SIZE || '200',
+    10
+  );
   const allScores: ArticleScore[] = [];
 
   if (mockScores) {

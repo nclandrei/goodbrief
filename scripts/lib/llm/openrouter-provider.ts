@@ -126,6 +126,10 @@ export function buildOpenRouterRequestBody(
         schema: options.schema,
       },
     },
+    // Hard cost ceiling: OpenRouter rejects any upstream whose per-token
+    // price exceeds zero before billing. Combined with a `:free` model id (or
+    // the `openrouter/free` meta-router), this guarantees $0 spend.
+    max_price: { prompt: 0, completion: 0 },
   };
 
   if (typeof options.temperature === 'number') {
@@ -154,6 +158,9 @@ export function parseOpenRouterResponse<T = unknown>(rawBody: string): T {
   const envelope = safeParseEnvelope(rawBody);
 
   if (envelope.error) {
+    if (process.env.OPENROUTER_DEBUG === '1') {
+      console.error('[openrouter] envelope error', JSON.stringify(envelope.error).slice(0, 1000));
+    }
     const message =
       envelope.error.message || 'OpenRouter returned an error envelope';
     if (isQuotaMessage(message) || isQuotaStatusCode(envelope.error.code)) {
@@ -522,6 +529,10 @@ OUTPUT RULES (OpenRouter structured output):
 
     if (response.status >= 200 && response.status < 300) {
       return response.body;
+    }
+
+    if (process.env.OPENROUTER_DEBUG === '1') {
+      console.error('[openrouter] non-2xx', response.status, response.body.slice(0, 800));
     }
 
     const message = extractErrorMessage(response.body) ||
