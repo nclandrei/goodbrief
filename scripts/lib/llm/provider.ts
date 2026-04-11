@@ -96,6 +96,26 @@ export class LlmQuotaError extends LlmProviderError {
   }
 }
 
+/**
+ * Thrown when the model hits its `max_tokens` cap mid-output and returns a
+ * structurally truncated payload (`finish_reason: "length"` with non-empty
+ * unparseable JSON). HTTP-retrying the same prompt is pointless — it will
+ * re-truncate at the same place — but batch-oriented callers like
+ * `scoreArticles` can recover by splitting the input in half and retrying
+ * each half separately. Layers that don't have a notion of "batch" (dedup,
+ * counter-signal, refine) should surface this to the user.
+ */
+export class LlmTruncationError extends LlmProviderError {
+  constructor(
+    provider: LlmProviderName,
+    message: string,
+    options: { cause?: unknown } = {}
+  ) {
+    super(provider, message, { retryable: false, cause: options.cause });
+    this.name = 'LlmTruncationError';
+  }
+}
+
 export function isQuotaMessage(raw: unknown): boolean {
   const text = String(raw instanceof Error ? raw.message : raw).toLowerCase();
   return (

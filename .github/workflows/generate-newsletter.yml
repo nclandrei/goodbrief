@@ -97,6 +97,13 @@ jobs:
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'deepseek/deepseek-chat-v3.1:free' }}
           OPENROUTER_TIMEOUT_MS: '900000'
           OPENROUTER_MAX_RETRIES: '4'
+          # Option 3: raise the output cap to 32k so non-reasoning models have
+          # headroom for a full SCORE_BATCH_SIZE worth of article-score JSON.
+          # Upstream providers silently clamp this to whatever they honor, so
+          # erring high is safe. Combined with option 4 (batch-split on
+          # truncation in OpenRouterProvider.scoreArticles) this makes the
+          # score phase self-healing for unexpectedly long outputs.
+          OPENROUTER_MAX_TOKENS: '32000'
           SCORE_BATCH_SIZE: '25'
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}

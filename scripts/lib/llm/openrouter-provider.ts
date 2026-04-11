@@ -26,7 +26,12 @@ import type {
   ScoreBatchOptions,
   SemanticDedupResponse,
 } from './provider.js';
-import { LlmProviderError, LlmQuotaError, isQuotaMessage } from './provider.js';
+import {
+  LlmProviderError,
+  LlmQuotaError,
+  LlmTruncationError,
+  isQuotaMessage,
+} from './provider.js';
 
 const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions';
 
@@ -84,8 +89,16 @@ const DEFAULT_RETRY_DELAY_MS = Number.parseInt(
 // (up to 25 article scores per call) has plenty of headroom, and we
 // additionally set `reasoning.exclude: true` so the reasoning tokens don't
 // clobber the structured JSON output.
-const DEFAULT_MAX_TOKENS = Number.parseInt(
-  process.env.OPENROUTER_MAX_TOKENS || '16000',
+//
+// 2026-W15 post-mortem (option 3): raised from 16000 → 32000 so non-
+// reasoning models like `deepseek/deepseek-chat-v3.1:free` have 2× the
+// previous headroom for large structured outputs. OpenRouter / the
+// upstream provider will silently clamp this to whatever they actually
+// honor, so erring high is safe — the only downside is that truly
+// broken upstreams may take a moment longer to hit their real cap,
+// which our truncation-split path (see `scoreArticles`) now handles.
+export const DEFAULT_MAX_TOKENS = Number.parseInt(
+  process.env.OPENROUTER_MAX_TOKENS || '32000',
   10
 );
 
@@ -331,7 +344,17 @@ export type OpenRouterEnvelopeStatus =
   | { kind: 'ok' }
   | { kind: 'quota'; message: string }
   | { kind: 'transient'; message: string }
-  | { kind: 'terminal'; message: string };
+  | { kind: 'terminal'; message: string }
+  /**
+   * Model hit its `max_tokens` cap mid-output and returned structurally
+   * truncated JSON (`finish_reason: "length"` with non-empty content).
+   * HTTP-retrying is pointless — the same prompt will re-truncate at the
+   * same place — but batch callers can recover by splitting the input.
+   * {@link OpenRouterProvider.call} surfaces this as an
+   * {@link LlmTruncationError}; {@link OpenRouterProvider.scoreArticles}
+   * catches it and recursively halves the batch.
+   */
+  | { kind: 'truncation'; message: string };
 
 /**
  * Inspect an OpenRouter response body and classify its status. Used by
@@ -421,13 +444,14 @@ export function inspectOpenRouterEnvelope(
 
   // Content is non-empty but `finish_reason: "length"` means the model ran
   // out of `max_tokens` mid-output. The payload will be structurally
-  // truncated JSON (unbalanced braces/strings) and retrying the same prompt
-  // will re-truncate at the same place — this is the 2026-W15 batch 9
-  // failure mode. Classify as `terminal` with a message that points at the
-  // real fix: reduce batch size or raise `OPENROUTER_MAX_TOKENS`.
+  // truncated JSON (unbalanced braces/strings) and HTTP-retrying the same
+  // prompt will re-truncate at the same place. This is the 2026-W15 batch 9
+  // failure mode. We classify it as a dedicated `truncation` status so the
+  // call layer can surface it as {@link LlmTruncationError} and batch
+  // callers like `scoreArticles` can recover by splitting the input.
   if (choice?.finish_reason === 'length') {
     return {
-      kind: 'terminal',
+      kind: 'truncation',
       message: `output truncated (finish_reason=length, contentLen=${content.length}) — the model hit max_tokens mid-output. Reduce batch size (e.g. SCORE_BATCH_SIZE) or raise OPENROUTER_MAX_TOKENS, or switch to a non-reasoning model with a larger output budget.`,
     };
   }
@@ -576,6 +600,40 @@ export class OpenRouterProvider implements LlmProvider {
       return [];
     }
 
+    try {
+      return await this.scoreArticlesOnce(articles, options);
+    } catch (error) {
+      // Option 4: on truncation, recursively halve the batch and retry.
+      // This turns "model hit max_tokens mid-output" from a fatal crash
+      // into a transparent recovery, regardless of how we picked
+      // SCORE_BATCH_SIZE. Base case: a batch of 1 can't be split further,
+      // so we surface the error for the caller to handle.
+      if (error instanceof LlmTruncationError && articles.length > 1) {
+        const mid = Math.floor(articles.length / 2);
+        console.error(
+          `[openrouter] scoreArticles: truncation on batch of ${articles.length}; splitting into ${mid} + ${articles.length - mid} and retrying each half`
+        );
+        const firstHalf = articles.slice(0, mid);
+        const secondHalf = articles.slice(mid);
+        const [first, second] = await Promise.all([
+          this.scoreArticles(firstHalf, options),
+          this.scoreArticles(secondHalf, options),
+        ]);
+        return [...first, ...second];
+      }
+      throw error;
+    }
+  }
+
+  /**
+   * Single-shot score call — no split/retry. Extracted so `scoreArticles`
+   * can wrap it with the option-4 truncation recovery path without having
+   * to thread recursion state through the body.
+   */
+  private async scoreArticlesOnce(
+    articles: RawArticle[],
+    options: ScoreBatchOptions
+  ): Promise<ArticleScore[]> {
     const articlesText = formatArticlesForScoring(articles);
     const basePrompt = getScoringPrompt(articlesText, options.includeReasoning);
     const prompt = `${basePrompt}
@@ -853,6 +911,23 @@ OUTPUT RULES (OpenRouter structured output):
             continue;
           }
           throw lastError;
+        }
+
+        if (envelopeStatus.kind === 'truncation') {
+          // `finish_reason: "length"` with non-empty unparseable content.
+          // HTTP-retrying is pointless, but batch-aware callers can split
+          // the input and retry each half — surface a dedicated error so
+          // they can detect this precisely.
+          console.error(
+            `${logPrefix} ${attemptLabel} truncation-in-200-envelope elapsedMs=${elapsed} finish_reason=${diag.finishReason} message=${envelopeStatus.message}`
+          );
+          console.error(
+            `${logPrefix} ${attemptLabel} body-preview=${response.body.slice(0, 1000)}`
+          );
+          throw new LlmTruncationError(
+            'openrouter',
+            `OpenRouter envelope error: ${envelopeStatus.message}`
+          );
         }
 
         // kind === 'terminal' — bail out without retrying.

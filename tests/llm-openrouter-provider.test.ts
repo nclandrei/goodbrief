@@ -5,11 +5,13 @@ import {
   buildOpenRouterRequestBody,
   parseOpenRouterResponse,
   DEFAULT_FALLBACK_MODEL,
+  DEFAULT_MAX_TOKENS,
 } from '../scripts/lib/llm/openrouter-provider.js';
 import type { OpenRouterFetcher } from '../scripts/lib/llm/openrouter-provider.js';
 import {
   LlmProviderError,
   LlmQuotaError,
+  LlmTruncationError,
 } from '../scripts/lib/llm/provider.js';
 import type { ProcessedArticle, RawArticle } from '../scripts/types.js';
 
@@ -912,6 +914,35 @@ test('buildOpenRouterRequestBody: includes reasoning.exclude and sensible max_to
   assert.ok(parsed.max_tokens >= 8000, 'max_tokens should default to at least 8000');
 });
 
+// 2026-W15 post-mortem (option 3): raise the default output cap so non-
+// reasoning models like `deepseek/deepseek-chat-v3.1:free` have headroom for
+// large structured outputs (e.g. score batches) even when the upstream route
+// accepts generous caps. The upstream will silently clamp this to whatever it
+// actually honors, so erring high is safe. 32k is 2× the old default and
+// enough to absorb a full SCORE_BATCH_SIZE worth of article-score JSON
+// without truncation on every reasonable OpenRouter upstream.
+test('DEFAULT_MAX_TOKENS is at least 32000 (post-option-3 headroom)', () => {
+  assert.ok(
+    DEFAULT_MAX_TOKENS >= 32000,
+    `DEFAULT_MAX_TOKENS should be >= 32000, got ${DEFAULT_MAX_TOKENS}`
+  );
+});
+
+test('buildOpenRouterRequestBody: default max_tokens reflects DEFAULT_MAX_TOKENS', () => {
+  const body = buildOpenRouterRequestBody({
+    model: 'deepseek/deepseek-chat-v3.1:free',
+    prompt: 'p',
+    schema: {},
+    schemaName: 's',
+  });
+  const parsed = JSON.parse(body);
+  assert.equal(parsed.max_tokens, DEFAULT_MAX_TOKENS);
+  assert.ok(
+    parsed.max_tokens >= 32000,
+    `request body max_tokens should be >= 32000, got ${parsed.max_tokens}`
+  );
+});
+
 test('call does NOT retry HTTP 401 (bad auth) — surfaces immediately as non-quota LlmProviderError', async () => {
   let attempts = 0;
   const provider = makeProvider(
@@ -1049,17 +1080,15 @@ test('generateWrapperCopy honors OPENROUTER_WRAPPER_COPY_MODEL when set', async 
 // max_tokens cap mid-JSON and the parser then choked on the truncated
 // payload. The existing empty-content handler (line ~720) covers the case
 // where length-cutoff yields null/empty content (retryable cold-start),
-// but truncated non-empty content is a different failure mode:
+// but truncated non-empty content is a different failure mode.
 //
-//   1. Retrying the same prompt will re-truncate at the same place, so
-//      retry is wasted budget on the free tier.
-//   2. The root cause is "batch too big for max_tokens" — the fix is to
-//      reduce SCORE_BATCH_SIZE or switch to a larger-output model, not
-//      to retry.
-//
-// So we classify it as `terminal` and surface an error message that points
-// at the real cause instead of the misleading "Unbalanced JSON".
-test('call treats finish_reason=length with truncated non-empty content as terminal (no retry)', async () => {
+// Option 4 fix: a truncation error for a single-article batch is still
+// terminal (there's nothing left to split), but the surfaced error type is
+// now the dedicated `LlmTruncationError` so `scoreArticles` can detect it
+// precisely on multi-article batches and recursively split. This test pins
+// the base case: batch of 1 with truncation → exactly one attempt → throws
+// `LlmTruncationError` with a truncation-flavored message.
+test('call treats finish_reason=length with truncated non-empty content as terminal (no retry) for single-article batch', async () => {
   const truncatedContent =
     '[{"id":"raw-1","summary":"rezumat lung","positivity":85,"impact":70,"feltImp';
   const truncatedBody = JSON.stringify({
@@ -1091,10 +1120,8 @@ test('call treats finish_reason=length with truncated non-empty content as termi
   await assert.rejects(
     () => provider.scoreArticles([RAW], { includeReasoning: false }),
     (err: unknown) => {
-      if (!(err instanceof LlmProviderError)) return false;
+      if (!(err instanceof LlmTruncationError)) return false;
       if (err instanceof LlmQuotaError) return false;
-      // Message must clearly call out truncation + finish_reason, not
-      // "Unbalanced JSON value".
       return (
         /truncat/i.test(err.message) &&
         /length|max_tokens/i.test(err.message)
@@ -1104,8 +1131,164 @@ test('call treats finish_reason=length with truncated non-empty content as termi
   assert.equal(
     attempts,
     1,
-    'truncation must not be retried — the same prompt will re-truncate at the same place'
+    'single-article truncation must not HTTP-retry — the same prompt will re-truncate at the same place'
   );
+});
+
+// ---------- option 4: automatic batch-split on truncation ----------
+//
+// When `scoreArticles` receives >1 article and the call truncates
+// (`finish_reason=length` with non-empty unparseable JSON), the provider
+// must recursively split the batch in half and retry each half. This turns
+// truncation from a fatal pipeline crash into a transparent recovery, so
+// we survive unexpectedly long outputs without babysitting SCORE_BATCH_SIZE.
+//
+// Base case: a batch of 1 cannot be split further and surfaces the error
+// (covered by the test above).
+
+/** Build a minimal truncated response for a batch — content that is length-cut mid-JSON. */
+function makeTruncatedResponse(): string {
+  return JSON.stringify({
+    id: 'gen-truncated-batch',
+    object: 'chat.completion',
+    choices: [
+      {
+        index: 0,
+        finish_reason: 'length',
+        native_finish_reason: 'length',
+        message: {
+          role: 'assistant',
+          content: '[{"id":"raw-1","summary":"unfinished',
+          refusal: null,
+        },
+      },
+    ],
+  });
+}
+
+/** Score payload for a single article id. */
+function scoreFor(id: string) {
+  return {
+    id,
+    summary: 'ok',
+    positivity: 70,
+    impact: 60,
+    feltImpact: 50,
+    certainty: 70,
+    humanCloseness: 60,
+    bureaucraticDistance: 20,
+    promoRisk: 10,
+    romaniaRelevant: true,
+    category: 'wins' as const,
+  };
+}
+
+test('scoreArticles: splits batch in half on truncation and returns combined scores', async () => {
+  const ids = ['a-1', 'a-2', 'a-3', 'a-4'];
+  const articles: RawArticle[] = ids.map((id) => ({ ...RAW, id }));
+
+  // Capture every request body so we can assert on batch boundaries.
+  const requestedIdSets: string[][] = [];
+  let call = 0;
+  const provider = makeProvider(
+    async (_url, init) => {
+      call++;
+      const body = JSON.parse(init.body);
+      const prompt = body.messages[0].content as string;
+      const idsInPrompt = ids.filter((id) => prompt.includes(id));
+      requestedIdSets.push(idsInPrompt);
+
+      // First call contains all 4 ids → truncate.
+      if (call === 1 && idsInPrompt.length === 4) {
+        return okResponse(makeTruncatedResponse());
+      }
+      // Each sub-batch succeeds with a score per id it contains.
+      return okResponse(chatEnvelope(idsInPrompt.map((id) => scoreFor(id))));
+    },
+    { maxRetries: 0, retryDelayMs: 0 }
+  );
+
+  const scores = await provider.scoreArticles(articles, { includeReasoning: false });
+
+  // All 4 articles get a score back.
+  const returnedIds = scores.map((s) => s.id).sort();
+  assert.deepEqual(returnedIds, ids.slice().sort());
+
+  // We expect: 1 full-batch call (truncated) + 2 sub-batch calls of 2 ids each.
+  assert.equal(call, 3, `expected 3 total calls (1 truncated + 2 halves), got ${call}`);
+  assert.deepEqual(requestedIdSets[0], ids, 'first call should contain all 4 ids');
+  assert.equal(requestedIdSets[1].length, 2, 'first sub-batch should contain 2 ids');
+  assert.equal(requestedIdSets[2].length, 2, 'second sub-batch should contain 2 ids');
+  // Sub-batches must partition the input (no overlap, no missing ids).
+  const union = [...requestedIdSets[1], ...requestedIdSets[2]].sort();
+  assert.deepEqual(union, ids.slice().sort());
+});
+
+test('scoreArticles: recursively splits when sub-batches also truncate', async () => {
+  const ids = ['a-1', 'a-2', 'a-3', 'a-4'];
+  const articles: RawArticle[] = ids.map((id) => ({ ...RAW, id }));
+
+  let call = 0;
+  const provider = makeProvider(
+    async (_url, init) => {
+      call++;
+      const body = JSON.parse(init.body);
+      const prompt = body.messages[0].content as string;
+      const idsInPrompt = ids.filter((id) => prompt.includes(id));
+
+      // Truncate any call with >1 article. Batches of 1 succeed.
+      if (idsInPrompt.length > 1) {
+        return okResponse(makeTruncatedResponse());
+      }
+      return okResponse(chatEnvelope(idsInPrompt.map((id) => scoreFor(id))));
+    },
+    { maxRetries: 0, retryDelayMs: 0 }
+  );
+
+  const scores = await provider.scoreArticles(articles, { includeReasoning: false });
+  const returnedIds = scores.map((s) => s.id).sort();
+  assert.deepEqual(returnedIds, ids.slice().sort());
+
+  // Split tree: [4] → [2, 2] → [1,1, 1,1]. So:
+  //   1 (truncated [4]) + 2 (truncated [2]s) + 4 (successful [1]s) = 7 calls.
+  assert.equal(call, 7, `expected recursive 1+2+4=7 calls, got ${call}`);
+});
+
+test('scoreArticles: non-truncation errors are NOT split — surface immediately', async () => {
+  const ids = ['a-1', 'a-2', 'a-3', 'a-4'];
+  const articles: RawArticle[] = ids.map((id) => ({ ...RAW, id }));
+
+  // A persistent null-content body — this is the transient empty-content
+  // path, not truncation. Should exhaust retries and throw, NOT split.
+  const nullContentBody = JSON.stringify({
+    id: 'gen-null',
+    object: 'chat.completion',
+    choices: [
+      {
+        index: 0,
+        finish_reason: 'stop',
+        native_finish_reason: 'stop',
+        message: { role: 'assistant', content: null },
+      },
+    ],
+  });
+
+  let call = 0;
+  const provider = makeProvider(
+    async () => {
+      call++;
+      return okResponse(nullContentBody);
+    },
+    { maxRetries: 2, retryDelayMs: 0 }
+  );
+
+  await assert.rejects(
+    () => provider.scoreArticles(articles, { includeReasoning: false }),
+    (err: unknown) =>
+      err instanceof LlmProviderError && !(err instanceof LlmTruncationError)
+  );
+  // Exactly the retry budget (1 + 2 retries = 3), with no batch-splitting.
+  assert.equal(call, 3, `expected 3 HTTP attempts, no split; got ${call}`);
 });
 
 test('inspectOpenRouterEnvelope: length cutoff with null content remains transient (retryable)', async () => {
