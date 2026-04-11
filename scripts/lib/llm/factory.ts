@@ -72,10 +72,35 @@ export function createLlmProvider(
   return new FallbackLlmProvider(primary, fallback);
 }
 
+/**
+ * Guards against selecting a provider that can't run in the current
+ * environment. Today that's claude-cli in CI: the Claude Code headless CLI
+ * depends on an interactive subscription session (or `CLAUDE_CODE_OAUTH_TOKEN`
+ * that we don't wire up in Actions), so letting a workflow silently try to
+ * exec `claude` only to get a confusing "binary not found" mid-pipeline is
+ * worse than failing fast with a clear message.
+ *
+ * GitHub Actions sets `CI=true` for every run; local shells typically do not.
+ * Tests drive this deterministically via the `env` argument.
+ */
+export function assertProviderAllowed(
+  name: LlmProviderName,
+  env: NodeJS.ProcessEnv = process.env
+): void {
+  if (name === 'claude-cli' && env.CI === 'true') {
+    throw new Error(
+      'The "claude-cli" LLM provider is not allowed in CI because it requires ' +
+        'an interactive Claude Code session. Use --llm gemini or --llm openrouter ' +
+        'in CI workflows; --llm claude-cli is for local recovery only.'
+    );
+  }
+}
+
 function buildProvider(
   name: LlmProviderName,
   env: NodeJS.ProcessEnv
 ): LlmProvider {
+  assertProviderAllowed(name, env);
   switch (name) {
     case 'gemini': {
       const apiKey = env.GEMINI_API_KEY;

@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
+  assertProviderAllowed,
   createLlmProvider,
   resolveProviderSpecFromArgs,
 } from '../scripts/lib/llm/factory.js';
@@ -126,4 +127,91 @@ test('createLlmProvider: gemini primary + openrouter fallback wraps in FallbackL
     { GEMINI_API_KEY: 'test-key', OPENROUTER_API_KEY: 'sk-or-v1-test' }
   );
   assert.ok(provider instanceof FallbackLlmProvider);
+});
+
+// ---------- CI guard: claude-cli must be local-only ----------
+
+test('assertProviderAllowed: blocks claude-cli when CI=true', () => {
+  assert.throws(
+    () => assertProviderAllowed('claude-cli', { CI: 'true' }),
+    /claude-cli.*CI/
+  );
+});
+
+test('assertProviderAllowed: allows gemini in CI', () => {
+  assert.doesNotThrow(() =>
+    assertProviderAllowed('gemini', { CI: 'true' })
+  );
+});
+
+test('assertProviderAllowed: allows openrouter in CI', () => {
+  assert.doesNotThrow(() =>
+    assertProviderAllowed('openrouter', { CI: 'true' })
+  );
+});
+
+test('assertProviderAllowed: allows claude-cli locally (no CI env)', () => {
+  assert.doesNotThrow(() => assertProviderAllowed('claude-cli', {}));
+});
+
+test('assertProviderAllowed: allows claude-cli when CI=false', () => {
+  assert.doesNotThrow(() =>
+    assertProviderAllowed('claude-cli', { CI: 'false' })
+  );
+});
+
+test('createLlmProvider: claude-cli in CI throws a clear error', () => {
+  assert.throws(
+    () => createLlmProvider({ provider: 'claude-cli' }, { CI: 'true' }),
+    /claude-cli.*CI/
+  );
+});
+
+test('createLlmProvider: claude-cli as fallback in CI throws', () => {
+  assert.throws(
+    () =>
+      createLlmProvider(
+        { provider: 'gemini', fallback: 'claude-cli' },
+        { CI: 'true', GEMINI_API_KEY: 'test-key' }
+      ),
+    /claude-cli.*CI/
+  );
+});
+
+test('createLlmProvider: openrouter works in CI when OPENROUTER_API_KEY is set', () => {
+  const provider = createLlmProvider(
+    { provider: 'openrouter' },
+    { CI: 'true', OPENROUTER_API_KEY: 'sk-or-v1-test' }
+  );
+  assert.ok(provider);
+  assert.equal(provider.name, 'openrouter');
+});
+
+test('createLlmProvider: gemini works in CI when GEMINI_API_KEY is set', () => {
+  const provider = createLlmProvider(
+    { provider: 'gemini' },
+    { CI: 'true', GEMINI_API_KEY: 'test-key' }
+  );
+  assert.ok(provider);
+  assert.equal(provider.name, 'gemini');
+});
+
+test('createLlmProvider: gemini in CI does NOT require OPENROUTER_API_KEY', () => {
+  // Confirms the "don't force both keys" contract: missing OPENROUTER_API_KEY
+  // must not block a gemini-only CI run.
+  assert.doesNotThrow(() =>
+    createLlmProvider(
+      { provider: 'gemini' },
+      { CI: 'true', GEMINI_API_KEY: 'test-key' }
+    )
+  );
+});
+
+test('createLlmProvider: openrouter does NOT require GEMINI_API_KEY', () => {
+  assert.doesNotThrow(() =>
+    createLlmProvider(
+      { provider: 'openrouter' },
+      { OPENROUTER_API_KEY: 'sk-or-v1-test' }
+    )
+  );
 });
