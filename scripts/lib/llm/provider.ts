@@ -6,7 +6,7 @@ import type {
 } from '../counter-signal-validation.js';
 import type { WrapperCopy } from '../../../emails/utils/generate-copy.js';
 
-export type LlmProviderName = 'gemini' | 'claude-cli';
+export type LlmProviderName = 'gemini' | 'claude-cli' | 'openrouter';
 
 export interface RefinementInput {
   weekId: string;

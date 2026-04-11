@@ -6,6 +6,7 @@ import {
 } from '../scripts/lib/llm/factory.js';
 import { GeminiProvider } from '../scripts/lib/llm/gemini-provider.js';
 import { ClaudeCliProvider } from '../scripts/lib/llm/claude-cli-provider.js';
+import { OpenRouterProvider } from '../scripts/lib/llm/openrouter-provider.js';
 import { FallbackLlmProvider } from '../scripts/lib/llm/fallback-provider.js';
 
 test('resolveProviderSpecFromArgs: defaults to gemini', () => {
@@ -49,6 +50,22 @@ test('resolveProviderSpecFromArgs: unknown --llm value throws', () => {
   );
 });
 
+test('resolveProviderSpecFromArgs: --llm openrouter selects openrouter', () => {
+  const spec = resolveProviderSpecFromArgs(['--llm', 'openrouter'], {});
+  assert.equal(spec.provider, 'openrouter');
+});
+
+test('resolveProviderSpecFromArgs: LLM_PROVIDER=openrouter from env', () => {
+  const spec = resolveProviderSpecFromArgs([], { LLM_PROVIDER: 'openrouter' });
+  assert.equal(spec.provider, 'openrouter');
+});
+
+test('resolveProviderSpecFromArgs: --fallback openrouter sets fallback', () => {
+  const spec = resolveProviderSpecFromArgs(['--fallback', 'openrouter'], {});
+  assert.equal(spec.provider, 'gemini');
+  assert.equal(spec.fallback, 'openrouter');
+});
+
 test('createLlmProvider: gemini requires api key', () => {
   assert.throws(
     () => createLlmProvider({ provider: 'gemini' }, {}),
@@ -85,4 +102,28 @@ test('createLlmProvider: fallback=same as primary is a no-op', () => {
     {}
   );
   assert.ok(provider instanceof ClaudeCliProvider);
+});
+
+test('createLlmProvider: openrouter requires OPENROUTER_API_KEY', () => {
+  assert.throws(
+    () => createLlmProvider({ provider: 'openrouter' }, {}),
+    /OPENROUTER_API_KEY/
+  );
+});
+
+test('createLlmProvider: openrouter builds OpenRouterProvider with api key', () => {
+  const provider = createLlmProvider(
+    { provider: 'openrouter' },
+    { OPENROUTER_API_KEY: 'sk-or-v1-test' }
+  );
+  assert.ok(provider instanceof OpenRouterProvider);
+  assert.equal(provider.name, 'openrouter');
+});
+
+test('createLlmProvider: gemini primary + openrouter fallback wraps in FallbackLlmProvider', () => {
+  const provider = createLlmProvider(
+    { provider: 'gemini', fallback: 'openrouter' },
+    { GEMINI_API_KEY: 'test-key', OPENROUTER_API_KEY: 'sk-or-v1-test' }
+  );
+  assert.ok(provider instanceof FallbackLlmProvider);
 });

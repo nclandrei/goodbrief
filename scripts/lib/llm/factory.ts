@@ -1,6 +1,7 @@
 import type { LlmProvider, LlmProviderName } from './provider.js';
 import { GeminiProvider } from './gemini-provider.js';
 import { ClaudeCliProvider } from './claude-cli-provider.js';
+import { OpenRouterProvider } from './openrouter-provider.js';
 import { FallbackLlmProvider } from './fallback-provider.js';
 
 export interface ProviderSpec {
@@ -8,7 +9,11 @@ export interface ProviderSpec {
   fallback?: LlmProviderName;
 }
 
-const VALID_PROVIDERS: readonly LlmProviderName[] = ['gemini', 'claude-cli'];
+const VALID_PROVIDERS: readonly LlmProviderName[] = [
+  'gemini',
+  'claude-cli',
+  'openrouter',
+];
 
 function assertValidProvider(name: string): asserts name is LlmProviderName {
   if (!(VALID_PROVIDERS as readonly string[]).includes(name)) {
@@ -22,10 +27,10 @@ function assertValidProvider(name: string): asserts name is LlmProviderName {
  * Read the LLM provider selection from argv + env. CLI flags win over env.
  *
  * Recognized inputs:
- *   --llm <gemini|claude-cli>         primary provider
- *   --fallback <gemini|claude-cli>    fallback on quota errors
- *   LLM_PROVIDER=<name>               same as --llm
- *   LLM_FALLBACK=<name>               same as --fallback
+ *   --llm <gemini|claude-cli|openrouter>       primary provider
+ *   --fallback <gemini|claude-cli|openrouter>  fallback on quota errors
+ *   LLM_PROVIDER=<name>                        same as --llm
+ *   LLM_FALLBACK=<name>                        same as --fallback
  */
 export function resolveProviderSpecFromArgs(
   args: string[],
@@ -83,5 +88,19 @@ function buildProvider(
     }
     case 'claude-cli':
       return new ClaudeCliProvider();
+    case 'openrouter': {
+      const apiKey = env.OPENROUTER_API_KEY;
+      if (!apiKey) {
+        throw new Error(
+          'OPENROUTER_API_KEY environment variable is required for the openrouter LLM provider'
+        );
+      }
+      return new OpenRouterProvider({
+        apiKey,
+        model: env.OPENROUTER_MODEL,
+        httpReferer: env.OPENROUTER_HTTP_REFERER,
+        appTitle: env.OPENROUTER_APP_TITLE,
+      });
+    }
   }
 }

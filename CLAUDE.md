@@ -80,12 +80,24 @@ docs/                  # Plans and specs (PLAN.md, COPY_PLAN.md, etc.)
 ## Environment Variables
 
 ```
-GEMINI_API_KEY         # Required for AI pipeline phases
+GEMINI_API_KEY         # Default AI provider (pipeline phases)
+OPENROUTER_API_KEY     # Alternative AI provider (use --llm openrouter)
+OPENROUTER_MODEL       # Optional: override default model (default: anthropic/claude-sonnet-4.5)
 RESEND_API_KEY         # Required for email sending
 RESEND_AUDIENCE_ID     # Newsletter audience
 RESEND_SEGMENT_ID      # Targeted sending segment
 TEST_EMAIL             # Test recipient for dev/preview
 ```
+
+### LLM Provider Selection
+
+The draft pipeline supports three interchangeable LLM providers:
+- `--llm gemini` (default) — requires `GEMINI_API_KEY`
+- `--llm claude-cli` — uses local `claude` CLI, no API key required
+- `--llm openrouter` — requires `OPENROUTER_API_KEY`
+
+Set `LLM_PROVIDER=openrouter` in env to make it the default, or use
+`LLM_FALLBACK=openrouter` to auto-fall-back on quota errors.
 
 ## Code Conventions
 
