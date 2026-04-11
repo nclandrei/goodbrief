@@ -176,6 +176,54 @@ test('parseOpenRouterResponse: surfaces error envelope as LlmProviderError', () 
   );
 });
 
+// Repro for the 2026-W15 score-phase failure: HTTP 200 envelope but the
+// individual choice carries an upstream `provider_unavailable` error and
+// `message.content: null`. Surfacing it as a generic "content is empty" error
+// hides the real cause, so the parser must report the choice-level error
+// (and quota status codes still map to LlmQuotaError).
+test('parseOpenRouterResponse: surfaces choice-level error inside HTTP-200 envelope as LlmProviderError', () => {
+  const body = JSON.stringify({
+    id: 'gen-x',
+    object: 'chat.completion',
+    choices: [
+      {
+        index: 0,
+        finish_reason: null,
+        error: {
+          code: 502,
+          message: 'Upstream error from OpenInference: Unknown role: assistantfinal',
+          metadata: { error_type: 'provider_unavailable' },
+        },
+        message: { role: 'assistant', content: null, refusal: null },
+      },
+    ],
+  });
+  assert.throws(
+    () => parseOpenRouterResponse(body),
+    (err: unknown) => {
+      if (!(err instanceof LlmProviderError)) return false;
+      if (err instanceof LlmQuotaError) return false;
+      return /upstream|provider_unavailable|502/i.test(err.message);
+    }
+  );
+});
+
+test('parseOpenRouterResponse: choice-level 429 maps to LlmQuotaError', () => {
+  const body = JSON.stringify({
+    choices: [
+      {
+        index: 0,
+        error: { code: 429, message: 'Rate limit on upstream' },
+        message: { role: 'assistant', content: null },
+      },
+    ],
+  });
+  assert.throws(
+    () => parseOpenRouterResponse(body),
+    (err: unknown) => err instanceof LlmQuotaError
+  );
+});
+
 // ---------- scoreArticles ----------
 
 test('scoreArticles: parses structured output and filters hallucinated IDs', async () => {
@@ -496,6 +544,106 @@ test('call does NOT retry HTTP 429 (quota) — surfaces immediately as LlmQuotaE
     (err: unknown) => err instanceof LlmQuotaError
   );
   assert.equal(attempts, 1, 'quota errors must never be retried');
+});
+
+// Repro for 2026-W15: an HTTP-200 envelope whose single choice carries
+// `error.code: 502` + `metadata.error_type: provider_unavailable` is the
+// exact failure mode that killed the score phase. The transport doesn't
+// see anything wrong (status 200), so we must inspect the body and treat
+// upstream-unavailable choices as transient + retryable.
+test('call retries when choice carries provider_unavailable error inside HTTP-200 envelope', async () => {
+  const transientChoiceBody = JSON.stringify({
+    id: 'gen-x',
+    object: 'chat.completion',
+    choices: [
+      {
+        index: 0,
+        finish_reason: null,
+        error: {
+          code: 502,
+          message: 'Upstream error from OpenInference: Unknown role: assistantfinal',
+          metadata: { error_type: 'provider_unavailable' },
+        },
+        message: { role: 'assistant', content: null, refusal: null },
+      },
+    ],
+  });
+
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      if (attempts === 1) return okResponse(transientChoiceBody);
+      return okResponse(chatEnvelope([]));
+    },
+    { maxRetries: 2, retryDelayMs: 0 }
+  );
+
+  const scores = await provider.scoreArticles([RAW], { includeReasoning: false });
+  assert.deepEqual(scores, []);
+  assert.equal(attempts, 2, 'expected one retry after the choice-level upstream error');
+});
+
+test('call exhausts retries on persistent choice-level upstream error and throws non-quota LlmProviderError', async () => {
+  const persistentBody = JSON.stringify({
+    choices: [
+      {
+        index: 0,
+        finish_reason: null,
+        error: {
+          code: 502,
+          message: 'Upstream error: provider down',
+          metadata: { error_type: 'provider_unavailable' },
+        },
+        message: { role: 'assistant', content: null },
+      },
+    ],
+  });
+
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      return okResponse(persistentBody);
+    },
+    { maxRetries: 2, retryDelayMs: 0 }
+  );
+
+  await assert.rejects(
+    () => provider.scoreArticles([RAW], { includeReasoning: false }),
+    (err: unknown) =>
+      err instanceof LlmProviderError &&
+      !(err instanceof LlmQuotaError) &&
+      /upstream|provider_unavailable|502/i.test(err.message)
+  );
+  assert.equal(attempts, 3, 'initial attempt + 2 retries = 3 total');
+});
+
+test('call surfaces choice-level 429 immediately as LlmQuotaError without retry', async () => {
+  const body = JSON.stringify({
+    choices: [
+      {
+        index: 0,
+        error: { code: 429, message: 'Upstream rate limit' },
+        message: { role: 'assistant', content: null },
+      },
+    ],
+  });
+
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      return okResponse(body);
+    },
+    { maxRetries: 3, retryDelayMs: 0 }
+  );
+
+  await assert.rejects(
+    () => provider.scoreArticles([RAW], { includeReasoning: false }),
+    (err: unknown) => err instanceof LlmQuotaError
+  );
+  assert.equal(attempts, 1, 'choice-level quota errors must never be retried');
 });
 
 test('call does NOT retry HTTP 401 (bad auth) — surfaces immediately as non-quota LlmProviderError', async () => {

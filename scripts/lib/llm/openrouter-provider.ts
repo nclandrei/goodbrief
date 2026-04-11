@@ -95,7 +95,15 @@ interface OpenRouterChoiceMessage {
 interface OpenRouterChoice {
   index?: number;
   message?: OpenRouterChoiceMessage;
-  finish_reason?: string;
+  finish_reason?: string | null;
+  /**
+   * OpenRouter sometimes returns an HTTP-200 envelope where the upstream
+   * provider failed mid-stream. In that case the choice carries its own
+   * `error` payload (status code, message, metadata.error_type) and
+   * `message.content` is `null`. We must surface this so callers can retry
+   * provider_unavailable / 5xx blips and bail out cleanly on terminal errors.
+   */
+  error?: OpenRouterErrorPayload;
 }
 
 interface OpenRouterErrorPayload {
@@ -198,12 +206,30 @@ export function parseOpenRouterResponse<T = unknown>(rawBody: string): T {
     );
   }
 
-  const content = envelope.choices[0]?.message?.content;
+  const choice = envelope.choices[0];
+
+  // Per-choice error: HTTP envelope was 200 but the upstream provider died
+  // mid-stream (e.g. provider_unavailable, upstream 5xx). Surface the real
+  // cause instead of the misleading "content is empty" path below.
+  if (choice?.error) {
+    const choiceMessage = choice.error.message || 'OpenRouter choice-level error';
+    if (isQuotaMessage(choiceMessage) || isQuotaStatusCode(choice.error.code)) {
+      throw new LlmQuotaError('openrouter', choiceMessage);
+    }
+    throw new LlmProviderError(
+      'openrouter',
+      `OpenRouter choice-level error (code=${
+        choice.error.code ?? 'unknown'
+      }): ${choiceMessage}`
+    );
+  }
+
+  const content = choice?.message?.content;
   if (typeof content !== 'string' || content.trim().length === 0) {
     throw new LlmProviderError(
       'openrouter',
       `OpenRouter response content is empty or non-string: ${JSON.stringify(
-        envelope.choices[0]
+        choice
       ).slice(0, 300)}`
     );
   }
@@ -239,6 +265,98 @@ function safeParseEnvelope(rawBody: string): OpenRouterEnvelope {
 
 function isQuotaStatusCode(code: number | undefined): boolean {
   return code === 429 || code === 402 || code === 403;
+}
+
+function isTransientStatusCode(code: number | undefined): boolean {
+  return typeof code === 'number' && code >= 500 && code < 600;
+}
+
+function isProviderUnavailableMetadata(metadata: unknown): boolean {
+  if (!metadata || typeof metadata !== 'object') return false;
+  const errorType = (metadata as { error_type?: unknown }).error_type;
+  return (
+    errorType === 'provider_unavailable' ||
+    errorType === 'provider_overloaded' ||
+    errorType === 'timeout'
+  );
+}
+
+/**
+ * Result of inspecting an HTTP-2xx OpenRouter response body. Distinguishes
+ * healthy responses from per-choice errors that the transport layer cannot
+ * see (because the HTTP envelope is 200) so {@link OpenRouterProvider.call}
+ * can retry transient upstream blips and bail out cleanly on terminal ones.
+ */
+export type OpenRouterEnvelopeStatus =
+  | { kind: 'ok' }
+  | { kind: 'quota'; message: string }
+  | { kind: 'transient'; message: string }
+  | { kind: 'terminal'; message: string };
+
+/**
+ * Inspect an OpenRouter response body and classify its status. Used by
+ * {@link OpenRouterProvider.call} on the 2xx path to detect upstream
+ * `provider_unavailable` errors that arrive embedded inside an otherwise
+ * successful HTTP envelope (the 2026-W15 score-phase failure mode).
+ */
+export function inspectOpenRouterEnvelope(
+  rawBody: string
+): OpenRouterEnvelopeStatus {
+  let envelope: OpenRouterEnvelope;
+  try {
+    envelope = JSON.parse(rawBody) as OpenRouterEnvelope;
+  } catch {
+    return {
+      kind: 'terminal',
+      message: `OpenRouter returned non-JSON body: ${rawBody.slice(0, 200)}`,
+    };
+  }
+
+  if (envelope.error) {
+    const message =
+      envelope.error.message || 'OpenRouter returned an error envelope';
+    if (isQuotaMessage(message) || isQuotaStatusCode(envelope.error.code)) {
+      return { kind: 'quota', message };
+    }
+    if (isTransientStatusCode(envelope.error.code)) {
+      return { kind: 'transient', message };
+    }
+    return { kind: 'terminal', message };
+  }
+
+  if (!Array.isArray(envelope.choices) || envelope.choices.length === 0) {
+    return {
+      kind: 'terminal',
+      message: 'OpenRouter response has no choices',
+    };
+  }
+
+  const choice = envelope.choices[0];
+  if (choice?.error) {
+    const message = choice.error.message || 'OpenRouter choice-level error';
+    if (isQuotaMessage(message) || isQuotaStatusCode(choice.error.code)) {
+      return { kind: 'quota', message };
+    }
+    if (
+      isTransientStatusCode(choice.error.code) ||
+      isProviderUnavailableMetadata(choice.error.metadata)
+    ) {
+      return {
+        kind: 'transient',
+        message: `choice-level error (code=${
+          choice.error.code ?? 'unknown'
+        }): ${message}`,
+      };
+    }
+    return {
+      kind: 'terminal',
+      message: `choice-level error (code=${
+        choice.error.code ?? 'unknown'
+      }): ${message}`,
+    };
+  }
+
+  return { kind: 'ok' };
 }
 
 // ---------- provider implementation ----------
@@ -591,10 +709,54 @@ OUTPUT RULES (OpenRouter structured output):
       const elapsed = Date.now() - startedAt;
 
       if (response.status >= 200 && response.status < 300) {
+        // HTTP transport succeeded, but OpenRouter sometimes returns a
+        // 200 envelope whose single choice carries an upstream error
+        // (e.g. provider_unavailable, upstream 5xx). Inspect the body so
+        // those failures get retried instead of crashing the pipeline.
+        const envelopeStatus = inspectOpenRouterEnvelope(response.body);
+
+        if (envelopeStatus.kind === 'ok') {
+          console.error(
+            `${logPrefix} ${attemptLabel} ok status=${response.status} elapsedMs=${elapsed} bodyLen=${response.body.length}`
+          );
+          return response.body;
+        }
+
+        if (envelopeStatus.kind === 'quota') {
+          console.error(
+            `${logPrefix} ${attemptLabel} quota-in-200-envelope elapsedMs=${elapsed} message=${envelopeStatus.message}`
+          );
+          throw new LlmQuotaError('openrouter', envelopeStatus.message);
+        }
+
+        if (envelopeStatus.kind === 'transient') {
+          console.error(
+            `${logPrefix} ${attemptLabel} transient-in-200-envelope elapsedMs=${elapsed} message=${envelopeStatus.message}`
+          );
+          if (process.env.OPENROUTER_DEBUG === '1') {
+            console.error(
+              `${logPrefix} ${attemptLabel} body-preview=${response.body.slice(0, 800)}`
+            );
+          }
+          lastError = new LlmProviderError(
+            'openrouter',
+            `OpenRouter transient choice error: ${envelopeStatus.message}`
+          );
+          if (attempt < totalAttempts) {
+            await this.sleepBackoff(attempt);
+            continue;
+          }
+          throw lastError;
+        }
+
+        // kind === 'terminal' — bail out without retrying.
         console.error(
-          `${logPrefix} ${attemptLabel} ok status=${response.status} elapsedMs=${elapsed} bodyLen=${response.body.length}`
+          `${logPrefix} ${attemptLabel} terminal-in-200-envelope elapsedMs=${elapsed} message=${envelopeStatus.message}`
         );
-        return response.body;
+        throw new LlmProviderError(
+          'openrouter',
+          `OpenRouter envelope error: ${envelopeStatus.message}`
+        );
       }
 
       // Non-2xx: decide whether to retry, map to quota, or bail out.
