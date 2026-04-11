@@ -432,6 +432,31 @@ export function inspectOpenRouterEnvelope(
     };
   }
 
+  // Content is non-empty and `finish_reason` looks healthy, but the body may
+  // still be structurally broken JSON: some free-tier upstreams (reproduced
+  // on 2026-W15 batch 11 with `openai/gpt-oss-120b:free`) stop streaming
+  // mid-output and report `finish_reason: "stop"` without ever setting
+  // `length`. The downstream `parseJsonPayload` would then crash the whole
+  // phase because the error is raised outside the retry loop in
+  // `OpenRouterProvider.call`.
+  //
+  // Validate the content here so the retry loop gets a chance to recover.
+  // Classify as `transient` (not `terminal`) because re-running the same
+  // prompt against a non-deterministic upstream commonly succeeds on a
+  // subsequent attempt — this is the same recommendation as OpenRouter's
+  // "retry with a simple retry mechanism" guidance for no/partial content.
+  try {
+    parseJsonPayload(content);
+  } catch (error) {
+    const parseMessage = error instanceof Error ? error.message : String(error);
+    const finishReason = choice?.finish_reason ?? 'unknown';
+    const nativeFinishReason = choice?.native_finish_reason ?? 'unknown';
+    return {
+      kind: 'transient',
+      message: `content is non-empty but JSON is unparseable/truncated (finish_reason=${finishReason} native_finish_reason=${nativeFinishReason} contentLen=${content.length}): ${parseMessage} — upstream likely stopped streaming mid-output`,
+    };
+  }
+
   return { kind: 'ok' };
 }
 
