@@ -646,6 +646,184 @@ test('call surfaces choice-level 429 immediately as LlmQuotaError without retry'
   assert.equal(attempts, 1, 'choice-level quota errors must never be retried');
 });
 
+// Repro for the 2026-W15 batch-2 failure: HTTP-200 envelope whose single
+// choice has `finish_reason: "stop"`, no `error` field, but `content: null`.
+// This is the documented `gpt-oss-120b:free` failure mode where the model
+// exhausts its output budget on reasoning tokens (or cold-starts) and
+// returns nothing meaningful. OpenRouter's own guidance is "retry with a
+// simple retry mechanism" so we must treat it as transient.
+//
+// See: https://openrouter.ai/docs/api/reference/errors-and-debugging
+//      https://github.com/vllm-project/vllm/issues/30498
+test('call retries when choice has finish_reason=stop but content is null (empty-content bug)', async () => {
+  const emptyContentBody = JSON.stringify({
+    id: 'gen-empty',
+    object: 'chat.completion',
+    choices: [
+      {
+        index: 0,
+        logprobs: null,
+        finish_reason: 'stop',
+        native_finish_reason: 'stop',
+        message: {
+          role: 'assistant',
+          content: null,
+          refusal: null,
+          reasoning: null,
+        },
+      },
+    ],
+  });
+
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      if (attempts === 1) return okResponse(emptyContentBody);
+      return okResponse(chatEnvelope([]));
+    },
+    { maxRetries: 2, retryDelayMs: 0 }
+  );
+
+  const scores = await provider.scoreArticles([RAW], { includeReasoning: false });
+  assert.deepEqual(scores, []);
+  assert.equal(attempts, 2, 'expected one retry after the empty-content response');
+});
+
+test('call retries when content is empty string with finish_reason=stop', async () => {
+  const emptyStringBody = JSON.stringify({
+    id: 'gen-empty-str',
+    object: 'chat.completion',
+    choices: [
+      {
+        index: 0,
+        finish_reason: 'stop',
+        message: { role: 'assistant', content: '', refusal: null },
+      },
+    ],
+  });
+
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      if (attempts < 2) return okResponse(emptyStringBody);
+      return okResponse(chatEnvelope([]));
+    },
+    { maxRetries: 2, retryDelayMs: 0 }
+  );
+
+  await provider.scoreArticles([RAW], { includeReasoning: false });
+  assert.equal(attempts, 2, 'expected one retry after the empty-string response');
+});
+
+test('call retries when finish_reason=length (max_tokens hit) yields null content', async () => {
+  const lengthCutoffBody = JSON.stringify({
+    id: 'gen-length',
+    object: 'chat.completion',
+    choices: [
+      {
+        index: 0,
+        finish_reason: 'length',
+        native_finish_reason: 'length',
+        message: { role: 'assistant', content: null },
+      },
+    ],
+  });
+
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      if (attempts === 1) return okResponse(lengthCutoffBody);
+      return okResponse(chatEnvelope([]));
+    },
+    { maxRetries: 2, retryDelayMs: 0 }
+  );
+
+  await provider.scoreArticles([RAW], { includeReasoning: false });
+  assert.equal(attempts, 2, 'expected one retry on length-cutoff empty content');
+});
+
+test('call exhausts retries on persistent null content and throws LlmProviderError mentioning finish_reason', async () => {
+  const persistentEmptyBody = JSON.stringify({
+    id: 'gen-persistent-empty',
+    object: 'chat.completion',
+    choices: [
+      {
+        index: 0,
+        finish_reason: 'stop',
+        native_finish_reason: 'stop',
+        message: { role: 'assistant', content: null, refusal: null, reasoning: null },
+      },
+    ],
+  });
+
+  let attempts = 0;
+  const provider = makeProvider(
+    async () => {
+      attempts++;
+      return okResponse(persistentEmptyBody);
+    },
+    { maxRetries: 2, retryDelayMs: 0 }
+  );
+
+  await assert.rejects(
+    () => provider.scoreArticles([RAW], { includeReasoning: false }),
+    (err: unknown) => {
+      if (!(err instanceof LlmProviderError)) return false;
+      if (err instanceof LlmQuotaError) return false;
+      // Error message should mention the real cause: finish_reason + empty content.
+      return (
+        /empty|null|finish_reason/i.test(err.message) &&
+        /stop/i.test(err.message)
+      );
+    }
+  );
+  assert.equal(attempts, 3, 'initial + 2 retries = 3 total');
+});
+
+test('parseOpenRouterResponse: empty-content body surfaces LlmProviderError mentioning finish_reason', () => {
+  const body = JSON.stringify({
+    choices: [
+      {
+        index: 0,
+        finish_reason: 'stop',
+        message: { role: 'assistant', content: null },
+      },
+    ],
+  });
+  assert.throws(
+    () => parseOpenRouterResponse(body),
+    (err: unknown) => {
+      if (!(err instanceof LlmProviderError)) return false;
+      if (err instanceof LlmQuotaError) return false;
+      return /finish_reason/i.test(err.message) && /stop/i.test(err.message);
+    }
+  );
+});
+
+// Configure request body with reasoning.exclude + generous max_tokens to
+// mitigate the gpt-oss-120b empty-content issue. The model exhausts its
+// output budget on reasoning tokens if we don't steer it. These settings
+// are passed through in the request body builder.
+test('buildOpenRouterRequestBody: includes reasoning.exclude and sensible max_tokens by default', () => {
+  const body = buildOpenRouterRequestBody({
+    model: 'openai/gpt-oss-120b:free',
+    prompt: 'p',
+    schema: {},
+    schemaName: 's',
+  });
+  const parsed = JSON.parse(body);
+  // reasoning.exclude: true prevents reasoning tokens from landing in the
+  // final content field (they're consumed server-side).
+  assert.deepEqual(parsed.reasoning, { exclude: true });
+  // A generous default keeps the model from running out of tokens on
+  // reasoning-heavy schemas like the score batch.
+  assert.equal(typeof parsed.max_tokens, 'number');
+  assert.ok(parsed.max_tokens >= 8000, 'max_tokens should default to at least 8000');
+});
+
 test('call does NOT retry HTTP 401 (bad auth) — surfaces immediately as non-quota LlmProviderError', async () => {
   let attempts = 0;
   const provider = makeProvider(
