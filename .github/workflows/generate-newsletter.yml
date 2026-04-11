@@ -94,7 +94,7 @@ jobs:
           LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'deepseek/deepseek-chat-v3.1:free' }}
           OPENROUTER_TIMEOUT_MS: '900000'
           OPENROUTER_MAX_RETRIES: '4'
           SCORE_BATCH_SIZE: '25'
@@ -125,7 +125,10 @@ jobs:
           LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'deepseek/deepseek-chat-v3.1:free' }}
+          # Cheap analytical phase — route to a small fast model to save the
+          # DeepSeek V3.1 budget for voice-sensitive phases.
+          OPENROUTER_DEDUP_MODEL: ${{ vars.OPENROUTER_DEDUP_MODEL || 'google/gemma-3-27b-it:free' }}
           OPENROUTER_TIMEOUT_MS: '900000'
           OPENROUTER_MAX_RETRIES: '4'
       - uses: actions/upload-artifact@v4
@@ -153,7 +156,10 @@ jobs:
           LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'deepseek/deepseek-chat-v3.1:free' }}
+          # Cheap analytical phase — route to a small fast model to save the
+          # DeepSeek V3.1 budget for voice-sensitive phases.
+          OPENROUTER_COUNTER_SIGNAL_MODEL: ${{ vars.OPENROUTER_COUNTER_SIGNAL_MODEL || 'google/gemma-3-27b-it:free' }}
           OPENROUTER_TIMEOUT_MS: '900000'
           OPENROUTER_MAX_RETRIES: '4'
       - uses: actions/upload-artifact@v4
@@ -202,7 +208,7 @@ jobs:
           LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'deepseek/deepseek-chat-v3.1:free' }}
           OPENROUTER_TIMEOUT_MS: '900000'
           OPENROUTER_MAX_RETRIES: '4'
       - uses: actions/upload-artifact@v4
@@ -230,7 +236,7 @@ jobs:
           LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'deepseek/deepseek-chat-v3.1:free' }}
           OPENROUTER_TIMEOUT_MS: '900000'
           OPENROUTER_MAX_RETRIES: '4'
       - uses: actions/upload-artifact@v4
