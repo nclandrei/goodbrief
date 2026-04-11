@@ -71,6 +71,11 @@ jobs:
 
   score:
     runs-on: ubuntu-latest
+    # Worst case: N batches × 15 min/attempt × 5 attempts. With SCORE_BATCH_SIZE=25
+    # and ~250 articles this is ~10 batches, but almost every batch succeeds on
+    # the first attempt. Set a generous ceiling to absorb pathological cases
+    # before the default 6h GH Actions cap.
+    timeout-minutes: 350
     needs: [determine_week, prepare]
     steps:
       - uses: actions/checkout@v4
@@ -90,7 +95,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
-          OPENROUTER_TIMEOUT_MS: '600000'
+          OPENROUTER_TIMEOUT_MS: '900000'
+          OPENROUTER_MAX_RETRIES: '4'
           SCORE_BATCH_SIZE: '25'
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
@@ -120,7 +126,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
-          OPENROUTER_TIMEOUT_MS: '600000'
+          OPENROUTER_TIMEOUT_MS: '900000'
+          OPENROUTER_MAX_RETRIES: '4'
       - uses: actions/upload-artifact@v4
         with:
           name: pipeline-semantic-dedup-${{ needs.determine_week.outputs.id }}
@@ -147,7 +154,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
-          OPENROUTER_TIMEOUT_MS: '600000'
+          OPENROUTER_TIMEOUT_MS: '900000'
+          OPENROUTER_MAX_RETRIES: '4'
       - uses: actions/upload-artifact@v4
         with:
           name: pipeline-counter-signal-validate-${{ needs.determine_week.outputs.id }}
@@ -195,7 +203,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
-          OPENROUTER_TIMEOUT_MS: '600000'
+          OPENROUTER_TIMEOUT_MS: '900000'
+          OPENROUTER_MAX_RETRIES: '4'
       - uses: actions/upload-artifact@v4
         with:
           name: pipeline-wrapper-copy-${{ needs.determine_week.outputs.id }}
@@ -222,7 +231,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
-          OPENROUTER_TIMEOUT_MS: '600000'
+          OPENROUTER_TIMEOUT_MS: '900000'
+          OPENROUTER_MAX_RETRIES: '4'
       - uses: actions/upload-artifact@v4
         with:
           name: pipeline-refine-${{ needs.determine_week.outputs.id }}

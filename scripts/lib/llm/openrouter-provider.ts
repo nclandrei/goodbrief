@@ -35,19 +35,24 @@ const DEFAULT_MODEL =
 const DEFAULT_REFERER =
   process.env.OPENROUTER_HTTP_REFERER || 'https://goodbrief.ro';
 const DEFAULT_APP_TITLE = process.env.OPENROUTER_APP_TITLE || 'Good Brief';
-// Per-attempt timeout. 10 minutes is generous but realistic for free-tier
+// Per-attempt timeout. 15 minutes is generous but realistic for free-tier
 // models like `openai/gpt-oss-120b:free` that queue requests during peak
-// hours. Combined with `maxRetries=2` (3 total attempts) and backoff this
-// gives ~30 minutes of wall clock per batch in the worst case, which still
-// fits within a single GitHub Actions job.
+// hours. Because we use `:free` models with a `max_price` guard, slow
+// requests are literally free — so we err on the side of patience.
+// Combined with `maxRetries=4` (5 total attempts) and bounded backoff this
+// gives ~75 minutes of wall clock per batch in the worst case. The `score`
+// job sets `timeout-minutes` to absorb this.
 const DEFAULT_TIMEOUT_MS = Number.parseInt(
-  process.env.OPENROUTER_TIMEOUT_MS || '600000',
+  process.env.OPENROUTER_TIMEOUT_MS || '900000',
   10
 );
 // How many retries to attempt on transient failures (AbortError, network
 // errors, HTTP 5xx). Total attempts = maxRetries + 1. Set to 0 to disable.
+// Default is intentionally generous because the failure mode we see on
+// `:free` upstream models is intermittent queue timeouts, which almost
+// always succeed on a subsequent attempt.
 const DEFAULT_MAX_RETRIES = Number.parseInt(
-  process.env.OPENROUTER_MAX_RETRIES || '2',
+  process.env.OPENROUTER_MAX_RETRIES || '4',
   10
 );
 // Base delay for exponential backoff between retries (ms). Actual delay is

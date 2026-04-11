@@ -91,11 +91,11 @@ function makeProvider(
     httpReferer: overrides.referer,
     appTitle: overrides.title,
     fetcher: fakeFetcher,
-    // Tests that don't care about retry still see the production default, but
-    // tests that exercise retry pass maxRetries explicitly AND set
-    // retryDelayMs=0 so the suite stays fast.
     maxRetries: overrides.maxRetries,
-    retryDelayMs: overrides.retryDelayMs,
+    // Keep the suite fast: never actually sleep between retries in tests.
+    // Tests that exercise retry explicitly set `maxRetries` and let this
+    // default kick in.
+    retryDelayMs: overrides.retryDelayMs ?? 0,
   });
 }
 
