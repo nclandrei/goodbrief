@@ -58,6 +58,13 @@ const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions';
 export const DEFAULT_FALLBACK_MODEL = 'google/gemma-4-26b-a4b-it:free';
 
 /**
+ * Maximum number of models allowed in OpenRouter's `models` array.
+ * This includes the primary model plus fallbacks.
+ * @see https://openrouter.ai/docs/guides/routing/model-fallbacks
+ */
+export const OPENROUTER_MAX_MODELS = 3;
+
+/**
  * Fallback models tried (in order) when the primary model is unavailable.
  * Passed via OpenRouter's native `models` array so the server handles
  * fallback routing in a single request — no extra round-trips.
@@ -67,18 +74,15 @@ export const DEFAULT_FALLBACK_MODEL = 'google/gemma-4-26b-a4b-it:free';
  *
  * - `google/gemma-3-27b-it:free`                       — Google AI Studio
  * - `meta-llama/llama-3.3-70b-instruct:free`           — Meta / Groq
- * - `nvidia/nemotron-3-super-120b-a12b:free`           — NVIDIA
- * - `qwen/qwen3-next-80b-a3b-instruct:free`           — Alibaba / Fireworks
  *
- * All are free (`:free` suffix), fast (MoE or efficient dense), and
- * non-reasoning. Override with `OPENROUTER_FALLBACK_MODELS` (comma-separated
- * model IDs). Set to empty string to disable fallback rotation entirely.
+ * OpenRouter limits the `models` array to 3 entries (primary + 2 fallbacks).
+ * All are free (`:free` suffix), fast, and non-reasoning. Override with
+ * `OPENROUTER_FALLBACK_MODELS` (comma-separated model IDs). Set to empty
+ * string to disable fallback rotation entirely.
  */
 export const DEFAULT_FALLBACK_MODELS: readonly string[] = [
   'google/gemma-3-27b-it:free',
   'meta-llama/llama-3.3-70b-instruct:free',
-  'nvidia/nemotron-3-super-120b-a12b:free',
-  'qwen/qwen3-next-80b-a3b-instruct:free',
 ];
 
 /**
@@ -253,15 +257,19 @@ export function buildOpenRouterRequestBody(
   // OpenRouter's native `models` array (primary first, then fallbacks with
   // the primary stripped to avoid duplication). OpenRouter tries each model
   // in order and auto-falls-through on rate-limit / downtime / moderation.
+  // The array is capped at OPENROUTER_MAX_MODELS (OpenRouter rejects larger).
   const fallbacks = options.fallbackModels?.filter(
     (m) => m !== options.model
   );
   const useModelsArray = fallbacks && fallbacks.length > 0;
+  const models = useModelsArray
+    ? [options.model, ...fallbacks].slice(0, OPENROUTER_MAX_MODELS)
+    : undefined;
 
   const body: Record<string, unknown> = {
     // `models` takes precedence over `model` in the OpenRouter API.
-    ...(useModelsArray
-      ? { models: [options.model, ...fallbacks] }
+    ...(models
+      ? { models }
       : { model: options.model }),
     messages: [{ role: 'user', content: options.prompt }],
     response_format: {
