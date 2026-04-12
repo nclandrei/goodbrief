@@ -730,7 +730,6 @@ OUTPUT RULES (OpenRouter structured output):
     const raw = await this.call(prompt, {
       schema: SEMANTIC_DEDUP_SCHEMA,
       schemaName: 'semantic_dedup',
-      model: process.env.OPENROUTER_DEDUP_MODEL || this.model,
     });
 
     const parsed = parseOpenRouterResponse<SemanticDedupResponse>(raw);
@@ -756,7 +755,6 @@ OUTPUT RULES (OpenRouter structured output):
     const raw = await this.call(prompt, {
       schema: COUNTER_SIGNAL_SCHEMA,
       schemaName: 'counter_signal',
-      model: process.env.OPENROUTER_COUNTER_SIGNAL_MODEL || this.model,
     });
 
     const parsed = parseOpenRouterResponse<CounterSignalClassifierResult>(raw);
@@ -788,7 +786,6 @@ OUTPUT RULES (OpenRouter structured output):
     const raw = await this.call(prompt, {
       schema: WRAPPER_COPY_SCHEMA,
       schemaName: 'wrapper_copy',
-      model: process.env.OPENROUTER_WRAPPER_COPY_MODEL || this.model,
     });
 
     const parsed = parseOpenRouterResponse<Partial<WrapperCopy>>(raw);
@@ -846,9 +843,9 @@ OUTPUT RULES (OpenRouter structured output):
 
   private async call(
     prompt: string,
-    options: { schema: unknown; schemaName: string; model?: string }
+    options: { schema: unknown; schemaName: string }
   ): Promise<string> {
-    const model = options.model ?? this.model;
+    const model = this.model;
     const body = buildOpenRouterRequestBody({
       model,
       prompt,
