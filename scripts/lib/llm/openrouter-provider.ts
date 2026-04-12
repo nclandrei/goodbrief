@@ -1122,10 +1122,10 @@ OUTPUT RULES (OpenRouter structured output):
             'openrouter',
             `OpenRouter upstream rate-limit: ${message}`
           );
-          // Free-tier upstream rate limits can last 60s+, so use a 5x
-          // multiplier (10s → 20s → 40s → 80s) to give providers time
-          // to clear instead of the standard 2s → 4s → 8s → 16s.
-          await this.sleepBackoff(attempt, 5);
+          // Free-tier upstream rate limits can last minutes, so use a 10x
+          // multiplier (20s → 40s → 80s → 160s ≈ 5 min total) to give
+          // providers time to clear instead of the standard 2s → 4s → 8s → 16s.
+          await this.sleepBackoff(attempt, 10);
           continue;
         }
         // All retries exhausted — every model in the rotation is still
