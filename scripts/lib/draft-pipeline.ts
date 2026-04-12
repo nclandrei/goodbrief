@@ -421,10 +421,6 @@ export async function runScorePhase(
         );
         const scores = await llm.scoreArticles(batch, { includeReasoning: false });
         allScores.push(...scores);
-
-        if (i + BATCH_SIZE < prepared.data.preparedArticles.length) {
-          await new Promise((resolve) => setTimeout(resolve, 1000));
-        }
       }
     } catch (error) {
       if (error instanceof GeminiQuotaError || error instanceof LlmQuotaError) {
