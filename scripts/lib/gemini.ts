@@ -3,7 +3,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 import type { RawArticle } from '../types.js';
 import type { ArticleScore, GeminiOptions, GeminiCache } from './types.js';
 
-export const DEFAULT_GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-3-flash-preview';
+export const DEFAULT_GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash-lite';
 
 function getArticleScoreSchema(includeReasoning: boolean) {
   const properties: Record<string, any> = {

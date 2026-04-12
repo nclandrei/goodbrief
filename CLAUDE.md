@@ -97,8 +97,8 @@ The draft pipeline supports three interchangeable LLM providers:
 - `--llm claude-cli` — uses local `claude` CLI, no API key required
 - `--llm openrouter` — requires `OPENROUTER_API_KEY`
 
-Set `LLM_PROVIDER=openrouter` in env to make it the default, or use
-`LLM_FALLBACK=openrouter` to auto-fall-back on quota errors.
+CI defaults to `gemini` (reliable free tier). Set `LLM_FALLBACK=openrouter`
+in env to auto-fall-back on quota errors.
 
 ## Code Conventions
 

@@ -10,13 +10,13 @@ on:
         required: false
         type: string
       llm_provider:
-        description: 'LLM provider for pipeline phases. Default: openrouter. claude-cli is NOT allowed in CI.'
+        description: 'LLM provider for pipeline phases. Default: gemini. claude-cli is NOT allowed in CI.'
         required: false
         type: choice
-        default: openrouter
+        default: gemini
         options:
-          - openrouter
           - gemini
+          - openrouter
 
 permissions:
   contents: write
@@ -39,12 +39,13 @@ jobs:
           fi
 
           # LLM provider: workflow_dispatch input wins; scheduled runs default
-          # to openrouter (gemini quota is exhausted on the default project).
+          # to gemini (direct API, reliable free tier). OpenRouter free-tier
+          # models are too aggressively rate-limited for CI reliability.
           # claude-cli is deliberately not offered here — it runs only in local
           # recovery mode (see recover-week.sh).
           LLM="${{ inputs.llm_provider }}"
           if [ -z "$LLM" ]; then
-            LLM="openrouter"
+            LLM="gemini"
           fi
           echo "llm_provider=$LLM" >> "$GITHUB_OUTPUT"
 
@@ -92,21 +93,13 @@ jobs:
         run: npm run pipeline:score -- --week ${{ needs.determine_week.outputs.id }} --skip-existing
         env:
           LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
+          LLM_FALLBACK: openrouter
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'google/gemma-4-26b-a4b-it:free' }}
           OPENROUTER_TIMEOUT_MS: '900000'
           OPENROUTER_MAX_RETRIES: '4'
-          # Option 3: raise the output cap to 32k so non-reasoning models have
-          # headroom for a full SCORE_BATCH_SIZE worth of article-score JSON.
-          # Upstream providers silently clamp this to whatever they honor, so
-          # erring high is safe. Combined with option 4 (batch-split on
-          # truncation in OpenRouterProvider.scoreArticles) this makes the
-          # score phase self-healing for unexpectedly long outputs.
           OPENROUTER_MAX_TOKENS: '32000'
-          # Batch size for score phase. The truncation-split recovery path
-          # in OpenRouterProvider.scoreArticles auto-halves on overflow, so
-          # a generous default is safe.
           SCORE_BATCH_SIZE: '50'
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
@@ -133,6 +126,7 @@ jobs:
         run: npm run pipeline:semantic-dedup -- --week ${{ needs.determine_week.outputs.id }} --skip-existing
         env:
           LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
+          LLM_FALLBACK: openrouter
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'google/gemma-4-26b-a4b-it:free' }}
@@ -161,6 +155,7 @@ jobs:
         run: npm run pipeline:validate -- --week ${{ needs.determine_week.outputs.id }} --skip-existing
         env:
           LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
+          LLM_FALLBACK: openrouter
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'google/gemma-4-26b-a4b-it:free' }}
@@ -210,6 +205,7 @@ jobs:
         run: npm run pipeline:wrapper-copy -- --week ${{ needs.determine_week.outputs.id }} --skip-existing
         env:
           LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
+          LLM_FALLBACK: openrouter
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'google/gemma-4-26b-a4b-it:free' }}
@@ -238,6 +234,7 @@ jobs:
         run: npm run pipeline:refine -- --week ${{ needs.determine_week.outputs.id }} --skip-existing
         env:
           LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
+          LLM_FALLBACK: openrouter
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'google/gemma-4-26b-a4b-it:free' }}
