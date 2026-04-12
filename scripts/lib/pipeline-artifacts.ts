@@ -1,9 +1,10 @@
-import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs';
+import { existsSync, mkdirSync, readFileSync, readdirSync, unlinkSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 import type {
   DraftPipelineArtifact,
   DraftPipelinePhase,
 } from '../types.js';
+import type { ArticleScore } from './types.js';
 
 export const PIPELINE_PHASES: DraftPipelinePhase[] = [
   'prepare',
@@ -118,4 +119,43 @@ export function readPipelineArtifact<TData, TPhase extends DraftPipelinePhase>(
   }
 
   return JSON.parse(readFileSync(filePath, 'utf-8')) as DraftPipelineArtifact<TData, TPhase>;
+}
+
+// --- Partial score persistence ---
+
+interface PartialScoreData {
+  weekId: string;
+  scores: ArticleScore[];
+  savedAt: string;
+}
+
+export function getPartialScorePath(rootDir: string, weekId: string): string {
+  return join(getPipelineDir(rootDir, weekId), '02-scored.partial.json');
+}
+
+export function readPartialScores(rootDir: string, weekId: string): ArticleScore[] | null {
+  const filePath = getPartialScorePath(rootDir, weekId);
+  if (!existsSync(filePath)) {
+    return null;
+  }
+  const data = JSON.parse(readFileSync(filePath, 'utf-8')) as PartialScoreData;
+  return data.scores;
+}
+
+export function writePartialScores(rootDir: string, weekId: string, scores: ArticleScore[]): void {
+  const filePath = getPartialScorePath(rootDir, weekId);
+  mkdirSync(dirname(filePath), { recursive: true });
+  const data: PartialScoreData = {
+    weekId,
+    scores,
+    savedAt: new Date().toISOString(),
+  };
+  writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
+}
+
+export function removePartialScores(rootDir: string, weekId: string): void {
+  const filePath = getPartialScorePath(rootDir, weekId);
+  if (existsSync(filePath)) {
+    unlinkSync(filePath);
+  }
 }

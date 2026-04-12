@@ -37,7 +37,10 @@ import { getRankingScore } from './ranking.js';
 import {
   PIPELINE_ARTIFACT_FILENAMES,
   readPipelineArtifact,
+  readPartialScores,
+  removePartialScores,
   writePipelineArtifact,
+  writePartialScores,
 } from './pipeline-artifacts.js';
 import { sendAlert } from './alert.js';
 import {
@@ -396,7 +399,8 @@ export async function runPreparePhase(rootDir: string, weekId: string): Promise<
 export async function runScorePhase(
   rootDir: string,
   weekId: string,
-  llm: LlmProvider
+  llm: LlmProvider,
+  options?: { batchSize?: number }
 ): Promise<string> {
   const prepared = readPipelineArtifact<PreparedPipelineData, 'prepare'>(
     rootDir,
@@ -404,7 +408,7 @@ export async function runScorePhase(
     'prepare'
   );
   const mockScores = loadMockJson<ArticleScore[]>('GOODBRIEF_SCORE_MOCK_FILE');
-  const BATCH_SIZE = Number.parseInt(
+  const BATCH_SIZE = options?.batchSize ?? Number.parseInt(
     process.env.SCORE_BATCH_SIZE || '200',
     10
   );
@@ -413,14 +417,34 @@ export async function runScorePhase(
   if (mockScores) {
     allScores.push(...mockScores);
   } else {
+    // Resume from partial scores if a previous run was interrupted
+    const partialScores = readPartialScores(rootDir, weekId);
+    const alreadyScoredIds = new Set<string>();
+    if (partialScores && partialScores.length > 0) {
+      allScores.push(...partialScores);
+      for (const score of partialScores) {
+        alreadyScoredIds.add(score.id);
+      }
+      console.log(`Resuming from ${partialScores.length} previously scored articles`);
+    }
+
+    const remainingArticles = prepared.data.preparedArticles.filter(
+      (article) => !alreadyScoredIds.has(article.id)
+    );
+
     try {
-      for (let i = 0; i < prepared.data.preparedArticles.length; i += BATCH_SIZE) {
-        const batch = prepared.data.preparedArticles.slice(i, i + BATCH_SIZE);
-        console.log(
-          `Processing batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(prepared.data.preparedArticles.length / BATCH_SIZE)}...`
-        );
+      const totalBatches = Math.ceil(
+        (remainingArticles.length + allScores.length) / BATCH_SIZE
+      );
+      const completedBatches = Math.ceil(allScores.length / BATCH_SIZE);
+
+      for (let i = 0; i < remainingArticles.length; i += BATCH_SIZE) {
+        const batch = remainingArticles.slice(i, i + BATCH_SIZE);
+        const batchNum = completedBatches + Math.floor(i / BATCH_SIZE) + 1;
+        console.log(`Processing batch ${batchNum}/${totalBatches}...`);
         const scores = await llm.scoreArticles(batch, { includeReasoning: false });
         allScores.push(...scores);
+        writePartialScores(rootDir, weekId, allScores);
       }
     } catch (error) {
       if (error instanceof GeminiQuotaError || error instanceof LlmQuotaError) {
@@ -530,6 +554,7 @@ export async function runScorePhase(
   };
 
   const outputPath = writePipelineArtifact(rootDir, artifact);
+  removePartialScores(rootDir, weekId);
   console.log(`Scored artifact saved to ${outputPath}`);
   return outputPath;
 }
