@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W15",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-04-12T09:17:05.758Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare! 👋",
+      "intro": "Săptămâna asta ne pregătim de Paște cu inimi deschise și gesturi frumoase. De la preoți și voluntari care aduc bucurie, la peisaje de vis și povești inspiraționale, avem multe motive să zâmbim. Hai să vedem ce vești bune ne-au adus ultimele zile.",
+      "signOff": "Îți dorim o zi (și un weekend) plin(ă) de lumină! 🙏",
+      "shortSummary": "Gesturi de Paște, peisaje de vis și povești inspiraționale."
+    }
+  }
+}
