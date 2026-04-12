@@ -8,6 +8,7 @@ import {
   DEFAULT_FALLBACK_MODEL,
   DEFAULT_FALLBACK_MODELS,
   DEFAULT_MAX_TOKENS,
+  OPENROUTER_MAX_MODELS,
 } from '../scripts/lib/llm/openrouter-provider.js';
 import type { OpenRouterFetcher } from '../scripts/lib/llm/openrouter-provider.js';
 import {
@@ -1368,10 +1369,17 @@ test('DEFAULT_FALLBACK_MODELS are all free-tier models', () => {
   }
 });
 
-test('DEFAULT_FALLBACK_MODELS contains at least 3 models for provider diversity', () => {
+test('DEFAULT_FALLBACK_MODELS contains at least 2 models for provider diversity', () => {
   assert.ok(
-    DEFAULT_FALLBACK_MODELS.length >= 3,
-    `expected ≥3 fallback models for provider diversity, got ${DEFAULT_FALLBACK_MODELS.length}`
+    DEFAULT_FALLBACK_MODELS.length >= 2,
+    `expected ≥2 fallback models for provider diversity, got ${DEFAULT_FALLBACK_MODELS.length}`
+  );
+});
+
+test('DEFAULT_FALLBACK_MODELS + primary fits within OpenRouter models limit', () => {
+  assert.ok(
+    1 + DEFAULT_FALLBACK_MODELS.length <= OPENROUTER_MAX_MODELS,
+    `primary + ${DEFAULT_FALLBACK_MODELS.length} fallbacks exceeds OpenRouter limit of ${OPENROUTER_MAX_MODELS}`
   );
 });
 
@@ -1415,6 +1423,21 @@ test('buildOpenRouterRequestBody: deduplicates primary from fallback list', () =
     })
   );
   assert.deepEqual(body.models, ['x/primary:free', 'a/fb1:free']);
+});
+
+test('buildOpenRouterRequestBody: truncates models array to OPENROUTER_MAX_MODELS', () => {
+  const body = JSON.parse(
+    buildOpenRouterRequestBody({
+      model: 'x/primary:free',
+      prompt: 'p',
+      schema: {},
+      schemaName: 's',
+      fallbackModels: ['a/fb1:free', 'b/fb2:free', 'c/fb3:free', 'd/fb4:free'],
+    })
+  );
+  assert.equal(body.model, undefined, 'should not have single model field');
+  assert.equal(body.models.length, OPENROUTER_MAX_MODELS, `models array must not exceed ${OPENROUTER_MAX_MODELS}`);
+  assert.deepEqual(body.models, ['x/primary:free', 'a/fb1:free', 'b/fb2:free']);
 });
 
 test('buildOpenRouterRequestBody: empty fallbackModels array uses single model field', () => {
