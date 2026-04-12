@@ -1,7 +1,7 @@
 import type { LlmProvider, LlmProviderName } from './provider.js';
 import { GeminiProvider } from './gemini-provider.js';
 import { ClaudeCliProvider } from './claude-cli-provider.js';
-import { OpenRouterProvider } from './openrouter-provider.js';
+import { OpenRouterProvider, parseFallbackModels } from './openrouter-provider.js';
 import { FallbackLlmProvider } from './fallback-provider.js';
 
 export interface ProviderSpec {
@@ -125,6 +125,7 @@ function buildProvider(
         model: env.OPENROUTER_MODEL,
         httpReferer: env.OPENROUTER_HTTP_REFERER,
         appTitle: env.OPENROUTER_APP_TITLE,
+        fallbackModels: parseFallbackModels(env.OPENROUTER_FALLBACK_MODELS),
       });
     }
   }

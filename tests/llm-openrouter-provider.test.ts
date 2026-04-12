@@ -4,7 +4,9 @@ import {
   OpenRouterProvider,
   buildOpenRouterRequestBody,
   parseOpenRouterResponse,
+  parseFallbackModels,
   DEFAULT_FALLBACK_MODEL,
+  DEFAULT_FALLBACK_MODELS,
   DEFAULT_MAX_TOKENS,
 } from '../scripts/lib/llm/openrouter-provider.js';
 import type { OpenRouterFetcher } from '../scripts/lib/llm/openrouter-provider.js';
@@ -86,6 +88,7 @@ function makeProvider(
     title?: string;
     maxRetries?: number;
     retryDelayMs?: number;
+    fallbackModels?: string[];
   } = {}
 ): OpenRouterProvider {
   return new OpenRouterProvider({
@@ -99,6 +102,9 @@ function makeProvider(
     // Tests that exercise retry explicitly set `maxRetries` and let this
     // default kick in.
     retryDelayMs: overrides.retryDelayMs ?? 0,
+    // Default to no fallbacks in tests so existing tests are unaffected.
+    // Tests that exercise model fallback pass their own list.
+    fallbackModels: overrides.fallbackModels ?? [],
   });
 }
 
@@ -1330,4 +1336,124 @@ test('inspectOpenRouterEnvelope: length cutoff with null content remains transie
 
   await provider.scoreArticles([RAW], { includeReasoning: false });
   assert.equal(attempts, 2, 'null-content length cutoffs stay retryable');
+});
+
+// ---------- parseFallbackModels ----------
+
+test('parseFallbackModels: undefined returns undefined (use defaults)', () => {
+  assert.equal(parseFallbackModels(undefined), undefined);
+});
+
+test('parseFallbackModels: empty string returns empty array (opt-out)', () => {
+  assert.deepEqual(parseFallbackModels(''), []);
+  assert.deepEqual(parseFallbackModels('  '), []);
+});
+
+test('parseFallbackModels: comma-separated string returns trimmed array', () => {
+  assert.deepEqual(
+    parseFallbackModels('a/b:free, c/d:free ,e/f:free'),
+    ['a/b:free', 'c/d:free', 'e/f:free']
+  );
+});
+
+test('parseFallbackModels: ignores empty segments from trailing commas', () => {
+  assert.deepEqual(parseFallbackModels('a/b:free,,c/d:free,'), ['a/b:free', 'c/d:free']);
+});
+
+// ---------- DEFAULT_FALLBACK_MODELS ----------
+
+test('DEFAULT_FALLBACK_MODELS are all free-tier models', () => {
+  for (const model of DEFAULT_FALLBACK_MODELS) {
+    assert.ok(model.endsWith(':free'), `fallback model ${model} must be a :free model`);
+  }
+});
+
+test('DEFAULT_FALLBACK_MODELS contains at least 3 models for provider diversity', () => {
+  assert.ok(
+    DEFAULT_FALLBACK_MODELS.length >= 3,
+    `expected ≥3 fallback models for provider diversity, got ${DEFAULT_FALLBACK_MODELS.length}`
+  );
+});
+
+// ---------- buildOpenRouterRequestBody: models array ----------
+
+test('buildOpenRouterRequestBody: uses single model field when no fallbacks', () => {
+  const body = JSON.parse(
+    buildOpenRouterRequestBody({
+      model: 'x/primary:free',
+      prompt: 'p',
+      schema: {},
+      schemaName: 's',
+    })
+  );
+  assert.equal(body.model, 'x/primary:free');
+  assert.equal(body.models, undefined, 'should not have models array without fallbacks');
+});
+
+test('buildOpenRouterRequestBody: uses models array when fallbacks provided', () => {
+  const body = JSON.parse(
+    buildOpenRouterRequestBody({
+      model: 'x/primary:free',
+      prompt: 'p',
+      schema: {},
+      schemaName: 's',
+      fallbackModels: ['a/fb1:free', 'b/fb2:free'],
+    })
+  );
+  assert.equal(body.model, undefined, 'should not have single model field');
+  assert.deepEqual(body.models, ['x/primary:free', 'a/fb1:free', 'b/fb2:free']);
+});
+
+test('buildOpenRouterRequestBody: deduplicates primary from fallback list', () => {
+  const body = JSON.parse(
+    buildOpenRouterRequestBody({
+      model: 'x/primary:free',
+      prompt: 'p',
+      schema: {},
+      schemaName: 's',
+      fallbackModels: ['x/primary:free', 'a/fb1:free'],
+    })
+  );
+  assert.deepEqual(body.models, ['x/primary:free', 'a/fb1:free']);
+});
+
+test('buildOpenRouterRequestBody: empty fallbackModels array uses single model field', () => {
+  const body = JSON.parse(
+    buildOpenRouterRequestBody({
+      model: 'x/primary:free',
+      prompt: 'p',
+      schema: {},
+      schemaName: 's',
+      fallbackModels: [],
+    })
+  );
+  assert.equal(body.model, 'x/primary:free');
+  assert.equal(body.models, undefined);
+});
+
+// ---------- provider with fallback models ----------
+
+test('provider passes models array in request body when fallbackModels configured', async () => {
+  let capturedBody: Record<string, unknown> | undefined;
+
+  const provider = makeProvider(
+    async (_url, init) => {
+      capturedBody = JSON.parse(init.body);
+      return okResponse(chatEnvelope([]));
+    },
+    {
+      model: 'x/primary:free',
+      fallbackModels: ['a/fb1:free', 'b/fb2:free'],
+      maxRetries: 0,
+    }
+  );
+
+  await provider.scoreArticles([RAW], { includeReasoning: false });
+  assert.ok(capturedBody, 'fetcher should have been called');
+  assert.deepEqual(
+    capturedBody!.models,
+    ['x/primary:free', 'a/fb1:free', 'b/fb2:free'],
+    'request body should use models array with primary + fallbacks'
+  );
+  assert.equal(capturedBody!.model, undefined, 'should not have single model field');
 });
