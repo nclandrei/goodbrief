@@ -553,7 +553,7 @@ test('call does NOT retry HTTP 429 (quota) — surfaces immediately as LlmQuotaE
 //
 //   HTTP 429 with body:
 //   {"error":{"message":"Provider returned error","code":429,"metadata":{
-//     "raw":"google/gemma-3-27b-it:free is temporarily rate-limited upstream.
+//     "raw":"google/gemma-4-26b-a4b-it:free is temporarily rate-limited upstream.
 //            Please retry shortly, or add your own key ...",
 //     "provider_name":"Google AI Studio","is_byok":false}}}
 //
@@ -568,7 +568,7 @@ test('call retries HTTP 429 when metadata.raw reports transient upstream rate-li
       message: 'Provider returned error',
       code: 429,
       metadata: {
-        raw: 'google/gemma-3-27b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits.',
+        raw: 'google/gemma-4-26b-a4b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits.',
         provider_name: 'Google AI Studio',
         is_byok: false,
       },
@@ -602,7 +602,7 @@ test('call exhausts retries on persistent transient upstream rate-limit and thro
       message: 'Provider returned error',
       code: 429,
       metadata: {
-        raw: 'google/gemma-3-27b-it:free is temporarily rate-limited upstream. Please retry shortly.',
+        raw: 'google/gemma-4-26b-a4b-it:free is temporarily rate-limited upstream. Please retry shortly.',
         provider_name: 'Google AI Studio',
         is_byok: false,
       },
@@ -1023,13 +1023,10 @@ test('buildOpenRouterRequestBody: includes reasoning.exclude and sensible max_to
   assert.ok(parsed.max_tokens >= 8000, 'max_tokens should default to at least 8000');
 });
 
-// 2026-W15 post-mortem (option 3): raise the default output cap so non-
-// reasoning models like `deepseek/deepseek-chat-v3.1:free` have headroom for
-// large structured outputs (e.g. score batches) even when the upstream route
-// accepts generous caps. The upstream will silently clamp this to whatever it
-// actually honors, so erring high is safe. 32k is 2× the old default and
-// enough to absorb a full SCORE_BATCH_SIZE worth of article-score JSON
-// without truncation on every reasonable OpenRouter upstream.
+// The default output cap is set high (32k+) so non-reasoning models have
+// headroom for large structured outputs (e.g. score batches). The upstream
+// will silently clamp this to whatever it actually honors, so erring high
+// is safe.
 test('DEFAULT_MAX_TOKENS is at least 32000 (post-option-3 headroom)', () => {
   assert.ok(
     DEFAULT_MAX_TOKENS >= 32000,
@@ -1039,7 +1036,7 @@ test('DEFAULT_MAX_TOKENS is at least 32000 (post-option-3 headroom)', () => {
 
 test('buildOpenRouterRequestBody: default max_tokens reflects DEFAULT_MAX_TOKENS', () => {
   const body = buildOpenRouterRequestBody({
-    model: 'deepseek/deepseek-chat-v3.1:free',
+    model: 'google/gemma-4-26b-a4b-it:free',
     prompt: 'p',
     schema: {},
     schemaName: 's',
@@ -1080,106 +1077,11 @@ test('provider name is "openrouter"', () => {
 // ---------- default fallback model ----------
 //
 // The default fallback must be a genuinely free, reliable, non-reasoning
-// model. Reasoning models like gpt-oss-120b:free exhausted their output
-// budget on internal reasoning tokens and truncated structured JSON output
-// (reproduced on 2026-W15 batch 9). DeepSeek V3.1 is non-reasoning by
-// default, supports structured outputs, handles Romanian well, and is free.
+// model. Gemma 4 26B is a fast MoE (3.8B active params), supports
+// structured outputs, handles Romanian well, is free, and is reliably
+// served by Google AI Studio.
 test('DEFAULT_FALLBACK_MODEL points to a free non-reasoning model', () => {
-  assert.equal(DEFAULT_FALLBACK_MODEL, 'deepseek/deepseek-chat-v3.1:free');
-});
-
-// ---------- per-phase model overrides ----------
-//
-// Each phase of the draft pipeline can optionally pick a specialized model
-// via an env var, falling back to `OPENROUTER_MODEL` (the provider's
-// default). This lets us route cheap analytical phases (dedup,
-// counter-signal) to a small fast model like `google/gemma-3-27b-it:free`
-// while keeping voice-sensitive phases on DeepSeek V3.1.
-//
-// Existing tests already cover the fallback path (they never set phase
-// env vars), so here we only pin the "env var is honored" half.
-
-function withEnv<T>(key: string, value: string, fn: () => Promise<T> | T): Promise<T> {
-  const prev = process.env[key];
-  process.env[key] = value;
-  return Promise.resolve()
-    .then(fn)
-    .finally(() => {
-      if (prev === undefined) {
-        delete process.env[key];
-      } else {
-        process.env[key] = prev;
-      }
-    });
-}
-
-test('semanticDedup honors OPENROUTER_DEDUP_MODEL when set', async () => {
-  await withEnv('OPENROUTER_DEDUP_MODEL', 'google/gemma-3-27b-it:free', async () => {
-    let capturedModel = '';
-    const provider = makeProvider(
-      async (_url, init) => {
-        capturedModel = JSON.parse(init.body).model;
-        return okResponse(chatEnvelope({ groups: [] }));
-      },
-      { model: 'base/model' }
-    );
-    await provider.semanticDedup('2026-W15', [
-      PROCESSED,
-      { ...PROCESSED, id: 'p-2' },
-    ]);
-    assert.equal(capturedModel, 'google/gemma-3-27b-it:free');
-  });
-});
-
-test('classifyCounterSignal honors OPENROUTER_COUNTER_SIGNAL_MODEL when set', async () => {
-  await withEnv(
-    'OPENROUTER_COUNTER_SIGNAL_MODEL',
-    'google/gemma-3-27b-it:free',
-    async () => {
-      let capturedModel = '';
-      const provider = makeProvider(
-        async (_url, init) => {
-          capturedModel = JSON.parse(init.body).model;
-          return okResponse(
-            chatEnvelope({ verdict: 'none', reason: 'ok', relatedArticleIds: [] })
-          );
-        },
-        { model: 'base/model' }
-      );
-      await provider.classifyCounterSignal({
-        weekId: '2026-W15',
-        candidate: PROCESSED,
-        relatedArticles: [RAW],
-      });
-      assert.equal(capturedModel, 'google/gemma-3-27b-it:free');
-    }
-  );
-});
-
-test('generateWrapperCopy honors OPENROUTER_WRAPPER_COPY_MODEL when set', async () => {
-  await withEnv(
-    'OPENROUTER_WRAPPER_COPY_MODEL',
-    'deepseek/deepseek-chat-v3.1:free',
-    async () => {
-      let capturedModel = '';
-      const provider = makeProvider(
-        async (_url, init) => {
-          capturedModel = JSON.parse(init.body).model;
-          return okResponse(
-            chatEnvelope({
-              greeting: 'Bună',
-              intro: 'intro',
-              signOff: 'pa',
-              shortSummary: 'teaser',
-            })
-          );
-        },
-        { model: 'base/model' }
-      );
-      await provider.generateWrapperCopy('2026-W15', [PROCESSED]);
-      assert.equal(capturedModel, 'deepseek/deepseek-chat-v3.1:free');
-    }
-  );
+  assert.equal(DEFAULT_FALLBACK_MODEL, 'google/gemma-4-26b-a4b-it:free');
 });
 
 // ---------- truncation detection (finish_reason=length with non-empty content) ----------

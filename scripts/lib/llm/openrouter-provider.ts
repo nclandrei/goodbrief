@@ -37,19 +37,25 @@ const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions';
 
 /**
  * Literal fallback used when neither `OPENROUTER_MODEL` nor a per-phase
- * override is set. Picked for the Good Brief pipeline based on the
- * 2026-W15 post-mortem:
+ * override is set. Picked for the Good Brief pipeline:
  *
  * - **Free** (`:free` suffix), so it works under the OpenRouter free tier
  *   and with our `max_price: { prompt: 0, completion: 0 }` guard.
- * - **Non-reasoning** — unlike `openai/gpt-oss-120b:free`, DeepSeek V3.1
- *   does not burn its output-token budget on internal `<think>` traces,
- *   so large structured outputs (e.g. 25-article score batches) fit
- *   comfortably in the default 16k `max_tokens` cap without truncation.
+ * - **Non-reasoning** — Gemma 4 does not burn its output-token budget on
+ *   internal `<think>` traces (reasoning mode is configurable, off by
+ *   default), so large structured outputs fit within `max_tokens`.
+ * - **Fast** — MoE architecture activates only 3.8B of 25.2B params per
+ *   token, giving near-31B quality at a fraction of the compute cost.
  * - **Strong multilingual** (incl. Romanian) and supports OpenAI-style
  *   `response_format: json_schema` structured outputs.
+ * - **Reliably available** — served by Google AI Studio.
+ * - 262K context window, 32K max output.
+ *
+ * History: `deepseek/deepseek-chat-v3.1:free` until 2026-W15 (endpoints
+ * removed), then briefly `google/gemma-3-27b-it:free` before upgrading
+ * to the faster MoE successor.
  */
-export const DEFAULT_FALLBACK_MODEL = 'deepseek/deepseek-chat-v3.1:free';
+export const DEFAULT_FALLBACK_MODEL = 'google/gemma-4-26b-a4b-it:free';
 
 const DEFAULT_MODEL = process.env.OPENROUTER_MODEL || DEFAULT_FALLBACK_MODEL;
 const DEFAULT_REFERER =
@@ -90,13 +96,11 @@ const DEFAULT_RETRY_DELAY_MS = Number.parseInt(
 // additionally set `reasoning.exclude: true` so the reasoning tokens don't
 // clobber the structured JSON output.
 //
-// 2026-W15 post-mortem (option 3): raised from 16000 → 32000 so non-
-// reasoning models like `deepseek/deepseek-chat-v3.1:free` have 2× the
-// previous headroom for large structured outputs. OpenRouter / the
-// upstream provider will silently clamp this to whatever they actually
-// honor, so erring high is safe — the only downside is that truly
-// broken upstreams may take a moment longer to hit their real cap,
-// which our truncation-split path (see `scoreArticles`) now handles.
+// Raised to 32000 so non-reasoning models have headroom for large
+// structured outputs (e.g. score batches). OpenRouter / the upstream
+// provider will silently clamp this to whatever they actually honor,
+// so erring high is safe. Combined with the truncation-split recovery
+// path in `scoreArticles`, this makes the score phase self-healing.
 export const DEFAULT_MAX_TOKENS = Number.parseInt(
   process.env.OPENROUTER_MAX_TOKENS || '32000',
   10
@@ -595,7 +599,7 @@ const WRAPPER_COPY_SCHEMA = {
  * downstream phases can consume the results without changes.
  *
  * The default model is read from `OPENROUTER_MODEL` (fallback:
- * `anthropic/claude-sonnet-4.5`). Attribution headers default to the Good
+ * `google/gemma-4-26b-a4b-it:free`). Attribution headers default to the Good
  * Brief site URL / app title but can be overridden via
  * `OPENROUTER_HTTP_REFERER` and `OPENROUTER_APP_TITLE`.
  */
@@ -726,7 +730,6 @@ OUTPUT RULES (OpenRouter structured output):
     const raw = await this.call(prompt, {
       schema: SEMANTIC_DEDUP_SCHEMA,
       schemaName: 'semantic_dedup',
-      model: process.env.OPENROUTER_DEDUP_MODEL || this.model,
     });
 
     const parsed = parseOpenRouterResponse<SemanticDedupResponse>(raw);
@@ -752,7 +755,6 @@ OUTPUT RULES (OpenRouter structured output):
     const raw = await this.call(prompt, {
       schema: COUNTER_SIGNAL_SCHEMA,
       schemaName: 'counter_signal',
-      model: process.env.OPENROUTER_COUNTER_SIGNAL_MODEL || this.model,
     });
 
     const parsed = parseOpenRouterResponse<CounterSignalClassifierResult>(raw);
@@ -784,7 +786,6 @@ OUTPUT RULES (OpenRouter structured output):
     const raw = await this.call(prompt, {
       schema: WRAPPER_COPY_SCHEMA,
       schemaName: 'wrapper_copy',
-      model: process.env.OPENROUTER_WRAPPER_COPY_MODEL || this.model,
     });
 
     const parsed = parseOpenRouterResponse<Partial<WrapperCopy>>(raw);
@@ -842,9 +843,9 @@ OUTPUT RULES (OpenRouter structured output):
 
   private async call(
     prompt: string,
-    options: { schema: unknown; schemaName: string; model?: string }
+    options: { schema: unknown; schemaName: string }
   ): Promise<string> {
-    const model = options.model ?? this.model;
+    const model = this.model;
     const body = buildOpenRouterRequestBody({
       model,
       prompt,
