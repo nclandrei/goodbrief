@@ -1023,13 +1023,10 @@ test('buildOpenRouterRequestBody: includes reasoning.exclude and sensible max_to
   assert.ok(parsed.max_tokens >= 8000, 'max_tokens should default to at least 8000');
 });
 
-// 2026-W15 post-mortem (option 3): raise the default output cap so non-
-// reasoning models like `deepseek/deepseek-chat-v3.1:free` have headroom for
-// large structured outputs (e.g. score batches) even when the upstream route
-// accepts generous caps. The upstream will silently clamp this to whatever it
-// actually honors, so erring high is safe. 32k is 2× the old default and
-// enough to absorb a full SCORE_BATCH_SIZE worth of article-score JSON
-// without truncation on every reasonable OpenRouter upstream.
+// The default output cap is set high (32k+) so non-reasoning models have
+// headroom for large structured outputs (e.g. score batches). The upstream
+// will silently clamp this to whatever it actually honors, so erring high
+// is safe.
 test('DEFAULT_MAX_TOKENS is at least 32000 (post-option-3 headroom)', () => {
   assert.ok(
     DEFAULT_MAX_TOKENS >= 32000,
@@ -1039,7 +1036,7 @@ test('DEFAULT_MAX_TOKENS is at least 32000 (post-option-3 headroom)', () => {
 
 test('buildOpenRouterRequestBody: default max_tokens reflects DEFAULT_MAX_TOKENS', () => {
   const body = buildOpenRouterRequestBody({
-    model: 'deepseek/deepseek-chat-v3.1:free',
+    model: 'google/gemma-3-27b-it:free',
     prompt: 'p',
     schema: {},
     schemaName: 's',
@@ -1081,20 +1078,19 @@ test('provider name is "openrouter"', () => {
 //
 // The default fallback must be a genuinely free, reliable, non-reasoning
 // model. Reasoning models like gpt-oss-120b:free exhausted their output
-// budget on internal reasoning tokens and truncated structured JSON output
-// (reproduced on 2026-W15 batch 9). DeepSeek V3.1 is non-reasoning by
-// default, supports structured outputs, handles Romanian well, and is free.
+// budget on internal reasoning tokens and truncated structured JSON output.
+// Gemma 3 27B is non-reasoning, supports structured outputs, handles
+// Romanian well, is free, and is reliably served by Google AI Studio.
 test('DEFAULT_FALLBACK_MODEL points to a free non-reasoning model', () => {
-  assert.equal(DEFAULT_FALLBACK_MODEL, 'deepseek/deepseek-chat-v3.1:free');
+  assert.equal(DEFAULT_FALLBACK_MODEL, 'google/gemma-3-27b-it:free');
 });
 
 // ---------- per-phase model overrides ----------
 //
 // Each phase of the draft pipeline can optionally pick a specialized model
 // via an env var, falling back to `OPENROUTER_MODEL` (the provider's
-// default). This lets us route cheap analytical phases (dedup,
-// counter-signal) to a small fast model like `google/gemma-3-27b-it:free`
-// while keeping voice-sensitive phases on DeepSeek V3.1.
+// default). This lets us route specific phases to different models when
+// needed (e.g. a different model for dedup vs scoring).
 //
 // Existing tests already cover the fallback path (they never set phase
 // env vars), so here we only pin the "env var is honored" half.
@@ -1159,7 +1155,7 @@ test('classifyCounterSignal honors OPENROUTER_COUNTER_SIGNAL_MODEL when set', as
 test('generateWrapperCopy honors OPENROUTER_WRAPPER_COPY_MODEL when set', async () => {
   await withEnv(
     'OPENROUTER_WRAPPER_COPY_MODEL',
-    'deepseek/deepseek-chat-v3.1:free',
+    'google/gemma-3-27b-it:free',
     async () => {
       let capturedModel = '';
       const provider = makeProvider(
@@ -1177,7 +1173,7 @@ test('generateWrapperCopy honors OPENROUTER_WRAPPER_COPY_MODEL when set', async 
         { model: 'base/model' }
       );
       await provider.generateWrapperCopy('2026-W15', [PROCESSED]);
-      assert.equal(capturedModel, 'deepseek/deepseek-chat-v3.1:free');
+      assert.equal(capturedModel, 'google/gemma-3-27b-it:free');
     }
   );
 });

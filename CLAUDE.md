@@ -82,7 +82,7 @@ docs/                  # Plans and specs (PLAN.md, COPY_PLAN.md, etc.)
 ```
 GEMINI_API_KEY         # Default AI provider (pipeline phases)
 OPENROUTER_API_KEY     # Alternative AI provider (use --llm openrouter)
-OPENROUTER_MODEL       # Optional: override default model (default: anthropic/claude-sonnet-4.5)
+OPENROUTER_MODEL       # Optional: override default model (default: google/gemma-3-27b-it:free)
 RESEND_API_KEY         # Required for email sending
 RESEND_AUDIENCE_ID     # Newsletter audience
 RESEND_SEGMENT_ID      # Targeted sending segment

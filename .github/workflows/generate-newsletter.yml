@@ -94,7 +94,7 @@ jobs:
           LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'deepseek/deepseek-chat-v3.1:free' }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'google/gemma-3-27b-it:free' }}
           OPENROUTER_TIMEOUT_MS: '900000'
           OPENROUTER_MAX_RETRIES: '4'
           # Option 3: raise the output cap to 32k so non-reasoning models have
@@ -104,16 +104,9 @@ jobs:
           # truncation in OpenRouterProvider.scoreArticles) this makes the
           # score phase self-healing for unexpectedly long outputs.
           OPENROUTER_MAX_TOKENS: '32000'
-          # Post-2026-W15 tuning: bumped from 25 → 50 now that the default
-          # model is DeepSeek V3.1 (non-reasoning, ~8k reliable output on
-          # free routes) instead of gpt-oss-120b (reasoning, which burned
-          # the output budget on <think> traces). At ~200 output tokens per
-          # article this puts each batch at ~10k output tokens — still well
-          # inside the practical free-tier cap, and the truncation-split
-          # recovery path in OpenRouterProvider.scoreArticles catches any
-          # provider that silently clamps lower. Halving the request count
-          # also stays comfortably inside the OpenRouter free-tier 1000
-          # req/day ceiling even with reruns.
+          # Batch size for score phase. The truncation-split recovery path
+          # in OpenRouterProvider.scoreArticles auto-halves on overflow, so
+          # a generous default is safe.
           SCORE_BATCH_SIZE: '50'
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
@@ -142,9 +135,7 @@ jobs:
           LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'deepseek/deepseek-chat-v3.1:free' }}
-          # Cheap analytical phase — route to a small fast model to save the
-          # DeepSeek V3.1 budget for voice-sensitive phases.
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'google/gemma-3-27b-it:free' }}
           OPENROUTER_DEDUP_MODEL: ${{ vars.OPENROUTER_DEDUP_MODEL || 'google/gemma-3-27b-it:free' }}
           OPENROUTER_TIMEOUT_MS: '900000'
           OPENROUTER_MAX_RETRIES: '4'
@@ -173,9 +164,7 @@ jobs:
           LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'deepseek/deepseek-chat-v3.1:free' }}
-          # Cheap analytical phase — route to a small fast model to save the
-          # DeepSeek V3.1 budget for voice-sensitive phases.
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'google/gemma-3-27b-it:free' }}
           OPENROUTER_COUNTER_SIGNAL_MODEL: ${{ vars.OPENROUTER_COUNTER_SIGNAL_MODEL || 'google/gemma-3-27b-it:free' }}
           OPENROUTER_TIMEOUT_MS: '900000'
           OPENROUTER_MAX_RETRIES: '4'
@@ -225,7 +214,7 @@ jobs:
           LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'deepseek/deepseek-chat-v3.1:free' }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'google/gemma-3-27b-it:free' }}
           OPENROUTER_TIMEOUT_MS: '900000'
           OPENROUTER_MAX_RETRIES: '4'
       - uses: actions/upload-artifact@v4
@@ -253,7 +242,7 @@ jobs:
           LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'deepseek/deepseek-chat-v3.1:free' }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'google/gemma-3-27b-it:free' }}
           OPENROUTER_TIMEOUT_MS: '900000'
           OPENROUTER_MAX_RETRIES: '4'
       - uses: actions/upload-artifact@v4

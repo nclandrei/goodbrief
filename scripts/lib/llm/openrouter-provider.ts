@@ -37,19 +37,24 @@ const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions';
 
 /**
  * Literal fallback used when neither `OPENROUTER_MODEL` nor a per-phase
- * override is set. Picked for the Good Brief pipeline based on the
- * 2026-W15 post-mortem:
+ * override is set. Picked for the Good Brief pipeline:
  *
  * - **Free** (`:free` suffix), so it works under the OpenRouter free tier
  *   and with our `max_price: { prompt: 0, completion: 0 }` guard.
- * - **Non-reasoning** — unlike `openai/gpt-oss-120b:free`, DeepSeek V3.1
- *   does not burn its output-token budget on internal `<think>` traces,
- *   so large structured outputs (e.g. 25-article score batches) fit
- *   comfortably in the default 16k `max_tokens` cap without truncation.
+ * - **Non-reasoning** — unlike `openai/gpt-oss-120b:free` or DeepSeek R1,
+ *   Gemma 3 does not burn its output-token budget on internal `<think>`
+ *   traces, so large structured outputs (e.g. score batches) fit
+ *   comfortably within `max_tokens` without truncation.
  * - **Strong multilingual** (incl. Romanian) and supports OpenAI-style
  *   `response_format: json_schema` structured outputs.
+ * - **Reliably available** — served by Google AI Studio, which has
+ *   proven stable in production (already used for dedup + counter-signal).
+ *
+ * History: was `deepseek/deepseek-chat-v3.1:free` until 2026-W15 when
+ * OpenRouter dropped all free-tier endpoints for that model (HTTP 404
+ * "No endpoints found").
  */
-export const DEFAULT_FALLBACK_MODEL = 'deepseek/deepseek-chat-v3.1:free';
+export const DEFAULT_FALLBACK_MODEL = 'google/gemma-3-27b-it:free';
 
 const DEFAULT_MODEL = process.env.OPENROUTER_MODEL || DEFAULT_FALLBACK_MODEL;
 const DEFAULT_REFERER =
@@ -90,13 +95,11 @@ const DEFAULT_RETRY_DELAY_MS = Number.parseInt(
 // additionally set `reasoning.exclude: true` so the reasoning tokens don't
 // clobber the structured JSON output.
 //
-// 2026-W15 post-mortem (option 3): raised from 16000 → 32000 so non-
-// reasoning models like `deepseek/deepseek-chat-v3.1:free` have 2× the
-// previous headroom for large structured outputs. OpenRouter / the
-// upstream provider will silently clamp this to whatever they actually
-// honor, so erring high is safe — the only downside is that truly
-// broken upstreams may take a moment longer to hit their real cap,
-// which our truncation-split path (see `scoreArticles`) now handles.
+// Raised to 32000 so non-reasoning models have headroom for large
+// structured outputs (e.g. score batches). OpenRouter / the upstream
+// provider will silently clamp this to whatever they actually honor,
+// so erring high is safe. Combined with the truncation-split recovery
+// path in `scoreArticles`, this makes the score phase self-healing.
 export const DEFAULT_MAX_TOKENS = Number.parseInt(
   process.env.OPENROUTER_MAX_TOKENS || '32000',
   10
@@ -595,7 +598,7 @@ const WRAPPER_COPY_SCHEMA = {
  * downstream phases can consume the results without changes.
  *
  * The default model is read from `OPENROUTER_MODEL` (fallback:
- * `anthropic/claude-sonnet-4.5`). Attribution headers default to the Good
+ * `google/gemma-3-27b-it:free`). Attribution headers default to the Good
  * Brief site URL / app title but can be overridden via
  * `OPENROUTER_HTTP_REFERER` and `OPENROUTER_APP_TITLE`.
  */
