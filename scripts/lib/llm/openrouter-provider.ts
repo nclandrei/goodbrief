@@ -41,20 +41,21 @@ const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions';
  *
  * - **Free** (`:free` suffix), so it works under the OpenRouter free tier
  *   and with our `max_price: { prompt: 0, completion: 0 }` guard.
- * - **Non-reasoning** — unlike `openai/gpt-oss-120b:free` or DeepSeek R1,
- *   Gemma 3 does not burn its output-token budget on internal `<think>`
- *   traces, so large structured outputs (e.g. score batches) fit
- *   comfortably within `max_tokens` without truncation.
+ * - **Non-reasoning** — Gemma 4 does not burn its output-token budget on
+ *   internal `<think>` traces (reasoning mode is configurable, off by
+ *   default), so large structured outputs fit within `max_tokens`.
+ * - **Fast** — MoE architecture activates only 3.8B of 25.2B params per
+ *   token, giving near-31B quality at a fraction of the compute cost.
  * - **Strong multilingual** (incl. Romanian) and supports OpenAI-style
  *   `response_format: json_schema` structured outputs.
- * - **Reliably available** — served by Google AI Studio, which has
- *   proven stable in production (already used for dedup + counter-signal).
+ * - **Reliably available** — served by Google AI Studio.
+ * - 262K context window, 32K max output.
  *
- * History: was `deepseek/deepseek-chat-v3.1:free` until 2026-W15 when
- * OpenRouter dropped all free-tier endpoints for that model (HTTP 404
- * "No endpoints found").
+ * History: `deepseek/deepseek-chat-v3.1:free` until 2026-W15 (endpoints
+ * removed), then briefly `google/gemma-3-27b-it:free` before upgrading
+ * to the faster MoE successor.
  */
-export const DEFAULT_FALLBACK_MODEL = 'google/gemma-3-27b-it:free';
+export const DEFAULT_FALLBACK_MODEL = 'google/gemma-4-26b-a4b-it:free';
 
 const DEFAULT_MODEL = process.env.OPENROUTER_MODEL || DEFAULT_FALLBACK_MODEL;
 const DEFAULT_REFERER =
@@ -598,7 +599,7 @@ const WRAPPER_COPY_SCHEMA = {
  * downstream phases can consume the results without changes.
  *
  * The default model is read from `OPENROUTER_MODEL` (fallback:
- * `google/gemma-3-27b-it:free`). Attribution headers default to the Good
+ * `google/gemma-4-26b-a4b-it:free`). Attribution headers default to the Good
  * Brief site URL / app title but can be overridden via
  * `OPENROUTER_HTTP_REFERER` and `OPENROUTER_APP_TITLE`.
  */

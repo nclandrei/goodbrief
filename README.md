@@ -62,7 +62,7 @@ OpenRouter-specific overrides (all optional):
 
 ```
 OPENROUTER_API_KEY      # required when --llm openrouter
-OPENROUTER_MODEL        # default: google/gemma-3-27b-it:free
+OPENROUTER_MODEL        # default: google/gemma-4-26b-a4b-it:free
 OPENROUTER_HTTP_REFERER # app attribution (default: https://goodbrief.ro)
 OPENROUTER_APP_TITLE    # app attribution (default: Good Brief)
 ```

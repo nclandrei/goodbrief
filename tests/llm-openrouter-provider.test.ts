@@ -553,7 +553,7 @@ test('call does NOT retry HTTP 429 (quota) — surfaces immediately as LlmQuotaE
 //
 //   HTTP 429 with body:
 //   {"error":{"message":"Provider returned error","code":429,"metadata":{
-//     "raw":"google/gemma-3-27b-it:free is temporarily rate-limited upstream.
+//     "raw":"google/gemma-4-26b-a4b-it:free is temporarily rate-limited upstream.
 //            Please retry shortly, or add your own key ...",
 //     "provider_name":"Google AI Studio","is_byok":false}}}
 //
@@ -568,7 +568,7 @@ test('call retries HTTP 429 when metadata.raw reports transient upstream rate-li
       message: 'Provider returned error',
       code: 429,
       metadata: {
-        raw: 'google/gemma-3-27b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits.',
+        raw: 'google/gemma-4-26b-a4b-it:free is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits.',
         provider_name: 'Google AI Studio',
         is_byok: false,
       },
@@ -602,7 +602,7 @@ test('call exhausts retries on persistent transient upstream rate-limit and thro
       message: 'Provider returned error',
       code: 429,
       metadata: {
-        raw: 'google/gemma-3-27b-it:free is temporarily rate-limited upstream. Please retry shortly.',
+        raw: 'google/gemma-4-26b-a4b-it:free is temporarily rate-limited upstream. Please retry shortly.',
         provider_name: 'Google AI Studio',
         is_byok: false,
       },
@@ -1036,7 +1036,7 @@ test('DEFAULT_MAX_TOKENS is at least 32000 (post-option-3 headroom)', () => {
 
 test('buildOpenRouterRequestBody: default max_tokens reflects DEFAULT_MAX_TOKENS', () => {
   const body = buildOpenRouterRequestBody({
-    model: 'google/gemma-3-27b-it:free',
+    model: 'google/gemma-4-26b-a4b-it:free',
     prompt: 'p',
     schema: {},
     schemaName: 's',
@@ -1077,12 +1077,11 @@ test('provider name is "openrouter"', () => {
 // ---------- default fallback model ----------
 //
 // The default fallback must be a genuinely free, reliable, non-reasoning
-// model. Reasoning models like gpt-oss-120b:free exhausted their output
-// budget on internal reasoning tokens and truncated structured JSON output.
-// Gemma 3 27B is non-reasoning, supports structured outputs, handles
-// Romanian well, is free, and is reliably served by Google AI Studio.
+// model. Gemma 4 26B is a fast MoE (3.8B active params), supports
+// structured outputs, handles Romanian well, is free, and is reliably
+// served by Google AI Studio.
 test('DEFAULT_FALLBACK_MODEL points to a free non-reasoning model', () => {
-  assert.equal(DEFAULT_FALLBACK_MODEL, 'google/gemma-3-27b-it:free');
+  assert.equal(DEFAULT_FALLBACK_MODEL, 'google/gemma-4-26b-a4b-it:free');
 });
 
 // ---------- per-phase model overrides ----------
@@ -1110,7 +1109,7 @@ function withEnv<T>(key: string, value: string, fn: () => Promise<T> | T): Promi
 }
 
 test('semanticDedup honors OPENROUTER_DEDUP_MODEL when set', async () => {
-  await withEnv('OPENROUTER_DEDUP_MODEL', 'google/gemma-3-27b-it:free', async () => {
+  await withEnv('OPENROUTER_DEDUP_MODEL', 'google/gemma-4-26b-a4b-it:free', async () => {
     let capturedModel = '';
     const provider = makeProvider(
       async (_url, init) => {
@@ -1123,14 +1122,14 @@ test('semanticDedup honors OPENROUTER_DEDUP_MODEL when set', async () => {
       PROCESSED,
       { ...PROCESSED, id: 'p-2' },
     ]);
-    assert.equal(capturedModel, 'google/gemma-3-27b-it:free');
+    assert.equal(capturedModel, 'google/gemma-4-26b-a4b-it:free');
   });
 });
 
 test('classifyCounterSignal honors OPENROUTER_COUNTER_SIGNAL_MODEL when set', async () => {
   await withEnv(
     'OPENROUTER_COUNTER_SIGNAL_MODEL',
-    'google/gemma-3-27b-it:free',
+    'google/gemma-4-26b-a4b-it:free',
     async () => {
       let capturedModel = '';
       const provider = makeProvider(
@@ -1147,7 +1146,7 @@ test('classifyCounterSignal honors OPENROUTER_COUNTER_SIGNAL_MODEL when set', as
         candidate: PROCESSED,
         relatedArticles: [RAW],
       });
-      assert.equal(capturedModel, 'google/gemma-3-27b-it:free');
+      assert.equal(capturedModel, 'google/gemma-4-26b-a4b-it:free');
     }
   );
 });
@@ -1155,7 +1154,7 @@ test('classifyCounterSignal honors OPENROUTER_COUNTER_SIGNAL_MODEL when set', as
 test('generateWrapperCopy honors OPENROUTER_WRAPPER_COPY_MODEL when set', async () => {
   await withEnv(
     'OPENROUTER_WRAPPER_COPY_MODEL',
-    'google/gemma-3-27b-it:free',
+    'google/gemma-4-26b-a4b-it:free',
     async () => {
       let capturedModel = '';
       const provider = makeProvider(
@@ -1173,7 +1172,7 @@ test('generateWrapperCopy honors OPENROUTER_WRAPPER_COPY_MODEL when set', async 
         { model: 'base/model' }
       );
       await provider.generateWrapperCopy('2026-W15', [PROCESSED]);
-      assert.equal(capturedModel, 'google/gemma-3-27b-it:free');
+      assert.equal(capturedModel, 'google/gemma-4-26b-a4b-it:free');
     }
   );
 });
