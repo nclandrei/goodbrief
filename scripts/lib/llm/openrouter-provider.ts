@@ -57,6 +57,46 @@ const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions';
  */
 export const DEFAULT_FALLBACK_MODEL = 'google/gemma-4-26b-a4b-it:free';
 
+/**
+ * Fallback models tried (in order) when the primary model is unavailable.
+ * Passed via OpenRouter's native `models` array so the server handles
+ * fallback routing in a single request — no extra round-trips.
+ *
+ * Each model is served by a different upstream provider, maximising the
+ * chance that at least one is available when others are rate-limited:
+ *
+ * - `google/gemma-3-27b-it:free`                       — Google AI Studio
+ * - `meta-llama/llama-3.3-70b-instruct:free`           — Meta / Groq
+ * - `nvidia/nemotron-3-super-120b-a12b:free`           — NVIDIA
+ * - `qwen/qwen3-next-80b-a3b-instruct:free`           — Alibaba / Fireworks
+ *
+ * All are free (`:free` suffix), fast (MoE or efficient dense), and
+ * non-reasoning. Override with `OPENROUTER_FALLBACK_MODELS` (comma-separated
+ * model IDs). Set to empty string to disable fallback rotation entirely.
+ */
+export const DEFAULT_FALLBACK_MODELS: readonly string[] = [
+  'google/gemma-3-27b-it:free',
+  'meta-llama/llama-3.3-70b-instruct:free',
+  'nvidia/nemotron-3-super-120b-a12b:free',
+  'qwen/qwen3-next-80b-a3b-instruct:free',
+];
+
+/**
+ * Parse `OPENROUTER_FALLBACK_MODELS` env var into an array. Returns
+ * `undefined` when the env var is not set (so the caller falls through to
+ * defaults). An explicitly empty string `""` returns `[]` (opt-out).
+ */
+export function parseFallbackModels(
+  raw: string | undefined
+): string[] | undefined {
+  if (raw === undefined) return undefined;
+  if (raw.trim() === '') return [];
+  return raw
+    .split(',')
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+
 const DEFAULT_MODEL = process.env.OPENROUTER_MODEL || DEFAULT_FALLBACK_MODEL;
 const DEFAULT_REFERER =
   process.env.OPENROUTER_HTTP_REFERER || 'https://goodbrief.ro';
@@ -174,6 +214,20 @@ export interface BuildRequestBodyOptions {
   schemaName: string;
   temperature?: number;
   maxTokens?: number;
+  /**
+   * Optional ordered list of fallback models. When provided (and non-empty),
+   * the request body uses OpenRouter's native `models` array instead of a
+   * single `model` field. OpenRouter tries each model in order and
+   * automatically falls through on rate-limits, downtime, moderation blocks,
+   * or context-length errors — all server-side, no extra round-trip.
+   *
+   * The primary `model` is always first in the array; `fallbackModels`
+   * supplies the rest. The response's `model` field tells the caller which
+   * model was actually used.
+   *
+   * @see https://openrouter.ai/docs/guides/routing/model-fallbacks
+   */
+  fallbackModels?: readonly string[];
 }
 
 /**
@@ -187,12 +241,28 @@ export interface BuildRequestBodyOptions {
  * necessarily set `additionalProperties: false` or list every property in
  * `required`; OpenAI's strict mode would reject them. We keep the schema as
  * guidance and still instruct the model to return only JSON in the prompt.
+ *
+ * When `fallbackModels` is non-empty the body uses OpenRouter's native
+ * `models` array for server-side fallback routing. Otherwise it uses the
+ * single `model` field for backwards compatibility.
  */
 export function buildOpenRouterRequestBody(
   options: BuildRequestBodyOptions
 ): string {
+  // Build the model routing field. When fallback models are provided, use
+  // OpenRouter's native `models` array (primary first, then fallbacks with
+  // the primary stripped to avoid duplication). OpenRouter tries each model
+  // in order and auto-falls-through on rate-limit / downtime / moderation.
+  const fallbacks = options.fallbackModels?.filter(
+    (m) => m !== options.model
+  );
+  const useModelsArray = fallbacks && fallbacks.length > 0;
+
   const body: Record<string, unknown> = {
-    model: options.model,
+    // `models` takes precedence over `model` in the OpenRouter API.
+    ...(useModelsArray
+      ? { models: [options.model, ...fallbacks] }
+      : { model: options.model }),
     messages: [{ role: 'user', content: options.prompt }],
     response_format: {
       type: 'json_schema',
@@ -543,6 +613,12 @@ export interface OpenRouterProviderOptions {
   maxRetries?: number;
   /** Base delay for exponential backoff between retries, in ms. */
   retryDelayMs?: number;
+  /**
+   * Fallback models to rotate through when the primary model returns a
+   * transient upstream rate-limit (HTTP 429 from the upstream provider).
+   * Defaults to {@link DEFAULT_FALLBACK_MODELS}. Pass `[]` to disable.
+   */
+  fallbackModels?: string[];
 }
 
 const SCORE_SCHEMA_CACHE = {
@@ -614,6 +690,13 @@ export class OpenRouterProvider implements LlmProvider {
   private readonly timeoutMs: number;
   private readonly maxRetries: number;
   private readonly retryDelayMs: number;
+  /**
+   * Ordered list of fallback models to rotate through when the primary model
+   * returns a transient upstream rate-limit. The primary model is NOT included
+   * in this list — it's always tried first. Duplicates of the primary are
+   * stripped during construction.
+   */
+  private readonly fallbackModels: readonly string[];
 
   constructor(options: OpenRouterProviderOptions) {
     if (!options.apiKey) {
@@ -629,8 +712,15 @@ export class OpenRouterProvider implements LlmProvider {
     this.maxRetries = options.maxRetries ?? DEFAULT_MAX_RETRIES;
     this.retryDelayMs = options.retryDelayMs ?? DEFAULT_RETRY_DELAY_MS;
     this.fetcher = options.fetcher ?? createDefaultFetcher(this.timeoutMs);
+    // Build fallback list, stripping any duplicates of the primary model.
+    const rawFallbacks =
+      options.fallbackModels ??
+      parseFallbackModels(process.env.OPENROUTER_FALLBACK_MODELS) ??
+      [...DEFAULT_FALLBACK_MODELS];
+    this.fallbackModels = rawFallbacks.filter((m) => m !== this.model);
+    const rotationSize = 1 + this.fallbackModels.length;
     console.error(
-      `[openrouter] provider ready model=${this.model} timeoutMs=${this.timeoutMs} maxRetries=${this.maxRetries} retryDelayMs=${this.retryDelayMs}`
+      `[openrouter] provider ready model=${this.model} fallbacks=${rotationSize > 1 ? this.fallbackModels.join(',') : 'none'} timeoutMs=${this.timeoutMs} maxRetries=${this.maxRetries} retryDelayMs=${this.retryDelayMs}`
     );
   }
 
@@ -843,14 +933,19 @@ OUTPUT RULES (OpenRouter structured output):
 
   private async call(
     prompt: string,
-    options: { schema: unknown; schemaName: string }
+    options: { schema: unknown; schemaName: string; model?: string }
   ): Promise<string> {
-    const model = this.model;
+    const model = options.model ?? this.model;
     const body = buildOpenRouterRequestBody({
       model,
       prompt,
       schema: options.schema,
       schemaName: options.schemaName,
+      // Pass fallback models so the request body uses OpenRouter's native
+      // `models` array for server-side fallback routing. OpenRouter tries
+      // each model in order and auto-falls-through on rate-limit / downtime
+      // / moderation — all in a single request, no extra round-trips.
+      fallbackModels: this.fallbackModels,
     });
 
     const headers: Record<string, string> = {
@@ -865,7 +960,10 @@ OUTPUT RULES (OpenRouter structured output):
     }
 
     const totalAttempts = this.maxRetries + 1;
-    const logPrefix = `[openrouter] schema=${options.schemaName} model=${model} promptLen=${prompt.length}`;
+    const modelsLabel = this.fallbackModels.length > 0
+      ? `${model}+${this.fallbackModels.length}fallbacks`
+      : model;
+    const logPrefix = `[openrouter] schema=${options.schemaName} model=${modelsLabel} promptLen=${prompt.length}`;
     let lastError: unknown;
 
     for (let attempt = 1; attempt <= totalAttempts; attempt++) {
@@ -999,8 +1097,10 @@ OUTPUT RULES (OpenRouter structured output):
       // Transient upstream rate-limit (HTTP 429 with `metadata.raw` reporting
       // "temporarily rate-limited upstream") is what OpenRouter returns when
       // the underlying provider — not our account — is briefly throttling us.
-      // OpenRouter itself says "Please retry shortly", so treat it as
-      // retryable instead of a terminal quota error.
+      // When using the `models` array, OpenRouter already tried all fallback
+      // models server-side before returning 429 — so this means ALL models
+      // in the rotation are currently rate-limited. Retry with backoff;
+      // by the next attempt some upstreams may have cleared.
       if (
         response.status === 429 &&
         isTransientUpstreamRateLimit(parsedError)
