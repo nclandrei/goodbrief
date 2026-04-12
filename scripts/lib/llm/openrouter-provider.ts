@@ -335,6 +335,44 @@ function isProviderUnavailableMetadata(metadata: unknown): boolean {
 }
 
 /**
+ * Detect OpenRouter's "upstream provider is briefly throttling us" flavor of
+ * HTTP 429. OpenRouter surfaces these with a generic top-level
+ * `error.message: "Provider returned error"` plus the real reason in
+ * `error.metadata.raw`, e.g.:
+ *
+ *   "google/gemma-3-27b-it:free is temporarily rate-limited upstream.
+ *    Please retry shortly, or add your own key ..."
+ *
+ * This is distinct from our own account being out of quota — the upstream
+ * model provider (e.g. Google AI Studio, Groq) is briefly rejecting traffic
+ * and OpenRouter itself tells us to retry. Classifying these as terminal
+ * `LlmQuotaError` crashes the whole draft pipeline after one attempt, so we
+ * surface them as transient and let the retry loop handle them.
+ *
+ * Reproduces the 2026-W15 `counter-signal-validate` failure where
+ * `google/gemma-3-27b-it:free` returned HTTP 429 on attempt 1/5 and the
+ * pipeline bailed out instead of honoring the remaining retries.
+ */
+export function isTransientUpstreamRateLimit(
+  error: OpenRouterErrorPayload | null | undefined
+): boolean {
+  if (!error) return false;
+  const metadata = error.metadata;
+  if (!metadata || typeof metadata !== 'object') return false;
+  const raw = (metadata as { raw?: unknown }).raw;
+  if (typeof raw !== 'string') return false;
+  const lower = raw.toLowerCase();
+  return (
+    lower.includes('temporarily rate-limited') ||
+    lower.includes('temporarily rate limited') ||
+    lower.includes('rate-limited upstream') ||
+    lower.includes('rate limited upstream') ||
+    lower.includes('retry shortly') ||
+    lower.includes('try again shortly')
+  );
+}
+
+/**
  * Result of inspecting an HTTP-2xx OpenRouter response body. Distinguishes
  * healthy responses from per-choice errors that the transport layer cannot
  * see (because the HTTP envelope is 200) so {@link OpenRouterProvider.call}
@@ -944,7 +982,10 @@ OUTPUT RULES (OpenRouter structured output):
       }
 
       // Non-2xx: decide whether to retry, map to quota, or bail out.
-      const message = extractErrorMessage(response.body) ||
+      const parsedError = extractErrorPayload(response.body);
+      const message =
+        (parsedError && typeof parsedError.message === 'string' && parsedError.message) ||
+        response.body.slice(0, 300) ||
         `OpenRouter HTTP ${response.status}`;
       const bodyPreview = response.body.slice(0, 1000);
       console.error(
@@ -953,6 +994,29 @@ OUTPUT RULES (OpenRouter structured output):
       // Always emit the body preview on non-2xx errors — we need to see
       // what the upstream actually returned when CI fails.
       console.error(`${logPrefix} ${attemptLabel} body-preview=${bodyPreview}`);
+
+      // Transient upstream rate-limit (HTTP 429 with `metadata.raw` reporting
+      // "temporarily rate-limited upstream") is what OpenRouter returns when
+      // the underlying provider — not our account — is briefly throttling us.
+      // OpenRouter itself says "Please retry shortly", so treat it as
+      // retryable instead of a terminal quota error.
+      if (
+        response.status === 429 &&
+        isTransientUpstreamRateLimit(parsedError)
+      ) {
+        console.error(
+          `${logPrefix} ${attemptLabel} transient-upstream-rate-limit status=429 message=${message}`
+        );
+        lastError = new LlmProviderError(
+          'openrouter',
+          `OpenRouter upstream rate-limit: ${message}`
+        );
+        if (attempt < totalAttempts) {
+          await this.sleepBackoff(attempt);
+          continue;
+        }
+        throw lastError;
+      }
 
       if (isQuotaStatusCode(response.status) || isQuotaMessage(message)) {
         throw new LlmQuotaError('openrouter', message);
@@ -996,17 +1060,17 @@ OUTPUT RULES (OpenRouter structured output):
   }
 }
 
-function extractErrorMessage(body: string): string | null {
+function extractErrorPayload(body: string): OpenRouterErrorPayload | null {
   if (!body) return null;
   try {
     const parsed = JSON.parse(body) as OpenRouterEnvelope;
-    if (parsed.error && typeof parsed.error.message === 'string') {
-      return parsed.error.message;
+    if (parsed.error) {
+      return parsed.error;
     }
   } catch {
     /* ignore */
   }
-  return body.slice(0, 300);
+  return null;
 }
 
 /**
