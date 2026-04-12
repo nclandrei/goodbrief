@@ -603,7 +603,7 @@ test('call retries HTTP 429 when metadata.raw reports transient upstream rate-li
   );
 });
 
-test('call exhausts retries on persistent transient upstream rate-limit and throws non-quota LlmProviderError', async () => {
+test('call exhausts retries on persistent transient upstream rate-limit and throws LlmQuotaError', async () => {
   const transientRateLimitBody = JSON.stringify({
     error: {
       message: 'Provider returned error',
@@ -628,10 +628,10 @@ test('call exhausts retries on persistent transient upstream rate-limit and thro
   await assert.rejects(
     () => provider.scoreArticles([RAW], { includeReasoning: false }),
     (err: unknown) => {
-      if (!(err instanceof LlmProviderError)) return false;
-      // Must NOT surface as a quota error — the pipeline would otherwise
-      // bail out without ever falling back or retrying.
-      if (err instanceof LlmQuotaError) return false;
+      // After exhausting retries, surface as LlmQuotaError so the
+      // FallbackLlmProvider layer can catch it and switch to a
+      // different provider (e.g. Gemini).
+      if (!(err instanceof LlmQuotaError)) return false;
       return /rate.?limit|upstream/i.test(err.message);
     }
   );

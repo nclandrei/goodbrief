@@ -69,11 +69,12 @@ export const OPENROUTER_MAX_MODELS = 3;
  * Passed via OpenRouter's native `models` array so the server handles
  * fallback routing in a single request — no extra round-trips.
  *
- * Each model is served by a different upstream provider, maximising the
- * chance that at least one is available when others are rate-limited:
+ * Fallbacks are ordered to maximise **provider diversity**: the first
+ * fallback should be on a different upstream provider than the primary so
+ * that a single provider-wide rate-limit doesn't knock out 2 of 3 models.
  *
- * - `google/gemma-3-27b-it:free`                       — Google AI Studio
- * - `meta-llama/llama-3.3-70b-instruct:free`           — Meta / Groq
+ * - `meta-llama/llama-3.3-70b-instruct:free`  — Groq  (different from primary)
+ * - `google/gemma-3-27b-it:free`               — Google AI Studio (same as primary, last resort)
  *
  * OpenRouter limits the `models` array to 3 entries (primary + 2 fallbacks).
  * All are free (`:free` suffix), fast, and non-reasoning. Override with
@@ -81,8 +82,8 @@ export const OPENROUTER_MAX_MODELS = 3;
  * string to disable fallback rotation entirely.
  */
 export const DEFAULT_FALLBACK_MODELS: readonly string[] = [
-  'google/gemma-3-27b-it:free',
   'meta-llama/llama-3.3-70b-instruct:free',
+  'google/gemma-3-27b-it:free',
 ];
 
 /**
@@ -1116,15 +1117,25 @@ OUTPUT RULES (OpenRouter structured output):
         console.error(
           `${logPrefix} ${attemptLabel} transient-upstream-rate-limit status=429 message=${message}`
         );
-        lastError = new LlmProviderError(
-          'openrouter',
-          `OpenRouter upstream rate-limit: ${message}`
-        );
         if (attempt < totalAttempts) {
-          await this.sleepBackoff(attempt);
+          lastError = new LlmProviderError(
+            'openrouter',
+            `OpenRouter upstream rate-limit: ${message}`
+          );
+          // Free-tier upstream rate limits can last 60s+, so use a 5x
+          // multiplier (10s → 20s → 40s → 80s) to give providers time
+          // to clear instead of the standard 2s → 4s → 8s → 16s.
+          await this.sleepBackoff(attempt, 5);
           continue;
         }
-        throw lastError;
+        // All retries exhausted — every model in the rotation is still
+        // rate-limited upstream.  Escalate to LlmQuotaError so the
+        // FallbackLlmProvider layer can switch to a different provider
+        // (e.g. Gemini) instead of crashing the pipeline.
+        throw new LlmQuotaError(
+          'openrouter',
+          `OpenRouter upstream rate-limit (all ${totalAttempts} attempts exhausted, all models rate-limited): ${message}`
+        );
       }
 
       if (isQuotaStatusCode(response.status) || isQuotaMessage(message)) {
@@ -1159,11 +1170,11 @@ OUTPUT RULES (OpenRouter structured output):
     );
   }
 
-  private async sleepBackoff(attempt: number): Promise<void> {
+  private async sleepBackoff(attempt: number, baseMultiplier = 1): Promise<void> {
     if (this.retryDelayMs <= 0) return;
-    // attempt is 1-indexed; delay = base * 2^(attempt-1), capped at 8x base.
+    // attempt is 1-indexed; delay = base * multiplier * 2^(attempt-1), capped at 8x.
     const factor = Math.min(2 ** (attempt - 1), 8);
-    const delay = this.retryDelayMs * factor;
+    const delay = this.retryDelayMs * baseMultiplier * factor;
     console.error(`[openrouter] backing off ${delay}ms before retry #${attempt + 1}`);
     await new Promise((resolve) => setTimeout(resolve, delay));
   }
