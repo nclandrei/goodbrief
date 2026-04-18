@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W16",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-04-18T11:04:33.257Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Bună dimineața! 👋",
+      "intro": "Săptămâna asta s-au întâmplat niște lucruri faine, de la eroi locali care ne dau speranță, la comori redescoperite și inovații medicale. Pregătește-ți cafeaua și hai să vedem ce ne-a adus Good Brief.",
+      "signOff": "Cam atât pentru săptămâna asta. Zâmbește și continuă să faci lucruri bune! 🙏",
+      "shortSummary": "Spital construit de ONG, artefacte dacice, elevi premiați la NASA."
+    }
+  }
+}

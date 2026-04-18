@@ -1,0 +1,42 @@
+{
+  "weekId": "2026-W16",
+  "phase": "counter-signal-validate",
+  "generatedAt": "2026-04-18T11:03:37.504Z",
+  "inputFile": "03-semantic-dedup.json + 01-prepared.json",
+  "data": {
+    "validation": {
+      "generatedAt": "2026-04-18T11:03:23.698Z",
+      "candidateCount": 60,
+      "flagged": [
+        {
+          "candidateId": "323f2d75253935d2",
+          "verdict": "borderline",
+          "penaltyApplied": 10,
+          "reason": "Articolul candidat prezintă victoria lui Péter Magyar ca pe o știre pozitivă, dar acoperirea din aceeași săptămână arată că acesta a cerut deja demisia președintelui și a avertizat pe Viktor Orbán, iar un alt articol sugerează că documente sensibile ar fi fost distruse înainte de plecarea lui Orban. Aceste elemente introduc o notă de conflict și potențiale controverse care ar putea să nu fie potrivite pentru o secțiune de \"știri pozitive curate\", deși victoria electorală în sine este pozitivă.",
+          "relatedArticleIds": [
+            "53ff8f8a17c158e8",
+            "1fb00df60ac02293"
+          ],
+          "relatedArticleTitles": [
+            "Ungaria. Peter Magyar, viitorul prim-ministru, le-a cerut președintelui Tamas Sulyok și tuturor șefilor de instituții numiți de Viktor Orban să demisioneze imediat, numindu-i ”marionete”.",
+            "Peter Magyar acuză că în guvernul ungar se distrug documente sensibile înainte de plecarea lui Viktor Orban"
+          ],
+          "generatedAt": "2026-04-18T11:03:23.698Z"
+        },
+        {
+          "candidateId": "e55308befbec8855",
+          "verdict": "strong",
+          "penaltyApplied": 30,
+          "reason": "Articolul candidat prezintă furtul unei țevi din instalația de oxigen a spitalului ca pe un element secundar, în timp ce principalele surse din aceeași săptămână (inclusiv cea de la Mediafax) se concentrează pe furtul în sine și pe avaria provocată, transformând incidentul dintr-unul izolat și rezolvat într-unul negativ major care a necesitat intervenția poliției. Acest lucru subminează caracterul de „știre pozitivă” a articolului candidat.",
+          "relatedArticleIds": [
+            "71096287fd5bdedd"
+          ],
+          "relatedArticleTitles": [
+            "O persoană a furat o piesă și a provocat o avarie la rezervorul de oxigen al Spitalului Pantelimon"
+          ],
+          "generatedAt": "2026-04-18T11:03:23.698Z"
+        }
+      ]
+    }
+  }
+}
