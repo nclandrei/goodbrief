@@ -181,7 +181,9 @@
       "humanCloseness": 30,
       "bureaucraticDistance": 20,
       "promoRisk": 10
-    },
+    }
+  ],
+  "reserves": [
     {
       "id": "f4cc10e77c6cc97e",
       "sourceId": "edupedu",
@@ -217,9 +219,7 @@
       "humanCloseness": 80,
       "bureaucraticDistance": 20,
       "promoRisk": 20
-    }
-  ],
-  "reserves": [
+    },
     {
       "id": "f6ccd2d562f19eb5",
       "sourceId": "stirileprotv",
@@ -675,229 +675,207 @@
   "totalProcessed": 855,
   "wrapperCopy": {
     "greeting": "Salutare! 👋",
-    "intro": "Săptămâna asta, elevele noastre au luat locul I în Europa la matematică, alți elevi au fost premiați la NASA, iar americanii fac coadă să se mute în România. Între timp, pe Dunăre, cinci sturioni au fost puși înapoi în apă, iar o franțuzoaică a descoperit că drumurile neasfaltate din Maramureș sunt, de fapt, un lux. Pare ficțiune, dar nu e.",
-    "signOff": "Cam atât pentru azi. Sperăm că ți-am adus un zâmbet și-o doză de optimism. 🙏",
-    "shortSummary": "Eroi locali, elevi la NASA, sturioni salvați și aur dacic."
+    "intro": "Săptămâna asta e plină de motive de mândrie: avem elevi premiați la NASA, un spital construit de comunitate și români care cuceresc lumea, fie că vorbim de matematică sau de afaceri. Să vedem ce ne-a mai adus bun universul.",
+    "signOff": "Ne auzim săptămâna viitoare, cu și mai multe vești bune. Până atunci, ai grijă! 🙏",
+    "shortSummary": "De la NASA la antreprenoriat, românii strălucesc. Vești bune."
   },
   "validation": {
-    "generatedAt": "2026-04-18T11:03:23.698Z",
-    "candidateCount": 40,
+    "generatedAt": "2026-04-19T10:16:56.303Z",
+    "candidateCount": 37,
     "flagged": [],
     "status": "passed",
-    "approvalSource": "validation-pipeline",
-    "checkedAt": "2026-04-18T11:05:34.743Z",
+    "approvalSource": "editor-review",
+    "checkedAt": "2026-04-19T10:17:27.234Z",
     "freshnessWindowDays": 14,
     "publishedHistoryCount": 135,
     "recentDraftCount": 0,
-    "blockedArticles": [
-      {
-        "articleId": "87ed0c83ed25da03",
-        "reason": "stale-published-at"
-      },
-      {
-        "articleId": "5a49900f7a21c226",
-        "reason": "stale-published-at"
-      },
-      {
-        "articleId": "e892d4b445f28d1f",
-        "reason": "agent-duplicate",
-        "matchedOrigin": "2026-04-06-issue.md",
-        "matchedTitle": "O echipă de liceeni din Arad a obținut o calificare istorică la campionatul mondial de robotică din Houston"
-      }
-    ],
+    "blockedArticles": [],
     "replacements": [],
     "agentReviewed": [
       {
-        "articleId": "55af57333c5249ab",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about a community-built hospital and a charity initiative."
-      },
-      {
         "articleId": "9f287e2f11055a09",
         "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about students winning an award at NASA."
+        "notes": "No close historical matches found for students winning a NASA competition."
+      },
+      {
+        "articleId": "55af57333c5249ab",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for the 'Dăruiește Viață' hospital construction initiative."
       },
       {
         "articleId": "6cc75678bd68e85d",
         "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about border police rescuing sturgeons."
-      },
-      {
-        "articleId": "f6ccd2d562f19eb5",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about the repatriation of Dacian artifacts."
-      },
-      {
-        "articleId": "81b7aa45295fa49b",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about MRI technology for endometriosis patients."
+        "notes": "No close historical matches found for border police saving sturgeons."
       },
       {
         "articleId": "432dbc91d139ceaa",
         "verdict": "fresh",
-        "notes": "No close historical matches found. The article discusses Americans wanting to move to Romania."
-      },
-      {
-        "articleId": "5da393d04d995e97",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about a man opening a creative business hub."
+        "notes": "No close historical matches found. The closest matches are about infrastructure and energy projects, not about Americans moving to Romania."
       },
       {
         "articleId": "cb868edfc856f594",
         "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about a former financial professional opening a gastronomic point."
+        "notes": "No close historical matches found for a former BNR financier opening a gastronomic point."
       },
       {
         "articleId": "9844ea29c59967b2",
         "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about a tourist attraction in Romania."
-      },
-      {
-        "articleId": "5d7fcb893611924e",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about the Custodian of the Romanian Crown's visit to a community center."
-      },
-      {
-        "articleId": "4cded6665d102f28",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about a politician's victory dance going viral."
+        "notes": "No close historical matches found. The closest matches are about optional school subjects and food waste, not about tourist destinations."
       },
       {
         "articleId": "60df6bde92c14dd5",
         "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about Romanian girls winning a mathematics Olympiad."
-      },
-      {
-        "articleId": "2e880150980f9742",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about a modest scene involving Mircea Lucescu."
-      },
-      {
-        "articleId": "47c1c13153e54f57",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about students winning a business idea competition."
-      },
-      {
-        "articleId": "a0ee6bb538af6c03",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about the smashed burger trend."
-      },
-      {
-        "articleId": "cb15df22d998ec5c",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about Sorana Cîrstea qualifying for a tennis tournament."
-      },
-      {
-        "articleId": "ed07a715e2071744",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article discusses older Romanians returning to university."
+        "notes": "No close historical matches found. The closest matches are about Easter traditions, nuclear industry, and NATO troops, not about math olympiads."
       },
       {
         "articleId": "377ef8829be1b29a",
         "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about a French woman's appreciation for Maramureș."
-      },
-      {
-        "articleId": "77ba74843289e292",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about tourists describing Bucovina as a paradise."
-      },
-      {
-        "articleId": "7e9454413ed19a54",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about Banca Transilvania raising funds through bonds."
-      },
-      {
-        "articleId": "ea416ab10f4ffe28",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about Hidroelectrica reaching a new stock market high."
-      },
-      {
-        "articleId": "c2acdebcfea018ee",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about a science fair for students."
-      },
-      {
-        "articleId": "bdd0bddd6c23d043",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about a home renovation for an orphan."
+        "notes": "No close historical matches found for foreigners' perspective on Maramureș."
       },
       {
         "articleId": "d4b4b5d253de507b",
         "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about a Romanian entrepreneur expanding his business internationally."
-      },
-      {
-        "articleId": "968a0f6a91fbc0d9",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about old industrial buildings being transformed into urban projects."
-      },
-      {
-        "articleId": "e892d4b445f28d1f",
-        "verdict": "duplicate",
-        "notes": "Duplicate of article with ID e892d4b445f28d1f from 2026-04-17. Both articles mention a robotics team from Arad going to a world championship with the help of donations.",
-        "matchedOrigin": "2026-04-06-issue.md",
-        "matchedTitle": "O echipă de liceeni din Arad a obținut o calificare istorică la campionatul mondial de robotică din Houston"
-      },
-      {
-        "articleId": "50ee8e4338139af1",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about a dual master's program."
-      },
-      {
-        "articleId": "62d86e8591bb4de4",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about people enjoying parks after Easter."
-      },
-      {
-        "articleId": "78b694247dfd30da",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about tourists discovering Harghita during Easter."
-      },
-      {
-        "articleId": "172bcecec91def66",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about an ANPC guide for home buyers."
+        "notes": "No close historical matches found for an entrepreneur expanding his family business internationally."
       },
       {
         "articleId": "5b20f2c44bf4b5f9",
         "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about Romania winning an international arbitration case."
-      },
-      {
-        "articleId": "05440c3ea6899b21",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about an old tradition in a Mureș village."
-      },
-      {
-        "articleId": "d16440e11a4c17a0",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about fuel prices decreasing."
-      },
-      {
-        "articleId": "1dd415be18fdd853",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about transplant surgeries in Timișoara."
+        "notes": "No close historical matches found. The closest matches are about financial investments and city regulations, not about international arbitration cases."
       },
       {
         "articleId": "f4cc10e77c6cc97e",
         "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about a business ideas competition for students."
-      },
-      {
-        "articleId": "2e839bd726b11fec",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about Japanese cultural workshops."
-      },
-      {
-        "articleId": "5074ec623e7e66b2",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about the number of babies born in Iași."
+        "notes": "No close historical matches found for a business competition for students."
       },
       {
         "articleId": "0693675349c5966c",
         "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about a special school for students with medical reasons."
+        "notes": "No close historical matches found. The closest matches are about social cantinas and AI detection, not about special schools for medical reasons."
+      },
+      {
+        "articleId": "f6ccd2d562f19eb5",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for the repatriation of Dacian artifacts."
+      },
+      {
+        "articleId": "81b7aa45295fa49b",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for RMN technology in treating endometriosis."
+      },
+      {
+        "articleId": "5da393d04d995e97",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for a person opening a business out of a desire to not work from home."
+      },
+      {
+        "articleId": "5d7fcb893611924e",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for a royal visit to a community center."
+      },
+      {
+        "articleId": "4cded6665d102f28",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for a political victory and a viral dance in Budapest."
+      },
+      {
+        "articleId": "2e880150980f9742",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for a humble anecdote about Mircea Lucescu."
+      },
+      {
+        "articleId": "47c1c13153e54f57",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for students winning a business idea competition with recycled clothing."
+      },
+      {
+        "articleId": "a0ee6bb538af6c03",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for a new gastronomic trend (smashed burger)."
+      },
+      {
+        "articleId": "cb15df22d998ec5c",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for a tennis player qualifying for quarter-finals."
+      },
+      {
+        "articleId": "ed07a715e2071744",
+        "verdict": "fresh",
+        "notes": "No close historical matches found. The closest match is about doctors returning to Romania, not about people over 40 returning to university."
+      },
+      {
+        "articleId": "77ba74843289e292",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for tourists describing Bucovina as a paradise during Easter."
+      },
+      {
+        "articleId": "7e9454413ed19a54",
+        "verdict": "fresh",
+        "notes": "No close historical matches found. The closest matches are about government plans, economic packages, and hydroelectric projects, not about a bank's bond issuance."
+      },
+      {
+        "articleId": "ea416ab10f4ffe28",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for Hidroelectrica reaching a new stock market high."
+      },
+      {
+        "articleId": "c2acdebcfea018ee",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for a science fair for students."
+      },
+      {
+        "articleId": "bdd0bddd6c23d043",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for a teenager whose house will be renovated by a TV show."
+      },
+      {
+        "articleId": "968a0f6a91fbc0d9",
+        "verdict": "fresh",
+        "notes": "No close historical matches found. The closest matches are about hospital funding and immunotherapy projects, not about repurposing old industrial buildings."
+      },
+      {
+        "articleId": "50ee8e4338139af1",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for dual master's programs offering scholarships and employment."
+      },
+      {
+        "articleId": "62d86e8591bb4de4",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for people going out to parks after Easter due to good weather."
+      },
+      {
+        "articleId": "78b694247dfd30da",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for tourists discovering nature and traditions in Harghita during Easter."
+      },
+      {
+        "articleId": "172bcecec91def66",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for ANPC publishing a guide for home buyers."
+      },
+      {
+        "articleId": "05440c3ea6899b21",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for an ancient race tradition in Mureș."
+      },
+      {
+        "articleId": "d16440e11a4c17a0",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for fuel prices decreasing."
+      },
+      {
+        "articleId": "1dd415be18fdd853",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for transplant operations in Timișoara hospitals."
+      },
+      {
+        "articleId": "2e839bd726b11fec",
+        "verdict": "fresh",
+        "notes": "No close historical matches found for Japanese cultural events in a park."
+      },
+      {
+        "articleId": "5074ec623e7e66b2",
+        "verdict": "fresh",
+        "notes": "No close historical matches found. The closest matches are about food donations for vulnerable families and charity balls, not about the number of newborns."
       }
     ]
   }
