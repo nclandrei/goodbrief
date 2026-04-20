@@ -142,3 +142,32 @@ in env to auto-fall-back on quota errors.
 - Keep dependencies minimal
 - GDPR compliance required
 - Week IDs use ISO format: `YYYY-WXX`
+
+## Editorial Approval — Hands Off the Draft
+
+When the editor says "validate and approve [the draft] for Monday" (or any
+variant: "approve this", "lock it in", "make it ready to send"), treat the
+current `data/drafts/YYYY-WXX.json` as **final editor-authored content**.
+
+**Do exactly this, nothing more:**
+1. Run `npm run approve-draft -- --week YYYY-WXX`. That script only flips
+   `validation.status` to `passed`, sets `approvalSource: "editor-review"`,
+   and updates `checkedAt`. It does not touch `selected`, `reserves`, or
+   `wrapperCopy`.
+2. Optionally run `npm run validate-draft-freshness -- --week YYYY-WXX` as a
+   read-only gate.
+3. Create **one** commit with only the approval metadata change.
+
+**Never, under an approval instruction:**
+- Re-run any `pipeline:*` phase (especially `select`, `wrapper-copy`, `refine`).
+- Regenerate greeting / intro / sign-off / shortSummary — those are the
+  editor's final voice for the week.
+- Move articles between `selected` and `reserves`, reorder, trim to a
+  target count, or rewrite summaries/titles.
+- Produce multiple commits (e.g. an "editor review" commit followed by a
+  separate "approve" commit). If the draft needs edits, the editor will
+  say so explicitly; silence means it's final.
+
+If something looks wrong (e.g. selected.length < 8, stale timestamps,
+freshness gate fails), surface it and **ask** before changing anything.
+The approval verb is a lock, not a green light to re-curate.
