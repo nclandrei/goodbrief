@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W17",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-04-25T11:09:05.547Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare! 👋",
+      "intro": "Săptămâna asta e plină de campioane, atât pe terenul sportiv, cât și în viața de zi cu zi. De la doamne care inspiră la 70 de ani, la performanțe sportive de excepție și patrimoniu cultural înapoi acasă, avem motive de bucurie. Hai să vedem ce ne-a adus Good Brief.",
+      "signOff": "Ne revedem cu vești bune! Până atunci, ai grijă de tine. 🙏",
+      "shortSummary": "Sportive campioane, patrimoniu recuperat și povești inspiraționale."
+    }
+  }
+}

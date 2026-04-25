@@ -1,0 +1,13 @@
+{
+  "weekId": "2026-W17",
+  "phase": "counter-signal-validate",
+  "generatedAt": "2026-04-25T11:08:03.188Z",
+  "inputFile": "03-semantic-dedup.json + 01-prepared.json",
+  "data": {
+    "validation": {
+      "generatedAt": "2026-04-25T11:07:49.330Z",
+      "candidateCount": 60,
+      "flagged": []
+    }
+  }
+}
