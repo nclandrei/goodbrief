@@ -701,8 +701,8 @@
     "generatedAt": "2026-05-02T11:15:08.772Z",
     "candidateCount": 40,
     "flagged": [],
-    "status": "failed",
-    "checkedAt": "2026-05-02T17:37:51.311Z",
+    "status": "passed",
+    "checkedAt": "2026-05-02T17:45:14.766Z",
     "freshnessWindowDays": 14,
     "publishedHistoryCount": 156,
     "recentDraftCount": 0,
@@ -908,6 +908,7 @@
         "verdict": "fresh",
         "notes": "No close historical matches found."
       }
-    ]
+    ],
+    "approvalSource": "editor-review"
   }
 }
