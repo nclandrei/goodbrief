@@ -93,24 +93,6 @@
       "promoRisk": 20
     },
     {
-      "id": "7d152c360c320b80",
-      "sourceId": "edupedu",
-      "sourceName": "Edupedu",
-      "originalTitle": "FOTO Număr record de vizitatori, într-un singur weekend la Muzeul Național de Istorie a României pentru a vedea Coiful de la Coțofenești și brățările dacice. Artefactele sunt expuse publicului până pe 3 mai / Programul și cât costă biletele",
-      "url": "https://www.edupedu.ro/foto-numar-record-de-vizitatori-intr-un-singur-weekend-la-muzeul-national-de-istorie-a-romaniei-pentru-a-vedea-coiful-de-la-cotofenesti-si-bratarile-dacice-artefactele-sunt-expuse-publicului-pana-pe/",
-      "summary": "Muzeul Național de Istorie a României a înregistrat un număr record de vizitatori, peste 2.600 în weekendul 25-26 aprilie, pentru a vedea Coiful de la Coțofenești și brățările dacice. Expoziția a atras un interes deosebit din partea publicului.",
-      "positivity": 85,
-      "impact": 70,
-      "category": "wins",
-      "publishedAt": "2026-04-27T14:00:00.000Z",
-      "processedAt": "2026-05-02T11:13:55.811Z",
-      "feltImpact": 70,
-      "certainty": 90,
-      "humanCloseness": 80,
-      "bureaucraticDistance": 10,
-      "promoRisk": 0
-    },
-    {
       "id": "b30fce832b596ef9",
       "sourceId": "economedia",
       "sourceName": "Economedia",
@@ -127,6 +109,24 @@
       "humanCloseness": 80,
       "bureaucraticDistance": 30,
       "promoRisk": 20
+    },
+    {
+      "id": "7d152c360c320b80",
+      "sourceId": "edupedu",
+      "sourceName": "Edupedu",
+      "originalTitle": "FOTO Număr record de vizitatori, într-un singur weekend la Muzeul Național de Istorie a României pentru a vedea Coiful de la Coțofenești și brățările dacice. Artefactele sunt expuse publicului până pe 3 mai / Programul și cât costă biletele",
+      "url": "https://www.edupedu.ro/foto-numar-record-de-vizitatori-intr-un-singur-weekend-la-muzeul-national-de-istorie-a-romaniei-pentru-a-vedea-coiful-de-la-cotofenesti-si-bratarile-dacice-artefactele-sunt-expuse-publicului-pana-pe/",
+      "summary": "Muzeul Național de Istorie a României a înregistrat un număr record de vizitatori, peste 2.600 în weekendul 25-26 aprilie, pentru a vedea Coiful de la Coțofenești și brățările dacice. Expoziția a atras un interes deosebit din partea publicului.",
+      "positivity": 85,
+      "impact": 70,
+      "category": "wins",
+      "publishedAt": "2026-04-27T14:00:00.000Z",
+      "processedAt": "2026-05-02T11:13:55.811Z",
+      "feltImpact": 70,
+      "certainty": 90,
+      "humanCloseness": 80,
+      "bureaucraticDistance": 10,
+      "promoRisk": 0
     },
     {
       "id": "eec824fb1feec733",
@@ -693,9 +693,9 @@
   "totalProcessed": 1070,
   "wrapperCopy": {
     "greeting": "Salutare! 👋",
-    "intro": "Săptămâna asta e plină de povești care ne fac să credem din nou în oameni. De la o familie care primește o casă nouă după ani grei, la un licean român ce a cucerit Harvardul. Respiră adânc și hai să vedem ce veste bune aducem.",
+    "intro": "Săptămâna asta avem una plină. O mamă cu trei copii primește o casă nouă după 12 ani petrecuți într-un container. Un licean din Târgu Jiu, olimpic la matematică, fizică și astrofizică, pleacă la Harvard cu bursă integrală. Bucureștiul își montează șinele primului tramvai nou în 30 de ani, iar acvila de câmp s-a întors discret în România după jumătate de secol. Respiră adânc și hai să le luăm pe rând.",
     "signOff": "Cam atât pentru azi. Sperăm să-ți fi adus un zâmbet pe buze. 🙏",
-    "shortSummary": "Casă nouă pentru o familie, român la Harvard, acvilă revenită."
+    "shortSummary": "Casă nouă după 12 ani, român la Harvard, primul tramvai nou din București."
   },
   "validation": {
     "generatedAt": "2026-05-02T11:15:08.772Z",
