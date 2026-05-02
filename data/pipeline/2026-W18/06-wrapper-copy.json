@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W18",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-05-02T11:16:23.178Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Bună ziua! 👋",
+      "intro": "Avem o ediție plină de eroi locali și realizări românești de care să fim mândri. De la o familie care primește o casă nouă, la tineri olimpici și o specie de pasăre care revine acasă, săptămâna asta e despre reconstrucție și speranță. Să începem!",
+      "signOff": "Asta a fost pentru săptămâna asta. Sperăm să te simți mai inspirat. 🙏",
+      "shortSummary": "Eroi locali, pasăre rară revine, olimpic la Harvard, casă nouă."
+    }
+  }
+}
