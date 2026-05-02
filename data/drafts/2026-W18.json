@@ -3,24 +3,6 @@
   "generatedAt": "2026-05-02T11:17:02.016Z",
   "selected": [
     {
-      "id": "96d7d00e007f9303",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "După 12 ani într-un container, o mamă și cei trei copii ai săi au primit o casă nouă, cu ajutorul unei campanii de donații",
-      "url": "https://stirileprotv.ro/stiri/social/dupa-12-ani-intr-un-container-o-mama-si-cei-trei-copii-ai-sai-au-primit-o-casa-noua-cu-ajutorul-unei-campanii-de-donatii.html",
-      "summary": "După 12 ani petrecuți într-un container, o mamă și cei trei copii ai săi au primit o locuință nouă, datorită unei campanii de donații. Familia greu încercată de necazuri se bucură acum de o mare bucurie.",
-      "positivity": 90,
-      "impact": 70,
-      "category": "local-heroes",
-      "publishedAt": "2026-05-01T05:11:52.000Z",
-      "processedAt": "2026-05-02T11:13:55.811Z",
-      "feltImpact": 90,
-      "certainty": 80,
-      "humanCloseness": 100,
-      "bureaucraticDistance": 20,
-      "promoRisk": 30
-    },
-    {
       "id": "1ba017f7a4d34019",
       "sourceId": "edupedu",
       "sourceName": "Edupedu",
@@ -55,6 +37,24 @@
       "humanCloseness": 90,
       "bureaucraticDistance": 40,
       "promoRisk": 10
+    },
+    {
+      "id": "96d7d00e007f9303",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "După 12 ani într-un container, o mamă și cei trei copii ai săi au primit o casă nouă, cu ajutorul unei campanii de donații",
+      "url": "https://stirileprotv.ro/stiri/social/dupa-12-ani-intr-un-container-o-mama-si-cei-trei-copii-ai-sai-au-primit-o-casa-noua-cu-ajutorul-unei-campanii-de-donatii.html",
+      "summary": "După 12 ani petrecuți într-un container, o mamă și cei trei copii ai săi au primit o locuință nouă, datorită unei campanii de donații. Familia greu încercată de necazuri se bucură acum de o mare bucurie.",
+      "positivity": 90,
+      "impact": 70,
+      "category": "local-heroes",
+      "publishedAt": "2026-05-01T05:11:52.000Z",
+      "processedAt": "2026-05-02T11:13:55.811Z",
+      "feltImpact": 90,
+      "certainty": 80,
+      "humanCloseness": 100,
+      "bureaucraticDistance": 20,
+      "promoRisk": 30
     },
     {
       "id": "928ef23e68132ba1",
@@ -693,16 +693,16 @@
   "totalProcessed": 1070,
   "wrapperCopy": {
     "greeting": "Salutare! 👋",
-    "intro": "Săptămâna asta avem una plină. O mamă cu trei copii primește o casă nouă după 12 ani petrecuți într-un container. Un licean din Târgu Jiu, olimpic la matematică, fizică și astrofizică, pleacă la Harvard cu bursă integrală. Bucureștiul își montează șinele primului tramvai nou în 30 de ani, iar acvila de câmp s-a întors discret în România după jumătate de secol. Respiră adânc și hai să le luăm pe rând.",
+    "intro": "Săptămâna asta avem una plină. Un licean din Târgu Jiu, olimpic la matematică, fizică și astrofizică, pleacă la Harvard cu bursă integrală. Bucureștiul își montează șinele primului tramvai nou în 30 de ani, iar acvila de câmp s-a întors discret în România după jumătate de secol. La Saschiz, încasările de la festivalul rabarbarului hrănesc cantina comunitară. Respiră adânc și hai să le luăm pe rând.",
     "signOff": "Cam atât pentru azi. Sperăm să-ți fi adus un zâmbet pe buze. 🙏",
-    "shortSummary": "Casă nouă după 12 ani, român la Harvard, primul tramvai nou din București."
+    "shortSummary": "Olimpic la Harvard, primul tramvai nou din București, acvila revenită."
   },
   "validation": {
     "generatedAt": "2026-05-02T11:15:08.772Z",
     "candidateCount": 40,
     "flagged": [],
     "status": "passed",
-    "checkedAt": "2026-05-02T17:45:14.766Z",
+    "checkedAt": "2026-05-02T17:50:23.671Z",
     "freshnessWindowDays": 14,
     "publishedHistoryCount": 156,
     "recentDraftCount": 0,
