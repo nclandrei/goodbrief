@@ -1,0 +1,31 @@
+{
+  "weekId": "2026-W19",
+  "phase": "counter-signal-validate",
+  "generatedAt": "2026-05-09T11:20:15.171Z",
+  "inputFile": "03-semantic-dedup.json + 01-prepared.json",
+  "data": {
+    "validation": {
+      "generatedAt": "2026-05-09T11:19:51.565Z",
+      "candidateCount": 60,
+      "flagged": [
+        {
+          "candidateId": "96acdeac832f20af",
+          "verdict": "strong",
+          "penaltyApplied": 30,
+          "reason": "Articolul candidat prezintă vremea ca fiind frumoasă pe 5 mai 2026, cu temperaturi în creștere. Totuși, articolele din zilele imediat următoare (6, 7 și 8 mai) indică o răcire a vremii, instabilitate atmosferică, ploi, furtuni și chiar grindină, ceea ce contrazice perspectiva optimistă prezentată în articolul candidat și îl face să pară prematur sau înșelător.",
+          "relatedArticleIds": [
+            "1baf83f8e1516ee1",
+            "88cb792a4d4ea6a4",
+            "840b4aaba311424b"
+          ],
+          "relatedArticleTitles": [
+            "Vremea azi, 8 mai 2026. Temperaturile rămân ridicate, însă atmosfera este instabilă și apar ploile",
+            "Vremea azi, 7 mai 2026. Temperaturile scad, iar ploile și furtunile revin în aproape toată țara",
+            "Vremea azi, 6 mai. Temperaturile ajung la 29 de grade în unele zone. Cum va fi pe litoral"
+          ],
+          "generatedAt": "2026-05-09T11:19:51.565Z"
+        }
+      ]
+    }
+  }
+}

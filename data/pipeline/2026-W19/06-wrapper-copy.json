@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W19",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-05-09T11:21:25.483Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Bună dimineața! 👋",
+      "intro": "Săptămâna asta, micile minuni ne aduc zâmbetul pe buze. De la eroi locali care salvează vieți, la tineri genii care ne fac mândri pe scena mondială, și orașe care prind viață prin noi spații verzi. E o doză zdravănă de speranță și inspirație.",
+      "signOff": "Cam asta a fost pentru săptămâna asta. Citește cu grijă și ai grijă de tine. 🙏",
+      "shortSummary": "Transplant hepatic, campioni mondiali la robotică și mai mulți copaci."
+    }
+  }
+}
