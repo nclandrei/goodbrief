@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W20",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-05-16T11:27:32.301Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare! 👋",
+      "intro": "Săptămâna asta avem povești care te fac să crezi din nou în oameni și în viitorul nostru. De la eroi locali care ne inspiră, la inovații energetice și proiecte de infrastructură care prind contur, veștile bune sunt din belșug. Pregătește-ți cafeaua și hai să le descoperim împreună.",
+      "signOff": "Asta a fost pentru săptămâna asta. Sperăm să te simți un pic mai inspirat(ă). Pe curând! 🙏",
+      "shortSummary": "Eroi locali, energie verde și proiecte mari - vești bune de la noi!"
+    }
+  }
+}
