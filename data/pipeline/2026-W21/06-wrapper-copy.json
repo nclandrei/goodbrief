@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W21",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-05-23T11:39:30.783Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare! 👋",
+      "intro": "Săptămâna asta avem povești care te fac să zâmbești larg: de la un copil curajos care s-a întors acasă, la performanțe medicale uimitoare și tineri cu inițiative care ne dau speranță. Hai să vedem ce vești bune ne-au adus ultimele zile.",
+      "signOff": "Numai bine și spor la citit! Sperăm că ți-am adus un strop de bucurie. 🙏",
+      "shortSummary": "Copilul salvat, inovații medicale și tineri cu viziune."
+    }
+  }
+}
