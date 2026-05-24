@@ -57,22 +57,22 @@
       "promoRisk": 10
     },
     {
-      "id": "24fb54799839f97a",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "„Fjord\", al lui Mungiu, ovaționat 10 minute la Cannes — favorit la Palme d'Or",
-      "url": "https://stirileprotv.ro/show-buzz/filmul-fjord-peste-10-minute-de-aplauze-la-cannes-se-anunta-printre-favoritele-la-marele-trofeu-palme-d-or.html",
-      "summary": "Filmul românesc 'Fjord' al lui Cristian Mungiu, cu Sebastian Stan, a primit peste 10 minute de aplauze la Cannes și este considerat un favorit la Palme d'Or. Actorul româno-american a fost vizibil emoționat de primire.",
-      "positivity": 80,
-      "impact": 70,
+      "id": "b39044a23d9aaccc",
+      "sourceId": "republica",
+      "sourceName": "Republica",
+      "originalTitle": "„Fjord\", al lui Cristian Mungiu, a câștigat Palme d'Or la Cannes 2026 — al doilea pentru regizor, după 19 ani",
+      "url": "https://republica.ro/cristian-mungiu-palme-dor-fjord-cannes-2026",
+      "summary": "Cristian Mungiu a câștigat al doilea Palme d'Or la Festivalul de la Cannes cu „Fjord\", la 19 ani după „4 luni, 3 săptămâni și 2 zile\". Filmul, cu Sebastian Stan și Renate Reinsve, urmărește o familie româno-norvegiană prinsă într-un conflict cultural și juridic în Norvegia.",
       "category": "wins",
-      "publishedAt": "2026-05-20T05:18:28.000Z",
-      "processedAt": "2026-05-23T11:36:28.297Z",
-      "feltImpact": 60,
-      "certainty": 80,
-      "humanCloseness": 60,
-      "bureaucraticDistance": 20,
-      "promoRisk": 20
+      "publishedAt": "2026-05-24T19:30:00.000Z",
+      "processedAt": "2026-05-24T15:26:17.622Z",
+      "positivity": 95,
+      "impact": 85,
+      "feltImpact": 90,
+      "certainty": 100,
+      "humanCloseness": 75,
+      "bureaucraticDistance": 10,
+      "promoRisk": 10
     },
     {
       "id": "fa796ff1fde53ccd",
@@ -567,9 +567,9 @@
   "totalProcessed": 1149,
   "wrapperCopy": {
     "greeting": "Salutare! 👋",
-    "intro": "Săptămâna asta începe la Cannes: „Fjord\", al lui Mungiu, primește zece minute de aplauze și intră printre favoritele la Palme d'Or. La Buzău, doi liceeni câștigă o competiție globală National Geographic cu un proiect despre poluarea aerului. La Timișoara, primul muzeu interactiv pentru copii din țară își deschide ușile. În paralel, mai liniștit: două implanturi cohleare făcute simultan, în premieră, la București; modernizarea căii ferate Lugoj–Timișoara trece de 70% și prinde primul jalon PNRR; iar parcul auto electric al României s-a aproape dublat într-un an. Plus, după 100 de ani de hârtii, podul peste Siret de la Cosmești intră în sfârșit în construcție.",
+    "intro": "Săptămâna asta se închide la Cannes cu o veste mare: „Fjord\", al lui Cristian Mungiu, ia Palme d'Or — al doilea pentru regizor, la 19 ani după „4 luni, 3 săptămâni și 2 zile\". La Buzău, doi liceeni câștigă o competiție globală National Geographic cu un proiect despre poluarea aerului. La Timișoara, primul muzeu interactiv pentru copii din țară își deschide ușile. În paralel, mai liniștit: două implanturi cohleare făcute simultan, în premieră, la București; modernizarea căii ferate Lugoj–Timișoara trece de 70% și prinde primul jalon PNRR; iar parcul auto electric al României s-a aproape dublat într-un an. Plus, după 100 de ani de hârtii, podul peste Siret de la Cosmești intră în sfârșit în construcție.",
     "signOff": "Asta a fost pentru azi. Ne auzim săptămâna viitoare cu și mai multe vești bune! 🙏",
-    "shortSummary": "Mungiu ovaționat la Cannes, liceeni la National Geographic, primul muzeu interactiv pentru copii din țară."
+    "shortSummary": "Mungiu ia al doilea Palme d'Or la Cannes, liceeni la National Geographic, primul muzeu interactiv pentru copii din țară."
   },
   "validation": {
     "generatedAt": "2026-05-23T11:37:49.269Z",
@@ -577,7 +577,7 @@
     "flagged": [],
     "status": "passed",
     "approvalSource": "editor-review",
-    "checkedAt": "2026-05-24T14:59:10.949Z",
+    "checkedAt": "2026-05-24T15:27:21.950Z",
     "freshnessWindowDays": 14,
     "publishedHistoryCount": 186,
     "recentDraftCount": 0,
