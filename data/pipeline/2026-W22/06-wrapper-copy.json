@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W22",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-05-30T11:43:22.601Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare! 👋",
+      "intro": "Săptămâna asta aduce vești despre eroi din Târgu Jiu și Tulcea, performanțe surprinzătoare la Eurovision, și vești bune despre sectorul IT și energia solară. E un reminder că lucrurile bune se întâmplă, zi de zi, în România.",
+      "signOff": "Citește-ne și săptămâna viitoare! Toate cele bune, 🙏",
+      "shortSummary": "Eroi locali, IT, energie solară și Eurovision: vești bune din România."
+    }
+  }
+}

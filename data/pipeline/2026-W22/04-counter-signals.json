@@ -1,0 +1,27 @@
+{
+  "weekId": "2026-W22",
+  "phase": "counter-signal-validate",
+  "generatedAt": "2026-05-30T11:42:06.072Z",
+  "inputFile": "03-semantic-dedup.json + 01-prepared.json",
+  "data": {
+    "validation": {
+      "generatedAt": "2026-05-30T11:41:54.080Z",
+      "candidateCount": 60,
+      "flagged": [
+        {
+          "candidateId": "24a24f5cbda5bc2c",
+          "verdict": "strong",
+          "penaltyApplied": 30,
+          "reason": "Articolul candidat menționează că FCSB va juca barajul pentru Conference League. Totuși, o știre din aceeași săptămână (ID: 83abbffaaa93f3f8) anunță că FCSB s-a calificat deja în Conference League, învingând Dinamo în prelungiri. Acest lucru face ca articolul candidat să fie depășit și să prezinte o informație incorectă.",
+          "relatedArticleIds": [
+            "83abbffaaa93f3f8"
+          ],
+          "relatedArticleTitles": [
+            "VIDEO Fotbal: FCSB s-a calificat în Conference League, după 2-1 în prelungiri cu Dinamo"
+          ],
+          "generatedAt": "2026-05-30T11:41:54.080Z"
+        }
+      ]
+    }
+  }
+}
