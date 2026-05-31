@@ -3,48 +3,30 @@
   "generatedAt": "2026-05-30T11:43:58.739Z",
   "selected": [
     {
-      "id": "eb687d66e02a1a23",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Angajatul unei bănci din Târgu Jiu a făcut infarct la birou. Medicii au mers pe jos de la spital pentru a-l salva",
-      "url": "https://stirileprotv.ro/stiri/actualitate/angajatul-unei-banci-din-targu-jiu-a-facut-infarct-la-birou-medicii-au-mers-pe-jos-de-la-spital-pentru-a-l-salva.html",
-      "summary": "Un salvator din Târgu Jiu a mers pe jos de la spital la birou pentru a salva viața unui coleg care făcuse infarct. Acesta este dovada că eroii noștri sunt mereu la datorie, chiar și în cele mai neașteptate momente.",
-      "positivity": 90,
-      "impact": 70,
-      "category": "local-heroes",
-      "publishedAt": "2026-05-27T04:44:24.000Z",
-      "processedAt": "2026-05-30T11:40:39.570Z",
-      "feltImpact": 80,
-      "certainty": 90,
-      "humanCloseness": 90,
-      "bureaucraticDistance": 20,
-      "promoRisk": 0
-    },
-    {
-      "id": "644926b26bef057a",
+      "id": "c4556b642afa2713",
       "sourceId": "economedia",
       "sourceName": "Economedia",
-      "originalTitle": "GRAFICE | Anatomia veniturilor în cel mai bine plătit sector din piața muncii din România: Salariile în IT&C au crescut de peste cinci ori din 2008 încoace/  Fără acest domeniu, salariile la nivel național ar fi cu 4,3% mai mici. Economist: „Nu cred că asistăm la atingerea unui vârf”",
-      "url": "https://economedia.ro/grafice-anatomia-veniturilor-in-cel-mai-bine-platit-sector-din-piata-muncii-din-romania-salariile-in-itc-au-crescut-de-peste-cinci-ori-din-2008-incoace-fara-acest-domeniu-salariile-la-nivel-na.html",
-      "summary": "Salariile din IT&C în România au crescut spectaculos, de peste cinci ori din 2008. Acest sector contribuie semnificativ la economia țării, iar fără el, salariile medii naționale ar fi mai mici.",
+      "originalTitle": "Rareș Anghel, elevul care a transformat bugetul statului într-o platformă ușor de înțeles",
+      "url": "https://economedia.ro/cine-este-rares-anghel-elevul-care-a-transformat-bugetele-ministerelor-intr-o-platforma-usor-de-inteles-pentru-cetateni-toata-lumea-plateste-taxe-iar-multi-vor-sa-stie-cum-sunt-folosite-ac.html",
+      "summary": "Rareș Anghel, elev de 18 ani la Tudor Vianu, a construit platforma „Bugetul României”, care adună datele despre banii publici într-un format ușor de urmărit. Proiectul face bugetele instituțiilor mai accesibile pentru cei care vor să înțeleagă cum sunt folosite taxele.",
       "positivity": 85,
-      "impact": 90,
-      "category": "wins",
-      "publishedAt": "2026-05-27T03:00:56.000Z",
+      "impact": 70,
+      "category": "local-heroes",
+      "publishedAt": "2026-05-30T03:00:39.000Z",
       "processedAt": "2026-05-30T11:40:39.570Z",
-      "feltImpact": 90,
+      "feltImpact": 70,
       "certainty": 90,
-      "humanCloseness": 70,
-      "bureaucraticDistance": 30,
-      "promoRisk": 10
+      "humanCloseness": 80,
+      "bureaucraticDistance": 40,
+      "promoRisk": 30
     },
     {
       "id": "8915483d2b3b111c",
       "sourceId": "economedia",
       "sourceName": "Economedia",
-      "originalTitle": "O imagine cum nu s-a mai văzut în România: Jumătate din producţia de energie vine de la soare",
+      "originalTitle": "Record solar în România: jumătate din producția de energie a venit de la soare",
       "url": "https://economedia.ro/o-imagine-cum-nu-s-a-mai-vazut-in-romania-jumatate-din-productia-de-energie-vine-de-la-soare.html",
-      "summary": "O zi record pentru energia solară în România, jumătate din producția totală venind de la soare. Panourile fotovoltaice au furnizat 2.300 MW, depășind sursele hidro și cele convenționale.",
+      "summary": "România a avut o zi record pentru energia solară: la un moment dat, jumătate din producția națională de energie venea de la soare. Panourile fotovoltaice au ajuns la 2.300 MW, peste hidro și sursele convenționale.",
       "positivity": 90,
       "impact": 80,
       "category": "green-stuff",
@@ -57,23 +39,151 @@
       "promoRisk": 10
     },
     {
-      "id": "4f2b1915d9b7de44",
-      "sourceId": "republica",
-      "sourceName": "Republica",
-      "originalTitle": "Răspunsul Alexandrei Căpitănescu: un loc 3 istoric în finala Eurovision și un vis devenit realitate. Ceea ce românii critică, europenii votează cu două mâini",
-      "url": "https://republica.ro/raspuns-alexandra-capitanescu-loc-istoric-finala-eurovision-2026",
-      "summary": "Alexandra Căpitănescu a obținut un loc 3 istoric la Eurovision 2026, performanța fiind susținută de votul publicului european, în ciuda criticilor interne. La doar 22 de ani, ea a transformat un vis de copil în realitate, cu o piesă despre lupte personale.",
+      "id": "644926b26bef057a",
+      "sourceId": "economedia",
+      "sourceName": "Economedia",
+      "originalTitle": "Salariile din IT&C au crescut de peste cinci ori din 2008",
+      "url": "https://economedia.ro/grafice-anatomia-veniturilor-in-cel-mai-bine-platit-sector-din-piata-muncii-din-romania-salariile-in-itc-au-crescut-de-peste-cinci-ori-din-2008-incoace-fara-acest-domeniu-salariile-la-nivel-na.html",
+      "summary": "Salariile din IT&C au crescut de peste cinci ori față de 2008 și rămân printre cele mai mari din economia românească. Fără acest sector, salariile medii la nivel național ar fi cu 4,3% mai mici, potrivit datelor analizate de Economedia.",
+      "positivity": 85,
+      "impact": 90,
+      "category": "wins",
+      "publishedAt": "2026-05-27T03:00:56.000Z",
+      "processedAt": "2026-05-30T11:40:39.570Z",
+      "feltImpact": 90,
+      "certainty": 90,
+      "humanCloseness": 70,
+      "bureaucraticDistance": 30,
+      "promoRisk": 10
+    },
+    {
+      "id": "eb687d66e02a1a23",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Medicii au mers pe jos prin Târgu Jiu ca să salveze un angajat care făcuse infarct",
+      "url": "https://stirileprotv.ro/stiri/actualitate/angajatul-unei-banci-din-targu-jiu-a-facut-infarct-la-birou-medicii-au-mers-pe-jos-de-la-spital-pentru-a-l-salva.html",
+      "summary": "Medicii din Târgu Jiu au mers pe jos de la spital la sediul unei bănci pentru a interveni la un angajat care făcuse infarct. Reacția rapidă a echipei a transformat proximitatea și prezența de spirit într-o șansă reală la viață.",
       "positivity": 90,
       "impact": 70,
-      "category": "wins",
-      "publishedAt": "2026-05-17T05:29:17.000Z",
+      "category": "local-heroes",
+      "publishedAt": "2026-05-27T04:44:24.000Z",
       "processedAt": "2026-05-30T11:40:39.570Z",
       "feltImpact": 80,
       "certainty": 90,
       "humanCloseness": 90,
-      "bureaucraticDistance": 10,
+      "bureaucraticDistance": 20,
+      "promoRisk": 0
+    },
+    {
+      "id": "06e0129c2480ffe6",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "originalTitle": "Aradul va avea bilete de transport public de 1 leu pe zi",
+      "url": "https://www.mediafax.ro/social/arad-transport-public-la-doar-un-leu-proiectul-a-fost-aprobat-23744371",
+      "summary": "În Arad, biletul urban va costa 1 leu și va fi valabil 24 de ore începând din august. Abonamentul lunar pentru adulți va fi 20 de lei, iar orașul vrea să facă transportul public mai ușor de ales.",
+      "positivity": 85,
+      "impact": 70,
+      "category": "quick-hits",
+      "publishedAt": "2026-05-27T09:17:21.000Z",
+      "processedAt": "2026-05-30T11:40:39.570Z",
+      "feltImpact": 85,
+      "certainty": 90,
+      "humanCloseness": 80,
+      "bureaucraticDistance": 30,
+      "promoRisk": 10
+    },
+    {
+      "id": "7ec423764f37b02e",
+      "sourceId": "republica",
+      "sourceName": "Republica",
+      "originalTitle": "La 19 ani, este educatoare titulară și scrie despre ce contează cu adevărat în educație",
+      "url": "https://republica.ro/zdoamna-te-iubim-din-inima-am-19-ani-sunt-educatoare-titulara-la-o-gradinita-de-stat-si-am",
+      "summary": "O educatoare titulară de 19 ani povestește ce a învățat la grădiniță despre încredere, răbdare și relația cu copiii. E o perspectivă tânără și concretă despre educația care se construiește zilnic, nu doar în programe și rapoarte.",
+      "positivity": 85,
+      "impact": 60,
+      "category": "local-heroes",
+      "publishedAt": "2026-05-30T04:00:00.000Z",
+      "processedAt": "2026-05-30T11:40:39.570Z",
+      "feltImpact": 75,
+      "certainty": 90,
+      "humanCloseness": 95,
+      "bureaucraticDistance": 20,
+      "promoRisk": 10
+    },
+    {
+      "id": "82d7c87164da0860",
+      "sourceId": "republica",
+      "sourceName": "Republica",
+      "originalTitle": "Peste 100 de voluntari din companii au pus umărul la construcția unei case",
+      "url": "https://republica.ro/100-de-zcorporatisti-plus-1-au-parasit-cuburile-de-sticla-ca-sa-construiasca-o-casa",
+      "summary": "Peste 100 de oameni din companii au lucrat pe un șantier Habitat for Humanity din Berceni, Prahova, unde se ridică locuințe pentru familii vulnerabile. Povestea rămâne puternică tocmai pentru că rezultatul e concret: un acoperiș real, nu o promisiune.",
+      "positivity": 90,
+      "impact": 70,
+      "category": "local-heroes",
+      "publishedAt": "2026-05-25T04:00:00.000Z",
+      "processedAt": "2026-05-30T11:40:39.570Z",
+      "feltImpact": 80,
+      "certainty": 80,
+      "humanCloseness": 90,
+      "bureaucraticDistance": 20,
       "promoRisk": 20
     },
+    {
+      "id": "871374c774d317dc",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "originalTitle": "Prima traversare cu mașina prin Tunelul Robești de pe A1 Sibiu-Pitești",
+      "url": "https://www.mediafax.ro/social/prima-traversare-cu-masina-prin-noul-tunel-de-pe-a1-sibiu-pitesti-imagini-din-tunelul-robesti-23744065",
+      "summary": "Pe Autostrada Sibiu-Pitești a avut loc prima traversare auto prin Tunelul Robești, parte din secțiunea Boița-Cornetu. Tunelul are aproximativ 900 de metri și marchează un pas vizibil pe unul dintre cele mai importante proiecte rutiere din țară.",
+      "positivity": 85,
+      "impact": 90,
+      "category": "wins",
+      "publishedAt": "2026-05-26T15:13:36.000Z",
+      "processedAt": "2026-05-30T11:40:39.570Z",
+      "feltImpact": 80,
+      "certainty": 80,
+      "humanCloseness": 60,
+      "bureaucraticDistance": 20,
+      "promoRisk": 10
+    },
+    {
+      "id": "4e9230065fe576b9",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Familia adolescentului din Chitila a decis să îi doneze organele",
+      "url": "https://stirileprotv.ro/stiri/actualitate/familia-baiatului-care-a-incercat-sa-isi-salveze-colega-din-lacul-chitila-a-decis-sa-ii-doneze-organele.html",
+      "summary": "Familia adolescentului de 15 ani aflat în moarte cerebrală după ce a încercat să-și salveze colega din lacul Chitila a decis să îi doneze organele. E o veste grea, dar gestul poate da o șansă altor pacienți.",
+      "positivity": 80,
+      "impact": 70,
+      "category": "local-heroes",
+      "publishedAt": "2026-05-27T14:41:30.000Z",
+      "processedAt": "2026-05-30T11:40:39.570Z",
+      "feltImpact": 80,
+      "certainty": 80,
+      "humanCloseness": 100,
+      "bureaucraticDistance": 20,
+      "promoRisk": 10
+    },
+    {
+      "id": "4c26b822403895b7",
+      "sourceId": "edupedu",
+      "sourceName": "Edupedu",
+      "originalTitle": "Elevii învață arhitectură, patrimoniu și inginerie direct pe șantier",
+      "url": "https://www.edupedu.ro/ce-bine-ar-fi-fost-sa-fie-si-fizica-predata-asa-spun-elevii-dupa-vizitele-pe-santier-in-care-invata-despre-arhitectura-patrimoniu-si-inginerie-direct-de-la-practicieni-plus-sfaturi-de-antreprenoria/",
+      "summary": "Elevi din București merg pe șantiere unde învață despre arhitectură, patrimoniu și inginerie direct de la practicieni. Programul adaugă și discuții despre antreprenoriat și orientare în carieră, într-un format mult mai apropiat de lumea reală.",
+      "positivity": 85,
+      "impact": 60,
+      "category": "local-heroes",
+      "publishedAt": "2026-05-26T05:53:13.000Z",
+      "processedAt": "2026-05-30T11:40:39.570Z",
+      "feltImpact": 75,
+      "certainty": 80,
+      "humanCloseness": 85,
+      "bureaucraticDistance": 20,
+      "promoRisk": 10
+    }
+  ],
+  "reserves": [
     {
       "id": "2225c3ac26097e64",
       "sourceId": "agerpres",
@@ -93,78 +203,6 @@
       "promoRisk": 10
     },
     {
-      "id": "82d7c87164da0860",
-      "sourceId": "republica",
-      "sourceName": "Republica",
-      "originalTitle": "100 de „corporatiști” (plus 1) au părăsit cuburile de sticlă ca să construiască o casă",
-      "url": "https://republica.ro/100-de-zcorporatisti-plus-1-au-parasit-cuburile-de-sticla-ca-sa-construiasca-o-casa",
-      "summary": "Un grup de peste 100 de profesioniști din corporații au părăsit joburile lor pentru a construi o casă, motivat de dorința de a contribui la comunitate și de a-și găsi un scop personal. Această inițiativă subliniază căutarea de sens dincolo de viața corporatistă.",
-      "positivity": 90,
-      "impact": 70,
-      "category": "local-heroes",
-      "publishedAt": "2026-05-25T04:00:00.000Z",
-      "processedAt": "2026-05-30T11:40:39.570Z",
-      "feltImpact": 80,
-      "certainty": 80,
-      "humanCloseness": 90,
-      "bureaucraticDistance": 20,
-      "promoRisk": 20
-    },
-    {
-      "id": "06e0129c2480ffe6",
-      "sourceId": "mediafax",
-      "sourceName": "Mediafax",
-      "originalTitle": "Arad: Transport public la doar un leu. Proiectul a fost aprobat",
-      "url": "https://www.mediafax.ro/social/arad-transport-public-la-doar-un-leu-proiectul-a-fost-aprobat-23744371",
-      "summary": "Transportul public în Arad va costa doar 1 leu pe zi în luna august, după ce consilierii locali au aprobat proiectul. Această măsură vine să încurajeze utilizarea transportului în comun.",
-      "positivity": 85,
-      "impact": 70,
-      "category": "quick-hits",
-      "publishedAt": "2026-05-27T09:17:21.000Z",
-      "processedAt": "2026-05-30T11:40:39.570Z",
-      "feltImpact": 85,
-      "certainty": 90,
-      "humanCloseness": 80,
-      "bureaucraticDistance": 30,
-      "promoRisk": 10
-    },
-    {
-      "id": "871374c774d317dc",
-      "sourceId": "mediafax",
-      "sourceName": "Mediafax",
-      "originalTitle": "Prima traversare cu mașina prin noul tunel de pe A1 Sibiu – Pitești. Imagini din Tunelul Robești",
-      "url": "https://www.mediafax.ro/social/prima-traversare-cu-masina-prin-noul-tunel-de-pe-a1-sibiu-pitesti-imagini-din-tunelul-robesti-23744065",
-      "summary": "Prima traversare auto a avut loc în noul Tunel Robești de pe Autostrada Sibiu – Pitești. Această realizare importantă pe coridorul de transport european arată progresul lucrărilor de infrastructură.",
-      "positivity": 85,
-      "impact": 90,
-      "category": "wins",
-      "publishedAt": "2026-05-26T15:13:36.000Z",
-      "processedAt": "2026-05-30T11:40:39.570Z",
-      "feltImpact": 80,
-      "certainty": 80,
-      "humanCloseness": 60,
-      "bureaucraticDistance": 20,
-      "promoRisk": 10
-    },
-    {
-      "id": "4e9230065fe576b9",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Familia băiatului care a încercat să își salveze colega din lacul Chitila a decis să îi doneze organele",
-      "url": "https://stirileprotv.ro/stiri/actualitate/familia-baiatului-care-a-incercat-sa-isi-salveze-colega-din-lacul-chitila-a-decis-sa-ii-doneze-organele.html",
-      "summary": "Familia tânărului de 15 ani, aflat în moarte cerebrală după ce a încercat să-și salveze colega dintr-un lac din Chitila, a decis să doneze organele. Gestul familiei oferă o speranță pentru alți pacienți.",
-      "positivity": 80,
-      "impact": 70,
-      "category": "local-heroes",
-      "publishedAt": "2026-05-27T14:41:30.000Z",
-      "processedAt": "2026-05-30T11:40:39.570Z",
-      "feltImpact": 80,
-      "certainty": 80,
-      "humanCloseness": 100,
-      "bureaucraticDistance": 20,
-      "promoRisk": 10
-    },
-    {
       "id": "e82b14d85c35acc1",
       "sourceId": "republica",
       "sourceName": "Republica",
@@ -181,26 +219,6 @@
       "humanCloseness": 90,
       "bureaucraticDistance": 30,
       "promoRisk": 20
-    }
-  ],
-  "reserves": [
-    {
-      "id": "7ec423764f37b02e",
-      "sourceId": "republica",
-      "sourceName": "Republica",
-      "originalTitle": "„Doamna, te iubim din inimă!” Am 19 ani, sunt educatoare titulară la o grădiniță de stat și am aflat ce contează cu adevărat în educație",
-      "url": "https://republica.ro/zdoamna-te-iubim-din-inima-am-19-ani-sunt-educatoare-titulara-la-o-gradinita-de-stat-si-am",
-      "summary": "La doar 19 ani, o educatoare titulară își împărtășește perspectiva asupra educației, subliniind că aceasta înseamnă mai mult decât transmiterea de informații, ci și deschiderea sufletelor. Ea crede cu tărie în impactul emoțional și personal al actului didactic.",
-      "positivity": 85,
-      "impact": 60,
-      "category": "local-heroes",
-      "publishedAt": "2026-05-30T04:00:00.000Z",
-      "processedAt": "2026-05-30T11:40:39.570Z",
-      "feltImpact": 75,
-      "certainty": 90,
-      "humanCloseness": 95,
-      "bureaucraticDistance": 20,
-      "promoRisk": 10
     },
     {
       "id": "5f0089b8b02a7a1d",
@@ -219,24 +237,6 @@
       "humanCloseness": 90,
       "bureaucraticDistance": 30,
       "promoRisk": 20
-    },
-    {
-      "id": "4c26b822403895b7",
-      "sourceId": "edupedu",
-      "sourceName": "Edupedu",
-      "originalTitle": "Ce bine ar fi fost să fie și fizica predată așa, spun elevii după vizitele pe șantier în care învață despre arhitectură, patrimoniu și inginerie direct de la practicieni, plus sfaturi de antreprenoriat și orientare în carieră",
-      "url": "https://www.edupedu.ro/ce-bine-ar-fi-fost-sa-fie-si-fizica-predata-asa-spun-elevii-dupa-vizitele-pe-santier-in-care-invata-despre-arhitectura-patrimoniu-si-inginerie-direct-de-la-practicieni-plus-sfaturi-de-antreprenoria/",
-      "summary": "Elevii participă la vizite pe șantiere pentru a învăța despre arhitectură, patrimoniu și inginerie direct de la practicieni. Experiența practică și sfaturile de carieră sunt mult mai valoroase decât teoria.",
-      "positivity": 85,
-      "impact": 60,
-      "category": "local-heroes",
-      "publishedAt": "2026-05-26T05:53:13.000Z",
-      "processedAt": "2026-05-30T11:40:39.570Z",
-      "feltImpact": 75,
-      "certainty": 80,
-      "humanCloseness": 85,
-      "bureaucraticDistance": 20,
-      "promoRisk": 10
     },
     {
       "id": "99c78b11f2aadf64",
@@ -453,24 +453,6 @@
       "humanCloseness": 80,
       "bureaucraticDistance": 20,
       "promoRisk": 20
-    },
-    {
-      "id": "c4556b642afa2713",
-      "sourceId": "economedia",
-      "sourceName": "Economedia",
-      "originalTitle": "VIDEO INTERVIU | Un elev a transformat bugetul statului într-o platformă ușor de înțeles pentru cetățeni: „Toată lumea plătește taxe, iar mulți vor să știe cum sunt folosite”",
-      "url": "https://economedia.ro/cine-este-rares-anghel-elevul-care-a-transformat-bugetele-ministerelor-intr-o-platforma-usor-de-inteles-pentru-cetateni-toata-lumea-plateste-taxe-iar-multi-vor-sa-stie-cum-sunt-folosite-ac.html",
-      "summary": "Rareș Anghel, un elev de 18 ani, a dezvoltat platforma „Bugetul României” pentru a explica transparent cetățenilor cum sunt folosiți banii publici. Această inițiativă facilitează înțelegerea bugetului și implicarea civică.",
-      "positivity": 85,
-      "impact": 70,
-      "category": "local-heroes",
-      "publishedAt": "2026-05-30T03:00:39.000Z",
-      "processedAt": "2026-05-30T11:40:39.570Z",
-      "feltImpact": 70,
-      "certainty": 90,
-      "humanCloseness": 80,
-      "bureaucraticDistance": 40,
-      "promoRisk": 30
     },
     {
       "id": "0c5d7c106a79a529",
@@ -711,85 +693,65 @@
   "totalProcessed": 1098,
   "wrapperCopy": {
     "greeting": "Bună ziua! 👋",
-    "intro": "Săptămâna asta avem povești cu eroi din Târgu Jiu și Tulcea, plus vești bune din IT&C și energie solară. Hai să vedem cum se transformă visurile în realitate și cum comunitățile noastre găsesc noi motive de bucurie.",
+    "intro": "Săptămâna asta începem cu un elev care a făcut bugetul statului mai ușor de înțeles, apoi trecem printr-un record solar, salariile din IT&C, transport public de 1 leu în Arad și oameni care au reacționat concret: medici care au mers pe jos la o urgență, voluntari care construiesc case și o educatoare de 19 ani care vorbește limpede despre meseria ei.",
     "signOff": "Ne vedem săptămâna viitoare! Ai grijă de tine. 🙏",
-    "shortSummary": "Eroi locali, record solar și IT&C: veștile bune ale săptămânii."
+    "shortSummary": "Buget pe înțelesul tuturor, record solar, IT&C și gesturi concrete de solidaritate."
   },
   "validation": {
-    "generatedAt": "2026-05-30T11:41:54.080Z",
-    "candidateCount": 40,
+    "generatedAt": "2026-05-31T10:45:12.829Z",
+    "candidateCount": 38,
     "flagged": [],
     "status": "passed",
-    "approvalSource": "validation-pipeline",
-    "checkedAt": "2026-05-30T11:44:37.716Z",
+    "approvalSource": "editor-review",
+    "checkedAt": "2026-05-31T10:45:37.000Z",
     "freshnessWindowDays": 14,
     "publishedHistoryCount": 196,
     "recentDraftCount": 0,
-    "blockedArticles": [
-      {
-        "articleId": "cb1f8c32564e4341",
-        "reason": "stale-published-at"
-      }
-    ],
+    "blockedArticles": [],
     "replacements": [],
     "agentReviewed": [
       {
-        "articleId": "eb687d66e02a1a23",
-        "verdict": "fresh",
-        "notes": "No close historical matches found."
-      },
-      {
-        "articleId": "644926b26bef057a",
+        "articleId": "c4556b642afa2713",
         "verdict": "fresh",
         "notes": "No close historical matches found."
       },
       {
         "articleId": "8915483d2b3b111c",
         "verdict": "fresh",
-        "notes": "This article discusses a record day for solar energy production in Romania, where half of the energy came from the sun. While there are previous articles about solar energy projects and wind power, none describe a specific day where solar power reached such a high percentage of the total energy production. The closest match is about wind power reaching half the country's needs, but this is a different energy source and a different metric."
+        "notes": "The current article is about a record solar production day, while the closest matches discuss railway speed records, nuclear energy, solar project financing, and a hydropower project. None are about solar energy production records."
       },
       {
-        "articleId": "4f2b1915d9b7de44",
+        "articleId": "644926b26bef057a",
         "verdict": "fresh",
-        "notes": "No close historical matches found."
+        "notes": "The current article is about IT&C salary growth. Archive matches are about highway length and stock market performance. No overlap."
       },
       {
-        "articleId": "2225c3ac26097e64",
+        "articleId": "eb687d66e02a1a23",
         "verdict": "fresh",
-        "notes": "The article is about sport being a passion and a bond between generations in Tulcea. The archive match is about a law preventing sexual offenders from working in schools, hospitals, etc. There is no relevant match."
-      },
-      {
-        "articleId": "82d7c87164da0860",
-        "verdict": "fresh",
-        "notes": "The article is about over 100 'corporatists' leaving their jobs to build a house. The archive matches are about children with special needs participating in a sports project and Romania winning an arbitration case. There is no relevant match."
+        "notes": "The current article is about doctors walking to save a patient. The archive match is about doctors returning to Romania. No overlap."
       },
       {
         "articleId": "06e0129c2480ffe6",
         "verdict": "fresh",
-        "notes": "No close historical matches found."
-      },
-      {
-        "articleId": "871374c774d317dc",
-        "verdict": "fresh",
-        "notes": "The article is about the first car crossing of the new Robești tunnel on the A1 Sibiu – Pitești highway. The archive match is about the European Commission supporting a flood risk reduction project. There is no relevant match."
-      },
-      {
-        "articleId": "4e9230065fe576b9",
-        "verdict": "fresh",
-        "notes": "No close historical matches found."
-      },
-      {
-        "articleId": "e82b14d85c35acc1",
-        "verdict": "fresh",
-        "notes": "No close historical matches found."
+        "notes": "The current article is about cheap public transport tickets in Arad. The archive match is about a new hospital in Cluj. No overlap."
       },
       {
         "articleId": "7ec423764f37b02e",
         "verdict": "fresh",
-        "notes": "The article is about a 19-year-old kindergarten teacher sharing her perspective on education. The archive match is about a food collection for the needy. There is no relevant match."
+        "notes": "No close historical matches found."
       },
       {
-        "articleId": "5f0089b8b02a7a1d",
+        "articleId": "82d7c87164da0860",
+        "verdict": "fresh",
+        "notes": "The current article is about corporate volunteers building a house. Archive matches are about children with special needs participating in sports and bridge construction. No overlap."
+      },
+      {
+        "articleId": "871374c774d317dc",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "4e9230065fe576b9",
         "verdict": "fresh",
         "notes": "No close historical matches found."
       },
@@ -799,9 +761,26 @@
         "notes": "No close historical matches found."
       },
       {
+        "articleId": "2225c3ac26097e64",
+        "verdict": "fresh",
+        "notes": "The current article is about sports uniting generations in Tulcea. The archive match is about a law preventing sex offenders from working in certain institutions. No overlap."
+      },
+      {
+        "articleId": "e82b14d85c35acc1",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "5f0089b8b02a7a1d",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
         "articleId": "99c78b11f2aadf64",
         "verdict": "follow_up",
-        "notes": "The current article is about an exhibition celebrating 50 years since Nadia Comăneci's first perfect 10. The archive match is about a gala that also celebrated 50 years since Nadia Comăneci's perfect 10 and honored gymnasts. This is a follow-up to the event mentioned in the archive."
+        "notes": "The current article is an exhibition about Nadia Comăneci celebrating 50 years since her first perfect 10. The archive match is a gala event also celebrating 50 years since her perfect 10, where 40 champions were honored. This is a related event around the same anniversary.",
+        "matchedOrigin": "2026-04-27-issue.md",
+        "matchedTitle": "40 de campioane, omagiate pe scenă la Gala „Nadia 10 – Perfecţiunea inspiră”. Mesajul Nadiei Comăneci"
       },
       {
         "articleId": "e44c8aee3ba0340b",
@@ -811,7 +790,7 @@
       {
         "articleId": "dde2de17ec82a202",
         "verdict": "fresh",
-        "notes": "The article is about a 2-year-old Romanian boy found alive in a forest in Sweden. The archive match is about a Romanian violinist being granted use of a Stradivarius violin. There is no relevant match."
+        "notes": "The current article is about a Romanian child found in Sweden. The archive match is about a Romanian violinist receiving a Stradivarius. No overlap."
       },
       {
         "articleId": "f3e6f56d59ddce14",
@@ -826,7 +805,7 @@
       {
         "articleId": "5c2a1f663b8919c4",
         "verdict": "fresh",
-        "notes": "The article is about free activities in Bucharest for Children's Day. The archive matches are about Văcărești Delta and HPV vaccination law, neither of which are relevant."
+        "notes": "The current article is about free activities for Children's Day in Bucharest. Archive matches are about a nature park and free HPV vaccination. No overlap."
       },
       {
         "articleId": "093202cabb7e3104",
@@ -846,12 +825,12 @@
       {
         "articleId": "f385e75c0f548c3a",
         "verdict": "fresh",
-        "notes": "The article is about Romgaz buying Azomureș. The archive matches are about Carrefour selling its Romanian operations and a violinist getting a Stradivarius. There is no relevant match."
+        "notes": "The current article is about Romgaz buying Azomureș. Archive matches are about Carrefour selling its Romanian operations and a violinist receiving a Stradivarius. No overlap."
       },
       {
         "articleId": "2be891ac89f8ea3c",
         "verdict": "fresh",
-        "notes": "The article discusses nursing as a field 'protected' from AI, offering new career opportunities for those over 40. The archive match is about organ donation and transplants. There is no relevant match."
+        "notes": "The current article is about nursing being a profession 'safe' from AI and a new chance for over 40s. The archive match is about organ donation for transplants. No overlap."
       },
       {
         "articleId": "66b3f3c052f8417a",
@@ -859,14 +838,9 @@
         "notes": "No close historical matches found."
       },
       {
-        "articleId": "c4556b642afa2713",
-        "verdict": "fresh",
-        "notes": "No close historical matches found."
-      },
-      {
         "articleId": "0c5d7c106a79a529",
         "verdict": "fresh",
-        "notes": "The article is about a record cherry harvest in Romania. The archive matches are about a Romanian woman promoting Romania, the return of the field eagle, a historic win in women's ice hockey, and the approval of Romania's defense plan. None are relevant."
+        "notes": "The current article is about a record cherry harvest. Archive matches are about a Romanian woman promoting Romania, the return of the field eagle, a record score in women's hockey, and Romania's defense plan. No overlap."
       },
       {
         "articleId": "e23ff4d249e7712e",
@@ -876,7 +850,7 @@
       {
         "articleId": "4f67d856e3d82ccb",
         "verdict": "fresh",
-        "notes": "The article is about an event discussing burnout, family, ego, and resilience. The archive match is about cochlear implants, which is not related."
+        "notes": "The current article is about an 'I Love Failure' event discussing burnout. The archive match is about cochlear implants. No overlap."
       },
       {
         "articleId": "7d1ce60d5851267b",
@@ -891,7 +865,7 @@
       {
         "articleId": "c2968eef153e8428",
         "verdict": "fresh",
-        "notes": "The article is about explaining the heritage of Hala Ford in Bucharest to children. The archive match is about a young man saving a dog from a frozen lake. There is no relevant match."
+        "notes": "The current article is about teaching children about heritage using the Hala Ford example. The archive match is about a young man saving a dog from an icy lake. No overlap."
       },
       {
         "articleId": "4d1810738dcfc275",
@@ -901,7 +875,7 @@
       {
         "articleId": "ed1934c68e439ed6",
         "verdict": "fresh",
-        "notes": "The article is about direct train travel to Turkey and Bulgaria resuming. The archive matches are about volunteers in emergency situations, food donation for vulnerable families, and distinguishing real videos from AI-generated ones. None are relevant."
+        "notes": "The current article is about direct train travel to Turkey and Bulgaria. Archive matches are about volunteer programs and digital vigilance tests. No overlap."
       },
       {
         "articleId": "ed71d0a4eb79e8ca",
@@ -911,7 +885,7 @@
       {
         "articleId": "f501e957af83762d",
         "verdict": "fresh",
-        "notes": "The article is about the National Institute of Public Health emphasizing that 40% of cancer cases can be prevented by a healthy lifestyle. The archive match is about a village in Mureș coming back to life due to a guesthouse on Via Transilvanica. There is no relevant match."
+        "notes": "The current article is about preventing cancer through a healthy lifestyle. The archive match is about a village coming back to life through tourism. No overlap."
       },
       {
         "articleId": "6f6fdc2404a8e956",
