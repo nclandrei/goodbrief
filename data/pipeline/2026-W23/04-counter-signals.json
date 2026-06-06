@@ -1,0 +1,27 @@
+{
+  "weekId": "2026-W23",
+  "phase": "counter-signal-validate",
+  "generatedAt": "2026-06-06T11:55:26.037Z",
+  "inputFile": "03-semantic-dedup.json + 01-prepared.json",
+  "data": {
+    "validation": {
+      "generatedAt": "2026-06-06T11:55:14.544Z",
+      "candidateCount": 60,
+      "flagged": [
+        {
+          "candidateId": "2d1e330559efbb6b",
+          "verdict": "borderline",
+          "penaltyApplied": 10,
+          "reason": "Articolul candidat promovează un meci amical ca o veste pozitivă majoră, axându-se pe revenirea lui Hagi după 25 de ani. Totuși, acoperirea din aceeași săptămână dezvăluie că meciul s-a încheiat la egalitate (1-1) și că selecționerul Hagi a menționat atât aspecte pozitive, cât și greșeli ale jucătorilor. Această nuanțare, deși nu este negativă în sine, diminuează caracterul de 'good news' pur al articolului candidat, care pare să fi exagerat importanța unui meci amical în contextul unui rezultat modest.",
+          "relatedArticleIds": [
+            "e74fa9b49760b3d6"
+          ],
+          "relatedArticleTitles": [
+            "Gheorghe Hagi, după debutul pe banca naționalei: „Jucătorii au arătat personalitate. Sunt mulțumit de efortul lor”"
+          ],
+          "generatedAt": "2026-06-06T11:55:14.544Z"
+        }
+      ]
+    }
+  }
+}

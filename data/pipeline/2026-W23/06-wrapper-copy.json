@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W23",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-06-06T11:56:40.898Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare! 👋",
+      "intro": "Săptămâna asta e plină de reușite românești, de la un exit de miliarde la antreprenori care fac diferența în comunități. Avem și vești verzi și povești despre perseverență care ne inspiră. Hai să vedem ce ne aduce Good Brief week 2026-W23.",
+      "signOff": "Toate cele bune și o zi faină! Ne auzim săptămâna viitoare. 🙏",
+      "shortSummary": "Exit românesc de miliarde, elevi pentru wellbeing și eco-activism."
+    }
+  }
+}
