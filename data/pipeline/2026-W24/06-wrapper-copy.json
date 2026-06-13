@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W24",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-06-13T12:20:37.725Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare! 👋",
+      "intro": "Săptămâna asta am adunat povești de la eroi locali care schimbă comunități, dar și vești bune despre finanțări pentru energie verde și despre drumuri care se redeschid. E genul acela de newsletter care îți dă un boost bun de energie.",
+      "signOff": "Îți mulțumim că ești alături de noi! Ne auzim săptămâna viitoare. 🙏",
+      "shortSummary": "Eroi locali, energie verde, Transfăgărășan deschis și TIFF la Cluj."
+    }
+  }
+}
