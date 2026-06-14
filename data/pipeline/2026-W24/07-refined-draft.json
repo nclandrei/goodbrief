@@ -14,7 +14,7 @@
           "sourceName": "Republica",
           "originalTitle": "Profesoara care a construit de la zero un festival pentru copiii norocoși și mai puțin norocoși. 30.000 de copii din Bucovina au învățat, s-au distrat și au primit cadouri de 1 iunie - unii chiar pentru prima oară",
           "url": "https://republica.ro/profesoara-festival-copii-norocosi-bucovina-cadouri-1-iunie",
-          "summary": "Profesoara implicată în organizarea Festivalului EduFortress din Suceava a reușit să aducă bucurie și educație pentru 30.000 de copii, inclusiv celor mai puțin norocoși, oferindu-le o zi specială de 1 iunie cu activități și cadouri.",
+          "summary": "Festivalul EduFortress din Suceava a adus 30.000 de copii la ateliere, jocuri și cadouri de 1 iunie. Miza bună aici e concretă: o zi de bucurie și învățare pentru copii care nu ajung mereu în astfel de contexte.",
           "positivity": 95,
           "impact": 70,
           "category": "local-heroes",
@@ -32,7 +32,7 @@
           "sourceName": "Agerpres",
           "originalTitle": "Vâlcea: O tânără din Mitrofani construiește la sat o tabără pentru copiii care au învins cancerul",
           "url": "https://agerpres.ro/social/2026/06/10/valcea-o-tanara-din-mitrofani-construieste-la-sat-o-tabara-pentru-copiii-care-au-invins-cancerul--1565041",
-          "summary": "O tânără din Vâlcea construiește o tabără la Mitrofani, special dedicată copiilor care au învins cancerul. Proiectul oferă un spațiu de recuperare și recreere pentru copiii aflați în convalescență.",
+          "summary": "La Mitrofani, o tânără construiește o tabără pentru copiii care au trecut prin tratamentul oncologic și au nevoie de recuperare, joacă și timp în natură. E un proiect mic ca loc, dar foarte mare ca grijă.",
           "positivity": 90,
           "impact": 70,
           "category": "local-heroes",
@@ -45,176 +45,12 @@
           "promoRisk": 10
         },
         {
-          "id": "e2ba68c827be3d61",
-          "sourceId": "economedia",
-          "sourceName": "Economedia",
-          "originalTitle": "Fermierii și procesatorii pot obține finanțare de până la 100% pentru investiții în energie solară. Buget de 265 milioane euro prin Fondul pentru Modernizare",
-          "url": "https://economedia.ro/fermierii-si-procesatorii-pot-obtine-finantare-de-pana-la-100-pentru-investitii-in-energie-solara-buget-de-265-milioane-euro-prin-fondul-pentru-modernizare.html",
-          "summary": "Fermierii și procesatorii din România pot accesa finanțare nerambursabilă de până la 100% pentru investiții în energie solară, prin Fondul pentru Modernizare. Bugetul alocat schemei de ajutor este de 265 de milioane de euro.",
-          "positivity": 85,
-          "impact": 80,
-          "category": "green-stuff",
-          "publishedAt": "2026-06-09T14:55:52.000Z",
-          "processedAt": "2026-06-13T12:15:20.908Z",
-          "feltImpact": 70,
-          "certainty": 80,
-          "humanCloseness": 50,
-          "bureaucraticDistance": 50,
-          "promoRisk": 30
-        },
-        {
-          "id": "dae9822936cf7f25",
-          "sourceId": "mediafax",
-          "sourceName": "Mediafax",
-          "originalTitle": "Una dintre cele mai spectaculoase șosele din România s-a redeschis traficului",
-          "url": "https://www.mediafax.ro/social/una-dintre-cele-mai-spectaculoase-sosele-din-romania-s-a-redeschis-traficului-23754190",
-          "summary": "Transfăgărășanul, una dintre cele mai spectaculoase șosele din România, s-a redeschis traficului între Piscul Negru și Bâlea Cascadă. Drumul este accesibil zilnic, cu posibile închideri temporare din cauza vremii.",
-          "positivity": 85,
-          "impact": 70,
-          "category": "wins",
-          "publishedAt": "2026-06-12T10:03:56.000Z",
-          "processedAt": "2026-06-13T12:15:20.908Z",
-          "feltImpact": 80,
-          "certainty": 90,
-          "humanCloseness": 80,
-          "bureaucraticDistance": 20,
-          "promoRisk": 10
-        },
-        {
-          "id": "d4dda84d47ec6b9d",
-          "sourceId": "stirileprotv",
-          "sourceName": "Știrile ProTV",
-          "originalTitle": "TIFF dă startul maratonului de filme de la Cluj. Unele proiecții sunt deja sold out",
-          "url": "https://stirileprotv.ro/divers/tiff-da-startul-maratonului-de-filme-de-la-cluj-unele-proiectii-sunt-deja-sold-out.html",
-          "summary": "Festivalul Internațional de Film Transilvania (TIFF) a debutat la Cluj-Napoca, atrăgând deja un public numeros, cu proiecții sold out. Evenimentul marchează începutul unui maraton cinematografic.",
-          "positivity": 85,
-          "impact": 70,
-          "category": "wins",
-          "publishedAt": "2026-06-12T17:27:12.000Z",
-          "processedAt": "2026-06-13T12:15:20.908Z",
-          "feltImpact": 75,
-          "certainty": 90,
-          "humanCloseness": 80,
-          "bureaucraticDistance": 10,
-          "promoRisk": 15
-        },
-        {
-          "id": "644089a997115198",
-          "sourceId": "stirileprotv",
-          "sourceName": "Știrile ProTV",
-          "originalTitle": "CampioMATE, mișcarea națională care atrage copiii în jocul matematicii, anunță câștigătorii Ediției 2026",
-          "url": "https://stirileprotv.ro/stiri/desteapta-te-romania/campiomate-miscarea-nationala-care-atrage-copiii-in-jocul-matematicii-anunta-castigatorii-editiei-2026.html",
-          "summary": "Mișcarea națională CampioMATE a încheiat ediția 2026, implicând 16.000 de copii în rezolvarea a 3 milioane de probleme de matematică. Proiectul își propune să facă matematica mai atractivă pentru tineri.",
-          "positivity": 90,
-          "impact": 70,
-          "category": "wins",
-          "publishedAt": "2026-06-12T07:34:09.000Z",
-          "processedAt": "2026-06-13T12:15:20.908Z",
-          "feltImpact": 70,
-          "certainty": 100,
-          "humanCloseness": 80,
-          "bureaucraticDistance": 20,
-          "promoRisk": 30
-        },
-        {
-          "id": "73fcc72cca2c2904",
-          "sourceId": "stirileprotv",
-          "sourceName": "Știrile ProTV",
-          "originalTitle": "Intervenție dramatică în Vrancea. O fetiță de doar 8 ani a fost salvată după ce a căzut într-o groapă de 8 metri adâncime",
-          "url": "https://stirileprotv.ro/stiri/actualitate/interventie-dramatica-in-vrancea-o-fetita-de-8-ani-a-fost-salvata-dupa-ce-a-cazut-intr-o-groapa-de-8-metri.html",
-          "summary": "O fetiță de 8 ani a fost salvată dramatic în Vrancea după ce a căzut într-o groapă de 8 metri adâncime. Copila este acum în afara oricărui pericol, conform medicilor care au asistat-o.",
-          "positivity": 80,
-          "impact": 70,
-          "category": "local-heroes",
-          "publishedAt": "2026-06-11T10:24:22.000Z",
-          "processedAt": "2026-06-13T12:15:20.908Z",
-          "feltImpact": 80,
-          "certainty": 90,
-          "humanCloseness": 90,
-          "bureaucraticDistance": 20,
-          "promoRisk": 10
-        },
-        {
-          "id": "64e8d09532f7346c",
-          "sourceId": "stirileprotv",
-          "sourceName": "Știrile ProTV",
-          "originalTitle": "Interes uriaș pentru filmul lui Cristian Mungiu, „Fjord”. Biletele s-au epuizat în multe cinematografe",
-          "url": "https://stirileprotv.ro/show-buzz/interes-urias-pentru-filmul-lui-cristian-mungiu-fjord-biletele-s-au-epuizat-in-cinematografe.html",
-          "summary": "Filmul lui Cristian Mungiu, „Fjord”, a stârnit un interes uriaș, biletele epuizându-se rapid în multe cinematografe. Succesul subliniază aprecierea publicului pentru cinemaul de artă românesc.",
-          "positivity": 90,
-          "impact": 70,
-          "category": "wins",
-          "publishedAt": "2026-06-09T17:24:41.000Z",
-          "processedAt": "2026-06-13T12:15:20.908Z",
-          "feltImpact": 70,
-          "certainty": 90,
-          "humanCloseness": 60,
-          "bureaucraticDistance": 20,
-          "promoRisk": 10
-        },
-        {
-          "id": "748035281a5d7a35",
-          "sourceId": "mediafax",
-          "sourceName": "Mediafax",
-          "originalTitle": "„Sora lui Ion Creangă” de la Pustiana. Învățătoarea care i-a dat „block” lui „Six-seven” și „Ador” lui Țup",
-          "url": "https://www.mediafax.ro/reportaje/sora-lui-ion-creanga-de-la-pustiana-invatatoarea-care-i-a-dat-block-lui-six-seven-si-ador-lui-tup-23752603",
-          "summary": "La Școala Gimnazială din Pustiana, județul Bacău, cititul a prins viață, devenind o activitate specială pentru elevi. Învățătoarea reușește să capteze atenția copiilor mai mult decât tehnologia.",
-          "positivity": 80,
-          "impact": 60,
-          "category": "local-heroes",
-          "publishedAt": "2026-06-13T04:07:59.000Z",
-          "processedAt": "2026-06-13T12:15:20.908Z",
-          "feltImpact": 75,
-          "certainty": 85,
-          "humanCloseness": 90,
-          "bureaucraticDistance": 10,
-          "promoRisk": 10
-        },
-        {
-          "id": "2fabd7b2e1a9bfea",
-          "sourceId": "republica",
-          "sourceName": "Republica",
-          "originalTitle": "La 15 ani, un AVC mi-a schimbat viața. Astăzi, disciplina de a face mișcare este cea mai înaltă formă de respect față de mine însămi",
-          "url": "https://republica.ro/avc-15-ani-miscare-disciplina",
-          "summary": "La 15 ani, un AVC i-a schimbat viața, dar astăzi, disciplina mișcării este cel mai înalt act de respect față de sine. Această mărturie inspirațională subliniază puterea determinării în fața adversității.",
-          "positivity": 90,
-          "impact": 70,
-          "category": "local-heroes",
-          "publishedAt": "2026-06-11T04:16:00.000Z",
-          "processedAt": "2026-06-13T12:15:20.908Z",
-          "feltImpact": 80,
-          "certainty": 90,
-          "humanCloseness": 95,
-          "bureaucraticDistance": 20,
-          "promoRisk": 10
-        }
-      ],
-      "reserves": [
-        {
-          "id": "7b35f42ee69cc22d",
-          "sourceId": "republica",
-          "sourceName": "Republica",
-          "originalTitle": "Premieră după 1990: în primul trimestru, statul a încasat mai mult și a cheltuit mai puțin. Deficitul României s-a înjumătățit: 21 miliarde vs 42 miliarde lei, cu încasări din TVA în creștere și economie subterană în scădere",
-          "url": "https://republica.ro/premiera-executia-bugetara-primul-trimestru-din-2026-deficitul-fiscal-redus-la-jumatate",
-          "summary": "În premieră după 1990, România a înregistrat un deficit fiscal înjumătățit în primul trimestru, ajungând la 21 miliarde lei față de 42 miliarde anul trecut. Acest rezultat se datorează încasărilor în creștere din TVA și scăderii economiei subterane.",
-          "positivity": 90,
-          "impact": 80,
-          "category": "wins",
-          "publishedAt": "2026-05-26T03:52:00.000Z",
-          "processedAt": "2026-06-13T12:15:20.908Z",
-          "feltImpact": 70,
-          "certainty": 95,
-          "humanCloseness": 50,
-          "bureaucraticDistance": 30,
-          "promoRisk": 10
-        },
-        {
           "id": "9ad49bc3cf3e5976",
           "sourceId": "edupedu",
           "sourceName": "Edupedu",
           "originalTitle": "INTERVIU Ana Maria Brânză, campioană olimpică la scrimă: Mergem cu foști sportivi olimpici în școli și le povestim elevilor despre valorile olimpice / Indiferent că ești pe prima treaptă a podiumului, indiferent dacă ai eșuat și nu ți-ai îndeplinit obiectivul, a doua a zi o iei de la capăt, de la munca de jos",
           "url": "https://www.edupedu.ro/interviu-ana-maria-branza-campioana-olimpica-la-scrima-mergem-cu-fosti-sportivi-olimpici-in-scoli-si-le-povestim-elevilor-despre-valorile-olimpice-indiferent-ca-esti-pe-prima-treapta-a-podiumului/",
-          "summary": "Ana Maria Brânză, campioană olimpică la scrimă, a lansat programul \"Educație Olimpică în școli\". Prin acest program, foști sportivi olimpici vizitează școli din București pentru a le povesti elevilor despre valorile olimpice și importanța perseverenței.",
+          "summary": "Ana Maria Brânză duce foști sportivi olimpici în școli din București, ca să vorbească elevilor despre perseverență, fair-play și cum o iei de la capăt după un eșec. E educație prin oameni care chiar au trăit lecțiile respective.",
           "positivity": 90,
           "impact": 70,
           "category": "local-heroes",
@@ -232,7 +68,7 @@
           "sourceName": "Edupedu",
           "originalTitle": "FOTO PROIECT Prima școală nouă din Oradea, pe fonduri europene. Primăria a semnat contractul de 235 de milioane de lei: 50 de săli de clasă, laboratoare de chimie, fizică, informatică și biologie, bibliotecă, terenuri de sport",
           "url": "https://www.edupedu.ro/foto-proiect-prima-scoala-noua-din-oradea-pe-fonduri-europene-primaria-a-semnat-contractul-de-235-de-milioane-de-lei-50-de-sali-de-clasa-laboratoare-de-chimie-fizica-informatica-si-biologie-bib/",
-          "summary": "Primăria Oradea va construi prima școală nouă din oraș pe fonduri europene, printr-un contract de 235 de milioane de lei. Noua unitate de învățământ va include 50 de săli de clasă, laboratoare moderne și terenuri de sport.",
+          "summary": "Oradea a semnat contractul pentru prima școală nouă construită în oraș după mulți ani: 50 de săli de clasă, laboratoare, bibliotecă și terenuri de sport, finanțate din fonduri europene. E genul de investiție care schimbă direct viața de zi cu zi a elevilor.",
           "positivity": 90,
           "impact": 80,
           "category": "wins",
@@ -244,6 +80,116 @@
           "bureaucraticDistance": 40,
           "promoRisk": 20
         },
+        {
+          "id": "18569c469f10b6bb",
+          "sourceId": "stirileprotv",
+          "sourceName": "Știrile ProTV",
+          "originalTitle": "STS lansează aplicația Apel 112 pentru persoane cu deficiențe de auz și vorbire. Serviciul funcționează prin voce-video-date",
+          "url": "https://stirileprotv.ro/stiri/actualitate/sts-lanseaza-aplicatia-apel-112-pentru-persoane-cu-deficiente-de-auz-si-vorbire-serviciul-functioneaza-prin-voce-video-date.html",
+          "summary": "STS a lansat aplicația Apel 112 pentru persoane cu deficiențe de auz și vorbire, cu apeluri prin voce, video și date. Pentru oameni care până acum aveau un acces mai greu la ajutor urgent, diferența poate fi enormă.",
+          "positivity": 85,
+          "impact": 70,
+          "category": "wins",
+          "publishedAt": "2026-06-10T11:36:49.000Z",
+          "processedAt": "2026-06-13T12:15:20.908Z",
+          "feltImpact": 70,
+          "certainty": 90,
+          "humanCloseness": 80,
+          "bureaucraticDistance": 40,
+          "promoRisk": 10
+        },
+        {
+          "id": "dae9822936cf7f25",
+          "sourceId": "mediafax",
+          "sourceName": "Mediafax",
+          "originalTitle": "Una dintre cele mai spectaculoase șosele din România s-a redeschis traficului",
+          "url": "https://www.mediafax.ro/social/una-dintre-cele-mai-spectaculoase-sosele-din-romania-s-a-redeschis-traficului-23754190",
+          "summary": "Transfăgărășanul s-a redeschis între Piscul Negru și Bâlea Cascadă, cu program zilnic și posibile restricții când vremea o cere. E o veste de vară bună pentru turiști, localnici și micile afaceri din zonă.",
+          "positivity": 85,
+          "impact": 70,
+          "category": "wins",
+          "publishedAt": "2026-06-12T10:03:56.000Z",
+          "processedAt": "2026-06-13T12:15:20.908Z",
+          "feltImpact": 80,
+          "certainty": 90,
+          "humanCloseness": 80,
+          "bureaucraticDistance": 20,
+          "promoRisk": 10
+        },
+        {
+          "id": "d4dda84d47ec6b9d",
+          "sourceId": "stirileprotv",
+          "sourceName": "Știrile ProTV",
+          "originalTitle": "TIFF dă startul maratonului de filme de la Cluj. Unele proiecții sunt deja sold out",
+          "url": "https://stirileprotv.ro/divers/tiff-da-startul-maratonului-de-filme-de-la-cluj-unele-proiectii-sunt-deja-sold-out.html",
+          "summary": "TIFF a început la Cluj cu săli pline și proiecții deja sold out. Dincolo de hype, e un semn bun că publicul încă iese pentru cinema, festivaluri și seri culturale trăite împreună.",
+          "positivity": 85,
+          "impact": 70,
+          "category": "wins",
+          "publishedAt": "2026-06-12T17:27:12.000Z",
+          "processedAt": "2026-06-13T12:15:20.908Z",
+          "feltImpact": 75,
+          "certainty": 90,
+          "humanCloseness": 80,
+          "bureaucraticDistance": 10,
+          "promoRisk": 15
+        },
+        {
+          "id": "64e8d09532f7346c",
+          "sourceId": "stirileprotv",
+          "sourceName": "Știrile ProTV",
+          "originalTitle": "Interes uriaș pentru filmul lui Cristian Mungiu, „Fjord”. Biletele s-au epuizat în multe cinematografe",
+          "url": "https://stirileprotv.ro/show-buzz/interes-urias-pentru-filmul-lui-cristian-mungiu-fjord-biletele-s-au-epuizat-in-cinematografe.html",
+          "summary": "Filmul „Fjord”, regizat de Cristian Mungiu, a atras un interes mare în cinematografe, cu bilete epuizate rapid pentru mai multe proiecții. După selecția de la Cannes, e frumos să vezi că filmul românesc are tracțiune și acasă.",
+          "positivity": 90,
+          "impact": 70,
+          "category": "wins",
+          "publishedAt": "2026-06-09T17:24:41.000Z",
+          "processedAt": "2026-06-13T12:15:20.908Z",
+          "feltImpact": 70,
+          "certainty": 90,
+          "humanCloseness": 60,
+          "bureaucraticDistance": 20,
+          "promoRisk": 10
+        },
+        {
+          "id": "20b7df5f0cf98177",
+          "sourceId": "stirileprotv",
+          "sourceName": "Știrile ProTV",
+          "originalTitle": "Județul din România care va deveni Regiune Gastronomică Europeană în 2027. Cum se pregătesc localnicii",
+          "url": "https://stirileprotv.ro/divers/judetul-din-romania-care-va-deveni-regiune-gastronomica-europeana-in-2027-cum-se-pregatesc-localnicii.html",
+          "summary": "Harghita se pregătește să devină Regiune Gastronomică Europeană în 2027, mizând pe producători locali, rețete regionale și turism culinar. E o recunoaștere care poate aduce vizibilitate bună unei economii locale foarte legate de identitate.",
+          "positivity": 90,
+          "impact": 70,
+          "category": "wins",
+          "publishedAt": "2026-06-09T17:02:17.000Z",
+          "processedAt": "2026-06-13T12:15:20.908Z",
+          "feltImpact": 60,
+          "certainty": 80,
+          "humanCloseness": 70,
+          "bureaucraticDistance": 30,
+          "promoRisk": 10
+        },
+        {
+          "id": "e2ba68c827be3d61",
+          "sourceId": "economedia",
+          "sourceName": "Economedia",
+          "originalTitle": "Fermierii și procesatorii pot obține finanțare de până la 100% pentru investiții în energie solară. Buget de 265 milioane euro prin Fondul pentru Modernizare",
+          "url": "https://economedia.ro/fermierii-si-procesatorii-pot-obtine-finantare-de-pana-la-100-pentru-investitii-in-energie-solara-buget-de-265-milioane-euro-prin-fondul-pentru-modernizare.html",
+          "summary": "Fermierii și procesatorii pot primi finanțare nerambursabilă de până la 100% pentru panouri solare și alte investiții în energie verde. Bugetul de 265 de milioane de euro poate reduce costuri reale în agricultură și producție.",
+          "positivity": 85,
+          "impact": 80,
+          "category": "green-stuff",
+          "publishedAt": "2026-06-09T14:55:52.000Z",
+          "processedAt": "2026-06-13T12:15:20.908Z",
+          "feltImpact": 70,
+          "certainty": 80,
+          "humanCloseness": 50,
+          "bureaucraticDistance": 50,
+          "promoRisk": 30
+        }
+      ],
+      "reserves": [
         {
           "id": "46ed4acedb4f392b",
           "sourceId": "agerpres",
@@ -333,24 +279,6 @@
           "humanCloseness": 80,
           "bureaucraticDistance": 20,
           "promoRisk": 20
-        },
-        {
-          "id": "e44c8aee3ba0340b",
-          "sourceId": "republica",
-          "sourceName": "Republica",
-          "originalTitle": "Elithia, centrul de excelență dedicat sănătății feminine, se extinde și deschide o nouă clinică în București: servicii de pediatrie, neonatologie și oncologie pentru o abordare integrată a sănătății femeii și familiei",
-          "url": "https://republica.ro/elithia-centrul-de-excelenta-dedicat-sanatatii-feminine-se-extinde-si-deschide-o-noua-clinica-in-bucuresti",
-          "summary": "Elithia își extinde serviciile medicale și deschide o nouă clinică în București, incluzând pediatrie, neonatologie și oncologie. Acest pas consolidează viziunea unui model medical integrat pentru sănătatea femeii și a familiei.",
-          "positivity": 85,
-          "impact": 70,
-          "category": "wins",
-          "publishedAt": "2026-05-27T03:43:00.000Z",
-          "processedAt": "2026-06-13T12:15:20.908Z",
-          "feltImpact": 75,
-          "certainty": 90,
-          "humanCloseness": 80,
-          "bureaucraticDistance": 30,
-          "promoRisk": 40
         },
         {
           "id": "cf87664b03805cd4",
@@ -461,24 +389,6 @@
           "promoRisk": 10
         },
         {
-          "id": "20b7df5f0cf98177",
-          "sourceId": "stirileprotv",
-          "sourceName": "Știrile ProTV",
-          "originalTitle": "Județul din România care va deveni Regiune Gastronomică Europeană în 2027. Cum se pregătesc localnicii",
-          "url": "https://stirileprotv.ro/divers/judetul-din-romania-care-va-deveni-regiune-gastronomica-europeana-in-2027-cum-se-pregatesc-localnicii.html",
-          "summary": "Județul Harghita se pregătește să devină Regiune Gastronomică Europeană în 2027, atrăgând mii de turiști. Recunoașterea onorează bucătăria locală bazată pe ingrediente autentice.",
-          "positivity": 90,
-          "impact": 70,
-          "category": "wins",
-          "publishedAt": "2026-06-09T17:02:17.000Z",
-          "processedAt": "2026-06-13T12:15:20.908Z",
-          "feltImpact": 60,
-          "certainty": 80,
-          "humanCloseness": 70,
-          "bureaucraticDistance": 30,
-          "promoRisk": 10
-        },
-        {
           "id": "1d84ea9dc3f10110",
           "sourceId": "stirileprotv",
           "sourceName": "Știrile ProTV",
@@ -548,24 +458,6 @@
           "certainty": 90,
           "humanCloseness": 70,
           "bureaucraticDistance": 20,
-          "promoRisk": 10
-        },
-        {
-          "id": "18569c469f10b6bb",
-          "sourceId": "stirileprotv",
-          "sourceName": "Știrile ProTV",
-          "originalTitle": "STS lansează aplicația Apel 112 pentru persoane cu deficiențe de auz și vorbire. Serviciul funcționează prin voce-video-date",
-          "url": "https://stirileprotv.ro/stiri/actualitate/sts-lanseaza-aplicatia-apel-112-pentru-persoane-cu-deficiente-de-auz-si-vorbire-serviciul-functioneaza-prin-voce-video-date.html",
-          "summary": "Serviciul de Telecomunicații Speciale (STS) a lansat aplicația Apel 112, dedicată persoanelor cu deficiențe de auz și vorbire. Aplicația permite apelarea numărului de urgență prin voce, video și date, facilitând astfel accesul la servicii de salvare pentru persoanele vulnerabile.",
-          "positivity": 85,
-          "impact": 70,
-          "category": "local-heroes",
-          "publishedAt": "2026-06-10T11:36:49.000Z",
-          "processedAt": "2026-06-13T12:15:20.908Z",
-          "feltImpact": 70,
-          "certainty": 90,
-          "humanCloseness": 80,
-          "bureaucraticDistance": 40,
           "promoRisk": 10
         },
         {
@@ -729,22 +621,300 @@
           "humanCloseness": 60,
           "bureaucraticDistance": 20,
           "promoRisk": 20
+        },
+        {
+          "id": "644089a997115198",
+          "sourceId": "stirileprotv",
+          "sourceName": "Știrile ProTV",
+          "originalTitle": "CampioMATE, mișcarea națională care atrage copiii în jocul matematicii, anunță câștigătorii Ediției 2026",
+          "url": "https://stirileprotv.ro/stiri/desteapta-te-romania/campiomate-miscarea-nationala-care-atrage-copiii-in-jocul-matematicii-anunta-castigatorii-editiei-2026.html",
+          "summary": "Mișcarea națională CampioMATE a încheiat ediția 2026, implicând 16.000 de copii în rezolvarea a 3 milioane de probleme de matematică. Proiectul își propune să facă matematica mai atractivă pentru tineri.",
+          "positivity": 90,
+          "impact": 70,
+          "category": "wins",
+          "publishedAt": "2026-06-12T07:34:09.000Z",
+          "processedAt": "2026-06-13T12:15:20.908Z",
+          "feltImpact": 70,
+          "certainty": 100,
+          "humanCloseness": 80,
+          "bureaucraticDistance": 20,
+          "promoRisk": 30
+        },
+        {
+          "id": "73fcc72cca2c2904",
+          "sourceId": "stirileprotv",
+          "sourceName": "Știrile ProTV",
+          "originalTitle": "Intervenție dramatică în Vrancea. O fetiță de doar 8 ani a fost salvată după ce a căzut într-o groapă de 8 metri adâncime",
+          "url": "https://stirileprotv.ro/stiri/actualitate/interventie-dramatica-in-vrancea-o-fetita-de-8-ani-a-fost-salvata-dupa-ce-a-cazut-intr-o-groapa-de-8-metri.html",
+          "summary": "O fetiță de 8 ani a fost salvată dramatic în Vrancea după ce a căzut într-o groapă de 8 metri adâncime. Copila este acum în afara oricărui pericol, conform medicilor care au asistat-o.",
+          "positivity": 80,
+          "impact": 70,
+          "category": "local-heroes",
+          "publishedAt": "2026-06-11T10:24:22.000Z",
+          "processedAt": "2026-06-13T12:15:20.908Z",
+          "feltImpact": 80,
+          "certainty": 90,
+          "humanCloseness": 90,
+          "bureaucraticDistance": 20,
+          "promoRisk": 10
+        },
+        {
+          "id": "748035281a5d7a35",
+          "sourceId": "mediafax",
+          "sourceName": "Mediafax",
+          "originalTitle": "„Sora lui Ion Creangă” de la Pustiana. Învățătoarea care i-a dat „block” lui „Six-seven” și „Ador” lui Țup",
+          "url": "https://www.mediafax.ro/reportaje/sora-lui-ion-creanga-de-la-pustiana-invatatoarea-care-i-a-dat-block-lui-six-seven-si-ador-lui-tup-23752603",
+          "summary": "La Școala Gimnazială din Pustiana, județul Bacău, cititul a prins viață, devenind o activitate specială pentru elevi. Învățătoarea reușește să capteze atenția copiilor mai mult decât tehnologia.",
+          "positivity": 80,
+          "impact": 60,
+          "category": "local-heroes",
+          "publishedAt": "2026-06-13T04:07:59.000Z",
+          "processedAt": "2026-06-13T12:15:20.908Z",
+          "feltImpact": 75,
+          "certainty": 85,
+          "humanCloseness": 90,
+          "bureaucraticDistance": 10,
+          "promoRisk": 10
+        },
+        {
+          "id": "2fabd7b2e1a9bfea",
+          "sourceId": "republica",
+          "sourceName": "Republica",
+          "originalTitle": "La 15 ani, un AVC mi-a schimbat viața. Astăzi, disciplina de a face mișcare este cea mai înaltă formă de respect față de mine însămi",
+          "url": "https://republica.ro/avc-15-ani-miscare-disciplina",
+          "summary": "La 15 ani, un AVC i-a schimbat viața, dar astăzi, disciplina mișcării este cel mai înalt act de respect față de sine. Această mărturie inspirațională subliniază puterea determinării în fața adversității.",
+          "positivity": 90,
+          "impact": 70,
+          "category": "local-heroes",
+          "publishedAt": "2026-06-11T04:16:00.000Z",
+          "processedAt": "2026-06-13T12:15:20.908Z",
+          "feltImpact": 80,
+          "certainty": 90,
+          "humanCloseness": 95,
+          "bureaucraticDistance": 20,
+          "promoRisk": 10
         }
       ],
       "discarded": 414,
       "totalProcessed": 1031,
       "wrapperCopy": {
         "greeting": "Salutare! 👋",
-        "intro": "Săptămâna asta am adunat povești de la eroi locali care schimbă comunități, dar și vești bune despre finanțări pentru energie verde și despre drumuri care se redeschid. E genul acela de newsletter care îți dă un boost bun de energie.",
-        "signOff": "Îți mulțumim că ești alături de noi! Ne auzim săptămâna viitoare. 🙏",
-        "shortSummary": "Eroi locali, energie verde, Transfăgărășan deschis și TIFF la Cluj."
+        "intro": "Săptămâna asta avem o ediție cu energie practică: școli noi, acces mai bun la 112, cultură cu săli pline, drumuri redeschise și bani pentru energie verde. Sunt vești care se simt aproape de viața de zi cu zi, nu doar bine pe hârtie.",
+        "signOff": "Să ai o săptămână bună și cu vești care se simt aproape. Ne auzim luni! 🙏",
+        "shortSummary": "Școli noi, acces mai bun la 112, TIFF, Transfăgărășan și energie verde."
       },
       "validation": {
-        "generatedAt": "2026-06-13T12:19:12.522Z",
-        "candidateCount": 40,
-        "flagged": []
+        "generatedAt": "2026-06-14T18:07:18.162Z",
+        "candidateCount": 38,
+        "flagged": [],
+        "status": "passed",
+        "approvalSource": "validation-pipeline",
+        "checkedAt": "2026-06-14T18:08:55.843Z",
+        "freshnessWindowDays": 14,
+        "publishedHistoryCount": 217,
+        "recentDraftCount": 0,
+        "blockedArticles": [],
+        "replacements": [],
+        "agentReviewed": [
+          {
+            "articleId": "2e0dbd5621fc3e29",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "6a05fe98f3591cba",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "9ad49bc3cf3e5976",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "0a057b7980e7bff4",
+            "verdict": "fresh",
+            "notes": "While the archived article discusses funding for buildings, it does not specifically mention a new school in Oradea with this scope."
+          },
+          {
+            "articleId": "18569c469f10b6bb",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "dae9822936cf7f25",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "d4dda84d47ec6b9d",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "64e8d09532f7346c",
+            "verdict": "follow_up",
+            "notes": "The article discusses the film 'Fjord' selling out tickets, which is a development following its selection at Cannes mentioned in the archive match.",
+            "matchedOrigin": "[issue] 2026-04-13-issue.md",
+            "matchedTitle": "Fjord, în regia lui Cristian Mungiu, selectat în competiția oficială pentru Palme d’Or la Festivalul de Film de la Cannes"
+          },
+          {
+            "articleId": "20b7df5f0cf98177",
+            "verdict": "fresh",
+            "notes": "The archived articles are about informatics, gas production, traditional Bucovina, rescue dogs, and gambling bans. None are about a region becoming a gastronomic center."
+          },
+          {
+            "articleId": "e2ba68c827be3d61",
+            "verdict": "fresh",
+            "notes": "While there are mentions of solar energy projects, none specifically target farmers and processors with this level of funding, making it potentially fresh."
+          },
+          {
+            "articleId": "46ed4acedb4f392b",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "87be1a5f5169ccac",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "d4860763fa6b5636",
+            "verdict": "fresh",
+            "notes": "The archived article is about a young theater performer. This article is about personal weight loss journey."
+          },
+          {
+            "articleId": "32f984ec310f5059",
+            "verdict": "fresh",
+            "notes": "The archived articles are about unrelated topics (volunteers building houses, special education, nuclear industry)."
+          },
+          {
+            "articleId": "66587f8a8bb37cc1",
+            "verdict": "fresh",
+            "notes": "The archived articles are about a rescue dog, a city of flowers, and a gambling ban, none of which relate to a play for children with dyslexia."
+          },
+          {
+            "articleId": "cf87664b03805cd4",
+            "verdict": "fresh",
+            "notes": "The archived articles are about religious traditions, mountain destinations, cities of flowers, returning locals, and social canteens. None are about young people revitalizing an area."
+          },
+          {
+            "articleId": "bce37fd691fe3ed2",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "44155b068d914481",
+            "verdict": "fresh",
+            "notes": "The archived article is about a veteran turning 104, not about seniors returning to universities."
+          },
+          {
+            "articleId": "ee9aeee0615dfeb0",
+            "verdict": "fresh",
+            "notes": "The archived article is about students cleaning up an area, not about a first aid competition."
+          },
+          {
+            "articleId": "03f15bdafd9e991b",
+            "verdict": "fresh",
+            "notes": "The archived articles are about building consolidation, fitness investment, and regional development funds. None are about cultural project funding."
+          },
+          {
+            "articleId": "ca7043e2aa8bccd5",
+            "verdict": "follow_up",
+            "notes": "The archived article mentions free psychological counseling for parents of children with autism and Down syndrome. This article discusses a state-funded psychological support program for the same demographic, indicating a development or expansion of services.",
+            "matchedOrigin": "[issue] 2026-05-04-issue.md",
+            "matchedTitle": "Consiliere psihologică gratuită pentru părinții copiilor cu autism și sindrom Down"
+          },
+          {
+            "articleId": "1d84ea9dc3f10110",
+            "verdict": "fresh",
+            "notes": "The archived article is about distributing business books to children, not about a young pilot training for Formula 1."
+          },
+          {
+            "articleId": "042ae3690ec8045a",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "3093e73b49fdf7e9",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "d145b63a59458dd0",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "8264c28413a608a9",
+            "verdict": "follow_up",
+            "notes": "The current article announces a masterclass by Nadia Comăneci to celebrate 50 years since her first perfect 10. Archived articles mention her receiving an order and a gala celebrating the anniversary, indicating related events around the same milestone.",
+            "matchedOrigin": "[issue] 2026-06-08-issue.md",
+            "matchedTitle": "Nadia Comăneci: sărbătoarea continuă (cu 2 statui)"
+          },
+          {
+            "articleId": "6832f9822790f055",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "e3f13030ee5cf89f",
+            "verdict": "fresh",
+            "notes": "The archived article is about students winning an art competition with recycled materials. This article is about a new classroom concept."
+          },
+          {
+            "articleId": "fc2cc9db250a823a",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "656d35fea7c5df9a",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "ce14abb83ec6bb70",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "021ea4a2bcc41fe3",
+            "verdict": "fresh",
+            "notes": "The archived articles are about electric cars and highway length. This article is about Chinese car brands' growth."
+          },
+          {
+            "articleId": "066d908c05eae3e3",
+            "verdict": "fresh",
+            "notes": "The archived article discusses electric and hybrid car registrations. This article focuses on the growth of Chinese brands specifically, which is a distinct trend."
+          },
+          {
+            "articleId": "f964364adcb7a6cc",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "644089a997115198",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "73fcc72cca2c2904",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "748035281a5d7a35",
+            "verdict": "fresh",
+            "notes": "No close historical matches found."
+          },
+          {
+            "articleId": "2fabd7b2e1a9bfea",
+            "verdict": "fresh",
+            "notes": "The article is a personal story about overcoming an AVC, which is distinct from the archived article about an educator's perspective."
+          }
+        ]
       }
     },
-    "reasoning": "No changes needed"
+    "reasoning": "Editor review: removed four lower-fit stories with negative, cliched, or doubtful framing and promoted fresher reserves with stronger practical impact and positive tone. Final archive gate passed with no blocked stories or auto-replacements."
   }
 }
