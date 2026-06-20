@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W25",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-06-20T12:24:24.731Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare! 👋",
+      "intro": "Pregătește-ți cafeaua, pentru că săptămâna asta aduce povești despre noi începuturi, energie curată și magie pe scenă. De la o familie care primește o casă nouă, la soarele care ne dă energie cât două centrale nucleare, și piese de teatru care devin hit-uri naționale – avem inspirație din plin.",
+      "signOff": "Ține-te bine și ne auzim săptămâna viitoare! 🙏",
+      "shortSummary": "Case noi, energie solară record, magie teatrală și eroi locali."
+    }
+  }
+}
