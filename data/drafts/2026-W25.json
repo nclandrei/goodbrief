@@ -711,17 +711,17 @@
   "totalProcessed": 1012,
   "wrapperCopy": {
     "greeting": "Bună ziua! 👋",
-    "intro": "Săptămâna asta ne aduce povești despre oameni cu suflet mare, de la o familie care primește o casă nouă, la o româncă ce a adoptat un copil în Uganda. Ne bucurăm și de vești din sport, artă și inovație, arătând că România are multe de oferit.",
+    "intro": "Săptămâna asta strângem vești despre România care construiește, învață și se mișcă mai inteligent: cursuri de IA pentru persoane cu dizabilități, o invenție de elevi premiată în SUA, un centru de semiconductori la Cluj și Brașov în topul orașelor în care românii ar vrea să trăiască. Avem și reușite din educație, sănătate, cultură și obiceiuri mai sustenabile.",
     "signOff": "Spor la orice faci! Ne citim săptămâna viitoare. 🙏",
-    "shortSummary": "Oameni cu suflet mare, artă, inovație și matematică."
+    "shortSummary": "IA accesibilă, invenții de elevi, Cluj tech, Brașov și educație."
   },
   "validation": {
     "generatedAt": "2026-06-20T12:22:57.638Z",
     "candidateCount": 40,
     "flagged": [],
     "status": "passed",
-    "approvalSource": "validation-pipeline",
-    "checkedAt": "2026-06-20T12:26:08.750Z",
+    "approvalSource": "editor-review",
+    "checkedAt": "2026-06-21T11:02:26.552Z",
     "freshnessWindowDays": 14,
     "publishedHistoryCount": 227,
     "recentDraftCount": 0,
@@ -939,5 +939,8 @@
         "notes": "The article is about Banca Transilvania launching a shopping campaign for Romanians abroad. The closest match is about a charity ball in Iasi, which is unrelated."
       }
     ]
-  }
+  },
+  "validated": true,
+  "validationSource": "editor-review",
+  "validatedAt": "2026-06-21T11:02:26.552Z"
 }
