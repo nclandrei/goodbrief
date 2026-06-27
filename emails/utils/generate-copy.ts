@@ -1,12 +1,28 @@
 import { readFileSync } from "fs";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import type { ProcessedArticle } from "../../scripts/types";
+import {
+  callWithRetry,
+  type GeminiRetryOptions,
+} from "../../scripts/lib/gemini.js";
 
 export interface WrapperCopy {
   greeting: string;
   intro: string;
   signOff: string;
   shortSummary: string;
+}
+
+interface GeminiContentResult {
+  response: {
+    text(): string;
+  };
+}
+
+export interface GenerateWrapperCopyOptions {
+  apiKey?: string;
+  generateContent?: (prompt: string) => Promise<GeminiContentResult>;
+  retryOptions?: GeminiRetryOptions;
 }
 
 const PROMPT_PREFIX = `You are the voice of Good Brief, a Romanian positive news newsletter.
@@ -59,19 +75,20 @@ Return only the JSON object, no markdown code blocks.`;
 
 export async function generateWrapperCopy(
   articles: ProcessedArticle[],
-  weekId: string
+  weekId: string,
+  options: GenerateWrapperCopyOptions = {}
 ): Promise<WrapperCopy> {
   const mockPath = process.env.GOODBRIEF_WRAPPER_COPY_PATH;
   if (mockPath) {
     return JSON.parse(readFileSync(mockPath, "utf-8")) as WrapperCopy;
   }
 
-  const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey) {
+  const apiKey = options.apiKey ?? process.env.GEMINI_API_KEY;
+  if (!apiKey && !options.generateContent) {
     throw new Error("GEMINI_API_KEY environment variable is required");
   }
 
-  const genAI = new GoogleGenerativeAI(apiKey);
+  const genAI = apiKey ? new GoogleGenerativeAI(apiKey) : null;
 
   const wrapperCopySchema = {
     type: "object",
@@ -84,17 +101,25 @@ export async function generateWrapperCopy(
     required: ["greeting", "intro", "signOff", "shortSummary"],
   };
 
-  const model = genAI.getGenerativeModel({
-    model: "gemini-2.5-flash-lite",
-    generationConfig: {
-      responseMimeType: "application/json",
-      responseSchema: wrapperCopySchema,
-    } as any,
-  });
+  const model =
+    genAI &&
+    genAI.getGenerativeModel({
+      model: "gemini-2.5-flash-lite",
+      generationConfig: {
+        responseMimeType: "application/json",
+        responseSchema: wrapperCopySchema,
+      } as any,
+    });
 
   const prompt = buildWrapperCopyPrompt(articles, weekId);
 
-  const result = await model.generateContent(prompt);
+  const generateContent =
+    options.generateContent ??
+    (async (input: string) => model!.generateContent(input));
+  const result = await callWithRetry(
+    () => generateContent(prompt),
+    options.retryOptions
+  );
   const content = result.response.text();
 
   if (!content) {
