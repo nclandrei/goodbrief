@@ -1,0 +1,29 @@
+{
+  "weekId": "2026-W26",
+  "phase": "counter-signal-validate",
+  "generatedAt": "2026-06-27T12:13:10.665Z",
+  "inputFile": "03-semantic-dedup.json + 01-prepared.json",
+  "data": {
+    "validation": {
+      "generatedAt": "2026-06-27T12:12:24.468Z",
+      "candidateCount": 60,
+      "flagged": [
+        {
+          "candidateId": "0a871d72d8ed7d16",
+          "verdict": "borderline",
+          "penaltyApplied": 10,
+          "reason": "Deși elevii par să fi perceput subiectele ca fiind relativ ușoare, există și o opinie (a profesoarei Serinella Zara) care sugerează că această percepție ar putea fi înșelătoare. De asemenea, s-au înregistrat absențe și eliminări pentru fraudă, aspecte care nu contribuie la imaginea unui succes generalizat al probei.",
+          "relatedArticleIds": [
+            "814940fbb20c3294",
+            "1a3bc7b56e8b6ccb"
+          ],
+          "relatedArticleTitles": [
+            "Profesoara Serinella Zara, despre subiectele de la Limba română de la Evaluarea Națională 2026: Se pierde mai ușor nota 10 la rezumat decât la o compunere narativă",
+            "Evaluarea Națională 2026. Peste 4.500 de absolvenți de clasa a VIII-a nu s-au prezentat la proba de limba și literatura română / Patru elevi au fost eliminați pentru că ar fi încercat să copieze"
+          ],
+          "generatedAt": "2026-06-27T12:12:24.468Z"
+        }
+      ]
+    }
+  }
+}

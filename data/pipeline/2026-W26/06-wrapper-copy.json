@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W26",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-06-27T12:14:38.616Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare! 👋",
+      "intro": "Săptămâna asta avem eroi din cele mai neașteptate locuri: de la un bebeluș salvat dintr-o mașină, la elevi care ajută alți elevi. E plin de inspirație și de proiecte verzi care prind contur. Hai să vezi.",
+      "signOff": "Sperăm că ți-am adus un zâmbet! Ne citim săptămâna viitoare. 🙏",
+      "shortSummary": "Eroi locali, proiecte verzi și un festival la Sibiu."
+    }
+  }
+}
