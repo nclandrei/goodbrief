@@ -289,40 +289,148 @@ export class GeminiQuotaError extends Error {
   }
 }
 
+export interface GeminiRetryOptions {
+  maxAttempts?: number;
+  initialDelayMs?: number;
+  maxDelayMs?: number;
+  jitterRatio?: number;
+  random?: () => number;
+  sleep?: (ms: number) => Promise<void> | void;
+}
+
+const DEFAULT_INITIAL_RETRY_DELAY_MS = 2000;
+const DEFAULT_MAX_RETRY_DELAY_MS = 60000;
+const DEFAULT_RETRY_JITTER_RATIO = 0.25;
+
+function errorText(error: unknown): string {
+  const parts: string[] = [];
+  if (error instanceof Error) {
+    parts.push(error.message, error.stack || '');
+    const cause = (error as Error & { cause?: unknown }).cause;
+    if (cause) {
+      parts.push(errorText(cause));
+    }
+  } else {
+    parts.push(String(error));
+  }
+
+  const record = error as Record<string, unknown> | null;
+  if (record && typeof record === 'object') {
+    for (const key of ['status', 'statusText', 'code', 'name']) {
+      if (record[key] !== undefined) {
+        parts.push(String(record[key]));
+      }
+    }
+  }
+
+  return parts.join(' ').toLowerCase();
+}
+
 function isQuotaError(error: unknown): boolean {
-  const errorStr = String(error).toLowerCase();
+  const errorStr = errorText(error);
   return (
     errorStr.includes('quota') ||
     errorStr.includes('rate limit') ||
+    errorStr.includes('rate_limit') ||
     errorStr.includes('resource exhausted') ||
     errorStr.includes('429') ||
-    errorStr.includes('403')
+    errorStr.includes('403') ||
+    errorStr.includes('api key') ||
+    errorStr.includes('permission denied') ||
+    errorStr.includes('unauthorized') ||
+    errorStr.includes('forbidden') ||
+    errorStr.includes('authentication')
   );
+}
+
+export function isRetryableGeminiError(error: unknown): boolean {
+  if (isQuotaError(error)) {
+    return false;
+  }
+
+  const errorStr = errorText(error);
+  return (
+    errorStr.includes('503') ||
+    errorStr.includes('502') ||
+    errorStr.includes('504') ||
+    errorStr.includes('500') ||
+    errorStr.includes('service unavailable') ||
+    errorStr.includes('high demand') ||
+    errorStr.includes('overloaded') ||
+    errorStr.includes('temporarily unavailable') ||
+    errorStr.includes('try again later') ||
+    errorStr.includes('internal error') ||
+    errorStr.includes('deadline exceeded') ||
+    errorStr.includes('fetch failed') ||
+    errorStr.includes('network') ||
+    errorStr.includes('socket') ||
+    errorStr.includes('timeout') ||
+    errorStr.includes('timed out') ||
+    errorStr.includes('econnreset') ||
+    errorStr.includes('etimedout') ||
+    errorStr.includes('eai_again')
+  );
+}
+
+function normalizeRetryOptions(
+  options: number | GeminiRetryOptions | undefined
+): Required<GeminiRetryOptions> {
+  if (typeof options === 'number') {
+    return {
+      maxAttempts: options,
+      initialDelayMs: DEFAULT_INITIAL_RETRY_DELAY_MS,
+      maxDelayMs: DEFAULT_MAX_RETRY_DELAY_MS,
+      jitterRatio: DEFAULT_RETRY_JITTER_RATIO,
+      random: Math.random,
+      sleep: (ms) => new Promise((resolve) => setTimeout(resolve, ms)),
+    };
+  }
+
+  return {
+    maxAttempts: options?.maxAttempts ?? Number.POSITIVE_INFINITY,
+    initialDelayMs: options?.initialDelayMs ?? DEFAULT_INITIAL_RETRY_DELAY_MS,
+    maxDelayMs: options?.maxDelayMs ?? DEFAULT_MAX_RETRY_DELAY_MS,
+    jitterRatio: options?.jitterRatio ?? DEFAULT_RETRY_JITTER_RATIO,
+    random: options?.random ?? Math.random,
+    sleep:
+      options?.sleep ??
+      ((ms) => new Promise((resolve) => setTimeout(resolve, ms))),
+  };
 }
 
 export async function callWithRetry<T>(
   fn: () => Promise<T>,
-  maxRetries: number = 5
+  options?: number | GeminiRetryOptions
 ): Promise<T> {
+  const retry = normalizeRetryOptions(options);
   let lastError: Error | undefined;
-  for (let attempt = 0; attempt < maxRetries; attempt++) {
+  for (let attempt = 0; attempt < retry.maxAttempts; attempt++) {
     try {
       return await fn();
     } catch (error) {
       lastError = error instanceof Error ? error : new Error(String(error));
 
-      // Don't retry quota errors - they won't recover
       if (isQuotaError(error)) {
         throw new GeminiQuotaError(lastError.message);
       }
 
-      if (attempt < maxRetries - 1) {
-        const baseDelay = Math.pow(2, attempt) * 2000;
-        const jitter = baseDelay * (0.75 + Math.random() * 0.5); // ±25%
+      if (!isRetryableGeminiError(error)) {
+        throw lastError;
+      }
+
+      if (attempt < retry.maxAttempts - 1) {
+        const uncappedDelay = retry.initialDelayMs * Math.pow(2, attempt);
+        const baseDelay = Math.min(uncappedDelay, retry.maxDelayMs);
+        const jitterFactor =
+          1 - retry.jitterRatio + retry.random() * retry.jitterRatio * 2;
+        const delay = Math.max(0, Math.round(baseDelay * jitterFactor));
+        const attemptLabel = Number.isFinite(retry.maxAttempts)
+          ? `${attempt + 1}/${retry.maxAttempts}`
+          : `${attempt + 1}`;
         console.log(
-          `Attempt ${attempt + 1}/${maxRetries} failed (${lastError.message}), retrying in ${Math.round(jitter)}ms...`
+          `Gemini attempt ${attemptLabel} failed with retryable error (${lastError.message}); retrying in ${delay}ms...`
         );
-        await new Promise((r) => setTimeout(r, jitter));
+        await retry.sleep(delay);
       }
     }
   }
