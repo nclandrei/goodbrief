@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #
 # Recover a Good Brief week locally using Claude Code as the LLM backend.
-# One-command alternative to manually chaining LFS pull → pipeline → validate →
-# (optional) publish. Underneath it just calls the same npm scripts — no new
+# One-command alternative to manually chaining LFS pull → pipeline → archive
+# freshness validation → (optional) publish. Underneath it just calls the same npm scripts — no new
 # logic, no bypassed validation.
 #
 # Usage:
@@ -16,7 +16,7 @@
 #   2. git lfs pull data/raw/<week>.json so prepare has real input
 #   3. npm run pipeline:run-all -- --week <w> --llm claude-cli --skip-existing
 #      (resumable: re-run and it skips completed phases)
-#   4. npm run validate-draft -- --week <w> --llm claude-cli
+#   4. npm run validate-draft-freshness -- --week <w> --llm claude-cli
 #   5. (only with --auto-publish) publish-issue + notify-draft
 #
 # Never auto-commits, never git push, never sends the newsletter.
@@ -151,10 +151,14 @@ DRAFT_FILE="data/drafts/$WEEK.json"
 [[ -f "$DRAFT_FILE" ]] || fail "pipeline completed but $DRAFT_FILE was not created"
 ok "draft at $DRAFT_FILE"
 
-# --- 4. Validate ---
-step "validate-draft"
-npm run --silent validate-draft -- --week "$WEEK" --llm claude-cli
-ok "validation updated"
+# --- 4. Archive freshness validation ---
+step "validate-draft-freshness"
+
+FRESHNESS_ARGS=(--week "$WEEK" --llm claude-cli)
+[[ -n "$FALLBACK" ]] && FRESHNESS_ARGS+=(--fallback "$FALLBACK")
+
+npm run --silent validate-draft-freshness -- "${FRESHNESS_ARGS[@]}"
+ok "archive freshness validation updated"
 
 # --- 5. Optional publish ---
 if [[ "$AUTO_PUBLISH" -eq 1 ]]; then
