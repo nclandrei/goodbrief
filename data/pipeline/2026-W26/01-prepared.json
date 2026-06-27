@@ -1,7 +1,7 @@
 {
   "weekId": "2026-W26",
   "phase": "prepare",
-  "generatedAt": "2026-06-27T11:38:41.309Z",
+  "generatedAt": "2026-06-27T19:12:01.503Z",
   "inputFile": "/home/runner/work/goodbrief/goodbrief/data/raw/2026-W26.json",
   "data": {
     "sameWeekRepresentatives": [
@@ -16424,6 +16424,746 @@
         "summary": "https://cdn.edupedu.ro/wp-content/uploads/2026/06/proces-verbal-sanctionare-candidat-bacalaureat-2026-isj-hunedoara.jpg\nEliminarea unui candidat de la examenul de Bacalaureat 2026 trebuie fundamentată pe dovezi obiective și documentată riguros, pentru a reduce riscul anulării măsurii în instanță, conform unei informări juridice transmisă…",
         "publishedAt": "2026-06-27T05:23:12.000Z",
         "fetchedAt": "2026-06-27T08:41:51.240Z"
+      },
+      {
+        "id": "d1d000a831393aa3",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "Cum explică Eugen Tomac poza de la Bruxelles în care apare alături de președinte și directorul SPP",
+        "url": "https://www.mediafax.ro/stirile-zilei/cum-explica-eugen-tomac-poza-de-la-bruxelles-in-care-apare-alaturi-de-presedinte-si-directorul-spp-23762687",
+        "summary": "Fostul premier desemnat, Eugen Tomac, a explicat sâmbătă fotografia surprinsă la Bruxelles, în care apare alături de președintele Nicușor Dan și directorul SPP, Lucian Pahonțu, precizând că legătura dintre cei doi este „strict instituțională”.",
+        "publishedAt": "2026-06-27T13:49:15.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "acea6c73bb425dd3",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "Județul Constanța a pierdut finanțări de 150 de milioane de euro din PNRR. Printre cele 60 de proiecte, un spital nou",
+        "url": "https://www.mediafax.ro/economic/judetul-constanta-a-pierdut-finantari-de-150-de-milioane-de-euro-din-pnrr-printre-cele-60-de-proiecte-un-spital-nou-23762677",
+        "summary": "La nivelul județului Constanța, 60 de proiecte au pierdut finanțarea prin Planul Național de Redresare și Reziliență (PNRR), valoarea totală fiind de aproape 150 de milioane de euro.",
+        "publishedAt": "2026-06-27T13:37:13.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "135b78f84ec2e9cf",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "Două furtuni tropicale lovesc Japonia / Un mort, răniți și inundații după ploile torențiale",
+        "url": "https://www.mediafax.ro/externe/doua-furtuni-tropicale-lovesc-japonia-un-mort-raniti-si-inundatii-dupa-ploile-torentiale-23762678",
+        "summary": "Două furtuni tropicale au lovit Japonia în plin sezon ploios, provocând inundații și alunecări de teren în mai multe regiuni. Un bărbat a murit, alte trei persoane au fost rănite, iar zeci de locuințe au fost inundate după ploile torențiale.",
+        "publishedAt": "2026-06-27T13:28:21.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "49bdc330f2ac65cd",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "Iran ripostează, lansând atacuri asupra mai multor ținte militare americane din Orientul Mijlociu",
+        "url": "https://www.mediafax.ro/stirile-zilei/iran-riposteaza-lansand-atacuri-asupra-mai-multor-tinte-militare-americane-din-orientul-mijlociu-23762672",
+        "summary": "Autoritățile iraniene au anunțat sâmbătă că au lansat mai multe atacuri asupra unor ținte militare americane din regiunea Orientului, ca ripostă la atacurile lansate de Statele Unit în zona Strâmtorii Ormuz. Acesta este primul schimb de focuri de la încheierea unui acord-cadru pentru încetarea ostilităților.",
+        "publishedAt": "2026-06-27T12:54:46.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "97f5ac61095f9be3",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "Olguța Vasilescu, despre Siegfried: „Românii o să-și scrântească limba până îi pronunță numele”",
+        "url": "https://www.mediafax.ro/politic/olguta-vasilescu-despre-siegfried-romanii-o-sa-si-scranteasca-limba-pana-ii-pronunta-numele-23762669",
+        "summary": "Lia Olguța Vasilescu a ironizat sâmbătă propunerea PNL pentru funcția de premier, făcând trimitere la numele europarlamentarului Siegfried Mureșan. Primarul Craiovei a spus că românii „o să-și scrântească limba” încercând să-i pronunțe numele și l-a acuzat pe liderul PNL, Ilie Bolojan, că vrea să aducă la Palatul Victoria „un om care habar n-are cum se trăiește în România”.",
+        "publishedAt": "2026-06-27T12:51:02.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "a9d173acc8692b77",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "PSD forțează instalarea lui Grindeanu la Palatul Victoria: „Avem programul de guvernare pregătit”",
+        "url": "https://www.mediafax.ro/politic/psd-forteaza-instalarea-lui-grindeanu-la-palatul-victoria-avem-programul-de-guvernare-pregatit-23762667",
+        "summary": "Vicepreședintele social-democrat Victor Negrescu spune că partidul are deja un program de guvernare pentru varianta în care Sorin Grindeanu ar fi desemnat prim-ministru și promite că PSD nu va accepta măsuri de austeritate.",
+        "publishedAt": "2026-06-27T12:45:47.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "72d3be3e8fa0f1f8",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "Laura Vicol i-a făcut plângere penală lui Siegfried Mureșan, după o postare a acestuia pe Facebook: „Fiecare răspunde pentru propriile cuvinte”",
+        "url": "https://www.mediafax.ro/politic/laura-vicol-i-a-facut-plangere-penala-lui-siegfried-muresan-dupa-o-postare-a-acestuia-pe-facebook-fiecare-raspunde-pentru-propriile-cuvinte-23762658",
+        "summary": "Laura Vicol spune că a depus plângere penală împotriva europarlamentarului Siegfried Mureșan, după ce acesta a asociat-o cu Nordis într-o postare pe Facebook. Fosta deputată afirmă că mesajul face parte dintr-o campanie de stigmatizare care durează de aproape doi ani.",
+        "publishedAt": "2026-06-27T12:31:23.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "5e468b8c0adfa2a3",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "Ilie Bolojan, reacție la execuția bugetară pe cinci luni: Deficitul bugetar al României a scăzut cu peste 40%. În prima etapă a tratamentului poate să-ți fie mai rău",
+        "url": "https://www.mediafax.ro/stirile-zilei/ilie-bolojan-reactie-la-executia-bugetara-pe-cinci-luni-deficitul-bugetar-al-romaniei-a-scazut-cu-peste-40-in-prima-etapa-a-tratamentului-poate-sa-ti-fie-mai-rau-23762660",
+        "summary": "Premierul interimar al României, Ilie Bolojan, a reacționat sâmbătă la execuția bugetară pe primele cinci luni ale anului care indică o scădere a deficitului cu peste 40%. Acesta a comparat efortul cu tratarea unei boli, precizând: „în prima etapă a tratamentului poate să-ți fie mai rău”.",
+        "publishedAt": "2026-06-27T12:23:02.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "a37b96201d0e3d17",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "Tomac, despre relația președinte-premier: Ar fi funcționat mult mai bine dacă comunicarea ar fi fost mult mai strânsă",
+        "url": "https://www.mediafax.ro/politic/tomac-despre-relatia-presedinte-premier-ar-fi-functionat-mult-mai-bine-daca-comunicarea-ar-fi-fost-mult-mai-stransa-23762655",
+        "summary": "Consilierul prezidențial Eugen Tomac a spus sâmbătă că relația dintre președintele Nicușor Dan și premierul Ilie Bolojan ar fi fost mai bună dacă și comunicarea ar fi fost mai strânsă.",
+        "publishedAt": "2026-06-27T11:42:46.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "df874289d84e3e8b",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "Eugen Tomac dezvăluie culisele negocierilor pentru un guvern tehnocrat: „Ilie Bolojan a considerat că este o soluție de luat în seamă”",
+        "url": "https://www.mediafax.ro/politic/eugen-tomac-dezvaluie-culisele-negocierilor-pentru-un-guvern-tehnocrat-ilie-bolojan-a-considerat-ca-este-o-solutie-de-luat-in-seama-23762653",
+        "summary": "Consilierul prezidențial și fostul premier desemnat Eugen Tomac susține că președintele PNL, Ilie Bolojan, nu a respins din start ideea unui guvern tehnocrat, ba chiar a apreciat-o, în cadrul consultărilor de la Palatul Cotroceni, drept „o soluție de luat în seamă”.",
+        "publishedAt": "2026-06-27T11:40:04.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "0eced796735c57e8",
+        "sourceId": "biziday",
+        "sourceName": "Biziday",
+        "title": "Ilie Bolojan transmite că deficitul bugetar al României a scăzut cu peste 40% în primele cinci luni ale acestui an, respectiv cu peste 28 de miliarde de lei față de aceeași perioadă a anului trecut. Afirmă că “este prima corecţie serioasă după ani în care cheltuielile statului au crescut mult peste ceea ce producem”.",
+        "url": "https://www.biziday.ro/362102-2/",
+        "summary": "Premierul interimar, Ilie Bolojan, a precizat într-o postare pe Facebook că execuția bugetară din primele cinci luni ale anului 2026 arată o reducere semnificativă a deficitului bugetar, pe care o consideră primul semn al unei corecții fiscale “serioase”, după ani în care cheltuielile statului au depășit ritmul de creștere al economiei. Potrivit acestuia, execuția bugetară […]",
+        "publishedAt": "2026-06-27T12:42:48.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "f909b40e77debd45",
+        "sourceId": "biziday",
+        "sourceName": "Biziday",
+        "title": "Încă un petrolier a fost avariat sâmbătă de un proiectil neidentificat în Strâmtoarea Hormuz, după primul schimb de lovituri între SUA şi Iran, la doar o săptămână după semnarea acordului de la Geneva. Nu au fost înregistrate victime.",
+        "url": "https://www.biziday.ro/362089-2/",
+        "summary": "Agenția de Operațiuni Comerciale Maritime din Regatul Unit (UKMTO) transmite că a primit o sesizare privind un incident în Strâmtoarea Hormuz. Căpitanul unui petrolier a raportat că nava a fost lovită de un “proiectil neidentificat”. UKMTO a precizat că nava a suferit daune la puntea de comandă, dar toți membrii echipajului sunt în siguranță. De […]",
+        "publishedAt": "2026-06-27T11:40:45.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "0976796dfe5c8c43",
+        "sourceId": "biziday",
+        "sourceName": "Biziday",
+        "title": "Anthropic primește aprobarea SUA să pună la dispoziția a peste o sută de organizații americane “de încredere” modelul AI “Mythos 5”. Administrația Trump ridică, astfel, parțial interdicția impusă în urmă cu două săptămâni.",
+        "url": "https://www.biziday.ro/362079-2/",
+        "summary": "Anthropic a anunțat că guvernul federal permite folosirea modelului “Claude Mythos 5” de către “un grup de organizații din SUA care gestionează și apără infrastructura critică. (…) Continuăm să colaborăm cu guvernul pentru a extinde accesul la Mythos 5 și pentru a pune din nou la dispoziție Fable 5 pentru uz general”. Astfel, peste o […]",
+        "publishedAt": "2026-06-27T09:09:50.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "44df074f2653d510",
+        "sourceId": "dw-romania",
+        "sourceName": "DW România",
+        "title": "SUA și Iranul au reluat atacurile, în ciuda armistițiului",
+        "url": "https://www.dw.com/ro/sua-%C8%99i-iranul-au-reluat-atacurile-%C3%AEn-ciuda-armisti%C8%9Biului/a-77734094?maca=rum-rss-rom-all-1493-rdf",
+        "summary": "Președintele Trump acuză Teheranul că a lansat joi un atac cu drone asupra unei nave comerciale și că a încălcat acordul încheiat între SUA și Iran. Ca răspuns, armata americană a lansat noi lovituri asupra Iranului.",
+        "publishedAt": "2026-06-27T11:49:00.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "33406f944190f34f",
+        "sourceId": "dw-romania",
+        "sourceName": "DW România",
+        "title": "VW desfiinţează o mulţime de locuri de muncă",
+        "url": "https://www.dw.com/ro/vw-desfiin%C5%A3eaz%C4%83-o-mul%C5%A3ime-de-locuri-de-munc%C4%83/a-77733639?maca=rum-rss-rom-all-1493-rdf",
+        "summary": "Relatări apărute în mass media atrag atenţia fabricanţilor auto: concernul Volkswagen ar putea desfiinţa la nivel mondial până la 100.000 de locuri de muncă. În Germania sunt ameninţate cu dispariţia patru fabrici.",
+        "publishedAt": "2026-06-27T10:39:00.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "6d92aa175395d068",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Avertizare de Cod roșu de caniculă în România. Ministerul Sănătății activează măsuri din cauza temperaturilor extreme | HARTĂ",
+        "url": "https://stirileprotv.ro/stiri/actualitate/avertizare-de-cod-rosu-de-canicula-in-romania-ministerul-sanatatii-activeaza-masuri.html",
+        "summary": "Ministerul Sănătăţii solicită sâmbătă activarea planurilor de măsuri pentru reducerea riscurilor medicale cauzate de temperaturile extreme.",
+        "publishedAt": "2026-06-27T13:27:30.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "27ada4ec541cdccf",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Ministrul Miruță, atac la „știrile false” din Transporturi: șapte din nouă loturi SAFE de autostradă merg la firme românești",
+        "url": "https://stirileprotv.ro/stiri/actualitate/ministrul-miruta-atac-la-stirile-false-din-transporturi-sapte-din-noua-loturi-safe-de-autostrada-merg-la-firme-romanesti.html",
+        "summary": "Șapte din cele nouă loturi de autostradă finanțate prin programul european SAFE au fost atribuite unor companii din România.",
+        "publishedAt": "2026-06-27T13:12:57.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "e5d20876324910e4",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Reacția lui Eugen Tomac despre Nicușor Dan, după ce președintele a fost acuzat că este PSD-ist: „Este conştient”",
+        "url": "https://stirileprotv.ro/stiri/politic/reactia-lui-eugen-tomac-despre-nicusor-dan-dupa-ce-presedintele-a-fost-acuzat-ca-este-psd-ist-e-constient.html",
+        "summary": "Consilierul prezidențial și fostul candidat la postul de premier Eugen Tomac susține că Nicușor Dan nu este PSD-ist și explică faptul că șeful statului încearcă să păstreze unitatea partidelor pro-europene.",
+        "publishedAt": "2026-06-27T13:02:31.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "943289b30e49abda",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Marea Britanie schimbă regulile pentru refugiați. „Ce este „programul de sponsorizare”",
+        "url": "https://stirileprotv.ro/stiri/international/marea-britanie-schimba-regulile-pentru-refugiati-ce-este-programul-de-sponsorizare.html",
+        "summary": "Guvernul britanic vrea să permită anumitor companii şi organizaţii să sponsorizeze primirea de refugiaţi în Regatul Unit, în paralel cu o reformă care va înăspri regulile de azil, transmite sâmbătă AFP.",
+        "publishedAt": "2026-06-27T12:56:53.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "fb92f77592af7028",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "110.000 de euro, în patru tranșe, pentru un procuror. Daniel Dumitru Learciu, directorul AFIR Constanța, arestat de ÎCCJ",
+        "url": "https://stirileprotv.ro/justitie/110-000-de-euro-in-patru-transe-pentru-un-procuror-daniel-dumitru-learciu-directorul-afir-constanta-arestat-de-iccj.html",
+        "summary": "Daniel Dumitru Learciu, director executiv al Agenției pentru Finanțarea Investițiilor Rurale (AFIR) Constanța, a fost arestat preventiv sâmbătă pentru infracțiuni de corupție.",
+        "publishedAt": "2026-06-27T12:50:13.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "a1441957bac2c417",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Ilie Bolojan anunță o scădere de peste 40% a deficitului bugetar: „Suntem pe drumul cel bun”",
+        "url": "https://stirileprotv.ro/stiri/politic/bolojan-anunta-o-scadere-de-peste-40-a-deficitului-bugetar-suntem-pe-drumul-cel-bun.html",
+        "summary": "Premierul interimar Ilie Bolojan precizează că execuţia bugetară pe primele 5 luni arată că deficitul bugetar al României a scăzut cu peste 40%, menţionând că este un semn clar că statul începe să cheltuiască mai aproape de ceea ce îşi permite.",
+        "publishedAt": "2026-06-27T12:44:04.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "19c3926e55de5f99",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Cele mai grave greșeli atunci când îți speli părul. Care este rutina corectă",
+        "url": "https://stirileprotv.ro/divers/cele-mai-grave-greseli-atunci-cand-iti-speli-parul-care-este-rutina-corecta.html",
+        "summary": "Experții au avertizat că, dacă ieși din duș și îți usuci părul frecându-l cu un prosop, s-ar putea să-ți distrugi părul.",
+        "publishedAt": "2026-06-27T12:37:31.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "f732d963934ce6ac",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Milioane de oameni îl beau pentru a combate stresul. Ce spun experții despre „cocktailul pentru cortizol”",
+        "url": "https://stirileprotv.ro/divers/milioane-de-oameni-il-beau-pentru-a-combate-stresul-ce-spun-expertii-despre-cocktailul-pentru-cortizol.html",
+        "summary": "Tot mai mulți oameni caută soluții rapide pentru stres, iar „cocktailul pentru cortizol” a ajuns rapid în atenția celor care vor să se simtă mai energici și mai echilibrați.",
+        "publishedAt": "2026-06-27T12:34:42.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "e9d8aa3eb791be5d",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Afirmația cu care șeful NATO a deranjat unul dintre aliații săi. Cui i-ar fi cauzat Mark Rutte o problemă politică",
+        "url": "https://stirileprotv.ro/stiri/international/afirmatia-cu-care-seful-nato-a-deranjat-unul-dintre-aliatii-sai-sprijinul-masiv-care-ar-fi-creat-o-problema-politica.html",
+        "summary": "Prim-ministrul Italiei, Giorgia Meloni, l-a acuzat joi pe secretarul general al NATO, Mark Rutte, că a oferit o descriere confuză atunci când a afirmat că țara sa a oferit un sprijin „masiv” atacurilor americane și israeliene împotriva Iranului.",
+        "publishedAt": "2026-06-27T12:31:16.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "8f3e1858af53a59f",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Victor Negrescu, despre Ilie Bolojan: „Nu are calitățile pentru a exercita democratic puterea (...) exercitată discreționar”",
+        "url": "https://stirileprotv.ro/stiri/politic/victor-negrescu-despre-ilie-bolojan-nu-are-calitatile-pentru-a-exercita-democratic-puterea-exercitata-discretionar.html",
+        "summary": "Europarlamentarul PSD Victor Negrescu l-a criticat dur sâmbătă pe președintele PNL, Ilie Bolojan, afirmând că acesta „nu are calitățile pentru a deține și exercita corect, democratic, puterea”.",
+        "publishedAt": "2026-06-27T12:15:20.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "ab889e984d35307a",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Un mort și 13 răniți în urma impactului avionului de mici dimensiuni cu cea mai înaltă clădire din Beijing",
+        "url": "https://stirileprotv.ro/stiri/international/un-mort-si-13-raniti-in-urma-impactului-avionului-de-mici-dimensiuni-cu-cea-mai-inalta-cladire-din-beijing.html",
+        "summary": "Pilotul avionului de mici dimensiuni care a intrat într-un zgârie-nori, vineri, la Beijing, a murit, iar alte 13 persoane au fost rănite, anunţă sâmbătă autorităţile chineze, relatează The Associated Press.",
+        "publishedAt": "2026-06-27T11:53:41.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "9627ebd28ed21112",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Întreținerea piscinei pas cu pas. Cum se curăță pe timp de vară",
+        "url": "https://stirileprotv.ro/divers/intretinerea-piscinei-pas-cu-pas-cum-se-curata-pe-timp-de-vara.html",
+        "summary": "Întreținerea piscinei nu trebuie să fie complicată. Trebuie să doar să urmezi câțiva pași pentru a o păstra curată, pe timp de vară.",
+        "publishedAt": "2026-06-27T11:49:58.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "76f7d640064f5514",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "„Prietenii lui Putin”, informați de Ucraina cu privire la o posibilă întâlnire privind încetarea războiului. Cine a răspuns",
+        "url": "https://stirileprotv.ro/stiri/international/zelenski-prietenii-lui-putin-au-fost-informati-de-noi-cu-privire-la-o-posibila-intalnire-privind-incetarea-razboiului.html",
+        "summary": "Președintele ucrainean Volodimir Zelenski a declarat că Ucraina a transmis propuneri „prietenilor lui Putin” cu privire la o posibilă întâlnire privind încetarea războiului.",
+        "publishedAt": "2026-06-27T11:46:54.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "9459b856aebbd4c6",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Olguța Vasilescu: Voturile obținute de Adrian Veștea, punctul de plecare pentru guvernul lui Sorin Grindeanu",
+        "url": "https://stirileprotv.ro/stiri/politic/olguta-vasilescu-voturile-obtinute-de-vestea-punctul-de-plecare-pentru-guvernul-psd-partidul-care-ar-garanta-investirea.html",
+        "summary": "Olguta Vasilescu a explicat că voturile obținute de Adrian Veștea atunci când a încercat să obțină învestitura cabinetului său în Parlament reprezintă un punct de pornire pentru guvernul lui Sorin Grindeanu.",
+        "publishedAt": "2026-06-27T11:41:33.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "ec2ebfc136345bc5",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Un petrolier a fost lovit în Strâmtoarea Ormuz de un proiectil neidentificat",
+        "url": "https://stirileprotv.ro/stiri/international/un-petrolier-a-fost-lovit-in-stramtoarea-ormuz-de-un-proiectil-neidentificat.html",
+        "summary": "Un petrolier a fost lovit de un proiectil neidentificat în Strâmtoarea Ormuz, a anunţat sâmbătă agenţia maritimă britanică UKMTO, după primul schimb de lovituri între SUA şi Iran de la încheierea memorandumului de înţelegere la mijlocul lunii iunie.",
+        "publishedAt": "2026-06-27T11:09:49.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "4407891930504696",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Vacanțe în Europa cu familia. Top destinații de vizitat în 2026",
+        "url": "https://stirileprotv.ro/stiri/travel/vacante-in-europa-cu-familia-top-destinatii-de-vizitat-in-2026.html",
+        "summary": "Fie că îți dorești aventuri pline de adrenalină alături de adolescenți sau o săptămână relaxantă în compania copiilor mici și a bunicilor, Europa oferă o varietate impresionantă de opțiuni.",
+        "publishedAt": "2026-06-27T10:34:26.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "d2961dff8691d6dd",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Cum gestionezi stresul înainte de BAC. Metode eficiente pentru elevi",
+        "url": "https://stirileprotv.ro/stiri/bacalaureat/cum-gestionezi-stresul-inainte-de-bac-metode-eficiente-pentru-elevi.html",
+        "summary": "Nivelul de stres poate fi mai ridicat decât de obicei în perioada examenelor. Un anumit nivel de stres te poate ajuta să rămâi motivat și concentrat, dar prea mult stres poate deveni dăunător.",
+        "publishedAt": "2026-06-27T10:33:35.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "4032c0ef1073b3f9",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Simona Bucura-Oprescu a fost aleasă preşedinte al Organizaţiei de Femei a PSD. 443 de delegate au votat pentru",
+        "url": "https://stirileprotv.ro/stiri/politic/simona-bucura-oprescu-aleasa-presedinte-al-organizatiei-de-femei-a-psd-443-de-voturi-pentru.html",
+        "summary": "Simona Bucura-Oprescu, deputat şi fost ministru al Muncii, a fost aleasă, sâmbătă, în funcţia de conducere a Organizaţiei de Femei a Partidului Social Democrat.",
+        "publishedAt": "2026-06-27T10:28:01.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "434dca9ce7ed9717",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "PSD are deja programul de guvernare pentru Sorin Grindeanu, dar încă nu și-a asigurat o majoritate în Parlament",
+        "url": "https://stirileprotv.ro/stiri/politic/psd-are-deja-programul-de-guvernare-pentru-sorin-grindeanu-dar-inca-nu-si-a-asigurat-o-majoritate-in-parlament.html",
+        "summary": "PSD a terminat de scris programul de guvernare, asta înainte ca Sorin Grindeanu să aibă o majoritate care să-i asigure învestirea în Parlament.",
+        "publishedAt": "2026-06-27T10:04:48.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "aaa83957a43ddf11",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "„Țara ascunsă” de sub Alpi: cum a construit Elveția una dintre cele mai impresionante rețele de tuneluri din lume",
+        "url": "https://stirileprotv.ro/stiri/international/tara-ascunsa-de-sub-alpi-cum-a-construit-elvetia-una-dintre-cele-mai-impresionante-retele-de-tuneluri-din-lume.html",
+        "summary": "Subteranul Elveției reprezintă o uriașă rețea construită sub munți, cu peste 1.400 de tuneluri care străbat întreaga țară.",
+        "publishedAt": "2026-06-27T09:59:04.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "114a7aefe3340b83",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Explicația lui Bogan Ivan, după accidentul rutier din Bistrița: „Eu am fost de vină pentru că nu am acordat prioritate”",
+        "url": "https://stirileprotv.ro/stiri/actualitate/explicatia-lui-bogan-ivan-dupa-accidentul-rutier-din-bistrita-eu-am-fost-de-vina-pentru-ca-nu-am-acordat-prioritate.html",
+        "summary": "Deputatul PSD Bogdan Ivan a declarat sâmbătă că a fost implicat zilele trecute într-un accident rutier în Bistriţa, care s-a produs din vina lui.",
+        "publishedAt": "2026-06-27T09:54:32.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "e324fe27428fbc9a",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Un lot din A0 Nord este aproape finalizat, dar nu poate fi pus în circulație. Care este motivul",
+        "url": "https://stirileprotv.ro/stiri/actualitate/un-lot-din-a0-nord-este-aproape-finalizat-dar-nu-poate-fi-pus-in-circulatie-care-este-motivul.html",
+        "summary": "Lucrările pe Lotul 4 al Autostrăzii A0 Nord, pe tronsonul Pantelimon – Glina, se apropie de recepție, constructorul român UMB Spedition ajungând la un stadiu fizic de aproximativ 99%.",
+        "publishedAt": "2026-06-27T09:23:50.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "db6bd7414fe8d3dc",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Ucraina a folosit rachete Flamingo împotriva unei fabrici de armament din Volgograd. Anunțul făcut de Zelenski",
+        "url": "https://stirileprotv.ro/stiri/international/ucraina-a-folosit-rachete-flamingo-impotriva-unei-fabrici-de-armament-din-volgograd-anuntul-facut-de-zelenski.html",
+        "summary": "Președintele ucrainean, Volodimir Zelenski, a confirmat sâmbătă că Forțele Armate ale Ucrainei au utilizat rachete de croazieră de tip Flamingo împotriva unei fabrici din cadrul complexului militaro-industrial al Rusiei din Volgograd, relatează EFE.",
+        "publishedAt": "2026-06-27T09:20:27.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "6e56ba9c8c052cbb",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "De aproape două luni, România este condusă de un Guvern demis în Parlament. De ce nu expiră interimatul miniștrilor",
+        "url": "https://stirileprotv.ro/stiri/politic/de-aproape-doua-luni-romania-este-condusa-de-un-guvern-interimar-de-ce-nu-expira-interimatul-ministrilor.html",
+        "summary": "La aproape două luni de la declanșarea crizei politice, România continuă să fie administrată de un Guvern interimar, în timp ce mai multe ministere sunt conduse de miniștri care au preluat și alte portofolii după demisia reprezentanților PSD.",
+        "publishedAt": "2026-06-27T09:20:10.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "4ea1e70f3f3af75d",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Cele mai spectaculoase destinații din Grecia cu apa de un albastru ireal. Locuri care par din altă lume",
+        "url": "https://stirileprotv.ro/stiri/travel/cele-mai-spectaculoase-destinatii-din-grecia-cu-apa-de-un-albastru-ireal-locuri-care-par-din-alta-lume.html",
+        "summary": "De la frumusețea naturală a insulei Corfu și a Muntelui Olimp până la comorile istorice ale Cretei, cele mai frumoase locuri de vizitat din Grecia sunt răspândite în întreaga țară.",
+        "publishedAt": "2026-06-27T08:41:06.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "03edb5f41737779b",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "INHGA: Debitul Dunării, sub media multianuală a lunilor iunie și iulie, în următoarea săptămână",
+        "url": "https://agerpres.ro/social/2026/06/27/inhga-debitul-dunarii-sub-media-multianuala-a-lunilor-iunie-si-iulie-in-urmatoarea-saptamana--1570927",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "59ff51eccc3ad7bb",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Ionuț Stroe răspunde conducerii PNL: A te adresa unei instanțe nu este 'sabotaj'",
+        "url": "https://agerpres.ro/politic/2026/06/27/ionut-stroe-raspunde-conducerii-pnl-a-te-adresa-unei-instante-nu-este-sabotaj--1570925",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "7ce7e69d16b7bc26",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Tenis: Turneul de la Eastbourne (WTA) s-a încheiat cu victoria americancei Madison Keys",
+        "url": "https://agerpres.ro/sport-extern/2026/06/27/tenis-turneul-de-la-eastbourne-wta-s-a-incheiat-cu-victoria-americancei-madison-keys--1570923",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "3ac5a71c35e97245",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "#Ucraina: Un avion ucrainean MiG-29 s-a prăbușit în regiunea Poltava; pilotul s-a catapultat în siguranță",
+        "url": "https://agerpres.ro/politic-extern/2026/06/27/ucraina-un-avion-ucrainean-mig-29-s-a-prabusit-in-regiunea-poltava-pilotul-s-a-catapultat-in-siguran--1570924",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "14017b513508802c",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Cod roșu de caniculă/ Ministerul Sănătății solicită activarea planurilor de măsuri pentru reducerea riscurilor medicale",
+        "url": "https://agerpres.ro/sanatate/2026/06/27/cod-rosu-de-canicula-ministerul-sanatatii-solicita-activarea-planurilor-de-masuri-pentru-reducerea-r--1570920",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "e4d1caefcc090237",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Danemarca înregistrează cea mai ridicată temperatură măsurată vreodată în țară",
+        "url": "https://agerpres.ro/planeta/2026/06/27/danemarca-inregistreaza-cea-mai-ridicata-temperatura-masurata-vreodata-in-tara--1570922",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "000857111b946ec9",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Bolojan: Execuția bugetară pe primele 5 luni arată că deficitul a scăzut; suntem pe drumul cel bun",
+        "url": "https://agerpres.ro/politic/2026/06/27/bolojan-executia-bugetara-pe-primele-5-luni-arata-ca-deficitul-a-scazut-suntem-pe-drumul-cel-bun--1570915",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "96d11b4591534b9e",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Daniel Learciu, arestat preventiv în dosarul procurorilor de la Constanța; este acuzat de cumpărare de influență",
+        "url": "https://agerpres.ro/justitie/2026/06/27/daniel-learciu-arestat-preventiv-in-dosarul-procurorilor-de-la-constanta-este-acuzat-de-cumparare-de--1570916",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "8e9df07c6a696439",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Canotaj: Echipajul masculin de patru rame al României, calificat în Finala A la Cupa Mondială de la Lucerna",
+        "url": "https://agerpres.ro/sport-extern/2026/06/27/canotaj-echipajul-masculin-de-patru-rame-al-romaniei-calificat-in-finala-a-la-cupa-mondiala-de-la-lu--1570917",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "83006f14ca693eab",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Atac israelian asupra sudului Libanului, în pofida acordului-cadru",
+        "url": "https://agerpres.ro/politic-extern/2026/06/27/atac-israelian-asupra-sudului-libanului-in-pofida-acordului-cadru--1570911",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "ade2c8acbd8c277b",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Trei sferturi dintre IMM-urile globale consideră că pot face față unui atac cibernetic (raport)",
+        "url": "https://agerpres.ro/economic/2026/06/27/trei-sferturi-dintre-imm-urile-globale-considera-ca-pot-face-fata-unui-atac-cibernetic-raport--1570918",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "bec16f3d676d5ada",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Predoiu și comisarul Michael McGrath au discutat despre statul de drept: România - un partener activ în dialogul european",
+        "url": "https://agerpres.ro/politic/2026/06/27/predoiu-si-comisarul-michael-mcgrath-au-discutat-despre-statul-de-drept-romania---un-partener-activ---1570909",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "3ca862ce1907a313",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Maia Sandu a discutat cu Înaltul Comisar OSCE pentru minoritățile naționale despre alegerile din Găgăuzia",
+        "url": "https://agerpres.ro/politic-extern/2026/06/27/maia-sandu-a-discutat-cu-inaltul-comisar-osce-pentru-minoritatile-nationale-despre-alegerile-din-gag--1570907",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "ec1ce8d1dfff2c26",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Olguța Vasilescu (PSD): Dacă am avea voturile de la UDMR, un Guvern Grindeanu ar trece fără probleme",
+        "url": "https://agerpres.ro/politic/2026/06/27/olguta-vasilescu-psd-daca-am-avea-voturile-de-la-udmr-un-guvern-grindeanu-ar-trece-fara-probleme--1570906",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "2555cba2b8ceab72",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Kiev: Nou atac cu drone asupra infrastructurii energetice din apropierea Moscovei",
+        "url": "https://agerpres.ro/politic-extern/2026/06/27/kiev-nou-atac-cu-drone-asupra-infrastructurii-energetice-din-apropierea-moscovei--1570905",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "1558f08cb88ddf49",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "PNL solicită respectarea dreptului la apărare și condamnă noua încercare de 'sabotare' a deciziilor adoptate de Congres",
+        "url": "https://agerpres.ro/politic/2026/06/27/pnl-solicita-respectarea-dreptului-la-aparare-si-condamna-noua-incercare-de-sabotare-a-deciziilor-ad--1570904",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "9516b2861fda57f3",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Fotbal: Franțuzoaica Stephanie Frappart se va alătura comisiei de arbitri a UEFA",
+        "url": "https://agerpres.ro/sport-extern/2026/06/27/fotbal-frantuzoaica-stephanie-frappart-se-va-alatura-comisiei-de-arbitri-a-uefa--1570903",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "db404f87296b6ce2",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Taifunul Mekkhala trece pe lângă Japonia, după taifunul Higos, soldat cu un mort și 3 răniți",
+        "url": "https://agerpres.ro/planeta/2026/06/27/taifunul-mekkhala-trece-pe-langa-japonia-dupa-taifunul-higos-soldat-cu-un-mort-si-3-raniti--1570902",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "f374badb01898fcc",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "REPORTAJ Mihnea Mihalache - călătoria unui tânăr în universul istoriei și al obiectelor vechi",
+        "url": "https://agerpres.ro/cultura-media/2026/06/27/reportaj-mihnea-mihalache---calatoria-unui-tanar-in-universul-istoriei-si-al-obiectelor-vechi--1570900",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "726c4be40de55274",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Tenis: Karolina Muchova a câștigat turneul de la Bad Homburg (WTA)",
+        "url": "https://agerpres.ro/sport-extern/2026/06/27/tenis-karolina-muchova-a-castigat-turneul-de-la-bad-homburg-wta--1570898",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "8563f584ffc72e93",
+        "sourceId": "economedia",
+        "sourceName": "Economedia",
+        "title": "FOTO | Cum arată Pasajul Basarab, la o săptămână după deschiderea șantierului: Se închide calea de pe sensul Bd. Titulescu – Șos. Grozăvești / Calendarul restricțiilor de circulație",
+        "url": "https://economedia.ro/foto-cum-arata-pasajul-basarab-la-o-saptamana-dupa-deschiderea-santierului-se-inchide-calea-de-pe-sensul-bd-titulescu-sos-grozavesti-calendarul-restrictiilor-de-circulatie.html",
+        "summary": "Pasajul Basarab, unul dintre cele mai importante puncte ale infrastructurii rutiere din București, a intrat în reabilitare în urmă cu o săptămână, pe 20 iunie, după după 15 ani în care nu s-au putut face reparații, deși avea o stare avansată de degradare. Primăria Municipiului București a postat sâmbătă, 27 iunie, mai multe fotografii pe […]",
+        "publishedAt": "2026-06-27T13:23:50.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "b3778416ae263d7b",
+        "sourceId": "economedia",
+        "sourceName": "Economedia",
+        "title": "GRAFIC | Ilie Bolojan, după scăderea deficitului cu peste 40% în primele 5 luni ale anului: Este prima corecție serioasă / Populismul, clientelismul și risipa ne pot readuce cu spatele la zid",
+        "url": "https://economedia.ro/grafic-ilie-bolojan-dupa-scaderea-deficitului-cu-peste-40-in-primele-5-luni-ale-anului-este-prima-corectie-serioasa-populismul-clientelismul-si-risipa-ne-pot-readuce-cu-spatele-la-zid.html",
+        "summary": "Premierul interimar Ilie Bolojan a transmis că scăderea deficitului bugetar în primele cinci luni ale anului cu 40%, comparativ cu aceeași perioadă a anului trecut, „este prima corecție serioasă după ani în care cheltuielile statului au crescut mult peste ceea ce producem”. Ministerul Finanțelor a publicat joi execuția bugetară la 31 mai 2026, care arată […]",
+        "publishedAt": "2026-06-27T12:52:02.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "f66be046b23427d0",
+        "sourceId": "economedia",
+        "sourceName": "Economedia",
+        "title": "Donald Trump amenință Europa cu tarife vamale de 100% dacă va implementa taxa pe servicii digitale: „Pentru absolut toate bunurile exportate”",
+        "url": "https://economedia.ro/donald-trump-ameninta-europa-cu-tarife-vamale-de-100-daca-va-implementa-taxa-pe-servicii-digitale-pentru-absolut-toate-bunurile-exportate.html",
+        "summary": "Președintele Statelor Unite, Donald Trump, amenință că va impune tarife vamale de 100% țărilor europene care aplică o taxă pe serviciile digitale, adăugând că acordurile comerciale existente vor fi anulate, transmite Euronews. Donald Trump a avertizat vineri, 26 iunie, că va aplica taxe vamale de 100% pentru importurile din orice țară care decide să taxeze […]",
+        "publishedAt": "2026-06-27T12:00:50.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "e7381b664eb36322",
+        "sourceId": "economedia",
+        "sourceName": "Economedia",
+        "title": "Mărfurile din porturi în T1 2026: Constanța a concentrat peste 95% din segmentul maritim, susținut de exportul de cereale / Resursele energetice domină importurile",
+        "url": "https://economedia.ro/marfurile-din-porturi-in-t1-2026-constanta-a-concentrat-peste-95-din-segmentul-maritim-sustinut-de-exportul-de-cereale-resursele-energetice-domina-importurile.html",
+        "summary": "Portul Constanța a concentrat peste 95% din volumului total al mărfurilor încărcate și descărcate din trimestrul 1 (T1) 2026, înregistrând un volum de peste 11 milioane de tone de mărfuri, arată datele Institutului Național de Statistică citate de Agerpres. Mărfurile încărcate și descărcate în porturile în care sunt operate nave maritime au totalizat 11,153 milioane […]",
+        "publishedAt": "2026-06-27T11:50:14.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "44b024cdad653bdd",
+        "sourceId": "economedia",
+        "sourceName": "Economedia",
+        "title": "Guvernul SUA își extinde controlul asupra inteligenței artificiale: OpenAI limitează lansarea noului model GPT-5.6",
+        "url": "https://economedia.ro/guvernul-sua-isi-extinde-controlul-asupra-inteligentei-artificiale-openai-limiteaza-lansarea-noului-model-gpt-5-6.html",
+        "summary": "Compania OpenAI a anunțat că va restricționa accesul preliminar la cele mai noi modele ale sale din seria GPT, ca urmare a unei solicitări directe venite din partea Guvernului Statelor Unite, relatează Business Insider. Reprezentanții companiei au precizat că au prezentat în avans autorităților americane capacitățile noii serii de modele GPT-5.6 — care include versiunile […]",
+        "publishedAt": "2026-06-27T10:59:14.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "1763625a2118e108",
+        "sourceId": "economedia",
+        "sourceName": "Economedia",
+        "title": "România a semnat acordul tripartit al UE pentru stocarea energiei: Europa vrea să ajungă la capacități de 200 GW până în 2030 / Planul pentru stabilizarea pieței și prețuri mai mici",
+        "url": "https://economedia.ro/romania-a-semnat-acordul-tripartit-al-ue-pentru-stocarea-energiei-europa-vrea-sa-ajunga-la-capacitati-de-200-gw-pana-in-2030-planul-pentru-stabilizarea-pietei-si-preturi-mai-mici.html",
+        "summary": "Secretarul de stat în Ministerul Energiei, Cristian Bușoi, a anunțat că România este semnatară a acordului tripartit privind stocarea energiei încheiat vineri, 26 iunie, la Luxemburg, în cadrul reniunii miniștrilor Energiei din Uniunea Europeană. Primul acord tripartit dedicat extinderii sectorului de stocare a energiei a fost semnat la Luxemburg, pe 26 iunie 2026, în marja […]",
+        "publishedAt": "2026-06-27T10:06:28.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "030d2d71ed903151",
+        "sourceId": "economedia",
+        "sourceName": "Economedia",
+        "title": "VIDEO | Autostrada Unirii A8. Secțiunea Târgu Mureș – Miercurea Nirajului, realizată 50%: A început așternerea primului strat de asfalt",
+        "url": "https://economedia.ro/video-autostrada-unirii-a8-sectiunea-targu-mures-miercurea-nirajului-realizata-50-a-inceput-asternerea-primului-strat-de-asfalt.html",
+        "summary": "Lucrările de pe primul lot al Autostrăzii Unirii, între Târgu Mureș și Miercurea Nirajului, se află într-un stadiu fizic de realizare de 50%, anunță secretarul de stat în Ministerul Transporturilor Horațiu Cosma. Pe șantier lucrează simultan pe întregul traseu aproape 800 de muncitori și peste 700 de utilaje. Secretarul de stat în Ministerul Transporturilor Horațiu […]",
+        "publishedAt": "2026-06-27T09:23:59.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "cc7e0bd29fd2528c",
+        "sourceId": "edupedu",
+        "sourceName": "Edupedu",
+        "title": "DOCUMENT Cerere vizualizare lucrare Evaluare Națională 2026. Cererile se depun doar pe 1 iulie, după publicarea rezultatelor și elevii nu primesc explicații privind notarea – precizări ISJ Timiș",
+        "url": "https://www.edupedu.ro/document-cerere-vizualizare-lucrare-evaluare-nationala-2026-cererile-se-depun-doar-pe-1-iulie-dupa-publicarea-rezultatelor-si-elevii-nu-primesc-explicatii-privind-notarea-precizari-isj-timis/",
+        "summary": "https://cdn.edupedu.ro/wp-content/uploads/2026/06/dreamstime_m_83842180.jpg\nElevii care au susținut Evaluarea Națională 2026 își pot vizualiza lucrările înainte de depunerea contestațiilor, însă vizualizarea „are un caracter strict informativ și nu echivalează cu recorectarea și nu primesc…",
+        "publishedAt": "2026-06-27T13:14:35.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "3cf81dde6a141c53",
+        "sourceId": "edupedu",
+        "sourceName": "Edupedu",
+        "title": "EXCLUSIV Lista orașelor sub caniculă extremă la Bacalaureat 2026. ANM: până la 40°C în ziua probei la Limba română și temperaturi maxime recorduri absolute ale lunii iunie",
+        "url": "https://www.edupedu.ro/exclusiv-lista-oraselor-sub-canicula-extrema-la-bacalaureat-2026-anm-pana-la-40c-in-ziua-probei-la-limba-romana-si-temperaturi-maxime-recorduri-absolute-ale-lunii-iunie/",
+        "summary": "https://cdn.edupedu.ro/wp-content/uploads/2026/06/avertizare-anm-29-30-iunie.jpg\nElevii vor susține luni, 29 iunie, proba scrisă la Limba română a examenului de Bacalaureat 2026 într-una dintre cele mai călduroase zile ale anului, conform datelor transmise de Administrația Națională…",
+        "publishedAt": "2026-06-27T13:00:00.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "8257613814ed8fb4",
+        "sourceId": "edupedu",
+        "sourceName": "Edupedu",
+        "title": "De ce trebuie să predăm Holocaustul? Lecțiile pe care le-am învățat la Stutthof / Op Ed Petruț Rizea",
+        "url": "https://www.edupedu.ro/de-ce-trebuie-sa-predam-holocaustul-lectiile-pe-care-le-am-invatat-la-stutthof-op-ed-petrut-rizea/",
+        "summary": "https://cdn.edupedu.ro/wp-content/uploads/2026/06/Petrut-Rizea-2024.jpg\nAm vizitat recent fostul lagăr de concentrare de la Stutthof, aflat în apropiere de Gdańsk, în Polonia. Am mers acolo cu informațiile pe care le aveam din cărți, documentare și…",
+        "publishedAt": "2026-06-27T12:30:00.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "dc7b9def2b4b6b08",
+        "sourceId": "edupedu",
+        "sourceName": "Edupedu",
+        "title": "Cum ne protejăm de caniculă. Recomandările Institutului Național de Sănătate Publică: insolația este o urgență medicală",
+        "url": "https://www.edupedu.ro/cum-ne-protejam-de-canicula-recomandarile-institutului-national-de-sanatate-publica-insolatia-este-o-urgenta-medicala/",
+        "summary": "https://cdn.edupedu.ro/wp-content/uploads/2026/06/dreamstime_m_79913493.jpg\nCanicula nu înseamnă doar disconfort, ci poate avea efecte grave asupra sănătății, avertizează Institutul Național de Sănătate Publică (INSP). Stresul termic poate agrava bolile cardiovasculare, diabetul, astmul și afecțiunile psihice,…",
+        "publishedAt": "2026-06-27T12:29:33.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "d3d209e3bce399cf",
+        "sourceId": "edupedu",
+        "sourceName": "Edupedu",
+        "title": "Expunerea la ecrane înainte de vârsta de doi ani poate afecta dezvoltarea limbajului, somnul și relația cu părinții – Studiu",
+        "url": "https://www.edupedu.ro/expunerea-la-ecrane-inainte-de-varsta-de-doi-ani-poate-afecta-dezvoltarea-limbajului-somnul-si-relatia-cu-parintii-studiu/",
+        "summary": "https://cdn.edupedu.ro/wp-content/uploads/2019/01/mobile-2639332_960_720.jpg\nCopiii cu vârsta sub doi ani nu ar trebui expuși în mod intenționat la telefoane mobile, tablete sau alte dispozitive digitale, pentru că utilizarea ecranelor în primii doi ani de…",
+        "publishedAt": "2026-06-27T08:00:00.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "dcf97cc7d1e5d045",
+        "sourceId": "edupedu",
+        "sourceName": "Edupedu",
+        "title": "Universitatea Româno-Americană organizează o conferință internațională despre drepturile omului, inteligență artificială și criminalitate organizată, cu experți ai ONU și ai UNODC printre invitați",
+        "url": "https://www.edupedu.ro/universitatea-romano-americana-organizeaza-o-conferinta-internationala-despre-drepturile-omului-inteligenta-artificiala-si-criminalitatea-organizata-cu-experti-ai-onu-si-ai-unodc-printre-invit/",
+        "summary": "https://cdn.edupedu.ro/wp-content/uploads/2025/05/Universitatea-Romano-Americana-3.jpg\nPeste 250 de cercetători, profesori universitari, practicieni și reprezentanți ai unor organizații internaționale participă, între 2 și 4 iulie, la conferința „Human Rights at Risk: Organised Crime at Sea and…",
+        "publishedAt": "2026-06-27T07:26:00.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "420ddf97d662e290",
+        "sourceId": "edupedu",
+        "sourceName": "Edupedu",
+        "title": "Un elev de liceu din Iași a creat o platformă care detectează știrile false: Analizând mesajele de la alegerile prezidențiale din 2024, credeam că sunt boți. Dar oamenii își postau copiii și familia, apoi îi înjurau pe cei care nu erau de aceeași părere",
+        "url": "https://www.edupedu.ro/un-elev-de-liceu-din-iasi-a-creat-o-platforma-care-detecteaza-stirile-false-analizand-mesajele-de-la-alegerile-prezidentiale-din-2024-credeam-ca-sunt-boti-dar-oamenii-isi-postau-copiii-si-familia/",
+        "summary": "https://cdn.edupedu.ro/wp-content/uploads/2021/12/dreamstime_m_135498632-e1640102403927.jpg\nRareș Oancea, elev în clasa a X-a la Colegiul Național „Mihai Eminescu”, a lansat TruthSeeker, o platformă bazată pe inteligență artificială care analizează articole, imagini și videoclipuri pentru a identifica…",
+        "publishedAt": "2026-06-27T07:25:00.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
       }
     ],
     "preparedArticles": [
@@ -32836,11 +33576,751 @@
         "summary": "https://cdn.edupedu.ro/wp-content/uploads/2026/06/proces-verbal-sanctionare-candidat-bacalaureat-2026-isj-hunedoara.jpg\nEliminarea unui candidat de la examenul de Bacalaureat 2026 trebuie fundamentată pe dovezi obiective și documentată riguros, pentru a reduce riscul anulării măsurii în instanță, conform unei informări juridice transmisă…",
         "publishedAt": "2026-06-27T05:23:12.000Z",
         "fetchedAt": "2026-06-27T08:41:51.240Z"
+      },
+      {
+        "id": "d1d000a831393aa3",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "Cum explică Eugen Tomac poza de la Bruxelles în care apare alături de președinte și directorul SPP",
+        "url": "https://www.mediafax.ro/stirile-zilei/cum-explica-eugen-tomac-poza-de-la-bruxelles-in-care-apare-alaturi-de-presedinte-si-directorul-spp-23762687",
+        "summary": "Fostul premier desemnat, Eugen Tomac, a explicat sâmbătă fotografia surprinsă la Bruxelles, în care apare alături de președintele Nicușor Dan și directorul SPP, Lucian Pahonțu, precizând că legătura dintre cei doi este „strict instituțională”.",
+        "publishedAt": "2026-06-27T13:49:15.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "acea6c73bb425dd3",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "Județul Constanța a pierdut finanțări de 150 de milioane de euro din PNRR. Printre cele 60 de proiecte, un spital nou",
+        "url": "https://www.mediafax.ro/economic/judetul-constanta-a-pierdut-finantari-de-150-de-milioane-de-euro-din-pnrr-printre-cele-60-de-proiecte-un-spital-nou-23762677",
+        "summary": "La nivelul județului Constanța, 60 de proiecte au pierdut finanțarea prin Planul Național de Redresare și Reziliență (PNRR), valoarea totală fiind de aproape 150 de milioane de euro.",
+        "publishedAt": "2026-06-27T13:37:13.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "135b78f84ec2e9cf",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "Două furtuni tropicale lovesc Japonia / Un mort, răniți și inundații după ploile torențiale",
+        "url": "https://www.mediafax.ro/externe/doua-furtuni-tropicale-lovesc-japonia-un-mort-raniti-si-inundatii-dupa-ploile-torentiale-23762678",
+        "summary": "Două furtuni tropicale au lovit Japonia în plin sezon ploios, provocând inundații și alunecări de teren în mai multe regiuni. Un bărbat a murit, alte trei persoane au fost rănite, iar zeci de locuințe au fost inundate după ploile torențiale.",
+        "publishedAt": "2026-06-27T13:28:21.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "49bdc330f2ac65cd",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "Iran ripostează, lansând atacuri asupra mai multor ținte militare americane din Orientul Mijlociu",
+        "url": "https://www.mediafax.ro/stirile-zilei/iran-riposteaza-lansand-atacuri-asupra-mai-multor-tinte-militare-americane-din-orientul-mijlociu-23762672",
+        "summary": "Autoritățile iraniene au anunțat sâmbătă că au lansat mai multe atacuri asupra unor ținte militare americane din regiunea Orientului, ca ripostă la atacurile lansate de Statele Unit în zona Strâmtorii Ormuz. Acesta este primul schimb de focuri de la încheierea unui acord-cadru pentru încetarea ostilităților.",
+        "publishedAt": "2026-06-27T12:54:46.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "97f5ac61095f9be3",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "Olguța Vasilescu, despre Siegfried: „Românii o să-și scrântească limba până îi pronunță numele”",
+        "url": "https://www.mediafax.ro/politic/olguta-vasilescu-despre-siegfried-romanii-o-sa-si-scranteasca-limba-pana-ii-pronunta-numele-23762669",
+        "summary": "Lia Olguța Vasilescu a ironizat sâmbătă propunerea PNL pentru funcția de premier, făcând trimitere la numele europarlamentarului Siegfried Mureșan. Primarul Craiovei a spus că românii „o să-și scrântească limba” încercând să-i pronunțe numele și l-a acuzat pe liderul PNL, Ilie Bolojan, că vrea să aducă la Palatul Victoria „un om care habar n-are cum se trăiește în România”.",
+        "publishedAt": "2026-06-27T12:51:02.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "a9d173acc8692b77",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "PSD forțează instalarea lui Grindeanu la Palatul Victoria: „Avem programul de guvernare pregătit”",
+        "url": "https://www.mediafax.ro/politic/psd-forteaza-instalarea-lui-grindeanu-la-palatul-victoria-avem-programul-de-guvernare-pregatit-23762667",
+        "summary": "Vicepreședintele social-democrat Victor Negrescu spune că partidul are deja un program de guvernare pentru varianta în care Sorin Grindeanu ar fi desemnat prim-ministru și promite că PSD nu va accepta măsuri de austeritate.",
+        "publishedAt": "2026-06-27T12:45:47.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "72d3be3e8fa0f1f8",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "Laura Vicol i-a făcut plângere penală lui Siegfried Mureșan, după o postare a acestuia pe Facebook: „Fiecare răspunde pentru propriile cuvinte”",
+        "url": "https://www.mediafax.ro/politic/laura-vicol-i-a-facut-plangere-penala-lui-siegfried-muresan-dupa-o-postare-a-acestuia-pe-facebook-fiecare-raspunde-pentru-propriile-cuvinte-23762658",
+        "summary": "Laura Vicol spune că a depus plângere penală împotriva europarlamentarului Siegfried Mureșan, după ce acesta a asociat-o cu Nordis într-o postare pe Facebook. Fosta deputată afirmă că mesajul face parte dintr-o campanie de stigmatizare care durează de aproape doi ani.",
+        "publishedAt": "2026-06-27T12:31:23.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "5e468b8c0adfa2a3",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "Ilie Bolojan, reacție la execuția bugetară pe cinci luni: Deficitul bugetar al României a scăzut cu peste 40%. În prima etapă a tratamentului poate să-ți fie mai rău",
+        "url": "https://www.mediafax.ro/stirile-zilei/ilie-bolojan-reactie-la-executia-bugetara-pe-cinci-luni-deficitul-bugetar-al-romaniei-a-scazut-cu-peste-40-in-prima-etapa-a-tratamentului-poate-sa-ti-fie-mai-rau-23762660",
+        "summary": "Premierul interimar al României, Ilie Bolojan, a reacționat sâmbătă la execuția bugetară pe primele cinci luni ale anului care indică o scădere a deficitului cu peste 40%. Acesta a comparat efortul cu tratarea unei boli, precizând: „în prima etapă a tratamentului poate să-ți fie mai rău”.",
+        "publishedAt": "2026-06-27T12:23:02.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "a37b96201d0e3d17",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "Tomac, despre relația președinte-premier: Ar fi funcționat mult mai bine dacă comunicarea ar fi fost mult mai strânsă",
+        "url": "https://www.mediafax.ro/politic/tomac-despre-relatia-presedinte-premier-ar-fi-functionat-mult-mai-bine-daca-comunicarea-ar-fi-fost-mult-mai-stransa-23762655",
+        "summary": "Consilierul prezidențial Eugen Tomac a spus sâmbătă că relația dintre președintele Nicușor Dan și premierul Ilie Bolojan ar fi fost mai bună dacă și comunicarea ar fi fost mai strânsă.",
+        "publishedAt": "2026-06-27T11:42:46.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "df874289d84e3e8b",
+        "sourceId": "mediafax",
+        "sourceName": "Mediafax",
+        "title": "Eugen Tomac dezvăluie culisele negocierilor pentru un guvern tehnocrat: „Ilie Bolojan a considerat că este o soluție de luat în seamă”",
+        "url": "https://www.mediafax.ro/politic/eugen-tomac-dezvaluie-culisele-negocierilor-pentru-un-guvern-tehnocrat-ilie-bolojan-a-considerat-ca-este-o-solutie-de-luat-in-seama-23762653",
+        "summary": "Consilierul prezidențial și fostul premier desemnat Eugen Tomac susține că președintele PNL, Ilie Bolojan, nu a respins din start ideea unui guvern tehnocrat, ba chiar a apreciat-o, în cadrul consultărilor de la Palatul Cotroceni, drept „o soluție de luat în seamă”.",
+        "publishedAt": "2026-06-27T11:40:04.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "0eced796735c57e8",
+        "sourceId": "biziday",
+        "sourceName": "Biziday",
+        "title": "Ilie Bolojan transmite că deficitul bugetar al României a scăzut cu peste 40% în primele cinci luni ale acestui an, respectiv cu peste 28 de miliarde de lei față de aceeași perioadă a anului trecut. Afirmă că “este prima corecţie serioasă după ani în care cheltuielile statului au crescut mult peste ceea ce producem”.",
+        "url": "https://www.biziday.ro/362102-2/",
+        "summary": "Premierul interimar, Ilie Bolojan, a precizat într-o postare pe Facebook că execuția bugetară din primele cinci luni ale anului 2026 arată o reducere semnificativă a deficitului bugetar, pe care o consideră primul semn al unei corecții fiscale “serioase”, după ani în care cheltuielile statului au depășit ritmul de creștere al economiei. Potrivit acestuia, execuția bugetară […]",
+        "publishedAt": "2026-06-27T12:42:48.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "f909b40e77debd45",
+        "sourceId": "biziday",
+        "sourceName": "Biziday",
+        "title": "Încă un petrolier a fost avariat sâmbătă de un proiectil neidentificat în Strâmtoarea Hormuz, după primul schimb de lovituri între SUA şi Iran, la doar o săptămână după semnarea acordului de la Geneva. Nu au fost înregistrate victime.",
+        "url": "https://www.biziday.ro/362089-2/",
+        "summary": "Agenția de Operațiuni Comerciale Maritime din Regatul Unit (UKMTO) transmite că a primit o sesizare privind un incident în Strâmtoarea Hormuz. Căpitanul unui petrolier a raportat că nava a fost lovită de un “proiectil neidentificat”. UKMTO a precizat că nava a suferit daune la puntea de comandă, dar toți membrii echipajului sunt în siguranță. De […]",
+        "publishedAt": "2026-06-27T11:40:45.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "0976796dfe5c8c43",
+        "sourceId": "biziday",
+        "sourceName": "Biziday",
+        "title": "Anthropic primește aprobarea SUA să pună la dispoziția a peste o sută de organizații americane “de încredere” modelul AI “Mythos 5”. Administrația Trump ridică, astfel, parțial interdicția impusă în urmă cu două săptămâni.",
+        "url": "https://www.biziday.ro/362079-2/",
+        "summary": "Anthropic a anunțat că guvernul federal permite folosirea modelului “Claude Mythos 5” de către “un grup de organizații din SUA care gestionează și apără infrastructura critică. (…) Continuăm să colaborăm cu guvernul pentru a extinde accesul la Mythos 5 și pentru a pune din nou la dispoziție Fable 5 pentru uz general”. Astfel, peste o […]",
+        "publishedAt": "2026-06-27T09:09:50.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "44df074f2653d510",
+        "sourceId": "dw-romania",
+        "sourceName": "DW România",
+        "title": "SUA și Iranul au reluat atacurile, în ciuda armistițiului",
+        "url": "https://www.dw.com/ro/sua-%C8%99i-iranul-au-reluat-atacurile-%C3%AEn-ciuda-armisti%C8%9Biului/a-77734094?maca=rum-rss-rom-all-1493-rdf",
+        "summary": "Președintele Trump acuză Teheranul că a lansat joi un atac cu drone asupra unei nave comerciale și că a încălcat acordul încheiat între SUA și Iran. Ca răspuns, armata americană a lansat noi lovituri asupra Iranului.",
+        "publishedAt": "2026-06-27T11:49:00.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "33406f944190f34f",
+        "sourceId": "dw-romania",
+        "sourceName": "DW România",
+        "title": "VW desfiinţează o mulţime de locuri de muncă",
+        "url": "https://www.dw.com/ro/vw-desfiin%C5%A3eaz%C4%83-o-mul%C5%A3ime-de-locuri-de-munc%C4%83/a-77733639?maca=rum-rss-rom-all-1493-rdf",
+        "summary": "Relatări apărute în mass media atrag atenţia fabricanţilor auto: concernul Volkswagen ar putea desfiinţa la nivel mondial până la 100.000 de locuri de muncă. În Germania sunt ameninţate cu dispariţia patru fabrici.",
+        "publishedAt": "2026-06-27T10:39:00.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "6d92aa175395d068",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Avertizare de Cod roșu de caniculă în România. Ministerul Sănătății activează măsuri din cauza temperaturilor extreme | HARTĂ",
+        "url": "https://stirileprotv.ro/stiri/actualitate/avertizare-de-cod-rosu-de-canicula-in-romania-ministerul-sanatatii-activeaza-masuri.html",
+        "summary": "Ministerul Sănătăţii solicită sâmbătă activarea planurilor de măsuri pentru reducerea riscurilor medicale cauzate de temperaturile extreme.",
+        "publishedAt": "2026-06-27T13:27:30.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "27ada4ec541cdccf",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Ministrul Miruță, atac la „știrile false” din Transporturi: șapte din nouă loturi SAFE de autostradă merg la firme românești",
+        "url": "https://stirileprotv.ro/stiri/actualitate/ministrul-miruta-atac-la-stirile-false-din-transporturi-sapte-din-noua-loturi-safe-de-autostrada-merg-la-firme-romanesti.html",
+        "summary": "Șapte din cele nouă loturi de autostradă finanțate prin programul european SAFE au fost atribuite unor companii din România.",
+        "publishedAt": "2026-06-27T13:12:57.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "e5d20876324910e4",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Reacția lui Eugen Tomac despre Nicușor Dan, după ce președintele a fost acuzat că este PSD-ist: „Este conştient”",
+        "url": "https://stirileprotv.ro/stiri/politic/reactia-lui-eugen-tomac-despre-nicusor-dan-dupa-ce-presedintele-a-fost-acuzat-ca-este-psd-ist-e-constient.html",
+        "summary": "Consilierul prezidențial și fostul candidat la postul de premier Eugen Tomac susține că Nicușor Dan nu este PSD-ist și explică faptul că șeful statului încearcă să păstreze unitatea partidelor pro-europene.",
+        "publishedAt": "2026-06-27T13:02:31.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "943289b30e49abda",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Marea Britanie schimbă regulile pentru refugiați. „Ce este „programul de sponsorizare”",
+        "url": "https://stirileprotv.ro/stiri/international/marea-britanie-schimba-regulile-pentru-refugiati-ce-este-programul-de-sponsorizare.html",
+        "summary": "Guvernul britanic vrea să permită anumitor companii şi organizaţii să sponsorizeze primirea de refugiaţi în Regatul Unit, în paralel cu o reformă care va înăspri regulile de azil, transmite sâmbătă AFP.",
+        "publishedAt": "2026-06-27T12:56:53.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "fb92f77592af7028",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "110.000 de euro, în patru tranșe, pentru un procuror. Daniel Dumitru Learciu, directorul AFIR Constanța, arestat de ÎCCJ",
+        "url": "https://stirileprotv.ro/justitie/110-000-de-euro-in-patru-transe-pentru-un-procuror-daniel-dumitru-learciu-directorul-afir-constanta-arestat-de-iccj.html",
+        "summary": "Daniel Dumitru Learciu, director executiv al Agenției pentru Finanțarea Investițiilor Rurale (AFIR) Constanța, a fost arestat preventiv sâmbătă pentru infracțiuni de corupție.",
+        "publishedAt": "2026-06-27T12:50:13.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "a1441957bac2c417",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Ilie Bolojan anunță o scădere de peste 40% a deficitului bugetar: „Suntem pe drumul cel bun”",
+        "url": "https://stirileprotv.ro/stiri/politic/bolojan-anunta-o-scadere-de-peste-40-a-deficitului-bugetar-suntem-pe-drumul-cel-bun.html",
+        "summary": "Premierul interimar Ilie Bolojan precizează că execuţia bugetară pe primele 5 luni arată că deficitul bugetar al României a scăzut cu peste 40%, menţionând că este un semn clar că statul începe să cheltuiască mai aproape de ceea ce îşi permite.",
+        "publishedAt": "2026-06-27T12:44:04.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "19c3926e55de5f99",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Cele mai grave greșeli atunci când îți speli părul. Care este rutina corectă",
+        "url": "https://stirileprotv.ro/divers/cele-mai-grave-greseli-atunci-cand-iti-speli-parul-care-este-rutina-corecta.html",
+        "summary": "Experții au avertizat că, dacă ieși din duș și îți usuci părul frecându-l cu un prosop, s-ar putea să-ți distrugi părul.",
+        "publishedAt": "2026-06-27T12:37:31.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "f732d963934ce6ac",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Milioane de oameni îl beau pentru a combate stresul. Ce spun experții despre „cocktailul pentru cortizol”",
+        "url": "https://stirileprotv.ro/divers/milioane-de-oameni-il-beau-pentru-a-combate-stresul-ce-spun-expertii-despre-cocktailul-pentru-cortizol.html",
+        "summary": "Tot mai mulți oameni caută soluții rapide pentru stres, iar „cocktailul pentru cortizol” a ajuns rapid în atenția celor care vor să se simtă mai energici și mai echilibrați.",
+        "publishedAt": "2026-06-27T12:34:42.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "e9d8aa3eb791be5d",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Afirmația cu care șeful NATO a deranjat unul dintre aliații săi. Cui i-ar fi cauzat Mark Rutte o problemă politică",
+        "url": "https://stirileprotv.ro/stiri/international/afirmatia-cu-care-seful-nato-a-deranjat-unul-dintre-aliatii-sai-sprijinul-masiv-care-ar-fi-creat-o-problema-politica.html",
+        "summary": "Prim-ministrul Italiei, Giorgia Meloni, l-a acuzat joi pe secretarul general al NATO, Mark Rutte, că a oferit o descriere confuză atunci când a afirmat că țara sa a oferit un sprijin „masiv” atacurilor americane și israeliene împotriva Iranului.",
+        "publishedAt": "2026-06-27T12:31:16.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "8f3e1858af53a59f",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Victor Negrescu, despre Ilie Bolojan: „Nu are calitățile pentru a exercita democratic puterea (...) exercitată discreționar”",
+        "url": "https://stirileprotv.ro/stiri/politic/victor-negrescu-despre-ilie-bolojan-nu-are-calitatile-pentru-a-exercita-democratic-puterea-exercitata-discretionar.html",
+        "summary": "Europarlamentarul PSD Victor Negrescu l-a criticat dur sâmbătă pe președintele PNL, Ilie Bolojan, afirmând că acesta „nu are calitățile pentru a deține și exercita corect, democratic, puterea”.",
+        "publishedAt": "2026-06-27T12:15:20.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "ab889e984d35307a",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Un mort și 13 răniți în urma impactului avionului de mici dimensiuni cu cea mai înaltă clădire din Beijing",
+        "url": "https://stirileprotv.ro/stiri/international/un-mort-si-13-raniti-in-urma-impactului-avionului-de-mici-dimensiuni-cu-cea-mai-inalta-cladire-din-beijing.html",
+        "summary": "Pilotul avionului de mici dimensiuni care a intrat într-un zgârie-nori, vineri, la Beijing, a murit, iar alte 13 persoane au fost rănite, anunţă sâmbătă autorităţile chineze, relatează The Associated Press.",
+        "publishedAt": "2026-06-27T11:53:41.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "9627ebd28ed21112",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Întreținerea piscinei pas cu pas. Cum se curăță pe timp de vară",
+        "url": "https://stirileprotv.ro/divers/intretinerea-piscinei-pas-cu-pas-cum-se-curata-pe-timp-de-vara.html",
+        "summary": "Întreținerea piscinei nu trebuie să fie complicată. Trebuie să doar să urmezi câțiva pași pentru a o păstra curată, pe timp de vară.",
+        "publishedAt": "2026-06-27T11:49:58.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "76f7d640064f5514",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "„Prietenii lui Putin”, informați de Ucraina cu privire la o posibilă întâlnire privind încetarea războiului. Cine a răspuns",
+        "url": "https://stirileprotv.ro/stiri/international/zelenski-prietenii-lui-putin-au-fost-informati-de-noi-cu-privire-la-o-posibila-intalnire-privind-incetarea-razboiului.html",
+        "summary": "Președintele ucrainean Volodimir Zelenski a declarat că Ucraina a transmis propuneri „prietenilor lui Putin” cu privire la o posibilă întâlnire privind încetarea războiului.",
+        "publishedAt": "2026-06-27T11:46:54.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "9459b856aebbd4c6",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Olguța Vasilescu: Voturile obținute de Adrian Veștea, punctul de plecare pentru guvernul lui Sorin Grindeanu",
+        "url": "https://stirileprotv.ro/stiri/politic/olguta-vasilescu-voturile-obtinute-de-vestea-punctul-de-plecare-pentru-guvernul-psd-partidul-care-ar-garanta-investirea.html",
+        "summary": "Olguta Vasilescu a explicat că voturile obținute de Adrian Veștea atunci când a încercat să obțină învestitura cabinetului său în Parlament reprezintă un punct de pornire pentru guvernul lui Sorin Grindeanu.",
+        "publishedAt": "2026-06-27T11:41:33.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "ec2ebfc136345bc5",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Un petrolier a fost lovit în Strâmtoarea Ormuz de un proiectil neidentificat",
+        "url": "https://stirileprotv.ro/stiri/international/un-petrolier-a-fost-lovit-in-stramtoarea-ormuz-de-un-proiectil-neidentificat.html",
+        "summary": "Un petrolier a fost lovit de un proiectil neidentificat în Strâmtoarea Ormuz, a anunţat sâmbătă agenţia maritimă britanică UKMTO, după primul schimb de lovituri între SUA şi Iran de la încheierea memorandumului de înţelegere la mijlocul lunii iunie.",
+        "publishedAt": "2026-06-27T11:09:49.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "4407891930504696",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Vacanțe în Europa cu familia. Top destinații de vizitat în 2026",
+        "url": "https://stirileprotv.ro/stiri/travel/vacante-in-europa-cu-familia-top-destinatii-de-vizitat-in-2026.html",
+        "summary": "Fie că îți dorești aventuri pline de adrenalină alături de adolescenți sau o săptămână relaxantă în compania copiilor mici și a bunicilor, Europa oferă o varietate impresionantă de opțiuni.",
+        "publishedAt": "2026-06-27T10:34:26.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "d2961dff8691d6dd",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Cum gestionezi stresul înainte de BAC. Metode eficiente pentru elevi",
+        "url": "https://stirileprotv.ro/stiri/bacalaureat/cum-gestionezi-stresul-inainte-de-bac-metode-eficiente-pentru-elevi.html",
+        "summary": "Nivelul de stres poate fi mai ridicat decât de obicei în perioada examenelor. Un anumit nivel de stres te poate ajuta să rămâi motivat și concentrat, dar prea mult stres poate deveni dăunător.",
+        "publishedAt": "2026-06-27T10:33:35.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "4032c0ef1073b3f9",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Simona Bucura-Oprescu a fost aleasă preşedinte al Organizaţiei de Femei a PSD. 443 de delegate au votat pentru",
+        "url": "https://stirileprotv.ro/stiri/politic/simona-bucura-oprescu-aleasa-presedinte-al-organizatiei-de-femei-a-psd-443-de-voturi-pentru.html",
+        "summary": "Simona Bucura-Oprescu, deputat şi fost ministru al Muncii, a fost aleasă, sâmbătă, în funcţia de conducere a Organizaţiei de Femei a Partidului Social Democrat.",
+        "publishedAt": "2026-06-27T10:28:01.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "434dca9ce7ed9717",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "PSD are deja programul de guvernare pentru Sorin Grindeanu, dar încă nu și-a asigurat o majoritate în Parlament",
+        "url": "https://stirileprotv.ro/stiri/politic/psd-are-deja-programul-de-guvernare-pentru-sorin-grindeanu-dar-inca-nu-si-a-asigurat-o-majoritate-in-parlament.html",
+        "summary": "PSD a terminat de scris programul de guvernare, asta înainte ca Sorin Grindeanu să aibă o majoritate care să-i asigure învestirea în Parlament.",
+        "publishedAt": "2026-06-27T10:04:48.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "aaa83957a43ddf11",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "„Țara ascunsă” de sub Alpi: cum a construit Elveția una dintre cele mai impresionante rețele de tuneluri din lume",
+        "url": "https://stirileprotv.ro/stiri/international/tara-ascunsa-de-sub-alpi-cum-a-construit-elvetia-una-dintre-cele-mai-impresionante-retele-de-tuneluri-din-lume.html",
+        "summary": "Subteranul Elveției reprezintă o uriașă rețea construită sub munți, cu peste 1.400 de tuneluri care străbat întreaga țară.",
+        "publishedAt": "2026-06-27T09:59:04.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "114a7aefe3340b83",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Explicația lui Bogan Ivan, după accidentul rutier din Bistrița: „Eu am fost de vină pentru că nu am acordat prioritate”",
+        "url": "https://stirileprotv.ro/stiri/actualitate/explicatia-lui-bogan-ivan-dupa-accidentul-rutier-din-bistrita-eu-am-fost-de-vina-pentru-ca-nu-am-acordat-prioritate.html",
+        "summary": "Deputatul PSD Bogdan Ivan a declarat sâmbătă că a fost implicat zilele trecute într-un accident rutier în Bistriţa, care s-a produs din vina lui.",
+        "publishedAt": "2026-06-27T09:54:32.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "e324fe27428fbc9a",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Un lot din A0 Nord este aproape finalizat, dar nu poate fi pus în circulație. Care este motivul",
+        "url": "https://stirileprotv.ro/stiri/actualitate/un-lot-din-a0-nord-este-aproape-finalizat-dar-nu-poate-fi-pus-in-circulatie-care-este-motivul.html",
+        "summary": "Lucrările pe Lotul 4 al Autostrăzii A0 Nord, pe tronsonul Pantelimon – Glina, se apropie de recepție, constructorul român UMB Spedition ajungând la un stadiu fizic de aproximativ 99%.",
+        "publishedAt": "2026-06-27T09:23:50.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "db6bd7414fe8d3dc",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Ucraina a folosit rachete Flamingo împotriva unei fabrici de armament din Volgograd. Anunțul făcut de Zelenski",
+        "url": "https://stirileprotv.ro/stiri/international/ucraina-a-folosit-rachete-flamingo-impotriva-unei-fabrici-de-armament-din-volgograd-anuntul-facut-de-zelenski.html",
+        "summary": "Președintele ucrainean, Volodimir Zelenski, a confirmat sâmbătă că Forțele Armate ale Ucrainei au utilizat rachete de croazieră de tip Flamingo împotriva unei fabrici din cadrul complexului militaro-industrial al Rusiei din Volgograd, relatează EFE.",
+        "publishedAt": "2026-06-27T09:20:27.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "6e56ba9c8c052cbb",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "De aproape două luni, România este condusă de un Guvern demis în Parlament. De ce nu expiră interimatul miniștrilor",
+        "url": "https://stirileprotv.ro/stiri/politic/de-aproape-doua-luni-romania-este-condusa-de-un-guvern-interimar-de-ce-nu-expira-interimatul-ministrilor.html",
+        "summary": "La aproape două luni de la declanșarea crizei politice, România continuă să fie administrată de un Guvern interimar, în timp ce mai multe ministere sunt conduse de miniștri care au preluat și alte portofolii după demisia reprezentanților PSD.",
+        "publishedAt": "2026-06-27T09:20:10.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "4ea1e70f3f3af75d",
+        "sourceId": "stirileprotv",
+        "sourceName": "Știrile ProTV",
+        "title": "Cele mai spectaculoase destinații din Grecia cu apa de un albastru ireal. Locuri care par din altă lume",
+        "url": "https://stirileprotv.ro/stiri/travel/cele-mai-spectaculoase-destinatii-din-grecia-cu-apa-de-un-albastru-ireal-locuri-care-par-din-alta-lume.html",
+        "summary": "De la frumusețea naturală a insulei Corfu și a Muntelui Olimp până la comorile istorice ale Cretei, cele mai frumoase locuri de vizitat din Grecia sunt răspândite în întreaga țară.",
+        "publishedAt": "2026-06-27T08:41:06.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "03edb5f41737779b",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "INHGA: Debitul Dunării, sub media multianuală a lunilor iunie și iulie, în următoarea săptămână",
+        "url": "https://agerpres.ro/social/2026/06/27/inhga-debitul-dunarii-sub-media-multianuala-a-lunilor-iunie-si-iulie-in-urmatoarea-saptamana--1570927",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "59ff51eccc3ad7bb",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Ionuț Stroe răspunde conducerii PNL: A te adresa unei instanțe nu este 'sabotaj'",
+        "url": "https://agerpres.ro/politic/2026/06/27/ionut-stroe-raspunde-conducerii-pnl-a-te-adresa-unei-instante-nu-este-sabotaj--1570925",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "7ce7e69d16b7bc26",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Tenis: Turneul de la Eastbourne (WTA) s-a încheiat cu victoria americancei Madison Keys",
+        "url": "https://agerpres.ro/sport-extern/2026/06/27/tenis-turneul-de-la-eastbourne-wta-s-a-incheiat-cu-victoria-americancei-madison-keys--1570923",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "3ac5a71c35e97245",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "#Ucraina: Un avion ucrainean MiG-29 s-a prăbușit în regiunea Poltava; pilotul s-a catapultat în siguranță",
+        "url": "https://agerpres.ro/politic-extern/2026/06/27/ucraina-un-avion-ucrainean-mig-29-s-a-prabusit-in-regiunea-poltava-pilotul-s-a-catapultat-in-siguran--1570924",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "14017b513508802c",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Cod roșu de caniculă/ Ministerul Sănătății solicită activarea planurilor de măsuri pentru reducerea riscurilor medicale",
+        "url": "https://agerpres.ro/sanatate/2026/06/27/cod-rosu-de-canicula-ministerul-sanatatii-solicita-activarea-planurilor-de-masuri-pentru-reducerea-r--1570920",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "e4d1caefcc090237",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Danemarca înregistrează cea mai ridicată temperatură măsurată vreodată în țară",
+        "url": "https://agerpres.ro/planeta/2026/06/27/danemarca-inregistreaza-cea-mai-ridicata-temperatura-masurata-vreodata-in-tara--1570922",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "000857111b946ec9",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Bolojan: Execuția bugetară pe primele 5 luni arată că deficitul a scăzut; suntem pe drumul cel bun",
+        "url": "https://agerpres.ro/politic/2026/06/27/bolojan-executia-bugetara-pe-primele-5-luni-arata-ca-deficitul-a-scazut-suntem-pe-drumul-cel-bun--1570915",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "96d11b4591534b9e",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Daniel Learciu, arestat preventiv în dosarul procurorilor de la Constanța; este acuzat de cumpărare de influență",
+        "url": "https://agerpres.ro/justitie/2026/06/27/daniel-learciu-arestat-preventiv-in-dosarul-procurorilor-de-la-constanta-este-acuzat-de-cumparare-de--1570916",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "8e9df07c6a696439",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Canotaj: Echipajul masculin de patru rame al României, calificat în Finala A la Cupa Mondială de la Lucerna",
+        "url": "https://agerpres.ro/sport-extern/2026/06/27/canotaj-echipajul-masculin-de-patru-rame-al-romaniei-calificat-in-finala-a-la-cupa-mondiala-de-la-lu--1570917",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "83006f14ca693eab",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Atac israelian asupra sudului Libanului, în pofida acordului-cadru",
+        "url": "https://agerpres.ro/politic-extern/2026/06/27/atac-israelian-asupra-sudului-libanului-in-pofida-acordului-cadru--1570911",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "ade2c8acbd8c277b",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Trei sferturi dintre IMM-urile globale consideră că pot face față unui atac cibernetic (raport)",
+        "url": "https://agerpres.ro/economic/2026/06/27/trei-sferturi-dintre-imm-urile-globale-considera-ca-pot-face-fata-unui-atac-cibernetic-raport--1570918",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "bec16f3d676d5ada",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Predoiu și comisarul Michael McGrath au discutat despre statul de drept: România - un partener activ în dialogul european",
+        "url": "https://agerpres.ro/politic/2026/06/27/predoiu-si-comisarul-michael-mcgrath-au-discutat-despre-statul-de-drept-romania---un-partener-activ---1570909",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "3ca862ce1907a313",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Maia Sandu a discutat cu Înaltul Comisar OSCE pentru minoritățile naționale despre alegerile din Găgăuzia",
+        "url": "https://agerpres.ro/politic-extern/2026/06/27/maia-sandu-a-discutat-cu-inaltul-comisar-osce-pentru-minoritatile-nationale-despre-alegerile-din-gag--1570907",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "ec1ce8d1dfff2c26",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Olguța Vasilescu (PSD): Dacă am avea voturile de la UDMR, un Guvern Grindeanu ar trece fără probleme",
+        "url": "https://agerpres.ro/politic/2026/06/27/olguta-vasilescu-psd-daca-am-avea-voturile-de-la-udmr-un-guvern-grindeanu-ar-trece-fara-probleme--1570906",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "2555cba2b8ceab72",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Kiev: Nou atac cu drone asupra infrastructurii energetice din apropierea Moscovei",
+        "url": "https://agerpres.ro/politic-extern/2026/06/27/kiev-nou-atac-cu-drone-asupra-infrastructurii-energetice-din-apropierea-moscovei--1570905",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "1558f08cb88ddf49",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "PNL solicită respectarea dreptului la apărare și condamnă noua încercare de 'sabotare' a deciziilor adoptate de Congres",
+        "url": "https://agerpres.ro/politic/2026/06/27/pnl-solicita-respectarea-dreptului-la-aparare-si-condamna-noua-incercare-de-sabotare-a-deciziilor-ad--1570904",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "9516b2861fda57f3",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Fotbal: Franțuzoaica Stephanie Frappart se va alătura comisiei de arbitri a UEFA",
+        "url": "https://agerpres.ro/sport-extern/2026/06/27/fotbal-frantuzoaica-stephanie-frappart-se-va-alatura-comisiei-de-arbitri-a-uefa--1570903",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "db404f87296b6ce2",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Taifunul Mekkhala trece pe lângă Japonia, după taifunul Higos, soldat cu un mort și 3 răniți",
+        "url": "https://agerpres.ro/planeta/2026/06/27/taifunul-mekkhala-trece-pe-langa-japonia-dupa-taifunul-higos-soldat-cu-un-mort-si-3-raniti--1570902",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "f374badb01898fcc",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "REPORTAJ Mihnea Mihalache - călătoria unui tânăr în universul istoriei și al obiectelor vechi",
+        "url": "https://agerpres.ro/cultura-media/2026/06/27/reportaj-mihnea-mihalache---calatoria-unui-tanar-in-universul-istoriei-si-al-obiectelor-vechi--1570900",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "726c4be40de55274",
+        "sourceId": "agerpres",
+        "sourceName": "Agerpres",
+        "title": "Tenis: Karolina Muchova a câștigat turneul de la Bad Homburg (WTA)",
+        "url": "https://agerpres.ro/sport-extern/2026/06/27/tenis-karolina-muchova-a-castigat-turneul-de-la-bad-homburg-wta--1570898",
+        "summary": "",
+        "publishedAt": "2026-06-27T13:52:06.031Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "8563f584ffc72e93",
+        "sourceId": "economedia",
+        "sourceName": "Economedia",
+        "title": "FOTO | Cum arată Pasajul Basarab, la o săptămână după deschiderea șantierului: Se închide calea de pe sensul Bd. Titulescu – Șos. Grozăvești / Calendarul restricțiilor de circulație",
+        "url": "https://economedia.ro/foto-cum-arata-pasajul-basarab-la-o-saptamana-dupa-deschiderea-santierului-se-inchide-calea-de-pe-sensul-bd-titulescu-sos-grozavesti-calendarul-restrictiilor-de-circulatie.html",
+        "summary": "Pasajul Basarab, unul dintre cele mai importante puncte ale infrastructurii rutiere din București, a intrat în reabilitare în urmă cu o săptămână, pe 20 iunie, după după 15 ani în care nu s-au putut face reparații, deși avea o stare avansată de degradare. Primăria Municipiului București a postat sâmbătă, 27 iunie, mai multe fotografii pe […]",
+        "publishedAt": "2026-06-27T13:23:50.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "b3778416ae263d7b",
+        "sourceId": "economedia",
+        "sourceName": "Economedia",
+        "title": "GRAFIC | Ilie Bolojan, după scăderea deficitului cu peste 40% în primele 5 luni ale anului: Este prima corecție serioasă / Populismul, clientelismul și risipa ne pot readuce cu spatele la zid",
+        "url": "https://economedia.ro/grafic-ilie-bolojan-dupa-scaderea-deficitului-cu-peste-40-in-primele-5-luni-ale-anului-este-prima-corectie-serioasa-populismul-clientelismul-si-risipa-ne-pot-readuce-cu-spatele-la-zid.html",
+        "summary": "Premierul interimar Ilie Bolojan a transmis că scăderea deficitului bugetar în primele cinci luni ale anului cu 40%, comparativ cu aceeași perioadă a anului trecut, „este prima corecție serioasă după ani în care cheltuielile statului au crescut mult peste ceea ce producem”. Ministerul Finanțelor a publicat joi execuția bugetară la 31 mai 2026, care arată […]",
+        "publishedAt": "2026-06-27T12:52:02.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "f66be046b23427d0",
+        "sourceId": "economedia",
+        "sourceName": "Economedia",
+        "title": "Donald Trump amenință Europa cu tarife vamale de 100% dacă va implementa taxa pe servicii digitale: „Pentru absolut toate bunurile exportate”",
+        "url": "https://economedia.ro/donald-trump-ameninta-europa-cu-tarife-vamale-de-100-daca-va-implementa-taxa-pe-servicii-digitale-pentru-absolut-toate-bunurile-exportate.html",
+        "summary": "Președintele Statelor Unite, Donald Trump, amenință că va impune tarife vamale de 100% țărilor europene care aplică o taxă pe serviciile digitale, adăugând că acordurile comerciale existente vor fi anulate, transmite Euronews. Donald Trump a avertizat vineri, 26 iunie, că va aplica taxe vamale de 100% pentru importurile din orice țară care decide să taxeze […]",
+        "publishedAt": "2026-06-27T12:00:50.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "e7381b664eb36322",
+        "sourceId": "economedia",
+        "sourceName": "Economedia",
+        "title": "Mărfurile din porturi în T1 2026: Constanța a concentrat peste 95% din segmentul maritim, susținut de exportul de cereale / Resursele energetice domină importurile",
+        "url": "https://economedia.ro/marfurile-din-porturi-in-t1-2026-constanta-a-concentrat-peste-95-din-segmentul-maritim-sustinut-de-exportul-de-cereale-resursele-energetice-domina-importurile.html",
+        "summary": "Portul Constanța a concentrat peste 95% din volumului total al mărfurilor încărcate și descărcate din trimestrul 1 (T1) 2026, înregistrând un volum de peste 11 milioane de tone de mărfuri, arată datele Institutului Național de Statistică citate de Agerpres. Mărfurile încărcate și descărcate în porturile în care sunt operate nave maritime au totalizat 11,153 milioane […]",
+        "publishedAt": "2026-06-27T11:50:14.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "44b024cdad653bdd",
+        "sourceId": "economedia",
+        "sourceName": "Economedia",
+        "title": "Guvernul SUA își extinde controlul asupra inteligenței artificiale: OpenAI limitează lansarea noului model GPT-5.6",
+        "url": "https://economedia.ro/guvernul-sua-isi-extinde-controlul-asupra-inteligentei-artificiale-openai-limiteaza-lansarea-noului-model-gpt-5-6.html",
+        "summary": "Compania OpenAI a anunțat că va restricționa accesul preliminar la cele mai noi modele ale sale din seria GPT, ca urmare a unei solicitări directe venite din partea Guvernului Statelor Unite, relatează Business Insider. Reprezentanții companiei au precizat că au prezentat în avans autorităților americane capacitățile noii serii de modele GPT-5.6 — care include versiunile […]",
+        "publishedAt": "2026-06-27T10:59:14.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "1763625a2118e108",
+        "sourceId": "economedia",
+        "sourceName": "Economedia",
+        "title": "România a semnat acordul tripartit al UE pentru stocarea energiei: Europa vrea să ajungă la capacități de 200 GW până în 2030 / Planul pentru stabilizarea pieței și prețuri mai mici",
+        "url": "https://economedia.ro/romania-a-semnat-acordul-tripartit-al-ue-pentru-stocarea-energiei-europa-vrea-sa-ajunga-la-capacitati-de-200-gw-pana-in-2030-planul-pentru-stabilizarea-pietei-si-preturi-mai-mici.html",
+        "summary": "Secretarul de stat în Ministerul Energiei, Cristian Bușoi, a anunțat că România este semnatară a acordului tripartit privind stocarea energiei încheiat vineri, 26 iunie, la Luxemburg, în cadrul reniunii miniștrilor Energiei din Uniunea Europeană. Primul acord tripartit dedicat extinderii sectorului de stocare a energiei a fost semnat la Luxemburg, pe 26 iunie 2026, în marja […]",
+        "publishedAt": "2026-06-27T10:06:28.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "030d2d71ed903151",
+        "sourceId": "economedia",
+        "sourceName": "Economedia",
+        "title": "VIDEO | Autostrada Unirii A8. Secțiunea Târgu Mureș – Miercurea Nirajului, realizată 50%: A început așternerea primului strat de asfalt",
+        "url": "https://economedia.ro/video-autostrada-unirii-a8-sectiunea-targu-mures-miercurea-nirajului-realizata-50-a-inceput-asternerea-primului-strat-de-asfalt.html",
+        "summary": "Lucrările de pe primul lot al Autostrăzii Unirii, între Târgu Mureș și Miercurea Nirajului, se află într-un stadiu fizic de realizare de 50%, anunță secretarul de stat în Ministerul Transporturilor Horațiu Cosma. Pe șantier lucrează simultan pe întregul traseu aproape 800 de muncitori și peste 700 de utilaje. Secretarul de stat în Ministerul Transporturilor Horațiu […]",
+        "publishedAt": "2026-06-27T09:23:59.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "cc7e0bd29fd2528c",
+        "sourceId": "edupedu",
+        "sourceName": "Edupedu",
+        "title": "DOCUMENT Cerere vizualizare lucrare Evaluare Națională 2026. Cererile se depun doar pe 1 iulie, după publicarea rezultatelor și elevii nu primesc explicații privind notarea – precizări ISJ Timiș",
+        "url": "https://www.edupedu.ro/document-cerere-vizualizare-lucrare-evaluare-nationala-2026-cererile-se-depun-doar-pe-1-iulie-dupa-publicarea-rezultatelor-si-elevii-nu-primesc-explicatii-privind-notarea-precizari-isj-timis/",
+        "summary": "https://cdn.edupedu.ro/wp-content/uploads/2026/06/dreamstime_m_83842180.jpg\nElevii care au susținut Evaluarea Națională 2026 își pot vizualiza lucrările înainte de depunerea contestațiilor, însă vizualizarea „are un caracter strict informativ și nu echivalează cu recorectarea și nu primesc…",
+        "publishedAt": "2026-06-27T13:14:35.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "3cf81dde6a141c53",
+        "sourceId": "edupedu",
+        "sourceName": "Edupedu",
+        "title": "EXCLUSIV Lista orașelor sub caniculă extremă la Bacalaureat 2026. ANM: până la 40°C în ziua probei la Limba română și temperaturi maxime recorduri absolute ale lunii iunie",
+        "url": "https://www.edupedu.ro/exclusiv-lista-oraselor-sub-canicula-extrema-la-bacalaureat-2026-anm-pana-la-40c-in-ziua-probei-la-limba-romana-si-temperaturi-maxime-recorduri-absolute-ale-lunii-iunie/",
+        "summary": "https://cdn.edupedu.ro/wp-content/uploads/2026/06/avertizare-anm-29-30-iunie.jpg\nElevii vor susține luni, 29 iunie, proba scrisă la Limba română a examenului de Bacalaureat 2026 într-una dintre cele mai călduroase zile ale anului, conform datelor transmise de Administrația Națională…",
+        "publishedAt": "2026-06-27T13:00:00.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "8257613814ed8fb4",
+        "sourceId": "edupedu",
+        "sourceName": "Edupedu",
+        "title": "De ce trebuie să predăm Holocaustul? Lecțiile pe care le-am învățat la Stutthof / Op Ed Petruț Rizea",
+        "url": "https://www.edupedu.ro/de-ce-trebuie-sa-predam-holocaustul-lectiile-pe-care-le-am-invatat-la-stutthof-op-ed-petrut-rizea/",
+        "summary": "https://cdn.edupedu.ro/wp-content/uploads/2026/06/Petrut-Rizea-2024.jpg\nAm vizitat recent fostul lagăr de concentrare de la Stutthof, aflat în apropiere de Gdańsk, în Polonia. Am mers acolo cu informațiile pe care le aveam din cărți, documentare și…",
+        "publishedAt": "2026-06-27T12:30:00.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "dc7b9def2b4b6b08",
+        "sourceId": "edupedu",
+        "sourceName": "Edupedu",
+        "title": "Cum ne protejăm de caniculă. Recomandările Institutului Național de Sănătate Publică: insolația este o urgență medicală",
+        "url": "https://www.edupedu.ro/cum-ne-protejam-de-canicula-recomandarile-institutului-national-de-sanatate-publica-insolatia-este-o-urgenta-medicala/",
+        "summary": "https://cdn.edupedu.ro/wp-content/uploads/2026/06/dreamstime_m_79913493.jpg\nCanicula nu înseamnă doar disconfort, ci poate avea efecte grave asupra sănătății, avertizează Institutul Național de Sănătate Publică (INSP). Stresul termic poate agrava bolile cardiovasculare, diabetul, astmul și afecțiunile psihice,…",
+        "publishedAt": "2026-06-27T12:29:33.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "d3d209e3bce399cf",
+        "sourceId": "edupedu",
+        "sourceName": "Edupedu",
+        "title": "Expunerea la ecrane înainte de vârsta de doi ani poate afecta dezvoltarea limbajului, somnul și relația cu părinții – Studiu",
+        "url": "https://www.edupedu.ro/expunerea-la-ecrane-inainte-de-varsta-de-doi-ani-poate-afecta-dezvoltarea-limbajului-somnul-si-relatia-cu-parintii-studiu/",
+        "summary": "https://cdn.edupedu.ro/wp-content/uploads/2019/01/mobile-2639332_960_720.jpg\nCopiii cu vârsta sub doi ani nu ar trebui expuși în mod intenționat la telefoane mobile, tablete sau alte dispozitive digitale, pentru că utilizarea ecranelor în primii doi ani de…",
+        "publishedAt": "2026-06-27T08:00:00.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "dcf97cc7d1e5d045",
+        "sourceId": "edupedu",
+        "sourceName": "Edupedu",
+        "title": "Universitatea Româno-Americană organizează o conferință internațională despre drepturile omului, inteligență artificială și criminalitate organizată, cu experți ai ONU și ai UNODC printre invitați",
+        "url": "https://www.edupedu.ro/universitatea-romano-americana-organizeaza-o-conferinta-internationala-despre-drepturile-omului-inteligenta-artificiala-si-criminalitatea-organizata-cu-experti-ai-onu-si-ai-unodc-printre-invit/",
+        "summary": "https://cdn.edupedu.ro/wp-content/uploads/2025/05/Universitatea-Romano-Americana-3.jpg\nPeste 250 de cercetători, profesori universitari, practicieni și reprezentanți ai unor organizații internaționale participă, între 2 și 4 iulie, la conferința „Human Rights at Risk: Organised Crime at Sea and…",
+        "publishedAt": "2026-06-27T07:26:00.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
+      },
+      {
+        "id": "420ddf97d662e290",
+        "sourceId": "edupedu",
+        "sourceName": "Edupedu",
+        "title": "Un elev de liceu din Iași a creat o platformă care detectează știrile false: Analizând mesajele de la alegerile prezidențiale din 2024, credeam că sunt boți. Dar oamenii își postau copiii și familia, apoi îi înjurau pe cei care nu erau de aceeași părere",
+        "url": "https://www.edupedu.ro/un-elev-de-liceu-din-iasi-a-creat-o-platforma-care-detecteaza-stirile-false-analizand-mesajele-de-la-alegerile-prezidentiale-din-2024-credeam-ca-sunt-boti-dar-oamenii-isi-postau-copiii-si-familia/",
+        "summary": "https://cdn.edupedu.ro/wp-content/uploads/2021/12/dreamstime_m_135498632-e1640102403927.jpg\nRareș Oancea, elev în clasa a X-a la Colegiul Național „Mihai Eminescu”, a lansat TruthSeeker, o platformă bazată pe inteligență artificială care analizează articole, imagini și videoclipuri pentru a identifica…",
+        "publishedAt": "2026-06-27T07:25:00.000Z",
+        "fetchedAt": "2026-06-27T13:52:06.031Z"
       }
     ],
     "deduplication": {
-      "inputCount": 1661,
-      "outputCount": 1642,
+      "inputCount": 1735,
+      "outputCount": 1716,
       "clusters": [
         {
           "kept": "61604ce33a0d24fc",
@@ -32966,8 +34446,8 @@
       ]
     },
     "historicalFilter": {
-      "inputCount": 1642,
-      "outputCount": 1641,
+      "inputCount": 1716,
+      "outputCount": 1715,
       "filteredOut": 1,
       "historicalCount": 81
     }
