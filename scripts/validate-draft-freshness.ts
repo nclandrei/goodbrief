@@ -1,82 +1,47 @@
 #!/usr/bin/env npx tsx
 
 import 'dotenv/config';
-import { existsSync, readFileSync, readdirSync, writeFileSync } from 'fs';
-import { join } from 'path';
 import { sendAlert } from './lib/alert.js';
+import { runDraftFreshnessValidation } from './lib/draft-freshness-runner.js';
+import {
+  createLlmProvider,
+  resolveProviderSpecFromArgs,
+} from './lib/llm/factory.js';
+import type { LlmProvider } from './lib/llm/provider.js';
 import { resolveProjectRoot } from './lib/project-root.js';
-import { loadHistoricalArticles } from './lib/story-history.js';
-import { validateDraftFreshness } from './lib/draft-validation.js';
-import type { NewsletterDraft } from './types.js';
 
 const ROOT_DIR = resolveProjectRoot(import.meta.url);
-const RECENT_DRAFT_LOOKBACK = 4;
 
-function parseWeekArg(): string | null {
-  const args = process.argv.slice(2);
-  for (let i = 0; i < args.length; i++) {
-    if (args[i] === '--week' && args[i + 1]) {
-      return args[i + 1];
-    }
-  }
-  return null;
+function hasExplicitLlmConfig(args: string[]): boolean {
+  return (
+    args.includes('--llm') ||
+    args.includes('--fallback') ||
+    Boolean(process.env.LLM_PROVIDER) ||
+    Boolean(process.env.LLM_FALLBACK)
+  );
 }
 
-function getLatestDraftWeekId(draftsDir: string): string | null {
-  const files = readdirSync(draftsDir)
-    .filter((file) => file.endsWith('.json'))
-    .sort()
-    .reverse();
-
-  if (files.length === 0) {
-    return null;
+function resolveOptionalLlm(args: string[]): LlmProvider | undefined {
+  if (!hasExplicitLlmConfig(args)) {
+    return undefined;
   }
 
-  return files[0].replace(/\.json$/, '');
-}
-
-function loadDraft(weekId: string): NewsletterDraft {
-  const draftPath = join(ROOT_DIR, 'data', 'drafts', `${weekId}.json`);
-  if (!existsSync(draftPath)) {
-    throw new Error(`Draft not found at ${draftPath}`);
-  }
-
-  return JSON.parse(readFileSync(draftPath, 'utf-8')) as NewsletterDraft;
+  const spec = resolveProviderSpecFromArgs(args);
+  const provider = createLlmProvider(spec);
+  console.log(
+    `[llm] freshness provider=${spec.provider}${spec.fallback ? ` (fallback=${spec.fallback})` : ''}`
+  );
+  return provider;
 }
 
 async function main(): Promise<void> {
-  const draftsDir = join(ROOT_DIR, 'data', 'drafts');
-  const weekId = parseWeekArg() || getLatestDraftWeekId(draftsDir);
-
-  if (!weekId) {
-    throw new Error('No draft files found to validate');
-  }
-
-  console.log(`\n🛡️ Good Brief Draft Archive Gate`);
-  console.log(`Week: ${weekId}\n`);
-
-  const draft = loadDraft(weekId);
-  console.log(`Loaded draft: ${draft.selected.length} selected, ${draft.reserves.length} reserves`);
-
-  const history = loadHistoricalArticles({
+  const args = process.argv.slice(2);
+  const llm = resolveOptionalLlm(args);
+  const { weekId, result } = await runDraftFreshnessValidation({
     rootDir: ROOT_DIR,
-    currentWeekId: weekId,
-    draftLookback: RECENT_DRAFT_LOOKBACK,
+    args,
+    llm,
   });
-
-  console.log(
-    `Loaded ${history.articles.length} historical stories (${history.issueArticleCount} published, ${history.draftArticleCount} recent draft)`
-  );
-
-  const result = await validateDraftFreshness({
-    draft,
-    historicalArticles: history.articles,
-    recentDraftCount: history.draftArticleCount,
-    publishedHistoryCount: history.issueArticleCount,
-  });
-
-  const draftPath = join(ROOT_DIR, 'data', 'drafts', `${weekId}.json`);
-  writeFileSync(draftPath, JSON.stringify(result.draft, null, 2), 'utf-8');
 
   const blocked = result.draft.validation?.blockedArticles?.length ?? 0;
   const replacements = result.draft.validation?.replacements?.length ?? 0;

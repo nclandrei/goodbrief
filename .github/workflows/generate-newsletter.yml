@@ -247,6 +247,7 @@ jobs:
 
   commit_outputs:
     runs-on: ubuntu-latest
+    timeout-minutes: 180
     needs: [determine_week, refine]
     steps:
       - uses: actions/checkout@v4
@@ -263,7 +264,13 @@ jobs:
       - name: Validate draft freshness
         run: npm run validate-draft-freshness -- --week ${{ needs.determine_week.outputs.id }}
         env:
+          LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
+          LLM_FALLBACK: openrouter
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'google/gemma-4-26b-a4b-it:free' }}
+          OPENROUTER_TIMEOUT_MS: '900000'
+          OPENROUTER_MAX_RETRIES: '4'
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
       - name: Commit pipeline outputs
@@ -277,6 +284,7 @@ jobs:
 
   proof_email:
     runs-on: ubuntu-latest
+    timeout-minutes: 180
     needs: [determine_week, commit_outputs]
     steps:
       - uses: actions/checkout@v4
@@ -293,7 +301,13 @@ jobs:
       - name: Validate draft freshness
         run: npm run validate-draft-freshness -- --week ${{ needs.determine_week.outputs.id }}
         env:
+          LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
+          LLM_FALLBACK: openrouter
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'google/gemma-4-26b-a4b-it:free' }}
+          OPENROUTER_TIMEOUT_MS: '900000'
+          OPENROUTER_MAX_RETRIES: '4'
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
       - name: Send proof email
