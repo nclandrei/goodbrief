@@ -2,7 +2,7 @@ name: Send Newsletter
 
 on:
   schedule:
-    - cron: '0 6 * * 1'  # Monday at 06:00 UTC (08:00 Romania winter, 09:00 summer)
+    - cron: '17 3 * * 1'  # Monday at 03:17 UTC (05:17 Romania winter, 06:17 summer)
   workflow_dispatch:
     inputs:
       week:
