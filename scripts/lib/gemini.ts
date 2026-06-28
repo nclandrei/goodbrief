@@ -107,6 +107,11 @@ VOICE & TONE:
 - Use "tu" (informal), never "dumneavoastră"
 - Romanian with occasional English sprinkles (max 1-2 English words per sentence)
 
+HARD EDITORIAL EXCLUSIONS:
+- Do not include stories whose core premise is danger, harm, crime, or a rescue just because they have a happy ending.
+- Do not include nostalgia bait or mainstream commercial festivals, including Nostalgia and Untold.
+- Treat "FOTO", "VIDEO", "INTERVIU", and similar editorial labels as source labels, not title content. Never preserve them in display titles.
+
 For each article, provide:
 
 1. SUMMARY (2-3 sentences in Romanian):

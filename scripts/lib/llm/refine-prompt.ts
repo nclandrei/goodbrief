@@ -147,6 +147,9 @@ REVIEW CRITERIA:
 11. Human closeness: prefer stories readers can feel in communities, schools, neighborhoods, hospitals, or daily life over ministry/process stories
 12. Preserve the balanced shape: keep at least two clearly community-centered stories and at least one green story when strong options exist
 13. Do not swap in a grant, funding call, pilot program, or ministerial announcement just because it sounds more substantial; only keep those if they are concrete and clearly stronger than tangible alternatives
+14. Hard exclusion: reject stories whose main premise is danger, harm, crime, or rescue even when they have a happy ending
+15. Hard exclusion: reject nostalgia bait and mainstream commercial festivals, including Nostalgia and Untold
+16. Title quality: do not keep source labels such as "FOTO", "VIDEO", or "INTERVIU" in display titles
 
 TASK:
 - Review the current selection critically
