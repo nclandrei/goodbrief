@@ -60,6 +60,12 @@ const WEEK_ID = '2026-W10';
 function setupScorePhaseRoot(articleIds: string[]): string {
   const rootDir = mkdtempSync(join(tmpdir(), 'goodbrief-score-batch-'));
   const articles = articleIds.map(makeRawArticle);
+  setupScorePhasePreparedArtifact(rootDir, articles);
+
+  return rootDir;
+}
+
+function setupScorePhasePreparedArtifact(rootDir: string, articles: RawArticle[]): void {
 
   const prepared: DraftPipelineArtifact<PreparedPipelineData, 'prepare'> = {
     weekId: WEEK_ID,
@@ -85,8 +91,6 @@ function setupScorePhaseRoot(articleIds: string[]): string {
 
   const pipelineDir = join(rootDir, 'data', 'pipeline', WEEK_ID);
   writeJson(join(pipelineDir, PIPELINE_ARTIFACT_FILENAMES.prepare), prepared);
-
-  return rootDir;
 }
 
 /**
@@ -268,4 +272,71 @@ test('score phase: with no partial file and no failure, no partial file is ever 
 
   assert.equal(existsSync(getPartialScorePath(rootDir)), false);
   assert.equal(existsSync(getScoredArtifactPath(rootDir)), true);
+});
+
+test('score phase: blocks hard editorial exclusions and normalizes display titles', async () => {
+  const rootDir = mkdtempSync(join(tmpdir(), 'goodbrief-editorial-rules-'));
+  const articles: RawArticle[] = [
+    {
+      ...makeRawArticle('library'),
+      sourceId: 'edupedu',
+      sourceName: 'Edupedu',
+      title:
+        'FOTO De la „casa vrăjitoarei” la o bibliotecă modernă pentru elevii din Cara',
+      summary: 'O fostă cramă a fost transformată într-o bibliotecă modernă.',
+    },
+    {
+      ...makeRawArticle('rescue'),
+      sourceId: 'stirileprotv',
+      sourceName: 'Știrile ProTV',
+      title:
+        'Un bebeluș de 4 luni a rămas încuiat într-o mașină în Alba Iulia. Un trecător l-a salvat',
+      summary: 'Copilul a fost salvat după ce un trecător a spart geamul.',
+    },
+    {
+      ...makeRawArticle('nostalgia'),
+      sourceId: 'stirileprotv',
+      sourceName: 'Știrile ProTV',
+      title:
+        'Mii de oameni au dat startul festivalului Nostalgia în Pădurea Băneasa',
+      summary: 'Muzica anilor 90 și 2000 a adus publicul la un festival comercial.',
+    },
+    {
+      ...makeRawArticle('students'),
+      title: 'Trei elevi din Oradea au luat premiu la o competiție europeană',
+      summary: 'Elevii au fost premiați pentru un proiect statistic despre România.',
+    },
+    {
+      ...makeRawArticle('researchers'),
+      title: 'Două cercetătoare din România primesc granturi europene avansate',
+      summary: 'Cercetătoarele au câștigat finanțare pentru proiecte academice.',
+    },
+    {
+      ...makeRawArticle('farmers'),
+      title: 'Fermierii români testează agricultura susținută de comunitate',
+      summary: 'Oamenii plătesc în avans legume locale și susțin ferme apropiate.',
+    },
+    {
+      ...makeRawArticle('schools'),
+      title: 'Arhitecții proiectează școli noi ca ecosisteme educaționale',
+      summary: 'Noile clădiri vor include spații gândite pentru elevi și profesori.',
+    },
+  ];
+  setupScorePhasePreparedArtifact(rootDir, articles);
+
+  await runScorePhase(rootDir, WEEK_ID, createMockLlm(), { batchSize: 3 });
+
+  const artifact = JSON.parse(
+    readFileSync(getScoredArtifactPath(rootDir), 'utf-8')
+  ) as DraftPipelineArtifact<ScoredPipelineData, 'score'>;
+
+  assert.deepEqual(
+    new Set(artifact.data.articles.map((article) => article.id)),
+    new Set(['library', 'students', 'researchers', 'farmers', 'schools'])
+  );
+  assert.equal(
+    artifact.data.articles[0].originalTitle,
+    'De la „casa vrăjitoarei” la o bibliotecă modernă pentru elevii din Cara'
+  );
+  assert.equal(artifact.data.discarded, 2);
 });

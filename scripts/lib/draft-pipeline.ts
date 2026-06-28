@@ -47,6 +47,10 @@ import {
   rebalancePreferredSelection,
   selectBalancedShortlist,
 } from './editorial-balance.js';
+import {
+  getEditorialBlockReason,
+  normalizeRawArticleTitle,
+} from './editorial-rules.js';
 
 function parseLookbackEnv(value: string | undefined, fallback: number): number {
   const parsed = Number.parseInt(value ?? '', 10);
@@ -407,6 +411,15 @@ export async function runScorePhase(
     weekId,
     'prepare'
   );
+  const editorialPreparedArticles = prepared.data.preparedArticles.map(
+    normalizeRawArticleTitle
+  );
+  const editoriallyBlockedArticles = editorialPreparedArticles.filter(
+    (article) => getEditorialBlockReason(article) !== null
+  );
+  const scoreCandidateArticles = editorialPreparedArticles.filter(
+    (article) => getEditorialBlockReason(article) === null
+  );
   const mockScores = loadMockJson<ArticleScore[]>('GOODBRIEF_SCORE_MOCK_FILE');
   const BATCH_SIZE = options?.batchSize ?? Number.parseInt(
     process.env.SCORE_BATCH_SIZE || '200',
@@ -428,7 +441,7 @@ export async function runScorePhase(
       console.log(`Resuming from ${partialScores.length} previously scored articles`);
     }
 
-    const remainingArticles = prepared.data.preparedArticles.filter(
+    const remainingArticles = scoreCandidateArticles.filter(
       (article) => !alreadyScoredIds.has(article.id)
     );
 
@@ -474,7 +487,7 @@ export async function runScorePhase(
   const scoreMap = new Map(allScores.map((score) => [score.id, score]));
   const processedAt = new Date().toISOString();
   const seenIds = new Set<string>();
-  const processed = prepared.data.preparedArticles
+  const processed = scoreCandidateArticles
     .map((raw) => {
       if (seenIds.has(raw.id)) {
         return null;
@@ -523,14 +536,21 @@ export async function runScorePhase(
   const positiveArticles = sortArticlesByBaseScore(
     processed.filter((article) => article.positivity >= 40)
   );
-  const discarded = processed.length - positiveArticles.length;
+  const discarded =
+    processed.length - positiveArticles.length + editoriallyBlockedArticles.length;
+
+  for (const article of editoriallyBlockedArticles) {
+    console.log(
+      `  Filtered (editorial:${getEditorialBlockReason(article)}): "${article.title}"`
+    );
+  }
 
   if (positiveArticles.length < 5) {
     await sendAlert({
       title: 'Not enough positive articles',
       weekId,
       reason: `Only ${positiveArticles.length} positive articles found (need at least 5)`,
-      details: `Total processed: ${processed.length}, Discarded (low positivity): ${discarded}`,
+      details: `Total processed: ${processed.length + editoriallyBlockedArticles.length}, Discarded: ${discarded}`,
       actionItems: [
         'Review the raw articles manually to see if scores are too strict',
         'Consider lowering the positivity threshold temporarily',
@@ -548,7 +568,7 @@ export async function runScorePhase(
     inputFile: PIPELINE_ARTIFACT_FILENAMES.prepare,
     data: {
       articles: positiveArticles,
-      totalProcessed: processed.length,
+      totalProcessed: processed.length + editoriallyBlockedArticles.length,
       discarded,
     },
   };
