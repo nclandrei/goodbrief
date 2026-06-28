@@ -1,12 +1,12 @@
 {
   "weekId": "2026-W26",
   "phase": "refine",
-  "generatedAt": "2026-06-28T11:27:22.927Z",
+  "generatedAt": "2026-06-28T11:39:13.893Z",
   "inputFile": "05-shortlist.json + 06-wrapper-copy.json",
   "data": {
     "draft": {
       "weekId": "2026-W26",
-      "generatedAt": "2026-06-28T11:27:22.927Z",
+      "generatedAt": "2026-06-28T11:39:13.894Z",
       "selected": [
         {
           "id": "15078b7266eba0e1",
@@ -48,7 +48,7 @@
           "id": "ee140ec753f7edfc",
           "sourceId": "dw-romania",
           "sourceName": "DW România",
-          "originalTitle": "La Chișinău, Pride a avut loc fără incidente",
+          "originalTitle": "Chișinăul a avut primul Pride fără incidente",
           "url": "https://www.dw.com/ro/cum-este-s%C4%83-fii-gay-%C3%AEn-republica-moldova/a-77653512?maca=rum-rss-rom-all-1493-rdf",
           "summary": "Marșul Pride de la Chișinău a avut loc fără incidente, marcând o premieră pentru comunitatea LGBTQ+ din Republica Moldova. Evenimentul a reunit susținători ai diversității și incluziunii.",
           "positivity": 85,
@@ -81,24 +81,6 @@
           "promoRisk": 15
         },
         {
-          "id": "17bd7132a7eaa9d0",
-          "sourceId": "stirileprotv",
-          "sourceName": "Știrile ProTV",
-          "originalTitle": "Cum funcționează agricultura susținută de comunitate în România",
-          "url": "https://stirileprotv.ro/stiri/pro-verde/fermierii-platiti-in-avans-cum-functioneaza-agricultura-sustinuta-de-comunitate-in-romania.html",
-          "summary": "Fermierii români pot accesa agricultura susținută de comunitate, un model în care consumatorii susțin direct producătorii locali. Acest lucru înseamnă că poți cumpăra produse proaspete și de calitate, contribuind în același timp la un sistem alimentar mai sustenabil.",
-          "positivity": 85,
-          "impact": 70,
-          "category": "green-stuff",
-          "publishedAt": "2026-06-22T16:55:26.000Z",
-          "processedAt": "2026-06-27T12:11:03.337Z",
-          "feltImpact": 60,
-          "certainty": 70,
-          "humanCloseness": 80,
-          "bureaucraticDistance": 50,
-          "promoRisk": 30
-        },
-        {
           "id": "09234430b0bf876c",
           "sourceId": "economedia",
           "sourceName": "Economedia",
@@ -117,22 +99,40 @@
           "promoRisk": 20
         },
         {
-          "id": "5bb5379ada172129",
+          "id": "e88a1a8d835bd107",
+          "sourceId": "stirileprotv",
+          "sourceName": "Știrile ProTV",
+          "originalTitle": "Bucureștiul instalează cișmele și tuneluri cu vapori pentru zilele toride",
+          "url": "https://stirileprotv.ro/stiri/actualitate/bucurestiul-va-avea-113-cismele-si-opt-tuneluri-cu-vapori-de-apa-pentru-zilele-toride-zonele-unde-vor-fi-amplasate.html",
+          "summary": "Bucureștiul va avea 113 cișmele și opt tuneluri cu vapori de apă pentru a combate canicula, Primăria instalând deja trei dușuri stradale. Acestea vor oferi un confort sporit locuitorilor în zilele toride.",
+          "positivity": 70,
+          "impact": 60,
+          "category": "local-heroes",
+          "publishedAt": "2026-06-25T18:28:40.000Z",
+          "processedAt": "2026-06-27T12:11:03.337Z",
+          "feltImpact": 80,
+          "certainty": 70,
+          "humanCloseness": 90,
+          "bureaucraticDistance": 30,
+          "promoRisk": 20
+        },
+        {
+          "id": "18c3a94dbbc0f0a9",
           "sourceId": "edupedu",
           "sourceName": "Edupedu",
-          "originalTitle": "Trei elevi din Oradea au luat locul III în Europa la statistică",
-          "url": "https://www.edupedu.ro/trei-elevi-din-oradea-au-obtinut-locul-iii-in-europa-la-competitia-europeana-de-statistica-2025-2026-cu-materialul-portret-statistic-cum-sunt-romanii/",
-          "summary": "Trei elevi din Oradea au obținut locul III la Competiția Europeană de Statistică cu proiectul \"Portret statistic: cum sunt românii?\". Performanța liceenilor de la Colegiul Național „Onisifor Ghibu” este o reușită notabilă.",
+          "originalTitle": "Două școli noi din București sunt gândite pentru elevi, nu doar pentru clase",
+          "url": "https://www.edupedu.ro/arhitectii-scolilor-care-se-construiesc-in-doua-cartiere-din-bucuresti-proiectam-nu-numai-cladiri-ci-ecosisteme-educationale-intr-o-scoala-profesorii-au-nevoie-de-zone-de-refugiu/",
+          "summary": "Arhitecții școlilor noi din București văd clădirile ca pe niște ecosisteme educaționale, incluzând \"zone de refugiu\" pentru profesori și spații care stimulează învățarea. Viziunea se concentrează pe crearea unui mediu propice pentru elevi și profesori.",
           "positivity": 80,
           "impact": 70,
           "category": "wins",
-          "publishedAt": "2026-06-25T14:09:44.000Z",
+          "publishedAt": "2026-06-25T11:52:43.000Z",
           "processedAt": "2026-06-27T12:11:03.337Z",
           "feltImpact": 60,
-          "certainty": 90,
-          "humanCloseness": 80,
-          "bureaucraticDistance": 20,
-          "promoRisk": 10
+          "certainty": 80,
+          "humanCloseness": 70,
+          "bureaucraticDistance": 40,
+          "promoRisk": 20
         },
         {
           "id": "393c01ae51142c66",
@@ -190,6 +190,42 @@
         }
       ],
       "reserves": [
+        {
+          "id": "17bd7132a7eaa9d0",
+          "sourceId": "stirileprotv",
+          "sourceName": "Știrile ProTV",
+          "originalTitle": "Cum funcționează agricultura susținută de comunitate în România",
+          "url": "https://stirileprotv.ro/stiri/pro-verde/fermierii-platiti-in-avans-cum-functioneaza-agricultura-sustinuta-de-comunitate-in-romania.html",
+          "summary": "Fermierii români pot accesa agricultura susținută de comunitate, un model în care consumatorii susțin direct producătorii locali. Acest lucru înseamnă că poți cumpăra produse proaspete și de calitate, contribuind în același timp la un sistem alimentar mai sustenabil.",
+          "positivity": 85,
+          "impact": 70,
+          "category": "green-stuff",
+          "publishedAt": "2026-06-22T16:55:26.000Z",
+          "processedAt": "2026-06-27T12:11:03.337Z",
+          "feltImpact": 60,
+          "certainty": 70,
+          "humanCloseness": 80,
+          "bureaucraticDistance": 50,
+          "promoRisk": 30
+        },
+        {
+          "id": "5bb5379ada172129",
+          "sourceId": "edupedu",
+          "sourceName": "Edupedu",
+          "originalTitle": "Trei elevi din Oradea au luat locul III în Europa la statistică",
+          "url": "https://www.edupedu.ro/trei-elevi-din-oradea-au-obtinut-locul-iii-in-europa-la-competitia-europeana-de-statistica-2025-2026-cu-materialul-portret-statistic-cum-sunt-romanii/",
+          "summary": "Trei elevi din Oradea au obținut locul III la Competiția Europeană de Statistică cu proiectul \"Portret statistic: cum sunt românii?\". Performanța liceenilor de la Colegiul Național „Onisifor Ghibu” este o reușită notabilă.",
+          "positivity": 80,
+          "impact": 70,
+          "category": "wins",
+          "publishedAt": "2026-06-25T14:09:44.000Z",
+          "processedAt": "2026-06-27T12:11:03.337Z",
+          "feltImpact": 60,
+          "certainty": 90,
+          "humanCloseness": 80,
+          "bureaucraticDistance": 20,
+          "promoRisk": 10
+        },
         {
           "id": "e88e6df0cf574cf4",
           "sourceId": "stirileprotv",
@@ -332,24 +368,6 @@
           "certainty": 90,
           "humanCloseness": 60,
           "bureaucraticDistance": 50,
-          "promoRisk": 20
-        },
-        {
-          "id": "e88a1a8d835bd107",
-          "sourceId": "stirileprotv",
-          "sourceName": "Știrile ProTV",
-          "originalTitle": "Bucureștiul va avea 113 cișmele și opt tuneluri cu vapori de apă pentru zilele toride. Zonele unde vor fi amplasate",
-          "url": "https://stirileprotv.ro/stiri/actualitate/bucurestiul-va-avea-113-cismele-si-opt-tuneluri-cu-vapori-de-apa-pentru-zilele-toride-zonele-unde-vor-fi-amplasate.html",
-          "summary": "Bucureștiul va avea 113 cișmele și opt tuneluri cu vapori de apă pentru a combate canicula, Primăria instalând deja trei dușuri stradale. Acestea vor oferi un confort sporit locuitorilor în zilele toride.",
-          "positivity": 70,
-          "impact": 60,
-          "category": "local-heroes",
-          "publishedAt": "2026-06-25T18:28:40.000Z",
-          "processedAt": "2026-06-27T12:11:03.337Z",
-          "feltImpact": 80,
-          "certainty": 70,
-          "humanCloseness": 90,
-          "bureaucraticDistance": 30,
           "promoRisk": 20
         },
         {
@@ -569,24 +587,6 @@
           "promoRisk": 10
         },
         {
-          "id": "18c3a94dbbc0f0a9",
-          "sourceId": "edupedu",
-          "sourceName": "Edupedu",
-          "originalTitle": "Arhitecții școlilor care se construiesc în două cartiere din București: Proiectăm nu numai clădiri, ci ecosisteme educaționale / Într-o școală profesorii au nevoie de „zone de refugiu”, în afara cancelariei, iar școala trebuie să stimuleze educația nu doar să o găzduiască",
-          "url": "https://www.edupedu.ro/arhitectii-scolilor-care-se-construiesc-in-doua-cartiere-din-bucuresti-proiectam-nu-numai-cladiri-ci-ecosisteme-educationale-intr-o-scoala-profesorii-au-nevoie-de-zone-de-refugiu/",
-          "summary": "Arhitecții școlilor noi din București văd clădirile ca pe niște ecosisteme educaționale, incluzând \"zone de refugiu\" pentru profesori și spații care stimulează învățarea. Viziunea se concentrează pe crearea unui mediu propice pentru elevi și profesori.",
-          "positivity": 80,
-          "impact": 70,
-          "category": "wins",
-          "publishedAt": "2026-06-25T11:52:43.000Z",
-          "processedAt": "2026-06-27T12:11:03.337Z",
-          "feltImpact": 60,
-          "certainty": 80,
-          "humanCloseness": 70,
-          "bureaucraticDistance": 40,
-          "promoRisk": 20
-        },
-        {
           "id": "f818b977ba44b663",
           "sourceId": "startupcafe",
           "sourceName": "StartupCafe",
@@ -645,9 +645,9 @@
       "totalProcessed": 876,
       "wrapperCopy": {
         "greeting": "Salutare! 👋",
-        "intro": "Avem o ediție mai curată: educație, comunități, agricultură sustenabilă, patrimoniu și un pas important pentru comunitatea LGBTQ+ din Republica Moldova. Fără artificii, doar vești care lasă ceva bun în urmă.",
+        "intro": "Avem o ediție cu lucruri care se simt în viața reală: o elevă care pregătește gratuit copii pentru examen, o bibliotecă nouă într-un sat din Cluj, școli gândite mai bine și Bucureștiul care se pregătește de caniculă. Mai intră în mix agricultură sustenabilă, energie verde, patrimoniu redeschis și primul Pride fără incidente la Chișinău.",
         "signOff": "Sperăm că ți-am adus un zâmbet! Ne citim săptămâna viitoare. 🙏",
-        "shortSummary": "Educație, comunități, agricultură sustenabilă și un Pride fără incidente la Chișinău."
+        "shortSummary": "Școli mai bune, caniculă, energie verde și Pride la Chișinău."
       },
       "validation": {
         "generatedAt": "2026-06-27T12:12:24.468Z",
@@ -684,7 +684,7 @@
           },
           {
             "removedArticleId": "9205a1c8c7e8f785",
-            "replacementArticleId": "5bb5379ada172129"
+            "replacementArticleId": "18c3a94dbbc0f0a9"
           },
           {
             "removedArticleId": "5510709501ac34bf",
@@ -692,7 +692,7 @@
           },
           {
             "removedArticleId": "caf63847eef1052d",
-            "replacementArticleId": "17bd7132a7eaa9d0"
+            "replacementArticleId": "e88a1a8d835bd107"
           },
           {
             "removedArticleId": "c607c57cc7421582",
@@ -701,6 +701,6 @@
         ]
       }
     },
-    "reasoning": "Editor review: removed rescue/crime/negative-premise, weak travel essay, and Nostalgia festival items; promoted stronger reserve stories on Moldova Pride, student achievement, sustainable agriculture, community-supported farming, and restored heritage. Rewrote display titles that carried source/editorial framing. Selected display titles were tightened to remove feed cruft, labels, and overlong quote framing."
+    "reasoning": "Editor review: removed rescue/crime/negative-premise, weak travel essay, and Nostalgia festival items; promoted stronger reserve stories on Moldova Pride, student achievement, sustainable agriculture, community-supported farming, and restored heritage. Rewrote display titles that carried source/editorial framing. Selected display titles were tightened to remove feed cruft, labels, and overlong quote framing. Follow-up editor review: demoted the community-supported agriculture item for overlap with the digital farm story and replaced the Oradea competition item with the school architecture story; retitled the Pride item with a more concrete line."
   }
 }

@@ -8,7 +8,8 @@ const EDITORIAL_LABEL_PATTERN =
   /^(?:(?:foto|video|interviu|list[aă])(?:\s*[|:.\-–—]\s*|\s+))+/iu;
 
 const COMMERCIAL_FESTIVAL_PATTERNS = [
-  /\bnostalgi[ae]\b/iu,
+  /\bfestival(?:ului|ul)?\s+nostalgia\b/iu,
+  /\bnostalgia\b[\s\S]{0,80}\b(?:festival|p[ăa]durea\s+b[ăa]neasa|muzica anilor|petrecere)\b/iu,
   /\buntold\b/iu,
   /\bneversea\b/iu,
   /\belectric\s+castle\b/iu,
