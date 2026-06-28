@@ -1,36 +1,18 @@
 {
   "weekId": "2026-W26",
   "phase": "refine",
-  "generatedAt": "2026-06-27T12:15:27.026Z",
+  "generatedAt": "2026-06-28T11:27:22.927Z",
   "inputFile": "05-shortlist.json + 06-wrapper-copy.json",
   "data": {
     "draft": {
       "weekId": "2026-W26",
-      "generatedAt": "2026-06-27T12:15:27.026Z",
+      "generatedAt": "2026-06-28T11:27:22.927Z",
       "selected": [
-        {
-          "id": "d5695aa5a1b337d0",
-          "sourceId": "stirileprotv",
-          "sourceName": "Știrile ProTV",
-          "originalTitle": "Un bebeluș de 4 luni a rămas încuiat într-o mașină în Alba Iulia. Un trecător a spart geamul și l-a salvat",
-          "url": "https://stirileprotv.ro/stiri/actualitate/un-bebelus-de-4-luni-a-ramas-incuiat-intr-o-masina-in-alba-iulia-un-trecator-a-spart-geamul-si-l-a-salvat.html",
-          "summary": "Un bebeluș de 4 luni a fost salvat eroic în Alba Iulia, după ce a rămas accidental închis în mașină. Un trecător a spart geamul, intervenind rapid pentru a-l scoate pe copil în siguranță.",
-          "positivity": 90,
-          "impact": 60,
-          "category": "local-heroes",
-          "publishedAt": "2026-06-26T06:16:41.000Z",
-          "processedAt": "2026-06-27T12:11:03.337Z",
-          "feltImpact": 90,
-          "certainty": 100,
-          "humanCloseness": 100,
-          "bureaucraticDistance": 10,
-          "promoRisk": 10
-        },
         {
           "id": "15078b7266eba0e1",
           "sourceId": "edupedu",
           "sourceName": "Edupedu",
-          "originalTitle": "O elevă din Brașov a pregătit gratuit peste 1.500 de copii pentru Evaluarea Națională 2026: Nu vreau ca alți copii să se simtă singuri sau nepregătiți în fața unui examen atât de important",
+          "originalTitle": "O elevă din Brașov a pregătit gratuit peste 1.500 de copii pentru Evaluarea Națională",
           "url": "https://www.edupedu.ro/o-eleva-din-brasov-a-pregatit-gratuit-peste-1-500-de-copii-pentru-evaluarea-nationala-2026-nu-vreau-ca-alti-copii-sa-se-simta-singuri-sau-nepregatiti-in-fata-unui-examen-atat-de-important/",
           "summary": "O elevă din Brașov, Rebecca Elena Ailincăi, a pregătit gratuit peste 1.500 de copii pentru Evaluarea Națională 2026, organizând sesiuni de pregătire timp de aproape un an. Ea dorește ca nimeni să nu se simtă nepregătit.",
           "positivity": 90,
@@ -45,46 +27,10 @@
           "promoRisk": 10
         },
         {
-          "id": "09234430b0bf876c",
-          "sourceId": "economedia",
-          "sourceName": "Economedia",
-          "originalTitle": "Un nou proiect de energie verde în România: ENEVO Group și GreenArch Energy pregătesc investiții în capacități solare, eoliene și de stocare de 150 MW",
-          "url": "https://economedia.ro/un-nou-proiect-de-energie-verde-in-romania-enevo-group-si-greenarch-energy-pregatesc-investitii-in-capacitati-solare-eoliene-si-de-stocare-de-150-mw.html",
-          "summary": "ENEVO Group și GreenArch Energy formează un parteneriat pentru a investi în capacități solare, eoliene și de stocare de 150 MW în România. Acest proiect contribuie la tranziția energetică a țării și la independența sa energetică.",
-          "positivity": 90,
-          "impact": 80,
-          "category": "green-stuff",
-          "publishedAt": "2026-06-23T14:39:25.000Z",
-          "processedAt": "2026-06-27T12:11:03.337Z",
-          "feltImpact": 70,
-          "certainty": 80,
-          "humanCloseness": 40,
-          "bureaucraticDistance": 30,
-          "promoRisk": 20
-        },
-        {
-          "id": "393c01ae51142c66",
-          "sourceId": "stirileprotv",
-          "sourceName": "Știrile ProTV",
-          "originalTitle": "Sibiul s-a transformat într-o scenă uriașă. Mii de spectatori au umplut străzile la Festivalul Internațional de Teatru",
-          "url": "https://stirileprotv.ro/stiri/actualitate/sibiul-s-a-transformat-intr-o-scena-uriasa-mii-de-spectatori-au-umplut-strazile-la-festivalul-international-de-teatru.html",
-          "summary": "Sibiu s-a transformat într-o adevărată scenă de teatru în aer liber în primul weekend al Festivalului Internațional de Teatru. Mii de spectatori au umplut străzile și piețele, bucurându-se de sute de spectacole.",
-          "positivity": 90,
-          "impact": 70,
-          "category": "wins",
-          "publishedAt": "2026-06-22T04:56:51.000Z",
-          "processedAt": "2026-06-27T12:11:03.337Z",
-          "feltImpact": 80,
-          "certainty": 90,
-          "humanCloseness": 90,
-          "bureaucraticDistance": 10,
-          "promoRisk": 20
-        },
-        {
           "id": "c768584afca377e0",
           "sourceId": "edupedu",
           "sourceName": "Edupedu",
-          "originalTitle": "FOTO De la „casa vrăjitoarei” la o bibliotecă modernă: transformarea fostei crame a conacului din satul Cara, județul Cluj, într-un spațiu pentru lectură și învățare al școlii gimnaziale din localitate",
+          "originalTitle": "O fostă cramă din satul Cara a devenit bibliotecă pentru elevi",
           "url": "https://www.edupedu.ro/foto-de-la-casa-vrajitoarei-la-o-biblioteca-moderna-transformarea-fostei-crame-a-conacului-din-satul-cara-judetul-cluj-intr-un-spatiu-pentru-lectura-si-invatare-al-scolii-gimnazia/",
           "summary": "O fostă cramă din conacul Școlii Gimnaziale Cara (Cluj) a fost transformată într-o bibliotecă modernă pentru elevi. Acest spațiu nou promite să încurajeze lectura și învățarea în comunitatea locală.",
           "positivity": 90,
@@ -99,74 +45,128 @@
           "promoRisk": 5
         },
         {
-          "id": "9205a1c8c7e8f785",
-          "sourceId": "republica",
-          "sourceName": "Republica",
-          "originalTitle": "Într-un autocar spre Focșani, m-am întâlnit cu România reală și am primit o lecție pe care nu o voi uita: „Mă scuzați că vă deranjez...”",
-          "url": "https://republica.ro/intr-un-autocar-spre-focsani-m-am-intalnit-cu-romania-reala-si-am-primit-o-lectie-pe-care-nu-o-voi-uita",
-          "summary": "Într-o călătorie cu autocarul spre Focșani, o doamnă muncită, dar cu mâinile curate, i-a oferit povestitorului o lecție de viață prin simplitatea și politețea sa. Întâlnirea a fost emoționantă și memorabilă.",
-          "positivity": 80,
-          "impact": 50,
-          "category": "local-heroes",
-          "publishedAt": "2026-06-24T04:00:00.000Z",
-          "processedAt": "2026-06-27T12:11:03.337Z",
-          "feltImpact": 80,
-          "certainty": 90,
-          "humanCloseness": 100,
-          "bureaucraticDistance": 10,
-          "promoRisk": 10
-        },
-        {
-          "id": "5510709501ac34bf",
-          "sourceId": "stirileprotv",
-          "sourceName": "Știrile ProTV",
-          "originalTitle": "Doi hoți au fost prinși în flagrant de polițiști în timp ce părăseau o locuință în Prahova. Un vecin vigilent sunase la 112",
-          "url": "https://stirileprotv.ro/stiri/actualitate/doi-hoti-au-fost-prinsi-in-flagrant-de-politisti-in-timp-ce-paraseau-o-locuinta-in-prahova-un-vecin-vigilent-a-sunat-la-112.html",
-          "summary": "Doi hoți au fost prinși în flagrant în Prahova, datorită unui vecin vigilent care a sunat la 112. Această situație demonstrează importanța implicării civice în prevenirea infracționalității și protejarea comunității.",
-          "positivity": 80,
-          "impact": 60,
-          "category": "local-heroes",
-          "publishedAt": "2026-06-23T10:33:37.000Z",
-          "processedAt": "2026-06-27T12:11:03.337Z",
-          "feltImpact": 80,
-          "certainty": 90,
-          "humanCloseness": 90,
-          "bureaucraticDistance": 20,
-          "promoRisk": 10
-        },
-        {
-          "id": "caf63847eef1052d",
-          "sourceId": "stirileprotv",
-          "sourceName": "Știrile ProTV",
-          "originalTitle": "Mii de oameni au dat startul festivalului Nostalgia. Muzica anilor ’90 și 2000 a transformat Pădurea Băneasa într-o petrecere",
-          "url": "https://stirileprotv.ro/stiri/actualitate/mii-de-oameni-au-dat-startul-festivalului-nostalgia-muzica-anilor-90-si-2000-a-transformat-padurea-baneasa-intr-o-petrecere.html",
-          "summary": "Festivalul Nostalgia a adunat mii de oameni în Pădurea Băneasa, transformând-o într-o petrecere epică. Muzica anilor '90 și 2000 a unit generații, creând o atmosferă plină de amintiri.",
+          "id": "ee140ec753f7edfc",
+          "sourceId": "dw-romania",
+          "sourceName": "DW România",
+          "originalTitle": "La Chișinău, Pride a avut loc fără incidente",
+          "url": "https://www.dw.com/ro/cum-este-s%C4%83-fii-gay-%C3%AEn-republica-moldova/a-77653512?maca=rum-rss-rom-all-1493-rdf",
+          "summary": "Marșul Pride de la Chișinău a avut loc fără incidente, marcând o premieră pentru comunitatea LGBTQ+ din Republica Moldova. Evenimentul a reunit susținători ai diversității și incluziunii.",
           "positivity": 85,
-          "impact": 60,
-          "category": "wins",
-          "publishedAt": "2026-06-26T04:52:59.000Z",
+          "impact": 70,
+          "category": "local-heroes",
+          "publishedAt": "2026-06-22T10:49:00.000Z",
           "processedAt": "2026-06-27T12:11:03.337Z",
           "feltImpact": 70,
-          "certainty": 100,
+          "certainty": 90,
           "humanCloseness": 80,
-          "bureaucraticDistance": 20,
+          "bureaucraticDistance": 30,
           "promoRisk": 20
         },
         {
-          "id": "c607c57cc7421582",
-          "sourceId": "mediafax",
-          "sourceName": "Mediafax",
-          "originalTitle": "Ucrainean aflat de 7 zile pe munte, fără provizii și extenuat, recuperat de salvamontiștii din Maramureș",
-          "url": "https://www.mediafax.ro/social/ucrainean-aflat-de-7-zile-pe-munte-fara-provizii-si-extenuat-recuperat-de-salvamontistii-din-maramures-23762603",
-          "summary": "Salvamontiștii din Maramureș au reușit să salveze un cetățean ucrainean, epuizat și fără provizii, după ce acesta a stat șapte zile pe munte. Aceștia au salvat recent și alți doi tineri ucraineni, demonstrând promptitudine și curaj.",
+          "id": "e1a2a7773fdb87a5",
+          "sourceId": "republica",
+          "sourceName": "Republica",
+          "originalTitle": "Prima fermă digitalizată din România mizează pe agricultură sustenabilă",
+          "url": "https://republica.ro/prima-ferma-digitalizata-agricultura",
+          "summary": "Teofil Dascălu, fondatorul primei ferme digitalizate din România, explică abordarea sa asupra agriculturii: „Un sol lucrat pentru unii reprezintă o imagine plăcută, dar pentru mine este un cimitir, pentru că ai omorât tot ce era în el”. El promovează o agricultură sustenabilă.",
           "positivity": 80,
-          "impact": 60,
-          "category": "local-heroes",
-          "publishedAt": "2026-06-27T08:08:00.000Z",
+          "impact": 70,
+          "category": "green-stuff",
+          "publishedAt": "2026-06-25T03:52:00.000Z",
+          "processedAt": "2026-06-27T12:11:03.337Z",
+          "feltImpact": 60,
+          "certainty": 90,
+          "humanCloseness": 70,
+          "bureaucraticDistance": 10,
+          "promoRisk": 15
+        },
+        {
+          "id": "17bd7132a7eaa9d0",
+          "sourceId": "stirileprotv",
+          "sourceName": "Știrile ProTV",
+          "originalTitle": "Cum funcționează agricultura susținută de comunitate în România",
+          "url": "https://stirileprotv.ro/stiri/pro-verde/fermierii-platiti-in-avans-cum-functioneaza-agricultura-sustinuta-de-comunitate-in-romania.html",
+          "summary": "Fermierii români pot accesa agricultura susținută de comunitate, un model în care consumatorii susțin direct producătorii locali. Acest lucru înseamnă că poți cumpăra produse proaspete și de calitate, contribuind în același timp la un sistem alimentar mai sustenabil.",
+          "positivity": 85,
+          "impact": 70,
+          "category": "green-stuff",
+          "publishedAt": "2026-06-22T16:55:26.000Z",
+          "processedAt": "2026-06-27T12:11:03.337Z",
+          "feltImpact": 60,
+          "certainty": 70,
+          "humanCloseness": 80,
+          "bureaucraticDistance": 50,
+          "promoRisk": 30
+        },
+        {
+          "id": "09234430b0bf876c",
+          "sourceId": "economedia",
+          "sourceName": "Economedia",
+          "originalTitle": "Investiții noi în energie solară, eoliană și stocare în România",
+          "url": "https://economedia.ro/un-nou-proiect-de-energie-verde-in-romania-enevo-group-si-greenarch-energy-pregatesc-investitii-in-capacitati-solare-eoliene-si-de-stocare-de-150-mw.html",
+          "summary": "ENEVO Group și GreenArch Energy formează un parteneriat pentru a investi în capacități solare, eoliene și de stocare de 150 MW în România. Acest proiect contribuie la tranziția energetică a țării și la independența sa energetică.",
+          "positivity": 90,
+          "impact": 80,
+          "category": "green-stuff",
+          "publishedAt": "2026-06-23T14:39:25.000Z",
           "processedAt": "2026-06-27T12:11:03.337Z",
           "feltImpact": 70,
+          "certainty": 80,
+          "humanCloseness": 40,
+          "bureaucraticDistance": 30,
+          "promoRisk": 20
+        },
+        {
+          "id": "5bb5379ada172129",
+          "sourceId": "edupedu",
+          "sourceName": "Edupedu",
+          "originalTitle": "Trei elevi din Oradea au luat locul III în Europa la statistică",
+          "url": "https://www.edupedu.ro/trei-elevi-din-oradea-au-obtinut-locul-iii-in-europa-la-competitia-europeana-de-statistica-2025-2026-cu-materialul-portret-statistic-cum-sunt-romanii/",
+          "summary": "Trei elevi din Oradea au obținut locul III la Competiția Europeană de Statistică cu proiectul \"Portret statistic: cum sunt românii?\". Performanța liceenilor de la Colegiul Național „Onisifor Ghibu” este o reușită notabilă.",
+          "positivity": 80,
+          "impact": 70,
+          "category": "wins",
+          "publishedAt": "2026-06-25T14:09:44.000Z",
+          "processedAt": "2026-06-27T12:11:03.337Z",
+          "feltImpact": 60,
+          "certainty": 90,
+          "humanCloseness": 80,
+          "bureaucraticDistance": 20,
+          "promoRisk": 10
+        },
+        {
+          "id": "393c01ae51142c66",
+          "sourceId": "stirileprotv",
+          "sourceName": "Știrile ProTV",
+          "originalTitle": "Sibiul a umplut străzile la Festivalul Internațional de Teatru",
+          "url": "https://stirileprotv.ro/stiri/actualitate/sibiul-s-a-transformat-intr-o-scena-uriasa-mii-de-spectatori-au-umplut-strazile-la-festivalul-international-de-teatru.html",
+          "summary": "Sibiu s-a transformat într-o adevărată scenă de teatru în aer liber în primul weekend al Festivalului Internațional de Teatru. Mii de spectatori au umplut străzile și piețele, bucurându-se de sute de spectacole.",
+          "positivity": 90,
+          "impact": 70,
+          "category": "wins",
+          "publishedAt": "2026-06-22T04:56:51.000Z",
+          "processedAt": "2026-06-27T12:11:03.337Z",
+          "feltImpact": 80,
           "certainty": 90,
           "humanCloseness": 90,
+          "bureaucraticDistance": 10,
+          "promoRisk": 20
+        },
+        {
+          "id": "838bbb54abb287cf",
+          "sourceId": "agerpres",
+          "sourceName": "Agerpres",
+          "originalTitle": "Castelul Teleki din Gornești revine pe harta turistică",
+          "url": "https://agerpres.ro/cultura-media/2026/06/22/mures-castelul-teleki-din-gornesti-revine-pe-harta-turistica-a-romaniei-din-data-de-16-iulie--1568882",
+          "summary": "Castelul Teleki din Gornești, județul Mureș, redevine o destinație turistică importantă începând cu 16 iulie. Renovarea și redeschiderea castelului promit să revitalizeze turismul local și să ofere o nouă experiență vizitatorilor.",
+          "positivity": 80,
+          "impact": 60,
+          "category": "wins",
+          "publishedAt": "2026-06-22T12:12:27.280Z",
+          "processedAt": "2026-06-27T12:11:03.337Z",
+          "feltImpact": 70,
+          "certainty": 80,
+          "humanCloseness": 70,
           "bureaucraticDistance": 20,
           "promoRisk": 10
         },
@@ -174,7 +174,7 @@
           "id": "b421b4e90f809c9b",
           "sourceId": "stirileprotv",
           "sourceName": "Știrile ProTV",
-          "originalTitle": "Peste 60 de olari din România, Republica Moldova și Ucraina readuc la viață, la Iași, tradiția ceramicii Cucuteni",
+          "originalTitle": "Olarii din România, Moldova și Ucraina readuc la viață ceramica Cucuteni",
           "url": "https://stirileprotv.ro/divers/peste-60-de-olari-din-romania-republica-moldova-si-ucraina-au-readus-la-viata-traditia-ceramicii-realizate-manual-la-iasi.html",
           "summary": "Peste 60 de olari din România, Republica Moldova și Ucraina s-au reunit la Iași pentru un târg impresionant de ceramică Cucuteni. Aceștia readuc la viață tradiția milenară, expunând mii de obiecte unicat în Parcul Copou.",
           "positivity": 85,
@@ -190,60 +190,6 @@
         }
       ],
       "reserves": [
-        {
-          "id": "ee140ec753f7edfc",
-          "sourceId": "dw-romania",
-          "sourceName": "DW România",
-          "originalTitle": "Cum este să fii gay în Republica Moldova?",
-          "url": "https://www.dw.com/ro/cum-este-s%C4%83-fii-gay-%C3%AEn-republica-moldova/a-77653512?maca=rum-rss-rom-all-1493-rdf",
-          "summary": "Marșul Pride de la Chișinău a avut loc fără incidente, marcând o premieră pentru comunitatea LGBTQ+ din Republica Moldova. Evenimentul a reunit susținători ai diversității și incluziunii.",
-          "positivity": 85,
-          "impact": 70,
-          "category": "local-heroes",
-          "publishedAt": "2026-06-22T10:49:00.000Z",
-          "processedAt": "2026-06-27T12:11:03.337Z",
-          "feltImpact": 70,
-          "certainty": 90,
-          "humanCloseness": 80,
-          "bureaucraticDistance": 30,
-          "promoRisk": 20
-        },
-        {
-          "id": "5bb5379ada172129",
-          "sourceId": "edupedu",
-          "sourceName": "Edupedu",
-          "originalTitle": "Trei elevi din Oradea au obținut locul III la Competiția Europeană de Statistică 2025-2026, cu materialul Portret statistic: cum sunt românii?",
-          "url": "https://www.edupedu.ro/trei-elevi-din-oradea-au-obtinut-locul-iii-in-europa-la-competitia-europeana-de-statistica-2025-2026-cu-materialul-portret-statistic-cum-sunt-romanii/",
-          "summary": "Trei elevi din Oradea au obținut locul III la Competiția Europeană de Statistică cu proiectul \"Portret statistic: cum sunt românii?\". Performanța liceenilor de la Colegiul Național „Onisifor Ghibu” este o reușită notabilă.",
-          "positivity": 80,
-          "impact": 70,
-          "category": "wins",
-          "publishedAt": "2026-06-25T14:09:44.000Z",
-          "processedAt": "2026-06-27T12:11:03.337Z",
-          "feltImpact": 60,
-          "certainty": 90,
-          "humanCloseness": 80,
-          "bureaucraticDistance": 20,
-          "promoRisk": 10
-        },
-        {
-          "id": "e1a2a7773fdb87a5",
-          "sourceId": "republica",
-          "sourceName": "Republica",
-          "originalTitle": "Cum se face agricultură în prima fermă digitalizată din România. Teofil Dascălu, fondator: „Un sol lucrat pentru unii reprezintă o imagine plăcută, dar pentru mine este un cimitir, pentru că ai omorât tot ce era în el”",
-          "url": "https://republica.ro/prima-ferma-digitalizata-agricultura",
-          "summary": "Teofil Dascălu, fondatorul primei ferme digitalizate din România, explică abordarea sa asupra agriculturii: „Un sol lucrat pentru unii reprezintă o imagine plăcută, dar pentru mine este un cimitir, pentru că ai omorât tot ce era în el”. El promovează o agricultură sustenabilă.",
-          "positivity": 80,
-          "impact": 70,
-          "category": "green-stuff",
-          "publishedAt": "2026-06-25T03:52:00.000Z",
-          "processedAt": "2026-06-27T12:11:03.337Z",
-          "feltImpact": 60,
-          "certainty": 90,
-          "humanCloseness": 70,
-          "bureaucraticDistance": 10,
-          "promoRisk": 15
-        },
         {
           "id": "e88e6df0cf574cf4",
           "sourceId": "stirileprotv",
@@ -279,24 +225,6 @@
           "humanCloseness": 60,
           "bureaucraticDistance": 30,
           "promoRisk": 30
-        },
-        {
-          "id": "838bbb54abb287cf",
-          "sourceId": "agerpres",
-          "sourceName": "Agerpres",
-          "originalTitle": "Mureș: Castelul Teleki din Gornești revine pe harta turistică a României din data de 16 iulie",
-          "url": "https://agerpres.ro/cultura-media/2026/06/22/mures-castelul-teleki-din-gornesti-revine-pe-harta-turistica-a-romaniei-din-data-de-16-iulie--1568882",
-          "summary": "Castelul Teleki din Gornești, județul Mureș, redevine o destinație turistică importantă începând cu 16 iulie. Renovarea și redeschiderea castelului promit să revitalizeze turismul local și să ofere o nouă experiență vizitatorilor.",
-          "positivity": 80,
-          "impact": 60,
-          "category": "wins",
-          "publishedAt": "2026-06-22T12:12:27.280Z",
-          "processedAt": "2026-06-27T12:11:03.337Z",
-          "feltImpact": 70,
-          "certainty": 80,
-          "humanCloseness": 70,
-          "bureaucraticDistance": 20,
-          "promoRisk": 10
         },
         {
           "id": "9913d8f9698e291c",
@@ -659,24 +587,6 @@
           "promoRisk": 20
         },
         {
-          "id": "17bd7132a7eaa9d0",
-          "sourceId": "stirileprotv",
-          "sourceName": "Știrile ProTV",
-          "originalTitle": "Fermierii, plătiți în avans. Cum funcționează agricultura susținută de comunitate în România",
-          "url": "https://stirileprotv.ro/stiri/pro-verde/fermierii-platiti-in-avans-cum-functioneaza-agricultura-sustinuta-de-comunitate-in-romania.html",
-          "summary": "Fermierii români pot accesa agricultura susținută de comunitate, un model în care consumatorii susțin direct producătorii locali. Acest lucru înseamnă că poți cumpăra produse proaspete și de calitate, contribuind în același timp la un sistem alimentar mai sustenabil.",
-          "positivity": 85,
-          "impact": 70,
-          "category": "green-stuff",
-          "publishedAt": "2026-06-22T16:55:26.000Z",
-          "processedAt": "2026-06-27T12:11:03.337Z",
-          "feltImpact": 60,
-          "certainty": 70,
-          "humanCloseness": 80,
-          "bureaucraticDistance": 50,
-          "promoRisk": 30
-        },
-        {
           "id": "f818b977ba44b663",
           "sourceId": "startupcafe",
           "sourceName": "StartupCafe",
@@ -731,20 +641,66 @@
           "promoRisk": 20
         }
       ],
-      "discarded": 334,
+      "discarded": 339,
       "totalProcessed": 876,
       "wrapperCopy": {
         "greeting": "Salutare! 👋",
-        "intro": "Săptămâna asta avem eroi din cele mai neașteptate locuri: de la un bebeluș salvat dintr-o mașină, la elevi care ajută alți elevi și comunități care se mobilizează. E plin de inspirație, inovație și proiecte verzi care prind contur. Hai să vezi.",
+        "intro": "Avem o ediție mai curată: educație, comunități, agricultură sustenabilă, patrimoniu și un pas important pentru comunitatea LGBTQ+ din Republica Moldova. Fără artificii, doar vești care lasă ceva bun în urmă.",
         "signOff": "Sperăm că ți-am adus un zâmbet! Ne citim săptămâna viitoare. 🙏",
-        "shortSummary": "Eroi locali, proiecte verzi și festivaluri pline de viață."
+        "shortSummary": "Educație, comunități, agricultură sustenabilă și un Pride fără incidente la Chișinău."
       },
       "validation": {
         "generatedAt": "2026-06-27T12:12:24.468Z",
-        "candidateCount": 40,
-        "flagged": []
+        "candidateCount": 35,
+        "flagged": [],
+        "approvalSource": "editor-review",
+        "checkedAt": "2026-06-28T11:26:34.098Z",
+        "blockedArticles": [
+          {
+            "articleId": "d5695aa5a1b337d0",
+            "reason": "negative-premise-with-happy-ending"
+          },
+          {
+            "articleId": "9205a1c8c7e8f785",
+            "reason": "soft-first-person-travel-essay"
+          },
+          {
+            "articleId": "5510709501ac34bf",
+            "reason": "crime-resolution"
+          },
+          {
+            "articleId": "caf63847eef1052d",
+            "reason": "commercial-festival-or-nostalgia"
+          },
+          {
+            "articleId": "c607c57cc7421582",
+            "reason": "negative-premise-with-happy-ending"
+          }
+        ],
+        "replacements": [
+          {
+            "removedArticleId": "d5695aa5a1b337d0",
+            "replacementArticleId": "ee140ec753f7edfc"
+          },
+          {
+            "removedArticleId": "9205a1c8c7e8f785",
+            "replacementArticleId": "5bb5379ada172129"
+          },
+          {
+            "removedArticleId": "5510709501ac34bf",
+            "replacementArticleId": "e1a2a7773fdb87a5"
+          },
+          {
+            "removedArticleId": "caf63847eef1052d",
+            "replacementArticleId": "17bd7132a7eaa9d0"
+          },
+          {
+            "removedArticleId": "c607c57cc7421582",
+            "replacementArticleId": "838bbb54abb287cf"
+          }
+        ]
       }
     },
-    "reasoning": "Am verificat selecția curentă și am făcut câteva ajustări pentru a îmbunătăți echilibrul și a elimina potențiale suprapuneri cu articole publicate anterior. Articolul despre un ucrainean salvat pe munte (c607c57cc7421582) a fost inclus pentru a adăuga o poveste de curaj uman, similară cu cele de eroi locali. Articolul despre olarii de la Iași (b421b4e90f809c9b) a fost adăugat pentru a aduce o notă de tradiție și comunitate. Am considerat că selecția curentă oferă o bună varietate de subiecte, de la intervenții eroice la inițiative ecologice și evenimente culturale, fără a repeta teme din săptămânile anterioare. Intro-ul și shortSummary au fost ușor ajustate pentru a reflecta mai bine selecția finală."
+    "reasoning": "Editor review: removed rescue/crime/negative-premise, weak travel essay, and Nostalgia festival items; promoted stronger reserve stories on Moldova Pride, student achievement, sustainable agriculture, community-supported farming, and restored heritage. Rewrote display titles that carried source/editorial framing. Selected display titles were tightened to remove feed cruft, labels, and overlong quote framing."
   }
 }
