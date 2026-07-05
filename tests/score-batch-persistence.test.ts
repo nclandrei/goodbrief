@@ -282,8 +282,16 @@ test('score phase: blocks hard editorial exclusions and normalizes display title
       sourceId: 'edupedu',
       sourceName: 'Edupedu',
       title:
-        'FOTO De la „casa vrăjitoarei” la o bibliotecă modernă pentru elevii din Cara',
+        '<span class="title-highlight">FOTO De la „casa vrăjitoarei” la o bibliotecă modernă pentru elevii din Cara &amp; copii</span>',
       summary: 'O fostă cramă a fost transformată într-o bibliotecă modernă.',
+    },
+    {
+      ...makeRawArticle('sponsored'),
+      sourceId: 'biziday',
+      sourceName: 'Biziday',
+      title:
+        'Spitalul care contactează peste 2.000 de pacienți lunar după externare (P)',
+      summary: 'Un material sponsorizat despre servicii medicale private.',
     },
     {
       ...makeRawArticle('rescue'),
@@ -336,7 +344,7 @@ test('score phase: blocks hard editorial exclusions and normalizes display title
   );
   assert.equal(
     artifact.data.articles[0].originalTitle,
-    'De la „casa vrăjitoarei” la o bibliotecă modernă pentru elevii din Cara'
+    'De la „casa vrăjitoarei” la o bibliotecă modernă pentru elevii din Cara & copii'
   );
-  assert.equal(artifact.data.discarded, 2);
+  assert.equal(artifact.data.discarded, 3);
 });

@@ -5,7 +5,16 @@ type EditorialArticle =
   | Pick<RawArticle, 'title' | 'summary'>;
 
 const EDITORIAL_LABEL_PATTERN =
-  /^(?:(?:foto|video|interviu|list[aă])(?:\s*[|:.\-–—]\s*|\s+))+/iu;
+  /^(?:(?:foto(?:\s*&\s*video)?|video|interviu|list[aă]|grafic)(?:\s*[|:.\-–—]\s*|\s+))+/iu;
+
+const HTML_TAG_PATTERN = /<[^>]*>/gu;
+
+const HTML_ENTITY_MAP: Record<string, string> = {
+  amp: '&',
+  apos: "'",
+  nbsp: ' ',
+  quot: '"',
+};
 
 const COMMERCIAL_FESTIVAL_PATTERNS = [
   /\bfestival(?:ului|ul)?\s+nostalgia\b/iu,
@@ -30,6 +39,12 @@ const CRIME_RESOLUTION_PATTERN =
 const SOFT_FIRST_PERSON_ESSAY_PATTERN =
   /\b(autocar|tren)\b[\s\S]*\b(m-am|lec[țt]ie pe care nu o voi uita|rom[âa]nia real[ăa])\b/iu;
 
+const SPONSORED_MARKER_PATTERNS = [
+  /\((?:p|publicitate)\)/iu,
+  /\[(?:p|publicitate)\]/iu,
+  /\b(?:advertorial|sponsorizat[ăa]?|sponsored)\b/iu,
+];
+
 function articleTitle(article: EditorialArticle): string {
   return 'originalTitle' in article ? article.originalTitle : article.title;
 }
@@ -38,12 +53,39 @@ function articleText(article: EditorialArticle): string {
   return `${articleTitle(article)} ${article.summary}`;
 }
 
+function decodeHtmlEntities(value: string): string {
+  return value.replace(/&(#x?[0-9a-f]+|[a-z]+);/giu, (match, entity: string) => {
+    const normalized = entity.toLowerCase();
+    if (normalized.startsWith('#x')) {
+      const codePoint = Number.parseInt(normalized.slice(2), 16);
+      return Number.isFinite(codePoint) ? String.fromCodePoint(codePoint) : match;
+    }
+    if (normalized.startsWith('#')) {
+      const codePoint = Number.parseInt(normalized.slice(1), 10);
+      return Number.isFinite(codePoint) ? String.fromCodePoint(codePoint) : match;
+    }
+    return HTML_ENTITY_MAP[normalized] ?? match;
+  });
+}
+
 export function normalizeDisplayTitle(title: string): string {
-  return title.replace(EDITORIAL_LABEL_PATTERN, '').trim();
+  const withoutHtml = decodeHtmlEntities(title)
+    .replace(HTML_TAG_PATTERN, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  return withoutHtml
+    .replace(EDITORIAL_LABEL_PATTERN, '')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 export function getEditorialBlockReason(article: EditorialArticle): string | null {
   const text = articleText(article);
+
+  if (SPONSORED_MARKER_PATTERNS.some((pattern) => pattern.test(text))) {
+    return 'sponsored-or-advertorial';
+  }
 
   if (COMMERCIAL_FESTIVAL_PATTERNS.some((pattern) => pattern.test(text))) {
     return 'commercial-festival-or-nostalgia';
