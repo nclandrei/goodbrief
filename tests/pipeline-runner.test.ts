@@ -933,7 +933,7 @@ test('generate-draft wrapper produces the same final draft as running phases man
   );
 });
 
-test('verify-local shares the same Saturday phase command order and the workflow uses it in order', () => {
+test('verify-local shares the same Saturday phase command order and the workflow runs generation without artifact handoffs', () => {
   assert.deepEqual(
     VERIFY_LOCAL_SCRIPTS.slice(0, SATURDAY_PIPELINE_SCRIPTS.length),
     [...SATURDAY_PIPELINE_SCRIPTS]
@@ -949,14 +949,10 @@ test('verify-local shares the same Saturday phase command order and the workflow
     'utf-8'
   );
 
-  let lastIndex = -1;
-  for (const script of SATURDAY_PIPELINE_SCRIPTS) {
-    const index = workflow.indexOf(`npm run ${script}`);
-    assert.notEqual(index, -1, `Workflow should include ${script}`);
-    assert.ok(index > lastIndex, `Workflow should run ${script} after the previous phase`);
-    lastIndex = index;
-  }
-
+  assert.match(workflow, /npm run pipeline:run-all -- --week/);
   assert.match(workflow, /materialize-draft-from-pipeline\.ts/);
+  assert.match(workflow, /npm run validate-draft -- --week/);
   assert.match(workflow, /npm run validate-draft-freshness/);
+  assert.doesNotMatch(workflow, /actions\/download-artifact@v4/);
+  assert.match(workflow, /continue-on-error: true\s+uses: actions\/upload-artifact@v4/s);
 });
