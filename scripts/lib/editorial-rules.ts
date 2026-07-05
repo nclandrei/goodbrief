@@ -58,6 +58,21 @@ const SPONSORED_MARKER_PATTERNS = [
   /\b(?:advertorial|sponsorizat[ăa]?|sponsored)\b/iu,
 ];
 
+const REPUBLIC_OF_MOLDOVA_PATTERNS = [
+  /\b(?:republica|republicii)\s+moldova\b/iu,
+  /\br\.?\s*moldova\b/iu,
+  /\bchi[șs]in[ăa]u\b/iu,
+  /\bpod(?:ul)?\s+(?:nou\s+)?peste\s+prut\b/iu,
+  /\bpeste\s+prut\b/iu,
+];
+
+const EXCEPTIONAL_MOLDOVA_PATTERNS = [
+  /\b(?:dreptur(?:i|ile)\s+(?:omului|lgbtq?|lgbti|minorit[ăa][țt]ilor)|lgbtq?|lgbti|pride|queer)\b/iu,
+  /\b(?:parteneriat(?:e)?\s+civil(?:e)?|c[ăa]s[ăa]tori(?:e|i)\s+între\s+persoane\s+de\s+acela[șs]i\s+sex)\b/iu,
+  /\b(?:anti-discriminare|discriminare|egalitate|cedo|curtea\s+european[ăa]\s+a\s+drepturilor\s+omului)\b/iu,
+  /\b(?:victorie|premier[ăa]|istoric[ăa]|recunoa[șs]te|legalizeaz[ăa])\b[\s\S]{0,80}\b(?:dreptur(?:i|ile)|lgbtq?|lgbti|minorit[ăa][țt]i|egalitate)\b/iu,
+];
+
 function articleTitle(article: EditorialArticle): string {
   return 'originalTitle' in article ? article.originalTitle : article.title;
 }
@@ -102,6 +117,13 @@ export function getEditorialBlockReason(article: EditorialArticle): string | nul
 
   if (SPONSORED_MARKER_PATTERNS.some((pattern) => pattern.test(text))) {
     return 'sponsored-or-advertorial';
+  }
+
+  if (
+    REPUBLIC_OF_MOLDOVA_PATTERNS.some((pattern) => pattern.test(text)) &&
+    !EXCEPTIONAL_MOLDOVA_PATTERNS.some((pattern) => pattern.test(text))
+  ) {
+    return 'routine-republic-of-moldova-story';
   }
 
   if (COMMERCIAL_FESTIVAL_PATTERNS.some((pattern) => pattern.test(text))) {

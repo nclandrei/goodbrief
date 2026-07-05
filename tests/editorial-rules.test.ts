@@ -46,6 +46,28 @@ test('editorial rules block sponsored and advertorial stories', () => {
   );
 });
 
+test('editorial rules block routine Republic of Moldova stories but allow exceptional civic wins', () => {
+  assert.equal(
+    getEditorialBlockReason({
+      originalTitle:
+        'Un nou pod peste Prut și primii kilometri de autostradă din R. Moldova',
+      summary:
+        'Guvernele anunță un proiect de infrastructură rutieră între România și Republica Moldova.',
+    }),
+    'routine-republic-of-moldova-story'
+  );
+
+  assert.equal(
+    getEditorialBlockReason({
+      originalTitle:
+        'Premieră pentru drepturile LGBT în Republica Moldova: cuplurile primesc protecție legală',
+      summary:
+        'Decizia marchează o victorie civică pentru egalitate și drepturile omului.',
+    }),
+    null
+  );
+});
+
 test('normalizeDisplayTitle strips HTML, entities, and source labels', () => {
   assert.equal(
     normalizeDisplayTitle(

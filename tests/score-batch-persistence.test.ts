@@ -310,6 +310,15 @@ test('score phase: blocks hard editorial exclusions and normalizes display title
       summary: 'Muzica anilor 90 și 2000 a adus publicul la un festival comercial.',
     },
     {
+      ...makeRawArticle('moldova-road'),
+      sourceId: 'agerpres',
+      sourceName: 'Agerpres',
+      title:
+        'Un nou pod peste Prut și primii kilometri de autostradă din R. Moldova',
+      summary:
+        'Guvernele au anunțat un proiect rutier de infrastructură între România și Republica Moldova.',
+    },
+    {
       ...makeRawArticle('students'),
       title: 'Trei elevi din Oradea au luat premiu la o competiție europeană',
       summary: 'Elevii au fost premiați pentru un proiect statistic despre România.',
@@ -346,5 +355,5 @@ test('score phase: blocks hard editorial exclusions and normalizes display title
     artifact.data.articles[0].originalTitle,
     'De la „casa vrăjitoarei” la o bibliotecă modernă pentru elevii din Cara & copii'
   );
-  assert.equal(artifact.data.discarded, 3);
+  assert.equal(artifact.data.discarded, 4);
 });
