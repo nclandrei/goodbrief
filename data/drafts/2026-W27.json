@@ -739,7 +739,7 @@
     "flagged": [],
     "status": "passed",
     "approvalSource": "validation-pipeline",
-    "checkedAt": "2026-07-05T10:51:18.955Z",
+    "checkedAt": "2026-07-05T10:55:04.420Z",
     "freshnessWindowDays": 14,
     "publishedHistoryCount": 247,
     "recentDraftCount": 0,
@@ -749,206 +749,208 @@
       {
         "articleId": "fa90b509f713d4a5",
         "verdict": "fresh",
-        "notes": "No historical match found for a family clothing brand."
+        "notes": "No relevant matches found in the archive. The article is about a family business selling linen clothing."
       },
       {
         "articleId": "b29f64f97cd23008",
         "verdict": "fresh",
-        "notes": "No historical match found for doctors prescribing culture."
+        "notes": "No close historical matches found. The article is about doctors prescribing cultural activities in Cluj."
       },
       {
         "articleId": "dd4e426cb31c905a",
         "verdict": "fresh",
-        "notes": "The article discusses the Sibiu-Făgăraș highway construction, while the archive match is about an investment in a fitness chain. No overlap in topic."
+        "notes": "The article discusses the progress of the Sibiu-Făgăraș highway construction. The closest historical match is about an investment in a fitness chain, which is not related."
       },
       {
         "articleId": "e8084f1c93f2ec29",
         "verdict": "fresh",
-        "notes": "No historical match found for the surge in photovoltaic energy."
+        "notes": "No close historical matches found. The article is about the growth of solar energy in Romania's national energy system."
       },
       {
         "articleId": "fe52d83cf7d2c2c4",
         "verdict": "fresh",
-        "notes": "No historical match found for the opening of the Royal Salon in Gara de Nord."
+        "notes": "No close historical matches found. The article is about the opening of the Royal Salon in Gara de Nord to the public."
       },
       {
         "articleId": "77e7c763bb806161",
         "verdict": "follow_up",
-        "notes": "This article reports on David Popovici's recent success at a competition in Rome, which is a new development following his previous awards (best athlete in the Balkans, best swimmer in Europe) mentioned in the archive matches.",
-        "matchedOrigin": "[issue] 2026-02-23-issue.md",
+        "notes": "This is a follow-up to previous achievements by David Popovici, specifically his recent success at the Rome competition, building on his previously recognized status as a top swimmer.",
+        "matchedOrigin": "2026-02-23-issue.md",
         "matchedTitle": "David Popovici, ales cel mai bun sportiv din Balcani în 2025. „Acest premiu ne aparține tuturor”"
       },
       {
         "articleId": "1b586841065b2431",
         "verdict": "fresh",
-        "notes": "The article is about the first high school in Romania to train musical artists and sound/light specialists. Archive matches are about a rescue dog, banning gambling, and Easter traditions, which are unrelated."
+        "notes": "No relevant matches found. The article is about the first high school in Romania training musical artists and sound/light specialists."
       },
       {
         "articleId": "c90acc33a4561c72",
         "verdict": "fresh",
-        "notes": "The article is about an individual's journey in urban planning and community development. Archive matches are about centers for vulnerable families, food donations, and children learning programming, which are unrelated."
+        "notes": "No relevant matches found. The article is about a woman who started as a volunteer and now designs communities with residents."
       },
       {
         "articleId": "7b039c981b5ebf84",
         "verdict": "fresh",
-        "notes": "The article is about new technology for patient recovery at Caracal Hospital. Archive matches are about a math prodigy from Caracal and hospital funding, which are not related."
+        "notes": "The article is about new technology for patient recovery at the Caracal Hospital. Archive matches are about a math prodigy from Caracal and hospital funding, which are not related."
       },
       {
         "articleId": "b00b1900d7a10e4a",
         "verdict": "fresh",
-        "notes": "The article is about the significant increase in electric car registrations. The archive matches are about banning gambling, solar energy records, high-speed trains, and tourist spots, which are unrelated."
+        "notes": "No relevant matches found. The article is about the significant increase in electric car registrations in Romania."
       },
       {
         "articleId": "1841807a248ba892",
-        "verdict": "fresh",
-        "notes": "The article is about a historic basketball victory. Archive matches are about a bird returning to Romania after 50 years and a film winning an award, which are unrelated."
+        "verdict": "follow_up",
+        "notes": "This is a follow-up to historical sporting achievements, specifically a historic win against Greece after 51 years, building on past mentions of Romanian sports successes.",
+        "matchedOrigin": "2026-05-04-issue.md",
+        "matchedTitle": "Acvila de câmp s-a întors în România după 50 de ani"
       },
       {
         "articleId": "b84c4b858038f287",
         "verdict": "fresh",
-        "notes": "The article is about a student achieving a perfect score on the National Evaluation. The archive match is about students winning an award at NASA, which is a different topic."
+        "notes": "The article is about a student achieving a perfect score in a national exam. The closest archive match is about students winning awards at NASA, which is unrelated."
       },
       {
         "articleId": "f328b36ed4bc7016",
         "verdict": "fresh",
-        "notes": "No historical match found for a communication course for medical students."
+        "notes": "No close historical matches found. The article is about a medical communication course for students."
       },
       {
         "articleId": "10fb10195523d065",
         "verdict": "fresh",
-        "notes": "No historical match found for a young entrepreneur launching an IT company."
+        "notes": "No close historical matches found. The article is about a young Romanian entrepreneur's successful IT company."
       },
       {
         "articleId": "ebb43ef28cfee6a5",
         "verdict": "fresh",
-        "notes": "The article is about a factory producing transformers. The archive match is about an international arbitration win concerning Casa Radio, which is unrelated."
+        "notes": "The article is about a factory in Botoșani producing transformers. The closest archive match is about an international arbitration win for Romania, which is not related."
       },
       {
         "articleId": "0d6af22a1c07902f",
         "verdict": "fresh",
-        "notes": "The article is about a platform for student internships. The archive match is about students winning an award at NASA, which is a different topic."
+        "notes": "The article is about a platform for student internships. The closest archive match is about students winning awards at NASA, which is unrelated."
       },
       {
         "articleId": "ba8423e27e7371ba",
         "verdict": "fresh",
-        "notes": "No historical match found for a theater performance described as a phenomenon."
+        "notes": "No close historical matches found. The article is about the play 'Faust' in Sibiu."
       },
       {
         "articleId": "6fed0a1eff8e7bec",
         "verdict": "fresh",
-        "notes": "The article is about a bank calling customers for unusual transactions. The archive match is about Easter traditions, which is unrelated."
+        "notes": "The article is about a bank's new fraud prevention service. The closest archive match is about a place in Romania decorated for Easter, which is unrelated."
       },
       {
         "articleId": "73a7784bc5e72946",
         "verdict": "follow_up",
-        "notes": "This article discusses a new and novel treatment for stroke patients at Galați Hospital, which is a specific medical advancement. The archive matches mention molecular analysis for cancer patients in Sibiu, support for cancer patients, and flood risk reduction in Galați, but none are about this specific new treatment method.",
-        "matchedOrigin": "[issue] 2026-03-23-issue.md",
+        "notes": "This article is a follow-up as it details a new, novel treatment for stroke patients in Galați, building upon previous mentions of medical advancements or new facilities in Romania.",
+        "matchedOrigin": "2026-03-23-issue.md",
         "matchedTitle": "Sibiu: Analize la nivel molecular, gratuite, pentru pacienții oncologici, în premieră la SJU"
       },
       {
         "articleId": "c1e6037a81cf4295",
         "verdict": "fresh",
-        "notes": "The article is about simple methods to reduce electricity bills at home. Archive matches are about solar energy funding, Easter traditions, and public institutions reducing bills with solar panels, none of which are about personal home energy saving methods."
+        "notes": "No relevant matches found. The article is about simple methods to reduce electricity bills at home."
       },
       {
         "articleId": "c318c07cd5d582eb",
         "verdict": "fresh",
-        "notes": "The article is about Borsec investing in a spa complex. Archive matches are about solar energy funding, EU funds for border regions, funding for local tourism, and microenterprise tax, none of which are related to spa investments."
+        "notes": "No relevant matches found. The article is about Borsec investing in a spa complex."
       },
       {
         "articleId": "43d0a18949f07d9b",
         "verdict": "fresh",
-        "notes": "The article is about flood prevention solutions in Bucharest. Archive matches are about children's activities, new schools in Bucharest, and cochlear implants, which are unrelated."
+        "notes": "No relevant matches found. The article is about flood prevention solutions in Bucharest."
       },
       {
         "articleId": "e347067576b6a969",
         "verdict": "fresh",
-        "notes": "The article is about a performance for psychiatric patients. The archive match is about a former winery becoming a library, which is unrelated."
+        "notes": "No relevant matches found. The article is about a performance organized by a psychiatric institute for patients."
       },
       {
         "articleId": "8398140bab605b13",
         "verdict": "fresh",
-        "notes": "The article is about a Picasso exhibition in Iași. The archive match is about cochlear implants, which is unrelated."
+        "notes": "The article is about a Picasso exhibition in Iași. The closest archive match is about cochlear implants, which is unrelated."
       },
       {
         "articleId": "8f1adc3af3e82f0f",
         "verdict": "fresh",
-        "notes": "The article is about the rehabilitation of the Ioan Soter Athletics Hall. Archive matches are about new schools in Bucharest, the sale of Carrefour Romania, stock market performance, and a theatre hall opening, none of which are related to sports facility rehabilitation."
+        "notes": "The article is about the rehabilitation of the Ioan Soter Athletics Hall. The closest archive match is about new schools in Bucharest, which is unrelated."
       },
       {
         "articleId": "17f5b5392b1f3132",
         "verdict": "fresh",
-        "notes": "The article is about the popularity of second-hand clothing. The archive match is about the employment rate of graduates, which is unrelated."
+        "notes": "No relevant matches found. The article is about the trend of buying second-hand clothes in Romania."
       },
       {
         "articleId": "2154261c51b2e0a7",
         "verdict": "fresh",
-        "notes": "No historical match found for a boom in Danube cruises."
+        "notes": "No close historical matches found. The article is about a boom in Danube river cruises."
       },
       {
         "articleId": "ca602c5d8cc944f9",
         "verdict": "fresh",
-        "notes": "No historical match found for Romania having the most pets in Europe."
+        "notes": "No close historical matches found. The article is about Romania having the most pets in Europe."
       },
       {
         "articleId": "bcb3dedafab56f71",
         "verdict": "fresh",
-        "notes": "The article is about funding for youth projects through participatory budgeting. The archive match is about a Metallica concert attendance record, which is unrelated."
+        "notes": "The article is about financing youth projects through participatory budgeting. The closest archive match is about a Metallica concert, which is unrelated."
       },
       {
         "articleId": "52f9074c4c7a32b2",
         "verdict": "fresh",
-        "notes": "The article is about MedLife expanding its services with a new hyperclinic in Bucharest. Archive matches are about accessibility for people with autism and a new cardiac surgery section for children, which are unrelated."
+        "notes": "The article is about MedLife expanding its services with a new clinic in Bucharest. The closest archive matches are about accessibility for autistic people and cardiac surgery for children, which are unrelated."
       },
       {
         "articleId": "495b4e0d393d3c20",
         "verdict": "fresh",
-        "notes": "The article is about a student achieving a perfect score on the National Evaluation in Mureș. Archive matches are about a student in Brașov preparing children for the evaluation and students winning an award at NASA, which are different topics."
+        "notes": "The article is about a student getting a perfect score in Mureș. The closest archive match is about a student preparing children for exams in Brașov, which is related to education but a different topic."
       },
       {
         "articleId": "5c9bfec923cfd1aa",
         "verdict": "fresh",
-        "notes": "No historical match found for the completion of the southern shore of Lake Morii."
+        "notes": "No close historical matches found. The article is about the finishing of lakeside development in Sector 6, Bucharest, with some resident complaints about paths."
       },
       {
         "articleId": "a59a76e8e4bed1fd",
         "verdict": "fresh",
-        "notes": "No historical match found for a personal story about a mother and her son's appreciation for Michael Jackson."
+        "notes": "No close historical matches found. The article is a personal reflection on a mother's admiration for her son's knowledge of Michael Jackson."
       },
       {
         "articleId": "b45db0c5b8d1eee3",
         "verdict": "fresh",
-        "notes": "The article is about a new terminal at Otopeni Airport. Archive matches are about international arbitration and immunotherapy projects, which are unrelated."
+        "notes": "The article is about a new mega terminal at Henri Coandă Airport. The closest archive matches are about international arbitration and a personalized immunotherapy project, which are unrelated."
       },
       {
         "articleId": "7504fe9126e9517f",
         "verdict": "fresh",
-        "notes": "The article is about climate shelters in Bucharest. Archive matches are about a wrestling gold medal and tram track installation, which are unrelated."
+        "notes": "The article is about climate shelters in Bucharest. The closest archive matches are about wrestling championships and tram line installation, which are unrelated."
       },
       {
         "articleId": "678e4f9df40710b2",
         "verdict": "fresh",
-        "notes": "The article is about a guide for communicating bad news to patients. Archive matches are about a certified rescue dog, Easter traditions, and Cucuteni ceramics, which are unrelated."
+        "notes": "No relevant matches found. The article is about the first guide in Romania for communicating bad news to patients."
       },
       {
         "articleId": "9c276b6509784adb",
         "verdict": "fresh",
-        "notes": "No historical match found for a doctor emphasizing communication with patients."
+        "notes": "No close historical matches found. The article is about a doctor emphasizing patient communication."
       },
       {
         "articleId": "8f244f0df0edada3",
         "verdict": "fresh",
-        "notes": "The article is about OMV Petrom receiving photovoltaic panels. Archive matches are about investments in solar/wind energy, a robotics championship, and Americans moving to Romania, none of which are about the delivery of panels for specific solar parks."
+        "notes": "The article is about OMV Petrom receiving solar panels for new parks. The closest archive match is about investments in solar and wind energy, which is related to energy but a different specific project."
       },
       {
         "articleId": "e7c6b7b5d3b936f0",
         "verdict": "fresh",
-        "notes": "No historical match found for the start of FITS 2026."
+        "notes": "No close historical matches found. The article is about the start of the Sibiu International Theatre Festival (FITS 2026)."
       },
       {
         "articleId": "cba8b5943756e3a8",
         "verdict": "fresh",
-        "notes": "The article is about the Safir family buying farms. Archive matches are about solar energy funding, EU funds for border regions, funding for local tourism, microenterprise tax, and investments in fitness chains, none of which are related to farm acquisitions."
+        "notes": "No relevant matches found. The article is about the Safir family buying farms and saving jobs."
       }
     ]
   }
