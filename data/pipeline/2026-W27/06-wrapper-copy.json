@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W27",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-07-05T10:02:29.088Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare! 👋",
+      "intro": "Săptămâna asta avem un amestec bun: o familie din Brașov care construiește un brand cu grijă, medici din Cluj care prescriu cultură pe rețetă și șantiere mari care chiar se mișcă. Mai jos intră și energia solară, elevi olimpici, sport, musical și oameni care proiectează orașe împreună cu comunitățile lor.",
+      "signOff": "Sperăm că ți-am făcut dimineața un pic mai luminoasă. Ne citim lunea viitoare. 🙏",
+      "shortSummary": "Autostrăzi, cultură pe rețetă, soare și elevi olimpici."
+    }
+  }
+}
