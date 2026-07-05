@@ -734,12 +734,12 @@
     "shortSummary": "Cultură pe rețetă, energie solară, programare, sport și recuperare medicală."
   },
   "validation": {
-    "generatedAt": "2026-07-05T10:15:28.693Z",
+    "generatedAt": "2026-07-05T10:40:49.103Z",
     "candidateCount": 40,
     "flagged": [],
     "status": "passed",
     "approvalSource": "validation-pipeline",
-    "checkedAt": "2026-07-05T10:15:36.311Z",
+    "checkedAt": "2026-07-05T10:40:59.481Z",
     "freshnessWindowDays": 14,
     "publishedHistoryCount": 247,
     "recentDraftCount": 0,
@@ -749,202 +749,282 @@
       {
         "articleId": "fa90b509f713d4a5",
         "verdict": "fresh",
-        "notes": "No close historical matches found. The topic of a family brand and their values is specific and not directly related to dinosaur discoveries."
+        "notes": "No similar articles found.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "b29f64f97cd23008",
         "verdict": "fresh",
-        "notes": "No close historical matches found. The initiative of prescribing culture for health is novel."
+        "notes": "No similar articles found.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "dd4e426cb31c905a",
         "verdict": "fresh",
-        "notes": "The article is about the construction progress of the Sibiu-Făgăraș highway. The matched article is about an investment in a fitness chain, which is a completely different topic."
+        "notes": "Article is about the construction of Sibiu-Fagaras highway. The closest match is about investment in a gym chain, which is unrelated.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "e8084f1c93f2ec29",
         "verdict": "fresh",
-        "notes": "No close historical matches found. The article discusses the growth of photovoltaics and energy storage in Romania's national energy system, a specific topic."
-      },
-      {
-        "articleId": "debc61877dcf2513",
-        "verdict": "fresh",
-        "notes": "The article is about a new bridge and highway in Moldova, a significant infrastructure project. The matched articles are about sports achievements and a historical event related to wildlife, not directly comparable."
-      },
-      {
-        "articleId": "77e7c763bb806161",
-        "verdict": "follow_up",
-        "notes": "This article discusses David Popovici's recent success at a competition in Rome, while the archive match is about him being named Balkan athlete of the year or best European swimmer in a previous year. These are related but distinct achievements, making the current one a follow-up on his continued success."
-      },
-      {
-        "articleId": "1b586841065b2431",
-        "verdict": "fresh",
-        "notes": "The article is about the first high school in Romania training musical artists and sound/light specialists, a specific educational initiative. The matched articles are about a certified rescue dog, a city banning gambling, and a place decorated for Easter, which are unrelated."
-      },
-      {
-        "articleId": "c90acc33a4561c72",
-        "verdict": "fresh",
-        "notes": "The article is about an individual's journey in urban planning and community development. The matched articles are about centers for vulnerable families, food donation campaigns, and programming for vulnerable children, which are related to social issues but not the same specific story."
-      },
-      {
-        "articleId": "845d46622eb56b4d",
-        "verdict": "follow_up",
-        "notes": "The current article reports on Romanian students winning medals at the European Geography Olympiad. The archive matches are for other student olympiads (Informatics, Math, Cyber Security). While all are academic achievements, the specific subject matter (Geography vs. Informatics/Math/Cyber Security) makes it a fresh topic. However, given the pattern of reporting on student olympiads, a follow-up categorization seems appropriate if there were a previous Geography Olympiad mentioned. Since there isn't, classifying as 'fresh' is also defensible. Let's re-evaluate: the matches are for similar *types* of events (academic competitions), but for different subjects. Therefore, it's 'fresh' in terms of subject matter."
-      },
-      {
-        "articleId": "b00b1900d7a10e4a",
-        "verdict": "follow_up",
-        "notes": "The article reports a significant increase in electric car registrations in June 2026. The archive matches discuss the overall market for electric and hybrid cars and registrations in April 2026. This is a follow-up on the trend of electric vehicle adoption."
-      },
-      {
-        "articleId": "1841807a248ba892",
-        "verdict": "fresh",
-        "notes": "The article discusses a historic basketball victory against Greece after 51 years. The matched articles are about the return of a bird species after 50 years, a film winning an award after 19 years, and a tourist location. The historical aspect of the sports victory is specific and not directly covered by the archives."
+        "notes": "No similar articles found.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "027e1c8fcb80af71",
         "verdict": "fresh",
-        "notes": "The article discusses programming and robotics becoming a hobby for middle schoolers. The matched articles are about a robotics competition, a summer camp, and learning architecture on-site, which are related to education but not the same specific trend of programming as a hobby."
+        "notes": "No similar articles found.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
-        "articleId": "b84c4b858038f287",
+        "articleId": "77e7c763bb806161",
         "verdict": "fresh",
-        "notes": "The article is about a student achieving a perfect score on a national exam. The matched article is about students winning an award at NASA, which is a different type of academic achievement."
+        "notes": "The article is about David Popovici's recent success, while the archive matches are about past awards and recognitions. This is a new event.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
-        "articleId": "fe52d83cf7d2c2c4",
+        "articleId": "1b586841065b2431",
         "verdict": "fresh",
-        "notes": "The article is about the opening of the Royal Salon in Gara de Nord to the public. No close historical matches."
+        "notes": "The article discusses the first high school in Romania for musical artists and sound/lighting specialists. The archive matches are about a certified rescue dog, city bans on gambling, and Easter traditions, which are unrelated.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
-        "articleId": "f328b36ed4bc7016",
+        "articleId": "c90acc33a4561c72",
         "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about a medical communication course and its success, including nominations for awards."
-      },
-      {
-        "articleId": "4d6d69825f664afb",
-        "verdict": "fresh",
-        "notes": "The article describes a school combining math with robotics for national exam preparation. The matched article is about a student offering free preparation for the national exam. While both are related to exam preparation, the method (combining math and robotics) is specific to the current article."
-      },
-      {
-        "articleId": "10fb10195523d065",
-        "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about a young entrepreneur's success with his IT company."
-      },
-      {
-        "articleId": "ebb43ef28cfee6a5",
-        "verdict": "fresh",
-        "notes": "The article is about a factory in Botoșani producing transformers. The matched article is about an international arbitration win related to Casa Radio, which is unrelated."
-      },
-      {
-        "articleId": "0d6af22a1c07902f",
-        "verdict": "fresh",
-        "notes": "The article is about former students creating an internship platform. The matched article is about students winning an award at NASA, which is a different type of student achievement."
-      },
-      {
-        "articleId": "ba8423e27e7371ba",
-        "verdict": "fresh",
-        "notes": "The article is about the 'Faust' play at Sibiu being a phenomenon. No close historical matches found."
-      },
-      {
-        "articleId": "6fed0a1eff8e7bec",
-        "verdict": "fresh",
-        "notes": "The article is about ING Romania implementing a new security measure for unusual transactions. The matched article is about a place decorated for Easter, which is unrelated."
+        "notes": "The article focuses on an individual's urban planning initiatives. Archive matches are about support for vulnerable families, food donations, and children learning programming, which are thematically different.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "7b039c981b5ebf84",
         "verdict": "fresh",
-        "notes": "The article is about robotic technology for patient recovery at Caracal Hospital. The matched article is about painted rooms for child interviews at a police station, which is unrelated."
+        "notes": "No similar articles found.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
+      },
+      {
+        "articleId": "b00b1900d7a10e4a",
+        "verdict": "fresh",
+        "notes": "The article is about the significant increase in electric car registrations in Romania. The archive matches are about gambling bans, solar energy records, high-speed trains, tourist spots, and optional school subjects, none of which are directly related.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
+      },
+      {
+        "articleId": "1841807a248ba892",
+        "verdict": "fresh",
+        "notes": "The article reports a historic basketball win against Greece after 51 years. Archive matches are about bird migration, a film award, and a tourist spot, which are unrelated.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
+      },
+      {
+        "articleId": "b84c4b858038f287",
+        "verdict": "fresh",
+        "notes": "The article highlights a student's perfect score at the National Evaluation. The archive match discusses students winning an award at NASA, which is unrelated.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
+      },
+      {
+        "articleId": "fe52d83cf7d2c2c4",
+        "verdict": "fresh",
+        "notes": "No similar articles found.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
+      },
+      {
+        "articleId": "f328b36ed4bc7016",
+        "verdict": "fresh",
+        "notes": "No similar articles found.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
+      },
+      {
+        "articleId": "4d6d69825f664afb",
+        "verdict": "fresh",
+        "notes": "The article describes a school combining math and robotics for national exam preparation. The archive match is about a student preparing other children for the national exam, which is a different focus.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
+      },
+      {
+        "articleId": "10fb10195523d065",
+        "verdict": "fresh",
+        "notes": "No similar articles found.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
+      },
+      {
+        "articleId": "ebb43ef28cfee6a5",
+        "verdict": "fresh",
+        "notes": "The article is about a factory producing transformers. The archive match is about an international arbitration case related to Casa Radio, which is unrelated.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
+      },
+      {
+        "articleId": "0d6af22a1c07902f",
+        "verdict": "fresh",
+        "notes": "The article is about a platform offering over 3,600 internships created by former students. The archive match is about students winning an award at NASA, which is unrelated.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
+      },
+      {
+        "articleId": "ba8423e27e7371ba",
+        "verdict": "fresh",
+        "notes": "No similar articles found.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
+      },
+      {
+        "articleId": "6fed0a1eff8e7bec",
+        "verdict": "fresh",
+        "notes": "The article is about ING Romania calling customers for unusual transactions. The archive match is about Easter traditions, which is unrelated.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "73a7784bc5e72946",
-        "verdict": "follow_up",
-        "notes": "The article reports on a new treatment for stroke patients in Galați. The archive match from March 23rd is about a new molecular analysis for cancer patients in Sibiu, and another from March 30th is about support for cancer patients. While all are medical advancements, the Galați stroke treatment is a novel development in that specific area. The mention of 'premieră' in both current and one of the archive articles suggests a pattern of reporting new medical treatments. Given the specificity of stroke treatment, it can be considered a follow-up on the general theme of medical advancements, or fresh if 'premieră' refers to the very first time this specific technology is used in Romania for stroke patients."
+        "verdict": "fresh",
+        "notes": "The article discusses a new treatment for stroke patients in Galati. The archive matches are about free cancer molecular analysis in Sibiu, support for cancer patients, flood risk reduction in Galati, and a film award. None are a direct match.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "c1e6037a81cf4295",
         "verdict": "fresh",
-        "notes": "The article provides simple methods to reduce electricity bills. The matched articles are about solar energy investments, a place decorated for Easter, and public institutions reducing bills with solar panels. The current article focuses on personal, everyday methods, making it a fresh topic."
+        "notes": "The article provides tips to reduce electricity bills. Archive matches are about solar energy funding, Easter traditions, and public institutions using solar panels. None are a direct match for general tips.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "c318c07cd5d582eb",
-        "verdict": "follow_up",
-        "notes": "The article is about Borsec investing in a spa complex to regain its reputation. The archive matches are about funding for solar energy, EU funds for border regions, funding for local tourism, state funding for economic recovery, and investment in a fitness chain. While all relate to investment and development, the focus on a specific spa town's revival through a large investment makes it a follow-up on economic development themes, particularly in tourism/resorts."
+        "verdict": "fresh",
+        "notes": "The article is about Borsec investing in a spa complex. Archive matches are about solar energy funding, regional development funds, local tourism funding, and microenterprise tax returns. None are related to a spa complex investment.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "43d0a18949f07d9b",
         "verdict": "fresh",
-        "notes": "The article discusses flood prevention solutions for Bucharest. The matched articles are about free activities for children, new school designs, and cochlear implants, which are unrelated."
+        "notes": "The article is about flood prevention solutions in Bucharest. The archive matches are about free activities for children, new schools in Bucharest, and cochlear implants, which are unrelated.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "e347067576b6a969",
         "verdict": "fresh",
-        "notes": "The article is about a psychiatric institute organizing a 'Souls in Harmony' event for patients. The matched article is about a former winery becoming a library for students, which is unrelated."
-      },
-      {
-        "articleId": "60602223956ab526",
-        "verdict": "follow_up",
-        "notes": "The current article reports on Romanian students winning medals at the International Cybersecurity Olympiad. The archive matches are for other student olympiads (Informatics, Math, Cyber Security). This is a follow-up on the theme of Romanian students excelling in international competitions, specifically in a cybersecurity context."
+        "notes": "The article is about a psychiatric institute organizing a show for patients. The archive match is about a former winery being turned into a library, which is unrelated.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "8398140bab605b13",
         "verdict": "fresh",
-        "notes": "The article is about Picasso works being exhibited for the first time in Iasi. The matched article is about cochlear implants, which is unrelated."
+        "notes": "The article is about Picasso's works being exhibited for the first time in Iasi. The archive match is about cochlear implants, which is unrelated.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "8f1adc3af3e82f0f",
         "verdict": "fresh",
-        "notes": "The article is about the rehabilitation of the Ioan Soter Athletics Hall. The matched articles are about new school designs, a business acquisition, stock market performance, and a youth theatre opening. None of these are directly related to the renovation of a sports facility."
+        "notes": "The article is about the rehabilitation of the Ioan Soter athletics hall. Archive matches are about new schools, a retail acquisition, stock market performance, and a theater hall opening, none of which are directly related to an athletics hall rehabilitation.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "17f5b5392b1f3132",
         "verdict": "fresh",
-        "notes": "The article discusses the trend of Romanians buying second-hand clothes, especially young people seeking unique items. The matched article is about the employment rate of Romanian graduates, which is a different topic."
+        "notes": "The article discusses the trend of Romanians buying second-hand clothes. Archive matches are about employment rates for graduates and are not related.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "2154261c51b2e0a7",
         "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about a boom in Danube cruises to Constanta, with a significant increase in ship numbers and tourists from the US."
+        "notes": "No similar articles found.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "ca602c5d8cc944f9",
         "verdict": "fresh",
-        "notes": "No close historical matches found. The article highlights Romania having the most pets in Europe and shares a personal story related to pets."
+        "notes": "No similar articles found.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "bcb3dedafab56f71",
         "verdict": "fresh",
-        "notes": "The article is about funding 80 youth projects through a participatory budgeting initiative. The matched article is about a Metallica concert's audience size, which is unrelated."
+        "notes": "The article is about funding for youth projects. The archive match is about a Metallica concert, which is unrelated.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "52f9074c4c7a32b2",
-        "verdict": "follow_up",
-        "notes": "The current article is about MedLife expanding with a new hyperclinic in Bucharest. The archive matches are about adapting services for people with autism and opening a pediatric cardiac surgery unit. While both are healthcare-related, the expansion of a private healthcare provider with a new facility is a distinct development. However, given the recurring theme of new medical facilities or services, it could be considered a follow-up on healthcare infrastructure development."
+        "verdict": "fresh",
+        "notes": "The article announces MedLife expanding with a new hyperclinic in Bucharest. Archive matches are about services for autistic people and a new cardiac surgery unit for children, which are unrelated.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "495b4e0d393d3c20",
         "verdict": "fresh",
-        "notes": "The article is about a student in Mureș obtaining a perfect score on the National Evaluation. The matched article is about a student in Brașov preparing children for the National Evaluation, and another about students winning an award at NASA. While related to education, the specific achievement of a perfect score is a distinct event."
+        "notes": "The article highlights a student's perfect score at the National Evaluation in Mureș. Archive matches are about a student preparing others for the exam, students winning an award at NASA, and Romania's OECD accession progress, none of which are directly related.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "5c9bfec923cfd1aa",
         "verdict": "fresh",
-        "notes": "No close historical matches found. The article is about the completion of the southern shore of Lake Morii in Sector 6, Bucharest, with new amenities, despite resident complaints about alleys."
+        "notes": "No similar articles found.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "a59a76e8e4bed1fd",
         "verdict": "fresh",
-        "notes": "No close historical matches found. The article is a personal narrative about a mother's admiration for her son's knowledge of Michael Jackson."
+        "notes": "No similar articles found.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
         "articleId": "b45db0c5b8d1eee3",
         "verdict": "fresh",
-        "notes": "The article is about a mega terminal project at Henri Coanda Airport. The matched articles are about an international arbitration win and a personalized immunotherapy project, neither of which relates to airport infrastructure."
+        "notes": "The article is about a new mega terminal at Henri Coanda Airport. Archive matches are about an international arbitration case and a personalized immunotherapy project, which are unrelated.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       },
       {
-        "articleId": "96b14aab1697a1be",
-        "verdict": "follow_up",
-        "notes": "The current article reports Romania's first-place finish and absolute gold medals at the Physics Balkan Olympiad. The archive matches are for other student olympiads (Informatics, Math, Cyber Security). This is a follow-up on the theme of Romanian students excelling in international academic competitions, specifically in Physics."
+        "articleId": "7504fe9126e9517f",
+        "verdict": "fresh",
+        "notes": "The article is about climate shelters in Bucharest. Archive matches are about a wrestling gold medal and tram track installation, which are unrelated.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
+      },
+      {
+        "articleId": "678e4f9df40710b2",
+        "verdict": "fresh",
+        "notes": "The article is about Romania's first guide for communicating bad news in medicine. Archive matches are about a certified rescue dog, Easter traditions, and traditional pottery revival, none of which are related.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
+      },
+      {
+        "articleId": "9c276b6509784adb",
+        "verdict": "fresh",
+        "notes": "No similar articles found.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
+      },
+      {
+        "articleId": "8f244f0df0edada3",
+        "verdict": "fresh",
+        "notes": "The article reports the arrival of photovoltaic panels for solar farms. Archive matches are about investments in renewable energy, a robotics world championship, and Americans moving to Romania, none of which directly cover the arrival of panels for specific solar farms.",
+        "matchedOrigin": "N/A",
+        "matchedTitle": "N/A"
       }
     ]
   }
