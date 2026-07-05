@@ -60,4 +60,37 @@ test('normalizeDisplayTitle strips HTML, entities, and source labels', () => {
     ),
     'Explozia fotovoltaicului pune soarele în fruntea surselor de generare'
   );
+
+  assert.equal(
+    normalizeDisplayTitle(
+      'Mega terminal la Aeroportul „Henri Coandă”. Proiect de 176.000 mp pentru 30 de milioane de pasageri anual. FOTO&VIDEO'
+    ),
+    'Mega terminal la Aeroportul „Henri Coandă”. Proiect de 176.000 mp pentru 30 de milioane de pasageri anual'
+  );
+
+  assert.equal(
+    normalizeDisplayTitle(
+      'Plecat din România la 4 ani, Vladimir și-a lansat firma când avea 17 ani – VIDEO interviu StartupCafe'
+    ),
+    'Plecat din România la 4 ani, Vladimir și-a lansat firma când avea 17 ani'
+  );
+
+  assert.equal(
+    normalizeDisplayTitle(
+      'Cerere în căsătorie pe Empire State Building. Doi tineri au escaladat turnul și au desfășurat un banner | VIDEO & FOTO'
+    ),
+    'Cerere în căsătorie pe Empire State Building. Doi tineri au escaladat turnul și au desfășurat un banner'
+  );
+
+  assert.equal(
+    normalizeDisplayTitle(
+      'Rochia cu care Bella Hadid a făcut furori în Franța | GALERIE FOTO'
+    ),
+    'Rochia cu care Bella Hadid a făcut furori în Franța'
+  );
+
+  assert.equal(
+    normalizeDisplayTitle('Lista cu propunerile de miniștri rămâne neschimbată.'),
+    'Lista cu propunerile de miniștri rămâne neschimbată.'
+  );
 });

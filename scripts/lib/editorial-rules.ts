@@ -5,7 +5,20 @@ type EditorialArticle =
   | Pick<RawArticle, 'title' | 'summary'>;
 
 const EDITORIAL_LABEL_PATTERN =
-  /^(?:(?:foto(?:\s*&\s*video)?|video|interviu|list[aă]|grafic)(?:\s*[|:.\-–—]\s*|\s+))+/iu;
+  String.raw`(?:galerie\s+foto|foto(?:\s*(?:&|/|\+)\s*video)?|video(?:\s*(?:&|/|\+)\s*foto|\s+interviu)?|interviu|grafic)`;
+
+const EDITORIAL_LABEL_PREFIX_PATTERN = new RegExp(
+  String.raw`^(?:(?:${EDITORIAL_LABEL_PATTERN})(?:\s*[|:.\-–—]\s*|\s+))+`,
+  'iu'
+);
+
+const EDITORIAL_LABEL_SEPARATOR_SUFFIX_PATTERN = new RegExp(
+  String.raw`\s*[|:.\-–—/]\s*${EDITORIAL_LABEL_PATTERN}(?:\s+[A-Z][\p{L}\d.-]+){0,2}\s*$`,
+  'iu'
+);
+
+const EDITORIAL_LABEL_UPPERCASE_SUFFIX_PATTERN =
+  /\s+(?:GALERIE\s+FOTO|FOTO(?:\s*&\s*VIDEO)?|VIDEO(?:\s*&\s*FOTO)?|GRAFIC|INTERVIU)\s*$/u;
 
 const HTML_TAG_PATTERN = /<[^>]*>/gu;
 
@@ -69,15 +82,19 @@ function decodeHtmlEntities(value: string): string {
 }
 
 export function normalizeDisplayTitle(title: string): string {
-  const withoutHtml = decodeHtmlEntities(title)
+  let normalized = decodeHtmlEntities(title)
     .replace(HTML_TAG_PATTERN, ' ')
     .replace(/\s+/g, ' ')
     .trim();
 
-  return withoutHtml
-    .replace(EDITORIAL_LABEL_PATTERN, '')
+  normalized = normalized
+    .replace(EDITORIAL_LABEL_PREFIX_PATTERN, '')
+    .replace(EDITORIAL_LABEL_SEPARATOR_SUFFIX_PATTERN, '')
+    .replace(EDITORIAL_LABEL_UPPERCASE_SUFFIX_PATTERN, '')
     .replace(/\s+/g, ' ')
     .trim();
+
+  return normalized;
 }
 
 export function getEditorialBlockReason(article: EditorialArticle): string | null {
