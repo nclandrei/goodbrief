@@ -147,24 +147,6 @@
       "promoRisk": 10
     },
     {
-      "id": "845d46622eb56b4d",
-      "sourceId": "edupedu",
-      "sourceName": "Edupedu",
-      "originalTitle": "Elevii olimpici români au obținut cinci medalii de aur, trei de argint și locul I pe națiuni, la Olimpiada Europeană de Geografie, desfășurată la Varna",
-      "url": "https://www.edupedu.ro/elevii-olimpici-romani-au-obtinut-cinci-medalii-de-aur-trei-de-argint-si-locul-i-pe-natiuni-la-olimpiada-europeana-de-geografie-desfasurata-la-varna/",
-      "summary": "Elevii olimpici români au obținut rezultate remarcabile la Olimpiada Europeană de Geografie din Varna, Bulgaria. Aceștia au câștigat cinci medalii de aur, trei de argint și locul I pe națiuni, demonstrând excelența educațională a țării.",
-      "positivity": 90,
-      "impact": 70,
-      "category": "wins",
-      "publishedAt": "2026-07-02T17:33:24.000Z",
-      "processedAt": "2026-07-04T14:30:19.141Z",
-      "feltImpact": 60,
-      "certainty": 90,
-      "humanCloseness": 80,
-      "bureaucraticDistance": 20,
-      "promoRisk": 10
-    },
-    {
       "id": "b00b1900d7a10e4a",
       "sourceId": "economedia",
       "sourceName": "Economedia",
@@ -181,26 +163,6 @@
       "humanCloseness": 50,
       "bureaucraticDistance": 20,
       "promoRisk": 20
-    }
-  ],
-  "reserves": [
-    {
-      "id": "1841807a248ba892",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Victorie istorică în preliminariile CM 2027. România a învins Grecia la baschet masculin, pentru prima dată după 51 de ani",
-      "url": "https://stirileprotv.ro/stiri/sport/victorie-istorica-in-preliminarile-cm-2027-romania-a-invins-grecia-la-baschet-masculin-pentru-prima-data-dupa-52-de-ani.html",
-      "summary": "Naționala de baschet masculin a României a obținut o victorie istorică împotriva Greciei, scor 73-66, în preliminariile Cupei Mondiale din 2027. Aceasta este prima victorie împotriva Greciei după 51 de ani.",
-      "positivity": 85,
-      "impact": 70,
-      "category": "wins",
-      "publishedAt": "2026-07-02T19:24:08.000Z",
-      "processedAt": "2026-07-04T14:30:19.141Z",
-      "feltImpact": 75,
-      "certainty": 95,
-      "humanCloseness": 70,
-      "bureaucraticDistance": 10,
-      "promoRisk": 5
     },
     {
       "id": "027e1c8fcb80af71",
@@ -219,7 +181,9 @@
       "humanCloseness": 85,
       "bureaucraticDistance": 20,
       "promoRisk": 20
-    },
+    }
+  ],
+  "reserves": [
     {
       "id": "b84c4b858038f287",
       "sourceId": "edupedu",
@@ -275,24 +239,6 @@
       "promoRisk": 40
     },
     {
-      "id": "4d6d69825f664afb",
-      "sourceId": "edupedu",
-      "sourceName": "Edupedu",
-      "originalTitle": "Singura școală din Sectorul 1 care a aplicat 8 testări standardizate care au combinat matematica cu robotica și și-a pregătit astfel elevii pentru Evaluarea Națională",
-      "url": "https://www.edupedu.ro/singura-scoala-din-sectorul-1-care-a-aplicat-8-testari-standardizate-care-au-combinat-matematica-cu-robotica-si-si-a-pregatit-astfel-elevii-pentru-evaluarea-nationala/",
-      "summary": "O școală din Sectorul 1 a combinat matematica cu robotica prin 8 testări standardizate, pregătind astfel elevii de clasa a VII-a și a VIII-a pentru Evaluarea Națională. Inovația în predare, prin co-teaching cu mentori specializați, a fost o premieră.",
-      "positivity": 80,
-      "impact": 70,
-      "category": "local-heroes",
-      "publishedAt": "2026-07-01T15:20:00.000Z",
-      "processedAt": "2026-07-04T14:30:19.141Z",
-      "feltImpact": 80,
-      "certainty": 90,
-      "humanCloseness": 90,
-      "bureaucraticDistance": 20,
-      "promoRisk": 30
-    },
-    {
       "id": "10fb10195523d065",
       "sourceId": "startupcafe",
       "sourceName": "StartupCafe",
@@ -327,24 +273,6 @@
       "humanCloseness": 60,
       "bureaucraticDistance": 30,
       "promoRisk": 50
-    },
-    {
-      "id": "0d6af22a1c07902f",
-      "sourceId": "edupedu",
-      "sourceName": "Edupedu",
-      "originalTitle": "Patru foști elevi ai Colegiului Național „Mihai Viteazul” din Ploiești, acum studenți la universități din România și UE, au creat o platformă cu peste 3.600 de internshipuri pentru studenții din toată Europa",
-      "url": "https://www.edupedu.ro/patru-fosti-elevi-ai-colegiului-national-mihai-viteazul-din-ploiesti-au-creat-o-platforma-cu-peste-3-600-de-internshipuri-pentru-studentii-din-toata-europa/",
-      "summary": "Patru foști elevi ai Colegiului Național „Mihai Viteazul” din Ploiești au creat platforma Youllgetit.eu, care centralizează peste 3.600 de internshipuri pentru studenți din Europa. Inițiativa ajută tinerii să găsească oportunități de carieră.",
-      "positivity": 80,
-      "impact": 60,
-      "category": "local-heroes",
-      "publishedAt": "2026-06-29T12:34:00.000Z",
-      "processedAt": "2026-07-04T14:30:19.141Z",
-      "feltImpact": 70,
-      "certainty": 90,
-      "humanCloseness": 80,
-      "bureaucraticDistance": 20,
-      "promoRisk": 10
     },
     {
       "id": "ba8423e27e7371ba",
@@ -491,24 +419,6 @@
       "promoRisk": 30
     },
     {
-      "id": "60602223956ab526",
-      "sourceId": "edupedu",
-      "sourceName": "Edupedu",
-      "originalTitle": "Patru medalii câștigate de elevii români la Olimpiada Internațională de Securitate Cibernetică 2026, la prima participare în competiție: un aur, un argint și două medalii de bronz",
-      "url": "https://www.edupedu.ro/patru-medalii-castigate-de-elevii-romani-la-olimpiada-internationala-de-securitate-cibernetica-2026-la-prima-participare-in-competitie-un-aur-un-argint-si-doua-medalii-de-bronz/",
-      "summary": "Elevii români au câștigat patru medalii, inclusiv una de aur, la Olimpiada Internațională de Securitate Cibernetică 2026. Aceasta este prima participare a țării la această competiție.",
-      "positivity": 80,
-      "impact": 70,
-      "category": "wins",
-      "publishedAt": "2026-07-03T08:55:19.000Z",
-      "processedAt": "2026-07-04T14:30:19.141Z",
-      "feltImpact": 60,
-      "certainty": 80,
-      "humanCloseness": 60,
-      "bureaucraticDistance": 10,
-      "promoRisk": 10
-    },
-    {
       "id": "8398140bab605b13",
       "sourceId": "agerpres",
       "sourceName": "Agerpres",
@@ -635,24 +545,6 @@
       "promoRisk": 40
     },
     {
-      "id": "495b4e0d393d3c20",
-      "sourceId": "agerpres",
-      "sourceName": "Agerpres",
-      "originalTitle": "Mureș: O elevă a Colegiului Național 'Alexandru Papiu Ilarian' a obținut media 10 la Evaluarea Națională",
-      "url": "https://agerpres.ro/educatie-stiinta/2026/07/01/mures-o-eleva-a-colegiului-national-alexandru-papiu-ilarian-a-obtinut-media-10-la-evaluarea-national--1572071",
-      "summary": "O elevă de la Colegiul Național 'Alexandru Papiu Ilarian' din Mureș a obținut media 10 la Evaluarea Națională. Un rezultat excepțional pentru o liceană.",
-      "positivity": 80,
-      "impact": 60,
-      "category": "local-heroes",
-      "publishedAt": "2026-07-01T09:57:03.092Z",
-      "processedAt": "2026-07-04T14:30:19.141Z",
-      "feltImpact": 70,
-      "certainty": 90,
-      "humanCloseness": 80,
-      "bureaucraticDistance": 30,
-      "promoRisk": 10
-    },
-    {
       "id": "5c9bfec923cfd1aa",
       "sourceId": "economedia",
       "sourceName": "Economedia",
@@ -705,246 +597,294 @@
       "humanCloseness": 60,
       "bureaucraticDistance": 70,
       "promoRisk": 30
-    },
-    {
-      "id": "96b14aab1697a1be",
-      "sourceId": "edupedu",
-      "sourceName": "Edupedu",
-      "originalTitle": "ULTIMA ORĂ Aur absolut și locul I pe națiuni pentru România, la Balcaniada de Fizică 2026",
-      "url": "https://www.edupedu.ro/ultima-ora-aur-absolut-si-locul-i-pe-natiuni-pentru-olimpicii-romaniei-la-balcaniada-de-fizica-2026/",
-      "summary": "România a obținut locul I pe națiuni la Balcaniada de Fizică 2026, câștigând două medalii de aur absolute și două de argint. Elevii olimpici au demonstrat performanțe remarcabile.",
-      "positivity": 90,
-      "impact": 60,
-      "category": "wins",
-      "publishedAt": "2026-06-30T10:25:03.000Z",
-      "processedAt": "2026-07-04T14:30:19.141Z",
-      "feltImpact": 50,
-      "certainty": 90,
-      "humanCloseness": 40,
-      "bureaucraticDistance": 10,
-      "promoRisk": 10
     }
   ],
   "discarded": 504,
   "totalProcessed": 1133,
   "wrapperCopy": {
     "greeting": "Salutare! 👋",
-    "intro": "Săptămâna asta avem un amestec bun: o familie din Brașov care construiește un brand cu grijă, medici din Cluj care prescriu cultură pe rețetă și șantiere mari care chiar se mișcă. Mai jos intră și energia solară, elevi olimpici, sport, musical și oameni care proiectează orașe împreună cu comunitățile lor.",
-    "signOff": "Sperăm că ți-am făcut dimineața un pic mai luminoasă. Ne citim lunea viitoare. 🙏",
-    "shortSummary": "Autostrăzi, cultură pe rețetă, soare și elevi olimpici."
+    "intro": "Săptămâna asta avem rețete pe bază de cultură, drumuri noi care prind contur și vești electrificante despre cum soarele ne luminează viitorul. Pregătește-ți cafeaua și hai să descoperim împreună cele mai bune vești.",
+    "signOff": "Pe curând! Sperăm că ți-ai încărcat bateriile cu optimism. 🙏",
+    "shortSummary": "Cultură pe rețetă, autostrăzi și energie solară."
   },
   "validation": {
-    "generatedAt": "2026-07-05T10:02:29.964Z",
+    "generatedAt": "2026-07-05T10:06:54.073Z",
     "candidateCount": 40,
     "flagged": [],
     "status": "passed",
     "approvalSource": "validation-pipeline",
-    "checkedAt": "2026-07-05T10:02:32.303Z",
+    "checkedAt": "2026-07-05T10:07:05.424Z",
     "freshnessWindowDays": 14,
     "publishedHistoryCount": 247,
     "recentDraftCount": 0,
-    "blockedArticles": [],
-    "replacements": [],
+    "blockedArticles": [
+      {
+        "articleId": "845d46622eb56b4d",
+        "reason": "agent-duplicate",
+        "matchedOrigin": "[issue] 2026-04-27-issue.md",
+        "matchedTitle": "Elevii români au obținut șase medalii de aur și două de argint la Turneul Internațional Avansat de Informatică –  IATI 2026"
+      },
+      {
+        "articleId": "1841807a248ba892",
+        "reason": "agent-duplicate",
+        "matchedOrigin": "[issue] 2026-05-04-issue.md",
+        "matchedTitle": "Acvila de câmp s-a întors în România după 50 de ani"
+      },
+      {
+        "articleId": "4d6d69825f664afb",
+        "reason": "agent-duplicate",
+        "matchedOrigin": "[issue] 2026-06-29-issue.md",
+        "matchedTitle": "O elevă din Brașov a pregătit gratuit peste 1.500 de copii pentru Evaluarea Națională"
+      },
+      {
+        "articleId": "0d6af22a1c07902f",
+        "reason": "agent-duplicate",
+        "matchedOrigin": "[issue] 2026-04-20-issue.md",
+        "matchedTitle": "Elevii de la Colegiul Național „Sfântul Sava\", premiați la NASA: Vizita le-a arătat că „viitorul nu este ceva ce așteptăm”"
+      },
+      {
+        "articleId": "60602223956ab526",
+        "reason": "agent-duplicate",
+        "matchedOrigin": "[issue] 2026-04-27-issue.md",
+        "matchedTitle": "Elevii români au obținut șase medalii de aur și două de argint la Turneul Internațional Avansat de Informatică –  IATI 2026"
+      },
+      {
+        "articleId": "495b4e0d393d3c20",
+        "reason": "agent-duplicate",
+        "matchedOrigin": "[issue] 2026-06-29-issue.md",
+        "matchedTitle": "O elevă din Brașov a pregătit gratuit peste 1.500 de copii pentru Evaluarea Națională"
+      },
+      {
+        "articleId": "96b14aab1697a1be",
+        "reason": "agent-duplicate",
+        "matchedOrigin": "[issue] 2026-04-27-issue.md",
+        "matchedTitle": "Elevii români au obținut șase medalii de aur și două de argint la Turneul Internațional Avansat de Informatică –  IATI 2026"
+      }
+    ],
+    "replacements": [
+      {
+        "removedArticleId": "845d46622eb56b4d",
+        "replacementArticleId": "027e1c8fcb80af71"
+      }
+    ],
     "agentReviewed": [
       {
         "articleId": "fa90b509f713d4a5",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "b29f64f97cd23008",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "dd4e426cb31c905a",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "e8084f1c93f2ec29",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "debc61877dcf2513",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "77e7c763bb806161",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "1b586841065b2431",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "c90acc33a4561c72",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "845d46622eb56b4d",
-        "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "verdict": "duplicate",
+        "notes": "This is a report of a student competition, similar to other awards/medals reports.",
+        "matchedOrigin": "[issue] 2026-04-27-issue.md",
+        "matchedTitle": "Elevii români au obținut șase medalii de aur și două de argint la Turneul Internațional Avansat de Informatică –  IATI 2026"
       },
       {
         "articleId": "b00b1900d7a10e4a",
-        "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "verdict": "follow_up",
+        "notes": "This article reports on a significant increase in electric car registrations, building on previous reports about the growing electric car market.",
+        "matchedOrigin": "[issue] 2026-05-25-issue.md",
+        "matchedTitle": "Parcul auto electric al României a ajuns la 68.454 de unități, cu +113% înmatriculări noi în aprilie"
       },
       {
         "articleId": "1841807a248ba892",
-        "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "verdict": "duplicate",
+        "notes": "Reports on a significant historical achievement in sports, similar to other reports of notable 'firsts' or long-awaited victories.",
+        "matchedOrigin": "[issue] 2026-05-04-issue.md",
+        "matchedTitle": "Acvila de câmp s-a întors în România după 50 de ani"
       },
       {
         "articleId": "027e1c8fcb80af71",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "b84c4b858038f287",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "fe52d83cf7d2c2c4",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "f328b36ed4bc7016",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "4d6d69825f664afb",
-        "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "verdict": "duplicate",
+        "notes": "This article reports on a school preparing students for a national exam, similar to another article about a student preparing children for the same exam.",
+        "matchedOrigin": "[issue] 2026-06-29-issue.md",
+        "matchedTitle": "O elevă din Brașov a pregătit gratuit peste 1.500 de copii pentru Evaluarea Națională"
       },
       {
         "articleId": "10fb10195523d065",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "ebb43ef28cfee6a5",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "0d6af22a1c07902f",
-        "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "verdict": "duplicate",
+        "notes": "This article is about students creating a platform for internships, similar to a previous article about students winning awards at NASA.",
+        "matchedOrigin": "[issue] 2026-04-20-issue.md",
+        "matchedTitle": "Elevii de la Colegiul Național „Sfântul Sava\", premiați la NASA: Vizita le-a arătat că „viitorul nu este ceva ce așteptăm”"
       },
       {
         "articleId": "ba8423e27e7371ba",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "6fed0a1eff8e7bec",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "7b039c981b5ebf84",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "73a7784bc5e72946",
-        "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "verdict": "follow_up",
+        "notes": "This article reports on a new medical treatment for stroke patients, which is a specific development on previous medical news.",
+        "matchedOrigin": "[issue] 2026-03-23-issue.md",
+        "matchedTitle": "Sibiu: Analize la nivel molecular, gratuite, pentru pacienții oncologici, în premieră la SJU"
       },
       {
         "articleId": "c1e6037a81cf4295",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "c318c07cd5d582eb",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "43d0a18949f07d9b",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "e347067576b6a969",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "60602223956ab526",
-        "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "verdict": "duplicate",
+        "notes": "This article is about students winning medals in an international cyber security competition, similar to other reports of students winning awards in international competitions.",
+        "matchedOrigin": "[issue] 2026-04-27-issue.md",
+        "matchedTitle": "Elevii români au obținut șase medalii de aur și două de argint la Turneul Internațional Avansat de Informatică –  IATI 2026"
       },
       {
         "articleId": "8398140bab605b13",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "8f1adc3af3e82f0f",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "17f5b5392b1f3132",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "2154261c51b2e0a7",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "ca602c5d8cc944f9",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "bcb3dedafab56f71",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "52f9074c4c7a32b2",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "495b4e0d393d3c20",
-        "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "verdict": "duplicate",
+        "notes": "This article reports on a student achieving a perfect score on a national exam. Similar articles about students achieving perfect scores on national exams have been archived.",
+        "matchedOrigin": "[issue] 2026-06-29-issue.md",
+        "matchedTitle": "O elevă din Brașov a pregătit gratuit peste 1.500 de copii pentru Evaluarea Națională"
       },
       {
         "articleId": "5c9bfec923cfd1aa",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "a59a76e8e4bed1fd",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "b45db0c5b8d1eee3",
         "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "96b14aab1697a1be",
-        "verdict": "fresh",
-        "notes": "Fresh in local verification mock."
+        "verdict": "duplicate",
+        "notes": "This article reports on students winning medals in a physics competition. Similar articles about students winning medals in various academic competitions have been archived.",
+        "matchedOrigin": "[issue] 2026-04-27-issue.md",
+        "matchedTitle": "Elevii români au obținut șase medalii de aur și două de argint la Turneul Internațional Avansat de Informatică –  IATI 2026"
       }
     ]
   }
