@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W28",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-07-12T10:42:56.447Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare! 👋",
+      "intro": "Săptămâna asta e plină de vești bune din spitalele noastre, unde medicii fac minuni, dar și de tineri remarcabili care ne inspiră prin reușitele lor la BAC și prin implicarea în comunitate. Să vedem ce ne aduce luna iulie în materie de inovație și speranță.",
+      "signOff": "Cam atât pentru săptămâna asta! Ne auzim la anul. 🙏",
+      "shortSummary": "Transplanturi record, tineri liceeni inspiraționali și mașini electrice."
+    }
+  }
+}
