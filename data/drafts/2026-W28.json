@@ -21,22 +21,22 @@
       "promoRisk": 20
     },
     {
-      "id": "14f285eabdc17ac9",
-      "sourceId": "edupedu",
-      "sourceName": "Edupedu",
-      "originalTitle": "La 87 de ani, Viorel Pintilescu începe facultatea și studiază biologia",
-      "url": "https://www.edupedu.ro/video-student-la-87-de-ani-viorel-pintilescu-fost-maistru-militar-s-a-inscris-la-facultatea-de-agricultura-specializarea-biologie-din-cadrul-universitatii-stiintele-vietii-din-iasi-am-multe-de-i/",
-      "summary": "Fostul maistru militar s-a înscris la Facultatea de Agricultură a Universității de Științele Vieții din Iași, la specializarea Biologie. Spune că mai are multe de învățat — și tocmai de aceea s-a întors la cursuri.",
-      "positivity": 90,
+      "id": "3bfdca31db0d58a7",
+      "sourceId": "economedia",
+      "sourceName": "Economedia",
+      "originalTitle": "Cetăți și conace restaurate revin pe harta turistică a României",
+      "url": "https://economedia.ro/de-la-cetati-medievale-la-conace-restaurate-noi-destinatii-de-descoperit-pe-harta-turistica-a-romaniei-g4media-ro.html",
+      "summary": "Mai multe cetăți medievale și conace restaurate se întorc în circuitul public și adaugă opriri noi pe harta turistică a țării. Proiectele readuc patrimoniul local în viața comunităților și oferă motive bune pentru excursii prin România.",
+      "positivity": 80,
       "impact": 70,
-      "category": "local-heroes",
-      "publishedAt": "2026-07-11T12:24:55.000Z",
+      "category": "wins",
+      "publishedAt": "2026-07-11T15:47:36.000Z",
       "processedAt": "2026-07-12T10:34:35.774Z",
-      "feltImpact": 80,
-      "certainty": 90,
-      "humanCloseness": 90,
-      "bureaucraticDistance": 20,
-      "promoRisk": 10
+      "feltImpact": 75,
+      "certainty": 85,
+      "humanCloseness": 80,
+      "bureaucraticDistance": 30,
+      "promoRisk": 20
     },
     {
       "id": "5671f9b9d852e9cc",
@@ -184,6 +184,24 @@
     }
   ],
   "reserves": [
+    {
+      "id": "14f285eabdc17ac9",
+      "sourceId": "edupedu",
+      "sourceName": "Edupedu",
+      "originalTitle": "La 87 de ani, Viorel Pintilescu începe facultatea și studiază biologia",
+      "url": "https://www.edupedu.ro/video-student-la-87-de-ani-viorel-pintilescu-fost-maistru-militar-s-a-inscris-la-facultatea-de-agricultura-specializarea-biologie-din-cadrul-universitatii-stiintele-vietii-din-iasi-am-multe-de-i/",
+      "summary": "Fostul maistru militar s-a înscris la Facultatea de Agricultură a Universității de Științele Vieții din Iași, la specializarea Biologie. Spune că mai are multe de învățat — și tocmai de aceea s-a întors la cursuri.",
+      "positivity": 90,
+      "impact": 70,
+      "category": "local-heroes",
+      "publishedAt": "2026-07-11T12:24:55.000Z",
+      "processedAt": "2026-07-12T10:34:35.774Z",
+      "feltImpact": 80,
+      "certainty": 90,
+      "humanCloseness": 90,
+      "bureaucraticDistance": 20,
+      "promoRisk": 10
+    },
     {
       "id": "3066a861ad2a1215",
       "sourceId": "edupedu",
@@ -617,24 +635,6 @@
       "promoRisk": 20
     },
     {
-      "id": "3bfdca31db0d58a7",
-      "sourceId": "economedia",
-      "sourceName": "Economedia",
-      "originalTitle": "De la cetăţi medievale la conace restaurate: Noi destinaţii de descoperit pe harta turistică a României (G4Media.ro)",
-      "url": "https://economedia.ro/de-la-cetati-medievale-la-conace-restaurate-noi-destinatii-de-descoperit-pe-harta-turistica-a-romaniei-g4media-ro.html",
-      "summary": "Harta turistică a României se îmbogățește cu cetăți medievale și conace restaurate, redând circuitului public obiective istorice importante. Aceste proiecte pun în valoare patrimoniul cultural al țării.",
-      "positivity": 80,
-      "impact": 70,
-      "category": "wins",
-      "publishedAt": "2026-07-11T15:47:36.000Z",
-      "processedAt": "2026-07-12T10:34:35.774Z",
-      "feltImpact": 75,
-      "certainty": 85,
-      "humanCloseness": 80,
-      "bureaucraticDistance": 30,
-      "promoRisk": 20
-    },
-    {
       "id": "6164ed3b533f4a9d",
       "sourceId": "edupedu",
       "sourceName": "Edupedu",
@@ -657,9 +657,9 @@
   "totalProcessed": 1045,
   "wrapperCopy": {
     "greeting": "Bună dimineața! 👋",
-    "intro": "Săptămâna asta, progresul vine din săli de operație, laboratoare, amfiteatre și comunități mici: medicii din Iași realizează primul transplant de cord din oraș, elevii români câștigă cinci medalii la Olimpiada Internațională de Fizică, iar Carina ajunge la Opera din Paris la doar 16 ani. Mai găsești un student în anul întâi la 87 de ani, tineri care se implică în Tulcea și inițiative care ajută familii, elevi internați, studenți și animale fără stăpân.",
+    "intro": "Săptămâna asta, progresul vine din săli de operație, laboratoare, scene mari și comunități mici: medicii din Iași realizează primul transplant de cord din oraș, elevii români câștigă cinci medalii la Olimpiada Internațională de Fizică, iar Carina ajunge la Opera din Paris la doar 16 ani. Mai găsești tineri care se implică în Tulcea, inițiative care ajută familii, elevi internați, studenți și animale fără stăpân, plus cetăți și conace restaurate care revin pe harta turistică a României.",
     "signOff": "Pe curând! Să ai o săptămână bună. 🌱",
-    "shortSummary": "Un transplant în premieră la Iași, cinci medalii la Fizică și un student în anul întâi la 87 de ani."
+    "shortSummary": "Un transplant în premieră la Iași, cinci medalii la Fizică și cetăți și conace redeschise vizitatorilor."
   },
   "validation": {
     "generatedAt": "2026-07-12T10:54:55.513Z",
@@ -667,7 +667,7 @@
     "flagged": [],
     "status": "passed",
     "approvalSource": "editor-review",
-    "checkedAt": "2026-07-12T10:57:07.372Z",
+    "checkedAt": "2026-07-12T11:02:20.977Z",
     "freshnessWindowDays": 14,
     "publishedHistoryCount": 257,
     "recentDraftCount": 0,
