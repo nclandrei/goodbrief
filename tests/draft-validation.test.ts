@@ -1,6 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { mkdtempSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import {
+  reviewDraftPoolAgainstArchive,
   validateDraftFreshness,
   type ArchiveReviewDecision,
   type ArchiveReviewInputItem,
@@ -64,6 +68,57 @@ function buildFreshReview(items: ArchiveReviewInputItem[]): ArchiveReviewDecisio
     notes: 'Fresh story.',
   }));
 }
+
+test('fails closed instead of crashing when archive review omits an article verdict', async () => {
+  const reviewPath = join(mkdtempSync(join(tmpdir(), 'goodbrief-archive-review-')), 'review.json');
+  writeFileSync(
+    reviewPath,
+    JSON.stringify({
+      reviews: [
+        {
+          articleId: 'article-0',
+          verdict: 'fresh',
+          notes: 'Fresh story.',
+        },
+      ],
+    }),
+    'utf-8'
+  );
+
+  const previousReviewPath = process.env.GOODBRIEF_ARCHIVE_REVIEW_PATH;
+  process.env.GOODBRIEF_ARCHIVE_REVIEW_PATH = reviewPath;
+
+  try {
+    const items: ArchiveReviewInputItem[] = [0, 1].map((index) => ({
+      article: makeArticle(index),
+      candidates: [],
+      requiresDateReview: false,
+    }));
+
+    const decisions = await reviewDraftPoolAgainstArchive(items, '2026-W10');
+
+    assert.deepEqual(decisions, [
+      {
+        articleId: 'article-0',
+        verdict: 'fresh',
+        notes: 'Fresh story.',
+        matchedOrigin: undefined,
+        matchedTitle: undefined,
+      },
+      {
+        articleId: 'article-1',
+        verdict: 'duplicate',
+        notes: 'Archive review omitted this article; blocked automatically for manual review.',
+      },
+    ]);
+  } finally {
+    if (previousReviewPath === undefined) {
+      delete process.env.GOODBRIEF_ARCHIVE_REVIEW_PATH;
+    } else {
+      process.env.GOODBRIEF_ARCHIVE_REVIEW_PATH = previousReviewPath;
+    }
+  }
+});
 
 test('blocks exact canonical URL repeats deterministically', async () => {
   const selected = Array.from({ length: 10 }, (_, index) =>

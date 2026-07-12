@@ -22,6 +22,9 @@ import type { HistoricalArticle } from './story-history.js';
 
 export const DEFAULT_FRESHNESS_WINDOW_DAYS = 14;
 const MAX_CANDIDATES_PER_ARTICLE = 5;
+const MAX_ARCHIVE_REVIEW_COMPLETION_ATTEMPTS = 3;
+const OMITTED_REVIEW_NOTES =
+  'Archive review omitted this article; blocked automatically for manual review.';
 
 export interface HistoricalCandidateMatch {
   article: HistoricalArticle;
@@ -221,15 +224,19 @@ function buildBlockedArticle(
   };
 }
 
-function normalizeReviewResponse(
+function isDraftValidationVerdict(value: unknown): value is DraftValidationVerdict {
+  return value === 'fresh' || value === 'duplicate' || value === 'follow_up';
+}
+
+function normalizeAvailableReviews(
   response: ArchiveReviewResponse,
   items: ArchiveReviewInputItem[]
 ): ArchiveReviewDecision[] {
   const validArticleIds = new Set(items.map((item) => item.article.id));
   const uniqueById = new Map<string, ArchiveReviewDecision>();
 
-  for (const review of response.reviews || []) {
-    if (!validArticleIds.has(review.articleId)) {
+  for (const review of Array.isArray(response.reviews) ? response.reviews : []) {
+    if (!validArticleIds.has(review.articleId) || !isDraftValidationVerdict(review.verdict)) {
       continue;
     }
 
@@ -244,15 +251,25 @@ function normalizeReviewResponse(
     }
   }
 
-  const decisions = items.map((item) => uniqueById.get(item.article.id)).filter(Boolean);
-  if (decisions.length !== items.length) {
-    const missingIds = items
-      .map((item) => item.article.id)
-      .filter((id) => !uniqueById.has(id));
-    throw new Error(`Archive review missing verdicts for article IDs: ${missingIds.join(', ')}`);
-  }
+  return items
+    .map((item) => uniqueById.get(item.article.id))
+    .filter((decision): decision is ArchiveReviewDecision => decision !== undefined);
+}
 
-  return decisions as ArchiveReviewDecision[];
+function completeMissingReviews(
+  decisions: ArchiveReviewDecision[],
+  items: ArchiveReviewInputItem[]
+): ArchiveReviewDecision[] {
+  const decisionById = new Map(decisions.map((decision) => [decision.articleId, decision]));
+
+  return items.map(
+    (item) =>
+      decisionById.get(item.article.id) || {
+        articleId: item.article.id,
+        verdict: 'duplicate',
+        notes: OMITTED_REVIEW_NOTES,
+      }
+  );
 }
 
 function loadMockArchiveReview(items: ArchiveReviewInputItem[]): ArchiveReviewDecision[] | null {
@@ -262,7 +279,7 @@ function loadMockArchiveReview(items: ArchiveReviewInputItem[]): ArchiveReviewDe
   }
 
   const response = JSON.parse(readFileSync(mockPath, 'utf-8')) as ArchiveReviewResponse;
-  return normalizeReviewResponse(response, items);
+  return completeMissingReviews(normalizeAvailableReviews(response, items), items);
 }
 
 function getArchiveReviewPrompt(weekId: string, items: ArchiveReviewInputItem[]): string {
@@ -375,13 +392,39 @@ export async function reviewDraftPoolAgainstArchive(
     } as any,
   });
 
-  const response = await callWithRetry(async () => {
-    const prompt = getArchiveReviewPrompt(weekId, items);
-    const result = await model.generateContent(prompt);
-    return JSON.parse(result.response.text()) as ArchiveReviewResponse;
-  });
+  const decisionsById = new Map<string, ArchiveReviewDecision>();
+  let pendingItems = items;
 
-  return normalizeReviewResponse(response, items);
+  for (
+    let attempt = 1;
+    attempt <= MAX_ARCHIVE_REVIEW_COMPLETION_ATTEMPTS && pendingItems.length > 0;
+    attempt++
+  ) {
+    const response = await callWithRetry(async () => {
+      const prompt = getArchiveReviewPrompt(weekId, pendingItems);
+      const result = await model.generateContent(prompt);
+      return JSON.parse(result.response.text()) as ArchiveReviewResponse;
+    });
+
+    for (const decision of normalizeAvailableReviews(response, pendingItems)) {
+      decisionsById.set(decision.articleId, decision);
+    }
+
+    pendingItems = pendingItems.filter((item) => !decisionsById.has(item.article.id));
+    if (pendingItems.length > 0 && attempt < MAX_ARCHIVE_REVIEW_COMPLETION_ATTEMPTS) {
+      console.warn(
+        `Archive review omitted ${pendingItems.length} verdict(s); retrying only the missing articles (attempt ${attempt + 1}/${MAX_ARCHIVE_REVIEW_COMPLETION_ATTEMPTS}).`
+      );
+    }
+  }
+
+  if (pendingItems.length > 0) {
+    console.warn(
+      `Archive review still omitted ${pendingItems.length} verdict(s); blocking those articles for manual review.`
+    );
+  }
+
+  return completeMissingReviews([...decisionsById.values()], items);
 }
 
 function sameIds(a: ProcessedArticle[], b: ProcessedArticle[]): boolean {
