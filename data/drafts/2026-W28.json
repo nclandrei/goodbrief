@@ -3,24 +3,6 @@
   "generatedAt": "2026-07-12T10:42:59.244Z",
   "selected": [
     {
-      "id": "445aae2f689e0f1a",
-      "sourceId": "agerpres",
-      "sourceName": "Agerpres",
-      "originalTitle": "Iași: Patru transplanturi renale într-o singură zi, la Spitalul 'Dr. C. I. Parhon'",
-      "url": "https://agerpres.ro/sanatate/2026/07/11/iasi-patru-transplanturi-renale-intr-o-singura-zi-la-spitalul-dr-c-i-parhon--1575323",
-      "summary": "Spitalul 'Dr. C. I. Parhon' din Iași a efectuat patru transplanturi renale într-o singură zi, o performanță medicală remarcabilă. Echipele medicale au salvat vieți prin aceste intervenții complexe.",
-      "positivity": 95,
-      "impact": 80,
-      "category": "wins",
-      "publishedAt": "2026-07-12T03:22:41.362Z",
-      "processedAt": "2026-07-12T10:34:35.774Z",
-      "feltImpact": 85,
-      "certainty": 90,
-      "humanCloseness": 95,
-      "bureaucraticDistance": 20,
-      "promoRisk": 20
-    },
-    {
       "id": "c62cd556c5738ff9",
       "sourceId": "agerpres",
       "sourceName": "Agerpres",
@@ -39,21 +21,185 @@
       "promoRisk": 20
     },
     {
-      "id": "28dfe79265691d02",
+      "id": "3066a861ad2a1215",
+      "sourceId": "edupedu",
+      "sourceName": "Edupedu",
+      "originalTitle": "Laurențiu, elevul dintr-un centru de protecție socială din Giurgiu care a luat peste 9.60 la Matematică, la Bac 2026: Fără muncă nu se poate / În clasa a VI-a am decis să mă axez strict pe carte, să intru la un liceu bun, să ascult de profesori și de îndrumători",
+      "url": "https://www.edupedu.ro/laurentiu-elevul-dintr-un-centru-de-protectie-sociala-din-giurgiu-care-a-luat-peste-9-60-la-matematica-la-bac-2026-fara-munca-nu-se-poate-in-clasa-a-vi-a-am-decis-sa-ma-axez-strict-pe-carte-sa-i/",
+      "summary": "Laurențiu, un tânăr din sistemul de protecție socială din Giurgiu, a obținut peste 9.60 la Bac la Matematică și visează la o carieră militară. El spune că munca și disciplina sunt cheia succesului.",
+      "positivity": 90,
+      "impact": 70,
+      "category": "local-heroes",
+      "publishedAt": "2026-07-11T11:08:42.000Z",
+      "processedAt": "2026-07-12T10:34:35.774Z",
+      "feltImpact": 80,
+      "certainty": 90,
+      "humanCloseness": 90,
+      "bureaucraticDistance": 20,
+      "promoRisk": 10
+    },
+    {
+      "id": "5671f9b9d852e9cc",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "originalTitle": "Tulcea: Tinerii dintr-una din primele rezervații naturale din România învață să se implice în comunitate",
+      "url": "https://agerpres.ro/social/2026/07/10/tulcea-tinerii-dintr-una-din-primele-rezervatii-naturale-din-romania-invata-sa-se-implice-in-comunit--1575094",
+      "summary": "Tinerii dintr-una dintre primele rezervații naturale din România, din Tulcea, învață cum să se implice activ în comunitatea lor. Proiectul urmărește să cultive spiritul civic și responsabilitatea față de mediu.",
+      "positivity": 80,
+      "impact": 70,
+      "category": "green-stuff",
+      "publishedAt": "2026-07-10T14:36:49.161Z",
+      "processedAt": "2026-07-12T10:34:35.774Z",
+      "feltImpact": 80,
+      "certainty": 100,
+      "humanCloseness": 90,
+      "bureaucraticDistance": 20,
+      "promoRisk": 10
+    },
+    {
+      "id": "3fb290590f064b4d",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Legumele crescute în serele sociale din Iași aduc speranță. Banii ajută familiile vulnerabile",
+      "url": "https://stirileprotv.ro/stiri/actualitate/legumele-crescute-in-serele-sociale-din-iasi-aduc-speranta-banii-ajuta-familiile-vulnerabile.html",
+      "summary": "Legumele crescute în serele sociale din Iași aduc speranță familiilor vulnerabile, oferindu-le produse proaspete și sprijin financiar prin intermediul proiectelor fundației. Aceste sere contribuie la bunăstarea comunității.",
+      "positivity": 85,
+      "impact": 70,
+      "category": "local-heroes",
+      "publishedAt": "2026-07-08T04:57:03.000Z",
+      "processedAt": "2026-07-12T10:34:35.774Z",
+      "feltImpact": 75,
+      "certainty": 90,
+      "humanCloseness": 90,
+      "bureaucraticDistance": 20,
+      "promoRisk": 10
+    },
+    {
+      "id": "0c9e3b4944b1e2af",
+      "sourceId": "edupedu",
+      "sourceName": "Edupedu",
+      "originalTitle": "Elevii români au câștigat două medalii de aur și trei de argint la Olimpiada Internațională de Fizică 2026",
+      "url": "https://www.edupedu.ro/elevii-romani-au-castigat-doua-medalii-de-aur-si-trei-de-argint-la-olimpiada-internationala-de-fizica-2026/",
+      "summary": "Lotul României a obținut performanțe remarcabile la Olimpiada Internațională de Fizică din Columbia, câștigând două medalii de aur și trei de argint. Această reușită plasează elevii români pe o poziție de invidiat în competiția științifică globală.",
+      "positivity": 90,
+      "impact": 70,
+      "category": "wins",
+      "publishedAt": "2026-07-12T06:42:12.000Z",
+      "processedAt": "2026-07-12T10:34:35.774Z",
+      "feltImpact": 75,
+      "certainty": 90,
+      "humanCloseness": 80,
+      "bureaucraticDistance": 20,
+      "promoRisk": 10
+    },
+    {
+      "id": "e18a59ac6a2695dc",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "O tânără de doar 16 ani a devenit prima balerină româncă a Operei Naționale din Paris. ”Talent excepțional”",
+      "url": "https://stirileprotv.ro/cultura/o-tanara-de-doar-16-ani-a-devenit-prima-balerina-romanca-a-operei-nationale-din-paris-talent-exceptional.html",
+      "summary": "O balerină româncă de 16 ani, Carina, a devenit prima artistă de acest fel la Opera Națională din Paris, fiind remarcată pentru talentul său excepțional. Performanța sa este o premieră pentru România.",
+      "positivity": 90,
+      "impact": 70,
+      "category": "local-heroes",
+      "publishedAt": "2026-07-07T10:30:50.000Z",
+      "processedAt": "2026-07-12T10:34:35.774Z",
+      "feltImpact": 70,
+      "certainty": 90,
+      "humanCloseness": 80,
+      "bureaucraticDistance": 20,
+      "promoRisk": 30
+    },
+    {
+      "id": "1ae03b7be7bd32fd",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "Oportunitate pentru studenți și șansă pentru animalele abandonate. Campania de sterilizare de la Cluj, un succes",
+      "url": "https://stirileprotv.ro/divers/oportunitate-pentru-studenti-si-sansa-pentru-animalele-abandonate-campania-de-sterilizare-de-la-cluj-un-succes.html",
+      "summary": "O campanie de sterilizare desfășurată la Cluj de Universitatea de Științe Agricole și Medicină Veterinară a salvat zeci de pisici și câini de la abandon. Proiectul oferă o șansă animalelor nevoiașe și reprezintă o oportunitate pentru studenți.",
+      "positivity": 85,
+      "impact": 65,
+      "category": "local-heroes",
+      "publishedAt": "2026-07-12T04:37:50.000Z",
+      "processedAt": "2026-07-12T10:34:35.774Z",
+      "feltImpact": 75,
+      "certainty": 90,
+      "humanCloseness": 90,
+      "bureaucraticDistance": 20,
+      "promoRisk": 10
+    },
+    {
+      "id": "fa743ca498a91b0e",
+      "sourceId": "edupedu",
+      "sourceName": "Edupedu",
+      "originalTitle": "OFICIAL Elevii de liceu internați vor putea continua cursurile pe perioada tratamentului la spital. Programul Universității de Medicină din București a primit autorizație de funcționare / Lista spitalelor din Capitală",
+      "url": "https://www.edupedu.ro/oficial-elevii-de-liceu-internati-in-10-spitale-din-bucuresti-vor-putea-continua-cursurile-pe-perioada-tratamentului-scoala-din-spital-umf-carol-davila-a-primit-autorizatie-de-fun/",
+      "summary": "Elevii internați vor putea continua cursurile în spital, programul „Școala din spital – UMF Carol Davila” din București primind autorizație de funcționare. Lista spitalelor din Capitală este inclusă.",
+      "positivity": 80,
+      "impact": 70,
+      "category": "wins",
+      "publishedAt": "2026-07-08T14:33:52.000Z",
+      "processedAt": "2026-07-12T10:34:35.774Z",
+      "feltImpact": 80,
+      "certainty": 90,
+      "humanCloseness": 80,
+      "bureaucraticDistance": 50,
+      "promoRisk": 10
+    },
+    {
+      "id": "60ffb62980e6f25f",
       "sourceId": "economedia",
       "sourceName": "Economedia",
-      "originalTitle": "Piața mașinilor electrice din România atinge un nou record, cu peste 2.260 de înmatriculări în iunie",
-      "url": "https://economedia.ro/piata-masinilor-electrice-din-romania-atinge-un-nou-record-cu-peste-2-260-de-inmatriculari-in-iunie.html",
-      "summary": "Piața mașinilor electrice din România a atins un nou record în iunie 2026, cu peste 2.260 de înmatriculări. Acest lucru confirmă popularitatea crescândă a mobilității electrice în țară.",
-      "positivity": 80,
-      "impact": 75,
-      "category": "green-stuff",
-      "publishedAt": "2026-07-07T14:40:10.000Z",
+      "originalTitle": "De la corporație la antreprenoriat la țară: Raluca Cocoș a lansat un Punct Gastronomic Local în casa familiei din Argeș",
+      "url": "https://economedia.ro/de-la-corporatie-la-antreprenoriat-la-tara-raluca-cocos-a-lansat-un-punct-gastronomic-local-in-casa-familiei-din-arges.html",
+      "summary": "Raluca Cocoș a transformat casa familiei din Argeș într-un Punct Gastronomic Local, după ani de carieră în corporație. Afacerea sezonieră „La Cocoș în deal” celebrează antreprenoriatul la țară.",
+      "positivity": 85,
+      "impact": 60,
+      "category": "local-heroes",
+      "publishedAt": "2026-07-07T07:33:51.000Z",
       "processedAt": "2026-07-12T10:34:35.774Z",
-      "feltImpact": 65,
+      "feltImpact": 70,
       "certainty": 90,
-      "humanCloseness": 50,
-      "bureaucraticDistance": 30,
+      "humanCloseness": 90,
+      "bureaucraticDistance": 20,
+      "promoRisk": 30
+    },
+    {
+      "id": "94d3fd910cd6c97f",
+      "sourceId": "startup-ro",
+      "sourceName": "start-up.ro",
+      "originalTitle": "O româncă în culisele startup-urilor europene: „Nimeni nu se ia prea în serios” | Români din lume",
+      "url": "https://start-up.ro/o-romanca-in-culisele-startup-urilor-europene-nimeni-nu-se-ia-prea-in-serios-romani-din-lume/",
+      "summary": "Oana Botez, plecată din țară la 19 ani, a ajuns să activeze în culisele startup-urilor europene, descoperind o cultură unde \"nimeni nu se ia prea în serios\". Povestea ei arată cum incertitudinea poate duce la descoperiri neașteptate.",
+      "positivity": 80,
+      "impact": 60,
+      "category": "local-heroes",
+      "publishedAt": "2026-07-09T05:00:02.000Z",
+      "processedAt": "2026-07-12T10:34:35.774Z",
+      "feltImpact": 70,
+      "certainty": 95,
+      "humanCloseness": 85,
+      "bureaucraticDistance": 10,
+      "promoRisk": 10
+    }
+  ],
+  "reserves": [
+    {
+      "id": "445aae2f689e0f1a",
+      "sourceId": "agerpres",
+      "sourceName": "Agerpres",
+      "originalTitle": "Iași: Patru transplanturi renale într-o singură zi, la Spitalul 'Dr. C. I. Parhon'",
+      "url": "https://agerpres.ro/sanatate/2026/07/11/iasi-patru-transplanturi-renale-intr-o-singura-zi-la-spitalul-dr-c-i-parhon--1575323",
+      "summary": "Spitalul 'Dr. C. I. Parhon' din Iași a efectuat patru transplanturi renale într-o singură zi, o performanță medicală remarcabilă. Echipele medicale au salvat vieți prin aceste intervenții complexe.",
+      "positivity": 95,
+      "impact": 80,
+      "category": "wins",
+      "publishedAt": "2026-07-12T03:22:41.362Z",
+      "processedAt": "2026-07-12T10:34:35.774Z",
+      "feltImpact": 85,
+      "certainty": 90,
+      "humanCloseness": 95,
+      "bureaucraticDistance": 20,
       "promoRisk": 20
     },
     {
@@ -147,44 +293,6 @@
       "promoRisk": 10
     },
     {
-      "id": "5671f9b9d852e9cc",
-      "sourceId": "agerpres",
-      "sourceName": "Agerpres",
-      "originalTitle": "Tulcea: Tinerii dintr-una din primele rezervații naturale din România învață să se implice în comunitate",
-      "url": "https://agerpres.ro/social/2026/07/10/tulcea-tinerii-dintr-una-din-primele-rezervatii-naturale-din-romania-invata-sa-se-implice-in-comunit--1575094",
-      "summary": "Tinerii dintr-una dintre primele rezervații naturale din România, din Tulcea, învață cum să se implice activ în comunitatea lor. Proiectul urmărește să cultive spiritul civic și responsabilitatea față de mediu.",
-      "positivity": 80,
-      "impact": 70,
-      "category": "local-heroes",
-      "publishedAt": "2026-07-10T14:36:49.161Z",
-      "processedAt": "2026-07-12T10:34:35.774Z",
-      "feltImpact": 80,
-      "certainty": 100,
-      "humanCloseness": 90,
-      "bureaucraticDistance": 20,
-      "promoRisk": 10
-    },
-    {
-      "id": "3fb290590f064b4d",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Legumele crescute în serele sociale din Iași aduc speranță. Banii ajută familiile vulnerabile",
-      "url": "https://stirileprotv.ro/stiri/actualitate/legumele-crescute-in-serele-sociale-din-iasi-aduc-speranta-banii-ajuta-familiile-vulnerabile.html",
-      "summary": "Legumele crescute în serele sociale din Iași aduc speranță familiilor vulnerabile, oferindu-le produse proaspete și sprijin financiar prin intermediul proiectelor fundației. Aceste sere contribuie la bunăstarea comunității.",
-      "positivity": 85,
-      "impact": 70,
-      "category": "local-heroes",
-      "publishedAt": "2026-07-08T04:57:03.000Z",
-      "processedAt": "2026-07-12T10:34:35.774Z",
-      "feltImpact": 75,
-      "certainty": 90,
-      "humanCloseness": 90,
-      "bureaucraticDistance": 20,
-      "promoRisk": 10
-    }
-  ],
-  "reserves": [
-    {
       "id": "f1abdb71c748881f",
       "sourceId": "edupedu",
       "sourceName": "Edupedu",
@@ -239,24 +347,6 @@
       "promoRisk": 10
     },
     {
-      "id": "3066a861ad2a1215",
-      "sourceId": "edupedu",
-      "sourceName": "Edupedu",
-      "originalTitle": "Laurențiu, elevul dintr-un centru de protecție socială din Giurgiu care a luat peste 9.60 la Matematică, la Bac 2026: Fără muncă nu se poate / În clasa a VI-a am decis să mă axez strict pe carte, să intru la un liceu bun, să ascult de profesori și de îndrumători",
-      "url": "https://www.edupedu.ro/laurentiu-elevul-dintr-un-centru-de-protectie-sociala-din-giurgiu-care-a-luat-peste-9-60-la-matematica-la-bac-2026-fara-munca-nu-se-poate-in-clasa-a-vi-a-am-decis-sa-ma-axez-strict-pe-carte-sa-i/",
-      "summary": "Laurențiu, un tânăr din sistemul de protecție socială din Giurgiu, a obținut peste 9.60 la Bac la Matematică și visează la o carieră militară. El spune că munca și disciplina sunt cheia succesului.",
-      "positivity": 90,
-      "impact": 70,
-      "category": "local-heroes",
-      "publishedAt": "2026-07-11T11:08:42.000Z",
-      "processedAt": "2026-07-12T10:34:35.774Z",
-      "feltImpact": 80,
-      "certainty": 90,
-      "humanCloseness": 90,
-      "bureaucraticDistance": 20,
-      "promoRisk": 10
-    },
-    {
       "id": "ea413acad63cc518",
       "sourceId": "edupedu",
       "sourceName": "Edupedu",
@@ -270,24 +360,6 @@
       "processedAt": "2026-07-12T10:34:35.774Z",
       "feltImpact": 70,
       "certainty": 95,
-      "humanCloseness": 80,
-      "bureaucraticDistance": 20,
-      "promoRisk": 10
-    },
-    {
-      "id": "0c9e3b4944b1e2af",
-      "sourceId": "edupedu",
-      "sourceName": "Edupedu",
-      "originalTitle": "Elevii români au câștigat două medalii de aur și trei de argint la Olimpiada Internațională de Fizică 2026",
-      "url": "https://www.edupedu.ro/elevii-romani-au-castigat-doua-medalii-de-aur-si-trei-de-argint-la-olimpiada-internationala-de-fizica-2026/",
-      "summary": "Lotul României a obținut performanțe remarcabile la Olimpiada Internațională de Fizică din Columbia, câștigând două medalii de aur și trei de argint. Această reușită plasează elevii români pe o poziție de invidiat în competiția științifică globală.",
-      "positivity": 90,
-      "impact": 70,
-      "category": "wins",
-      "publishedAt": "2026-07-12T06:42:12.000Z",
-      "processedAt": "2026-07-12T10:34:35.774Z",
-      "feltImpact": 75,
-      "certainty": 90,
       "humanCloseness": 80,
       "bureaucraticDistance": 20,
       "promoRisk": 10
@@ -383,24 +455,6 @@
       "promoRisk": 20
     },
     {
-      "id": "1ae03b7be7bd32fd",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "Oportunitate pentru studenți și șansă pentru animalele abandonate. Campania de sterilizare de la Cluj, un succes",
-      "url": "https://stirileprotv.ro/divers/oportunitate-pentru-studenti-si-sansa-pentru-animalele-abandonate-campania-de-sterilizare-de-la-cluj-un-succes.html",
-      "summary": "O campanie de sterilizare desfășurată la Cluj de Universitatea de Științe Agricole și Medicină Veterinară a salvat zeci de pisici și câini de la abandon. Proiectul oferă o șansă animalelor nevoiașe și reprezintă o oportunitate pentru studenți.",
-      "positivity": 85,
-      "impact": 65,
-      "category": "local-heroes",
-      "publishedAt": "2026-07-12T04:37:50.000Z",
-      "processedAt": "2026-07-12T10:34:35.774Z",
-      "feltImpact": 75,
-      "certainty": 90,
-      "humanCloseness": 90,
-      "bureaucraticDistance": 20,
-      "promoRisk": 10
-    },
-    {
       "id": "3316598e1f63256f",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
@@ -435,24 +489,6 @@
       "humanCloseness": 80,
       "bureaucraticDistance": 30,
       "promoRisk": 10
-    },
-    {
-      "id": "e18a59ac6a2695dc",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "O tânără de doar 16 ani a devenit prima balerină româncă a Operei Naționale din Paris. ”Talent excepțional”",
-      "url": "https://stirileprotv.ro/cultura/o-tanara-de-doar-16-ani-a-devenit-prima-balerina-romanca-a-operei-nationale-din-paris-talent-exceptional.html",
-      "summary": "O balerină româncă de 16 ani, Carina, a devenit prima artistă de acest fel la Opera Națională din Paris, fiind remarcată pentru talentul său excepțional. Performanța sa este o premieră pentru România.",
-      "positivity": 90,
-      "impact": 70,
-      "category": "local-heroes",
-      "publishedAt": "2026-07-07T10:30:50.000Z",
-      "processedAt": "2026-07-12T10:34:35.774Z",
-      "feltImpact": 70,
-      "certainty": 90,
-      "humanCloseness": 80,
-      "bureaucraticDistance": 20,
-      "promoRisk": 30
     },
     {
       "id": "85d21755509fd374",
@@ -507,24 +543,6 @@
       "humanCloseness": 60,
       "bureaucraticDistance": 20,
       "promoRisk": 40
-    },
-    {
-      "id": "94d3fd910cd6c97f",
-      "sourceId": "startup-ro",
-      "sourceName": "start-up.ro",
-      "originalTitle": "O româncă în culisele startup-urilor europene: „Nimeni nu se ia prea în serios” | Români din lume",
-      "url": "https://start-up.ro/o-romanca-in-culisele-startup-urilor-europene-nimeni-nu-se-ia-prea-in-serios-romani-din-lume/",
-      "summary": "Oana Botez, plecată din țară la 19 ani, a ajuns să activeze în culisele startup-urilor europene, descoperind o cultură unde \"nimeni nu se ia prea în serios\". Povestea ei arată cum incertitudinea poate duce la descoperiri neașteptate.",
-      "positivity": 80,
-      "impact": 60,
-      "category": "local-heroes",
-      "publishedAt": "2026-07-09T05:00:02.000Z",
-      "processedAt": "2026-07-12T10:34:35.774Z",
-      "feltImpact": 70,
-      "certainty": 95,
-      "humanCloseness": 85,
-      "bureaucraticDistance": 10,
-      "promoRisk": 10
     },
     {
       "id": "b5f525b0cc25bc9e",
@@ -617,24 +635,6 @@
       "promoRisk": 10
     },
     {
-      "id": "60ffb62980e6f25f",
-      "sourceId": "economedia",
-      "sourceName": "Economedia",
-      "originalTitle": "De la corporație la antreprenoriat la țară: Raluca Cocoș a lansat un Punct Gastronomic Local în casa familiei din Argeș",
-      "url": "https://economedia.ro/de-la-corporatie-la-antreprenoriat-la-tara-raluca-cocos-a-lansat-un-punct-gastronomic-local-in-casa-familiei-din-arges.html",
-      "summary": "Raluca Cocoș a transformat casa familiei din Argeș într-un Punct Gastronomic Local, după ani de carieră în corporație. Afacerea sezonieră „La Cocoș în deal” celebrează antreprenoriatul la țară.",
-      "positivity": 85,
-      "impact": 60,
-      "category": "local-heroes",
-      "publishedAt": "2026-07-07T07:33:51.000Z",
-      "processedAt": "2026-07-12T10:34:35.774Z",
-      "feltImpact": 70,
-      "certainty": 90,
-      "humanCloseness": 90,
-      "bureaucraticDistance": 20,
-      "promoRisk": 30
-    },
-    {
       "id": "041d5ab70f0f5270",
       "sourceId": "republica",
       "sourceName": "Republica",
@@ -669,24 +669,6 @@
       "humanCloseness": 90,
       "bureaucraticDistance": 30,
       "promoRisk": 20
-    },
-    {
-      "id": "fa743ca498a91b0e",
-      "sourceId": "edupedu",
-      "sourceName": "Edupedu",
-      "originalTitle": "OFICIAL Elevii de liceu internați vor putea continua cursurile pe perioada tratamentului la spital. Programul Universității de Medicină din București a primit autorizație de funcționare / Lista spitalelor din Capitală",
-      "url": "https://www.edupedu.ro/oficial-elevii-de-liceu-internati-in-10-spitale-din-bucuresti-vor-putea-continua-cursurile-pe-perioada-tratamentului-scoala-din-spital-umf-carol-davila-a-primit-autorizatie-de-fun/",
-      "summary": "Elevii internați vor putea continua cursurile în spital, programul „Școala din spital – UMF Carol Davila” din București primind autorizație de funcționare. Lista spitalelor din Capitală este inclusă.",
-      "positivity": 80,
-      "impact": 70,
-      "category": "wins",
-      "publishedAt": "2026-07-08T14:33:52.000Z",
-      "processedAt": "2026-07-12T10:34:35.774Z",
-      "feltImpact": 80,
-      "certainty": 90,
-      "humanCloseness": 80,
-      "bureaucraticDistance": 50,
-      "promoRisk": 10
     },
     {
       "id": "3bfdca31db0d58a7",
@@ -728,18 +710,18 @@
   "discarded": 422,
   "totalProcessed": 1045,
   "wrapperCopy": {
-    "greeting": "Salutare! 👋",
-    "intro": "Săptămâna aceasta aduce vești extraordinare din spitale, unde medicii realizează transplanturi de succes, și povești inspiraționale despre tineri care excelează la Bacalaureat și se implică în comunitate. Totodată, vedem progrese în mobilitatea electrică și proiecte sociale care aduc speranță.",
-    "signOff": "Cam atât pentru săptămâna asta! Ne auzim la anul. 🙏",
-    "shortSummary": "Transplanturi de succes, tineri inspiraționali la BAC, implicare comunitară și avansul mașinilor electrice."
+    "greeting": "Bună dimineața! 👋",
+    "intro": "Săptămâna asta, progresul vine din mai multe locuri: primul transplant de cord realizat la Iași, cinci medalii pentru elevii români la Olimpiada Internațională de Fizică și o premieră românească pe scena Operei din Paris. Mai aproape de casă, tineri se implică în comunitățile lor, o campanie îi ajută deopotrivă pe studenți și pe animalele fără stăpân, iar idei noi prind rădăcini de la Tulcea la Argeș.",
+    "signOff": "Pe curând! Să ai o săptămână bună. 🌱",
+    "shortSummary": "O premieră medicală la Iași, cinci medalii la Fizică și inițiative care cresc comunități."
   },
   "validation": {
-    "generatedAt": "2026-07-12T10:43:08.299Z",
-    "candidateCount": 40,
+    "generatedAt": "2026-07-12T10:48:55.584Z",
+    "candidateCount": 39,
     "flagged": [],
     "status": "passed",
     "approvalSource": "validation-pipeline",
-    "checkedAt": "2026-07-12T10:43:26.168Z",
+    "checkedAt": "2026-07-12T10:49:12.635Z",
     "freshnessWindowDays": 14,
     "publishedHistoryCount": 257,
     "recentDraftCount": 0,
@@ -747,210 +729,207 @@
     "replacements": [],
     "agentReviewed": [
       {
-        "articleId": "445aae2f689e0f1a",
-        "verdict": "fresh",
-        "notes": "This article discusses four kidney transplants performed in a single day at a specific hospital in Iași. None of the provided archive matches are similar enough to indicate a duplicate or follow-up."
-      },
-      {
         "articleId": "c62cd556c5738ff9",
-        "verdict": "fresh",
-        "notes": "This article reports on the first heart transplant performed in Iași, within a marathon of organ donations and transplants. The archive matches are about liver transplants or unrelated topics, so it's a fresh story."
-      },
-      {
-        "articleId": "28dfe79265691d02",
         "verdict": "follow_up",
-        "notes": "The article reports a new record for electric car registrations in Romania for June 2026. Match 1 ([issue] 2026-07-06-issue.md) discusses June registrations being four times higher than last year, indicating a development on the same topic. Match 2 ([issue] 2026-05-25-issue.md) discusses April registrations. Match 3 ([issue] 2026-02-16-issue.md) is a forecast for 2026. The most relevant is the June data, making this a follow-up on the increasing trend.",
-        "matchedOrigin": "[issue] 2026-07-06-issue.md",
-        "matchedTitle": "Mașinile electrice au prins viteză în România: înmatriculările din iunie au fost de peste patru ori mai mari decât anul trecut"
-      },
-      {
-        "articleId": "239cd381932a31a7",
-        "verdict": "fresh",
-        "notes": "This article reports on the first heart transplant in Iași, within the Moldova region. The closest archive match is about the first hospital built in Brașov after 1990, which is not related."
-      },
-      {
-        "articleId": "2c93756b757720fe",
-        "verdict": "fresh",
-        "notes": "This article is about a young man from the social protection system achieving a high baccalaureate score and considering a military career. The archive matches are about a student preparing others for exams or a literary discussion, not related to this specific human interest story."
-      },
-      {
-        "articleId": "3d5d63bbcc17758e",
-        "verdict": "fresh",
-        "notes": "This article is about a student getting a perfect score on the Baccalaureate and her choice of a technological high school. No relevant historical matches found."
-      },
-      {
-        "articleId": "70a176913c9c59f5",
-        "verdict": "fresh",
-        "notes": "This article focuses on two students from Brașov achieving a high Baccalaureate score without private tutoring, crediting their teachers. No relevant historical matches found."
-      },
-      {
-        "articleId": "2e85146d40a27a3b",
-        "verdict": "fresh",
-        "notes": "This article tells the story of a student who improved significantly from a low score in the National Evaluation to a high Baccalaureate score, emphasizing the importance of a second chance. The archive matches are about different life stories (monk, student helping others) and not related to this specific student's academic journey."
-      },
-      {
-        "articleId": "5671f9b9d852e9cc",
-        "verdict": "fresh",
-        "notes": "This article is about young people in Tulcea, in one of Romania's first nature reserves, learning to get involved in their community. The archive matches are about environmental action maps, energy investments, traditional crafts, and gambling bans, none of which are directly related."
-      },
-      {
-        "articleId": "3fb290590f064b4d",
-        "verdict": "fresh",
-        "notes": "This article discusses vegetables grown in social greenhouses in Iași providing hope to vulnerable families. No close historical matches were found."
-      },
-      {
-        "articleId": "f1abdb71c748881f",
-        "verdict": "fresh",
-        "notes": "This article is about two students from Suceava achieving a perfect score on the Baccalaureate without private tutoring, crediting their teachers and detailing their future study plans. No close historical matches found."
-      },
-      {
-        "articleId": "6f1005f0ab957052",
-        "verdict": "fresh",
-        "notes": "This article highlights a student who got a perfect score on the Baccalaureate and wants to become a teacher, thanking her educators. No close historical matches found."
-      },
-      {
-        "articleId": "14f285eabdc17ac9",
-        "verdict": "fresh",
-        "notes": "This article is about an 87-year-old man enrolling in university, demonstrating that age is not a barrier to education. No close historical matches found."
+        "notes": "The current article reports on the first heart transplant in Iasi, which is a new milestone. Previous articles in archive discuss liver transplants and general medical achievements, not specifically heart transplants in this region.",
+        "matchedOrigin": "[issue] 2026-05-11-issue.md",
+        "matchedTitle": "O fetiță de 1 an și jumătate a fost salvată prin transplant hepatic. Un donator din Iași i-a dăruit o nouă șansă la viață"
       },
       {
         "articleId": "3066a861ad2a1215",
         "verdict": "fresh",
-        "notes": "This article is about a young man from a social protection center in Giurgiu achieving a high score in Mathematics at the Baccalaureate and aspiring to a military career, emphasizing hard work. No close historical matches found."
+        "notes": "No close historical matches found."
       },
       {
-        "articleId": "ea413acad63cc518",
+        "articleId": "5671f9b9d852e9cc",
         "verdict": "fresh",
-        "notes": "This article reports on the final results of the National Evaluation in Buzău, highlighting a class's performance and a Romanian language teacher's success. No close historical matches found."
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "3fb290590f064b4d",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "0c9e3b4944b1e2af",
-        "verdict": "follow_up",
-        "notes": "This article reports Romanian students winning two gold and three silver medals at the International Physics Olympiad 2026. The archive matches are also about international academic competitions (informatics, math) where Romanian students won medals, indicating a pattern of success in similar fields.",
-        "matchedOrigin": "[issue] 2026-04-27-issue.md",
-        "matchedTitle": "Elevii români au obținut șase medalii de aur și două de argint la Turneul Internațional Avansat de Informatică –  IATI 2026"
-      },
-      {
-        "articleId": "36d8ede80344c884",
         "verdict": "fresh",
-        "notes": "This article is about a student in Arad who achieved a perfect Baccalaureate score and is also a high-performance athlete. No close historical matches found."
-      },
-      {
-        "articleId": "df89b4bfc57d9b38",
-        "verdict": "fresh",
-        "notes": "This article is about the Dacia Striker model being praised by Top Gear for its design and expected price. No close historical matches found."
-      },
-      {
-        "articleId": "b4cbd58114302bd8",
-        "verdict": "fresh",
-        "notes": "This article describes the Dacia Striker as combining robust Dacia DNA with a cool and eco-friendly design, being called the most beautiful Romanian car. No close historical matches found."
-      },
-      {
-        "articleId": "577dc13c5355db98",
-        "verdict": "fresh",
-        "notes": "This article is about a student from Prahova achieving the only perfect score in the county at the Baccalaureate, stating she did not use private tutoring. Archive matches are about a student preparing others for exams, a festival, or a clothing brand, none of which are related."
-      },
-      {
-        "articleId": "c62da9a9b76d2be5",
-        "verdict": "fresh",
-        "notes": "This article is about a tour guide in Transylvania who impressed Dutch seniors with their experience of Romania. No close historical matches found."
-      },
-      {
-        "articleId": "1ae03b7be7bd32fd",
-        "verdict": "fresh",
-        "notes": "This article reports on a successful animal sterilization campaign at Cluj University of Agricultural Sciences and Veterinary Medicine. No close historical matches found."
-      },
-      {
-        "articleId": "3316598e1f63256f",
-        "verdict": "follow_up",
-        "notes": "This article reports Romanian students winning three gold and one silver medal at the Central European Informatics Olympiad. Archive matches are also about Romanian students winning medals in informatics competitions (e.g., IATI, European Girls' Olympiad), showing a continued pattern of success in this field.",
-        "matchedOrigin": "[issue] 2026-04-27-issue.md",
-        "matchedTitle": "Elevii români au obținut șase medalii de aur și două de argint la Turneul Internațional Avansat de Informatică –  IATI 2026"
-      },
-      {
-        "articleId": "40f234d67d57862c",
-        "verdict": "fresh",
-        "notes": "This article lists students and pupils receiving financial aid to buy computers in 2026. No close historical matches found."
+        "notes": "The current article is about the International Physics Olympiad, while the archive matches are for Informatics and Math Olympiads. These are distinct fields of study."
       },
       {
         "articleId": "e18a59ac6a2695dc",
         "verdict": "fresh",
-        "notes": "This article is about a 16-year-old Romanian ballerina becoming a principal dancer at the Paris National Opera. The archive match is about an 80-year-old teacher keeping Romanian schools alive in Bukovina, which is not related."
+        "notes": "No close historical matches found."
       },
       {
-        "articleId": "85d21755509fd374",
+        "articleId": "1ae03b7be7bd32fd",
         "verdict": "fresh",
-        "notes": "This article announces the launch of the Dacia Striker, described as its largest and most elegant model, a family car to cost under 25,000 euros and produced in Turkey. Archive matches are about natural gas production and unrelated topics."
-      },
-      {
-        "articleId": "e6ad40a0696f756e",
-        "verdict": "fresh",
-        "notes": "This article announces the Dacia Striker, the third model in the C segment, a crossover costing under 25,000 euros. The archive match is about a violinist receiving a Stradivarius, which is unrelated."
-      },
-      {
-        "articleId": "1d29450a8569604d",
-        "verdict": "fresh",
-        "notes": "This article officially presents the Dacia Striker, a compact segment crossover produced in Turkey with a starting price under 25,000 euros. No close historical matches found."
-      },
-      {
-        "articleId": "94d3fd910cd6c97f",
-        "verdict": "fresh",
-        "notes": "This article features a Romanian woman working in the European startup scene. The closest archive match is about a Romanian woman bringing a business idea from South Korea to Brașov, which is similar in theme but not the same story."
-      },
-      {
-        "articleId": "b5f525b0cc25bc9e",
-        "verdict": "fresh",
-        "notes": "This article presents a top 20 list of high schools in Romania based on Baccalaureate scores in 2026, with 'Emil Racoviță' National College in Cluj-Napoca ranked first. No close historical matches found."
-      },
-      {
-        "articleId": "e1113ee32fc3ed91",
-        "verdict": "fresh",
-        "notes": "This article lists the top 20 high schools in Bucharest based on Baccalaureate scores in 2026, with 'Gheorghe Lazăr' National College leading and four state high schools having a 100% pass rate. The archive match is about new school designs in Bucharest, not related to rankings."
-      },
-      {
-        "articleId": "131ef0671a8acc25",
-        "verdict": "fresh",
-        "notes": "This article is about a 37-year-old man enrolling in university to study Agriculture in Iași. No close historical matches found."
-      },
-      {
-        "articleId": "53b8216ec12eb5e3",
-        "verdict": "fresh",
-        "notes": "This article discusses the transformation of Romania's car market from 'diesel & second-hand' to 'hybrid & BYD'. The archive matches are about tourist destinations, digitalized farms, highway lengths, fencing, and recycling systems, none of which are related to the automotive market shift."
-      },
-      {
-        "articleId": "15576ba009f23274",
-        "verdict": "fresh",
-        "notes": "This article describes Matache Market in Bucharest being transformed into a sunflower field. No close historical matches found."
-      },
-      {
-        "articleId": "60ffb62980e6f25f",
-        "verdict": "fresh",
-        "notes": "This article is about Raluca Cocoș launching a Gastronomic Point in her family home in Argeș after a corporate career. The archive match is about volunteering for the elderly and a food bank, which is not related."
-      },
-      {
-        "articleId": "041d5ab70f0f5270",
-        "verdict": "fresh",
-        "notes": "This article is about a woman who worked in Portugal for 20 years and returned to Romania, now working in a Timișoara hotel. The archive match is about Americans discovering the 'Romanian dream' and wanting to move to Romania, which is related to Romanians returning or foreigners coming to Romania but not the same story."
-      },
-      {
-        "articleId": "2852cd9e4d067da7",
-        "verdict": "fresh",
-        "notes": "This article is about Melinda Necula, the only student with a perfect score in Constanța at Bac 2026, who wishes to become a Romanian language or Mathematics teacher. No close historical matches found."
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "fa743ca498a91b0e",
         "verdict": "fresh",
-        "notes": "This article states that hospitalized students will be able to continue their studies during treatment, with the UMF Carol Davila program receiving operating authorization. No close historical matches found."
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "60ffb62980e6f25f",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "94d3fd910cd6c97f",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "445aae2f689e0f1a",
+        "verdict": "follow_up",
+        "notes": "The current article reports four kidney transplants in one day at a specific hospital in Iași. While the archive mentions general hospital networks and one other hospital in Iași in a different context, this is a specific, high-volume medical event for that hospital.",
+        "matchedOrigin": "[issue] 2026-03-09-issue.md",
+        "matchedTitle": "Încă patru spitale au intrat în rețeaua de supraveghere și tratament a bolnavilor cronici cardiaci"
+      },
+      {
+        "articleId": "239cd381932a31a7",
+        "verdict": "follow_up",
+        "notes": "The current article reports on the first heart transplant in the Moldova region of Romania, specifically in Iasi. While the archive mentions a new hospital being built in Brasov, this is a specific first-time medical procedure in a distinct region.",
+        "matchedOrigin": "[issue] 2026-02-02-issue.md",
+        "matchedTitle": "Primul spital ce urmează să fie construit la Braşov după 1990: a fost aprobată finanțarea"
+      },
+      {
+        "articleId": "2c93756b757720fe",
+        "verdict": "fresh",
+        "notes": "The current article is about a young man from the social protection system achieving a good Baccalaureate score and considering a military career. The archive match is about a student offering free tutoring, which is a different topic."
+      },
+      {
+        "articleId": "3d5d63bbcc17758e",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "70a176913c9c59f5",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "2e85146d40a27a3b",
+        "verdict": "fresh",
+        "notes": "The archive article talks about a priest's life story, which is unrelated to the current article about a student's academic improvement."
+      },
+      {
+        "articleId": "f1abdb71c748881f",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "6f1005f0ab957052",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "14f285eabdc17ac9",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "ea413acad63cc518",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "36d8ede80344c884",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "df89b4bfc57d9b38",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "b4cbd58114302bd8",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "577dc13c5355db98",
+        "verdict": "fresh",
+        "notes": "The archive articles are about a tutoring program, a festival, and a clothing brand, none of which are directly related to an exceptional Baccalaureate score without preparation."
+      },
+      {
+        "articleId": "c62da9a9b76d2be5",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "3316598e1f63256f",
+        "verdict": "fresh",
+        "notes": "The current article is about the Central European Informatics Olympiad. The archive matches are for an advanced international informatics tournament, a European informatics olympiad for girls, fencing, and a math olympiad. While related to academic competitions, they are distinct enough."
+      },
+      {
+        "articleId": "40f234d67d57862c",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "85d21755509fd374",
+        "verdict": "fresh",
+        "notes": "The current article is about the Dacia Striker car model launch. The archive match discusses Romania's natural gas production, which is unrelated."
+      },
+      {
+        "articleId": "e6ad40a0696f756e",
+        "verdict": "fresh",
+        "notes": "The current article is about the Dacia Striker car launch. The archive match discusses a Stradivarius violin, which is unrelated."
+      },
+      {
+        "articleId": "1d29450a8569604d",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "b5f525b0cc25bc9e",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "e1113ee32fc3ed91",
+        "verdict": "fresh",
+        "notes": "The current article is about high school rankings based on Baccalaureate results in Bucharest. The archive match discusses new school designs in Bucharest, which is different."
+      },
+      {
+        "articleId": "131ef0671a8acc25",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "53b8216ec12eb5e3",
+        "verdict": "fresh",
+        "notes": "The current article discusses a transformation in the Romanian car market towards hybrids and EVs. The archive matches are about a waterfall, a digitalized farm, highway length, fencing, and waste management, none of which are related."
+      },
+      {
+        "articleId": "15576ba009f23274",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
+      },
+      {
+        "articleId": "041d5ab70f0f5270",
+        "verdict": "fresh",
+        "notes": "The current article is about a Romanian returning from abroad and working in a hotel. The archive match is about Americans moving to Romania. While both involve Romanians and foreigners, the topics are distinct."
+      },
+      {
+        "articleId": "2852cd9e4d067da7",
+        "verdict": "fresh",
+        "notes": "No close historical matches found."
       },
       {
         "articleId": "3bfdca31db0d58a7",
-        "verdict": "fresh",
-        "notes": "This article discusses new additions to Romania's tourist map, including medieval castles and restored manors. The archive matches are about a specific castle returning to the tourist map and a region becoming a top tourist destination due to EU funds, which are related but not the same news."
+        "verdict": "follow_up",
+        "notes": "The current article broadly covers new tourist destinations including restored castles and manors. The archive mentions the Teleki Castle's return to the tourist map, which is a specific example fitting this broader theme.",
+        "matchedOrigin": "[issue] 2026-06-29-issue.md",
+        "matchedTitle": "Castelul Teleki din Gornești revine pe harta turistică"
       },
       {
         "articleId": "6164ed3b533f4a9d",
         "verdict": "fresh",
-        "notes": "No close historical matches found, and the article focuses on a specific individual's achievement and experience with the Baccalaureate exam in 2026, which appears to be a unique event for the current review period."
+        "notes": "No close historical matches found."
       }
     ]
   }
