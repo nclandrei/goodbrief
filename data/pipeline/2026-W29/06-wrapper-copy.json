@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W29",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-07-18T11:23:49.592Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare! 👋",
+      "intro": "Ce zici, ne facem un refresh la baterii cu vești bune? Săptămâna asta mergem la Timișoara la un bucătar cu suflet mare, ne bucurăm pentru o performanță la Bac de nota 10 și ne inspirăm de la Nadia Comăneci. Sună ca o pauză binemeritată, nu? 😉",
+      "signOff": "Cam atât pentru azi! Până data viitoare, ai grijă de tine și de cei dragi. 🙏",
+      "shortSummary": "Bucătar din Timișoara, inspirație de la Nadia, succes la Bac."
+    }
+  }
+}
