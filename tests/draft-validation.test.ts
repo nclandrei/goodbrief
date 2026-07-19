@@ -334,7 +334,7 @@ test('auto-replaces blocked selected stories with the first approved reserve', a
   assert.equal(result.draft.wrapperCopy?.intro, 'Wrapper regen after replacement.');
 });
 
-test('fails cleanly when fewer than 10 approved stories remain', async () => {
+test('passes a shorter edition when 9 approved stories remain', async () => {
   const selected = Array.from({ length: 10 }, (_, index) => makeArticle(index));
 
   const result = await validateDraftFreshness({
@@ -352,7 +352,7 @@ test('fails cleanly when fewer than 10 approved stories remain', async () => {
     generateWrapperCopy: async () => makeWrapperCopy(),
   });
 
-  assert.equal(result.draft.validation?.status, 'failed');
+  assert.equal(result.draft.validation?.status, 'passed');
   assert.equal(result.draft.selected.length, 9);
   assert.equal(
     result.draft.validation?.blockedArticles?.some((blocked) => blocked.articleId === 'article-0') ?? false,

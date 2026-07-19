@@ -1,0 +1,2 @@
+export const TARGET_SELECTED_ARTICLE_COUNT = 10;
+export const MIN_SENDABLE_ARTICLE_COUNT = 7;

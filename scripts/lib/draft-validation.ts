@@ -19,6 +19,10 @@ import {
 } from './deduplication.js';
 import { getEditorialBlockReason } from './editorial-rules.js';
 import { callWithRetry, DEFAULT_GEMINI_MODEL } from './gemini.js';
+import {
+  MIN_SENDABLE_ARTICLE_COUNT,
+  TARGET_SELECTED_ARTICLE_COUNT,
+} from './newsletter-policy.js';
 import type { HistoricalArticle } from './story-history.js';
 
 export const DEFAULT_FRESHNESS_WINDOW_DAYS = 14;
@@ -567,8 +571,8 @@ export async function validateDraftFreshness(
 
   const blockedIds = new Set(blockedArticles.map((blocked) => blocked.articleId));
   const approvedPool = pool.filter((article) => !blockedIds.has(article.id));
-  const newSelected = approvedPool.slice(0, 10);
-  const newReserves = approvedPool.slice(10);
+  const newSelected = approvedPool.slice(0, TARGET_SELECTED_ARTICLE_COUNT);
+  const newReserves = approvedPool.slice(TARGET_SELECTED_ARTICLE_COUNT);
   const replacements = calculateReplacements(options.draft.selected, newSelected);
 
   const agentReviewed: DraftValidationAgentReviewedArticle[] = reviewItems.map((item) => {
@@ -593,7 +597,7 @@ export async function validateDraftFreshness(
   };
 
   const status: NonNullable<DraftValidation['status']> =
-    newSelected.length >= 10 ? 'passed' : 'failed';
+    newSelected.length >= MIN_SENDABLE_ARTICLE_COUNT ? 'passed' : 'failed';
   nextDraft.validation = buildValidationMetadata({
     previousValidation: options.draft.validation,
     candidateCount: pool.length,
