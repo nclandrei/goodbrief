@@ -149,7 +149,8 @@ REVIEW CRITERIA:
 13. Do not swap in a grant, funding call, pilot program, or ministerial announcement just because it sounds more substantial; only keep those if they are concrete and clearly stronger than tangible alternatives
 14. Hard exclusion: reject stories whose main premise is danger, harm, crime, or rescue even when they have a happy ending
 15. Hard exclusion: reject nostalgia bait and mainstream commercial festivals, including Nostalgia and Untold
-16. Title quality: do not keep source labels such as "FOTO", "VIDEO", or "INTERVIU" in display titles
+16. Hard exclusion: reject routine Bacalaureat grade, average, pass-rate, or appeal/regrading stories; a changed or perfect score alone is not meaningful newsletter news
+17. Title quality: do not keep source labels such as "FOTO", "VIDEO", or "INTERVIU" in display titles
 
 TASK:
 - Review the current selection critically

@@ -68,6 +68,36 @@ test('editorial rules block routine Republic of Moldova stories but allow except
   );
 });
 
+test('editorial rules block routine Bacalaureat grade stories', () => {
+  assert.equal(
+    getEditorialBlockReason({
+      originalTitle:
+        'David Alecu, cu media 10 la Bac, este admis la Universitatea din Groningen',
+      summary:
+        'Absolventul din Buzău a obținut media maximă la Bacalaureat și va studia Computing Science.',
+    }),
+    'routine-national-exam-result'
+  );
+
+  assert.equal(
+    getEditorialBlockReason({
+      originalTitle:
+        'De la 8,85 la media 10 după contestații la Bacalaureat 2026',
+      summary: 'Nota la Limba română a crescut după recorectarea lucrării.',
+    }),
+    'routine-national-exam-result'
+  );
+
+  assert.equal(
+    getEditorialBlockReason({
+      originalTitle: 'Un program gratuit îi pregătește pe elevii din sate pentru Bac',
+      summary:
+        'Profesorii voluntari organizează cursuri săptămânale de matematică și limba română.',
+    }),
+    null
+  );
+});
+
 test('normalizeDisplayTitle strips HTML, entities, and source labels', () => {
   assert.equal(
     normalizeDisplayTitle(

@@ -66,6 +66,12 @@ const REPUBLIC_OF_MOLDOVA_PATTERNS = [
   /\bpeste\s+prut\b/iu,
 ];
 
+const NATIONAL_SCHOOL_EXAM_PATTERN =
+  /\b(?:bac(?:ul|ului)?|bacalaureat(?:ul|ului)?|evaluarea\s+na[țt]ional[ăa])\b/iu;
+
+const ROUTINE_EXAM_RESULT_PATTERN =
+  /\b(?:not(?:a|ă|e|ele|elor)|medi(?:a|e|ei|i|ile|ilor)|rezultat(?:ul|e|ele|elor)?|contesta[țt]i(?:e|a|i|ile|ilor)?|recorect\w*|promovabilitat(?:e|ea)|rata\s+de\s+promovare|punct(?:e|aj|ajul)?)\b/iu;
+
 const EXCEPTIONAL_MOLDOVA_PATTERNS = [
   /\b(?:dreptur(?:i|ile)\s+(?:omului|lgbtq?|lgbti|minorit[ăa][țt]ilor)|lgbtq?|lgbti|pride|queer)\b/iu,
   /\b(?:parteneriat(?:e)?\s+civil(?:e)?|c[ăa]s[ăa]tori(?:e|i)\s+între\s+persoane\s+de\s+acela[șs]i\s+sex)\b/iu,
@@ -114,9 +120,14 @@ export function normalizeDisplayTitle(title: string): string {
 
 export function getEditorialBlockReason(article: EditorialArticle): string | null {
   const text = articleText(article);
+  const title = articleTitle(article);
 
   if (SPONSORED_MARKER_PATTERNS.some((pattern) => pattern.test(text))) {
     return 'sponsored-or-advertorial';
+  }
+
+  if (NATIONAL_SCHOOL_EXAM_PATTERN.test(title) && ROUTINE_EXAM_RESULT_PATTERN.test(title)) {
+    return 'routine-national-exam-result';
   }
 
   if (

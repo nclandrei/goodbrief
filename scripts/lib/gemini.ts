@@ -110,6 +110,7 @@ VOICE & TONE:
 HARD EDITORIAL EXCLUSIONS:
 - Do not include stories whose core premise is danger, harm, crime, or a rescue just because they have a happy ending.
 - Do not include nostalgia bait or mainstream commercial festivals, including Nostalgia and Untold.
+- Do not include routine Bacalaureat grade, average, pass-rate, or appeal/regrading stories; a changed or perfect score alone is not meaningful newsletter news.
 - Treat "FOTO", "VIDEO", "INTERVIU", and similar editorial labels as source labels, not title content. Never preserve them in display titles.
 
 For each article, provide:

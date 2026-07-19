@@ -39,6 +39,7 @@ test('scoring prompt states hard editorial exclusions before articles are scored
   assert.match(prompt, /FOTO|VIDEO/);
   assert.match(prompt, /Nostalgia|Untold/);
   assert.match(prompt, /commercial festivals/i);
+  assert.match(prompt, /Bacalaureat.*(?:grade|average|appeal)/i);
 });
 
 test('refine prompt tells reviewer to reject hard exclusions and editorial title prefixes', () => {
@@ -61,4 +62,5 @@ test('refine prompt tells reviewer to reject hard exclusions and editorial title
   assert.match(prompt, /FOTO|VIDEO/);
   assert.match(prompt, /Nostalgia|Untold/);
   assert.match(prompt, /commercial festivals/i);
+  assert.match(prompt, /Bacalaureat.*(?:grade|average|appeal)/i);
 });
