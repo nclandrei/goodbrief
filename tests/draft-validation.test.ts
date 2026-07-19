@@ -145,6 +145,40 @@ test('blocks exact canonical URL repeats deterministically', async () => {
   assert.equal(result.draft.validation?.status, 'passed');
 });
 
+test('enforces hard editorial exclusions before archive review', async () => {
+  const selected = [
+    makeArticle(0, {
+      originalTitle: 'Elevii din Cluj au obținut cele mai multe medii de 10 la Bacalaureat',
+      summary: 'Rezultatele finale ale examenului au fost publicate.',
+    }),
+    ...Array.from({ length: 9 }, (_, index) => makeArticle(index + 1)),
+  ];
+  const reviewedIds: string[] = [];
+
+  const result = await validateDraftFreshness({
+    draft: makeDraft(selected, [makeArticle(10)]),
+    historicalArticles: [],
+    recentDraftCount: 0,
+    publishedHistoryCount: 0,
+    now: new Date('2026-03-08T10:00:00.000Z'),
+    reviewArchive: async (items) => {
+      reviewedIds.push(...items.map((item) => item.article.id));
+      return buildFreshReview(items);
+    },
+    generateWrapperCopy: async () => makeWrapperCopy(),
+  });
+
+  assert.equal(reviewedIds.includes('article-0'), false);
+  assert.equal(result.draft.selected.some((article) => article.id === 'article-0'), false);
+  assert.equal(result.draft.selected.some((article) => article.id === 'article-10'), true);
+  assert.equal(
+    result.draft.validation?.blockedArticles?.find(
+      (blocked) => blocked.articleId === 'article-0'
+    )?.reason,
+    'editorial:routine-national-exam-result'
+  );
+});
+
 test('blocks high-confidence title and summary rewrites deterministically', async () => {
   const selected = [
     makeArticle(0, {

@@ -17,6 +17,7 @@ import {
   isHighConfidenceStoryMatch,
   normalizeTitle,
 } from './deduplication.js';
+import { getEditorialBlockReason } from './editorial-rules.js';
 import { callWithRetry, DEFAULT_GEMINI_MODEL } from './gemini.js';
 import type { HistoricalArticle } from './story-history.js';
 
@@ -504,6 +505,12 @@ export async function validateDraftFreshness(
   const reviewItems: ArchiveReviewInputItem[] = [];
 
   for (const article of pool) {
+    const editorialBlockReason = getEditorialBlockReason(article);
+    if (editorialBlockReason) {
+      blockedArticles.push(buildBlockedArticle(article.id, `editorial:${editorialBlockReason}`));
+      continue;
+    }
+
     const candidates = buildHistoricalCandidates(article, options.historicalArticles);
 
     if (isArticleStale(article, now, freshnessWindowDays)) {
