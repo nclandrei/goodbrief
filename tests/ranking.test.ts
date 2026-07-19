@@ -156,6 +156,45 @@ test('selectBalancedShortlist caps niche institutional sources and preserves com
   );
 });
 
+test('selectBalancedShortlist excludes low-interest stories from both selected and reserves', () => {
+  const rankedArticles = [
+    makeArticle('strong-community', {
+      category: 'local-heroes',
+      editorialInterest: 88,
+      feltImpact: 90,
+      certainty: 92,
+      humanCloseness: 95,
+    }),
+    makeArticle('routine-green-ranking', {
+      category: 'green-stuff',
+      editorialInterest: 35,
+      positivity: 96,
+      impact: 90,
+      feltImpact: 88,
+      certainty: 94,
+    }),
+    makeArticle('strong-win-1', { editorialInterest: 82 }),
+    makeArticle('strong-win-2', { editorialInterest: 78 }),
+    makeArticle('strong-win-3', { editorialInterest: 74 }),
+  ];
+
+  const shortlist = selectBalancedShortlist({
+    rankedArticles,
+    validation: EMPTY_VALIDATION,
+    selectedCount: 3,
+    reserveCount: 2,
+  });
+
+  assert.equal(
+    [...shortlist.selected, ...shortlist.reserves].some(
+      (article) => article.id === 'routine-green-ranking'
+    ),
+    false
+  );
+  assert.equal(shortlist.selected.length, 3);
+  assert.equal(shortlist.reserves.length, 1);
+});
+
 test('selectBalancedShortlist does not cap broad outlets when they carry the strongest concrete stories', () => {
   const rankedArticles = [
     makeArticle('protv-local', {

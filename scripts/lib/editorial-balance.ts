@@ -7,6 +7,9 @@ const MAX_SELECTED_BUREAUCRATIC = 2;
 const MIN_SELECTED_COMMUNITY = 2;
 const MIN_SELECTED_GREEN = 1;
 const CANDIDATE_SCORE_DELTA_FOR_FLOORS = 18;
+export const MIN_EDITORIAL_INTEREST_SCORE = 55;
+export const MIN_ADJUSTED_RANKING_SCORE = 50;
+const LEGACY_EDITORIAL_INTEREST_SCORE = 65;
 
 const NICHE_INSTITUTIONAL_SOURCES = new Set([
   'economedia',
@@ -21,6 +24,22 @@ function getValidationPenalty(articleId: string, validation: DraftValidation): n
 
 function getAdjustedScore(article: ProcessedArticle, validation: DraftValidation): number {
   return getRankingScore(article) - getValidationPenalty(article.id, validation);
+}
+
+export function meetsNewsletterQualityFloor(
+  article: ProcessedArticle,
+  validation: DraftValidation
+): boolean {
+  const editorialInterest =
+    typeof article.editorialInterest === 'number' &&
+    Number.isFinite(article.editorialInterest)
+      ? article.editorialInterest
+      : LEGACY_EDITORIAL_INTEREST_SCORE;
+
+  return (
+    editorialInterest >= MIN_EDITORIAL_INTEREST_SCORE &&
+    getAdjustedScore(article, validation) >= MIN_ADJUSTED_RANKING_SCORE
+  );
 }
 
 export function isNicheInstitutionalSource(article: ProcessedArticle): boolean {
@@ -187,8 +206,11 @@ export function selectBalancedShortlist(options: {
   reserveCount: number;
 }): { selected: ProcessedArticle[]; reserves: ProcessedArticle[] } {
   const { rankedArticles, validation, selectedCount, reserveCount } = options;
+  const qualifyingArticles = rankedArticles.filter((article) =>
+    meetsNewsletterQualityFloor(article, validation)
+  );
   const { selected, remaining } = buildBalancedSelection(
-    rankedArticles,
+    qualifyingArticles,
     validation,
     selectedCount
   );
