@@ -6,7 +6,7 @@ const MAX_SELECTED_NICHE_INSTITUTIONAL = 3;
 const MAX_SELECTED_BUREAUCRATIC = 2;
 const MIN_SELECTED_COMMUNITY = 2;
 const MIN_SELECTED_GREEN = 1;
-const CANDIDATE_SCORE_DELTA_FOR_FLOORS = 18;
+const MAX_DIVERSITY_SCORE_GAP = 8;
 export const MIN_EDITORIAL_INTEREST_SCORE = 55;
 export const MIN_ADJUSTED_RANKING_SCORE = 50;
 const LEGACY_EDITORIAL_INTEREST_SCORE = 65;
@@ -135,7 +135,7 @@ function buildBalancedSelection(
   let remaining = [...rankedArticles];
   const selected: ProcessedArticle[] = [];
   const anchorArticle = rankedArticles[Math.min(selectedCount - 1, rankedArticles.length - 1)];
-  const scoreFloor = getAdjustedScore(anchorArticle, validation) - CANDIDATE_SCORE_DELTA_FOR_FLOORS;
+  const scoreFloor = getAdjustedScore(anchorArticle, validation) - MAX_DIVERSITY_SCORE_GAP;
 
   const maybeAdd = (article: ProcessedArticle | null) => {
     if (!article) {

@@ -220,6 +220,50 @@ test('selectBalancedShortlist excludes low-interest stories from both selected a
   assert.equal(shortlist.reserves.length, 1);
 });
 
+test('selectBalancedShortlist skips a category when its best story trails the edition quality', () => {
+  const strongSignals: Partial<ProcessedArticle> = {
+    positivity: 85,
+    impact: 80,
+    editorialInterest: 75,
+    feltImpact: 75,
+    certainty: 80,
+    humanCloseness: 70,
+    bureaucraticDistance: 20,
+    promoRisk: 10,
+  };
+  const rankedArticles = [
+    makeArticle('community-1', { ...strongSignals, category: 'local-heroes' }),
+    makeArticle('community-2', { ...strongSignals, category: 'local-heroes' }),
+    makeArticle('strong-win-1', strongSignals),
+    makeArticle('strong-win-2', strongSignals),
+    makeArticle('lagging-green', {
+      category: 'green-stuff',
+      positivity: 78,
+      impact: 70,
+      editorialInterest: 60,
+      feltImpact: 65,
+      certainty: 75,
+      humanCloseness: 55,
+      bureaucraticDistance: 45,
+      promoRisk: 25,
+    }),
+  ];
+
+  const shortlist = selectBalancedShortlist({
+    rankedArticles,
+    validation: EMPTY_VALIDATION,
+    selectedCount: 4,
+    reserveCount: 1,
+  });
+
+  assert.equal(
+    shortlist.selected.some((article) => article.id === 'lagging-green'),
+    false
+  );
+  assert.equal(shortlist.selected.length, 4);
+  assert.equal(shortlist.reserves[0]?.id, 'lagging-green');
+});
+
 test('selectBalancedShortlist does not cap broad outlets when they carry the strongest concrete stories', () => {
   const rankedArticles = [
     makeArticle('protv-local', {
