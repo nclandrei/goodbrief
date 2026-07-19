@@ -64,6 +64,31 @@ test('getRankingScore penalizes speculative bureaucratic stories even when struc
   assert.ok(getRankingScore(tangible) > getRankingScore(speculative));
 });
 
+test('getRankingScore prefers distinctive stories over routine high-positivity results', () => {
+  const routineResult = makeArticle('routine-result', {
+    positivity: 95,
+    impact: 85,
+    editorialInterest: 35,
+    feltImpact: 75,
+    certainty: 90,
+    humanCloseness: 60,
+    bureaucraticDistance: 10,
+    promoRisk: 5,
+  });
+  const distinctiveStory = makeArticle('distinctive-story', {
+    positivity: 82,
+    impact: 75,
+    editorialInterest: 90,
+    feltImpact: 78,
+    certainty: 90,
+    humanCloseness: 75,
+    bureaucraticDistance: 10,
+    promoRisk: 5,
+  });
+
+  assert.ok(getRankingScore(distinctiveStory) > getRankingScore(routineResult));
+});
+
 test('selectBalancedShortlist caps niche institutional sources and preserves community stories when viable', () => {
   const rankedArticles = [
     makeArticle('startup-grants', {

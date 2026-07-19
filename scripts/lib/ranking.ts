@@ -1,9 +1,10 @@
 import type { ArticleScore, FilterResult, RankingResult, DiscardReason, RankedArticle } from './types.js';
 
 const POSITIVITY_THRESHOLD = 40;
-export const POSITIVITY_WEIGHT = 0.35;
+export const POSITIVITY_WEIGHT = 0.25;
 export const IMPACT_WEIGHT = 0.15;
-export const FELT_IMPACT_WEIGHT = 0.25;
+export const EDITORIAL_INTEREST_WEIGHT = 0.2;
+export const FELT_IMPACT_WEIGHT = 0.2;
 export const CERTAINTY_WEIGHT = 0.1;
 export const HUMAN_CLOSENESS_WEIGHT = 0.1;
 export const BUREAUCRATIC_DISTANCE_WEIGHT = 0.12;
@@ -14,6 +15,7 @@ type EditorialSignals = Pick<
   | 'positivity'
   | 'impact'
   | 'category'
+  | 'editorialInterest'
   | 'feltImpact'
   | 'certainty'
   | 'humanCloseness'
@@ -24,6 +26,7 @@ type EditorialSignals = Pick<
 const DEFAULTS_BY_CATEGORY: Record<
   NonNullable<ArticleScore['category']>,
   {
+    editorialInterest: number;
     feltImpact: number;
     certainty: number;
     humanCloseness: number;
@@ -32,6 +35,7 @@ const DEFAULTS_BY_CATEGORY: Record<
   }
 > = {
   'green-stuff': {
+    editorialInterest: 65,
     feltImpact: 75,
     certainty: 78,
     humanCloseness: 70,
@@ -39,6 +43,7 @@ const DEFAULTS_BY_CATEGORY: Record<
     promoRisk: 12,
   },
   'local-heroes': {
+    editorialInterest: 65,
     feltImpact: 82,
     certainty: 80,
     humanCloseness: 88,
@@ -46,6 +51,7 @@ const DEFAULTS_BY_CATEGORY: Record<
     promoRisk: 10,
   },
   wins: {
+    editorialInterest: 65,
     feltImpact: 58,
     certainty: 66,
     humanCloseness: 42,
@@ -53,6 +59,7 @@ const DEFAULTS_BY_CATEGORY: Record<
     promoRisk: 22,
   },
   'quick-hits': {
+    editorialInterest: 65,
     feltImpact: 62,
     certainty: 72,
     humanCloseness: 60,
@@ -100,6 +107,10 @@ export function getRankingScore(
   article: EditorialSignals & Pick<ArticleScore, 'summary'> & Partial<{ originalTitle: string }>
 ): number {
   const defaults = getDefaults(article);
+  const editorialInterest = getSignal(
+    article.editorialInterest,
+    defaults.editorialInterest
+  );
   const feltImpact = getSignal(article.feltImpact, defaults.feltImpact);
   const certainty = getSignal(article.certainty, defaults.certainty);
   const humanCloseness = getSignal(article.humanCloseness, defaults.humanCloseness);
@@ -113,6 +124,7 @@ export function getRankingScore(
   return (
     article.positivity * POSITIVITY_WEIGHT +
     article.impact * IMPACT_WEIGHT +
+    editorialInterest * EDITORIAL_INTEREST_WEIGHT +
     feltImpact * FELT_IMPACT_WEIGHT +
     certainty * CERTAINTY_WEIGHT +
     humanCloseness * HUMAN_CLOSENESS_WEIGHT -
