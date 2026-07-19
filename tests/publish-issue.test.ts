@@ -14,24 +14,24 @@ test('publish-issue writes validation metadata for future issues', async () => {
   const draft: NewsletterDraft = {
     weekId: '2026-W11',
     generatedAt: '2026-03-14T10:00:00.000Z',
-    selected: [
-      {
-        id: 'future-1',
+    selected: Array.from({ length: 7 }, (_, index) =>
+      ({
+        id: `future-${index + 1}`,
         sourceId: 'source',
         sourceName: 'Source',
-        originalTitle: 'Future story',
-        url: 'https://example.com/future-story',
-        summary: 'Future summary',
+        originalTitle: `Future story ${index + 1}`,
+        url: `https://example.com/future-story-${index + 1}`,
+        summary: `Future summary ${index + 1}`,
         positivity: 90,
         impact: 85,
         category: 'wins',
         publishedAt: '2026-03-12T10:00:00.000Z',
         processedAt: '2026-03-14T10:00:00.000Z',
-      },
-    ],
+      })
+    ),
     reserves: [],
     discarded: 0,
-    totalProcessed: 1,
+    totalProcessed: 7,
     wrapperCopy: {
       greeting: 'Salut!',
       intro: 'Intro',
@@ -40,7 +40,7 @@ test('publish-issue writes validation metadata for future issues', async () => {
     },
     validation: {
       generatedAt: '2026-03-14T10:00:00.000Z',
-      candidateCount: 1,
+      candidateCount: 7,
       flagged: [],
       status: 'passed',
       approvalSource: 'validation-pipeline',

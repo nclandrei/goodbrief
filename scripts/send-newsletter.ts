@@ -15,6 +15,7 @@ import type {
 import { sendAlert } from './lib/alert.js';
 import { resolveProjectRoot } from './lib/project-root.js';
 import { assertDraftValidated } from './lib/draft-delivery.js';
+import { TARGET_SELECTED_ARTICLE_COUNT } from './lib/newsletter-policy.js';
 import { formatValidationNotesForConsole } from './lib/validation-notes.js';
 
 const ROOT_DIR = resolveProjectRoot(import.meta.url);
@@ -441,8 +442,7 @@ async function main(): Promise<void> {
     }
   }
 
-  // Get first 12 selected articles
-  const articles = draft.selected.slice(0, 12);
+  const articles = draft.selected.slice(0, TARGET_SELECTED_ARTICLE_COUNT);
 
   // Group by category
   const grouped = groupByCategory(articles);

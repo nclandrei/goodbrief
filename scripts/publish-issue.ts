@@ -4,6 +4,7 @@ import type { NewsletterDraft, ProcessedArticle, ArticleCategory } from './types
 import { assertDraftValidated } from './lib/draft-delivery.js';
 import { renderIssueFrontmatter } from './lib/issue-frontmatter.js';
 import { getIssuePublicationInfo } from './lib/newsletter-week.js';
+import { TARGET_SELECTED_ARTICLE_COUNT } from './lib/newsletter-policy.js';
 import { resolveProjectRoot } from './lib/project-root.js';
 
 function getIssueNumber(issuesDir: string): number {
@@ -132,8 +133,10 @@ async function main() {
     process.exit(1);
   }
 
-  if (draft.selected.length < 10) {
-    console.warn(`Warning: Only ${draft.selected.length} selected articles (expected 10)`);
+  if (draft.selected.length < TARGET_SELECTED_ARTICLE_COUNT) {
+    console.warn(
+      `Short edition: ${draft.selected.length} selected articles (target ${TARGET_SELECTED_ARTICLE_COUNT})`
+    );
   }
 
   const issueNumber = getIssueNumber(issuesDir);

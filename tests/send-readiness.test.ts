@@ -7,11 +7,27 @@ import type { NewsletterDraft } from '../scripts/types.js';
 import { assertDraftValidated } from '../scripts/lib/draft-delivery.js';
 import { WORKSPACE_ROOT, runTypeScriptScript } from './helpers.js';
 
+function makeSelectedArticles(count: number): NewsletterDraft['selected'] {
+  return Array.from({ length: count }, (_, index) => ({
+    id: `story-${index}`,
+    sourceId: 'source',
+    sourceName: 'Source',
+    originalTitle: `Story ${index}`,
+    url: `https://example.com/story-${index}`,
+    summary: `Summary ${index}`,
+    positivity: 80,
+    impact: 70,
+    category: 'wins' as const,
+    publishedAt: '2026-03-12T10:00:00.000Z',
+    processedAt: '2026-03-14T10:00:00.000Z',
+  }));
+}
+
 test('post-W10 drafts require validation-pipeline approval', () => {
   const invalidFutureDraft: NewsletterDraft = {
     weekId: '2026-W11',
     generatedAt: '2026-03-14T10:00:00.000Z',
-    selected: [],
+    selected: makeSelectedArticles(7),
     reserves: [],
     discarded: 0,
     totalProcessed: 0,
@@ -38,7 +54,7 @@ test('post-W10 drafts with editor-review approval pass validation', () => {
   const editorReviewedDraft: NewsletterDraft = {
     weekId: '2026-W11',
     generatedAt: '2026-03-14T10:00:00.000Z',
-    selected: [],
+    selected: makeSelectedArticles(7),
     reserves: [],
     discarded: 0,
     totalProcessed: 0,
@@ -57,6 +73,30 @@ test('post-W10 drafts with editor-review approval pass validation', () => {
 
   assert.doesNotThrow(
     () => assertDraftValidated(editorReviewedDraft, 'newsletter delivery')
+  );
+});
+
+test('post-W10 drafts cannot be delivered below the 7-article safety minimum', () => {
+  const tooShortDraft: NewsletterDraft = {
+    weekId: '2026-W11',
+    generatedAt: '2026-03-14T10:00:00.000Z',
+    selected: makeSelectedArticles(6),
+    reserves: [],
+    discarded: 0,
+    totalProcessed: 6,
+    validation: {
+      generatedAt: '2026-03-14T10:00:00.000Z',
+      candidateCount: 6,
+      flagged: [],
+      status: 'passed',
+      approvalSource: 'editor-review',
+      checkedAt: '2026-03-14T11:00:00.000Z',
+    },
+  };
+
+  assert.throws(
+    () => assertDraftValidated(tooShortDraft, 'newsletter delivery'),
+    /minimum 7 articles/
   );
 });
 

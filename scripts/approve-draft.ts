@@ -11,9 +11,8 @@
 import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { resolveProjectRoot } from './lib/project-root.js';
+import { MIN_SENDABLE_ARTICLE_COUNT } from './lib/newsletter-policy.js';
 import type { NewsletterDraft } from './types.js';
-
-const MIN_SELECTED_ARTICLES = 8;
 
 function parseArgs(): string {
   const args = process.argv.slice(2);
@@ -36,9 +35,9 @@ function main(): void {
 
   const draft: NewsletterDraft = JSON.parse(readFileSync(draftPath, 'utf-8'));
 
-  if (draft.selected.length < MIN_SELECTED_ARTICLES) {
+  if (draft.selected.length < MIN_SENDABLE_ARTICLE_COUNT) {
     throw new Error(
-      `Draft has only ${draft.selected.length} selected articles (minimum ${MIN_SELECTED_ARTICLES}). Add more articles before approving.`
+      `Draft has only ${draft.selected.length} selected articles (minimum ${MIN_SENDABLE_ARTICLE_COUNT}). Add more articles before approving.`
     );
   }
 
