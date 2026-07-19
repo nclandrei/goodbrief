@@ -98,6 +98,30 @@ test('editorial rules block routine Bacalaureat grade stories', () => {
   );
 });
 
+test('editorial rules block trauma-led recovery stories with varied rescue language', () => {
+  const blockedStories = [
+    {
+      originalTitle:
+        'Un băiat care a suferit 10 fracturi după ce a căzut de la etaj poate merge din nou',
+      summary: 'Recuperarea copilului este prezentată ca un succes medical.',
+    },
+    {
+      originalTitle:
+        'Un pacient cu arsuri grave, transportat în Belgia cu o aeronavă militară',
+      summary: 'Misiunea umanitară a transferat pacientul la un spital din Liège.',
+    },
+    {
+      originalTitle:
+        'Jandarmul care a salvat un bătrân căzut cu scaunul rulant într-un pârâu',
+      summary: 'Jandarmul a fost decorat pentru intervenție.',
+    },
+  ];
+
+  for (const story of blockedStories) {
+    assert.equal(getEditorialBlockReason(story), 'negative-premise-with-happy-ending');
+  }
+});
+
 test('normalizeDisplayTitle strips HTML, entities, and source labels', () => {
   assert.equal(
     normalizeDisplayTitle(
