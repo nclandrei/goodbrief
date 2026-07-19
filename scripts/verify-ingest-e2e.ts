@@ -39,6 +39,7 @@ const EXPECTED_KEPT_SOURCE_IDS = [
   'startupcafe',
 ];
 const EDITORIAL_SIGNAL_KEYS = [
+  'editorialInterest',
   'feltImpact',
   'certainty',
   'humanCloseness',
@@ -50,6 +51,7 @@ const SIGNAL_TEMPLATES: Record<
   Required<Pick<ArticleScore, (typeof EDITORIAL_SIGNAL_KEYS)[number]>>
 > = {
   wins: {
+    editorialInterest: 72,
     feltImpact: 58,
     certainty: 66,
     humanCloseness: 42,
@@ -57,6 +59,7 @@ const SIGNAL_TEMPLATES: Record<
     promoRisk: 22,
   },
   'local-heroes': {
+    editorialInterest: 88,
     feltImpact: 90,
     certainty: 92,
     humanCloseness: 95,
@@ -64,6 +67,7 @@ const SIGNAL_TEMPLATES: Record<
     promoRisk: 4,
   },
   'green-stuff': {
+    editorialInterest: 84,
     feltImpact: 84,
     certainty: 87,
     humanCloseness: 76,
@@ -71,6 +75,7 @@ const SIGNAL_TEMPLATES: Record<
     promoRisk: 8,
   },
   'quick-hits': {
+    editorialInterest: 68,
     feltImpact: 66,
     certainty: 78,
     humanCloseness: 58,

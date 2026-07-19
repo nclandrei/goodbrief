@@ -31,7 +31,7 @@ import {
   type CounterSignalClassifier,
   validateSameWeekCounterSignals,
 } from './counter-signal-validation.js';
-import { GeminiQuotaError } from './gemini.js';
+import { GeminiQuotaError, withDefaultSignals } from './gemini.js';
 import { loadHistoricalArticles, type HistoricalArticle } from './historical-articles.js';
 import { getRankingScore } from './ranking.js';
 import {
@@ -497,7 +497,9 @@ export async function runScorePhase(
     }
   }
 
-  const scoreMap = new Map(allScores.map((score) => [score.id, score]));
+  const scoreMap = new Map(
+    allScores.map((score) => withDefaultSignals(score)).map((score) => [score.id, score])
+  );
   const processedAt = new Date().toISOString();
   const seenIds = new Set<string>();
   const processed = scoreCandidateArticles

@@ -75,12 +75,14 @@ test('Saturday pipeline generates, validates, and renders a proof without sendin
   assert.ok(
     draft.selected.every(
       (article: {
+        editorialInterest?: number;
         feltImpact?: number;
         certainty?: number;
         humanCloseness?: number;
         bureaucraticDistance?: number;
         promoRisk?: number;
       }) =>
+        typeof article.editorialInterest === 'number' &&
         typeof article.feltImpact === 'number' &&
         typeof article.certainty === 'number' &&
         typeof article.humanCloseness === 'number' &&
@@ -94,6 +96,7 @@ test('Saturday pipeline generates, validates, and renders a proof without sendin
   assert.ok(cardiacNetwork);
   assert.deepEqual(
     {
+      editorialInterest: cardiacNetwork.editorialInterest,
       feltImpact: cardiacNetwork.feltImpact,
       certainty: cardiacNetwork.certainty,
       humanCloseness: cardiacNetwork.humanCloseness,
@@ -101,6 +104,7 @@ test('Saturday pipeline generates, validates, and renders a proof without sendin
       promoRisk: cardiacNetwork.promoRisk,
     },
     {
+      editorialInterest: 65,
       feltImpact: 74,
       certainty: 91,
       humanCloseness: 68,

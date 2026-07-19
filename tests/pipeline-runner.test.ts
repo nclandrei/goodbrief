@@ -32,6 +32,7 @@ const execFileAsync = promisify(execFile);
 const REPO_ROOT = process.cwd();
 const WEEK_ID = '2026-W10';
 const EDITORIAL_SIGNAL_KEYS = [
+  'editorialInterest',
   'feltImpact',
   'certainty',
   'humanCloseness',
@@ -240,6 +241,7 @@ function setupPipelineRoot(rootDir: string): {
       summary: 'Gamma summary scored',
       positivity: 86,
       impact: 76,
+      editorialInterest: 89,
       feltImpact: 88,
       certainty: 90,
       humanCloseness: 92,
@@ -369,6 +371,7 @@ test('score phase preserves detailed editorial signals from score mocks', async 
   assert.ok(gamma);
   assert.deepEqual(
     {
+      editorialInterest: gamma.editorialInterest,
       feltImpact: gamma.feltImpact,
       certainty: gamma.certainty,
       humanCloseness: gamma.humanCloseness,
@@ -376,6 +379,7 @@ test('score phase preserves detailed editorial signals from score mocks', async 
       promoRisk: gamma.promoRisk,
     },
     {
+      editorialInterest: 89,
       feltImpact: 88,
       certainty: 90,
       humanCloseness: 92,
