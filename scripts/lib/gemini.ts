@@ -14,6 +14,10 @@ function getArticleScoreSchema(includeReasoning: boolean) {
       type: 'integer',
       description: 'Structural impact score 0-100 based on how significant the story is in Romania',
     },
+    editorialInterest: {
+      type: 'integer',
+      description: 'How distinctive, memorable, and worth telling a friend this story is for Good Brief readers',
+    },
     feltImpact: {
       type: 'integer',
       description: 'How directly a 20-30 year old Romanian would feel or care about this story soon',
@@ -47,6 +51,7 @@ function getArticleScoreSchema(includeReasoning: boolean) {
     'summary',
     'positivity',
     'impact',
+    'editorialInterest',
     'feltImpact',
     'certainty',
     'humanCloseness',
@@ -91,13 +96,13 @@ export { getArticleScoreSchema, withDefaultSignals };
 
 function getPrompt(articlesText: string, includeReasoning: boolean): string {
   const reasoningInstruction = includeReasoning
-    ? `\n\n11. REASONING (2-3 sentences):
+    ? `\n\n12. REASONING (2-3 sentences):
    Explain your scores briefly, especially whether the story is concrete or speculative, and whether it feels human or bureaucratic.`
     : '';
 
   const returnFormat = includeReasoning
-    ? 'Return ONLY valid JSON array: [{"id": "...", "summary": "...", "positivity": N, "impact": N, "feltImpact": N, "certainty": N, "humanCloseness": N, "bureaucraticDistance": N, "promoRisk": N, "romaniaRelevant": true/false, "category": "...", "reasoning": "..."}, ...]'
-    : 'Return ONLY valid JSON array: [{"id": "...", "summary": "...", "positivity": N, "impact": N, "feltImpact": N, "certainty": N, "humanCloseness": N, "bureaucraticDistance": N, "promoRisk": N, "romaniaRelevant": true/false, "category": "..."}, ...]';
+    ? 'Return ONLY valid JSON array: [{"id": "...", "summary": "...", "positivity": N, "impact": N, "editorialInterest": N, "feltImpact": N, "certainty": N, "humanCloseness": N, "bureaucraticDistance": N, "promoRisk": N, "romaniaRelevant": true/false, "category": "...", "reasoning": "..."}, ...]'
+    : 'Return ONLY valid JSON array: [{"id": "...", "summary": "...", "positivity": N, "impact": N, "editorialInterest": N, "feltImpact": N, "certainty": N, "humanCloseness": N, "bureaucraticDistance": N, "promoRisk": N, "romaniaRelevant": true/false, "category": "..."}, ...]';
 
   return `You are writing for Good Brief, a Romanian positive news newsletter for young educated Romanians (20-30).
 
@@ -154,7 +159,17 @@ For each article, provide:
    
    Ask yourself: "How big is this for Romania if it is real?"
 
-4. FELT IMPACT SCORE (0-100) - How directly would a 25-year-old in Cluj/București feel, care about, or share this soon?
+4. EDITORIAL INTEREST SCORE (0-100) - Would a smart Romanian aged 20-30 tell a friend about this specific story?
+   HIGH EDITORIAL INTEREST (80-100):
+   - Distinctive, surprising, memorable, or unusually useful; it has a concrete detail that makes it worth sharing with a friend
+   - A meaningful change, achievement, discovery, or human initiative that stands out from the weekly news flow
+
+   LOW EDITORIAL INTEREST (0-50):
+   - A routine result, award, ranking, institutional anniversary, or minor personal milestone
+   - Pleasant but interchangeable news that readers would not miss if it were absent
+   - Do not raise this score merely because the outcome is positive
+
+5. FELT IMPACT SCORE (0-100) - How directly would a 25-year-old in Cluj/București feel, care about, or share this soon?
    HIGH FELT IMPACT (80-100):
    - Tangible community improvements, everyday-life effects, people helped directly, visible local progress
    - Stories readers can imagine in real life, not just in a ministry slide deck
@@ -163,7 +178,7 @@ For each article, provide:
    - Distant institutional process updates
    - Abstract funding or strategy announcements without near-term lived effect
 
-5. CERTAINTY SCORE (0-100) - How real and already underway is the positive outcome?
+6. CERTAINTY SCORE (0-100) - How real and already underway is the positive outcome?
    HIGH CERTAINTY (80-100):
    - Already launched, already built, already started, already delivered
    - Concrete results with evidence on the ground
@@ -174,28 +189,28 @@ For each article, provide:
    LOW CERTAINTY (0-50):
    - Could happen, may receive funds, call for applications, plan, proposal, political promise
 
-6. HUMAN CLOSENESS SCORE (0-100) - How centered is the story on people, communities, or daily life?
+7. HUMAN CLOSENESS SCORE (0-100) - How centered is the story on people, communities, or daily life?
    HIGH HUMAN CLOSENESS (80-100):
    - Local heroes, volunteers, schools, neighborhoods, patients, families, community initiatives
 
    LOW HUMAN CLOSENESS (0-40):
    - Ministries, funding mechanisms, market moves, executive appointments, investor or policy process stories
 
-7. BUREAUCRATIC DISTANCE SCORE (0-100) - How bureaucratic, institutional, or process-heavy is the story?
+8. BUREAUCRATIC DISTANCE SCORE (0-100) - How bureaucratic, institutional, or process-heavy is the story?
    HIGH BUREAUCRATIC DISTANCE (80-100):
    - Calls for projects, grant schemes, strategies, ministerial statements, policy processes, funding allocations not yet felt
 
    LOW BUREAUCRATIC DISTANCE (0-20):
    - Direct, tangible outcomes already visible to people
 
-8. PROMO RISK SCORE (0-100) - How much does the story feel like PR, a grant announcement, or promotional copy?
+9. PROMO RISK SCORE (0-100) - How much does the story feel like PR, a grant announcement, or promotional copy?
    HIGH PROMO RISK (80-100):
    - Startup funding PR, executive hire PR, brand partnership news, “inscrieri deschise”, generic grant or call-for-applications copy
 
    LOW PROMO RISK (0-20):
    - Independent reporting on concrete outcomes that matter in public life
 
-9. ROMANIA RELEVANCE (true/false):
+10. ROMANIA RELEVANCE (true/false):
    Set to TRUE only if the article is about:
    - Events happening IN Romania
    - Romanian people, companies, or organizations
@@ -209,7 +224,7 @@ For each article, provide:
    
    IMPORTANT: Just because a Romanian news outlet reported the story does NOT make it Romania-relevant.
 
-10. CATEGORY (alege EXACT un singur string din lista de mai jos):
+11. CATEGORY (alege EXACT un singur string din lista de mai jos):
 
    REGULI GENERALE:
    - Gândește-te la TEMA principală a știrii, nu la lungime.
@@ -247,6 +262,7 @@ ${articlesText}`;
 function withDefaultSignals(score: ArticleScore): ArticleScore {
   const defaultsByCategory = {
     'green-stuff': {
+      editorialInterest: 65,
       feltImpact: 75,
       certainty: 78,
       humanCloseness: 70,
@@ -254,6 +270,7 @@ function withDefaultSignals(score: ArticleScore): ArticleScore {
       promoRisk: 12,
     },
     'local-heroes': {
+      editorialInterest: 65,
       feltImpact: 82,
       certainty: 80,
       humanCloseness: 88,
@@ -261,6 +278,7 @@ function withDefaultSignals(score: ArticleScore): ArticleScore {
       promoRisk: 10,
     },
     wins: {
+      editorialInterest: 65,
       feltImpact: 58,
       certainty: 66,
       humanCloseness: 42,
@@ -268,6 +286,7 @@ function withDefaultSignals(score: ArticleScore): ArticleScore {
       promoRisk: 22,
     },
     'quick-hits': {
+      editorialInterest: 65,
       feltImpact: 62,
       certainty: 72,
       humanCloseness: 60,
@@ -280,6 +299,7 @@ function withDefaultSignals(score: ArticleScore): ArticleScore {
 
   return {
     ...score,
+    editorialInterest: score.editorialInterest ?? defaults.editorialInterest,
     feltImpact: score.feltImpact ?? defaults.feltImpact,
     certainty: score.certainty ?? defaults.certainty,
     humanCloseness: score.humanCloseness ?? defaults.humanCloseness,
@@ -532,6 +552,7 @@ export async function processArticles(
         summary: cached.summary,
         positivity: cached.positivity,
         impact: cached.impact,
+        editorialInterest: cached.editorialInterest,
         feltImpact: cached.feltImpact,
         certainty: cached.certainty,
         humanCloseness: cached.humanCloseness,

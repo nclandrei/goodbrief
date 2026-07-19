@@ -74,7 +74,7 @@ export function buildRefinePrompt(input: RefinePromptInput): string {
         ? `\n   Same-week validation: ${flag.verdict.toUpperCase()} — ${flag.reason}`
         : '';
       const signalLine =
-        `pos:${article.positivity} structural:${article.impact} felt:${formatSignal(article.feltImpact)} ` +
+        `pos:${article.positivity} structural:${article.impact} interest:${formatSignal(article.editorialInterest)} felt:${formatSignal(article.feltImpact)} ` +
         `certainty:${formatSignal(article.certainty)} human:${formatSignal(article.humanCloseness)} ` +
         `bureau:${formatSignal(article.bureaucraticDistance)} promo:${formatSignal(article.promoRisk)} ` +
         `adjusted:${adjustedScore}`;

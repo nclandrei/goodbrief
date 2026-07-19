@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { getScoringPrompt } from '../scripts/lib/gemini.js';
+import { getArticleScoreSchema, getScoringPrompt } from '../scripts/lib/gemini.js';
 import { buildRefinePrompt } from '../scripts/lib/llm/refine-prompt.js';
 import type { DraftValidation, ProcessedArticle } from '../scripts/types.js';
 
@@ -40,6 +40,17 @@ test('scoring prompt states hard editorial exclusions before articles are scored
   assert.match(prompt, /Nostalgia|Untold/);
   assert.match(prompt, /commercial festivals/i);
   assert.match(prompt, /Bacalaureat.*(?:grade|average|appeal)/i);
+});
+
+test('scoring contract requires an explicit editorial-interest judgment', () => {
+  const prompt = getScoringPrompt('ID: a\nTitle: T\nContent: S', false);
+  const schema = getArticleScoreSchema(false);
+
+  assert.match(prompt, /EDITORIAL INTEREST SCORE/i);
+  assert.match(prompt, /tell a friend|share with a friend/i);
+  assert.match(prompt, /routine.*(?:award|ranking|result)/i);
+  assert.ok(schema.items.required.includes('editorialInterest'));
+  assert.deepEqual(schema.items.properties.editorialInterest?.type, 'integer');
 });
 
 test('refine prompt tells reviewer to reject hard exclusions and editorial title prefixes', () => {

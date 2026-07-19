@@ -5,6 +5,7 @@ export interface ArticleScore {
   summary: string;
   positivity: number;
   impact: number;
+  editorialInterest?: number;
   feltImpact?: number;
   certainty?: number;
   humanCloseness?: number;

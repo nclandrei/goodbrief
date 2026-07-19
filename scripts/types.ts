@@ -103,6 +103,7 @@ export interface ProcessedArticle {
   summary: string;
   positivity: number;
   impact: number;
+  editorialInterest?: number;
   feltImpact?: number;
   certainty?: number;
   humanCloseness?: number;

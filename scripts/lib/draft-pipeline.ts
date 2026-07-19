@@ -513,6 +513,9 @@ export async function runScorePhase(
         processedAt,
       };
 
+      if (score.editorialInterest !== undefined) {
+        processedArticle.editorialInterest = score.editorialInterest;
+      }
       if (score.feltImpact !== undefined) {
         processedArticle.feltImpact = score.feltImpact;
       }
