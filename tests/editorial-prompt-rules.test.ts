@@ -75,3 +75,24 @@ test('refine prompt tells reviewer to reject hard exclusions and editorial title
   assert.match(prompt, /commercial festivals/i);
   assert.match(prompt, /Bacalaureat.*(?:grade|average|appeal)/i);
 });
+
+test('refine prompt allows a strong 7-article edition without padding to 10', () => {
+  const prompt = buildRefinePrompt({
+    weekId: '2026-W26',
+    selected: [makeArticle('a')],
+    reserves: [makeArticle('b')],
+    wrapperCopy: {
+      greeting: 'Salut',
+      intro: 'Intro',
+      signOff: 'Pe luni',
+      shortSummary: 'Summary',
+    },
+    validation: EMPTY_VALIDATION,
+    previousArticles: [],
+    lookbackLabel: 'fixture',
+  });
+
+  assert.match(prompt, /7-10 article IDs/i);
+  assert.match(prompt, /do not pad|shorter edition/i);
+  assert.doesNotMatch(prompt, /9-12 article IDs/i);
+});

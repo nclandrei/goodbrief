@@ -22,6 +22,10 @@ import {
   withDefaultSignals,
 } from '../gemini.js';
 import { getSemanticDedupPrompt } from '../semantic-dedup.js';
+import {
+  MIN_SENDABLE_ARTICLE_COUNT,
+  TARGET_SELECTED_ARTICLE_COUNT,
+} from '../newsletter-policy.js';
 import { refineResponseSchema } from './refine-prompt.js';
 import type {
   LlmProvider,
@@ -395,7 +399,7 @@ OUTPUT RULES (Claude Code headless mode):
 
 OUTPUT RULES (Claude Code headless mode):
 - Respond with ONLY the JSON object described above.
-- Keys: selectedIds (array of 9-12 strings), intro (Romanian), shortSummary (Romanian), reasoning (Romanian).
+- Keys: selectedIds (array of ${MIN_SENDABLE_ARTICLE_COUNT}-${TARGET_SELECTED_ARTICLE_COUNT} strings), intro (Romanian), shortSummary (Romanian), reasoning (Romanian).
 - No markdown, no code fences.`;
 
     const stdout = await this.callClaude(prompt, {

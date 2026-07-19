@@ -8,6 +8,10 @@ import {
   isCommunityCentered,
   isGreenPreferred,
 } from '../editorial-balance.js';
+import {
+  MIN_SENDABLE_ARTICLE_COUNT,
+  TARGET_SELECTED_ARTICLE_COUNT,
+} from '../newsletter-policy.js';
 
 export interface RefinePromptInput {
   weekId: string;
@@ -37,6 +41,8 @@ export const refineResponseSchema = {
     selectedIds: {
       type: 'array',
       items: { type: 'string' },
+      minItems: MIN_SENDABLE_ARTICLE_COUNT,
+      maxItems: TARGET_SELECTED_ARTICLE_COUNT,
     },
     intro: { type: 'string' },
     shortSummary: { type: 'string' },
@@ -117,7 +123,7 @@ IMPORTANT: All text output (intro, shortSummary, reasoning) MUST be in Romanian.
 ${previousWeeksContext}
 ${validationContext}
 
-CURRENT SELECTION (top 10):
+CURRENT SELECTION (up to ${TARGET_SELECTED_ARTICLE_COUNT}):
 ${selected
   .map(
     (article, index) => `${index + 1}. [ID: ${article.id}] "${article.originalTitle}"`
@@ -156,10 +162,11 @@ TASK:
 - Review the current selection critically
 - If you find issues (duplicates, weak stories, imbalance, REPEATS from previous weeks), swap articles from reserves
 - If the intro could be sharper or better reflect the final selection, improve it (KEEP IT IN ROMANIAN)
-- Return 9-12 article IDs in your preferred order
+- Return ${MIN_SENDABLE_ARTICLE_COUNT}-${TARGET_SELECTED_ARTICLE_COUNT} article IDs in your preferred order
+- A shorter edition is better than a padded one: do not pad to ${TARGET_SELECTED_ARTICLE_COUNT} with weak stories
 
 Return JSON with:
-- selectedIds: array of 9-12 article IDs in display order
+- selectedIds: array of ${MIN_SENDABLE_ARTICLE_COUNT}-${TARGET_SELECTED_ARTICLE_COUNT} article IDs in display order
 - intro: the intro IN ROMANIAN
 - shortSummary: the short summary IN ROMANIAN
 - reasoning: brief explanation of what you changed and why (or "No changes needed")`;

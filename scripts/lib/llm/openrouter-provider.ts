@@ -17,6 +17,10 @@ import {
   withDefaultSignals,
 } from '../gemini.js';
 import { getSemanticDedupPrompt } from '../semantic-dedup.js';
+import {
+  MIN_SENDABLE_ARTICLE_COUNT,
+  TARGET_SELECTED_ARTICLE_COUNT,
+} from '../newsletter-policy.js';
 import { refineResponseSchema } from './refine-prompt.js';
 import { parseJsonPayload } from './json-extract.js';
 import type {
@@ -910,7 +914,7 @@ OUTPUT RULES (OpenRouter structured output):
 
 OUTPUT RULES (OpenRouter structured output):
 - Respond with ONLY the JSON object described above.
-- Keys: selectedIds (array of 9-12 strings), intro (Romanian), shortSummary (Romanian), reasoning (Romanian).
+- Keys: selectedIds (array of ${MIN_SENDABLE_ARTICLE_COUNT}-${TARGET_SELECTED_ARTICLE_COUNT} strings), intro (Romanian), shortSummary (Romanian), reasoning (Romanian).
 - No markdown, no code fences.`;
 
     const raw = await this.call(prompt, {

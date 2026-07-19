@@ -460,7 +460,7 @@ test('select phase overwrites only its own artifact and leaves upstream artifact
   >;
   assert.deepEqual(
     shortlist.data.selected.map((article: ProcessedArticle) => article.id),
-    ['alpha', 'gamma', 'beta']
+    ['alpha', 'gamma']
   );
 });
 

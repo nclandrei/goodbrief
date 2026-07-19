@@ -51,6 +51,10 @@ import {
   getEditorialBlockReason,
   normalizeRawArticleTitle,
 } from './editorial-rules.js';
+import {
+  MIN_SENDABLE_ARTICLE_COUNT,
+  TARGET_SELECTED_ARTICLE_COUNT,
+} from './newsletter-policy.js';
 
 function parseLookbackEnv(value: string | undefined, fallback: number): number {
   const parsed = Number.parseInt(value ?? '', 10);
@@ -58,7 +62,10 @@ function parseLookbackEnv(value: string | undefined, fallback: number): number {
 }
 
 const SEMANTIC_DEDUP_POOL_SIZE = parseLookbackEnv(process.env.SEMANTIC_DEDUP_POOL_SIZE, 60);
-const FINAL_SELECTED_COUNT = parseLookbackEnv(process.env.FINAL_SELECTED_COUNT, 10);
+const FINAL_SELECTED_COUNT = parseLookbackEnv(
+  process.env.FINAL_SELECTED_COUNT,
+  TARGET_SELECTED_ARTICLE_COUNT
+);
 const FINAL_RESERVES_COUNT = parseLookbackEnv(process.env.FINAL_RESERVES_COUNT, 30);
 const FINAL_SHORTLIST_COUNT = FINAL_SELECTED_COUNT + FINAL_RESERVES_COUNT;
 
@@ -216,9 +223,12 @@ async function refineShortlist(options: {
     wrapperCopy: WrapperCopy;
     reasoning: string;
   } => {
-    if (refinement.selectedIds.length < 9 || refinement.selectedIds.length > 12) {
+    if (
+      refinement.selectedIds.length < MIN_SENDABLE_ARTICLE_COUNT ||
+      refinement.selectedIds.length > TARGET_SELECTED_ARTICLE_COUNT
+    ) {
       console.log(
-        `Warning: Expected 9-12 articles, got ${refinement.selectedIds.length}. Keeping original.`
+        `Warning: Expected ${MIN_SENDABLE_ARTICLE_COUNT}-${TARGET_SELECTED_ARTICLE_COUNT} articles, got ${refinement.selectedIds.length}. Keeping original.`
       );
       return {
         selected,
@@ -238,7 +248,10 @@ async function refineShortlist(options: {
       }
     }
 
-    if (refinedSelection.length < 9 || refinedSelection.length > 12) {
+    if (
+      refinedSelection.length < MIN_SENDABLE_ARTICLE_COUNT ||
+      refinedSelection.length > TARGET_SELECTED_ARTICLE_COUNT
+    ) {
       console.log(
         `Warning: Could only find ${refinedSelection.length} valid articles. Keeping original.`
       );
