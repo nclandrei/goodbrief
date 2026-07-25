@@ -1,0 +1,13 @@
+{
+  "weekId": "2026-W30",
+  "phase": "counter-signal-validate",
+  "generatedAt": "2026-07-25T11:29:04.654Z",
+  "inputFile": "draft:2026-W30",
+  "data": {
+    "validation": {
+      "generatedAt": "2026-07-25T11:28:58.076Z",
+      "candidateCount": 40,
+      "flagged": []
+    }
+  }
+}

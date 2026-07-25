@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W30",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-07-25T11:28:53.470Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Bună dimineața! 👋",
+      "intro": "Săptămâna asta avem vești din toate colțurile țării, de la inovații care ne fac viața mai ușoară, la performanțe care ne umplu de mândrie. Prinde-ți cafeaua și hai să vedem ce surprize plăcute ne-au adus românii.",
+      "signOff": "Asta a fost pentru azi! Sperăm că ți-am adus un zâmbet și un strop de optimism. 🙏",
+      "shortSummary": "Transport ieftin, proteze ce cresc, recorduri la artă și matematică."
+    }
+  }
+}
