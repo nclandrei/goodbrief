@@ -122,6 +122,33 @@ test('editorial rules block trauma-led recovery stories with varied rescue langu
   }
 });
 
+test('editorial rules block school olympiad results but allow the Olympic Games', () => {
+  const schoolOlympiadStories = [
+    {
+      originalTitle:
+        'Elevii români au câștigat șase medalii la Olimpiada Internațională de Matematică',
+      summary: 'Lotul României a concurat cu elevi din peste 120 de țări.',
+    },
+    {
+      originalTitle:
+        'România a obținut aur la Olimpiada Central-Europeană de Inteligență Artificială',
+      summary: 'Liceenii români au urcat pe podiumul competiției.',
+    },
+  ];
+
+  for (const story of schoolOlympiadStories) {
+    assert.equal(getEditorialBlockReason(story), 'school-academic-olympiad');
+  }
+
+  assert.equal(
+    getEditorialBlockReason({
+      originalTitle: 'România a câștigat aur la Jocurile Olimpice de la Los Angeles',
+      summary: 'Sportiva română a încheiat finala pe primul loc.',
+    }),
+    null
+  );
+});
+
 test('normalizeDisplayTitle strips HTML, entities, and source labels', () => {
   assert.equal(
     normalizeDisplayTitle(

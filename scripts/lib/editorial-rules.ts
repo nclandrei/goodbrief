@@ -72,6 +72,12 @@ const NATIONAL_SCHOOL_EXAM_PATTERN =
 const ROUTINE_EXAM_RESULT_PATTERN =
   /\b(?:not(?:a|ă|e|ele|elor)|medi(?:a|e|ei|i|ile|ilor)|rezultat(?:ul|e|ele|elor)?|contesta[țt]i(?:e|a|i|ile|ilor)?|recorect\w*|promovabilitat(?:e|ea)|rata\s+de\s+promovare|punct(?:e|aj|ajul)?)\b/iu;
 
+const SCHOOL_OLYMPIAD_PATTERN =
+  /(?<![\p{L}\d])olimpiad(?:a|ă|ei|e|ele|elor)?(?![\p{L}\d])/iu;
+
+const SCHOOL_ACADEMIC_CONTEXT_PATTERN =
+  /(?:elev|liceen|student|junior|școlar|scolar|matematic|fizic|chimi|informatic|inteligen[țt][ăa]\s+artificial|biolog|geograf|lingvistic|astronom|știin[țt]ific|stiintific|creativitate|robotic)/iu;
+
 const EXCEPTIONAL_MOLDOVA_PATTERNS = [
   /\b(?:dreptur(?:i|ile)\s+(?:omului|lgbtq?|lgbti|minorit[ăa][țt]ilor)|lgbtq?|lgbti|pride|queer)\b/iu,
   /\b(?:parteneriat(?:e)?\s+civil(?:e)?|c[ăa]s[ăa]tori(?:e|i)\s+între\s+persoane\s+de\s+acela[șs]i\s+sex)\b/iu,
@@ -128,6 +134,13 @@ export function getEditorialBlockReason(article: EditorialArticle): string | nul
 
   if (NATIONAL_SCHOOL_EXAM_PATTERN.test(title) && ROUTINE_EXAM_RESULT_PATTERN.test(title)) {
     return 'routine-national-exam-result';
+  }
+
+  if (
+    SCHOOL_OLYMPIAD_PATTERN.test(title) &&
+    SCHOOL_ACADEMIC_CONTEXT_PATTERN.test(text)
+  ) {
+    return 'school-academic-olympiad';
   }
 
   if (
