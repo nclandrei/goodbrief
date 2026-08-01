@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W31",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-08-01T11:35:30.319Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare! 👋",
+      "intro": "Săptămâna asta e plină de curaj și inovație. De la eroi de zi cu zi care sar în ajutor, la un port care se modernizează cu energie verde și vești bune din sport. E o doză bună de optimism, gata să-ți lumineze ziua.",
+      "signOff": "Citește cu spor și simte vibe-ul bun! 🙏",
+      "shortSummary": "Eroi locali, energie verde și victorii sportive. Veste bune din România."
+    }
+  }
+}
