@@ -84,13 +84,18 @@ export function formatDateRomanian(date: Date): string {
   return `${day} ${month} ${year}`;
 }
 
+export function getIssuePublicationMonday(weekId: string): Date {
+  const draftMonday = getMondayOfISOWeek(weekId);
+  const sendMonday = new Date(draftMonday);
+  sendMonday.setDate(draftMonday.getDate() + 7);
+  return sendMonday;
+}
+
 export function getIssuePublicationInfo(
   rootDir: string,
   weekId: string
 ): IssuePublicationInfo {
-  const draftMonday = getMondayOfISOWeek(weekId);
-  const sendMonday = new Date(draftMonday);
-  sendMonday.setDate(draftMonday.getDate() + 7);
+  const sendMonday = getIssuePublicationMonday(weekId);
 
   const date = formatIsoDate(sendMonday);
   const filename = `${date}-issue.md`;

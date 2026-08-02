@@ -54,7 +54,11 @@ export interface CounterSignalFlag {
 }
 
 export type DraftValidationStatus = 'passed' | 'failed';
-export type DraftValidationVerdict = 'fresh' | 'duplicate' | 'follow_up';
+export type DraftValidationVerdict =
+  | 'fresh'
+  | 'duplicate'
+  | 'follow_up'
+  | 'expired_action';
 export type DraftValidationApprovalSource =
   | 'legacy-backfill'
   | 'validation-pipeline'

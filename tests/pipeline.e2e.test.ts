@@ -5,14 +5,13 @@ import { join } from 'path';
 import {
   WORKSPACE_ROOT,
   createTempProjectFromFixture,
-  getIsoWeekId,
   runTypeScriptScript,
   seedRawWeek,
 } from './helpers.js';
 
 test('Saturday pipeline generates, validates, and renders a proof without sending', async () => {
   const tempRoot = createTempProjectFromFixture();
-  const weekId = getIsoWeekId(new Date());
+  const weekId = '2026-W10';
   const draftPath = join(tempRoot, 'data', 'drafts', `${weekId}.json`);
   const proofOutputPath = join(tempRoot, 'proof.html');
   const sharedEnv = {
@@ -30,7 +29,7 @@ test('Saturday pipeline generates, validates, and renders a proof without sendin
 
   await runTypeScriptScript(
     join(WORKSPACE_ROOT, 'scripts', 'generate-draft.ts'),
-    [],
+    ['--week', weekId],
     sharedEnv
   );
 

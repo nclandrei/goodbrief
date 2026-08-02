@@ -234,6 +234,31 @@ test('blocks valid stories older than the freshness window', async () => {
   assert.equal(result.draft.validation?.blockedArticles?.[0]?.reason, 'stale-published-at');
 });
 
+test('measures the freshness window from Monday delivery instead of Saturday validation', async () => {
+  const selected = [
+    makeArticle(0, { publishedAt: '2026-02-22T00:00:00.000Z' }),
+    ...Array.from({ length: 9 }, (_, index) => makeArticle(index + 1)),
+  ];
+
+  const result = await validateDraftFreshness({
+    draft: makeDraft(selected, [makeArticle(10)]),
+    historicalArticles: [],
+    recentDraftCount: 0,
+    publishedHistoryCount: 0,
+    now: new Date('2026-03-07T10:00:00.000Z'),
+    reviewArchive: async (items) => buildFreshReview(items),
+    generateWrapperCopy: async () => makeWrapperCopy(),
+  });
+
+  assert.equal(
+    result.draft.validation?.blockedArticles?.find(
+      (blocked) => blocked.articleId === 'article-0'
+    )?.reason,
+    'stale-published-at'
+  );
+  assert.equal(result.draft.selected.some((article) => article.id === 'article-10'), true);
+});
+
 test('routes invalid publishedAt values to agent review instead of hard-failing them', async () => {
   const selected = [
     makeArticle(0, { publishedAt: 'not-a-date' }),
@@ -332,6 +357,61 @@ test('auto-replaces blocked selected stories with the first approved reserve', a
     },
   ]);
   assert.equal(result.draft.wrapperCopy?.intro, 'Wrapper regen after replacement.');
+});
+
+test('blocks expired invitations for Monday while keeping retrospective event outcomes', async () => {
+  const selected = [
+    makeArticle(0, {
+      originalTitle: 'Calea Victoriei devine pietonală sâmbătă și duminică, 7-8 martie',
+      summary: 'Bucureștenii sunt invitați la plimbare și activități în acest weekend.',
+    }),
+    makeArticle(1, {
+      originalTitle: 'Festivalul comunității a strâns 100.000 de lei pentru spital',
+      summary: 'Evenimentul din 7 martie a adunat 10.000 de oameni și a finanțat spitalul local.',
+    }),
+    ...Array.from({ length: 8 }, (_, index) => makeArticle(index + 2)),
+  ];
+  let plannedReadDate: string | undefined;
+
+  const result = await validateDraftFreshness({
+    draft: makeDraft(selected, [makeArticle(10)]),
+    historicalArticles: [],
+    recentDraftCount: 0,
+    publishedHistoryCount: 0,
+    now: new Date('2026-03-08T10:00:00.000Z'),
+    reviewArchive: async (items, _weekId, readDate) => {
+      plannedReadDate = readDate;
+      return items.map((item) => ({
+        articleId: item.article.id,
+        verdict: (item.article.id === 'article-0'
+          ? 'expired_action'
+          : 'fresh') as ArchiveReviewDecision['verdict'],
+        notes:
+          item.article.id === 'article-0'
+            ? 'The invitation ends before readers receive the newsletter.'
+            : 'The story reports a durable outcome.',
+      }));
+    },
+    generateWrapperCopy: async () => ({
+      ...makeWrapperCopy(),
+      intro: 'Wrapper regen after temporal replacement.',
+    }),
+  });
+
+  assert.equal(plannedReadDate, '2026-03-09');
+  assert.equal(result.draft.selected.some((article) => article.id === 'article-0'), false);
+  assert.equal(result.draft.selected.some((article) => article.id === 'article-1'), true);
+  assert.equal(result.draft.selected.some((article) => article.id === 'article-10'), true);
+  assert.equal(
+    result.draft.validation?.blockedArticles?.find(
+      (blocked) => blocked.articleId === 'article-0'
+    )?.reason,
+    'expired-at-read-time'
+  );
+  assert.equal(
+    result.draft.wrapperCopy?.intro,
+    'Wrapper regen after temporal replacement.'
+  );
 });
 
 test('passes a shorter edition when 9 approved stories remain', async () => {

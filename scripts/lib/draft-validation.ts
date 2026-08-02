@@ -23,6 +23,7 @@ import {
   MIN_SENDABLE_ARTICLE_COUNT,
   TARGET_SELECTED_ARTICLE_COUNT,
 } from './newsletter-policy.js';
+import { formatIsoDate, getIssuePublicationMonday } from './newsletter-week.js';
 import type { HistoricalArticle } from './story-history.js';
 
 export const DEFAULT_FRESHNESS_WINDOW_DAYS = 14;
@@ -62,7 +63,8 @@ export interface ValidateDraftFreshnessOptions {
   now?: Date;
   reviewArchive?: (
     items: ArchiveReviewInputItem[],
-    weekId: string
+    weekId: string,
+    plannedReadDate: string
   ) => Promise<ArchiveReviewDecision[]>;
   generateWrapperCopy?: (
     articles: ProcessedArticle[],
@@ -230,7 +232,12 @@ function buildBlockedArticle(
 }
 
 function isDraftValidationVerdict(value: unknown): value is DraftValidationVerdict {
-  return value === 'fresh' || value === 'duplicate' || value === 'follow_up';
+  return (
+    value === 'fresh' ||
+    value === 'duplicate' ||
+    value === 'follow_up' ||
+    value === 'expired_action'
+  );
 }
 
 function normalizeAvailableReviews(
@@ -287,7 +294,11 @@ function loadMockArchiveReview(items: ArchiveReviewInputItem[]): ArchiveReviewDe
   return completeMissingReviews(normalizeAvailableReviews(response, items), items);
 }
 
-function getArchiveReviewPrompt(weekId: string, items: ArchiveReviewInputItem[]): string {
+function getArchiveReviewPrompt(
+  weekId: string,
+  plannedReadDate: string,
+  items: ArchiveReviewInputItem[]
+): string {
   const body = items
     .map((item, index) => {
       const candidateText =
@@ -316,25 +327,31 @@ ${candidateText}`;
     })
     .join('\n\n====\n\n');
 
-  return `You are the archive validation gate for Good Brief week ${weekId}.
+  return `You are the archive and read-time validation gate for Good Brief week ${weekId}.
+
+The newsletter will reach readers on Monday ${plannedReadDate}. Judge each article's usefulness as of that date, not when the source article was published.
 
 For each current article, decide whether it is:
 - "fresh": a genuinely new story that has not appeared before
 - "duplicate": the same underlying story/event already covered before, even if rewritten by another outlet
 - "follow_up": a materially new development on a previously covered topic; keep only if readers would clearly perceive it as a new milestone, not a rewrite
+- "expired_action": the article's primary value is an invitation, registration, deadline, or other action that will already have ended before readers receive the newsletter
 
 Strict rules:
 - Be conservative. If it feels like a rewrite or recycled version of an older story, mark "duplicate".
 - Different outlets covering the same underlying event are duplicates.
 - A story is "follow_up" only when there is a concrete new development after the previous edition.
 - If the current article has an unknown or unusable published date, be extra skeptical about evergreen or recycled coverage.
+- Resolve relative phrases such as "today", "tomorrow", "this weekend", or "Saturday and Sunday" from the article's Published timestamp, then compare the resulting event window with Monday ${plannedReadDate}.
+- Use "expired_action" only when the stated event, offer, registration period, or deadline clearly ends before ${plannedReadDate}. If it is still available on ${plannedReadDate}, judge it normally.
+- Do not use "expired_action" for retrospective reporting whose value is a durable result or impact, such as attendance, an achievement, money raised, or revenue for a local council, even when the event itself has ended.
 
 Return JSON only in this shape:
 {
   "reviews": [
     {
       "articleId": "string",
-      "verdict": "fresh | duplicate | follow_up",
+      "verdict": "fresh | duplicate | follow_up | expired_action",
       "notes": "short explanation",
       "matchedOrigin": "issue or draft filename if relevant",
       "matchedTitle": "matched historical title if relevant"
@@ -364,6 +381,8 @@ export async function reviewDraftPoolAgainstArchive(
     throw new Error('GEMINI_API_KEY environment variable is required for archive review');
   }
 
+  const plannedReadDate = formatIsoDate(getIssuePublicationMonday(weekId));
+
   const responseSchema = {
     type: 'object',
     properties: {
@@ -375,7 +394,7 @@ export async function reviewDraftPoolAgainstArchive(
             articleId: { type: 'string' },
             verdict: {
               type: 'string',
-              enum: ['fresh', 'duplicate', 'follow_up'],
+              enum: ['fresh', 'duplicate', 'follow_up', 'expired_action'],
             },
             notes: { type: 'string' },
             matchedOrigin: { type: 'string' },
@@ -406,7 +425,7 @@ export async function reviewDraftPoolAgainstArchive(
     attempt++
   ) {
     const response = await callWithRetry(async () => {
-      const prompt = getArchiveReviewPrompt(weekId, pendingItems);
+      const prompt = getArchiveReviewPrompt(weekId, plannedReadDate, pendingItems);
       const result = await model.generateContent(prompt);
       return JSON.parse(result.response.text()) as ArchiveReviewResponse;
     });
@@ -501,8 +520,9 @@ export async function validateDraftFreshness(
   const now = resolveValidationNow(options.now);
   const checkedAt = now.toISOString();
   const freshnessWindowDays = options.freshnessWindowDays ?? DEFAULT_FRESHNESS_WINDOW_DAYS;
-  const reviewArchive = options.reviewArchive ?? reviewDraftPoolAgainstArchive;
   const generateWrapperCopy = options.generateWrapperCopy ?? defaultGenerateWrapperCopy;
+  const plannedReadAt = getIssuePublicationMonday(options.draft.weekId);
+  const plannedReadDate = formatIsoDate(plannedReadAt);
 
   const pool = [...options.draft.selected, ...options.draft.reserves];
   const blockedArticles: DraftValidationBlockedArticle[] = [];
@@ -517,7 +537,7 @@ export async function validateDraftFreshness(
 
     const candidates = buildHistoricalCandidates(article, options.historicalArticles);
 
-    if (isArticleStale(article, now, freshnessWindowDays)) {
+    if (isArticleStale(article, plannedReadAt, freshnessWindowDays)) {
       blockedArticles.push(buildBlockedArticle(article.id, 'stale-published-at'));
       continue;
     }
@@ -555,14 +575,19 @@ export async function validateDraftFreshness(
     });
   }
 
-  const reviewDecisions = await reviewArchive(reviewItems, options.draft.weekId);
+  const reviewDecisions = options.reviewArchive
+    ? await options.reviewArchive(reviewItems, options.draft.weekId, plannedReadDate)
+    : await reviewDraftPoolAgainstArchive(reviewItems, options.draft.weekId);
   const reviewDecisionById = new Map(reviewDecisions.map((decision) => [decision.articleId, decision]));
 
   for (const decision of reviewDecisions) {
-    if (decision.verdict === 'duplicate') {
+    if (decision.verdict === 'duplicate' || decision.verdict === 'expired_action') {
       blockedArticles.push({
         articleId: decision.articleId,
-        reason: 'agent-duplicate',
+        reason:
+          decision.verdict === 'expired_action'
+            ? 'expired-at-read-time'
+            : 'agent-duplicate',
         matchedOrigin: decision.matchedOrigin,
         matchedTitle: decision.matchedTitle,
       });

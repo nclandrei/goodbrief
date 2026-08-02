@@ -29,7 +29,8 @@ export interface RunDraftFreshnessValidationOptions {
   now?: Date;
   reviewArchive?: (
     items: ArchiveReviewInputItem[],
-    weekId: string
+    weekId: string,
+    plannedReadDate: string
   ) => Promise<ArchiveReviewDecision[]>;
   logger?: (message: string) => void;
 }
