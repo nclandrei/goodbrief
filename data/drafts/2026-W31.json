@@ -117,23 +117,23 @@
       "promoRisk": 30
     },
     {
-      "id": "07e1e9afb27bda93",
-      "sourceId": "agerpres",
-      "sourceName": "Agerpres",
-      "originalTitle": "Noi experiențe pe Calea Victoriei - sâmbătă și duminică, la 'Străzi Deschise - București, Promenadă urbană'",
-      "url": "https://agerpres.ro/cultura-media/2026/07/30/noi-experiente-pe-calea-victoriei---sambata-si-duminica-la-strazi-deschise---bucuresti-promenada-urb--1580784",
-      "summary": "Bucureștiul invită la plimbare pe Calea Victoriei în acest weekend, în cadrul evenimentului 'Străzi Deschise - București, Promenadă urbană'. Vor fi multe experiențe noi și activități menite să aducă viață pe una dintre cele mai cunoscute artere ale orașului.",
-      "positivity": 80,
-      "impact": 70,
+      "id": "6bf5671d8fc55c1e",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "originalTitle": "Ana Blandiana primește un nou premiu internațional / Poeta română va fi distinsă la Festivalul Cosmopoética din Spania",
+      "url": "https://www.mediafax.ro/cultura-media/ana-blandiana-primeste-un-nou-premiu-international-poeta-romana-va-fi-distinsa-la-festivalul-cosmopoetica-din-spania-23780717",
+      "summary": "Poeta română Ana Blandiana va primi premiul Cosmopoética Ciudad de Córdoba în Spania pentru întreaga sa carieră. Această distincție subliniază recunoașterea internațională a literaturii române.",
+      "positivity": 85,
+      "impact": 60,
       "category": "wins",
-      "publishedAt": "2026-07-30T14:10:58.910Z",
+      "publishedAt": "2026-07-29T08:07:30.000Z",
       "processedAt": "2026-08-01T11:35:18.451Z",
-      "editorialInterest": 70,
-      "feltImpact": 80,
+      "editorialInterest": 75,
+      "feltImpact": 50,
       "certainty": 90,
-      "humanCloseness": 90,
+      "humanCloseness": 65,
       "bureaucraticDistance": 30,
-      "promoRisk": 40
+      "promoRisk": 10
     },
     {
       "id": "f427af9fe1d4385a",
@@ -537,25 +537,6 @@
       "promoRisk": 20
     },
     {
-      "id": "6bf5671d8fc55c1e",
-      "sourceId": "mediafax",
-      "sourceName": "Mediafax",
-      "originalTitle": "Ana Blandiana primește un nou premiu internațional / Poeta română va fi distinsă la Festivalul Cosmopoética din Spania",
-      "url": "https://www.mediafax.ro/cultura-media/ana-blandiana-primeste-un-nou-premiu-international-poeta-romana-va-fi-distinsa-la-festivalul-cosmopoetica-din-spania-23780717",
-      "summary": "Poeta română Ana Blandiana va primi premiul Cosmopoética Ciudad de Córdoba în Spania pentru întreaga sa carieră. Această distincție subliniază recunoașterea internațională a literaturii române.",
-      "positivity": 85,
-      "impact": 60,
-      "category": "wins",
-      "publishedAt": "2026-07-29T08:07:30.000Z",
-      "processedAt": "2026-08-01T11:35:18.451Z",
-      "editorialInterest": 75,
-      "feltImpact": 50,
-      "certainty": 90,
-      "humanCloseness": 65,
-      "bureaucraticDistance": 30,
-      "promoRisk": 10
-    },
-    {
       "id": "0fd6894948f7da31",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
@@ -759,8 +740,8 @@
     "candidateCount": 40,
     "flagged": [],
     "status": "passed",
-    "approvalSource": "validation-pipeline",
-    "checkedAt": "2026-08-01T11:35:38.592Z",
+    "approvalSource": "editor-review",
+    "checkedAt": "2026-08-02T09:58:37.000Z",
     "freshnessWindowDays": 14,
     "publishedHistoryCount": 285,
     "recentDraftCount": 0,
@@ -768,12 +749,20 @@
       {
         "articleId": "d242b6471aa36167",
         "reason": "stale-published-at"
+      },
+      {
+        "articleId": "07e1e9afb27bda93",
+        "reason": "expired-at-read-time"
       }
     ],
     "replacements": [
       {
         "removedArticleId": "d242b6471aa36167",
         "replacementArticleId": "9ca721d84af82a29"
+      },
+      {
+        "removedArticleId": "07e1e9afb27bda93",
+        "replacementArticleId": "6bf5671d8fc55c1e"
       }
     ],
     "agentReviewed": [
@@ -809,8 +798,8 @@
       },
       {
         "articleId": "07e1e9afb27bda93",
-        "verdict": "fresh",
-        "notes": "The article is about new experiences on Calea Victoriei as part of an urban promenade event. The archive match is about the Văcărești Delta as an urban nature reserve, which is a different topic."
+        "verdict": "expired_action",
+        "notes": "The article invites readers to an event held on 1-2 August, before the newsletter delivery date of 3 August."
       },
       {
         "articleId": "f427af9fe1d4385a",
