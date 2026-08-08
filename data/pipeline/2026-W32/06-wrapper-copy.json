@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W32",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-08-08T10:50:12.547Z",
+  "inputFile": "05-shortlist.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare, drag cititor! 👋",
+      "intro": "Săptămâna asta am pregătit un mix de vești care îți vor umple sufletul: de la mișcare ce ne scapă de boli și Castelul Corvinilor care își recapătă gloria, la explorări sub pământ și performanțe sportive de excepție. E genul de conținut care te face să zâmbești și să spui „wow”.",
+      "signOff": "Până data viitoare, ai grijă de tine și bucură-te de lucrurile simple. 🙏",
+      "shortSummary": "Mișcare, Castelul Corvinilor, delfini în Deltă, performanțe sportive."
+    }
+  }
+}
