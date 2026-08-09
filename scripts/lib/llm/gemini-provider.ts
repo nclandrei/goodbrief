@@ -1,4 +1,5 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import { readFileSync } from 'fs';
 import type { ProcessedArticle, RawArticle } from '../../types.js';
 import type { ArticleScore } from '../types.js';
 import type {
@@ -26,6 +27,12 @@ import {
   deduplicateProcessedArticlesSemantically,
 } from '../semantic-dedup.js';
 import { buildRefinePrompt, refineResponseSchema } from './refine-prompt.js';
+import {
+  buildNaturalTitlesPrompt,
+  naturalTitlesResponseSchema,
+  normalizeNaturalTitlesResponse,
+  type NaturalTitle,
+} from './natural-title-prompt.js';
 import type {
   LlmProvider,
   RefinementInput,
@@ -118,6 +125,48 @@ export class GeminiProvider implements LlmProvider {
         process.env.GEMINI_API_KEY = this.apiKey;
       }
       return await geminiGenerateWrapperCopy(articles, weekId);
+    } catch (error) {
+      wrapQuotaError(error);
+    }
+  }
+
+  async generateNaturalTitles(
+    weekId: string,
+    articles: ProcessedArticle[]
+  ): Promise<NaturalTitle[]> {
+    if (articles.length === 0) {
+      return [];
+    }
+
+    try {
+      const mockPath = process.env.GOODBRIEF_NATURAL_TITLES_MOCK_FILE;
+      if (mockPath) {
+        const payload = JSON.parse(readFileSync(mockPath, 'utf-8')) as unknown;
+        return normalizeNaturalTitlesResponse('gemini', articles, payload);
+      }
+
+      const genAI = new GoogleGenerativeAI(this.apiKey);
+      const model = genAI.getGenerativeModel({
+        model:
+          process.env.GEMINI_NATURAL_TITLES_MODEL || DEFAULT_GEMINI_MODEL,
+        generationConfig: {
+          responseMimeType: 'application/json',
+          responseSchema: naturalTitlesResponseSchema,
+        } as any,
+      });
+
+      const payload = await callWithRetry(async () => {
+        const response = await model.generateContent(
+          buildNaturalTitlesPrompt(weekId, articles)
+        );
+        const text = response.response.text();
+        if (!text) {
+          throw new Error('Empty natural-title response');
+        }
+        return JSON.parse(text) as unknown;
+      });
+
+      return normalizeNaturalTitlesResponse('gemini', articles, payload);
     } catch (error) {
       wrapQuotaError(error);
     }
