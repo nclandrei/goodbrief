@@ -47,6 +47,7 @@ function makeProvider(copy: WrapperCopy, calls: string[]): LlmProvider {
       calls.push(weekId);
       return copy;
     },
+    generateNaturalTitles: async () => [],
     refineDraft: async () => ({
       selectedIds: [],
       intro: '',

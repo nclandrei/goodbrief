@@ -5,6 +5,7 @@ import type {
   CounterSignalClassifierResult,
 } from '../counter-signal-validation.js';
 import type { WrapperCopy } from '../../../emails/utils/generate-copy.js';
+import type { NaturalTitle } from './natural-title-prompt.js';
 
 export type LlmProviderName = 'gemini' | 'claude-cli' | 'openrouter';
 
@@ -58,6 +59,10 @@ export interface LlmProvider {
     weekId: string,
     articles: ProcessedArticle[]
   ): Promise<WrapperCopy>;
+  generateNaturalTitles(
+    weekId: string,
+    articles: ProcessedArticle[]
+  ): Promise<NaturalTitle[]>;
   refineDraft(input: RefinementInput): Promise<RefinementResult>;
 }
 

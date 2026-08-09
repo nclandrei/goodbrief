@@ -125,6 +125,9 @@ function createMockLlm(options: {
     async generateWrapperCopy() {
       return { greeting: '', intro: '', signOff: '', shortSummary: '' };
     },
+    async generateNaturalTitles() {
+      return [];
+    },
     async refineDraft() {
       return { selectedIds: [], intro: '', shortSummary: '', reasoning: '' };
     },

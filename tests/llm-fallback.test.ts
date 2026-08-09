@@ -6,7 +6,7 @@ import {
   LlmQuotaError,
 } from '../scripts/lib/llm/provider.js';
 import type { LlmProvider } from '../scripts/lib/llm/provider.js';
-import type { RawArticle } from '../scripts/types.js';
+import type { ProcessedArticle, RawArticle } from '../scripts/types.js';
 
 const RAW: RawArticle = {
   id: 'raw-1',
@@ -17,6 +17,20 @@ const RAW: RawArticle = {
   summary: 'S',
   publishedAt: '2026-04-10T00:00:00Z',
   fetchedAt: '2026-04-10T00:00:00Z',
+};
+
+const PROCESSED: ProcessedArticle = {
+  id: 'article-1',
+  sourceId: 'src',
+  sourceName: 'Src',
+  originalTitle: 'Titlu sursă',
+  url: 'https://example.com/article-1',
+  summary: 'Rezumat',
+  positivity: 80,
+  impact: 70,
+  category: 'wins',
+  publishedAt: '2026-04-10T00:00:00Z',
+  processedAt: '2026-04-10T01:00:00Z',
 };
 
 function stubProvider(
@@ -40,6 +54,7 @@ function stubProvider(
       signOff: '',
       shortSummary: '',
     }),
+    generateNaturalTitles: async () => [],
     refineDraft: async () => ({
       selectedIds: [],
       intro: '',
@@ -101,6 +116,27 @@ test('Fallback: switches to fallback on LlmQuotaError', async () => {
 
   assert.equal(fallbackCalls, 1);
   assert.equal(scores.length, 1);
+});
+
+test('Fallback: switches title generation to the fallback provider on quota', async () => {
+  let fallbackCalls = 0;
+  const primary = stubProvider('gemini', {
+    generateNaturalTitles: async () => {
+      throw new LlmQuotaError('gemini', 'quota exceeded');
+    },
+  });
+  const fallback = stubProvider('claude-cli', {
+    generateNaturalTitles: async () => {
+      fallbackCalls++;
+      return [{ id: 'article-1', title: 'Titlul firesc' }];
+    },
+  });
+
+  const wrapped = new FallbackLlmProvider(primary, fallback);
+  const titles = await wrapped.generateNaturalTitles('2026-W15', [PROCESSED]);
+
+  assert.equal(fallbackCalls, 1);
+  assert.deepEqual(titles, [{ id: 'article-1', title: 'Titlul firesc' }]);
 });
 
 test('Fallback: does NOT catch non-quota LlmProviderError by default', async () => {

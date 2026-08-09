@@ -14,6 +14,7 @@ import type {
   SemanticDedupResponse,
 } from './provider.js';
 import { LlmQuotaError } from './provider.js';
+import type { NaturalTitle } from './natural-title-prompt.js';
 
 /**
  * Wraps a primary + fallback pair. Every method tries the primary first;
@@ -82,6 +83,15 @@ export class FallbackLlmProvider implements LlmProvider {
   ): Promise<WrapperCopy> {
     return this.run('generateWrapperCopy', (provider) =>
       provider.generateWrapperCopy(weekId, articles)
+    );
+  }
+
+  generateNaturalTitles(
+    weekId: string,
+    articles: ProcessedArticle[]
+  ): Promise<NaturalTitle[]> {
+    return this.run('generateNaturalTitles', (provider) =>
+      provider.generateNaturalTitles(weekId, articles)
     );
   }
 
