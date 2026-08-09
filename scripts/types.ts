@@ -103,6 +103,7 @@ export interface ProcessedArticle {
   sourceId: string;
   sourceName: string;
   originalTitle: string;
+  title?: string;
   url: string;
   summary: string;
   positivity: number;

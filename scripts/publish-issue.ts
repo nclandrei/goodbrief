@@ -6,6 +6,7 @@ import { renderIssueFrontmatter } from './lib/issue-frontmatter.js';
 import { getIssuePublicationInfo } from './lib/newsletter-week.js';
 import { TARGET_SELECTED_ARTICLE_COUNT } from './lib/newsletter-policy.js';
 import { resolveProjectRoot } from './lib/project-root.js';
+import { getArticleDisplayTitle } from './lib/article-title.js';
 
 function getIssueNumber(issuesDir: string): number {
   const files = readdirSync(issuesDir).filter((f) => f.endsWith('.md'));
@@ -52,7 +53,7 @@ function generateMarkdown(
     sections.push(`## ${config.emoji} ${config.title}`);
 
     for (const article of categoryArticles) {
-      sections.push(`### ${article.originalTitle}
+      sections.push(`### ${getArticleDisplayTitle(article)}
 ${article.summary}
 
 → [Citește pe ${article.sourceName}](${article.url})`);

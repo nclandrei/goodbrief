@@ -20,6 +20,7 @@ test('publish-issue writes validation metadata for future issues', async () => {
         sourceId: 'source',
         sourceName: 'Source',
         originalTitle: `Future story ${index + 1}`,
+        title: index === 0 ? 'Titlul firesc al primei știri' : undefined,
         url: `https://example.com/future-story-${index + 1}`,
         summary: `Future summary ${index + 1}`,
         positivity: 90,
@@ -91,4 +92,6 @@ validatedAt: "2026-03-09T13:30:00.000Z"
   assert.match(futureIssue, /validated: true/);
   assert.match(futureIssue, /validationSource: "validation-pipeline"/);
   assert.match(futureIssue, /validatedAt: "2026-03-14T11:00:00.000Z"/);
+  assert.match(futureIssue, /### Titlul firesc al primei știri/);
+  assert.doesNotMatch(futureIssue, /### Future story 1/);
 });
