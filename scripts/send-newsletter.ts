@@ -17,6 +17,7 @@ import { resolveProjectRoot } from './lib/project-root.js';
 import { assertDraftValidated } from './lib/draft-delivery.js';
 import { TARGET_SELECTED_ARTICLE_COUNT } from './lib/newsletter-policy.js';
 import { formatValidationNotesForConsole } from './lib/validation-notes.js';
+import { getArticleDisplayTitle } from './lib/article-title.js';
 
 const ROOT_DIR = resolveProjectRoot(import.meta.url);
 
@@ -133,7 +134,7 @@ function renderEmailHtml(
     <tr>
       <td style="padding: 16px 0;">
         <h3 style="margin: 0 0 8px 0; font-size: 18px; font-weight: bold; color: ${darkText}; line-height: 1.4;">
-          ${article.originalTitle}
+          ${getArticleDisplayTitle(article)}
         </h3>
         <p style="margin: 0 0 12px 0; font-size: 16px; color: ${darkText}; line-height: 1.6;">
           ${article.summary}
