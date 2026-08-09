@@ -91,6 +91,11 @@ test('natural-title validation rejects deterministic headline anti-patterns', ()
     'Un nou capitol pentru comunitatea din Brașov',
     'Titlu firesc?',
     '🌟 Titlu firesc pentru cititori',
+    'România câștigă 🇷🇴',
+    'Titlu 1️⃣ pentru cititori',
+    'Elevii lansează un proiect nou — VIDEO',
+    'Titlu firesc…',
+    'Titlu firesc,',
   ];
 
   for (const title of invalidTitles) {
