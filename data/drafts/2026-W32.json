@@ -3,31 +3,31 @@
   "generatedAt": "2026-08-08T10:50:14.383Z",
   "selected": [
     {
-      "id": "5c30179bdc1ad865",
-      "sourceId": "stirileprotv",
-      "sourceName": "Știrile ProTV",
-      "originalTitle": "De ce este important ca măcar o dată la două zile să avem o oră de efort fizic. Mecanismul care ne scapă de o boală grea",
-      "url": "https://stirileprotv.ro/stiri/doctor-de-bine/de-ce-este-important-ca-macar-o-data-la-doua-zile-sa-avem-o-ora-de-efort-fizic-mecanismul-care-ne-scapa-de-o-boala-grea.html",
-      "summary": "Mișcarea fizică regulată, chiar și doar o oră la două zile, ajută corpul să preia zahărul din sânge fără insulină, oferind un suport cardiometabolic semnificativ. Acesta este un mecanism cheie pentru prevenirea bolilor.",
+      "id": "ac0c9d2d09d63c6a",
+      "sourceId": "mediafax",
+      "sourceName": "Mediafax",
+      "originalTitle": "După 82 de ani, vulturul și grifonii au revenit pe Palatul Universității",
+      "url": "https://www.mediafax.ro/stirile-zilei/un-simbol-disparut-al-bucurestiului-se-intoarce-dupa-82-de-ani-vulturul-si-grifonii-montati-pe-palatul-universitatii-23787176",
+      "summary": "Ansamblul din bronz cântărește 1,6 tone: un vultur de o tonă și doi grifoni de câte 300 de kilograme. Sculpturile refac compoziția distrusă în bombardamentele din 1944.",
       "positivity": 80,
-      "impact": 70,
+      "impact": 60,
       "category": "quick-hits",
-      "publishedAt": "2026-08-07T04:49:43.000Z",
+      "publishedAt": "2026-08-08T06:33:54.000Z",
       "processedAt": "2026-08-08T10:50:00.659Z",
       "editorialInterest": 70,
-      "feltImpact": 80,
-      "certainty": 90,
-      "humanCloseness": 90,
-      "bureaucraticDistance": 10,
-      "promoRisk": 5
+      "feltImpact": 70,
+      "certainty": 80,
+      "humanCloseness": 70,
+      "bureaucraticDistance": 20,
+      "promoRisk": 10
     },
     {
       "id": "4ff55383a5a53738",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
-      "originalTitle": "Cum arată Castelul Corvinilor după ce a fost restaurat. „Imposibilul este, totuşi, posibil”",
+      "originalTitle": "Restaurarea Castelului Corvinilor se încheie la sfârșitul lui august",
       "url": "https://stirileprotv.ro/stiri/actualitate/cum-arata-castelul-corvinilor-dupa-ce-a-fost-restaurat-imposibilul-este-totusi-posibil-galerie-foto.html",
-      "summary": "Castelul Corvinilor din Hunedoara a fost restaurat complet, cu o investiție de 11,6 milioane de euro, și va fi finalizat până pe 31 august. Un citat din articol spune: „Imposibilul este, totuşi, posibil”.",
+      "summary": "Restaurarea Castelului Corvinilor din Hunedoara, o investiție de 11,6 milioane de euro, se apropie de final. Lucrările ar urma să fie încheiate până la 31 august.",
       "positivity": 90,
       "impact": 70,
       "category": "wins",
@@ -44,9 +44,9 @@
       "id": "919d2fa90bc01cea",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
-      "originalTitle": "Imagini rare cu delfini în Delta Dunării: ”Ia uite cum face!”. Cum au ajuns aici aceste mamifere de apă sărată",
+      "originalTitle": "Mai mulți delfini au fost filmați pe canalele Sulina și Sfântu Gheorghe",
       "url": "https://stirileprotv.ro/stiri/actualitate/imagini-rare-cu-delfini-in-delta-dunarii-uite-l-e-aici-cum-au-ajuns-aici-aceste-mamifere-de-apa-sarata.html",
-      "summary": "Imagini rare cu delfini au fost filmate în Delta Dunării, unde mai multe exemplare au intrat în canalele Sulina și Sfântu Gheorghe. Mamiferele marine sunt probabil în căutare de hrană.",
+      "summary": "Mai mulți delfini au fost filmați în canalele Sulina și Sfântu Gheorghe, o apariție rară în Delta Dunării. Cel mai probabil, au intrat în Deltă în căutare de hrană.",
       "positivity": 80,
       "impact": 50,
       "category": "green-stuff",
@@ -63,9 +63,9 @@
       "id": "3d0c80ea8ba33df6",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
-      "originalTitle": "Locul spectaculos din România unde intri într-un labirint subteran de 52 de kilometri. Este cea mai lungă peșteră din țară",
+      "originalTitle": "Peștera Vântului are 52 de kilometri de galerii în Munții Apuseni",
       "url": "https://stirileprotv.ro/stiri/travel/pestera-vantului-din-muntii-apuseni-cea-mai-lunga-pestera-din-romania-atractie-naturala-spectaculoasa-din-bihor-2.html",
-      "summary": "Peștera Vântului din Munții Apuseni, județul Bihor, este cea mai lungă peșteră din România, oferind un labirint subteran spectaculos de 52 de kilometri. Locul impresionează prin galeriile sale unice.",
+      "summary": "Aflată în Munții Apuseni, în județul Bihor, Peștera Vântului formează un labirint subteran de 52 de kilometri și este cea mai lungă peșteră din România.",
       "positivity": 85,
       "impact": 60,
       "category": "wins",
@@ -82,9 +82,9 @@
       "id": "9021a15e072ef739",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
-      "originalTitle": "Alexandra Dăriescu, prima pianistă din România care va cânta la BBC Proms, cel mai mare festival de muzică clasică din lume",
+      "originalTitle": "Alexandra Dăriescu, prima pianistă română la BBC Proms",
       "url": "https://stirileprotv.ro/cultura/alexandra-dariescu-prima-pianista-din-romania-care-va-canta-la-bbc-proms-cel-mai-mare-festival-de-muzica-clasica-din-lume.html",
-      "summary": "Pianista Alexandra Dăriescu devine prima româncă ce va cânta la BBC Proms, cel mai mare festival de muzică clasică din lume. Debutul ei la Royal Albert Hall din Londra este un moment istoric pentru muzica clasică românească.",
+      "summary": "Alexandra Dăriescu va fi prima pianistă din România care va cânta la BBC Proms. Debutul ei va avea loc la Royal Albert Hall din Londra.",
       "positivity": 90,
       "impact": 70,
       "category": "wins",
@@ -101,9 +101,9 @@
       "id": "d6bc90c04f6f223b",
       "sourceId": "mediafax",
       "sourceName": "Mediafax",
-      "originalTitle": "David Popovici a plecat la Europenele de la Paris. Românul poate reuși o performanță fără precedent",
+      "originalTitle": "David Popovici, la Paris pentru a treia dublă europeană",
       "url": "https://www.mediafax.ro/sport/david-popovici-a-plecat-la-europenele-de-la-paris-romanul-poate-reusi-o-performanta-fara-precedent-23786567",
-      "summary": "David Popovici a plecat la Europenele de la Paris, unde are șansa de a deveni primul înotător din istorie care câștigă de trei ori probele de 100 și 200 m liber la competiția continentală. O performanță cu adevărat remarcabilă.",
+      "summary": "David Popovici merge la Europenele de la Paris cu șansa de a deveni primul înotător din istorie care câștigă de trei ori atât proba de 100 m liber, cât și cea de 200 m liber.",
       "positivity": 90,
       "impact": 70,
       "category": "wins",
@@ -120,9 +120,9 @@
       "id": "8fa8489cb75f6d01",
       "sourceId": "economedia",
       "sourceName": "Economedia",
-      "originalTitle": "Autostrada Sibiu – Pitești A1. Pe tronsonul 4 Tigveni – Curtea de Argeș, se așterne stratul asfaltic de uzură pe ultimii metri, spune șeful CNAIR / „Anul acesta se va putea deschide circulația pe această secțiune, mai devreme față de termenul contractual”",
+      "originalTitle": "Ultimii metri de asfalt pe A1, între Tigveni și Curtea de Argeș",
       "url": "https://economedia.ro/video-autostrada-sibiu-pitesti-a1-pe-tronsonul-4-tigveni-curtea-de-arges-se-asterne-stratul-asfaltic-de-uzura-pe-ultimii-metri-spune-seful-cnair-anul-acesta-se-va-putea-deschide-circulati.html",
-      "summary": "Stratul de uzură este așternut pe ultimii metri ai secțiunii 4 Tigveni – Curtea de Argeș a Autostrăzii Sibiu – Pitești, directorul CNAIR anunțând că traficul se va deschide în 2026, mai devreme decât contractul.",
+      "summary": "Pe ultimii metri ai tronsonului Tigveni–Curtea de Argeș se așterne stratul final de asfalt. CNAIR estimează că secțiunea se va deschide circulației în 2026, înainte de termenul contractual.",
       "positivity": 80,
       "impact": 85,
       "category": "wins",
@@ -139,9 +139,9 @@
       "id": "a3a4873985b8196c",
       "sourceId": "startupcafe",
       "sourceName": "StartupCafe",
-      "originalTitle": "Business CheckIn. Gustul copilăriei la borcan. Cum au transformat o tânără din Iași și mama ei vechile obiceiuri într-o afacere",
+      "originalTitle": "La Iași, Iosefina și mama ei fac conserve după rețetele familiei",
       "url": "https://startupcafe.ro/business-checkin-gustul-copilariei-la-borcan-cum-au-transformat-o-tanara-din-iasi-si-mama-ei-vechile-obiceiuri-intr-o-afacere-104737",
-      "summary": "O tânără din Iași, Iosefina Chiriac, și-a transformat pasiunea pentru rețetele tradiționale într-o afacere de succes, alături de mama sa. Produsul lor, 'Gustul copilăriei la borcan', păstrează vii aromele autentice și vechile obiceiuri.",
+      "summary": "Iosefina Chiriac, o tânără de 26 de ani din Iași, dezvoltă alături de mama ei Vechile Obiceiuri, o afacere locală pornită din rețetele familiei. Proiectul a fost lansat oficial în 2021.",
       "positivity": 80,
       "impact": 50,
       "category": "local-heroes",
@@ -158,9 +158,9 @@
       "id": "0757e049a2aef231",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
-      "originalTitle": "Tun de zăpadă în Piața Sfatului în plină caniculă. Brașovenii și turiștii, răcoriți de o perdea de apă",
+      "originalTitle": "Un tun de zăpadă adus din Poiană răcorește Piața Sfatului",
       "url": "https://stirileprotv.ro/stiri/actualitate/tun-de-zapada-in-piata-sfatului-in-plina-canicula-brasovenii-si-turistii-racoriti-de-o-perdea-de-apa.html",
-      "summary": "Primăria Brașov a instalat un tun de zăpadă în Piața Sfatului pentru a oferi răcoare locuitorilor și turiștilor în zilele caniculare. Această inițiativă aduce un mic refresh urban în timpul verii.",
+      "summary": "Primăria Brașov a adus în Piața Sfatului un tun de zăpadă din Poiana Brașov. Aparatul pulverizează apă pentru a-i răcori pe localnici și turiști în zilele caniculare.",
       "positivity": 80,
       "impact": 70,
       "category": "local-heroes",
@@ -174,12 +174,33 @@
       "promoRisk": 30
     },
     {
+      "id": "762d36a3e59f34e8",
+      "sourceId": "edupedu",
+      "sourceName": "Edupedu",
+      "originalTitle": "Profesoara care îi convinge pe elevi să citească prin trailere de carte",
+      "url": "https://www.edupedu.ro/interviu-profesoara-carmen-ion-fondatoarea-festivalului-de-book-trailere-boovie-acum-12-ani-am-aplicat-ideea-la-o-clasa-pentru-ca-voiam-sa-ii-fac-pe-elevi-sa-citeasca-mai-usor-carti-apoi-elevii-m/",
+      "summary": "Profesoara Carmen Ion a pornit Boovie acum 12 ani, într-o singură clasă, ca să-i apropie pe elevi de lectură. Astăzi, festivalul adună în jur de 6.000 de participanți la fiecare ediție, iar echipele transformă romanele citite în trailere video.",
+      "positivity": 80,
+      "impact": 60,
+      "category": "local-heroes",
+      "publishedAt": "2026-08-07T05:51:03.000Z",
+      "processedAt": "2026-08-08T10:50:00.659Z",
+      "editorialInterest": 70,
+      "feltImpact": 70,
+      "certainty": 80,
+      "humanCloseness": 90,
+      "bureaucraticDistance": 10,
+      "promoRisk": 10
+    }
+  ],
+  "reserves": [
+    {
       "id": "8fd6895a8389821b",
       "sourceId": "stirileprotv",
       "sourceName": "Știrile ProTV",
-      "originalTitle": "Zeci de localnici au donat sânge într-o comună din Mureș. „Salvăm o viață”",
+      "originalTitle": "Casa de cultură din Râciu a devenit centru de donare pentru câteva ore",
       "url": "https://stirileprotv.ro/stiri/actualitate/zeci-de-localnici-au-donat-sange-intr-o-comuna-din-mures-salvam-o-viata.html",
-      "summary": "Zeci de localnici dintr-o comună din Mureș au donat sânge la o acțiune organizată la Casa de cultură. Scopul este de a ajuta pacienții din spitale care au nevoie de transfuzii, sub sloganul „Salvăm o viață”.",
+      "summary": "Zeci de locuitori din Râciu, Mureș, au donat sânge la casa de cultură. Donațiile vor ajunge la pacienții care au nevoie de transfuzii.",
       "positivity": 85,
       "impact": 60,
       "category": "local-heroes",
@@ -191,9 +212,7 @@
       "humanCloseness": 90,
       "bureaucraticDistance": 30,
       "promoRisk": 20
-    }
-  ],
-  "reserves": [
+    },
     {
       "id": "6de66d39855c066e",
       "sourceId": "edupedu",
@@ -328,23 +347,23 @@
       "promoRisk": 40
     },
     {
-      "id": "ac0c9d2d09d63c6a",
-      "sourceId": "mediafax",
-      "sourceName": "Mediafax",
-      "originalTitle": "Un simbol dispărut al Bucureștiului se întoarce după 82 de ani. Vulturul și grifonii, montați pe Palatul Universității",
-      "url": "https://www.mediafax.ro/stirile-zilei/un-simbol-disparut-al-bucurestiului-se-intoarce-dupa-82-de-ani-vulturul-si-grifonii-montati-pe-palatul-universitatii-23787176",
-      "summary": "Simbolul Bucureștiului, vulturul și grifonii de pe Palatul Universității, revine după 82 de ani, marcând refacerea frontonului istoric distrus în 1944. Ansamblul sculptural cântărește 1,6 tone.",
-      "positivity": 80,
-      "impact": 60,
-      "category": "wins",
-      "publishedAt": "2026-08-08T06:33:54.000Z",
+      "id": "b7da73fb02331551",
+      "sourceId": "biziday",
+      "sourceName": "Biziday",
+      "originalTitle": "O stâncă detonată și un plan cu patru barje pe Brațul Bala",
+      "url": "https://www.biziday.ro/365016-2/",
+      "summary": "Armata a detonat Stânca Pârjoaia cu 180 de kilograme de explozibil, în cadrul intervenției care ar urma să dirijeze mai multă apă spre Dunărea Veche. Scufundarea celor patru barje încărcate cu piatră, următorul pas al lucrării, a fost amânată pentru reevaluarea planului.",
+      "positivity": 70,
+      "impact": 80,
+      "category": "quick-hits",
+      "publishedAt": "2026-08-03T07:51:36.000Z",
       "processedAt": "2026-08-08T10:50:00.659Z",
       "editorialInterest": 70,
       "feltImpact": 70,
       "certainty": 80,
-      "humanCloseness": 70,
-      "bureaucraticDistance": 20,
-      "promoRisk": 10
+      "humanCloseness": 40,
+      "bureaucraticDistance": 30,
+      "promoRisk": 20
     },
     {
       "id": "c0ace224647a3653",
@@ -613,23 +632,23 @@
       "promoRisk": 20
     },
     {
-      "id": "b7da73fb02331551",
-      "sourceId": "biziday",
-      "sourceName": "Biziday",
-      "originalTitle": "Armata a detonat și a distrus cu succes stânca pentru blocarea Brațului Bala. Urmează ca bucățile de stâncă să fie mutate și mai multe barje încărcate cu piatră să fie scufundate pentru a crea un baraj, astfel încât nivelul apei pe Dunăre să fie ridicat.",
-      "url": "https://www.biziday.ro/365016-2/",
-      "summary": "Armata a distrus cu succes stânca ce bloca Brațul Bala, folosind explozibil, pentru a crește nivelul Dunării. Acum se lucrează la crearea unui baraj cu piatră pentru a ajuta la navigabilitate.",
-      "positivity": 70,
-      "impact": 80,
+      "id": "5c30179bdc1ad865",
+      "sourceId": "stirileprotv",
+      "sourceName": "Știrile ProTV",
+      "originalTitle": "O oră de mișcare la două zile ajută la reglarea glicemiei",
+      "url": "https://stirileprotv.ro/stiri/doctor-de-bine/de-ce-este-important-ca-macar-o-data-la-doua-zile-sa-avem-o-ora-de-efort-fizic-mecanismul-care-ne-scapa-de-o-boala-grea.html",
+      "summary": "Mișcarea regulată — chiar și o oră la două zile — ajută mușchii să preia glucoza din sânge printr-un mecanism care nu depinde de insulină. Astfel, activitatea fizică susține sănătatea metabolică.",
+      "positivity": 80,
+      "impact": 70,
       "category": "quick-hits",
-      "publishedAt": "2026-08-03T07:51:36.000Z",
+      "publishedAt": "2026-08-07T04:49:43.000Z",
       "processedAt": "2026-08-08T10:50:00.659Z",
       "editorialInterest": 70,
-      "feltImpact": 70,
-      "certainty": 80,
-      "humanCloseness": 40,
-      "bureaucraticDistance": 30,
-      "promoRisk": 20
+      "feltImpact": 80,
+      "certainty": 90,
+      "humanCloseness": 90,
+      "bureaucraticDistance": 10,
+      "promoRisk": 5
     },
     {
       "id": "7165713dc4119e1d",
@@ -693,25 +712,35 @@
   "totalProcessed": 1104,
   "wrapperCopy": {
     "greeting": "Bună dimineața! 👋",
-    "intro": "Săptămâna asta ne mișcăm mult, fie pe două picioare (ia uite și ce beneficii are mișcarea!), fie prin peșteri spectaculoase. Avem și vești mari din cultură și sport, plus că minunăm peisajele noastre naturale și afacerile locale.",
-    "signOff": "Sperăm că ți-am adus un zâmbet și azi. Pe curând! 🙏",
-    "shortSummary": "Mișcare, Castelul Corvinilor, delfini în Deltă și performeri români."
+    "intro": "În ediția de azi, restaurarea Castelului Corvinilor se apropie de final, delfinii au fost filmați pe canalele Deltei, iar un vultur și doi grifoni s-au întors pe Palatul Universității după 82 de ani. Mai avem Peștera Vântului, o profesoară care transformă romanele în trailere video și reușite românești în muzică, sport, afaceri și infrastructură.",
+    "signOff": "Atât pentru azi. Să ai o săptămână bună — ne citim luni. 🌿",
+    "shortSummary": "Castelul Corvinilor, delfini în Deltă și reușite românești în muzică și sport."
   },
   "validation": {
     "generatedAt": "2026-08-08T10:50:16.184Z",
     "candidateCount": 40,
-    "flagged": [],
+    "flagged": [
+      {
+        "candidateId": "b7da73fb02331551",
+        "verdict": "borderline",
+        "penaltyApplied": 10,
+        "reason": "Una dintre știrile conexe menționează amânarea operațiunii de scufundare a barjelor, ceea ce ridică semne de întrebare cu privire la finalizarea rapidă și completă a proiectului.",
+        "relatedArticleIds": [
+          "ebc49eb725a66a92"
+        ],
+        "relatedArticleTitles": [
+          "A fost amânată scufundarea celor patru barje care ar urma să ridice nivelul Dunării la Cernavodă. Ce s-a decis mai departe"
+        ],
+        "generatedAt": "2026-08-09T13:09:50.254Z"
+      }
+    ],
     "status": "passed",
-    "approvalSource": "validation-pipeline",
-    "checkedAt": "2026-08-08T10:50:22.278Z",
+    "approvalSource": "editor-review",
+    "checkedAt": "2026-08-09T13:26:01.000Z",
     "freshnessWindowDays": 14,
     "publishedHistoryCount": 295,
     "recentDraftCount": 0,
     "blockedArticles": [
-      {
-        "articleId": "762d36a3e59f34e8",
-        "reason": "editorial:crime-resolution"
-      },
       {
         "articleId": "a15908ffa5b1e638",
         "reason": "editorial:negative-premise-with-happy-ending"
@@ -725,7 +754,16 @@
         "reason": "stale-published-at"
       }
     ],
-    "replacements": [],
+    "replacements": [
+      {
+        "removedArticleId": "8fd6895a8389821b",
+        "replacementArticleId": "762d36a3e59f34e8"
+      },
+      {
+        "removedArticleId": "5c30179bdc1ad865",
+        "replacementArticleId": "ac0c9d2d09d63c6a"
+      }
+    ],
     "agentReviewed": [
       {
         "articleId": "5c30179bdc1ad865",
@@ -815,7 +853,7 @@
       {
         "articleId": "ac0c9d2d09d63c6a",
         "verdict": "fresh",
-        "notes": "The article reports on the return of the eagle and griffins symbolism to the University Palace in Bucharest after 82 years. No close historical matches were found."
+        "notes": "The vulture and two griffins were reinstalled on the University Palace on August 8, independently reported by Mediafax, Agerpres, and Edupedu. No close historical matches were found."
       },
       {
         "articleId": "c0ace224647a3653",
@@ -890,7 +928,7 @@
       {
         "articleId": "b7da73fb02331551",
         "verdict": "fresh",
-        "notes": "The army successfully detonated and destroyed a rock blocking the Bala Arm of the Danube to raise water levels. No close historical matches were found."
+        "notes": "The completed detonation is fresh, but the planned barge sinking was later postponed for technical reevaluation; the editorial copy states this caveat."
       },
       {
         "articleId": "7165713dc4119e1d",
@@ -906,6 +944,11 @@
         "articleId": "a0cfc89b0ac9fee4",
         "verdict": "fresh",
         "notes": "The 'Diaspora invests at home' program, with a budget of 100 million euros, has been approved to support Romanians abroad in starting businesses in the country. Archive matches are about other financial programs or deals, but not this specific one. Verdict is fresh."
+      },
+      {
+        "articleId": "762d36a3e59f34e8",
+        "verdict": "fresh",
+        "notes": "Carmen Ion started the Boovie book-trailer project in one classroom 12 years ago; it now draws about 6,000 registered pupils per edition. No published archive match was found. Editor-reviewed after a keyword false positive."
       }
     ]
   }
