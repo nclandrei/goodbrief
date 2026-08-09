@@ -27,6 +27,12 @@ import {
   TARGET_SELECTED_ARTICLE_COUNT,
 } from '../newsletter-policy.js';
 import { refineResponseSchema } from './refine-prompt.js';
+import {
+  buildNaturalTitlesPrompt,
+  naturalTitlesResponseSchema,
+  normalizeNaturalTitlesResponse,
+  type NaturalTitle,
+} from './natural-title-prompt.js';
 import type {
   LlmProvider,
   RefinementInput,
@@ -392,6 +398,27 @@ OUTPUT RULES (Claude Code headless mode):
       signOff: parsed.signOff,
       shortSummary: parsed.shortSummary || '',
     };
+  }
+
+  async generateNaturalTitles(
+    weekId: string,
+    articles: ProcessedArticle[]
+  ): Promise<NaturalTitle[]> {
+    if (articles.length === 0) {
+      return [];
+    }
+
+    const stdout = await this.callClaude(
+      buildNaturalTitlesPrompt(weekId, articles),
+      {
+        label: 'natural-titles',
+        schema: naturalTitlesResponseSchema,
+        model:
+          process.env.CLAUDE_CLI_NATURAL_TITLES_MODEL || this.defaultModel,
+      }
+    );
+    const parsed = parseClaudeEnvelope<unknown>(stdout);
+    return normalizeNaturalTitlesResponse('claude-cli', articles, parsed);
   }
 
   async refineDraft(input: RefinementInput): Promise<RefinementResult> {

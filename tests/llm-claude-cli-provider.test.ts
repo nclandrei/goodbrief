@@ -223,6 +223,25 @@ test('classifyCounterSignal: normalizes verdict and defaults missing reason', as
   assert.deepEqual(result.relatedArticleIds, ['x', 'y']);
 });
 
+test('generateNaturalTitles uses Claude structured output and the JSON schema', async () => {
+  let capturedArgs: string[] = [];
+  const envelope = {
+    type: 'result',
+    structured_output: {
+      titles: [{ id: 'p-1', title: '  Titlul firesc  ' }],
+    },
+  };
+  const provider = makeProvider(async (_prompt, args) => {
+    capturedArgs = args;
+    return JSON.stringify(envelope);
+  });
+
+  const titles = await provider.generateNaturalTitles('2026-W15', [PROCESSED]);
+
+  assert.deepEqual(titles, [{ id: 'p-1', title: 'Titlul firesc' }]);
+  assert.ok(capturedArgs.includes('--json-schema'));
+});
+
 test('generateWrapperCopy: returns greeting/intro/signOff/shortSummary', async () => {
   const envelope = {
     type: 'result',
