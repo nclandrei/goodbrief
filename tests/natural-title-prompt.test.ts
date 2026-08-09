@@ -32,6 +32,8 @@ test('natural-title prompt encodes the W32 editorial voice and caveat rules', ()
   assert.match(prompt, /completed result/i);
   assert.match(prompt, /scrie istorie/);
   assert.match(prompt, /Add no facts/i);
+  assert.match(prompt, /Example summary:.*Iosefina/i);
+  assert.match(prompt, /Example summary:.*Munții Apuseni/i);
 });
 
 test('natural-title validation rejects outputs longer than 110 characters', () => {
@@ -72,4 +74,35 @@ test('natural-title validation requires every requested ID exactly once', () => 
       }),
     /unexpected article ID unknown/
   );
+  assert.throws(
+    () =>
+      normalizeNaturalTitlesResponse(
+        'openrouter',
+        [ARTICLE, { ...ARTICLE }],
+        { titles: [{ id: ARTICLE.id, title: 'Titlu firesc' }] }
+      ),
+    /duplicate requested article ID article-1/
+  );
+});
+
+test('natural-title validation rejects deterministic headline anti-patterns', () => {
+  const invalidTitles = [
+    'FOTO: SPECTACULOS!',
+    'Un nou capitol pentru comunitatea din Brașov',
+    'Titlu firesc?',
+    '🌟 Titlu firesc pentru cititori',
+  ];
+
+  for (const title of invalidTitles) {
+    assert.throws(
+      () =>
+        normalizeNaturalTitlesResponse('gemini', [ARTICLE], {
+          titles: [{ id: ARTICLE.id, title }],
+        }),
+      (error: unknown) =>
+        error instanceof LlmProviderError &&
+        /headline quality rule/.test(error.message),
+      title
+    );
+  }
 });
