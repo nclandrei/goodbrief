@@ -355,6 +355,29 @@ test('classifyCounterSignal: normalizes verdict and defaults missing reason', as
   assert.deepEqual(result.relatedArticleIds, ['x', 'y']);
 });
 
+// ---------- generateNaturalTitles ----------
+
+test('generateNaturalTitles returns trimmed titles in the input article order', async () => {
+  const secondArticle = { ...PROCESSED, id: 'p-2', originalTitle: 'Al doilea titlu' };
+  const body = chatEnvelope({
+    titles: [
+      { id: 'p-2', title: '  Al doilea titlu firesc  ' },
+      { id: 'p-1', title: 'Primul titlu firesc' },
+    ],
+  });
+  const provider = makeProvider(async () => okResponse(body));
+
+  const titles = await provider.generateNaturalTitles('2026-W15', [
+    PROCESSED,
+    secondArticle,
+  ]);
+
+  assert.deepEqual(titles, [
+    { id: 'p-1', title: 'Primul titlu firesc' },
+    { id: 'p-2', title: 'Al doilea titlu firesc' },
+  ]);
+});
+
 // ---------- generateWrapperCopy ----------
 
 test('generateWrapperCopy: returns greeting/intro/signOff/shortSummary', async () => {

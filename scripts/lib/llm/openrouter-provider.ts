@@ -22,6 +22,12 @@ import {
   TARGET_SELECTED_ARTICLE_COUNT,
 } from '../newsletter-policy.js';
 import { refineResponseSchema } from './refine-prompt.js';
+import {
+  buildNaturalTitlesPrompt,
+  naturalTitlesResponseSchema,
+  normalizeNaturalTitlesResponse,
+  type NaturalTitle,
+} from './natural-title-prompt.js';
 import { parseJsonPayload } from './json-extract.js';
 import type {
   LlmProvider,
@@ -907,6 +913,23 @@ OUTPUT RULES (OpenRouter structured output):
       signOff: parsed.signOff,
       shortSummary: parsed.shortSummary || '',
     };
+  }
+
+  async generateNaturalTitles(
+    weekId: string,
+    articles: ProcessedArticle[]
+  ): Promise<NaturalTitle[]> {
+    if (articles.length === 0) {
+      return [];
+    }
+
+    const raw = await this.call(buildNaturalTitlesPrompt(weekId, articles), {
+      schema: naturalTitlesResponseSchema,
+      schemaName: 'natural_titles',
+      model: process.env.OPENROUTER_NATURAL_TITLES_MODEL || this.model,
+    });
+    const parsed = parseOpenRouterResponse<unknown>(raw);
+    return normalizeNaturalTitlesResponse('openrouter', articles, parsed);
   }
 
   async refineDraft(input: RefinementInput): Promise<RefinementResult> {
