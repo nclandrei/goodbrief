@@ -59,10 +59,18 @@ Rules:
 - A source headline may stay unchanged when it already sounds natural and satisfies every rule.
 
 Examples:
-- Business CheckIn. Gustul copilăriei la borcan. Cum au transformat o tânără din Iași și mama ei vechile obiceiuri într-o afacere → La Iași, Iosefina și mama ei fac conserve după rețetele familiei
-- Locul spectaculos din România unde intri și nu mai ieși. Are 52 km → Peștera Vântului are 52 de kilometri de galerii în Munții Apuseni
-- Autostrada Sibiu–Pitești A1. Pe tronsonul 4 se așterne ultimul strat de asfalt → Ultimii metri de asfalt pe A1, între Tigveni și Curtea de Argeș
-- INTERVIU Profesoara Carmen Ion: Acum 12 ani am aplicat ideea la o clasă pentru că voiam să îi fac pe elevi să citească mai ușor → Profesoara care îi convinge pe elevi să citească prin trailere de carte
+- Example source: Business CheckIn. Gustul copilăriei la borcan. Cum au transformat o tânără din Iași și mama ei vechile obiceiuri într-o afacere
+  Example summary: Iosefina și mama ei fac conserve după rețetele familiei în mica lor afacere din Iași.
+  Natural title: La Iași, Iosefina și mama ei fac conserve după rețetele familiei
+- Example source: Locul spectaculos din România unde intri și nu mai ieși. Are 52 km
+  Example summary: Peștera Vântului se află în Munții Apuseni și are 52 de kilometri de galerii.
+  Natural title: Peștera Vântului are 52 de kilometri de galerii în Munții Apuseni
+- Example source: Autostrada Sibiu–Pitești A1. Pe tronsonul 4 se așterne ultimul strat de asfalt
+  Example summary: Lucrările au ajuns la ultimul strat de asfalt între Tigveni și Curtea de Argeș.
+  Natural title: Ultimii metri de asfalt pe A1, între Tigveni și Curtea de Argeș
+- Example source: INTERVIU Profesoara Carmen Ion: Acum 12 ani am aplicat ideea la o clasă pentru că voiam să îi fac pe elevi să citească mai ușor
+  Example summary: Profesoara îi implică pe elevi în realizarea unor trailere de carte pentru a-i apropia de lectură.
+  Natural title: Profesoara care îi convinge pe elevi să citească prin trailere de carte
 
 Return a JSON object with a "titles" array. Include every input ID exactly once and no other IDs.
 
@@ -83,7 +91,16 @@ export function normalizeNaturalTitlesResponse(
     );
   }
 
-  const requestedIds = new Set(articles.map((article) => article.id));
+  const requestedIds = new Set<string>();
+  for (const article of articles) {
+    if (requestedIds.has(article.id)) {
+      throw new LlmProviderError(
+        provider,
+        `generateNaturalTitles: duplicate requested article ID ${article.id}`
+      );
+    }
+    requestedIds.add(article.id);
+  }
   const byId = new Map<string, string>();
 
   for (const item of titles) {
@@ -119,6 +136,13 @@ export function normalizeNaturalTitlesResponse(
         `generateNaturalTitles: title for article ID ${item.id} exceeds 110 characters`
       );
     }
+    const qualityError = getNaturalTitleQualityError(title);
+    if (qualityError) {
+      throw new LlmProviderError(
+        provider,
+        `generateNaturalTitles: headline quality rule failed for article ID ${item.id}: ${qualityError}`
+      );
+    }
     byId.set(item.id, title);
   }
 
@@ -136,4 +160,61 @@ export function normalizeNaturalTitlesResponse(
     id: article.id,
     title: byId.get(article.id)!,
   }));
+}
+
+const FORBIDDEN_TITLE_PHRASES = [
+  'business checkin',
+  'doctor de bine',
+  'români din lume',
+  'spectaculos',
+  'incredibil',
+  'de succes',
+  'fără precedent',
+  'cucerește',
+  'gustul copilăriei',
+  'scrie istorie',
+  'pune românia pe hartă',
+  'un pas important',
+  'un nou capitol',
+  'o dovadă că',
+  'rază de speranță',
+  'schimbă jocul',
+  'mai mult decât',
+  'nu doar',
+  'viitor mai bun',
+  'povestea care',
+  'cum a reușit',
+] as const;
+
+function getNaturalTitleQualityError(title: string): string | null {
+  const lowerTitle = title.toLocaleLowerCase('ro-RO');
+  const forbiddenPhrase = FORBIDDEN_TITLE_PHRASES.find((phrase) =>
+    lowerTitle.includes(phrase)
+  );
+  if (forbiddenPhrase) {
+    return `forbidden phrase “${forbiddenPhrase}”`;
+  }
+
+  if (/^(?:foto|video|live|exclusiv|interviu|grafic)\b/iu.test(title)) {
+    return 'source format label';
+  }
+  if (/\p{Extended_Pictographic}/u.test(title)) {
+    return 'emoji';
+  }
+  if (/[.!?;:]$/u.test(title)) {
+    return 'terminal punctuation';
+  }
+  if (/^["'„“”]|["'„“”]$/u.test(title)) {
+    return 'quote hook';
+  }
+
+  const letters = title.match(/\p{L}/gu)?.join('') || '';
+  if (
+    letters.length >= 4 &&
+    letters === letters.toLocaleUpperCase('ro-RO')
+  ) {
+    return 'ALL CAPS';
+  }
+
+  return null;
 }

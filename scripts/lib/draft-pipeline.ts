@@ -810,10 +810,14 @@ export async function runNaturalTitlesPhase(
   const articles = [...shortlist.data.selected, ...shortlist.data.reserves];
 
   console.log(`Generating natural titles for ${articles.length} articles...`);
-  const generated = await llm.generateNaturalTitles(weekId, articles);
-  const titles = normalizeNaturalTitlesResponse(llm.name, articles, {
-    titles: generated,
-  });
+  const mockResponse = loadMockJson<unknown>(
+    'GOODBRIEF_NATURAL_TITLES_MOCK_FILE'
+  );
+  const titles = mockResponse
+    ? normalizeNaturalTitlesResponse(llm.name, articles, mockResponse)
+    : normalizeNaturalTitlesResponse(llm.name, articles, {
+        titles: await llm.generateNaturalTitles(weekId, articles),
+      });
   const titleById = new Map(titles.map((entry) => [entry.id, entry.title]));
   const applyTitle = (article: ProcessedArticle) => ({
     ...article,

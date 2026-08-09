@@ -65,7 +65,7 @@ test('natural-title phase uses its deterministic mock before any configured prov
       providerCalled = true;
       throw new Error('The provider must not run when a phase mock exists');
     },
-  } as LlmProvider;
+  } as unknown as LlmProvider;
 
   try {
     await runNaturalTitlesPhase(rootDir, '2026-W32', provider);
