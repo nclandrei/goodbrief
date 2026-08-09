@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'fs';
+import { readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import {
   loadHistoricalArticles,
@@ -46,4 +46,24 @@ test('loadHistoricalArticles reads full issue history and recent selected draft 
     history.articles.some((article) => article.title === 'Acest reserve nu ar trebui încărcat în istoric'),
     false
   );
+});
+
+test('draft history keeps the source headline when an editorial title exists', () => {
+  const tempRoot = createTempProjectFromFixture();
+  const draftPath = join(tempRoot, 'data', 'drafts', '2026-W09.json');
+  const draft = JSON.parse(readFileSync(draftPath, 'utf-8')) as {
+    selected: Array<{ title?: string }>;
+  };
+  draft.selected[0].title = 'Liceenii redescoperă lectura în trei biblioteci vii';
+  writeFileSync(draftPath, JSON.stringify(draft, null, 2), 'utf-8');
+
+  const history = loadHistoricalArticles({
+    rootDir: tempRoot,
+    currentWeekId: '2026-W10',
+    draftLookback: 4,
+  });
+  const draftArticle = history.articles.find((article) => article.source === 'draft');
+
+  assert.equal(draftArticle?.title, 'Biblioteci vii pentru liceeni din trei orașe');
+  assert.notEqual(draftArticle?.title, draft.selected[0].title);
 });
