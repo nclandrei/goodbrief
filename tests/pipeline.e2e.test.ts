@@ -17,6 +17,11 @@ test('Saturday pipeline generates, validates, and renders a proof without sendin
   const sharedEnv = {
     GOODBRIEF_ROOT_DIR: tempRoot,
     GOODBRIEF_GEMINI_SCORES_PATH: join(tempRoot, 'mocks', 'generate-scores.json'),
+    GOODBRIEF_NATURAL_TITLES_MOCK_FILE: join(
+      tempRoot,
+      'mocks',
+      'natural-titles.json'
+    ),
     GOODBRIEF_WRAPPER_COPY_PATH: join(tempRoot, 'mocks', 'wrapper-copy.json'),
     GOODBRIEF_ARCHIVE_REVIEW_PATH: join(tempRoot, 'mocks', 'archive-review.json'),
     GOODBRIEF_DISABLE_SEMANTIC_DEDUP: '1',
@@ -93,6 +98,14 @@ test('Saturday pipeline generates, validates, and renders a proof without sendin
     (article: { id: string }) => article.id === 'raw-cardiac-network'
   );
   assert.ok(cardiacNetwork);
+  assert.equal(
+    cardiacNetwork.originalTitle,
+    'Încă patru spitale intră în rețeaua pentru bolnavii cardiaci cronici'
+  );
+  assert.equal(
+    cardiacNetwork.title,
+    'Patru spitale noi extind rețeaua pentru pacienții cardiaci cronici'
+  );
   assert.deepEqual(
     {
       editorialInterest: cardiacNetwork.editorialInterest,
@@ -112,5 +125,13 @@ test('Saturday pipeline generates, validates, and renders a proof without sendin
     }
   );
   assert.match(proofHtml, /pacienții cardiaci cronici|pacientii cardiaci cronici|rețeaua pentru pacienții cardiaci|reteaua pentru pacientii cardiaci/i);
+  assert.match(
+    proofHtml,
+    /Patru spitale noi extind rețeaua pentru pacienții cardiaci cronici/
+  );
+  assert.doesNotMatch(
+    proofHtml,
+    /Încă patru spitale intră în rețeaua pentru bolnavii cardiaci cronici/
+  );
   assert.doesNotMatch(proofHtml, /neurodivergenți/);
 });
