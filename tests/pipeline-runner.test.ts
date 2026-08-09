@@ -301,6 +301,14 @@ function setupPipelineRoot(rootDir: string): {
     shortSummary: 'Rezumat mock.',
   });
 
+  const naturalTitlesMockPath = join(rootDir, 'natural-titles-mock.json');
+  writeJson(naturalTitlesMockPath, {
+    titles: rawArticles.map((article) => ({
+      id: article.id,
+      title: `Titlul firesc pentru ${article.id}`,
+    })),
+  });
+
   const refinementMockPath = join(rootDir, 'refinement-mock.json');
   writeJson(refinementMockPath, {
     selectedIds: ['alpha', 'gamma', 'delta'],
@@ -315,6 +323,7 @@ function setupPipelineRoot(rootDir: string): {
       GOODBRIEF_SCORE_MOCK_FILE: scoreMockPath,
       GOODBRIEF_SEMANTIC_DEDUP_MOCK_FILE: semanticMockPath,
       GOODBRIEF_COUNTER_SIGNAL_MOCK_FILE: counterSignalMockPath,
+      GOODBRIEF_NATURAL_TITLES_MOCK_FILE: naturalTitlesMockPath,
       GOODBRIEF_WRAPPER_COPY_MOCK_FILE: wrapperCopyMockPath,
       GOODBRIEF_REFINEMENT_MOCK_FILE: refinementMockPath,
     },
@@ -330,8 +339,9 @@ test('each phase fails clearly when its required input is missing', async () => 
     ['semantic-dedup', /Required pipeline artifact not found.*score/],
     ['counter-signal-validate', /Required pipeline artifact not found.*prepare/],
     ['select', /Required pipeline artifact not found.*semantic-dedup/],
-    ['wrapper-copy', /Required pipeline artifact not found.*select/],
-    ['refine', /Required pipeline artifact not found.*select/],
+    ['natural-titles', /Required pipeline artifact not found.*select/],
+    ['wrapper-copy', /Required pipeline artifact not found.*natural-titles/],
+    ['refine', /Required pipeline artifact not found.*natural-titles/],
   ];
 
   for (const [phase, pattern] of expectations) {
@@ -546,6 +556,53 @@ test('natural-titles phase titles selected stories and reserves without changing
   );
   assert.equal(titled.data.totalProcessed, 3);
   assert.deepEqual(titled.data.validation, shortlistArtifact.data.validation);
+});
+
+test('wrapper-copy phase reads the natural-title artifact', async () => {
+  const tempRoot = mkdtempSync(join(tmpdir(), 'goodbrief-wrapper-titles-'));
+  const pipelineDir = join(tempRoot, 'data', 'pipeline', WEEK_ID);
+  mkdirSync(pipelineDir, { recursive: true });
+
+  const article = {
+    ...makeProcessedArticle('alpha', 90, 80),
+    title: 'Titlul editorial pentru alpha',
+  };
+  writeJson(join(pipelineDir, '05a-natural-titles.json'), {
+    weekId: WEEK_ID,
+    phase: 'natural-titles',
+    generatedAt: '2026-03-08T10:00:00.000Z',
+    inputFile: '05-shortlist.json',
+    data: {
+      selected: [article],
+      reserves: [],
+      totalProcessed: 1,
+      discarded: 0,
+      validation: {
+        generatedAt: '2026-03-08T10:00:00.000Z',
+        candidateCount: 1,
+        flagged: [],
+      },
+    },
+  });
+  const wrapperMockPath = join(tempRoot, 'wrapper-copy-mock.json');
+  writeJson(wrapperMockPath, {
+    greeting: 'Salut!',
+    intro: 'Intro mock.',
+    signOff: 'Pe curând!',
+    shortSummary: 'Rezumat mock.',
+  });
+
+  await runPhase(tempRoot, 'wrapper-copy', {
+    GOODBRIEF_WRAPPER_COPY_MOCK_FILE: wrapperMockPath,
+  });
+
+  const wrapperArtifact = JSON.parse(
+    readFileSync(
+      join(pipelineDir, PIPELINE_ARTIFACT_FILENAMES['wrapper-copy']),
+      'utf-8'
+    )
+  );
+  assert.equal(wrapperArtifact.inputFile, '05a-natural-titles.json');
 });
 
 test('select phase favors tangible human-centered stories over speculative bureaucratic wins', async () => {
@@ -879,14 +936,20 @@ test('refine phase keeps shortlist balance when refinement tries to reintroduce 
     }),
   ];
 
-  const shortlistArtifact: DraftPipelineArtifact<any, 'select'> = {
+  const shortlistArtifact: DraftPipelineArtifact<any, 'natural-titles'> = {
     weekId: WEEK_ID,
-    phase: 'select',
+    phase: 'natural-titles',
     generatedAt: '2026-03-08T10:00:00.000Z',
-    inputFile: '03-semantic-dedup.json + 04-counter-signal-validate.json',
+    inputFile: '05-shortlist.json',
     data: {
-      selected,
-      reserves,
+      selected: selected.map((article) => ({
+        ...article,
+        title: `Titlul editorial pentru ${article.id}`,
+      })),
+      reserves: reserves.map((article) => ({
+        ...article,
+        title: `Titlul editorial pentru ${article.id}`,
+      })),
       totalProcessed: selected.length + reserves.length,
       discarded: 0,
       validation: {
@@ -901,7 +964,7 @@ test('refine phase keeps shortlist balance when refinement tries to reintroduce 
     weekId: WEEK_ID,
     phase: 'wrapper-copy',
     generatedAt: '2026-03-08T10:00:00.000Z',
-    inputFile: '05-shortlist.json',
+    inputFile: '05a-natural-titles.json',
     data: {
       wrapperCopy: {
         greeting: 'Salut!',
@@ -931,7 +994,7 @@ test('refine phase keeps shortlist balance when refinement tries to reintroduce 
     reasoning: 'Am adus mai multă substanță instituțională.',
   });
 
-  writeJson(join(pipelineDir, PIPELINE_ARTIFACT_FILENAMES.select), shortlistArtifact);
+  writeJson(join(pipelineDir, '05a-natural-titles.json'), shortlistArtifact);
   writeJson(join(pipelineDir, PIPELINE_ARTIFACT_FILENAMES['wrapper-copy']), wrapperArtifact);
 
   await runPhase(tempRoot, 'refine', {
@@ -948,6 +1011,10 @@ test('refine phase keeps shortlist balance when refinement tries to reintroduce 
   );
   assert.equal(
     refinedDraft.selected.some((article: ProcessedArticle) => article.id === 'green-school-roofs'),
+    true
+  );
+  assert.equal(
+    refinedDraft.selected.every((article: ProcessedArticle) => Boolean(article.title)),
     true
   );
   assert.ok(
@@ -972,6 +1039,7 @@ test('generate-draft wrapper produces the same final draft as running phases man
     'semantic-dedup',
     'counter-signal-validate',
     'select',
+    'natural-titles',
     'wrapper-copy',
     'refine',
   ]) {
@@ -1018,6 +1086,15 @@ test('generate-draft wrapper produces the same final draft as running phases man
 });
 
 test('verify-local shares the same Saturday phase command order and the workflow runs generation without artifact handoffs', () => {
+  const selectIndex = SATURDAY_PIPELINE_SCRIPTS.indexOf('pipeline:select');
+  assert.deepEqual(
+    SATURDAY_PIPELINE_SCRIPTS.slice(selectIndex, selectIndex + 3),
+    [
+      'pipeline:select',
+      'pipeline:natural-titles',
+      'pipeline:wrapper-copy',
+    ]
+  );
   assert.deepEqual(
     VERIFY_LOCAL_SCRIPTS.slice(0, SATURDAY_PIPELINE_SCRIPTS.length),
     [...SATURDAY_PIPELINE_SCRIPTS]

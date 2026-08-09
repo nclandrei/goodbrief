@@ -845,10 +845,13 @@ export async function runWrapperCopyPhase(
   weekId: string,
   llm: LlmProvider
 ): Promise<string> {
-  const shortlist = readPipelineArtifact<ShortlistPipelineData, 'select'>(
+  const shortlist = readPipelineArtifact<
+    NaturalTitlesPipelineData,
+    'natural-titles'
+  >(
     rootDir,
     weekId,
-    'select'
+    'natural-titles'
   );
 
   console.log('Generating wrapper copy...');
@@ -861,7 +864,7 @@ export async function runWrapperCopyPhase(
     weekId,
     phase: 'wrapper-copy',
     generatedAt: new Date().toISOString(),
-    inputFile: PIPELINE_ARTIFACT_FILENAMES.select,
+    inputFile: PIPELINE_ARTIFACT_FILENAMES['natural-titles'],
     data: {
       wrapperCopy,
     },
@@ -877,10 +880,13 @@ export async function runRefinePhase(
   weekId: string,
   llm: LlmProvider
 ): Promise<string> {
-  const shortlist = readPipelineArtifact<ShortlistPipelineData, 'select'>(
+  const shortlist = readPipelineArtifact<
+    NaturalTitlesPipelineData,
+    'natural-titles'
+  >(
     rootDir,
     weekId,
-    'select'
+    'natural-titles'
   );
   const wrapperCopyArtifact = readPipelineArtifact<
     WrapperCopyPipelineData,
@@ -919,7 +925,7 @@ export async function runRefinePhase(
     weekId,
     phase: 'refine',
     generatedAt: new Date().toISOString(),
-    inputFile: `${PIPELINE_ARTIFACT_FILENAMES.select} + ${PIPELINE_ARTIFACT_FILENAMES['wrapper-copy']}`,
+    inputFile: `${PIPELINE_ARTIFACT_FILENAMES['natural-titles']} + ${PIPELINE_ARTIFACT_FILENAMES['wrapper-copy']}`,
     data: {
       draft,
       reasoning: refined.reasoning,

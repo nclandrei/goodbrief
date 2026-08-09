@@ -18,6 +18,7 @@ export const SATURDAY_PIPELINE_SCRIPTS = [
   PIPELINE_SCRIPT_BY_PHASE['semantic-dedup'],
   PIPELINE_SCRIPT_BY_PHASE['counter-signal-validate'],
   PIPELINE_SCRIPT_BY_PHASE.select,
+  PIPELINE_SCRIPT_BY_PHASE['natural-titles'],
   PIPELINE_SCRIPT_BY_PHASE['wrapper-copy'],
   PIPELINE_SCRIPT_BY_PHASE.refine,
 ] as const;

@@ -18,6 +18,7 @@ import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import {
   runCounterSignalValidatePhase,
+  runNaturalTitlesPhase,
   runPreparePhase,
   runRefinePhase,
   runScorePhase,
@@ -28,27 +29,17 @@ import {
 import {
   getPipelineArtifactPath,
   getRootDir,
+  PIPELINE_PHASES,
   resolveWeekId,
 } from './lib/pipeline-artifacts.js';
 import {
   createLlmProvider,
   resolveProviderSpecFromArgs,
 } from './lib/llm/factory.js';
-import type { DraftPipelinePhase } from './types.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const ROOT_DIR = getRootDir(__dirname);
-
-const ALL_PHASES: DraftPipelinePhase[] = [
-  'prepare',
-  'score',
-  'semantic-dedup',
-  'counter-signal-validate',
-  'select',
-  'wrapper-copy',
-  'refine',
-];
 
 function hasFlag(args: string[], flag: string): boolean {
   return args.includes(flag);
@@ -84,7 +75,7 @@ async function main(): Promise<void> {
 
   let started = !onlyFrom;
 
-  for (const phase of ALL_PHASES) {
+  for (const phase of PIPELINE_PHASES) {
     if (!started) {
       if (phase === onlyFrom) {
         started = true;
@@ -124,6 +115,9 @@ async function main(): Promise<void> {
           break;
         case 'select':
           await runSelectPhase(ROOT_DIR, weekId);
+          break;
+        case 'natural-titles':
+          await runNaturalTitlesPhase(ROOT_DIR, weekId, llm);
           break;
         case 'wrapper-copy':
           await runWrapperCopyPhase(ROOT_DIR, weekId, llm);
