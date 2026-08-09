@@ -195,13 +195,22 @@ function getNaturalTitleQualityError(title: string): string | null {
     return `forbidden phrase “${forbiddenPhrase}”`;
   }
 
-  if (/^(?:foto|video|live|exclusiv|interviu|grafic)\b/iu.test(title)) {
+  if (
+    /^(?:foto|video|live|exclusiv|interviu|grafic)\b/iu.test(title) ||
+    /(?<!\p{L})(?:FOTO|VIDEO|LIVE|EXCLUSIV|INTERVIU|GRAFIC)(?!\p{L})/u.test(
+      title
+    )
+  ) {
     return 'source format label';
   }
-  if (/\p{Extended_Pictographic}/u.test(title)) {
+  if (
+    /\p{Extended_Pictographic}/u.test(title) ||
+    /\p{Regional_Indicator}{2}/u.test(title) ||
+    /[#*0-9]\uFE0F?\u20E3/u.test(title)
+  ) {
     return 'emoji';
   }
-  if (/[.!?;:]$/u.test(title)) {
+  if (/\p{P}$/u.test(title)) {
     return 'terminal punctuation';
   }
   if (/^["'„“”]|["'„“”]$/u.test(title)) {
