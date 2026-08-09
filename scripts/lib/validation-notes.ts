@@ -1,4 +1,5 @@
 import type { CounterSignalFlag, NewsletterDraft, ProcessedArticle } from '../types.js';
+import { getArticleDisplayTitle } from './article-title.js';
 
 export interface SelectedValidationNote {
   article: ProcessedArticle;
@@ -47,7 +48,7 @@ export function formatValidationNotesForConsole(
     'Validation notes:',
     ...notes.map(
       (note) =>
-        `- ${note.label}: "${note.article.originalTitle}" — ${note.flag.reason}`
+        `- ${note.label}: "${getArticleDisplayTitle(note.article)}" — ${note.flag.reason}`
     ),
   ].join('\n');
 }
@@ -76,7 +77,7 @@ export function renderValidationNotesHtml(draft: NewsletterDraft): string {
                 .map(
                   (note) => `
                 <p style="margin: 0 0 10px 0; font-size: 14px; color: ${darkText}; line-height: 1.5;">
-                  <strong>${note.label}:</strong> ${note.article.originalTitle}<br>
+                  <strong>${note.label}:</strong> ${getArticleDisplayTitle(note.article)}<br>
                   ${note.flag.reason}
                 </p>
               `
