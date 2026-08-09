@@ -11,6 +11,7 @@ import type {
   DraftPipelineArtifact,
   DraftValidation,
   NewsletterDraft,
+  NaturalTitlesPipelineData,
   PreparedPipelineData,
   ProcessedArticle,
   RefinedDraftPipelineData,
@@ -21,6 +22,7 @@ import type {
   WrapperCopy,
   WrapperCopyPipelineData,
 } from '../types.js';
+import { normalizeNaturalTitlesResponse } from './llm/natural-title-prompt.js';
 import {
   deduplicateArticles,
   findCrossWeekDuplicate,
@@ -792,6 +794,49 @@ export async function runSelectPhase(rootDir: string, weekId: string): Promise<s
     `Final shortlist for review: ${selected.length} selected + ${reserves.length} reserves`
   );
   console.log(`Shortlist artifact saved to ${outputPath}`);
+  return outputPath;
+}
+
+export async function runNaturalTitlesPhase(
+  rootDir: string,
+  weekId: string,
+  llm: LlmProvider
+): Promise<string> {
+  const shortlist = readPipelineArtifact<ShortlistPipelineData, 'select'>(
+    rootDir,
+    weekId,
+    'select'
+  );
+  const articles = [...shortlist.data.selected, ...shortlist.data.reserves];
+
+  console.log(`Generating natural titles for ${articles.length} articles...`);
+  const generated = await llm.generateNaturalTitles(weekId, articles);
+  const titles = normalizeNaturalTitlesResponse(llm.name, articles, {
+    titles: generated,
+  });
+  const titleById = new Map(titles.map((entry) => [entry.id, entry.title]));
+  const applyTitle = (article: ProcessedArticle) => ({
+    ...article,
+    title: titleById.get(article.id)!,
+  });
+
+  const artifact: DraftPipelineArtifact<
+    NaturalTitlesPipelineData,
+    'natural-titles'
+  > = {
+    weekId,
+    phase: 'natural-titles',
+    generatedAt: new Date().toISOString(),
+    inputFile: PIPELINE_ARTIFACT_FILENAMES.select,
+    data: {
+      ...shortlist.data,
+      selected: shortlist.data.selected.map(applyTitle),
+      reserves: shortlist.data.reserves.map(applyTitle),
+    },
+  };
+
+  const outputPath = writePipelineArtifact(rootDir, artifact);
+  console.log(`Natural-title artifact saved to ${outputPath}`);
   return outputPath;
 }
 

@@ -18,6 +18,7 @@
     "pipeline:semantic-dedup": "npx tsx scripts/run-draft-phase.ts --phase semantic-dedup",
     "pipeline:validate": "npx tsx scripts/run-draft-phase.ts --phase counter-signal-validate",
     "pipeline:select": "npx tsx scripts/run-draft-phase.ts --phase select",
+    "pipeline:natural-titles": "npx tsx scripts/run-draft-phase.ts --phase natural-titles",
     "pipeline:wrapper-copy": "npx tsx scripts/run-draft-phase.ts --phase wrapper-copy",
     "pipeline:refine": "npx tsx scripts/run-draft-phase.ts --phase refine",
     "pipeline:run-all": "npx tsx scripts/pipeline-run-all.ts",

@@ -7,6 +7,7 @@ export const PIPELINE_SCRIPT_BY_PHASE: Record<DraftPipelinePhase, string> = {
   'semantic-dedup': 'pipeline:semantic-dedup',
   'counter-signal-validate': 'pipeline:validate',
   select: 'pipeline:select',
+  'natural-titles': 'pipeline:natural-titles',
   'wrapper-copy': 'pipeline:wrapper-copy',
   refine: 'pipeline:refine',
 };

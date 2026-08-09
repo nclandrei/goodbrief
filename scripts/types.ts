@@ -32,6 +32,7 @@ export type DraftPipelinePhase =
   | 'semantic-dedup'
   | 'counter-signal-validate'
   | 'select'
+  | 'natural-titles'
   | 'wrapper-copy'
   | 'refine';
 
@@ -120,6 +121,8 @@ export interface ProcessedArticle {
   processedAt: string;
 }
 
+export type TitledProcessedArticle = ProcessedArticle & { title: string };
+
 export interface WeeklyBuffer {
   weekId: string;
   articles: RawArticle[];
@@ -186,6 +189,14 @@ export interface CounterSignalPipelineData {
 export interface ShortlistPipelineData {
   selected: ProcessedArticle[];
   reserves: ProcessedArticle[];
+  totalProcessed: number;
+  discarded: number;
+  validation: DraftValidation;
+}
+
+export interface NaturalTitlesPipelineData {
+  selected: TitledProcessedArticle[];
+  reserves: TitledProcessedArticle[];
   totalProcessed: number;
   discarded: number;
   validation: DraftValidation;

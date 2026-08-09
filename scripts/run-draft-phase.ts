@@ -8,6 +8,7 @@ import type { DraftPipelinePhase } from './types.js';
 import type { CounterSignalClassifier } from './lib/counter-signal-validation.js';
 import {
   runCounterSignalValidatePhase,
+  runNaturalTitlesPhase,
   runPreparePhase,
   runRefinePhase,
   runScorePhase,
@@ -119,6 +120,9 @@ async function main(): Promise<void> {
       break;
     case 'select':
       await runSelectPhase(ROOT_DIR, weekId);
+      break;
+    case 'natural-titles':
+      await runNaturalTitlesPhase(ROOT_DIR, weekId, llm!);
       break;
     case 'wrapper-copy':
       await runWrapperCopyPhase(ROOT_DIR, weekId, llm!);

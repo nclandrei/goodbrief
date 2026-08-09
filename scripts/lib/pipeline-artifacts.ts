@@ -12,6 +12,7 @@ export const PIPELINE_PHASES: DraftPipelinePhase[] = [
   'semantic-dedup',
   'counter-signal-validate',
   'select',
+  'natural-titles',
   'wrapper-copy',
   'refine',
 ];
@@ -22,6 +23,7 @@ export const PIPELINE_ARTIFACT_FILENAMES: Record<DraftPipelinePhase, string> = {
   'semantic-dedup': '03-semantic-dedup.json',
   'counter-signal-validate': '04-counter-signals.json',
   select: '05-shortlist.json',
+  'natural-titles': '05a-natural-titles.json',
   'wrapper-copy': '06-wrapper-copy.json',
   refine: '07-refined-draft.json',
 };

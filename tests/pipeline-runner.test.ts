@@ -468,6 +468,86 @@ test('select phase overwrites only its own artifact and leaves upstream artifact
   );
 });
 
+test('natural-titles phase titles selected stories and reserves without changing source headlines', async () => {
+  const tempRoot = mkdtempSync(join(tmpdir(), 'goodbrief-natural-titles-phase-'));
+  const pipelineDir = join(tempRoot, 'data', 'pipeline', WEEK_ID);
+  mkdirSync(pipelineDir, { recursive: true });
+
+  const selected = [
+    makeProcessedArticle('alpha', 90, 80),
+    makeProcessedArticle('beta', 88, 78),
+  ];
+  const reserves = [makeProcessedArticle('gamma', 86, 76)];
+  const shortlistArtifact = {
+    weekId: WEEK_ID,
+    phase: 'select',
+    generatedAt: '2026-03-08T10:00:00.000Z',
+    inputFile: '03-semantic-dedup.json + 04-counter-signals.json',
+    data: {
+      selected,
+      reserves,
+      totalProcessed: 3,
+      discarded: 0,
+      validation: {
+        generatedAt: '2026-03-08T10:00:00.000Z',
+        candidateCount: 3,
+        flagged: [],
+      },
+    },
+  };
+  const shortlistPath = join(pipelineDir, PIPELINE_ARTIFACT_FILENAMES.select);
+  writeJson(shortlistPath, shortlistArtifact);
+  const shortlistBefore = readFileSync(shortlistPath, 'utf-8');
+
+  const titleMockPath = join(tempRoot, 'natural-titles-mock.json');
+  writeJson(titleMockPath, {
+    titles: [
+      { id: 'alpha', title: 'Titlul firesc pentru alpha' },
+      { id: 'beta', title: 'Titlul firesc pentru beta' },
+      { id: 'gamma', title: 'Titlul firesc pentru gamma' },
+    ],
+  });
+
+  await runPhase(tempRoot, 'natural-titles', {
+    GOODBRIEF_NATURAL_TITLES_MOCK_FILE: titleMockPath,
+  });
+
+  assert.equal(readFileSync(shortlistPath, 'utf-8'), shortlistBefore);
+  const titledPath = join(pipelineDir, '05a-natural-titles.json');
+  assert.equal(existsSync(titledPath), true);
+  const titled = JSON.parse(readFileSync(titledPath, 'utf-8'));
+  assert.equal(titled.phase, 'natural-titles');
+  assert.equal(titled.inputFile, '05-shortlist.json');
+  assert.deepEqual(
+    [...titled.data.selected, ...titled.data.reserves].map(
+      (article: ProcessedArticle) => ({
+        id: article.id,
+        title: article.title,
+        originalTitle: article.originalTitle,
+      })
+    ),
+    [
+      {
+        id: 'alpha',
+        title: 'Titlul firesc pentru alpha',
+        originalTitle: 'Story alpha',
+      },
+      {
+        id: 'beta',
+        title: 'Titlul firesc pentru beta',
+        originalTitle: 'Story beta',
+      },
+      {
+        id: 'gamma',
+        title: 'Titlul firesc pentru gamma',
+        originalTitle: 'Story gamma',
+      },
+    ]
+  );
+  assert.equal(titled.data.totalProcessed, 3);
+  assert.deepEqual(titled.data.validation, shortlistArtifact.data.validation);
+});
+
 test('select phase favors tangible human-centered stories over speculative bureaucratic wins', async () => {
   const tempRoot = mkdtempSync(join(tmpdir(), 'goodbrief-select-editorial-balance-'));
   const pipelineDir = join(tempRoot, 'data', 'pipeline', WEEK_ID);
