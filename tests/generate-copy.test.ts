@@ -1,6 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { generateWrapperCopy } from '../emails/utils/generate-copy.js';
+import {
+  buildWrapperCopyPrompt,
+  generateWrapperCopy,
+} from '../emails/utils/generate-copy.js';
 import type { ProcessedArticle } from '../scripts/types.js';
 
 const ARTICLE: ProcessedArticle = {
@@ -16,6 +19,17 @@ const ARTICLE: ProcessedArticle = {
   publishedAt: '2026-06-27T10:00:00.000Z',
   processedAt: '2026-06-27T11:00:00.000Z',
 };
+
+test('buildWrapperCopyPrompt uses the editorial title and preserves the legacy fallback', () => {
+  const editorialPrompt = buildWrapperCopyPrompt(
+    [{ ...ARTICLE, title: 'Titlul editorial firesc' }],
+    '2026-W26'
+  );
+
+  assert.match(editorialPrompt, /Titlul editorial firesc/);
+  assert.doesNotMatch(editorialPrompt, /Story title/);
+  assert.match(buildWrapperCopyPrompt([ARTICLE], '2026-W26'), /Story title/);
+});
 
 test('generateWrapperCopy retries a transient Gemini 503 before succeeding', async () => {
   const originalApiKey = process.env.GEMINI_API_KEY;

@@ -5,6 +5,7 @@ import {
   callWithRetry,
   type GeminiRetryOptions,
 } from "../../scripts/lib/gemini.js";
+import { getArticleDisplayTitle } from "../../scripts/lib/article-title.js";
 
 export interface WrapperCopy {
   greeting: string;
@@ -46,7 +47,7 @@ export function buildWrapperCopyPrompt(
 ): string {
   const articleSummaries = articles
     .slice(0, 10)
-    .map((a, i) => `${i + 1}. [${a.category}] ${a.originalTitle}: ${a.summary}`)
+    .map((a, i) => `${i + 1}. [${a.category}] ${getArticleDisplayTitle(a)}: ${a.summary}`)
     .join("\n");
 
   return `${PROMPT_PREFIX}
