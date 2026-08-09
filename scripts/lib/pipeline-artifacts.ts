@@ -98,6 +98,26 @@ export function getPipelineArtifactPath(
   return join(getPipelineDir(rootDir, weekId), PIPELINE_ARTIFACT_FILENAMES[phase]);
 }
 
+export function getPipelinePhaseSkipReason(
+  rootDir: string,
+  weekId: string,
+  phase: DraftPipelinePhase
+): string | null {
+  const artifactPath = getPipelineArtifactPath(rootDir, weekId, phase);
+  if (existsSync(artifactPath)) {
+    return `artifact already exists at ${artifactPath}`;
+  }
+
+  if (phase === 'natural-titles') {
+    const refinedPath = getPipelineArtifactPath(rootDir, weekId, 'refine');
+    if (existsSync(refinedPath)) {
+      return `legacy refined artifact already exists at ${refinedPath}`;
+    }
+  }
+
+  return null;
+}
+
 export function writePipelineArtifact<TData, TPhase extends DraftPipelinePhase>(
   rootDir: string,
   artifact: DraftPipelineArtifact<TData, TPhase>

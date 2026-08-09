@@ -1,7 +1,7 @@
 #!/usr/bin/env npx tsx
 
 import 'dotenv/config';
-import { existsSync, readFileSync } from 'fs';
+import { readFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import type { DraftPipelinePhase } from './types.js';
@@ -17,7 +17,7 @@ import {
   runWrapperCopyPhase,
 } from './lib/draft-pipeline.js';
 import {
-  getPipelineArtifactPath,
+  getPipelinePhaseSkipReason,
   getRootDir,
   resolveWeekId,
 } from './lib/pipeline-artifacts.js';
@@ -90,9 +90,9 @@ async function main(): Promise<void> {
   const skipExisting = hasFlag(args, '--skip-existing');
 
   if (skipExisting) {
-    const artifactPath = getPipelineArtifactPath(ROOT_DIR, weekId, phase);
-    if (existsSync(artifactPath)) {
-      console.log(`Phase "${phase}" artifact already exists at ${artifactPath}, skipping.`);
+    const reason = getPipelinePhaseSkipReason(ROOT_DIR, weekId, phase);
+    if (reason) {
+      console.log(`Phase "${phase}": ${reason}, skipping.`);
       return;
     }
   }

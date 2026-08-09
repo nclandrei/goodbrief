@@ -13,7 +13,6 @@
  */
 
 import 'dotenv/config';
-import { existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import {
@@ -27,7 +26,7 @@ import {
   runWrapperCopyPhase,
 } from './lib/draft-pipeline.js';
 import {
-  getPipelineArtifactPath,
+  getPipelinePhaseSkipReason,
   getRootDir,
   PIPELINE_PHASES,
   resolveWeekId,
@@ -86,9 +85,9 @@ async function main(): Promise<void> {
     }
 
     if (skipExisting) {
-      const artifactPath = getPipelineArtifactPath(ROOT_DIR, weekId, phase);
-      if (existsSync(artifactPath)) {
-        console.log(`✓ ${phase} already exists, skipping`);
+      const reason = getPipelinePhaseSkipReason(ROOT_DIR, weekId, phase);
+      if (reason) {
+        console.log(`✓ ${phase}: ${reason}, skipping`);
         continue;
       }
     }

@@ -605,6 +605,44 @@ test('wrapper-copy phase reads the natural-title artifact', async () => {
   assert.equal(wrapperArtifact.inputFile, '05a-natural-titles.json');
 });
 
+test('skip-existing treats a legacy refined artifact as completed natural-title work', async () => {
+  const tempRoot = mkdtempSync(join(tmpdir(), 'goodbrief-legacy-title-skip-'));
+  const pipelineDir = join(tempRoot, 'data', 'pipeline', WEEK_ID);
+  mkdirSync(pipelineDir, { recursive: true });
+  writeJson(join(pipelineDir, PIPELINE_ARTIFACT_FILENAMES.refine), {
+    weekId: WEEK_ID,
+    phase: 'refine',
+    generatedAt: '2026-03-08T10:00:00.000Z',
+    inputFile: '05-shortlist.json + 06-wrapper-copy.json',
+    data: { draft: { weekId: WEEK_ID }, reasoning: 'Legacy artifact' },
+  });
+
+  const result = await execFileAsync(
+    process.execPath,
+    [
+      '--import',
+      'tsx',
+      join(REPO_ROOT, 'scripts', 'run-draft-phase.ts'),
+      '--phase',
+      'natural-titles',
+      '--week',
+      WEEK_ID,
+      '--skip-existing',
+    ],
+    {
+      cwd: REPO_ROOT,
+      env: {
+        ...process.env,
+        GOODBRIEF_ROOT_DIR: tempRoot,
+        GEMINI_API_KEY: 'test-key',
+      },
+    }
+  );
+
+  assert.match(result.stdout, /natural-titles.*refined artifact.*skipping/i);
+  assert.equal(existsSync(join(pipelineDir, '05a-natural-titles.json')), false);
+});
+
 test('select phase favors tangible human-centered stories over speculative bureaucratic wins', async () => {
   const tempRoot = mkdtempSync(join(tmpdir(), 'goodbrief-select-editorial-balance-'));
   const pipelineDir = join(tempRoot, 'data', 'pipeline', WEEK_ID);
