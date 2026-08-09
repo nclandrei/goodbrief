@@ -113,6 +113,12 @@ export function normalizeNaturalTitlesResponse(
         `generateNaturalTitles: empty title for article ID ${item.id}`
       );
     }
+    if (title.length > 110) {
+      throw new LlmProviderError(
+        provider,
+        `generateNaturalTitles: title for article ID ${item.id} exceeds 110 characters`
+      );
+    }
     byId.set(item.id, title);
   }
 
