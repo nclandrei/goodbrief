@@ -76,6 +76,31 @@ test('refine prompt tells reviewer to reject hard exclusions and editorial title
   assert.match(prompt, /Bacalaureat.*(?:grade|average|appeal)/i);
 });
 
+test('refine prompt shows the editorial title and the source headline', () => {
+  const prompt = buildRefinePrompt({
+    weekId: '2026-W26',
+    selected: [
+      makeArticle('a', {
+        originalTitle: 'Business CheckIn. Titlul lung al sursei',
+        title: 'La Iași, o familie păstrează rețetele casei',
+      }),
+    ],
+    reserves: [],
+    wrapperCopy: {
+      greeting: 'Salut',
+      intro: 'Intro',
+      signOff: 'Pe luni',
+      shortSummary: 'Summary',
+    },
+    validation: EMPTY_VALIDATION,
+    previousArticles: [],
+    lookbackLabel: 'fixture',
+  });
+
+  assert.match(prompt, /La Iași, o familie păstrează rețetele casei/);
+  assert.match(prompt, /Source headline: "Business CheckIn\. Titlul lung al sursei"/);
+});
+
 test('refine prompt allows a strong 7-article edition without padding to 10', () => {
   const prompt = buildRefinePrompt({
     weekId: '2026-W26',

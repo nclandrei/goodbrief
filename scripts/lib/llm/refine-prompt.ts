@@ -12,6 +12,7 @@ import {
   MIN_SENDABLE_ARTICLE_COUNT,
   TARGET_SELECTED_ARTICLE_COUNT,
 } from '../newsletter-policy.js';
+import { getArticleDisplayTitle } from '../article-title.js';
 
 export interface RefinePromptInput {
   weekId: string;
@@ -85,7 +86,7 @@ export function buildRefinePrompt(input: RefinePromptInput): string {
         `bureau:${formatSignal(article.bureaucraticDistance)} promo:${formatSignal(article.promoRisk)} ` +
         `adjusted:${adjustedScore}`;
 
-      return `${index + 1}. [ID: ${article.id}] [${article.category}] [${tags.join(', ') || 'no-tags'}] (${signalLine}) "${article.originalTitle}"\n   Summary: ${article.summary}${validationNote}`;
+      return `${index + 1}. [ID: ${article.id}] [${article.category}] [${tags.join(', ') || 'no-tags'}] (${signalLine}) "${getArticleDisplayTitle(article)}"\n   Source headline: "${article.originalTitle}"\n   Summary: ${article.summary}${validationNote}`;
     })
     .join('\n\n');
 
@@ -105,7 +106,9 @@ ${previousArticles.length > 20 ? `... and ${previousArticles.length - 20} more` 
 ${validation.flagged
   .map((flag, index) => {
     const articleTitle =
-      articleById.get(flag.candidateId)?.originalTitle || flag.candidateId;
+      (articleById.get(flag.candidateId) &&
+        getArticleDisplayTitle(articleById.get(flag.candidateId)!)) ||
+      flag.candidateId;
     return `${index + 1}. [${flag.verdict.toUpperCase()}] [ID: ${flag.candidateId}] "${articleTitle}"
    Reason: ${flag.reason}`;
   })
@@ -126,7 +129,8 @@ ${validationContext}
 CURRENT SELECTION (up to ${TARGET_SELECTED_ARTICLE_COUNT}):
 ${selected
   .map(
-    (article, index) => `${index + 1}. [ID: ${article.id}] "${article.originalTitle}"`
+    (article, index) =>
+      `${index + 1}. [ID: ${article.id}] "${getArticleDisplayTitle(article)}"`
   )
   .join('\n')}
 
