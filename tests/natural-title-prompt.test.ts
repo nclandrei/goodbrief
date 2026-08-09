@@ -88,7 +88,7 @@ test('natural-title validation requires every requested ID exactly once', () => 
 test('natural-title validation rejects deterministic headline anti-patterns', () => {
   const invalidTitles = [
     'FOTO: SPECTACULOS!',
-    'Un nou capitol pentru comunitatea din Brașov',
+    'Business CheckIn. Titlu firesc pentru cititori',
     'Titlu firesc?',
     '🌟 Titlu firesc pentru cititori',
     'România câștigă 🇷🇴',
@@ -108,6 +108,22 @@ test('natural-title validation rejects deterministic headline anti-patterns', ()
         error instanceof LlmProviderError &&
         /headline quality rule/.test(error.message),
       title
+    );
+  }
+});
+
+test('natural-title validation does not confuse factual wording with a cliché', () => {
+  const validTitles = [
+    'Zimbrul recucerește Munții Făgăraș',
+    'Prima operație de succes la Cluj',
+    'Editura publică un nou capitol al romanului',
+  ];
+
+  for (const title of validTitles) {
+    assert.doesNotThrow(() =>
+      normalizeNaturalTitlesResponse('gemini', [ARTICLE], {
+        titles: [{ id: ARTICLE.id, title }],
+      })
     );
   }
 });
