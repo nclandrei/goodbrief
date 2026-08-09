@@ -14,7 +14,12 @@ import {
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { promisify } from 'node:util';
-import type { ArticleCategory, ProcessedArticle, RawArticle } from './types.js';
+import type {
+  ArticleCategory,
+  ProcessedArticle,
+  RawArticle,
+  ShortlistPipelineData,
+} from './types.js';
 import type { ArticleScore } from './lib/types.js';
 import { checkConfiguredFeedHealth } from './lib/feed-health.js';
 import {
@@ -26,6 +31,10 @@ import {
   type FetchFeedResult,
 } from './lib/news-ingest.js';
 import { resolveProjectRoot } from './lib/project-root.js';
+import {
+  PIPELINE_PHASES,
+  readPipelineArtifact,
+} from './lib/pipeline-artifacts.js';
 
 const execFileAsync = promisify(execFile);
 const ROOT_DIR = resolveProjectRoot(import.meta.url);
@@ -222,6 +231,7 @@ async function main(): Promise<void> {
   const scoreMockPath = join(tempRoot, 'score-mock.json');
   const archiveReviewMockPath = join(tempRoot, 'archive-review-mock.json');
   const counterSignalMockPath = join(tempRoot, 'counter-signal-mock.json');
+  const naturalTitlesMockPath = join(tempRoot, 'natural-titles-mock.json');
   const wrapperCopyMockPath = join(tempRoot, 'wrapper-copy-mock.json');
   const proofOutputPath = join(tempRoot, 'proof.html');
 
@@ -243,16 +253,49 @@ async function main(): Promise<void> {
     GOODBRIEF_DISABLE_DRAFT_REFINEMENT: '1',
     GOODBRIEF_VALIDATION_NOW: now.toISOString(),
     GEMINI_API_KEY: 'test-key',
+    LLM_PROVIDER: 'gemini',
+    LLM_FALLBACK: '',
   };
 
-  await runScript(
-    'generate-draft.ts',
-    ['--week', weekId],
-    {
-      ...sharedEnv,
-      GOODBRIEF_COUNTER_SIGNAL_MOCK_FILE: counterSignalMockPath,
-    }
+  const deterministicEnv = {
+    ...sharedEnv,
+    GOODBRIEF_COUNTER_SIGNAL_MOCK_FILE: counterSignalMockPath,
+  };
+  const naturalTitlesIndex = PIPELINE_PHASES.indexOf('natural-titles');
+
+  for (const phase of PIPELINE_PHASES.slice(0, naturalTitlesIndex)) {
+    await runScript(
+      'run-draft-phase.ts',
+      ['--phase', phase, '--week', weekId],
+      deterministicEnv
+    );
+  }
+
+  const shortlist = readPipelineArtifact<ShortlistPipelineData, 'select'>(
+    tempRoot,
+    weekId,
+    'select'
   );
+  writeJson(naturalTitlesMockPath, {
+    titles: [...shortlist.data.selected, ...shortlist.data.reserves].map(
+      (article, index) => ({
+        id: article.id,
+        title: `Titlu de test pentru articolul ${index + 1}`,
+      })
+    ),
+  });
+
+  const titledEnv = {
+    ...deterministicEnv,
+    GOODBRIEF_NATURAL_TITLES_MOCK_FILE: naturalTitlesMockPath,
+  };
+  for (const phase of PIPELINE_PHASES.slice(naturalTitlesIndex)) {
+    await runScript(
+      'run-draft-phase.ts',
+      ['--phase', phase, '--week', weekId],
+      titledEnv
+    );
+  }
 
   const draftPath = join(tempRoot, 'data', 'drafts', `${weekId}.json`);
   const generatedDraft = JSON.parse(readFileSync(draftPath, 'utf-8')) as {
@@ -294,6 +337,10 @@ async function main(): Promise<void> {
 
   const shortlisted = [...draft.selected, ...draft.reserves];
   assert.ok(shortlisted.length > 0, 'Expected selected or reserve stories in generated draft');
+  assert.ok(
+    shortlisted.every((article) => article.title?.trim()),
+    'Expected every shortlisted article to have a reader-facing title'
+  );
   assert.ok(
     shortlisted.every((article) =>
       EDITORIAL_SIGNAL_KEYS.every((key) => typeof article[key] === 'number')
