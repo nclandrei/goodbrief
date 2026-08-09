@@ -27,6 +27,7 @@ npm run preview   # Preview build
 ```bash
 npm run ingest-news
 npm run generate-draft
+npm run pipeline:natural-titles -- --week 2026-W10
 npm run validate-draft-freshness -- --week 2026-W10
 npm run notify-draft -- 2026-W10
 npm run publish-issue -- --week 2026-W10

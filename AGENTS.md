@@ -35,6 +35,7 @@ npm run pipeline:score   # Run pipeline scoring phase
 npm run pipeline:semantic-dedup  # Run semantic dedup phase
 npm run pipeline:validate        # Run counter-signal validation phase
 npm run pipeline:select  # Run shortlist selection phase
+npm run pipeline:natural-titles  # Rewrite source headlines for readers
 npm run pipeline:wrapper-copy    # Generate wrapper copy phase
 npm run pipeline:refine  # Run final refine phase
 npm run pipeline:verify-local -- --week 2026-W02  # Verify phase outputs locally
@@ -117,7 +118,7 @@ Avoid adding new planning docs unless the task explicitly asks for them.
 
 ## CI/CD Workflows
 - `ingest-news.yml`: every 6 hours + manual trigger; retries `npm run ingest-news`, runs `npm run cleanup-raw-data`, and retries `git pull --rebase && git push` with Git LFS retry tuning
-- `generate-newsletter.yml`: Saturday 10:00 UTC + manual trigger; runs staged pipeline jobs (`prepare` → `score` → `semantic-dedup` → `counter-signal-validate` → `select` → `wrapper-copy` → `refine`), materializes draft output, validates freshness, commits `data/pipeline/` + `data/drafts/`, then sends proof email via `npm run notify-draft`
+- `generate-newsletter.yml`: Saturday 10:00 UTC + manual trigger; runs staged pipeline jobs (`prepare` → `score` → `semantic-dedup` → `counter-signal-validate` → `select` → `natural-titles` → `wrapper-copy` → `refine`), materializes draft output, validates freshness, commits `data/pipeline/` + `data/drafts/`, then sends proof email via `npm run notify-draft`
 - `send-newsletter.yml`: Monday 03:17 UTC (05:17 Romania winter, 06:17 summer) + manual trigger; adds send concurrency guard, runs preflight checks (`check-send-preflight` + `assert-draft-ready`), skips duplicate sends when issue already exists, sends with `--automated`, publishes issue, alerts if draft missing
 - Failure alerting in scheduled workflows uses `npm run alert-workflow-failure`
 

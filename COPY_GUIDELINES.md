@@ -75,17 +75,48 @@ Each news item summary should:
 
 ## Headline Rules
 
-### Do
+The source headline is evidence, not newsletter copy. Build the reader-facing
+headline again from the central verified fact after the final article pool has
+been selected. Keep `originalTitle` unchanged for provenance and duplicate
+detection; store the newsletter headline in `title`.
 
-- Keep it simple and honest
-- Use active voice
-- Lead with the positive outcome
+### Shape
 
-### Don't
+- Write natural Romanian for an educated reader in their 20s or 30s.
+- Keep one concrete idea, usually 7-14 words and roughly 45-90 characters.
+- Use sentence case, correct diacritics, and active voice when it sounds natural.
+- Prefer a person or place plus a concrete action, result, or useful fact.
+- Keep a source headline unchanged when it is already clear and natural.
+- Never exceed 110 characters.
 
-- Use clickbait ("Nu o să crezi ce...")
-- Add unnecessary drama
-- Use ALL CAPS or excessive punctuation
+### Fidelity
+
+- Preserve names, places, numbers, timing, and certainty exactly.
+- Distinguish completed work from work that is ongoing, planned, proposed, or
+  postponed. Never turn `poate`, `ar urma`, `va`, `plan`, or `amânat` into a
+  completed result.
+- Keep a material caveat in view. If the good outcome has not happened yet, the
+  headline must not imply that it has.
+- Add no fact, superlative, causal claim, emotion, or positive spin that the
+  verified article does not support.
+
+### Remove
+
+- Outlet and series labels such as `Business CheckIn`, `Doctor de bine`, and
+  `Români din lume`.
+- Format labels such as `FOTO`, `VIDEO`, `LIVE`, `INTERVIU`, `GRAFIC`, and
+  `EXCLUSIV`.
+- Quote hooks, stacked headline decks, source names, rhetorical questions,
+  emoji, ALL CAPS, and terminal punctuation.
+- Marketing and clickbait language such as `spectaculos`, `incredibil`,
+  `de succes`, `fără precedent`, `cucerește`, and `gustul copilăriei`.
+- Generic AI formulas such as `scrie istorie`, `pune România pe hartă`,
+  `un pas important`, `un nou capitol`, `o dovadă că`, `rază de speranță`,
+  `schimbă jocul`, `mai mult decât`, `nu doar... ci și`, `viitor mai bun`,
+  `povestea care`, and `cum a reușit`.
+
+Use a superlative such as `cel mai mare` only when it is both verified and
+central to the news.
 
 ### Examples
 
@@ -93,6 +124,10 @@ Each news item summary should:
 |-----|------|
 | "INCREDIBIL! Un tânăr din România a reușit imposibilul!" | "Un student din Iași a inventat un dispozitiv care purifică apa" |
 | "Ce a făcut acest ONG te va face să plângi" | "Un ONG din Brașov a plantat 10.000 de copaci anul ăsta" |
+| "Business CheckIn. Gustul copilăriei la borcan. Cum au transformat o tânără din Iași și mama ei vechile obiceiuri într-o afacere" | "La Iași, Iosefina și mama ei fac conserve după rețetele familiei" |
+| "Locul spectaculos din România unde intri într-un labirint subteran unic" | "Peștera Vântului are 52 de kilometri de galerii în Munții Apuseni" |
+| "Autostrada Sibiu-Pitești A1. Pe tronsonul 4 se așterne ultimul strat de asfalt" | "Ultimii metri de asfalt pe A1, între Tigveni și Curtea de Argeș" |
+| "INTERVIU Profesoara Carmen Ion: Acum 12 ani am aplicat ideea la o clasă..." | "Profesoara care îi convinge pe elevi să citească prin trailere de carte" |
 
 ---
 

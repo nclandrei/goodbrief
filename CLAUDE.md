@@ -36,6 +36,7 @@ npm run pipeline:score        # AI scoring (needs GEMINI_API_KEY)
 npm run pipeline:semantic-dedup
 npm run pipeline:validate     # Counter-signal validation
 npm run pipeline:select       # Shortlist finalization
+npm run pipeline:natural-titles # Natural reader-facing Romanian headlines
 npm run pipeline:wrapper-copy # AI-generated greeting/intro/signoff
 npm run pipeline:refine       # Final refinement
 npm run validate-draft -- --week 2026-W12          # Validate draft quality
@@ -59,7 +60,7 @@ src/
 
 content/issues/        # Published newsletter markdown (YYYY-MM-DD-issue.md)
 data/drafts/           # Draft JSON files (YYYY-WXX.json)
-data/pipeline/         # Pipeline phase outputs (YYYY-WXX/01-prepared.json → 07-refined-draft.json)
+data/pipeline/         # Phase outputs (01 → 05 shortlist → 05a natural titles → 06 wrapper → 07 refined)
 data/raw/              # Raw RSS feed data (weekly, auto-cleaned)
 data/sources.json      # RSS feed configuration
 emails/                # React Email templates + components
@@ -117,7 +118,8 @@ in env to auto-fall-back on quota errors.
 - Link format: `→ [Citește pe SourceName](url)`
 
 ### Draft JSON (`data/drafts/YYYY-WXX.json`)
-- `{ weekId, generatedAt, selected: [{ id, sourceId, sourceName, originalTitle, url, summary, category, positivity, impact, ... }] }`
+- `{ weekId, generatedAt, selected: [{ id, sourceId, sourceName, originalTitle, title?, url, summary, category, positivity, impact, ... }] }`
+- `originalTitle` is immutable source provenance; `title` is the optional reader-facing editorial headline.
 - Categories: `"local-heroes"`, `"wins"`, `"green-stuff"`
 
 ### Styling
@@ -134,8 +136,8 @@ in env to auto-fall-back on quota errors.
 ## CI/CD Workflows
 
 - **ingest-news.yml**: Every 6h — `ingest-news` → `cleanup-raw-data` → commit + push
-- **generate-newsletter.yml**: Saturday 10:00 UTC — staged pipeline (prepare → score → semantic-dedup → validate → select → wrapper-copy → refine) → materialize draft → validate freshness → commit → proof email
-- **send-newsletter.yml**: Monday 06:00 UTC (08:00 Romania winter, 09:00 summer) — preflight checks → send (with concurrency guard) → publish issue → commit; alerts if draft missing
+- **generate-newsletter.yml**: Saturday 10:00 UTC — staged pipeline (prepare → score → semantic-dedup → validate → select → natural-titles → wrapper-copy → refine) → materialize draft → validate freshness → commit → proof email
+- **send-newsletter.yml**: Monday 03:17 UTC (05:17 Romania winter, 06:17 summer) — preflight checks → send (with concurrency guard) → publish issue → commit; alerts if draft missing
 
 ## Key Constraints
 - No persistent backend — static site + edge functions + external services
@@ -159,7 +161,7 @@ current `data/drafts/YYYY-WXX.json` as **final editor-authored content**.
 3. Create **one** commit with only the approval metadata change.
 
 **Never, under an approval instruction:**
-- Re-run any `pipeline:*` phase (especially `select`, `wrapper-copy`, `refine`).
+- Re-run any `pipeline:*` phase (especially `select`, `natural-titles`, `wrapper-copy`, `refine`).
 - Regenerate greeting / intro / sign-off / shortSummary — those are the
   editor's final voice for the week.
 - Move articles between `selected` and `reserves`, reorder, trim to a

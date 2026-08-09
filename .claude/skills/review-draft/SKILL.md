@@ -27,7 +27,7 @@ Read the draft JSON file and parse the structure:
 
 ## 2. Copy Quality Review
 
-Review the `wrapperCopy` fields against these guidelines from `docs/COPY_GUIDELINES.md`:
+Review the draft against the guidelines in `COPY_GUIDELINES.md`:
 
 ### Language Check
 - **Must be Romanian** - flag any English text in greeting, intro, or signOff
@@ -46,6 +46,14 @@ Review the `wrapperCopy` fields against these guidelines from `docs/COPY_GUIDELI
 - Under 3 sentences max
 
 Flag any issues and suggest rewrites if needed.
+
+### Headline Check
+- Review `title` as the reader-facing headline and `originalTitle` as source evidence.
+- Flag outlet labels, quote hooks, rhetorical questions, clickbait, marketing copy,
+  and generic AI formulas.
+- Make sure names, numbers, timing, certainty, and material caveats still match the
+  source headline and summary.
+- Never replace or edit `originalTitle`; proposed rewrites belong in `title`.
 
 ## 3. Article Selection Review
 
