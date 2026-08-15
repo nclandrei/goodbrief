@@ -44,7 +44,7 @@ const RESCUE_RESOLUTION_PATTERN =
   /(?:salvat|salvat[ăa]|salvați|salvate|recuperat|recuperat[ăa]|recuperați|intervenit|intervenție|spart geamul|transportat|transferat|poate\s+merge\s+din\s+nou|merge\s+din\s+nou|[șs]i-a\s+revenit|112)/iu;
 
 const DANGER_PREMISE_PATTERN =
-  /(?:bebelu[șs]|copil|copii|b[ăa]iat|b[ăa]tr[âa]n|minor|încuiat|incuiat|blocat|captiv|disp[ăa]rut|r[ăa]t[ăa]cit|munte|f[ăa]r[ăa]\s+provizii|extenuat|accident|fractur|c[ăa]zut|arsur|p[âa]r[âa]u|scaun(?:ul)?\s+rulant|incendiu|înec|inec|spital|urgen[țt][ăa])/iu;
+  /(?:bebelu[șs]|copil|copii|b[ăa]iat|b[ăa]tr[âa]n|minor|încuiat|incuiat|blocat|captiv|disp[ăa]rut|r[ăa]t[ăa]cit|munte|f[ăa]r[ăa]\s+provizii|extenuat|accident|fractur|c[ăa]zut|arsur|[îi]mpu[șs]c|p[âa]r[âa]u|scaun(?:ul)?\s+rulant|incendiu|înec|inec|spital|urgen[țt][ăa])/iu;
 
 const CRIME_RESOLUTION_PATTERN =
   /(?:ho[țt]i|ho[țt]ul|furt|t[âa]lh[ăa]rie|jaf|flagrant|poli[țt]i[șs]ti|prins|prin[șs]i|arestat)/iu;

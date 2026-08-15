@@ -122,6 +122,18 @@ test('editorial rules block trauma-led recovery stories with varied rescue langu
   }
 });
 
+test('editorial rules block W33 bear rescue from shooting (4a714ccb8beb792e)', () => {
+  assert.equal(
+    getEditorialBlockReason({
+      originalTitle:
+        'Ursoaică și doi pui salvați de la împușcare. Au fost capturați la Brașov și duși definitiv în rezervația de la Zărnești',
+      summary:
+        "A mother bear and her two cubs, who were frequently seen near apartment buildings in Brașov, have been safely captured and relocated to the Zărnești bear sanctuary. This humane solution avoids potential conflicts and ensures the animals' well-being. It's a great outcome for both wildlife and the community.",
+    }),
+    'negative-premise-with-happy-ending'
+  );
+});
+
 test('editorial rules block school olympiad results but allow the Olympic Games', () => {
   const schoolOlympiadStories = [
     {
