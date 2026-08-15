@@ -112,6 +112,25 @@ test('natural-title validation rejects deterministic headline anti-patterns', ()
   }
 });
 
+test('natural-title validation normalizes a trailing period from provider output', () => {
+  assert.deepEqual(
+    normalizeNaturalTitlesResponse('gemini', [ARTICLE], {
+      titles: [
+        {
+          id: ARTICLE.id,
+          title: 'Elevii finalizează un proiect pentru comunitate.',
+        },
+      ],
+    }),
+    [
+      {
+        id: ARTICLE.id,
+        title: 'Elevii finalizează un proiect pentru comunitate',
+      },
+    ]
+  );
+});
+
 test('natural-title validation does not confuse factual wording with a cliché', () => {
   const validTitles = [
     'Zimbrul recucerește Munții Făgăraș',

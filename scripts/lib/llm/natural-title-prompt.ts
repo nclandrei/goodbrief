@@ -111,7 +111,11 @@ export function normalizeNaturalTitlesResponse(
       );
     }
 
-    const title = item.title.trim();
+    // A final full stop is a harmless formatting slip from the model. Remove
+    // it deterministically instead of failing the entire 40-title batch.
+    // Semantic punctuation such as question/exclamation marks still goes
+    // through the hard quality gate below.
+    const title = item.title.trim().replace(/\.$/u, '').trimEnd();
     if (!requestedIds.has(item.id)) {
       throw new LlmProviderError(
         provider,
