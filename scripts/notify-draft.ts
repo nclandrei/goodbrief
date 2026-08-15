@@ -13,6 +13,10 @@ import {
   renderValidationNotesHtml,
 } from './lib/validation-notes.js';
 import { getArticleDisplayTitle } from './lib/article-title.js';
+import {
+  buildResendEmailIdempotencyKey,
+  sendResendEmailWithRetry,
+} from './lib/resend-email.js';
 
 const ROOT_DIR = resolveProjectRoot(import.meta.url);
 
@@ -264,18 +268,26 @@ async function main(): Promise<void> {
   }
   const resend = new Resend(apiKey);
   console.log('Sending proof email...');
-  const { error: proofError } = await resend.emails.send({
+  const proofPayload = {
     from: 'Good Brief <buna@goodbrief.ro>',
     to: editorEmails,
     subject: `[PROOF] Good Brief ${weekId} – Vești bune din România`,
     html: proofHtml,
-  });
-
-  if (proofError) {
-    console.error('Error sending proof:', proofError);
-    process.exit(1);
-  }
-  console.log('✓ Proof email sent');
+  };
+  const proof = await sendResendEmailWithRetry(
+    resend.emails.send.bind(resend.emails),
+    proofPayload,
+    {
+      idempotencyKey: buildResendEmailIdempotencyKey(
+        `proof-${weekId}`,
+        proofPayload
+      ),
+      initialDelayMs: process.env.RESEND_RETRY_INITIAL_DELAY_MS
+        ? Number(process.env.RESEND_RETRY_INITIAL_DELAY_MS)
+        : undefined,
+    }
+  );
+  console.log(`✓ Proof email sent (${proof.id})`);
 
   console.log('\n✨ Done!');
 }
