@@ -134,6 +134,26 @@ test('editorial rules block W33 bear rescue from shooting (4a714ccb8beb792e)', (
   );
 });
 
+test('editorial rules block W33 product profiles that are still speculative', () => {
+  assert.equal(
+    getEditorialBlockReason({
+      originalTitle:
+        'Anima Felix, aplicația românească ce vrea să-ți fie partener de liniște în momentele de anxietate',
+      summary:
+        'Sebastian Cochinescu a trecut prin mai multe domenii ale tehnologiei și de data aceasta încearcă să dezvolte un produs dedicat.',
+    }),
+    'speculative-commercial-product'
+  );
+
+  assert.equal(
+    getEditorialBlockReason({
+      originalTitle: 'Compania a lansat o aplicație gratuită pentru donatorii de sânge',
+      summary: 'Aplicația este disponibilă și conectează deja donatorii cu centrele locale.',
+    }),
+    null
+  );
+});
+
 test('editorial rules block school olympiad results but allow the Olympic Games', () => {
   const schoolOlympiadStories = [
     {

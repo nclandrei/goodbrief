@@ -52,6 +52,12 @@ const CRIME_RESOLUTION_PATTERN =
 const SOFT_FIRST_PERSON_ESSAY_PATTERN =
   /\b(autocar|tren)\b[\s\S]*\b(m-am|lec[țt]ie pe care nu o voi uita|rom[âa]nia real[ăa])\b/iu;
 
+const SPECULATIVE_COMMERCIAL_ACTION_PATTERN =
+  /(?<!\p{L})(?:[îi]ncearc[ăa]|vrea|inten[țt]ioneaz[ăa])\s+s[ăa]\s+(?:dezvolt(?:e|a)|creeze|lanseze|construiasc[ăa])(?!\p{L})/iu;
+
+const COMMERCIAL_PRODUCT_PATTERN =
+  /\b(?:aplica[țt]i|produs|platform[ăa]|start-?up|compani|afacer|serviciu\s+digital)\w*/iu;
+
 const SPONSORED_MARKER_PATTERNS = [
   /\((?:p|publicitate)\)/iu,
   /\[(?:p|publicitate)\]/iu,
@@ -152,6 +158,13 @@ export function getEditorialBlockReason(article: EditorialArticle): string | nul
 
   if (COMMERCIAL_FESTIVAL_PATTERNS.some((pattern) => pattern.test(text))) {
     return 'commercial-festival-or-nostalgia';
+  }
+
+  if (
+    SPECULATIVE_COMMERCIAL_ACTION_PATTERN.test(text) &&
+    COMMERCIAL_PRODUCT_PATTERN.test(text)
+  ) {
+    return 'speculative-commercial-product';
   }
 
   if (CRIME_RESOLUTION_PATTERN.test(text)) {
