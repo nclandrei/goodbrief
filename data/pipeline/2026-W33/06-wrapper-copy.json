@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W33",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-08-15T12:05:30.777Z",
+  "inputFile": "05a-natural-titles.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Bună dimineața! 👋",
+      "intro": "În ediția de azi, David Popovici devine primul înotător cu trei duble europene consecutive, Brăila încheie iluminarea trecerilor nesemaforizate de pe drumurile județene, iar UAIC deschide un cămin cu 202 locuri. Mai avem aurul unui cor de copii din Cluj, o decizie importantă pentru continuarea unei proceduri FIV, o tabără la Moisei, calfele călătoare din Sibiu și un documentar despre internetul de cartier din București.",
+      "signOff": "Atât pentru azi. Să ai o săptămână bună — ne citim luni. 🌿",
+      "shortSummary": "David Popovici, aurul corului Junior Vip și proiecte la Brăila și Iași."
+    }
+  }
+}

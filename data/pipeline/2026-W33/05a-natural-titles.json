@@ -1,8 +1,8 @@
 {
   "weekId": "2026-W33",
-  "phase": "select",
-  "generatedAt": "2026-08-15T10:41:33.728Z",
-  "inputFile": "03-semantic-dedup.json + 04-counter-signals.json",
+  "phase": "natural-titles",
+  "generatedAt": "2026-08-15T12:04:42.794Z",
+  "inputFile": "05-shortlist.json",
   "data": {
     "selected": [
       {
@@ -22,7 +22,8 @@
         "certainty": 90,
         "humanCloseness": 70,
         "bureaucraticDistance": 10,
-        "promoRisk": 10
+        "promoRisk": 10,
+        "title": "David Popovici este primul înotător cu trei duble europene consecutive la 100 și 200 m liber"
       },
       {
         "id": "875f58067e8fb2a6",
@@ -41,7 +42,8 @@
         "certainty": 90,
         "humanCloseness": 70,
         "bureaucraticDistance": 30,
-        "promoRisk": 10
+        "promoRisk": 10,
+        "title": "Brăila a iluminat toate trecerile nesemaforizate de pe drumurile județene"
       },
       {
         "id": "fc9b64b2655807a5",
@@ -60,7 +62,8 @@
         "certainty": 90,
         "humanCloseness": 80,
         "bureaucraticDistance": 20,
-        "promoRisk": 10
+        "promoRisk": 10,
+        "title": "O femeie din Iași a câștigat dreptul de a continua fertilizarea in vitro după moartea soțului"
       },
       {
         "id": "b150b4719da46573",
@@ -79,7 +82,8 @@
         "certainty": 90,
         "humanCloseness": 70,
         "bureaucraticDistance": 20,
-        "promoRisk": 10
+        "promoRisk": 10,
+        "title": "UAIC a inaugurat la Iași un cămin cu 202 locuri și cinci camere adaptate"
       },
       {
         "id": "60a9c5d80289e6ff",
@@ -98,7 +102,8 @@
         "certainty": 90,
         "humanCloseness": 70,
         "bureaucraticDistance": 10,
-        "promoRisk": 10
+        "promoRisk": 10,
+        "title": "Corul Junior Vip din Cluj a câștigat aurul la World Choir Games"
       },
       {
         "id": "b585d4478d043e68",
@@ -117,7 +122,8 @@
         "certainty": 90,
         "humanCloseness": 80,
         "bureaucraticDistance": 20,
-        "promoRisk": 10
+        "promoRisk": 10,
+        "title": "Comuna Moisei a găzduit o tabără internațională pentru 30 de copii din Ucraina"
       },
       {
         "id": "33cc012d6f080eef",
@@ -136,7 +142,8 @@
         "certainty": 90,
         "humanCloseness": 90,
         "bureaucraticDistance": 30,
-        "promoRisk": 10
+        "promoRisk": 10,
+        "title": "Calfele călătoare lucrează din nou alături de meșteșugarii din Sibiu"
       },
       {
         "id": "f4330f7f13ead052",
@@ -155,7 +162,8 @@
         "certainty": 90,
         "humanCloseness": 70,
         "bureaucraticDistance": 20,
-        "promoRisk": 10
+        "promoRisk": 10,
+        "title": "BBC a realizat un documentar despre primele rețele de internet din București"
       }
     ],
     "reserves": [],
