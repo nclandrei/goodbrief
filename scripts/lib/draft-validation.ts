@@ -596,8 +596,28 @@ export async function validateDraftFreshness(
 
   const blockedIds = new Set(blockedArticles.map((blocked) => blocked.articleId));
   const approvedPool = pool.filter((article) => !blockedIds.has(article.id));
-  const newSelected = approvedPool.slice(0, TARGET_SELECTED_ARTICLE_COUNT);
-  const newReserves = approvedPool.slice(TARGET_SELECTED_ARTICLE_COUNT);
+  const approvedSelected = options.draft.selected.filter(
+    (article) => !blockedIds.has(article.id)
+  );
+  const approvedReserves = options.draft.reserves.filter(
+    (article) => !blockedIds.has(article.id)
+  );
+  const selectedTargetCount = Math.min(
+    options.draft.selected.length,
+    TARGET_SELECTED_ARTICLE_COUNT
+  );
+  const replacementCount = Math.max(
+    0,
+    selectedTargetCount - approvedSelected.length
+  );
+  const newSelected = [
+    ...approvedSelected,
+    ...approvedReserves.slice(0, replacementCount),
+  ];
+  const newSelectedIds = new Set(newSelected.map((article) => article.id));
+  const newReserves = approvedPool.filter(
+    (article) => !newSelectedIds.has(article.id)
+  );
   const replacements = calculateReplacements(options.draft.selected, newSelected);
 
   const agentReviewed: DraftValidationAgentReviewedArticle[] = reviewItems.map((item) => {

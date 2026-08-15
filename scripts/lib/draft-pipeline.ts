@@ -270,6 +270,17 @@ async function refineShortlist(options: {
       allArticles,
       validation,
     });
+    if (balancedSelection.selected.length < MIN_SENDABLE_ARTICLE_COUNT) {
+      console.log(
+        `Warning: Refinement left only ${balancedSelection.selected.length} articles after hard editorial constraints. Keeping original.`
+      );
+      return {
+        selected,
+        reserves,
+        wrapperCopy,
+        reasoning: `Refinement violated hard editorial constraints: ${balancedSelection.selected.length} eligible articles`,
+      };
+    }
     const balanceAdjusted =
       balancedSelection.selected.map((article) => article.id).join('|') !==
       refinedSelection.map((article) => article.id).join('|');

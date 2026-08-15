@@ -806,7 +806,7 @@ test('select phase favors tangible human-centered stories over speculative burea
   );
 });
 
-test('refine phase keeps shortlist balance when refinement tries to reintroduce bureaucratic reserve stories', async () => {
+test('refine phase filters hard violations without reintroducing omitted stories', async () => {
   const tempRoot = mkdtempSync(join(tmpdir(), 'goodbrief-refine-editorial-balance-'));
   const pipelineDir = join(tempRoot, 'data', 'pipeline', WEEK_ID);
   mkdirSync(pipelineDir, { recursive: true });
@@ -1043,13 +1043,29 @@ test('refine phase keeps shortlist balance when refinement tries to reintroduce 
     readFileSync(join(tempRoot, 'data', 'drafts', `${WEEK_ID}.json`), 'utf-8')
   ) as DraftPipelineArtifact<any, 'refine'>['data']['draft'];
 
-  assert.equal(
-    refinedDraft.selected.some((article: ProcessedArticle) => article.id === 'mobile-library-volunteers'),
-    true
+  assert.deepEqual(
+    refinedDraft.selected.map((article: ProcessedArticle) => article.id),
+    [
+      'women-startup-grants',
+      'school-pilot-funding',
+      'oncogen-immunotherapy',
+      'rail-modernization-started',
+      'g4media-ai-chat',
+      'bihor-cultural-center',
+      'dinosaur-discovery',
+    ]
   );
   assert.equal(
-    refinedDraft.selected.some((article: ProcessedArticle) => article.id === 'green-school-roofs'),
-    true
+    refinedDraft.selected.some(
+      (article: ProcessedArticle) => article.id === 'mobile-library-volunteers'
+    ),
+    false
+  );
+  assert.equal(
+    refinedDraft.selected.some(
+      (article: ProcessedArticle) => article.id === 'green-school-roofs'
+    ),
+    false
   );
   assert.equal(
     refinedDraft.selected.every((article: ProcessedArticle) => Boolean(article.title)),

@@ -439,3 +439,28 @@ test('passes a shorter edition when 9 approved stories remain', async () => {
     true
   );
 });
+
+test('does not pad an approved eight-story refinement from reserves', async () => {
+  const selected = Array.from({ length: 8 }, (_, index) => makeArticle(index));
+  const reserves = Array.from({ length: 4 }, (_, index) => makeArticle(index + 8));
+
+  const result = await validateDraftFreshness({
+    draft: makeDraft(selected, reserves),
+    historicalArticles: [],
+    recentDraftCount: 0,
+    publishedHistoryCount: 0,
+    now: new Date('2026-03-08T10:00:00.000Z'),
+    reviewArchive: async (items) => buildFreshReview(items),
+    generateWrapperCopy: async () => makeWrapperCopy(),
+  });
+
+  assert.deepEqual(
+    result.draft.selected.map((article) => article.id),
+    selected.map((article) => article.id)
+  );
+  assert.deepEqual(
+    result.draft.reserves.map((article) => article.id),
+    reserves.map((article) => article.id)
+  );
+  assert.equal(result.draft.validation?.status, 'passed');
+});

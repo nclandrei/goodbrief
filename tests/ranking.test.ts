@@ -339,7 +339,102 @@ test('selectBalancedShortlist does not cap broad outlets when they carry the str
   );
 });
 
-test('rebalancePreferredSelection keeps community and green stories when refine prefers bureaucratic reserves', () => {
+test('selectBalancedShortlist caps one repeated named subject across selected and reserves', () => {
+  const popoviciStories = Array.from({ length: 7 }, (_, index) =>
+    makeArticle(`popovici-${index + 1}`, {
+      originalTitle: `David Popovici obține rezultatul ${index + 1} la Europene`,
+      category: index === 0 ? 'wins' : 'local-heroes',
+      editorialInterest: 95 - index,
+      feltImpact: index === 0 ? 60 : 90,
+      certainty: 95,
+      humanCloseness: index === 0 ? 60 : 85,
+    })
+  );
+  const diverseStories = [
+    makeArticle('choir', {
+      originalTitle: 'Corul de copii din Cluj câștigă aurul la World Choir Games',
+      category: 'local-heroes',
+      editorialInterest: 86,
+    }),
+    makeArticle('crossings', {
+      originalTitle: 'Brăila iluminează trecerile de pietoni de pe drumurile județene',
+      editorialInterest: 84,
+    }),
+    makeArticle('ivf-rights', {
+      originalTitle: 'Curtea recunoaște dreptul unei femei de a continua procedura FIV',
+      editorialInterest: 82,
+    }),
+    makeArticle('dorm', {
+      originalTitle: 'UAIC deschide un cămin nou cu camere adaptate',
+      editorialInterest: 80,
+    }),
+    makeArticle('craftspeople', {
+      originalTitle: 'Calfele călătoare lucrează alături de meșteșugarii din Sibiu',
+      editorialInterest: 78,
+    }),
+    makeArticle('documentary', {
+      originalTitle: 'BBC prezintă rețelele de cartier construite în București',
+      editorialInterest: 76,
+    }),
+    makeArticle('summer-camp', {
+      originalTitle: 'Comunitatea din Moisei găzduiește o tabără pentru copii',
+      editorialInterest: 74,
+    }),
+  ];
+
+  const shortlist = selectBalancedShortlist({
+    rankedArticles: [...popoviciStories, ...diverseStories],
+    validation: EMPTY_VALIDATION,
+    selectedCount: 4,
+    reserveCount: 4,
+  });
+  const visibleStories = [...shortlist.selected, ...shortlist.reserves];
+
+  assert.equal(
+    visibleStories.filter((article) => article.originalTitle.includes('David Popovici'))
+      .length,
+    1
+  );
+  assert.equal(
+    visibleStories.find((article) => article.originalTitle.includes('David Popovici'))?.id,
+    'popovici-1'
+  );
+  assert.equal(shortlist.selected.length, 4);
+  assert.equal(shortlist.reserves.length, 4);
+});
+
+test('rebalancePreferredSelection never reintroduces articles rejected by refinement', () => {
+  const preferred = [
+    makeArticle('preferred-1'),
+    makeArticle('preferred-2'),
+    makeArticle('preferred-3'),
+    makeArticle('preferred-4'),
+  ];
+  const rejected = [
+    makeArticle('rejected-community', {
+      category: 'local-heroes',
+      humanCloseness: 95,
+    }),
+    makeArticle('rejected-green', { category: 'green-stuff' }),
+  ];
+
+  const rebalanced = rebalancePreferredSelection({
+    preferredArticles: preferred,
+    allArticles: [...rejected, ...preferred],
+    validation: EMPTY_VALIDATION,
+  });
+
+  assert.deepEqual(
+    rebalanced.selected.map((article) => article.id),
+    preferred.map((article) => article.id)
+  );
+  assert.deepEqual(
+    rebalanced.reserves.map((article) => article.id),
+    rejected.map((article) => article.id)
+  );
+});
+
+test('rebalancePreferredSelection preserves refinement even when it omits category seeds', () => {
   const allArticles = [
     makeArticle('mobile-library', {
       sourceId: 'dw-romania',
@@ -422,15 +517,10 @@ test('rebalancePreferredSelection keeps community and green stories when refine 
     validation: EMPTY_VALIDATION,
   });
 
-  assert.equal(
-    rebalanced.selected.some((article) => article.id === 'mobile-library'),
-    true
+  assert.deepEqual(
+    rebalanced.selected.map((article) => article.id),
+    ['startup-grants', 'school-pilot', 'oncogen', 'rail-started']
   );
-  assert.equal(
-    rebalanced.selected.some((article) => article.id === 'solar-village'),
-    true
-  );
-  assert.ok(
-    rebalanced.selected.filter((article) => article.bureaucraticDistance! >= 70).length <= 2
-  );
+  assert.equal(rebalanced.reserves[0]?.id, 'mobile-library');
+  assert.equal(rebalanced.reserves[1]?.id, 'solar-village');
 });

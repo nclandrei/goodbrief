@@ -11,6 +11,12 @@ export const MIN_EDITORIAL_INTEREST_SCORE = 55;
 export const MIN_ADJUSTED_RANKING_SCORE = 50;
 const LEGACY_EDITORIAL_INTEREST_SCORE = 65;
 
+const NON_SUBJECT_NAME_PAIRS = new Set([
+  'business checkin',
+  'doctor de',
+  'români din',
+]);
+
 const NICHE_INSTITUTIONAL_SOURCES = new Set([
   'economedia',
   'edupedu',
@@ -76,7 +82,76 @@ function countSelectedByPredicate(
   return selected.filter(predicate).length;
 }
 
+function getNamedSubjectKeys(article: ProcessedArticle): Set<string> {
+  const matches = [
+    ...article.originalTitle.matchAll(/\p{L}[\p{L}’'-]*/gu),
+  ];
+  const keys = new Set<string>();
+
+  for (let index = 0; index < matches.length - 1; index += 1) {
+    const left = matches[index];
+    const right = matches[index + 1];
+    const leftWord = left[0];
+    const rightWord = right[0];
+    const leftEnd = (left.index || 0) + leftWord.length;
+    const separator = article.originalTitle.slice(leftEnd, right.index);
+    if (!/^\s+$/u.test(separator)) {
+      continue;
+    }
+
+    const isNameWord = (word: string) => {
+      const first = [...word][0] || '';
+      return (
+        word.length >= 2 &&
+        first === first.toLocaleUpperCase('ro-RO') &&
+        first !== first.toLocaleLowerCase('ro-RO')
+      );
+    };
+    if (!isNameWord(leftWord) || !isNameWord(rightWord)) {
+      continue;
+    }
+
+    const key = `${leftWord} ${rightWord}`.toLocaleLowerCase('ro-RO');
+    if (!NON_SUBJECT_NAME_PAIRS.has(key)) {
+      keys.add(key);
+    }
+  }
+
+  return keys;
+}
+
+function repeatsNamedSubject(
+  selected: ProcessedArticle[],
+  candidate: ProcessedArticle
+): boolean {
+  const candidateKeys = getNamedSubjectKeys(candidate);
+  if (candidateKeys.size === 0) {
+    return false;
+  }
+
+  return selected.some((article) => {
+    const selectedKeys = getNamedSubjectKeys(article);
+    return [...candidateKeys].some((key) => selectedKeys.has(key));
+  });
+}
+
+function keepTopRankedNamedSubjects(
+  rankedArticles: ProcessedArticle[]
+): ProcessedArticle[] {
+  const kept: ProcessedArticle[] = [];
+  for (const article of rankedArticles) {
+    if (!repeatsNamedSubject(kept, article)) {
+      kept.push(article);
+    }
+  }
+  return kept;
+}
+
 function canAddArticle(selected: ProcessedArticle[], article: ProcessedArticle): boolean {
+  if (repeatsNamedSubject(selected, article)) {
+    return false;
+  }
+
   if (
     isNicheInstitutionalSource(article) &&
     countSelectedBySource(selected, article.sourceId) >= MAX_SELECTED_PER_NICHE_SOURCE
@@ -193,6 +268,9 @@ function buildBalancedSelection(
     if (selected.length >= selectedCount) {
       break;
     }
+    if (repeatsNamedSubject(selected, article)) {
+      continue;
+    }
     maybeAdd(article);
   }
 
@@ -206,8 +284,10 @@ export function selectBalancedShortlist(options: {
   reserveCount: number;
 }): { selected: ProcessedArticle[]; reserves: ProcessedArticle[] } {
   const { rankedArticles, validation, selectedCount, reserveCount } = options;
-  const qualifyingArticles = rankedArticles.filter((article) =>
-    meetsNewsletterQualityFloor(article, validation)
+  const qualifyingArticles = keepTopRankedNamedSubjects(
+    rankedArticles.filter((article) =>
+      meetsNewsletterQualityFloor(article, validation)
+    )
   );
   const { selected, remaining } = buildBalancedSelection(
     qualifyingArticles,
@@ -215,10 +295,20 @@ export function selectBalancedShortlist(options: {
     selectedCount
   );
 
-  return {
-    selected,
-    reserves: remaining.slice(0, reserveCount),
-  };
+  const visibleArticles = [...selected];
+  const reserves: ProcessedArticle[] = [];
+  for (const article of remaining) {
+    if (reserves.length >= reserveCount) {
+      break;
+    }
+    if (repeatsNamedSubject(visibleArticles, article)) {
+      continue;
+    }
+    reserves.push(article);
+    visibleArticles.push(article);
+  }
+
+  return { selected, reserves };
 }
 
 export function rebalancePreferredSelection(options: {
@@ -227,15 +317,19 @@ export function rebalancePreferredSelection(options: {
   validation: DraftValidation;
 }): { selected: ProcessedArticle[]; reserves: ProcessedArticle[] } {
   const { preferredArticles, allArticles, validation } = options;
-  const preferredIds = new Set(preferredArticles.map((article) => article.id));
+  const selected: ProcessedArticle[] = [];
+  for (const article of preferredArticles) {
+    if (
+      meetsNewsletterQualityFloor(article, validation) &&
+      canAddArticle(selected, article)
+    ) {
+      selected.push(article);
+    }
+  }
+  const selectedIds = new Set(selected.map((article) => article.id));
 
-  return selectBalancedShortlist({
-    rankedArticles: [
-      ...preferredArticles,
-      ...allArticles.filter((article) => !preferredIds.has(article.id)),
-    ],
-    validation,
-    selectedCount: preferredArticles.length,
-    reserveCount: Math.max(0, allArticles.length - preferredArticles.length),
-  });
+  return {
+    selected,
+    reserves: allArticles.filter((article) => !selectedIds.has(article.id)),
+  };
 }
