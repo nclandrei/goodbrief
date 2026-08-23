@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W34",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-08-23T07:14:41.516Z",
+  "inputFile": "05a-natural-titles.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare! 👋",
+      "intro": "Săptămâna asta am strâns vești tare faine, de la un cămin studențesc modern până la performanțe sportive uimitoare și povești de antreprenoriat românesc. Pregătește-ți cafeaua și hai să vedem ce ne-a inspirat.",
+      "signOff": "Ne auzim săptămâna viitoare cu și mai multe vești bune! 🙏",
+      "shortSummary": "Cămin modern, recorduri sportive și antreprenoriat românesc. Vezi ce s-a întâmplat!"
+    }
+  }
+}
