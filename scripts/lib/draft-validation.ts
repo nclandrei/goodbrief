@@ -17,6 +17,7 @@ import {
   isHighConfidenceStoryMatch,
   normalizeTitle,
 } from './deduplication.js';
+import { lockDraftForDelivery } from './draft-delivery.js';
 import { getEditorialBlockReason } from './editorial-rules.js';
 import { callWithRetry, DEFAULT_GEMINI_MODEL } from './gemini.js';
 import {
@@ -661,12 +662,19 @@ export async function validateDraftFreshness(
     nextDraft.wrapperCopy = await generateWrapperCopy(nextDraft.selected, nextDraft.weekId);
   }
 
+  if (status === 'passed') {
+    lockDraftForDelivery(nextDraft, checkedAt);
+  } else {
+    nextDraft.deliveryLock = undefined;
+  }
+
   return {
     draft: nextDraft,
     changed:
       !sameIds(options.draft.selected, nextDraft.selected) ||
       !sameIds(options.draft.reserves, nextDraft.reserves) ||
-      JSON.stringify(options.draft.validation) !== JSON.stringify(nextDraft.validation),
+      JSON.stringify(options.draft.validation) !== JSON.stringify(nextDraft.validation) ||
+      JSON.stringify(options.draft.deliveryLock) !== JSON.stringify(nextDraft.deliveryLock),
     approvedCount: approvedPool.length,
   };
 }

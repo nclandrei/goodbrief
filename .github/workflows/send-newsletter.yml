@@ -35,14 +35,10 @@ jobs:
           if [ -n "${{ inputs.week }}" ]; then
             echo "id=${{ inputs.week }}" >> $GITHUB_OUTPUT
           else
-            # Use latest draft file (generated Saturday for previous week, sent Monday)
-            LATEST_DRAFT=$(ls -1 data/drafts/*.json 2>/dev/null | sort -r | head -1)
-            if [ -n "$LATEST_DRAFT" ]; then
-              WEEK_ID=$(basename "$LATEST_DRAFT" .json)
-              echo "id=$WEEK_ID" >> $GITHUB_OUTPUT
-            else
-              echo "id=" >> $GITHUB_OUTPUT
-            fi
+            # Saturday's draft belongs to the ISO week before Monday's delivery.
+            # Resolve that week directly so an accidentally early future draft
+            # can never replace the edition due today.
+            echo "id=$(date -u --date '7 days ago' +%G-W%V)" >> $GITHUB_OUTPUT
           fi
 
       - name: Check send preflight

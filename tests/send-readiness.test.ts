@@ -4,7 +4,11 @@ import { mkdtempSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import type { NewsletterDraft } from '../scripts/types.js';
-import { assertDraftValidated } from '../scripts/lib/draft-delivery.js';
+import {
+  assertDraftValidated,
+  lockDraftForDelivery,
+  recordDraftTestDelivery,
+} from '../scripts/lib/draft-delivery.js';
 import { WORKSPACE_ROOT, runTypeScriptScript } from './helpers.js';
 
 function makeSelectedArticles(count: number): NewsletterDraft['selected'] {
@@ -98,6 +102,89 @@ test('post-W10 drafts cannot be delivered below the 7-article safety minimum', (
     () => assertDraftValidated(tooShortDraft, 'newsletter delivery'),
     /minimum 7 articles/
   );
+});
+
+function makeLockedDraft(): NewsletterDraft {
+  return {
+    weekId: '2026-W34',
+    generatedAt: '2026-08-22T10:00:00.000Z',
+    selected: makeSelectedArticles(8),
+    reserves: [],
+    discarded: 0,
+    totalProcessed: 8,
+    wrapperCopy: {
+      greeting: 'Bună dimineața!',
+      intro: 'Opt vești bune din România.',
+      signOff: 'Pe curând.',
+      shortSummary: 'Opt vești bune.',
+    },
+    validation: {
+      generatedAt: '2026-08-22T10:00:00.000Z',
+      candidateCount: 8,
+      flagged: [],
+      status: 'passed',
+      approvalSource: 'editor-review',
+      checkedAt: '2026-08-23T07:22:49.881Z',
+    },
+  };
+}
+
+test('W34+ delivery approval is bound to the rendered newsletter', () => {
+  const draft = makeLockedDraft();
+  lockDraftForDelivery(draft, '2026-08-23T07:22:49.881Z');
+
+  assert.doesNotThrow(() =>
+    assertDraftValidated(draft, 'newsletter delivery')
+  );
+
+  draft.selected[0].summary = 'A changed summary after approval.';
+
+  assert.throws(
+    () => assertDraftValidated(draft, 'newsletter delivery'),
+    /changed after its delivery approval/
+  );
+});
+
+test('W34+ delivery fails closed without stored wrapper copy or a content lock', () => {
+  const missingLock = makeLockedDraft();
+  assert.throws(
+    () => assertDraftValidated(missingLock, 'newsletter delivery'),
+    /missing its approved delivery content lock/
+  );
+
+  const missingWrapper = makeLockedDraft();
+  missingWrapper.wrapperCopy = undefined;
+  assert.throws(
+    () => lockDraftForDelivery(missingWrapper, '2026-08-23T07:22:49.881Z'),
+    /stored wrapper copy/
+  );
+});
+
+test('reapproval clears a stale test record after newsletter content changes', () => {
+  const draft = makeLockedDraft();
+  lockDraftForDelivery(draft, '2026-08-23T07:22:49.881Z');
+  recordDraftTestDelivery(
+    draft,
+    '2026-08-23T07:25:35.013Z',
+    'test-message-id'
+  );
+  assert.equal(draft.deliveryLock?.testMessageId, 'test-message-id');
+
+  draft.wrapperCopy!.intro = 'A newly approved intro.';
+  lockDraftForDelivery(draft, '2026-08-23T08:00:00.000Z');
+
+  assert.equal(draft.deliveryLock?.testedSha256, undefined);
+  assert.equal(draft.deliveryLock?.testMessageId, undefined);
+});
+
+test('scheduled Monday delivery resolves the previous ISO week instead of the latest draft', () => {
+  const workflow = readFileSync(
+    join(WORKSPACE_ROOT, '.github', 'workflows', 'send-newsletter.yml'),
+    'utf-8'
+  );
+
+  assert.match(workflow, /date -u (?:--date|-d) ['"]7 days ago['"] \+%G-W%V/);
+  assert.doesNotMatch(workflow, /LATEST_DRAFT/);
 });
 
 test('send preflight reports an existing issue so the workflow can skip duplicate sends', async () => {

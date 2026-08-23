@@ -6,18 +6,15 @@ import { join } from 'path';
 import { tmpdir, platform } from 'os';
 import { exec } from 'child_process';
 import { Resend } from 'resend';
-import type {
-  NewsletterDraft,
-  ProcessedArticle,
-  ArticleCategory,
-  WrapperCopy,
-} from './types.js';
+import type { NewsletterDraft } from './types.js';
 import { sendAlert } from './lib/alert.js';
 import { resolveProjectRoot } from './lib/project-root.js';
-import { assertDraftValidated } from './lib/draft-delivery.js';
-import { TARGET_SELECTED_ARTICLE_COUNT } from './lib/newsletter-policy.js';
+import {
+  assertDraftValidated,
+  recordDraftTestDelivery,
+} from './lib/draft-delivery.js';
+import { buildNewsletterEmail } from './lib/newsletter-email.js';
 import { formatValidationNotesForConsole } from './lib/validation-notes.js';
-import { getArticleDisplayTitle } from './lib/article-title.js';
 
 const ROOT_DIR = resolveProjectRoot(import.meta.url);
 
@@ -69,9 +66,13 @@ function parseArgs(): CliArgs {
   return { mode, week, confirm, automated };
 }
 
+function getDraftPath(weekId: string): string {
+  return join(ROOT_DIR, 'data', 'drafts', `${weekId}.json`);
+}
+
 // Load draft from data/drafts/
 function loadDraft(weekId: string): NewsletterDraft {
-  const draftPath = join(ROOT_DIR, 'data', 'drafts', `${weekId}.json`);
+  const draftPath = getDraftPath(weekId);
 
   if (!existsSync(draftPath)) {
     console.error(`Error: Draft not found at ${draftPath}`);
@@ -82,174 +83,8 @@ function loadDraft(weekId: string): NewsletterDraft {
   return JSON.parse(content) as NewsletterDraft;
 }
 
-// Group articles by category
-interface GroupedArticles {
-  'local-heroes': ProcessedArticle[];
-  wins: ProcessedArticle[];
-  'green-stuff': ProcessedArticle[];
-  'quick-hits': ProcessedArticle[];
-}
-
-function groupByCategory(articles: ProcessedArticle[]): GroupedArticles {
-  const groups: GroupedArticles = {
-    'local-heroes': [],
-    wins: [],
-    'green-stuff': [],
-    'quick-hits': [],
-  };
-
-  for (const article of articles) {
-    const category = article.category as ArticleCategory;
-    if (groups[category]) {
-      groups[category].push(article);
-    }
-  }
-
-  return groups;
-}
-
-// Generate HTML email (inline template until React Email is set up)
-function renderEmailHtml(
-  grouped: GroupedArticles,
-  copy: WrapperCopy,
-  weekId: string
-): string {
-  const brandGreen = '#3d5f46';
-  const darkText = '#1f2937';
-  const grayText = '#6b7280';
-  const lightGray = '#e5e7eb';
-  const bgColor = '#ffffff';
-
-  const sectionConfig: Record<
-    ArticleCategory,
-    { emoji: string; title: string }
-  > = {
-    'local-heroes': { emoji: '🌱', title: 'LOCAL HEROES' },
-    wins: { emoji: '🏆', title: 'WINS' },
-    'green-stuff': { emoji: '💚', title: 'GREEN STUFF' },
-    'quick-hits': { emoji: '✨', title: 'QUICK HITS' },
-  };
-
-  const renderArticle = (article: ProcessedArticle) => `
-    <tr>
-      <td style="padding: 16px 0;">
-        <h3 style="margin: 0 0 8px 0; font-size: 18px; font-weight: bold; color: ${darkText}; line-height: 1.4;">
-          ${getArticleDisplayTitle(article)}
-        </h3>
-        <p style="margin: 0 0 12px 0; font-size: 16px; color: ${darkText}; line-height: 1.6;">
-          ${article.summary}
-        </p>
-        <a href="${article.url}" style="color: ${brandGreen}; font-size: 14px; text-decoration: none;">
-          → Citește pe ${article.sourceName}
-        </a>
-      </td>
-    </tr>
-  `;
-
-  const renderSection = (
-    category: ArticleCategory,
-    articles: ProcessedArticle[]
-  ) => {
-    if (articles.length === 0) return '';
-    const config = sectionConfig[category];
-    return `
-      <tr>
-        <td style="padding: 24px 0 8px 0;">
-          <h2 style="margin: 0; font-size: 14px; font-weight: 600; color: ${brandGreen}; letter-spacing: 1px; text-transform: uppercase;">
-            ${config.emoji} ${config.title}
-          </h2>
-          <hr style="border: none; border-top: 1px solid ${lightGray}; margin: 8px 0 0 0;">
-        </td>
-      </tr>
-      ${articles.map(renderArticle).join('')}
-    `;
-  };
-
-  const articleCount =
-    grouped['local-heroes'].length +
-    grouped.wins.length +
-    grouped['green-stuff'].length +
-    grouped['quick-hits'].length;
-
-  return `
-<!DOCTYPE html>
-<html lang="ro">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Good Brief ${weekId}</title>
-</head>
-<body style="margin: 0; padding: 0; background-color: #f5f1eb; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color: #f5f1eb;">
-    <tr>
-      <td align="center" style="padding: 32px 16px;">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width: 600px; background-color: ${bgColor}; border-radius: 8px;">
-          <!-- Header -->
-          <tr>
-            <td align="center" style="padding: 32px 24px 16px 24px;">
-              <img src="https://goodbrief.ro/logo.png" alt="Good Brief" width="120" style="display: block; margin-bottom: 8px;">
-              <p style="margin: 0; font-size: 16px; color: ${grayText};">Vești bune din România</p>
-            </td>
-          </tr>
-
-          <!-- Intro -->
-          <tr>
-            <td style="padding: 16px 24px 24px 24px;">
-              <p style="margin: 0 0 12px 0; font-size: 18px; color: ${darkText}; line-height: 1.6;">
-                ${copy.greeting}
-              </p>
-              <p style="margin: 0; font-size: 16px; color: ${darkText}; line-height: 1.6;">
-                ${copy.intro}
-              </p>
-              <p style="margin: 12px 0 0 0; font-size: 14px; color: ${grayText};">
-                ${articleCount} știri, sub 5 minute.
-              </p>
-            </td>
-          </tr>
-
-          <!-- Articles -->
-          <tr>
-            <td style="padding: 0 24px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-                ${renderSection('local-heroes', grouped['local-heroes'])}
-                ${renderSection('wins', grouped.wins)}
-                ${renderSection('green-stuff', grouped['green-stuff'])}
-                ${renderSection('quick-hits', grouped['quick-hits'])}
-              </table>
-            </td>
-          </tr>
-
-          <!-- Sign-off -->
-          <tr>
-            <td style="padding: 24px;">
-              <hr style="border: none; border-top: 1px solid ${lightGray}; margin: 0 0 24px 0;">
-              <p style="margin: 0 0 16px 0; font-size: 16px; color: ${darkText}; line-height: 1.6;">
-                ${copy.signOff}
-              </p>
-              <p style="margin: 0; font-size: 14px; color: ${grayText}; line-height: 1.6;">
-                Ai o poveste bună? Reply la acest email sau scrie-ne la <a href="mailto:hello@goodbrief.ro" style="color: ${brandGreen};">hello@goodbrief.ro</a>.
-              </p>
-            </td>
-          </tr>
-
-          <!-- Footer -->
-          <tr>
-            <td align="center" style="padding: 24px; background-color: #f9fafb; border-radius: 0 0 8px 8px;">
-              <p style="margin: 0 0 8px 0; font-size: 14px; color: ${grayText};">
-                Good Brief · <a href="https://goodbrief.ro" style="color: ${brandGreen};">goodbrief.ro</a>
-              </p>
-              <p style="margin: 0; font-size: 12px; color: ${grayText};">
-                <a href="{{{RESEND_UNSUBSCRIBE_URL}}}" style="color: ${grayText};">Unsubscribe</a>
-              </p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</body>
-</html>
-  `.trim();
+function saveDraft(weekId: string, draft: NewsletterDraft): void {
+  writeFileSync(getDraftPath(weekId), `${JSON.stringify(draft, null, 2)}\n`);
 }
 
 // Open file in browser
@@ -286,7 +121,10 @@ async function handlePreview(html: string, weekId: string): Promise<void> {
 }
 
 // Test mode: send to test email(s)
-async function handleTest(html: string): Promise<void> {
+async function handleTest(
+  html: string,
+  subject: string
+): Promise<{ id: string; sentAt: string }> {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
     console.error('Error: RESEND_API_KEY environment variable is required');
@@ -313,7 +151,7 @@ async function handleTest(html: string): Promise<void> {
     from: 'Good Brief <buna@goodbrief.ro>',
     replyTo: 'hello@goodbrief.ro',
     to: testEmails,
-    subject: `[TEST] Good Brief – Your weekly dose de vești bune`,
+    subject: `[TEST] ${subject}`,
     html,
   });
 
@@ -322,12 +160,18 @@ async function handleTest(html: string): Promise<void> {
     process.exit(1);
   }
 
-  console.log(`✓ Test email sent! ID: ${data?.id}`);
+  if (!data?.id) {
+    throw new Error('Resend accepted the test email without returning a message ID');
+  }
+
+  console.log(`✓ Test email sent! ID: ${data.id}`);
+  return { id: data.id, sentAt: new Date().toISOString() };
 }
 
 // Send mode: broadcast to audience
 async function handleSend(
   html: string,
+  subject: string,
   weekId: string,
   confirm: boolean,
   automated: boolean,
@@ -379,7 +223,7 @@ async function handleSend(
       segmentId,
       from: 'Good Brief <buna@goodbrief.ro>',
       replyTo: 'hello@goodbrief.ro',
-      subject: `Good Brief – Your weekly dose de vești bune`,
+      subject,
       html,
     });
 
@@ -443,41 +287,42 @@ async function main(): Promise<void> {
     }
   }
 
-  const articles = draft.selected.slice(0, TARGET_SELECTED_ARTICLE_COUNT);
-
-  // Group by category
-  const grouped = groupByCategory(articles);
+  const email = buildNewsletterEmail(draft);
+  const grouped = email.grouped;
   console.log(
     `✓ Grouped: ${grouped['local-heroes'].length} local-heroes, ${grouped.wins.length} wins, ${grouped['green-stuff'].length} green-stuff, ${grouped['quick-hits'].length} quick-hits`
   );
-
-  // Get wrapper copy from draft or generate if missing
-  let copy: WrapperCopy;
-  if (draft.wrapperCopy) {
-    console.log('Using wrapper copy from draft');
-    copy = draft.wrapperCopy;
-  } else {
-    console.log('Generating AI wrapper copy (draft missing copy)...');
-    const { generateWrapperCopy } = await import('../emails/utils/generate-copy.js');
-    copy = await generateWrapperCopy(articles, args.week);
-    console.log('✓ Generated greeting, intro, and sign-off');
-  }
+  console.log('Using wrapper copy from draft');
 
   // Render HTML
   console.log('Rendering email HTML...');
-  const html = renderEmailHtml(grouped, copy, args.week);
+  const { html, subject, deliverySha256 } = email;
   console.log('✓ Email rendered\n');
+  console.log(`Delivery SHA-256: ${deliverySha256}\n`);
 
   // Handle mode
   switch (args.mode) {
     case 'preview':
       await handlePreview(html, args.week);
       break;
-    case 'test':
-      await handleTest(html);
+    case 'test': {
+      assertDraftValidated(draft, 'test newsletter delivery');
+      const result = await handleTest(html, subject);
+      recordDraftTestDelivery(draft, result.sentAt, result.id);
+      saveDraft(args.week, draft);
+      console.log('✓ Recorded tested delivery hash in the draft');
+      console.log('Remember to commit and push the updated draft before Monday.');
       break;
+    }
     case 'send':
-      await handleSend(html, args.week, args.confirm, args.automated, draft);
+      await handleSend(
+        html,
+        subject,
+        args.week,
+        args.confirm,
+        args.automated,
+        draft
+      );
       break;
   }
 

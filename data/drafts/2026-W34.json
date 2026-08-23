@@ -946,5 +946,13 @@
         "notes": "Băile Herculane train station, a historic monument, to be restored. No similar past articles found."
       }
     ]
+  },
+  "deliveryLock": {
+    "version": 1,
+    "approvedSha256": "115676ce01f048694de4b91ee2e96e7057159b2773275f220fdbe8a6cc095742",
+    "approvedAt": "2026-08-23T07:22:49.881Z",
+    "testedSha256": "115676ce01f048694de4b91ee2e96e7057159b2773275f220fdbe8a6cc095742",
+    "testedAt": "2026-08-23T07:25:35.013Z",
+    "testMessageId": "7ae65238-9481-4c21-bc44-092351e4fd05"
   }
 }

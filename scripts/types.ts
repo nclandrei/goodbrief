@@ -99,6 +99,16 @@ export interface DraftValidation {
   replacements?: DraftValidationReplacement[];
   agentReviewed?: DraftValidationAgentReviewedArticle[];
 }
+
+export interface DraftDeliveryLock {
+  version: 1;
+  approvedSha256: string;
+  approvedAt: string;
+  testedSha256?: string;
+  testedAt?: string;
+  testMessageId?: string;
+}
+
 export interface ProcessedArticle {
   id: string;
   sourceId: string;
@@ -138,6 +148,7 @@ export interface NewsletterDraft {
   totalProcessed: number;
   wrapperCopy?: WrapperCopy;
   validation?: DraftValidation;
+  deliveryLock?: DraftDeliveryLock;
 }
 
 export interface PipelineDeduplicationSummary {

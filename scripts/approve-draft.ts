@@ -10,6 +10,7 @@
 
 import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
+import { lockDraftForDelivery } from './lib/draft-delivery.js';
 import { resolveProjectRoot } from './lib/project-root.js';
 import { MIN_SENDABLE_ARTICLE_COUNT } from './lib/newsletter-policy.js';
 import type { NewsletterDraft } from './types.js';
@@ -53,12 +54,15 @@ function main(): void {
     checkedAt: now,
   };
 
+  const deliverySha256 = lockDraftForDelivery(draft, now);
+
   writeFileSync(draftPath, JSON.stringify(draft, null, 2) + '\n');
 
   console.log(`Draft ${weekId} approved (editor-review).`);
   console.log(`  Selected articles: ${draft.selected.length}`);
   console.log(`  Reserves: ${draft.reserves?.length || 0}`);
   console.log(`  Approved at: ${now}`);
+  console.log(`  Delivery SHA-256: ${deliverySha256}`);
   console.log('\nRemember to commit and push this change.');
 }
 
