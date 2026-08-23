@@ -161,6 +161,7 @@ REVIEW CRITERIA:
 15. Hard exclusion: reject nostalgia bait and mainstream commercial festivals, including Nostalgia and Untold
 16. Hard exclusion: reject routine Bacalaureat grade, average, pass-rate, or appeal/regrading stories; a changed or perfect score alone is not meaningful newsletter news
 17. Title quality: do not keep source labels such as "FOTO", "VIDEO", or "INTERVIU" in display titles
+18. Factual tense: reject or correct any title or summary that turns a plan, capacity, attendance target, or scheduled event into a completed outcome
 
 TASK:
 - Review the current selection critically

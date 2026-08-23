@@ -1,6 +1,6 @@
 import type { ProcessedArticle } from '../../types.js';
 import type { LlmProviderName } from './provider.js';
-import { LlmProviderError } from './provider.js';
+import { LlmOutputError, LlmProviderError } from './provider.js';
 
 export interface NaturalTitle {
   id: string;
@@ -55,7 +55,7 @@ Rules:
 - Remove quote hooks, rhetorical questions, ALL CAPS, emoji, source names, and stacked headline decks.
 - Avoid clickbait and marketing language such as „spectaculos”, „incredibil”, „de succes”, „fără precedent”, „cucerește”, and „gustul copilăriei”.
 - Avoid AI formulas such as „scrie istorie”, „pune România pe hartă”, „un pas important”, „un nou capitol”, „o dovadă că”, „rază de speranță”, „schimbă jocul”, and „mai mult decât”.
-- Use sentence case and Romanian diacritics. Do not end with punctuation.
+- Use sentence case and Romanian diacritics. Do not end with sentence punctuation. A balanced closing quote is allowed only when the headline ends with a quoted proper name or event name.
 - A source headline may stay unchanged when it already sounds natural and satisfies every rule.
 
 Examples:
@@ -85,7 +85,7 @@ export function normalizeNaturalTitlesResponse(
 ): NaturalTitle[] {
   const titles = (payload as Partial<NaturalTitlesResponse> | null)?.titles;
   if (!Array.isArray(titles)) {
-    throw new LlmProviderError(
+    throw new LlmOutputError(
       provider,
       'generateNaturalTitles: expected an object with a titles array'
     );
@@ -105,7 +105,7 @@ export function normalizeNaturalTitlesResponse(
 
   for (const item of titles) {
     if (!item || typeof item.id !== 'string' || typeof item.title !== 'string') {
-      throw new LlmProviderError(
+      throw new LlmOutputError(
         provider,
         'generateNaturalTitles: every result must contain string id and title fields'
       );
@@ -117,34 +117,34 @@ export function normalizeNaturalTitlesResponse(
     // through the hard quality gate below.
     const title = item.title.trim().replace(/\.$/u, '').trimEnd();
     if (!requestedIds.has(item.id)) {
-      throw new LlmProviderError(
+      throw new LlmOutputError(
         provider,
         `generateNaturalTitles: unexpected article ID ${item.id}`
       );
     }
     if (byId.has(item.id)) {
-      throw new LlmProviderError(
+      throw new LlmOutputError(
         provider,
         `generateNaturalTitles: duplicate article ID ${item.id}`
       );
     }
     if (!title) {
-      throw new LlmProviderError(
+      throw new LlmOutputError(
         provider,
         `generateNaturalTitles: empty title for article ID ${item.id}`
       );
     }
     if (title.length > 110) {
-      throw new LlmProviderError(
+      throw new LlmOutputError(
         provider,
-        `generateNaturalTitles: title for article ID ${item.id} exceeds 110 characters`
+        `generateNaturalTitles: title for article ID ${item.id} exceeds 110 characters; ${formatRejectedTitle(title)}`
       );
     }
     const qualityError = getNaturalTitleQualityError(title);
     if (qualityError) {
-      throw new LlmProviderError(
+      throw new LlmOutputError(
         provider,
-        `generateNaturalTitles: headline quality rule failed for article ID ${item.id}: ${qualityError}`
+        `generateNaturalTitles: headline quality rule failed for article ID ${item.id}: ${qualityError}; ${formatRejectedTitle(title)}`
       );
     }
     byId.set(item.id, title);
@@ -154,7 +154,7 @@ export function normalizeNaturalTitlesResponse(
     .map((article) => article.id)
     .filter((id) => !byId.has(id));
   if (missingIds.length > 0) {
-    throw new LlmProviderError(
+    throw new LlmOutputError(
       provider,
       `generateNaturalTitles: missing article IDs ${missingIds.join(', ')}`
     );
@@ -171,6 +171,38 @@ const FORBIDDEN_TITLE_PHRASES = [
   'doctor de bine',
   'români din lume',
 ] as const;
+
+const INLINE_TERMINAL_QUOTE_PAIRS = [
+  ['„', '”'],
+  ['“', '”'],
+  ['"', '"'],
+] as const;
+
+function hasBalancedInlineTerminalQuote(title: string): boolean {
+  return INLINE_TERMINAL_QUOTE_PAIRS.some(([opening, closing]) => {
+    if (!title.endsWith(closing)) return false;
+
+    const closingIndex = title.length - closing.length;
+    const openingIndex = title.lastIndexOf(opening, closingIndex - 1);
+
+    // The opening quote must follow some unquoted headline text. A quote at
+    // index zero is still the quote-hook pattern the editorial rules reject.
+    return openingIndex > 0 && openingIndex + opening.length < closingIndex;
+  });
+}
+
+function formatRejectedTitle(title: string): string {
+  const characters = Array.from(title);
+  const preview = characters.slice(0, 120).join('');
+  const finalCharacter = characters.at(-1);
+  const finalCodePoint = finalCharacter
+    ? `U+${finalCharacter.codePointAt(0)!.toString(16).toUpperCase().padStart(4, '0')}`
+    : 'none';
+
+  return `rejectedTitle=${JSON.stringify(
+    `${preview}${characters.length > 120 ? '…' : ''}`
+  )}, finalCharacter=${JSON.stringify(finalCharacter || '')} (${finalCodePoint})`;
+}
 
 function getNaturalTitleQualityError(title: string): string | null {
   const lowerTitle = title.toLocaleLowerCase('ro-RO');
@@ -196,11 +228,11 @@ function getNaturalTitleQualityError(title: string): string | null {
   ) {
     return 'emoji';
   }
-  if (/\p{P}$/u.test(title)) {
-    return 'terminal punctuation';
-  }
-  if (/^["'„“”]|["'„“”]$/u.test(title)) {
+  if (/^["'„“”]/u.test(title)) {
     return 'quote hook';
+  }
+  if (/\p{P}$/u.test(title) && !hasBalancedInlineTerminalQuote(title)) {
+    return 'terminal punctuation';
   }
 
   const letters = title.match(/\p{L}/gu)?.join('') || '';

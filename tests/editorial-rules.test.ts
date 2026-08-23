@@ -66,6 +66,16 @@ test('editorial rules block routine Republic of Moldova stories but allow except
     }),
     null
   );
+
+  assert.equal(
+    getEditorialBlockReason({
+      originalTitle:
+        'Peste 165 de obiective rurale participă la Noaptea Muzeelor la Sate',
+      summary:
+        'Evenimentul are loc în România, iar între participanți sunt și 13 obiective din Republica Moldova.',
+    }),
+    null
+  );
 });
 
 test('editorial rules block routine Bacalaureat grade stories', () => {
@@ -120,6 +130,18 @@ test('editorial rules block trauma-led recovery stories with varied rescue langu
   for (const story of blockedStories) {
     assert.equal(getEditorialBlockReason(story), 'negative-premise-with-happy-ending');
   }
+});
+
+test('editorial rules block support stories whose core premise is a disaster aftermath', () => {
+  assert.equal(
+    getEditorialBlockReason({
+      originalTitle:
+        'Primăria prelungește decontarea chiriilor pentru locatarii blocului din Rahova afectat de explozie',
+      summary:
+        'Familiile afectate primesc încă un an de sprijin financiar pentru chirie.',
+    }),
+    'negative-premise-with-happy-ending'
+  );
 });
 
 test('editorial rules block W33 bear rescue from shooting (4a714ccb8beb792e)', () => {

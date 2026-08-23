@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { FallbackLlmProvider } from '../scripts/lib/llm/fallback-provider.js';
 import {
+  LlmOutputError,
   LlmProviderError,
   LlmQuotaError,
 } from '../scripts/lib/llm/provider.js';
@@ -139,6 +140,30 @@ test('Fallback: switches title generation to the fallback provider on quota', as
   assert.deepEqual(titles, [{ id: 'article-1', title: 'Titlul firesc' }]);
 });
 
+test('Fallback: switches title generation when the primary returns invalid model output', async () => {
+  let fallbackCalls = 0;
+  const primary = stubProvider('gemini', {
+    generateNaturalTitles: async () => {
+      throw new LlmOutputError(
+        'gemini',
+        'generateNaturalTitles: headline quality rule failed'
+      );
+    },
+  });
+  const fallback = stubProvider('claude-cli', {
+    generateNaturalTitles: async () => {
+      fallbackCalls++;
+      return [{ id: 'article-1', title: 'Titlul firesc' }];
+    },
+  });
+
+  const wrapped = new FallbackLlmProvider(primary, fallback);
+  const titles = await wrapped.generateNaturalTitles('2026-W34', [PROCESSED]);
+
+  assert.equal(fallbackCalls, 1);
+  assert.deepEqual(titles, [{ id: 'article-1', title: 'Titlul firesc' }]);
+});
+
 test('Fallback: does NOT catch non-quota LlmProviderError by default', async () => {
   const primary = stubProvider('gemini', {
     scoreArticles: async () => {
@@ -175,6 +200,26 @@ test('Fallback: if both fail with quota, rethrows the fallback error', async () 
     () => wrapped.scoreArticles([RAW], { includeReasoning: false }),
     (err: unknown) =>
       err instanceof LlmQuotaError && /claude quota/.test((err as Error).message)
+  );
+});
+
+test('Fallback: if both providers return invalid output, rethrows the fallback error', async () => {
+  const primary = stubProvider('gemini', {
+    generateNaturalTitles: async () => {
+      throw new LlmOutputError('gemini', 'primary invalid output');
+    },
+  });
+  const fallback = stubProvider('claude-cli', {
+    generateNaturalTitles: async () => {
+      throw new LlmOutputError('claude-cli', 'fallback invalid output');
+    },
+  });
+
+  const wrapped = new FallbackLlmProvider(primary, fallback);
+  await assert.rejects(
+    () => wrapped.generateNaturalTitles('2026-W34', [PROCESSED]),
+    (error: unknown) =>
+      error instanceof LlmOutputError && /fallback invalid output/.test(error.message)
   );
 });
 

@@ -124,6 +124,8 @@ For each article, provide:
    - Start with the key fact (who did what)
    - Add context if needed (why it matters)
    - End with impact (what this means for people)
+   - Preserve tense, timing, certainty, and targets exactly. Never turn a plan, capacity, attendance target, or scheduled event into a completed outcome.
+   - A present-tense headline can describe a future event. Unless the source explicitly says the result already happened, keep it scheduled or prospective.
    - Avoid formal language ("potrivit surselor", "în cadrul", "menționăm că")
    - Example good: "Cluj-Napoca și-a redeschis parcul central după o renovare de 2 milioane de euro. Acum are piste de biciclete, spații de joacă noi și WiFi gratuit."
    - Example bad: "Potrivit surselor, autoritățile locale au finalizat lucrările de modernizare..."

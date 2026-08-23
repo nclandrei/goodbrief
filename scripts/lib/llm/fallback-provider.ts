@@ -13,15 +13,15 @@ import type {
   ScoreBatchOptions,
   SemanticDedupResponse,
 } from './provider.js';
-import { LlmQuotaError } from './provider.js';
+import { LlmOutputError, LlmQuotaError } from './provider.js';
 import type { NaturalTitle } from './natural-title-prompt.js';
 
 /**
  * Wraps a primary + fallback pair. Every method tries the primary first;
- * if the primary throws `LlmQuotaError`, the call is transparently retried
- * against the fallback provider. Any other error (invalid request, parse
- * failure, etc.) is rethrown without touching the fallback — those failures
- * would just repeat on a different backend.
+ * if the primary hits quota or returns invalid model output, the call is
+ * transparently retried against the fallback provider. Request, auth, and
+ * other operational errors are rethrown because a different model backend
+ * cannot safely repair them.
  */
 export class FallbackLlmProvider implements LlmProvider {
   readonly primary: LlmProvider;
@@ -41,9 +41,16 @@ export class FallbackLlmProvider implements LlmProvider {
     try {
       return await fn(this.primary);
     } catch (error) {
-      if (error instanceof LlmQuotaError) {
+      if (
+        error instanceof LlmQuotaError ||
+        error instanceof LlmOutputError
+      ) {
+        const reason =
+          error instanceof LlmQuotaError
+            ? 'hit quota'
+            : 'returned invalid output';
         console.warn(
-          `[llm] primary ${this.primary.name} hit quota on ${op}; falling back to ${this.fallback.name}`
+          `[llm] primary ${this.primary.name} ${reason} on ${op}; falling back to ${this.fallback.name}: ${error.message}`
         );
         return await fn(this.fallback);
       }

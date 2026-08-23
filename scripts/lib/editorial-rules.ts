@@ -46,6 +46,12 @@ const RESCUE_RESOLUTION_PATTERN =
 const DANGER_PREMISE_PATTERN =
   /(?:bebelu[șs]|copil|copii|b[ăa]iat|b[ăa]tr[âa]n|minor|încuiat|incuiat|blocat|captiv|disp[ăa]rut|r[ăa]t[ăa]cit|munte|f[ăa]r[ăa]\s+provizii|extenuat|accident|fractur|c[ăa]zut|arsur|[îi]mpu[șs]c|p[âa]r[âa]u|scaun(?:ul)?\s+rulant|incendiu|înec|inec|spital|urgen[țt][ăa])/iu;
 
+const DISASTER_PREMISE_PATTERN =
+  /\b(?:exploz(?:ie|ii)|incendiu|inunda[țt]ie|cutremur|accident)\b/iu;
+
+const DISASTER_AFTERMATH_SUPPORT_PATTERN =
+  /\b(?:afectat[ăa]?|locatar(?:i|ii)?|famili(?:e|i|ile)|chiri(?:e|a|i|ile|ilor)|decont(?:are|area|eaz[ăa])|sprijin\s+financiar|ajutor|desp[ăa]gubir(?:e|i)|repara[țt]i(?:e|i|ile)|reconstruc[țt]ie)\b/iu;
+
 const CRIME_RESOLUTION_PATTERN =
   /(?:ho[țt]i|ho[țt]ul|furt|t[âa]lh[ăa]rie|jaf|flagrant|poli[țt]i[șs]ti|prins|prin[șs]i|arestat)/iu;
 
@@ -150,7 +156,7 @@ export function getEditorialBlockReason(article: EditorialArticle): string | nul
   }
 
   if (
-    REPUBLIC_OF_MOLDOVA_PATTERNS.some((pattern) => pattern.test(text)) &&
+    REPUBLIC_OF_MOLDOVA_PATTERNS.some((pattern) => pattern.test(title)) &&
     !EXCEPTIONAL_MOLDOVA_PATTERNS.some((pattern) => pattern.test(text))
   ) {
     return 'routine-republic-of-moldova-story';
@@ -169,6 +175,13 @@ export function getEditorialBlockReason(article: EditorialArticle): string | nul
 
   if (CRIME_RESOLUTION_PATTERN.test(text)) {
     return 'crime-resolution';
+  }
+
+  if (
+    DISASTER_PREMISE_PATTERN.test(title) &&
+    DISASTER_AFTERMATH_SUPPORT_PATTERN.test(text)
+  ) {
+    return 'negative-premise-with-happy-ending';
   }
 
   if (RESCUE_RESOLUTION_PATTERN.test(text) && DANGER_PREMISE_PATTERN.test(text)) {

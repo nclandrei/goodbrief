@@ -4,7 +4,10 @@ import {
   buildNaturalTitlesPrompt,
   normalizeNaturalTitlesResponse,
 } from '../scripts/lib/llm/natural-title-prompt.js';
-import { LlmProviderError } from '../scripts/lib/llm/provider.js';
+import {
+  LlmOutputError,
+  LlmProviderError,
+} from '../scripts/lib/llm/provider.js';
 import type { ProcessedArticle } from '../scripts/types.js';
 
 const ARTICLE: ProcessedArticle = {
@@ -32,6 +35,7 @@ test('natural-title prompt encodes the W32 editorial voice and caveat rules', ()
   assert.match(prompt, /completed result/i);
   assert.match(prompt, /scrie istorie/);
   assert.match(prompt, /Add no facts/i);
+  assert.match(prompt, /balanced closing quote/i);
   assert.match(prompt, /Example summary:.*Iosefina/i);
   assert.match(prompt, /Example summary:.*Munții Apuseni/i);
 });
@@ -96,6 +100,7 @@ test('natural-title validation rejects deterministic headline anti-patterns', ()
     'Elevii lansează un proiect nou — VIDEO',
     'Titlu firesc…',
     'Titlu firesc,',
+    '„Titlu firesc”',
   ];
 
   for (const title of invalidTitles) {
@@ -105,11 +110,41 @@ test('natural-title validation rejects deterministic headline anti-patterns', ()
           titles: [{ id: ARTICLE.id, title }],
         }),
       (error: unknown) =>
-        error instanceof LlmProviderError &&
+        error instanceof LlmOutputError &&
         /headline quality rule/.test(error.message),
       title
     );
   }
+});
+
+test('natural-title validation allows a balanced quoted name at the end', () => {
+  const titles = normalizeNaturalTitlesResponse('gemini', [ARTICLE], {
+    titles: [
+      {
+        id: ARTICLE.id,
+        title:
+          'Peste 165 de muzee participă la „Noaptea Muzeelor la Sate”',
+      },
+    ],
+  });
+
+  assert.equal(
+    titles[0].title,
+    'Peste 165 de muzee participă la „Noaptea Muzeelor la Sate”'
+  );
+});
+
+test('natural-title output errors include bounded rejected-title diagnostics', () => {
+  assert.throws(
+    () =>
+      normalizeNaturalTitlesResponse('gemini', [ARTICLE], {
+        titles: [{ id: ARTICLE.id, title: 'Titlu firesc?' }],
+      }),
+    (error: unknown) =>
+      error instanceof LlmOutputError &&
+      /rejectedTitle="Titlu firesc\?"/.test(error.message) &&
+      /U\+003F/.test(error.message)
+  );
 });
 
 test('natural-title validation normalizes a trailing period from provider output', () => {

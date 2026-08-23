@@ -86,6 +86,22 @@ export class LlmProviderError extends Error {
 }
 
 /**
+ * Thrown when a provider returns a response that violates the requested
+ * structured-output or editorial contract. Retrying the same request on a
+ * different provider can recover from this model-specific output drift.
+ */
+export class LlmOutputError extends LlmProviderError {
+  constructor(
+    provider: LlmProviderName,
+    message: string,
+    options: { cause?: unknown } = {}
+  ) {
+    super(provider, message, { retryable: false, cause: options.cause });
+    this.name = 'LlmOutputError';
+  }
+}
+
+/**
  * Thrown when the underlying provider is out of quota, rate-limited, or has
  * had its access revoked. Always non-retryable for the originating provider,
  * but a higher layer may fall back to a different provider.

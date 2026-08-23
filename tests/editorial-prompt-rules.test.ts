@@ -40,6 +40,8 @@ test('scoring prompt states hard editorial exclusions before articles are scored
   assert.match(prompt, /Nostalgia|Untold/);
   assert.match(prompt, /commercial festivals/i);
   assert.match(prompt, /Bacalaureat.*(?:grade|average|appeal)/i);
+  assert.match(prompt, /target.*completed outcome/i);
+  assert.match(prompt, /present-tense headline.*future event/i);
 });
 
 test('scoring contract requires an explicit editorial-interest judgment', () => {
@@ -74,6 +76,7 @@ test('refine prompt tells reviewer to reject hard exclusions and editorial title
   assert.match(prompt, /Nostalgia|Untold/);
   assert.match(prompt, /commercial festivals/i);
   assert.match(prompt, /Bacalaureat.*(?:grade|average|appeal)/i);
+  assert.match(prompt, /target.*completed outcome/i);
 });
 
 test('refine prompt shows the editorial title and the source headline', () => {
