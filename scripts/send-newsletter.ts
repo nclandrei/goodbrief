@@ -10,11 +10,23 @@ import type { NewsletterDraft } from './types.js';
 import { sendAlert } from './lib/alert.js';
 import { resolveProjectRoot } from './lib/project-root.js';
 import {
+  assertDraftReadyForProduction,
   assertDraftValidated,
   recordDraftTestDelivery,
 } from './lib/draft-delivery.js';
 import { buildNewsletterEmail } from './lib/newsletter-email.js';
 import { formatValidationNotesForConsole } from './lib/validation-notes.js';
+import {
+  createDesiredNewsletterDelivery,
+  loadNewsletterDeliveryManifest,
+  reconcileNewsletterDelivery,
+  ResendNewsletterBroadcastGateway,
+  saveNewsletterDeliveryManifest,
+} from './lib/newsletter-delivery.js';
+import {
+  canMutateNewsletterDelivery,
+  getNewsletterDeliveryAt,
+} from './lib/newsletter-schedule.js';
 
 const ROOT_DIR = resolveProjectRoot(import.meta.url);
 
@@ -24,6 +36,7 @@ interface CliArgs {
   week: string;
   confirm: boolean;
   automated: boolean;
+  scheduleAt?: string;
 }
 
 function parseArgs(): CliArgs {
@@ -33,6 +46,7 @@ function parseArgs(): CliArgs {
   let week = '';
   let confirm = false;
   let automated = false;
+  let scheduleAt: string | undefined;
 
   for (let i = 0; i < args.length; i++) {
     const arg = args[i];
@@ -50,6 +64,9 @@ function parseArgs(): CliArgs {
     } else if (arg === '--automated') {
       automated = true;
       confirm = true;
+    } else if (arg === '--schedule-at' && args[i + 1]) {
+      scheduleAt = args[i + 1];
+      i++;
     }
   }
 
@@ -63,7 +80,7 @@ function parseArgs(): CliArgs {
     process.exit(1);
   }
 
-  return { mode, week, confirm, automated };
+  return { mode, week, confirm, automated, scheduleAt };
 }
 
 function getDraftPath(weekId: string): string {
@@ -80,7 +97,13 @@ function loadDraft(weekId: string): NewsletterDraft {
   }
 
   const content = readFileSync(draftPath, 'utf-8');
-  return JSON.parse(content) as NewsletterDraft;
+  const draft = JSON.parse(content) as NewsletterDraft;
+  if (draft.weekId !== weekId) {
+    throw new Error(
+      `Draft identity mismatch: requested ${weekId}, but ${draftPath} contains ${draft.weekId}.`
+    );
+  }
+  return draft;
 }
 
 function saveDraft(weekId: string, draft: NewsletterDraft): void {
@@ -172,16 +195,20 @@ async function handleTest(
 async function handleSend(
   html: string,
   subject: string,
+  deliverySha256: string,
   weekId: string,
   confirm: boolean,
   automated: boolean,
-  draft: NewsletterDraft
+  draft: NewsletterDraft,
+  scheduledAt?: string
 ): Promise<void> {
   if (!confirm) {
     console.error(
       'Error: --confirm flag is required to send to all subscribers'
     );
-    console.error('Run: npm run email:send -- --week ' + weekId + ' --confirm');
+    console.error(
+      `Run the Prepare Newsletter Delivery GitHub workflow for ${weekId}.`
+    );
     process.exit(1);
   }
 
@@ -200,7 +227,20 @@ async function handleSend(
     process.exit(1);
   }
 
-  assertDraftValidated(draft, 'newsletter delivery');
+  assertDraftReadyForProduction(draft, 'newsletter delivery');
+
+  if (!scheduledAt) {
+    throw new Error(
+      'Production delivery requires --schedule-at. Immediate subscriber sends are disabled.'
+    );
+  }
+
+  const expectedScheduledAt = getNewsletterDeliveryAt(weekId).toISOString();
+  if (scheduledAt !== expectedScheduledAt) {
+    throw new Error(
+      `Refusing unexpected delivery time ${scheduledAt}; ${weekId} must be delivered at ${expectedScheduledAt} (09:00 Europe/Bucharest).`
+    );
+  }
 
   const apiKey = process.env.RESEND_API_KEY;
   const segmentId =
@@ -216,57 +256,43 @@ async function handleSend(
     process.exit(1);
   }
 
-  const resend = new Resend(apiKey);
+  const desired = createDesiredNewsletterDelivery({
+    weekId,
+    segmentId,
+    scheduledAt,
+    subject,
+    html,
+    deliverySha256,
+  });
+  const gateway = new ResendNewsletterBroadcastGateway(apiKey);
+  const existingManifest = loadNewsletterDeliveryManifest(ROOT_DIR, weekId);
 
-  const { data: broadcast, error: broadcastError } =
-    await resend.broadcasts.create({
-      segmentId,
-      from: 'Good Brief <buna@goodbrief.ro>',
-      replyTo: 'hello@goodbrief.ro',
-      subject,
-      html,
+  try {
+    const manifest = await reconcileNewsletterDelivery({
+      desired,
+      gateway,
+      manifest: existingManifest,
+      allowMutations: canMutateNewsletterDelivery(weekId),
     });
-
-  if (broadcastError || !broadcast) {
+    const manifestPath = saveNewsletterDeliveryManifest(ROOT_DIR, manifest);
+    console.log(`✓ Broadcast ${manifest.broadcastId} is ${manifest.remoteStatus}`);
+    console.log(`✓ Delivery fixed at ${manifest.scheduledAt}`);
+    console.log(`✓ Delivery manifest saved to ${manifestPath}`);
+  } catch (error) {
     await sendAlert({
-      title: 'Newsletter send failed',
+      title: 'Newsletter scheduling failed',
       weekId,
-      reason: 'Failed to create Resend broadcast',
-      details: JSON.stringify(broadcastError, null, 2),
+      reason: 'Could not safely reconcile the Resend broadcast',
+      details: error instanceof Error ? error.message : String(error),
       actionItems: [
         'Check the Resend dashboard at <a href="https://resend.com/broadcasts">resend.com/broadcasts</a>',
-        'Verify the RESEND_API_KEY and RESEND_SEGMENT_ID are correct',
-        'Check if your Resend account has sending limits',
-        `Run manually: <code>npm run email:send -- --week ${weekId} --confirm</code>`,
+        `Check the delivery manifest for ${weekId} in <code>data/deliveries/</code>`,
+        'Confirm that the draft is editor-approved and still matches its delivery lock',
+        `Rerun the Send Newsletter workflow manually for week ${weekId}; it will reconcile the same broadcast rather than create a duplicate`,
       ],
     });
-    console.error('Error creating broadcast:', broadcastError);
-    process.exit(1);
+    throw error;
   }
-
-  console.log(`✓ Broadcast created: ${broadcast.id}`);
-  console.log('Sending to all subscribers...');
-
-  const { error: sendError } = await resend.broadcasts.send(broadcast.id);
-
-  if (sendError) {
-    await sendAlert({
-      title: 'Newsletter send failed',
-      weekId,
-      reason: 'Broadcast created but failed to send',
-      details: `Broadcast ID: ${broadcast.id}\nError: ${JSON.stringify(sendError, null, 2)}`,
-      actionItems: [
-        `Check the broadcast status at <a href="https://resend.com/broadcasts/${broadcast.id}">Resend dashboard</a>`,
-        'The broadcast may have been created but not sent - check if you can retry from the dashboard',
-        'Verify your Resend account has enough sending quota',
-        `If the broadcast shows as "draft", you can send it manually from the Resend dashboard`,
-      ],
-    });
-    console.error('Error sending broadcast:', sendError);
-    process.exit(1);
-  }
-
-  console.log(`✓ Newsletter sent to all subscribers!`);
 }
 
 // Main entry point
@@ -318,10 +344,12 @@ async function main(): Promise<void> {
       await handleSend(
         html,
         subject,
+        deliverySha256,
         args.week,
         args.confirm,
         args.automated,
-        draft
+        draft,
+        args.scheduleAt
       );
       break;
   }

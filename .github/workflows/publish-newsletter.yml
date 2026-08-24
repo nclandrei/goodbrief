@@ -1,19 +1,16 @@
-name: Prepare Newsletter Delivery
+name: Verify and Publish Newsletter
 
 on:
   schedule:
-    # Resend, not the Actions runner, holds the 09:00 delivery time. The later
-    # runs are idempotent recovery passes if GitHub drops a cron or approval is late.
-    - cron: '17 20 * * 0'
+    # The first pass allows Resend queueing; the second is the strict watchdog.
+    - cron: '30 9 * * 1'
       timezone: 'Europe/Bucharest'
-    - cron: '17 23 * * 0'
-      timezone: 'Europe/Bucharest'
-    - cron: '17 6 * * 1'
+    - cron: '30 10 * * 1'
       timezone: 'Europe/Bucharest'
   workflow_dispatch:
     inputs:
       week:
-        description: 'Exact draft week to prepare or reschedule (e.g. 2026-W35)'
+        description: 'Exact delivered draft week to verify (e.g. 2026-W35)'
         required: true
         type: string
 
@@ -26,7 +23,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  prepare:
+  verify_and_publish:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -40,13 +37,13 @@ jobs:
           node-version: '20'
       - run: npm ci
 
-      - name: Resolve exact edition and delivery time
+      - name: Resolve exact delivered edition
         id: schedule
         env:
           REQUESTED_WEEK: ${{ inputs.week }}
         run: >-
           npx tsx scripts/resolve-newsletter-schedule.ts
-          --phase prepare
+          --phase verify
           --week "$REQUESTED_WEEK"
 
       - name: Require the current default-branch revision
@@ -59,30 +56,12 @@ jobs:
             exit 1
           fi
 
-      - name: Check delivery preflight
+      - name: Check publication preflight
         id: preflight
         run: npx tsx scripts/check-send-preflight.ts --week ${{ steps.schedule.outputs.week_id }}
 
-      - name: Alert and stop when the exact draft is missing
-        if: steps.preflight.outputs.draft_exists != 'true'
-        env:
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-          TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
-        run: |
-          npm run alert-missing-draft -- ${{ steps.schedule.outputs.week_id }} "Exact draft file not found"
-          exit 1
-
-      - name: Require final editor approval and delivery lock
-        if: steps.preflight.outputs.draft_exists == 'true'
-        run: >-
-          npx tsx scripts/assert-draft-ready.ts
-          --week ${{ steps.schedule.outputs.week_id }}
-          --action "production newsletter scheduling"
-          --production
-
       - name: Pin the approved draft snapshot
         id: draft_pin
-        if: steps.preflight.outputs.draft_exists == 'true'
         env:
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
           DRAFT_PATH: data/drafts/${{ steps.schedule.outputs.week_id }}.json
@@ -96,56 +75,66 @@ jobs:
           fi
           echo "blob=$local_blob" >> "$GITHUB_OUTPUT"
 
-      - name: Reconcile the Resend broadcast
-        if: steps.preflight.outputs.draft_exists == 'true'
-        run: >-
-          npm run email:send --
-          --week ${{ steps.schedule.outputs.week_id }}
-          --automated
-          --schedule-at ${{ steps.schedule.outputs.scheduled_at }}
+      - name: Verify Resend delivery
+        id: delivery
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           RESEND_SEGMENT_ID: ${{ secrets.RESEND_SEGMENT_ID }}
-          TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
+          ALLOW_PENDING_EVENT: ${{ github.event.schedule == '30 9 * * 1' && 'true' || 'false' }}
+        run: |
+          args=(
+            --week "${{ steps.schedule.outputs.week_id }}"
+            --scheduled-at "${{ steps.schedule.outputs.scheduled_at }}"
+          )
+          local_time=$(TZ=Europe/Bucharest date +%H%M)
+          if [ "$ALLOW_PENDING_EVENT" = "true" ] && [ "$local_time" -lt 1030 ]; then
+            args+=(--allow-pending)
+          fi
+          npx tsx scripts/verify-newsletter-delivery.ts "${args[@]}"
 
-      - name: Hold delivery if the approved draft changed during scheduling
-        if: steps.preflight.outputs.draft_exists == 'true'
+      - name: Publish verified issue to website
+        if: steps.delivery.outputs.ready_to_publish == 'true' && steps.preflight.outputs.issue_exists != 'true'
+        run: npm run publish-issue -- --week ${{ steps.schedule.outputs.week_id }}
+
+      - name: Record verified archive publication
+        if: steps.delivery.outputs.ready_to_publish == 'true'
+        run: npx tsx scripts/record-newsletter-published.ts --week ${{ steps.schedule.outputs.week_id }}
+
+      - name: Stop if the approved draft changed during verification
+        if: steps.delivery.outputs.ready_to_publish == 'true'
         env:
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
           DRAFT_PATH: data/drafts/${{ steps.schedule.outputs.week_id }}.json
           PINNED_DRAFT_BLOB: ${{ steps.draft_pin.outputs.blob }}
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
         run: |
           git fetch origin "$DEFAULT_BRANCH"
           remote_blob=$(git rev-parse "origin/$DEFAULT_BRANCH:$DRAFT_PATH" 2>/dev/null || true)
           if [ "$remote_blob" != "$PINNED_DRAFT_BLOB" ]; then
-            npx tsx scripts/hold-newsletter-delivery.ts --week ${{ steps.schedule.outputs.week_id }}
-            echo "The approved draft changed while scheduling. The old snapshot is on hold; rerun the workflow."
+            echo "The approved draft changed during verification; refusing to publish the stale snapshot."
             exit 1
           fi
 
-      - name: Commit delivery manifest
-        id: manifest_commit
-        if: steps.preflight.outputs.draft_exists == 'true'
+      - name: Commit verified issue and delivery state
+        id: publication_commit
+        if: steps.delivery.outputs.ready_to_publish == 'true'
         run: |
           git config user.name "Andrei-Mihai Nicolae"
           git config user.email "andrei@nicolaeandrei.com"
-          git add "data/deliveries/${{ steps.schedule.outputs.week_id }}.json"
+          git add content/issues/ "data/deliveries/${{ steps.schedule.outputs.week_id }}.json"
           if git diff --staged --quiet; then
             echo "has_changes=false" >> "$GITHUB_OUTPUT"
           else
-            git commit -m "chore: record delivery for ${{ steps.schedule.outputs.week_id }}"
+            git commit -m "chore: publish verified issue for ${{ steps.schedule.outputs.week_id }}"
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Push delivery manifest
-        if: steps.manifest_commit.outputs.has_changes == 'true'
+      - name: Push verified publication
+        if: steps.publication_commit.outputs.has_changes == 'true'
         uses: nick-fields/retry@v3
         env:
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
           DRAFT_PATH: data/drafts/${{ steps.schedule.outputs.week_id }}.json
           PINNED_DRAFT_BLOB: ${{ steps.draft_pin.outputs.blob }}
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
         with:
           timeout_minutes: 4
           max_attempts: 3
@@ -154,15 +143,13 @@ jobs:
             git fetch origin "$DEFAULT_BRANCH"
             remote_blob=$(git rev-parse "origin/$DEFAULT_BRANCH:$DRAFT_PATH" 2>/dev/null || true)
             if [ "$remote_blob" != "$PINNED_DRAFT_BLOB" ]; then
-              npx tsx scripts/hold-newsletter-delivery.ts --week ${{ steps.schedule.outputs.week_id }}
-              echo "The approved draft changed before the manifest push. The old snapshot is on hold."
+              echo "The approved draft changed before publication was pushed."
               exit 1
             fi
             git pull --rebase
             current_blob=$(git rev-parse "HEAD:$DRAFT_PATH" 2>/dev/null || true)
             if [ "$current_blob" != "$PINNED_DRAFT_BLOB" ]; then
-              npx tsx scripts/hold-newsletter-delivery.ts --week ${{ steps.schedule.outputs.week_id }}
-              echo "The approved draft changed during rebase. The old snapshot is on hold."
+              echo "The approved draft changed during rebase."
               exit 1
             fi
             git push
@@ -176,7 +163,7 @@ jobs:
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
         run: |
           npm run alert-workflow-failure -- \
-            --workflow "Prepare Newsletter Delivery" \
+            --workflow "Verify and Publish Newsletter" \
             --run-url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
 
       - name: Open a GitHub incident if email alerting failed
@@ -187,6 +174,6 @@ jobs:
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `[Newsletter] Delivery workflow failed (run ${context.runId})`,
-              body: `The newsletter delivery workflow failed and its Resend email alert also failed.\n\nRun: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              title: `[Newsletter] Verification workflow failed (run ${context.runId})`,
+              body: `The newsletter verification workflow failed and its Resend email alert also failed.\n\nRun: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
             });

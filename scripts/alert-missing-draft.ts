@@ -51,18 +51,18 @@ async function main(): Promise<void> {
   <p><strong>Time:</strong> ${new Date().toLocaleString('ro-RO')}</p>
   
   <h2 style="margin-top: 24px;">What happened?</h2>
-  <p>The Monday automated send workflow could not find a valid draft for this week.</p>
+  <p>The automated delivery-preparation workflow could not find the exact draft for this week.</p>
   
   <h2 style="margin-top: 24px;">What to do?</h2>
   <ol>
     <li>Check if the draft exists at <code>data/drafts/${weekId}.json</code></li>
     <li>If missing, run <code>npm run generate-draft</code> manually</li>
-    <li>Then run <code>npm run email:send -- --week ${weekId} --confirm</code></li>
+    <li>Approve the final draft, push it, then manually run the <strong>Prepare Newsletter Delivery</strong> GitHub workflow for <code>${weekId}</code></li>
   </ol>
   
   <hr style="margin-top: 32px; border: none; border-top: 1px solid #e5e7eb;">
   <p style="color: #666; font-size: 12px;">
-    This alert was sent by the Good Brief Monday send workflow.
+    This alert was sent by the Good Brief delivery-preparation workflow.
   </p>
 </body>
 </html>

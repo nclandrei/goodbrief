@@ -5,6 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import type { NewsletterDraft } from '../scripts/types.js';
 import {
+  assertDraftReadyForProduction,
   assertDraftValidated,
   lockDraftForDelivery,
   recordDraftTestDelivery,
@@ -177,14 +178,55 @@ test('reapproval clears a stale test record after newsletter content changes', (
   assert.equal(draft.deliveryLock?.testMessageId, undefined);
 });
 
-test('scheduled Monday delivery resolves the previous ISO week instead of the latest draft', () => {
+test('production delivery requires explicit editor approval', () => {
+  const draft = makeLockedDraft();
+  draft.validation!.approvalSource = 'validation-pipeline';
+  lockDraftForDelivery(draft, '2026-08-23T07:22:49.881Z');
+
+  assert.doesNotThrow(() =>
+    assertDraftValidated(draft, 'newsletter preview')
+  );
+  assert.throws(
+    () => assertDraftReadyForProduction(draft, 'newsletter delivery'),
+    /not editor-approved/
+  );
+
+  draft.validation!.approvalSource = 'editor-review';
+  assert.doesNotThrow(() =>
+    assertDraftReadyForProduction(draft, 'newsletter delivery')
+  );
+});
+
+test('production workflow resolves an exact week and never selects the latest draft', () => {
   const workflow = readFileSync(
     join(WORKSPACE_ROOT, '.github', 'workflows', 'send-newsletter.yml'),
     'utf-8'
   );
 
-  assert.match(workflow, /date -u (?:--date|-d) ['"]7 days ago['"] \+%G-W%V/);
+  assert.match(workflow, /resolve-newsletter-schedule\.ts/);
+  assert.match(workflow, /--production/);
+  assert.match(workflow, /required: true/);
   assert.doesNotMatch(workflow, /LATEST_DRAFT/);
+});
+
+test('production readiness rejects a filename and JSON week mismatch', async () => {
+  const tempRoot = mkdtempSync(join(tmpdir(), 'goodbrief-draft-identity-'));
+  mkdirSync(join(tempRoot, 'data', 'drafts'), { recursive: true });
+  const draft = makeLockedDraft();
+  writeFileSync(
+    join(tempRoot, 'data', 'drafts', '2026-W35.json'),
+    JSON.stringify(draft),
+    'utf-8'
+  );
+
+  await assert.rejects(
+    runTypeScriptScript(
+      join(WORKSPACE_ROOT, 'scripts', 'assert-draft-ready.ts'),
+      ['--week', '2026-W35', '--production'],
+      { GOODBRIEF_ROOT_DIR: tempRoot }
+    ),
+    /Draft identity mismatch/
+  );
 });
 
 test('send preflight reports an existing issue so the workflow can skip duplicate sends', async () => {

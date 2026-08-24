@@ -26,7 +26,7 @@ npm run test             # Run test suite
 npm run email:dev                            # React Email dev server (localhost:3001)
 npm run email:preview -- --week 2026-W12     # Preview newsletter HTML in browser
 npm run email:test -- --week 2026-W12        # Send test to TEST_EMAIL
-npm run email:send -- --week 2026-W12 --confirm  # Send to all subscribers
+# Subscriber delivery is scheduled only by the Send Newsletter GitHub workflow
 
 # Pipeline (staged, each phase reads previous output)
 npm run ingest-news           # Fetch RSS feeds → data/raw/
@@ -137,7 +137,8 @@ in env to auto-fall-back on quota errors.
 
 - **ingest-news.yml**: Every 6h — `ingest-news` → `cleanup-raw-data` → commit + push
 - **generate-newsletter.yml**: Saturday 10:00 UTC — staged pipeline (prepare → score → semantic-dedup → validate → select → natural-titles → wrapper-copy → refine) → materialize draft → validate freshness → commit → proof email
-- **send-newsletter.yml**: Monday 03:17 UTC (05:17 Romania winter, 06:17 summer) — preflight checks → send (with concurrency guard) → publish issue → commit; alerts if draft missing
+- **send-newsletter.yml**: Sunday evening plus recovery passes — exact-week editor approval → persisted Resend broadcast → Monday 09:00 Europe/Bucharest delivery
+- **publish-newsletter.yml**: Monday 09:30/10:30 Europe/Bucharest — verify the matching Resend broadcast is sent → publish issue → commit
 
 ## Key Constraints
 - No persistent backend — static site + edge functions + external services

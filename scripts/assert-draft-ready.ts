@@ -2,19 +2,24 @@
 
 import { existsSync, readFileSync } from 'fs';
 import { join } from 'path';
-import { assertDraftValidated } from './lib/draft-delivery.js';
+import {
+  assertDraftReadyForProduction,
+  assertDraftValidated,
+} from './lib/draft-delivery.js';
 import { resolveProjectRoot } from './lib/project-root.js';
 import type { NewsletterDraft } from './types.js';
 
 interface CliArgs {
   weekId: string;
   action: string;
+  production: boolean;
 }
 
 function parseArgs(): CliArgs {
   const args = process.argv.slice(2);
   let weekId = '';
   let action = 'newsletter delivery';
+  let production = false;
 
   for (let i = 0; i < args.length; i += 1) {
     const arg = args[i];
@@ -24,6 +29,8 @@ function parseArgs(): CliArgs {
     } else if (arg === '--action' && args[i + 1]) {
       action = args[i + 1];
       i += 1;
+    } else if (arg === '--production') {
+      production = true;
     }
   }
 
@@ -31,7 +38,7 @@ function parseArgs(): CliArgs {
     throw new Error('Missing required --week argument');
   }
 
-  return { weekId, action };
+  return { weekId, action, production };
 }
 
 function loadDraft(rootDir: string, weekId: string): NewsletterDraft {
@@ -45,10 +52,21 @@ function loadDraft(rootDir: string, weekId: string): NewsletterDraft {
 
 function main(): void {
   const rootDir = resolveProjectRoot(import.meta.url);
-  const { weekId, action } = parseArgs();
+  const { weekId, action, production } = parseArgs();
   const draft = loadDraft(rootDir, weekId);
-  assertDraftValidated(draft, action);
-  console.log(`Draft ${weekId} is validated for ${action}.`);
+  if (draft.weekId !== weekId) {
+    throw new Error(
+      `Draft identity mismatch: requested ${weekId}, but the file contains ${draft.weekId}.`
+    );
+  }
+
+  if (production) {
+    assertDraftReadyForProduction(draft, action);
+    console.log(`Draft ${weekId} is editor-approved for ${action}.`);
+  } else {
+    assertDraftValidated(draft, action);
+    console.log(`Draft ${weekId} is validated for ${action}.`);
+  }
 }
 
 try {

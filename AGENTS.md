@@ -23,7 +23,7 @@ npm run test        # Run Node.js test suite (tests/**/*.test.ts)
 npm run email:dev                           # React Email dev server (localhost:3001)
 npm run email:preview -- --week 2026-W02    # Preview newsletter HTML in browser
 npm run email:test -- --week 2026-W02       # Send test newsletter to TEST_EMAIL
-npm run email:send -- --week 2026-W02 --confirm  # Send to all subscribers
+# Subscriber delivery is scheduled only by the Send Newsletter GitHub workflow
 npx tsx scripts/send-welcome-test.ts        # Send test welcome email to TEST_EMAIL
 
 # Newsletter Pipeline
@@ -110,6 +110,8 @@ Avoid adding new planning docs unless the task explicitly asks for them.
 ### Resend (Newsletter + Transactional Email)
 - Subscribe form posts to `/api/subscribe` (Cloudflare Function: `functions/api/subscribe.ts`)
 - Audience-based newsletter sending uses `RESEND_AUDIENCE_ID` and `RESEND_SEGMENT_ID`
+- Production broadcasts are keyed by exact draft week in `data/deliveries/`; Resend never selects a draft itself
+- For a final edit before delivery: edit the draft, run `npm run approve-draft -- --week YYYY-WXX`, push, then manually rerun `send-newsletter.yml` for that week so it cancels/updates/reschedules the same broadcast
 - Requires DNS setup: SPF, DKIM, DMARC
 
 ### Cloudflare
@@ -119,7 +121,8 @@ Avoid adding new planning docs unless the task explicitly asks for them.
 ## CI/CD Workflows
 - `ingest-news.yml`: every 6 hours + manual trigger; retries `npm run ingest-news`, runs `npm run cleanup-raw-data`, and retries `git pull --rebase && git push` with Git LFS retry tuning
 - `generate-newsletter.yml`: Saturday 10:00 UTC + manual trigger; runs staged pipeline jobs (`prepare` → `score` → `semantic-dedup` → `counter-signal-validate` → `select` → `natural-titles` → `wrapper-copy` → `refine`), materializes draft output, validates freshness, commits `data/pipeline/` + `data/drafts/`, then sends proof email via `npm run notify-draft`
-- `send-newsletter.yml`: Monday 03:17 UTC (05:17 Romania winter, 06:17 summer) + manual trigger; adds send concurrency guard, runs preflight checks (`check-send-preflight` + `assert-draft-ready`), skips duplicate sends when issue already exists, sends with `--automated`, publishes issue, alerts if draft missing
+- `send-newsletter.yml`: prepares Sunday 20:17 Europe/Bucharest with Sunday-night/Monday-morning recovery passes; requires exact-week editor approval, reconciles a persisted Resend broadcast, and schedules Monday 09:00 Europe/Bucharest across DST
+- `publish-newsletter.yml`: verifies Resend delivery Monday at 09:30 with a strict 10:30 watchdog, then publishes the matching website issue; scheduled content is never published early
 - Failure alerting in scheduled workflows uses `npm run alert-workflow-failure`
 
 ## Important Notes

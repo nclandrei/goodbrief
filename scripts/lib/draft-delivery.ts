@@ -112,3 +112,21 @@ export function assertDraftValidated(draft: NewsletterDraft, action: string): vo
     `Draft ${draft.weekId} is not validated for ${action}. Current validation status: ${status}.`
   );
 }
+
+/**
+ * Production scheduling is a human decision. Automated pipeline validation can
+ * create previews and content locks, but it cannot authorize a subscriber send.
+ */
+export function assertDraftReadyForProduction(
+  draft: NewsletterDraft,
+  action: string
+): void {
+  assertDraftValidated(draft, action);
+
+  if (draft.validation?.approvalSource !== 'editor-review') {
+    const approvalSource = draft.validation?.approvalSource || 'missing';
+    throw new Error(
+      `Draft ${draft.weekId} is not editor-approved for ${action}. Current approval source: ${approvalSource}. Run approve-draft after the final edit.`
+    );
+  }
+}

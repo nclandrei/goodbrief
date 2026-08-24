@@ -31,7 +31,7 @@ async function main() {
 
   console.log(`Sending workflow failure alert for: ${workflow}`);
 
-  await sendAlert({
+  const sent = await sendAlert({
     title: `${workflow} workflow failed`,
     reason: 'The GitHub Actions workflow failed during execution',
     workflowRunUrl: runUrl,
@@ -43,11 +43,18 @@ async function main() {
     ],
   });
 
+  if (!sent) {
+    throw new Error(
+      'The workflow failed and the Resend alert could not be delivered.'
+    );
+  }
+
   console.log('✓ Alert sent');
 }
 
 main().catch((error) => {
   console.error('Failed to send alert:', error);
-  // Don't exit with error - we don't want to mask the original failure
-  process.exit(0);
+  // The workflow already failed. A non-zero exit lets the independent GitHub
+  // incident fallback know that email alerting also failed.
+  process.exit(1);
 });
