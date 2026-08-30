@@ -1031,12 +1031,20 @@ test('refine phase filters hard violations without reintroducing omitted stories
     shortSummary: 'Rezumat rafinat.',
     reasoning: 'Am adus mai multă substanță instituțională.',
   });
+  const finalWrapperMockPath = join(tempRoot, 'final-wrapper-copy-mock.json');
+  writeJson(finalWrapperMockPath, {
+    greeting: 'Salut!',
+    intro: 'Intro regenerat pentru selecția finală.',
+    signOff: 'Pe curând!',
+    shortSummary: 'Rezumat regenerat pentru selecția finală.',
+  });
 
   writeJson(join(pipelineDir, '05a-natural-titles.json'), shortlistArtifact);
   writeJson(join(pipelineDir, PIPELINE_ARTIFACT_FILENAMES['wrapper-copy']), wrapperArtifact);
 
   await runPhase(tempRoot, 'refine', {
     GOODBRIEF_REFINEMENT_MOCK_FILE: refinementMockPath,
+    GOODBRIEF_WRAPPER_COPY_MOCK_FILE: finalWrapperMockPath,
   });
 
   const refinedDraft = JSON.parse(
@@ -1070,6 +1078,10 @@ test('refine phase filters hard violations without reintroducing omitted stories
   assert.equal(
     refinedDraft.selected.every((article: ProcessedArticle) => Boolean(article.title)),
     true
+  );
+  assert.equal(
+    refinedDraft.wrapperCopy?.intro,
+    'Intro regenerat pentru selecția finală.'
   );
   assert.ok(
     refinedDraft.selected.filter((article: ProcessedArticle) => {

@@ -921,6 +921,22 @@ export async function runRefinePhase(
     lookbackLabel: `last ${historical.issueFilesLoaded} published issues + ${historical.draftFilesLoaded} draft weeks`,
   });
 
+  const originalSelectedIds = new Set(
+    shortlist.data.selected.map((article) => article.id)
+  );
+  const selectionChanged =
+    originalSelectedIds.size !== refined.selected.length ||
+    refined.selected.some((article) => !originalSelectedIds.has(article.id));
+  let finalWrapperCopy = refined.wrapperCopy;
+  if (selectionChanged) {
+    console.log(
+      'Selection changed during refinement; regenerating wrapper copy from the final stories...'
+    );
+    finalWrapperCopy =
+      loadMockJson<WrapperCopy>('GOODBRIEF_WRAPPER_COPY_MOCK_FILE') ||
+      (await llm.generateWrapperCopy(weekId, refined.selected));
+  }
+
   const draftValidation = filterValidationForArticles(
     shortlist.data.validation,
     [...refined.selected, ...refined.reserves]
@@ -932,7 +948,7 @@ export async function runRefinePhase(
     reserves: refined.reserves,
     discarded: shortlist.data.discarded,
     totalProcessed: shortlist.data.totalProcessed,
-    wrapperCopy: refined.wrapperCopy,
+    wrapperCopy: finalWrapperCopy,
     validation: draftValidation,
   };
 
