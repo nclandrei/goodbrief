@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W35",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-08-30T11:37:34.314Z",
+  "inputFile": "05a-natural-titles.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Bună dimineața! 👋",
+      "intro": "Săptămâna asta România strălucește prin fapte mici și mari: refugiații ucraineni ne-au dăruit flori de speranță, fermierii noștri au făcut record la grâu, iar bucureștenii au 46 de km de piste noi pentru bicicletă. Hai să vedem ce bune am adunat pentru tine.",
+      "signOff": "Merci că ești cu noi! Sperăm că ți-am încărcat bateria de optimism pentru săptămâna asta. 🙏",
+      "shortSummary": "România exportă record de grâu, piste de bicicletă în București, și mâini care salvează biserici."
+    }
+  }
+}

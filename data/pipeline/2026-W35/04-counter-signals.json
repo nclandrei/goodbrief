@@ -1,0 +1,27 @@
+{
+  "weekId": "2026-W35",
+  "phase": "counter-signal-validate",
+  "generatedAt": "2026-08-30T11:42:02.998Z",
+  "inputFile": "draft:2026-W35",
+  "data": {
+    "validation": {
+      "generatedAt": "2026-08-30T11:41:47.903Z",
+      "candidateCount": 40,
+      "flagged": [
+        {
+          "candidateId": "6a0ee792f284cbd3",
+          "verdict": "borderline",
+          "penaltyApplied": 10,
+          "reason": "Articolul candidat prezintă oferta AWS drept o oportunitate pentru studenții din România, dar coverage-ul conex din aceeași săptămână relevă o perspective mai largă: programul se adresează studenților din peste 60 de țări, inclusiv România, nu este o inițiativă dedicată exclusiv României. Această nuanță context reduce impactul și caracterul de \"win\" românesc specific. Pentru un newsletter de știri pozitive, această clarificare este importantă ca să nu se creeaze o impresie de favoritism sau oportunitate unică pentru România, când de fapt e parte dintr-un program global. Verdictul este borderline deoarece articolul rămâne pozitiv și relevant, dar necesită editor-ul să aprecieze dacă contextul global diminuează relevanța pentru publicul român.",
+          "relatedArticleIds": [
+            "46d2fe483ce654c7"
+          ],
+          "relatedArticleTitles": [
+            "Amazon Web Services oferă cursuri gratuite de cloud și inteligență artificială studenților din România"
+          ],
+          "generatedAt": "2026-08-30T11:41:47.903Z"
+        }
+      ]
+    }
+  }
+}
