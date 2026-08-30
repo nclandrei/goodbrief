@@ -15,7 +15,7 @@
 # What it does:
 #   1. Preflight: checks `claude` CLI, `git-lfs`, `claude auth status`
 #   2. Optionally restores the latest diagnostics artifact from a GitHub run
-#   3. git lfs pull data/raw/<week>.json so prepare has real input
+#   3. Hydrate the LFS pointer at data/raw/<week>.json when needed
 #   4. npm run pipeline:run-all -- --week <w> --llm claude-cli --skip-existing
 #      (resumable: re-run and it skips completed phases)
 #   5. npm run validate-draft + validate-draft-freshness for the exact week
@@ -86,10 +86,13 @@ if [[ -n "$RUN_ID" ]] && ! [[ "$RUN_ID" =~ ^[0-9]+$ ]]; then
   exit 1
 fi
 
-# Always run from the repo root so relative paths resolve consistently.
-REPO_ROOT="$(git rev-parse --show-toplevel 2>/dev/null || true)"
-if [[ -z "$REPO_ROOT" ]]; then
-  echo "Error: must be run inside a git clone of goodbrief" >&2
+# Resolve from this script, not Git's shared top-level. In a colocated jj
+# workspace, Git points at the primary checkout and would silently run stale
+# code and write recovery artifacts there.
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
+REPO_ROOT="$(cd -- "$SCRIPT_DIR/.." && pwd -P)"
+if [[ ! -f "$REPO_ROOT/package.json" || ! -f "$REPO_ROOT/scripts/pipeline-run-all.ts" ]]; then
+  echo "Error: could not resolve the goodbrief checkout from $SCRIPT_DIR" >&2
   exit 1
 fi
 cd "$REPO_ROOT"
@@ -157,18 +160,26 @@ if [[ -n "$RUN_ID" ]]; then
 fi
 
 # --- 3. Raw buffer ---
-step "Pulling LFS buffer data/raw/$WEEK.json"
+step "Hydrating LFS buffer data/raw/$WEEK.json"
 
 RAW_FILE="data/raw/$WEEK.json"
-git lfs pull --include="$RAW_FILE" || fail "git lfs pull failed"
-
 if [[ ! -f "$RAW_FILE" ]]; then
   fail "$RAW_FILE does not exist. Did the ingest-news workflow run for this week?"
 fi
 
-# Detect lingering LFS pointer (happens when the proxy blocks LFS traffic).
 if head -c 64 "$RAW_FILE" | grep -q "git-lfs.github.com"; then
-  fail "$RAW_FILE is still an LFS pointer. Check git-lfs config and auth."
+  # A worktree-level LFS pull updates Git's primary checkout, not a colocated
+  # jj workspace. Smudge the pointer explicitly into this checkout instead.
+  RAW_TMP="$(mktemp "${RAW_FILE}.tmp.XXXXXX")" || fail "could not create LFS hydration temp file"
+  if ! git lfs smudge "$RAW_FILE" < "$RAW_FILE" > "$RAW_TMP"; then
+    rm -f "$RAW_TMP"
+    fail "git lfs smudge failed"
+  fi
+  if [[ ! -s "$RAW_TMP" ]] || head -c 64 "$RAW_TMP" | grep -q "git-lfs.github.com"; then
+    rm -f "$RAW_TMP"
+    fail "$RAW_FILE is still an LFS pointer. Check git-lfs config and auth."
+  fi
+  mv "$RAW_TMP" "$RAW_FILE"
 fi
 
 ok "raw buffer ready ($(wc -c < "$RAW_FILE" | tr -d ' ') bytes)"

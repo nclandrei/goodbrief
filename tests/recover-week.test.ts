@@ -14,6 +14,10 @@ test('recover-week restores optional diagnostics and runs both validation gates'
   assert.match(script, /--run-id/);
   assert.match(script, /gh run download/);
   assert.match(script, /pipeline-diagnostics-\$WEEK-/);
+  assert.match(script, /BASH_SOURCE\[0\]/);
+  assert.doesNotMatch(script, /git rev-parse --show-toplevel/);
+  assert.match(script, /git lfs smudge/);
+  assert.doesNotMatch(script, /git lfs pull/);
   assert.match(script, /validate-draft -- "\$\{VALIDATION_ARGS\[@\]\}"/);
   assert.match(script, /validate-draft-freshness/);
   assert.ok(
