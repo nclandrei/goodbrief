@@ -1,25 +1,27 @@
 {
   "weekId": "2026-W35",
   "phase": "counter-signal-validate",
-  "generatedAt": "2026-08-30T11:42:02.998Z",
+  "generatedAt": "2026-08-30T12:56:07.254Z",
   "inputFile": "draft:2026-W35",
   "data": {
     "validation": {
-      "generatedAt": "2026-08-30T11:41:47.903Z",
+      "generatedAt": "2026-08-30T12:55:51.283Z",
       "candidateCount": 40,
       "flagged": [
         {
-          "candidateId": "6a0ee792f284cbd3",
+          "candidateId": "422b7e187e300d5e",
           "verdict": "borderline",
           "penaltyApplied": 10,
-          "reason": "Articolul candidat prezintă oferta AWS drept o oportunitate pentru studenții din România, dar coverage-ul conex din aceeași săptămână relevă o perspective mai largă: programul se adresează studenților din peste 60 de țări, inclusiv România, nu este o inițiativă dedicată exclusiv României. Această nuanță context reduce impactul și caracterul de \"win\" românesc specific. Pentru un newsletter de știri pozitive, această clarificare este importantă ca să nu se creeaze o impresie de favoritism sau oportunitate unică pentru România, când de fapt e parte dintr-un program global. Verdictul este borderline deoarece articolul rămâne pozitiv și relevant, dar necesită editor-ul să aprecieze dacă contextul global diminuează relevanța pentru publicul român.",
+          "reason": "Articolul candidat este o retransmitere de meci pe VOYO Sport 1, nu o știre de progres sau rezultat pozitiv confirmat. Relatările aferente din aceeași săptămână conțin aceeași informație (duelul decisiv, meci pe 27 august la Erevan, transmisie live), fără a aduce vreo veste nouă sau confirmare de calificare. Pentru o newsletter de știri pozitive, articolul ar fi mai potrivit după confirmare unui rezultat favorabil, nu doar ca anunț de meci viitor. Lipsa unui rezultat concret și prezența doar a promisiunilor de meci îl fac puțin slab pentru o selecție de 'good news'.",
           "relatedArticleIds": [
-            "46d2fe483ce654c7"
+            "94a33ca99c9c195b",
+            "f70f47c11d67b81c"
           ],
           "relatedArticleTitles": [
-            "Amazon Web Services oferă cursuri gratuite de cloud și inteligență artificială studenților din România"
+            "Universitatea Craiova, duel decisiv cu Ararat-Armenia. Meciul va fi LIVE pe VOYO Sport 1, joi, de la 19:00",
+            "Totul se decide la Erevan. Universitatea Craiova joacă pentru calificarea în Europa League, joi, exclusiv pe VOYO Sport 1"
           ],
-          "generatedAt": "2026-08-30T11:41:47.903Z"
+          "generatedAt": "2026-08-30T12:55:51.283Z"
         }
       ]
     }

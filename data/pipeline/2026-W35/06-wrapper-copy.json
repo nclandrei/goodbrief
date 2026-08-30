@@ -1,14 +1,14 @@
 {
   "weekId": "2026-W35",
   "phase": "wrapper-copy",
-  "generatedAt": "2026-08-30T11:37:34.314Z",
+  "generatedAt": "2026-08-30T12:55:33.088Z",
   "inputFile": "05a-natural-titles.json",
   "data": {
     "wrapperCopy": {
       "greeting": "Bună dimineața! 👋",
-      "intro": "Săptămâna asta România strălucește prin fapte mici și mari: refugiații ucraineni ne-au dăruit flori de speranță, fermierii noștri au făcut record la grâu, iar bucureștenii au 46 de km de piste noi pentru bicicletă. Hai să vedem ce bune am adunat pentru tine.",
-      "signOff": "Merci că ești cu noi! Sperăm că ți-am încărcat bateria de optimism pentru săptămâna asta. 🙏",
-      "shortSummary": "România exportă record de grâu, piste de bicicletă în București, și mâini care salvează biserici."
+      "intro": "Săptămâna aceasta, proiectele care fac viața mai bună prind contur: Clujul inaugurează un centru de neurochirurgie, Bucureștiul deschide un nou tronson din Parcul Liniei, iar doi antreprenori români lansează o aplicație pentru siguranța persoanelor în vârstă. Avem și o recoltă-record de grâu, un record mondial la canotaj și prima comunitate energetică înregistrată în România.",
+      "signOff": "Mulțumim că citești Good Brief – sperăm că ți-am făcut ziua mai bună. 🙏",
+      "shortSummary": "Un nou centru de neurochirurgie la Cluj, patru hectare de parc în București și proiecte românești care aduc rezultate concrete."
     }
   }
 }
