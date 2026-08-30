@@ -5,15 +5,20 @@ import { join } from 'node:path';
 
 const REPO_ROOT = process.cwd();
 
-test('recover-week runs the draft freshness archive gate', () => {
+test('recover-week restores optional diagnostics and runs both validation gates', () => {
   const script = readFileSync(
     join(REPO_ROOT, 'scripts', 'recover-week.sh'),
     'utf-8'
   );
 
+  assert.match(script, /--run-id/);
+  assert.match(script, /gh run download/);
+  assert.match(script, /pipeline-diagnostics-\$WEEK-/);
+  assert.match(script, /validate-draft -- "\$\{VALIDATION_ARGS\[@\]\}"/);
   assert.match(script, /validate-draft-freshness/);
-  assert.doesNotMatch(
-    script,
-    /npm run --silent validate-draft -- --week "\$WEEK" --llm claude-cli/
+  assert.ok(
+    script.indexOf('validate-draft -- "${VALIDATION_ARGS[@]}"') <
+      script.indexOf('validate-draft-freshness -- "${VALIDATION_ARGS[@]}"'),
+    'same-week validation should run before archive freshness validation'
   );
 });

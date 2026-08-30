@@ -10,14 +10,16 @@
 #   scripts/recover-week.sh --week 2026-W15 --auto-publish
 #   scripts/recover-week.sh --week 2026-W15 --fallback gemini
 #   scripts/recover-week.sh --week 2026-W15 --from score
+#   scripts/recover-week.sh --week 2026-W15 --run-id 33258942573
 #
 # What it does:
 #   1. Preflight: checks `claude` CLI, `git-lfs`, `claude auth status`
-#   2. git lfs pull data/raw/<week>.json so prepare has real input
-#   3. npm run pipeline:run-all -- --week <w> --llm claude-cli --skip-existing
+#   2. Optionally restores the latest diagnostics artifact from a GitHub run
+#   3. git lfs pull data/raw/<week>.json so prepare has real input
+#   4. npm run pipeline:run-all -- --week <w> --llm claude-cli --skip-existing
 #      (resumable: re-run and it skips completed phases)
-#   4. npm run validate-draft-freshness -- --week <w> --llm claude-cli
-#   5. (only with --auto-publish) publish-issue + notify-draft
+#   5. npm run validate-draft + validate-draft-freshness for the exact week
+#   6. (only with --auto-publish) publish-issue + notify-draft
 #
 # Never auto-commits, never git push, never sends the newsletter.
 # You still review the draft + proof email before Monday's send.
@@ -28,6 +30,7 @@ WEEK=""
 AUTO_PUBLISH=0
 FALLBACK=""
 FROM_PHASE=""
+RUN_ID=""
 
 print_usage() {
   # Print every leading comment line (stopping at the first non-# line).
@@ -52,6 +55,10 @@ while [[ $# -gt 0 ]]; do
       FROM_PHASE="${2:-}"
       shift 2
       ;;
+    --run-id)
+      RUN_ID="${2:-}"
+      shift 2
+      ;;
     -h|--help)
       print_usage
       exit 0
@@ -71,6 +78,11 @@ fi
 
 if ! [[ "$WEEK" =~ ^[0-9]{4}-W[0-9]{2}$ ]]; then
   echo "Error: --week must be YYYY-WXX format (got: $WEEK)" >&2
+  exit 1
+fi
+
+if [[ -n "$RUN_ID" ]] && ! [[ "$RUN_ID" =~ ^[0-9]+$ ]]; then
+  echo "Error: --run-id must be a numeric GitHub Actions run ID (got: $RUN_ID)" >&2
   exit 1
 fi
 
@@ -106,6 +118,10 @@ command -v claude  >/dev/null 2>&1 || \
   fail "'claude' CLI not found on PATH. Install Claude Code, then run 'claude login'."
 command -v git-lfs >/dev/null 2>&1 || \
   fail "'git-lfs' not found. Install via: brew install git-lfs  OR  apt install git-lfs"
+if [[ -n "$RUN_ID" ]]; then
+  command -v gh >/dev/null 2>&1 || \
+    fail "'gh' not found. Install GitHub CLI to restore --run-id diagnostics."
+fi
 
 if ! claude auth status >/dev/null 2>&1; then
   warn "claude auth status reports not-logged-in. Run: claude login"
@@ -121,7 +137,26 @@ fi
 
 ok "preflight ok"
 
-# --- 2. Raw buffer ---
+# --- 2. Optional diagnostics restore ---
+if [[ -n "$RUN_ID" ]]; then
+  step "Restoring diagnostics from GitHub run $RUN_ID"
+
+  ARTIFACT_PREFIX="pipeline-diagnostics-$WEEK-"
+  ARTIFACT_NAME="$(
+    gh api "repos/{owner}/{repo}/actions/runs/$RUN_ID/artifacts" \
+      --jq ".artifacts | map(select(.name | startswith(\"$ARTIFACT_PREFIX\"))) | sort_by(.created_at) | last | .name // empty"
+  )" || fail "Could not inspect diagnostics artifacts for GitHub run $RUN_ID"
+
+  if [[ -z "$ARTIFACT_NAME" ]]; then
+    fail "GitHub run $RUN_ID has no diagnostics artifact for $WEEK"
+  fi
+
+  gh run download "$RUN_ID" --name "$ARTIFACT_NAME" --dir data || \
+    fail "Could not download diagnostics artifact $ARTIFACT_NAME"
+  ok "restored $ARTIFACT_NAME"
+fi
+
+# --- 3. Raw buffer ---
 step "Pulling LFS buffer data/raw/$WEEK.json"
 
 RAW_FILE="data/raw/$WEEK.json"
@@ -138,7 +173,7 @@ fi
 
 ok "raw buffer ready ($(wc -c < "$RAW_FILE" | tr -d ' ') bytes)"
 
-# --- 3. Pipeline ---
+# --- 4. Pipeline ---
 step "pipeline:run-all (resumable via --skip-existing)"
 
 PIPELINE_ARGS=(--week "$WEEK" --llm claude-cli --skip-existing)
@@ -151,16 +186,19 @@ DRAFT_FILE="data/drafts/$WEEK.json"
 [[ -f "$DRAFT_FILE" ]] || fail "pipeline completed but $DRAFT_FILE was not created"
 ok "draft at $DRAFT_FILE"
 
-# --- 4. Archive freshness validation ---
+# --- 5. Validation ---
+VALIDATION_ARGS=(--week "$WEEK" --llm claude-cli)
+[[ -n "$FALLBACK" ]] && VALIDATION_ARGS+=(--fallback "$FALLBACK")
+
+step "validate-draft"
+npm run --silent validate-draft -- "${VALIDATION_ARGS[@]}"
+ok "same-week draft validation updated"
+
 step "validate-draft-freshness"
-
-FRESHNESS_ARGS=(--week "$WEEK" --llm claude-cli)
-[[ -n "$FALLBACK" ]] && FRESHNESS_ARGS+=(--fallback "$FALLBACK")
-
-npm run --silent validate-draft-freshness -- "${FRESHNESS_ARGS[@]}"
+npm run --silent validate-draft-freshness -- "${VALIDATION_ARGS[@]}"
 ok "archive freshness validation updated"
 
-# --- 5. Optional publish ---
+# --- 6. Optional publish ---
 if [[ "$AUTO_PUBLISH" -eq 1 ]]; then
   step "publish-issue"
   npm run --silent publish-issue -- --week "$WEEK"

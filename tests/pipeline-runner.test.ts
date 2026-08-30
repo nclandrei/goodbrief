@@ -1139,7 +1139,7 @@ test('generate-draft wrapper produces the same final draft as running phases man
   );
 });
 
-test('verify-local shares the same Saturday phase command order and the workflow runs generation without artifact handoffs', () => {
+test('verify-local shares the Saturday phase order and the workflow supports bounded recovery', () => {
   const selectIndex = SATURDAY_PIPELINE_SCRIPTS.indexOf('pipeline:select');
   assert.deepEqual(
     SATURDAY_PIPELINE_SCRIPTS.slice(selectIndex, selectIndex + 3),
@@ -1168,6 +1168,29 @@ test('verify-local shares the same Saturday phase command order and the workflow
   assert.match(workflow, /materialize-draft-from-pipeline\.ts/);
   assert.match(workflow, /npm run validate-draft -- --week/);
   assert.match(workflow, /npm run validate-draft-freshness/);
-  assert.doesNotMatch(workflow, /actions\/download-artifact@v4/);
+  assert.match(workflow, /resume_run_id:/);
+  assert.match(workflow, /uses: actions\/download-artifact@v4/);
+  assert.match(workflow, /if: inputs\.resume_run_id != ''/);
+  assert.match(workflow, /run-id: \$\{\{ inputs\.resume_run_id \}\}/);
+  assert.match(workflow, /if \[\[ ! "\$WEEK_ID" =~ \^\[0-9\]\{4\}-W\[0-9\]\{2\}\$ \]\]; then/);
+  assert.match(workflow, /if \[ "\$LLM" = "openrouter" \]; then\s+LLM_FALLBACK="gemini"/);
+  assert.match(workflow, /else\s+LLM_FALLBACK="openrouter"/);
+  assert.match(
+    workflow,
+    /LLM_FALLBACK: \$\{\{ needs\.determine_week\.outputs\.llm_fallback \}\}/
+  );
+  assert.doesNotMatch(workflow, /^\s+LLM_FALLBACK: openrouter$/m);
+  assert.match(workflow, /OPENROUTER_MODEL: \$\{\{ vars\.OPENROUTER_MODEL \}\}/);
+  assert.match(workflow, /OPENROUTER_MAX_PROMPT_PRICE_PER_MILLION/);
+  assert.match(workflow, /OPENROUTER_MAX_COMPLETION_PRICE_PER_MILLION/);
+  assert.doesNotMatch(workflow, /:free/);
+  assert.match(workflow, /max_pipeline_attempts=3/);
+  assert.match(workflow, /Retrying from validated checkpoints/);
+  assert.match(workflow, /group: generate-newsletter-\$\{\{ needs\.determine_week\.outputs\.id \}\}/);
+  assert.match(workflow, /cron: '17 8 \* \* 6'/);
+  assert.match(workflow, /cron: '17 7 \* \* 0'/);
+  assert.match(workflow, /data\/drafts\/\$WEEK_ID\.json/);
+  assert.match(workflow, /uses: nick-fields\/retry@v3/);
+  assert.match(workflow, /max_attempts: 3/);
   assert.match(workflow, /continue-on-error: true\s+uses: actions\/upload-artifact@v4/s);
 });

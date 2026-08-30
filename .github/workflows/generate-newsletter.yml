@@ -2,11 +2,16 @@ name: Generate Newsletter Draft
 
 on:
   schedule:
-    - cron: '0 10 * * 6'  # Saturday at 10:00 UTC
+    - cron: '17 8 * * 6'  # Primary run: Saturday at 08:17 UTC
+    - cron: '17 7 * * 0'  # Recovery run: Sunday at 07:17 UTC, only if the draft is absent
   workflow_dispatch:
     inputs:
       week:
         description: 'Week ID (e.g. 2026-W10). Leave empty for current week.'
+        required: false
+        type: string
+      resume_run_id:
+        description: 'Optional failed workflow run ID whose pipeline diagnostics should be restored.'
         required: false
         type: string
       llm_provider:
@@ -19,6 +24,7 @@ on:
           - openrouter
 
 permissions:
+  actions: read
   contents: write
 
 jobs:
@@ -27,32 +33,61 @@ jobs:
     outputs:
       id: ${{ steps.week.outputs.id }}
       llm_provider: ${{ steps.week.outputs.llm_provider }}
+      llm_fallback: ${{ steps.week.outputs.llm_fallback }}
+      should_run: ${{ steps.week.outputs.should_run }}
     steps:
+      - uses: actions/checkout@v4
       - name: Determine week ID and LLM provider
         id: week
+        env:
+          REQUESTED_WEEK: ${{ inputs.week }}
+          REQUESTED_LLM_PROVIDER: ${{ inputs.llm_provider }}
+          TRIGGER_SCHEDULE: ${{ github.event.schedule }}
         run: |
-          if [ -n "${{ inputs.week }}" ]; then
-            echo "id=${{ inputs.week }}" >> "$GITHUB_OUTPUT"
+          if [ -n "$REQUESTED_WEEK" ]; then
+            WEEK_ID="$REQUESTED_WEEK"
           else
             # GitHub cron schedules run in UTC, so derive the ISO week in UTC too.
-            echo "id=$(date -u +%G-W%V)" >> "$GITHUB_OUTPUT"
+            WEEK_ID="$(date -u +%G-W%V)"
           fi
+          if [[ ! "$WEEK_ID" =~ ^[0-9]{4}-W[0-9]{2}$ ]]; then
+            echo "::error::Invalid week ID '$WEEK_ID'; expected YYYY-WXX."
+            exit 1
+          fi
+          echo "id=$WEEK_ID" >> "$GITHUB_OUTPUT"
+
+          SHOULD_RUN=true
+          if [ "$TRIGGER_SCHEDULE" = "17 7 * * 0" ] && [ -f "data/drafts/$WEEK_ID.json" ]; then
+            echo "Draft already exists for $WEEK_ID; skipping Sunday recovery."
+            SHOULD_RUN=false
+          fi
+          echo "should_run=$SHOULD_RUN" >> "$GITHUB_OUTPUT"
 
           # LLM provider: workflow_dispatch input wins; scheduled runs default
-          # to gemini (direct API, reliable free tier). OpenRouter free-tier
-          # models are too aggressively rate-limited for CI reliability.
+          # to Gemini with OpenRouter as the cross-provider fallback. OpenRouter
+          # uses capped paid model defaults to avoid shared free-pool rate limits.
           # claude-cli is deliberately not offered here — it runs only in local
           # recovery mode (see recover-week.sh).
-          LLM="${{ inputs.llm_provider }}"
+          LLM="$REQUESTED_LLM_PROVIDER"
           if [ -z "$LLM" ]; then
             LLM="gemini"
           fi
+          if [ "$LLM" = "openrouter" ]; then
+            LLM_FALLBACK="gemini"
+          else
+            LLM_FALLBACK="openrouter"
+          fi
           echo "llm_provider=$LLM" >> "$GITHUB_OUTPUT"
+          echo "llm_fallback=$LLM_FALLBACK" >> "$GITHUB_OUTPUT"
 
   generate_draft:
     runs-on: ubuntu-latest
     timeout-minutes: 360
     needs: determine_week
+    if: needs.determine_week.outputs.should_run == 'true'
+    concurrency:
+      group: generate-newsletter-${{ needs.determine_week.outputs.id }}
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
         with:
@@ -62,14 +97,45 @@ jobs:
           node-version: '20'
       - run: npm ci
 
+      - name: Restore prior pipeline diagnostics
+        if: inputs.resume_run_id != ''
+        uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ github.token }}
+          run-id: ${{ inputs.resume_run_id }}
+          pattern: pipeline-diagnostics-${{ needs.determine_week.outputs.id }}-*
+          path: data
+          merge-multiple: true
+
       - name: Run full draft pipeline
-        run: npm run pipeline:run-all -- --week ${{ needs.determine_week.outputs.id }} --skip-existing
+        run: |
+          max_pipeline_attempts=3
+          pipeline_attempt=1
+
+          while [ "$pipeline_attempt" -le "$max_pipeline_attempts" ]; do
+            echo "Pipeline attempt $pipeline_attempt/$max_pipeline_attempts"
+            if npm run pipeline:run-all -- --week ${{ needs.determine_week.outputs.id }} --skip-existing; then
+              exit 0
+            fi
+
+            if [ "$pipeline_attempt" -eq "$max_pipeline_attempts" ]; then
+              echo "Pipeline failed after $max_pipeline_attempts attempts."
+              exit 1
+            fi
+
+            retry_delay=$((pipeline_attempt * 30))
+            echo "Retrying from validated checkpoints in ${retry_delay}s..."
+            sleep "$retry_delay"
+            pipeline_attempt=$((pipeline_attempt + 1))
+          done
         env:
           LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
-          LLM_FALLBACK: openrouter
+          LLM_FALLBACK: ${{ needs.determine_week.outputs.llm_fallback }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'google/gemma-4-26b-a4b-it:free' }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
+          OPENROUTER_MAX_PROMPT_PRICE_PER_MILLION: ${{ vars.OPENROUTER_MAX_PROMPT_PRICE_PER_MILLION || '1' }}
+          OPENROUTER_MAX_COMPLETION_PRICE_PER_MILLION: ${{ vars.OPENROUTER_MAX_COMPLETION_PRICE_PER_MILLION || '5' }}
           OPENROUTER_TIMEOUT_MS: '900000'
           OPENROUTER_MAX_RETRIES: '4'
           OPENROUTER_MAX_TOKENS: '32000'
@@ -84,10 +150,12 @@ jobs:
         run: npm run validate-draft -- --week ${{ needs.determine_week.outputs.id }}
         env:
           LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
-          LLM_FALLBACK: openrouter
+          LLM_FALLBACK: ${{ needs.determine_week.outputs.llm_fallback }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'google/gemma-4-26b-a4b-it:free' }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
+          OPENROUTER_MAX_PROMPT_PRICE_PER_MILLION: ${{ vars.OPENROUTER_MAX_PROMPT_PRICE_PER_MILLION || '1' }}
+          OPENROUTER_MAX_COMPLETION_PRICE_PER_MILLION: ${{ vars.OPENROUTER_MAX_COMPLETION_PRICE_PER_MILLION || '5' }}
           OPENROUTER_TIMEOUT_MS: '900000'
           OPENROUTER_MAX_RETRIES: '4'
 
@@ -95,23 +163,43 @@ jobs:
         run: npm run validate-draft-freshness -- --week ${{ needs.determine_week.outputs.id }}
         env:
           LLM_PROVIDER: ${{ needs.determine_week.outputs.llm_provider }}
-          LLM_FALLBACK: openrouter
+          LLM_FALLBACK: ${{ needs.determine_week.outputs.llm_fallback }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'google/gemma-4-26b-a4b-it:free' }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL }}
+          OPENROUTER_MAX_PROMPT_PRICE_PER_MILLION: ${{ vars.OPENROUTER_MAX_PROMPT_PRICE_PER_MILLION || '1' }}
+          OPENROUTER_MAX_COMPLETION_PRICE_PER_MILLION: ${{ vars.OPENROUTER_MAX_COMPLETION_PRICE_PER_MILLION || '5' }}
           OPENROUTER_TIMEOUT_MS: '900000'
           OPENROUTER_MAX_RETRIES: '4'
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
 
       - name: Commit pipeline outputs
+        id: commit_outputs
         run: |
           git config user.name "Andrei-Mihai Nicolae"
           git config user.email "andrei@nicolaeandrei.com"
           git add data/pipeline/${{ needs.determine_week.outputs.id }} data/drafts/${{ needs.determine_week.outputs.id }}.json
-          git diff --staged --quiet || git commit -m "chore: generate draft pipeline for ${{ needs.determine_week.outputs.id }}"
-          git pull --rebase
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git commit -m "chore: generate draft pipeline for ${{ needs.determine_week.outputs.id }}"
+          echo "has_changes=true" >> "$GITHUB_OUTPUT"
+
+      - name: Push pipeline outputs
+        if: steps.commit_outputs.outputs.has_changes == 'true'
+        uses: nick-fields/retry@v3
+        with:
+          timeout_minutes: 4
+          max_attempts: 3
+          retry_wait_seconds: 30
+          command: |
+            git config lfs.transfer.maxretries 12
+            git config lfs.transfer.maxretrydelay 30
+            git pull --rebase
+            git push
 
       - name: Send proof email
         run: npm run notify-draft -- --week ${{ needs.determine_week.outputs.id }}
