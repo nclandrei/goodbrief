@@ -26,6 +26,7 @@ on:
 permissions:
   actions: read
   contents: write
+  issues: write
 
 jobs:
   determine_week:
@@ -231,10 +232,31 @@ jobs:
           node-version: '20'
       - run: npm ci
       - name: Alert on workflow failure
+        id: failure_email
+        continue-on-error: true
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
         run: |
           npm run alert-workflow-failure -- \
             --workflow "Generate Newsletter Draft" \
-            --run-url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            --run-url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            --week "${{ needs.determine_week.outputs.id }}" \
+            --artifact-name "pipeline-diagnostics-${{ needs.determine_week.outputs.id }}-${{ github.run_attempt }}" \
+            --resume-command "gh workflow run generate-newsletter.yml --field week=${{ needs.determine_week.outputs.id }} --field resume_run_id=${{ github.run_id }}"
+
+      - name: Open a GitHub incident if email alerting failed
+        if: steps.failure_email.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const week = '${{ needs.determine_week.outputs.id }}';
+            const runAttempt = '${{ github.run_attempt }}';
+            const artifact = `pipeline-diagnostics-${week}-${runAttempt}`;
+            const resume = `gh workflow run generate-newsletter.yml --field week=${week} --field resume_run_id=${context.runId}`;
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[Newsletter] Generarea ${week || 'fără săptămână'} a eșuat (run ${context.runId})`,
+              body: `Generarea newsletterului a eșuat, iar alerta Resend nu a putut fi livrată.\n\nRun: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}\nArtefact: ${artifact}\nReluare: \`${resume}\``,
+            });
