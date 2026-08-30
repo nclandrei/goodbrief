@@ -3,7 +3,11 @@ import assert from 'node:assert/strict';
 import { mkdtempSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { GeminiProvider } from '../scripts/lib/llm/gemini-provider.js';
+import {
+  GeminiProvider,
+  parseGeminiNaturalTitlesPayload,
+} from '../scripts/lib/llm/gemini-provider.js';
+import { LlmOutputError } from '../scripts/lib/llm/provider.js';
 import type { ProcessedArticle } from '../scripts/types.js';
 
 const ARTICLE: ProcessedArticle = {
@@ -19,6 +23,16 @@ const ARTICLE: ProcessedArticle = {
   publishedAt: '2026-08-08T10:00:00.000Z',
   processedAt: '2026-08-08T12:00:00.000Z',
 };
+
+test('natural-title response parsing maps empty and malformed JSON to LlmOutputError', () => {
+  for (const response of ['', '   ', '{"titles": [']) {
+    assert.throws(
+      () => parseGeminiNaturalTitlesPayload(response),
+      (error: unknown) =>
+        error instanceof LlmOutputError && error.provider === 'gemini'
+    );
+  }
+});
 
 test('generateNaturalTitles reads and validates the deterministic Gemini mock', async () => {
   const originalMockPath = process.env.GOODBRIEF_NATURAL_TITLES_MOCK_FILE;

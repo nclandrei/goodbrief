@@ -63,10 +63,20 @@ OpenRouter-specific overrides (all optional):
 
 ```
 OPENROUTER_API_KEY      # required when --llm openrouter
-OPENROUTER_MODEL        # default: google/gemma-4-26b-a4b-it:free
+OPENROUTER_MODEL        # default: openai/gpt-4.1-mini
+OPENROUTER_FALLBACK_MODELS # default: anthropic/claude-haiku-4.5
+OPENROUTER_MAX_PROMPT_PRICE_PER_MILLION     # default: 1 USD
+OPENROUTER_MAX_COMPLETION_PRICE_PER_MILLION # default: 5 USD
+OPENROUTER_TIMEOUT_MS   # per attempt; default: 180000
+OPENROUTER_MAX_RETRIES  # retries after the first attempt; default: 2
 OPENROUTER_HTTP_REFERER # app attribution (default: https://goodbrief.ro)
 OPENROUTER_APP_TITLE    # app attribution (default: Good Brief)
 ```
+
+The OpenRouter route deliberately uses low-cost paid models behind hard
+per-million-token price ceilings. This keeps scheduled generation off the
+capacity-constrained free pool without allowing an unexpectedly expensive
+provider route.
 
 **CI note:** The `Generate Newsletter Draft` workflow accepts an
 `llm_provider` input (`gemini` | `openrouter`) on `workflow_dispatch`.

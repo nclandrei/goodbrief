@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import type { RawArticle } from '../types.js';
 import type { ArticleScore, GeminiOptions, GeminiCache } from './types.js';
+import { LlmProviderError } from './llm/provider.js';
 
 export const DEFAULT_GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash-lite';
 
@@ -317,6 +318,25 @@ export class GeminiQuotaError extends Error {
   }
 }
 
+/**
+ * A transient Gemini failure that remained unavailable after the bounded
+ * retry budget. It is retryable at the provider-orchestration layer so a
+ * configured non-Gemini fallback can take over.
+ */
+export class GeminiRetryExhaustedError extends LlmProviderError {
+  readonly attempts: number;
+
+  constructor(error: Error, attempts: number) {
+    super(
+      'gemini',
+      `Gemini transient failure after ${attempts} attempts: ${error.message}`,
+      { retryable: true, cause: error }
+    );
+    this.name = 'GeminiRetryExhaustedError';
+    this.attempts = attempts;
+  }
+}
+
 export interface GeminiRetryOptions {
   maxAttempts?: number;
   initialDelayMs?: number;
@@ -329,6 +349,7 @@ export interface GeminiRetryOptions {
 const DEFAULT_INITIAL_RETRY_DELAY_MS = 2000;
 const DEFAULT_MAX_RETRY_DELAY_MS = 60000;
 const DEFAULT_RETRY_JITTER_RATIO = 0.25;
+export const DEFAULT_GEMINI_MAX_ATTEMPTS = 7;
 
 function errorText(error: unknown): string {
   const parts: string[] = [];
@@ -403,27 +424,46 @@ export function isRetryableGeminiError(error: unknown): boolean {
 function normalizeRetryOptions(
   options: number | GeminiRetryOptions | undefined
 ): Required<GeminiRetryOptions> {
-  if (typeof options === 'number') {
-    return {
-      maxAttempts: options,
-      initialDelayMs: DEFAULT_INITIAL_RETRY_DELAY_MS,
-      maxDelayMs: DEFAULT_MAX_RETRY_DELAY_MS,
-      jitterRatio: DEFAULT_RETRY_JITTER_RATIO,
-      random: Math.random,
-      sleep: (ms) => new Promise((resolve) => setTimeout(resolve, ms)),
-    };
+  const optionObject = typeof options === 'number' ? undefined : options;
+  const normalized = {
+    maxAttempts:
+      typeof options === 'number'
+        ? options
+        : optionObject?.maxAttempts ?? DEFAULT_GEMINI_MAX_ATTEMPTS,
+    initialDelayMs:
+      optionObject?.initialDelayMs ?? DEFAULT_INITIAL_RETRY_DELAY_MS,
+    maxDelayMs: optionObject?.maxDelayMs ?? DEFAULT_MAX_RETRY_DELAY_MS,
+    jitterRatio: optionObject?.jitterRatio ?? DEFAULT_RETRY_JITTER_RATIO,
+    random: optionObject?.random ?? Math.random,
+    sleep:
+      optionObject?.sleep ??
+      ((ms: number) => new Promise((resolve) => setTimeout(resolve, ms))),
+  };
+
+  if (
+    !Number.isFinite(normalized.maxAttempts) ||
+    !Number.isInteger(normalized.maxAttempts) ||
+    normalized.maxAttempts < 1
+  ) {
+    throw new Error('Gemini maxAttempts must be a positive finite integer');
+  }
+  for (const [name, value] of [
+    ['initialDelayMs', normalized.initialDelayMs],
+    ['maxDelayMs', normalized.maxDelayMs],
+  ] as const) {
+    if (!Number.isFinite(value) || value < 0) {
+      throw new Error(`Gemini ${name} must be a finite non-negative number`);
+    }
+  }
+  if (
+    !Number.isFinite(normalized.jitterRatio) ||
+    normalized.jitterRatio < 0 ||
+    normalized.jitterRatio > 1
+  ) {
+    throw new Error('Gemini jitterRatio must be between 0 and 1');
   }
 
-  return {
-    maxAttempts: options?.maxAttempts ?? Number.POSITIVE_INFINITY,
-    initialDelayMs: options?.initialDelayMs ?? DEFAULT_INITIAL_RETRY_DELAY_MS,
-    maxDelayMs: options?.maxDelayMs ?? DEFAULT_MAX_RETRY_DELAY_MS,
-    jitterRatio: options?.jitterRatio ?? DEFAULT_RETRY_JITTER_RATIO,
-    random: options?.random ?? Math.random,
-    sleep:
-      options?.sleep ??
-      ((ms) => new Promise((resolve) => setTimeout(resolve, ms))),
-  };
+  return normalized;
 }
 
 export async function callWithRetry<T>(
@@ -462,7 +502,10 @@ export async function callWithRetry<T>(
       }
     }
   }
-  throw lastError;
+  throw new GeminiRetryExhaustedError(
+    lastError ?? new Error('Gemini retry budget exhausted'),
+    retry.maxAttempts
+  );
 }
 
 function loadCache(cachePath: string): GeminiCache {
@@ -515,8 +558,8 @@ export async function processArticleBatch(
       return (JSON.parse(text) as ArticleScore[]).map(withDefaultSignals);
     });
   } catch (error) {
-    // Re-throw quota errors so they can be handled by the caller
-    if (error instanceof GeminiQuotaError) {
+    // Re-throw provider-level failures so orchestration can activate fallback.
+    if (error instanceof GeminiQuotaError || error instanceof LlmProviderError) {
       throw error;
     }
     console.error('Batch processing failed after retries:', error);

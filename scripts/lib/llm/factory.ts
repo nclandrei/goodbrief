@@ -1,7 +1,11 @@
 import type { LlmProvider, LlmProviderName } from './provider.js';
 import { GeminiProvider } from './gemini-provider.js';
 import { ClaudeCliProvider } from './claude-cli-provider.js';
-import { OpenRouterProvider, parseFallbackModels } from './openrouter-provider.js';
+import {
+  OpenRouterProvider,
+  parseFallbackModels,
+  parseOpenRouterPriceCeiling,
+} from './openrouter-provider.js';
 import { FallbackLlmProvider } from './fallback-provider.js';
 
 export interface ProviderSpec {
@@ -21,6 +25,11 @@ function assertValidProvider(name: string): asserts name is LlmProviderName {
       `Unknown LLM provider "${name}". Valid values: ${VALID_PROVIDERS.join(', ')}`
     );
   }
+}
+
+function optionalEnvOverride(raw: string | undefined): string | undefined {
+  const trimmed = raw?.trim();
+  return trimmed ? trimmed : undefined;
 }
 
 /**
@@ -122,10 +131,11 @@ function buildProvider(
       }
       return new OpenRouterProvider({
         apiKey,
-        model: env.OPENROUTER_MODEL,
-        httpReferer: env.OPENROUTER_HTTP_REFERER,
-        appTitle: env.OPENROUTER_APP_TITLE,
+        model: optionalEnvOverride(env.OPENROUTER_MODEL),
+        httpReferer: optionalEnvOverride(env.OPENROUTER_HTTP_REFERER),
+        appTitle: optionalEnvOverride(env.OPENROUTER_APP_TITLE),
         fallbackModels: parseFallbackModels(env.OPENROUTER_FALLBACK_MODELS),
+        priceCeiling: parseOpenRouterPriceCeiling(env),
       });
     }
   }

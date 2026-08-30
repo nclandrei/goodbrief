@@ -49,23 +49,12 @@ const OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions';
  * Literal fallback used when neither `OPENROUTER_MODEL` nor a per-phase
  * override is set. Picked for the Good Brief pipeline:
  *
- * - **Free** (`:free` suffix), so it works under the OpenRouter free tier
- *   and with our `max_price: { prompt: 0, completion: 0 }` guard.
- * - **Non-reasoning** — Gemma 4 does not burn its output-token budget on
- *   internal `<think>` traces (reasoning mode is configurable, off by
- *   default), so large structured outputs fit within `max_tokens`.
- * - **Fast** — MoE architecture activates only 3.8B of 25.2B params per
- *   token, giving near-31B quality at a fraction of the compute cost.
- * - **Strong multilingual** (incl. Romanian) and supports OpenAI-style
- *   `response_format: json_schema` structured outputs.
- * - **Reliably available** — served by Google AI Studio.
- * - 262K context window, 32K max output.
- *
- * History: `deepseek/deepseek-chat-v3.1:free` until 2026-W15 (endpoints
- * removed), then briefly `google/gemma-3-27b-it:free` before upgrading
- * to the faster MoE successor.
+ * GPT-4.1 Mini is inexpensive, supports `response_format: json_schema`, and
+ * is served independently of Google by OpenAI and Azure. The paid, capped
+ * default is deliberate: scheduled generation needs predictable capacity
+ * without exposing the workflow to unbounded provider costs.
  */
-export const DEFAULT_FALLBACK_MODEL = 'google/gemma-4-26b-a4b-it:free';
+export const DEFAULT_FALLBACK_MODEL = 'openai/gpt-4.1-mini';
 
 /**
  * Maximum number of models allowed in OpenRouter's `models` array.
@@ -83,18 +72,42 @@ export const OPENROUTER_MAX_MODELS = 3;
  * fallback should be on a different upstream provider than the primary so
  * that a single provider-wide rate-limit doesn't knock out 2 of 3 models.
  *
- * - `meta-llama/llama-3.3-70b-instruct:free`  — Groq  (different from primary)
- * - `google/gemma-3-27b-it:free`               — Google AI Studio (same as primary, last resort)
+ * Claude Haiku 4.5 is hosted across Anthropic, Azure, and Bedrock as well as
+ * Vertex, so the rotation is not coupled to the primary model family or a
+ * single upstream. It supports JSON-schema structured outputs and fits the
+ * conservative default price ceiling below.
  *
- * OpenRouter limits the `models` array to 3 entries (primary + 2 fallbacks).
- * All are free (`:free` suffix), fast, and non-reasoning. Override with
- * `OPENROUTER_FALLBACK_MODELS` (comma-separated model IDs). Set to empty
- * string to disable fallback rotation entirely.
+ * Override with `OPENROUTER_FALLBACK_MODELS` (comma-separated model IDs). Set
+ * it to an empty string to disable model rotation entirely.
  */
 export const DEFAULT_FALLBACK_MODELS: readonly string[] = [
-  'meta-llama/llama-3.3-70b-instruct:free',
-  'google/gemma-3-27b-it:free',
+  'anthropic/claude-haiku-4.5',
 ];
+
+/** Maximum accepted OpenRouter prompt price, in USD per million tokens. */
+export const DEFAULT_MAX_PROMPT_PRICE_PER_MILLION = 1;
+
+/** Maximum accepted OpenRouter completion price, in USD per million tokens. */
+export const DEFAULT_MAX_COMPLETION_PRICE_PER_MILLION = 5;
+
+export interface OpenRouterPriceCeiling {
+  /** USD per million prompt tokens. */
+  prompt: number;
+  /** USD per million completion tokens. */
+  completion: number;
+}
+
+const MODEL_ID_PATTERN = /^[^\s,/]+\/[^\s,/]+$/u;
+
+function validateModelId(model: string, source: string): string {
+  const trimmed = model.trim();
+  if (!MODEL_ID_PATTERN.test(trimmed)) {
+    throw new Error(
+      `${source} must be an OpenRouter provider/model ID; received ${JSON.stringify(model)}`
+    );
+  }
+  return trimmed;
+}
 
 /**
  * Parse `OPENROUTER_FALLBACK_MODELS` env var into an array. Returns
@@ -106,34 +119,94 @@ export function parseFallbackModels(
 ): string[] | undefined {
   if (raw === undefined) return undefined;
   if (raw.trim() === '') return [];
-  return raw
-    .split(',')
-    .map((s) => s.trim())
-    .filter(Boolean);
+
+  const segments = raw.split(',');
+  if (segments.some((segment) => segment.trim() === '')) {
+    throw new Error(
+      'OPENROUTER_FALLBACK_MODELS contains an empty model ID; use an entirely empty value to disable fallbacks'
+    );
+  }
+
+  const models = segments.map((model) =>
+    validateModelId(model, 'OPENROUTER_FALLBACK_MODELS')
+  );
+  if (new Set(models).size !== models.length) {
+    throw new Error('OPENROUTER_FALLBACK_MODELS contains a duplicate model ID');
+  }
+  return models;
 }
 
-const DEFAULT_MODEL = process.env.OPENROUTER_MODEL || DEFAULT_FALLBACK_MODEL;
+function parseNonNegativePrice(
+  raw: string | undefined,
+  envName: string,
+  fallback: number
+): number {
+  if (raw === undefined) return fallback;
+  if (raw.trim() === '') {
+    throw new Error(`${envName} must be a finite non-negative number`);
+  }
+
+  const value = Number(raw);
+  if (!Number.isFinite(value) || value < 0) {
+    throw new Error(`${envName} must be a finite non-negative number`);
+  }
+  return value;
+}
+
+/**
+ * Parse OpenRouter price ceilings from the environment. OpenRouter expresses
+ * `provider.max_price` in USD per million tokens (not USD per single token).
+ */
+export function parseOpenRouterPriceCeiling(
+  env: NodeJS.ProcessEnv = process.env
+): OpenRouterPriceCeiling {
+  return {
+    prompt: parseNonNegativePrice(
+      env.OPENROUTER_MAX_PROMPT_PRICE_PER_MILLION,
+      'OPENROUTER_MAX_PROMPT_PRICE_PER_MILLION',
+      DEFAULT_MAX_PROMPT_PRICE_PER_MILLION
+    ),
+    completion: parseNonNegativePrice(
+      env.OPENROUTER_MAX_COMPLETION_PRICE_PER_MILLION,
+      'OPENROUTER_MAX_COMPLETION_PRICE_PER_MILLION',
+      DEFAULT_MAX_COMPLETION_PRICE_PER_MILLION
+    ),
+  };
+}
+
+function validatePriceCeiling(
+  priceCeiling: OpenRouterPriceCeiling
+): OpenRouterPriceCeiling {
+  for (const [kind, value] of Object.entries(priceCeiling)) {
+    if (!Number.isFinite(value) || value < 0) {
+      throw new Error(
+        `OpenRouter ${kind} price ceiling must be a finite non-negative number`
+      );
+    }
+  }
+  return { ...priceCeiling };
+}
+
+const DEFAULT_MODEL =
+  process.env.OPENROUTER_MODEL?.trim() || DEFAULT_FALLBACK_MODEL;
 const DEFAULT_REFERER =
   process.env.OPENROUTER_HTTP_REFERER || 'https://goodbrief.ro';
 const DEFAULT_APP_TITLE = process.env.OPENROUTER_APP_TITLE || 'Good Brief';
-// Per-attempt timeout. 15 minutes is generous but realistic for free-tier
-// models like `openai/gpt-oss-120b:free` that queue requests during peak
-// hours. Because we use `:free` models with a `max_price` guard, slow
-// requests are literally free — so we err on the side of patience.
-// Combined with `maxRetries=4` (5 total attempts) and bounded backoff this
-// gives ~75 minutes of wall clock per batch in the worst case. The `score`
-// job sets `timeout-minutes` to absorb this.
-const DEFAULT_TIMEOUT_MS = Number.parseInt(
-  process.env.OPENROUTER_TIMEOUT_MS || '900000',
+/** Default per-attempt timeout for paid OpenRouter requests. */
+export const DEFAULT_OPENROUTER_TIMEOUT_MS = 180_000;
+
+// Large structured-output batches can legitimately take several minutes,
+// but a paid route should fail over promptly enough for same-job recovery.
+// Three total attempts cap transport wait at about nine minutes plus backoff.
+const CONFIGURED_TIMEOUT_MS = Number.parseInt(
+  process.env.OPENROUTER_TIMEOUT_MS || String(DEFAULT_OPENROUTER_TIMEOUT_MS),
   10
 );
 // How many retries to attempt on transient failures (AbortError, network
 // errors, HTTP 5xx). Total attempts = maxRetries + 1. Set to 0 to disable.
-// Default is intentionally generous because the failure mode we see on
-// `:free` upstream models is intermittent queue timeouts, which almost
-// always succeed on a subsequent attempt.
-const DEFAULT_MAX_RETRIES = Number.parseInt(
-  process.env.OPENROUTER_MAX_RETRIES || '4',
+export const DEFAULT_OPENROUTER_MAX_RETRIES = 2;
+const CONFIGURED_MAX_RETRIES = Number.parseInt(
+  process.env.OPENROUTER_MAX_RETRIES || String(DEFAULT_OPENROUTER_MAX_RETRIES),
   10
 );
 // Base delay for exponential backoff between retries (ms). Actual delay is
@@ -243,6 +316,8 @@ export interface BuildRequestBodyOptions {
    * @see https://openrouter.ai/docs/guides/routing/model-fallbacks
    */
   fallbackModels?: readonly string[];
+  /** Maximum OpenRouter provider pricing, in USD per million tokens. */
+  priceCeiling?: OpenRouterPriceCeiling;
 }
 
 /**
@@ -264,6 +339,12 @@ export interface BuildRequestBodyOptions {
 export function buildOpenRouterRequestBody(
   options: BuildRequestBodyOptions
 ): string {
+  const priceCeiling = validatePriceCeiling(
+    options.priceCeiling ?? {
+      prompt: DEFAULT_MAX_PROMPT_PRICE_PER_MILLION,
+      completion: DEFAULT_MAX_COMPLETION_PRICE_PER_MILLION,
+    }
+  );
   // Build the model routing field. When fallback models are provided, use
   // OpenRouter's native `models` array (primary first, then fallbacks with
   // the primary stripped to avoid duplication). OpenRouter tries each model
@@ -300,10 +381,13 @@ export function buildOpenRouterRequestBody(
     reasoning: { exclude: true },
     // Generous output cap. See DEFAULT_MAX_TOKENS comment above.
     max_tokens: DEFAULT_MAX_TOKENS,
-    // Hard cost ceiling: OpenRouter rejects any upstream whose per-token
-    // price exceeds zero before billing. Combined with a `:free` model id (or
-    // the `openrouter/free` meta-router), this guarantees $0 spend.
-    max_price: { prompt: 0, completion: 0 },
+    // OpenRouter provider preferences must be nested under `provider`.
+    // `require_parameters` prevents routing structured-output requests to an
+    // endpoint that would silently ignore `response_format`.
+    provider: {
+      require_parameters: true,
+      max_price: priceCeiling,
+    },
   };
 
   if (typeof options.temperature === 'number') {
@@ -638,6 +722,8 @@ export interface OpenRouterProviderOptions {
    * Defaults to {@link DEFAULT_FALLBACK_MODELS}. Pass `[]` to disable.
    */
   fallbackModels?: string[];
+  /** Maximum provider pricing, in USD per million prompt/completion tokens. */
+  priceCeiling?: OpenRouterPriceCeiling;
 }
 
 const SCORE_SCHEMA_CACHE = {
@@ -694,7 +780,7 @@ const WRAPPER_COPY_SCHEMA = {
  * downstream phases can consume the results without changes.
  *
  * The default model is read from `OPENROUTER_MODEL` (fallback:
- * `google/gemma-4-26b-a4b-it:free`). Attribution headers default to the Good
+ * `openai/gpt-4.1-mini`). Attribution headers default to the Good
  * Brief site URL / app title but can be overridden via
  * `OPENROUTER_HTTP_REFERER` and `OPENROUTER_APP_TITLE`.
  */
@@ -716,6 +802,7 @@ export class OpenRouterProvider implements LlmProvider {
    * stripped during construction.
    */
   private readonly fallbackModels: readonly string[];
+  private readonly priceCeiling: OpenRouterPriceCeiling;
 
   constructor(options: OpenRouterProviderOptions) {
     if (!options.apiKey) {
@@ -724,22 +811,39 @@ export class OpenRouterProvider implements LlmProvider {
       );
     }
     this.apiKey = options.apiKey;
-    this.model = options.model ?? DEFAULT_MODEL;
+    this.model = validateModelId(
+      options.model ?? DEFAULT_MODEL,
+      'OPENROUTER_MODEL / OpenRouter model option'
+    );
     this.httpReferer = options.httpReferer ?? DEFAULT_REFERER;
     this.appTitle = options.appTitle ?? DEFAULT_APP_TITLE;
-    this.timeoutMs = options.timeoutMs ?? DEFAULT_TIMEOUT_MS;
-    this.maxRetries = options.maxRetries ?? DEFAULT_MAX_RETRIES;
+    this.timeoutMs = options.timeoutMs ?? CONFIGURED_TIMEOUT_MS;
+    this.maxRetries = options.maxRetries ?? CONFIGURED_MAX_RETRIES;
     this.retryDelayMs = options.retryDelayMs ?? DEFAULT_RETRY_DELAY_MS;
+    this.priceCeiling = validatePriceCeiling(
+      options.priceCeiling ?? parseOpenRouterPriceCeiling()
+    );
     this.fetcher = options.fetcher ?? createDefaultFetcher(this.timeoutMs);
     // Build fallback list, stripping any duplicates of the primary model.
     const rawFallbacks =
       options.fallbackModels ??
       parseFallbackModels(process.env.OPENROUTER_FALLBACK_MODELS) ??
       [...DEFAULT_FALLBACK_MODELS];
-    this.fallbackModels = rawFallbacks.filter((m) => m !== this.model);
+    const validatedFallbacks = rawFallbacks.map((model) =>
+      validateModelId(model, 'OpenRouter fallback model')
+    );
+    if (new Set(validatedFallbacks).size !== validatedFallbacks.length) {
+      throw new Error('OpenRouter fallback model list contains a duplicate model ID');
+    }
+    this.fallbackModels = validatedFallbacks.filter((m) => m !== this.model);
+    if (1 + this.fallbackModels.length > OPENROUTER_MAX_MODELS) {
+      throw new Error(
+        `OpenRouter model rotation exceeds the ${OPENROUTER_MAX_MODELS}-model limit`
+      );
+    }
     const rotationSize = 1 + this.fallbackModels.length;
     console.error(
-      `[openrouter] provider ready model=${this.model} fallbacks=${rotationSize > 1 ? this.fallbackModels.join(',') : 'none'} timeoutMs=${this.timeoutMs} maxRetries=${this.maxRetries} retryDelayMs=${this.retryDelayMs}`
+      `[openrouter] provider ready model=${this.model} fallbacks=${rotationSize > 1 ? this.fallbackModels.join(',') : 'none'} maxPriceUsdPerMillion=${this.priceCeiling.prompt}/${this.priceCeiling.completion} timeoutMs=${this.timeoutMs} maxRetries=${this.maxRetries} retryDelayMs=${this.retryDelayMs}`
     );
   }
 
@@ -982,6 +1086,7 @@ OUTPUT RULES (OpenRouter structured output):
       // each model in order and auto-falls-through on rate-limit / downtime
       // / moderation — all in a single request, no extra round-trips.
       fallbackModels: this.fallbackModels,
+      priceCeiling: this.priceCeiling,
     });
 
     const headers: Record<string, string> = {
@@ -1037,7 +1142,7 @@ OUTPUT RULES (OpenRouter structured output):
         throw new LlmProviderError(
           'openrouter',
           `OpenRouter call failed after ${totalAttempts} attempts: ${message}`,
-          { cause: error }
+          { retryable: true, cause: error }
         );
       }
 
@@ -1077,7 +1182,8 @@ OUTPUT RULES (OpenRouter structured output):
           );
           lastError = new LlmProviderError(
             'openrouter',
-            `OpenRouter transient choice error: ${envelopeStatus.message}`
+            `OpenRouter transient choice error: ${envelopeStatus.message}`,
+            { retryable: true }
           );
           if (attempt < totalAttempts) {
             await this.sleepBackoff(attempt);
@@ -1149,9 +1255,9 @@ OUTPUT RULES (OpenRouter structured output):
             'openrouter',
             `OpenRouter upstream rate-limit: ${message}`
           );
-          // Free-tier upstream rate limits can last minutes, so use a 10x
-          // multiplier (20s → 40s → 80s → 160s ≈ 5 min total) to give
-          // providers time to clear instead of the standard 2s → 4s → 8s → 16s.
+          // Provider-level throttles can last minutes, so use a 10x multiplier
+          // (20s → 40s → 80s → 160s ≈ 5 min total) to give the independently
+          // hosted model rotation time to clear.
           await this.sleepBackoff(attempt, 10);
           continue;
         }
@@ -1173,12 +1279,14 @@ OUTPUT RULES (OpenRouter structured output):
       if (response.status >= 500 && response.status < 600) {
         lastError = new LlmProviderError(
           'openrouter',
-          `OpenRouter HTTP ${response.status}: ${message}`
+          `OpenRouter HTTP ${response.status}: ${message}`,
+          { retryable: true }
         );
         if (attempt < totalAttempts) {
           await this.sleepBackoff(attempt);
           continue;
         }
+        throw lastError;
       }
 
       throw new LlmProviderError(
@@ -1193,7 +1301,7 @@ OUTPUT RULES (OpenRouter structured output):
       `OpenRouter call exhausted ${totalAttempts} attempts: ${
         lastError instanceof Error ? lastError.message : String(lastError)
       }`,
-      { cause: lastError }
+      { retryable: true, cause: lastError }
     );
   }
 

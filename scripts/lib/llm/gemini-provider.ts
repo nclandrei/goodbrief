@@ -40,13 +40,32 @@ import type {
   ScoreBatchOptions,
   SemanticDedupResponse,
 } from './provider.js';
-import { LlmQuotaError } from './provider.js';
+import { LlmOutputError, LlmQuotaError } from './provider.js';
 
 function wrapQuotaError(error: unknown): never {
   if (error instanceof GeminiQuotaError) {
     throw new LlmQuotaError('gemini', error.message, { cause: error });
   }
   throw error;
+}
+
+export function parseGeminiNaturalTitlesPayload(text: string): unknown {
+  if (!text.trim()) {
+    throw new LlmOutputError(
+      'gemini',
+      'generateNaturalTitles: Gemini returned an empty response'
+    );
+  }
+
+  try {
+    return JSON.parse(text) as unknown;
+  } catch (error) {
+    throw new LlmOutputError(
+      'gemini',
+      'generateNaturalTitles: Gemini returned invalid JSON',
+      { cause: error }
+    );
+  }
 }
 
 /**
@@ -160,10 +179,7 @@ export class GeminiProvider implements LlmProvider {
           buildNaturalTitlesPrompt(weekId, articles)
         );
         const text = response.response.text();
-        if (!text) {
-          throw new Error('Empty natural-title response');
-        }
-        return JSON.parse(text) as unknown;
+        return parseGeminiNaturalTitlesPayload(text);
       });
 
       return normalizeNaturalTitlesResponse('gemini', articles, payload);

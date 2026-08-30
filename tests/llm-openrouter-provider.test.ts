@@ -5,9 +5,14 @@ import {
   buildOpenRouterRequestBody,
   parseOpenRouterResponse,
   parseFallbackModels,
+  parseOpenRouterPriceCeiling,
   DEFAULT_FALLBACK_MODEL,
   DEFAULT_FALLBACK_MODELS,
+  DEFAULT_MAX_COMPLETION_PRICE_PER_MILLION,
+  DEFAULT_MAX_PROMPT_PRICE_PER_MILLION,
   DEFAULT_MAX_TOKENS,
+  DEFAULT_OPENROUTER_MAX_RETRIES,
+  DEFAULT_OPENROUTER_TIMEOUT_MS,
   OPENROUTER_MAX_MODELS,
 } from '../scripts/lib/llm/openrouter-provider.js';
 import type { OpenRouterFetcher } from '../scripts/lib/llm/openrouter-provider.js';
@@ -137,6 +142,29 @@ test('buildOpenRouterRequestBody: serializes model, messages and json_schema res
     type: 'object',
     properties: { ok: { type: 'boolean' } },
   });
+  assert.equal(parsed.provider.require_parameters, true);
+  assert.deepEqual(parsed.provider.max_price, {
+    prompt: DEFAULT_MAX_PROMPT_PRICE_PER_MILLION,
+    completion: DEFAULT_MAX_COMPLETION_PRICE_PER_MILLION,
+  });
+  assert.equal(parsed.max_price, undefined);
+});
+
+test('buildOpenRouterRequestBody: nests configurable price ceilings under provider preferences', () => {
+  const body = buildOpenRouterRequestBody({
+    model: 'openai/gpt-4.1-mini',
+    prompt: 'Hello world',
+    schema: { type: 'object' },
+    schemaName: 'priced_schema',
+    priceCeiling: { prompt: 0.75, completion: 3.5 },
+  });
+  const parsed = JSON.parse(body);
+
+  assert.deepEqual(parsed.provider, {
+    require_parameters: true,
+    max_price: { prompt: 0.75, completion: 3.5 },
+  });
+  assert.equal(parsed.max_price, undefined);
 });
 
 test('buildOpenRouterRequestBody: includes optional temperature + max_tokens', () => {
@@ -447,7 +475,9 @@ test('HTTP 401 (unauthorized) surfaces as LlmProviderError (not quota)', async (
   await assert.rejects(
     () => provider.scoreArticles([RAW], { includeReasoning: false }),
     (err: unknown) =>
-      err instanceof LlmProviderError && !(err instanceof LlmQuotaError)
+      err instanceof LlmProviderError &&
+      !(err instanceof LlmQuotaError) &&
+      !err.retryable
   );
 });
 
@@ -456,7 +486,9 @@ test('HTTP 500 (internal error) surfaces as LlmProviderError', async () => {
   await assert.rejects(
     () => provider.scoreArticles([RAW], { includeReasoning: false }),
     (err: unknown) =>
-      err instanceof LlmProviderError && !(err instanceof LlmQuotaError)
+      err instanceof LlmProviderError &&
+      !(err instanceof LlmQuotaError) &&
+      err.retryable
   );
 });
 
@@ -477,17 +509,19 @@ test('Fetcher throwing ENOTFOUND is mapped to LlmProviderError (not quota)', asy
   await assert.rejects(
     () => provider.scoreArticles([RAW], { includeReasoning: false }),
     (err: unknown) =>
-      err instanceof LlmProviderError && !(err instanceof LlmQuotaError)
+      err instanceof LlmProviderError &&
+      !(err instanceof LlmQuotaError) &&
+      err.retryable
   );
 });
 
 // ---------- retry on transient failures ----------
 //
-// These tests pin the behavior that a single slow / hung request on a free-
-// tier OpenRouter model must not kill the whole draft pipeline. The original
-// bug reproduced on 2026-W15 when `openai/gpt-oss-120b:free` took longer
-// than OPENROUTER_TIMEOUT_MS (180s), the AbortController fired, and the
-// score phase exited with "This operation was aborted".
+// These tests pin the behavior that a single slow or hung upstream request
+// must not kill the whole draft pipeline. The original bug reproduced on
+// 2026-W15 when `openai/gpt-oss-120b:free` took longer than the 180-second
+// attempt timeout, the AbortController fired, and the score phase exited
+// with "This operation was aborted".
 
 test('call retries on AbortError and succeeds on the second attempt', async () => {
   let attempts = 0;
@@ -556,7 +590,7 @@ test('call exhausts retries on persistent AbortError and throws LlmProviderError
     (err: unknown) => {
       if (!(err instanceof LlmProviderError)) return false;
       if (err instanceof LlmQuotaError) return false;
-      return /abort/i.test(err.message);
+      return err.retryable && /abort/i.test(err.message);
     }
   );
   assert.equal(attempts, 3, 'initial attempt + 2 retries = 3 total');
@@ -756,6 +790,7 @@ test('call exhausts retries on persistent choice-level upstream error and throws
     (err: unknown) =>
       err instanceof LlmProviderError &&
       !(err instanceof LlmQuotaError) &&
+      err.retryable &&
       /upstream|provider_unavailable|502/i.test(err.message)
   );
   assert.equal(attempts, 3, 'initial attempt + 2 retries = 3 total');
@@ -917,6 +952,7 @@ test('call exhausts retries on persistent null content and throws LlmProviderErr
       if (err instanceof LlmQuotaError) return false;
       // Error message should mention the real cause: finish_reason + empty content.
       return (
+        err.retryable &&
         /empty|null|finish_reason/i.test(err.message) &&
         /stop/i.test(err.message)
       );
@@ -1004,6 +1040,7 @@ test('call exhausts retries on persistent truncated JSON and throws non-quota Ll
       if (!(err instanceof LlmProviderError)) return false;
       if (err instanceof LlmQuotaError) return false;
       return (
+        err.retryable &&
         /unbalanced|parse|truncat|unparseable/i.test(err.message) &&
         /finish_reason|stop/i.test(err.message)
       );
@@ -1106,12 +1143,21 @@ test('provider name is "openrouter"', () => {
 
 // ---------- default fallback model ----------
 //
-// The default fallback must be a genuinely free, reliable, non-reasoning
-// model. Gemma 4 26B is a fast MoE (3.8B active params), supports
-// structured outputs, handles Romanian well, is free, and is reliably
-// served by Google AI Studio.
-test('DEFAULT_FALLBACK_MODEL points to a free non-reasoning model', () => {
-  assert.equal(DEFAULT_FALLBACK_MODEL, 'google/gemma-4-26b-a4b-it:free');
+// The OpenRouter fallback is operational insurance for Gemini, so its default
+// must use a paid non-Google model with native structured-output support.
+test('DEFAULT_FALLBACK_MODEL is a current paid non-Google model with structured outputs', () => {
+  assert.equal(DEFAULT_FALLBACK_MODEL, 'openai/gpt-4.1-mini');
+  assert.doesNotMatch(DEFAULT_FALLBACK_MODEL, /^google\//);
+  assert.doesNotMatch(DEFAULT_FALLBACK_MODEL, /:free$/);
+});
+
+test('paid OpenRouter defaults bound each call to three attempts of three minutes', () => {
+  assert.equal(DEFAULT_OPENROUTER_TIMEOUT_MS, 180_000);
+  assert.equal(DEFAULT_OPENROUTER_MAX_RETRIES, 2);
+  assert.equal(
+    DEFAULT_OPENROUTER_TIMEOUT_MS * (DEFAULT_OPENROUTER_MAX_RETRIES + 1),
+    540_000
+  );
 });
 
 // ---------- truncation detection (finish_reason=length with non-empty content) ----------
@@ -1375,27 +1421,67 @@ test('parseFallbackModels: empty string returns empty array (opt-out)', () => {
 
 test('parseFallbackModels: comma-separated string returns trimmed array', () => {
   assert.deepEqual(
-    parseFallbackModels('a/b:free, c/d:free ,e/f:free'),
-    ['a/b:free', 'c/d:free', 'e/f:free']
+    parseFallbackModels('openai/gpt-4.1-mini, anthropic/claude-haiku-4.5'),
+    ['openai/gpt-4.1-mini', 'anthropic/claude-haiku-4.5']
   );
 });
 
-test('parseFallbackModels: ignores empty segments from trailing commas', () => {
-  assert.deepEqual(parseFallbackModels('a/b:free,,c/d:free,'), ['a/b:free', 'c/d:free']);
+test('parseFallbackModels: rejects malformed, empty, and duplicate model IDs', () => {
+  assert.throws(() => parseFallbackModels('openai/gpt-4.1-mini,'), /empty model/i);
+  assert.throws(() => parseFallbackModels('not-a-model'), /provider\/model/i);
+  assert.throws(
+    () => parseFallbackModels('openai/gpt-4.1-mini,openai/gpt-4.1-mini'),
+    /duplicate/i
+  );
+});
+
+test('parseOpenRouterPriceCeiling uses conservative paid defaults', () => {
+  assert.deepEqual(parseOpenRouterPriceCeiling({}), {
+    prompt: 1,
+    completion: 5,
+  });
+});
+
+test('parseOpenRouterPriceCeiling reads explicit USD-per-million limits', () => {
+  assert.deepEqual(
+    parseOpenRouterPriceCeiling({
+      OPENROUTER_MAX_PROMPT_PRICE_PER_MILLION: '0.75',
+      OPENROUTER_MAX_COMPLETION_PRICE_PER_MILLION: '3.5',
+    }),
+    { prompt: 0.75, completion: 3.5 }
+  );
+});
+
+test('parseOpenRouterPriceCeiling rejects blank, negative, and non-numeric values', () => {
+  for (const invalid of ['', ' ', '-1', 'NaN', 'Infinity', '1usd']) {
+    assert.throws(
+      () =>
+        parseOpenRouterPriceCeiling({
+          OPENROUTER_MAX_PROMPT_PRICE_PER_MILLION: invalid,
+        }),
+      /OPENROUTER_MAX_PROMPT_PRICE_PER_MILLION.*finite non-negative number/i
+    );
+  }
 });
 
 // ---------- DEFAULT_FALLBACK_MODELS ----------
 
-test('DEFAULT_FALLBACK_MODELS are all free-tier models', () => {
+test('DEFAULT_FALLBACK_MODELS are paid non-Google models', () => {
   for (const model of DEFAULT_FALLBACK_MODELS) {
-    assert.ok(model.endsWith(':free'), `fallback model ${model} must be a :free model`);
+    assert.doesNotMatch(model, /^google\//);
+    assert.doesNotMatch(model, /:free$/);
   }
+  assert.deepEqual(DEFAULT_FALLBACK_MODELS, ['anthropic/claude-haiku-4.5']);
 });
 
-test('DEFAULT_FALLBACK_MODELS contains at least 2 models for provider diversity', () => {
+test('default rotation contains two independent paid model families', () => {
   assert.ok(
-    DEFAULT_FALLBACK_MODELS.length >= 2,
-    `expected ≥2 fallback models for provider diversity, got ${DEFAULT_FALLBACK_MODELS.length}`
+    DEFAULT_FALLBACK_MODELS.length >= 1,
+    `expected at least one fallback model, got ${DEFAULT_FALLBACK_MODELS.length}`
+  );
+  assert.notEqual(
+    DEFAULT_FALLBACK_MODEL.split('/')[0],
+    DEFAULT_FALLBACK_MODELS[0].split('/')[0]
   );
 });
 

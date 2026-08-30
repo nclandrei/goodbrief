@@ -1,10 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
+  DEFAULT_GEMINI_MAX_ATTEMPTS,
   GeminiQuotaError,
+  GeminiRetryExhaustedError,
   callWithRetry,
   isRetryableGeminiError,
 } from '../scripts/lib/gemini.js';
+import { LlmProviderError } from '../scripts/lib/llm/provider.js';
 
 test('callWithRetry keeps retrying Gemini 503 high-demand errors past the legacy ceiling', async () => {
   let attempts = 0;
@@ -56,6 +59,56 @@ test('callWithRetry does not retry quota or auth errors', async () => {
   );
 
   assert.equal(attempts, 1);
+});
+
+test('callWithRetry has a finite default retry budget and surfaces retryable provider error', async () => {
+  let attempts = 0;
+  const delays: number[] = [];
+
+  await assert.rejects(
+    () =>
+      callWithRetry(
+        async () => {
+          attempts++;
+          throw new Error('[503 Service Unavailable] high demand');
+        },
+        {
+          initialDelayMs: 1,
+          maxDelayMs: 1,
+          jitterRatio: 0,
+          sleep: async (ms) => {
+            delays.push(ms);
+          },
+        }
+      ),
+    (error: unknown) =>
+      error instanceof GeminiRetryExhaustedError &&
+      error instanceof LlmProviderError &&
+      error.provider === 'gemini' &&
+      error.retryable &&
+      /503|high demand/i.test(error.message)
+  );
+
+  assert.equal(attempts, DEFAULT_GEMINI_MAX_ATTEMPTS);
+  assert.equal(delays.length, DEFAULT_GEMINI_MAX_ATTEMPTS - 1);
+});
+
+test('callWithRetry rejects invalid retry configuration before calling Gemini', async () => {
+  let attempts = 0;
+
+  await assert.rejects(
+    () =>
+      callWithRetry(
+        async () => {
+          attempts++;
+          return 'unused';
+        },
+        { maxAttempts: Number.POSITIVE_INFINITY }
+      ),
+    /maxAttempts.*finite integer/i
+  );
+
+  assert.equal(attempts, 0);
 });
 
 test('isRetryableGeminiError classifies service and network failures as retryable', () => {

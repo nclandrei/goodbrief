@@ -121,6 +121,48 @@ test('createLlmProvider: openrouter builds OpenRouterProvider with api key', () 
   assert.equal(provider.name, 'openrouter');
 });
 
+test('createLlmProvider: validates OpenRouter price ceiling environment variables', () => {
+  assert.throws(
+    () =>
+      createLlmProvider(
+        { provider: 'openrouter' },
+        {
+          OPENROUTER_API_KEY: 'sk-or-v1-test',
+          OPENROUTER_MAX_COMPLETION_PRICE_PER_MILLION: 'unlimited',
+        }
+      ),
+    /OPENROUTER_MAX_COMPLETION_PRICE_PER_MILLION.*finite non-negative number/i
+  );
+});
+
+test('createLlmProvider: blank optional OpenRouter overrides use code defaults', () => {
+  assert.doesNotThrow(() =>
+    createLlmProvider(
+      { provider: 'openrouter' },
+      {
+        OPENROUTER_API_KEY: 'sk-or-v1-test',
+        OPENROUTER_MODEL: '   ',
+        OPENROUTER_HTTP_REFERER: '',
+        OPENROUTER_APP_TITLE: ' ',
+      }
+    )
+  );
+});
+
+test('createLlmProvider: rejects malformed non-empty OpenRouter model override', () => {
+  assert.throws(
+    () =>
+      createLlmProvider(
+        { provider: 'openrouter' },
+        {
+          OPENROUTER_API_KEY: 'sk-or-v1-test',
+          OPENROUTER_MODEL: 'not-a-provider-model',
+        }
+      ),
+    /OPENROUTER_MODEL.*provider\/model/i
+  );
+});
+
 test('createLlmProvider: gemini primary + openrouter fallback wraps in FallbackLlmProvider', () => {
   const provider = createLlmProvider(
     { provider: 'gemini', fallback: 'openrouter' },
