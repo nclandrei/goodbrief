@@ -1020,6 +1020,9 @@
   "deliveryLock": {
     "version": 1,
     "approvedSha256": "264d99dfddacc23b88ed0c0538f4fdc26626837383f09e8b529250bba6c494e0",
-    "approvedAt": "2026-08-30T11:43:10.249Z"
+    "approvedAt": "2026-08-30T11:43:10.249Z",
+    "testedSha256": "264d99dfddacc23b88ed0c0538f4fdc26626837383f09e8b529250bba6c494e0",
+    "testedAt": "2026-08-30T11:46:20.221Z",
+    "testMessageId": "73ab4169-c1c6-430e-8753-a9eb9f189be9"
   }
 }
