@@ -2,6 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
   buildNaturalTitlesPrompt,
+  naturalTitlesResponseSchema,
+  NaturalTitlesPartialError,
   normalizeNaturalTitlesResponse,
 } from '../scripts/lib/llm/natural-title-prompt.js';
 import {
@@ -40,6 +42,59 @@ test('natural-title prompt encodes the W32 editorial voice and caveat rules', ()
   assert.match(prompt, /Example summary:.*Munții Apuseni/i);
 });
 
+test('natural-title response schema caps titles at 110 characters', () => {
+  assert.equal(
+    naturalTitlesResponseSchema.properties.titles.items.properties.title
+      .maxLength,
+    110
+  );
+});
+
+test('W35 overlong generated title falls back to the valid source title', () => {
+  const sourceTitle =
+    'Aproape 100 de voluntari salvează o biserică veche din Bistrița-Năsăud. Lăcașul va deveni centru cultural';
+  const generatedTitle =
+    'Aproape 100 de voluntari salvează o biserică veche din Bistrița-Năsăud pentru a o transforma în centru cultural';
+  const article: ProcessedArticle = {
+    ...ARTICLE,
+    id: '89b3bfd50958d53f',
+    originalTitle: sourceTitle,
+  };
+
+  assert.equal(sourceTitle.length, 105);
+  assert.equal(generatedTitle.length, 111);
+  const warnings: string[] = [];
+  const originalWarn = console.warn;
+  console.warn = (...args: unknown[]) => warnings.push(args.join(' '));
+  try {
+    assert.deepEqual(
+      normalizeNaturalTitlesResponse('gemini', [article], {
+        titles: [{ id: article.id, title: generatedTitle }],
+      }),
+      [{ id: article.id, title: sourceTitle }]
+    );
+  } finally {
+    console.warn = originalWarn;
+  }
+  assert.equal(warnings.length, 1);
+  assert.match(
+    warnings[0],
+    /gemini.*89b3bfd50958d53f.*using validated source title.*exceeds 110/
+  );
+});
+
+test('missing generated title falls back to a source title that passes the hard validator', () => {
+  const article = {
+    ...ARTICLE,
+    originalTitle: 'Comunitatea repară biblioteca veche din centrul orașului',
+  };
+
+  assert.deepEqual(
+    normalizeNaturalTitlesResponse('gemini', [article], { titles: [] }),
+    [{ id: article.id, title: article.originalTitle }]
+  );
+});
+
 test('natural-title validation rejects outputs longer than 110 characters', () => {
   assert.throws(
     () =>
@@ -48,6 +103,43 @@ test('natural-title validation rejects outputs longer than 110 characters', () =
       }),
     (error: unknown) =>
       error instanceof LlmProviderError && /110/.test(error.message)
+  );
+});
+
+test('natural-title partial errors preserve valid results and fail closed for an unsafe source', () => {
+  const validArticle = {
+    ...ARTICLE,
+    id: 'valid-article',
+    originalTitle: 'Titlu sursă sigur pentru primul articol',
+  };
+  const unsafeArticle = {
+    ...ARTICLE,
+    id: 'unsafe-article',
+    originalTitle: 'FOTO: Un rezultat spectaculos!',
+  };
+
+  assert.throws(
+    () =>
+      normalizeNaturalTitlesResponse(
+        'gemini',
+        [validArticle, unsafeArticle],
+        {
+          titles: [
+            {
+              id: validArticle.id,
+              title: 'Primul articol păstrează titlul generat valid',
+            },
+            { id: unsafeArticle.id, title: 'x'.repeat(111) },
+          ],
+        }
+      ),
+    (error: unknown) =>
+      error instanceof NaturalTitlesPartialError &&
+      error.unresolvedArticleIds.length === 1 &&
+      error.unresolvedArticleIds[0] === unsafeArticle.id &&
+      error.partialTitles.length === 1 &&
+      error.partialTitles[0].id === validArticle.id &&
+      /source title fallback rejected/.test(error.message)
   );
 });
 

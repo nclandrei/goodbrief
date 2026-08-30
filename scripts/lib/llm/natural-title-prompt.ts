@@ -11,6 +11,38 @@ export interface NaturalTitlesResponse {
   titles: NaturalTitle[];
 }
 
+/**
+ * A model response can contain many usable titles even when a few entries are
+ * malformed. Preserve those usable results so a fallback provider only needs
+ * to regenerate the unresolved articles.
+ */
+export class NaturalTitlesPartialError extends LlmOutputError {
+  readonly partialTitles: NaturalTitle[];
+  readonly unresolvedArticleIds: string[];
+  readonly diagnostics: string[];
+
+  constructor(
+    provider: LlmProviderName,
+    partialTitles: NaturalTitle[],
+    unresolvedArticleIds: string[],
+    diagnostics: string[],
+    options: { cause?: unknown } = {}
+  ) {
+    const unresolvedSummary = unresolvedArticleIds.length > 0
+      ? `unresolved article IDs ${unresolvedArticleIds.join(', ')}`
+      : 'unresolved natural-title response';
+    super(
+      provider,
+      `generateNaturalTitles: ${unresolvedSummary}; ${diagnostics.join('; ')}`,
+      options
+    );
+    this.name = 'NaturalTitlesPartialError';
+    this.partialTitles = partialTitles;
+    this.unresolvedArticleIds = unresolvedArticleIds;
+    this.diagnostics = diagnostics;
+  }
+}
+
 export const naturalTitlesResponseSchema = {
   type: 'object',
   properties: {
@@ -20,7 +52,7 @@ export const naturalTitlesResponseSchema = {
         type: 'object',
         properties: {
           id: { type: 'string' },
-          title: { type: 'string' },
+          title: { type: 'string', maxLength: 110 },
         },
         required: ['id', 'title'],
       },
@@ -84,13 +116,6 @@ export function normalizeNaturalTitlesResponse(
   payload: unknown
 ): NaturalTitle[] {
   const titles = (payload as Partial<NaturalTitlesResponse> | null)?.titles;
-  if (!Array.isArray(titles)) {
-    throw new LlmOutputError(
-      provider,
-      'generateNaturalTitles: expected an object with a titles array'
-    );
-  }
-
   const requestedIds = new Set<string>();
   for (const article of articles) {
     if (requestedIds.has(article.id)) {
@@ -101,69 +126,146 @@ export function normalizeNaturalTitlesResponse(
     }
     requestedIds.add(article.id);
   }
-  const byId = new Map<string, string>();
+  const diagnostics: string[] = [];
+  const candidatesById = new Map<string, unknown[]>();
 
-  for (const item of titles) {
-    if (!item || typeof item.id !== 'string' || typeof item.title !== 'string') {
-      throw new LlmOutputError(
-        provider,
-        'generateNaturalTitles: every result must contain string id and title fields'
-      );
-    }
+  if (!Array.isArray(titles)) {
+    diagnostics.push('expected an object with a titles array');
+  } else {
+    for (const item of titles) {
+      if (!item || typeof item !== 'object') {
+        diagnostics.push(
+          'every result must contain string id and title fields'
+        );
+        continue;
+      }
 
-    // A final full stop is a harmless formatting slip from the model. Remove
-    // it deterministically instead of failing the entire 40-title batch.
-    // Semantic punctuation such as question/exclamation marks still goes
-    // through the hard quality gate below.
-    const title = item.title.trim().replace(/\.$/u, '').trimEnd();
-    if (!requestedIds.has(item.id)) {
-      throw new LlmOutputError(
-        provider,
-        `generateNaturalTitles: unexpected article ID ${item.id}`
-      );
+      const candidate = item as Partial<NaturalTitle>;
+      if (typeof candidate.id !== 'string') {
+        diagnostics.push(
+          'every result must contain string id and title fields'
+        );
+        continue;
+      }
+      if (!requestedIds.has(candidate.id)) {
+        diagnostics.push(`unexpected article ID ${candidate.id}`);
+        continue;
+      }
+
+      const candidates = candidatesById.get(candidate.id) || [];
+      candidates.push(candidate.title);
+      candidatesById.set(candidate.id, candidates);
     }
-    if (byId.has(item.id)) {
-      throw new LlmOutputError(
-        provider,
-        `generateNaturalTitles: duplicate article ID ${item.id}`
-      );
-    }
-    if (!title) {
-      throw new LlmOutputError(
-        provider,
-        `generateNaturalTitles: empty title for article ID ${item.id}`
-      );
-    }
-    if (title.length > 110) {
-      throw new LlmOutputError(
-        provider,
-        `generateNaturalTitles: title for article ID ${item.id} exceeds 110 characters; ${formatRejectedTitle(title)}`
-      );
-    }
-    const qualityError = getNaturalTitleQualityError(title);
-    if (qualityError) {
-      throw new LlmOutputError(
-        provider,
-        `generateNaturalTitles: headline quality rule failed for article ID ${item.id}: ${qualityError}; ${formatRejectedTitle(title)}`
-      );
-    }
-    byId.set(item.id, title);
   }
 
-  const missingIds = articles
-    .map((article) => article.id)
-    .filter((id) => !byId.has(id));
-  if (missingIds.length > 0) {
-    throw new LlmOutputError(
-      provider,
-      `generateNaturalTitles: missing article IDs ${missingIds.join(', ')}`
+  const resolvedById = new Map<string, string>();
+  const unresolvedArticleIds: string[] = [];
+
+  for (const article of articles) {
+    const candidates = candidatesById.get(article.id) || [];
+    let generatedError: string;
+
+    if (candidates.length === 0) {
+      generatedError = `missing article IDs ${article.id}`;
+    } else if (candidates.length > 1) {
+      generatedError = `duplicate article ID ${article.id}`;
+    } else {
+      const generated = normalizeAndValidateNaturalTitle(candidates[0]);
+      if (generated.title !== undefined) {
+        resolvedById.set(article.id, generated.title);
+        continue;
+      }
+      generatedError = formatTitleValidationError(
+        article.id,
+        generated.error,
+        candidates[0]
+      );
+    }
+
+    // A source headline is a safe deterministic fallback only when it passes
+    // exactly the same normalization and hard validation as model output.
+    const source = normalizeAndValidateNaturalTitle(article.originalTitle);
+    if (source.title !== undefined) {
+      console.warn(
+        `[llm] ${provider} natural title rejected for article ${article.id}; using validated source title: ${generatedError}`
+      );
+      resolvedById.set(article.id, source.title);
+      continue;
+    }
+
+    unresolvedArticleIds.push(article.id);
+    diagnostics.push(generatedError);
+    diagnostics.push(
+      `source title fallback rejected for article ID ${article.id}: ${source.error}; ${formatRejectedTitle(String(article.originalTitle || ''))}`
     );
   }
 
-  return articles.map((article) => ({
-    id: article.id,
-    title: byId.get(article.id)!,
-  }));
+  const resolved = articles
+    .filter((article) => resolvedById.has(article.id))
+    .map((article) => ({
+      id: article.id,
+      title: resolvedById.get(article.id)!,
+    }));
+
+  if (unresolvedArticleIds.length > 0 || diagnostics.length > 0) {
+    throw new NaturalTitlesPartialError(
+      provider,
+      resolved,
+      unresolvedArticleIds,
+      diagnostics
+    );
+  }
+
+  return resolved;
+}
+
+type NaturalTitleValidationResult =
+  | { title: string; error?: never }
+  | { title?: never; error: string };
+
+function normalizeAndValidateNaturalTitle(
+  value: unknown
+): NaturalTitleValidationResult {
+  if (typeof value !== 'string') {
+    return { error: 'title is not a string' };
+  }
+
+  // A final full stop is a harmless formatting slip from the model. Remove
+  // it deterministically instead of failing the entire batch. Semantic
+  // punctuation such as question/exclamation marks still goes through the
+  // hard quality gate below.
+  const title = value.trim().replace(/\.$/u, '').trimEnd();
+  if (!title) {
+    return { error: 'empty title' };
+  }
+  if (title.length > 110) {
+    return { error: 'exceeds 110 characters' };
+  }
+
+  const qualityError = getNaturalTitleQualityError(title);
+  if (qualityError) {
+    return { error: `headline quality rule failed: ${qualityError}` };
+  }
+
+  return { title };
+}
+
+function formatTitleValidationError(
+  articleId: string,
+  error: string,
+  rejectedValue: unknown
+): string {
+  const title = typeof rejectedValue === 'string' ? rejectedValue.trim() : '';
+  if (error === 'exceeds 110 characters') {
+    return `title for article ID ${articleId} exceeds 110 characters; ${formatRejectedTitle(title)}`;
+  }
+  if (error === 'empty title') {
+    return `empty title for article ID ${articleId}`;
+  }
+  if (error === 'title is not a string') {
+    return 'every result must contain string id and title fields';
+  }
+  return `headline quality rule failed for article ID ${articleId}: ${error.replace(/^headline quality rule failed: /, '')}; ${formatRejectedTitle(title)}`;
 }
 
 const FORBIDDEN_TITLE_PHRASES = [
