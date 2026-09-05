@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W36",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-09-05T12:04:58.641Z",
+  "inputFile": "05a-natural-titles.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare! 👋",
+      "intro": "Ce mai faci? Săptămâna asta am strâns vești bune despre autostrăzi, sănătate mintală accesibilă și chiar un material de construcții din zaț de cafea. Pare că România nu încetează să ne surprindă plăcut, nu-i așa?",
+      "signOff": "Cam atât pentru acum. Sper să ne citim cu bine și săptămâna viitoare! 🙏",
+      "shortSummary": "Autostrăzi, sănătate mintală, inovații din zaț de cafea și donații."
+    }
+  }
+}
