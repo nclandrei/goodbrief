@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W37",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-09-12T12:26:50.735Z",
+  "inputFile": "05a-natural-titles.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare! 👋",
+      "intro": "Săptămâna asta e plină de oameni faini care fac lucruri minunate: un elev sibian care ajută copiii, un profesor dedicat mediului rural și vești bune din sport și cultură. Pregătește-ți cafeaua și hai să vedem ce te inspiră.",
+      "signOff": "Asta a fost pentru săptămâna asta. Ne auzim curând! 🙏",
+      "shortSummary": "Oameni faini: elevi, profesori, artiști și campioni."
+    }
+  }
+}
