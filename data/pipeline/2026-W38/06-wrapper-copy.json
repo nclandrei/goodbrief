@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W38",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-09-19T12:48:04.206Z",
+  "inputFile": "05a-natural-titles.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare! 👋",
+      "intro": "Săptămâna asta e plină de inspirație românească, de la pionierii cafelei și profesori dedicați, la victorii sportive neașteptate și noi spații verzi în oraș. Pregătește-ți cafeaua și hai să pornim în căutarea veștilor bune.",
+      "signOff": "Ne citim săptămâna viitoare! Până atunci, caută motive de zâmbet. 🙏",
+      "shortSummary": "Inovație, sport și suflet românesc în săptămâna asta."
+    }
+  }
+}
