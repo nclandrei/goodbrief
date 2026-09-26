@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W39",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-09-26T13:23:53.235Z",
+  "inputFile": "05a-natural-titles.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salutare! 👋",
+      "intro": "Săptămâna asta ne umplem sufletul cu povești de reziliență, de la o antreprenoare care a transformat un diagnostic greu într-un business de succes, la un tată zugrav care își susține fiica la facultate. Pregătește-ți cafeaua și hai să vedem ce fapte bune și descoperiri interesante ne-au adus zilele acestea.",
+      "signOff": "Ne vedem săptămâna viitoare cu și mai multe vești bune. Până atunci, ai grijă de tine! 🙏",
+      "shortSummary": "Povești de reziliență, pod pentru animale și tezaur antic descoperit."
+    }
+  }
+}
