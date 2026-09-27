@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "weekId": "2026-W39",
+  "broadcastName": "goodbrief-prod-2026-W39",
+  "broadcastId": "fbd733eb-1c63-4727-9e85-c96a44dab807",
+  "deliverySha256": "705cf60bf15cecf4443c9987ef9f7d97503f810f244c4a73ac2d5aea50978baa",
+  "segmentId": "849b57ed-492d-447e-8c06-d2d86a7c8468",
+  "scheduledAt": "2026-09-28T06:00:00.000Z",
+  "remoteStatus": "scheduled",
+  "createdAt": "2026-09-27 12:00:24.842955+00",
+  "reconciledAt": "2026-09-27T12:00:22.947Z"
+}
