@@ -6,7 +6,7 @@ import type {
   WrapperCopy,
 } from '../types.js';
 import { getArticleDisplayTitle } from './article-title.js';
-import { TARGET_SELECTED_ARTICLE_COUNT } from './newsletter-policy.js';
+import { MAX_SENDABLE_ARTICLE_COUNT } from './newsletter-policy.js';
 
 export const NEWSLETTER_SUBJECT = 'Good Brief – Your weekly dose de vești bune';
 export const NEWSLETTER_DELIVERY_HASH_VERSION = 'goodbrief-delivery-v1';
@@ -208,7 +208,7 @@ export function buildNewsletterEmail(draft: NewsletterDraft): NewsletterEmail {
     );
   }
 
-  const articles = draft.selected.slice(0, TARGET_SELECTED_ARTICLE_COUNT);
+  const articles = draft.selected.slice(0, MAX_SENDABLE_ARTICLE_COUNT);
   const grouped = groupArticlesByCategory(articles);
   const html = renderNewsletterHtml(grouped, draft.wrapperCopy, draft.weekId);
 
