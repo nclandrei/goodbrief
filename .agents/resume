@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
+# Dependencies survive snapshots and pause/resume; never reinstall on wake.
+test -x node_modules/.bin/astro || {
+  echo 'Dependencies missing; run .agents/setup to repair this orb.' >&2
+  exit 1
+}
+echo 'Good Brief dependencies ready.'

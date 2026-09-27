@@ -1,0 +1,72 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$repo_root"
+
+# Match CI's Node 20; keep the orb's system toolchain untouched.
+node_version=20.20.2
+node_home="$HOME/.local/share/goodbrief/node-v${node_version}"
+echo "Preparing Node $node_version"
+SECONDS=0
+if [[ ! -x "$node_home/bin/node" ]]; then
+  case "$(uname -m)" in
+    x86_64) arch=x64 ;;
+    aarch64) arch=arm64 ;;
+    *) echo 'Unsupported Node architecture' >&2; exit 1 ;;
+  esac
+  tmp="$(mktemp -d)"
+  trap 'rm -rf "$tmp"' EXIT
+  archive="node-v${node_version}-linux-${arch}.tar.xz"
+  curl --fail --silent --show-error --location --retry 3 \
+    "https://nodejs.org/dist/v${node_version}/$archive" -o "$tmp/$archive"
+  curl --fail --silent --show-error --location --retry 3 \
+    "https://nodejs.org/dist/v${node_version}/SHASUMS256.txt" -o "$tmp/SHASUMS256.txt"
+  (cd "$tmp"; grep "  $archive$" SHASUMS256.txt | sha256sum --check -)
+  tar -xJf "$tmp/$archive" -C "$tmp"
+  mkdir -p "$(dirname "$node_home")"
+  mv "$tmp/node-v${node_version}-linux-${arch}" "$node_home"
+fi
+export PATH="$node_home/bin:$PATH"
+
+# Amp and supervised services launch in separate non-interactive login shells.
+profile_marker="# Good Brief orb toolchain $node_version"
+if ! grep -Fqx "$profile_marker" "$HOME/.bash_profile" 2>/dev/null; then
+  cat >> "$HOME/.bash_profile" <<EOF
+
+$profile_marker
+if [[ "\$PWD" == "$repo_root" || "\$PWD" == "$repo_root/"* ]]; then
+  case ":\$PATH:" in
+    *":$node_home/bin:"*) ;;
+    *) export PATH="$node_home/bin:\$PATH" ;;
+  esac
+fi
+EOF
+fi
+echo "Toolchain ready in ${SECONDS}s: $(node --version), npm $(npm --version)"
+
+echo 'Checking locked dependencies (including development tools)'
+SECONDS=0
+# npm ci always removes node_modules (13s even warm). Keep a success marker
+# inside node_modules so deleting dependencies also invalidates the cache.
+fingerprint="$(
+  {
+    sha256sum package.json package-lock.json .agents/setup
+    if [[ -f .npmrc ]]; then sha256sum .npmrc; fi
+    node --version
+    npm --version
+    uname -sm
+  } | sha256sum | cut -d ' ' -f 1
+)"
+marker=node_modules/.amp-setup-fingerprint
+if [[ -f "$marker" && "$(cat "$marker")" == "$fingerprint" \
+   && -x node_modules/.bin/astro && -x node_modules/.bin/tsx ]]; then
+  echo 'Locked dependencies unchanged; skipping npm ci'
+else
+  npm ci --include=dev --prefer-offline --no-audit --no-fund
+  printf '%s\n' "$fingerprint" > "$marker"
+fi
+echo "Dependencies ready in ${SECONDS}s"
+
+# Local build, checks, and tests need no secrets. Do not copy placeholder API keys
+# into .env or run ingestion, newsletter delivery, or other external writes here.
