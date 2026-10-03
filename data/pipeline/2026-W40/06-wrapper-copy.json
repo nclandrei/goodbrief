@@ -1,0 +1,14 @@
+{
+  "weekId": "2026-W40",
+  "phase": "wrapper-copy",
+  "generatedAt": "2026-10-03T13:41:02.885Z",
+  "inputFile": "05a-natural-titles.json",
+  "data": {
+    "wrapperCopy": {
+      "greeting": "Salut! 👋",
+      "intro": "Săptămâna asta ne face mândri: un startup românesc care dezvoltă ochelari inteligenți pentru nevăzători a câștigat un premiu major în Germania, iar energia regenerabilă bate recorduri. Avem și vești despre voluntari, antreprenori și eroi locali, așa că hai să începem.",
+      "signOff": "Cam atât pentru azi. Sperăm să-ți aducă un zâmbet. Zi faină! 🙏",
+      "shortSummary": "Startup românesc premiat, recorduri verzi și eroi locali."
+    }
+  }
+}
