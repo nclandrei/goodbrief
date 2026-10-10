@@ -40,7 +40,7 @@
 |-------|---------|---------|
 | 🌱 | **Local Heroes** | Inițiative locale, oameni care fac bine în comunități |
 | 🏆 | **Wins** | Reușite, premii, recorduri, realizări notabile |
-| 💚 | **Green Stuff** | Mediu, sustenabilitate, natură |
+| 💚 | **Green Stuff** | Natură, biodiversitate, mobilitate curată, energie, reparare/reutilizare, educație de mediu — când impactul ecologic e în centrul știrii |
 | ✨ | **Quick Hits** | Micro-vești bune, 1-2 fraze (optional, for shorter items) |
 
 ---
@@ -54,7 +54,7 @@ Each news item summary should:
 1. Be **2-3 sentences** maximum
 2. Start with the **key fact** (who did what)
 3. Include **context** if needed (why it matters)
-4. End with **impact** (what this means for people)
+4. Include a concrete reader-relevant implication when the source supports one; do not force an impact sentence or tack on the same caution after every story
 
 ### Example
 
@@ -82,7 +82,7 @@ detection; store the newsletter headline in `title`.
 
 ### Shape
 
-- Write natural Romanian for an educated reader in their 20s or 30s.
+- Write natural Romanian for an educated reader aged 25–40.
 - Keep one concrete idea, usually 7-14 words and roughly 45-90 characters.
 - Use sentence case, correct diacritics, and active voice when it sounds natural.
 - Prefer a person or place plus a concrete action, result, or useful fact.

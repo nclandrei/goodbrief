@@ -1,7 +1,7 @@
 # Good Brief - Agent Guidelines
 
 ## Project Overview
-Romanian positive news newsletter web app (goodbrief.ro). Target audience: 20-30 year old educated Romanians.
+Romanian positive news newsletter web app (goodbrief.ro). Core audience: educated Romanians aged 25–40; a strong story is not excluded just because it also speaks to other ages.
 
 ## Tech Stack
 - **Framework:** Astro 5 + TypeScript (strict)
@@ -66,6 +66,7 @@ content/
 
 data/
 ├── drafts/         # Newsletter draft JSON files (YYYY-WXX.json)
+├── orb-proofs/     # Independent editor proofs (YYYY-WXX.json)
 ├── pipeline/       # Per-phase pipeline artifacts (data/pipeline/<week>/)
 └── raw/            # Ingested RSS buffers (weekly JSON snapshots)
 
@@ -100,6 +101,21 @@ Avoid adding new planning docs unless the task explicitly asks for them.
 - Required frontmatter: `title`, `date`, `summary`, `validated`, `validationSource`, `validatedAt`
 - Use emoji sparingly for section headers
 
+### Independent Newsletter Curation
+- Follow `COPY_GUIDELINES.md` for Romanian voice, headlines, source attribution, and factual fidelity. These are editorial preferences for the independent Saturday proof, not a replacement for source checking or the editor's final say.
+- Start from the entire week's raw news pool, not the current week's Gemini draft, proof, shortlist, refined artifacts, or scores. Score plausible candidates independently for positivity, concrete impact, and relevance to educated Romanian readers aged 25–40. The scores inform judgment; they do not mechanically determine the edition.
+- Verify material claims in each finalist's full source, not just its RSS headline or excerpt. If the article blocks direct access, try the publisher's own public feed or API (for a WordPress site, its post/search API), then any linked primary source or independent coverage. A third-party mirror alone is not primary evidence. If the key claim remains unverified, prefer a verified alternative; if it still belongs in an editor-only proof, label it provisional and tell the editor exactly what could not be checked. Never call an RSS-only claim source-verified.
+- A 403 from one client does not establish that the publisher's public API is inaccessible: try its normal unauthenticated endpoints with a different ordinary HTTP client or User-Agent before giving up. For Edupedu, `/wp-json/wp/v2/search?search=...` can identify a post ID and `/wp-json/wp/v2/posts/<id>` can return the full article even when the page itself blocks access; check a linked service page too. Do not bypass paywalls or authentication. For laws and regulations, verify adoption, application, and local implementation separately against a primary authority; a new explainer is not necessarily a new law.
+- For retrospective evaluations, judge eligibility and deadlines at the requested as-of time, not today's date or the ingestion timestamp alone. Check event and publication dates; a live source page viewed later may have been edited, so do not present it as an archived snapshot.
+- Ask what changes in a 25–40-year-old reader's world: commuting, repair and household costs, public spaces, accessible services, work and learning, civic life, nature, and the future of the places they live. Do not assume every reader is a parent, lives in Bucharest, or can personally use every local service. A children's initiative can still earn a place if its scale, novelty, or community benefit makes it interesting beyond parents and schools. Prefer tangible, distinctive progress over routine awards, one-off school achievements, and institutional self-promotion.
+- Give Green Stuff more room: when the pool has strong, distinct options, aim for roughly a third of a ten-story edition with a genuine environmental core (nature, biodiversity, cleaner mobility, energy transition, repair/reuse, circular economy, or environmental education). Prefer concrete action and useful changes over corporate green claims; do not pad with weak stories or relabel a non-environmental story to hit a quota. A distant foreign conservation announcement with little Romanian relevance should not displace a stronger local non-green story just to increase the count. Check the event date as well as the publication date, and explain when strong green candidates were absent.
+- Apply the editor's W41 feedback as a tie-break, not a fixed story list: a newly available environmental learning resource such as Doers School can beat another wind-project financing story even if schoolchildren are its direct users. The editor also welcomed meaningful EU repair rules and funded electric public transport before their full benefits arrive. Judge each new development on its own evidence and relevance, and avoid mistaking a program covered months earlier for the same news.
+- Funding and regulatory developments can belong when meaningful for readers; describe what has actually been approved or launched, not the future benefit as though already delivered.
+- Build a varied 7–12-story edition, not a stack of the highest-scoring stories in one subject. Avoid several similar medical procedures in one issue; one strong human health story can coexist with practical access-to-care information. Do not apply rigid topic quotas or exclude health stories categorically.
+- Write each title and summary at the verified stage of the story (funded, authorized, planned, launched, operating). Put material uncertainty where readers need it, but do not append repetitive "not yet delivered" disclaimers to every article. Favor natural, specific facts over robotic qualifications or inflated optimism.
+- In the editor-facing handoff, explain why the final stories won, name plausible alternatives and cuts, and flag source limitations. Keep that reasoning separate from reader-facing newsletter copy. When the editor asks for revisions, preserve explicit keep/add/cut choices, explain tradeoffs, and check the whole edition's balance again.
+- Treat the editor's stated preferences as stronger than a previous candidate ranking. Capture durable preferences here when requested; do not turn one week's choice into a permanent ban or a numeric rule. No editor proof or local draft is approval to email subscribers: explicit editor approval and the existing delivery safeguards still apply.
+
 ### Styling
 - Primary color: green (`primary-*` in Tailwind config)
 - Max content width: `max-w-4xl` for layouts, `max-w-3xl` for prose
@@ -120,7 +136,7 @@ Avoid adding new planning docs unless the task explicitly asks for them.
 
 ## CI/CD Workflows
 - `ingest-news.yml`: every 6 hours + manual trigger; retries `npm run ingest-news`, runs `npm run cleanup-raw-data`, and retries `git pull --rebase && git push` with Git LFS retry tuning
-- `generate-newsletter.yml`: Saturday 10:00 UTC + manual trigger; runs staged pipeline jobs (`prepare` → `score` → `semantic-dedup` → `counter-signal-validate` → `select` → `natural-titles` → `wrapper-copy` → `refine`), materializes draft output, validates freshness, commits `data/pipeline/` + `data/drafts/`, then sends proof email via `npm run notify-draft`
+- `generate-newsletter.yml`: Saturday 09:30 Europe/Bucharest + manual trigger; prepares and scores the weekly pool, then commits the scoring artifacts. The scheduled orb independently selects stories and sends the editor-only proof; legacy draft-generation commands remain available for manual recovery.
 - `send-newsletter.yml`: prepares Sunday 20:17 Europe/Bucharest with Sunday-night/Monday-morning recovery passes; requires exact-week editor approval, reconciles a persisted Resend broadcast, and schedules Monday 09:00 Europe/Bucharest across DST
 - `publish-newsletter.yml`: verifies Resend delivery Monday at 09:30 with a strict 10:30 watchdog, then publishes the matching website issue; scheduled content is never published early
 - Failure alerting in scheduled workflows uses `npm run alert-workflow-failure`

@@ -74,7 +74,7 @@ export function buildNaturalTitlesPrompt(
 
   return `Rewrite the source headlines for Good Brief week ${weekId}.
 
-Good Brief is a Romanian positive-news newsletter for educated readers aged 20–30. Write one natural Romanian headline for every input article.
+Good Brief is a Romanian positive-news newsletter for educated readers aged 25–40. Write one natural Romanian headline for every input article.
 
 Rules:
 - Rebuild each headline around the central verified fact. Do not mechanically shorten the source title.

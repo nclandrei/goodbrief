@@ -57,6 +57,8 @@ Flag any issues and suggest rewrites if needed.
 
 ## 3. Article Selection Review
 
+Use the current independent-curation preferences in `AGENTS.md` alongside the copy guidelines.
+
 For each article in `selected`, evaluate:
 
 ### Positivity & Vibe
@@ -66,7 +68,7 @@ For each article in `selected`, evaluate:
 
 ### Impact & Interest
 - High impact stories preferred
-- Interesting for educated 20-30 year old Romanian audience
+- Interesting for educated Romanian readers aged 25–40, without assuming they are all parents or live in one city
 - Local heroes and community wins are valuable
 
 ### Category Balance
@@ -75,6 +77,8 @@ Check distribution across categories:
 - `local-heroes` - Community initiatives, people doing good
 - `green-stuff` - Environment, sustainability
 - `quick-hits` - Short positive news
+
+Give strong, distinct Green Stuff stories more room when the pool supports them; do not fill the section with weak green claims just to meet a count.
 
 ### Swap Suggestions
 Compare `selected` with `reserves`:

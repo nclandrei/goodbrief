@@ -1,0 +1,102 @@
+{
+  "weekId": "2026-W41",
+  "generatedAt": "2026-10-10T15:09:00.000Z",
+  "wrapperCopy": {
+    "greeting": "Bună! 👋",
+    "intro": "Săptămâna asta, veștile bune vin dintr-o bibliotecă, din școli și din idei care pot face viața de zi cu zi mai ușoară — de la repararea telefonului la drumul spre muncă.",
+    "signOff": "Ai grijă de tine și de oamenii tăi!\nGood Brief",
+    "shortSummary": "Cărți, transport mai curat și idei utile pentru comunități."
+  },
+  "selected": [
+    {
+      "id": "cadcf44211bad742",
+      "title": "Un tânăr a adunat cabinetele unde copiii pot primi tratamente dentare decontate",
+      "summary": "Ștefan Dobrotă a adunat pe DentalMap cabinete cu contract cu Casa de Asigurări care oferă tratamente stomatologice decontate pentru copii. Cei sub 18 ani pot primi tratamentele de bază incluse fără bilet de trimitere, în limita fondurilor disponibile la cabinet. Harta le poate scuti pe familii de căutări lungi.",
+      "category": "local-heroes",
+      "positivity": 88,
+      "impact": 77,
+      "audienceRelevance": 78
+    },
+    {
+      "id": "042702a710ab6bd7",
+      "title": "La biblioteca din Onești, copiii fac robotică, iar seniorii învață engleză",
+      "summary": "Biblioteca municipală din Onești găzduiește cursuri de robotică pentru copii și cursuri de limbi străine și tehnologie pentru seniori. Cei mici pot încerca și un simulator după ce povestesc o carte citită. E un loc unde generațiile au motive noi să revină.",
+      "category": "local-heroes",
+      "positivity": 90,
+      "impact": 67,
+      "audienceRelevance": 82
+    },
+    {
+      "id": "98f2bc73a30d760d",
+      "title": "O femeie i-a donat soțului o parte din ficat, prelevată robotic la Fundeni",
+      "summary": "Atena Zanfir i-a donat soțului o parte din ficat în anul în care împlinesc 25 de ani de căsnicie. Medicii de la Fundeni au prelevat țesutul de la donator cu ajutorul unui robot chirurgical, pentru prima dată în România.",
+      "category": "local-heroes",
+      "positivity": 93,
+      "impact": 84,
+      "audienceRelevance": 81
+    },
+    {
+      "id": "171dc732a528a08a",
+      "title": "Elevii Quantum Bits construiesc o dronă pentru salvamari și o aplicație pentru arheologi",
+      "summary": "Opt elevi de 11–15 ani din echipa Quantum Bits au dezvoltat AIDRONe, un prototip de dronă care ar putea identifica oameni în pericol în apă. Lucrează și la Stratum, o aplicație pentru digitalizarea muncii arheologilor.",
+      "category": "local-heroes",
+      "positivity": 86,
+      "impact": 54,
+      "audienceRelevance": 88
+    },
+    {
+      "id": "1841c6a402de9e81",
+      "title": "Bookster în Școli se extinde în alte șase județe",
+      "summary": "Programul de împrumut gratuit de cărți se extinde în șase județe noi și ar urma să ajungă la peste 150.000 de elevi și profesori din mai mult de 800 de școli. Profesorii vor putea comanda cărți pentru clase, livrate săptămânal direct la școală.",
+      "category": "wins",
+      "positivity": 84,
+      "impact": 72,
+      "audienceRelevance": 82
+    },
+    {
+      "id": "96400d3538b7d3bc",
+      "title": "Bucureștiul primește 87 de milioane de euro pentru transport public electric",
+      "summary": "Primăria anunță finanțare nerambursabilă pentru înnoirea flotei STB: 10 tramvaie, 45 de troleibuze și 40 de autobuze electrice. În proiect intră și infrastructura de încărcare necesară autobuzelor noi.",
+      "category": "green-stuff",
+      "positivity": 77,
+      "impact": 78,
+      "audienceRelevance": 85
+    },
+    {
+      "id": "089620728ef74d0c",
+      "title": "Timișoara inventariază arborii remarcabili din două parcuri",
+      "summary": "La Timișoara au fost identificați 12 arbori remarcabili în două parcuri. Acum le va fi evaluată starea pentru a stabili măsuri de conservare — un pas concret pentru protejarea copacilor bătrâni din oraș.",
+      "category": "green-stuff",
+      "positivity": 82,
+      "impact": 70,
+      "audienceRelevance": 80
+    },
+    {
+      "id": "d7214666ba369c54",
+      "title": "Doers School pune online peste 45 de activități despre mediu pentru școli",
+      "summary": "Let’s Do It, Romania! a lansat o platformă cu peste 45 de cursuri și ateliere pentru preșcolari și elevi, de la reciclare creativă la experimente și acțiuni de ecologizare. Peste 6.500 de copii au participat la activitățile programului în anul școlar trecut; platforma le poate aduce acum în mai multe clase.",
+      "category": "green-stuff",
+      "positivity": 83,
+      "impact": 68,
+      "audienceRelevance": 83
+    },
+    {
+      "id": "43cd4532954ad2bc",
+      "title": "Regulile UE privind repararea bunurilor includ și smartphone-urile",
+      "summary": "Directiva europeană adoptată în 2024 prevede obligații de reparare pentru anumite categorii de produse, inclusiv smartphone-uri; termenul de aplicare în statele membre a fost 31 iulie 2026. Unele dispozitive afișează deja informații despre cât de ușor pot fi reparate, utile când alegi un model nou.",
+      "category": "green-stuff",
+      "positivity": 72,
+      "impact": 76,
+      "audienceRelevance": 88
+    },
+    {
+      "id": "b030a87578be52ec",
+      "title": "Un bloc vechi din București are autorizație pentru un lift exterior",
+      "summary": "Sectorul 2 a autorizat instalarea unui lift exterior la un bloc vechi de pe strada Maior Coravu. Primăria caută acum soluții de finanțare pentru astfel de lucrări, care le-ar ușura accesul seniorilor și oamenilor cu mobilitate redusă.",
+      "category": "quick-hits",
+      "positivity": 76,
+      "impact": 67,
+      "audienceRelevance": 81
+    }
+  ]
+}

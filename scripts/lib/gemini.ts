@@ -21,7 +21,7 @@ function getArticleScoreSchema(includeReasoning: boolean) {
     },
     feltImpact: {
       type: 'integer',
-      description: 'How directly a 20-30 year old Romanian would feel or care about this story soon',
+      description: 'How directly an educated Romanian aged 25-40 would feel or care about this story soon',
     },
     certainty: {
       type: 'integer',
@@ -105,7 +105,7 @@ function getPrompt(articlesText: string, includeReasoning: boolean): string {
     ? 'Return ONLY valid JSON array: [{"id": "...", "summary": "...", "positivity": N, "impact": N, "editorialInterest": N, "feltImpact": N, "certainty": N, "humanCloseness": N, "bureaucraticDistance": N, "promoRisk": N, "romaniaRelevant": true/false, "category": "...", "reasoning": "..."}, ...]'
     : 'Return ONLY valid JSON array: [{"id": "...", "summary": "...", "positivity": N, "impact": N, "editorialInterest": N, "feltImpact": N, "certainty": N, "humanCloseness": N, "bureaucraticDistance": N, "promoRisk": N, "romaniaRelevant": true/false, "category": "..."}, ...]';
 
-  return `You are writing for Good Brief, a Romanian positive news newsletter for young educated Romanians (20-30).
+  return `You are writing for Good Brief, a Romanian positive news newsletter for educated Romanians aged 25-40.
 
 VOICE & TONE:
 - Sound like a smart friend sharing good news, NOT a news outlet
@@ -124,7 +124,7 @@ For each article, provide:
 1. SUMMARY (2-3 sentences in Romanian):
    - Start with the key fact (who did what)
    - Add context if needed (why it matters)
-   - End with impact (what this means for people)
+   - Include a concrete reader-relevant implication only when supported; do not force an impact ending or repeat a stock caveat after every story.
    - Preserve tense, timing, certainty, and targets exactly. Never turn a plan, capacity, attendance target, or scheduled event into a completed outcome.
    - A present-tense headline can describe a future event. Unless the source explicitly says the result already happened, keep it scheduled or prospective.
    - Avoid formal language ("potrivit surselor", "în cadrul", "menționăm că")
@@ -139,13 +139,13 @@ For each article, provide:
 
 3. IMPACT SCORE (0-100) - How much does this story matter to our readers?
    This is STRUCTURAL IMPACT: how significant the story is in Romania if it becomes real.
-   Our audience: educated Romanians aged 20-30 who care about their communities, progress, and meaningful change.
+   Our core audience: educated Romanians aged 25-40 who care about their communities, daily life, nature, and meaningful change. Do not assume every reader is a parent or lives in Bucharest.
    
    HIGH IMPACT (80-100):
    - Local community wins (new parks, hospitals, infrastructure in Romania)
    - Romanian achievements and innovations
    - Health/science breakthroughs that affect people's lives
-   - Environmental progress in Romania or globally significant
+   - Environmental progress in Romania or globally significant, including biodiversity, clean mobility, and repair/reuse
    
    MEDIUM IMPACT (60-80):
    - Regional success stories
@@ -162,7 +162,7 @@ For each article, provide:
    
    Ask yourself: "How big is this for Romania if it is real?"
 
-4. EDITORIAL INTEREST SCORE (0-100) - Would a smart Romanian aged 20-30 tell a friend about this specific story?
+4. EDITORIAL INTEREST SCORE (0-100) - Would an educated Romanian aged 25-40 tell a friend about this specific story?
    HIGH EDITORIAL INTEREST (80-100):
    - Distinctive, surprising, memorable, or unusually useful; it has a concrete detail that makes it worth sharing with a friend
    - A meaningful change, achievement, discovery, or human initiative that stands out from the weekly news flow
@@ -172,9 +172,9 @@ For each article, provide:
    - Pleasant but interchangeable news that readers would not miss if it were absent
    - Do not raise this score merely because the outcome is positive
 
-5. FELT IMPACT SCORE (0-100) - How directly would a 25-year-old in Cluj/București feel, care about, or share this soon?
+5. FELT IMPACT SCORE (0-100) - How directly would a reader aged 25-40 feel, care about, or share this soon?
    HIGH FELT IMPACT (80-100):
-   - Tangible community improvements, everyday-life effects, people helped directly, visible local progress
+   - Tangible community improvements, everyday-life effects, people helped directly, visible local progress, useful changes to commuting, household costs, services, or public spaces
    - Stories readers can imagine in real life, not just in a ministry slide deck
 
    LOW FELT IMPACT (0-40):
@@ -235,7 +235,7 @@ For each article, provide:
    - Alege prima categorie care se potrivește clar.
 
    a) "green-stuff"
-      - Mediu, sustenabilitate, natură, climă, animale.
+      - Mediu, sustenabilitate, natură, biodiversitate, climă, mobilitate curată, reparare/reutilizare, animale.
       - Exemple: "Primăria plantează 10.000 de copaci", "Un sat trece pe energie solară"
       - Dacă tema principală e ecologică, alege "green-stuff" chiar dacă apare și un erou local.
 

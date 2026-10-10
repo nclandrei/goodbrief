@@ -1,14 +1,14 @@
 # Good Brief - Agent Guidelines
 
 ## Overview
-Romanian positive news newsletter (goodbrief.ro). Static site + automated pipeline. Target: 20-30yo educated Romanians.
+Romanian positive news newsletter (goodbrief.ro). Static site + automated pipeline. Core audience: educated Romanians aged 25–40. Follow `AGENTS.md` for the current independent-curation preferences and `COPY_GUIDELINES.md` for voice.
 
 ## Tech Stack
 - **Framework:** Astro 5 + TypeScript (strict, `@/*` → `src/*` path alias)
 - **Styling:** Tailwind CSS (custom tokens: olive, cream, charcoal, coral; fonts: Inter sans, Fraunces serif)
 - **Content:** Markdown in `content/issues/`, Zod-validated via `src/content.config.ts`
 - **Email:** React Email `.tsx` templates in `emails/`, sent via Resend
-- **AI:** Google Gemini (`@google/generative-ai`) for draft scoring + copy generation
+- **AI:** Google Gemini (`@google/generative-ai`) for weekly scoring; manual legacy draft commands remain available
 - **Hosting:** Cloudflare Pages (auto-deploy from main) + Functions (`functions/api/`)
 - **Tests:** Node.js native test runner (`node --import tsx --test tests/**/*.test.ts`)
 
@@ -136,7 +136,7 @@ in env to auto-fall-back on quota errors.
 ## CI/CD Workflows
 
 - **ingest-news.yml**: Every 6h — `ingest-news` → `cleanup-raw-data` → commit + push
-- **generate-newsletter.yml**: Saturday 10:00 UTC — staged pipeline (prepare → score → semantic-dedup → validate → select → natural-titles → wrapper-copy → refine) → materialize draft → validate freshness → commit → proof email
+- **generate-newsletter.yml**: Saturday 09:30 Europe/Bucharest — prepare → score only → commit scored pool; the scheduled orb independently curates and emails the editor-only proof
 - **send-newsletter.yml**: Sunday evening plus recovery passes — exact-week editor approval → persisted Resend broadcast → Monday 09:00 Europe/Bucharest delivery
 - **publish-newsletter.yml**: Monday 09:30/10:30 Europe/Bucharest — verify the matching Resend broadcast is sent → publish issue → commit
 

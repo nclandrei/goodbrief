@@ -38,7 +38,7 @@ test('workflow failure alert includes immediate recovery context when supplied',
   assert.match(alert.reason, /s-a oprit/);
 });
 
-test('generation workflow supplies resume context and has an incident fallback', () => {
+test('scoring workflow supplies resume context and has an incident fallback', () => {
   const workflow = readFileSync(
     join(WORKSPACE_ROOT, '.github', 'workflows', 'generate-newsletter.yml'),
     'utf-8'
