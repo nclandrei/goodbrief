@@ -56,7 +56,7 @@ async function main(): Promise<void> {
   <h2 style="margin-top: 24px;">What to do?</h2>
   <ol>
     <li>Check if the draft exists at <code>data/drafts/${weekId}.json</code></li>
-    <li>If missing, run <code>npm run generate-draft</code> manually</li>
+    <li>If missing, use the independent orb proof for ${weekId} to materialize the reviewed draft; if the proof is missing, curate the week's raw pool first. Do not substitute the old Gemini draft pipeline.</li>
     <li>Approve the final draft, push it, then manually run the <strong>Prepare Newsletter Delivery</strong> GitHub workflow for <code>${weekId}</code></li>
   </ol>
   

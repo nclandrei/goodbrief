@@ -29,9 +29,17 @@ npx tsx scripts/send-welcome-test.ts        # Send test welcome email to TEST_EM
 # Newsletter Pipeline
 npm run ingest-news      # Fetch news from RSS feeds
 npm run check-feed-health # Verify RSS feed health and parser readiness
-npm run generate-draft   # Generate newsletter draft with AI
 npm run pipeline:prepare # Run pipeline prepare phase
 npm run pipeline:score   # Run pipeline scoring phase
+npx tsx scripts/send-independent-proof.ts --week 2026-W41 --dry-run --output /tmp/proof.html # Preview independent editor proof
+npx tsx scripts/send-independent-proof.ts --week 2026-W41 --test-email # Send editor-only newsletter-format test
+npm run pipeline:verify-ingest-e2e  # Verify ingest + feed-health pipeline flow
+npm run publish-issue    # Publish issue to content/issues/
+npm run alert-missing-draft -- <week> <reason>  # Alert when Monday send has no draft
+npm run alert-workflow-failure -- --workflow "<name>" --run-url "<url>"  # Alert on GH workflow failure
+npm run cleanup-raw-data # Remove old data/raw/*.json files
+# Legacy manual recovery only (not part of Saturday automation):
+npm run generate-draft   # Generate an AI draft
 npm run pipeline:semantic-dedup  # Run semantic dedup phase
 npm run pipeline:validate        # Run counter-signal validation phase
 npm run pipeline:select  # Run shortlist selection phase
@@ -39,15 +47,10 @@ npm run pipeline:natural-titles  # Rewrite source headlines for readers
 npm run pipeline:wrapper-copy    # Generate wrapper copy phase
 npm run pipeline:refine  # Run final refine phase
 npm run pipeline:verify-local -- --week 2026-W02  # Verify phase outputs locally
-npm run pipeline:verify-ingest-e2e  # Verify ingest + feed-health pipeline flow
 npm run validate-draft -- --week 2026-W02         # Validate draft quality/rules
 npm run validate-draft-freshness -- --week 2026-W02  # Validate archive freshness gate
 npm run backfill-legacy-validation -- --through-week 2026-W09  # Backfill validation metadata for legacy drafts/issues
-npm run publish-issue    # Publish issue to content/issues/
-npm run notify-draft     # Send editor notification/proof email for generated draft
-npm run alert-missing-draft -- <week> <reason>  # Alert when Monday send has no draft
-npm run alert-workflow-failure -- --workflow "<name>" --run-url "<url>"  # Alert on GH workflow failure
-npm run cleanup-raw-data # Remove old data/raw/*.json files
+npm run notify-draft     # Send proof for a validated legacy draft only
 ```
 
 ## Project Structure
@@ -136,7 +139,7 @@ Avoid adding new planning docs unless the task explicitly asks for them.
 
 ## CI/CD Workflows
 - `ingest-news.yml`: every 6 hours + manual trigger; retries `npm run ingest-news`, runs `npm run cleanup-raw-data`, and retries `git pull --rebase && git push` with Git LFS retry tuning
-- `generate-newsletter.yml`: Saturday 09:30 Europe/Bucharest + manual trigger; prepares and scores the weekly pool, then commits the scoring artifacts. The scheduled orb independently selects stories and sends the editor-only proof; legacy draft-generation commands remain available for manual recovery.
+- `generate-newsletter.yml`: Saturday 09:30 Europe/Bucharest + manual trigger; prepares and scores the weekly pool, then commits the scoring artifacts. It does not generate a draft or send a proof. The scheduled orb independently selects stories, sends the editor-only proof and a separate newsletter-format test to the editor's account; legacy draft commands are manual recovery only.
 - `send-newsletter.yml`: prepares Sunday 20:17 Europe/Bucharest with Sunday-night/Monday-morning recovery passes; requires exact-week editor approval, reconciles a persisted Resend broadcast, and schedules Monday 09:00 Europe/Bucharest across DST
 - `publish-newsletter.yml`: verifies Resend delivery Monday at 09:30 with a strict 10:30 watchdog, then publishes the matching website issue; scheduled content is never published early
 - Failure alerting in scheduled workflows uses `npm run alert-workflow-failure`

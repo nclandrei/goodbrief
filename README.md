@@ -24,20 +24,28 @@ npm run preview   # Preview build
 
 ## Pipeline
 
+The Saturday GitHub workflow prepares and scores the raw news pool only. The Amp
+schedule independently curates that pool, then emails the editor a proof with
+scores **and** a separate `[TEST]` email rendered in the newsletter layout.
+Neither email approves a subscriber send. After reviewing the edition, the
+editor must approve and push its draft for the Monday delivery workflow.
+
 ```bash
 npm run ingest-news
-npm run generate-draft
-npm run pipeline:natural-titles -- --week 2026-W10
-npm run validate-draft-freshness -- --week 2026-W10
-npm run notify-draft -- 2026-W10
-npm run publish-issue -- --week 2026-W10
+npm run pipeline:prepare -- --week 2026-W41
+npm run pipeline:score -- --week 2026-W41
+# After the orb has written data/orb-proofs/2026-W41.json from the raw pool:
+npx tsx scripts/send-independent-proof.ts --week 2026-W41 --dry-run --output /tmp/proof.html
+npx tsx scripts/send-independent-proof.ts --week 2026-W41
+npx tsx scripts/send-independent-proof.ts --week 2026-W41 --test-email
 ```
 
 ## LLM providers
 
-The draft pipeline supports three interchangeable LLM backends. **Gemini** is
-the default; switch via `--llm` or the `LLM_PROVIDER` env var. You only need
-the API key for the provider you actually use — the others can stay unset.
+**Gemini** scores the weekly pool by default. The scheduled workflow also
+supports OpenRouter as a fallback. The full AI draft pipeline below is retained
+for *manual legacy recovery only*; it never runs in Saturday automation. Select
+a provider with `--llm` or `LLM_PROVIDER` and supply its API key if needed.
 
 | Provider     | Flag                  | Required env                  | Where it runs |
 | ------------ | --------------------- | ----------------------------- | ------------- |
@@ -78,11 +86,12 @@ per-million-token price ceilings. This keeps scheduled generation off the
 capacity-constrained free pool without allowing an unexpectedly expensive
 provider route.
 
-**CI note:** The `Generate Newsletter Draft` workflow accepts an
+**CI note:** The `Score Weekly News` workflow accepts an
 `llm_provider` input (`gemini` | `openrouter`) on `workflow_dispatch`.
 Scheduled runs use `gemini` by default. `claude-cli` is deliberately rejected
 in CI (`CI=true`) because it needs an interactive Claude Code session — it
-exists purely for local recovery via `npm run recover-week`.
+exists purely for local recovery via `npm run recover-week`. The old
+`generate-draft` and `notify-draft` commands are not part of the weekly path.
 
 ## Documentatie
 

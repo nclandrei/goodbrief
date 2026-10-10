@@ -500,9 +500,9 @@ export async function runScorePhase(
           details: error.message,
           actionItems: [
             'Wait for the quota to reset',
-            'Re-run the pipeline with a different provider (<code>--llm gemini</code>, <code>--llm claude-cli</code>, or <code>--llm openrouter</code>)',
+            'Re-run only the scoring phase with a different provider (<code>--llm gemini</code>, <code>--llm claude-cli</code>, or <code>--llm openrouter</code>)',
             'Or set <code>LLM_FALLBACK=claude-cli</code> (or <code>openrouter</code>) to auto-fall-back on quota errors',
-            'For full recovery, run <code>npm run pipeline:run-all -- --week ' + weekId + ' --llm claude-cli</code> locally',
+            'For local recovery, run <code>npm run pipeline:score -- --week ' + weekId + ' --llm claude-cli --skip-existing</code>',
           ],
         });
       }

@@ -10,6 +10,7 @@ import {
   buildResendEmailIdempotencyKey,
   sendResendEmailWithRetry,
 } from './lib/resend-email.js';
+import { buildNewsletterEmail } from './lib/newsletter-email.js';
 import { MAX_SENDABLE_ARTICLE_COUNT, MIN_SENDABLE_ARTICLE_COUNT } from './lib/newsletter-policy.js';
 
 export interface IndependentArticle {
@@ -151,7 +152,9 @@ async function main(): Promise<void> {
   const proof = JSON.parse(readFileSync(join(ROOT_DIR, 'data', 'orb-proofs', `${week}.json`), 'utf8')) as IndependentProof;
   const raw = JSON.parse(readFileSync(join(ROOT_DIR, 'data', 'raw', `${week}.json`), 'utf8')) as WeeklyBuffer;
   validateIndependentProof(proof, raw);
-  const html = renderIndependentProof(proof, raw);
+  const testEmail = args.includes('--test-email');
+  const newsletter = testEmail ? buildNewsletterEmail(materializeIndependentDraft(proof, raw)) : null;
+  const html = newsletter?.html ?? renderIndependentProof(proof, raw);
   if (args.includes('--materialize-draft')) {
     const draftPath = join(ROOT_DIR, 'data', 'drafts', `${week}.json`);
     if (existsSync(draftPath)) throw new Error(`Refusing to overwrite existing draft at ${draftPath}`);
@@ -166,23 +169,30 @@ async function main(): Promise<void> {
     return;
   }
 
-  const recipient = process.env.TEST_EMAIL || process.env.AMP_USER_EMAIL;
+  const usingAmpAccount = testEmail ? Boolean(process.env.AMP_USER_EMAIL) : !process.env.TEST_EMAIL;
+  const recipient = usingAmpAccount ? process.env.AMP_USER_EMAIL : process.env.TEST_EMAIL;
   const apiKey = process.env.RESEND_API_KEY;
   if (!recipient || !apiKey) {
-    throw new Error('TEST_EMAIL (or the Amp account email) and RESEND_API_KEY are required for editor-only proof delivery');
+    throw new Error('TEST_EMAIL (or the Amp account email) and RESEND_API_KEY are required for editor-only email delivery');
   }
-  console.log(`Sending editor proof to ${process.env.TEST_EMAIL ? 'TEST_EMAIL' : 'the Amp account email'}`);
+  const recipients = recipient.split(',').map((email) => email.trim()).filter(Boolean);
+  if (testEmail && recipients.length !== 1) {
+    throw new Error('The independent test newsletter must have exactly one editor recipient');
+  }
+  console.log(`Sending ${testEmail ? 'test newsletter' : 'editor proof'} to ${usingAmpAccount ? 'the Amp account email' : 'TEST_EMAIL'}`);
   const resend = new Resend(apiKey);
   const payload = {
     from: 'Good Brief <buna@goodbrief.ro>',
-    to: recipient.split(',').map((email) => email.trim()).filter(Boolean),
-    subject: `[PROOF INDEPENDENT] Good Brief ${week} – Vești bune din România`,
+    to: recipients,
+    subject: testEmail
+      ? `[TEST] Good Brief ${week} – Vești bune din România`
+      : `[PROOF INDEPENDENT] Good Brief ${week} – Vești bune din România`,
     html,
   };
   const result = await sendResendEmailWithRetry(resend.emails.send.bind(resend.emails), payload, {
-    idempotencyKey: buildResendEmailIdempotencyKey(`independent-proof-${week}`, payload),
+    idempotencyKey: buildResendEmailIdempotencyKey(`${testEmail ? 'independent-test' : 'independent-proof'}-${week}`, payload),
   });
-  console.log(`Independent proof accepted by Resend (${result.id})`);
+  console.log(`${testEmail ? 'Test newsletter' : 'Independent proof'} accepted by Resend (${result.id})`);
 }
 
 if (process.argv[1]?.endsWith('send-independent-proof.ts')) {

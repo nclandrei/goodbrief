@@ -8,7 +8,7 @@ Romanian positive news newsletter (goodbrief.ro). Static site + automated pipeli
 - **Styling:** Tailwind CSS (custom tokens: olive, cream, charcoal, coral; fonts: Inter sans, Fraunces serif)
 - **Content:** Markdown in `content/issues/`, Zod-validated via `src/content.config.ts`
 - **Email:** React Email `.tsx` templates in `emails/`, sent via Resend
-- **AI:** Google Gemini (`@google/generative-ai`) for weekly scoring; manual legacy draft commands remain available
+- **AI:** Google Gemini (`@google/generative-ai`) for weekly scoring only; full AI draft generation is manual legacy recovery
 - **Hosting:** Cloudflare Pages (auto-deploy from main) + Functions (`functions/api/`)
 - **Tests:** Node.js native test runner (`node --import tsx --test tests/**/*.test.ts`)
 
@@ -33,6 +33,11 @@ npm run ingest-news           # Fetch RSS feeds → data/raw/
 npm run check-feed-health     # Verify RSS feed health
 npm run pipeline:prepare      # Collect + deduplicate candidates
 npm run pipeline:score        # AI scoring (needs GEMINI_API_KEY)
+npx tsx scripts/send-independent-proof.ts --week 2026-W41 --dry-run --output /tmp/proof.html
+npx tsx scripts/send-independent-proof.ts --week 2026-W41 --test-email # Editor-only newsletter-format test
+npm run publish-issue         # Publish approved draft → content/issues/ markdown
+npm run cleanup-raw-data      # Remove old data/raw/ files
+# Legacy manual recovery only, never the scheduled Saturday path:
 npm run pipeline:semantic-dedup
 npm run pipeline:validate     # Counter-signal validation
 npm run pipeline:select       # Shortlist finalization
@@ -41,10 +46,8 @@ npm run pipeline:wrapper-copy # AI-generated greeting/intro/signoff
 npm run pipeline:refine       # Final refinement
 npm run validate-draft -- --week 2026-W12          # Validate draft quality
 npm run validate-draft-freshness -- --week 2026-W12 # Archive freshness gate
-npm run publish-issue         # Publish draft → content/issues/ markdown
-npm run notify-draft          # Send proof email to editor
+npm run notify-draft          # Send proof for validated legacy draft only
 npm run pipeline:verify-local -- --week 2026-W12   # Verify phase outputs
-npm run cleanup-raw-data      # Remove old data/raw/ files
 ```
 
 ## Project Structure
@@ -136,7 +139,7 @@ in env to auto-fall-back on quota errors.
 ## CI/CD Workflows
 
 - **ingest-news.yml**: Every 6h — `ingest-news` → `cleanup-raw-data` → commit + push
-- **generate-newsletter.yml**: Saturday 09:30 Europe/Bucharest — prepare → score only → commit scored pool; the scheduled orb independently curates and emails the editor-only proof
+- **generate-newsletter.yml**: Saturday 09:30 Europe/Bucharest — prepare → score only → commit scored pool; no Gemini draft or proof. The scheduled orb independently curates and sends both an editor proof and a newsletter-format test to the editor.
 - **send-newsletter.yml**: Sunday evening plus recovery passes — exact-week editor approval → persisted Resend broadcast → Monday 09:00 Europe/Bucharest delivery
 - **publish-newsletter.yml**: Monday 09:30/10:30 Europe/Bucharest — verify the matching Resend broadcast is sent → publish issue → commit
 
