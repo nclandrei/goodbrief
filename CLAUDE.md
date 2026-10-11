@@ -152,17 +152,33 @@ in env to auto-fall-back on quota errors.
 ## Editorial Approval — Hands Off the Draft
 
 When the editor says "validate and approve [the draft] for Monday" (or any
-variant: "approve this", "lock it in", "make it ready to send"), treat the
-current `data/drafts/YYYY-WXX.json` as **final editor-authored content**.
+variant: "approve this", "lock it in", "make it ready to send"), identify the
+edition they actually reviewed before locking anything. The Saturday independent
+proof and its newsletter-format `[TEST]` are not necessarily the current
+`data/drafts/YYYY-WXX.json`: that file may still contain an unrelated Gemini
+draft. Approval of proposed additions or a request for a test email alone does
+not authorize a subscriber send. If approval refers unambiguously to the final
+independent edition, first materialize that exact proof as the production draft,
+verify its selection and copy against the reviewed proof, and only then approve
+it in a separate command. Check that the raw LFS file contains JSON rather than
+an LFS pointer before materializing; if any step fails, stop without approving.
+Never use `;` to chain transfer, approval, and readiness checks: a failed first
+command must not let `approve-draft` run on the old draft. If the edition or
+authorization is unclear, present the actual draft/proof diff and ask which
+final content the editor approves; never approve the old draft just because it
+occupies the expected path.
 
-**Do exactly this, nothing more:**
-1. Run `npm run approve-draft -- --week YYYY-WXX`. That script only flips
-   `validation.status` to `passed`, sets `approvalSource: "editor-review"`,
-   and updates `checkedAt`. It does not touch `selected`, `reserves`, or
+Once the exact production edition is approved, **lock it without rewriting it**:
+1. Run `npm run approve-draft -- --week YYYY-WXX`. That script sets
+   `validation.status` to `passed`, `approvalSource: "editor-review"`, and a
+   delivery content lock. It does not change `selected`, `reserves`, or
    `wrapperCopy`.
 2. Optionally run `npm run validate-draft-freshness -- --week YYYY-WXX` as a
    read-only gate.
-3. Create **one** commit with only the approval metadata change.
+3. Check `scripts/assert-draft-ready.ts --production` and review the diff.
+   Commit the approved draft in **one** commit (including proof-to-draft content
+   if that was the approved edition). Push only when authorized; the GitHub
+   workflow cannot schedule a local, unpushed draft.
 
 **Never, under an approval instruction:**
 - Re-run any `pipeline:*` phase (especially `select`, `natural-titles`, `wrapper-copy`, `refine`).
@@ -171,9 +187,9 @@ current `data/drafts/YYYY-WXX.json` as **final editor-authored content**.
 - Move articles between `selected` and `reserves`, reorder, trim to a
   target count, or rewrite summaries/titles.
 - Produce multiple commits (e.g. an "editor review" commit followed by a
-  separate "approve" commit). If the draft needs edits, the editor will
-  say so explicitly; silence means it's final.
+  separate "approve" commit). If the approved proof replaces a different
+  draft, that exact proof is the content change, not a reason to re-curate.
 
 If something looks wrong (e.g. selected.length < 8, stale timestamps,
-freshness gate fails), surface it and **ask** before changing anything.
+freshness gate fails), surface it and **ask** before changing the approved copy.
 The approval verb is a lock, not a green light to re-curate.
