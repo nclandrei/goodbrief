@@ -1,25 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, writeFileSync } from 'node:fs';
-import { tmpdir } from 'node:os';
-import { join } from 'node:path';
-import {
-  reviewDraftPoolAgainstArchive,
-  validateDraftFreshness,
-  type ArchiveReviewDecision,
-  type ArchiveReviewInputItem,
-} from '../scripts/lib/draft-validation.js';
-import type { NewsletterDraft, ProcessedArticle, WrapperCopy } from '../scripts/types.js';
+import { validateDraftFreshness } from '../scripts/lib/draft-validation.js';
+import { assertDraftReadyForProduction, assertDraftValidated } from '../scripts/lib/draft-delivery.js';
 import type { HistoricalArticle } from '../scripts/lib/story-history.js';
-
-function makeWrapperCopy(): WrapperCopy {
-  return {
-    greeting: 'Salut!',
-    intro: 'Intro de test.',
-    signOff: 'Pe curând',
-    shortSummary: 'Rezumat de test.',
-  };
-}
+import type { NewsletterDraft, ProcessedArticle } from '../scripts/types.js';
 
 function makeArticle(index: number, overrides: Partial<ProcessedArticle> = {}): ProcessedArticle {
   return {
@@ -27,6 +11,7 @@ function makeArticle(index: number, overrides: Partial<ProcessedArticle> = {}): 
     sourceId: 'source',
     sourceName: 'Source',
     originalTitle: `Story ${index}`,
+    title: `Titlu editorial ${index}`,
     url: `https://example.com/story-${index}`,
     summary: `Summary for story ${index}.`,
     positivity: 80,
@@ -46,7 +31,12 @@ function makeDraft(selected: ProcessedArticle[], reserves: ProcessedArticle[] = 
     reserves,
     discarded: 0,
     totalProcessed: selected.length + reserves.length,
-    wrapperCopy: makeWrapperCopy(),
+    wrapperCopy: {
+      greeting: 'Salut!',
+      intro: 'Introducerea revizuită de editor.',
+      signOff: 'Pe curând',
+      shortSummary: 'Rezumatul revizuit.',
+    },
   };
 }
 
@@ -61,406 +51,165 @@ function makeHistory(overrides: Partial<HistoricalArticle> = {}): HistoricalArti
   };
 }
 
-function buildFreshReview(items: ArchiveReviewInputItem[]): ArchiveReviewDecision[] {
-  return items.map((item) => ({
-    articleId: item.article.id,
-    verdict: 'fresh',
-    notes: 'Fresh story.',
-  }));
+async function check(draft: NewsletterDraft, historicalArticles: HistoricalArticle[] = []) {
+  const before = JSON.stringify(draft);
+  const result = await validateDraftFreshness({
+    draft,
+    historicalArticles,
+    recentDraftCount: historicalArticles.filter((article) => article.source === 'draft').length,
+    publishedHistoryCount: historicalArticles.filter((article) => article.source === 'issue').length,
+    now: new Date('2026-03-07T10:00:00.000Z'),
+  });
+  assert.equal(JSON.stringify(draft), before, 'Freshness checks must never mutate the edition');
+  return result;
 }
 
-test('fails closed instead of crashing when archive review omits an article verdict', async () => {
-  const reviewPath = join(mkdtempSync(join(tmpdir(), 'goodbrief-archive-review-')), 'review.json');
-  writeFileSync(
-    reviewPath,
-    JSON.stringify({
-      reviews: [
-        {
-          articleId: 'article-0',
-          verdict: 'fresh',
-          notes: 'Fresh story.',
-        },
-      ],
-    }),
-    'utf-8'
+function selectedWithFirst(overrides: Partial<ProcessedArticle> = {}): ProcessedArticle[] {
+  return Array.from({ length: 10 }, (_, index) => makeArticle(index, index === 0 ? overrides : {}));
+}
+
+test('reports exact canonical URL repeats without replacing reviewed stories', async () => {
+  const draft = makeDraft(
+    selectedWithFirst({ url: 'https://www.archive.example.com/story/?utm_source=test' }),
+    [makeArticle(10)]
   );
+  const result = await check(draft, [makeHistory()]);
 
-  const previousReviewPath = process.env.GOODBRIEF_ARCHIVE_REVIEW_PATH;
-  process.env.GOODBRIEF_ARCHIVE_REVIEW_PATH = reviewPath;
-
-  try {
-    const items: ArchiveReviewInputItem[] = [0, 1].map((index) => ({
-      article: makeArticle(index),
-      candidates: [],
-      requiresDateReview: false,
-    }));
-
-    const decisions = await reviewDraftPoolAgainstArchive(items, '2026-W10');
-
-    assert.deepEqual(decisions, [
-      {
-        articleId: 'article-0',
-        verdict: 'fresh',
-        notes: 'Fresh story.',
-        matchedOrigin: undefined,
-        matchedTitle: undefined,
-      },
-      {
-        articleId: 'article-1',
-        verdict: 'duplicate',
-        notes: 'Archive review omitted this article; blocked automatically for manual review.',
-      },
-    ]);
-  } finally {
-    if (previousReviewPath === undefined) {
-      delete process.env.GOODBRIEF_ARCHIVE_REVIEW_PATH;
-    } else {
-      process.env.GOODBRIEF_ARCHIVE_REVIEW_PATH = previousReviewPath;
-    }
-  }
+  assert.equal(result.blockedArticles[0]?.reason, 'url-match');
+  assert.equal(result.blockedArticles[0]?.matchedOrigin, '2026-03-02-issue.md');
+  assert.equal(result.status, 'failed');
+  assert.equal(result.selectedFreshCount, 9);
+  assert.equal(result.reserveFreshCount, 1);
+  assert.equal(draft.selected[0].id, 'article-0');
+  assert.equal(draft.reserves[0].id, 'article-10');
 });
 
-test('blocks exact canonical URL repeats deterministically', async () => {
-  const selected = Array.from({ length: 10 }, (_, index) =>
-    makeArticle(index, index === 0 ? { url: 'https://archive.example.com/story?utm_source=test' } : {})
-  );
-  const reserves = [makeArticle(10)];
-  const reviewedIds: string[] = [];
+test('retains hard editorial exclusions in the deterministic report', async () => {
+  const result = await check(makeDraft(selectedWithFirst({
+    originalTitle: 'Elevii din Cluj au obținut cele mai multe medii de 10 la Bacalaureat',
+    summary: 'Rezultatele finale ale examenului au fost publicate.',
+  })));
 
-  const result = await validateDraftFreshness({
-    draft: makeDraft(selected, reserves),
-    historicalArticles: [makeHistory()],
-    recentDraftCount: 0,
-    publishedHistoryCount: 1,
-    now: new Date('2026-03-08T10:00:00.000Z'),
-    reviewArchive: async (items) => {
-      reviewedIds.push(...items.map((item) => item.article.id));
-      return buildFreshReview(items);
-    },
-    generateWrapperCopy: async () => makeWrapperCopy(),
-  });
-
-  assert.equal(result.draft.validation?.blockedArticles?.[0]?.reason, 'url-match');
-  assert.equal(reviewedIds.includes('article-0'), false);
-  assert.equal(result.draft.validation?.status, 'passed');
+  assert.equal(result.blockedArticles[0]?.reason, 'editorial:routine-national-exam-result');
+  assert.equal(result.status, 'failed');
 });
 
-test('enforces hard editorial exclusions before archive review', async () => {
-  const selected = [
-    makeArticle(0, {
-      originalTitle: 'Elevii din Cluj au obținut cele mai multe medii de 10 la Bacalaureat',
-      summary: 'Rezultatele finale ale examenului au fost publicate.',
-    }),
-    ...Array.from({ length: 9 }, (_, index) => makeArticle(index + 1)),
-  ];
-  const reviewedIds: string[] = [];
-
-  const result = await validateDraftFreshness({
-    draft: makeDraft(selected, [makeArticle(10)]),
-    historicalArticles: [],
-    recentDraftCount: 0,
-    publishedHistoryCount: 0,
-    now: new Date('2026-03-08T10:00:00.000Z'),
-    reviewArchive: async (items) => {
-      reviewedIds.push(...items.map((item) => item.article.id));
-      return buildFreshReview(items);
-    },
-    generateWrapperCopy: async () => makeWrapperCopy(),
-  });
-
-  assert.equal(reviewedIds.includes('article-0'), false);
-  assert.equal(result.draft.selected.some((article) => article.id === 'article-0'), false);
-  assert.equal(result.draft.selected.some((article) => article.id === 'article-10'), true);
-  assert.equal(
-    result.draft.validation?.blockedArticles?.find(
-      (blocked) => blocked.articleId === 'article-0'
-    )?.reason,
-    'editorial:routine-national-exam-result'
-  );
-});
-
-test('blocks high-confidence title and summary rewrites deterministically', async () => {
-  const selected = [
-    makeArticle(0, {
-      originalTitle: 'Bistrița face mai ușor accesul la servicii pentru copiii cu autism',
-      summary:
-        'Peste 35 de instituții din Bistrița și-au adaptat serviciile și semnalizarea pentru persoanele cu autism.',
-    }),
-    ...Array.from({ length: 9 }, (_, index) => makeArticle(index + 1)),
-  ];
-  const reserves = [makeArticle(10)];
-  const reviewedIds: string[] = [];
-
-  const result = await validateDraftFreshness({
-    draft: makeDraft(selected, reserves),
-    historicalArticles: [
-      makeHistory({
-        title: 'Bistrița face mai ușor accesul la servicii pentru persoanele cu autism',
-        summary:
-          'La Bistrița, peste 35 de instituții și companii și-au adaptat serviciile pentru persoane cu autism.',
-      }),
-    ],
-    recentDraftCount: 0,
-    publishedHistoryCount: 1,
-    now: new Date('2026-03-08T10:00:00.000Z'),
-    reviewArchive: async (items) => {
-      reviewedIds.push(...items.map((item) => item.article.id));
-      return buildFreshReview(items);
-    },
-    generateWrapperCopy: async () => makeWrapperCopy(),
-  });
-
-  assert.equal(result.draft.validation?.blockedArticles?.[0]?.reason, 'story-similarity');
-  assert.equal(reviewedIds.includes('article-0'), false);
-});
-
-test('blocks valid stories older than the freshness window', async () => {
-  const selected = [
-    makeArticle(0, { publishedAt: '2026-02-10T10:00:00.000Z' }),
-    ...Array.from({ length: 9 }, (_, index) => makeArticle(index + 1)),
-  ];
-  const reserves = [makeArticle(10)];
-
-  const result = await validateDraftFreshness({
-    draft: makeDraft(selected, reserves),
-    historicalArticles: [],
-    recentDraftCount: 0,
-    publishedHistoryCount: 0,
-    now: new Date('2026-03-08T10:00:00.000Z'),
-    reviewArchive: async (items) => buildFreshReview(items),
-    generateWrapperCopy: async () => makeWrapperCopy(),
-  });
-
-  assert.equal(result.draft.validation?.blockedArticles?.[0]?.reason, 'stale-published-at');
-});
-
-test('measures the freshness window from Monday delivery instead of Saturday validation', async () => {
-  const selected = [
-    makeArticle(0, { publishedAt: '2026-02-22T00:00:00.000Z' }),
-    ...Array.from({ length: 9 }, (_, index) => makeArticle(index + 1)),
-  ];
-
-  const result = await validateDraftFreshness({
-    draft: makeDraft(selected, [makeArticle(10)]),
-    historicalArticles: [],
-    recentDraftCount: 0,
-    publishedHistoryCount: 0,
-    now: new Date('2026-03-07T10:00:00.000Z'),
-    reviewArchive: async (items) => buildFreshReview(items),
-    generateWrapperCopy: async () => makeWrapperCopy(),
-  });
-
-  assert.equal(
-    result.draft.validation?.blockedArticles?.find(
-      (blocked) => blocked.articleId === 'article-0'
-    )?.reason,
-    'stale-published-at'
-  );
-  assert.equal(result.draft.selected.some((article) => article.id === 'article-10'), true);
-});
-
-test('routes invalid publishedAt values to agent review instead of hard-failing them', async () => {
-  const selected = [
-    makeArticle(0, { publishedAt: 'not-a-date' }),
-    ...Array.from({ length: 9 }, (_, index) => makeArticle(index + 1)),
-  ];
-  const seenRequiresDateReview: boolean[] = [];
-
-  const result = await validateDraftFreshness({
-    draft: makeDraft(selected, [makeArticle(10)]),
-    historicalArticles: [],
-    recentDraftCount: 0,
-    publishedHistoryCount: 0,
-    now: new Date('2026-03-08T10:00:00.000Z'),
-    reviewArchive: async (items) => {
-      seenRequiresDateReview.push(
-        items.find((item) => item.article.id === 'article-0')?.requiresDateReview ?? false
-      );
-      return buildFreshReview(items);
-    },
-    generateWrapperCopy: async () => makeWrapperCopy(),
-  });
-
-  assert.equal(
-    result.draft.validation?.blockedArticles?.some((blocked) => blocked.articleId === 'article-0') ?? false,
-    false
-  );
-  assert.deepEqual(seenRequiresDateReview, [true]);
-});
-
-test('keeps genuine follow-up stories when the agent marks them as follow_up', async () => {
-  const selected = Array.from({ length: 10 }, (_, index) =>
-    makeArticle(index, index === 0 ? { originalTitle: 'Etapa nouă pentru centrul public de competențe verzi' } : {})
-  );
-
-  const result = await validateDraftFreshness({
-    draft: makeDraft(selected, [makeArticle(10)]),
-    historicalArticles: [
-      makeHistory({
-        title: 'România deschide primul centru public pentru competențe verzi',
-        summary: 'Proiectul deschide cursuri gratuite în mai multe județe.',
-      }),
-    ],
-    recentDraftCount: 0,
-    publishedHistoryCount: 1,
-    now: new Date('2026-03-08T10:00:00.000Z'),
-    reviewArchive: async (items) =>
-      items.map((item) => ({
-        articleId: item.article.id,
-        verdict: item.article.id === 'article-0' ? 'follow_up' : 'fresh',
-        notes: item.article.id === 'article-0' ? 'Materially new development.' : 'Fresh story.',
-        matchedOrigin: item.article.id === 'article-0' ? '2026-03-02-issue.md' : undefined,
-        matchedTitle:
-          item.article.id === 'article-0'
-            ? 'România deschide primul centru public pentru competențe verzi'
-            : undefined,
-      })),
-    generateWrapperCopy: async () => makeWrapperCopy(),
-  });
-
-  assert.equal(result.draft.validation?.status, 'passed');
-  assert.equal(
-    result.draft.validation?.agentReviewed?.find((reviewed) => reviewed.articleId === 'article-0')
-      ?.verdict,
-    'follow_up'
-  );
-});
-
-test('auto-replaces blocked selected stories with the first approved reserve', async () => {
-  const selected = Array.from({ length: 10 }, (_, index) => makeArticle(index));
-  const reserves = [makeArticle(10), makeArticle(11)];
-
-  const result = await validateDraftFreshness({
-    draft: makeDraft(selected, reserves),
-    historicalArticles: [],
-    recentDraftCount: 0,
-    publishedHistoryCount: 0,
-    now: new Date('2026-03-08T10:00:00.000Z'),
-    reviewArchive: async (items) =>
-      items.map((item) => ({
-        articleId: item.article.id,
-        verdict: item.article.id === 'article-0' ? 'duplicate' : 'fresh',
-        notes: item.article.id === 'article-0' ? 'Duplicate story.' : 'Fresh story.',
-      })),
-    generateWrapperCopy: async () => ({
-      ...makeWrapperCopy(),
-      intro: 'Wrapper regen after replacement.',
-    }),
-  });
-
-  assert.equal(result.draft.validation?.status, 'passed');
-  assert.equal(result.draft.selected.some((article) => article.id === 'article-10'), true);
-  assert.deepEqual(result.draft.validation?.replacements, [
-    {
-      removedArticleId: 'article-0',
-      replacementArticleId: 'article-10',
-    },
+test('reports repeated recent draft article IDs even if the headline and URL changed', async () => {
+  const result = await check(makeDraft(selectedWithFirst()), [
+    makeHistory({ source: 'draft', origin: '2026-W09.json', id: 'article-0' }),
   ]);
-  assert.equal(result.draft.wrapperCopy?.intro, 'Wrapper regen after replacement.');
+  assert.equal(result.blockedArticles[0]?.reason, 'recent-draft-id');
+  assert.equal(result.recentDraftCount, 1);
 });
 
-test('blocks expired invitations for Monday while keeping retrospective event outcomes', async () => {
-  const selected = [
-    makeArticle(0, {
-      originalTitle: 'Calea Victoriei devine pietonală sâmbătă și duminică, 7-8 martie',
-      summary: 'Bucureștenii sunt invitați la plimbare și activități în acest weekend.',
-    }),
-    makeArticle(1, {
-      originalTitle: 'Festivalul comunității a strâns 100.000 de lei pentru spital',
-      summary: 'Evenimentul din 7 martie a adunat 10.000 de oameni și a finanțat spitalul local.',
-    }),
-    ...Array.from({ length: 8 }, (_, index) => makeArticle(index + 2)),
-  ];
-  let plannedReadDate: string | undefined;
+test('compares normalized source headlines rather than reader-facing titles', async () => {
+  const result = await check(makeDraft(selectedWithFirst({
+    originalTitle: 'Bistrița adaugă servicii publice accesibile!',
+    title: 'Un titlu editorial complet diferit',
+  })), [makeHistory({ title: 'Bistrita adauga servicii publice accesibile' })]);
 
-  const result = await validateDraftFreshness({
-    draft: makeDraft(selected, [makeArticle(10)]),
-    historicalArticles: [],
-    recentDraftCount: 0,
-    publishedHistoryCount: 0,
-    now: new Date('2026-03-08T10:00:00.000Z'),
-    reviewArchive: async (items, _weekId, readDate) => {
-      plannedReadDate = readDate;
-      return items.map((item) => ({
-        articleId: item.article.id,
-        verdict: (item.article.id === 'article-0'
-          ? 'expired_action'
-          : 'fresh') as ArchiveReviewDecision['verdict'],
-        notes:
-          item.article.id === 'article-0'
-            ? 'The invitation ends before readers receive the newsletter.'
-            : 'The story reports a durable outcome.',
-      }));
-    },
-    generateWrapperCopy: async () => ({
-      ...makeWrapperCopy(),
-      intro: 'Wrapper regen after temporal replacement.',
-    }),
-  });
-
-  assert.equal(plannedReadDate, '2026-03-09');
-  assert.equal(result.draft.selected.some((article) => article.id === 'article-0'), false);
-  assert.equal(result.draft.selected.some((article) => article.id === 'article-1'), true);
-  assert.equal(result.draft.selected.some((article) => article.id === 'article-10'), true);
-  assert.equal(
-    result.draft.validation?.blockedArticles?.find(
-      (blocked) => blocked.articleId === 'article-0'
-    )?.reason,
-    'expired-at-read-time'
-  );
-  assert.equal(
-    result.draft.wrapperCopy?.intro,
-    'Wrapper regen after temporal replacement.'
-  );
+  assert.equal(result.blockedArticles[0]?.reason, 'title-match');
 });
 
-test('passes a shorter edition when 9 approved stories remain', async () => {
-  const selected = Array.from({ length: 10 }, (_, index) => makeArticle(index));
+test('reports high-confidence title and summary rewrites deterministically', async () => {
+  const result = await check(makeDraft(selectedWithFirst({
+    originalTitle: 'Bistrița face mai ușor accesul la servicii pentru copiii cu autism',
+    summary: 'Peste 35 de instituții din Bistrița și-au adaptat serviciile și semnalizarea pentru persoanele cu autism.',
+  })), [makeHistory({
+    title: 'Bistrița face mai ușor accesul la servicii pentru persoanele cu autism',
+    summary: 'La Bistrița, peste 35 de instituții și companii și-au adaptat serviciile pentru persoane cu autism.',
+  })]);
 
-  const result = await validateDraftFreshness({
-    draft: makeDraft(selected),
-    historicalArticles: [],
-    recentDraftCount: 0,
-    publishedHistoryCount: 0,
-    now: new Date('2026-03-08T10:00:00.000Z'),
-    reviewArchive: async (items) =>
-      items.map((item) => ({
-        articleId: item.article.id,
-        verdict: item.article.id === 'article-0' ? 'duplicate' : 'fresh',
-        notes: item.article.id === 'article-0' ? 'Duplicate story.' : 'Fresh story.',
-      })),
-    generateWrapperCopy: async () => makeWrapperCopy(),
-  });
-
-  assert.equal(result.draft.validation?.status, 'passed');
-  assert.equal(result.draft.selected.length, 9);
-  assert.equal(
-    result.draft.validation?.blockedArticles?.some((blocked) => blocked.articleId === 'article-0') ?? false,
-    true
-  );
+  assert.equal(result.blockedArticles[0]?.reason, 'story-similarity');
 });
 
-test('does not pad an approved eight-story refinement from reserves', async () => {
-  const selected = Array.from({ length: 8 }, (_, index) => makeArticle(index));
-  const reserves = Array.from({ length: 4 }, (_, index) => makeArticle(index + 8));
+test('reports valid publication dates older than the freshness window', async () => {
+  const result = await check(makeDraft(selectedWithFirst({ publishedAt: '2026-02-10T10:00:00.000Z' })));
+  assert.equal(result.blockedArticles[0]?.reason, 'stale-published-at');
+});
 
-  const result = await validateDraftFreshness({
-    draft: makeDraft(selected, reserves),
-    historicalArticles: [],
-    recentDraftCount: 0,
-    publishedHistoryCount: 0,
-    now: new Date('2026-03-08T10:00:00.000Z'),
-    reviewArchive: async (items) => buildFreshReview(items),
-    generateWrapperCopy: async () => makeWrapperCopy(),
-  });
+test('measures freshness from Monday delivery rather than Saturday validation', async () => {
+  const result = await check(makeDraft(selectedWithFirst({ publishedAt: '2026-02-22T00:00:00.000Z' })));
+  assert.equal(result.plannedReadDate, '2026-03-09');
+  assert.equal(result.checkedAt, '2026-03-07T10:00:00.000Z');
+  assert.equal(result.blockedArticles[0]?.reason, 'stale-published-at');
+});
 
-  assert.deepEqual(
-    result.draft.selected.map((article) => article.id),
-    selected.map((article) => article.id)
+test('keeps publication dates exactly on the freshness boundary', async () => {
+  const result = await check(makeDraft(selectedWithFirst({ publishedAt: '2026-02-23T00:00:00' })));
+  assert.equal(result.status, 'passed');
+  assert.deepEqual(result.blockedArticles, []);
+});
+
+test('unknown publication dates require manual checking, not invented semantic approval', async () => {
+  const draft = makeDraft(selectedWithFirst({ publishedAt: 'not-a-date' }));
+  const result = await check(draft);
+  assert.equal(result.blockedArticles[0]?.reason, 'unknown-published-at');
+  assert.equal(result.status, 'failed');
+  assert.equal(draft.validation, undefined);
+  assert.equal(draft.deliveryLock, undefined);
+});
+
+test('passing deterministic freshness never implies source verification or production approval', async () => {
+  const draft = makeDraft(selectedWithFirst());
+  delete draft.wrapperCopy;
+  const result = await check(draft);
+
+  assert.equal(result.status, 'passed');
+  assert.equal(draft.wrapperCopy, undefined, 'The check must not write newsletter copy');
+  assert.equal(draft.validation, undefined, 'No agentReviewed, semantic status or approval source may be invented');
+  assert.equal(draft.deliveryLock, undefined);
+  assert.throws(() => assertDraftValidated(draft, 'preview'), /not validated/);
+  assert.throws(() => assertDraftReadyForProduction(draft, 'send'), /not validated/);
+});
+
+test('preserves existing review evidence and approval locks byte for byte on failure too', async () => {
+  const draft = makeDraft(selectedWithFirst({ publishedAt: 'not-a-date' }));
+  draft.validation = {
+    generatedAt: draft.generatedAt,
+    candidateCount: 10,
+    flagged: [],
+    status: 'passed',
+    approvalSource: 'editor-review',
+    agentReviewed: [{ articleId: 'article-0', verdict: 'follow_up', notes: 'Existing editor review.' }],
+  };
+  draft.deliveryLock = { version: 1, approvedSha256: 'existing-lock', approvedAt: draft.generatedAt };
+
+  assert.equal((await check(draft)).status, 'failed');
+  assert.equal(draft.validation.agentReviewed?.[0].verdict, 'follow_up');
+  assert.equal(draft.deliveryLock.approvedSha256, 'existing-lock');
+});
+
+test('reports blocked reserves without padding or rewriting a healthy shorter edition', async () => {
+  const draft = makeDraft(
+    Array.from({ length: 8 }, (_, index) => makeArticle(index)),
+    [makeArticle(10, { publishedAt: 'not-a-date' })]
   );
-  assert.deepEqual(
-    result.draft.reserves.map((article) => article.id),
-    reserves.map((article) => article.id)
-  );
-  assert.equal(result.draft.validation?.status, 'passed');
+  const result = await check(draft);
+  assert.equal(result.status, 'passed');
+  assert.equal(result.selectedFreshCount, 8);
+  assert.equal(result.reserveFreshCount, 0);
+  assert.equal(result.blockedArticles[0]?.articleId, 'article-10');
+});
+
+test('does not auto-promote reserves when fewer than seven selected stories remain', async () => {
+  const result = await check(makeDraft(
+    Array.from({ length: 6 }, (_, index) => makeArticle(index)),
+    [makeArticle(10), makeArticle(11)]
+  ));
+  assert.equal(result.status, 'failed');
+  assert.equal(result.selectedFreshCount, 6);
+  assert.equal(result.reserveFreshCount, 2);
+});
+
+test('rejects unusable freshness windows rather than silently disabling the date check', async () => {
+  for (const freshnessWindowDays of [0, -1, Number.NaN, Number.POSITIVE_INFINITY]) {
+    await assert.rejects(validateDraftFreshness({
+      draft: makeDraft(selectedWithFirst()),
+      historicalArticles: [],
+      recentDraftCount: 0,
+      publishedHistoryCount: 0,
+      freshnessWindowDays,
+    }), /positive number of days/);
+  }
 });

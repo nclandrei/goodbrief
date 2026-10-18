@@ -2,7 +2,6 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
-import { loadHistoricalArticles as loadPipelineHistory } from '../scripts/lib/historical-articles.js';
 import {
   loadHistoricalArticles as loadStoryHistory,
   parseIssueMarkdown,
@@ -64,16 +63,7 @@ test('draft history keeps the source headline when an editorial title exists', (
     draftLookback: 4,
   });
   const draftArticle = history.articles.find((article) => article.source === 'draft');
-  const pipelineHistory = loadPipelineHistory(tempRoot, '2026-W10', 0, 4);
-  const pipelineDraftArticle = pipelineHistory.articles.find(
-    (article) => article.source === 'draft'
-  );
 
   assert.equal(draftArticle?.title, 'Biblioteci vii pentru liceeni din trei orașe');
   assert.notEqual(draftArticle?.title, draft.selected[0].title);
-  assert.equal(
-    pipelineDraftArticle?.title,
-    'Biblioteci vii pentru liceeni din trei orașe'
-  );
-  assert.notEqual(pipelineDraftArticle?.title, draft.selected[0].title);
 });

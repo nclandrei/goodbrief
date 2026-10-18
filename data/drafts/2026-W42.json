@@ -33,6 +33,21 @@
       "processedAt": "2026-10-18T08:04:42.676Z"
     },
     {
+      "category": "local-heroes",
+      "title": "Persoanele cu mobilitate redusă intră mai ușor în parcările aeroporturilor",
+      "summary": "La Otopeni și Băneasa, bariera parcărilor se poate deschide automat pentru mașinile care transportă persoane cu legitimație de mobilitate redusă valabilă. Numărul de înmatriculare trebuie înregistrat în prealabil la compania aeroportuară; apoi nu mai e nevoie de tichet sau de plata parcării. Legitimația PMR, în original, trebuie afișată vizibil în partea din față a mașinii pe durata parcării.",
+      "id": "e5325c716f01772a",
+      "positivity": 88,
+      "impact": 62,
+      "audienceRelevance": 85,
+      "sourceId": "economedia",
+      "sourceName": "Economedia",
+      "originalTitle": "CNAB introduce accesul automatizat în parcările aeroporturilor din București pentru persoanele cu mobilitate redusă",
+      "url": "https://economedia.ro/cnab-introduce-accesul-automatizat-in-parcarile-aeroporturilor-din-bucuresti-pentru-persoanele-cu-mobilitate-redusa.html",
+      "publishedAt": "2026-10-14T09:29:35.000Z",
+      "processedAt": "2026-10-17T07:40:00.000Z"
+    },
+    {
       "category": "wins",
       "title": "Trenurile circulă din nou între Galați și Târgu Bujor",
       "summary": "Circulația feroviară a fost redeschisă pe 14 octombrie, după repararea infrastructurii afectate de inundațiile din 2024. Investiția a costat aproape 56 de milioane de lei; lucrările continuă spre Bârlad, deci nu este încă redeschisă întreaga linie.",
@@ -125,7 +140,7 @@
     {
       "category": "quick-hits",
       "title": "Festivalul Național de Teatru continuă până pe 25 octombrie",
-      "summary": "Ediția a 36-a aduce 36 de spectacole selectate în 24 de săli din București, alături de întâlniri, dezbateri și expoziții. Dacă vrei o seară de teatru săptămâna viitoare, ai un program bogat de explorat.",
+      "summary": "Ediția a 36-a aduce 36 de spectacole selectate în 24 de săli din București, alături de întâlniri, dezbateri și expoziții. Dacă vrei o seară de teatru săptămâna aceasta, ai un program bogat de explorat.",
       "id": "1a0bcdb2fd5e56ef",
       "positivity": 88,
       "impact": 60,
@@ -135,21 +150,6 @@
       "originalTitle": "Festivalul Național de Teatru #36 începe vineri și va ajunge în 24 de săli de spectacole din Capitală",
       "url": "https://agerpres.ro/cultura-media/2026/10/16/festivalul-national-de-teatru-36-incepe-vineri-si-va-ajunge-in-24-de-sali-de-spectacole-din-capitala--1603600",
       "publishedAt": "2026-10-16T03:53:26.248Z",
-      "processedAt": "2026-10-18T08:04:42.676Z"
-    },
-    {
-      "category": "quick-hits",
-      "title": "Mihăiță Tănăsoiu câștigă trei bronzuri la Europenele U23 de haltere",
-      "summary": "Sportivul român a urcat pe podium la smuls, aruncat și total, la categoria 85 kg, la Durres. A încheiat cu un total de 341 kg, după 156 kg la smuls și 185 kg la aruncat.",
-      "id": "049651e808bb249d",
-      "positivity": 94,
-      "impact": 45,
-      "audienceRelevance": 62,
-      "sourceId": "agerpres",
-      "sourceName": "Agerpres",
-      "originalTitle": "Haltere: Mihăiță Tănăsoiu a obținut trei medalii de bronz la Europenele de tineret",
-      "url": "https://agerpres.ro/sport-extern/2026/10/17/haltere-mihaita-tanasoiu-a-obtinut-trei-medalii-de-bronz-la-europenele-de-tineret--1604138",
-      "publishedAt": "2026-10-18T07:14:23.569Z",
       "processedAt": "2026-10-18T08:04:42.676Z"
     }
   ],
@@ -167,14 +167,11 @@
     "flagged": [],
     "status": "passed",
     "approvalSource": "editor-review",
-    "checkedAt": "2026-10-18T11:12:08.773Z"
+    "checkedAt": "2026-10-18T12:07:19.453Z"
   },
   "deliveryLock": {
     "version": 1,
-    "approvedSha256": "e1ab292e0f6d823b5c2809819369852432d6f908946f887fcf0b05b10dc0b93b",
-    "approvedAt": "2026-10-18T11:12:08.773Z",
-    "testedSha256": "e1ab292e0f6d823b5c2809819369852432d6f908946f887fcf0b05b10dc0b93b",
-    "testedAt": "2026-10-18T10:57:04.427Z",
-    "testMessageId": "01a14ea7-323b-7f2f-99bb-8fc1b21f1ac4"
+    "approvedSha256": "fa106bcb8b287d010c11f39553a04651b065040b1e59a9cd41bd273b629451d7",
+    "approvedAt": "2026-10-18T12:07:19.453Z"
   }
 }

@@ -56,8 +56,9 @@ async function main(): Promise<void> {
   <h2 style="margin-top: 24px;">What to do?</h2>
   <ol>
     <li>Check if the draft exists at <code>data/drafts/${weekId}.json</code></li>
-    <li>If missing, use the independent orb proof for ${weekId} to materialize the reviewed draft; if the proof is missing, curate the week's raw pool first. Do not substitute the old Gemini draft pipeline.</li>
-    <li>Approve the final draft, push it, then manually run the <strong>Prepare Newsletter Delivery</strong> GitHub workflow for <code>${weekId}</code></li>
+    <li>Dacă lipsește ediția, reia evaluarea în Amp cu <code>npx tsx scripts/assess-news.ts init data/assessments/${weekId} data/raw/${weekId}.json</code> (doar pentru o evaluare nouă; reia evaluarea existentă fără să o suprascrii). Amp verifică sursele, selectează și scrie ediția independentă.</li>
+    <li>După revizia editorului, transferă ediția exactă în draft și inspectează previzualizarea cu <code>npx tsx scripts/send-independent-proof.ts --week ${weekId} --materialize-draft --dry-run --output /tmp/goodbrief-${weekId}-proof.html</code>. Comanda refuză să suprascrie un draft existent; rezolvă explicit orice draft învechit.</li>
+    <li>Doar după aprobarea explicită a acestei ediții pentru abonați, rulează <code>npm run approve-draft -- --week ${weekId}</code>, publică modificarea și reia manual workflow-ul <strong>Prepare Newsletter Delivery</strong> pentru <code>${weekId}</code>. Un proof sau un email de test nu înseamnă aprobare.</li>
   </ol>
   
   <hr style="margin-top: 32px; border: none; border-top: 1px solid #e5e7eb;">

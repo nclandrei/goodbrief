@@ -1,17 +1,11 @@
-import { existsSync, readFileSync, writeFileSync } from 'fs';
+import { existsSync, readFileSync, readdirSync } from 'fs';
 import { join } from 'path';
-import type { NewsletterDraft, ProcessedArticle, WrapperCopy } from '../types.js';
+import type { NewsletterDraft } from '../types.js';
 import {
-  type ArchiveReviewDecision,
-  type ArchiveReviewInputItem,
   type ValidateDraftFreshnessResult,
   validateDraftFreshness,
 } from './draft-validation.js';
-import type { LlmProvider } from './llm/provider.js';
-import {
-  getLatestDraftWeekId,
-  parseWeekArg,
-} from './pipeline-artifacts.js';
+import { parseWeekId } from './newsletter-week.js';
 import { loadHistoricalArticles } from './story-history.js';
 
 export const RECENT_DRAFT_LOOKBACK = 4;
@@ -25,30 +19,30 @@ export interface DraftFreshnessValidationRunResult {
 export interface RunDraftFreshnessValidationOptions {
   rootDir: string;
   args: string[];
-  llm?: Pick<LlmProvider, 'generateWrapperCopy'>;
   now?: Date;
-  reviewArchive?: (
-    items: ArchiveReviewInputItem[],
-    weekId: string,
-    plannedReadDate: string
-  ) => Promise<ArchiveReviewDecision[]>;
   logger?: (message: string) => void;
-}
-
-export function createProviderWrapperCopyGenerator(
-  llm: Pick<LlmProvider, 'generateWrapperCopy'>
-): (articles: ProcessedArticle[], weekId: string) => Promise<WrapperCopy> {
-  return (articles, weekId) => llm.generateWrapperCopy(weekId, articles);
 }
 
 function resolveDraftWeekId(rootDir: string, args: string[]): string {
   const draftsDir = join(rootDir, 'data', 'drafts');
-  const weekId = parseWeekArg(args) || getLatestDraftWeekId(rootDir);
-
-  if (!weekId || !existsSync(draftsDir)) {
+  if (!existsSync(draftsDir)) {
     throw new Error('No draft files found to validate');
   }
 
+  const weekIndex = args.indexOf('--week');
+  if (weekIndex !== -1 && !args[weekIndex + 1]) {
+    throw new Error('Missing value for --week');
+  }
+  const weekId = weekIndex !== -1
+    ? args[weekIndex + 1]
+    : readdirSync(draftsDir)
+        .filter((file) => /^\d{4}-W\d{2}\.json$/.test(file))
+        .sort()
+        .at(-1)?.replace('.json', '');
+  if (!weekId) {
+    throw new Error('No draft files found to validate');
+  }
+  parseWeekId(weekId);
   return weekId;
 }
 
@@ -67,7 +61,7 @@ export async function runDraftFreshnessValidation(
   const log = options.logger ?? console.log;
   const weekId = resolveDraftWeekId(options.rootDir, options.args);
 
-  log(`\n🛡️ Good Brief Draft Archive Gate`);
+  log(`\n🛡️ Good Brief Deterministic Draft Freshness Check (read-only)`);
   log(`Week: ${weekId}\n`);
 
   const draft = loadDraft(options.rootDir, weekId);
@@ -89,14 +83,9 @@ export async function runDraftFreshnessValidation(
     recentDraftCount: history.draftArticleCount,
     publishedHistoryCount: history.issueArticleCount,
     now: options.now,
-    reviewArchive: options.reviewArchive,
-    generateWrapperCopy: options.llm
-      ? createProviderWrapperCopyGenerator(options.llm)
-      : undefined,
   });
 
   const draftPath = join(options.rootDir, 'data', 'drafts', `${weekId}.json`);
-  writeFileSync(draftPath, JSON.stringify(result.draft, null, 2), 'utf-8');
 
   return {
     weekId,

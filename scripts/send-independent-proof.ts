@@ -1,8 +1,8 @@
 #!/usr/bin/env npx tsx
 
 import 'dotenv/config';
-import { existsSync, readFileSync, writeFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import { dirname, join, resolve } from 'node:path';
 import { Resend } from 'resend';
 import type { ArticleCategory, NewsletterDraft, ProcessedArticle, WeeklyBuffer, WrapperCopy } from './types.js';
 import { resolveProjectRoot } from './lib/project-root.js';
@@ -12,6 +12,9 @@ import {
 } from './lib/resend-email.js';
 import { buildNewsletterEmail } from './lib/newsletter-email.js';
 import { MAX_SENDABLE_ARTICLE_COUNT, MIN_SENDABLE_ARTICLE_COUNT } from './lib/newsletter-policy.js';
+import { hash, validateAssessedSelection, type AssessmentRun } from './lib/amp-assessment.js';
+import { readJson, saveAssessmentJson } from './lib/assessment-files.js';
+import type { EditorEmailReceipt } from './lib/editor-review.js';
 
 export interface IndependentArticle {
   id: string;
@@ -25,6 +28,7 @@ export interface IndependentArticle {
 export interface IndependentProof {
   weekId: string;
   generatedAt: string;
+  assessment: AssessmentRun;
   selected: IndependentArticle[];
   wrapperCopy: WrapperCopy;
 }
@@ -105,6 +109,19 @@ export function validateIndependentProof(proof: IndependentProof, raw: WeeklyBuf
       }
     }
   }
+  if (!proof.assessment) throw new Error('Proof requires a complete Amp assessment ledger');
+  validateAssessedSelection(proof.assessment, raw, proof.selected.map(article => article.id));
+  const latestEvidence = Math.max(Date.parse(proof.assessment.startedAt), ...proof.assessment.assessments.map(a => Date.parse(a.assessedAt)), ...proof.assessment.sourceChecks.map(c => Date.parse(c.checkedAt)));
+  if (!proof.generatedAt?.endsWith('Z') || !Number.isFinite(Date.parse(proof.generatedAt)) || Date.parse(proof.generatedAt) < latestEvidence || Date.parse(proof.generatedAt) > Date.now()) {
+    throw new Error('Proof timestamp must follow assessment and source checks');
+  }
+  for (const article of proof.selected) {
+    const index = raw.articles.findIndex(source => source.id === article.id);
+    const assessment = proof.assessment.assessments.find(item => item.index === index)!;
+    if ((['positivity', 'impact', 'audienceRelevance'] as const).some(key => article[key] !== assessment[key])) {
+      throw new Error(`Proof scores differ from assessment: ${article.id}`);
+    }
+  }
 }
 
 export function renderIndependentProof(proof: IndependentProof, raw: WeeklyBuffer): string {
@@ -149,8 +166,12 @@ async function main(): Promise<void> {
   if (!/^\d{4}-W\d{2}$/.test(week || '')) {
     throw new Error('Use --week YYYY-WXX');
   }
-  const proof = JSON.parse(readFileSync(join(ROOT_DIR, 'data', 'orb-proofs', `${week}.json`), 'utf8')) as IndependentProof;
-  const raw = JSON.parse(readFileSync(join(ROOT_DIR, 'data', 'raw', `${week}.json`), 'utf8')) as WeeklyBuffer;
+  const runArgument = args.includes('--run') ? args[args.indexOf('--run') + 1] : undefined;
+  if (args.includes('--run') && (!runArgument || runArgument.startsWith('--'))) throw new Error('Use --run <assessment-directory>');
+  const directory = runArgument ? resolve(runArgument) : undefined;
+  const proof = readJson<IndependentProof>(directory ? join(directory, 'finished-proof.json') : join(ROOT_DIR, 'data', 'orb-proofs', `${week}.json`));
+  const raw = readJson<WeeklyBuffer>(directory ? join(directory, 'input.json') : join(ROOT_DIR, 'data', 'raw', `${week}.json`));
+  if (proof.weekId !== week) throw new Error('Requested week does not match proof');
   validateIndependentProof(proof, raw);
   const testEmail = args.includes('--test-email');
   const newsletter = testEmail ? buildNewsletterEmail(materializeIndependentDraft(proof, raw)) : null;
@@ -158,6 +179,7 @@ async function main(): Promise<void> {
   if (args.includes('--materialize-draft')) {
     const draftPath = join(ROOT_DIR, 'data', 'drafts', `${week}.json`);
     if (existsSync(draftPath)) throw new Error(`Refusing to overwrite existing draft at ${draftPath}`);
+    mkdirSync(dirname(draftPath), { recursive: true });
     writeFileSync(draftPath, `${JSON.stringify(materializeIndependentDraft(proof, raw), null, 2)}\n`, { flag: 'wx' });
     console.log(`Unapproved draft written to ${draftPath}`);
   }
@@ -176,10 +198,9 @@ async function main(): Promise<void> {
     throw new Error('TEST_EMAIL (or the Amp account email) and RESEND_API_KEY are required for editor-only email delivery');
   }
   const recipients = recipient.split(',').map((email) => email.trim()).filter(Boolean);
-  if (testEmail && recipients.length !== 1) {
-    throw new Error('The independent test newsletter must have exactly one editor recipient');
+  if ((testEmail || directory) && recipients.length !== 1) {
+    throw new Error('The independent newsletter review must have exactly one editor recipient');
   }
-  console.log(`Sending ${testEmail ? 'test newsletter' : 'editor proof'} to ${usingAmpAccount ? 'the Amp account email' : 'TEST_EMAIL'}`);
   const resend = new Resend(apiKey);
   const payload = {
     from: 'Good Brief <buna@goodbrief.ro>',
@@ -189,9 +210,29 @@ async function main(): Promise<void> {
       : `[PROOF INDEPENDENT] Good Brief ${week} – Vești bune din România`,
     html,
   };
+  const receiptPath = directory ? join(directory, testEmail ? 'test-email.json' : 'proof-email.json') : undefined;
+  const receipt: EditorEmailReceipt = {
+    version: 1, kind: testEmail ? 'test' : 'proof', proofHash: hash(proof), htmlHash: hash(html),
+    recipientHash: hash(recipients), recipientCount: recipients.length, status: 'sending', attemptedAt: new Date().toISOString(),
+  };
+  if (receiptPath && existsSync(receiptPath)) {
+    const previous = readJson<EditorEmailReceipt>(receiptPath);
+    if (previous.version !== 1 || previous.kind !== receipt.kind || previous.proofHash !== receipt.proofHash ||
+        previous.htmlHash !== receipt.htmlHash || previous.recipientHash !== receipt.recipientHash || previous.recipientCount !== 1) {
+      throw new Error('Existing editor email receipt belongs to different content or recipient; refusing to resend');
+    }
+    if (previous.status !== 'accepted' || !previous.emailId) {
+      throw new Error('Previous editor send has an uncertain outcome; inspect Resend before retrying, do not send blindly');
+    }
+    console.log(`Editor email was already accepted (${previous.emailId}); not sending again`);
+    return;
+  }
+  if (receiptPath) saveAssessmentJson(receiptPath, receipt);
+  console.log(`Sending ${testEmail ? 'test newsletter' : 'editor proof'} to ${usingAmpAccount ? 'the Amp account email' : 'TEST_EMAIL'}`);
   const result = await sendResendEmailWithRetry(resend.emails.send.bind(resend.emails), payload, {
     idempotencyKey: buildResendEmailIdempotencyKey(`${testEmail ? 'independent-test' : 'independent-proof'}-${week}`, payload),
   });
+  if (receiptPath) saveAssessmentJson(receiptPath, { ...receipt, status: 'accepted', acceptedAt: new Date().toISOString(), emailId: result.id });
   console.log(`${testEmail ? 'Test newsletter' : 'Independent proof'} accepted by Resend (${result.id})`);
 }
 

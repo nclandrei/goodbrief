@@ -3,65 +3,34 @@
 import 'dotenv/config';
 import { sendAlert } from './lib/alert.js';
 import { runDraftFreshnessValidation } from './lib/draft-freshness-runner.js';
-import {
-  createLlmProvider,
-  resolveProviderSpecFromArgs,
-} from './lib/llm/factory.js';
-import type { LlmProvider } from './lib/llm/provider.js';
 import { resolveProjectRoot } from './lib/project-root.js';
 
 const ROOT_DIR = resolveProjectRoot(import.meta.url);
 
-function hasExplicitLlmConfig(args: string[]): boolean {
-  return (
-    args.includes('--llm') ||
-    args.includes('--fallback') ||
-    Boolean(process.env.LLM_PROVIDER) ||
-    Boolean(process.env.LLM_FALLBACK)
-  );
-}
-
-function resolveOptionalLlm(args: string[]): LlmProvider | undefined {
-  if (!hasExplicitLlmConfig(args)) {
-    return undefined;
-  }
-
-  const spec = resolveProviderSpecFromArgs(args);
-  const provider = createLlmProvider(spec);
-  console.log(
-    `[llm] freshness provider=${spec.provider}${spec.fallback ? ` (fallback=${spec.fallback})` : ''}`
-  );
-  return provider;
-}
-
 async function main(): Promise<void> {
   const args = process.argv.slice(2);
-  const llm = resolveOptionalLlm(args);
   const { weekId, result } = await runDraftFreshnessValidation({
     rootDir: ROOT_DIR,
     args,
-    llm,
   });
 
-  const blocked = result.draft.validation?.blockedArticles?.length ?? 0;
-  const replacements = result.draft.validation?.replacements?.length ?? 0;
-  const status = result.draft.validation?.status || 'failed';
+  console.log(`Deterministic freshness: ${result.status}`);
+  console.log(`Planned read date: ${result.plannedReadDate}`);
+  console.log(`Blocked articles: ${result.blockedArticles.length}`);
+  console.log(`Selected stories passing deterministic checks: ${result.selectedFreshCount}`);
+  console.log('Read-only: no copy, selection, source-review metadata or approval was changed.');
+  console.log('Amp must still verify sources and event deadlines; this check does not approve delivery.');
 
-  console.log(`Validation status: ${status}`);
-  console.log(`Blocked articles: ${blocked}`);
-  console.log(`Auto-replacements: ${replacements}`);
-  console.log(`Remaining approved stories: ${result.approvedCount}`);
-
-  if (status !== 'passed') {
+  if (result.status !== 'passed') {
     await sendAlert({
       title: 'Draft archive validation failed',
       weekId,
-      reason: 'Not enough fresh stories remained after archive deduplication',
-      details: JSON.stringify(result.draft.validation, null, 2),
+      reason: 'The selected edition failed deterministic freshness checks',
+      details: JSON.stringify(result, null, 2),
       actionItems: [
-        'Review blocked stories in the draft validation metadata',
-        'Promote additional reserves manually or regenerate the draft with more source data',
-        'Inspect recent editions for repeated topics that need stronger filtering',
+        'Review the blocked stories reported by the read-only freshness check',
+        `Use Amp and scripts/assess-news.ts to reassess the raw pool for ${weekId} and revise the independent proof`,
+        'Obtain editor approval of the exact final edition before running approve-draft',
       ],
     });
 

@@ -1,8 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { mkdtempSync, mkdirSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
+import { createServer } from 'node:http';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { loadSources, selectNewArticles, type FetchFeedResult } from '../scripts/lib/news-ingest.js';
+import { deduplicateArticles, findCrossWeekDuplicate } from '../scripts/lib/deduplication.js';
 import type { WeeklyBuffer } from '../scripts/types.js';
-import { WORKSPACE_ROOT } from './helpers.js';
+import { WORKSPACE_ROOT, runTypeScriptScript } from './helpers.js';
 
 function makeBuffer(weekId: string, urls: string[]): WeeklyBuffer {
   return {
@@ -169,4 +174,65 @@ test('loadSources reflects the refreshed source roster', () => {
     'startupcafe',
     'stirileprotv',
   ]);
+});
+
+test('deterministic cross-week filtering still catches previously covered canonical URLs', () => {
+  const duplicate = findCrossWeekDuplicate(
+    { id: 'new-id', title: 'Un titlu rescris', url: 'https://www.example.ro/stire/?utm_source=rss' },
+    [{ id: 'old-id', title: 'Titlul din arhivă', url: 'https://example.ro/stire' }]
+  );
+  assert.equal(duplicate?.reason, 'url-match');
+  assert.equal(duplicate?.previousTitle, 'Titlul din arhivă');
+});
+
+test('deterministic RSS title deduplication preserves representative and cluster metadata', () => {
+  const first = makeBuffer('2026-W11', ['https://example.ro/story']).articles[0];
+  const second = { ...first, id: 'other-source', url: 'https://other.ro/story', summary: 'A longer useful RSS summary.' };
+  const result = deduplicateArticles([first, second]);
+
+  assert.equal(result.inputCount, 2);
+  assert.equal(result.outputCount, 1);
+  assert.deepEqual(result.outputArticles, [second]);
+  assert.deepEqual(result.clusters, [{ kept: second.id, merged: [first.id], similarity: 1 }]);
+});
+
+test('ingest verification runs HTTP RSS, persistence and dedup without creating drafts or model artifacts', async (t) => {
+  const rootDir = mkdtempSync(join(tmpdir(), 'goodbrief-ingest-verification-'));
+  t.after(() => rmSync(rootDir, { recursive: true, force: true }));
+  const server = createServer((request, response) => {
+    const sourceId = request.url?.slice(1) || 'fixture';
+    response.writeHead(200, { 'Content-Type': 'application/rss+xml' });
+    response.end(`<rss version="2.0"><channel><title>${sourceId}</title>
+      <link>https://example.ro</link><description>Flux de test</description>
+      ${Array.from({ length: 4 }, (_, index) => `<item>
+        <title>Știrea ${index} de la ${sourceId}</title>
+        <link>https://example.ro/${sourceId}/story-${index}</link>
+        <description>Un rezultat concret în comunitate.</description>
+        <pubDate>Sat, 17 Oct 2026 10:00:00 GMT</pubDate>
+      </item>`).join('')}</channel></rss>`);
+  });
+  t.after(() => new Promise<void>((resolve, reject) => {
+    server.close((error) => error ? reject(error) : resolve());
+  }));
+  await new Promise<void>((resolve) => server.listen(0, '127.0.0.1', resolve));
+  const address = server.address();
+  assert.ok(address && typeof address !== 'string');
+  const sources = loadSources(WORKSPACE_ROOT).map((source) => ({
+    ...source,
+    url: `http://127.0.0.1:${address.port}/${source.id}`,
+  }));
+  mkdirSync(join(rootDir, 'data'));
+  writeFileSync(join(rootDir, 'data', 'sources.json'), JSON.stringify(sources));
+
+  const { stdout } = await runTypeScriptScript(
+    join(WORKSPACE_ROOT, 'scripts', 'verify-ingest-e2e.ts'),
+    [],
+    { GOODBRIEF_ROOT_DIR: rootDir, GOODBRIEF_INGEST_NOW: '2026-10-18T10:00:00.000Z', RESEND_API_KEY: '', TEST_EMAIL: '' }
+  );
+
+  assert.match(stdout, /Feed health: 11\/11 configured sources usable/);
+  assert.match(stdout, /Persisted RSS articles: 33; new: 22/);
+  assert.match(stdout, /Duplicate drops: previous_week=11, current_week=11/);
+  assert.match(stdout, /no assessment, draft, approval, proof or email was created/);
+  assert.deepEqual(readdirSync(join(rootDir, 'data')), ['sources.json']);
 });

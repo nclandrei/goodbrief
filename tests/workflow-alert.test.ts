@@ -1,7 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { join } from 'node:path';
-import { readFileSync } from 'node:fs';
 import { WORKSPACE_ROOT, runTypeScriptScript } from './helpers.js';
 import {
   buildWorkflowFailureAlert,
@@ -11,21 +10,21 @@ import {
 test('workflow failure alert includes immediate recovery context when supplied', () => {
   const args = parseArgs([
     '--workflow',
-    'Generate Newsletter',
+    'Ingest News',
     '--run-url',
     'https://github.com/example/run/123',
     '--week',
     '2026-W35',
     '--artifact-name',
-    'pipeline-diagnostics-2026-W35-1',
+    'ingest-diagnostics-2026-W35-1',
     '--resume-command',
-    'npm run recover-week -- --week 2026-W35 --run-id 123',
+    'npm run ingest-news',
   ]);
   const alert = buildWorkflowFailureAlert(args);
 
   assert.equal(alert.weekId, '2026-W35');
-  assert.match(alert.details ?? '', /pipeline-diagnostics-2026-W35-1/);
-  assert.match(alert.details ?? '', /npm run recover-week/);
+  assert.match(alert.details ?? '', /ingest-diagnostics-2026-W35-1/);
+  assert.match(alert.details ?? '', /npm run ingest-news/);
   assert.ok(
     alert.actionItems.some((item) => item.includes('imediat')),
     'the alert should direct an immediate recovery action'
@@ -38,23 +37,9 @@ test('workflow failure alert includes immediate recovery context when supplied',
   assert.match(alert.reason, /s-a oprit/);
 });
 
-test('scoring workflow supplies resume context and has an incident fallback', () => {
-  const workflow = readFileSync(
-    join(WORKSPACE_ROOT, '.github', 'workflows', 'generate-newsletter.yml'),
-    'utf-8'
-  );
-
-  assert.match(workflow, /--artifact-name/);
-  assert.match(workflow, /--resume-command/);
-  assert.match(workflow, /id: failure_email/);
-  assert.match(workflow, /steps\.failure_email\.outcome == 'failure'/);
-  assert.match(workflow, /uses: actions\/github-script@v7/);
-  assert.match(workflow, /issues: write/);
-});
-
 test('workflow failure alert no longer advises waiting for a weekly retry', () => {
   const alert = buildWorkflowFailureAlert({
-    workflow: 'Generate Newsletter',
+    workflow: 'Ingest News',
     runUrl: 'https://github.com/example/run/123',
   });
 

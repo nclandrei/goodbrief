@@ -8,9 +8,9 @@ Romanian positive news newsletter (goodbrief.ro). Static site + automated pipeli
 - **Styling:** Tailwind CSS (custom tokens: olive, cream, charcoal, coral; fonts: Inter sans, Fraunces serif)
 - **Content:** Markdown in `content/issues/`, Zod-validated via `src/content.config.ts`
 - **Email:** React Email `.tsx` templates in `emails/`, sent via Resend
-- **AI:** Google Gemini (`@google/generative-ai`) for weekly scoring only; full AI draft generation is manual legacy recovery
+- **Editorial assessment:** Amp-authored scores, source checks and selection in a scheduled orb; no separate model API
 - **Hosting:** Cloudflare Pages (auto-deploy from main) + Functions (`functions/api/`)
-- **Tests:** Node.js native test runner (`node --import tsx --test tests/**/*.test.ts`)
+- **Tests:** Node.js native test runner (`node --import tsx --test tests/*.test.ts`)
 
 ## Commands
 
@@ -28,26 +28,21 @@ npm run email:preview -- --week 2026-W12     # Preview newsletter HTML in browse
 npm run email:test -- --week 2026-W12        # Send test to TEST_EMAIL
 # Subscriber delivery is scheduled only by the Send Newsletter GitHub workflow
 
-# Pipeline (staged, each phase reads previous output)
+# Amp editorial review (follow AGENTS.md for the full run)
 npm run ingest-news           # Fetch RSS feeds → data/raw/
 npm run check-feed-health     # Verify RSS feed health
-npm run pipeline:prepare      # Collect + deduplicate candidates
-npm run pipeline:score        # AI scoring (needs GEMINI_API_KEY)
+npm run review:weekly -- prepare T-<current-thread-id> # Freeze/resume this week's input and arm recovery
+npm run assess-news -- page data/assessments/2026-W43
+npm run assess-news -- import data/assessments/2026-W43 /tmp/amp-batch.json
+npm run review:weekly -- stage data/assessments/2026-W43 # Before finish; inspect rendered proof + newsletter
+npm run assess-news -- finish data/assessments/2026-W43 data/assessments/2026-W43/proposal.json
+npm run review:weekly -- deliver data/assessments/2026-W43 # One editor-only proof; draft stays unapproved
 npx tsx scripts/send-independent-proof.ts --week 2026-W41 --dry-run --output /tmp/proof.html
-npx tsx scripts/send-independent-proof.ts --week 2026-W41 --test-email # Editor-only newsletter-format test
+npx tsx scripts/send-independent-proof.ts --week 2026-W41 --test-email # Only on explicit editor request
 npm run publish-issue         # Publish approved draft → content/issues/ markdown
 npm run cleanup-raw-data      # Remove old data/raw/ files
-# Legacy manual recovery only, never the scheduled Saturday path:
-npm run pipeline:semantic-dedup
-npm run pipeline:validate     # Counter-signal validation
-npm run pipeline:select       # Shortlist finalization
-npm run pipeline:natural-titles # Natural reader-facing Romanian headlines
-npm run pipeline:wrapper-copy # AI-generated greeting/intro/signoff
-npm run pipeline:refine       # Final refinement
-npm run validate-draft -- --week 2026-W12          # Validate draft quality
 npm run validate-draft-freshness -- --week 2026-W12 # Archive freshness gate
-npm run notify-draft          # Send proof for validated legacy draft only
-npm run pipeline:verify-local -- --week 2026-W12   # Verify phase outputs
+npm run pipeline:verify-ingest-e2e # Ingestion and feed-health integration check
 ```
 
 ## Project Structure
@@ -62,17 +57,17 @@ src/
 └── content.config.ts  # Zod schema for issues collection
 
 content/issues/        # Published newsletter markdown (YYYY-MM-DD-issue.md)
+data/assessments/       # Frozen weekly input, Amp ledger, source/review/email evidence
 data/drafts/           # Draft JSON files (YYYY-WXX.json)
-data/pipeline/         # Phase outputs (01 → 05 shortlist → 05a natural titles → 06 wrapper → 07 refined)
 data/raw/              # Raw RSS feed data (weekly, auto-cleaned)
 data/sources.json      # RSS feed configuration
 emails/                # React Email templates + components
   ├── newsletter.tsx   # Main newsletter template
   ├── welcome.tsx      # Welcome email template
   ├── components/      # Header, Footer, NewsItem, SectionHeader, Intro, SignOff
-  └── utils/           # render.ts, generate-copy.ts
+  └── utils/           # render.ts
 scripts/               # CLI scripts (TypeScript, run via tsx)
-  ├── lib/             # Shared pipeline logic (draft-pipeline, ranking, gemini, etc.)
+  ├── lib/             # Assessment, ingestion, editorial and delivery guards
   └── *.ts             # Entry points for each npm script
 functions/api/         # Cloudflare Functions
   ├── subscribe.ts     # POST /api/subscribe → Resend audience
@@ -84,25 +79,11 @@ docs/                  # Plans and specs (PLAN.md, COPY_PLAN.md, etc.)
 ## Environment Variables
 
 ```
-GEMINI_API_KEY         # Default AI provider (pipeline phases)
-OPENROUTER_API_KEY     # Alternative AI provider (use --llm openrouter)
-OPENROUTER_MODEL       # Optional: override default model (default: google/gemma-4-26b-a4b-it:free)
-OPENROUTER_FALLBACK_MODELS  # Optional: comma-separated fallback models for rate-limit rotation (uses OpenRouter native `models` array)
 RESEND_API_KEY         # Required for email sending
 RESEND_AUDIENCE_ID     # Newsletter audience
 RESEND_SEGMENT_ID      # Targeted sending segment
 TEST_EMAIL             # Test recipient for dev/preview
 ```
-
-### LLM Provider Selection
-
-The draft pipeline supports three interchangeable LLM providers:
-- `--llm gemini` (default) — requires `GEMINI_API_KEY`
-- `--llm claude-cli` — uses local `claude` CLI, no API key required
-- `--llm openrouter` — requires `OPENROUTER_API_KEY`
-
-CI defaults to `gemini` (reliable free tier). Set `LLM_FALLBACK=openrouter`
-in env to auto-fall-back on quota errors.
 
 ## Code Conventions
 
@@ -139,7 +120,7 @@ in env to auto-fall-back on quota errors.
 ## CI/CD Workflows
 
 - **ingest-news.yml**: Every 6h — `ingest-news` → `cleanup-raw-data` → commit + push
-- **generate-newsletter.yml**: Saturday 09:30 Europe/Bucharest — prepare → score only → commit scored pool; no Gemini draft or proof. The scheduled orb independently curates and sends both an editor proof and a newsletter-format test to the editor.
+- **Amp Saturday review**: 08:00 Europe/Bucharest with checkpoint recovery — assess every eligible row, verify finalists, select, audit and send one scored editor proof, ready for review by lunch. The exact draft remains unapproved; never push or send subscribers automatically.
 - **send-newsletter.yml**: Sunday evening plus recovery passes — exact-week editor approval → persisted Resend broadcast → Monday 09:00 Europe/Bucharest delivery
 - **publish-newsletter.yml**: Monday 09:30/10:30 Europe/Bucharest — verify the matching Resend broadcast is sent → publish issue → commit
 
@@ -155,7 +136,7 @@ When the editor says "validate and approve [the draft] for Monday" (or any
 variant: "approve this", "lock it in", "make it ready to send"), identify the
 edition they actually reviewed before locking anything. The Saturday independent
 proof and its newsletter-format `[TEST]` are not necessarily the current
-`data/drafts/YYYY-WXX.json`: that file may still contain an unrelated Gemini
+`data/drafts/YYYY-WXX.json`: that file may still contain an unrelated earlier
 draft. Approval of proposed additions or a request for a test email alone does
 not authorize a subscriber send. If approval refers unambiguously to the final
 independent edition, first materialize that exact proof as the production draft,
@@ -181,7 +162,7 @@ Once the exact production edition is approved, **lock it without rewriting it**:
    workflow cannot schedule a local, unpushed draft.
 
 **Never, under an approval instruction:**
-- Re-run any `pipeline:*` phase (especially `select`, `natural-titles`, `wrapper-copy`, `refine`).
+- Re-run assessment, selection or copy generation.
 - Regenerate greeting / intro / sign-off / shortSummary — those are the
   editor's final voice for the week.
 - Move articles between `selected` and `reserves`, reorder, trim to a

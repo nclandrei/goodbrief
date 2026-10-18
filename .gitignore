@@ -30,6 +30,9 @@ pnpm-debug.log*
 # Orb portal metadata
 .amp/portals/*
 
+# Thread-bound assessment runtime state (the plugin itself is tracked).
+.amp/assessment-worker.json
+
 .workspaces/
 .worktrees/
 .workspaces/
