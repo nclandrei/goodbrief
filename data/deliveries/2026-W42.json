@@ -3,10 +3,10 @@
   "weekId": "2026-W42",
   "broadcastName": "goodbrief-prod-2026-W42",
   "broadcastId": "ae7897a4-2ff9-4a9c-bb9a-9e078ae9b22d",
-  "deliverySha256": "e1ab292e0f6d823b5c2809819369852432d6f908946f887fcf0b05b10dc0b93b",
+  "deliverySha256": "fa106bcb8b287d010c11f39553a04651b065040b1e59a9cd41bd273b629451d7",
   "segmentId": "849b57ed-492d-447e-8c06-d2d86a7c8468",
   "scheduledAt": "2026-10-19T06:00:00.000Z",
   "remoteStatus": "scheduled",
   "createdAt": "2026-10-18 11:14:12.537612+00",
-  "reconciledAt": "2026-10-18T11:14:12.314Z"
+  "reconciledAt": "2026-10-18T12:51:53.771Z"
 }
