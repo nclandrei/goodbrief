@@ -1,0 +1,30 @@
+Elevii care se pregătesc pentru Evaluarea Națională și Bacalaureatul din 2027 au la dispoziție gratuit 1.386 de exerciții de matematică din subiectele oficiale ale examenelor naționale, organizate pe 31 de capitole și niveluri de dificultate. Exercițiile
+pot fi accesate pe platforma ⁠
+Edsimo
+, dezvoltată de o firmă din județul Iași. Profesorii pot selecta probleme pentru a crea fișe de lucru pe care să le folosească la clasă sau să le trimită elevilor.
+Platforma reunește exerciții extrase din 93 de subiecte oficiale de examen, inclusiv modele, simulări și teste de antrenament, publicate de Ministerul Educației. Dintre acestea, 828 sunt exerciții pentru Evaluarea Națională, din perioada 2021-2026, iar 558 sunt pentru Bacalaureat, din perioada 2024-2026, potrivit unui ⁠
+comunicat de presă transmis de dezvoltatorii platformei
+.
+Platforma poate fi accesată aici
+Spre deosebire de variantele complete de examen, publicate în format PDF, exercițiile sunt disponibile individual și pot fi căutate după capitol, dificultate, examen, an, profil sau subiect. Astfel, un elev care are dificultăți la ecuații, geometrie sau trigonometrie poate selecta doar problemele din capitolul respectiv, fără să parcurgă o variantă întreagă de examen.
+Fiecare exercițiu este însoțit de baremul oficial de evaluare. Pentru 768 dintre probleme sunt disponibile și indicii de rezolvare, prezentate treptat. Elevul poate consulta mai întâi o sugestie despre modul în care ar putea începe rezolvarea, apoi alte indicații, înainte de a verifica răspunsul în barem.
+Profesorii pot crea fișe de lucru personalizate
+O funcționalitate a platformei este destinată profesorilor de matematică, care pot selecta până la 30 de exerciții pentru a alcătui o fișă de lucru.
+Fișa poate fi tipărită sau distribuită elevilor printr-un link, fără ca aceștia să fie obligați să își creeze un cont. Profesorul poate alege dacă include sau nu baremul de evaluare la finalul documentului.
+De exemplu, pentru o lecție de recapitulare, un profesor poate selecta exerciții din mai multe variante de Evaluare Națională, toate din același capitol, sau poate combina probleme cu grade diferite de dificultate.
+Platforma include și un memorator de formule matematice, organizat pe capitole, care poate fi consultat online sau tipărit.
+Exerciții pentru toate cele patru profiluri de Bacalaureat la matematică
+În cazul Bacalaureatului, cele 558 de exerciții sunt distribuite astfel:
+130 de exerciții pentru matematică-informatică;
+110 exerciții pentru științe ale naturii;
+120 de exerciții pentru profilul tehnologic;
+198 de exerciții pentru profilul pedagogic.
+Elevii pot filtra exercițiile în funcție de profilul pentru care susțin examenul, astfel încât să lucreze probleme corespunzătoare programei de examen.
+Accesul este gratuit, inclusiv fără cont
+Exercițiile, baremele și indiciile pot fi consultate fără crearea unui cont și fără abonament.
+Elevii care aleg să își creeze un cont gratuit pot marca exercițiile rezolvate sau pe cele la care mai au de lucrat. Platforma le permite să urmărească progresul pe capitole, niveluri de dificultate și tipuri de examen.
+Pentru utilizatorii sub 16 ani, activarea contului presupune confirmarea prin e-mail a unui părinte, potrivit informațiilor comunicate de dezvoltatori.
+Operatorul platformei susține că serviciul nu afișează reclame și nu comercializează datele utilizatorilor.
+Urmează să fie adăugate și subiecte de Limba română și Informatică
+În prezent, platforma conține exerciții de matematică pentru Evaluarea Națională și Bacalaureat. Dezvoltatorii anunță că intenționează să extindă conținutul cu subiecte de Limba și literatura română pentru ambele examene și de Informatică pentru Bacalaureat.
+Edsimo este un proiect dezvoltat de OWLIA SRL, o companie din județul Iași. Platforma nu este afiliată Ministerului Educației, însă folosește subiectele și baremele oficiale publicate de instituție, cu indicarea sursei.

@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-10-24T06:15:40.107Z",
+  "assessmentHash": "bb15a89cbb68b7c9db46084fffa4082f2c1c05bb305eb9442a2ee7d8fdc0aa60",
+  "assessed": 2081,
+  "repeatedSixWordPhrases": [
+    {
+      "phrase": "este tragedie rutieră nu progres în",
+      "indices": [
+        178,
+        487
+      ]
+    },
+    {
+      "phrase": "de luni și nu descrie un",
+      "indices": [
+        185,
+        542
+      ]
+    },
+    {
+      "phrase": "dovadă că managementul școlar s a",
+      "indices": [
+        251,
+        777
+      ]
+    },
+    {
+      "phrase": "că managementul școlar s a îmbunătățit",
+      "indices": [
+        251,
+        777
+      ]
+    },
+    {
+      "phrase": "în fiba europe cup este rezultat",
+      "indices": [
+        847,
+        1262
+      ]
+    },
+    {
+      "phrase": "premiul saharov pentru cpi susține justiția",
+      "indices": [
+        1320,
+        1510
+      ]
+    },
+    {
+      "phrase": "saharov pentru cpi susține justiția internațională",
+      "indices": [
+        1320,
+        1510
+      ]
+    }
+  ]
+}

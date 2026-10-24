@@ -1,0 +1,27 @@
+{
+  "checkedAt": "2026-10-24T06:13:26.764Z",
+  "unchangedProposalValid": true,
+  "controls": [
+    {
+      "name": "One non-finalist eligible row omitted",
+      "rejected": true
+    },
+    {
+      "name": "Selected finalist lacks a full-source check",
+      "rejected": true
+    },
+    {
+      "name": "Full-source text tampered without matching hash",
+      "rejected": true
+    },
+    {
+      "name": "Judgment copied from a different article",
+      "rejected": true
+    },
+    {
+      "name": "Selection scores changed from ledger",
+      "rejected": true
+    }
+  ],
+  "allTenHeadlinesUnder110": true
+}

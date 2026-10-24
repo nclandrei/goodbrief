@@ -1,0 +1,2326 @@
+PAGE 1
+ 
+ 
+1 
+ 
+ 
+ 
+ 
+EIT Higher Education Initiative (HEI) 
+ 
+ 
+Call for Proposals 2026 
+20.10.2026 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PAGE 2
+ 
+ 
+2 
+ 
+History of changes 
+version 
+Publication date Changes Page 
+V1.0 20 October 2026 N/A  N/A 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PAGE 3
+ 
+ 
+3 
+ 
+Contents 
+1. Introduction ................................ ................................ ................................ ................................ ..... 6 
+1.1. Information on the European Institute of Innovation and Technology (EIT) ................................ .... 6 
+1.2. Information on the EIT Higher Education Initiative (EIT HEI) ................................ ............................  7 
+1.3. Information on the EIT HEI Implementation Model ................................ ................................ ......... 7 
+2. EIT HEI Call 2026: Intervention Logic and General Requirements ................................ .................... 8 
+2.1. Scope ................................ ................................ ................................ ................................ ................ 8 
+2.2. Policy Objectives ................................ ................................ ................................ ..............................  9 
+2.3. Specific Objectives and Sub-Objectives ................................ ................................ ..........................  11 
+2.4. Intervention Framework and Funded Actions ................................ ................................ ................ 13 
+2.4.1. HEInnovate self-assessment and identification of institutional priorities ................................ ...... 14 
+2.4.2. EIT HEI Impact Domains and Funded Actions ................................ ................................ ................. 14 
+2.5. KPI Architecture and Requirements ................................ ................................ ...............................  17 
+2.5.1. Contribution to the STEM Education Strategic Plan target ................................ ............................  18 
+2.5.2. Mandatory KPI Requirements ................................ ................................ ................................ ........ 19 
+2.5.3. Optional EIT HEI KPI ................................ ................................ ................................ ........................  21 
+2.5.4. EIT Core KPI requirement ................................ ................................ ................................ ............... 22 
+3. Project Design and Implementation Requirements ................................ ................................ ....... 22 
+3.1. HEI Leadership and Institutional Engagement................................ ................................ ................ 23 
+3.2. Knowledge Triangle Integration ................................ ................................ ................................ ..... 23 
+3.3. Connection and alignment with the EIT KICs and EIT Community ................................ ................. 24 
+3.4. Building on Previous EIT HEI and Other Relevant Activities ................................ ...........................  24 
+3.5. EIT HEI Portfolio and Community Integration and Participation ................................ .................... 25 
+3.6. Monitoring, Evaluation and Learning (MEL) ................................ ................................ ................... 27 
+3.7. Diversity, Equity and Inclusion................................ ................................ ................................ ........ 27 
+4. Consortium and Participation Requirements ................................ ................................ ................. 28 
+4.1. General Participation Requirements ................................ ................................ ..............................  28 
+4.2. Consortium Composition Eligibility Criteria ................................ ................................ .................... 29 
+4.3. Previous EIT HEI Project Partner Participation ................................ ................................ ............... 29 
+
+PAGE 4
+ 
+ 
+4 
+ 
+5. Financial and Operational Aspects of the EIT HEI Call 2026 ................................ ...........................  30 
+5.1. Project Duration ................................ ................................ ................................ .............................  30 
+5.2. Available Budget ................................ ................................ ................................ .............................  30 
+5.3. Form of Grant, Funding Rate and Maximum Grant Amount ................................ ..........................  30 
+5.4. Timeline and deadlines................................ ................................ ................................ ................... 31 
+5.5. Eligibility of Costs ................................ ................................ ................................ ...........................  31 
+5.6. Operational Model ................................ ................................ ................................ .........................  32 
+5.7. Intellectual Property Rights Rules ................................ ................................ ................................ .. 32 
+5.8. Communication, Dissemination and Visibility Rules ................................ ................................ ....... 33 
+5.9. Data Management Rules ................................ ................................ ................................ ................ 33 
+6. Admissibility criteria ................................ ................................ ................................ .......................  33 
+7. Eligibility Criteria ................................ ................................ ................................ ............................  34 
+7.1. Entities eligible to participate ................................ ................................ ................................ ......... 34 
+7.2. Eligibility for funding ................................ ................................ ................................ ...................... 34 
+7.3. EU restrictions on participation ................................ ................................ ................................ ...... 35 
+8. Exclusion and Rejection criteria ................................ ................................ ................................ ..... 36 
+8.1. Exclusion criteria ................................ ................................ ................................ ............................  36 
+8.2. Rejection criteria ................................ ................................ ................................ ............................  37 
+8.3. Declaration of Honour and legal entity validation ................................ ................................ .......... 38 
+9. Operational capacity ................................ ................................ ................................ ...................... 38 
+10. Financial capacity ................................ ................................ ................................ ...........................  40 
+11. Evaluation, Award and EIT KIC Allocation Procedure ................................ ................................ ..... 40 
+11.1. Award Criteria ................................ ................................ ................................ ................................  41 
+11.2. Ex-aequo Proposals ................................ ................................ ................................ ........................  46 
+11.3. Standstill period ................................ ................................ ................................ .............................  46 
+11.4. Redress and Complaint Procedure ................................ ................................ ................................ . 46 
+11.5. EIT KIC Allocation Procedure ................................ ................................ ................................ .......... 47 
+12. Other terms and conditions ................................ ................................ ................................ ........... 48 
+12.1. Clarifications on errors or missing information ................................ ................................ .............. 48 
+
+PAGE 5
+ 
+ 
+5 
+ 
+12.2. Acceptance of the Call conditions ................................ ................................ ................................ .. 48 
+12.3. Cancellation of the call ................................ ................................ ................................ ................... 48 
+12.4. Data protection ................................ ................................ ................................ ..............................  49 
+12.5. Confidentiality ................................ ................................ ................................ ................................  49 
+12.6. Avoidance of conflict of interest ................................ ................................ ................................ .... 50 
+12.7. Ethics and values ................................ ................................ ................................ ............................  50 
+12.8. Intellectual property rights ................................ ................................ ................................ ............. 50 
+12.9. Withdrawal of the funding – Recovery of undue amounts ................................ ............................  51 
+12.10. Checks, reviews, audits and investigations ................................ ................................ ................... 51 
+12.11. Applicable law ................................ ................................ ................................ ..............................  51 
+12.12. Settlement of disputes ................................ ................................ ................................ ................. 52 
+13. Annexes ................................ ................................ ................................ ................................ .......... 52 
+13.1. Information on Key Dates, Submission and Enquiries ................................ ................................ .... 52 
+13.2. Innovation Vision Action Plan (IVAP) Submission Guidelines ................................ .........................  53 
+13.3. EIT Impact Framework ................................ ................................ ................................ ................... 54 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PAGE 6
+ 
+ 
+6 
+ 
+1. Introduction  
+1.1.  Information on the European Institute of Innovation and Technology (EIT) 
+European Institute of Innovation and Technology (EIT) 
+The European Institute of Innovation and Technology (EIT) is a European Union body with a legal 
+personality and a wide legal capacity accorded to legal persons under national law. The EIT was created in 
+2008 by the European Union (EU) to enhance Europe's global competitiveness by fostering collaboration 
+between businesses, research institutions, and higher education organisations. 
+The EIT is governed by Regulation (EU) 2021/695 (EIT Regulation)1, which aligns the EIT’s mission with the 
+EU’s priorities and the objectives of Horizon Europe on evolving research, innovation, economic growth, 
+job creation, global competitiveness, sustainable growth, higher education and entrepreneurship, by 
+means of t he Knowledge and Innovation Communities (KICs), which address specific societal challenges 
+and are established and supported by the EIT.  
+The EIT Strategic Innovation Agenda (SIA) 2021 -2027 is aligned with Horizon Europe and lays down the 
+priority fields and the strategy of the EIT for future initiatives 2, capacity to generate the best innovation 
+added-value, objectives, key actions, mode of operation, expected results, impact, as well as an estimate 
+of the resources needed for the duration of Horizon Europe.  
+Horizon Europe Regulation 
+The Horizon Europe Regulation (EU) 2021/695 foresees that the EIT takes part in the implementation of 
+the Horizon Europe Programme in accordance with its strategic objectives for the period 2021 to 20273, as 
+outlined in the Strategic Innovation Agenda of the EIT, and taking into account the strategic planning of 
+Horizon Europe.  
+EIT and Knowledge and Innovation Community (KIC) relations 
+The EIT Regulation defines KICs as large-scale Institutionalised European Partnerships of higher education 
+institutions, research organisations, companies and other stakeholders in the innovation process in the 
+form of a strategic network, regardless of it s legal form, based on joint mid - to long -term innovation 
+planning to meet the EIT’s challenges and contribute to attaining the objectives established.  
+According to the EIT Regulation, and without prejudice to the Partnership Agreements and grant 
+agreements between the EIT and each KIC, the KICs have substantial autonomy to establish their internal 
+organisation and composition, as well as their agenda and working methods, provided that they result in 
+ 
+1 https://eur-lex.europa.eu/eli/reg/2021/695/oj/eng  
+2 https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32021D0820&qid=1624882966988  
+3 https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32021R0695  
+
+PAGE 7
+ 
+ 
+7 
+ 
+progress towards achieving the objectives of the EIT and the KICs, taking into account the strategic planning 
+of Horizon Europe and the strategic direction of the EIT set out in the SIA and by the Governing Board. 
+Contractual framework between the EIT and the KICs 
+The long-term relations between the EIT and each KIC are based on a seven-year Partnership Agreement 
+(PA)4 laying down the general terms and conditions under which the KIC operates as an Institutionalised 
+European Partnership. Subject to positive performance, interim review and outcome of comprehensive 
+assessment of the KIC, the PA can be extended for another period of a maximum of seven years.  
+The Grant Agreement (GA)5 is the contractual instrument laying down the provisions concerning the 
+implementation of the KIC activities (KIC Business Plan, Cross -KIC activities, etc.) through grants, on an 
+annual or multi-annual basis of up to three years with the KICs. Business plans describe the main objectives 
+and expected results and actions taken by the KICs.  
+1.2.  Information on the EIT Higher Education Initiative (EIT HEI) 
+The EIT Higher Education Initiative (hereinafter referred to as the "EIT HEI” or “the initiative”), established 
+under the EIT Strategic Innovation Agenda 2021 -20276, aims to strengthen European higher education’s 
+role in innovation ecosystems. By building institutional innovation and entrepreneurship capacity, the EIT 
+Higher Education Initiative  fosters systemic change in  higher education institutions  (HEIs) and enhances 
+their integration into regional and European innovation networks. 
+EIT HEI projects follow the Knowledge Triangle Model (see Section 3.3 for more information), described in 
+the EIT Strategic Innovation Agenda, bringing together education, research, and business to co -create 
+impactful solutions to global challenges. Central to the initiative is the creation of a dynamic and inclusive 
+innovation community that connects HEIs, businesses, investors, and other stakeh olders, amplifying 
+individual and collective project impact. 
+1.3. Information on the EIT HEI Implementation Model 
+This Call is launched in accordance with the EIT Strategic Innovation Agenda (SIA) 2021 –2027 and forms 
+part of the EIT HEI. The EIT HEI is implemented collaboratively by a group of participating KICs, referred to 
+collectively as the EIT HEI Consortium. The EIT HEI Consortium is made up of the following participating EIT 
+KICs7: 
+ 
+ 
+4 Model Partnership Agreement: https://www.eit.europa.eu/sites/default/files/2024-
+11/EIT%20KIC%20Partnership%20Agreement%20V2.0_5%20October%202022_Clean.pdf  
+5 Horizon Europe Model Grant Agreement: general-mga_horizon-euratom_en.pdf 
+6 Decision (EU) No 2021/820 of the European Parliament and of the Council of 20 May 2021  on the Strategic Agenda of the European Institute of 
+Innovation and Technology (EIT) 2021-2027: Boosting the Innovation Talent and Capacity of Europe and repealing Decision No 1312/2013/EU, OJ 
+L 189/3 of 28 May 2021, https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32021D0820&from=EN    
+7 KICs under Partnership Agreement and KICs under Memorandum of Cooperation. 
+
+PAGE 8
+ 
+ 
+8 
+ 
+• EIT RawMaterials8 (coordinating EIT KIC) 
+• Climate-KIC9 
+• 28Digital10 
+• EIT Food11 
+• EIT Health12 
+• EIT Urban Mobility13 
+• EIT Culture & Creativity14 
+2. EIT HEI Call 2026: Intervention Logic and General Requirements 
+2.1.  Scope 
+Europe's future competitiveness, technological leadership and strategic autonomy depend on its ability to 
+turn STEM talent, research, knowledge and technologies into innovation, entrepreneurship and industrial 
+and societal impact. This requires stronger co nnections between higher education, research, skills, 
+technology development, industry and markets, particularly in deep -tech innovation and the strategic  
+technologies underpinning Europe's industrial competitiveness 15. The Competitiveness Compass 16, the 
+European Competitiveness Agenda 17 and the New European Innovation Agenda 18 all emphasise 
+strengthening Europe's innovation capacity, closing the gap between research and market uptake, and 
+creating the conditions for sustainable competitiveness and technological leadership. The Clean Industrial 
+Deal19, the Union of Skills 20, the STEM Education Strategic Plan 21, the EU Start-up and Scale-up Strategy22 
+and EU valorisation policy 23 further highlight the importance of skills, innovation, entrepreneurship and 
+stronger pathways from research and knowledge to innovation, investment and economic value. 
+Higher education institutions (HEIs) are central to these objectives, bringing together talent, research, 
+knowledge, infrastructure and connections to innovation ecosystems. However, gaps remain in their 
+ 
+8 https://eitrawmaterials.eu/  
+9 https://www.climate-kic.org/  
+10 https://28digital.eu/  
+11 https://www.eitfood.eu/  
+12 https://eithealth.eu/  
+13 https://www.eiturbanmobility.eu/  
+14 https://eit-culture-creativity.eu/  
+15 Deep tech definition: https://www.eitdeeptechtalent.eu/the-initiative/what-is-deep-tech/  
+16 https://commission.europa.eu/topics/competitiveness/competitiveness-compass_en  
+17 https://commission.europa.eu/topics/competitiveness_en  
+18 https://research-and-innovation.ec.europa.eu/strategy/support-policy-making/shaping-eu-research-and-innovation-policy/new-european-
+innovation-agenda_en  
+19 https://commission.europa.eu/topics/competitiveness/clean-industrial-deal_en  
+20 https://commission.europa.eu/topics/eu-competitiveness/union-skills_en  
+21 https://education.ec.europa.eu/focus-topics/stem  
+22 https://research-and-innovation.ec.europa.eu/document/download/2f76a0df-b09b-47c2-949c-800c30e4c530_en?filename=ec_rtd_eu-
+startup-scaleup-strategy-communication.pdf  
+23 https://research-and-innovation.ec.europa.eu/research-area/industrial-research-and-innovation/eu-valorisation-policy_en  
+
+PAGE 9
+ 
+ 
+9 
+ 
+capacity to develop innovation, entrepreneurship and intellectual property (IP) competences, strengthen 
+knowledge valorisation and technology transfer, and connect research and technologies with industry, 
+investors, entrepreneurs, research organisations and wider innovation ecosystems. The EIT HEI Call 2026 
+therefore aims to strengthen HEIs' capacity to develop entrepreneurial talent, create the institutional 
+conditions for innovation and knowledge valorisation, and connect research and technologies to the 
+expertise, infrastructure, investment and markets needed to progress towards validation, 
+commercialisation and industrial application.  
+The Call has a strategic focus on deep-tech innovation and its translation into manufacturing and industrial 
+applications. Deep -tech technologies often require manufacturing capabilities, industrial expertise, 
+production capacity, testing and demonstration facilities, investment and market connections to progress 
+from research and laboratory development towards higher technology readiness, market deployment and 
+scale. The Call therefore supports HEIs in strengthening connections between STEM talent, researc h and 
+technology development, knowledge valorisation and technology transfer, entrepreneurship, 
+manufacturing and industry, and wider innovation ecosystems. 
+2.2. Policy Objectives 
+EIT HEI Call 2026 pursues three interconnected policy objectives that define the changes it seeks to achieve: 
+strengthen STEM talent, strengthening institutional capacity for innovation and knowledge valorisation, 
+and strengthening connections between HEIs and deep-tech and manufacturing ecosystems. 
+Policy Objective 1 – STEM talent for deep tech and manufacturing innovation and entrepreneurship 
+Strengthen HEI capacity to develop the innovation, entrepreneurship and intellectual property (IP) 
+competences of STEM talent needed to contribute to deep -tech and manufacturing innovation. This 
+includes enabling students, researchers, academic staff and professional staff to apply these competences 
+in real-world innovation and industrial contexts24. 
+Policy Objective 2 – Strengthen HEIs as institutional drivers of innovation, from lab to market 
+Strengthen the institutional structures, processes and capabilities that enable HEIs to develop, valorise, 
+transfer and commercialise knowledge and technologies, support entrepreneurship and create the 
+conditions for innovation to progress towards industri al application and market entry. This includes 
+strengthening leadership, governance, innovation support structures and mechanisms, knowledge and 
+technology transfer capabilities and institutional pathways connecting education, research and innovation. 
+ 
+24 For this Call, STEM is defined in alignment with the STEM Education Strategic Plan, which “broadly covers the fields of education ‘Natural 
+sciences, mathematics and statistics (05)’; ‘Information and Communication Technologies (06)’ and ‘Engineering, manufacturing and 
+construction’ (07)’ of the International Standard Classification of Education (ISCED), as well as related interdisciplinary fields and studies). 
+
+PAGE 10
+ 
+ 
+10 
+ 
+Policy Objective 3 – Connect HEIs to regional and  European deep-tech and manufacturing innovation 
+ecosystems 
+Strengthen HEI capacity to connect talent, research and technologies with the organisations, expertise, 
+infrastructure, investment and markets needed to generate innovation and industrial impact. This includes 
+strategic connections with industry, investors , entrepreneurs, research organisations, technology 
+infrastructures and EIT Knowledge and Innovation Communities (KICs), and stronger participation in 
+regional and European innovation ecosystems and value chains.  
+The three Policy Objectives are mutually reinforcing. Projects must contribute to all three, while the relative 
+emphasis and combination of activities may be adapted to the institutional context, needs and maturity of 
+participating HEIs. The intervention logic below shows how the Policy Objectives are translated into types 
+of activities, outputs and expected results, leading to the overall impact sought by the Call. 
+Figure 1: EIT HEI Call 2026 – Policy Objectives and intervention framework 
+
+
+PAGE 11
+ 
+ 
+11 
+ 
+2.3. Specific Objectives and Sub-Objectives 
+The three Policy Objectives define the broad areas of institutional change sought by the Call. The Specific 
+Objectives translate these into more defined areas of change, while the Sub -objectives describe the 
+expected direction of progress within each area. Projects must contribute to all three Policy Objectives but 
+are not expected to address every Specific Objective or Sub -objective. Applicants should identify the 
+institutional needs and priorities of participating  HEIs and define a combination of activities that respond 
+to these needs and contribute to the relevant objectives. The proposal should demonstrate a clear link  
+between identified needs, proposed activities, expected outputs and results, and the relevant Specific and 
+Policy Objectives. The relative emphasis and combination of activities may vary according to the 
+institutional context, maturity, and priorities of participating HEIs. 
+Policy Objective Specific Objective Sub-objectives 
+1. STEM Talent: 
+Strengthened 
+manufacturing 
+and deep-tech 
+innovation talent 
+pool and 
+readiness 
+1.1 Strengthened 
+innovation, 
+entrepreneurship and 
+IP competences among 
+manufacturing and 
+deep-tech relevant 
+STEM talent 
+1.1.1 Strengthened innovation, entrepreneurship and IP 
+capabilities among STEM students, researchers, 
+academic staff and professional/non-academic staff, with 
+a focus on skills and competences relevant to 
+manufacturing and deep-tech innovation. 
+1.1.2 Strengthened interdisciplinary approaches enabling 
+STEM talent to combine technical expertise with 
+innovation, entrepreneurship and IP capabilities. 
+1.2 Increased 
+connection between 
+talent development 
+and real-world 
+innovation and 
+industrial challenges 
+1.2.1 Increased application of innovation, 
+entrepreneurship and IP competences through 
+challenge-based, experiential and project-based learning 
+addressing real -world manufacturing and deep -tech 
+challenges. 
+1.2.2 Increased engagement of talent with companies, 
+SMEs, start -ups, research organisations and other 
+innovation actors through internships, mentoring, 
+collaborative projects and other practical experiences. 
+1.3 Increased 
+institutionalisation and 
+scale of innovation and 
+entrepreneurship 
+education 
+1.3.1 Increased integration of innovation, 
+entrepreneurship and IP within curricula, training 
+programmes and institutional approaches to talent 
+development, particularly across STEM disciplines. 
+1.3.2 Strengthened institutional structures, support 
+mechanisms and approaches for the sustained 
+development and scaling of innovation and 
+entrepreneurial talent beyond the project lifetime. 
+ 
+2.1 Strengthened 
+institutional capacity 
+2.1.1 Strengthened KTO/TTO capacity and processes for 
+identifying innovation potential, managing and 
+
+PAGE 12
+ 
+ 
+12 
+ 
+ 
+ 
+2. Institutional 
+Innovation 
+Capacity:  
+Enhanced HEI 
+capacity as 
+institutional 
+drivers of 
+manufacturing 
+and deep-tech 
+innovation 
+for knowledge 
+valorisation and 
+technology transfer 
+protecting IP, assessing commercialisation opportunities, 
+engaging with industry, and supporting licensing, spin -
+offs, start-ups and other routes to market, particularly for 
+manufacturing and deep-tech research and technologies. 
+2.1.2 Strengthened capacity of HEIs and researchers to 
+identify, develop and prepare research and innovation 
+potential for knowledge valorisation, technology transfer 
+and further development towards application and 
+commercialisation. 
+2.2 Increased 
+integration and scale 
+of innovation capacity 
+within institutional 
+structures and 
+processes 
+2.2.1 Increased integration of innovation, 
+entrepreneurship, knowledge valorisation and 
+technology transfer within institutional strategies, 
+structures and processes. 
+2.2.2 Strengthened leadership engagement and 
+sustainable organisational, governance and support 
+structures enabling innovation and entrepreneurship 
+across the institution. 
+2.2.3 Improved monitoring of institutional progress and 
+longer-term change in innovation, entrepreneurship, 
+knowledge valorisation and technology transfer. 
+2.3 Strengthened 
+integration of 
+education, research 
+and institutional 
+innovation support 
+2.3.1 Strengthened connections between education, 
+research, innovation support, technology transfer and 
+entrepreneurship functions within HEIs, enabling more 
+coherent institutional pathways for talent and research 
+to contribute to innovation. 
+2.3.2 Improved identification and addressing of 
+institutional barriers that prevent talent, research and 
+technologies from progressing towards innovation, 
+validation, commercialisation and industrial application. 
+3. Ecosystem 
+Integration: 
+Increased 
+integration of 
+HEIs into 
+manufacturing 
+and deep-tech 
+innovation 
+ecosystems 
+3.1 Strengthened 
+strategic partnerships 
+with industry and 
+innovation actors 
+3.1.1 Strengthened strategic partnerships between HEIs 
+and companies, SMEs, start-ups, research organisations, 
+technology centres and other relevant innovation actors 
+to support manufacturing and deep-tech innovation. 
+3.1.2 Strengthened capacity of HEIs and their partners to 
+collaborate across sectors and disciplines, share expertise 
+and infrastructure, and respond jointly to emerging 
+industrial and innovation needs. 
+3.2 Increased access to 
+markets, investment 
+and innovation 
+infrastructure 
+3.2.1 Increased HEI access to industry environments, 
+testing and demonstration facilities, pilots, technology 
+infrastructures, market knowledge and other external 
+
+PAGE 13
+ 
+ 
+13 
+ 
+resources needed to validate and advance manufacturing 
+and deep-tech innovations. 
+3.2.2 Strengthened connections to investors, 
+entrepreneurs, accelerators, incubators and other 
+finance and business support actors, improving 
+investment readiness and access to routes for 
+exploitation, commercialisation and scale-up. 
+3.3 Strengthened 
+participation of HEIs in 
+regional and European 
+innovation ecosystems 
+3.3.1 Increased integration of HEIs into regional and 
+European innovation ecosystems, including EIT KICs and 
+other relevant networks and initiatives, expanding access 
+to expertise, partnerships, opportunities and 
+complementary innovation support. 
+3.3.2 Sustained cross -regional and European 
+collaborations strengthening the integration of HEIs into 
+manufacturing and deep -tech value chains and 
+innovation networks, particularly where these create 
+opportunities for less-connected institutions and regions. 
+3.3.3 Increased connectivity and complementarity with 
+relevant European innovation and entrepreneurship 
+instruments, where appropriate, strengthening pathways 
+from research and innovation to validation, 
+commercialisation and scale -up. This may include 
+instruments such as the European Innovation Council 
+(EIC), European Research Council (ERC) Proof of Concept 
+grants, and the Interregional Innovation Investments (I3) 
+Instrument, as well as other relevant European, national 
+or regional initiatives. 
+ 
+2.4.  Intervention Framework and Funded Actions 
+Project activities must be designed in response to the institutional needs, maturity , and priorities of all 
+participating HEIs and must provide a clear pathway towards the objectives and expected results of the 
+Call. Each HEI must complete the HEInnovate self-assessment25, with results no more than six months old 
+at the point of application submission. HEInnovate provides a baseline for identifying institutional 
+strengths, gaps and priorities and informs the consortium's Innovation Vision Action Plan (IVAP). 
+ 
+25 HEInnovate tool: https://www.heinnovate.eu/en  
+
+PAGE 14
+ 
+ 
+14 
+ 
+2.4.1.  HEInnovate self-assessment and identification of institutional priorities 
+Each participating HEI is required to complete the  self-assessment26. Applicants should use the results to 
+identify the institutional needs and priorities where EIT HEI support can generate the greatest added value. 
+The results of the self -assessment should inform the development of the project proposal, which 
+constitutes the consortium's IVAP. The IVAP should set out the consortium's long -term vision for 
+institutional and systemic change and provide a strategic basis for the project's activities. It must 
+demonstrate: 
+• the key institutional needs and priorities identified through the self-assessment 
+• how these needs relate to the Policy Objectives and relevant Specific Objectives and Sub-objectives 
+• the activities proposed to address these needs 
+• the expected outputs and results 
+• how these results are expected to contribute to sustainable institutional transformation and the 
+overall aim of the Call 
+ 
+2.4.2.  EIT HEI Impact Domains and Funded Actions 
+HEInnovate assesses each participating HEI as an institution, providing an eight -dimension self-diagnostic 
+that informs the consortium's own roadmap and Innovation Vision Action Plan (IVAP). In contrast, the EIT 
+HEI Monitoring, Evaluation and Learning (MEL) Framework operates at Initiative level, providing a common 
+framework for monitoring and learning across all funded projects and cohorts 27. Within this framework, 
+the five Impact Domains organise the main areas of intervention supported by the EIT HEI and enable 
+evidence to be aggregated across consortia for EIT accountability and portfolio-level learning. 
+The Impact Domains are not additional Policy Objectives. Rather, they provide the established intervention 
+framework through which projects address their identified institutional needs and contribute to the Policy 
+Objectives and Specific Objectives of the Call. Within each Domain, Funded Actions define the specific types 
+of intervention that projects may select and implement according to t heir institutional context, maturity 
+and priorities. A Funded Action may contribute to more than one Specific Objective or Policy Objective, 
+reflecting the interconnected nature of talent development, institutional capacity and ecosystem 
+integration. The Policy Objectives, Specific Objectives and Sub -objectives referenced in this section are 
+specific to the EIT HEI Call 2026 and are not part of the terminology of the EIT HEI MEL Framework, which 
+organises its results framework around Impact Domains, Signs of Change, Outcomes and Impact. They 
+ 
+26 Please see the EIT HEI Call 2026 Project Design and Implementation Guide: https://eit-hei.eu/wp-content/uploads/2026/10/EIT-HEI-Call-2026-
+Project-Design-and-Implementation-Guide.pdf for more information on how to complete the self-assessment. 
+27 Monitoring, Evaluation, and Learning (MEL) Framework: https://eit-hei.eu/wp-content/uploads/2025/09/D7.7-MEL-Framework_EIT-
+HEI_V01_30062025-2.pdf   
+
+PAGE 15
+ 
+ 
+15 
+ 
+provide a Call -specific framework for defining the changes that projects are expected to contribute to 
+through the established Domain and Funded Action structure. 
+The five Impact Domains cover: 
+1. Fostering leadership support and institutional change – strengthening the institutional conditions, 
+leadership engagement and structures needed to embed innovation and entrepreneurship within 
+HEIs. 
+2. Strengthening partnerships and networks  – developing strategic connections between HEIs and 
+external organisations, including industry, research and other innovation actors. 
+3. Supporting innovation and business generation  – strengthening institutional capacity for 
+innovation-driven research, knowledge valorisation, technology transfer and entrepreneurship. 
+4. Enhancing innovation and entrepreneurship education  – developing the competences, curricula, 
+training and experiential learning opportunities needed to strengthen innovation and 
+entrepreneurship among STEM talent. 
+5. Sharing knowledge and success  – capturing, sharing and transferring project experience, results 
+and good practices across the EIT HEI portfolio and Community. 
+Selection of Funded Actions 
+All projects must select eight Funded Actions, and no more, according to the following requirements: 
+• At least one Funded Action must be selected from each of Domains 1 – 4.  
+• Two additional Funded Actions must be selected from Domains 1 – 4 according to the consortium's 
+institutional needs and priorities.  
+• Both Funded Actions under Domain 5 must be selected by all projects.  
+The selection of Funded Actions must be driven by the institutional needs and priorities identified through 
+the HEInnovate self-assessment and IVAP, rather than by a requirement to cover all Impact Domains or 
+predefined areas of activity. Applicants must demonstrate a clear line of sight between: 
+institutional needs → Policy and Specific Objectives → selected Funded Actions and activities → outputs → 
+expected results → sustainable institutional change.  
+The Funded Actions therefore provide the mechanism for implementing the intervention, while the Policy 
+Objectives and Specific Objectives define the changes that the intervention is intended to achieve.  The 
+common Impact Domain and Funded Action framework also provides continuity across EIT HEI Calls and 
+cohorts, enabling consistent monitoring, portfolio-level learning and the identification, sharing and transfer 
+of effective approaches and good practices.  
+
+PAGE 16
+ 
+ 
+16 
+ 
+The table below sets out the five Impact Domains and their associated Funded Actions and their primary 
+contributions to the Call’s Specific Objectives and Sub-objectives28.  
+Impact Domain Funded Action Primary contribution to Sub-Objectives 
+Domain 1: Fostering 
+leadership support and 
+institutional change 
+Secure and maintain institutional engagement 
+for the implementation of the IVAP, especially 
+among HEI leadership and its strategy. 
+2.2  
+Enhance the scale and scope of student 
+engagement activities, including improving 
+student support offices to advise on 
+entrepreneurship and innovation. 
+1.1 and 1.3  
+Develop inter- and multi-disciplinary support, 
+incentive and collaboration structures 
+(including digital infrastructure) to foster 
+innovation. 
+2.2 and 2.3  
+Domain 2: Strengthening 
+partnerships and networks 
+Establish new collaborations and enhance the 
+nature, content and types of collaborations 
+with external partners, including businesses, 
+research organisations, governmental bodies, 
+NGOs and other societal partners. 
+3.1 and 3.3  
+Build partnering capacities among staff and 
+facilitate networking and connections with 
+partners. 
+3.1  
+Domain 3: Supporting 
+Innovation and Business 
+Generation 
+Develop and utilise structures and conditions 
+for people to create or develop their businesses 
+and start-ups, and to transfer technology. 
+2.1 and 3.2  
+Create structures and conditions for 
+innovation-driven research. 2.1 and 2.3  
+Domain 4: Enhancing 
+innovation and 
+entrepreneurship education 
+Develop or improve the innovation and 
+entrepreneurial curricula. 1.1 and 1.3  
+Develop innovation and entrepreneurial 
+training programmes and mentoring schemes 
+for staff and students. 
+1.1 and 1.2  
+Organise internships in businesses. 1.2  
+ 
+28 A list of illustrative activities can be found in the EIT HEI Call 2026 Project Design and Implementation Guide: https://eit-hei.eu/wp-
+content/uploads/2026/10/EIT-HEI-Call-2026-Project-Design-and-Implementation-Guide.pdf and examples will be presented during the EIT HEI 
+MEL Framework and Impact Domains and Funded Actions information session (see Section 13.1). However, these illustrative activities are non-
+exhaustive; projects are encouraged to design activities according to consortium context and identified institutional needs, and in line with the 
+Call Objectives and Sub-Objectives. 
+
+PAGE 17
+ 
+ 
+17 
+ 
+Provide up-skilling opportunities to businesses, 
+especially SMEs. 3.1  
+Assessment of teaching and learning practices. 1.3  
+Domain 5: Sharing 
+knowledge and success 
+Collect and share success stories and lessons 
+with others. 
+Horizontal across all 
+Objectives 
+Engage in joint activities with other EIT Higher 
+Education Initiative project partners via the EIT 
+HEI Community. 
+Horizontal across all 
+Objectives 
+ 
+2.5.  KPI Architecture and Requirements 
+The EIT HEI Call 2026 uses the KPI architecture established in the EIT Impact Framework29. The KPIs provide 
+a common quantitative basis for measuring selected outputs and results of project implementation and 
+complement the broader qualitative and institutional evidence collected through the EIT HEI MEL 
+Framework. 
+The KPI architecture for the EIT HEI Call 2026 comprises two complementary levels: 
+• Project-level EIT HEI KPIs  and EIT Core KPIs  measure selected outputs and results generated 
+through funded projects and provide quantitative evidence of progress within the EIT HEI 
+intervention logic. There are four mandatory EIT HEI KPIs and projects must choose and deliver on 
+at least one EIT Core KPI by the end of their funding period. 
+• The EIT STEM Education Strategic Plan target represents an Initiative-level contribution to a wider 
+EU and EIT strategic objective. EIT HEI projects contribute to this target through activities that 
+develop innovation, entrepreneurship and IP management competences among STEM learners 
+and staff. 
+The relationship between activities, KPIs and the intended results  of the Call is established through the 
+project's intervention logic. Funded Actions are expected to generate outputs and results that contribute 
+to the Call's Policy Objectives and Specific Objectives. The applicable KPIs provide quantitative evidence for 
+selected elements of this pathway, while the IVAP, qualitative evidence and the MEL Framework capture 
+broader institutional and ecosystem -level change that cannot be adequately represented through 
+quantitative KPIs alone. 
+Applicants must therefore demonstrate in their IVAP how their proposed activities are expected to 
+generate the outputs and results required to achieve the applicable KPI targets and how these results 
+contribute to the objectives of the Call. KPI achievemen t should be understood as evidence of progress 
+ 
+29 EIT Impact Framework 2022 – 2027: https://eit.europa.eu/sites/default/files/eit_impact_framework_2022-2027.pdf  
+
+PAGE 18
+ 
+ 
+18 
+ 
+within the wider intervention logic, rather than as a substitute for institutional transformation or longer -
+term impact. 
+KPI requirements 
+KPI targets are set and results are reported at project level, and the achievement of these targets is the 
+responsibility of the consortium. Applicants should therefore ensure that their proposed activities and IVAP 
+provide a credible pathway towards achieving the required KPI targets. 
+The KPI requirements are set out in the table s found in Sections 2.5.2, 2.5.3, and 2.5.4, which specify the 
+KPIs and their minimum targets. The IVAP must demonstrate that the proposed project can achieve these 
+minimum targets, based on the planned activities, institutional context and consortium capacity. 
+The EIT HEI Call 2026 does not set minimum annual KPI targets. Consortia are required to plan their KPI 
+contributions on a calendar-year basis and will be expected to deliver on the commitments stated in their 
+application. 
+Further information on each EIT KPI, including definitions and the structured data and supporting evidence 
+required to substantiate achievement, is provided in the EIT Impact Framework30. 
+2.5.1.  Contribution to the STEM Education Strategic Plan target 
+A key contribution of the EIT HEI is to deliver on the EIT STEM Education Strategic Plan target of training 
+200,000 STEM students and staff in innovation, entrepreneurship and intellectual property (IP) 
+management by 2028.  The EIT HEI contribution is cumulative across the active and future EIT HEI cohorts: 
+EIT HEI Call 2024 (Cohort 4), EIT HEI Call 2025 (Cohort 5) and EIT HEI Call 2026 (future Cohort 6). Together, 
+these cohorts are expected to deliver on the target through the training and talent-development activities 
+delivered by their funded projects. 
+For this Call, STEM is defined in alignment with the STEM Education Strategic Plan, which “broadly covers 
+the fields of education ‘Natural sciences, mathematics and statistics (05)’, ‘Information and Communication 
+Technologies (06)’ and ‘Engineering, manuf acturing and construction (07)’ of the International Standard 
+Classification of Education (ISCED)31, as well as related interdisciplinary fields and studies.” Applicants may 
+also refer to this Eurostat publication32 for detailed descriptions of each field. 
+Applying consortia must therefore have access to a significant pool of STEM students and staff in disciplines 
+relevant to the focus areas of this Call: manufacturing and deep tech. 
+ 
+30 EIT Impact Framework 2022 – 2027: https://eit.europa.eu/sites/default/files/eit_impact_framework_2022-2027.pdf  
+31 https://unesdoc.unesco.org/ark:/48223/pf0000219109  
+32 https://circabc.europa.eu/sd/a/286ebac6-aa7c-4ada-a42b-ff2cf3a442bf/ISCED-F%25202013%2520-
+%2520Detailed%2520field%2520descriptions.pdf  
+
+PAGE 19
+ 
+ 
+19 
+ 
+Applicants must design their projects with sufficient scale and ambition to contribute to the 200,000 target. 
+The proposed Funded Actions, target groups, delivery model and KPI commitments should demonstrate a 
+credible pathway to reaching the required number of STEM learners and staff, while ensuring that training 
+meaningfully develops innovation, entrepreneursh ip and IP competences rather than simply maximising 
+participant numbers. 
+This contribution is reflected in the mandatory KPI requirements set out in the sections below. Achievement 
+of the relevant KPI targets is the responsibility of each funded consortium. Applicants should therefore 
+ensure that their IVAP and implementation approach provide a credible basis for delivering their committed 
+contribution during the funding period. 
+2.5.2.  Mandatory KPI Requirements 
+The four mandatory EIT HEI KPI requirements are set out below. Applicants must achieve the minimum 
+total target specified for each KPI requirement during the project funding period of 1 May 2027 to 31 
+October 2028. 
+ 
+KPI Code KPI Description Minimum Total Target 
+EITHE03.1 
+and/or 
+EITHE04.1 
+START-UP CREATION AND DEVELOPMENT 
+Projects must contribute to the creation and/or development of start-ups 
+through one or both of the following KPIs.*  
+ 
+EITHE03.1 – Number of start -ups and scale -ups supported: Number of 
+start-ups and scale-ups supported by the EIT HEI project for at least two 
+months, provided the services contribute to the company’s growth 
+(including potential growth). Examples of such services inc lude 
+mentoring, consultancy on access to finance and markets, 
+product/service marketing, legal advice, internationalisation and 
+matchmaking.  
+ 
+Specific Criteria: 
+• The services should be provided for a total period of at least two 
+months.  
+ 
+EITHE04.1 – Number of start-ups established:  
+Number of start -ups established in year N as a result/based on the 
+outputs of the EIT HEI project, or start-ups created for the purpose of an 
+innovation project to organise and support the development of an asset.  
+ 
+4 combined 
+
+PAGE 20
+ 
+ 
+20 
+ 
+*Projects may select EITHE03.1, EITHE04.1, or a combination of both, 
+according to the nature, maturity and intervention model of the project. 
+Where both KPIs are used, the same start -up should not be double 
+counted. 
+ 
+EITHE08.1 
+EDUCATION AND TRAINING 
+EITHE08.1 – Number of successful participants in professional 
+development courses, online training courses and other 
+education/training activities delivered by the EIT HEI project.  
+ 
+Specific Criteria: 
+• All training must foster innovation, entrepreneurship and IP 
+management capacities among students, academics and staff 
+enrolled/working in relevant STEM fields.  
+• All training programmes must consist of a minimum of 10 
+learning hours.  
+• Projects must achieve minimum KPI results across three 
+participant categories: students, academic staff and non -
+academic staff. The distribution across the three categories 
+should be determined by the project according to its intervention 
+model and target groups. 
+• Only participants who successfully complete the programme will 
+be counted.  
+• Eligible activities must have clearly defined learning outcomes 
+and a competency assessment method. 
+ 
+The 2,200 minimum project -level target represents a minimum 
+contribution; applicants are encouraged/expected to set higher targets 
+where justified by the size and capacity of their STEM talent pool, with the 
+aggregate contribution of C all 202 6 expected to make a substantial 
+contribution to the EU STEM Education Strategic Plan's 200,000 target. 
+ 
+2,200 
+EITHE19.1 
+INSTITUTIONAL INFRASTRUCTURE 
+EITHE19.1 – Number of new and/or improved structures and 
+mechanisms established in or mobilised by HEIs participating in the EIT 
+HEI project with an objective to support innovation and/or 
+entrepreneurship.  
+ 
+Examples include innovation testbeds, units, programmes, physical 
+spaces, infrastructures and other institutional support mechanisms. 
+4 
+
+PAGE 21
+ 
+ 
+21 
+ 
+EITHE20 
+PARTNERSHIPS AND ECOSYSTEM INTEGRATION 
+EITHE20 – Number of new partnerships established as a result of the EIT 
+HEI Initiative project. 
+This indicator has two sub -indicators, of which only one needs to be 
+fulfilled:  
+• EITHE20.1 – Number of new partnerships established by 
+participating HEIs and businesses, research organisations and 
+other actors; or  
+• EITHE20.2 – Number and percentage of HEIs participating in 
+other activities of the KICs.  
+ 
+For both sub -indicators, partnerships must strengthen the connection 
+and integration of the project and its partners with other innovation and 
+entrepreneurship actors and/or initiatives. 
+ 
+4 
+ 
+2.5.3.  Optional EIT HEI KPI 
+Projects may also report the optional EIT HEI KPI below where it is relevant to their project activities and 
+intervention model. No minimum target is required. 
+ 
+KPI Code KPI Description Minimum Total Target 
+OPTIONAL – 
+EITHE01.1 
+INTELLECTUAL PROPERTY RIGHTS AND INNOVATION OUTPUTS  
+EITHE01.1 – Number of innovative products, processes and 
+methods and Intellectual Property Rights (IPR) applications 
+resulting from EIT HEI project activities.  
+ 
+Where appropriate to the project scope, consortia may report 
+innovative products, processes and methods and/or IPR 
+applications resulting from activities supported through the EIT 
+HEI project. This may include, for example, innovations or IPR 
+emerging from research, technology transfer, innovation-driven 
+projects or other project activities. Projects should provide the 
+supporting information required under the relevant EIT KPI 
+definition to demonstrate the link between the reported output 
+and the EIT HEI project. 
+No minimum target 
+– optional KPI 
+ 
+
+PAGE 22
+ 
+ 
+22 
+ 
+2.5.4.  EIT Core KPI requirement 
+In addition, a minimum of one of the following EIT Core KPIs  must be achieved during the project funding 
+period. The planned year of achievement must be stated in the application (recommended 2028, to allow 
+full funding period for delivery). 
+KPI Code KPI Description Minimum Total Target 
+EITHE02.4 
+INNOVATIONS LAUNCHED ON THE MARKET  
+EITHE02.4 – Number of innovations introduced on the 
+market during the EIT HEI project duration or within three 
+years after completion, with documented sales revenue of at 
+least EUR 10,000.  
+ 
+Innovations introduced on the market must be directly linked 
+with the EIT HEI project and reported in the year when they 
+reached their first revenue. 
+ 
+1 
+EITHE04.4 
+START-UPS ESTABLISHED  
+EITHE04.4 – Number of start -ups established in year N as a 
+result of, or based on, the outputs of the EIT HEI project, or 
+start-ups created for the purpose of an innovation project to 
+organise and support the development of an asset, that have 
+either generated at least EUR 10,000 in financial transactions 
+from the sale of services or products resulting from the EIT 
+HEI project, or raised at least EUR 200,000 through private 
+investment in start-up equity. 
+ 
+1 
+EITHE06.1 
+CAPITAL ATTRACTED  
+EITHE06.1 – Total EUR amount of private and public capital 
+attracted in year N by supported start -ups/scale-ups (per 
+country) that have received EIT HEI project support for a total 
+duration of at least two months. 
+ 
+EUR 10,000 
+3. Project Design and Implementation Requirements   
+Projects must be designed and implemented as part of the wider EIT HEI portfolio and Community. They 
+are expected to use relevant programme -level expertise, support, training, monitoring, peer learning, 
+networks and EIT ecosystem opportunities, and to contribute relevant knowledge, results and experience 
+
+PAGE 23
+ 
+ 
+23 
+ 
+to the wider EIT HEI Community. Detailed guidance and examples for meeting the requirements below are 
+provided in the EIT HEI Project Design and Implementation Guide33. 
+3.1. HEI Leadership and Institutional Engagement 
+The lead partner must be an eligible HEI. Participating  HEIs must demonstrate meaningful institutional 
+engagement and involve the relevant faculties, departments, services and leadership structures required 
+to implement and sustain the proposed changes. 
+The IVAP must demonstrate: 
+• alignment with participating HEIs' strategic priorities 
+• institutional commitment to the proposed objectives and activities 
+• engagement of relevant institutional structures and staff 
+• how project results will be embedded and sustained beyond the funding period, including through 
+strategies, policies, curricula, support structures, processes or investment plans, where 
+appropriate 
+A top management commitment letter from all HEI partners is required as part of the application. The letter 
+must confirm leadership support, alignment with institutional priorities, and commitment to implementing 
+and sustaining the proposed changes. Applicants must use the template provided in the supporting 
+documents. 
+3.2.  Knowledge Triangle Integration 
+Consortia should integrate the three pillars of the EIT Knowledge Triangle: education, research and 
+business, bringing together complementary expertise and organisation types relevant to the proposed 
+objectives and activities. Participation requirements are set out in Section 4. 
+Projects must demonstrate how the consortium will contribute to a coherent progression from talent and 
+knowledge development to innovation, application and uptake, including, where relevant, through: 
+• connections between education and real-world industrial and innovation challenges 
+• collaboration between students, educators, researchers and industry 
+• knowledge valorisation, technology transfer and innovation-driven entrepreneurship 
+• access to relevant expertise, infrastructure, pilot environments, investment and markets 
+• connections to regional, national and European innovation ecosystems 
+ 
+33 Please see the EIT HEI Call 2026 Project Design and Implementation Guide: https://eit-hei.eu/wp-content/uploads/2026/10/EIT-HEI-Call-2026-
+Project-Design-and-Implementation-Guide.pdf  
+
+PAGE 24
+ 
+ 
+24 
+ 
+The IVAP must define partner roles and responsibilities and demonstrate how the consortium's combined 
+capabilities contribute to the project's objectives and expected results. 
+3.3.  Connection and alignment with the EIT KICs and EIT Community 
+Projects must establish meaningful connections with the EIT Knowledge and Innovation Communities (KICs) 
+and the wider EIT Community. Applications must identify a minimum of two and a maximum of three EIT 
+KICs relevant to the proposed project, based on the KIC briefs provided as supporting documents. 
+Applicants must explain the relevance and added value of the selected KICs, the expertise, networks, 
+programmes or assets they intend to access, and how these conn ections may be sustained beyond the 
+project. 
+KIC engagement may include relevant methodologies and educational practices, expertise and innovation 
+challenges, industry and research networks and infrastructures, knowledge valorisation and technology 
+transfer, entrepreneurship and investment opportunit ies, and connections to regional and European 
+innovation ecosystems. KIC engagement is a two -way relationship: projects should benefit from the EIT 
+Community while contributing their own knowledge, results, networks and capabilities.  
+EIT KICs will not participate as funded beneficiaries. Following project selection, each project will be 
+allocated to one participating EIT KIC for project management purposes. Applicants' preferences will be 
+considered but do not guarantee allocation. Allocation will also take account of balanced distribution across 
+KICs and their capacity to manage the awarded portfolio. 
+The allocated KIC will act as the primary interface between the consortium and the EIT HEI, providing 
+contractual management, implementation support, monitoring and reporting, and facilitating access to 
+relevant KIC expertise, networks, and opportunities. See Section 11.5, EIT KIC Allocation Procedure. 
+3.4.  Building on Previous EIT HEI and Other Relevant Activities 
+The Projects should build on relevant existing capabilities, results , and lessons rather than duplicate 
+activities supported through previous EIT HEI funding. Previous EIT HEI participants are eligible to apply, 
+including with the same consortium, provided that the proposal demonstrates clear additionality and does 
+not simply continue or replicate previously funded activities. 
+Organisations funded under EIT HEI Call 2025 and participating in an active EIT HEI Cohort 5 project are not 
+eligible to apply34. See Section 4.3 on previous EIT HEI project partner participation requirements35. 
+ 
+34 List of participating organisations in projects selected under the EIT HEI Call 2025: https://eit-hei.eu/wp-
+content/uploads/2026/10/HEI_EIT_Participating-Orgs_Full-Document-2026_v3.pdf  
+35 Organisations participating as Associated (non-funded) Partners in projects funded under the EIT HEI Call 2025 are eligible to apply. 
+
+PAGE 25
+ 
+ 
+25 
+ 
+Organisations with previous EIT HEI experience are referred to within the EIT HEI Community as Innovation 
+and Entrepreneurship Pioneers and are expected, where relevant, to contribute through peer learning, 
+knowledge sharing and mentorship. 
+Previous EIT HEI beneficiaries should demonstrate, where relevant, how they will: 
+• scale or institutionalise successful approaches 
+• address remaining institutional or ecosystem gaps 
+• apply lessons learned in new contexts or to new target groups and partners 
+• connect previously separate activities or capabilities 
+• transfer knowledge and experience to less experienced partners and the wider EIT HEI Community 
+Projects may also build on relevant European, national, regional or institutional initiatives and should 
+explain the additional value provided by EIT HEI support. 
+3.5.  EIT HEI Portfolio and Community Integration and Participation  
+Projects must engage at project, portfolio and Community levels, using relevant portfolio and Community 
+opportunities to strengthen implementation and shar e relevant knowledge, results and resources to 
+support learning, transfer and replication. 
+Each funded project must: 
+1. Appoint a Community Officer  responsible for coordinating participation in portfolio and 
+Community activities and contributions to the wider Community. 
+2. Develop a Community Engagement Plan (mandatory deliverable) by month 3 (31 July 2027), setting 
+out the project's approach, responsibilities, planned contributions and relevant resources. The Plan 
+may be updated during implementation. This is required as a mandatory deliverable. 
+3. Participate in relevant portfolio-level activities throughout the funding period. 
+4. Contribute to the wider EIT HEI Community  through at least two of the three Community 
+contribution areas and submit at least two success stories and two good practices through the EIT 
+HEI Community platform during the funding period. 
+The Community Engagement Plan must identify the Community Officer and relevant roles, the approach 
+to participation, planned contributions and timing, knowledge and resources that may be shared subject 
+to IP and confidentiality requirements, and the resour ces required. The EIT HEI management team will 
+agree with the final contribution plan with each project during implementation, taking into account project 
+expertise and results, available resources and wider portfolio needs. 
+The EIT HEI management team will provide portfolio -level activities for Cohort 6, including capacity 
+building, collective learning and sensemaking, expert support, peer exchange, networking and connections 
+to relevant EIT and European innovation ecosystem opportunities. Participation in relevant portfolio-level 
+activities is an implementation obligation. 
+ 
+
+PAGE 26
+ 
+ 
+26 
+ 
+Planned EIT HEI Cohort 6 activities include: 
+• IVAP Workshop:  2.5-day in-person event; mandatory participation of a minimum of four 
+representatives per project – Q3/Q4 2027. 
+• System Innovation Training:  approximately ten days of blended training, primarily online 
+asynchronous learning open to the entire consortium in Q3/Q4 2027, plus one in-person workshop 
+for up to two representatives per project in Q1 2028. 
+• Cohort 6 Co -creation Workshop Series:  two half -day online workshops, open to the entire 
+consortium – Q3 2027 and Q2 2028. 
+• KIC Discovery Days: two half-day online events, open to the entire consortium – Q4 2027 and Q3 
+2028. 
+• Diversity, Equity and Inclusion training: approximately 15 hours of training (TBC), delivered through 
+asynchronous and synchronous online learning – Q3/Q4 2027. 
+• Preparing for Investment with Creative Innovation:  five 1.5-hour online sessions – indicatively Q4 
+2027 and Q1 2028. 
+• Cohort 6 Sensemaking:  2.5-day in-person event; mandatory participation of two representatives 
+per project – Q2 2028. 
+• EIT HEI Community events:  participation in one of up to three annual in-person events bringing 
+together the wider Community. 
+• Online Community webinars and thematic activities: ongoing opportunities covering topics such as 
+intellectual property rights, cross-sector collaboration and partnerships, institutional pipelines and 
+related subjects. 
+Precise dates and any additional participation requirements will be communicated to funded projects in 
+due course. Applicants must therefore ensure that appropriate staff time and resources are available, 
+including eligible costs associated with participation in in-person EIT HEI activities. 
+The three Community contribution areas are: 
+• Community Events and Knowledge Exchange 
+• Training and Learning Resources 
+• Replicable Practices and Tools 
+Examples and possible formats for each contribution area are provided in the  EIT HEI Call 2026  Project 
+Design and Implementation Guide36. The quality and relevance of the proposed approach to portfolio and 
+Community engagement will form part of the formal proposal assessment. 
+ 
+36 Please see the EIT HEI Call 2026 Project Design and Implementation Guide: https://eit-hei.eu/wp-content/uploads/2026/10/EIT-HEI-Call-2026-
+Project-Design-and-Implementation-Guide.pdf  
+
+PAGE 27
+ 
+ 
+27 
+ 
+3.6.  Monitoring, Evaluation and Learning (MEL) 
+Monitoring, Evaluation and Learning (MEL) is an integral part of the EIT HEI approach, supporting project 
+performance, accountability , and portfolio -level learning. Projects must monitor progress against their 
+approved objectives, Funded Actions, KPI commitments, and provide the evidence required to demonstrate 
+achievement. They must also participate in EIT HEI portfolio-level monitoring, review and learning activities 
+during and at the end of the funding period. 
+MEL will combine quantitative and qualitative evidence across Impact Domains, Funded Actions and KPIs 
+to assess progress, identify effective and transferable approaches, support reflection and sensemaking, and 
+inform portfolio-level learning. Further requirements for monitoring, reporting, evidence and participation 
+in MEL activities are set out in the EIT HEI MEL Framework37.  
+3.7.  Diversity, Equity and Inclusion 
+Diversity, equity and inclusion (DEI), including gender equality, must be embedded throughout project 
+design, implementation and governance. Projects should demonstrate how their activities will support 
+inclusive access to innovation, entrepreneurship and IP capacity building and contribute to a diverse talent 
+base and inclusive manufacturing and deep -tech innovation ecosystems . This reflects EU priorities on 
+inclusive skills development, equal participation in STEM and inclusive innovation ecosystems, including the 
+Union of Skills38, STEM Education Strategic Plan39, and the EU Gender Equality Strategy40. 
+Each project must develop a DEI Value Statement and Action Plan as part of its IVAP , setting out its DEI 
+ambition, priorities and concrete measures across activities, institutional interventions, governance and 
+partnerships. Details on what the Action Plan should address can be found in the EIT HEI Project Design and 
+Implementation Guide 41. The DEI Value Statement and Action Plan is required as a mandatory project 
+deliverable, due in month 3 of the project. 
+At the consortium level, a balanced gender representation among project staff, including at management 
+level, is required. 
+ 
+ 
+37 Monitoring, Evaluation, and Learning (MEL) Framework 
+38 https://commission.europa.eu/topics/competitiveness/union-skills_en  
+39 https://education.ec.europa.eu/sites/default/files/2025-03/STEM_Education_Strategic_Plan_COM_2025_89_1_EN_0.pdf  
+40 https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/gender-equality/gender-equality-strategy_en  
+41 Please see the EIT HEI Call 2026 Project Design and Implementation Guide: https://eit-hei.eu/wp-content/uploads/2026/10/EIT-HEI-Call-2026-
+Project-Design-and-Implementation-Guide.pdf 
+
+PAGE 28
+ 
+ 
+28 
+ 
+4. Consortium and Participation Requirements 
+4.1.  General Participation Requirements   
+To be considered eligible, applications must comply with the following general participation requirements: 
+• All beneficiaries (funded partners) must register in the EU Participant Register before submitting 
+their application, in order to obtain a Participant Identification Code (PIC)42. 
+• Proposals must be submitted by a consortium comprising at least five beneficiaries.  
+• An organisation may participate as a funded beneficiary in only one application submitted under 
+this Call.  
+• The same organisation may participate in additional proposals only as an Associated Partner.  
+• Where more than one proposal is submitted with the same organisation as a beneficiary, only the 
+first proposal submitted through the application portal will be considered eligible. If the first 
+proposal is subsequently found to be ineligible under any othe r eligibility criterion, the second 
+proposal will be considered eligible, provided that it meets all other eligibility requirements. 
+ 
+The types of organisations eligible for participation and funding are:  
+• Higher and vocational education organisations 
+o Higher Education Institutions (HEIs): institutions offering recognised degrees or other tertiary-
+level qualifications, and other comparable institutions at tertiary level where recognised by 
+their national authorities. Each HEI must provide proof of accreditation by the relevant national 
+authority to offer recognised degrees 
+o Vocational Education and Training (VET) providers 
+• Research and knowledge-transfer organisations 
+o Research institutes and organisations 
+o Knowledge Transfer Offices (KTOs) and Technology Transfer Offices (TTOs), either as 
+organisational units within eligible HEIs or research organisations, or as separate legal entities 
+where applicable 
+• Industry and business organisations 
+o Businesses (private or public; small, medium-sized or large enterprises) 
+o Associations and networks representing industry, business and innovation organisations 
+o Social enterprises 
+• Public, intermediary and civil-society organisations 
+o Public bodies at local, regional or national level 
+o Intermediary organisations or associations representing Higher Education Institutions (HEIs) 
+o Non-governmental organisations (NGOs) 
+ 
+42 https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/how-to-participate/participant-register  
+
+PAGE 29
+ 
+ 
+29 
+ 
+4.2.  Consortium Composition Eligibility Criteria  
+Required role Minimum requirement Required sub-criteria 
+Higher Education 
+Institutions (HEIs) Minimum 3 HEIs 
+Based in three different Horizon Europe eligible 
+countries 
+At least one HEI must be based in a Member State 
+Each HEI must involve at least two faculties, 
+departments, units or equivalent (manufacturing-
+related strongly encouraged) 
+Lead partner / Project Coordinator must be an HEI 
+Business/Industry 
+partners and/or 
+business/industry 
+representative 
+organisations  
+(public or private) 
+Minimum 2 
+business/industry 
+partners and/or 
+business/industry 
+representative 
+organisations 
+(private or public) 
+May include SMEs, start-ups, larger enterprises, or 
+industry representative organisations such as industry 
+associations 
+Business/industry partners that operate in 
+manufacturing or industrial technologies strongly 
+encouraged 
+ 
+4.3.  Previous EIT HEI Project Partner Participation  
+Generally, organisations that have previously participated in EIT HEI projects may apply, though proposals 
+should demonstrate clear additionality and should not simply continue previously funded activities.    
+However, organisations funded under EIT HEI Call 2025 and participating in an active EIT HEI Cohort 5 
+project are not eligible to apply 43. The EIT HEI Call 2025 – which awarded 35 successful projects running 
+from 1 September 2026 to 31 August 2028 – already supports projects focused on strengthening 
+innovation, entrepreneurship and related institutional capacity in STEM, which substantially overlaps with 
+the scope and objectives of this Call. This eligibility restriction is intended to ensure a clear separation 
+between the two funding interventions, mitigate the risk of duplication or double funding of the same or 
+ 
+43 List of participating organisations in projects selected under the EIT HEI Call 2025: https://eit-hei.eu/wp-
+content/uploads/2026/10/HEI_EIT_Participating-Orgs_Full-Document-2026_v3.pdf  
+
+PAGE 30
+ 
+ 
+30 
+ 
+substantially similar activities and costs, and broaden the overall reach and impact of the EIT HEI portfolio. 
+Organisations who participated as non -funded Associated Partners in a project funded under the EIT HEI 
+Call 2025 are eligible to apply. 
+5. Financial and Operational Aspects of the EIT HEI Call 2026 
+5.1.  Project Duration 
+The duration of the projects selected under the EIT HEI Call for Proposals 2026 is 18 months. The funding 
+period will start on 1 May 2027 and will finish on 31 October 2028. 
+5.2.  Available Budget 
+The total budget earmarked for the financing of projects under this call for proposals is estimated at EUR 
+40,000,000. This budget is subject to the funding allocation decision of the EIT Governing Board expected 
+in November 2026 and the corresponding amen dment to the Grant Agreement between EIT and the EIT 
+Higher Education Initiative consortium. 
+We reserve the right to increase the total available funds, if further budget becomes available before the 
+final decision on the award of the subgrants to the selected projects. Such an increase of the budget will 
+be transparently communicated to the applicants on the call website. 
+We reserve the right not to award all available funds, subject to the proposals received and the results of 
+the evaluation. 
+5.3.  Form of Grant, Funding Rate and Maximum Grant Amount 
+The grant parameters (maximum grant amount, funding rate, total eligible costs, etc.) will be fixed in the 
+Project Grant Agreement (PGA) signed between the allocated EIT KIC and the project consortium.  
+ 
+The project budget (maximum grant amount) is up to 1,250,000 EUR per project. Applicants will be asked 
+to plan their budget – and associated activities and KPIs – on a calendar-year basis. The grant awarded may 
+be lower than the amount requested. The amount will be fixed by the allocated EIT KIC on the basis of the 
+estimated project budget and a funding rate of 100%. 
+ 
+Projects selected under this Call will receive a pre -financing payment corresponding to 25% of the total 
+grant amount to support the timely start of project implementation. During the implementation period, 
+beneficiaries will submit one interim report at the midpoint and one final report. Subject to the approval 
+of the interim report, the corresponding payment will be transferred within 30 days. The balance payment 
+will be made within 30 days following the EIT's balance payment to the EIT Higher Education Initiative 
+Coordinator after approval of the Initiative's final report. Payment arrangements and reporting  
+
+PAGE 31
+ 
+ 
+31 
+ 
+requirements will be further specified in the EIT HEI Project Grant Agreement. Beneficiaries are expected 
+to manage funds responsibly and in full compliance with Horizon Europe and EU financial regulations. 
+5.4. Timeline and deadlines 
+Call Stage Deadlines (indicative) 
+Call opening 20 October 2026 
+Deadline for submission 13 January 2027, 17:00:00 CET 
+Evaluation 14 January – 19 March 2027 
+Information on evaluation results Week of 22 March 2027 
+Project Agreement Preparation stage April 2027 
+Expected project start date 1 May 2027 
+Expected project end date 31 October 2028 
+ 
+5.5. Eligibility of Costs 
+EIT HEI Projects are part of Horizon Eur ope. General funding and cost eligibility regulations follow the 
+Horizon Europe Regulation44 and are governed by the Horizon Europe Grant Agreement45 (annotations can 
+be found in the HE Annotated Model Grant Agreement (AGA) 46). The funding rate that applies to the EIT 
+HEI Projects selected for funding is up to 100%. The grant can only reimburse eligible costs (i.e. costs that 
+comply with the general and specific conditions set out in Article 6 of the AGA). 
+Funding will be provided through the reimbursement of eligible costs actually incurred by beneficiaries for 
+the implementation of the action. Beneficiaries must declare eligible costs in accordance with the 
+applicable funding rules and maintain adequate su pporting records and documentation to demonstrate 
+their eligibility. The following budget categories47 apply to the EIT Higher Education Initiative Projects: 
+• Personnel costs 
+• Subcontracting costs 
+• Purchase costs 
+o Travel and subsistence 
+o Equipment 
+o Other goods, works and services 
+• Other cost categories 
+ 
+44 https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32021R0695&qid=1621434634235&from=EN  
+45 https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/general-mga_horizon-euratom_en.pdf  
+46 https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf  
+47 The cost categories are aligned with the eligibility and reporting framework applicable to this Call. For implementation, monitoring and reporting 
+purposes, the corresponding categories in the KIC management system may be presented under different labels, groupings or str uctures. Such 
+administrative adaptations shall not affect the nature of the costs, their eligibility, or the applicable funding rules. 
+
+PAGE 32
+ 
+ 
+32 
+ 
+o Financial support to third parties in the form of prizes48 
+o Internally invoiced goods and services 
+• Indirect costs 
+The budget of the selected EIT HEI Call for Proposals 2026 projects will be based on the estimated costs to 
+be incurred by the project activities; 100% of all eligible costs may be covered but co-funding is encouraged 
+(though is not considered in the evaluation of proposals). 
+The funding requested must be justified in relation to the planned activities as described in the IVAP. All 
+costs must be fully described and justified. The costs should be reasonable, justified and directly related to 
+the achievement of the objectives of the EIT HEI and IVAP. Moreover, subcontracting must comply with EU 
+public procurement rules. 
+5.6. Operational Model 
+The Project Grant Agreements (PGA) will be signed between the allocated EIT KIC and the project 
+consortium49. Based on the different operational models found across the KICs, details may vary; this 
+information will therefore be presented to the selected projects following the communication of their 
+proposal being selected for funding (during the operational onboarding process). This means that for 
+operational matters, the project will always deal directly with their assigned EIT KIC and must follow their 
+operational policies and requirements. However, the EIT HEI projects are part of Horizon Europe, so general 
+funding and cost eligibility regulations are governed by the Horizon Europe Model Grant Agreement (GA)50, 
+as outlined in Section 5.5. 
+ 
+The EIT HEI Call 2026 Model Project Agreement51 outlines the basis project requirements and provisions – 
+including the financial arrangements outlined in Section 5.3  – expected of awarded projects. The  Project 
+Agreement template is illustrative and certain operational elements are subject to change depending on 
+the allocated KIC.  
+5.7.  Intellectual Property Rights Rules 
+Selected EIT HEI projects, being projects funded under Horizon Europe, are governed by the Intellectual 
+Property Rights (IPR) rules laid out in Article 16 of the Horizon Europe Model Grant Agreement (GA)52. 
+ 
+48 When considering the Financial Support to Third Parties (FSTP) cost category in your proposal, please ensure compliance with all applicable 
+rules and requirements. In particular, beneficiaries must adhere to the provisions and guidance set out in Section D.1 "Financial Support to Third 
+Parties (FSTP)" of the Annotated Grant Agreement (AGA) [https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-
+2027/common/guidance/aga_en.pdf]. 
+49 This allocation process will be based on the proposal’s EIT KIC alignment where possible, but it is not guaranteed that a project will be allocated 
+to one of its two or three selected EIT KICs. 
+50 https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf  
+51 Illustrative Model Project Grant Agreement: https://eit-hei.eu/wp-content/uploads/2026/10/Model-Project-Grant-Agreement-EIT-HEI-Call-
+2026.pdf  
+52 https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf  
+
+PAGE 33
+ 
+ 
+33 
+ 
+5.8. Communication, Dissemination and Visibility Rules 
+Selected EIT HEI projects, being projects funded under Horizon Europe, must follow the communication, 
+dissemination and visibility rules (including the branding guidelines and obligations) set out in Article 17 of 
+the Horizon Europe Model Grant Agreement (GA)53. 
+ 
+The communication infrastructure and all communication activities implemented by the project must 
+comply with the branding guidelines for the EIT HEI. This means that all project -related content must 
+include the logo of the EIT HEI and the logo of the EIT KIC the project is allocated to, with the following text: 
+“[EIT KIC name] is supported by the European Institute of Innovation and Technology (EIT), a body of the 
+European Union” ). The branding guidelines and all relevant branding assets (including logos, branded 
+templates, etc.), will be shared with the selected projects during their onboarding process. Projects must 
+include a Dissemination and Communication Plan as a mandatory deliverable in their IVAP , due month 3  
+(31 July 2027). 
+5.9. Data Management Rules 
+Selected EIT HEI projects will be required to follow the data management rules set out in Article 17.4 and 
+Annex 5 of Horizon Europe Model Grant Agreement (GA) 54. Projects must prepare a Data Management 
+Plan (DMP) in accordance with Horizon Europe guidelines as a mandatory deliverable, due in month 6. The 
+DMP must outline how the data generated during the project will be managed. 
+ 
+Project data will be included in the EIT Portal by the relevant KIC and will be accessed by the EIT / European 
+Commission. In addition, project data will be included in the HE system (i.e. eCORDA) and will be accessible 
+to Member States. 
+6. Admissibility criteria 
+• The proposal is submitted by the submission deadline indicated. 
+• The proposal is submitted via the submission platform indicated. 
+• The proposal is complete, i.e. all mandatory fields have been filled in. 
+• The proposal is submitted in English. 
+ 
+If a proposal is found to be inadmissible, it will not move forward to the eligibility check, based on the 
+eligibility criteria 55, and the applicant will receive an official communication from the EIT HEI informing 
+them of the outcome of the admissibility check and explaining why the proposal failed to meet the criteria. 
+ 
+53 https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf  
+54 https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf  
+55 Please see Section 7: Eligibility criteria. 
+
+PAGE 34
+ 
+ 
+34 
+ 
+7. Eligibility Criteria 
+Following the admissibility check, only proposals complying with the following conditions will be considered 
+eligible for further evaluation: 
+7.1. Entities eligible to participate   
+Any legal entity, regardless of its place of establishment, including legal entities from non-associated third 
+countries is eligible to participate, provided that the conditions laid down in the Horizon Europe Regulation 
+have been met (e.g. the entity is not under EU sanction), along with any other conditions laid down in the 
+specific Call. For this call, a ‘legal entity’ means legal person created and recognised as such under national 
+law, EU law or international law, which has legal personality and which may, acting in its own name, exercise 
+rights and be subject to obligations, or an entity without legal personality. 
+Funded entities must register in the EU Participant Register before submitting their application, in order to 
+obtain a Participant Identification Code (PIC)56. 
+7.2. Eligibility for funding 
+In accordance with the Horizon Europe Work Programme 2026 - 202757, in order to be eligible for funding, 
+the applicant must be established in one of the eligible countries, i.e.:  
+• the Member States of the European Union, including their outermost regions; 
+• the Overseas Countries and Territories (OCTs) linked to the Member States58; 
+• countries associated to Horizon Europe59; 
+• certain low- and middle-income countries60. 
+Affiliated entities are eligible for funding if they are established in one of the countries listed above, or in a 
+country identified in the Call. 
+Beneficiaries (BEN): A beneficiary is any legal entity that signs the Project Grant Agreement and undertakes 
+to carry out part of the EIT HEI project. Beneficiaries are entitled to receive EU/EIT funding for their tasks 
+and have full rights and obligations under the Project G rant Agreement, including technical 
+implementation, financial management, and reporting. 
+Associated partners (AP) : These are entities that are not able to  or do not wish to participate as funded 
+beneficiaries, but they may participate as associated partners. 
+ 
+56 https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/how-to-participate/participant-register  
+57https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-1-general-introduction_horizon-
+2026-2027_en.pdf  
+58 Entities from Overseas Countries and Territories (OCT) are eligible for funding under the same conditions as entities from the Member States to 
+which the OCT in question is linked. See the Horizon Europe Programme Guide on the portal for a complete list of OCTs. 
+59https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/list-3rd-country-participation_horizon-
+euratom_en.pdf  
+60 See the Horizon Europe Programme Guide on the Funding and Tenders Portal for a complete list of these countries. 
+
+PAGE 35
+ 
+ 
+35 
+ 
+Consortia must fulfil all consortium composition requirements – as outlined in Section 4 – to be eligible for 
+funding. 
+ 
+All Consortium and Participation Requirements listed in Section 4 of this Call text must be fulfilled in order 
+for an application to be considered eligible for funding.     
+7.3. EU restrictions on participation 
+• EU restrictive measures: Entities subject to EU restrictive measures under Article 29 of the Treaty 
+on the European Union (TEU) and Article 215 of the Treaty on the Functioning of the EU (TFEU) 61 
+as well as Article 75 TFEU62, are not eligible to participate in any capacity, including as beneficiaries, 
+affiliated entities, associated partners, third parties giving in-kind contributions, subcontractors or 
+recipients of financial support to third parties (if any).  Special rules also apply to entities covered 
+by Commission Guidelines No 2013/C 205/052263. 
+• Legal entities established in Russia, Belarus, or in non -government-controlled territories of 
+Ukraine: Given the illegal invasion of Ukraine by Russia and the involvement of Belarus, there is 
+currently no appropriate context allowing the implementation of the actions foreseen in this 
+programme with legal entities established in Russia, Belarus, or in non -government-controlled 
+territories of Ukraine. Therefore, even where such entities are not subject to EU restrictive 
+measures, such legal entities are not eligible to participate in any capacity. This includes 
+participation as beneficiaries, affiliated entities, assoc iated partners, third parties giving in -kind 
+contributions, subcontractors or recipients of financial support to third parties (if any). Exceptions 
+may be granted on a case -by-case basis for justified reasons. With specific regard to measures 
+addressed to Russia, following the adoption of the Council Regulation (EU) 2024/1745 of 24 June 
+202464 (amending Council Regulation (EU) No 833/2014 of 31 July 2014) concerning restrictive 
+measures in view of Russia’s actions destabilising the situation in Ukraine, legal entities established 
+outside Russia but whose proprietary rights are directly or indirectly owned for more than 50% by 
+a legal person, entity or body established in Russia are also not eligible to participate in any 
+capacity. 
+• Measures for the protection of the Union budget against breaches of the principles of the rule of 
+law in Hungary: Following the Council Implementing Decision (EU) 2022/2506, as of 16 December 
+2022, no legal commitments can be entered into with Hungarian public interest trusts established 
+under the Hungarian Act IX of 2021 or any entity they maintain. Affected entities may continue to 
+apply to calls for proposals and can part icipate without receiving EU funding, as associated 
+partners, if allowed by the call conditions. However, as long as the Council measures are not lifted, 
+ 
+61 Please note that the EU Official Journal contains the official list and, in case of conflict, its content prevails over that of the EU Sanctions Map 
+62 Please note that the EU Official Journal contains the official list and, in case of conflict, its content prevails over that of the EU Sanctions Map 
+63 Commission guidelines No 2013/C 205/05 on the eligibility of Israeli entities and their activities in the territories occupied by Israel since June 
+1967 for grants, prizes and financial instruments funded by the EU from 2014 onwards (OJEU C 205 of 19.07.2013, pp. 9-11) 
+64 OJ L 229, 31.7.2014, p. 1–11 
+
+PAGE 36
+ 
+ 
+36 
+ 
+such entities are not eligible to participate in any funded role (beneficiaries, affiliated entities, 
+subcontractors, recipients of financial support to third parties, etc.). In case of multi -beneficiary 
+grant calls, applicants will be invited to remove or replace that entity in any funded role and/or to 
+change its status into an associated partner. Tasks and budget may be redistributed accordingly. 
+• Restrictions for the protection of European communication networks: The protection of European 
+communication networks has been identified as an important security interest of the Union and its 
+Member States65. For further information, please refer to the Horizon Europe, Work Programme 
+2026 General Annexes, B – Eligibility on page 1466.  
+8. Exclusion and Rejection criteria 
+8.1. Exclusion criteria 
+Applicants will be excluded from participation in the Call and from the award if they are in one of the 
+situations referred to in Article 138(1) of Regulation (EU, Euratom) 2024/2509 on the financial rules 
+applicable to the general budget of the Union. These situations include: 
+• The applicant is bankrupt, subject to insolvency or winding -up procedures, has entered into  an 
+arrangement with creditors, has suspended its business activities, or is in any analogous situation 
+under applicable Union or national law. 
+• It has been established by a final judgment or final administrative decision that the applicant is in 
+breach of its obligations relating to the payment of taxes or social security contributions. 
+• It has been established by a final judgment or final administrative decision that the applicant is 
+guilty of grave professional misconduct, including, in particular, fraudulently or negligently 
+misrepresenting relevant information, entering into agreements  to distort competition, violating 
+intellectual property rights, unduly influencing decision-making, attempting to obtain confidential 
+information to gain an undue advantage, or inciting discrimination, hatred or violence in the 
+circumstances specified in Article 138(1)(c). 
+• It has been established by a final judgment that the applicant is guilty of fraud, corruption, conduct 
+related to a criminal organisation, money laundering or terrorist financing, terrorist offences or 
+offences related to terrorist activities, child labour , or other offences concerning trafficking in 
+human beings. 
+• The applicant has shown significant deficiencies in complying with its main obligations in the 
+implementation of a legal commitment financed by the EU budget, where these deficiencies have 
+led to early termination, the application of liquidated damages or other contractual penalties, or 
+have been identified through checks, audits or investigations by the relevant authorities. 
+ 
+65 European Council conclusions of 1 and 2 October 2020 (EUCO 13/20), point 11; Council Conclusions on the significance of 5G to the European 
+Economy and the need to mitigate security risks linked to 5G, 14517/19. 
+66 https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-15-general-annexes_horizon-2026-
+2027_en.pdf 
+
+PAGE 37
+ 
+ 
+37 
+ 
+• It has been established by a final judgment or final administrative decision that the applicant has 
+committed an irregularity within the meaning of Article 1(2) of Council Regulation (EC, Euratom) 
+No 2988/95. 
+• It has been established by a final judgment or final administrative decision that the applicant has 
+created an entity in another jurisdiction with the intent to circumvent fiscal, social or other legal 
+obligations in the jurisdiction of its registered offi ce, central administration or principal place of 
+business, or that an entity has been created for this purpose. 
+• The applicant has intentionally and without proper justification resisted an investigation, check or 
+audit carried out by the relevant EU authorities or their representatives, including the authorising 
+officer, the European Anti-Fraud Office (OLAF), the European Public Prosecutor's Office (EPPO) or 
+the European Court of Auditors. 
+The exclusion situations above shall be interpreted and applied in accordance with Article 138(1) of the EU 
+Financial Regulation, including the applicable evidentiary requirements. 
+• Have misrepresented the information required as a condition for participating in the procedure or 
+have failed to supply that information; or  
+• Were previously involved in the preparation of documents used in the award procedure where this 
+entails a breach of the principle of equality of treatment, including distortion of competition, that 
+cannot be remedied otherwise.  
+At submission stage, the Lead Partner shall submit the EIT HEI Declaration of Honour on behalf of the 
+consortium (see Annex 13.2). If selected, each beneficiary will be required to sign the standard Declaration 
+of Honour on exclusion criteria during the onboarding process. Failure to provide adequate documentation 
+may result in the exclusion of the applicants concerned.  
+Successful applicants will go through the legal entity validation process of the Onboarding Service of the 
+KICs (i.e. a shared service led by EIT Urban Mobility KIC). The Onboarding Service will request registration 
+documents and a signed Declaration of honour from the successful applicant. The validation may also 
+include a check of the successful applicants by the EIT in the Early Detection and Exclusion System (EDES) 
+of the European Commission. 
+8.2. Rejection criteria 
+In accordance with Article 143 of the EU Financial Regulation, applicants may also be rejected from the 
+award procedure where: 
+• They have misrepresented information required as a condition for participating in the procedure 
+or have failed to provide that information. 
+• They were previously involved in the preparation of documents used in the award procedure, 
+where this entails a breach of the principle of equal treatment, including distortion of competition, 
+that cannot be remedied otherwise. 
+
+PAGE 38
+ 
+ 
+38 
+ 
+8.3. Declaration of Honour and legal entity validation 
+As evidence of compliance with the applicable exclusion criteria and the absence of conflicts of interest, 
+the Coordinator  and all proposed partners participating in the applicant consortium must submit a 
+Declaration of Honour on exclusion criteria and absence of conflict of interest. Failure to provide the 
+required declaration or other necessary documentation may result in t he exclusion or rejection of the 
+applicant concerned, as applicable under the EU Financial Regulation. 
+Successful applicants will undergo the legal entity validation process carried out by the KICs' Onboarding 
+Service, a shared service led by EIT Urban Mobility. Where the relevant documents have not been provided 
+with the application, the Onboarding Service  will request the necessary registration documents and a 
+signed Declaration of Honour from the successful applicant. The validation process may also include checks 
+by the EIT against the European Commission's Early Detection and Exclusion System (EDES). 
+9. Operational capacity 
+ Applicants must demonstrate that they have the operational capacity, expertise , and resources required 
+to implement the proposed project successfully and deliver the expected results. This should be supported 
+by concrete, verifiable evidence, such as identified staff with relevant qualifications and experience, 
+experience in projects of comparable scope and complexity, and access to the infrastructure, networks and 
+other resources required for the proposed activities. 
+ 
+Given the scope of the Call, applicants should demonstrate that the consortium has the capacity to 
+implement the combination of interventions selected in its IVAP and work plan and to contribute to the 
+three Policy Objectives. Depending on the project's pr iorities, institutional context and level of maturity, 
+relevant capabilities may include: 
+• Talent development: innovation, entrepreneurship and IP education; interdisciplinary and 
+experiential learning; mentoring; challenge -based learning; and engagement with industry and 
+other innovation actors. 
+• Institutional innovation capacity: institutional leadership and governance; innovation support 
+structures; knowledge valorisation and technology transfer; IP management; entrepreneurship 
+support; and connections between education, research and institutional innovation functions. 
+• Ecosystem integration: research -to-market pathways; industry and business engagement; 
+technology validation and demonstration; access to innovation infrastructure; investment 
+readiness; venture development; and connections to regional, European and interna tional 
+innovation ecosystems. 
+Applicants should also demonstrate access to the technical, industrial and innovation expertise, 
+infrastructure and networks required to implement the proposed activities effectively. Where these 
+capabilities are not available within the participating HEIs, they may be provided through other consortium 
+members or relevant external partnerships, as appropriate.  
+
+PAGE 39
+ 
+ 
+39 
+ 
+This may include expertise and resources from: 
+• manufacturing companies, SMEs and start-ups 
+• research organisations, RTOs and technology centres 
+• technology transfer and innovation support organisations 
+• investors, accelerators, incubators and other business support actors 
+• regional innovation organisations and industrial clusters 
+• EIT KICs and other European innovation networks 
+• VET providers and other organisations contributing to relevant STEM talent development 
+Relevance to manufacturing and deep-tech innovation 
+Applications must demonstrate a clear and credible contribution to strengthening Europe's capacity for 
+deep-tech innovation and its translation into manufacturing and industrial applications. This should be 
+reflected in the needs, expertise, partnerships, activities and expected results of the participating 
+organisations. Relevant capabilities may be demonstrated through the participation of: 
+• HEIs with relevant STEM education, research, innovation and entrepreneurship capabilities, 
+including in engineering, manufacturing, deep-tech and other industrially relevant fields 
+• VET providers contributing relevant technical education, skills development or talent pathways; 
+• manufacturing companies, including SMEs, start-ups and larger enterprises 
+• research and technology organisations, technology centres and other organisations supporting 
+technology development, validation, knowledge valorisation or technology transfer 
+• innovation ecosystem organisations, including regional innovation actors, investors, accelerators, 
+incubators, EIT KICs and other organisations providing relevant expertise, infrastructure, finance, 
+market access or other support for deep-tech innovation and entrepreneurship 
+ 
+The consortium should demonstrate that its combination of institutional capabilities, activities and strategic 
+partnerships responds to relevant needs in deep -tech innovation and its translation into manufacturing 
+and industrial applications. Applications should also demonstrate how these interventions are expected to 
+strengthen institutional capacity, talent and ecosystem connections and generate sustainable results. 
+ 
+Capacity to deliver proposed results and KPIs 
+Applicants must demonstrate access to a sufficient pool of relevant participants to deliver the mandatory 
+training KPI and other activities proposed. For EITHE08.1, the application should demonstrate that the 
+proposed target is realistic in relation to the  size and characteristics of participating HEIs and their target 
+groups, including students, academic staff and non-academic staff. 
+For KPIs relating to start -up development, institutional structures, partnerships or other specific outputs, 
+applicants should similarly demonstrate that the consortium has the relevant structures, networks and 
+capacity to achieve the proposed targets. 
+
+PAGE 40
+ 
+ 
+40 
+ 
+Applicants must demonstrate that they have, or will have by the time of implementation, the necessary 
+experience, know -how, qualifications, partnerships and operational resources to deliver the proposed 
+activities and achieve the commitments set out in the application. 
+10.  Financial capacity 
+Applicants must have stable and sufficient resources to successfully implement the projects and contribute 
+to their share. In accordance with Article 27 of the Horizon Europe Regulation, the financial capacity shall 
+be verified for the coordinator if the requested funding is equal to or greater than EUR 500 000. If there 
+are grounds to doubt the financial capacity of an applicant, the allocated KIC shall also verify the financial 
+capacity of the applicant, or of the coordinator even where the requested funding is below the threshold 
+referred to above.  
+If requested by the allocated KIC, successful applicants will go through the validation and financial capacity 
+check process of the Onboarding Service of the KICs (i.e. a shared service led by EIT Urban Mobility KIC). 
+At the proposal submission stage, the coordinator will be asked to confirm that the organisation has carried 
+out a self-check of the financial capacity of the organisation through the financial self -check tool67 or has 
+been covered by a financial viability check for an EU project for the last closed financial year. 
+If, after the financial capacity check, a coordinator’s financial capacity is considered not satisfactory, further 
+information may be required and further measure(s) may be applied by the allocated KIC: 
+• an enhanced financial responsibility regime, i.e. joint and several responsibilit ies for all 
+beneficiaries or joint and several liability of affiliated entities 
+• the financial capacity of the applicant may be structurally guaranteed by another legal entity/ies; 
+• prefinancing paid in instalments 
+• the KIC may propose no prefinancing 
+• the activities may be subject to additional monitoring and reporting based on an action plan 
+• the KIC may request that the applicant is replaced or, if needed, reject the entire proposal 
+By submitting the proposals, the applicants confirm that they have stable and sufficient financial resources 
+to successfully implement the proposals in which they participate.  
+11.  Evaluation, Award and EIT KIC Allocation Procedure 
+Proposals will follow the standard submission and evaluation procedure (one -stage submission and one -
+step evaluation). Proposals will first be checked for admissibility and eligibility (see Sections 6 and 7). Eligible 
+proposals will subsequently be assessed against the award criteria set out in Section 1 1.1. The evaluation 
+ 
+67 https://ec.europa.eu/research/participants/lfv/lfvSimulation.do  
+
+PAGE 41
+ 
+ 
+41 
+ 
+will assess the quality, relevance and feasibility of each proposal, including the coherence of its needs 
+assessment, Innovation Vision Action Plan (IVAP), selected Funded Actions, contribution to the Call's Policy 
+Objectives and Specific Objectives, and p roposed KPI commitments.  Proposals will be assessed for 
+operational capacity within the external evaluation. Financial capacity will be checked only for successful 
+applicants during the grant preparation phase. 
+ 
+The quality assessment will be carried out with the support of at least three independent experts (referred 
+to as the  ‘expert panel’)  per application. The independent experts will assess proposals based on the 
+published award criteria in Section 11.1 and will establish scores in accordance with the agreed evaluation 
+methodology. This process will result in a single ranking list covering all proposals submitted under the Call. 
+ 
+The EIT HEI Call Evaluation Committee, representing all participating EIT KICs in the EIT Higher Education 
+Initiative, will oversee the integrity and consistency of the entire evaluation, award and allocation process. 
+Where the ranking resulting from the external, independent evaluation requires further selection decisions, 
+for example in the case of ex aequo proposals, the EIT HEI Call Evaluation Committee may apply the priority 
+factors set out in Section 11.2 to determine the final selection of proposals. These factors may be used to 
+ensure an appropriate overall portfolio of selected projects that reflects the strategic objectives of the Call, 
+while preserving the quality ranking established through the independent evaluation. Once the evaluation 
+and award process is closed , t he EIT HEI Call Evaluation Committee will also oversee the allocation of 
+selected projects to participating EIT KICs, taking into account the expertise, thematic relevance and 
+capacity of the KICs and the needs of the selected projects. The allocation procedure will be carried out in 
+accordance with the principles and process set out in Section 11.5. 
+11.1. Award Criteria 
+Award criterion Sub-criterion Assessment aspects 
+1. Excellence 
+(maximum 25 
+points) 
+Clarity and relevance 
+of the project's 
+objectives 
+• Demonstrates a clear and coherent response to the 
+consortium's identified institutional needs, informed by the 
+HEInnovate self-assessment and reflected in the Innovation 
+Vision Action Plan (IVAP). 
+• Clearly defines how the project contributes to one or 
+more of the Call's three Policy Objectives and the relevant 
+Specific Objectives and Sub-objectives. 
+• Demonstrates a clear and credible focus on strengthening 
+HEIs' contribution to manufacturing and deep -tech 
+innovation, including the development of relevant  STEM 
+talent, institutional capacity and ecosystem connections. 
+• Identifies clear target groups and beneficiaries and 
+explains how the proposed activities will generate value for 
+
+PAGE 42
+ 
+ 
+42 
+ 
+students, researchers, academic and professional staff, 
+HEIs and relevant external partners. 
+• Presents clear institutional ambitions and expected 
+longer-term benefits for participating HEIs. 
+Quality of the 
+proposed 
+coordination and/or 
+support measures, 
+including soundness 
+of methodology 
+• Presents a robust methodology based on the EIT HEI 
+approach, showing how the proposed intervention will 
+contribute to sustainable institutional change. 
+• Demonstrates a coherent relationship between the 
+HEInnovate findings, the Call’s Specific Objectives and Sub-
+objectives, and the selected Funded Actions. 
+• Demonstrates an appropriate and coherent combination 
+of activities across talent development, institutional 
+capacity and ecosystem integration, according to the 
+consortium's needs and maturity. 
+• Explains how the proposed activities will strengthen 
+connections between education, research, innovation 
+support, industry and wider innovation ecosystems, where 
+relevant to the project's objectives. 
+• Describes appropriate learning, institutional support, 
+partnership and quality assurance approaches to deliver 
+the proposed changes. 
+• Integrates diversity, equity and inclusion, including 
+gender equality, into project activities and governance, 
+promoting inclusive access to innovation and 
+entrepreneurship and diverse participation in STEM, 
+manufacturing and deep-tech innovation ecosystems. 
+2. Impact 
+(maximum 50 
+points, split into 
+two sub-criteria 
+each worth 25 
+points) 
+Credibility of the 
+pathways to achieve 
+the expected 
+outcomes and 
+impacts 
+• Demonstrates a clear and credible link between actions, 
+objectives and expected institutional changes. 
+• Demonstrates how the project will contribute to the 
+development of manufacturing and deep -tech talent, 
+stronger institutional innovation capacity and/or better 
+integration of HEIs into innovation ecosystems, according 
+to its chosen focus. 
+• Presents realistic plans to achieve the mandatory KPI 
+targets and demonstrates that these targets are 
+appropriate to the proposed intervention and consortium 
+capacity. 
+• Demonstrates how activities and results will contribute to 
+long-lasting institutional change, rather than only 
+producing short-term outputs. 
+
+PAGE 43
+ 
+ 
+43 
+ 
+• Demonstrates credible pathways from talent, research 
+and technologies towards validation, commercialisation, 
+industrial application and wider uptake. 
+• Demonstrates how participation in and contribution to 
+the EIT HEI portfolio and Community will strengthen the 
+project's impact through peer learning, collaboration, 
+knowledge sharing and exchange of relevant results and 
+good practices. 
+Suitability and quality 
+of the measures to 
+maximise expected 
+outcomes and 
+impacts, as set out in 
+the dissemination and 
+exploitation plan 
+• Presents a coherent strategy for dissemination, 
+communication, exploitation, sustainability and transfer of 
+project results, including how successful approaches, 
+educational practices, institutional models and 
+partnerships will be embedded, sustained, repl icated or 
+transferred beyond the project consortium and funding 
+period. 
+• Demonstrates how project results, knowledge and 
+learning will contribute to the wider EIT HEI Community 
+and European innovation ecosystem, supporting collective 
+learning and strengthening the wider portfolio. 
+• Demonstrates how the project will use the EIT HEI 
+Community, portfolio and wider EIT ecosystem to support 
+wider uptake and scaling of relevant results and 
+approaches by other organisations and in other contexts. 
+• Demonstrates appropriate measures to maximise the 
+contribution and impact of project results for 
+manufacturing and deep -tech innovation, institutional 
+capacity and talent development. 
+3. Quality and 
+efficiency of the 
+implementation 
+(maximum 25 
+points) 
+Quality and 
+effectiveness of the 
+work plan, 
+assessment of risks, 
+and appropriateness 
+of the effort assigned 
+to work packages and 
+resources overall 
+• Presents a coherent and realistic implementation plan 
+with appropriate work packages, activities, milestones, 
+deliverables and resource allocation. 
+• Demonstrates that activities are appropriately sequenced 
+to deliver the project's Specific Objectives, Funded Actions 
+and mandatory KPI commitments. 
+• Provides a clear and credible approach to monitoring 
+progress against the IVAP, objectives and KPIs, including 
+appropriate data collection and quality assurance 
+arrangements. 
+• Identifies relevant implementation risks and provides 
+appropriate mitigation measures. 
+
+PAGE 44
+ 
+ 
+44 
+ 
+• Demonstrates that the proposed budget and resources 
+are proportionate to the planned activities, consortium 
+capacity and expected impact. 
+Capacity and role of 
+each participant, and 
+extent to which the 
+consortium as a 
+whole brings together 
+the necessary 
+expertise 
+• Demonstrates that the consortium has the 
+complementary expertise, experience, networks and 
+operational capacity required to implement the proposed 
+intervention. 
+• Demonstrates appropriate expertise across the areas 
+relevant to the project's objectives, which may include 
+STEM talent development, innovation and 
+entrepreneurship education, IP, knowledge valorisation 
+and technology transfer, institutional change, indu stry 
+collaboration, deep -tech and manufacturing, and 
+ecosystem integration. 
+• Clearly defines the roles and responsibilities of 
+consortium partners and demonstrates strong institutional 
+commitment from participating HEIs. 
+• Demonstrates meaningful involvement of relevant 
+industry, research, innovation ecosystem, regional and/or 
+European partners, where appropriate to the proposed 
+activities. 
+• Demonstrates that the consortium has access to the 
+participants, infrastructure, expertise and partnerships 
+required to deliver its proposed KPI commitments. 
+• Where applicable, explains how previous EIT HEI 
+beneficiaries will build on existing experience, scale 
+successful approaches, support less experienced partners 
+and contribute to the wider EIT HEI Community. 
+ 
+Award Criteria: Scoring and Thresholds 
+ 
+Award criteria  Minimum 
+pass score 
+Maximum 
+pass score 
+1. Excellence 17 25 
+2.1. Impact: Credibility and scale of the project’s expected outcomes and 
+impacts 17 25 
+2.2. Impact: Suitability and quality of the measures to maximise  expected 
+outcomes and impacts, as set out in the dissemination and exploitation 
+plan 
+17 25 
+3. Quality and efficiency of the implementation 17 25 
+
+PAGE 45
+ 
+ 
+45 
+ 
+ 
+Overall minimum threshold for the proposal 75/100 points 
+Maximum total score  100/100 points 
+ 
+The following evaluation standards will be used to award scores to an application: 
+Score Description 
+0 - 4 The application fails to address the criterion or cannot be assessed due to missing or incomplete information. 
+5 - 9 Poor. The criterion is inadequately addressed, or there are serious inherent weaknesses. 
+10 -16 Fair. The application broadly addresses the criterion, but there are significant weaknesses. 
+17 - 
+21 
+Good. The application addresses the criterion well, but a number of shortcomings are 
+present. 
+22 - 
+24 
+Very good. The application addresses the criterion very well, but a small number of 
+shortcomings are present. 
+25 Excellent. The application successfully addresses all relevant aspects of the criterion. Any shortcomings are minor. 
+ 
+Maximum points: 100 points. 
+Individual thresholds per criterion: 17/25 points. 
+Overall minimum threshold: 75/100 points. 
+ 
+Proposals that meet all individual criterion thresholds and the overall threshold will be considered for 
+funding, subject to the available Call budget and the applicable budget ceiling. Proposals that do not meet 
+any of the applicable thresholds will not be considered for funding. 
+ 
+Following the external, independent evaluation, proposals will be ranked according to their final evaluation 
+scores. Where proposals receive the same overall score and further prioritisation  is required to establish 
+the final ranking, the ex-aequo procedure set out in Section 11.2 will apply. On the basis of the final ranking, 
+proposals will be selected for funding in descending order until the available Call budget is exhausted, 
+subject to the applicable funding limits. 
+ 
+A reserve list will be established on the basis of the final ranking of eligible proposals that meet the 
+applicable thresholds but cannot be funded within the available Call budget. In the event that  a selected 
+proposal is unable to proceed to implementation, withdraws, or its funding is discontinued, the EIT HEI may 
+select a proposal from the reserve list in accordance with the final ranking and subject to the availability of 
+funding. 
+ 
+Successful and unsuccessful applicants will be informed in writing during the week of 22 March 2027. 
+
+PAGE 46
+ 
+ 
+46 
+ 
+11.2. Ex-aequo Proposals 
+Where proposals receive the same overall evaluation score and further prioritisation is required to 
+establish the final ranking, the EIT HEI Call Evaluation Committee will apply the following priority order, 
+starting with the highest priority factor and proceeding sequentially until a distinction can be made: 
+1. Excellence: proposals will first be prioritised according to their scores for the criterion of 
+Excellence. Where these scores are equal, priority will be given according to the scores for the 
+criterion of Impact 2.1: Credibility and scale of the project’s expected outcomes and impacts. 
+2. Portfolio-related factors: where a distinction cannot be made on the basis of the above scores, 
+the EIT HEI Call Evaluation Committee may consider additional factors relevant to the strategic 
+objectives of the Call, such as: 
+• gender balance and other diversity considerations in innovation capacity-building activities 
+• participation of non-academic sector organisations 
+• geographical diversity 
+• other relevant factors justified by the objectives and scope of the Call 
+The factors considered and the rationale for their application will be documented in the 
+Evaluation Report. 
+3. Overall portfolio and synergies: if the above factors do not allow a distinction to be made, the EIT 
+HEI Call Evaluation Committee may consider the overall composition of the proposed project 
+portfolio, including opportunities to create positive synergies and complementarity between 
+selected projects, as well as other factors directly related to the objectives of the Call. 
+The factors considered and the rationale for their application will be documented in the 
+Evaluation Report prepared by the EIT HEI management team. 
+11.3. Standstill period 
+Following the communication of the results of the evaluation, a standstill period of 14 days shall be applied 
+before signing the Project Grant Agreement with the selected applicants. 
+11.4. Redress and Complaint Procedure 
+Upon receipt of the evaluation results, the applicant may wish to lodge a request for redress, if there is a 
+concern that there might have been a shortcoming in the way a proposal was evaluated.  The redress 
+procedure is not meant to call into question the  judgement made by the independent experts who 
+evaluated the proposals. The redress procedure will only consider procedural shortcomings and factual 
+errors. Requests for redress should be raised within 14 days of the receipt of the evaluation report and 
+should be sent to compliance@eitrawmaterials.eu. 
+
+PAGE 47
+ 
+ 
+47 
+ 
+Requests must:  
+• Be related to the evaluation process  
+• Include a clear description of the grounds for the complaint  
+• Be received within the time limit specified above  
+ 
+An initial reply will be sent to complainants no later than two weeks after the deadline for redress requests. 
+This initial reply will indicate when a reply will be provided. The EIT HEI Call Evaluation Committee will be 
+informed about the redress and a Redress Committee, established by EIT RawMaterials, will be convened 
+to examine the evaluation process for the case under consideration. 
+ 
+If there is clear evidence of a shortcoming that could have affected the funding decision, the Redress 
+Committee may decide that all or part of the proposal should be re -evaluated. Unless there is clear 
+evidence of a shortcoming there will be no follow-up or re-evaluation. The Redress Committee will inform 
+the EIT HEI Call Evaluation Committee of the outcome of any such re-evaluations. 
+ 
+Please note:  
+• This redress procedure is concerned with the evaluation process.  
+• The Redress Committee will not call into question the judgment of the individual expert evaluators, 
+whose qualifications have already been assessed and validated.  
+• A re-evaluation will only be carried out if there is evidence of a shortcoming that affects the quality 
+assessment of a proposal. This means, for example, that a problem relating to one evaluation 
+criterion will not lead to a re-evaluation if a proposal has failed anyway on any other criterion.  
+• The evaluation score following any re-evaluation will be regarded as definitive.   
+• The evaluation score may be lower than the original score.  
+• Only one request (i.e. the first submitted request) for redress per proposal will be considered. 
+11.5. EIT KIC Allocation Procedure 
+ 
+Once the ranking list has been finalised, the EIT HEI Call Evaluation Committee will oversee the allocation 
+of successful proposals across the participating EIT KICs for project management purposes. 
+ 
+The allocation will use the KIC alignment information provided in each proposal as a basis for matching 
+successful projects with the EIT KIC best placed to support their implementation. Where possible, projects 
+will be matched with a KIC whose thematic expertise, network and innovation ecosystem complement the 
+project's objectives, activities and areas of focus. The allocation will also take into account  the overall 
+distribution of projects across participating KICs and their capacity to manage the awarded portfolio, with 
+the aim of achieving a fair and balanced distribution while maintaining meaningful alignment between 
+projects and KIC capabilities. The allocation process is therefore intended to translate the KIC connections 
+identified by applicants into an appropriate project-KIC match, providing each funded project with a clear 
+
+PAGE 48
+ 
+ 
+48 
+ 
+point of connection to the EIT Community and enabling it to benefit from relevant KIC expertise, networks, 
+partnerships and innovation opportunities. 
+12.  Other terms and conditions 
+12.1. Clarifications on errors or missing information     
+In the event of errors (such as obvious clerical mistakes) or missing information in the proposal, applicants 
+may be invited to provide a clarification, correction, or completion of the application. Applicants will have 
+ten (10) calendar days from the date of the official communication to submit the requested information, 
+with full respect for the principles of equal treatment and transparency. 
+The Call Committee will assess the response. If the applicant fails to provide the requested clarification or 
+submits it after the deadline, the proposal will remain inadmissible and will be rejected. The Lead Applicant 
+will be informed accordingly. 
+12.2. Acceptance of the Call conditions  
+The KICs managing the EIT HEI reserve the right to make reasonable amendments and additions to the call 
+conditions. Amendments and additions to the call conditions shall be valid only before the submission 
+deadline, and if made available to all potential applicants at the same time on the call page here: https://eit-
+hei.eu/funding-support/funding-opportunities/open-calls/call-for-proposals-2026/   
+ 
+The KICs managing the EIT HEI may declare the call unsuccessful in case no applications are received, if the 
+applications do not meet the admissibility, eligibility, exclusion and selection criteria, or if none of the 
+applications reach the thresholds laid down in this call text.  
+ 
+By submitting the application form, the applicant agrees to the present call conditions. Applicants agree 
+that they have no legal entitlement to funding. 
+12.3. Cancellation of the call 
+ 
+The KICs managing in the EIT HEI reserve the right to cancel the call at any time before the signature of the 
+Project Grant Agreement (s) without the obligation to compensate applicants, in particular where its 
+objectives can no longer be met, provided that the applicants are informed in a transparent manner in 
+writing as follows: 
+• if the cancellation takes place before that award: on the call page of the EIT HEI website  here: 
+https://eit-hei.eu/funding-support/funding-opportunities/open-calls/call-for-proposals-2026/  
+• if the cancellation takes place following the communication of the results to the applicants, during 
+the standstill period, or any time before the signature of the Project Grant Agreement: in writing 
+directly to the selected applicants. 
+
+PAGE 49
+ 
+ 
+49 
+ 
+12.4. Data protection 
+The EIT Raw Materials Deutschland GmbH  managing the EIT HEI ensure that any processing of personal 
+data shall be performed in accordance with Regulation (EU) 2016/679 of the European Parliament and of 
+the Council of 27 April 2016, on the protection of natural persons with regard to the processing of personal 
+data and on the free movement of such data, and in accordance with Directive 95/46/EC (General Data 
+Protection Regulation). 
+As a data subject, you have the right of access, the right to rectification, the right to erasure, the right to 
+restrict processing, the right to data portability, the right to object, and the right not to be subject to a 
+decision based solely on automated processing. If you have a question about person al data processing or 
+want to exercise your data subject rights, you can contact the Data Protection Officer of EIT Raw Materials 
+Deutschland GmbH at kontakt@wiemer-arndt.de. 
+The collected personal data will be used solely for the evaluation of the applications and the conduct of the 
+call process. The data controller is EIT Raw Materials Deutschland GmbH. 
+Personal data will be deleted 5 years after the announcement of the results of the call in case of 
+unsuccessful applications. Personal data processing for successful applications must be managed under the 
+data policy for successful applications. 
+By submitting your application to this call, you consent that the KICs will collect, transfer, process, store, 
+and delete your data in accordance with the aforementioned conditions. 
+For more information on the processing of your personal data, please consult the privacy statement of EIT 
+Raw Materials Deutschland GmbH at:  
+https://seedbook.eitrawmaterials.eu/CallFileDownloadOpen.aspx?Id=63567 
+12.5. Confidentiality 
+The KICs managing the EIT HEI undertake to use any confidential information shared by the applicants solely 
+for the purposes of the evaluation process.  
+Confidential information shall mean data and/or information (in any form) that is proprietary to, or 
+possessed by, the applicants and not generally known to the public, or that has not yet been revealed 
+whether in tangible or intangible form, that is identified as confidential in writing or when disclosed orally.  
+Confidential information included in the application form must be expressly labelled by the applicant as 
+such in the form. As regards confidential information expressly labelled as such in the call process, the KICs 
+managing the EIT HEI undertake to (i) not disclose them in any way and any form, without the prior written 
+authorization of the applicant; and (ii) not to use them for purposes other than those strictly necessary for 
+participation in the call. 
+
+PAGE 50
+ 
+ 
+50 
+ 
+Confidential information may be shared among the KICs managing the EIT HEI and their subsidiaries (e.g. 
+KIC Co -Location Centres) solely for the purposes of the call process. The KICs managing the EIT HEI 
+undertake to impose this confidentiality obligation on its employees and the employees of its subsidiaries 
+and its collaborators, as well as on independent experts and all subjects who, by virtue of participating in 
+the conduct of the call, including as me mbers of the EIT HEI Call Evaluation Committee, may have access 
+to such confidential data and information. 
+The applicants agree that data and information regarding the selected projects’ implementation (e.g. 
+success stories) not labelled as confidential may be disclosed in connection with the EIT HEI activities.  
+12.6. Avoidance of conflict of interest 
+The KICs managing the HEI are committed to ensure the avoidance of conflict of interest (regarding all 
+actors) and comply with the principles of transparency, non -discrimination and sound financial 
+management.  
+Measures to avoid potential Conflict of Interest or unequal treatment of applicants are ensured including 
+through appropriate conflict of interest declaration and assessment process, established written 
+communication channels and independent and fair complaints/redress procedures.  
+In case an applicant becomes aware of a potential conflict of interest affecting the conduct of the call 
+process, it shall notify EIT RawMaterials compliance@eitrawmaterials.eu of the conflict of interest without 
+any delay. 
+12.7. Ethics and values 
+The proposal must comply with:  
+- ethical principles (including the highest standards of research integrity) and  
+- applicable EU, international and national law, including the Charter of Fundamental Rights of the 
+European Union and the European Convention for the Protection of Human Rights and Fundamental 
+Freedoms and its Supplementary Protocols. 
+No financial support/EIT funding can be granted, within or outside the EU, for activities that are prohibited 
+in all Member States. No financial support/EIT funding can be granted in a Member State for an activity 
+which is forbidden in that Member State. 
+12.8. Intellectual property rights 
+Applicants retain full and exclusive ownership of their prior information and intellectual property rights. By 
+submitting their application, applicants affirm that they hold ownership or have legally secured the right to 
+use all elements of the innovative product or service included in their application. 
+
+PAGE 51
+ 
+ 
+51 
+ 
+Applicants agree to indemnify and hold harmless the allocated KIC and/or any assignee or affiliate from any 
+third-party allegations or claims of intellectual property  rights infringement by the product or service of 
+applicants. Applicants shall have the right to further develop, use and license their intellectual property 
+rights for creating, making, marketing, and distributing products, services, and technology. Applicants agree 
+to respect the IPR (Intellectual Property Rights) Rules (Article 16) of the General Model Grant Agreement68 
+and the respective provisions of the Project Grant Agreement. 
+12.9. Withdrawal of the funding – Recovery of undue amounts 
+The allocated KIC may withdraw the funding after its award and recover all payments made in line with the 
+provisions of the Project Grant Agreement, including in the following cases:  
+• in case the applicant committed substantial errors, irregularities or fraud 
+• in case the applicant committed serious breach of obligations under the Project Grant Agreement 
+or during its award (including non -compliance with the call conditions, submission of false 
+information, failure to provide required information, etc.)  
+• it is established that the awarded applicants were not eligible or should have been excluded 
+12.10. Checks, reviews, audits and investigations 
+The allocated KIC  retains the right to initiate checks, reviews and audit on an applicant that has been 
+awarded funding, in order to verify compliance with the requirements of the call conditions and of the legal 
+and contractual framework referred to above. 
+The allocated KIC may request any information and data from applicants that have been awarded funding 
+for 5 years after completion for these purposes, as well as in relation to monitoring by the EIT. 
+In accordance with the Grant Agreement between the EIT and the KIC s, the EIT and/or the Commission, 
+the European Anti-Fraud Office (OLAF), the European Public Prosecutor’s Office (EPPO) and the Court of 
+Auditors may carry out checks, reviews, audits and investigations in relation to the call and the 
+implementation of the projects. 
+12.11. Applicable law 
+The present call is governed by the applicable European Union legal framework (i.e. in particular the EIT 
+Regulation69, the EU Financial Regulation70, the Horizon Europe Regulation71), supplemented, if necessary, 
+by the national law of Belgium. 
+ 
+68 https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/agr-contr/general-mga_horizon-euratom_en.pdf  
+69 Regulation (EU) 2021/819. 
+ 70Regulation (EU, Euratom) 2024/2509. 
+71 Regulation (EU) 2021/695. 
+
+PAGE 52
+ 
+ 
+52 
+ 
+The applicants agree to observe the obligations outlined in the Partnership Agreement and the provisions 
+of the Horizon Europe Grant Agreement signed between the EIT and the KICs to implement the EIT HEI 
+activities. 
+Following the signature, the applicants will have to comply with the terms of the Project Grant Agreement 
+between successful applicants and the allocated KIC.    
+12.12. Settlement of disputes 
+All disputes arising out of or in connection with the call procedure and the implementation, which cannot 
+be solved amicably, shall be finally settled before the courts of Brussels. 
+13.      Annexes 
+13.1. Information on Key Dates, Submission and Enquiries 
+Key Dates  Timeline 
+Launch of EIT Higher Education Initiative Call 
+for Proposals 2026 
+20 October 2026 
+Opening of the application portal 20 October 2026 
+Deadline for submission 13 January 2027, 17:00 CET 
+EIT HEI Call for Proposals 202 6 – online Info 
+Sessions 
+Click on the name of the Info Session to go to 
+the relevant event registration page. 
+• 4 November 2026, 15:00 – 16:30 CET: 
+Overview of EIT HEI Call for Proposals 2026 
+• 6 November 2026, 1 5:00 – 16:30 CET: 
+Introduction to HEInnovate 
+• 11 November 2026, 15:00 – 16:30 CET: MEL 
+Framework and the Impact Domains and 
+Actions 
+• 13 November 2026, 15:00 – 16:30 CET: KPI 
+Expectations 
+• 17 November 2026, 15:00 – 16:30 CET: 
+Application and Budget Planning 
+• 23 November 2026, 10:00 – 12:15 CET: EIT KIC 
+Discovery Day 
+• 3 December 2026, 15:00 – 16:30 CET:  
+Open Q&A session 
+Evaluation period 14 January – 22 March 2027 
+Announcement of evaluation results Week of 22 March 2027 
+Start date of selected EIT HEI Call for 
+Proposals 2026 projects (Cohort 6) 
+1 May 2027 
+
+PAGE 53
+ 
+ 
+53 
+ 
+Face-to-Face IVAP Workshop for selected 
+projects (participation mandatory) 
+Q4 2027 
+ 
+Where to apply Applications must be submitted through the 
+EIT HEI Application Portal, HERE 
+ 
+Information and support 
+The EIT HEI Team will run a series of Information Sessions, and the r egistration links are available on the 
+EIT HEI Call 2026 webpage72.  
+ 
+Also available on the Call webpage are FAQs, the Project Design and Implementation Guide73, KIC-specific 
+contact points and other supporting Call documents. These support materials are also widely available on 
+the application portal. 
+ 
+For general enquiries, contact: hei@eitrawmaterials.eu  
+ 
+For information on EIT KICs and their strategic documents/KIC briefs, applicants should consult the relevant 
+KIC contact information provided on the Call page  and participate in the EIT KIC Discovery Day  on 23 
+November 2027, which forms part of the Information Session series. 
+13.2. Innovation Vision Action Plan (IVAP) Submission Guidelines 
+All funded projects must develop an Innovation Vision Action Plan (IVAP), which serves as the project’s full 
+proposal. The details submitted in the application portal will constitute the complete project plan. The IVAP 
+has two parts, which must be completed and submitted through the application portal . Details on the 
+information required for each of the two parts can be found in the Project Design and Implementation 
+Guide74. Once you have completed both parts, the lead partner must: 
+1. Download the Declaration of Honour template, 
+2. Sign it on behalf of the consortium, and 
+3. Upload it to the portal before final submission. 
+ 
+72 https://eit-hei.eu/funding-support/funding-opportunities/open-calls/call-for-proposals-2026/  
+73 Please see the EIT HEI Call 2026 Project Design and Implementation Guide: https://eit-hei.eu/wp-content/uploads/2026/10/EIT-HEI-Call-2026-
+Project-Design-and-Implementation-Guide.pdf 
+74 Please see the EIT HEI Call 2026 Project Design and Implementation Guide: https://eit-hei.eu/wp-content/uploads/2026/10/EIT-HEI-Call-2026-
+Project-Design-and-Implementation-Guide.pdf 
+
+PAGE 54
+ 
+ 
+54 
+ 
+13.3. EIT Impact Framework 
+The EIT HEI Call 2026 uses selected indicators from the EIT Impact Framework to provide quantitative 
+evidence of project-level results and contribution to the wider EIT objectives75. The applicable EIT HEI and 
+EIT Core KPI requirements are set out in Section 2.5. Applicants should use the KPI definitions provided 
+there when preparing their proposals. Where required by the Call, applicants should also indicate how 
+relevant EIT HEI KPIs may be used to monitor progress beyond the EIT HEI funding period, up to 2035. 
+Projects may use additional indicators and qualitative evidence to monitor progress, results, outcomes 
+and longer-term institutional change, including through the EIT HEI MEL Framework54. 
+ 
+ 
+75 https://www.eit.europa.eu/sites/default/files/eit_impact_framework_2022-2027.pdf  

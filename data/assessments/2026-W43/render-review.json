@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-24T06:15:09.168Z",
+  "proposalHash": "01f8903e3a66aa981e9ce27fde62b128806ce169c0ed2f748e625409ba19c698",
+  "proofArticles": 10,
+  "newsletterTitlesAndSummariesMatch": 10,
+  "sourceLinksMatch": 10,
+  "dpr": 2,
+  "viewports": [
+    1280,
+    390
+  ],
+  "horizontalOverflow": false,
+  "allFourScreenshotsInspected": true,
+  "screenshots": [
+    ".amp/in/artifacts/w43-review/proof-desktop.jpg",
+    ".amp/in/artifacts/w43-review/proof-narrow.png",
+    ".amp/in/artifacts/w43-review/newsletter-desktop.jpg",
+    ".amp/in/artifacts/w43-review/newsletter-narrow.png"
+  ],
+  "scope": "Chromium desktop/narrow HTML review, not real-device or multi-email-client testing"
+}

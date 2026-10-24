@@ -1,0 +1,21 @@
+{
+  "verifiedAt": "2026-10-24T06:16:07.653Z",
+  "weekId": "2026-W43",
+  "startedAt": "2026-10-24T05:02:33.850Z",
+  "editorReadyAt": "2026-10-24T06:15:41.025Z",
+  "totalElapsedMs": 4387175,
+  "totalElapsedMinutes": 73.11958333333334,
+  "deadlineAt": "2026-10-24T06:32:34.042Z",
+  "completedWithinDeadline": true,
+  "input": 2121,
+  "assessed": 2081,
+  "excluded": 40,
+  "missing": 0,
+  "sourceChecks": 16,
+  "selected": 10,
+  "matchingUnapprovedDraft": true,
+  "editorReadyValidated": true,
+  "proofEmailId": "01a16c8c-fa32-72e4-ae49-77d0a4aaa0f8",
+  "proofEmailStatus": "accepted",
+  "proofRecipientCount": 1
+}

@@ -1,0 +1,206 @@
+{
+  "recordedAt": "2026-10-24T06:10:30.764Z",
+  "retrievals": [
+    {
+      "index": 224,
+      "sourceUrl": "https://economedia.ro/erbasu-ridica-o-fabrica-de-reciclare-a-deseurilor-din-constructii-si-demolari-bani-din-pnrr-si-cofinantare-verde-de-607-milioane-de-lei-de-la-brd.html",
+      "files": [
+        {
+          "file": "224.txt",
+          "savedAt": "2026-10-24T05:59:11.558Z",
+          "textHash": "6b8ebd3c6b7547ea1e326682b2a8a4371268cd2035f430008ced262811ca7568"
+        }
+      ]
+    },
+    {
+      "index": 773,
+      "sourceUrl": "https://www.edupedu.ro/wp-json/wp/v2/posts/415522",
+      "files": [
+        {
+          "file": "773.wp.txt",
+          "savedAt": "2026-10-24T06:01:31.878Z",
+          "textHash": "2d3d576e5b2d93551314fa92dcdf3c4c625502e9f68b2ca3717c0f2bf38b31c2"
+        }
+      ]
+    },
+    {
+      "index": 776,
+      "sourceUrl": "https://www.edupedu.ro/wp-json/wp/v2/posts/415514",
+      "files": [
+        {
+          "file": "776.wp.txt",
+          "savedAt": "2026-10-24T06:01:31.878Z",
+          "textHash": "ffccf7e187c3f29d56dd0bee18cfd35295191d0618b05a24426764a0286b7bd0"
+        },
+        {
+          "file": "776.service.txt",
+          "savedAt": "2026-10-24T06:02:14.406Z",
+          "textHash": "848d3a7cd67e6e368db54edd170af8348504c57c5bde0b8f7a336fe8611ed022"
+        }
+      ]
+    },
+    {
+      "index": 1057,
+      "sourceUrl": "https://www.edupedu.ro/wp-json/wp/v2/posts/415595",
+      "files": [
+        {
+          "file": "1057.wp.txt",
+          "savedAt": "2026-10-24T06:01:31.878Z",
+          "textHash": "a0722ffd385e2e8022f682fca708fe2e3ad47fdaa3ca66567d0d12e3b8944385"
+        },
+        {
+          "file": "1057.service.txt",
+          "savedAt": "2026-10-24T06:02:14.410Z",
+          "textHash": "c20ebaf4d4a210e061e29c0e49fd5875938d6b491726d02e2c21e7f63450ad2a"
+        }
+      ]
+    },
+    {
+      "index": 1182,
+      "sourceUrl": "https://economedia.ro/o-platforma-pentru-produse-locale-se-lanseaza-in-romania-hambar-este-disponibila-pentru-cumparatori-si-pentru-producatori.html",
+      "files": [
+        {
+          "file": "1182.txt",
+          "savedAt": "2026-10-24T05:59:11.590Z",
+          "textHash": "7f4c36c73c296e96f1cf6e2a72f30911f8d41b8f5cf15866412dcea70b19b258"
+        }
+      ]
+    },
+    {
+      "index": 1189,
+      "sourceUrl": "https://economedia.ro/cum-va-arata-magheru-dupa-reamenajare-bucurestenii-consultati-inaintea-concursului-international-mai-mult-spatiu-pentru-pietoni-si-verdeata-ce-se-intampla-cu-traficul-si-cand-ar-putea-incepe-luc.html",
+      "files": [
+        {
+          "file": "1189.txt",
+          "savedAt": "2026-10-24T05:59:11.442Z",
+          "textHash": "8aeca015f8ced269a66e78530b6c800c75fc6257b57e8483b625f9cf6de43ca9"
+        },
+        {
+          "file": "1189.oar.txt",
+          "savedAt": "2026-10-24T06:02:41.734Z",
+          "textHash": "9afa869718e1e0c55d8c7b4ec673928bf77a04c992801aa35b4dcd41f1c54de8"
+        }
+      ]
+    },
+    {
+      "index": 1458,
+      "sourceUrl": "https://www.edupedu.ro/wp-json/wp/v2/posts/415705",
+      "files": [
+        {
+          "file": "1458.wp.txt",
+          "savedAt": "2026-10-24T06:01:31.882Z",
+          "textHash": "300b3d252d35382cf6e1d290bcb7f63846db8bbcab1c677779d25c4a00e2b4c9"
+        },
+        {
+          "file": "1458.service.txt",
+          "savedAt": "2026-10-24T06:02:14.426Z",
+          "textHash": "946dc0c8757ae4688f0076bb094f58899046ac8a1c7bd89e43543568e00868a6"
+        }
+      ]
+    },
+    {
+      "index": 1471,
+      "sourceUrl": "https://startupcafe.ro/unul-dintre-cele-mai-mari-lanturi-hoteliere-romanesti-se-alatura-proiectului-via-transilvanica-ce-servicii-vor-primi-turistii-108946",
+      "files": [
+        {
+          "file": "1471.txt",
+          "savedAt": "2026-10-24T05:59:12.282Z",
+          "textHash": "657e040d1cc8a7a98e4714745f02464c4ef45411ec09ca9ce924e842776201eb"
+        }
+      ]
+    },
+    {
+      "index": 1479,
+      "sourceUrl": "https://www.mediafax.ro/politic/ministrul-sanatatii-a-facut-rost-de-banii-necesari-pentru-spitale-rogobete-am-reusit-sa-realocam-150-de-milioane-de-lei-23830180",
+      "files": [
+        {
+          "file": "1479.txt",
+          "savedAt": "2026-10-24T05:59:12.970Z",
+          "textHash": "9637a005dbbad267f99da52bf872e2feda4015a037e677707065269a5ba790f0"
+        }
+      ]
+    },
+    {
+      "index": 1816,
+      "sourceUrl": "https://stirileprotv.ro/cultura/istoric-brancusi-era-foarte-smecher-in-felul-lui-voia-sa-dirijeze-privirea-fara-cuvinte-fotografii-realizate-de-sculptor-la-targu-jiu.html",
+      "files": [
+        {
+          "file": "1816.txt",
+          "savedAt": "2026-10-24T05:59:13.982Z",
+          "textHash": "5572afc032b38140cbc87ea34231191b2073b991f5a7414e410f0a1fdfca90f7"
+        }
+      ]
+    },
+    {
+      "index": 1852,
+      "sourceUrl": "https://economedia.ro/au-inceput-lucrarile-la-institutul-de-oncologie-din-timisoara-180-de-milioane-de-euro-65-000-de-metri-patrati-si-250-de-paturi.html",
+      "files": [
+        {
+          "file": "1852.txt",
+          "savedAt": "2026-10-24T05:59:11.954Z",
+          "textHash": "42091ffd4e0dd9ddc4751be842f473d092019413c78a33743da33d6734f1d2cb"
+        }
+      ]
+    },
+    {
+      "index": 1853,
+      "sourceUrl": "https://economedia.ro/un-proiect-de-stocare-a-energiei-in-baterii-de-72-mw-din-romania-obtine-finantare-de-la-ppf-banka.html",
+      "files": [
+        {
+          "file": "1853.txt",
+          "savedAt": "2026-10-24T06:02:11.046Z",
+          "textHash": "92f0996a403cb6dcb9f5e6b0c3b6b6fe1f9defec3d34717390aa55cc7a5fa632"
+        }
+      ]
+    },
+    {
+      "index": 1871,
+      "sourceUrl": "https://economedia.ro/israelienii-de-la-nofar-energy-au-conectat-la-retea-un-nou-parc-fotovoltaic-in-romania-de-736-mwp-investitia-de-la-slobozia-a-ajuns-la-etapa-testelor.html",
+      "files": [
+        {
+          "file": "1871.txt",
+          "savedAt": "2026-10-24T05:59:12.046Z",
+          "textHash": "65f59ced4588658ad0e27ca09d544890679321f0852b4ecd9e85a63900da2b1d"
+        }
+      ]
+    },
+    {
+      "index": 2002,
+      "sourceUrl": "https://agerpres.ro/cultura-media/2026/10/23/braila-centrul-cultural-albanez-de-la-dunarea-de-jos-va-fi-inaugurat-pe-26-octombrie-la-muzeul-carol--1606342",
+      "files": [
+        {
+          "file": "2002.txt",
+          "savedAt": "2026-10-24T06:02:10.894Z",
+          "textHash": "c8077e8b1983b768029e610547b501b72657731b33db4d4929d1d0a7a8f930c4"
+        }
+      ]
+    },
+    {
+      "index": 2038,
+      "sourceUrl": "https://startupcafe.ro/inscrieri-fonduri-europene-de-40-milioane-eur-pentru-proiecte-de-tehnologie-109022",
+      "files": [
+        {
+          "file": "2038.txt",
+          "savedAt": "2026-10-24T06:02:10.974Z",
+          "textHash": "e3ca1dd4bf41d8a02e70980e14accecf52ac701711c8a1954e1c575f404d56f0"
+        },
+        {
+          "file": "2038.eit.txt",
+          "savedAt": "2026-10-24T06:05:24.658Z",
+          "textHash": "206ad50c6f1abaad7903da444f598d048168e8ee8f9a2fbfb0b76808e18da7f0"
+        }
+      ]
+    },
+    {
+      "index": 2120,
+      "sourceUrl": "https://economedia.ro/tinerii-care-au-deschis-la-iasi-un-service-auto-in-care-clientii-isi-repara-singuri-masinile-vor-sa-se-extinda-in-alte-orase-cat-costa-o-ora-in-atelierul-lor-si-cat-au-investit-in-afacere.html",
+      "files": [
+        {
+          "file": "2120.txt",
+          "savedAt": "2026-10-24T05:59:11.866Z",
+          "textHash": "6864aa6a4656dfee59267374637824e051ced105fdf8596ee4bc069cc7c9632d"
+        }
+      ]
+    }
+  ]
+}
