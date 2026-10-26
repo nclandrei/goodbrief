@@ -6,7 +6,8 @@
   "deliverySha256": "9c7f7cd88593311738f8fb7d1da13feb86b1d665b364be24728b1b8b03e8fb11",
   "segmentId": "849b57ed-492d-447e-8c06-d2d86a7c8468",
   "scheduledAt": "2026-10-26T07:00:00.000Z",
-  "remoteStatus": "scheduled",
+  "remoteStatus": "sent",
   "createdAt": "2026-10-24 08:04:02.429108+00",
-  "reconciledAt": "2026-10-25T23:16:10.763Z"
+  "reconciledAt": "2026-10-26T10:11:07.754Z",
+  "sentAt": "2026-10-26T07:01:24.897Z"
 }
