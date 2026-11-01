@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-11-01T07:25:11.447Z",
+  "weekId": "2026-W44",
+  "stage": "editor-approved",
+  "authorization": "Adauga sonoro si reparatii pentru invertoare si baterii si protejarea vaii saulei, pune-le pe toate 3. Apoi ship this - commit, push and mark it as approved and ready to be sent tomorrow, Monday.",
+  "approvedBy": "user_01KAR8T4PDCMSD831TGZX0PZHP",
+  "proofHash": "cd84f3c743a02b81525395730f4c2fc6cd515f195efa89f34c61a72b648b3511",
+  "approvedDraftHash": "1556a5021ec2ce53e2435c84164f6b1f0662deaaa782d23224fd3d753a901510",
+  "deliverySha256": "a1be0d296f8436ced16afc6394d66d2990b35c08e61f9621bf9ccd0c65031dbc",
+  "selected": 10,
+  "greenStories": 6,
+  "expectedScheduledAt": "2026-11-02T07:00:00.000Z",
+  "subscriberCopyMatchesRevisedProof": true,
+  "inspectedSubscriberHtmlUnchanged": true,
+  "originalAssessmentAndEmailReceiptsPreserved": true
+}

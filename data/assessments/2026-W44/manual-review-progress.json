@@ -1,0 +1,54 @@
+{
+  "weekId": "2026-W44",
+  "checkedAt": "2026-10-31T06:16:37.450Z",
+  "phase": "assessment",
+  "coverage": {
+    "input": 1911,
+    "explicitExclusions": 10,
+    "assessed": 500,
+    "missing": 1401,
+    "nextMissingIndex": 510,
+    "candidates": 30,
+    "verifiedSources": 0,
+    "complete": false
+  },
+  "authorship": "Fiecare titlu și extras RSS integral a fost citit de Amp. Cele cinci fișiere authored-batches conțin scorurile, deciziile și judecățile scrise individual; adaptorul din /tmp atașează numai amprentele înghețate și ora importului. Nu există scorare prin cod, șabloane sau API de model.",
+  "auditReview": [
+    {
+      "indices": [385, 433],
+      "flag": "balonul de aur al lui kane",
+      "notes": "Am verificat ambele judecăți: fragmentul comun este denumirea aceleiași distincții acordate aceluiași fotbalist. Una discută pauza engleză de 25 de ani, cealaltă cele 73 de goluri; restul argumentelor nu este copiat. Nu am rescris textul doar pentru a ascunde alerta."
+    }
+  ],
+  "spotChecks": [
+    {
+      "index": 6,
+      "notes": "Candidatul despre maturizarea cerebrală are o judecată specifică cercetării predictive: nu susține că există deja test clinic pentru depresie. Titlul și extrasul au fost recitite; sursa integrală rămâne de verificat."
+    },
+    {
+      "index": 56,
+      "notes": "Știrea despre dobânda după scadența anticipată este păstrată ca posibil drept util, nu drept lege nouă dovedită. Judecata cere explicit hotărârea ÎCCJ, data și aplicabilitatea; nu garantează avantajul oricărui debitor."
+    },
+    {
+      "index": 150,
+      "notes": "Promisiunea olandeză pentru păduri tropicale a primit scoruri mari de pozitivitate și impact, dar relevanță românească mai mică. Respingerea nu o numește lipsită de valoare și nu umple mecanic secțiunea verde cu finanțare externă îndepărtată."
+    },
+    {
+      "index": 188,
+      "notes": "Am confruntat titlul și extrasul A0: CNAIR precizează că nu se deschid loturile și nu confirmă termenul CJ Ilfov. Judecata respinge tocmai transformarea unui calendar incert într-o autostradă deschisă. Nu este încă verificare a sursei integrale."
+    },
+    {
+      "index": 215,
+      "notes": "Candidatul din Matca este despre accesul comun la retail al cinci familii de producători, nu despre cumpărarea Carrefour în sine. Motivarea cere verificarea livrărilor și nu atribuie automat parteneriatului beneficii de mediu."
+    },
+    {
+      "index": 418,
+      "notes": "La concertul caritabil, diferența relevantă este suma strânsă pentru muzicieni și artiști vizuali tineri. Scorul nu este o recompensă pentru prezența Familiei Regale; rămân de verificat suma și destinația fondurilor."
+    }
+  ],
+  "sourceLimitations": [
+    "Europa Liberă a răspuns HTTP 200, dar nu a furnizat articole utilizabile la verificarea fluxului; limita este documentată în acquisition-review.json și feed-health.log.",
+    "Niciun candidat nu este încă verificat în sursa integrală. Nu există selecție finală, draft W44, proof trimis ori aprobare.",
+    "Fereastra fixă rămâne 2026-10-31T06:02:52.637Z–2026-10-31T07:32:52.637Z; checkpointul și termenul nu au fost resetate."
+  ]
+}

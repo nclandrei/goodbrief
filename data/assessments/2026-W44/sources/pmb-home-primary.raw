@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,user-scalable=no,viewport-fit=cover">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="PMB-DI-CTS">
+  <meta name="docsearch:language" content="ro">
+  <link rel="canonical" href="" />
+  <meta property="og:locale" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="" />
+  <meta name="verify-v1" />
+  <meta name="google-site-verification" />
+  <meta name="p:domain_verify" />
+  <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite"}</script>
+  <script type='application/ld+json'>{}</script>
+  <link rel="icon" href="/assets/favicon.ico">
+
+  <title>Primăria București</title>
+  <base href="/">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://doc.pmb.ro/common/dial/css/dial.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.pmb.ro/mof/mof.css" crossorigin="anonymous">
+<link rel="stylesheet" href="static/styles.fa1dbadb503582f5f68b.css" crossorigin="anonymous"></head>
+<body>
+  <app></app>
+
+<script src="https://cdn.pmb.ro/bootstrap5/js/bootstrap.bundle.js"></script>
+<script src="https://cdn.pmb.ro/msite/extrJs.js" async defer></script>
+<!-- Matomo -->
+<noscript><p><img src="https://analytics.pmb.ro/matomo.php?idsite=3&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
+<script src="static/runtime-es2015.b8fabe67b025f37ca593.js" crossorigin="anonymous" type="module"></script><script src="static/runtime-es5.b8fabe67b025f37ca593.js" crossorigin="anonymous" nomodule defer></script><script src="static/polyfills-es5.27e5ff63db942312cabd.js" crossorigin="anonymous" nomodule defer></script><script src="static/polyfills-es2015.50337a78da0b23232792.js" crossorigin="anonymous" type="module"></script><script src="static/scripts.399751ed3c58b6cd2afd.js" crossorigin="anonymous" defer></script><script src="static/main-es2015.cd8eda6975be96ea81d5.js" crossorigin="anonymous" type="module"></script><script src="static/main-es5.cd8eda6975be96ea81d5.js" crossorigin="anonymous" nomodule defer></script></body>
+</html>

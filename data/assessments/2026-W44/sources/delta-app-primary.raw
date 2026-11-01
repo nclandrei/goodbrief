@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+
+<html  lang="ro" >
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="description" content="	Ghidul tău despre natura și ariile protejate ale României.
+">
+		<title>
+				Aplicația România Sălbatică
+		</title>
+				<link
+		rel="icon" type="image/png" href="/images/favicon.png"/>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NWXGWFZP');</script>
+<!-- End Google Tag Manager -->
+
+				<link rel="stylesheet" href="/library/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/library/bootstrap-select2/css/select2.min.css">
+		<link rel="stylesheet" href="/css/custom.css?ts=2022111701"/>
+		<link rel="stylesheet" href="/css/font-awesome.css"/> 
+				<script type="text/javascript" src="/library/jquery.js"></script>
+		<script type="text/javascript" src="/library/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/library/jquery-ui.js"></script>
+		<script type="text/javascript" src="/js/romania-salbatica.js"></script>
+		<script type="text/javascript" src="/js/LL.js"></script>
+		<script type="text/javascript" src="/library/datepicker-ro-lang.js"></script>
+		
+		
+
+		
+		<meta property="og:url" content="http://www.romaniasalbatica.ro/ro/aplicatia-romania-salbatica"/>
+		<meta property="og:type" content="article"/>
+		<meta property="og:title" content="Aplicația România Sălbatică"/>
+		<meta property="og:description" content="Ghidul tău despre natura și ariile protejate ale României."/>
+		<meta property="og:image" content="http://www.romaniasalbatica.ro/images/fb.jpg"/>
+	</head>
+	<body  class="page-project" >
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWXGWFZP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="/"></a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="navbar-collapse collapse" id="navbar-1" aria-expanded="false">
+										
+	<ul class="nav navbar-nav navbar-right">
+									
+		
+	 
+		
+		<li>
+		
+	<a href="/ro" title="Home">Home</a></li>
+	
+
+			
+									
+		
+	 
+		
+		<li>
+		
+	<a href="/ro/arii-protejate" title="Arii protejate">Arii protejate</a></li>
+	
+
+			
+									
+		
+	 
+		
+		<li>
+		
+	<a href="/ro/articole-si-evenimente" title="Articole">Articole</a></li>
+	
+
+			
+									
+		
+	 
+		
+		<li>
+		
+	<a href="/ro/filme" title="Filme">Filme</a></li>
+	
+
+			
+									
+		
+	 
+		
+		<li>
+		
+	<a href="/ro/proiecte" title="Proiecte">Proiecte</a></li>
+	
+
+			
+				
+									
+		
+	 
+		
+		<li>
+		
+	<a href="/ro/despre-noi" title="Despre noi">Despre noi</a></li>
+	
+
+			
+									
+					
+	 
+			<li class=" menu-icon icon4">
+		
+	<a href="https://shop.romaniasalbatica.ro/" title="Magazin">Magazin</a></li>
+	
+
+			
+									
+					
+	 
+			<li class=" menu-icon icon1">
+		
+	<a href="/ro/implica-te" title="Implică-te">Implică-te</a></li>
+	
+
+			
+									
+					
+	 
+			<li class=" menu-icon icon2">
+		
+	<a href="/ro/contact" title="Contact">Contact</a></li>
+	
+
+			
+		</ul>
+
+						</div>
+						<!-- /.navbar-collapse -->
+					</div>
+					<!-- /.container-fluid -->
+				</div>
+			</nav>
+			<div class="hero-unit">
+									<img src="/medias/2021/12/12/Muntii_Fagaras_banner_03.jpg" alt="Munții Făgăraș - banner">
+								<div class="page-title-container">
+					<div class="container text-left">
+													<h1 class="page-title">Aplicația România Sălbatică</h1>
+							<h2 class="page-subtitle">ghidul tău despre natura țării noastre</h2>
+											</div>
+
+				</div>
+			</div>
+
+			<div
+				class="container text-right ">
+								
+				<span class="pull-right">
+					<a target="_blank" href="https://www.linkedin.com/company/romania-salbatica"><img class="social" src="/images/linkedin.svg"></a>
+				</span>
+				<span class="pull-right">
+					<a target="_blank" href="https://www.youtube.com/c/Rom%C3%A2niaS%C4%83lbatic%C4%83"><img class="social" src="/images/youtube.svg"></a>
+				</span>
+				<span class="pull-right">
+					<a target="_blank" href="https://open.spotify.com/album/0ue8QMIfjCt2uHP6peKNcr?si=rD11Dp5GRLSF751ybZsf7g&nd=1"><img class="social" src="/images/spotify.svg"></a>
+				</span>
+				<span class="pull-right">
+					<a target="_blank" href="https://www.instagram.com/romania.salbatica"><img class="social" src="/images/instagram.svg"></a>
+				</span>
+				<span class="pull-right">
+					<a target="_blank" href="https://www.facebook.com/romaniasalbatica"><img class="social" src="/images/facebook.svg"></a>
+				</span>
+
+			</div>
+		</header>
+
+		
+	<div class="container color-in-green">
+		<hr>
+		<div class="col-xs-12 col-sm-7">
+			<p><em><span class="my_style_green">Aplicația <span class="my_style_blue">România Sălbatică</span> își propune să te țină <span class="my_style_blue">permanent conectat la natură</span> și să te ajute să înțelegi mai bine importanța biodiversității din țara noastră.</span></em></p>
+
+<p>&nbsp;</p>
+
+<p><strong>Aplicația noastră a fost recreată de la zero</strong> și este mult îmbunătățită. Calendarul naturii este completat cu noi evenimente naturale pe care să le urmăriți, iar informațiile documentate și fotografiile spectaculoase vă vor ajuta să descoperiți mai multe despre ariile naturale protejate din România.</p>
+
+<p>Cu ajutorul aplicației poți să:</p>
+
+<ul>
+	<li>
+	<p>Descoperi <strong>natura României structurată pe regiuni&nbsp;</strong>(Munții Carpați, pădurile virgine, Dunărea și Delta, Marea Neagră) sau regiuni biogeografice;</p>
+	</li>
+	<li>
+	<p>Urmărești <strong>calendarul naturii</strong>, unde o să regăsești cele mai interesante evenimente petrecute în natură, cum ar fi: rotitul cocoșului de munte, migrația de primăvară sau toamnă, perioadele de înflorire ale anumitor specii de flori, boncănitul cerbului și multe altele;</p>
+	</li>
+	<li>
+	<p>Înveți despre <strong>parcurile naționale</strong> și <strong>naturale</strong> ale României, sau alte arii naturale protejate;</p>
+	</li>
+	<li>
+	<p>Primești <strong>sfaturi&nbsp;și recomandări</strong>&nbsp;despre zone unde poți vedea anumite specii de animale sau plante;</p>
+	</li>
+	<li>
+	<p>Admiri <strong>fotografii spectaculoase</strong> cu peisaje, faună sau floră, realizate de membrii <a href="http://www.forona.ro" target="_blank">Forona</a> (Organizația Fotografilor de Natură din România);</p>
+	</li>
+	<li>
+	<p>Parcurgi un <strong>quiz</strong> care să te ajute să descoperi informații noi despre natură și despre cum o poți proteja, alături de personaje animate din lumea animalelor.</p>
+	</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>Cu ajutorul aplicației noastre natura României nu a fost niciodată mai accesibilă și mai ușor de înțeles.</p>
+
+<p>Aplicația vă este oferită de <strong>BCR</strong>&nbsp;și este dezvoltată de <a href="https://www.solstys.com/en/custom-web-and-mobile-app-development/" target="_blank">Solstys Labs Brașov</a>.&nbsp;Funcționează pe platformele <strong>iOS</strong> și <strong>Android</strong>&nbsp;și poate fi descărcată gratuit de pe:</p>
+
+<p>&nbsp;</p>
+
+<p><a href="https://apps.apple.com/ro/app/romania-salbatica/id6450597123" target="_blank"><img alt="" src="https://romaniasalbatica.ro/medias/2022/03/16/App_store.jpg" style="height:50px; width:150px" /></a>&nbsp; &nbsp; &nbsp;<a href="https://play.google.com/store/apps/details?id=ro.romaniasalbatica.app&amp;pcampaignid=web_share" target="_blank"><img alt="" src="https://romaniasalbatica.ro/medias/2022/03/16/Google_play.jpg" style="height:50px; width:150px" /></a></p>
+
+<p>&nbsp;</p>
+						
+		</div>
+		<div class="col-xs-12 col-sm-5">
+										<div class="thumbnail">
+					<img src="/medias/2025/09/16/App mockup new.jpg " alt="Aplicație">
+				</div>
+											</div>
+				
+
+	</div>
+
+
+
+		<footer>
+									<div class="container color-in-blue products-wrapper">
+					
+							<div class="col-xs-12 col-sm-4 hp-product">
+					<h3>Albumul România Sălbatică</h3>
+					<p>Cel mai amplu album de fotografie dedicat peisajelor, florei și faunei din țara noastră, realizat de fotograful Dan Dinu în decursul a 15 ani.</p>
+																																	<a href="https://romaniasalbatica.ro/ro/album-foto-romania-salbatica">
+								<img class="thumbnail-product" src="/medias/2022/03/16/Album_RS2.jpg" alt="Proiect album">
+							</a>
+																						<div class="link-more link-more-blue">
+							<span class="link-more">
+								<a href="https://romaniasalbatica.ro/ro/album-foto-romania-salbatica">CUMPĂRĂ ALBUMUL</a>
+							</span>
+						</div>
+					
+
+				</div>
+								
+							<div class="col-xs-12 col-sm-4 hp-product">
+					<h3>Filmul România Sălbatică</h3>
+					<p>Cel mai ambițios documentar despre biodiversitatea din România, o producție 100% autentică, realizată de o echipă 100% autohtonă.</p>
+																																	<a href="https://romaniasalbatica.ro/ro/filmul-romania-salbatica">
+								<img class="thumbnail-product" src="/medias/2022/03/19/Film_RS2.jpg" alt="Proiect film">
+							</a>
+																						<div class="link-more link-more-blue">
+							<span class="link-more">
+								<a href="https://romaniasalbatica.ro/ro/filmul-romania-salbatica">AFLĂ MAI MULT</a>
+							</span>
+						</div>
+					
+
+				</div>
+								
+							<div class="col-xs-12 col-sm-4 hp-product">
+					<h3>Aplicația România Sălbatică</h3>
+					<p>Cea mai complexă aplicație despre natura țării noastre, un ghid care te ține permanent conectat la evenimentele naturale din jur.</p>
+																																	<a href="https://romaniasalbatica.ro/ro/aplicatia-romania-salbatica">
+								<img class="thumbnail-product" src="/medias/2022/03/23/Aplicatie_RS2.jpg" alt="Proiect aplicație">
+							</a>
+																						<div class="link-more link-more-blue">
+							<span class="link-more">
+								<a href="https://romaniasalbatica.ro/ro/aplicatia-romania-salbatica">DESCARCĂ APLICAȚIA</a>
+							</span>
+						</div>
+					
+
+				</div>
+					
+	</div>
+
+			
+			<div class="parteneri container color-green">
+				<h4>Parteneri</h4>
+				<div class="parteneri-container">
+											<div class="partner-small">
+							<a target="_blank" href="http://www.propark.ro"><img src="/medias/2016/07/06/Propark.jpg" alt="Parteneri"></a>
+						</div>
+											<div class="partner-small">
+							<a target="_blank" href="http://www.wwf.ro"><img src="/medias/2016/07/06/WWF.jpg" alt="Parteneri"></a>
+						</div>
+											<div class="partner-small">
+							<a target="_blank" href="https://www.carpathia.org"><img src="/medias/2021/12/08/Carpathia.jpg" alt="Parteneri"></a>
+						</div>
+											<div class="partner-small">
+							<a target="_blank" href="http://www.asociatiaaer.ro/"><img src="/medias/2016/07/06/Aer.jpg" alt="Parteneri"></a>
+						</div>
+											<div class="partner-small">
+							<a target="_blank" href="http://www.zenithmaps.com"><img src="/medias/2016/07/06/Zenith.jpg" alt="Parteneri"></a>
+						</div>
+											<div class="partner-small">
+							<a target="_blank" href="http://www.photolife.ro"><img src="/medias/2016/07/06/Photolife.jpg" alt="Parteneri"></a>
+						</div>
+											<div class="partner-small">
+							<a target="_blank" href="http://www.ssl-software.com/en"><img src="/medias/2016/07/08/Ssl.jpg" alt="Parteneri"></a>
+						</div>
+											<div class="partner-small">
+							<a target="_blank" href=""><img src="/medias/2021/02/24/Europa FM.jpg" alt="Parteneri"></a>
+						</div>
+									</div>
+			</div>
+
+			<div class="container-sust">
+				<div class="sustinatori container ">
+					<h4>Susținători</h4>
+											<div class="partner-small col-xs-6 col-sm-3">
+							<a target="_blank" href="http://www.ntdfilm.ro"><img src="/medias/2021/12/10/Banner_NTD.jpg" alt="Susținători"></a>
+						</div>
+											<div class="partner-small col-xs-6 col-sm-3">
+							<a target="_blank" href="http://www.dandinu.net"><img src="/medias/2021/12/10/Banner_DanDinu.jpg" alt="Susținători"></a>
+						</div>
+											<div class="partner-small col-xs-6 col-sm-3">
+							<a target="_blank" href="http://www.forona.ro"><img src="/medias/2021/12/10/Banner_Forona.jpg" alt="Susținători"></a>
+						</div>
+											<div class="partner-small col-xs-6 col-sm-3">
+							<a target="_blank" href="https://propark.ro/ro/biosferis/"><img src="/medias/2021/12/10/Banner_Biosferis.jpg" alt="Susținători"></a>
+						</div>
+									</div>
+			</div>
+			<div class="container-copyr">
+				<div class="copyr container">
+					<div class="col-md-7 col-xs-12 no-padding">
+
+
+									
+	<ul class="list-unstyled list-inline" id="footer-ul1">
+									
+		
+	 
+		
+		<li>
+		
+	<a href="/ro/copyright" title="COPYRIGHT">COPYRIGHT  </a></li>
+    
+
+			
+									
+		
+	 
+		
+		<li>
+		
+	<a href="/ro/confidentialitate-cookies" title="CONFIDENȚIALITATE &amp; COOKIES">CONFIDENȚIALITATE &amp; COOKIES  </a></li>
+    
+
+			
+		</ul>
+
+
+					</div>
+					<div class="col-md-5 col-xs-12 no-padding">
+						<div class="pull-right ro-s">
+							<a target="_blank" href="http://www.photolife.ro"><img src="/images/parteneri/photolife_logo.png" alt="photolife logo"></a>
+						</div>
+						<div class="pull-right ro-d">
+							un site marca
+							<a target="_blank" href="http://www.photolife.ro"><br>
+								<img src="/images/parteneri/photolife.png" alt="photolife"></a>
+						</div>
+
+
+						<div class="pull-right ro-d ro-s">
+							Implementat de
+							<a target="_blank" href="http://www.ssl-software.com"><br>
+								SSL-Software
+							</a>
+						</div>
+
+						<div class="pull-right ro-s">
+							© ROMÂNIA SĂLBATICĂ
+							<br>
+							2010-2022
+
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="/library/html5lightbox/html5lightbox.js"></script>
+
+									<script>
+					var LL_Model ='page/project/index';
+				</script>
+						</body>
+</html>

@@ -1,0 +1,635 @@
+
+<!DOCTYPE html>
+
+<html  lang="ro" >
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="description" content="Cel mai complex documentar românesc despre Delta Dunării.">
+		<title>
+			Delta Sălbatică		</title>
+				<link
+		rel="icon" type="image/png" href="/images/favicon.png"/>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NWXGWFZP');</script>
+<!-- End Google Tag Manager -->
+
+				<link rel="stylesheet" href="/library/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/library/bootstrap-select2/css/select2.min.css">
+		<link rel="stylesheet" href="/css/custom.css?ts=2022111701"/>
+		<link rel="stylesheet" href="/css/font-awesome.css"/> 
+				<script type="text/javascript" src="/library/jquery.js"></script>
+		<script type="text/javascript" src="/library/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/library/jquery-ui.js"></script>
+		<script type="text/javascript" src="/js/romania-salbatica.js"></script>
+		<script type="text/javascript" src="/js/LL.js"></script>
+		<script type="text/javascript" src="/library/datepicker-ro-lang.js"></script>
+		
+		
+
+		
+		<meta property="og:url" content="http://www.romaniasalbatica.ro/ro/filme/delta-salbatica"/>
+		<meta property="og:type" content="article"/>
+		<meta property="og:title" content="Delta Sălbatică"/>
+		<meta property="og:description" content="Cel mai complex documentar românesc despre Delta Dunării."/>
+		<meta property="og:image" content="http://www.romaniasalbatica.ro/medias/2017/02/15/Delta Dunarii04.jpg"/>
+	</head>
+	<body  class="page-movie" >
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWXGWFZP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="/"></a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="navbar-collapse collapse" id="navbar-1" aria-expanded="false">
+										
+	<ul class="nav navbar-nav navbar-right">
+									
+		
+	 
+		
+		<li>
+		
+	<a href="/ro" title="Home">Home</a></li>
+	
+
+			
+									
+		
+	 
+		
+		<li>
+		
+	<a href="/ro/arii-protejate" title="Arii protejate">Arii protejate</a></li>
+	
+
+			
+									
+		
+	 
+		
+		<li>
+		
+	<a href="/ro/articole-si-evenimente" title="Articole">Articole</a></li>
+	
+
+			
+									
+		
+	 
+		
+		<li>
+		
+	<a href="/ro/filme" title="Filme">Filme</a></li>
+	
+
+			
+									
+		
+	 
+		
+		<li>
+		
+	<a href="/ro/proiecte" title="Proiecte">Proiecte</a></li>
+	
+
+			
+				
+									
+		
+	 
+		
+		<li>
+		
+	<a href="/ro/despre-noi" title="Despre noi">Despre noi</a></li>
+	
+
+			
+									
+					
+	 
+			<li class=" menu-icon icon4">
+		
+	<a href="https://shop.romaniasalbatica.ro/" title="Magazin">Magazin</a></li>
+	
+
+			
+									
+					
+	 
+			<li class=" menu-icon icon1">
+		
+	<a href="/ro/implica-te" title="Implică-te">Implică-te</a></li>
+	
+
+			
+									
+					
+	 
+			<li class=" menu-icon icon2">
+		
+	<a href="/ro/contact" title="Contact">Contact</a></li>
+	
+
+			
+		</ul>
+
+						</div>
+						<!-- /.navbar-collapse -->
+					</div>
+					<!-- /.container-fluid -->
+				</div>
+			</nav>
+			<div class="hero-unit">
+									<img src="/medias/2021/12/11/Delta_Dunarii_banner_01.jpg" alt="Delta Dunării - banner">
+								<div class="page-title-container">
+					<div class="container text-left">
+						<div class="page-title">Filme</div>
+<div class="page-subtitle">spectacolul oferit de natura României</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div
+				class="container text-right ">
+								
+				<span class="pull-right">
+					<a target="_blank" href="https://www.linkedin.com/company/romania-salbatica"><img class="social" src="/images/linkedin.svg"></a>
+				</span>
+				<span class="pull-right">
+					<a target="_blank" href="https://www.youtube.com/c/Rom%C3%A2niaS%C4%83lbatic%C4%83"><img class="social" src="/images/youtube.svg"></a>
+				</span>
+				<span class="pull-right">
+					<a target="_blank" href="https://open.spotify.com/album/0ue8QMIfjCt2uHP6peKNcr?si=rD11Dp5GRLSF751ybZsf7g&nd=1"><img class="social" src="/images/spotify.svg"></a>
+				</span>
+				<span class="pull-right">
+					<a target="_blank" href="https://www.instagram.com/romania.salbatica"><img class="social" src="/images/instagram.svg"></a>
+				</span>
+				<span class="pull-right">
+					<a target="_blank" href="https://www.facebook.com/romaniasalbatica"><img class="social" src="/images/facebook.svg"></a>
+				</span>
+
+			</div>
+		</header>
+
+		
+
+<div class="container color-in-blue ">	
+	<h1>Delta Sălbatică</h1>
+	<h2 class="margin-top-0"><i>Cel mai complex documentar românesc despre Delta Dunării.</i></h2>
+	<hr >
+	<div class="col-xs-12 col-sm-4">	
+		
+		<p><em><span class="my_style_green">Realizat pe parcursul a <span class="my_style_blue">5 ani</span>, de aceeași echipă care a stat în spatele proiectului <span class="my_style_blue">România Sălbatică</span>, acest film este <span class="my_style_blue">cel mai complex documentar românesc dedicat Deltei Dunării</span>. Dan Dinu și Cosmin Dumitrache au petrecut <span class="my_style_blue">162 de zile în teren</span>, unde au filmat <span class="my_style_blue">13.000 de cadre</span> care însumează peste <span class="my_style_blue">48 de ore</span>. <span class="my_style_blue">Medeea Marinescu</span> este vocea apei care spune povestea filmului, iar <span class="my_style_blue">Irina Rimes</span> interpretează melodia principală de pe coloana sonoră.</span></em></p>
+
+<p>&nbsp;</p>
+
+<p><span class="my_style_green">UNDE POȚI VEDEA FILMUL</span></p>
+
+<p>Documentarul Delta Sălbatică s-a lansat din <strong>23 octombrie în cinematografele din toată țara</strong>, iar programul poate fi găsit pe site-ul distribuitorului <a href="https://augustfilm.ro/delta-salbatica/" target="_blank">August Film</a>.</p>
+
+<p>&nbsp;</p>
+
+<p><span class="my_style_green">Programul educativ Cinema City</span></p>
+
+<p>Dacă ești cadru didactic, poți participa împreună cu elevii tăi la un program&nbsp;educativ derulat în parteneriat cu Cinema City. Poți face de acum rezervarea pentru o proiecție a filmului Delta Sălbatică. Proiecțiile din cadrul programului educativ încep din <strong>19 octombrie</strong> și sunt organizate la Cinema City în orașul tău. Poți solicita o anumită oră pentru grupul tău de elevi și vei beneficia de:</p>
+
+<ul>
+	<li>Bilete de grup la prețuri speciale;</li>
+	<li>Broșură educațională în format electronic;</li>
+	<li>Bilete gratuite pentru un supervizor al grupului;</li>
+	<li>Opțiunea de a acomoda proiecții speciale, în intervalul dorit, inclusiv la matinal.</li>
+</ul>
+
+<p>Dacă vrei să oferi elevilor tăi o experiență educativă altfel și să participi la acest program, te rugăm să trimiți un mail la adresa education@cinemacity.ro sau sebastian.nicolescu@cinemacity.ro cu următoarele detalii:</p>
+
+<ul>
+	<li>Numărul de elevi și al adulților care îi însoțesc (profesorii);</li>
+	<li>Orașul și locația Cinema City;</li>
+	<li>Intervalul orar preferat pentru vizionare Delta Sălbatică.</li>
+</ul>
+
+<p><br />
+<span class="my_style_green">PREMII &amp; FESTIVALURI</span></p>
+
+<p><strong>Premiul Publicului</strong> - Transilvania International Film Festival (TIFF), Cluj, 2026<br />
+<strong>Premiera internațională</strong> - LYNX festival, Brașov, 2026</p>
+
+<p>&nbsp;</p>
+
+<p><span class="my_style_green">INFORMAȚII</span></p>
+
+<p><strong>Anul lansării</strong>: 2026 | <strong>Limba</strong>: română | <strong>Subtitrare</strong>: engleză<br />
+<strong>Durată</strong>: 107 min | <strong>Durată mini serie</strong>: 4x50 min | <strong>Format</strong>: 4K<br />
+<strong>Regie și montaj</strong>: Dan Dinu | <strong>Imagine</strong>: Cosmin Dumitrache &amp; Dan Dinu | <strong>Scenariul</strong>: Codruța Florea &amp; Dan Dinu<br />
+<strong>Voce</strong>: Medeea Marinescu | <strong>Muzică</strong>: Alexei Țurcan | <strong>Solist</strong>: Irina Rimes | <strong>Sunet</strong>: Ioan Filip<br />
+<strong>Producători</strong>: NTD Film, August Film &amp; Avanpost Media</p>
+
+<p>&nbsp;</p>
+		<div class="col-xs-12 link-more link-read-more hidden">
+			 <a class="btn chevron-blue-down" data-toggle="collapse" data-target="#collapse-3, .fade-out">CITEȘTE MAI MULT</a>
+			 <hr class="col-xs-12 col-sm-6 pull-right">
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-8">
+		<div class="embed-responsive embed-responsive-16by9">
+ 			<iframe class="embed-responsive-item" allowfullscreen="" src="https://player.vimeo.com/video/1222452011" frameborder="0" width="500" height="281"></iframe>
+		</div> 
+	</div>
+</div>
+
+<div class="container-blue">
+	<div class="container color-in-blue">
+		<h3>Alte filme</h3>
+				
+	
+	<div class="carousel carousel-movies col-xs-12"" id="myCarousel4" >
+		
+		<div class="carousel-inner">
+			
+				
+								<div class="item active">
+							
+									
+							
+																									
+
+	<div class="col-xs-6 col-sm-2 thumbnail img-with-text">		   
+		<a href="/ro/filme/lunca-muresului">
+			<img src="/medias/2019/06/04/Lunca-Muresului_vignette.png" alt="Lunca Mureșului - thumbnail parc">
+		</a>
+		<h4><a href="/ro/filme/lunca-muresului">Lunca Mureșului</a></h4>
+		<p>Un documentar despre cea mai mare zonă umedă din vestul României</p>
+	</div>
+	
+	
+
+						
+												
+										
+							
+																									
+
+	<div class="col-xs-6 col-sm-2 thumbnail img-with-text">		   
+		<a href="/ro/filme/romania-salbatica">
+			<img src="/medias/2022/03/17/Romania_salbatica_thumb_vignette.png" alt="România Sălbatică - thumbnail parc">
+		</a>
+		<h4><a href="/ro/filme/romania-salbatica">România Sălbatică</a></h4>
+		<p>Cel mai ambițios film documentar despre natura din țara noastră.</p>
+	</div>
+	
+	
+
+						
+												
+										
+							
+																									
+
+	<div class="col-xs-6 col-sm-2 thumbnail img-with-text">		   
+		<a href="/ro/filme/povestea-romania-salbatica">
+			<img src="/medias/2022/03/17/Povestea_romania_salbatica_thumb_vignette.png" alt="Povestea România Sălbatică - thumbnail parc">
+		</a>
+		<h4><a href="/ro/filme/povestea-romania-salbatica">Povestea România Sălbatică</a></h4>
+		<p>Aventura din spatele celui mai ambițios film despre natura din țara noastră.</p>
+	</div>
+	
+	
+
+						
+												
+										
+							
+																									
+
+	<div class="col-xs-6 col-sm-2 thumbnail img-with-text">		   
+		<a href="/ro/filme/mostenirea">
+			<img src="/medias/2016/08/31/MON-dandinu-0813c_vignette.png" alt="thumbnail">
+		</a>
+		<h4><a href="/ro/filme/mostenirea">Moștenirea</a></h4>
+		<p>Povești din Munții Maramureșului, cel mai mare parc natural din România.</p>
+	</div>
+	
+	
+
+						
+												
+										
+							
+																									
+
+	<div class="col-xs-6 col-sm-2 thumbnail img-with-text">		   
+		<a href="/ro/filme/natura-brasovului">
+			<img src="/medias/2021/12/11/Regiuni_biogeografice_thumb_vignette.png" alt="Regiuni biogeografice - thumbnail parc">
+		</a>
+		<h4><a href="/ro/filme/natura-brasovului">Natura Brașovului</a></h4>
+		<p>Descoperă zonele naturale ale județului și află despre activitățile practicate în aer liber.</p>
+	</div>
+	
+	
+
+						
+												
+										
+							
+																									
+
+	<div class="col-xs-6 col-sm-2 thumbnail img-with-text">		   
+		<a href="/ro/filme/makingof1-5">
+			<img src="/medias/2022/03/17/Ciucas_thumb2_vignette.png" alt="Ciucaș - thumbnail parc">
+		</a>
+		<h4><a href="/ro/filme/makingof1-5">Making of DRS 06</a></h4>
+		<p>Află cum a luat naștere proiectul și vezi poveștile din spatele camerei.</p>
+	</div>
+	
+	
+
+						
+												
+										
+							
+																										</div>
+							<div class="item">
+												
+
+	<div class="col-xs-6 col-sm-2 thumbnail img-with-text">		   
+		<a href="/ro/filme/ciucas">
+			<img src="/medias/2022/03/17/Ciucas_thumb1_vignette.png" alt="Ciucaș - thumbnail parc">
+		</a>
+		<h4><a href="/ro/filme/ciucas">Ciucaș DRS 05</a></h4>
+		<p>Pe cărări de iarnă viscolite de vânt, printre cei mai frumoși munți din Carpații de Curbură.</p>
+	</div>
+	
+	
+
+						
+												
+										
+							
+																									
+
+	<div class="col-xs-6 col-sm-2 thumbnail img-with-text">		   
+		<a href="/ro/filme/padis-apuseni">
+			<img src="/medias/2022/03/17/Apuseni_thumb_vignette.png" alt="Apuseni - thumbnail parc">
+		</a>
+		<h4><a href="/ro/filme/padis-apuseni">Padiș-Apuseni DRS 04</a></h4>
+		<p>Lumea sculptată de ape și minunile subterane ascunse ale Parcului Natural Apuseni.</p>
+	</div>
+	
+	
+
+						
+												
+										
+							
+																									
+
+	<div class="col-xs-6 col-sm-2 thumbnail img-with-text">		   
+		<a href="/ro/filme/valea-ialomitei">
+			<img src="/medias/2022/03/17/Bucegi_thumb1_vignette.png" alt="Bucegi - thumbnail parc">
+		</a>
+		<h4><a href="/ro/filme/valea-ialomitei">Valea Ialomiței DRS 03</a></h4>
+		<p>O vizită pe râul ce formează cele mai multe chei din Parcul Natural Bucegi.</p>
+	</div>
+	
+	
+
+						
+												
+										
+							
+																									
+
+	<div class="col-xs-6 col-sm-2 thumbnail img-with-text">		   
+		<a href="/ro/filme/delta-dunarii">
+			<img src="/medias/2022/03/17/Delta_dunarii_thumb1_vignette.png" alt="Delta Dunării - thumbnail parc">
+		</a>
+		<h4><a href="/ro/filme/delta-dunarii">Delta Dunării DRS 02</a></h4>
+		<p>Locul cu cea mai mare biodiversitate din România și cea mai mare zonă umedă din Europa.</p>
+	</div>
+	
+	
+
+						
+												
+										
+							
+																									
+
+	<div class="col-xs-6 col-sm-2 thumbnail img-with-text">		   
+		<a href="/ro/filme/mestecanisul-de-la-reci">
+			<img src="/medias/2022/03/17/Mestecanisul_de_la_reci_thumb_vignette.png" alt="Mestecănișul de la Reci - thumbnail parc">
+		</a>
+		<h4><a href="/ro/filme/mestecanisul-de-la-reci">Mestecănișul de la Reci DRS 01</a></h4>
+		<p>O arie protejată mică din județul Covasna, plină de viață și de specii interesante.</p>
+	</div>
+	
+	
+
+						
+												
+										
+						</div>
+	 	</div>
+		<a class="left carousel-control" href="#myCarousel4" data-slide="prev">
+	    	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	  	</a>
+	  	<a class="right carousel-control" href="#myCarousel4" data-slide="next">
+	    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	  	</a>
+	  	
+	</div>	
+
+				
+								
+	</div>
+</div>		
+	
+
+
+		<footer>
+									<div class="container color-in-blue products-wrapper">
+					
+							<div class="col-xs-12 col-sm-4 hp-product">
+					<h3>Albumul România Sălbatică</h3>
+					<p>Cel mai amplu album de fotografie dedicat peisajelor, florei și faunei din țara noastră, realizat de fotograful Dan Dinu în decursul a 15 ani.</p>
+																																	<a href="https://romaniasalbatica.ro/ro/album-foto-romania-salbatica">
+								<img class="thumbnail-product" src="/medias/2022/03/16/Album_RS2.jpg" alt="Proiect album">
+							</a>
+																						<div class="link-more link-more-blue">
+							<span class="link-more">
+								<a href="https://romaniasalbatica.ro/ro/album-foto-romania-salbatica">CUMPĂRĂ ALBUMUL</a>
+							</span>
+						</div>
+					
+
+				</div>
+								
+							<div class="col-xs-12 col-sm-4 hp-product">
+					<h3>Filmul România Sălbatică</h3>
+					<p>Cel mai ambițios documentar despre biodiversitatea din România, o producție 100% autentică, realizată de o echipă 100% autohtonă.</p>
+																																	<a href="https://romaniasalbatica.ro/ro/filmul-romania-salbatica">
+								<img class="thumbnail-product" src="/medias/2022/03/19/Film_RS2.jpg" alt="Proiect film">
+							</a>
+																						<div class="link-more link-more-blue">
+							<span class="link-more">
+								<a href="https://romaniasalbatica.ro/ro/filmul-romania-salbatica">AFLĂ MAI MULT</a>
+							</span>
+						</div>
+					
+
+				</div>
+								
+							<div class="col-xs-12 col-sm-4 hp-product">
+					<h3>Aplicația România Sălbatică</h3>
+					<p>Cea mai complexă aplicație despre natura țării noastre, un ghid care te ține permanent conectat la evenimentele naturale din jur.</p>
+																																	<a href="https://romaniasalbatica.ro/ro/aplicatia-romania-salbatica">
+								<img class="thumbnail-product" src="/medias/2022/03/23/Aplicatie_RS2.jpg" alt="Proiect aplicație">
+							</a>
+																						<div class="link-more link-more-blue">
+							<span class="link-more">
+								<a href="https://romaniasalbatica.ro/ro/aplicatia-romania-salbatica">DESCARCĂ APLICAȚIA</a>
+							</span>
+						</div>
+					
+
+				</div>
+					
+	</div>
+
+			
+			<div class="parteneri container color-green">
+				<h4>Parteneri</h4>
+				<div class="parteneri-container">
+											<div class="partner-small">
+							<a target="_blank" href="http://www.propark.ro"><img src="/medias/2016/07/06/Propark.jpg" alt="Parteneri"></a>
+						</div>
+											<div class="partner-small">
+							<a target="_blank" href="http://www.wwf.ro"><img src="/medias/2016/07/06/WWF.jpg" alt="Parteneri"></a>
+						</div>
+											<div class="partner-small">
+							<a target="_blank" href="https://www.carpathia.org"><img src="/medias/2021/12/08/Carpathia.jpg" alt="Parteneri"></a>
+						</div>
+											<div class="partner-small">
+							<a target="_blank" href="http://www.asociatiaaer.ro/"><img src="/medias/2016/07/06/Aer.jpg" alt="Parteneri"></a>
+						</div>
+											<div class="partner-small">
+							<a target="_blank" href="http://www.zenithmaps.com"><img src="/medias/2016/07/06/Zenith.jpg" alt="Parteneri"></a>
+						</div>
+											<div class="partner-small">
+							<a target="_blank" href="http://www.photolife.ro"><img src="/medias/2016/07/06/Photolife.jpg" alt="Parteneri"></a>
+						</div>
+											<div class="partner-small">
+							<a target="_blank" href="http://www.ssl-software.com/en"><img src="/medias/2016/07/08/Ssl.jpg" alt="Parteneri"></a>
+						</div>
+											<div class="partner-small">
+							<a target="_blank" href=""><img src="/medias/2021/02/24/Europa FM.jpg" alt="Parteneri"></a>
+						</div>
+									</div>
+			</div>
+
+			<div class="container-sust">
+				<div class="sustinatori container ">
+					<h4>Susținători</h4>
+											<div class="partner-small col-xs-6 col-sm-3">
+							<a target="_blank" href="http://www.ntdfilm.ro"><img src="/medias/2021/12/10/Banner_NTD.jpg" alt="Susținători"></a>
+						</div>
+											<div class="partner-small col-xs-6 col-sm-3">
+							<a target="_blank" href="http://www.dandinu.net"><img src="/medias/2021/12/10/Banner_DanDinu.jpg" alt="Susținători"></a>
+						</div>
+											<div class="partner-small col-xs-6 col-sm-3">
+							<a target="_blank" href="http://www.forona.ro"><img src="/medias/2021/12/10/Banner_Forona.jpg" alt="Susținători"></a>
+						</div>
+											<div class="partner-small col-xs-6 col-sm-3">
+							<a target="_blank" href="https://propark.ro/ro/biosferis/"><img src="/medias/2021/12/10/Banner_Biosferis.jpg" alt="Susținători"></a>
+						</div>
+									</div>
+			</div>
+			<div class="container-copyr">
+				<div class="copyr container">
+					<div class="col-md-7 col-xs-12 no-padding">
+
+
+									
+	<ul class="list-unstyled list-inline" id="footer-ul1">
+									
+		
+	 
+		
+		<li>
+		
+	<a href="/ro/copyright" title="COPYRIGHT">COPYRIGHT  </a></li>
+    
+
+			
+									
+		
+	 
+		
+		<li>
+		
+	<a href="/ro/confidentialitate-cookies" title="CONFIDENȚIALITATE &amp; COOKIES">CONFIDENȚIALITATE &amp; COOKIES  </a></li>
+    
+
+			
+		</ul>
+
+
+					</div>
+					<div class="col-md-5 col-xs-12 no-padding">
+						<div class="pull-right ro-s">
+							<a target="_blank" href="http://www.photolife.ro"><img src="/images/parteneri/photolife_logo.png" alt="photolife logo"></a>
+						</div>
+						<div class="pull-right ro-d">
+							un site marca
+							<a target="_blank" href="http://www.photolife.ro"><br>
+								<img src="/images/parteneri/photolife.png" alt="photolife"></a>
+						</div>
+
+
+						<div class="pull-right ro-d ro-s">
+							Implementat de
+							<a target="_blank" href="http://www.ssl-software.com"><br>
+								SSL-Software
+							</a>
+						</div>
+
+						<div class="pull-right ro-s">
+							© ROMÂNIA SĂLBATICĂ
+							<br>
+							2010-2022
+
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="/library/html5lightbox/html5lightbox.js"></script>
+
+									<script>
+					var LL_Model ='page/movie/index';
+				</script>
+						</body>
+</html>

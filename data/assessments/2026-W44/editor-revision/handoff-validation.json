@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-11-01T07:23:34.173Z",
+  "originalProofHash": "ecc21d22cf65c4dd7e5dff08981442de6cfd4cb2ab098287f79c01920ffe9e49",
+  "revisedProofHash": "cd84f3c743a02b81525395730f4c2fc6cd515f195efa89f34c61a72b648b3511",
+  "assessmentScoresAndJudgmentsUnchanged": true,
+  "originalCompletionAndEmailReceiptsRetained": true,
+  "keptArticleCopyUnchanged": 7,
+  "coverage": {
+    "input": 1911,
+    "excluded": 10,
+    "assessed": 1901,
+    "missing": 0,
+    "missingIndices": [],
+    "candidates": 163,
+    "verified": 14
+  },
+  "weekId": "2026-W44",
+  "draftApproved": false,
+  "proofPath": "/home/user/workspace/repo/data/assessments/2026-W44/editor-revision/editor-proof.html",
+  "newsletterPath": "/home/user/workspace/repo/data/assessments/2026-W44/editor-revision/newsletter.html",
+  "deliverySha256": "a1be0d296f8436ced16afc6394d66d2990b35c08e61f9621bf9ccd0c65031dbc"
+}

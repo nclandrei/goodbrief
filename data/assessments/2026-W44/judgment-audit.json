@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-10-31T07:09:50.376Z",
+  "assessmentHash": "bebc5bda86824a5c20e857cb0f87c188e2763bac1ddc47a88319ac7cf7132739",
+  "assessed": 1901,
+  "repeatedSixWordPhrases": [
+    {
+      "phrase": "balonul de aur al lui kane",
+      "indices": [
+        385,
+        433
+      ]
+    },
+    {
+      "phrase": "pentru noah wyle este clasament monden",
+      "indices": [
+        412,
+        644
+      ]
+    },
+    {
+      "phrase": "lui kane după balonul de aur",
+      "indices": [
+        459,
+        1209
+      ]
+    },
+    {
+      "phrase": "este promovare de divertisment fără acces",
+      "indices": [
+        496,
+        740
+      ]
+    },
+    {
+      "phrase": "promovare de divertisment fără acces cultural",
+      "indices": [
+        496,
+        740
+      ]
+    },
+    {
+      "phrase": "depinde de debitul dunării și rămâne",
+      "indices": [
+        576,
+        788
+      ]
+    }
+  ]
+}

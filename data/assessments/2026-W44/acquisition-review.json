@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-31T06:02:52.721Z",
+  "originMainSyncedAtCommit": "1c03f27d42f0e910d1f4a0d7f603faad9e8a402a",
+  "rawRows": 1911,
+  "rawLastUpdated": "2026-10-31T04:50:55.415Z",
+  "lfsObjectsVerifiedAgainstPointerHashAndSize": 2,
+  "historicalIssueFilesHydrated": 40,
+  "priorDraftFilesParsed": 43,
+  "currentWeekDraftAndProofAbsentBeforeFreeze": true,
+  "feedHealthExit": 1,
+  "observedFeedHealth": {
+    "usableFeeds": 10,
+    "configuredFeeds": 11,
+    "emptyFeed": "Europa Liberă",
+    "emptyFeedHttpStatus": 200,
+    "emptyFeedParsedItems": 0,
+    "emptyFeedUsableItems": 0
+  },
+  "sourceLimitationForEditorialReview": "Fluxul RSS Europa Liberă a răspuns cu HTTP 200, dar nu a furnizat niciun articol utilizabil la verificarea de sâmbătă. Nu susținem că toate cele 11 fluxuri sunt sănătoase; selecția va reflecta știrile disponibile în pool-ul înghețat.",
+  "automaticExtraTestEmailAuthorized": false,
+  "subscriberApprovalAuthorized": false
+}

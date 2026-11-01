@@ -1,0 +1,28 @@
+{
+  "sourceChecks": [
+    {
+      "index": 1537,
+      "url": "https://agerpres.ro/cultura-media/2026/10/30/concertul-lord-of-the-strings-deschide-vineri-festivalul-sonoro--1608257",
+      "textFiles": ["sources/1537.txt", "sources/1537-eventbook.txt"],
+      "claims": "Am citit articolul integral Agerpres și programul real de pe Eventbook. Festivalul SoNoRo se desfășoară între 30 octombrie și 15 noiembrie 2026 în București și Cluj-Napoca; programul include artiști români și invitați internaționali. Ateneul Român găzduiește Războiul romanticilor pe 4 noiembrie și Cosmic Chord pe 7 noiembrie, ambele la ora 19. Eventbook confirmă aceste două concerte cu bilete și prezintă și evenimente după dimineața de luni, 2 noiembrie.",
+      "caveats": "Nu reduc știrea la deschiderea din 30 octombrie, deja trecută la trimitere. Nu afirm acces gratuit general sau disponibilitate garantată a biletelor: Eventbook afișează și concerte sold out. Datele de 4 și 7 noiembrie sunt încă viitoare la trimiterea de luni; reducerile și prețurile depind de categoria spectatorului și de concert, așa că nu le generalizez în copy.",
+      "verdict": "verified"
+    },
+    {
+      "index": 625,
+      "url": "https://www2.pmb.ro/pmb/comunicate/comunicat_presa.php?msj=2328",
+      "textFiles": ["../sources/625.txt", "sources/625-pmb.txt"],
+      "claims": "Am citit comunicatul oficial PMB din 27 octombrie 2026, Valea Saulei, a treia arie naturală protejată în București. Primăria confirmă explicit proiectul votat de consilieri, poziția pe malul nordic al lacului Plumbuita, suprafața raportată de 5,2 hectare și peste 80 de specii de păsări. Am consultat și documentația primară publicată pentru punctul 20 al ședinței CGMB din 27 octombrie, https://doc.pmb.ro/consiliu/sedinte/592/oz/13678.pdf; ea prevede regimul de interes local. Articolul ProTV este păstrat ca proveniență din pool, dar confirmarea votului vine acum de la autoritatea municipală, nu din repetarea știrii în presă.",
+      "caveats": "Verdictul verifică votul anunțat de PMB și detaliile ecologice, nu întregul parcurs juridic. PDF-ul este un proiect avizat, cu numărul și data hotărârii adoptate necompletate, nu actul adoptat final. Nu am verificat numărul HCGMB, publicarea și data intrării în vigoare, înscrierea în cărțile funciare, planul de management sau amenajarea realizată. PMB descrie cadastru și accesul public la viitor. Studiul însumează 30.934 și 21.976 m², adică 52.910 m², deși folosește 5,2 hectare; copy spune peste cinci hectare, fără precizie falsă. Nu afirm numărul exact al voturilor și nu numesc zona parc nou deschis. Paginile au fost citite live pe 1 noiembrie, nu ca snapshot arhivat la data votului.",
+      "verdict": "verified"
+    },
+    {
+      "index": 1343,
+      "url": "https://startupcafe.ro/chinezii-de-la-hexing-deschid-la-timisoara-un-centru-regional-de-service-pentru-echipamente-fotovoltaice-si-baterii-de-stocare-a-energiei-109366",
+      "textFiles": ["sources/1343.txt"],
+      "claims": "Am recitit articolul integral StartupCafe pe 1 noiembrie. Hexing dezvoltă hubul de service Livoltek la Timișoara pentru invertoare fotovoltaice și sisteme de stocare, plus testare și instruire. Compania spune că anumite reparații presupuneau expedierea în China și aproximativ patru luni; estimează două–patru săptămâni prin capacitatea locală, în funcție de complexitate și piese. Selecția explicită a editorului include acum această știre; evaluarea și scorurile inițiale rămân neschimbate.",
+      "caveats": "Centrul este în dezvoltare, nu demonstrat ca integral operațional. Nu există timpi de reparații locale măsurați în articol, iar estimarea aparține companiei și depinde de disponibilitatea pieselor. Nu promit service pentru orice marcă sau o dată de deschidere care nu este anunțată. Noua selecție a editorului schimbă decizia de includere în ediție, nu transformă estimările în rezultate deja livrate.",
+      "verdict": "verified"
+    }
+  ]
+}

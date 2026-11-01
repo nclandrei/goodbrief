@@ -1,0 +1,93 @@
+{
+  "weekId": "2026-W44",
+  "generatedAt": "2026-10-31T07:05:20.564Z",
+  "selected": [
+    {
+      "id": "9c1b394af614fb53",
+      "title": "CNAS arată online unde găsești tratamente prin programele naționale",
+      "summary": "CNAS a lansat un instrument online în care poți căuta unitățile medicale care oferă tratamente prin programele naționale de sănătate. Alegi programul și zona care te interesează, iar platforma îți arată furnizorii și date despre serviciile finanțate; nu este un sistem de programări.",
+      "category": "local-heroes",
+      "positivity": 95,
+      "impact": 88,
+      "audienceRelevance": 98
+    },
+    {
+      "id": "fb018bf399d10f19",
+      "title": "Un concert caritabil a strâns 270.000 de euro pentru tineri artiști",
+      "summary": "Concertul Regal Caritabil de la Ateneul Român a strâns 270.000 de euro pentru programul Tinere Talente. Banii vor susține burse și mentorat pentru tineri muzicieni și artiști vizuali cu posibilități financiare limitate, iar selecția pentru 2027 începe în noiembrie.",
+      "category": "local-heroes",
+      "positivity": 93,
+      "impact": 75,
+      "audienceRelevance": 85
+    },
+    {
+      "id": "b4b8e0d76a21bbc1",
+      "title": "Elevii din 15 școli clujene vor decide cum folosesc 5.000 de euro",
+      "summary": "Primăria Cluj-Napoca anunță câte 5.000 de euro pentru fiecare dintre cele 15 școli gimnaziale participante la un program de bugetare participativă. Elevii propun îmbunătățiri pentru școala lor și votează proiectul câștigător pe 26 noiembrie, înainte de implementare.",
+      "category": "local-heroes",
+      "positivity": 92,
+      "impact": 74,
+      "audienceRelevance": 84
+    },
+    {
+      "id": "2e086d91c7d4e65c",
+      "title": "Apa din rețeaua din Curtea de Argeș este declarată din nou potabilă",
+      "summary": "După aproape un an de probleme, operatorul Aquaterm anunță că apa furnizată în Curtea de Argeș și comunele limitrofe este din nou potabilă, în urma monitorizării și autorizării DSP Argeș. De la 1 noiembrie revine și tariful întreg al apei, redus în perioada în care nu putea fi consumată.",
+      "category": "wins",
+      "positivity": 95,
+      "impact": 87,
+      "audienceRelevance": 92
+    },
+    {
+      "id": "3580e903a1bbde57",
+      "title": "Laura Bogdan a câștigat aurul european Under-23 la judo",
+      "summary": "Laura Bogdan a câștigat categoria de 48 kg la Campionatele Europene de judo Under-23 de la Napoli. În finala de vineri a învins-o pe belgianca Lotte Vandevoort.",
+      "category": "wins",
+      "positivity": 96,
+      "impact": 53,
+      "audienceRelevance": 77
+    },
+    {
+      "id": "961d7bcf3550f359",
+      "title": "România a primit toate cele 20 de trenuri electrice din contractul PESA",
+      "summary": "PESA a încheiat livrarea și recepția celor 20 de trenuri electrice cu câte trei vagoane, destinate rutelor de mediu și lung parcurs din România. Contractul include mentenanță în țară pentru 15 ani; recepția lotului nu înseamnă că toate trenurile circulă deja cu pasageri.",
+      "category": "green-stuff",
+      "positivity": 97,
+      "impact": 91,
+      "audienceRelevance": 98
+    },
+    {
+      "id": "0dc76746ef07bdcd",
+      "title": "Resturile din piețele Timișoarei ajung la o stație de biogaz",
+      "summary": "Peste 120 de tone de resturi de fructe și legume din piețele Timișoarei au fost colectate în două luni și duse la o stație de biogaz, unde sunt folosite pentru electricitate și căldură. Primăria vrea să extindă colectarea separată și către restaurante și gospodării.",
+      "category": "green-stuff",
+      "positivity": 94,
+      "impact": 78,
+      "audienceRelevance": 93
+    },
+    {
+      "id": "bac0f9163108fef4",
+      "title": "Delta Sălbatică aduce natura în cinema și la orele de mediu",
+      "summary": "Documentarul Delta Sălbatică, lansat în cinematografe pe 23 octombrie, are și proiecții pentru grupuri școlare la Cinema City, cu tarife speciale și o broșură educațională. După film, discuțiile despre biodiversitate pot continua cu quiz-urile din aplicația gratuită România Sălbatică.",
+      "category": "green-stuff",
+      "positivity": 95,
+      "impact": 72,
+      "audienceRelevance": 92
+    },
+    {
+      "id": "ebdb261c6b94ac1c",
+      "title": "Trei parcuri solare de aproximativ 130 MW livrează energie în rețea",
+      "summary": "Parcurile fotovoltaice de la Țăndărei, Bucovăț și Căzănești sunt operaționale și livrează electricitate în rețeaua națională, anunță OMV Petrom și Renovation. Au împreună aproximativ 130 MW putere instalată, după investiții de circa 78 de milioane de euro.",
+      "category": "green-stuff",
+      "positivity": 96,
+      "impact": 88,
+      "audienceRelevance": 92
+    }
+  ],
+  "wrapperCopy": {
+    "greeting": "Bună dimineața!",
+    "intro": "Săptămâna asta, veștile bune se văd în lucruri concrete: apă potabilă din nou la robinet, un loc mai simplu în care să cauți tratamente și resturi din piețe transformate în energie. Avem și puțină Deltă pe marele ecran, dacă îți trebuie o pauză de la ecranul mic.",
+    "signOff": "Îți dorim o săptămână cu timp și pentru ce merge bine.\nNe revedem lunea viitoare,\nGood Brief",
+    "shortSummary": "Apă din nou potabilă la Curtea de Argeș, tratamente mai ușor de găsit, trenuri electrice livrate și Delta Sălbatică la cinema."
+  }
+}

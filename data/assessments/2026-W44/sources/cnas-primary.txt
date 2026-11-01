@@ -1,0 +1,34 @@
+Programe Naționale de Sănătate Curative – CNAS
+Casa Națională de Asigurări de Sănătate
+Programe Naționale de Sănătate Curative
+An
+Program
+Subprogram
+Graficele nu se pot afișa în această previzualizare.
+Pagina folosește JavaScript, care nu rulează în previzualizările de fișiere (e-mail, WhatsApp, aplicația Fișiere, previzualizarea din aplicații de chat).
+Deschideți pagina într-un browser – Chrome, Safari, Edge – sau de pe adresa ei din intranet.
+1
+Plăți efectuate
+Evoluția anuală a plăților
+2
+Structura plăților
+Plăți pe programe
+Clic pe un program pentru a filtra întreaga pagină
+Structura plăților pe ani
+Ponderea programelor în totalul plăților, inclusiv cost-volum · %
+Subprograme
+Cost-volum
+3
+Bolnavi tratați
+Bolnavi tratați
+CSV
+4
+Furnizori de servicii medicale
+Furnizori de servicii medicale aflați în relație contractuală cu CAS
+Activitate
+CSV
+5
+Tabel plăți pe ani
+Tabel program × an
+Total plățiPlăți programCost-volum
+CSV
