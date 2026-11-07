@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-11-07T07:52:30.877Z",
+  "kind": "editor-requested-domain-correction",
+  "articleId": "98381a7b47fffeab",
+  "originalProofHash": "1912383d22ed85e33bfb376b5d279bed4116780d43747d2586c5411899db96f9",
+  "revisedProofHash": "c308cc20924301b4a9d6dd6981ea0a1fd5ab810f1269960a54f332d6cdb9b82a",
+  "draftHash": "f51de535a4f885628e4c7305688f3c500906a8cf53a17cf6c8c6b5b9fa8a368b",
+  "assessmentScoresAndJudgmentsUnchanged": true,
+  "originalCompletionAndEmailReceiptsRetained": true,
+  "changedArticleCount": 1,
+  "changedField": "summary",
+  "oldDomain": "LecțiiDeEconomie.ro",
+  "newDomain": "lectiideeconomie.ro",
+  "sourceArticleUrl": "https://www.edupedu.ro/resurse-profesori-lectii-gratuite-de-economie-cu-simulari-interactive-si-planuri-de-lectie-deschise-oricarui-profesor-platforma-lectiideeconomie-se-acceseaza-cu-un-cod-qr/",
+  "sourceArticleUrlUnchanged": true,
+  "updatedProofEmailed": false,
+  "coverage": {
+    "input": 1919,
+    "excluded": 11,
+    "assessed": 1908,
+    "missing": 0,
+    "missingIndices": [],
+    "candidates": 245,
+    "verified": 10
+  },
+  "weekId": "2026-W45",
+  "draftApproved": false,
+  "proofPath": "/home/user/workspace/repo/data/assessments/2026-W45/editor-revision/editor-proof.html",
+  "newsletterPath": "/home/user/workspace/repo/data/assessments/2026-W45/editor-revision/newsletter.html",
+  "deliverySha256": "ec2b66f6ac3d43ee802ded1df3846389a98d5d77172d12a1b77ab315743e03db"
+}

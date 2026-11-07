@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-11-07T07:17:30.080Z",
+  "assessmentHash": "d47783bcd20e1186e09844d04478eac1b67ad83e8ced048671f0ecda52f4305d",
+  "assessed": 1908,
+  "repeatedSixWordPhrases": [
+    {
+      "phrase": "cu legătură românească slabă față de",
+      "indices": [
+        4,
+        969
+      ]
+    },
+    {
+      "phrase": "tacit de senat și are efecte",
+      "indices": [
+        318,
+        1039
+      ]
+    },
+    {
+      "phrase": "de senat și are efecte disputate",
+      "indices": [
+        318,
+        1039
+      ]
+    },
+    {
+      "phrase": "colecția de monede care fisurează casa",
+      "indices": [
+        725,
+        1278
+      ]
+    },
+    {
+      "phrase": "trimiterea firmelor și angajaților în judecată",
+      "indices": [
+        902,
+        1111
+      ]
+    },
+    {
+      "phrase": "a lui hegseth este speculație despre",
+      "indices": [
+        1194,
+        1652
+      ]
+    },
+    {
+      "phrase": "de până la 15 000 lei",
+      "indices": [
+        1591,
+        1634
+      ]
+    }
+  ]
+}

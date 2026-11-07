@@ -1,0 +1,140 @@
+VoTriX, soluția care le oferă "auz" și "glas" persoanelor surde și
+Semn de Bine
+Afaceri cu Impact
+Romani din Lume
+Antreprenoriat la feminin
+MIND Your Business
+Green Start-Up
+Aboneaza-te
+Contul tau
+Profil
+Notificari
+Logout
+Semn de Bine
+Afaceri cu Impact
+Romani din Lume
+Antreprenoriat la feminin
+MIND Your Business
+Green Start-Up
+Cauta
+mai multe rezultate
+Abonează-te la start-up.ro
+Ca sa primesti prin email cele mai noi articole.
+Am cont
+Aboneaza-te
+Prin abonarea la start-up.ro confirm ca am peste 16 ani si am citit si sunt de acord cu termenii si conditiile de utilizare si cu acordul privind prelucrarea datelor personale si doresc sa primesc ultimele noutati publicate pe start-up.ro pe adresa de e-mail *
+Lectură de 7 min
+3 Noiembrie 2026
+Citește ultimele noutăți despre Startups | start-up.ro
+Când vorbirea devine text, oricine o poate înțelege mai ușor: VoTriX soluția pentru persoane surde și hipoacuzice născută de românul care a mentorat dezvoltarea Alexa la Amazon
+Irina Achim
+Abonează-te pe
+Adaugă-ne ca sursă preferată
+VoTriX transformă vorbirea în text în timp real și textul înapoi în vorbire. O soluție care poate face viața persoanelor surde și hipoacuzice un pic mai ușoară. Iar ideea a venit de la un profesor român care a mentorat și echipa din spatele Alexa, la Amazon. Iar acum, același inginer construiește VoTriX alături de o fostă jurnalistă. Invitația la Uniunea Europeană a Surzilor la Parlamentul European le dă fondatorilor încrederea necesară că au atras atenția lumii cu produsul lor.
+ÎN ARTICOL
+Vorbire fără bariere
+De la transcriere la comunicare universală
+Puntea de comunicare pentru persoanele surde în orice moment al zilei
+Imaginează-ți că mergi la o instituție a statului. Ai din start emoții pentru că sunt șanse mari să fi uitat un document sau să nu ai ordinea bună a actelor și să fii certat la coadă. Adaugă peste anxietatea de birocrație și o dizabilitate. Imaginează-ți că nu auzi sau că ai auz foarte slab. Și acum imaginează-ți un om de la ghișeu care-ți dă indicații. Reușești să înțelegi ceva, știi dacă ai depus dosarul corect, poți pleca acasă în liniște? Dar dacă pe un ecran, la ghișeu, tot ce spune ofițerul de caz apare în text scris în câteva secunde. Parcă altfel curge comunicarea.
+Iar asta e soluția pe care o dezvoltă o echipă de români, VoTriX: transformă vorbirea în text în timp real și textul înapoi în vorbire, cu traducere automată între limbi.
+”Când cineva vorbește, cuvintele apar pe ecran în fracțiuni de secundă. Persoana surdă răspunde vorbind sau scriind, iar dacă scrie, VoTriX citește mesajul cu voce tare pentru interlocutor”, ne spune Ruana, cofondatoarea soluției.
+Vorbire fără bariere
+Tot ea ne mai spune câteva specificații ale soluției VoTriX: recunoașterea vocală poate rula direct pe telefon, fără internet, astfel încât conversația nu părăsește dispozitivul. Pentru instituții, întregul sistem rulează pe serverul lor propriu și nu stochează conversațiile. Traducerea acoperă peste 200 de limbi.
+Vest Ventures anunță cele 14 startup-uri selectate în a doua cohortă a acceleratorului
+Cea mai complexă componentă este VoTriX Call: persoana surdă sună la orice număr obișnuit, citește în timp real ce i se spune și răspunde, iar cel apelat nu trebuie să instaleze nimic.
+Practic vorbirea și înțelegerea depășește orice bariere ale dizabilității cu ajutorul tehnologiei în spatele căreia stă o echipă dedicată.
+Aceasta este condusă de prof. George Rusu, fondatorul Rolaxit Innovation, cu peste 60 de ani de experiență în informatică și studii postuniversitare de machine learning la Stanford: de la lucrul pe primul calculator din România până la mentoratul echipelor care au dezvoltat asistentul vocal Alexa la Amazon. ”Un om cât un Univers, cum îmi place să spun”, după cum ni l-a descris chiar interlocutoarea noastră, Ruana Senopol.
+Ea este jurnalistă de formație și a lucrat și în administrație, ca manager de proiecte europene. ”Tot ce am învățat despre arta comunicării m-a ajutat enorm în dezvoltarea produsului: să structurez informația, cerințele și așteptările pe care le transmit agenților AI cu care lucrăm, astfel încât să obținem exact produsul pe care ni-l dorim”, adaugă cofondatoarea.
+Neconferința UMANI: prima ediție a evenimentului dedicat oamenilor ”schimbă-lume”
+Alături de ei mai este și Cristian Senopol, care se ocupă de marketing și dezvoltarea afacerii, cu peste 15 ani de experiență în vânzări și strategie comercială. ”Datorită lui, VoTriX a trecut deja granițele țării și a captat interesul organizațiilor persoanelor cu deficiențe de auz din Germania și Austria”. Echipa completă numără și cinci alți colegi, toți din alte țări ale Uniunii Europene.
+Dar VoTriX nu s-a născut direct ca un răspuns la problema persoanelor surde și hipoacuzice. George Rusu este familiarizat cu dezvoltarea asistenților vocali. A făcut-o pentru Amazon, dar înainte de asta a avut un parcurs în tehnologie destul de vast: în tinerețe a fost unul dintre programatorii primului calculator funcțional românesc (CIFA-3) și ulterior a cofondat companii importante de telecomunicații (cum ar fi Euroweb).
+Înainte de VoTrix, în 2020, antreprenorul povestea cu ZF despre un produs similar, Scriptoman, un serviciu de transcriere şi traducere automată în 110 limbi.
+Cofondatoarea lui ne confirmă că soluția a apărut inițial ca o necesitate în dialogul cu partenerii lor vorbitori de limbă engleză:
+”Multe dintre sunetele limbii engleze, mai ales consoanele, sunt de frecvență înaltă. Odată cu înaintarea în vârstă, unele persoane nu mai percep aceste frecvențe. Asta face ca până și un vorbitor fluent de engleză, cum este prof. Rusu, să piardă uneori părți din conversație. Așa a venit ideea ca domnul profesor să vadă pe telefon, transcris în timp real, ceea ce spun ceilalți. Foarte repede ne-am dat seama că aceasta este o soluție și pentru persoanele surde și hipoacuzice: limbajul semnelor nu este universal și nu îl cunoaște toată lumea, în schimb textul de pe ecran poate fi înțeles de oricine, în orice limbă.”
+De la transcriere la comunicare universală
+Odată ce au avut textul pe ecran, au știu că soluția are o aplicabilitate mai mare și mai de impact decât un serviciu de transcriere.
+”Persoanele surde și hipoacuzice se lovesc zilnic de același zid: la medic, la ghișeu, la școala copilului sau la telefon nu au un interpret disponibil pe loc. Interpreții de limbaj al semnelor sunt puțini, iar o programare se face cu zile înainte, dar viața nu așteaptă o programare. Mulți oameni depind de altcineva pentru un simplu telefon: la medic, la bancă sau la un părinte. Noi vrem ca persoana surdă să poată comunica singură, imediat, în propriile cuvinte”, ne explică Ruana despre problema pe care vor s-o rezolve în prezent.
+Iar contextul lansării e clar unul favorabil, și asta se datorează și directivei europene privind accesibilitatea (Directiva UE 2019/882), despre care cofondatoarea ne spune că se aplică din iunie 2025 și obligă tot mai mulți furnizori de servicii să ofere canale de comunicare accesibile.
+”Convenția ONU privind drepturile persoanelor cu dizabilități cere același lucru instituțiilor publice. Obligația există, însă interpreții nu ajung pentru toate situațiile. VoTriX transformă această obligație într-o soluție practică, disponibilă imediat. Pentru scalare, ne oferă un argument foarte clar în fața instituțiilor: le ajutăm să își îndeplinească o obligație legală, iar pentru că sistemul rulează pe serverul lor, datele sensibile rămân în interior, conform GDPR.”
+Iar confirmarea că ceea ce au construit e o reală necesitate vine chiar de la cei care au dat și actul accesibilității. Astfel, echipa VoTriX este invitată pe 9 decembrie la evenimentul organizat de Uniunea Europeană a Surzilor (European Union of the Deaf – EUD) la Parlamentul European. Asta le dă încredere că 2027 va fi un an foarte promițător.
+Mai mult, un alt indiciu că sunt pe drumul cel bun a venit și de la Federația Germană a Persoanelor Hipoacuzice (DSB), după prezentarea de la Berlin, cu care sunt în discuții pentru un parteneriat. De la ei au avut și un feedback care a fucnționat ca o validare: DSB a descris VoTriX astfel - „acum o persoană surdă din Germania poate vorbi la telefon cu cineva care nu poate vorbi, din America.”
+Dar până să ajungă aici, au avut și ei obstacolele lor specifice inovatorilor. În cazul VoTriX, au fost nevoiți să explice că produsul lor nu este doar o aplicație de transcriere, ci un sistem de comunicare autonom.
+”Face ca oricine să se înțeleagă cu oricine, prin voce sau text, în peste 200 de limbi, fără ca interlocutorul să aibă nevoie de aplicație, de cont sau să vorbească aceeași limbă. Poate fi un chat de buzunar pentru o singură persoană sau un sistem de comunicare propriu pentru o întreagă instituție”, sumarizează Ruana.
+Cofondatoare își mai amintește că, la început, când rugau pe cineva să testeze, ținea VoTriX deschis pe un telefon și, alături, Google Translate. Spunea un cuvânt și se oprea să vadă ce apare pe ecran. ”Ne-a fost greu să explicăm că VoTriX este făcut pentru conversație firească: vorbești cursiv, așa cum vorbesc două persoane între care nu există nicio barieră.”
+Astfel, acum, VoTriX poate fi folosit sub mai multe forme și nevoi:
+VoTriX – conversația față în față, pe un singur telefon, inclusiv fără internet;
+VoTriX Share – fiecare persoană folosește propriul telefon, iar interlocutorul intră printr-un link sau un cod QR, fără să instaleze nimic;
+VoTriX Teams – un vorbitor, un grup întreg care citește, fiecare în limba lui: conferințe, cursuri, școli pentru copii cu deficiențe de auz;
+VoTriX Call – apeluri telefonice reale, către orice număr;
+DoTriX – traducerea documentelor (formulare, decizii, contracte), cu păstrarea exactă a formatului;
+VoTriX PC – întregul sistem pe serverul instituției.
+”Ne adresăm spitalelor, primăriilor, ghișeelor publice, școlilor, universităților și angajatorilor. Sistemul este la fel de util în comunicarea cu persoanele care nu vorbesc limba locală: turiști, imigranți sau angajați străini.”
+Puntea de comunicare pentru persoanele surde în orice moment al zilei
+Concurența există, dar din ce știe cofondatoare niciuna care să acopere întreaga paletă de servicii, ci doar bucăți care rezolvă părți din problemă: subtitrarea automată de pe telefoane, care arată ce se spune, dar nu îi permite persoanei surde să răspundă prin același sistem; aplicațiile de transcriere live; serviciile de releu cu operator sau interpret uman, foarte valoroase, dar cu program, cozi de așteptare și disponibilitate limitată.
+”Din câte știm, nicio soluție nu le reunește pe toate într-un singur sistem: conversație în ambele sensuri, nu doar subtitrare; apeluri telefonice reale către orice număr; conversații de grup; traducere în peste 200 de limbi; funcționare offline; și varianta instalată pe serverul instituției, cu datele care nu ies din clădire.
+”VoTriX nu înlocuiește interpreții și limbajul semnelor. Este puntea disponibilă imediat pentru toate momentele de zi cu zi dintre ele.”
+Până în prezent, VoTriX a avut finanțare strict din partea companiei-mamă, Rolaxit Innovation. Iar ca model de business, se bazează pe clienți instituționali și comerciali, nu pe clientul final, care poate fi persoana surdă sau turistul străin.
+”Concret, o bancă, o clinică sau o instituție care are VoTriX implementat oferă acces egal și persoanelor cu deficiențe de auz. Clientul intră în sediu, scanează un cod QR și din acel moment vede pe propriul telefon tot ce i se comunică. Poate întreba orice, în deplină discreție, și pleacă lămurit. Pentru persoana surdă, accesul este gratuit: costul îl suportă instituția.”
+Următori pași pentur VoTrix sunt să testeze soluția cu organizațiile persoanelor surde din Germania și Austria, să participe la evenimentul EUD de la Parlamentul European și să aibă și primele adopții ale soluției în anumite instituții.
+”Pe termen lung, visul nostru este ca oriunde în lume o persoană surdă să poată scana un cod QR la ghișeu sau la medic și să fie servită complet, în limba ei.”
+Recomandarile noastre:
+Paște 2026: cât costă un cozonac plin cu de toate, în București
+Sursa retail.ro
+BMW iX5 se încarcă în doar 22 de minute într-un proiect demonstrativ
+Sursa green.start-up.ro
+Abonează-te pe
+Irina Achim
+Prezentă în afacerile creative ale orașului de peste 13 ani, Irina urmărește poveștile antreprenorilor români și le scoate apoi la lumină. Pasionată de toți care au avut curaj să pornească un start-up, caută motivația care a condus la povești cu inspirație și ambalează experiențele celor care au încercat, cu focus pe zona de wellbeing, horeca, antreprenoriat feminin. În căutare de povești despre business-uri care au creativitate la fundație sau impactul ca scop.
+Citeste mai departe:
+3 Noiembrie 2026
+Primul an în afaceri | Cum alegi codurile CAEN potrivite pentru firma ta?
+3 Noiembrie 2026
+Apple ar pregăti trei noi modele iPad pentru prima jumătate a anului 2027, inclusiv iPad Air OLED
+mai multe despre:
+votrix
+solutie surzi
+solutie persoane surde
+solutie persoane hipoacuzice
+aplicatie pentru surzi
+6 Noiembrie 2026
+Vest Ventures anunță cele 14 startup-uri selectate în a doua cohortă a acceleratorului
+4 Noiembrie 2026
+Roweb dezvoltă un agent vocal AI care preia apelurile și gestionează programările pentru clinici
+3 Noiembrie 2026
+După ce a anunțat vânzarea Flanco, investitorul Iulian Stanciu vine la Ginger Night by Bravva Angels
+Pe aceeasi tema:
+3 Noiembrie 2026
+DefCamp 2026: 19 competiții de hacking etic, premii de peste 35.000 de euro și dezbateri despre AI
+2 Noiembrie 2026
+Wonderful lansează AI Gateway, prin care companiile pot urmări cât le costă fiecare activitate realizată cu AI
+3 Noiembrie 2026
+Clout Pact, platforma unui român din Olanda prin care brandurile plătesc creatorii în funcție de vizualizări
+30 Octombrie 2026
+4 startup-uri pe scena PROW 2026 care vor primi investiție de la Vest Ventures. Suma totală investită e de 1 milion de euro
+2 Noiembrie 2026
+Kulth, startup-ul românesc care aduce AI-ul în galerii, caută 1 milion de dolari pentru lansarea în SUA
+29 Octombrie 2026
+ApiFirme.dev: datele fiscale ale clienților tăi, într-un singur loc
+Cine suntem, ce vrem?
+Acord de confidențialitate
+Termeni si conditii
+Sitemap
+Arhiva
+Contact
+© 2026 start-up.ro
+Nu pleca
+Te-ar putea interesa si urmatoarele:
+×
+3 Noiembrie 2026
+Primul an în afaceri | Cum alegi codurile CAEN potrivite pentru firma ta?
+3 Noiembrie 2026
+Apple ar pregăti trei noi modele iPad pentru prima jumătate a anului 2027, inclusiv iPad Air OLED
+6 Noiembrie 2026
+Vest Ventures anunță cele 14 startup-uri selectate în a doua cohortă a acceleratorului
+Inchide
+Abonează-te la start-up.ro
+Ca sa primesti prin email cele mai noi articole.
+×
+Aboneaza-te
+Prin abonarea la start-up.ro confirm ca am peste 16 ani si am citit si sunt de acord cu termenii si conditiile de utilizare si cu acordul privind prelucrarea datelor personale si doresc sa primesc ultimele noutati publicate pe start-up.ro pe adresa de e-mail *
+Inchide

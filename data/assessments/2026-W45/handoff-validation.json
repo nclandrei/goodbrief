@@ -1,0 +1,22 @@
+{
+  "weekId": "2026-W45",
+  "assessmentComplete": true,
+  "editorReady": true,
+  "workerStatus": "complete",
+  "originalDeadline": "2026-11-07T07:33:37.046Z",
+  "input": 1919,
+  "assessed": 1908,
+  "excluded": 11,
+  "missing": 0,
+  "verified": 10,
+  "selected": 10,
+  "greenStories": 3,
+  "spotChecks": 26,
+  "editorDelivery": "delivered",
+  "draftApproved": false,
+  "subscriberManifestExists": false,
+  "separateTestSent": false,
+  "totalElapsedMs": 4434058,
+  "assessmentElapsedMs": 3276849,
+  "proofHash": "1912383d22ed85e33bfb376b5d279bed4116780d43747d2586c5411899db96f9"
+}

@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-11-07T07:12:45.080Z",
+  "inputHash": "d784e13717567df9fc80cfa0cd761bc66a5e6b3fa981cc9859a0ffbbc03889f1",
+  "assessmentHash": "d47783bcd20e1186e09844d04478eac1b67ad83e8ced048671f0ecda52f4305d",
+  "input": 1919,
+  "excluded": 11,
+  "assessed": 1908,
+  "missing": 0,
+  "missingIndices": [],
+  "candidates": 245,
+  "verified": 10,
+  "complete": true
+}
