@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-11-14T08:04:32.096Z",
+  "weekId": "2026-W46",
+  "stage": "editor-approved",
+  "authorization": "Scoate stirea cu cei 4 liceeni. Dupa care, ship all changes, si lock in editia sa fie trimisa luni.",
+  "approvedBy": "user_01KAR8T4PDCMSD831TGZX0PZHP",
+  "proofHash": "6a1a4b2e30b1b0848f02eeb490fa0a28de5949fd852c061cb09a8dc3461623c9",
+  "approvedDraftHash": "b1b2f771935d683b2a87ec3830063e4585b98e5406bc56d8854c5bb3ef7fd2bf",
+  "deliverySha256": "be846f5fcec9187c7a18b7825574ceee1061d5c1d91fa9976d0096f7509c474d",
+  "selected": 10,
+  "categoryCounts": {
+    "local-heroes": 2,
+    "wins": 3,
+    "green-stuff": 4,
+    "quick-hits": 1
+  },
+  "expectedScheduledAt": "2026-11-16T07:00:00.000Z",
+  "subscriberCopyMatchesRevisedProof": true,
+  "inspectedSubscriberHtmlUnchanged": true,
+  "originalAssessmentAndEmailReceiptsPreserved": true
+}

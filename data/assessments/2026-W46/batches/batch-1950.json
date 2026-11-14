@@ -1,0 +1,504 @@
+{
+  "assessments": [
+    {
+      "index": 1957,
+      "fingerprint": "ea3e4a57468c68a7f9c5685f6f7a5a4536de46015a8aa7f043be223d22f7f1c0",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 72,
+      "impact": 18,
+      "audienceRelevance": 31,
+      "decision": "reject",
+      "judgment": "Victoria Stelei la Miercurea Ciuc este rezultat de etapă la hochei, fără reper neobișnuit descris."
+    },
+    {
+      "index": 1958,
+      "fingerprint": "0a51ee271b10cc2493d126674421c36e8ec2b986f4d11608d887b61600f55d76",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 76,
+      "impact": 24,
+      "audienceRelevance": 38,
+      "decision": "reject",
+      "judgment": "Urcarea Voluntariului pe primul loc este performanță sportivă de campionat, nu titlu sau record."
+    },
+    {
+      "index": 1959,
+      "fingerprint": "339915cda36683bf0ae1f8042edf584211b2675211b347457d99399dce120da3",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 18,
+      "impact": 42,
+      "audienceRelevance": 37,
+      "decision": "reject",
+      "judgment": "Cauțiunea generalului ucrainean este etapă într-o anchetă de corupție, nu probă de reformă reușită."
+    },
+    {
+      "index": 1960,
+      "fingerprint": "a7bd147e51e0ab78da71ede76daa63850e90c08a191108c9e091e26c1c1ccd09",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 8,
+      "impact": 56,
+      "audienceRelevance": 43,
+      "decision": "reject",
+      "judgment": "Furtunile, inundațiile și valurile din California sunt avertizare de dezastru, fără rezultat pozitiv."
+    },
+    {
+      "index": 1961,
+      "fingerprint": "83daab836e0322e3b75d96ce93aaf2f6a4376cce36e8f1a4493755b20bfab280",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 63,
+      "impact": 25,
+      "audienceRelevance": 41,
+      "decision": "reject",
+      "judgment": "Semifinala lui Bogdan Pavel la challenger e parcurs bun, dar nu titlu sau reușită suficient de distinctă."
+    },
+    {
+      "index": 1962,
+      "fingerprint": "7476f6de8d81aeaa80be8b74aa503f4c3e530944490b1aeca2deb8704320e943",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 25,
+      "impact": 24,
+      "audienceRelevance": 41,
+      "decision": "reject",
+      "judgment": "Înfrângerea României U20 în fața Elveției este eșec competițional, nu o veste pozitivă."
+    },
+    {
+      "index": 1963,
+      "fingerprint": "e1bb3590c22f88159d8f7111e000e4e6e13315ad9be03c01a6b50a1c14049794",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 23,
+      "impact": 66,
+      "audienceRelevance": 69,
+      "decision": "reject",
+      "judgment": "Primarii prezintă probleme de apă și poluare, fără intervenții asumate sau finalizate în titlu."
+    },
+    {
+      "index": 1964,
+      "fingerprint": "47690cc418bea8206de06ab406c0eeec28f7de36dc390f21e6d98e3b13fbf978",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 34,
+      "impact": 43,
+      "audienceRelevance": 32,
+      "decision": "reject",
+      "judgment": "Condamnarea din cartelul mexican rămâne poveste de criminalitate, fără relevanță comunitară românească."
+    },
+    {
+      "index": 1965,
+      "fingerprint": "f28da7e4514b7aee5c0a04025cb90a14de6090e5a84245e67f84b288cc3d7990",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 76,
+      "impact": 31,
+      "audienceRelevance": 48,
+      "decision": "candidate",
+      "judgment": "Casa lui Brigitte Bardot anunțată pentru public poate interesa cultural, dar accesul e abia în vara 2027."
+    },
+    {
+      "index": 1966,
+      "fingerprint": "c7aade17d46047e9f58fb3768ed4957746339e1ebde3b107633495058844f606",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 25,
+      "impact": 31,
+      "audienceRelevance": 36,
+      "decision": "reject",
+      "judgment": "Declarația lui Simion la forum este mesaj de mobilizare politică, nu schimbare europeană realizată."
+    },
+    {
+      "index": 1967,
+      "fingerprint": "648b84cb9b886354405194830a91dba35e20d764b09d4f67dba4e585eec1eaae",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 19,
+      "impact": 68,
+      "audienceRelevance": 49,
+      "decision": "reject",
+      "judgment": "Vizita șefului Mossad pe fondul presiunii de război e tensiune geopolitică, nu detensionare confirmată."
+    },
+    {
+      "index": 1968,
+      "fingerprint": "2eb33607a3304afa63a8a263aff4027034d62c73e8016b542f77ba262cb5684c",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 52,
+      "impact": 18,
+      "audienceRelevance": 36,
+      "decision": "reject",
+      "judgment": "Așteptarea unui meci deschis cu România repetă declarații de selecționer înainte de partidă."
+    },
+    {
+      "index": 1969,
+      "fingerprint": "ec91c875f6c7c47896ed72e7fa78aa64bd2435637e6e3302ac2e70678ac76f86",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 7,
+      "impact": 85,
+      "audienceRelevance": 78,
+      "decision": "reject",
+      "judgment": "Depășirea limitelor de siguranță ale criosferei este deteriorare climatică, nu soluție nouă."
+    },
+    {
+      "index": 1970,
+      "fingerprint": "83e0b338493287ec269efc2c8bc789b54fe03f9b2f37ed065bcb9618d00407b2",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 10,
+      "impact": 72,
+      "audienceRelevance": 82,
+      "decision": "reject",
+      "judgment": "Raportul STB despre rude și salarii arată disfuncții de guvernanță, fără îmbunătățire a călătoriilor."
+    },
+    {
+      "index": 1971,
+      "fingerprint": "f6f9517cdc06cc8066ed45a4ccaaddc0b1e1d1a5f364c7085200460db5ea78fc",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 69,
+      "impact": 64,
+      "audienceRelevance": 87,
+      "decision": "candidate",
+      "judgment": "Programul militar pentru 18–35 de ani este normă propusă în transparență; nu îl descriu ca recrutare deja pornită."
+    },
+    {
+      "index": 1972,
+      "fingerprint": "445dad4063630e45aef5277571abdb335c9c3f3db95154c2835a83eaf47129d6",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 42,
+      "impact": 62,
+      "audienceRelevance": 68,
+      "decision": "reject",
+      "judgment": "Starea stabilă a salariaților este ameliorare după intoxicație, dar activitatea Chimcomplex rămâne doar estimată pentru reluare."
+    },
+    {
+      "index": 1973,
+      "fingerprint": "21011d28662b8a26902f556e837654170413cc0392fe2c1f3b940d4c01538a4d",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 30,
+      "impact": 73,
+      "audienceRelevance": 81,
+      "decision": "reject",
+      "judgment": "Concedierile STB planificate nu demonstrează încă eliminarea abuzurilor ori servicii mai bune."
+    },
+    {
+      "index": 1974,
+      "fingerprint": "186c35b49263a78da09fbfc21a275bcd9680a4e46c45b2f0e5601a4f0cd78809",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 69,
+      "impact": 52,
+      "audienceRelevance": 65,
+      "decision": "reject",
+      "judgment": "Redenumirea asociației fotovoltaice nu adaugă capacitate energetică; cifrele istorice nu sunt noua investiție."
+    },
+    {
+      "index": 1975,
+      "fingerprint": "f4bebd796827779c036b141c685d39ff7cabba9a70a50a5634e78c41e7e34f19",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 56,
+      "impact": 31,
+      "audienceRelevance": 54,
+      "decision": "reject",
+      "judgment": "Cheltuielile Black Friday din 2025 sunt analiză retrospectivă de consum, nu câștig actual pentru gospodării."
+    },
+    {
+      "index": 1976,
+      "fingerprint": "7befc25c695d53585c728193d4cd93ee39591ac44c1b0a3ee8827eefeac98955",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 73,
+      "impact": 62,
+      "audienceRelevance": 75,
+      "decision": "candidate",
+      "judgment": "Autorizația pentru lucrări suplimentare Lugoj–Timișoara este etapă concretă, nu linie ferată modernizată deja utilizabilă."
+    },
+    {
+      "index": 1977,
+      "fingerprint": "af19cd10235d4b245678c8d84cfd519fd42a0668cfdbf2b2ab80dc40e4df5ac2",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 44,
+      "impact": 76,
+      "audienceRelevance": 90,
+      "decision": "reject",
+      "judgment": "Scăderea inflației așteptată în 2027 este prognoză după alte scumpiri, nu ieftinire deja simțită."
+    },
+    {
+      "index": 1978,
+      "fingerprint": "5d0bd35e69f02799bc5216dd31867d70a7e7fc695c010f42607b26acdbe7f11d",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 81,
+      "impact": 69,
+      "audienceRelevance": 83,
+      "decision": "candidate",
+      "judgment": "Indicatorii aprobați pentru Parcul Brățării susțin un spațiu verde viitor, nu un parc de cinci hectare deja deschis."
+    },
+    {
+      "index": 1979,
+      "fingerprint": "b4dc496dc6892ca80015d7d62d48dfcc93b75c0e84243e661109e35e3ffb4b5d",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 51,
+      "impact": 31,
+      "audienceRelevance": 43,
+      "decision": "reject",
+      "judgment": "Achiziția unui sondaj despre poliție măsoară percepții, fără îmbunătățire operațională demonstrată."
+    },
+    {
+      "index": 1980,
+      "fingerprint": "9bb6891733a69fec895f8474c0585472ccb733a59a5fda1f31e1a92daa1c9082",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 80,
+      "impact": 73,
+      "audienceRelevance": 83,
+      "decision": "candidate",
+      "judgment": "Contractul atribuit pe 25,4 km pentru trenul metropolitan Cluj e progres de achiziție, nu serviciu feroviar pornit."
+    },
+    {
+      "index": 1981,
+      "fingerprint": "bf582aac92407f044e98aedee13006d1b87184e69ccdac34c117543357c927d8",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 77,
+      "impact": 79,
+      "audienceRelevance": 91,
+      "decision": "candidate",
+      "judgment": "PIB-ul pe locuitor apropiat de media UE oferă perspectivă utilă, dar cei 20 de ani invocați cer control cronologic."
+    },
+    {
+      "index": 1982,
+      "fingerprint": "799a6103511cf9242d5256a0f1f35405ea622484fb6029ce87a3bd8abf2e2e03",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 59,
+      "impact": 57,
+      "audienceRelevance": 69,
+      "decision": "reject",
+      "judgment": "Consultarea liceelor cu universități și angajatori e criteriu propus, nu ofertă educațională deja schimbată."
+    },
+    {
+      "index": 1983,
+      "fingerprint": "e92176d52969c8e34cd97e7f53547dc9b0e8c231741ec28d94bbc3ae6ab049a5",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 70,
+      "impact": 49,
+      "audienceRelevance": 76,
+      "decision": "candidate",
+      "judgment": "Vizitarea siturilor și teatrului poate arăta participare culturală, dar trebuie văzute întrebările și baza procentelor din barometru."
+    },
+    {
+      "index": 1984,
+      "fingerprint": "e0f6af7dc670c1575862525a689e356322a3f015ef45cb5af176042c602d49ff",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 73,
+      "impact": 34,
+      "audienceRelevance": 59,
+      "decision": "reject",
+      "judgment": "Competiția Office oferă exercițiu digital, dar articolul este publicitar și extrasul nu lămurește costurile participării."
+    },
+    {
+      "index": 1985,
+      "fingerprint": "acc1c9ab1ceaecc766da160636cef0b706d37e31c57f749bb583ef2f1ff9db18",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 33,
+      "impact": 44,
+      "audienceRelevance": 64,
+      "decision": "reject",
+      "judgment": "Minusul vânzărilor de vineri și mutarea lor în restul săptămânii sunt comportament comercial, nu veste bună clară."
+    },
+    {
+      "index": 1986,
+      "fingerprint": "e149de6563f8b39c4c790f9969be2c2d343f872c0444a89e8c7310759a915298",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 70,
+      "impact": 32,
+      "audienceRelevance": 47,
+      "decision": "reject",
+      "judgment": "Deschiderea Altex la Jilava este extindere de retail, fără serviciu esențial sau avantaj comunitar distinct."
+    },
+    {
+      "index": 1987,
+      "fingerprint": "04b295aaf63d8809a12a188efd52ef9acfbfa17bdb79383872817cbd12d15bb8",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 79,
+      "impact": 53,
+      "audienceRelevance": 60,
+      "decision": "candidate",
+      "judgment": "Finanțarea Agile Robots susține dezvoltare tehnică, dar evaluarea de 8,5 miliarde nu dovedește utilitate nouă pentru publicul român."
+    },
+    {
+      "index": 1988,
+      "fingerprint": "2d2f6209a90f39f521f7383488fecbcbffad1a22ae76eecbc18b40706fd4def3",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 54,
+      "impact": 74,
+      "audienceRelevance": 65,
+      "decision": "reject",
+      "judgment": "Ridicarea interdicției FAA repară o defecțiune, cu zboruri reluate treptat, nu progres nou în aviație."
+    },
+    {
+      "index": 1989,
+      "fingerprint": "f9e26591699f1bce91b6c6ddc1c2119f7b59621a4e237c80714c99851eeae192",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 58,
+      "impact": 60,
+      "audienceRelevance": 67,
+      "decision": "reject",
+      "judgment": "Intrarea Starship pe orbită vine cu pierderea în flăcări a boosterului; testul are rezultat mixt."
+    },
+    {
+      "index": 1990,
+      "fingerprint": "a6b6159583ed68e3e059de9d7e8a9df85a6f9a182da869ee64cb92c73a501d06",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 5,
+      "impact": 35,
+      "audienceRelevance": 49,
+      "decision": "reject",
+      "judgment": "Amenințarea cu briceagul în curtea școlii este violență între elevi și anchetă penală."
+    },
+    {
+      "index": 1991,
+      "fingerprint": "cad8d73f8bc6fb5df8335ba4129a7d647245fdd70f548a805df0918ff487b48a",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 25,
+      "impact": 75,
+      "audienceRelevance": 66,
+      "decision": "reject",
+      "judgment": "Cele 15.000 de zboruri afectate de sistemul aviatic învechit descriu o întrerupere majoră, nu modernizare."
+    },
+    {
+      "index": 1992,
+      "fingerprint": "8cce1cb5a9749f39dbe02ae6dc92b76c536be8849060c6b62673602ee578b90d",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 37,
+      "impact": 46,
+      "audienceRelevance": 51,
+      "decision": "reject",
+      "judgment": "Susținerea unei candidaturi Bolojan este preferință politică, fără rezultat public nou."
+    },
+    {
+      "index": 1993,
+      "fingerprint": "53f563b299b726fba97d6b59351b552cd1345e73f199acd111a78268541bae66",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 23,
+      "impact": 43,
+      "audienceRelevance": 58,
+      "decision": "reject",
+      "judgment": "Eseul despre conflictul Cotroceni-presă critică ambele tabere, fără acces la informație restabilit."
+    },
+    {
+      "index": 1994,
+      "fingerprint": "fad69a2bc1c4792550ac1ccd8d428a8767c52a19b8a309ad0dec3a256a786457",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 22,
+      "impact": 13,
+      "audienceRelevance": 25,
+      "decision": "reject",
+      "judgment": "Comentariile lui Negoiță despre fosta soție și botezul PSD sunt bârfă politică personală."
+    },
+    {
+      "index": 1995,
+      "fingerprint": "e2f9ce51b9d2ad0d1a18a1ee6494d1bd2e1e8395212023f0d95cd4b021b3b24c",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 41,
+      "impact": 25,
+      "audienceRelevance": 61,
+      "decision": "reject",
+      "judgment": "Satira cititorilor de titluri este opinie despre consumul de știri, nu instrument nou de alfabetizare media."
+    },
+    {
+      "index": 1996,
+      "fingerprint": "c9d1cbae9f814719d9d9fe5750f1445bc31c239c28ef962878275928b2726fd0",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 78,
+      "impact": 30,
+      "audienceRelevance": 78,
+      "decision": "candidate",
+      "judgment": "Observarea lui Marte și Jupiter poate fi invitație accesibilă la astronomie până pe 18 noiembrie; verific poziția reală pe cer."
+    },
+    {
+      "index": 1997,
+      "fingerprint": "16d4953d19aef2607cbeb69853d2bc688761f95afc1f33e7231ab40cd9a0d8cc",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 46,
+      "impact": 55,
+      "audienceRelevance": 47,
+      "decision": "reject",
+      "judgment": "Confiscarea numerarului în Ungaria este etapă anticorupție, nu bani definitiv recuperați pentru servicii publice."
+    },
+    {
+      "index": 1998,
+      "fingerprint": "cc4dcc5a877b6fcd172ee0e33a0e0c40ea01ce164086e1be37768d285033d260",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 49,
+      "impact": 2,
+      "audienceRelevance": 14,
+      "decision": "reject",
+      "judgment": "Horoscopul săptămânal nu oferă informații verificabile despre schimbări financiare sau carieră."
+    },
+    {
+      "index": 1999,
+      "fingerprint": "75ab9feebbdd6eb8cc23872d8a8b2ad150bca9e47db3d8b9098fc95dbc72c8b9",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 2,
+      "impact": 76,
+      "audienceRelevance": 61,
+      "decision": "reject",
+      "judgment": "Petrolierele lovite de mine în Ormuz sunt incident violent în conflict, nu siguranță maritimă îmbunătățită."
+    },
+    {
+      "index": 2000,
+      "fingerprint": "8cf58c229c45dbcf7d138ac465cb4ed78a89d22c71ecd7bad484e850272aeedd",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 60,
+      "impact": 9,
+      "audienceRelevance": 23,
+      "decision": "reject",
+      "judgment": "Calendarul sărbătorilor religioase de azi este conținut recurent, fără fapt nou pentru ediție."
+    },
+    {
+      "index": 2001,
+      "fingerprint": "17740979da727c172c6c51f781e9f198d38e1e7e3dafc1bbe35e3ccf07ccd568",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 62,
+      "impact": 12,
+      "audienceRelevance": 38,
+      "decision": "reject",
+      "judgment": "Efemeridele zilei sunt reper de calendar; titlul nu indică un fenomen aparte nou descoperit."
+    },
+    {
+      "index": 2002,
+      "fingerprint": "63723b96ad93dbdde672f16c5ca586d9c33f98be9a6adea0b07f0480918c7ff3",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 78,
+      "impact": 30,
+      "audienceRelevance": 48,
+      "decision": "candidate",
+      "judgment": "Canotajul pe Lacul Morii activează spațiul public, dar competiția de weekend va fi trecută la livrarea de luni."
+    },
+    {
+      "index": 2003,
+      "fingerprint": "f0950b77b4e5f15b678a651b2dfb7b75dbf92bd565ce37f78b2670044e6bc66a",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 82,
+      "impact": 34,
+      "audienceRelevance": 59,
+      "decision": "candidate",
+      "judgment": "Pisicile salvate la SofistiCAT adaugă o posibilă componentă de adopție, de verificat dincolo de expoziția de weekend."
+    },
+    {
+      "index": 2004,
+      "fingerprint": "14db3c48b4e44b172f34f90b1b18977f4346670c76e08a8146e66e378d3f54d1",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 84,
+      "impact": 42,
+      "audienceRelevance": 62,
+      "decision": "candidate",
+      "judgment": "Patru expoziții noi la Muzeul Copiilor pot oferi activități și după weekend; trebuie verificat programul și accesul."
+    },
+    {
+      "index": 2005,
+      "fingerprint": "f547f9fdc2c4653d3f0520b6afc9aedababa88983ceefe137a88833cba18f2b5",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 73,
+      "impact": 21,
+      "audienceRelevance": 35,
+      "decision": "reject",
+      "judgment": "Victoria CSM Constanța și înfrângerea Odorheiului sunt rezultate de cupă, fără reper național distinct."
+    },
+    {
+      "index": 2006,
+      "fingerprint": "2be4116813a49831edff005e413648d7433b368b6fa3e9f141dc39c595163f74",
+      "assessedAt": "2026-11-14T07:11:43.796Z",
+      "positivity": 67,
+      "impact": 53,
+      "audienceRelevance": 66,
+      "decision": "reject",
+      "judgment": "Drone Flight prezintă securitate și planuri pentru apărare, fără contract nou sau rezultat practic demonstrat în extras."
+    }
+  ]
+}

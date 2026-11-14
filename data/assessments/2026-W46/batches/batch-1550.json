@@ -1,0 +1,504 @@
+{
+  "assessments": [
+    {
+      "index": 1557,
+      "fingerprint": "c2d34a922ac2c232fff4682d0beb5c9199e280e834063b9e347c710beff7c1d0",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 76,
+      "impact": 47,
+      "audienceRelevance": 46,
+      "decision": "reject",
+      "judgment": "Profitul record Allianz este rezultat pentru acționari, fără protecție sau acces nou pentru asigurați."
+    },
+    {
+      "index": 1558,
+      "fingerprint": "d86dd35ad8a749f39fb0b8b728751e4bf306fa80be0e8224b5c0771e9ee12cf1",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 49,
+      "impact": 80,
+      "audienceRelevance": 88,
+      "decision": "reject",
+      "judgment": "Evitarea junk depinde de buget viitor și fonduri incerte, nu este rating îmbunătățit."
+    },
+    {
+      "index": 1559,
+      "fingerprint": "e9f56dc0d87bcdccbd5cdc2ac8e96e65f82a67fe381891751e7b749d29532f0b",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 69,
+      "impact": 69,
+      "audienceRelevance": 69,
+      "decision": "reject",
+      "judgment": "Respingerea revizuirii A8 închide o cale judiciară, dar nu finalizează reevaluarea sau construiește tronsonul."
+    },
+    {
+      "index": 1560,
+      "fingerprint": "700c5019a7d9ec978520c97876b5442242a392915ed24754ae4e1c123487f321",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 11,
+      "impact": 76,
+      "audienceRelevance": 84,
+      "decision": "reject",
+      "judgment": "Datoriile a 49.000 firme cresc, fără recuperare sau redresare nouă."
+    },
+    {
+      "index": 1561,
+      "fingerprint": "a66e6ef2d625e665e8af3c6da6e9fe3f8e7d3182227eebde354818f600b9e1ab",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 41,
+      "impact": 40,
+      "audienceRelevance": 62,
+      "decision": "reject",
+      "judgment": "Analiza costului scandalului unui CEO explică volatilitate, nu progres economic."
+    },
+    {
+      "index": 1562,
+      "fingerprint": "6f981feb7e5552289a816060d06d17fbe9ecf30e3892581356bb2d1f4421eb90",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 63,
+      "impact": 65,
+      "audienceRelevance": 86,
+      "decision": "reject",
+      "judgment": "Folosirea agenților IA este răspândită, dar studiul arată puțină legătură demonstrată cu rezultatele financiare."
+    },
+    {
+      "index": 1563,
+      "fingerprint": "94551598b4da2bb83840396b106d1dce519c8334190b28543257bcdfa988444f",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 86,
+      "impact": 89,
+      "audienceRelevance": 93,
+      "decision": "candidate",
+      "judgment": "Propunerea Bucureștiului pentru mașinile poluante poate îmbunătăți aerul; verific consultarea, adoptarea și etapele din 2027, nu o numesc restricție deja activă."
+    },
+    {
+      "index": 1564,
+      "fingerprint": "413cd4063fa86b8d171fb6c3a5f4b99a27b052546dc8efc5e1bfa76d9ac7521d",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 85,
+      "impact": 87,
+      "audienceRelevance": 85,
+      "decision": "candidate",
+      "judgment": "Constanța atrage 110 milioane prin obligațiuni pentru investiții; verific destinațiile și costul datoriei, fără a confunda împrumutul cu grant sau lucrări realizate."
+    },
+    {
+      "index": 1565,
+      "fingerprint": "d86c893b4f01d6678b496b747d9ffb707593eca473e12c29e792fec9ec3933c6",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 55,
+      "impact": 67,
+      "audienceRelevance": 62,
+      "decision": "reject",
+      "judgment": "Oferta de plată pentru trupele americane nu are acceptare sau prezență militară suplimentară confirmată."
+    },
+    {
+      "index": 1566,
+      "fingerprint": "c58b9f769fadc784cf6f372acdba3fe2e555bbfca98eb9af1efe8dd59d93972f",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 78,
+      "impact": 82,
+      "audienceRelevance": 88,
+      "decision": "reject",
+      "judgment": "AI Factory complet operațională în 2027 este estimare de termen, fără etapă tehnică nouă clară în extras."
+    },
+    {
+      "index": 1567,
+      "fingerprint": "801bbdcca7196f0b42f6515d681f938720fba4a557aacf9e8a7acce221400e96",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 73,
+      "impact": 65,
+      "audienceRelevance": 65,
+      "decision": "reject",
+      "judgment": "Supervizarea atribuită pentru A8 este achiziție intermediară, nu tronson nou circulabil."
+    },
+    {
+      "index": 1568,
+      "fingerprint": "dbbd3a06144c481ed6e951200f2f047199e29b11be2fdbdfc2c113c2d804b07d",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 26,
+      "impact": 83,
+      "audienceRelevance": 94,
+      "decision": "reject",
+      "judgment": "Inflația în țintă abia în 2028 e prognoză de dificultate prelungită, nu câștig de preț actual."
+    },
+    {
+      "index": 1569,
+      "fingerprint": "a6d6f8a39831ceab2c8ff6a644be13e1cdbdac9c8405a24ece84f8b79ab3112a",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 34,
+      "impact": 65,
+      "audienceRelevance": 97,
+      "decision": "reject",
+      "judgment": "Independența financiară a numai 36% și nemulțumirea majorității sunt diagnostic de vulnerabilitate."
+    },
+    {
+      "index": 1570,
+      "fingerprint": "d3857fbf63fde0852f06b087205acb46eae7f165b0e8b49aac28d5512363f594",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 84,
+      "impact": 79,
+      "audienceRelevance": 84,
+      "decision": "candidate",
+      "judgment": "Deblocarea WorkInRomania reia proceduri concrete pentru angajatori; verific funcționarea și protecțiile, iar contingentul de 115.000 este doar solicitat."
+    },
+    {
+      "index": 1571,
+      "fingerprint": "39a1345d6eb416f405836d51483d4ed32dcc3955339ba7e117ff535dc68c0d3c",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 57,
+      "impact": 62,
+      "audienceRelevance": 71,
+      "decision": "reject",
+      "judgment": "Propunerile bugetare încă lipsesc, iar eficientizarea este prevăzută, nu realizată."
+    },
+    {
+      "index": 1572,
+      "fingerprint": "a9cd76828d4d6b45545c59a16f4d20ac595dde232a7fc4685202b86ac3b484e7",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 84,
+      "impact": 66,
+      "audienceRelevance": 83,
+      "decision": "reject",
+      "judgment": "Școala de Bani are amploare, dar cei 1,2 milioane sunt bilanț cumulativ pe zece ani, fără resursă nouă lansată."
+    },
+    {
+      "index": 1573,
+      "fingerprint": "b7b67cad8c681c5f993a251bb0e4fc91893c631b9a91efe9d34adb0df5b75645",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 45,
+      "impact": 61,
+      "audienceRelevance": 93,
+      "decision": "reject",
+      "judgment": "Adaptarea la inflație e reacție a gospodăriilor la scumpiri, nu putere de cumpărare refăcută."
+    },
+    {
+      "index": 1574,
+      "fingerprint": "6d22876c23e6935856cbdbeddf19dcbdf68cf145e96b55d3b246f93e4c7c631a",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 87,
+      "impact": 73,
+      "audienceRelevance": 80,
+      "decision": "candidate",
+      "judgment": "Fabrica Puratos de 15 milioane este inaugurată, nu doar promisă; verific data, producția și rolul regional, fără a deduce automat impact de mediu."
+    },
+    {
+      "index": 1575,
+      "fingerprint": "32f957ebfab387b2160d862bc287d01b4c91532439fed8a83cdc145650c8da84",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 65,
+      "impact": 54,
+      "audienceRelevance": 71,
+      "decision": "reject",
+      "judgment": "Nevoia de finanțare mai accesibilă exprimată de premier rămâne discurs de forum."
+    },
+    {
+      "index": 1576,
+      "fingerprint": "4c971a47eefab4e28840393f383db19e117b8bd90686945f2c9c4e98fb83d752",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 97,
+      "impact": 83,
+      "audienceRelevance": 91,
+      "decision": "candidate",
+      "judgment": "Student Connect adaugă cămin, sport și cantină prin PNRR: infrastructură universitară concretă; verific recepția și accesul, nu echivalez clădirea ridicată cu toate serviciile deschise."
+    },
+    {
+      "index": 1577,
+      "fingerprint": "3c0f0427bb859609e7b6731e13163694da5548678f816877f23a14dbcd0e693f",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 25,
+      "impact": 63,
+      "audienceRelevance": 64,
+      "decision": "reject",
+      "judgment": "Mărirea claselor urbane este proiect de restrângere a resurselor, nu progres educațional clar."
+    },
+    {
+      "index": 1578,
+      "fingerprint": "8fac1411e92bbc46fd32f111c62d47d077dc35117e5c1255dd7718a7a6f85f24",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 16,
+      "impact": 35,
+      "audienceRelevance": 42,
+      "decision": "reject",
+      "judgment": "Suspendarea cursurilor la Săbăoani urmează unui incident sanitar și întrerupe școala."
+    },
+    {
+      "index": 1579,
+      "fingerprint": "39bc643daa0c66006070c313a0a0fcbbeee9b2daff23dc061d7293cb197fce4c",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 80,
+      "impact": 76,
+      "audienceRelevance": 68,
+      "decision": "reject",
+      "judgment": "Cei 500 lei pe card sunt sprijin anual existent cu încărcare încă promisă, fără extindere sau dată exactă nouă."
+    },
+    {
+      "index": 1580,
+      "fingerprint": "7f52a0080b06e6237bbb085359dd5b45a2c1abdc684cc8a19d2c939df15e5e1b",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 42,
+      "impact": 36,
+      "audienceRelevance": 48,
+      "decision": "reject",
+      "judgment": "Litigiul revenirii rectorului Lile este conflict universitar, nu acces educațional îmbunătățit."
+    },
+    {
+      "index": 1581,
+      "fingerprint": "a3d90057a8fb7a550ebd8f3e721fb90c9d5c86483679d525904090fa2649fd1a",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 34,
+      "impact": 64,
+      "audienceRelevance": 72,
+      "decision": "reject",
+      "judgment": "Un nou plan de siguranță repetă unul existent, fără implementarea obligațiilor anterioare demonstrată."
+    },
+    {
+      "index": 1582,
+      "fingerprint": "899aacb60ebb5a7eaabfaf9b6c21951968c06501c4e817154daa42f10f9defe0",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 27,
+      "impact": 54,
+      "audienceRelevance": 71,
+      "decision": "reject",
+      "judgment": "Cursurile online pentru economii la facturi indică buget universitar insuficient, nu tranziție verde sau acces mai bun."
+    },
+    {
+      "index": 1583,
+      "fingerprint": "232316986b85a6b838bbf920e1c2869aaaee41d82cf5b6dc7edfc74a0000b32c",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 20,
+      "impact": 62,
+      "audienceRelevance": 66,
+      "decision": "reject",
+      "judgment": "Restanțele Educației la pregătirea bugetului sunt blocaj administrativ."
+    },
+    {
+      "index": 1584,
+      "fingerprint": "12d19fac17fac9dd2b8510d282099a86b8214caf18526e310ec916f41581a33e",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 73,
+      "impact": 23,
+      "audienceRelevance": 50,
+      "decision": "reject",
+      "judgment": "Căștile Beyerdynamic sunt lansare de electronice fără beneficiu comunitar distinct."
+    },
+    {
+      "index": 1585,
+      "fingerprint": "ab1cf90fa6729a8705f3ca777238a35279547234eb0641b9307d924dca0b9d10",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 72,
+      "impact": 21,
+      "audienceRelevance": 47,
+      "decision": "reject",
+      "judgment": "Showroomul Dreame și aspiratorul nou sunt promovare de retail."
+    },
+    {
+      "index": 1586,
+      "fingerprint": "9938b4562c0077b931b15e20bf33e3e99e2301119880d47b944995db864c52c5",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 85,
+      "impact": 79,
+      "audienceRelevance": 84,
+      "decision": "candidate",
+      "judgment": "WorkInRomania declară funcționale toate fluxurile de recrutare; verific serviciul, fără a confunda cererea patronală de cotă mai mare cu decizie adoptată."
+    },
+    {
+      "index": 1587,
+      "fingerprint": "bb0f6dfecb7dd4e3b3acf371f4a440368b9cba6585b44b7dbc520d531f572e42",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 28,
+      "impact": 20,
+      "audienceRelevance": 30,
+      "decision": "reject",
+      "judgment": "Executarea mărcilor ROSAL este litigiu familial și comercial, nu salubritate îmbunătățită."
+    },
+    {
+      "index": 1588,
+      "fingerprint": "f9ae1ec9124321446f075d4a91039832fac932f23734461efc166ed68fdca703",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 53,
+      "impact": 32,
+      "audienceRelevance": 46,
+      "decision": "reject",
+      "judgment": "Prognoza mai caldă până în decembrie e estimare meteo, nu progres climatic."
+    },
+    {
+      "index": 1589,
+      "fingerprint": "5a7d19580a13717b85411a3fe9186a5db337f14ab8c4ea31f774521a41a159ba",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 8,
+      "impact": 65,
+      "audienceRelevance": 52,
+      "decision": "reject",
+      "judgment": "Exercițiul naval chinez neanunțat este intimidare militară."
+    },
+    {
+      "index": 1590,
+      "fingerprint": "cf59e9643d8c184a066aabf93506ae413bd8529caa60d162b3dce8a628c3e3a0",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 9,
+      "impact": 43,
+      "audienceRelevance": 47,
+      "decision": "reject",
+      "judgment": "Rafalele de 150 km/h în Cluj sunt pericol meteo temporar."
+    },
+    {
+      "index": 1591,
+      "fingerprint": "684b2021a5001991029d0d95d8e01af8d643c9e510412224e2a4acecf1100158",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 12,
+      "impact": 29,
+      "audienceRelevance": 43,
+      "decision": "reject",
+      "judgment": "A treia presupusă relație Huang este detaliu de scandal privat, fără valoare pozitivă."
+    },
+    {
+      "index": 1592,
+      "fingerprint": "e961f088989e44ed770924648c0f0ec05f7689ed31b69ec7bc172ffc1dedfd89",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 65,
+      "impact": 53,
+      "audienceRelevance": 68,
+      "decision": "reject",
+      "judgment": "Participarea la summitul IA și cererile președintelui nu sunt infrastructură sau cooperare implementată."
+    },
+    {
+      "index": 1593,
+      "fingerprint": "cfa7a62dc5437cc666cb574d4a2e5902829a135ea34bac1aaa2e8efc42c0c5cd",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 81,
+      "impact": 74,
+      "audienceRelevance": 98,
+      "decision": "candidate",
+      "judgment": "Refinanțarea la dobânzi promoționale poate ajuta cititorii cu credite; verific condițiile și calculul celor opt ani, fără a promite aceeași economie tuturor."
+    },
+    {
+      "index": 1594,
+      "fingerprint": "8f7f3c595b1d1a0a233e71087532edc9a1521ba956bf0fa4028440e410f531e6",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 61,
+      "impact": 61,
+      "audienceRelevance": 52,
+      "decision": "reject",
+      "judgment": "Summitul APEC este întâlnire așteptată, fără acord comercial sau de pace obținut."
+    },
+    {
+      "index": 1595,
+      "fingerprint": "6ffc1510e91748f05e609b6722919899b012555285fb84e46a729b71b5ab530b",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 83,
+      "impact": 27,
+      "audienceRelevance": 43,
+      "decision": "reject",
+      "judgment": "Revenirea Italiei cu Franța este meci spectaculos, dar rutină sportivă internațională."
+    },
+    {
+      "index": 1596,
+      "fingerprint": "c2b7ea2e850a7b402018afdc88ed6065380183c2a7661e1746d743032a5f0bd1",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 2,
+      "impact": 64,
+      "audienceRelevance": 47,
+      "decision": "reject",
+      "judgment": "Atacul iranian asupra radarului american continuă escaladarea militară."
+    },
+    {
+      "index": 1597,
+      "fingerprint": "cb6ed08b30b2832f4ba8921f32707c0fb98c0f2447dea566f0d1e7b628855233",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 93,
+      "impact": 47,
+      "audienceRelevance": 76,
+      "decision": "candidate",
+      "judgment": "Călătoria pe bicicletă Italia–Japonia e poveste umană distinctă de 15.000 km; verific traseul, data și relatarea, nu o transform în inițiativă de mediu."
+    },
+    {
+      "index": 1598,
+      "fingerprint": "3301ae4ed9fc9995f2b8860a9128072b830a7f0c61f505777d588f63d48af0b5",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 82,
+      "impact": 26,
+      "audienceRelevance": 56,
+      "decision": "reject",
+      "judgment": "Cimitirul Vesel în presa italiană este recunoaștere turistică a unui obiectiv existent, nu noutate de patrimoniu."
+    },
+    {
+      "index": 1599,
+      "fingerprint": "030d04d6f8eab9e03c26dfb7b90b263ba576bc7be8212fb5bfd1e981a9faa72e",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 5,
+      "impact": 61,
+      "audienceRelevance": 45,
+      "decision": "reject",
+      "judgment": "Rafinăria și producția rusească în flăcări sunt distrugeri de război."
+    },
+    {
+      "index": 1600,
+      "fingerprint": "aa9884c41038d3b1ca99f4a966772750302f782585f0a027bfa5625a45e9ad99",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 24,
+      "impact": 36,
+      "audienceRelevance": 34,
+      "decision": "reject",
+      "judgment": "Mutarea summitului NATO din Tirana este sancțiune și dispută de cheltuieli militare."
+    },
+    {
+      "index": 1601,
+      "fingerprint": "9cd28726e2efadbda39a17bfa4fcbb723743f8c75d8d2381a321a6d9c2b1185b",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 1,
+      "impact": 48,
+      "audienceRelevance": 48,
+      "decision": "reject",
+      "judgment": "Condamnarea avocatei drepturilor omului este represiune, nu progres judiciar."
+    },
+    {
+      "index": 1602,
+      "fingerprint": "fdefb95127ca4470301a42421b3adfeb76ab720caee4641dbe54ad47ff679a7e",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 83,
+      "impact": 73,
+      "audienceRelevance": 64,
+      "decision": "reject",
+      "judgment": "Tunelul subacvatic este încă în construcție, fără etapă nouă sau deschidere datată în extras."
+    },
+    {
+      "index": 1603,
+      "fingerprint": "5ef129d5e515a39d81f607bb95f056a5554010975ca478b9a82847d02f9043aa",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 2,
+      "impact": 26,
+      "audienceRelevance": 36,
+      "decision": "reject",
+      "judgment": "Accidentul din Vaslui a rănit două tinere și nu conține progres de siguranță."
+    },
+    {
+      "index": 1604,
+      "fingerprint": "163f1eb54c93d58e84f61594ce0f8e0462ff81025292a9f51313742ec66f106a",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 68,
+      "impact": 75,
+      "audienceRelevance": 65,
+      "decision": "reject",
+      "judgment": "Participarea europeană anunțată la negocieri nu este acord de încetare a războiului."
+    },
+    {
+      "index": 1605,
+      "fingerprint": "4cd20fb1f2c5da983f64f56e9f43ea20f656b9ab5215dbe3032a260ef2b41e9e",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 75,
+      "impact": 77,
+      "audienceRelevance": 67,
+      "decision": "candidate",
+      "judgment": "Acordul pentru schimb de prizonieri poate fi pas umanitar verificabil; verific dimensiunea și execuția, separat de simpla includere a Europei la discuții."
+    },
+    {
+      "index": 1606,
+      "fingerprint": "19df436fb6d9930373029811b832ce6017f5d24f9fcb2cc9adb06052750bb356",
+      "assessedAt": "2026-11-14T06:59:33.553Z",
+      "positivity": 9,
+      "impact": 42,
+      "audienceRelevance": 47,
+      "decision": "reject",
+      "judgment": "Codul roșu Cluj expiră vineri dimineață și descrie pericol, nu veste pozitivă."
+    }
+  ]
+}

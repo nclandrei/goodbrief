@@ -1,0 +1,355 @@
+TRUST // NO TRUST de Nicholas Cârstoiu | Siguranță online
+Sari la conținut
+Trust//No Trust
+De ce contează
+Module
+Siguranță
+Pentru școli
+Echipa
+Autorul
+Media
+Cum se folosește
+EN
+RO
+FR
+Beta · Prototip în testare · Pilotul în școli: ianuarie - martie 2027
+TRUST // NO TRUST: Laboratorul de reziliență digitală pentru adolescenți
+Siguranță online și securitate cibernetică pentru adolescenți
+Cât de ușor poți fi manipulat online?
+Poți recunoaște phishingul, scamurile, manipularea, groomingul, cyberbullyingul și conținutul generat cu inteligență artificială înainte să te păcălească? Trust//No Trust este o platformă interactivă și gratuită de siguranță online pentru adolescenții între 14 și 18 ani: înveți luând decizii, investigând cazuri realiste și descoperind cum funcționează manipularea.
+Descoperă cele șase module →
+Pentru școli și profesori
+De ce contează
+Generația mea trăiește online.
+Exact acolo suntem păcăliți.
+Adolescenților li se spun regulile: nu da click, nu distribui, nu avea încredere în străini. Dar manipularea arată rar ca un străin. Arată ca un prieten, ca un premiu, ca o voce cunoscută sau ca un mesaj care nu poate aștepta. Ce lipsește e exercițiul: să recunoști trucul pe loc, să știi ce faci mai departe și să poți arăta că o școală devine, cu adevărat, mai sigură.
+2 din 5
+copii din România spun că au fost jigniți sau au primit mesaje dureroase online.
+Sursa: Salvați Copiii România, comunicat de presă din 28 martie 2025.
+48,3%
+dintre copii petrec peste șase ore pe zi în mediul digital.
+Sursa: Salvați Copiii România, comunicat de presă din 28 martie 2025.
+45.245
+de sesizări privind conținut online ilegal sau dăunător pentru copii au ajuns la linia esc_ABUZ între 1 ianuarie și 3 decembrie 2025.
+Sursa: Salvați Copiii România, linia de raportare esc_ABUZ, comunicat de presă din 10 decembrie 2025.
+≈ 1 din 5
+copii între 12 și 17 ani care folosesc internetul, din 21 de țări, a fost victimă a exploatării sau a abuzului sexual facilitat de tehnologie, într-un singur an.
+Sursa: UNICEF, raportul Through Children's Eyes (date Disrupting Harm), lansat pe 3 septembrie 2026.
+Trei obiective, o singură platformă. Adolescenții trebuie să recunoască manipularea înainte să își facă efectul și să o raporteze oamenilor potriviți atunci când se întâmplă, iar școlile au nevoie de un mod de a măsura dacă toate acestea schimbă ceva. Trust//No Trust este construit în jurul acestor trei obiective.
+Platforma
+Șase module de siguranță online. Zero lecții.
+Nu îți spunem ce să crezi. Te punem direct în situație. Fiecare persoană, conversație, profil și interfață de aplicație de pe platformă este fictivă, iar nimic din ce faci nu părăsește dispozitivul tău.
+MODULUL 01
+SURVIVE
+Trăiește șapte zile online.
+Primești o identitate fictivă și o săptămână simulată. Presiunea crește de la o zi la alta, de la un necunoscut care îți dă follow fără niciun motiv aparent până la o voce clonată care seamănă cu a mamei tale și îți cere bani. Alegerile tale îți construiesc profilul de ADN digital.
+Aproximativ 20 de minutePrototip în testare
+Joacă SURVIVE →
+MODULUL 02
+HUNT
+Investighează cazul.
+Un dosar fictiv plin de capturi de ecran, conversații și profiluri. Găsește indiciile, leagă-le între ele, numește tactica, alege reacția potrivită și apoi ajută un alt personaj care e pe cale să cadă în aceeași capcană.
+Aproximativ 15 minutePrototip în testare
+Joacă HUNT →
+MODULUL 03
+TRAP
+Găsește momentul exact.
+Citește o conversație care începe complet normal și alunecă încet în manipulare. Marchează momentul în care trece limita, apoi urmărește același tipar până la forma lui cea mai periculoasă, metoda loverboy: iubire falsă, un vis, izolare, exploatare. Vina nu este niciodată a victimei.
+Aproximativ 15 minutePrototip în testare
+Joacă TRAP →
+MODULUL 04
+REAL / FAKE / AI
+Clasifică ce vezi.
+Paisprezece postări virale și două clipuri: reale, modificate cu AI sau generate cu AI? Găsește modificările ascunse, învață cum verifică profesioniștii o imagine și de ce regulile europene cer acum ca deepfake-urile să fie declarate (articolul 50 din AI Act). Nu încarci niciodată fotografiile tale.
+Aproximativ 15 minutePrototip în testare
+Joacă REAL / FAKE / AI →
+MODULUL 05
+HELP
+Află exact ce ai de făcut.
+Alege o situație și primești pași concreți și contactul potrivit. Include un generator de mesaje pe care le poți trimite părinților sau bunicilor ca să-i avertizezi despre înșelătoriile cu voce clonată. Platforma nu trimite și nu salvează niciodată mesajul.
+Aproximativ 10 minutePrototip în testare
+Deschide HELP →
+MODULUL 06
+GUARDIAN
+Protejează pe altcineva.
+Dă Testul Gardianului: 24 de situații, radarul tău în cele opt zone CDRS și cele două zone la care să lucrezi. Apoi devii Gardian Digital și alegi o misiune pentru clasa ta, pentru familie sau cu un partener local. Include o previzualizare a rapoartelor CDRS pentru școli.
+Aproximativ 15 minutePrototip în testareRapoarte demo
+Devino Gardian →
+Semaforul platformei
+Prototip în testare funcționează și îl verificăm înainte de pilotul din școli
+Demonstrativ date fictive, cum sunt rapoartele CDRS din GUARDIAN
+Planificat măsurarea CDRS în clase reale, din ianuarie 2027
+Finalizat încă niciun modul: validarea vine prin pilot
+Cum funcționează
+Înveți trăind.
+Metoda este simplă: întâi experiența, apoi explicația. Cercetările despre „prebunking” arată că oamenii rezistă mai bine manipulării după ce au văzut, într-un cadru sigur, cum este construită. Trust//No Trust aplică această idee riscurilor reale cu care se confruntă adolescenții.
+1
+Decide
+Ai în față situații realiste, dar fictive, și alegi ce faci, exact cum ai face pe telefonul tău.
+2
+Înțelege
+După fiecare decizie vezi tactica din spatele mesajului și semnalele pe care le-ai fi putut observa.
+3
+Acționează
+Afli pe cine suni, cum păstrezi dovezile și cum protejezi un prieten sau pe cineva din familie.
+Siguranță încă de la proiectare
+Construit să protejeze, nu să sperie.
+Unele scenarii ating situații dificile. De aceea, fiecare modul sensibil respectă aceleași reguli, iar platforma funcționează fără să colecteze nimic despre persoana care o folosește.
+Totul este fictiv
+Personajele, conversațiile, profilurile și interfețele sunt inventate. Nu este reprodusă nicio platformă, marcă sau persoană reală.
+Fără date personale
+Fără conturi, fără nume, fără încărcare de fotografii, fără cookie-uri și fără urmărire. Ce faci rămâne în browserul tău.
+„Ies acum”, mereu vizibil
+Fiecare modul sensibil începe cu un scurt ecran de pregătire și păstrează pe ecran un buton de ieșire care duce direct la ajutor.
+Fără vină, fără scoruri negative
+Să cazi într-o capcană face parte din învățare. Mesajul este mereu același: dacă ți se întâmplă în realitate, nu este vina ta.
+Verificare de specialitate
+Scenariile sensibile vor fi verificate de specialiști în protecția copilului înainte de pilotul din școli și ajustate pe baza observațiilor lor.
+Investighezi, nu ataci
+Adolescenții învață să recunoască și să oprească manipularea. Nu li se cere niciodată să construiască o înșelătorie sau să joace rolul atacatorului.
+Pentru școli și profesori
+De la joc la schimbare măsurabilă.
+Scorul de Reziliență Digitală a Comunității (CDRS) transformă platforma într-o intervenție măsurabilă. Elevii răspund la un scurt test anonim înainte de module, din nou imediat după și a treia oară după patru până la șase săptămâni. Școala vede un singur scor agregat, de la 0 la 100, plus cele două domenii la care are cel mai mult de lucrat.
+Opt dimensiuni, câte trei întrebări fiecare:
+Phishing
+Înșelătorii
+Manipulare
+Deepfake și AI
+Semnale de grooming
+Reacția la cyberbullying
+Păstrarea dovezilor
+Unde raportezi
+Fără nume, fără adrese de e-mail, fără rezultate individuale. Raportul unei clase apare doar dacă au participat cel puțin zece elevi. Profesorii pot folosi platforma gratuit, la orele de dirigenție sau de științe sociale. CDRS complet va fi activat odată cu primul pilot în școli, după concurs; același test există deja în GUARDIAN, cu rapoarte demo.
+Vezi rapoartele CDRS demo →
+CDRS · exemplu de raport
+Exemplu ilustrativ, nu date reale
+Înainte de modulepre-test52
+Imediat dupăpost-test76
+După 4-6 săptămâniretenție70
+Cu toată onestitatea: cifrele din candidatura noastră sunt ținte, nu rezultate. Prima măsurătoare reală are loc în pilotul din școală, după competiție.
+Ți se întâmplă ceva chiar acum?
+Nu ești singur și nu este vina ta. Vorbește cu un adult în care ai încredere sau sună la unul dintre aceste numere.
+112Urgențe, dacă ești în pericol
+116 111Telefonul Copilului, gratuit (Asociația Telefonul Copilului)
+1911DNSC, incidente de securitate cibernetică
+Echipa
+Trust//No Trust este prezentat de o echipă de patru elevi de la Liceul Româno-Finlandez din București, coordonați de profesoara lor.
+Nicholas Cârstoiu
+Autor · concept și dezvoltare
+A creat conceptul, a scris scenariile și a construit platforma. Coordonează proiectul și pilotul din școală.
+Ana Marinescu
+Validare concept, testare și UX
+Are grijă ca platforma să funcționeze pentru cei care o folosesc: validează fiecare concept din perspectiva unui adolescent și testează pas cu pas fiecare modul.
+Sarah Istodorescu
+Marketing și comunicare
+Răspunde de felul în care proiectul vorbește cu lumea: îi spune povestea, se ocupă de rețelele sociale și are grijă să ajungă la elevi, profesori și școli.
+Eva Obretin
+Design și traducere
+Răspunde de felul în care arată și se citește platforma: coordonează designul vizual și are grijă ca fiecare modul să sune firesc în engleză, română și franceză.
+Prof. Gabriela-Amalia Grigore
+Profesor coordonator
+Coordonează echipa din partea Liceului Româno-Finlandez și îndrumă proiectul, așa cum a făcut și pentru The Fake News Factory.
+Susținut în scris de
+Nouă organizații și-au confirmat sprijinul în scrisori cu număr de înregistrare, iar o organizație americană de siguranță online i-a scris echipei noastre. Fiecare reprezintă o valoare europeană pe care proiectul o pune în practică.
+Liceul Româno-FinlandezEducație Carta UE, art. 14
+DGASPC Sector 3 BucureștiDrepturile copilului Carta UE, art. 24
+Organizația Salvați CopiiiDrepturile copilului online Strategia UE privind drepturile copilului
+Asociația Code for RomaniaTehnologie pentru oameni Declarația UE privind drepturile digitale
+GEYC, Group of the European Youth for ChangeCetățenie activă TUE, art. 10
+Asociația Nevăzătorilor din RomâniaIncluziune Carta UE, art. 26
+Asociația Iz de ABA, BrașovDemnitate umană Carta UE, art. 1
+ARAS, Asociația Română Anti-SIDASănătate și prevenție Carta UE, art. 35
+Clubul de Karting BucureștiSolidaritate TUE, art. 2
+Kids Online Safety Initiative (SUA)Cooperare internațională dincolo de UE
+Citește toate scrisorile de susținere →
+Despre autor
+Cine a construit TRUST // NO TRUST?
+Nicholas Cârstoiu
+17 ani · București, România
+Conectează-te pe LinkedIn
+Urmărește pe Facebook
+Urmărește pe Instagram
+Email
+Salut, sunt Nicholas Cârstoiu (Nicholas Carstoiu). Am 17 ani, sunt elev în clasa a XI-a la Liceul Româno-Finlandez din București și joc baschet de performanță. Din 2023 sunt membru al Boardului Copiilor UNICEF România, din 2024 al Consiliului Consultativ al Copiilor din Primăria Municipiului București, iar în 2026 am devenit Ambasador pentru România al United Citizens of Europe.
+Siguranța online nu e un subiect nou pentru mine. Am creat Smart Online = Safe Offline, un program de securitate cibernetică pentru adolescenți, și The Fake News Factory, un proiect de educație media care a câștigat două premii în 2026. Amândouă m-au învățat același lucru: nu e suficient să știi regulile. Trebuie să exersezi decizia înainte să ai nevoie de ea pe bune.
+„Generația mea nu trebuie să fie cea mai ușor de păcălit online. Putem fi cei mai greu de păcălit.”
+Trust//No Trust este încercarea mea de a face asta posibil: un instrument gratuit pe care orice adolescent îl poate folosi, orice profesor îl poate aduce la clasă și orice școală îl poate folosi ca să vadă dacă devine mai sigură.
+Boardul Copiilor UNICEF România
+Consiliul Consultativ al Copiilor, Primăria Municipiului București
+Ambasador pentru România, United Citizens of Europe
+Premiul I, „Tânăr lider în voluntariat” 2026
+Site-ul oficial al lui Nicholas Cârstoiu →
+Mai multe de la Nicholas
+Ecranele vă cresc copilul. Nu voi.
+Interdicția nu rezolvă nimic. Doar împinge problema în întuneric.
+APARTIN: proiectează o școală în care fiecare elev poate spune „Aparțin”.
+Aceeași familie
+O misiune, trei proiecte.
+Smart Online = Safe Offline este programul educațional. The Fake News Factory arată cum se fabrică dezinformarea. Trust//No Trust este platforma interactivă în care adolescenții exersează deciziile care îi țin în siguranță.
+Program educațional
+Smart Online = Safe Offline
+Un program de securitate cibernetică pentru adolescenți, construit în jurul manipulării, încrederii și deciziilor pe care le luăm online.
+Descoperă programul →
+Educație media · premiat în 2026
+The Fake News Factory
+O experiență interactivă în care construiești cu mâna ta o știre falsă, ca să o poți recunoaște pe următoarea.
+Intră în The Fake News Factory →
+Site oficial
+Nicholas Cârstoiu
+Sunt Nicho. Te invit pe site-ul meu dacă vrei să mă cunoști mai bine, să-mi descoperi proiectele sau să citești ce am mai scris.
+Mergi pe site →
+Pregătit pentru Concursul „Lider European 2026”
+Această platformă a fost pregătită de o echipă de patru elevi de la Liceul Româno-Finlandez din București pentru înscrierea în Concursul național „Lider European 2026”, organizat de Reprezentanța Comisiei Europene în România în parteneriat cu Ministerul Educației și Cercetării, cu tema din acest an „Implicare civică - Comunități care contează”. Ce vezi aici este un prototip demonstrativ: pilotul din școli va începe doar după competiție.
+Trust//No Trust este un proiect independent, creat de elevi. Nu este realizat, finanțat sau susținut de Comisia Europeană, de Ministerul Educației și Cercetării sau de organizatorii concursului; numele acestora apar doar pentru a descrie contextul în care a fost creat proiectul.
+Trust//No Trust
+Nu crede nimic pe cuvânt. Verifică tot. Protejează pe cineva.
+Un proiect de reziliență digitală de Nicholas Cârstoiu · București, 2026
+Politica de confidențialitate
+Termeni și condiții
+Drepturi de autor
+Nicholas Cârstoiu · The Fake News Factory · Smart Online = Safe Offline
+Acest site nu folosește cookie-uri. Singurele lucruri salvate, și doar în browserul tău, sunt limba aleasă și progresul tău în exerciții.
+© 2026 Nicholas Cârstoiu (Nicholas Carstoiu). Toate drepturile rezervate.
+Cum se folosește
+×
+Un ghid de două minute pentru elevi, profesori și oricine intră pentru prima dată.
+1. Ce este și de ce există
+TRUST // NO TRUST este o platformă gratuită pe care adolescenții exersează recunoașterea manipulării online: conturi false, phishing, înșelătorii, grooming, cyberbullying și conținut generat cu inteligență artificială. În loc să citești reguli, trăiești situații scurte și fictive și decizi ce faci. Nu e suficient să știi regulile; ce te protejează când se întâmplă pe bune este exercițiul deciziei.
+2. Ordinea modulelor
+Începe cu SURVIVE, apoi continuă cu HUNT, TRAP, REAL / FAKE / AI și HELP. Încheie cu GUARDIAN: îți măsoară ce ai învățat și îți arată cum duci mai departe totul la clasa ta, în familie și în comunitate.
+SURVIVE în testare aproximativ 20 de minute
+HUNT în testare aproximativ 15 minute
+TRAP în testare aproximativ 15 minute
+REAL / FAKE / AI în testare aproximativ 15 minute
+HELP în testare aproximativ 10 minute
+GUARDIAN în testare aproximativ 15 minute
+3. Cum funcționează SURVIVE, pas cu pas
+Deschide SURVIVE din secțiunea „Module” și apasă Începe SURVIVE.
+Citește scurtul ecran de pregătire. Îți spune ce conține scenariul și unde găsești ajutor. Apasă Sunt gata.
+Fă cunoștință cu Alex, adolescentul fictiv de 15 ani a cărui săptămână o vei trăi, și apasă Începe săptămâna.
+În fiecare zi apare un mesaj pe telefonul din stânga (sau de sus, pe mobil). Vineri primești un mesaj vocal: apasă ▶ ca să-l asculți. Vocea este generată de calculator, are eticheta clară de simulare, iar transcrierea este mereu acolo.
+Alege unul dintre cele patru răspunsuri. Nu există limită de timp, iar ordinea răspunsurilor se schimbă de la un joc la altul.
+Citește ce s-a întâmplat, tactica din spatele mesajului, semnalele pe care le puteai observa și ce faci în viața reală. Apoi apasă Ziua următoare.
+Bara de sus te însoțește toată săptămâna: cele șapte cercuri arată progresul (albastru pentru o alegere sigură, galben pentru una riscantă), Trust Meter arată dacă tinzi să ai prea ușor încredere sau deloc, iar caseta Scor arată punctele adunate până atunci.
+4. Cum funcționează HUNT, pas cu pas
+Deschide HUNT din secțiunea „Module” și apasă Deschide cazul. Citește ecranul de pregătire și apasă Deschide dosarul.
+Citește mesajele Anei: prietenul ei, Radu, și-a șters toate conturile. Apasă Preiau cazul.
+Nivelul 1, Găsește indiciile: douăsprezece cărți de pe telefonul lui Radu. Atinge-le pe cele șase care țin de caz (atinge din nou ca să anulezi), apoi apasă Trimite probele. Fiecare carte devine verde sau roșie și îți explică de ce.
+Nivelul 2, Leagă firele: atinge cele cinci evenimente în ordinea în care s-au întâmplat. Te-ai răzgândit? Atinge un eveniment ca să anulezi de acolo încolo sau apasă Ia-o de la capăt. Apoi Verifică cronologia.
+Nivelul 3, Numește tactica: pentru fiecare dintre cele patru mesaje ale „recrutorului”, alege tactica (lingușire, izolare, urgență, intimidare sau conversație normală), apoi Verifică răspunsurile.
+Nivelurile 4 și 5: alegi ce ar fi trebuit să facă Radu, apoi ce mesaj îi trimiți lui Matei, un băiat de 13 ani pe cale să cadă în aceeași capcană.
+Bara de sus arată cele cinci niveluri (albastru când ai punctat bine, galben când ai pierdut puncte), scorul și butonul Ies acum.
+5. Cum funcționează TRAP, pas cu pas
+Deschide TRAP din secțiunea „Module” și apasă Începe TRAP. Citește ecranul de pregătire și apasă Sunt gata.
+Citește mesajele Mayei: un nou prieten online o face să se simtă „ciudat”. Apasă Citește conversația.
+Pasul 1, Găsește momentul: atinge primul mesaj în care conversația încetează să fie o prietenie normală, apoi Confirm acest moment. Îți poți schimba alegerea până confirmi. Apoi vezi punctul de cotitură și tot tiparul explicat.
+Pasul 2, Recunoaște semnalele de alarmă: atinge fiecare afirmație care este un semnal de alarmă, apoi Verifică răspunsurile.
+Pasul 3: alege ce ar trebui să facă Maya acum.
+Pasul 4, Visul: metoda loverboy: urmărește-o pe Elena, 16 ani, și atinge cele șase etape ale poveștii ei în ordinea în care se petrec, de la bombardamentul cu iubire până la exploatare, apoi Verifică ordinea. Ia-o de la capăt îți șterge alegerea.
+Pasul 5, Protejează o prietenă: alege ce ai face dacă o prietenă ți-ar povesti ceva asemănător cu povestea Elenei.
+Pe ecranul cu rezultate găsești și cifrele oficiale despre traficul de persoane din România, cu sursele lor, și butonul Ce trebuie să știe orice fată (și orice băiat), care deschide o fereastră de informare: cum începe metoda, ce ți se promite, semnalele de alarmă și numerele de ajutor gratuite.
+6. Cum funcționează REAL / FAKE / AI, pas cu pas
+Deschide REAL / FAKE / AI din secțiunea „Module” și apasă Începe REAL / FAKE / AI. Citește ecranul de pregătire și apasă Sunt gata.
+Citește mesajele lui Andrei: fluxul lui e plin de postări virale și vrea să afle care sunt false. Apasă Deschide fluxul.
+Pasul 1, Sortează fluxul: paisprezece postări apar pe rând. Pentru fiecare, alege Reală, Modificată sau Generată cu AI. Vezi imediat răspunsul corect și explicația, iar la fotografiile modificate vezi originalul lângă varianta modificată. Apasă Postarea următoare ca să continui. Cele două clipuri pornesc fără sunet.
+Pasul 2, Găsește modificarea: în fiecare dintre cele trei fotografii, atinge exact locul schimbat, apoi Confirm acest loc.
+Pasul 3, Verifică precum un profesionist: atinge cei șase pași de verificare în ordinea în care i-ai face, apoi Verifică ordinea.
+Pașii 4 și 5: decide ce faci cu o imagine AI făcută de tine și cu un deepfake cu o colegă.
+Pe ecranul cu rezultate, butonul Cum verifici orice imagine în 60 de secunde deschide un scurt ghid de verificare.
+7. Cum funcționează HELP, pas cu pas
+Deschide HELP din secțiunea „Module” și apasă Deschide HELP. Banda roșie de sus îți amintește mereu: dacă ești în pericol imediat, sună la 112.
+Pasul 1, Ce ți se întâmplă? Atinge situația cea mai apropiată de a ta, de exemplu un cont spart sau cineva care amenință că îți publică pozele. Vezi ce faci imediat, ce păstrezi ca dovadă, ce să eviți și cine te poate ajuta, cu numărul sau linkul fiecărui serviciu. Apasă Sună sau Deschide ca să-i contactezi, ori Toate situațiile ca să te întorci.
+Pasul 2, Avertizează-ți familia: alege pentru cine este mesajul, limba și, dacă vrei, numele tău și semnele de alarmă. Verifică mesajul, apoi apasă Copiază mesajul, Distribuie sau Deschide în WhatsApp și trimite-l de pe telefonul tău. Platforma nu îl trimite și nu îl salvează niciodată.
+Pasul 3, Test rapid: șapte situații, câte o întrebare: alege prima mișcare corectă și citește de ce.
+Cele trei butoane de sus te duc oricând la oricare pas, iar Ies acum te duce direct la numerele de ajutor.
+8. Cum funcționează GUARDIAN, pas cu pas
+Deschide GUARDIAN din secțiunea „Module” și apasă Începe GUARDIAN.
+Pasul 1, Testul Gardianului: apasă Începe testul. Apar pe rând douăzeci și patru de situații, câte trei pentru fiecare dintre cele opt zone CDRS. Alege reacția cea mai sigură și citește de ce. Ordinea întrebărilor și a răspunsurilor se schimbă de fiecare dată.
+Pe ecranul de rezultat vezi scorul, radarul tău în cele opt zone, cele două zone la care să lucrezi, cu linkul spre modulul care le exersează, și zonele tale cele mai puternice. Scrie-ți prenumele, dacă vrei, și apasă Descarcă insigna: insigna e desenată pe dispozitivul tău. Apasă Copiază invitația ca să-ți aduci și clasa.
+Pasul 2, Misiuni în comunitate: alege una dintre cele patru misiuni: o oră de dirigenție, o seară a familiei, o săptămână a siguranței online în școală sau o sesiune cu un partener local. Fiecare arată scopul, pașii, întrebările de pus și ce notezi. Apasă Descarcă misiunea (PDF) ca s-o iei cu tine și Copiază fișa de raportare ca să-i trimiți profesorului cifrele.
+Pasul 3, Rapoarte pentru școli: deschide unul dintre cele trei rapoarte demo (Nicholas, Ana sau raportul clasei, pentru profesor) și scrie codul demo 1234. Fiecare raport poate fi descărcat ca PDF. Datele sunt fictive: arată cum va funcționa CDRS în pilotul din școală.
+9. Cum îți citești rezultatele
+SURVIVE îți dă două rezultate. Primul este scorul de reziliență, de la 0 la 100: fiecare zi valorează 14 sau 15 puncte, reacția cea mai sigură le aduce pe toate, iar reacțiile parțial sigure aduc o parte din ele. Al doilea este ADN-ul tău digital, unul dintre cele cinci profiluri: THE DETECTOR, THE PANIC CLICKER, THE EMPATH, THE SKEPTIC sau THE SOCIAL TRUSTER. El descrie tiparul tău dominant din această săptămână, nu cine ești. Mai vezi câte capcane ai evitat, un sfat concret și o recapitulare zi cu zi.
+HUNT îți dă un scor de detectiv din 100 (cele cinci niveluri valorează 30, 20, 20, 16 și 14 puncte) și un grad: DETECTIV ÎNCEPĂTOR, INVESTIGATOR, DETECTIV PRINCIPAL sau INSPECTOR ȘEF. Primești și raportul cazului, care arată pas cu pas cum s-a desfășurat manipularea, și de ce avea de fapt nevoie Radu.
+TRAP îți dă un scor de avertizare timpurie din 100 (cei cinci pași valorează 30, 20, 15, 20 și 15 puncte) și un nivel: PRIMA PRIVIRE, PE DRUMUL CEL BUN, OCHI ATENT sau ALARMĂ TIMPURIE, plus tot tiparul manipulării, pas cu pas, cifrele oficiale ANITP și fereastra despre metoda loverboy.
+REAL / FAKE / AI îți dă un scor de verificare din 100 (cei cinci pași valorează 40, 20, 15, 10 și 15 puncte) și un nivel: PRIMA DERULARE, PE DRUMUL CEL BUN, OCHI ATENT sau VERIFICATOR DE FAPTE. În flux, dacă vezi că o imagine nu e reală, dar confunzi „modificată” cu „generată cu AI”, primești totuși o jumătate de punct.
+HELP îți dă un scor „știu cui să cer ajutor” din 100, din testul de șapte întrebări, și un nivel: PRIMUL PAS, PE DRUMUL CEL BUN sau GATA SĂ AJUȚI, plus cele mai importante numere de salvat în telefon.
+GUARDIAN îți dă un scor de reziliență digitală din 100, media celor opt zone CDRS (fiecare zonă are trei întrebări și primește 0, 33, 67 sau 100), și un nivel: PRIMUL PAS, GARDIAN ÎN FORMARE sau GARDIAN DIGITAL, plus radarul tău și cele două zone de exersat mai departe.
+În fiecare modul toată lumea joacă exact același conținut, așa că scorurile se pot compara: provoacă-ți prietenii. Cel mai bun scor al tău este reținut în browser, o alegere riscantă nu îți ia niciodată punctele câștigate deja, iar rezultatul îl poți copia sau distribui.
+10. Dacă ceva te atinge prea tare
+Butonul roșu Ies acum rămâne vizibil în fiecare modul sensibil și te duce direct la numerele de ajutor. Dacă ți s-a întâmplat ceva asemănător în realitate, nu ești singur și nu e vina ta: sună gratuit la 116 111 sau vorbește cu un adult în care ai încredere. În caz de urgență, sună la 112.
+11. Pentru profesori
+SURVIVE, HUNT și TRAP încap fiecare într-o singură oră de dirigenție sau de științe sociale, iar HUNT merge foarte bine în grupe mici de trei-patru „detectivi”. Elevii pot juca pe propriile telefoane sau clasa poate juca împreună, pe videoproiector, votând fiecare răspuns, ceea ce deschide foarte bine discuția. Nu sunt necesare conturi, înregistrare sau date despre elevi. GUARDIAN adaugă o oră de dirigenție de 45 de minute gata de ținut și încă trei misiuni în comunitate, fiecare cu o fișă de raportare care notează doar cifre. Măsurarea anonimă la nivel de clasă (CDRS) va fi activată în pilotul din școli; rapoartele demo din GUARDIAN arată cum va arăta.
+12. Confidențialitatea ta
+Nimic din ce alegi nu este trimis nicăieri. Singurele lucruri păstrate sunt limba aleasă și ultimul tău rezultat, salvate în browserul tău. Detalii în Politica de confidențialitate.
+Politica de confidențialitate
+×
+Ultima actualizare: 29 octombrie 2026
+1. Cine suntem
+TRUST // NO TRUST este un proiect educațional gratuit și necomercial, creat de Nicholas Cârstoiu (București, România) și publicat la adresa www.looksmart.ro/trustnotrust/. Pentru orice întrebare despre această politică sau despre datele tale, scrie la nicholas.carstoiu@gmail.com.
+2. Ce nu colectăm
+Platforma nu are conturi, nu cere înregistrare și nu are formulare care să ne trimită informații. Nu folosim cookie-uri, instrumente de analiză, publicitate, pixeli de rețele sociale sau orice altă tehnologie de urmărire. Fonturile și imaginile sunt servite de pe propriul server, așa că nicio terță parte nu află că ne-ai vizitat. Nimic din ce scrii sau alegi în exerciții nu ajunge la noi. Nu ți se cere niciodată să încarci fotografii, înregistrări audio sau video.
+3. Ce rămâne pe dispozitivul tău
+Site-ul folosește memoria locală a browserului (local storage) doar pentru ce este strict necesar serviciului pe care l-ai cerut: limba aleasă; în fiecare modul interactiv, ultimul scor, cel mai bun scor, nivelul și data; în SURVIVE, și profilul tău de ADN digital; iar la testul GUARDIAN, progresul, ca să poți continua de unde ai rămas. Răspunsurile și rezultatele tale nu sunt trimise niciodată platformei și nu le putem vedea. Ca la orice site, serverul primește totuși datele tehnice necesare pentru încărcarea paginilor (vezi secțiunea 4). Le poți șterge oricând, ștergând datele de navigare pentru acest site. Pentru această stocare strict necesară nu este nevoie de consimțământ, potrivit regulilor ePrivacy (Directiva 2002/58/CE și Legea nr. 506/2004).
+4. Jurnalele tehnice ale serverului
+Ca orice site, serverul care găzduiește looksmart.ro poate înregistra automat date tehnice atunci când este accesată o pagină (de exemplu adresa IP, data și ora, pagina cerută și tipul de browser). Aceste jurnale sunt folosite doar pentru securitatea și funcționarea site-ului, nu sunt combinate cu alte date și sunt păstrate o perioadă limitată, stabilită de furnizorul de găzduire. Temei legal: interesul legitim pentru securitatea serviciului (articolul 6 alineatul (1) litera (f) din GDPR).
+5. Dacă ne scrii
+Dacă ne trimiți un e-mail, folosim adresa și mesajul tău doar ca să îți răspundem. Păstrăm conversația doar cât este nevoie pentru a-ți răspunde și cel mult 12 luni. Temei legal: interesul nostru legitim de a-ți răspunde (articolul 6 alineatul (1) litera (f) din GDPR). Te rugăm să nu ne trimiți informații personale sensibile. Dacă ești în pericol sau ți se întâmplă ceva chiar acum, nu aștepta un răspuns pe e-mail: sună la 112 sau la Telefonul Copilului, 116 111, gratuit.
+6. Măsurarea în școli (CDRS)
+Scorul de Reziliență Digitală a Comunității este gândit să funcționeze fără nume, fără adrese de e-mail și fără rezultate individuale: clasele folosesc un cod și sunt afișate doar scoruri agregate, de la cel puțin zece elevi. Înainte ca această funcție să fie activată, politica va fi actualizată pentru a o descrie exact.
+7. Copii și adolescenți
+Platforma este gândită pentru adolescenți și funcționează fără date personale, așa că nu este nevoie de acordul părinților pentru a o folosi. Dacă ai sub 16 ani și vrei să ne contactezi, îți recomandăm să o faci împreună cu un părinte sau cu un profesor.
+8. Linkuri către alte site-uri
+Avem linkuri către instituții și către alte proiecte. Acele site-uri au propriile politici de confidențialitate, pentru care nu răspundem.
+9. Drepturile tale
+Potrivit Regulamentului general privind protecția datelor (UE) 2016/679 ai dreptul de acces, de rectificare și de ștergere a datelor, dreptul la restricționarea prelucrării, dreptul de opoziție și dreptul la portabilitatea datelor. Scrie-ne la adresa de mai sus și îți răspundem în cel mult o lună. Ai și dreptul de a depune o plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal, ANSPDCP (www.dataprotection.ro).
+10. Modificări
+Putem actualiza această politică pe măsură ce platforma se dezvoltă. Data de sus arată mereu ultima versiune.
+Termeni și condiții
+×
+Ultima actualizare: 8 octombrie 2026
+1. Acceptare
+Folosind www.looksmart.ro/trustnotrust/ („platforma”) ești de acord cu acești termeni. Dacă nu ești de acord, te rugăm să nu folosești platforma.
+2. Ce este platforma
+TRUST // NO TRUST este o platformă educațională gratuită și necomercială, creată de Nicholas Cârstoiu pentru a-i ajuta pe adolescenți să recunoască manipularea online și să reacționeze corect. Este un prototip în dezvoltare: modulele, conținutul și funcțiile pot fi modificate, adăugate sau retrase oricând.
+3. Totul este fictiv
+Toate personajele, conversațiile, profilurile, mesajele, mărcile și interfețele de aplicații din scenarii sunt inventate în scop educațional. Orice asemănare cu persoane, conturi sau evenimente reale este întâmplătoare. Nicio platformă sau companie reală nu este reprodusă, evaluată sau recomandată.
+4. Nu este consiliere de specialitate și nu este un serviciu de urgență
+Platforma oferă informații educaționale generale. Nu înlocuiește sfatul unui psiholog, avocat, polițist, medic sau al altui specialist și nu este monitorizată în timp real. Dacă tu sau altcineva sunteți în pericol, sună la 112. Pentru ajutor gratuit pentru copii și adolescenți, sună la 116 111. Incidentele de securitate cibernetică pot fi raportate la DNSC, la numărul 1911.
+5. Utilizare acceptabilă
+Poți folosi platforma pentru învățarea personală, iar profesorii o pot folosi la clasă. Nu ai voie să încerci să perturbi sau să supraîncarci platforma ori serverul ei, să obții acces neautorizat, să copiezi automat conținutul (scraping) sau să folosești ce înveți aici ca să înșeli, să hărțuiești sau să rănești pe cineva. Scenariile există ca să te ajute să recunoști manipularea, niciodată ca să o pui în practică.
+6. Corectitudinea informațiilor
+Avem grijă ca informațiile, inclusiv datele de contact ale instituțiilor, să fie corecte și actualizate. Numerele de telefon, procedurile și legile se pot schimba, așa că verifică întotdeauna site-urile oficiale ale instituțiilor respective.
+7. Linkuri externe
+Linkurile către alte site-uri sunt oferite pentru ușurința ta. Nu controlăm conținutul acestora și nu răspundem pentru el.
+8. Răspundere
+Platforma este oferită gratuit și „ca atare”. În măsura permisă de lege, nu răspundem pentru prejudicii indirecte sau pentru pierderi rezultate din folosirea ori imposibilitatea folosirii platformei sau a informațiilor de pe ea. Nimic din acești termeni nu limitează răspunderea care nu poate fi limitată potrivit legii aplicabile.
+9. Proprietate intelectuală
+Tot conținutul platformei este protejat prin drept de autor. Regulile de folosire sunt prevăzute în secțiunea Drepturi de autor.
+10. Legea aplicabilă
+Acești termeni sunt guvernați de legea română. Orice litigiu va fi soluționat de instanțele competente din București, fără a aduce atingere drepturilor imperative pe care le ai în calitate de consumator.
+11. Modificări și contact
+Putem actualiza acești termeni; data de sus arată ultima versiune. Întrebări: nicholas.carstoiu@gmail.com.
+Drepturi de autor
+×
+Ultima actualizare: 29 octombrie 2026
+© 2026 Nicholas Cârstoiu (Nicholas Carstoiu). Toate drepturile rezervate.
+1. Ce este protejat
+Numele și logoul TRUST // NO TRUST, toate textele, scenariile, personajele, dialogurile, dosarele de caz, întrebările și răspunsurile, profilurile de ADN digital, chestionarele Scorului de Reziliență Digitală a Comunității (CDRS) și metoda de calcul a scorului, așa cum sunt redactate, grafica, ilustrațiile, designul interfeței, codul sursă, precum și selecția și aranjarea întregului conținut sunt opera originală a lui Nicholas Cârstoiu. Ele sunt protejate de Legea nr. 8/1996 privind dreptul de autor și drepturile conexe, de dreptul Uniunii Europene și de tratatele internaționale, inclusiv Convenția de la Berna. Acolo unde platforma conține o bază de date, aceasta este protejată și prin dreptul sui generis al fabricantului bazei de date.
+Membrii echipei, Ana Marinescu (validare concept, testare și UX), Sarah Istodorescu (marketing și comunicare) și Eva Obretin (design și traducere), contribuie la proiect sub coordonarea prof. Gabriela-Amalia Grigore.
+2. Ce poți face fără să ceri voie
+să folosești platforma online pentru propria învățare;
+să o folosești gratuit la clasă, afișând-o direct de pe acest site;
+să distribui linkuri către orice pagină a platformei;
+să citezi scurte fragmente în scop didactic, de analiză sau de informare, cu menționarea clară a sursei („TRUST // NO TRUST, Nicholas Cârstoiu”) și a linkului, în limitele excepțiilor prevăzute de lege.
+3. Ce necesită acordul scris prealabil
+Fără acordul scris prealabil al autorului nu ai voie să copiezi, să reproduci, să descarci în vederea redistribuirii, să republici, să traduci, să adaptezi, să modifici sau să creezi opere derivate din orice parte a platformei; să o găzduiești pe alt server, să o oglindești sau să o afișezi în interiorul altui site (framing); să o incluzi în cursuri, instruiri, produse sau servicii plătite; să folosești numele sau logoul TRUST // NO TRUST; ori să elimini sau să modifici mențiunile privind drepturile de autor. Cereri de permisiune: nicholas.carstoiu@gmail.com.
+4. Extragerea de text și date și antrenarea AI
+Autorul își rezervă în mod expres drepturile de reproducere și de extragere în scopul extragerii de text și date, inclusiv folosirea oricărui conținut al acestei platforme pentru antrenarea, ajustarea sau evaluarea sistemelor de inteligență artificială, în conformitate cu articolul 4 alineatul (3) din Directiva (UE) 2019/790 și cu legea română care o transpune. Această rezervare este exprimată și într-o formă care poate fi citită automat, pe fiecare pagină.
+5. Nume și materiale ale terților
+Numele instituțiilor și organizațiilor menționate pe platformă (de exemplu Salvați Copiii, Asociația Telefonul Copilului, DNSC, Comisia Europeană sau concursul Lider European) aparțin titularilor lor și sunt folosite doar pentru a le identifica. Menționarea lor nu înseamnă parteneriat, susținere sau afiliere, decât dacă acest lucru este precizat expres. Orice nume de marcă din scenarii este inventat. Fonturile Inter și Poppins sunt folosite în baza licenței SIL Open Font License 1.1. Drapelul Uniunii Europene apare doar pentru a indica contextul european al concursului. Două dintre fotografiile reale din REAL / FAKE / AI nu ne aparțin: fotografia cu flori de cireș deasupra unui lac este © Kanenori, iar apusul deasupra căii ferate este © Stephanie Hanstein. Sunt afișate cu menționarea autorului, exclusiv în scop educativ; toate drepturile rămân ale fotografilor, nu intră sub permisiunile de mai sus și nu pot fi preluate de pe acest site. Clipul cu ploaia din REAL / FAKE / AI este © The NYC Walking Show și este afișat cu menționarea autorului, în aceleași condiții. Logourile publicațiilor din pagina Media, logourile organizațiilor care ne susțin (Liceul Româno-Finlandez, DGASPC Sector 3 București, Organizația Salvați Copiii, Asociația Code for Romania, GEYC, Asociația Nevăzătorilor din România, Asociația Iz de ABA, ARAS - Asociația Română Anti-SIDA, Clubul de Karting București și Kids Online Safety Initiative) și scrisorile lor de susținere aparțin titularilor lor și sunt afișate doar pentru a identifica sursa unui articol, a unui mesaj sau a unei scrisori. Logourile din pagina Media duc la site-ul oficial al fiecărei organizații. Pentru orice întrebare despre ele, scrie la nicholas.carstoiu@gmail.com.
+6. Materiale deschise în viitor
+Unele materiale didactice pot fi publicate ulterior sub o licență deschisă. În acest caz, licența va fi menționată explicit pe acele materiale; tot restul rămâne supus prezentei secțiuni.
+7. Încălcări
+Folosirea neautorizată a conținutului protejat poate atrage răspunderea civilă și penală, potrivit Legii nr. 8/1996. Dacă vezi pe platformă un conținut care îți încalcă drepturile sau observi că materialele noastre sunt folosite fără permisiune, scrie-ne la nicholas.carstoiu@gmail.com.
+×

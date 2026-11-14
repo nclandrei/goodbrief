@@ -1,0 +1,254 @@
+{
+  "assessments": [
+    {
+      "index": 0,
+      "fingerprint": "c1f21bb7f17519dea1834a99b193a5d40065d0fef9040185b2243fe79b2c4e2e",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 82,
+      "impact": 74,
+      "audienceRelevance": 83,
+      "decision": "candidate",
+      "judgment": "Votul din Rășinari exprimă o alegere comunitară pentru protejarea locului; trebuie verificate participarea, validitatea referendumului și ce efect juridic produce."
+    },
+    {
+      "index": 1,
+      "fingerprint": "47f78699d810dfba2ef926f7c3773fac427964eedee0a9a00f33de2fe3abf165",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 56,
+      "impact": 28,
+      "audienceRelevance": 36,
+      "decision": "reject",
+      "judgment": "Notorietatea Klintensiv într-un studiu de piață este promovare comercială, fără o îmbunătățire demonstrată a accesului sau siguranței medicale."
+    },
+    {
+      "index": 2,
+      "fingerprint": "fb7c06259908c8351f8743885a5e27ed748cc69a21fddd51263b1089fe924d71",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 48,
+      "impact": 22,
+      "audienceRelevance": 51,
+      "decision": "reject",
+      "judgment": "Dimensiunea instalării GTA VI este informație pentru cumpărătorii jocului, nu un progres comunitar sau o realizare cu miză editorială suficientă."
+    },
+    {
+      "index": 3,
+      "fingerprint": "ab0ccae5a3b93638629a302e6fbd68bd7600f70dd1ae4521ff8df5ebc3c95c8a",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 35,
+      "impact": 64,
+      "audienceRelevance": 29,
+      "decision": "reject",
+      "judgment": "Refacerea depozitelor petroliere este o afirmație a unei companii iraniene în context de război, fără beneficiu apropiat și independent demonstrat."
+    },
+    {
+      "index": 4,
+      "fingerprint": "dcf2ea6feb2ee5de7dab2a0ef425e15c86a4b6046d34a14b69fdf7a6e31915d1",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 12,
+      "impact": 8,
+      "audienceRelevance": 16,
+      "decision": "reject",
+      "judgment": "Gluma lui Trump despre Dana White ține de spectacol politic și nu anunță vreo schimbare folositoare cititorilor."
+    },
+    {
+      "index": 5,
+      "fingerprint": "05205f2242ccd2efcc67dd797a7c2cb39e27ec2aaa1692afac88a3ca926117af",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 61,
+      "impact": 19,
+      "audienceRelevance": 35,
+      "decision": "reject",
+      "judgment": "Victoria Interului oferă o notă sportivă pozitivă, dar declarațiile lui Chivu după o etapă obișnuită nu justifică un loc în ediție."
+    },
+    {
+      "index": 6,
+      "fingerprint": "c390840b71985b6455d099b8309d1636d66344cfcf2604755ec5ec4c48ad1246",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 9,
+      "impact": 38,
+      "audienceRelevance": 27,
+      "decision": "reject",
+      "judgment": "Explicația lui Trump pentru rezultatul alegerilor amplifică o dispută politică despre Israel, fără rezultat constructiv concret."
+    },
+    {
+      "index": 7,
+      "fingerprint": "94c311bf84474a1f05c1b500170a50aed34d8bffefd65dcba9ff8857d2550c41",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 5,
+      "impact": 52,
+      "audienceRelevance": 25,
+      "decision": "reject",
+      "judgment": "Scenariile de insurecție și evacuare a lui Macron sunt relatare despre riscuri și teamă, nu o veste bună verificabilă."
+    },
+    {
+      "index": 8,
+      "fingerprint": "42cd2d8dd38d914f3f2b1d840dd18d5a86600f76c009546893b38d08dee330a4",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 36,
+      "impact": 65,
+      "audienceRelevance": 32,
+      "decision": "reject",
+      "judgment": "Condițiile lui Eisenkot pentru o coaliție rămân negocieri politice israeliene; nu există în extras un acord sau un beneficiu realizat."
+    },
+    {
+      "index": 9,
+      "fingerprint": "a0d40b8d9a61b5de762176681b02858fa2c9cd14ffb5767e74b50ce4c11dc46d",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 65,
+      "impact": 17,
+      "audienceRelevance": 27,
+      "decision": "reject",
+      "judgment": "Succesul lui Coco Gauff într-un meci de grupă interesează fanii tenisului, dar nu reprezintă o reușită distinctivă pentru publicul newsletterului."
+    },
+    {
+      "index": 10,
+      "fingerprint": "b464a2ba59ce92e87bd038c0b3089290b154077832bcc6aabe8ffe00c6103ad2",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 89,
+      "impact": 88,
+      "audienceRelevance": 87,
+      "decision": "candidate",
+      "judgment": "Legătura electrică de 157 km poate întări siguranța energetică a Moldovei și conexiunea cu România; trebuie separat testul sub tensiune de exploatarea comercială."
+    },
+    {
+      "index": 11,
+      "fingerprint": "ceb3f0ac4c4e423b1e4215e653bbc85fee1ff5357e9791896da123b0027073a3",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 64,
+      "impact": 15,
+      "audienceRelevance": 23,
+      "decision": "reject",
+      "judgment": "Debutul câștigător al Lindei Noskova este un rezultat sportiv de rutină, cu impact redus în viața cititorilor din România."
+    },
+    {
+      "index": 12,
+      "fingerprint": "690d8ac2df4d75fe4570ed236e0319e51db47809758e6f79993f21d876084bdd",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 65,
+      "impact": 18,
+      "audienceRelevance": 32,
+      "decision": "reject",
+      "judgment": "Revenirea Barcelonei într-un derby este divertisment sportiv, nu o schimbare de interes general care să ocupe selecția săptămânală."
+    },
+    {
+      "index": 13,
+      "fingerprint": "9b851cd98e098a3e3dddc6b571891266f80f19d4573dafd2836fcac98fd3b289",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 46,
+      "impact": 14,
+      "audienceRelevance": 30,
+      "decision": "reject",
+      "judgment": "Remiza Fiorentina–Juventus și golul anulat lui Drăgușin nu oferă nici măcar o realizare clară de celebrat dincolo de cronica partidei."
+    },
+    {
+      "index": 14,
+      "fingerprint": "96313188794ecca7a6d8fbe126b4131921f29a6572cc1d1f12855893aa6c3ce8",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 4,
+      "impact": 64,
+      "audienceRelevance": 45,
+      "decision": "reject",
+      "judgment": "Acuzațiile de spionaj și relația atribuită lui Jensen Huang sunt un scandal aflat sub anchetă, nepotrivit unei ediții de vești bune."
+    },
+    {
+      "index": 22,
+      "fingerprint": "705c3aa84833036fc25599185aaf6351b102a40c2440bcdf6481ea2ea36285a2",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 73,
+      "impact": 20,
+      "audienceRelevance": 47,
+      "decision": "reject",
+      "judgment": "Eseul despre fair-play la finala de tenis are un ton luminos, dar descrie o impresie personală, nu un rezultat social nou și concret."
+    },
+    {
+      "index": 23,
+      "fingerprint": "a42c41799182671f4fc493883db467ce00243dc0d95cdfcebf55e1c957b33e55",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 8,
+      "impact": 61,
+      "audienceRelevance": 69,
+      "decision": "reject",
+      "judgment": "Avertismentul despre looksmaxxing și influenceri nocivi semnalează un risc pentru adolescenți, fără intervenție sau soluție aplicată în extras."
+    },
+    {
+      "index": 24,
+      "fingerprint": "1c4a8b40c38db2c4a0f1925239680c9b07dbeb48d324bffccf09e4c3de079c58",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 33,
+      "impact": 65,
+      "audienceRelevance": 76,
+      "decision": "reject",
+      "judgment": "Declarația unui fost ministru privind taxele din 2027 nu este o decizie fiscală adoptată; promisiunea politică nu poate fi prezentată drept beneficiu sigur."
+    },
+    {
+      "index": 25,
+      "fingerprint": "dd93f6e6c5771552bc118db85c87cc283cf89804c0688dc709e6439094b1aa58",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 74,
+      "impact": 42,
+      "audienceRelevance": 68,
+      "decision": "reject",
+      "judgment": "Interviul despre Delta sălbatică are valoare culturală și ecologică, dar premiera indicată este din 23 octombrie, nu o lansare nouă a acestei săptămâni."
+    },
+    {
+      "index": 26,
+      "fingerprint": "0f0fbbe97347149db5ae5e9bf49a8acac30262c3c59014876aecfaf506f7459b",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 9,
+      "impact": 12,
+      "audienceRelevance": 38,
+      "decision": "reject",
+      "judgment": "Disputa cu un mecanic despre Rusia și Ucraina este o anecdotă polarizantă, fără realizare comunitară sau serviciu nou."
+    },
+    {
+      "index": 27,
+      "fingerprint": "2b959d5f551b22b1557b62fce2f9c479f0c0d3aa0d3a385b58fbfeee82cbe72f",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 76,
+      "impact": 21,
+      "audienceRelevance": 57,
+      "decision": "reject",
+      "judgment": "Gestul de politețe față de mașina de salubritate este simpatic, însă rămâne o experiență individuală fără noutate sau amploare comparabilă cu alte inițiative."
+    },
+    {
+      "index": 28,
+      "fingerprint": "68bd22f5397d84991748080656d5d8ddd28b889e81ec98c7841f4077c9455859",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 77,
+      "impact": 72,
+      "audienceRelevance": 59,
+      "decision": "candidate",
+      "judgment": "Cooperarea pentru fuziune poate fi o dezvoltare tehnologică interesantă; acordurile dintre companii nu înseamnă însă centrală construită sau energie disponibilă."
+    },
+    {
+      "index": 29,
+      "fingerprint": "7ec534658788e38040b6543b14e4cec15475abbed8897e924a35ba649ab767e8",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 47,
+      "impact": 61,
+      "audienceRelevance": 35,
+      "decision": "reject",
+      "judgment": "Donațiile pentru polițiști arată solidaritate, dar povestea este inseparabilă de un atac cu șase morți și nu se potrivește tonului ediției."
+    },
+    {
+      "index": 30,
+      "fingerprint": "2916516878cd249cd5da10b09e0b88d10f269f896b8ee505f3368b49861ac145",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 43,
+      "impact": 60,
+      "audienceRelevance": 65,
+      "decision": "reject",
+      "judgment": "Vizita Ursulei von der Leyen este o întâlnire diplomatică programată; extrasul nu identifică un proiect aprobat sau un rezultat folositor deja obținut."
+    },
+    {
+      "index": 31,
+      "fingerprint": "6f749a968fccd41c48937c8fc4d833eb43ea0641524819ff5a68ca298d7470e1",
+      "assessedAt": "2026-11-14T06:08:47.356Z",
+      "positivity": 3,
+      "impact": 35,
+      "audienceRelevance": 20,
+      "decision": "reject",
+      "judgment": "Prăbușirea unei tribune în Norvegia este un accident, nu o știre pozitivă; nu apare vreo măsură de siguranță nouă de evaluat separat."
+    }
+  ]
+}

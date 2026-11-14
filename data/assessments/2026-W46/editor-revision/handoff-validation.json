@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-11-14T08:01:59.175Z",
+  "kind": "editor-requested-removal",
+  "authorization": "Scoate stirea cu cei 4 liceeni. Dupa care, ship all changes, si lock in editia sa fie trimisa luni.",
+  "approvedBy": "user_01KAR8T4PDCMSD831TGZX0PZHP",
+  "originalProofHash": "a78642f6da99810dcf2edf0ca9d736fba29f262aaa0b9309027f13a3b34ede47",
+  "revisedProofHash": "6a1a4b2e30b1b0848f02eeb490fa0a28de5949fd852c061cb09a8dc3461623c9",
+  "draftHash": "c4003e3be79e1bee5a6f08e0087c9825aeeb1432024ceed0c59b79557584e773",
+  "removedArticleId": "c4ab257b834234c3",
+  "selected": 10,
+  "categoryCounts": {
+    "local-heroes": 2,
+    "wins": 3,
+    "green-stuff": 4,
+    "quick-hits": 1
+  },
+  "otherSelectedStoriesUnchanged": true,
+  "assessmentScoresAndJudgmentsUnchanged": true,
+  "originalCompletionAndEmailReceiptsRetained": true,
+  "updatedProofEmailed": false,
+  "coverage": {
+    "input": 2007,
+    "excluded": 7,
+    "assessed": 2000,
+    "missing": 0,
+    "missingIndices": [],
+    "candidates": 223,
+    "verified": 11
+  },
+  "weekId": "2026-W46",
+  "draftApproved": false,
+  "proofPath": "/home/user/workspace/repo/data/assessments/2026-W46/editor-revision/editor-proof.html",
+  "newsletterPath": "/home/user/workspace/repo/data/assessments/2026-W46/editor-revision/newsletter.html",
+  "deliverySha256": "be846f5fcec9187c7a18b7825574ceee1061d5c1d91fa9976d0096f7509c474d"
+}

@@ -1,0 +1,96 @@
+{
+  "assessed": 2000,
+  "repeatedSixWordPhrases": [
+    {
+      "phrase": "la 25 40 de ani dar",
+      "indices": [
+        163,
+        1762
+      ]
+    },
+    {
+      "phrase": "pnl este conflict intern de partid",
+      "indices": [
+        175,
+        923
+      ]
+    },
+    {
+      "phrase": "nvidia este acuzație de spionaj și",
+      "indices": [
+        336,
+        933
+      ]
+    },
+    {
+      "phrase": "scandalul de spionaj nu progres tehnologic",
+      "indices": [
+        424,
+        1145
+      ]
+    },
+    {
+      "phrase": "de spionaj este caz penal de",
+      "indices": [
+        653,
+        666
+      ]
+    },
+    {
+      "phrase": "spionaj este caz penal de securitate",
+      "indices": [
+        653,
+        666
+      ]
+    },
+    {
+      "phrase": "nu justifică un loc între progrese",
+      "indices": [
+        799,
+        1023
+      ]
+    },
+    {
+      "phrase": "justifică un loc între progrese mai",
+      "indices": [
+        799,
+        1023
+      ]
+    },
+    {
+      "phrase": "un loc între progrese mai ample",
+      "indices": [
+        799,
+        1023
+      ]
+    },
+    {
+      "phrase": "noiembrie înainte de ediția de luni",
+      "indices": [
+        827,
+        1197
+      ]
+    },
+    {
+      "phrase": "georgescu în board flowx ai este",
+      "indices": [
+        981,
+        1022
+      ]
+    },
+    {
+      "phrase": "în board flowx ai este numire",
+      "indices": [
+        981,
+        1022
+      ]
+    },
+    {
+      "phrase": "pentru căldură este truc casnic fără",
+      "indices": [
+        1196,
+        1886
+      ]
+    }
+  ]
+}

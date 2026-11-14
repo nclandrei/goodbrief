@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "kind": "proof",
+  "proofHash": "a78642f6da99810dcf2edf0ca9d736fba29f262aaa0b9309027f13a3b34ede47",
+  "htmlHash": "221062ee84e7466ebd3393eb8ab8e4c1cb7ea90d8b2feae3f899b637aca11d86",
+  "recipientHash": "498bc57ab7cbf934779ca50599a32a858aab3753c5584de8533cc950475c5b6a",
+  "recipientCount": 1,
+  "status": "accepted",
+  "attemptedAt": "2026-11-14T07:26:33.841Z",
+  "acceptedAt": "2026-11-14T07:26:34.063Z",
+  "emailId": "01a1d8f3-6c00-77de-a176-6da12ffe885d"
+}

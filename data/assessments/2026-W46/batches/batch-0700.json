@@ -1,0 +1,504 @@
+{
+  "assessments": [
+    {
+      "index": 707,
+      "fingerprint": "acdce2a256e6672a8ea1a94f607766701f9d9d87e24b00b1b4d1270c1bc57a05",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 73,
+      "impact": 20,
+      "audienceRelevance": 37,
+      "decision": "reject",
+      "judgment": "Optimea de challenger a lui Crețu este rezultat sportiv obișnuit, fără context în extras."
+    },
+    {
+      "index": 708,
+      "fingerprint": "c14b1c9254b9aad7b74f6e9dd6403d7427a57de9c49aa6dccba2f8785bdf8fa1",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 1,
+      "impact": 37,
+      "audienceRelevance": 32,
+      "decision": "reject",
+      "judgment": "Accidentul cu bebeluș decedat pe DN13 este tragedie rutieră."
+    },
+    {
+      "index": 709,
+      "fingerprint": "1a9efb5c678e9a01ffeac4900295621e81a39769f3279b0eb448c3a6d3ef0559",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 46,
+      "impact": 51,
+      "audienceRelevance": 43,
+      "decision": "reject",
+      "judgment": "Absența suspiciunilor prezidențiale despre SAFE nu constituie audit sau realizare nouă."
+    },
+    {
+      "index": 710,
+      "fingerprint": "dfaf04f864f7737c10e8087557a19bda315f894f08ccbcafed9cffb0a2bb0e1a",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 39,
+      "impact": 20,
+      "audienceRelevance": 29,
+      "decision": "reject",
+      "judgment": "Refuzul evaluării lui Bolojan este poziționare politică fără rezultat public."
+    },
+    {
+      "index": 711,
+      "fingerprint": "349b17ae1579a5e8451f50df2cdb7028a44b3d1b943a8ccb937d96f3f6a7e7d9",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 65,
+      "impact": 14,
+      "audienceRelevance": 23,
+      "decision": "reject",
+      "judgment": "Victoriile favoritelor la hochei sunt rutină de campionat, fără miză distinctivă."
+    },
+    {
+      "index": 712,
+      "fingerprint": "d3c8e29dd08190f44bc6802bdb69d0f080b6fc085e0b02ca0745fbed75092777",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 17,
+      "impact": 48,
+      "audienceRelevance": 35,
+      "decision": "reject",
+      "judgment": "Mobilizarea din criza educației franceze nu documentează soluționarea problemei."
+    },
+    {
+      "index": 713,
+      "fingerprint": "0812cf49851c2c149b8aecb9fd8ee3f039b5ce92acca0b144c16b0fb21cbcc85",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 7,
+      "impact": 39,
+      "audienceRelevance": 36,
+      "decision": "reject",
+      "judgment": "Expulzarea diplomatului moldovean este deteriorare diplomatică."
+    },
+    {
+      "index": 714,
+      "fingerprint": "5522486a64d90b36c83f2dd70577b1fc74a4eb9c218204baee01d3cc2f04f2ba",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 36,
+      "impact": 31,
+      "audienceRelevance": 42,
+      "decision": "reject",
+      "judgment": "Replica despre declarațiile AfD reacționează la denigrare, fără protecție nouă obținută."
+    },
+    {
+      "index": 715,
+      "fingerprint": "c9ae91ba26ccc51866a3509b43cba43973023aee6ed3939166ab96719acea438",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 3,
+      "impact": 25,
+      "audienceRelevance": 20,
+      "decision": "reject",
+      "judgment": "Acuzațiile sexuale împotriva lui Walliams sunt scandal de abuz, nu veste bună."
+    },
+    {
+      "index": 716,
+      "fingerprint": "39524d51cf92778d3611c384242f9db5e5d17480e5e157021198ac1fa5dfa724",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 69,
+      "impact": 18,
+      "audienceRelevance": 32,
+      "decision": "reject",
+      "judgment": "Victoriile Brăilei și Rapidului sunt etape obișnuite de handbal intern."
+    },
+    {
+      "index": 717,
+      "fingerprint": "02ddeaa208f1144d8700593d08c8b032eae9baa8a8d626c77c0a29bcbaa73e69",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 43,
+      "impact": 58,
+      "audienceRelevance": 44,
+      "decision": "reject",
+      "judgment": "Oferta de împărțire a costurilor trupelor americane este negociere militară încă neacceptată."
+    },
+    {
+      "index": 718,
+      "fingerprint": "a8eca92fa2a281c84a6e76877efdd59f214e05d808ce2b58526e3f541e8c108e",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 3,
+      "impact": 23,
+      "audienceRelevance": 33,
+      "decision": "reject",
+      "judgment": "Mistreții uciși pe șoseaua sălăjeană sunt accident, nu conservare."
+    },
+    {
+      "index": 719,
+      "fingerprint": "99ab65cbf4679d422132e7de28e75b36955a11daafa9acbd7c1faaa9b515c4ce",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 44,
+      "impact": 12,
+      "audienceRelevance": 23,
+      "decision": "reject",
+      "judgment": "Locuința de protocol a președintelui nu schimbă viața comunităților."
+    },
+    {
+      "index": 720,
+      "fingerprint": "6ee41dc4d91c4d9c63f5d92b8c1e892946acf9bde00d3aee1a73e6ecde4eae39",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 5,
+      "impact": 47,
+      "audienceRelevance": 31,
+      "decision": "reject",
+      "judgment": "Arestarea americanului suspectat de spionaj rămâne anchetă penală."
+    },
+    {
+      "index": 721,
+      "fingerprint": "fb2c66ce9ac208ed0045d5d189ecea862b9693bb03860c57ab86a2c2e395afbf",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 35,
+      "impact": 47,
+      "audienceRelevance": 48,
+      "decision": "reject",
+      "judgment": "Informațiile interesante promise despre Georgescu nu sunt încă făcute publice."
+    },
+    {
+      "index": 722,
+      "fingerprint": "233f045f532c5a4625ac73a50945465508a62a6ab3de2bc714ca21ac7b0f85b5",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 19,
+      "impact": 25,
+      "audienceRelevance": 37,
+      "decision": "reject",
+      "judgment": "Înfrângerea U-BT în EuroCup este rezultat negativ, fără alt progres în titlu."
+    },
+    {
+      "index": 723,
+      "fingerprint": "20318aec752ce90c4b42e2cc6d77c2a55ce9369ebc1ea28d65c9d10f18cfaef0",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 40,
+      "impact": 44,
+      "audienceRelevance": 42,
+      "decision": "reject",
+      "judgment": "Numirile viitoare la servicii depind de majoritate parlamentară, fără rezultat actual."
+    },
+    {
+      "index": 724,
+      "fingerprint": "eac2496ff1176d191763197d17fd6fac921aef6f0d63e56881d2b09bdbbda76a",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 1,
+      "impact": 51,
+      "audienceRelevance": 31,
+      "decision": "reject",
+      "judgment": "Atacurile mortale din Gaza sunt violență de război, inclusiv asupra copiilor."
+    },
+    {
+      "index": 725,
+      "fingerprint": "659b1f1bb27482d8271d0257a4bb8d616683fe7e92788c79b1347c7e5c454965",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 38,
+      "impact": 68,
+      "audienceRelevance": 64,
+      "decision": "reject",
+      "judgment": "Comasarea comunelor este posibilitate, iar reforma amplă este declarată improbabilă în timp util."
+    },
+    {
+      "index": 726,
+      "fingerprint": "c9b84a1782ffe3dca8c651ebfe2f3a0a1c67404ca6606c96f6389f74c667bf7b",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 42,
+      "impact": 63,
+      "audienceRelevance": 69,
+      "decision": "reject",
+      "judgment": "Economiile și colectarea mai bună sunt recomandări prezidențiale, nu rezultate bugetare noi."
+    },
+    {
+      "index": 727,
+      "fingerprint": "f0022677051e9103bdf3b938c68d3e4878df143833cdd769db16a3423e168648",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 34,
+      "impact": 68,
+      "audienceRelevance": 74,
+      "decision": "reject",
+      "judgment": "Reducerea TVA nu este garantată sau condiție politică stabilită, deci nu există ieftinire adoptată."
+    },
+    {
+      "index": 728,
+      "fingerprint": "1de4c31dc2e9d0e20b143be7d4bfcd70a6991805b259b9b59ce93eb8786f71d7",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 63,
+      "impact": 73,
+      "audienceRelevance": 67,
+      "decision": "reject",
+      "judgment": "Coaliția pentru fonduri de coeziune este negociere a bugetului viitor, nu fonduri deja salvate."
+    },
+    {
+      "index": 729,
+      "fingerprint": "476f33c218992bd4787e4e63af93dc190c8cf88276762da8802bb05cc6d683f6",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 16,
+      "impact": 59,
+      "audienceRelevance": 57,
+      "decision": "reject",
+      "judgment": "Ratingul sub o guvernare AUR este scenariu politic ipotetic."
+    },
+    {
+      "index": 730,
+      "fingerprint": "346a1783db9adfa2cca569ba53dc47f5f688d4b6b31c564fa3e998edc406c288",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 10,
+      "impact": 77,
+      "audienceRelevance": 73,
+      "decision": "reject",
+      "judgment": "Posibilul sprijin FMI este avertisment asupra pierderii finanțării, nu progres."
+    },
+    {
+      "index": 731,
+      "fingerprint": "1d3fdb0f726a9aab431af30d2289571e50e0198a37650cf47c008fc42da1cad6",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 14,
+      "impact": 76,
+      "audienceRelevance": 72,
+      "decision": "reject",
+      "judgment": "Riscul retrogradării României descrie vulnerabilitate financiară."
+    },
+    {
+      "index": 732,
+      "fingerprint": "763d387e1fe91516392db906c58e732ea7cc2e394cd9857bba7e86983ba3e2ee",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 17,
+      "impact": 78,
+      "audienceRelevance": 74,
+      "decision": "reject",
+      "judgment": "Deficitul și dobânzile mari sunt dezechilibre bugetare, fără remediu realizat."
+    },
+    {
+      "index": 733,
+      "fingerprint": "9964d1096491c7317d220fb2f72e71a3b7274c98ce51e6c0d64ee013af43b298",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 29,
+      "impact": 65,
+      "audienceRelevance": 65,
+      "decision": "reject",
+      "judgment": "Live-ul conferinței prezintă taxe și buget incerte, nu măsuri pozitive aplicate."
+    },
+    {
+      "index": 734,
+      "fingerprint": "19a8c72d28d99f1e233acfae3f946eb88ea4765201246851e7219009136c316e",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 62,
+      "impact": 75,
+      "audienceRelevance": 70,
+      "decision": "reject",
+      "judgment": "Transformarea Romgaz în grup integrat este obiectiv pentru 2027, nu etapă finalizată acum."
+    },
+    {
+      "index": 735,
+      "fingerprint": "b95fc67e4a886c3cc489ff3b86db2b64010d515ba4cfc555bd882d9030f365cf",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 95,
+      "impact": 88,
+      "audienceRelevance": 92,
+      "decision": "candidate",
+      "judgment": "Trenurile Galați–Bârlad circulă din nou după doi ani: legătură utilă între comunități și alternativă reală la mașină."
+    },
+    {
+      "index": 736,
+      "fingerprint": "e4a610075e0e640926400fd12faf8a61e9dd25680496af0a14358d51da332b9f",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 56,
+      "impact": 65,
+      "audienceRelevance": 61,
+      "decision": "reject",
+      "judgment": "Repornirea Petrotel depinde de un transport de țiței încă așteptat, nu de producție reluată."
+    },
+    {
+      "index": 737,
+      "fingerprint": "a103d616edfdb6e99f5e6c81eaf0e031e106f9b9e21bef68b741e67c4c2d4599",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 60,
+      "impact": 76,
+      "audienceRelevance": 68,
+      "decision": "reject",
+      "judgment": "Împrumutul de 4,5 miliarde finanțează statul; tranșa verde nu dovedește singură un proiect ecologic nou realizat."
+    },
+    {
+      "index": 738,
+      "fingerprint": "646f92dce83655ca23d2481b41d17836442272ec5b9ab1a7d87b111546d474f2",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 70,
+      "impact": 48,
+      "audienceRelevance": 53,
+      "decision": "reject",
+      "judgment": "Listarea Anthropic urmărește capital privat, fără beneficiu concret distinct pentru public."
+    },
+    {
+      "index": 739,
+      "fingerprint": "1f5578daed8951888b00ce4df7ff1f8b7dd24db209998d0bc1fff24e81e2afdc",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 71,
+      "impact": 74,
+      "audienceRelevance": 73,
+      "decision": "reject",
+      "judgment": "Stadiul de 82% la Margina–Holdea arată progres de șantier, nu traseu nou circulabil."
+    },
+    {
+      "index": 740,
+      "fingerprint": "fb182e93df82e11c6b137de8eba004125b293d79e867da18a0a0bb80d1c79fcd",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 56,
+      "impact": 45,
+      "audienceRelevance": 59,
+      "decision": "reject",
+      "judgment": "Opinia despre rolul grădinițelor nu creează servicii timpurii sau practici noi aplicate."
+    },
+    {
+      "index": 741,
+      "fingerprint": "8259bdc23ff111446e9e00845a3ebf2cf6d6a440e44b7852c2f1e685f3ff5f66",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 39,
+      "impact": 43,
+      "audienceRelevance": 49,
+      "decision": "reject",
+      "judgment": "Situațiile de interviu pentru directori sunt documente de concurs, nu soluții școlare implementate."
+    },
+    {
+      "index": 742,
+      "fingerprint": "040ad4e1e9063f2d6bf11522aa2d10fee892cdde2659f65b3a6fabb5e0230bbc",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 84,
+      "impact": 69,
+      "audienceRelevance": 75,
+      "decision": "candidate",
+      "judgment": "UVT lansează pregătirea profesorilor contra bullyingului; verific metoda, amploarea și dacă modelul poate fi folosit și dincolo de pilot."
+    },
+    {
+      "index": 743,
+      "fingerprint": "0a663e40efaee518a7302c369a8c298b577a406b97a577c5f16b7f926a4add19",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 12,
+      "impact": 72,
+      "audienceRelevance": 67,
+      "decision": "reject",
+      "judgment": "Manualele lipsă pentru peste 100.000 elevi sunt deficit educațional nerezolvat."
+    },
+    {
+      "index": 744,
+      "fingerprint": "896e450e16bca7d7aeb3c143693e72b5868aad9b0fb29f1dc5488dbff5219bf1",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 77,
+      "impact": 46,
+      "audienceRelevance": 63,
+      "decision": "reject",
+      "judgment": "Consultațiile UBB sunt acces gratuit util, dar activitate anuală restrânsă admiterii, fără amploare nouă demonstrată."
+    },
+    {
+      "index": 745,
+      "fingerprint": "f4d6f076e70e322d0bdce4e83fb8c94e35abb93d5f2257d00c4f604ad8751476",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 67,
+      "impact": 52,
+      "audienceRelevance": 64,
+      "decision": "reject",
+      "judgment": "Calendarul burselor școlare privește plata unui drept existent, nu acces sau finanțare extinsă."
+    },
+    {
+      "index": 746,
+      "fingerprint": "11e152a07cfd5c5b3c252e2d65697f22bef2b0469368c31cd8f5b5e2ae5c94ab",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 25,
+      "impact": 46,
+      "audienceRelevance": 52,
+      "decision": "reject",
+      "judgment": "Timpul inspectorilor consumat de petiții descrie încărcare administrativă, nu simplificare."
+    },
+    {
+      "index": 747,
+      "fingerprint": "e333e47c65413373ec5a4beebe2d89a9baaefdf064ebbb79ba9e0e53cf50a661",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 35,
+      "impact": 39,
+      "audienceRelevance": 47,
+      "decision": "reject",
+      "judgment": "Concurența redusă la concursul directorilor din Iași nu este progres de guvernanță."
+    },
+    {
+      "index": 748,
+      "fingerprint": "7bf713ad96a67f37f203a15fd2b33973afc5f1a18c7238c1c3af145d1ab2fc27",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 40,
+      "impact": 43,
+      "audienceRelevance": 54,
+      "decision": "reject",
+      "judgment": "Bilanțul litigiilor GDPR are rezultate mixte și nu prezintă protecții noi pentru utilizatori."
+    },
+    {
+      "index": 749,
+      "fingerprint": "0a6499c3fb51cb4b91007027e3bfeda8c98f213df193564687b81e376301fd6a",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 70,
+      "impact": 48,
+      "audienceRelevance": 53,
+      "decision": "reject",
+      "judgment": "Prețul IPO Anthropic este operațiune bursieră, nu progres social sau tehnologic demonstrat."
+    },
+    {
+      "index": 750,
+      "fingerprint": "d77a9502c1cdab36d37f63ca9b599ef54ae55466c17d86ea82445e57b7b311dc",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 67,
+      "impact": 59,
+      "audienceRelevance": 47,
+      "decision": "reject",
+      "judgment": "Radarul ieftin finanțat este tehnologie pentru interceptoare militare, fără utilizare civilă nouă descrisă."
+    },
+    {
+      "index": 751,
+      "fingerprint": "47c7e9e4fe90f6cc980060bfcad3d59ddb6a48879e39d6ebd42081f1e57b22bf",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 20,
+      "impact": 51,
+      "audienceRelevance": 70,
+      "decision": "reject",
+      "judgment": "Dominația boților este problemă de autenticitate online, nu soluție nouă de protecție."
+    },
+    {
+      "index": 752,
+      "fingerprint": "bd6f3c123b5d55dfa89313e40a95c9a03b5a37613d63f4eb0164e754f0b5a28a",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 14,
+      "impact": 30,
+      "audienceRelevance": 38,
+      "decision": "reject",
+      "judgment": "Moțiunea AUR împotriva ministrului Finanțelor este conflict parlamentar obișnuit."
+    },
+    {
+      "index": 753,
+      "fingerprint": "9035ef7cc6af9c0106d16f430af1c3d2829abd63f44337df8671f4da340ccff0",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 55,
+      "impact": 63,
+      "audienceRelevance": 38,
+      "decision": "reject",
+      "judgment": "Sateliții militari greci sunt proiect de supraveghere, fără rezultat civil disponibil."
+    },
+    {
+      "index": 754,
+      "fingerprint": "e55ec33a69094f4d19e67afbec46c06cd1ff32ce3d68db61519d68422df805a5",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 86,
+      "impact": 41,
+      "audienceRelevance": 62,
+      "decision": "candidate",
+      "judgment": "Pilotajul accesibil unei femei nevăzătoare poate fi poveste umană distinctă; verific rolul efectiv, adaptările și noutatea evenimentului."
+    },
+    {
+      "index": 755,
+      "fingerprint": "49dba974027db10d5072c438bb6a4fee08683246b09cd4d5031b13086cef99ac",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 69,
+      "impact": 56,
+      "audienceRelevance": 54,
+      "decision": "reject",
+      "judgment": "Portalul spre manta este formulă spectaculoasă pentru un experiment dorit, nu descoperire deja realizată."
+    },
+    {
+      "index": 756,
+      "fingerprint": "91ce7f28f2ba9094ae66b4a48669da8e88ffad5baaf72aea6974920da260d38a",
+      "assessedAt": "2026-11-14T06:35:45.512Z",
+      "positivity": 26,
+      "impact": 39,
+      "audienceRelevance": 38,
+      "decision": "reject",
+      "judgment": "Cheltuielile sexuale și evitarea controalelor la italieni sunt statistică senzaționalistă, fără intervenție pozitivă."
+    }
+  ]
+}

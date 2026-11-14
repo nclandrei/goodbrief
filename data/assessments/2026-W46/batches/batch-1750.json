@@ -1,0 +1,504 @@
+{
+  "assessments": [
+    {
+      "index": 1757,
+      "fingerprint": "3afad8e3c8e06eae54d2a6932290c9234d8128d9ef2184df7a8f3bc58c449bd9",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 34,
+      "impact": 81,
+      "audienceRelevance": 82,
+      "decision": "reject",
+      "judgment": "Acceptarea posibilă a europenilor la negocieri rămâne legată de cereri ruse, fără acord încheiat."
+    },
+    {
+      "index": 1758,
+      "fingerprint": "1e56845877a0987a9097551be20bccca80dd16eb521c3bcfd31723339700c16b",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 14,
+      "impact": 65,
+      "audienceRelevance": 65,
+      "decision": "reject",
+      "judgment": "Promisiunea toleranței zero vine pe fondul abuzurilor ample în armata germană, fără remediere probată."
+    },
+    {
+      "index": 1759,
+      "fingerprint": "b11b5a2250ea1e7deae96a38bd45a686d8edbdf6787cb90557425d6cc4503a9e",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 31,
+      "impact": 46,
+      "audienceRelevance": 39,
+      "decision": "reject",
+      "judgment": "Favoriții prezidențiali americani pentru 2028 sunt sondaj politic, nu progres cu folos imediat."
+    },
+    {
+      "index": 1760,
+      "fingerprint": "72e6e3975fc5b5e3061a3c378f6b199132bf83cb9837c62e2166d7e62893ca0e",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 12,
+      "impact": 69,
+      "audienceRelevance": 90,
+      "decision": "reject",
+      "judgment": "Microsoft confirmă că remedierea penei nu funcționează; nu există încă o revenire stabilă."
+    },
+    {
+      "index": 1761,
+      "fingerprint": "bcc2f5e6cddcfaae5358d464f3655c0f4cddb5583ceedb2996b5893bb3be585b",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 5,
+      "impact": 31,
+      "audienceRelevance": 42,
+      "decision": "reject",
+      "judgment": "Răsturnarea dubei de poliție în Constanța este accident rutier, chiar dacă există filmare."
+    },
+    {
+      "index": 1762,
+      "fingerprint": "aa7a4e62fcdf234043d8324cea1a6cb305dd050c94c7c308965c4b110cabc385",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 66,
+      "impact": 61,
+      "audienceRelevance": 92,
+      "decision": "candidate",
+      "judgment": "Accesul mai folosit la conservarea fertilității e relevant la 25–40 de ani, dar dublarea procedurilor nu garantează rezultate."
+    },
+    {
+      "index": 1763,
+      "fingerprint": "464c60532b0c9e3115b7a25b7b5f67045dd6fd5603147666a5a6a3a2a74c54f3",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 7,
+      "impact": 49,
+      "audienceRelevance": 63,
+      "decision": "reject",
+      "judgment": "Lipsa victimelor nu transformă prăbușirea podelei și evacuarea locatarilor în veste bună."
+    },
+    {
+      "index": 1764,
+      "fingerprint": "4d17b2376802f9f3e663e8bd00d268ecdf42e35c411ae0ef117b38fabd27a3a7",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 18,
+      "impact": 49,
+      "audienceRelevance": 50,
+      "decision": "reject",
+      "judgment": "Identificarea afaceristului reținut la Oil Terminal este detaliu de anchetă, fără recuperare confirmată."
+    },
+    {
+      "index": 1765,
+      "fingerprint": "dd7732b28d8a22dc8a876a3a01729666c76d724ce1dea481ef571da40992f93a",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 40,
+      "impact": 26,
+      "audienceRelevance": 52,
+      "decision": "reject",
+      "judgment": "Temperaturile de vineri sunt prognoză deja expirată pentru luni, cu vânt și ploi în același extras."
+    },
+    {
+      "index": 1766,
+      "fingerprint": "f80fd0732f8aabeaeaae0d495a6681356af6c6a8ae0a720f54dce8ec187fca1c",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 15,
+      "impact": 67,
+      "audienceRelevance": 65,
+      "decision": "reject",
+      "judgment": "Schimbarea forțată a liderului Nvidia și candidatul sugerat de Trump descriu turbulență corporativă."
+    },
+    {
+      "index": 1767,
+      "fingerprint": "7454f19456a55b8ad7909c4d9b934b574166c0f5f113ea0e68d33a6c1d167e66",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 37,
+      "impact": 68,
+      "audienceRelevance": 90,
+      "decision": "reject",
+      "judgment": "Restabilirea treptată a Microsoft repară o întrerupere, fără a confirma recuperarea completă a serviciilor."
+    },
+    {
+      "index": 1768,
+      "fingerprint": "b8f3ef5908bfa652ed6f34c97188d81042c75d3863fe2004402246ffdc73e07b",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 45,
+      "impact": 35,
+      "audienceRelevance": 67,
+      "decision": "reject",
+      "judgment": "Prognoza până în decembrie e informație meteo curentă, nu realizare pozitivă."
+    },
+    {
+      "index": 1769,
+      "fingerprint": "25d8d41bfc8cfa0c9fdd632e9ed5b0a87d9d7bd71dc933060c655c042c09d80b",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 53,
+      "impact": 52,
+      "audienceRelevance": 72,
+      "decision": "reject",
+      "judgment": "IA pe agenda summitului european nu înseamnă încă măsuri adoptate sau servicii disponibile."
+    },
+    {
+      "index": 1770,
+      "fingerprint": "59869afb91b8b717921a9624a195e8a233452e102381753c844e3a70eb183a92",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 42,
+      "impact": 69,
+      "audienceRelevance": 91,
+      "decision": "reject",
+      "judgment": "Publicitatea mai ieftină prin IA este prezentată împreună cu riscul concedierilor; beneficiul net nu e stabilit."
+    },
+    {
+      "index": 1771,
+      "fingerprint": "04b5a9793d1993666b16d6041d14e2db1294636270a9631590301ebc4999d17a",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 4,
+      "impact": 67,
+      "audienceRelevance": 74,
+      "decision": "reject",
+      "judgment": "Furtul a 400 de milioane în cripto este prejudiciu și risc cibernetic, nu protecție reușită."
+    },
+    {
+      "index": 1772,
+      "fingerprint": "b861a00d599ee976e7ef93f60761ddfb8d5eeaa9c9bf5e84656c8da7dcf8bd7c",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 4,
+      "impact": 35,
+      "audienceRelevance": 34,
+      "decision": "reject",
+      "judgment": "Identificarea autorului împușcăturilor din Washington nu anulează atacul mortal."
+    },
+    {
+      "index": 1773,
+      "fingerprint": "3bf3eb71bef0597aa4863a6d33965562a26bcd8b9c1e0cae35a6fa6c3d597b50",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 48,
+      "impact": 47,
+      "audienceRelevance": 62,
+      "decision": "reject",
+      "judgment": "Participarea președintelui la reuniune este agendă oficială, fără rezultat negociat în extras."
+    },
+    {
+      "index": 1774,
+      "fingerprint": "1ea075ec2388a2c665e1a587f1f7c0b8c6fefe21d032501644210d79a6fe44bd",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 43,
+      "impact": 43,
+      "audienceRelevance": 52,
+      "decision": "reject",
+      "judgment": "Cererea ministrului pentru mai multă ordine publică este instrucțiune, nu măsură cu efect demonstrat."
+    },
+    {
+      "index": 1775,
+      "fingerprint": "3ac23f9c11d942fd80666df3c9249664cee44c3373d306710ae7adb5a1630916",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 85,
+      "impact": 47,
+      "audienceRelevance": 76,
+      "decision": "candidate",
+      "judgment": "Zidurile romane și necropola de la Corabia pot aduce o descoperire locală distinctă; titlul singur nu stabilește detaliile."
+    },
+    {
+      "index": 1776,
+      "fingerprint": "a4af802781d39ff084891ec19fdfeb0facad9aa89fcb81836078e21930b5223f",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 61,
+      "impact": 36,
+      "audienceRelevance": 43,
+      "decision": "reject",
+      "judgment": "Numirea oficială a lui Pochettino reia transferul de antrenor, fără o reușită sportivă nouă."
+    },
+    {
+      "index": 1777,
+      "fingerprint": "db1d27c5636984b4c632bb5a846478675fb477d22061c4a60c6b0f2e5bb4f2ab",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 53,
+      "impact": 74,
+      "audienceRelevance": 61,
+      "decision": "reject",
+      "judgment": "Bugetul german record este plan, iar mărimea singură nu dovedește servicii sau investiții mai bune."
+    },
+    {
+      "index": 1778,
+      "fingerprint": "0243d37921145224a0428147a65aff1b6fff53243cc22e78d472e5f7fc5f2493",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 3,
+      "impact": 65,
+      "audienceRelevance": 72,
+      "decision": "reject",
+      "judgment": "Creșterea numărului de intoxicați și internarea la ATI agravează accidentul Chimcomplex."
+    },
+    {
+      "index": 1779,
+      "fingerprint": "4837448b9a1126db2096adf3289326c24886941948446aff06ca3d3f594c1a27",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 8,
+      "impact": 33,
+      "audienceRelevance": 47,
+      "decision": "reject",
+      "judgment": "Copacii căzuți în Hunedoara sunt pagube de vânt, fără replantare sau intervenție salvatoare descrisă."
+    },
+    {
+      "index": 1780,
+      "fingerprint": "bc0ad913c03e6afbd02d3ec0c7070aad511049efc2cc42f58a13b2945264a641",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 40,
+      "impact": 46,
+      "audienceRelevance": 43,
+      "decision": "reject",
+      "judgment": "Scăderea cererii de argint este statistică de piață cu efecte mixte, nu beneficiu clar pentru cititori."
+    },
+    {
+      "index": 1781,
+      "fingerprint": "431497148163410d09ece33df3aca1262376ffa0f3d1e21948f9d672c0bce921",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 53,
+      "impact": 69,
+      "audienceRelevance": 88,
+      "decision": "candidate",
+      "judgment": "Actualizarea proiectului CNAS poate ascunde schimbări utile în accesul medical; trebuie citit ce propune, nu presupus adoptat."
+    },
+    {
+      "index": 1782,
+      "fingerprint": "ec5d13a4f622a969d04d5f06f925f21be241b6861214d354f3afa95117524d15",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 73,
+      "impact": 77,
+      "audienceRelevance": 90,
+      "decision": "candidate",
+      "judgment": "Recuperarea decalajului de PIB oferă perspectivă de progres pe termen lung, dar nu dovedește o schimbare săptămânală."
+    },
+    {
+      "index": 1783,
+      "fingerprint": "6a651e6d132de753b6c62c812b80e215c3e8b975d09b4a86727215ebcbdcc0ec",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 65,
+      "impact": 39,
+      "audienceRelevance": 55,
+      "decision": "reject",
+      "judgment": "Pregătirea de deszăpezire a 285 km este serviciu sezonier anunțat, fără noutate suficientă pentru ediție."
+    },
+    {
+      "index": 1784,
+      "fingerprint": "4b98bb1ed9d339a076a5a9d3389a0cab289efb3ec4acf1b3709bd198e774b134",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 30,
+      "impact": 44,
+      "audienceRelevance": 63,
+      "decision": "reject",
+      "judgment": "Precizările Universității despre delapidare nu reprezintă rezolvarea cazului sau investiție nouă pentru studenți."
+    },
+    {
+      "index": 1785,
+      "fingerprint": "d0d1da56aff5f9a1c7192c4de381818e77e0f265b95efba1a2a84f039cf7f3df",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 60,
+      "impact": 32,
+      "audienceRelevance": 32,
+      "decision": "reject",
+      "judgment": "Depășirea estimată a obiectivelor Generali este performanță a asigurătorului, nu avantaj demonstrat pentru asigurați."
+    },
+    {
+      "index": 1786,
+      "fingerprint": "a5f1b3e0bb79e39e8f83a42a1b2801e0b0b05cd07e3c852f49b981777714cad2",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 45,
+      "impact": 76,
+      "audienceRelevance": 83,
+      "decision": "reject",
+      "judgment": "Speranța unui buget medical similar este negociere viitoare, nu fonduri aprobate sau servicii extinse."
+    },
+    {
+      "index": 1787,
+      "fingerprint": "c8e00ec344e0905527ad6f4b4c4494094b94c3780e2f2453b8e9aa1422dfaabb",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 1,
+      "impact": 33,
+      "audienceRelevance": 31,
+      "decision": "reject",
+      "judgment": "Prăbușirea clădirii din Nairobi cu cel puțin șase morți este tragedie, nu progres urban."
+    },
+    {
+      "index": 1788,
+      "fingerprint": "8090f8a8d7be4cb00079ae1a5a630125900b13e012d40f7a2680633232addc27",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 50,
+      "impact": 9,
+      "audienceRelevance": 17,
+      "decision": "reject",
+      "judgment": "Dejunul premierului la Palatul Elisabeta e protocol, fără efect public concret identificat."
+    },
+    {
+      "index": 1789,
+      "fingerprint": "b378b11e98f633d1b69c79bab9325f6d1d262c3f0dcb5bacc4596627d1ec84b0",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 55,
+      "impact": 17,
+      "audienceRelevance": 26,
+      "decision": "reject",
+      "judgment": "Speranța recunoașterii unui miracol vechi este demers religios, nu fapt nou demonstrat."
+    },
+    {
+      "index": 1790,
+      "fingerprint": "c51cd73552b30a65c8ed92828d91d95d4ccff4d37417aa7847192d6b6c57d1a4",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 80,
+      "impact": 43,
+      "audienceRelevance": 73,
+      "decision": "candidate",
+      "judgment": "Cinci milioane de monede Brâncuși în circulație fac comemorarea accesibilă, nu doar colecționarilor."
+    },
+    {
+      "index": 1791,
+      "fingerprint": "640176410676abca6d68e44f31b019709ee21a2df510a8b5764f1ac222d08e35",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 61,
+      "impact": 36,
+      "audienceRelevance": 46,
+      "decision": "reject",
+      "judgment": "Aparatul vamal pentru țigări descrie o activitate de laborator existentă, fără achiziție nouă precizată."
+    },
+    {
+      "index": 1792,
+      "fingerprint": "19881cfd6ec9a4f20ab739dd3b194d3d83215a6882d137e13a1113a8fb531995",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 10,
+      "impact": 71,
+      "audienceRelevance": 81,
+      "decision": "reject",
+      "judgment": "Numărul rudelor angajate la STB indică probleme de guvernanță, nu restructurare realizată."
+    },
+    {
+      "index": 1793,
+      "fingerprint": "ebb29c554bf9ec682bbb14c3eb26915ef7f186d7a41bb90f135e8a272c3adcdf",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 30,
+      "impact": 77,
+      "audienceRelevance": 74,
+      "decision": "reject",
+      "judgment": "Rusia condiționează participarea europenilor la negocieri; nu există încă progres de pace sigur."
+    },
+    {
+      "index": 1794,
+      "fingerprint": "6679d6669f79b45747715284d28f5c007db937e4df13ba4be71470dfba0bcc38",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 83,
+      "impact": 45,
+      "audienceRelevance": 77,
+      "decision": "candidate",
+      "judgment": "Monedele Brâncuși intră chiar luni în circulație; data și tirajul dau un mic fapt cultural actual."
+    },
+    {
+      "index": 1795,
+      "fingerprint": "574f96fbc707e99787340d6df3c601473355484be2b9e11beaf2c154551ef013",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 68,
+      "impact": 25,
+      "audienceRelevance": 36,
+      "decision": "reject",
+      "judgment": "Extinderea consultanței fiscale Dentons este știre de firmă, fără serviciu public sau oportunitate largă nouă."
+    },
+    {
+      "index": 1796,
+      "fingerprint": "b9ec1e8411ed57ff2994142f9004d3121d0b79c66fa0f1754ec388aceaa72258",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 62,
+      "impact": 39,
+      "audienceRelevance": 48,
+      "decision": "reject",
+      "judgment": "Cele 560 de probe din 2025 arată activitate vamală trecută, nu o facilitate nou lansată săptămâna aceasta."
+    },
+    {
+      "index": 1797,
+      "fingerprint": "7f6186b6f1b902baca97b8abb47deaf3dcc5bcb6794c651ff1242f1d2ce17610",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 80,
+      "impact": 78,
+      "audienceRelevance": 88,
+      "decision": "candidate",
+      "judgment": "Revenirea reactorului 2 poate reduce importurile efective; verific recuplarea și nu promit automat facturi mai mici."
+    },
+    {
+      "index": 1798,
+      "fingerprint": "9b67bf3dcf2205afc422a2d0a3a28394c3579822b462dd2418034d528a7d2948",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 72,
+      "impact": 75,
+      "audienceRelevance": 83,
+      "decision": "candidate",
+      "judgment": "Legătura tramvaielor 21–32 ar îmbunătăți mobilitatea, dar lucrările sunt doar estimate pentru 2028."
+    },
+    {
+      "index": 1799,
+      "fingerprint": "1242e36eded1a5ff3f82c10060ba6819308d9ec854f4e9ec087faddd6a4f4570",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 58,
+      "impact": 37,
+      "audienceRelevance": 41,
+      "decision": "reject",
+      "judgment": "Vizita Invest Qatar deschide discuții, fără contract sau investiție angajată în extras."
+    },
+    {
+      "index": 1800,
+      "fingerprint": "e9454594d152a6f56363f4d46fd504522ea681d58d567c12691cef98017e6375",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 49,
+      "impact": 70,
+      "audienceRelevance": 87,
+      "decision": "reject",
+      "judgment": "Prognoza Erste mai puțin negativă anticipează tot recesiune; revizuirea nu e creștere deja realizată."
+    },
+    {
+      "index": 1801,
+      "fingerprint": "82adfe1558612d72169a05daa0daa6e8b7bc2f67de75f4548b932a4d80609941",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 69,
+      "impact": 78,
+      "audienceRelevance": 93,
+      "decision": "candidate",
+      "judgment": "Creșterea trimestrială de 2,1% este concretă, dar clasamentul UE nu trebuie să ascundă contracția pe nouă luni."
+    },
+    {
+      "index": 1802,
+      "fingerprint": "3bb7823cacd7132b316cb4976ab8878f46074490592a5ee24764a297fcace6f2",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 67,
+      "impact": 57,
+      "audienceRelevance": 88,
+      "decision": "reject",
+      "judgment": "Mai multe tranzacții după blocajul ANCPI nu arată automat locuințe mai accesibile sau servicii îmbunătățite."
+    },
+    {
+      "index": 1803,
+      "fingerprint": "4db3ef93fc067f08ac937ff7f7417e6139d8912e9687381589e39341cdec0b0b",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 46,
+      "impact": 76,
+      "audienceRelevance": 91,
+      "decision": "reject",
+      "judgment": "Ministrul confirmă limitele revenirii tehnice: industria și consumul nu și-au revenit."
+    },
+    {
+      "index": 1804,
+      "fingerprint": "2c85573f96e62fd6ebce0ff0201f271f525a098271f0fbfe42abf863f64a7b4a",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 14,
+      "impact": 79,
+      "audienceRelevance": 87,
+      "decision": "reject",
+      "judgment": "Al patrulea an de scădere industrială și minusul din septembrie sunt deteriorare economică."
+    },
+    {
+      "index": 1805,
+      "fingerprint": "6c020f530c06e08541f8d94434cf700185d6417bb31fe1633076844f6bce4a41",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 51,
+      "impact": 75,
+      "audienceRelevance": 88,
+      "decision": "reject",
+      "judgment": "Explicația revenirii prin PNRR rămâne asociată unei recesiuni anuale estimate, nu unui rezultat clar nou."
+    },
+    {
+      "index": 1806,
+      "fingerprint": "22ce31626f1ffd238bb112de16e080fc74ea87877693dce4f6f3f7a364667e4d",
+      "assessedAt": "2026-11-14T07:06:38.439Z",
+      "positivity": 65,
+      "impact": 40,
+      "audienceRelevance": 46,
+      "decision": "reject",
+      "judgment": "Autorizarea preluării activelor de foraj schimbă proprietari, fără beneficii geotermale sau capacitate nouă demonstrate."
+    }
+  ]
+}

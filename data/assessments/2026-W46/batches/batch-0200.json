@@ -1,0 +1,504 @@
+{
+  "assessments": [
+    {
+      "index": 207,
+      "fingerprint": "62fccd1dbb54781961d31f65b63b5e072b94c1fd7e573b1651b495e5c273b166",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 8,
+      "impact": 54,
+      "audienceRelevance": 33,
+      "decision": "reject",
+      "judgment": "Salvările din Creta nu separă povestea de moartea celor 21 de migranți; RSS-ul este gol."
+    },
+    {
+      "index": 208,
+      "fingerprint": "5ff46b57fd74510c796d6b7693bd2f69b9a9899aa9b50e793d732d254de3eb63",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 60,
+      "impact": 32,
+      "audienceRelevance": 49,
+      "decision": "reject",
+      "judgment": "Volumul Black Friday măsoară consumul printr-un procesator, nu economii reale pentru cumpărători."
+    },
+    {
+      "index": 209,
+      "fingerprint": "9e764768722abc2fca3a7d93af9cc0ec079e0772aaecf3481d9b200c3ebf1db9",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 12,
+      "impact": 63,
+      "audienceRelevance": 55,
+      "decision": "reject",
+      "judgment": "Extinderea rabiei în Harghita este alertă sanitară, fără campanie reușită raportată."
+    },
+    {
+      "index": 210,
+      "fingerprint": "ce9115d753dd485470a78c3df13001cb8a7d9417af6e09dc2f165bf85374bfa4",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 70,
+      "impact": 23,
+      "audienceRelevance": 41,
+      "decision": "reject",
+      "judgment": "Primul loc Godzilla în box-office nu adaugă o realizare culturală românească sau acces public nou."
+    },
+    {
+      "index": 211,
+      "fingerprint": "f3886468e263eaea0634fc9d70ed5cf4e23ddae63ab2f56413448d060716973b",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 38,
+      "impact": 61,
+      "audienceRelevance": 56,
+      "decision": "reject",
+      "judgment": "Condițiile UDMR pentru reorganizare sunt dezbatere politică, nu reformă aplicată."
+    },
+    {
+      "index": 212,
+      "fingerprint": "fa3884dcb9f4cdc8c01ac92ced16732b697b69953ef334edb2b806c29406edfc",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 10,
+      "impact": 39,
+      "audienceRelevance": 43,
+      "decision": "reject",
+      "judgment": "Amenințarea AUR cu moțiunea de cenzură exprimă conflict parlamentar."
+    },
+    {
+      "index": 213,
+      "fingerprint": "dc3a30c9d181792cc72db12498d0ae98238b8dab2057768386e55f29039eb510",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 62,
+      "impact": 63,
+      "audienceRelevance": 40,
+      "decision": "reject",
+      "judgment": "Majorarea franceză de 1,6% dublează o măsură externă modestă, fără context suplimentar."
+    },
+    {
+      "index": 214,
+      "fingerprint": "440a4b184f0d18d66e3f14701f9393cad2eb93a8ced41b134398aa577b75789e",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 76,
+      "impact": 75,
+      "audienceRelevance": 88,
+      "decision": "candidate",
+      "judgment": "Raportul locuință–venit privește direct generația cititorilor; indicele Eurostat nu dovedește automat accesibilitatea în fiecare oraș."
+    },
+    {
+      "index": 215,
+      "fingerprint": "3a8b470860b4b800b9ec61e182b1846e81d151ffb46ddec4533a71b8db4e637e",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 49,
+      "impact": 55,
+      "audienceRelevance": 58,
+      "decision": "reject",
+      "judgment": "Discuția premierilor român și grec nu identifică în titlu o investiție convenită."
+    },
+    {
+      "index": 216,
+      "fingerprint": "69ba4c1c75f87cc156e36b98c791c93865070ba8e615d19734c2e7d731d3a0e3",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 31,
+      "impact": 58,
+      "audienceRelevance": 39,
+      "decision": "reject",
+      "judgment": "Sancțiunile canadiene sunt reacție geopolitică, nu progres civil prezentat concret."
+    },
+    {
+      "index": 217,
+      "fingerprint": "e1adb83778749477b9eec940d2822162072a06e80667feb51e45188a29e98b11",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 51,
+      "impact": 32,
+      "audienceRelevance": 39,
+      "decision": "reject",
+      "judgment": "Holdingul One United centralizează chirii și dividende, fără avantaj demonstrat chiriașilor."
+    },
+    {
+      "index": 218,
+      "fingerprint": "a009d1a7c076bf5959074c0e995ad575b4748a28e14d17d3c10157101f087983",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 11,
+      "impact": 49,
+      "audienceRelevance": 58,
+      "decision": "reject",
+      "judgment": "Acuzațiile despre întârzierea tunelului Momaia sunt controversă între miniștri."
+    },
+    {
+      "index": 219,
+      "fingerprint": "19203227b9d7bed5b0e627105e148fd5a5af02250b57468c30ebee069325c02b",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 73,
+      "impact": 79,
+      "audienceRelevance": 76,
+      "decision": "candidate",
+      "judgment": "Finanțarea de 60 milioane include salvare civilă și securitate; componentele nu trebuie confundate."
+    },
+    {
+      "index": 220,
+      "fingerprint": "b2b0988184e2575d401b496505ac74e0f3eb0b92e46c78968c66dc22124ace24",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 16,
+      "impact": 55,
+      "audienceRelevance": 67,
+      "decision": "reject",
+      "judgment": "Epuizarea fondurilor Rabla în câteva minute indică acces ratat, nu oportunitate încă disponibilă."
+    },
+    {
+      "index": 221,
+      "fingerprint": "118f5020593ab07811841e2f9a41cad73e54952d75aa506b511c5b3c603b60b9",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 62,
+      "impact": 80,
+      "audienceRelevance": 77,
+      "decision": "reject",
+      "judgment": "Excedentul de gaze este o proiecție dependentă de viitorul platou Neptun Deep."
+    },
+    {
+      "index": 222,
+      "fingerprint": "f6e446554fb11f066782e9e51daab19970d73e0a1f0c01a2b7dfe2f20f938772",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 77,
+      "impact": 76,
+      "audienceRelevance": 89,
+      "decision": "candidate",
+      "judgment": "Datele Eurostat pot arăta o tendință utilă, dar media națională ascunde avansul chiriilor și diferențele locale."
+    },
+    {
+      "index": 223,
+      "fingerprint": "cb59d40b9514b7d5715e08c9d8f5c782433205faa6fa744eb55f9328f4aba588",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 43,
+      "impact": 72,
+      "audienceRelevance": 81,
+      "decision": "reject",
+      "judgment": "Solicitarea Engie de prelungire a plafonării nu este decizie guvernamentală adoptată."
+    },
+    {
+      "index": 224,
+      "fingerprint": "0b948062dcb6c7fb5b1690f49a477a4a7e17577ee55cbe71ca5aa7a276826d5f",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 19,
+      "impact": 66,
+      "audienceRelevance": 69,
+      "decision": "reject",
+      "judgment": "Echipele suplimentare pe Centură sunt răspuns la întârzieri, nu tronson deschis."
+    },
+    {
+      "index": 225,
+      "fingerprint": "dc25122fb8477c3f997ea5dad45da17ae06fd4812907c0e8bafbc076bd3d24cb",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 13,
+      "impact": 62,
+      "audienceRelevance": 60,
+      "decision": "reject",
+      "judgment": "Incertitudinea modernizării DN73C descrie blocajul unei legături rutiere."
+    },
+    {
+      "index": 226,
+      "fingerprint": "c8ec2d7c2fe9d32ddc45dd50d86f4ddfd0623b33f425251b07b7af15d006bfb3",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 8,
+      "impact": 81,
+      "audienceRelevance": 76,
+      "decision": "reject",
+      "judgment": "Scăderea rezervelor Hidroelectrica sub 50% semnalează secetă și presiune energetică."
+    },
+    {
+      "index": 227,
+      "fingerprint": "af8f77cc82ca965f5f2b3b710aff9cd8762121005cb303a4524dc5aa4c2c2b59",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 13,
+      "impact": 70,
+      "audienceRelevance": 74,
+      "decision": "reject",
+      "judgment": "Lotul A1 Tigveni–Curtea de Argeș rămâne închis; promisiunile altor deschideri nu schimbă acest fapt."
+    },
+    {
+      "index": 228,
+      "fingerprint": "a2c3dad7bed721f92e8c8a95f9099ae8c1b5847cfc0e7b2b1473818ebe8bb699",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 6,
+      "impact": 80,
+      "audienceRelevance": 83,
+      "decision": "reject",
+      "judgment": "Prețul spot foarte ridicat al electricității este cost și vulnerabilitate, nu veste bună."
+    },
+    {
+      "index": 229,
+      "fingerprint": "af431f7c82141da8d29d398ed7a24a78367c9dd83d94a9eaddbe7183f1296798",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 59,
+      "impact": 75,
+      "audienceRelevance": 74,
+      "decision": "reject",
+      "judgment": "Depășirea problemelor contractuale la Iernut nu confirmă încă producție comercială."
+    },
+    {
+      "index": 230,
+      "fingerprint": "40b23ab1259d0f5a6b19f294844f381e98d1fb0ba077b86b7a99fe2fd0256df5",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 29,
+      "impact": 72,
+      "audienceRelevance": 67,
+      "decision": "reject",
+      "judgment": "Scenariile PSD de comasare și reducere a aleșilor nu sunt o reformă decisă."
+    },
+    {
+      "index": 231,
+      "fingerprint": "639d9b9e93d10b0831dec10a7eb4a23a9780ce4f05b205c56cc6b60d49740519",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 68,
+      "impact": 73,
+      "audienceRelevance": 73,
+      "decision": "reject",
+      "judgment": "Imaginile A1 folosesc progresul din octombrie; nu identifică un jalon nou din această săptămână."
+    },
+    {
+      "index": 232,
+      "fingerprint": "9360bcc234be96a388279541fb56131815eb2b90585711a5a0957ca7a4a0eabd",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 9,
+      "impact": 77,
+      "audienceRelevance": 80,
+      "decision": "reject",
+      "judgment": "Pierderile termoficării și acuzațiile reciproce descriu lipsa confortului, fără reparație finalizată."
+    },
+    {
+      "index": 233,
+      "fingerprint": "6d160926d88c354f55fcf310bfb7eed8d32e83b46a65d7c680b34f968718303b",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 66,
+      "impact": 65,
+      "audienceRelevance": 63,
+      "decision": "reject",
+      "judgment": "Al treilea proiect MetaWealth este anunț privat de stocare, fără finanțare sau operare confirmată."
+    },
+    {
+      "index": 234,
+      "fingerprint": "caf48c8f96d5e2cc5df1814f999789a2c5885c4b84c6dd8596aa5b1938ec0577",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 89,
+      "impact": 80,
+      "audienceRelevance": 84,
+      "decision": "candidate",
+      "judgment": "Romcarbon raportează o unitate de reciclare finalizată; verific la BVB capacitatea, fluxurile de plastic și stadiul operațional."
+    },
+    {
+      "index": 235,
+      "fingerprint": "c21e3cc92a956e6920734c3ae9b782883654e45c9aaa3a8e3515c7d71753ccd4",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 63,
+      "impact": 68,
+      "audienceRelevance": 84,
+      "decision": "reject",
+      "judgment": "Portalul ANAF este promis pentru 26 noiembrie și doar parțial; nu e serviciu nou utilizabil acum."
+    },
+    {
+      "index": 236,
+      "fingerprint": "034544312a9287915d243b5823a67e82b7267cefcff463d0458d7e3f7b06bb0f",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 57,
+      "impact": 68,
+      "audienceRelevance": 70,
+      "decision": "reject",
+      "judgment": "Regulile fiscale europene sunt propuneri, nu scutiri aplicabile deja companiilor românești."
+    },
+    {
+      "index": 237,
+      "fingerprint": "80f65c35bae24e884b97a80a80224df9cf8c4913129f3467b44640708becdb29",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 74,
+      "impact": 61,
+      "audienceRelevance": 68,
+      "decision": "candidate",
+      "judgment": "Pregătirea portului istoric Otelec poate lega patrimoniul de mobilitate pe Bega; sunt încă studii, nu port refăcut."
+    },
+    {
+      "index": 238,
+      "fingerprint": "43163e7d6b29b39a1bd814a3d76f42a5e823ced268a4f6b022bbfbee6846c812",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 5,
+      "impact": 48,
+      "audienceRelevance": 42,
+      "decision": "reject",
+      "judgment": "Ancheta privind Huang și variația Nvidia repetă scandalul de spionaj."
+    },
+    {
+      "index": 239,
+      "fingerprint": "0bbb20baaab0a7a7b2373a45867df89b90343de8f7577309908d8dfe93325d51",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 70,
+      "impact": 71,
+      "audienceRelevance": 68,
+      "decision": "reject",
+      "judgment": "Reluarea unui flux modest de gaze spre Ucraina este operațiune energetică, nu infrastructură nouă distinctivă."
+    },
+    {
+      "index": 240,
+      "fingerprint": "1afae7252f242362905ba07b3bf3246a6505b6f0dcd61d32ea168f716dc1d7a5",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 69,
+      "impact": 81,
+      "audienceRelevance": 79,
+      "decision": "reject",
+      "judgment": "Revenirea ambelor reactoare este încă programată, fără confirmarea repornirii în această relatare."
+    },
+    {
+      "index": 241,
+      "fingerprint": "a785caf84b735eb621b01f8342632ae8c99c7e50b44427ec56d97a76455db6a5",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 65,
+      "impact": 45,
+      "audienceRelevance": 62,
+      "decision": "reject",
+      "judgment": "Oferta VanEck este extindere comercială de produse financiare, inclusiv cripto, nu beneficiu garantat investitorilor."
+    },
+    {
+      "index": 242,
+      "fingerprint": "d3cc898cc84fb2a165a909bc11f4491f9daa3a504adb727137f1c5c29781bf61",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 62,
+      "impact": 48,
+      "audienceRelevance": 45,
+      "decision": "reject",
+      "judgment": "Achiziția EEI de către Adrem schimbă proprietatea, fără serviciu energetic nou dovedit."
+    },
+    {
+      "index": 243,
+      "fingerprint": "aa64c18b4157aa742d7f8d17fc374cdc147bdd81e1fd0599c8b4a9c07fa3b6ec",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 90,
+      "impact": 89,
+      "audienceRelevance": 87,
+      "decision": "candidate",
+      "judgment": "Inaugurarea liniei moldovenești are finanțare și traseu concrete; sursa avertizează corect că dependențele energetice nu dispar complet."
+    },
+    {
+      "index": 244,
+      "fingerprint": "8ec3fb047fc1ff53d87d70539c1a81576933b7f8e27e1ff88bda06312dfb7f75",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 49,
+      "impact": 75,
+      "audienceRelevance": 85,
+      "decision": "reject",
+      "judgment": "Extinderea ajutoarelor electrice este analizată, nu adoptată pentru noi beneficiari."
+    },
+    {
+      "index": 245,
+      "fingerprint": "c0cfee733c3f210f245a355dce8699b91c497d771c9be91ecbec4eba6dabc7f3",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 19,
+      "impact": 55,
+      "audienceRelevance": 49,
+      "decision": "reject",
+      "judgment": "Litigiul EES privește întârzieri de implementare, nu simplificarea efectivă a frontierei."
+    },
+    {
+      "index": 246,
+      "fingerprint": "1fa982860739f523cf560c34ff42ab0b100a8a31db2e854adbfb35f372c1299b",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 75,
+      "impact": 64,
+      "audienceRelevance": 84,
+      "decision": "candidate",
+      "judgment": "Emisiunea Tezaur are perioadă și maturități precise; dobânda maximă este pentru cinci ani, nu orice subscriere."
+    },
+    {
+      "index": 247,
+      "fingerprint": "b66541138044a7e72b611daaf8637f8a05df21cb934439d38ef77d3cf3d68743",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 61,
+      "impact": 67,
+      "audienceRelevance": 74,
+      "decision": "reject",
+      "judgment": "Bursele Erasmus mai mari sunt cerute în negocieri, nu finanțare suplimentară deja obținută."
+    },
+    {
+      "index": 248,
+      "fingerprint": "fcbf3cfbbbb1386788c52c054fb3b8ddc25d93592de45210af7299ec0232b6d1",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 80,
+      "impact": 72,
+      "audienceRelevance": 81,
+      "decision": "candidate",
+      "judgment": "UBB reunește cercetarea și prevenția sănătății mintale; verific ce lansează efectiv RoMind și cine poate participa."
+    },
+    {
+      "index": 249,
+      "fingerprint": "3f4a61f01b14007624548ace6bce8648ce12463e2a36f3a94b7f1a6b021f5d93",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 13,
+      "impact": 59,
+      "audienceRelevance": 61,
+      "decision": "reject",
+      "judgment": "Sarcasmul ministrului despre austeritate este dispută politică asupra inechității, fără soluție nouă."
+    },
+    {
+      "index": 250,
+      "fingerprint": "4e1bf68978fd420c5978b805558eda68c1eed1e0689aeac65f15cb5a6aa0bd40",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 26,
+      "impact": 59,
+      "audienceRelevance": 63,
+      "decision": "reject",
+      "judgment": "Critica finanțării universitare descrie competitivitate scăzută și rezistență la schimbare."
+    },
+    {
+      "index": 251,
+      "fingerprint": "337a28b2cc0d1cbad310fd3eaa665fdc8de08a669b1956bc584903c6eccfee58",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 27,
+      "impact": 71,
+      "audienceRelevance": 70,
+      "decision": "reject",
+      "judgment": "Țintele bugetare amânate cinci ani nu sunt finanțare nouă pentru educație."
+    },
+    {
+      "index": 252,
+      "fingerprint": "5cbe9aa3a9291cb7306447c1328129fb6dc5bf602fd0ef8697514f3069f19fb6",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 82,
+      "impact": 32,
+      "audienceRelevance": 57,
+      "decision": "reject",
+      "judgment": "Mărturia elevei din Făgețelu este caldă, dar nu identifică o inițiativă nouă cu amploare dincolo de școală."
+    },
+    {
+      "index": 253,
+      "fingerprint": "8da8264d84dfc44eb5bb426464495211f5cd10c15f325d53963b5eb877bbc80d",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 10,
+      "impact": 76,
+      "audienceRelevance": 72,
+      "decision": "reject",
+      "judgment": "Constatarea reacțiilor tardive la violență nu arată protecții îmbunătățite pentru copii."
+    },
+    {
+      "index": 254,
+      "fingerprint": "f7e8e2b705460bac49d4394196409546794a32733728a81e2f5e07224e3cd600",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 52,
+      "impact": 43,
+      "audienceRelevance": 59,
+      "decision": "reject",
+      "judgment": "Opinia ministrului despre predarea centrată pe conținut nu este program pedagogic aplicat."
+    },
+    {
+      "index": 255,
+      "fingerprint": "5a876aa55db07d8ab730d556de64ce39771c289ff28875e02121296734ea9575",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 65,
+      "impact": 76,
+      "audienceRelevance": 83,
+      "decision": "candidate",
+      "judgment": "Planul anti-violență merită verificat; accesul la consilier fără acord parental este cerut, nu automat permis."
+    },
+    {
+      "index": 256,
+      "fingerprint": "97bc238ae68a3f4c60b18fa2864bcd13f737104fcb525347ca53bb60b2797e99",
+      "assessedAt": "2026-11-14T06:16:33.528Z",
+      "positivity": 63,
+      "impact": 35,
+      "audienceRelevance": 43,
+      "decision": "reject",
+      "judgment": "Extinderea Cambridge la IOANID este publicitate pentru școlarizare privată în 2027–2028."
+    }
+  ]
+}

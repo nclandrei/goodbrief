@@ -1,0 +1,4 @@
+{"at":"2026-11-14T06:06:37.387Z","eventId":"M-034xHvFVDmaOX0EjUG4OxM","turnStatus":"done","source":"agent.end","workerStatus":"active","missing":2000,"phase":"assessment","continuations":1,"noProgress":1,"errors":0}
+{"at":"2026-11-14T06:25:41.128Z","eventId":"M-034xI4WswhgRfXiP7YrJqH","turnStatus":"done","source":"agent.end","workerStatus":"active","missing":1500,"phase":"assessment","continuations":2,"noProgress":0,"errors":0}
+{"at":"2026-11-14T06:43:05.334Z","eventId":"M-034xIXX9ih6eKlxcRI4dBI","turnStatus":"error","source":"agent.end","workerStatus":"active","missing":1000,"phase":"assessment","continuations":3,"noProgress":0,"errors":1}
+{"at":"2026-11-14T07:32:05.864Z","eventId":"M-034xJOHqiNzgbEsuW6mFW3","turnStatus":"done","source":"agent.end","workerStatus":"complete","missing":0,"phase":"complete","continuations":3,"noProgress":0,"errors":0}

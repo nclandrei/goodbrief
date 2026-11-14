@@ -1,0 +1,29 @@
+{
+  "engine": "Chromium via agent-browser",
+  "devicePixelRatio": 2,
+  "subscriberNewsletter": {
+    "desktopViewport": "1280x960",
+    "desktopDocumentWidth": 1280,
+    "narrowViewport": "390x960",
+    "narrowDocumentWidth": 390,
+    "stories": 10,
+    "sourceLinks": 10,
+    "categoryCounts": {"local-heroes": 2, "wins": 3, "green-stuff": 4, "quick-hits": 1},
+    "removedStoryAndIntroReferencesAbsent": true,
+    "firstStory": "15 afaceri de pe Via Transilvanica vor primi granturi",
+    "introHighlights": ["Trenuri electrice spre Galați", "Sprijin pentru afacerile de pe Via Transilvanica", "Cercetătoare din România în echipa unui grant european"],
+    "fullScreenshotsInspected": [".amp/in/artifacts/w46-final-newsletter-desktop.png", ".amp/in/artifacts/w46-final-newsletter-narrow.png"],
+    "headerScreenshotsInspected": [".amp/in/artifacts/w46-final-newsletter-desktop-header.png", ".amp/in/artifacts/w46-final-newsletter-narrow-header.png"],
+    "result": "Readable full layout and updated intro, ten stories, no Trust / No Trust or pupil-game references, no horizontal overflow, overlap or clipped text. Narrow Chromium viewport is not a physical phone test."
+  },
+  "editorProof": {
+    "desktopViewport": "1280x960",
+    "stories": 10,
+    "scoreTriplets": 10,
+    "editorOnlyLabel": true,
+    "removedStoryAbsent": true,
+    "inspectedScreenshot": ".amp/in/artifacts/w46-final-editor-proof-desktop-review.jpg",
+    "result": "Readable revised scored proof with all ten score triplets, no removed item and no clipped or overlapping text."
+  },
+  "scope": "Content-only editorial revision; no email template or interaction changes. No separate test email was requested or sent."
+}

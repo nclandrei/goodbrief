@@ -1,0 +1,100 @@
+{
+  "selectionReasoning": "Revizie cerută și aprobată explicit de editor: elimin doar Trust / No Trust, fără înlocuitor. Cele zece știri rămase păstrează exact titlurile, rezumatele, categoriile și scorurile din proba examinată. Balanța finală este 2 Local Heroes, 3 Wins, 4 Green Stuff și 1 Quick Hit; serviciile practice și inițiativele comunitare coexistă cu cercetarea, cultura și patru teme ecologice distincte. Introducerea și sumarul scurt înlocuiesc referința la liceeni cu sprijinul de pe Via Transilvanica. Editorul a apreciat combinația și distribuția categoriilor și a propus ediția ca reper de calitate, nu ca șablon obligatoriu pentru săptămânile viitoare.",
+  "alternativesAndCuts": [
+    "Trust / No Trust (1172) este eliminată la cererea explicită a editorului, deși rămâne un candidat verificat în ledgerul inițial. Nu adaug altă știre și nu schimb celelalte zece selecții; această alegere punctuală nu devine o interdicție permanentă pentru inițiativele adolescenților.",
+    "Galați–Bârlad (735) este alternativa cea mai solidă de mobilitate: articolul integral confirmă reluarea legăturii după doi ani. Am ales trenurile electrice București–Galați pentru serviciul nou și confort, nu două povești feroviare în aceeași ediție; înlocuirea ar fi rezonabilă dacă editorul preferă refacerea legăturilor locale.",
+    "Ridicarea restricțiilor pe Valea Oltului (1947) este utilă chiar de luni, dar ar adăuga încă o știre de transport. Rămâne alternativă practică, nu am prezentat-o drept beneficiu ecologic sau drum deja complet lipsit de orice restricție.",
+    "Hola25 (1015) a primit inițial note mari pentru acces gratuit la învățare, dar articolul integral arată lansarea la 10 martie 2026, aproximativ o mie de conturi și numai câteva zeci de sesiuni lunar. Nu este lansare nouă din noiembrie; Trust / No Trust este alegerea mai proaspătă, fără a pretinde că pilotul său școlar este finalizat.",
+    "Student Connect (1576) are clădiri ridicate, dar inaugurarea este prevăzută pentru 2027 și mai sunt lucrări exterioare/de acces. Nu l-am transformat în cămin și bazin deja deschise; l-am tăiat pentru a nu încărca ediția cu infrastructură promisă.",
+    "Dreptul la însoțitor la naștere (1342) ar putea avea impact mai mare decât unele premii, dar relatarea despre promulgare nu este suficientă pentru a confirma publicarea, aplicarea și implementarea în maternități. Am preferat campania HPV cu informații concrete de acces și nu am umplut ediția cu două știri medicale.",
+    "Reparațiile și regulile europene (1509) sunt foarte relevante pentru costurile gospodăriei, dar articolul nu stabilește singur ce obligație intră acum în vigoare în România. Nu am reciclat o directivă sau un reportaj explicativ drept drept nou; cele patru subiecte Green Stuff au noutăți mai bine delimitate.",
+    "Referendumul din Rășinari (0) merită urmărit, dar procentul de 98,43% al votanților nu stabilește singur participarea, validarea și efectul juridic. Nu am echivalat votul cu o interdicție minieră definitiv aplicabilă."
+  ],
+  "sourceLimitations": "Revizia are zece selecții, toate cu verificări integrale păstrate. Cele unsprezece verificări ale probei originale, inclusiv articolul eliminat, rămân în ledger ca istoric; nu le-am rescris pentru a transforma o preferință editorială în respingere factuală. Toate cele 11 selecții au surse integrale citite și verificări distincte, nu numai RSS. La Edupedu, paginile au returnat 403, dar API-ul public propriu a furnizat integral postările 418706 și 418873; pagina efectivă Trust / No Trust confirmă beta și pilotul viitor. ERC este verificat și în comunicatul/lista oficială ERC și anunțul UEFISCDI; aproape 10 milioane EUR este bugetul internațional, nu alocarea României. KESTAR are trei medalii mondiale în lista oficială, nu 14. Pentru Romcarbon am descărcat și citit raportul primar BVB nr. 962/06.11.2026: evenimentul este din 6 noiembrie, nu din data republicării, iar procentul de reciclat este posibilitate tehnică, nu producție măsurată. GrassWise are surse primare Teagasc, CORDIS și comunicatul USAMV: începe cercetarea, nu anunță pajiști deja restaurate. HPV, PESA, cărămizile INCDDD și monedele BNR sunt verificate în articole integrale care citează instituțiile/operatorul; nu am obținut documente primare separate pentru fiecare. La HPV, News.ro a blocat accesul separat și nu am verificat telefonic locurile; la INCDDD nu există aici certificat de produs. Premiul Cottbus este relatat integral în presă, iar calendarul proiecțiilor este confirmat de distribuitor, fără verificarea biletelor. Nu prezint nicio afirmație RSS-only ca verificare integrală. Sănătatea feedurilor: zece surse utilizabile; Europa Liberă răspunde HTTP 200, dar nu livrează articole utilizabile, ceea ce limitează diversitatea poolului. Auditul celor 13 expresii comune de șase cuvinte a fost examinat manual: sunt formulări scurte despre relatări repetate PNL/Nvidia/cazul militar american/FlowX, două termene de evenimente, trucuri cu folie și formulări de relevanță; nu sunt justificări integrale duplicate. Acest audit verifică trasabilitatea, nu dovedește adevărul faptelor.",
+  "spotChecks": [
+    {
+      "index": 0,
+      "notes": "Candidat de mediu de la începutul poolului: cei 98,43% sunt din votanți, nu din populația comunei. Am păstrat în raționament nevoia de validare și efect juridic; nu l-am selectat numai pentru procent."
+    },
+    {
+      "index": 180,
+      "notes": "Am separat premiul Cottbus de lansarea românească pe 27 noiembrie și de proiecțiile din 20/21 noiembrie. Câștigul cultural are acces public apropiat, fără a afirma că filmul rulează deja național."
+    },
+    {
+      "index": 234,
+      "notes": "Raportul BVB este din 6 noiembrie, articolul din 9. Valoarea implementată este 54.778.562,12 lei; capacitatea de a folosi până la 100% reciclat nu dovedește un volum efectiv de deșeuri recuperat."
+    },
+    {
+      "index": 500,
+      "notes": "Respins după citirea întregului extras: peste un milion de accesări ale portalului Pilonul 2 este o statistică de utilizare, nu un serviciu nou sau un drept extins; relevanța financiară mare nu impune selecția."
+    },
+    {
+      "index": 735,
+      "notes": "Alternativa de tren local reprezintă refacerea unei legături funcționale, nu doar o promisiune de lucrări. Am evitat două știri apropiate de transport feroviar în aceeași ediție."
+    },
+    {
+      "index": 984,
+      "notes": "Am controlat data lansării GrassWise, durata de patru ani, partenerii și pilotul din Cluj/Bistrița-Năsăud. Nota mare nu devine afirmație despre hectare restaurate ori beneficii deja măsurate."
+    },
+    {
+      "index": 1000,
+      "notes": "Respins: publicarea subiectelor unei simulări județene nu este o inițiativă educațională nouă. Data evenimentului 5 noiembrie diferă și de publicarea din 11; nu am confundat noutatea articolului cu a examenului."
+    },
+    {
+      "index": 1015,
+      "notes": "Candidat cu relevanță inițială foarte mare, dar lansarea Hola25 este din martie. Verificarea integrală schimbă alegerea editorială fără rescrierea scorurilor acordate extrasului."
+    },
+    {
+      "index": 1019,
+      "notes": "Noutatea este extinderea de la 10 la 15 inițiative deja selectate; nu sunt 15 granturi suplimentare și nu este o înscriere deschisă. Până la 8.000 EUR și 24 luni sunt plafoane/durată, nu sume deja virate."
+    },
+    {
+      "index": 1172,
+      "notes": "Am citit articolul din API-ul propriu și pagina reală a platformei: șase module, gratuitate, fără cont, beta. Publicul de 14–18 ani nu o exclude, dar pilotul ianuarie–martie 2027 nu este dovadă de eficacitate deja măsurată."
+    },
+    {
+      "index": 1241,
+      "notes": "Am verificat localitatea, femeile din Gorj 18–65 ani, asigurate/ne asigurate, contraindicațiile, telefonul și rezultatele ianuarie 2027. Nu am lărgit oferta la toate cititoarele din țară."
+    },
+    {
+      "index": 1342,
+      "notes": "Candidat legal cu impact mare, tăiat fiindcă promulgarea nu este probă completă de intrare în vigoare și acces în toate maternitățile. Nu am prezentat lipsa documentării drept dovadă că legea nu există."
+    },
+    {
+      "index": 1419,
+      "notes": "Am verificat numele Emanuela-Cristina Timotin și BASTRAD în lista ERC. Media de 10,4 milioane EUR a competiției nu este bugetul exact, iar aproape 10 milioane se referă la proiectul celor patru instituții."
+    },
+    {
+      "index": 1438,
+      "notes": "Titlul inițial poate induce 14 medalii mondiale; lista oficială confirmă un argint și două bronzuri mondiale, celelalte 11 fiind europene. Titlul și rezumatul newsletterului păstrează distincția."
+    },
+    {
+      "index": 1500,
+      "notes": "Respins: titlul despre negocierea fondurilor nu este sprijinit de un rezultat pozitiv concret în extrasul despre emisari și conflict. Am notat nepotrivirea titlu–extras, nu am dedus bani europeni obținuți."
+    },
+    {
+      "index": 1509,
+      "notes": "Candidatul de reparații este relevant pentru Green Stuff, dar noutatea normelor și implementarea locală nu sunt demonstrate de reportaj. Nu am folosit interesul editorului pentru reparare ca scutire de verificare."
+    },
+    {
+      "index": 1576,
+      "notes": "Titlul cu construcții făcute în opt luni nu înseamnă toate serviciile funcționale. Articolul integral spune inaugurare 2027 și lucrări exterioare/de acces; l-am tăiat în loc să ascund aceste condiții."
+    },
+    {
+      "index": 1794,
+      "notes": "Luni 16 noiembrie și cinci milioane de piese sunt pentru moneda de circulație de 50 bani, nu tirajul edițiilor din aur/argint ori prețul de 19 lei al piesei pentru colecționari."
+    },
+    {
+      "index": 1823,
+      "notes": "Data punerii în circulație este 12 noiembrie. 160 km/h este maxim tehnic, nu viteza de pe traseu; am eliminat din copy orice promisiune de călătorie mai scurtă și am păstrat dotările concrete."
+    },
+    {
+      "index": 1930,
+      "notes": "Cele 12 variante din stuf și cânepă sunt prototipuri de laborator cu rezultate viitoare, nu materiale deja certificate sau case finalizate. Demonstrațiile în Deltă sunt progresul actual verificat."
+    },
+    {
+      "index": 1999,
+      "notes": "Respins spre capătul poolului: extrasul descrie petroliere lovite de mine într-un conflict și o afirmație a unei părți beligerante. Nu este progres de siguranță maritimă și nu l-am eliminat înainte de evaluare."
+    }
+  ]
+}

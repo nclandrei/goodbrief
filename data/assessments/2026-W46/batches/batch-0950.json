@@ -1,0 +1,504 @@
+{
+  "assessments": [
+    {
+      "index": 957,
+      "fingerprint": "af50f2c2c4b68dd1142d3a030c96033d9e53168d6f01ec182eb958c62dcee28c",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 83,
+      "impact": 43,
+      "audienceRelevance": 65,
+      "decision": "candidate",
+      "judgment": "Booker pentru M. John Harrison poate fi câștig cultural interesant; verific romanul premiat și dacă interviul aduce mai mult decât premiul anunțat anterior."
+    },
+    {
+      "index": 958,
+      "fingerprint": "513c3f9bde41ef8e9b6c601a91b4b45755ec93809487f66dad09dd50e54bc75c",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 48,
+      "impact": 48,
+      "audienceRelevance": 46,
+      "decision": "reject",
+      "judgment": "Absența clauzelor păguboase este afirmația lui Bolojan, nu verificare independentă."
+    },
+    {
+      "index": 959,
+      "fingerprint": "efa5e98510f005891de9a2362ceb6446c34711e8b8862fb2c76315442d3fcd02",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 62,
+      "impact": 61,
+      "audienceRelevance": 46,
+      "decision": "reject",
+      "judgment": "Testele Freya sunt speranță pentru iarnă, nu sistem antibalistic funcțional."
+    },
+    {
+      "index": 960,
+      "fingerprint": "a32aac7af4694ad88cab1df32e8ba6731fb3892617156c9c89238de0a4854969",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 2,
+      "impact": 66,
+      "audienceRelevance": 55,
+      "decision": "reject",
+      "judgment": "Acapararea pădurilor centrafricane indică exploatare a resurselor, nu conservare."
+    },
+    {
+      "index": 961,
+      "fingerprint": "16a07518cc94149acc24e1e0b5f2355d56f11f9c9e11d00e2278fb965c448595",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 57,
+      "impact": 41,
+      "audienceRelevance": 53,
+      "decision": "reject",
+      "judgment": "Condamnarea limitării presei este poziție publică, fără acces restabilit."
+    },
+    {
+      "index": 962,
+      "fingerprint": "8608e89e457335e722941c61e436a37844bb22e43c7f62f194a874478fc4cda1",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 48,
+      "impact": 60,
+      "audienceRelevance": 60,
+      "decision": "reject",
+      "judgment": "Necesitatea unui sector suin competitiv este solicitare patronală, nu capacitate creată."
+    },
+    {
+      "index": 963,
+      "fingerprint": "7ad24e7bf02ae6c47bd04f6bfe91b73328e6ec89a641937459981c9bb634938b",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 77,
+      "impact": 64,
+      "audienceRelevance": 68,
+      "decision": "reject",
+      "judgment": "Testul de incendiu Momaia este etapă reală, dar mai lipsesc testele software și nu se anunță deschiderea."
+    },
+    {
+      "index": 964,
+      "fingerprint": "e8b778915053a22c5f2c32998b734ec0f8c97d20af4612d48f2bacd67285a149",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 62,
+      "impact": 72,
+      "audienceRelevance": 80,
+      "decision": "reject",
+      "judgment": "Eliminarea IMCA și debirocratizarea sunt propuneri Concordia, nu măsuri adoptate."
+    },
+    {
+      "index": 965,
+      "fingerprint": "302c66761e01dd2021c5907227853c81a9ae378fce7a1463355e37fecabd8e2b",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 10,
+      "impact": 82,
+      "audienceRelevance": 86,
+      "decision": "reject",
+      "judgment": "Deficitul mai mare cu 22 miliarde este abatere bugetară negativă."
+    },
+    {
+      "index": 966,
+      "fingerprint": "70b95c3048bad4b8210199cb4e5e04207a139ec4d566d454bf1ebce707dd0200",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 85,
+      "impact": 74,
+      "audienceRelevance": 77,
+      "decision": "candidate",
+      "judgment": "Începe construcția fabricii Siemens de 14 milioane la Sibiu: etapă industrială concretă, dar producția și locurile noi trebuie verificate separat."
+    },
+    {
+      "index": 967,
+      "fingerprint": "f4660abbc90f6d18606aadb60bcd9b05a8a4dae12041e7657b87ab885cc6b932",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 9,
+      "impact": 78,
+      "audienceRelevance": 91,
+      "decision": "reject",
+      "judgment": "Creșterea conturilor compromise și a ransomwareului este risc, nu securitate îmbunătățită."
+    },
+    {
+      "index": 968,
+      "fingerprint": "a95cde4f59e99104131783564c23d26a302f125b4cf82469ccaacca4e5202be8",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 74,
+      "impact": 72,
+      "audienceRelevance": 75,
+      "decision": "reject",
+      "judgment": "Progresul București–Giurgiu de la 19% la 22% este șantier intermediar, nu serviciu feroviar nou."
+    },
+    {
+      "index": 969,
+      "fingerprint": "383ec2d5cc17306a884396d7a9d5a79c61c49c2e38376979669b7a78f6444c9d",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 27,
+      "impact": 59,
+      "audienceRelevance": 93,
+      "decision": "reject",
+      "judgment": "Sedentarismul la birou este problemă de sănătate explicată, fără program nou de prevenție."
+    },
+    {
+      "index": 970,
+      "fingerprint": "bddc59f6e12f610bed2ae7dbf9f1b90d4800295037959867e31ab3b82d0e5af6",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 73,
+      "impact": 58,
+      "audienceRelevance": 64,
+      "decision": "reject",
+      "judgment": "Piloții fundației Dinamo arată lucrări în curs, fără arenă sau acces public finalizat."
+    },
+    {
+      "index": 971,
+      "fingerprint": "f88de96df15eda79df2ec2fd61d4b3e854d183b82002eac56de53dc671a0ef52",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 48,
+      "impact": 31,
+      "audienceRelevance": 42,
+      "decision": "reject",
+      "judgment": "Negocierile de fuziune liberală sunt reorganizare politică pentru anul viitor."
+    },
+    {
+      "index": 972,
+      "fingerprint": "9b07db3c7127f677973ca09fa1d9fc5498ef21d798e5603e50d545cb6a6e114f",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 78,
+      "impact": 60,
+      "audienceRelevance": 85,
+      "decision": "reject",
+      "judgment": "Investițiile din aplicația Salt simplifică un serviciu bancar comercial, fără avantaj de cost sau acces nou larg demonstrat."
+    },
+    {
+      "index": 973,
+      "fingerprint": "878c2b7c1a3bed591a25528d624f0a36bd64872638e3764eef0727eccf4542fa",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 91,
+      "impact": 86,
+      "audienceRelevance": 96,
+      "decision": "candidate",
+      "judgment": "Honeycards testează magazine suspecte și urmărește plățile: pilot antifraudă românesc concret; rata de 94% cere metodologie și nu garantează protecție universală."
+    },
+    {
+      "index": 974,
+      "fingerprint": "91cd367e9bf359ebbd17ecd5ec627e272a9f868938095286fa73f9ef584fe166",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 29,
+      "impact": 64,
+      "audienceRelevance": 92,
+      "decision": "reject",
+      "judgment": "Presenteeismul și concediile medicale rare indică sănătate precară la muncă, fără remediu implementat."
+    },
+    {
+      "index": 975,
+      "fingerprint": "97cfad77b7acf733fc9ca65740fd32136c00a85cd843863e9d0f1387b336fee2",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 29,
+      "impact": 71,
+      "audienceRelevance": 79,
+      "decision": "reject",
+      "judgment": "Prognoza modestă și nemulțumirile Concordia nu documentează relansare realizată."
+    },
+    {
+      "index": 976,
+      "fingerprint": "9ce5b1f0561702b67b823eff6680cff416b3d2bd8372004ed22c629fa739b387",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 75,
+      "impact": 67,
+      "audienceRelevance": 69,
+      "decision": "reject",
+      "judgment": "Centura Vest Timișoara la 30% este progres intermediar, nu circulație nouă."
+    },
+    {
+      "index": 977,
+      "fingerprint": "514dd645770734c5e3517df9a19530171d1ccea08bf7d08edde042ea4408c5a6",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 44,
+      "impact": 67,
+      "audienceRelevance": 76,
+      "decision": "reject",
+      "judgment": "Explicația metodologiilor de deficit clarifică dispută contabilă, fără îmbunătățire independent confirmată."
+    },
+    {
+      "index": 978,
+      "fingerprint": "b22ae57f879d695f164d46bb31a53860540b73acced1d857d6b0a618a1f44bb2",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 64,
+      "impact": 61,
+      "audienceRelevance": 56,
+      "decision": "reject",
+      "judgment": "Cadastrul de 14 milioane pentru Focșani–Brăila este licitație preliminară, nu drum construit."
+    },
+    {
+      "index": 979,
+      "fingerprint": "e02c9127d33595f895e4283b304f407edc568265914b49759fba0beaf2c2203a",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 9,
+      "impact": 67,
+      "audienceRelevance": 79,
+      "decision": "reject",
+      "judgment": "Scumpirea zahărului cu 25% și seceta sunt presiuni pe gospodării."
+    },
+    {
+      "index": 980,
+      "fingerprint": "0b209d3b4e72175064ce9ba2169a3d122fd7583f410be6d0b2aca48c5efff8ad",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 67,
+      "impact": 53,
+      "audienceRelevance": 87,
+      "decision": "reject",
+      "judgment": "Predicțiile MedLife despre abonamente în 2027 sunt promovare și tendințe, nu prevenție nouă disponibilă."
+    },
+    {
+      "index": 981,
+      "fingerprint": "8f65a86144958648b2e6e26ac452a0f4a96ee874fcafd150a38355e8c235c00c",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 73,
+      "impact": 28,
+      "audienceRelevance": 47,
+      "decision": "reject",
+      "judgment": "Intrarea lui Georgescu în board FlowX.AI este numire corporativă, nu produs sau serviciu nou."
+    },
+    {
+      "index": 982,
+      "fingerprint": "86fd41c5e1d30ec94ed3dfdfc906114c4cdd7ccc39fed7aa32718d435d6d7941",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 64,
+      "impact": 54,
+      "audienceRelevance": 48,
+      "decision": "reject",
+      "judgment": "Actualizarea pensiilor militare este proiect depus, fără bani alocați și drept aplicat."
+    },
+    {
+      "index": 983,
+      "fingerprint": "80f17f2684b096d2ad9ffb17099c549d5cd1b8488304072a51585b143574e93f",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 48,
+      "impact": 24,
+      "audienceRelevance": 54,
+      "decision": "reject",
+      "judgment": "Anunțul emisiunii Harta de impact promovează o discuție deja trecută până luni."
+    },
+    {
+      "index": 984,
+      "fingerprint": "9d74414b2bbd0cf2b8b2a1a5dfd80ee430096da166299b982d080bdf7e5f214f",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 95,
+      "impact": 84,
+      "audienceRelevance": 90,
+      "decision": "candidate",
+      "judgment": "Pilotul GrassWise în România poate proteja pajiști, biodiversitate și sol; verific ce activități încep acum, unde și la ce scară, nu presupun restaurare încheiată."
+    },
+    {
+      "index": 985,
+      "fingerprint": "aa1e1d8595ac348df94c7568f902b5076ad042b2bc11ad49e0bd59fc66c8d7c1",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 74,
+      "impact": 43,
+      "audienceRelevance": 47,
+      "decision": "reject",
+      "judgment": "Preluările Strabag sunt tranzacție finalizată, fără lucrări sau beneficii comunitare noi descrise."
+    },
+    {
+      "index": 986,
+      "fingerprint": "9758ed0556c8e4afd5e463cf2d2086461131036d4d0473eceb49e785491a5366",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 47,
+      "impact": 40,
+      "audienceRelevance": 49,
+      "decision": "reject",
+      "judgment": "Respingerea moțiunii și apărarea metodologiei deficitului rămân știre parlamentară."
+    },
+    {
+      "index": 987,
+      "fingerprint": "6a2aeabbecef2b704120c85d8c139d4eef89d76bdd9ff3ac2dd5ffd24eb7cacf",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 85,
+      "impact": 66,
+      "audienceRelevance": 78,
+      "decision": "candidate",
+      "judgment": "Finanțarea Kinderpedia susține tehnologie românească folosită în 40 de țări; verific runda și efectul asupra școlilor, fără a echivala investiția cu acces gratuit."
+    },
+    {
+      "index": 988,
+      "fingerprint": "e1818019fd3efde6a16e4d9750368b1bacf41098f4a397f59ad679ee95d859f1",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 61,
+      "impact": 59,
+      "audienceRelevance": 79,
+      "decision": "reject",
+      "judgment": "Creșterea tranzacțiilor imobiliare este scenariu, nu accesibilitate mai bună a locuințelor."
+    },
+    {
+      "index": 989,
+      "fingerprint": "1453f6d80ebce6f1e8a6df915d31b6632e4f6d4b00186c2af81679ff1d0d360c",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 81,
+      "impact": 84,
+      "audienceRelevance": 85,
+      "decision": "reject",
+      "judgment": "Repornirea Cernavodă remediază opriri; nu adaugă capacitate și rămâne parțial anunț de reconectare viitoare."
+    },
+    {
+      "index": 990,
+      "fingerprint": "eda698d42120c63d92a39a018ed98f2b73827aef357dbc8851c7274227f5a985",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 86,
+      "impact": 78,
+      "audienceRelevance": 84,
+      "decision": "candidate",
+      "judgment": "Extinderea echipei clujene pentru diagnosticul molecular Roche aduce muncă specializată; verific dimensiunea și nu afirm rezultate clinice încă inexistente."
+    },
+    {
+      "index": 991,
+      "fingerprint": "db13d550100065308bf7e19142abf4a595802109dfddac70bd36c87f48954a85",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 92,
+      "impact": 90,
+      "audienceRelevance": 95,
+      "decision": "candidate",
+      "judgment": "Metodologia ANRE aprobată permite alocare valorică multi-loc: verific aplicarea și condițiile, fără a promite transfer fizic de energie sau facturi zero."
+    },
+    {
+      "index": 992,
+      "fingerprint": "15ca06cc26dba2b9b5c3bf6e5d1d0bf42d5c7ba9f33baa7244fe431b06a6c641",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 25,
+      "impact": 54,
+      "audienceRelevance": 62,
+      "decision": "reject",
+      "judgment": "Clasamentul Microsoft–Nvidia se schimbă pe fond de scandal, nu progres tehnic sau protecție nouă."
+    },
+    {
+      "index": 993,
+      "fingerprint": "dadfb75f52bd128737d654763db774bebf5b6fba05f3ac0141ae687aa799f7f6",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 7,
+      "impact": 58,
+      "audienceRelevance": 59,
+      "decision": "reject",
+      "judgment": "Lipsa profesorilor română–matematică din Școala din spital Iași este acces educațional insuficient."
+    },
+    {
+      "index": 994,
+      "fingerprint": "b85198ce8c3682d43721cb504d8cd5cc6e4e54a5df9b4ad18c13a0b2c34aa8d4",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 49,
+      "impact": 61,
+      "audienceRelevance": 79,
+      "decision": "reject",
+      "judgment": "Recomandarea engleză de examene în persoană răspunde fraudei IA, fără rezultate pedagogice demonstrate."
+    },
+    {
+      "index": 995,
+      "fingerprint": "5405e575968898cbcf53b4f634e6f2c4da9a37ff2978825fd112e96d7d81d352",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 63,
+      "impact": 47,
+      "audienceRelevance": 66,
+      "decision": "reject",
+      "judgment": "Poziția comună contra cenzurii este reacție civică, nu anularea interdicției jurnalistului."
+    },
+    {
+      "index": 996,
+      "fingerprint": "75a532e0e5feea586ffaec3326fe00a9b3cf147091e7a924a46b75e88d410250",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 51,
+      "impact": 65,
+      "audienceRelevance": 64,
+      "decision": "reject",
+      "judgment": "Asigurarea plății salariilor școlare este obiectiv de rectificare, nu finanțare suplimentară confirmată."
+    },
+    {
+      "index": 997,
+      "fingerprint": "c7b587236389523fad636d8709f8524dcc16f3cbd199b12c5bc8ed4f0018b1b6",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 65,
+      "impact": 50,
+      "audienceRelevance": 64,
+      "decision": "reject",
+      "judgment": "Regulile rezidențiatului din 15 noiembrie sunt procedurale și expiră înainte de luni."
+    },
+    {
+      "index": 998,
+      "fingerprint": "06fcdaf6311f013f6f8cf168a0f048c0a9b7a9fae591ce33c54e75080e818b44",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 87,
+      "impact": 65,
+      "audienceRelevance": 77,
+      "decision": "candidate",
+      "judgment": "Atelierele LifeLab gratuite din Vaslui sunt pe 17 noiembrie și au resurse pentru profesori; verific dacă înscrierea mai este deschisă la primirea ediției."
+    },
+    {
+      "index": 999,
+      "fingerprint": "c8149a7672a75c3b0fede05e1f7a54756e77386b329bb0fa32b2ce239c95cac6",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 49,
+      "impact": 30,
+      "audienceRelevance": 47,
+      "decision": "reject",
+      "judgment": "Comparația profesorilor care stau peste program este comentariu despre muncă, nu sprijin nou."
+    },
+    {
+      "index": 1000,
+      "fingerprint": "d4db7d142a731ba60a2b33e4efc22c6ac6ef8c9e93e8e97e02d7251cc802f6fb",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 63,
+      "impact": 27,
+      "audienceRelevance": 46,
+      "decision": "reject",
+      "judgment": "Subiectele simulării din Ilfov sunt material de examen curent, fără resursă educațională distinctă la scară mare."
+    },
+    {
+      "index": 1001,
+      "fingerprint": "4b2e316f7de179e2d75671de32b57591030406aae767316db5b8dd984559ea66",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 46,
+      "impact": 42,
+      "audienceRelevance": 62,
+      "decision": "reject",
+      "judgment": "Sondajul despre familii și violența școlară nu creează prevenție sau consiliere."
+    },
+    {
+      "index": 1002,
+      "fingerprint": "6fd33be732253bc355fb1849bd3b19e388f388da8041620ca9e9dc71c8ec8ecc",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 41,
+      "impact": 55,
+      "audienceRelevance": 59,
+      "decision": "reject",
+      "judgment": "Disputa FSLI despre aplicarea hotărârii CJUE arată drepturi încă neimplementate, nu soluționare."
+    },
+    {
+      "index": 1003,
+      "fingerprint": "a735e7c4802b89ba4c48a8d373bf5b656632b751a9ae83198321d939f14b6f31",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 65,
+      "impact": 52,
+      "audienceRelevance": 65,
+      "decision": "reject",
+      "judgment": "Practica pedagogică rurală din anul I este recomandare Teach for Romania, nu program introdus."
+    },
+    {
+      "index": 1004,
+      "fingerprint": "7ea1c884dd9fe0e9b11b5d81fb2e6fb77806a4079051539e06dd5c778870d336",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 43,
+      "impact": 61,
+      "audienceRelevance": 66,
+      "decision": "reject",
+      "judgment": "Apelul pentru consilieri arată lipsa lor, fără posturi sau finanțare noi."
+    },
+    {
+      "index": 1005,
+      "fingerprint": "3793d2ea74559a318397a237fef9c612b45a9c10965fb13236b41bf6858961b4",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 15,
+      "impact": 29,
+      "audienceRelevance": 44,
+      "decision": "reject",
+      "judgment": "Scăderea notei educatoarei la contestație este litigiu de concurs, nu rezultat pozitiv."
+    },
+    {
+      "index": 1006,
+      "fingerprint": "9fb5ced6c0a839177f7797f97844a74f1e66f3868d003f00f9aa8e851c3369b8",
+      "assessedAt": "2026-11-14T06:42:42.926Z",
+      "positivity": 48,
+      "impact": 41,
+      "audienceRelevance": 49,
+      "decision": "reject",
+      "judgment": "Gradația pentru contractele suspendate este solicitare sindicală, nu drept acordat."
+    }
+  ]
+}

@@ -1,0 +1,504 @@
+{
+  "assessments": [
+    {
+      "index": 1157,
+      "fingerprint": "d244dd9296b8f512826e85ecd2d6ffeb44469849f34dc8d88d28de55de58c213",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 38,
+      "impact": 56,
+      "audienceRelevance": 61,
+      "decision": "reject",
+      "judgment": "Înlocuirea directorului Cernavodă răspunde unei defecțiuni, nu unei capacități noi."
+    },
+    {
+      "index": 1158,
+      "fingerprint": "a9317ff7cee9e4e0df3e21ea6db9c40044dbe6d07a48d2bd48e4509ce922028d",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 95,
+      "impact": 90,
+      "audienceRelevance": 85,
+      "decision": "candidate",
+      "judgment": "Programul pentru prematuri raportează centre dotate și renovate; verific unitățile și lucrările livrate, iar cei 4.000 anual rămân estimare de capacitate."
+    },
+    {
+      "index": 1159,
+      "fingerprint": "106ff0b61b142a2b69553d841adf0943c5e349b083782061865f7833f2127bf2",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 49,
+      "impact": 27,
+      "audienceRelevance": 37,
+      "decision": "reject",
+      "judgment": "Numirea Waldevar urmează arestării fostului director, fără proiect energetic nou realizat."
+    },
+    {
+      "index": 1160,
+      "fingerprint": "2016b5eb1656838771bae864dc5882ef764e018e5651d8257b75f7de643b46ba",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 18,
+      "impact": 62,
+      "audienceRelevance": 70,
+      "decision": "reject",
+      "judgment": "Scandalul angajărilor Momaia arată deschidere blocată și acuzații reciproce."
+    },
+    {
+      "index": 1161,
+      "fingerprint": "af8d1acc5f8913c649de89ae325636c6f9bc3d888ec53bd78547672aca4ab080",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 77,
+      "impact": 67,
+      "audienceRelevance": 70,
+      "decision": "reject",
+      "judgment": "Pasajul Sectorului 4 începe ca șantier rutier; nu există încă reducere demonstrată a congestiei sau alternativă de transport."
+    },
+    {
+      "index": 1162,
+      "fingerprint": "4090043f124deffcc679bb41ab61924cd71b94cd99f2d396db325d8cf358a9c1",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 92,
+      "impact": 72,
+      "audienceRelevance": 84,
+      "decision": "candidate",
+      "judgment": "120 de tineri NEET au primit formare și mentorat în cinci localități; verific calificările și rezultate de angajare, fără a confunda cursul cu un job obținut."
+    },
+    {
+      "index": 1163,
+      "fingerprint": "a98532dadda696ce38653a3c983c7b79ae52774d5d228677a07f7d67aaf368b6",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 54,
+      "impact": 64,
+      "audienceRelevance": 73,
+      "decision": "reject",
+      "judgment": "Integrarea Ilfovului în București este opinie despre reformă, nu schimbare adoptată."
+    },
+    {
+      "index": 1164,
+      "fingerprint": "c5a757109f10c931baaee2cb66211f44130c5be765046322947fcaf2bce51017",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 95,
+      "impact": 88,
+      "audienceRelevance": 89,
+      "decision": "candidate",
+      "judgment": "Contractul pentru 20 de tramvaie Ploiești este progres de mobilitate curată; verific semnarea, calendarul și inconsecvența datei din extras, fără a afirma livrare."
+    },
+    {
+      "index": 1165,
+      "fingerprint": "649aee53c2eb394c4b597f4202de8c692de7b8e122c3d1b896391296d5939372",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 14,
+      "impact": 82,
+      "audienceRelevance": 85,
+      "decision": "reject",
+      "judgment": "Hidroelectrica nu poate acoperi singură deficitele din cauza secetei: vulnerabilitate energetică."
+    },
+    {
+      "index": 1166,
+      "fingerprint": "a5c1bddd5a859a95bc490732f47a8ca1bfa89faa88486574d1180aa3fd25be32",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 9,
+      "impact": 82,
+      "audienceRelevance": 94,
+      "decision": "reject",
+      "judgment": "Pierderea posibilă a 90.000 de joburi este avertisment de recesiune."
+    },
+    {
+      "index": 1167,
+      "fingerprint": "05434eb50e3926573155f6e7364f53f86d6ce2f9ab0ba32bb63c77c0ed047823",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 20,
+      "impact": 61,
+      "audienceRelevance": 61,
+      "decision": "reject",
+      "judgment": "Raportarea urgentă a posturilor și sporurilor tăiate este presiune administrativă, nu școli sprijinite."
+    },
+    {
+      "index": 1168,
+      "fingerprint": "441ef1d3dbfdc322a0c20014c920b3fb6c77c8b0d8bf10916847f5db9f599ef1",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 12,
+      "impact": 42,
+      "audienceRelevance": 55,
+      "decision": "reject",
+      "judgment": "Banii însușiți din taxele studenților sunt fraudă universitară investigată."
+    },
+    {
+      "index": 1169,
+      "fingerprint": "517b9599d5de7c0e8bc025f2048045a4d7ed3ad93671c1c4971a7fc8a634bfd0",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 64,
+      "impact": 28,
+      "audienceRelevance": 45,
+      "decision": "reject",
+      "judgment": "Subiectele simulării Ilfov din 4 noiembrie sunt documente de examen, nu inițiativă nouă de natură prin simplul text România Sălbatică."
+    },
+    {
+      "index": 1170,
+      "fingerprint": "394ffff8fdbce9e47665e383db6fab2629716faf963a412e55061b01711f8bc0",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 59,
+      "impact": 49,
+      "audienceRelevance": 56,
+      "decision": "reject",
+      "judgment": "Excepția de angajare pentru observatorul CDI este proiect de OUG, legat de risc de blocaj PNRR."
+    },
+    {
+      "index": 1171,
+      "fingerprint": "6712141b4b0cc24f09e2e13f447dc9630381f9e27362d979f838bd50bb408c84",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 64,
+      "impact": 45,
+      "audienceRelevance": 55,
+      "decision": "reject",
+      "judgment": "Advertorialul despre licențe IA școlare promovează furnizorul, nu demonstrează impact educațional nou."
+    },
+    {
+      "index": 1172,
+      "fingerprint": "0f58c048c30acee2ac37606fa3c1c024f9a8f0ab6a704df134899e85a82edc18",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 94,
+      "impact": 75,
+      "audienceRelevance": 90,
+      "decision": "candidate",
+      "judgment": "Trust / No Trust este resursă gratuită creată de liceeni pentru recunoașterea fraudelor și groomingului; verific funcționarea și conținutul, nu doar premierea autorilor."
+    },
+    {
+      "index": 1173,
+      "fingerprint": "08d45e5e49256defeb3cfa08586c76e9b7c2bbfb631e5e156e100775154fdd3d",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 85,
+      "impact": 68,
+      "audienceRelevance": 78,
+      "decision": "candidate",
+      "judgment": "Runda Kinderpedia de 2,7 milioane susține o platformă educațională românească; verific contribuțiile pentru a nu aduna greșit încă o dată cei 500.000 euro BCR."
+    },
+    {
+      "index": 1174,
+      "fingerprint": "f44473ddaff2b57c7d2f53427c45eb026da64bddb5573a617954cc224d3228bc",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 39,
+      "impact": 58,
+      "audienceRelevance": 71,
+      "decision": "reject",
+      "judgment": "ANAF spune că va înlocui informația pierdută după Schengen, dar instrumentul este încă planificat."
+    },
+    {
+      "index": 1175,
+      "fingerprint": "edff080f3639178a378d65ed5ea2aca4fcf1cb667136c9d4120c7a6ca5e571fb",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 74,
+      "impact": 37,
+      "audienceRelevance": 60,
+      "decision": "reject",
+      "judgment": "Roboții Amazon de pază sunt produse de supraveghere, fără reducere verificată a furturilor sau accesibilitate largă."
+    },
+    {
+      "index": 1176,
+      "fingerprint": "efd1c0ebfebcca3a35b25f403f8a4d99a6edb1ea93deaa717366c2aa3fca4f8e",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 52,
+      "impact": 68,
+      "audienceRelevance": 84,
+      "decision": "reject",
+      "judgment": "Poziția industriei confirmă că Digital Fairness Act este propunere; disputa nu este drept digital deja aplicat."
+    },
+    {
+      "index": 1177,
+      "fingerprint": "9e61bd79bc9149e498f9028a20c43361f1bf8569585f47b669c1e4f4bd2efa7f",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 78,
+      "impact": 61,
+      "audienceRelevance": 83,
+      "decision": "candidate",
+      "judgment": "Cursurile ANAF gratuite pentru 2027 pot ajuta firmele să evite erori; verific calendar și înscriere, fără a spune că sunt deja disponibile."
+    },
+    {
+      "index": 1178,
+      "fingerprint": "5874c77594873911de18497cc8af6f01ac930b963e886e1eb200fdca58a13985",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 81,
+      "impact": 72,
+      "audienceRelevance": 83,
+      "decision": "candidate",
+      "judgment": "Runware pregătește producție de centre AI lângă București; verific terenul, investiția și stadiul înainte de a declara fabrica sau joburile existente."
+    },
+    {
+      "index": 1179,
+      "fingerprint": "0a5b3b11b8d7a637e8703eab3fd7708a036abf8785e2bee7661c8b3bc73afa7c",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 93,
+      "impact": 90,
+      "audienceRelevance": 95,
+      "decision": "candidate",
+      "judgment": "Noua metodologie ANRE aplică legea prosumatorilor și înlocuiește ordinul vechi; verific textul, publicarea și condițiile alocării valorice între locuri."
+    },
+    {
+      "index": 1180,
+      "fingerprint": "13fd0e418db5a4bfd53de51414df2d83c364c758ca97bcd160e6fd5621130f2c",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 47,
+      "impact": 38,
+      "audienceRelevance": 53,
+      "decision": "reject",
+      "judgment": "Conducerea interimară Nvidia este consecință a scandalului, nu dezvoltare tehnologică nouă."
+    },
+    {
+      "index": 1181,
+      "fingerprint": "0c335de16b7758ef70d9bcc883b9936b09f99151602ee857bfb9908aeeca17c3",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 1,
+      "impact": 48,
+      "audienceRelevance": 36,
+      "decision": "reject",
+      "judgment": "Atacul armat de lângă Casa Albă a rănit cel puțin cinci persoane."
+    },
+    {
+      "index": 1182,
+      "fingerprint": "03686e8b131a5f0c99fdf386bc41bd97399e03bcfc75889f980b06370b6f3698",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 10,
+      "impact": 61,
+      "audienceRelevance": 65,
+      "decision": "reject",
+      "judgment": "Perchezițiile în dosarul motorinei investighează evaziune, fără prejudiciu recuperat confirmat."
+    },
+    {
+      "index": 1183,
+      "fingerprint": "0573ae2af302df0e65ff56a39501aff0f8e1ebd421b54e849383748daac471f7",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 68,
+      "impact": 62,
+      "audienceRelevance": 53,
+      "decision": "reject",
+      "judgment": "Protocolul italian reduce evacuările la mesaje în masă, dar răspunde unei crize; beneficiul și siguranța încă nu sunt evaluate."
+    },
+    {
+      "index": 1184,
+      "fingerprint": "6a231ced58304799a0e6cea0040c776ee04db21d4bbfc9241c501b6149b231a7",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 57,
+      "impact": 65,
+      "audienceRelevance": 73,
+      "decision": "reject",
+      "judgment": "Stadiul pregătirii bugetului arată date încă incomplete, nu buget adoptat."
+    },
+    {
+      "index": 1185,
+      "fingerprint": "8b74a3def840f540e5e863bbc7ff9020cdebd519918173ab3b544d6285581c70",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 92,
+      "impact": 87,
+      "audienceRelevance": 84,
+      "decision": "candidate",
+      "judgment": "Sistemul Harghita cu pubele identificabile și insule cu cartelă ar urma să înceapă în decembrie; verific contractele și aria, fără a afirma reciclare deja crescută."
+    },
+    {
+      "index": 1186,
+      "fingerprint": "d2a5dd7f1f798625d00e2442fa011db9496b951e4d5e67337dbe4035f47ceca5",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 24,
+      "impact": 61,
+      "audienceRelevance": 66,
+      "decision": "reject",
+      "judgment": "Demisia Huang după scandalul de spionaj este criză corporativă, nu progres public."
+    },
+    {
+      "index": 1187,
+      "fingerprint": "c140f5a4d25d8122b66fab2c52be18a4194253ef024d941d572e33d4f19fd64a",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 94,
+      "impact": 90,
+      "audienceRelevance": 89,
+      "decision": "candidate",
+      "judgment": "Plafonul garanției salariale urcă la 12 salarii pentru companii strategice în restructurare; verific actul și accesul, fără a spune că restanțele sunt deja plătite."
+    },
+    {
+      "index": 1188,
+      "fingerprint": "313f542f46d619d2406e2cec26f414a3894949c2c7b4c22ff13e342addc22672",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 51,
+      "impact": 76,
+      "audienceRelevance": 92,
+      "decision": "reject",
+      "judgment": "Dobânda BNR rămâne 6,5%; nu există reducere nouă a costului creditului."
+    },
+    {
+      "index": 1189,
+      "fingerprint": "b9eb613c0157c24594a9961be8fd343964fb8283f8e2792d4f8dd4d4b808d8f7",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 16,
+      "impact": 38,
+      "audienceRelevance": 56,
+      "decision": "reject",
+      "judgment": "Cea mai mare pensie specială este statistică de privilegiu, nu protecție extinsă."
+    },
+    {
+      "index": 1190,
+      "fingerprint": "ee830a33d4071fd637b763141f9198f1cc471fa40c92f122d5bd4322793c5f3f",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 71,
+      "impact": 30,
+      "audienceRelevance": 65,
+      "decision": "reject",
+      "judgment": "Recomandarea mărimilor Zalando este funcție comercială, fără reducere măsurată a retururilor sau deșeurilor."
+    },
+    {
+      "index": 1191,
+      "fingerprint": "49f084ffcf6d470effe45837cb3ed682775b9d38874dc06790f0b839d4e81082",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 79,
+      "impact": 74,
+      "audienceRelevance": 76,
+      "decision": "reject",
+      "judgment": "Orașele cer interzicerea filtrelor de țigări, dar nu există aici interdicție adoptată ori reducere măsurată a plasticului."
+    },
+    {
+      "index": 1192,
+      "fingerprint": "64547e282274f109b2513add39687f71319543b3011ffd621cb4a4f3a1475d95",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 73,
+      "impact": 37,
+      "audienceRelevance": 72,
+      "decision": "reject",
+      "judgment": "AIMA Life este lansare de wellbeing cu evaluare gratuită; extrasul nu demonstrează validare sau acces nou la îngrijire."
+    },
+    {
+      "index": 1193,
+      "fingerprint": "b1f7c07269eb3da9fd477f4af753f45c661afe3ef18a0fcc95ee3455f5da6ab8",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 79,
+      "impact": 82,
+      "audienceRelevance": 82,
+      "decision": "candidate",
+      "judgment": "Repornirea Petrotel poate restabili producția și munca locală; verific situația reală, iar combustibilul din 17 noiembrie este încă estimat, nu livrat."
+    },
+    {
+      "index": 1194,
+      "fingerprint": "693161bef827b6efb16834bd66e0f1b0d14617af752a78a877c895143ab514fa",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 12,
+      "impact": 25,
+      "audienceRelevance": 35,
+      "decision": "reject",
+      "judgment": "Reținerea susținătorului care descrie eliberare prin forță este caz de amenințări."
+    },
+    {
+      "index": 1195,
+      "fingerprint": "aa117f7bdaeea91fbd4997df96f50bb199996693ca2e024a4b5e60be081d605c",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 56,
+      "impact": 62,
+      "audienceRelevance": 54,
+      "decision": "reject",
+      "judgment": "Numele propuse pentru negocieri europene nu sunt reprezentare stabilită sau acord de pace."
+    },
+    {
+      "index": 1196,
+      "fingerprint": "25bc86c9da809bd31abb25d5477fb4e4a30327d2a0bc2a8647a48cb3e2ba6f60",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 59,
+      "impact": 22,
+      "audienceRelevance": 66,
+      "decision": "reject",
+      "judgment": "Folia de aluminiu pentru căldură este truc casnic fără economie cuantificată sau program nou."
+    },
+    {
+      "index": 1197,
+      "fingerprint": "bf1a1c47d58f5b0fb8305206b060874983f4b464d00610043899dc9b90b243bf",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 88,
+      "impact": 62,
+      "audienceRelevance": 73,
+      "decision": "reject",
+      "judgment": "Turneul pentru Centrul Neuroatipic e pe 15 noiembrie, înainte de ediția de luni; nu prezint donații viitoare pentru un eveniment trecut."
+    },
+    {
+      "index": 1198,
+      "fingerprint": "5747cce2415845d333f417c21aa37c4d6f2d9b287ba8a613a91d719e3980443f",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 11,
+      "impact": 23,
+      "audienceRelevance": 36,
+      "decision": "reject",
+      "judgment": "Boicotul Peluzei Nord FCSB este conflict între galerie și club."
+    },
+    {
+      "index": 1199,
+      "fingerprint": "934058e118678d1d51ecadafe510a15abf5fceabfd428cf5f54d5a4dac3a3959",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 61,
+      "impact": 60,
+      "audienceRelevance": 73,
+      "decision": "reject",
+      "judgment": "Refuzul reducerilor și cererea de fonduri culturale nu confirmă în extras investiții aprobate cu rezultate concrete."
+    },
+    {
+      "index": 1200,
+      "fingerprint": "a13649d651617dd7153746016510c0658c5f5e4ffbeebe8fd1d2113ac913cfea",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 61,
+      "impact": 18,
+      "audienceRelevance": 49,
+      "decision": "reject",
+      "judgment": "Reconstrucția Romei antice este advertorial istoric, nu descoperire sau proiect public nou."
+    },
+    {
+      "index": 1201,
+      "fingerprint": "56abc89c0cc64657f4a2583bedb8e6721d64a01c177862bf469d0f460b94720b",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 61,
+      "impact": 70,
+      "audienceRelevance": 79,
+      "decision": "reject",
+      "judgment": "Votarea bugetului până la finalul anului este calendar promis, nu act adoptat."
+    },
+    {
+      "index": 1202,
+      "fingerprint": "efb9cb2d6dd8b5e81a724b9d8d55e5ac4167509ecb953f52275880dc09a02ce9",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 95,
+      "impact": 91,
+      "audienceRelevance": 90,
+      "decision": "candidate",
+      "judgment": "Cadrul adoptat vizează protecția salariilor celor 2.400 de angajați Liberty; verific eligibilitatea și finanțarea, fără a echivala garanția cu plata efectuată."
+    },
+    {
+      "index": 1203,
+      "fingerprint": "ae0a004f1482a2d59a292cb8dda789f7f8a69007941276ec585cc17745bcdd49",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 65,
+      "impact": 52,
+      "audienceRelevance": 58,
+      "decision": "reject",
+      "judgment": "Promovarea culturilor pentru combustibil aviatic nu dovedește sustenabilitate, producție sau emisii reduse efectiv."
+    },
+    {
+      "index": 1204,
+      "fingerprint": "9b17ca2c32238c1f32613f231d8e674f7266561e3834000bb32534e234ac2a39",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 1,
+      "impact": 52,
+      "audienceRelevance": 49,
+      "decision": "reject",
+      "judgment": "Rețeaua neonazistă și planul de revoltă armată sunt extremism violent."
+    },
+    {
+      "index": 1205,
+      "fingerprint": "eb31ac9f09c8aedd82e8b5d2a639d866fd58ee1a49421344e1f406ef8254d822",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 61,
+      "impact": 28,
+      "audienceRelevance": 62,
+      "decision": "reject",
+      "judgment": "Harta interactivă de comasări este exercițiu al redacției, nu reformă administrativă implementată."
+    },
+    {
+      "index": 1206,
+      "fingerprint": "539de64c0b23aebb5ef49e00bb8b8588a95a9784671ec7d6f68a8ea3dd5a4aca",
+      "assessedAt": "2026-11-14T06:48:33.072Z",
+      "positivity": 92,
+      "impact": 72,
+      "audienceRelevance": 85,
+      "decision": "candidate",
+      "judgment": "Statutul național pentru Teatrul Evreiesc poate proteja patrimoniul viu; verific hotărârea și efectele concrete, nu îl tratez ca simplu premiu."
+    }
+  ]
+}

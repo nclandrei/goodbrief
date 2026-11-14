@@ -1,0 +1,254 @@
+{
+  "assessments": [
+    {
+      "index": 32,
+      "fingerprint": "feccdf988ac210b2d2e3cdc0d324b205de1e6d4bfa494f9f0d9bfd95c1f710cc",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 6,
+      "impact": 37,
+      "audienceRelevance": 48,
+      "decision": "reject",
+      "judgment": "Cererea lui Georgescu privește o măsură preventivă într-un dosar penal, nu un progres pentru comunitate."
+    },
+    {
+      "index": 33,
+      "fingerprint": "298c8d1ed683b2f0861d6c4e22bfd44478958235c8fbbce84cc84b757e41bf67",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 39,
+      "impact": 62,
+      "audienceRelevance": 34,
+      "decision": "reject",
+      "judgment": "Oferta lui Trump de negociere a imigrației nu este un acord încheiat și rămâne dispută politică americană."
+    },
+    {
+      "index": 34,
+      "fingerprint": "1480386f385680fa494b12be133d7105dc270d5a2e21dec01394288ec8e0b3cd",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 62,
+      "impact": 13,
+      "audienceRelevance": 17,
+      "decision": "reject",
+      "judgment": "Primul loc al Copenhagăi este o etapă obișnuită din campionat; extrasul Agerpres este gol."
+    },
+    {
+      "index": 35,
+      "fingerprint": "79efc2bd51613484801479eddbf028fc0875ada9e5ff683f698479bd873945b3",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 78,
+      "impact": 25,
+      "audienceRelevance": 47,
+      "decision": "reject",
+      "judgment": "Titlul ITF al lui Filip Jianu este o reușită românească, dar amploarea pare modestă și lipsește orice context RSS."
+    },
+    {
+      "index": 36,
+      "fingerprint": "70f277d8a060bef0060d928393517d88bd2ee26c02bcf8681efe1e778c133787",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 78,
+      "impact": 79,
+      "audienceRelevance": 78,
+      "decision": "candidate",
+      "judgment": "Pregătirea retehnologizării Cernavodă are miză energetică; cele șase recrutări nu trebuie confundate cu începerea sau finalizarea investiției."
+    },
+    {
+      "index": 37,
+      "fingerprint": "483909a0a79eafd0f2090d7eafaed483088a9654f7e04806662b22954e84e3ab",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 53,
+      "impact": 38,
+      "audienceRelevance": 43,
+      "decision": "reject",
+      "judgment": "Înregistrarea firmei Big Bags nu dovedește o fabrică funcțională, iar investiția și locurile de muncă rămân necomunicate."
+    },
+    {
+      "index": 38,
+      "fingerprint": "97596d72555e1854b8a515237b2ef57105d0ef63ea4291e1eedf0625abbcff24",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 72,
+      "impact": 59,
+      "audienceRelevance": 55,
+      "decision": "reject",
+      "judgment": "Depozitul NewCold este un proiect logistic privat pentru 2027, fără beneficiu public distinct sau performanță ecologică demonstrată."
+    },
+    {
+      "index": 39,
+      "fingerprint": "af1005b26deb4425e5155573f7de2773109c3a17c4b6015553517dc39d72681b",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 52,
+      "impact": 41,
+      "audienceRelevance": 48,
+      "decision": "reject",
+      "judgment": "Retrospectiva Colliers despre piața imobiliară nu identifică o schimbare pozitivă nouă pentru locuire sau spațiul public."
+    },
+    {
+      "index": 40,
+      "fingerprint": "58477813124ff7274bb20cca759f33be9ddc84a13da6db99e947035c4e0c1df3",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 71,
+      "impact": 78,
+      "audienceRelevance": 75,
+      "decision": "candidate",
+      "judgment": "Finanțarea europeană pentru căutare și salvare poate conta concret; separ cei 10 milioane pentru intervenții de componenta militară a hubului."
+    },
+    {
+      "index": 41,
+      "fingerprint": "3c7f3c6ba6f53173e81bd7466cdc80b29298279eef43019921af9bcc1c1546f7",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 61,
+      "impact": 58,
+      "audienceRelevance": 69,
+      "decision": "candidate",
+      "judgment": "Clarificarea finanțării minei completează povestea referendumului Rășinari; nu dovedește singură oprirea definitivă a exploatării."
+    },
+    {
+      "index": 42,
+      "fingerprint": "510ba41e64412ef13dab85f478a8260cf994801a9e0f36f5289b76f14171248a",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 45,
+      "impact": 66,
+      "audienceRelevance": 63,
+      "decision": "reject",
+      "judgment": "Angajamentul privind Marea Neagră dublează vizita diplomatică fără a adăuga în extras un rezultat implementat."
+    },
+    {
+      "index": 43,
+      "fingerprint": "a7212317ff02600b70fb49cc8667f94556cc70147117754546d4d7a07da35b4d",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 22,
+      "impact": 11,
+      "audienceRelevance": 29,
+      "decision": "reject",
+      "judgment": "Criogenarea plătită de un turist italian este o speranță individuală speculativă, nu un tratament medical demonstrat."
+    },
+    {
+      "index": 44,
+      "fingerprint": "70a2f932c75b0ef40a9e5ba9fceb8b8276cf62ece8e8267131ded7bef35b7efb",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 5,
+      "impact": 45,
+      "audienceRelevance": 26,
+      "decision": "reject",
+      "judgment": "Condamnarea lui Russell Brand relatează viol și agresiuni sexuale, incompatibile cu selecția de vești bune."
+    },
+    {
+      "index": 45,
+      "fingerprint": "f1d6fca0fbd36203dd1eddab4a890f1312ed900d625d78ef0d61d22b902bb5cf",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 40,
+      "impact": 62,
+      "audienceRelevance": 46,
+      "decision": "reject",
+      "judgment": "Exercițiul militar din Polonia pregătește un scenariu de după război, fără pace convenită sau beneficiu civil nou."
+    },
+    {
+      "index": 46,
+      "fingerprint": "5740285e846d9310121c2c3dda6b7a60cd07df265bb16377e75839c03ca637ab",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 14,
+      "impact": 68,
+      "audienceRelevance": 50,
+      "decision": "reject",
+      "judgment": "Ultimatumul lui Merz despre bugetul european descrie un conflict între guverne, nu finanțare deja aprobată."
+    },
+    {
+      "index": 47,
+      "fingerprint": "9044494d7a5de287b4f2de87569c160a899decfc91ce17686c1cae44cc957fa4",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 82,
+      "impact": 83,
+      "audienceRelevance": 80,
+      "decision": "candidate",
+      "judgment": "Regenerarea cardiacă cercetată la Cambridge poate fi o veste științifică puternică; stadiul experimental și modelul studiat trebuie verificate."
+    },
+    {
+      "index": 48,
+      "fingerprint": "6206a81cdf3339773132c80efac3f4bed33d75aa1e9eafbf2c672c88999ac26e",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 65,
+      "impact": 16,
+      "audienceRelevance": 25,
+      "decision": "reject",
+      "judgment": "Premiul lunar pentru Mourinho este o distincție sportivă de rutină, fără legătură românească sau consecință mai largă."
+    },
+    {
+      "index": 49,
+      "fingerprint": "14c72ed745c658bccefae86f488a84c3d25d6bfcf299b14a737a337aabdfab0e",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 46,
+      "impact": 78,
+      "audienceRelevance": 56,
+      "decision": "reject",
+      "judgment": "Participarea UE la negocieri nu înseamnă acord de pace; extrasul anunță doar componența unei întâlniri."
+    },
+    {
+      "index": 50,
+      "fingerprint": "f3f656b98ad056683e02888dde3f05c47dff32fe5b9227bfa3386f15aeb6233a",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 73,
+      "impact": 67,
+      "audienceRelevance": 79,
+      "decision": "candidate",
+      "judgment": "Protecțiile Instagram extinse adolescenților pot fi utile; merită verificat ce se aplică efectiv și ce rămâne doar estimare algoritmică."
+    },
+    {
+      "index": 51,
+      "fingerprint": "8c1695901d38d5b1c0ad1d4c4d854d42753fd90ad23fc8e915e004f893838c21",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 3,
+      "impact": 11,
+      "audienceRelevance": 22,
+      "decision": "reject",
+      "judgment": "Declinul lui Bruce Willis este o relatare despre suferință și viață privată, nu despre acces la îngrijire sau recuperare."
+    },
+    {
+      "index": 52,
+      "fingerprint": "10354897e7427ce93816dc517990140043e9b4108b6abc78d9f9175f7c2f4bb7",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 7,
+      "impact": 14,
+      "audienceRelevance": 24,
+      "decision": "reject",
+      "judgment": "Restrângerea turneului lui Biden din cauza cancerului nu oferă un rezultat pozitiv sau o informație medicală practică."
+    },
+    {
+      "index": 53,
+      "fingerprint": "284a4b2b01c01b11628d1f909eaa2e9812c7c51b03e47afea309a8d0a90ed116",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 29,
+      "impact": 75,
+      "audienceRelevance": 73,
+      "decision": "reject",
+      "judgment": "Scenariile PSD de comasare a localităților nu sunt o reformă adoptată și nici o îmbunătățire administrativă demonstrată."
+    },
+    {
+      "index": 54,
+      "fingerprint": "93658e524d13160676c4286487ab35fe086befee35a3ffb19c6d4b121a7bcb76",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 57,
+      "impact": 63,
+      "audienceRelevance": 40,
+      "decision": "reject",
+      "judgment": "Propunerea salarială franceză este legată de proteste și încă neadoptată; relevanța directă pentru cititorii români este limitată."
+    },
+    {
+      "index": 55,
+      "fingerprint": "6ab5166a8b06716349ecb397be9aba5009043593614283ff5591805d492fa049",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 20,
+      "impact": 29,
+      "audienceRelevance": 40,
+      "decision": "reject",
+      "judgment": "Datoriile PNL și promisiunea de transparență țin de administrarea unui partid, fără progres public verificabil în extras."
+    },
+    {
+      "index": 56,
+      "fingerprint": "e4db1b83495b0d9f632fe23ddcc821d9f8baf7299f066675480214b62d06840b",
+      "assessedAt": "2026-11-14T06:10:02.586Z",
+      "positivity": 25,
+      "impact": 24,
+      "audienceRelevance": 34,
+      "decision": "reject",
+      "judgment": "Funcția posibilă a lui Orban după o fuziune de partide este negociere internă, nu veste bună pentru cititori."
+    }
+  ]
+}

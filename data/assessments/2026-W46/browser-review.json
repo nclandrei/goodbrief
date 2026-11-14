@@ -1,0 +1,12 @@
+{
+  "engine": "Chromium via agent-browser",
+  "devicePixelRatio": 2,
+  "states": [
+    {"page": "newsletter.html", "viewport": "1280x960", "documentWidth": 1280, "articleHeadings": 11, "sourceLinks": 11, "screenshot": ".amp/in/artifacts/w46-newsletter-desktop.png", "result": "Inspected complete rendered page: four sections, readable Romanian copy and source labels, no editorial scores, clipping or overlap."},
+    {"page": "newsletter.html", "viewport": "390x844", "documentWidth": 390, "articleHeadings": 11, "sourceLinks": 11, "screenshot": ".amp/in/artifacts/w46-newsletter-narrow.png", "result": "Inspected the actual full image directly, including top, long headlines, phone number, Green Stuff and footer. No horizontal overflow, overlapping text or duplicate header/footer. This is narrow desktop Chromium, not a physical phone or touch emulation."},
+    {"page": "editor-proof.html", "viewport": "1280x960", "documentWidth": 1280, "articleHeadings": 11, "scoreTriplets": 11, "screenshot": ".amp/in/artifacts/w46-editor-proof-desktop-review.jpg", "result": "Inspected full scored proof: clear editor-only designation, all three scores for each story, separate-subscriber-approval warning, no overlap."},
+    {"page": "editor-proof.html", "viewport": "390x844", "documentWidth": 390, "articleHeadings": 11, "scoreTriplets": 11, "screenshot": ".amp/in/artifacts/w46-editor-proof-narrow.jpg", "result": "Inspected the actual full image directly: designation and approval warning are readable; all 11 score triplets remain visible with natural wrapping. No overlap or duplication. A text-only image analysis initially reported spurious overlays in tall images; direct image inspection contradicted that report."}
+  ],
+  "copyReview": "Intro and shortSummary correspond to selected trains, Trust / No Trust and ERC story. Reader-facing copy preserves beta, selection/funding, laboratory and future-testing stages. Headlines are Romanian and at most 110 characters. HTML link destinations were extracted and checked against selected raw source URLs. Newsletter and scored proof use the same selected titles and summaries.",
+  "scope": "Rendered content review only; no template code changed. No mailbox-client rendering or live subscriber send was performed."
+}

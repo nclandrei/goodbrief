@@ -1,0 +1,735 @@
+Grassland Resilience and Adaptation through Sustainability and Science, With Inclusive Stakeholder Engagement | GrassWise | Project | Fact Sheet | HORIZON | CORDIS | European Commission
+Skip to main content
+(opens in new window)
+Log in
+en
+Select your language
+Close
+CORDIS languages:
+es
+español
+de
+Deutsch
+en
+English
+fr
+français
+it
+italiano
+pl
+polski
+Machine translation:
+This is a machine translation provided by the European Commission’s eTranslation service to help you understand this page. Please read the conditions of use.
+български
+español
+čeština
+dansk
+Deutsch
+eesti
+ελληνικά
+français
+Gaeilge
+hrvatski
+italiano
+latviešu
+lietuvių
+magyar
+Malti
+Nederlands
+polski
+português
+română
+slovenčina
+slovenščina
+suomi
+svenska
+русский
+Українська
+Translate
+Search
+Search
+Search
+CORDIS - EU research results
+CORDIS
+Menu
+Close
+Menu
+Back
+Previous
+items
+Next
+items
+Home
+Thematic Packs
+Projects & Results
+Videos & Podcasts
+News
+Datalab
+Search
+Home
+…
+Projects & Results
+Horizon Europe
+Grassland Resilience and Adaptation through Sustainability and Science, With Inclusive Stakeholder Engagement
+Grassland Resilience and Adaptation through Sustainability and Science, With Inclusive Stakeholder Engagement
+Fact Sheet
+Fact Sheet
+Fact Sheet
+Project Information
+GrassWise
+Grant agreement ID:
+101288958
+DOI
+Each project (from H2020 onwards) is attributed a Digital Object Identifier (DOI)
+10.3030/101288958
+EC signature date
+4 May 2026
+Start date
+1 October 2026
+End date
+30 September 2030
+Funded under
+Food, Bioeconomy Natural Resources, Agriculture and Environment
+Total cost
+The total amount of money invested in the project. The total cost includes EU contribution as well as other project costs not covered by EU funding. It is expressed in euros.
+€
+7 999 435,00
+EU contribution
+Amount of money, by way of direct subsidy or donation, from the EU budget to finance an action intended to help achieve an EU policy objective or the functioning of a body, which pursues an aim of general EU interest or has an objective forming part of, and supporting, an EU policy. The sum of the EU contributions of all participants in a project is equal to the grant amount.
+€ 7 999 435,00
+7 999 435,00
+Investment in EU policy priorities
+The 'EU Policy Priority' trackers document the expenditures of the Research and Innovation framework program in specific policy areas that have established spending targets, such as climate and biodiversity. These trackers also cover areas where the Commission has reporting requirements, including clean air, the digital agenda, and artificial intelligence. For more details on the methodology, refer to the Climate Mainstreaming Architecture in the 2021-2027 Multiannual Financial Framework (SWD(2022)225).
+Digital agenda
+Digital agenda - 0%
+This tracker monitors Horizon Europe’s financial contribution to the development of digital technologies and the digitisation of the economy and society (known as ‘Digital transition’).
+Clean air
+Clean air - 40%
+This tracker monitors the Horizon Europe’s financial contribution to the clean air policy (National Emission Ceiling Directive) aiming to improve ambient air quality and tackle air pollution, to protect the environment and human health.
+Artificial Intelligence
+Artificial Intelligence - 0%
+This tracker monitors Horizon Europe’s financial contribution to the development and deployment of AI-based technologies and solutions. Projects that develop AI-tools as part of their research method are included
+Climate action
+Climate action - 100%
+This tracker monitors the Horizon Europe’s financial contribution to both mitigating climate change (e.g., contributions to the reduction of greenhouse gas emissions) and adapting to climate change by building resilience (e.g., regarding floods, droughts, spatial planning and better governance, adaptation to changing climate in value chains, etc.).
+Biodiversity
+Biodiversity - 40%
+This tracker monitors the Horizon Europe’s financial contribution to Europe’s biodiversity’s path to recovery including species protection, ecosystem conservation, and habitat rehabilitation, all essential for resilience in climate adaptation and addressing ecosystem services but also environmental crime and the health-environment connection.
+Coordinated by
+TEAGASC - AGRICULTURE AND FOOD DEVELOPMENT AUTHORITY
+Ireland
+Objective
+Grasslands cover 34% of the EU’s agricultural area, yet their vital contributions to food production and ecosystem services (ES) remain undervalued. Grassland ecosystems convert forages into nutrient-dense food through grazing ruminants, while delivering key ESs including carbon sequestration, biodiversity support, water purification, soil erosion control, and cultural heritage, particularly on land unsuitable for cropping. Despite their importance, European grasslands and grazing systems are in decline, driven by intensification, land-use change, abandonment, soil degradation, and climate change. Substantial investment through the Common Agricultural Policy (CAP), including eco-schemes and Agri-Environment-Climate Measures, has not reversed these trends. A major barrier is the lack of a coherent framework to manage grasslands for their full multifunctionality. Grassland data is fragmented, metrics are outdated, and integrated assessment tools are limited. GrassWise aims to close this gap by generating harmonised data across Europe’s 9 pedoclimatic zones through Partner Farm Networks, Earth Observation, and legacy datasets. Through a Multi-Actor Approach, it will co-create next-generation decision-support tools at farm and landscape-levels. These tools will help farmers benchmark multifunctionality and adapt profitable, low-emission practices aligned with the EU Agri Sustainability Compass. The project will equip policymakers with robust, evidence-based insights to refine CAP instruments in line with the European Green Deal, Biodiversity Strategy, Organic Farming Action Plan, and Nature Restoration Regulation. GrassWise will deliver new and practical innovations to enhance productivity, feed quality, nutrient use efficiency, biodiversity, and other ESs such as soil stability and moisture retention. GrassWise is ambitious, action-ready, grounded in real farming practice, transdisciplinary in design and aligned with the EU’s sustainability goals.
+Fields of science (EuroSciVoc)
+CORDIS classifies projects with EuroSciVoc, a multilingual taxonomy of fields of science, through a semi-automatic process based on NLP techniques. See: The European Science Vocabulary.
+agricultural sciences
+agriculture, forestry, and fisheries
+agriculture
+sustainable agriculture
+engineering and technology
+chemical engineering
+separation technologies
+desalination
+reverse osmosis
+natural sciences
+earth and related environmental sciences
+soil sciences
+soil management
+natural sciences
+earth and related environmental sciences
+atmospheric sciences
+climatology
+climatic changes
+social sciences
+economics and business
+economics
+sustainable economy
+Suggest new fields of science
+You need to log in or register to use this function
+Keywords
+Project’s keywords as indicated by the project coordinator. Not to be confused with the EuroSciVoc taxonomy (Fields of science)
+Partner farms; Multi actor approach; Pedoclimatic zones; Decision support tools; Ecosystem services; Sward species; Grazing livestock systems
+Programme(s)
+Multi-annual funding programmes that define the EU’s priorities for research and innovation.
+HORIZON.2.6 - Food, Bioeconomy Natural Resources, Agriculture and Environment
+MAIN PROGRAMME
+See all projects funded under this programme
+HORIZON.2.6.3 - Agriculture, Forestry and Rural Areas
+See all projects funded under this programme
+Topic(s)
+Calls for proposals are divided into topics. A topic defines a specific subject or area for which applicants can submit proposals. The description of a topic comprises its specific scope and the expected impact of the funded project.
+HORIZON-CL6-2025-02-FARM2FORK-06 - Improving grassland management in European livestock farming systems
+See all projects funded under this topic
+Funding Scheme
+Funding scheme (or “Type of Action”) inside a programme with common features. It specifies: the scope of what is funded; the reimbursement rate; specific evaluation criteria to qualify for funding; and the use of simplified forms of costs like lump sums.
+HORIZON-RIA - HORIZON Research and Innovation Actions
+See all projects funded under this funding scheme
+Call for proposal
+Procedure for inviting applicants to submit project proposals, with the aim of receiving EU funding.
+(opens in new window)
+HORIZON-CL6-2025-02
+See all projects funded under this call
+Coordinator
+TEAGASC - AGRICULTURE AND FOOD DEVELOPMENT AUTHORITY
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 1 226 780,00
+Address
+Oak Park
+R93 Carlow
+Ireland
+See on map
+Region
+Ireland
+Southern
+South-East
+Activity type
+Higher or Secondary Education Establishments
+Links
+Contact the organisation
+(opens in new window)
+Website
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 1 226 780,00
+Participants (19)
+Sort alphabetically
+Sort by Net EU contribution
+Expand all
+Collapse all
+STICHTING AERES GROEP
+Netherlands
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 542 375,00
+Address
+BOVENBUURTWEG 27
+6717 XA Ede Gld
+See on map
+Region
+Oost-Nederland
+Gelderland
+Veluwe
+Activity type
+Higher or Secondary Education Establishments
+Links
+Contact the organisation
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 542 375,00
+GRUENLANDZENTRUM NIEDERSACHEN/BREMEN E.V.
+Germany
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 567 375,00
+Address
+ALBRECHT-THAER-STRASSE 1
+26939 OVELGOENNE
+See on map
+Region
+Berlin
+Berlin
+Berlin
+Activity type
+Other
+Links
+Contact the organisation
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 567 375,00
+UNIVERSITY COLLEGE CORK - NATIONAL UNIVERSITY OF IRELAND, CORK
+Ireland
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 505 076,25
+Address
+WESTERN ROAD
+T12 YN60 Cork
+See on map
+Region
+Ireland
+Southern
+South-West
+Activity type
+Higher or Secondary Education Establishments
+Links
+Contact the organisation
+(opens in new window)
+Website
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 505 076,25
+UNIVERSITATEA DE STIINTE AGRICOLE SI MEDICINA VETERINARA CLUJ NAPOCA
+Romania
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 655 062,50
+Address
+MANASTUR STR; 3-5
+400372 Cluj Napoca
+See on map
+Region
+Macroregiunea Unu
+Nord-Vest
+Cluj
+Activity type
+Higher or Secondary Education Establishments
+Links
+Contact the organisation
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 655 062,50
+UDRUZENJE ZA PREDUZETNISTVO I INOVACIJE FUTURE SYSTEMS HUB
+Serbia
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 531 875,00
+Address
+TRG DOSITEJA OBRADOVICA 8
+21000 Novi Sad
+See on map
+Region
+Србија - север
+Регион Војводине
+Јужнобачка област
+Activity type
+Other
+Links
+Contact the organisation
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 531 875,00
+GREEN SUPPLY CHAIN DIGITAL INNOVATION HUB ASTIKI MI KERDOSKOPIKI ETAIREIA
+Greece
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 527 500,00
+Address
+PARAMITHIAS 39
+104 35 ATHENS
+See on map
+SME
+The organization defined itself as SME (small and medium-sized enterprise) at the time the Grant Agreement was signed.
+Yes
+Region
+Αττική
+Aττική
+Κεντρικός Τομέας Αθηνών
+Activity type
+Other
+Links
+Contact the organisation
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 527 500,00
+NIBIO - NORSK INSTITUTT FOR BIOOKONOMI
+Norway
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 315 687,50
+Address
+HOEGSKOLEVEIEN 7
+1430 Aas
+See on map
+Activity type
+Research Organisations
+Links
+Contact the organisation
+(opens in new window)
+Website
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 315 687,50
+LIETUVOS AGRARINIU IR MISKU MOKSLU CENTRAS
+Lithuania
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 312 562,50
+Address
+INSTITUTO AL 1 AKADEMIJA
+LT-58344 KEDAINIU R
+See on map
+Region
+Lietuva
+Sostinės regionas
+Vilniaus apskritis
+Activity type
+Research Organisations
+Links
+Contact the organisation
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 312 562,50
+CONSIGLIO NAZIONALE DELLE RICERCHE
+Italy
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 323 812,50
+Address
+PIAZZALE ALDO MORO 7
+00185 Roma
+See on map
+Region
+Centro (IT)
+Lazio
+Roma
+Activity type
+Research Organisations
+Links
+Contact the organisation
+(opens in new window)
+Website
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 323 812,50
+CENTRO DI SPERIMENTAZIONE LAIMBURG
+Italy
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 290 703,75
+Address
+LAIMBURG 6
+39051 Vadena
+See on map
+Region
+Nord-Est
+Provincia Autonoma di Bolzano/Bozen
+Bolzano-Bozen
+Activity type
+Research Organisations
+Links
+Contact the organisation
+(opens in new window)
+Website
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 290 703,75
+FORSCHUNGSINSTITUT FUR BIOLOGISCHEN LANDBAU FiBL
+Switzerland
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 369 250,00
+Address
+ACKERSTRASSE 113
+5070 Frick
+See on map
+Region
+Schweiz/Suisse/Svizzera
+Nordwestschweiz
+Aargau
+Activity type
+Research Organisations
+Links
+Contact the organisation
+(opens in new window)
+Website
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 369 250,00
+BIOLAND SUEDTIROL SOCIETA AGRICOLA COOPERATIVA
+Italy
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 268 562,50
+Address
+ZONA INDUSTRIALE 1/5
+39011 LANA
+See on map
+Region
+Nord-Est
+Provincia Autonoma di Bolzano/Bozen
+Bolzano-Bozen
+Activity type
+Other
+Links
+Contact the organisation
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 268 562,50
+CENTRE WALLON DE RECHERCHES AGRONOMIQUES
+Belgium
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 298 125,00
+Address
+RUE DE LIROUX 9
+5030 Gembloux
+See on map
+Region
+Région wallonne
+Prov. Namur
+Arr. Namur
+Activity type
+Research Organisations
+Links
+Contact the organisation
+(opens in new window)
+Website
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 298 125,00
+AGENCIA GALLEGA DE LA CALIDAD ALIMENTARIA
+Spain
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 322 812,50
+Address
+LUGAR DE QUIAN SERGUDE S/N
+15881 Boqueixon A Coruna
+See on map
+Region
+Noroeste
+Galicia
+A Coruña
+Activity type
+Research Organisations
+Links
+Contact the organisation
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 322 812,50
+DAIRYNZ LIMITED
+New Zealand
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 297 562,50
+Address
+605 RUAKURA ROAD RD6 NEWSTEAD
+3240 HAMILTON
+See on map
+Activity type
+Other
+Links
+Contact the organisation
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 297 562,50
+NIEDERSACHSISCHES MINISTERIUM FUR UMWELT ENERGIE UND KLIMASCHUTZ
+Germany
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 166 750,00
+Address
+ARCHIVSTRASSE 2
+30169 HANNOVER
+See on map
+Region
+Niedersachsen
+Hannover
+Region Hannover
+Activity type
+Public bodies (excluding Research Organisations and Secondary or Higher Education Establishments)
+Links
+Contact the organisation
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 166 750,00
+ASTIKOS MI KERDOSKOPIKOS SYNETAIRISMOS PERIORISMENIS EFTHINIS POIOS EINAI TO AFENTIKO
+Greece
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 88 750,00
+Address
+16TH KLM ATHINON -LAMIAS
+145 64 KIFISIA- ATHINA
+See on map
+Region
+Αττική
+Aττική
+Βόρειος Τομέας Αθηνών
+Activity type
+Other
+Links
+Contact the organisation
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 88 750,00
+COOPERATIVA AGRICOLA TIBLES-SOMES-MELES
+Romania
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 88 750,00
+Address
+SAT NUSENI 238
+427200 Nuseni
+See on map
+SME
+The organization defined itself as SME (small and medium-sized enterprise) at the time the Grant Agreement was signed.
+Yes
+Region
+Macroregiunea Unu
+Nord-Vest
+Bistriţa-Năsăud
+Activity type
+Private for-profit entities (excluding Higher or Secondary Education Establishments)
+Links
+Contact the organisation
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 88 750,00
+NATIONAL AGRICULTURAL ADVISORY SERVICE
+Bulgaria
+Net EU contribution
+Net EU financial contribution. The sum of money that the participant receives, deducted by the EU contribution to its linked third party. It considers the distribution of the EU financial contribution between direct beneficiaries of the project and other types of participants, like third-party participants.
+€ 300 062,50
+Address
+7 BANSKO SHOSSE STR, KV REPUBLICA, LYULIN DISTRICT
+1331 Sofia
+See on map
+Region
+Югозападна и Южна централна България
+Югозападен
+София (столица)
+Activity type
+Public bodies (excluding Research Organisations and Secondary or Higher Education Establishments)
+Links
+Contact the organisation
+(opens in new window)
+Participation in EU R&I programmes
+(opens in new window)
+HORIZON collaboration network
+(opens in new window)
+Total cost
+The total costs incurred by this organisation to participate in the project, including direct and indirect costs. This amount is a subset of the overall project budget.
+€ 300 062,50
+Download Download the content of the page
+XML
+PDF
+Last update: 30 June 2026
+Permalink: https://cordis.europa.eu/project/id/101288958
+European Union, 2026
+CORDIS - EU research results
+This website is managed by the Publications Office of the European Union
+Accessibility
+Semi-Automatic Project Classification - Explainability Notice
+Contact us
+Contact our Help Desk
+Frequently Asked Questions (and their answers)
+Follow us
+Mastodon(opens in new window)
+LinkedIn(opens in new window)
+Bluesky(opens in new window)
+Facebook(opens in new window)
+YouTube(opens in new window)
+Full list of EC social media presence(opens in new window)
+About us
+Who we are
+CORDIS services
+Newsletter(opens in new window)
+Related links
+Research and innovation
+(opens in new window)
+Funding & tenders portal
+(opens in new window)
+(opens in new window)
+Contact the European Commission(opens in new window)
+Resources for partners(opens in new window)
+Cookies
+Privacy policy
+Legal Notice
+This site uses cookies
+to offer you a better browsing experience.
+I accept cookies.
+I refuse cookies.
+Your data extraction is available
+Your data extraction with Task ID
+TASK_ID_PLACEHOLDER
+is available for download.
+Go to my data extractions
+Close
+DET Modal body ...

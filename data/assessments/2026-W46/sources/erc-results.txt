@@ -1,0 +1,334 @@
+ERC Synergy Grants 2026                                                                                                          List of Proposals for funding - Synergy 2026                                                             Host Institution (HI) refers to instiitution at the time of application
+                                                                                                                                      48 proposals - 12 November 2026
+
+
+        Acronym                        Title              Number       Number            Last Name               First name             Host                                        Host Institution Name                                                         Host Institution Local Name
+                                                            of PI        of HI                                                       Country
+                                                                                          Kousouris                Dimitrios             EL                  National Hellenic Research Foundation Documentation Centre                                              Ethniko Idryma Erevnon
+                             Balkan and Anatolian                                          Kappler                 Matthias              IT                                    Ca' Foscari University of Venice                                                  Universita Ca' Foscari Venezia
+                             Scriptural Traditions.
+       BASTRAD             Multiple writing practices          4            4               Köse                    Yavuz                AT                                           University of Vienna                                                                Universität Wien
+                             in the Ottoman world,
+                              14th-20th centuries.                                         Timotin                Emanuela               RO              Iorgu Iordan - Al. Rosetti Institute of Linguistics of Romanian Academy                         Institutul de Lingvistică al Academiei Române
+                                                                                                                                                                                                                                                                „Iorgu Iordan - Alexandru Rosetti”
+      CHiC2PRINT              High-resolution 3D               2            1               Rühe                    Jürgen               DE                                   Albert-Ludwigs-University Freiburg                                               Albert-Ludwigs-Universität Freiburg
+                           Volumetric Printing using                                        Rapp                    Bastian
+                                                                                           Jensen                     Ole                UK                                           University of Oxford                                                              University of Oxford
+
+        COG-MAT            Tracking Early Cognitive            3            3             De Tiege                  Xavier               BE                                   Free University of Brussels (ULB)                                                   Université Libre de Bruxelles
+                                   Maturation
+                                                                                            Dalal                   Sarang               DK                                             Aarhus University                                                               Aarhus Universitet
+
+                                                                                          Myllyharju               Johanna                FI                                            University of Oulu                                                                 Oulun yliopisto
+                                  Quantitative
+                               Understanding of                                            Forneris                Federico              IT                                            University of Pavia                                                        Università degli Studi di Pavia
+    CollagenQUEST             Enzymatic collagen               4            4
+                            modifications in Space                                         Lennon                   Rachel               UK                                         University of Manchester                                                         University of Manchester
+                                    and Time
+                                                                                          Ishikawa                 Yoshihiro             US                              The Regents of The University of California                                      The Regents of The University of California
+
+                                  DEciphering                                               Baroni                  Marco                ES                                        Pompeu Fabra University                                                          Universitat Pompeu Fabra
+         DeCoR                    COnvergent                   3            3               Wyart              Matthieu Pierre           CH                      Swiss Federal Institute of Technology Lausanne (EPFL)                                    Ecole Polytechnique Fédérale de Lausanne
+                           REpresentations in deep
+                                neural networks                                              Laio                Alessandro              IT                              International School for Advanced Studies                                    Scuola Internazionale Superiore di Studi Avanzati
+
+                            Evolution of Life in the                                        Drake                   Henrik               SE                                             Linneuniversitetet                                                              Linnæus University
+       DEEP-LIFE             Depths of Space and               4            3              Dopson                    Mark
+                                      Time                                                Bertilsson                Stefan               SE                              Swedish University of Agricultural Science                                        Swedish University of Agricultural Science
+                                                                                       Tamarit Chulia               Daniel               NL                                             Utrecht University                                                              Universiteit Utrecht
+                            The Hidden Entry: How                                        Ashkenazi                 Avraham                IL                                           Tel Aviv University                                                              Tel Aviv University
+                            Skin and Environment                                      Van Den Berge                Nathalie
+      DERMIS-PD               Shape Parkinson’s                3            2                                                            DK                                             Aarhus University                                                               Aarhus Universitet
+                                    Disease                                             Borghammer                    Per
+
+                                                                                          Chedotal                   Alain               FR                                   University Claude Bernard Lyon 1                                                 Université Lyon 1 Claude Bernard
+         DevSkin           Building the human skin             4            4              Haniffa                 Muzlifah              UK                                       Genome Research Limited                                                           Genome Research Limited
+                                                                                          Pourquie                  Olivier              US                                                Brigham Inc                                                                      Brigham Inc
+                                                                                      Colome Tatche                  Maria               DE                                       University of Munich (LMU)                                               Ludwig-Maximilians-Universität München
+                                                                                           Jordan                    Peter               FR                           National Center for Scientific Research (CNRS)                                     Centre National de la Recherche Scientifique
+                           DIgital Simulation Twins                                                                                                                                                                                                                            (CNRS)
+        DISTURB                 for tURBulence                 3            3             Pirozzoli                 Sergio               IT                                      Sapienza University of Rome                                                      Sapienza Università di Roma
+
+                                                                                          Colonius                    Tim                US                                    California Institute of Technology                                               California Institute of Technology
+ERC Synergy Grants 2026                                                                                                        List of Proposals for funding - Synergy 2026                                                            Host Institution (HI) refers to instiitution at the time of application
+                                                                                                                                     48 proposals - 12 November 2026
+
+
+        Acronym                       Title              Number       Number           Last Name                First name            Host                                        Host Institution Name                                                       Host Institution Local Name
+                                                           of PI        of HI                                                       Country
+                                                                                          Rottner                Klemens               DE                                 Technical University of Braunschweig                                            Technische Universität Braunschweig
+                                Regulated non-                                            Bieling                  Peter               UK                                         King's College London                                                           King's College London
+        DRACHE            equilibrium as an engine            3            3
+                           for actin function across
+                                time and space                                          Fritz-Laylin               Lillian             US                                      University of Massachusetts                                                     University of Massachusetts
+
+
+                                                                                         Signorell                  Ruth               CH                     Swiss Federal Institute of Technology Zurich (ETH Zurich)                             Eidgenössische Technische Hochschule Zürich
+                             Deciphering Droplet                                          Laage                   Damien               FR                           National Center for Scientific Research (CNRS)                                   Centre National de la Recherche Scientifique
+       DropChem                    Chemistry                  4            4                                                                                                                                                                                               (CNRS)
+                                                                                           Prisle                  Nønne               DE                                                   DESY                                                      Stiftung Deutsches Elektronen-Synchrotron
+                                                                                           Reid                  Jonathan              UK                                           University of Bristol                                                           University of Bristol
+                             Early Cancer Lesion                                         Schmidt                 Oliver G.             DE                                  University of Technology, Chemnitz                                               Technische Universität Chemnitz
+        ECLIPSE                 Interception via              4            3             Schmidt                 Christine             UK                                        University of Manchester                                                        University of Manchester
+                           Programmable Sensor-                                        Edmondson                  Richard
+                            Equipped morphobots                                            Davis                    Ben                UK                                           University of Oxford                                                            University of Oxford
+
+                                                                                      Martin-Subero            Jose Ignacio            ES                                                 IDIBAPS                                                 Instituto de Investigaciones Biomédicas August Pi i
+                          Evolutionary dynamics of                                                                                                                                                                                                                         Sunyer
+          EDEN             ageing, cancer and the             4            4             Graham                    Trevor              UK                        Institute of Cancer Research - Royal Cancer Hospital                            Institute of Cancer Research - Royal Cancer Hospital
+                              microenvironment                                           Simmons                   Alison              UK                                           University of Oxford                                                            University of Oxford
+
+                                                                                          Seiffert                Martina              DE                                   German Cancer Research Centre                                                 Deutsches Krebsforschungszentrum
+                              The Experience of                                       Fülöppné Dr.             Beatrix Mária           HU                              ELTE Resarch Centre for the Humanities                                           ELTE Resarch Centre for the Humanities
+                           Diversity as the Genesis                                     Romhányi
+          EDGE             of East Central Europe             3            3               Szady                  Bogumił              PL                            The John Paul II Catholic University of Lublin                                   Katolicki Uniwersytet Lubelski Jana Pawla II
+                            (14th–18th centuries)                                          Elbel                    Petr               CZ                                           Masaryk University                                                             Masarykova univerzita
+
+                           Extending the Horizons                                          Ulmer                   Stefan              DE                                Heinrich Heine University of Dusseldorf                                          Heinrich-Heine-Universität Düsseldorf
+         EHPAS             of Precision Antimatter            4            3              Schiller                Stephan
+                                 Spectroscopy                                            Eriksson                  Stefan              UK                                           Swansea University                                                              Swansea University
+                                                                                        Ospelkaus                Christian             DE                                      Leibniz University Hannover                                                     Leibniz Universität Hannover
+                                Environmental                                             Sahay                  Sundeep               NO                                            University of Oslo                                                              Universitetet i Oslo
+                          Antimicrobial Resistance                                       Seeberg                    Jens               DK                                            Aarhus University                                                               Aarhus Universitet
+   ENTANGLE-AMR                and One Health:                3            3
+                             Entangled Biosocial                                           Baker                  Stephen              SG                                   A* Star Infectious Diseases Labs                                                A* Star Infectious Diseases Labs
+                                   Networks
+                                                                                       Westermann                  Frank               DE                                   German Cancer Research Centre                                                 Deutsches Krebsforschungszentrum
+                                   Exploiting                                             Fischer                Matthias              DE                                      University Hospital Cologne                                                   Klinikum der Universität zu Köln
+     EVO-DETECT           neuroblastoma evolution             4            3               Peifer                  Martin
+                              for early detection
+                                                                                     Schleiermacher               Gudrun               FR                                              Curie Institute                                                                  Institut Curie
+ERC Synergy Grants 2026                                                                                                        List of Proposals for funding - Synergy 2026                                                            Host Institution (HI) refers to instiitution at the time of application
+                                                                                                                                     48 proposals - 12 November 2026
+
+
+        Acronym                       Title              Number       Number            Last Name               First name            Host                                        Host Institution Name                                                        Host Institution Local Name
+                                                            of PI        of HI                                                      Country
+
+                                                                                            Zepf              Matthew - Karl           DE                            GSI Helmholtz Centre for Heavy Ion Research                                   GSI Helmholtzzentrum für Schwerionenforschung
+                             Coherent Harmonic                                                             Matthäus Wolfgang                                                                                                                                                GmbH
+      ExtremeField           Focusing – Enabling              4            4              Pukhov                 Alexander             DE                                Heinrich Heine University of Dusseldorf                                          Heinrich-Heine-Universität Düsseldorf
+                             Unprecedented Field                                          Dromey                  Brendan              UK                                       Queen's University Belfast                                                       Queen's University Belfast
+                                   Strengths
+                                                                                           Veisz                   Laszlo              SE                                             Umea University                                                                 Umea universitet
+                                                                                          Weijers                   Dolf               NL                                         Wageningen University                                                            Wageningen University
+                              Understanding the                                            Zipfel                   Cyril              CH                                            University of Zurich                                                             Universität Zürich
+    FASTFURIOUS             molecular basis of fast           4            4              Wabnik                 Krzysztof             ES                                     Technical University of Madrid                                                Universidad Politécnica de Madrid
+                                plant signaling                                         Russinova                  Jenny               BE                               Flanders Institute for Biotechnology (VIB)                                         Vlaams Instituut voor Biotechnologie
+
+
+                                                                                        Vanharanta                 Sakari
+                            Understanding human                                                                                         FI                                          University of Helsinki                                                            Helsingin yliopisto
+                              genome functions:                                          Aaltonen                   Lauri
+       FIBERMAP           Mapping chromatin fiber-            4            3              Taipale                   Jussi              UK                                       Genome Research Limited                                                         Genome Research Limited
+                             level epigenomes in
+                              health and disease                                         De Boer                    Carl               CA                                      University of British Columbia                                                  University of British Columbia
+
+                                                                                        Mangeney                   ANNE                FR                               Institute of Earth Physics of Paris (IPGP)                                        Institut de Physique du Globe de Paris
+                                From Waves to                                            Bouchut                  François             FR                           National Center for Scientific Research (CNRS)                                    Centre National de la Recherche Scientifique
+      FLOWAVES             Landslides by Granular             4            3               Radjai            Franck - Farhang                                                                                                                                              (CNRS)
+                                   Rheology                                                Festa                  Gaetano               IT                                    University of Naples Federico II                                          Università degli Studi di Napoli Federico II
+
+
+                             Gender, Technology,                                     Rebay-Salisbury             Katharina             AT                                           University of Vienna                                                              Universität Wien
+                              and the Embodied                                            Dietrich                 Laura               AT                                 Austrian Academy of Sciences (AAS)                                         Österreichische Akademie der Wissenschaften
+      GenderTech             Making of European               4            4              Mittnik                  Alissa              DE                                           Max Planck Society                                                 Max-Planck-Gesellschaft zur Förderung der
+                                   Prehistory                                                                                                                                                                                                                       Wissenschaften e.V.
+                                                                                          Jordan                   Fiona               UK                                            University of Bristol                                                           University of Bristol
+                               Global Inequality                                          Piketty                 Thomas               FR                                       Paris School of Economics                                                       Ecole d'économie de Paris
+                                  Patterns for                                           Chancel                   Lucas               FR                                                SciencesPo                                                    Fondation nationale des sciences politiques
+          GIPAD            Development and Deep               4            4                Rao                 Narasimha              US                                              Yale University                                                                 Yale University
+                               Decarbonization                                            Piontek                Franziska             DE                            Potsdam Institute for Climate Impact Research                                      Potsdam-Institut für Klimafolgenforschung
+
+                              GROUNDSWELL:                                              Rockström                  Johan               DE                            Potsdam Institute for Climate Impact Research                                      Potsdam-Institut für Klimafolgenforschung
+   GROUNDSWELL             Societal tipping towards           4            4              Lenton                  Timothy              UK                                           University of Exeter                                                             University of Exeter
+                                a safe future for                                        Scheffer                  Marten              NL                                         Wageningen University                                                            Wageningen University
+                              humanity on Earth                                           Weber                     Elke               US                                           Princeton University                                                            Princeton University
+                                                                                           Ryan                    Tomas                IE                                         Trinity College Dublin                                                           Trinity College Dublin
+                               Mapping Immune                                              Bilbo                    Staci              US                                              Duke University                                                                 Duke University
+    Immune Memory             Memory Engrams                  4            4               Buss                   Claudia              DE                                       Charité - University Hospital                                               Charité - Universitätsmedizin Berlin
+                             Across Development                                      Werkle-Bergner               Markus               DE                                           Max Planck Society                                                 Max-Planck-Gesellschaft zur Förderung der
+                                                                                                                                                                                                                                                                    Wissenschaften e.V.
+ERC Synergy Grants 2026                                                                                                        List of Proposals for funding - Synergy 2026                                                             Host Institution (HI) refers to instiitution at the time of application
+                                                                                                                                     48 proposals - 12 November 2026
+
+
+        Acronym                       Title              Number       Number            Last Name               First name            Host                                        Host Institution Name                                                        Host Institution Local Name
+                                                            of PI        of HI                                                      Country
+                                                                                           Spang                    Anja               NL                           Dutch Research Organisation Institutes (NWO-I)                                Nederlandse Wetenschappelijk Onderzoek Instituten
+                            Integrating interactions                                     Williams                   Tom                UK                                             University of Bath                                                              University of Bath
+        INTREEG              into phylogenetics to            4            4                                                                                                                                                                          Centre National de la Recherche Scientifique
+                           reconstruct genome and                                        Boussau                  Bastien              FR                           National Center for Scientific Research (CNRS)                                                          (CNRS)
+                             biosphere evolution                                                                                                                                                                                                  Okinawa Institute of Science and Technology School
+                                                                                          Szöllősi            Gergely János             JP         Okinawa Institute of Science and Technology School Corporation Gako Hojin                                       Corporation Gako Hojin
+
+                                                                                            Šadl                   Urška               DK                                        University of Copenhagen                                                         Københavns Universitet
+                                                                                          Epstein                    Lee               US                                The Washington University Corporation                                           The Washington University Corporation
+       JUSTGOV               Judges as Agents of              4            4             Weinshall                 Keren                IL                                 The Hebrew University of Jerusalem                                              The Hebrew University of Jerusalem
+                                  Democracy
+                                                                                           Naurin                  Daniel              NO                                             University of Oslo                                                             Universitetet i Oslo
+
+                                                                                          Blundell                Richard              UK                                       Institute For Fiscal Studies                                                     Institute For Fiscal Studies
+                                                                                       Postel-Vinay                Fabien              UK                                        University College London                                                       University College London
+                              Labour Shortages:                                          Salvanes                   Kjell              NO                                    Norwegian School of Economics                                                        Norges Handelshoyskole
+        LabShort                Measurement,                  4            4
+                           Mismatch, and Mobility
+                                                                                          Weber                    Andrea              AT                                       Central European University                                                              CEU GmbH
+
+
+                                                                                            Glatt                Sebastian             AT                               University of Veterinary Medicine Vienna                                         Veterinärmedizinische Universität Wien
+                                                                                          Bujnicki               Janusz M.              PL                        International Institute of Molecular and Cell Biology                              Międzynarodowy Instytut Biologii Molekularnej i
+                                                                                                                                                                                                                                                                         Komórkowej
+                           Decoding the Molecular
+       LifeOfTRNA           Mechanisms of tRNA                4            4               Leidel                Sebastian             CH                                             University of Bern                                                               Universität Bern
+                                 Modifications
+
+                                                                                           Tisné                   Carine              FR                           National Center for Scientific Research (CNRS)                                    Centre National de la Recherche Scientifique
+                                                                                                                                                                                                                                                                            (CNRS)
+
+                                Monge-Ampere                                                Levy                   Bruno               FR           National Institute for Research in Computer Science and Automatic Control                     Institut National de Recherche en Informatique et en
+                                 Geometry and                                                                                                                                               (INRIA)                                                                      Automatique
+        MAGNET               Numerical Effective              4            3             Dapogny                  Charles                                                                                                                             Centre National de la Recherche Scientifique
+                                 Transport for                                          Mohayaee                    Roya               FR                           National Center for Scientific Research (CNRS)                                                          (CNRS)
+                           Computational Physics                                           Oudet                  Edouard              FR                                          University of Grenoble                                                        Université Grenoble Alpes
+
+                                                                                         Raunser                   Stefan              DE                                            Max Planck Society                                                Max-Planck-Gesellschaft zur Förderung der
+                                Mechanism and                                            Hummer                   Gerhard                                                                                                                                           Wissenschaften e.V.
+        MAROCO               Regulation of Muscle             4            3                 Liu                     Fan               DE                                     Forschungsverbund Berlin e.V.                                                   Forschungsverbund Berlin e.V.
+                                  Contraction                                        Houdusse-Juillé                Anne               FR                           National Center for Scientific Research (CNRS)                                    Centre National de la Recherche Scientifique
+                                                                                                                                                                                                                                                                            (CNRS)
+                                                                                           Rinke                   Esther              DE                                 Goethe University Frankfurt am Main                                      Johann Wolfgang Goethe Universität Frankfurt am
+                          Navigating the Pathways                                                                                                                                                                                                                             Main
+                            of Nativeness: Attrition                                       Flores                 Cristina             PT                                            University of Minho                                                           Universidade do Minho
+         NAVAR              and Reinforcement of              3            3
+                           Childhood Languages in
+                              Contexts of Return                                          Sopata                   Aldona               PL                                Adam Mickiewicz University in Poznań                                      Uniwersytet Im. Adama Mickiewicza W Poznaniu
+                                   Migration
+ERC Synergy Grants 2026                                                                                                        List of Proposals for funding - Synergy 2026                                                             Host Institution (HI) refers to instiitution at the time of application
+                                                                                                                                     48 proposals - 12 November 2026
+
+
+        Acronym                       Title               Number       Number           Last Name               First name            Host                                         Host Institution Name                                                       Host Institution Local Name
+                                                            of PI        of HI                                                      Country
+                                                                                           Bonini                   Luca                IT                                           University of Parma                                                       Università degli Studi di Parma
+                           From Neuroethology to                                           Micera                 Silvestro             IT                               Sant'Anna School of Advanced Studies                                                   Scuola Superiore Sant'Anna
+                           Restoring Sensorimotor
+     NeuroEthoPrim           Function via Stealth             3            3
+                            Neurotechnologies in                                            Jang                  Kyung-in             KR                        Daegu Gyeongbuk Institute of Science & Technology                                Daegu Gyeongbuk Institute of Science & Technology
+                           Freely Moving Primates
+
+                            Transforming obstetric                                         Hajnal                  Joseph
+                               imaging through                                        Peralta Pereira               Laura              UK                                          King's College London                                                            King's College London
+      ObI-CoMTUS                coherent multi-               4            2            Nicolaides                 Kypros
+                            transducer ultrasound                                         Ramalli           Alessandro Ovidio           IT                                         University of Florence                                                     Università degli Studi di Firenze
+                                                                                                                    Paris
+                                                                                          Brabec                Christoph J.           DE                                         Jülich Research Centre                                                     Forschungszentrum Jülich GmbH
+         ODDITY           On-demand discovery by              3            3             Friederich                Pascal              DE                                    Karlsruhe Institute of Technology                                               Karlsruher Institut für Technologie
+                              molecular ingenuity                                        Mcculloch                   Iain              UK                                            University of Oxford                                                            University of Oxford
+
+                                                                                        Bonhomme                  Christian             FR                                          Sorbonne University                                                              Sorbonne Université
+                              ANALYTICAL AND                                              Giscard               Pierre-Louis            FR                                                  ULCO                                                             Université du Littoral Côte d'Opale
+                                 NUMERICAL
+                               SOLUTIONS OF
+                               DIFFERENTIAL
+    OdeToTheStars             SYSTEMS IN THE                  3            3
+                              STAR ALGEBRA:                                                Pozza                  Stefano               CZ                                     Charles University of Prague                                                      Univerzita Karlova V Praze
+                               TOWARD NEW
+                               PARADIGMS IN
+                                  MAGNETIC
+                                RESONANCE
+
+                           Dynamic Digital Twin for                                        Ritter                   Petra              DE                                       Charité - University Hospital                                               Charité - Universitätsmedizin Berlin
+                               State Dependent
+   PTSDynamicTwin             Intervention in Post            3            3              Hendler                  Talma                IL                                           Tel Aviv University                                                              Tel Aviv University
+                               Traumatic Stress                                                                                                                                                                                                    Advanced Telecommunications Research Institute
+                               Disorder (PTSD)                                            Kawato                   Mitsuo               JP               Advanced Telecommunications Research Institute International-IRC                                              International-IRC
+
+
+                            Rethinking Accuracy:                                          Tisseur                Francoise
+                           Randomized and Mixed-                                                                                       UK                                         University of Manchester                                                        University of Manchester
+         RaMPA             Precision Principles for           4            3             Dongarra                   Jack
+                              Sustainable AI and
+                             Scientific Computing                                          Grigori                  Laura              CH                       Swiss Federal Institute of Technology Lausanne (EPFL)                                  Ecole Polytechnique Fédérale de Lausanne
+                                                                                          Hoefler                 Torsten              CH                     Swiss Federal Institute of Technology Zurich (ETH Zurich)                              Eidgenössische Technische Hochschule Zürich
+                                                                                          Emiliani                valentina             FR                          National Center for Scientific Research (CNRS)                                    Centre National de la Recherche Scientifique
+                                                                                                                                                                                                                                                                            (CNRS)
+                                                                                           Sahel                 José-Alain            US                                          University of Pittsburgh                                                        University of Pittsburgh
+                                REstoring high-
+         REVIVE           resolution VIsion through           3            3
+                                optogenetic and                                                                                                                                                                                                    Institut für Molekulare nd Klinische Ophthalmologie
+                            photonic Engineering                                           Roska                   Botond              CH                        Institute of Molecular and Clinical Opthalmology Basel                                                      Basel
+ERC Synergy Grants 2026                                                                                                       List of Proposals for funding - Synergy 2026                                                            Host Institution (HI) refers to instiitution at the time of application
+                                                                                                                                    48 proposals - 12 November 2026
+
+
+        Acronym                       Title              Number       Number           Last Name               First name            Host                                        Host Institution Name                                                       Host Institution Local Name
+                                                           of PI        of HI                                                      Country
+                                Resolving sex                                             Odom                   Duncan               DE                                   German Cancer Research Centre                                                 Deutsches Krebsforschungszentrum
+  SexChromFunction         chromosome control of                                          Heard                    Edith              UK                                       The Francis Crick Institute                                                     The Francis Crick Institute
+             s                development and                4            3               Turner                  James
+                                 homeostasis                                              Pe'Er                    Dana               US                               Memorial Sloan Kettering Cancer Center                                         Memorial Sloan Kettering Cancer Center
+
+                                                                                         Wåhlin                    Anna               SE                                        University of Gothenburg                                                         Göteborgs universitet
+
+                                                                                         Mottram                   Ruth               DK                                 Danish Meteorological Institute (DMI)                                            Danmarks Meteorologiske Institut
+                             Studying the Known
+          SKUA              Unknown of  Antarctic            4            4
+                                  Ice Shelves                                         Van De Wal                 Roderik              NL                                            Utrecht University                                                             Universiteit Utrecht
+
+
+                                                                                          Davis                    Peter              UK                              United Kingdom Research and Innovation                                          United Kingdom Research and Innovation
+
+                                                                                          Simon                   Patrice             FR                                         Universite De Toulouse                                                          University of Toulouse
+                            Solid–Liquid Materials
+          SLiMs             with Electrochemically           2            2
+                                Programmable                                             Gogotsi                   Yury               US                                            Drexel University                                                               Drexel University
+                                   Functions
+
+
+                                                                                         Hekstra                  Doeke               DE                                         University of Hamburg                                                            Universität Hamburg
+                           Structural Perturbations                                       Meier                   Guido               DE                                           Max Planck Society                                                Max-Planck-Gesellschaft zur Förderung der
+         SPARX            by Applied  electRic-field         4            4                                                                                                                                                                                       Wissenschaften e.V.
+                            Xtallography SPARX                                            Beale                    John               CH                                         Paul Scherrer Institute                                                          Paul Scherrer Institut
+
+                                                                                           Lane                  Thomas               DE                                                   DESY                                                      Stiftung Deutsches Elektronen-Synchrotron
+                              Delivering spectral                                        Aigrain                 Suzanne              UK                                           University of Oxford                                                           University of Oxford
+                              fidelity to discover                                       Reiners                  Ansgar              DE                                         University of Gottingen                                            Georg-August-Universität Göttingen Stiftung
+                           exoplanets, understand                                                                                                                                                                                                                 Oeffentlichen Rechts
+     SpectralFidelity        their host stars, and           3            3
+                              enable progress in                                       Dumusque                   Xavier              CH                                          University of Geneva                                                           Université de Genève
+                             fundamental physics
+
+                             Reconstituting long-                                        Straube                   Anne               UK                                          University of Warwick                                                          University of Warwick
+   TRANSPORTRUL                distance vesicle              3            3                Diez                   Stefan              DE                                    Technical University of Dresden                                                Technische Universität Dresden
+            ES             transport to decode and                                                                                                                                                                                                  Georg-August-Universität Göttingen Stiftung
+                          control neuronal logistics                                     Klumpp                   Stefan              DE                                         University of Gottingen                                                          Oeffentlichen Rechts
+
+                                                                                      Papavasiliou                 Nina               DE                                   German Cancer Research Centre                                                 Deutsches Krebsforschungszentrum
+                          Toward A Trypanosome-                                          Mugnier                  Monica              US                                        Johns Hopkins University                                                       Johns Hopkins University
+                              Informed Machine-                                          Niopek                  Dominik              DE                                        University of Heidelberg                                                Ruprecht-Karls-Universität Heidelberg
+     TrypanoFormer         Learning Framework for            4            4
+                            Bidirectional Antigen-                                     Wickstead                    Bill              UK                                        University of Nottingham                                                        University of Nottingham
+                             Antibody Prediction.
+ERC Synergy Grants 2026                                                                                                        List of Proposals for funding - Synergy 2026                                                            Host Institution (HI) refers to instiitution at the time of application
+                                                                                                                                     48 proposals - 12 November 2026
+
+
+        Acronym                       Title              Number       Number            Last Name               First name            Host                                        Host Institution Name                                                        Host Institution Local Name
+                                                            of PI       of HI                                                       Country
+                                                                                         Veldhorst                 Menno               NL
+
+                                                                                        Sebastiano                 Fabio               NL
+           UniQ             Unified Semiconductor             4            1                                   Lieven Mark                                                    Delft University of Technology                                                   Technische Universiteit Delft
+                             Quantum Computer                                          Vandersypen               Koenraad              NL
+
+
+                                                                                        Scappucci                Giordano              NL
+
+                                                                                           Reby                    David               FR                                         Universite Jean Monnet                                                          Jean Monnet University
+                             Visual Integration of                                       Pascalis                  Olivier             FR                           National Center for Scientific Research (CNRS)                                    Centre National de la Recherche Scientifique
+                             Sonic Information via                                                                                                                                                                                                                         (CNRS)
+        ViSONIC            Crossmodality.  A Novel            3            3
+                                Framework for
+                                understanding                                             Simner                    Julia              UK                                           University of Sussex                                                            University of Sussex
+                            Metamodal Perception
