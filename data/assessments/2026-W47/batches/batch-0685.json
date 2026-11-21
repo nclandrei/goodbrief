@@ -1,0 +1,504 @@
+{
+  "assessments": [
+    {
+      "index": 685,
+      "decision": "reject",
+      "positivity": 58,
+      "impact": 25,
+      "audienceRelevance": 35,
+      "judgment": "Susținerea Macron pentru Diallo este sprijin electoral în FIFA, fără măsuri sportive adoptate pentru public.",
+      "fingerprint": "7bab6c6b3e05c6fdd2af5fac695c3841eab411fd79c9104246cb91cce59803f9",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 686,
+      "decision": "reject",
+      "positivity": 42,
+      "impact": 82,
+      "audienceRelevance": 72,
+      "judgment": "Replica franceză la acuzațiile Lavrov explică o misiune militară, fără dezescaladare sau acord umanitar.",
+      "fingerprint": "62db7f14b66f736ec8f32dc0f531ff0ca057f43d71f912529639f12083b73c93",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 687,
+      "decision": "reject",
+      "positivity": 48,
+      "impact": 96,
+      "audienceRelevance": 98,
+      "judgment": "Pacienții au semnalat servicii fictive în e-Sănătatea Mea, dar suma investigată nu este prejudiciu definitiv stabilit ori recuperat.",
+      "fingerprint": "8f982ab870f5da1b3b735266bb19598808981cfbf9d443f2a9c4b391aa15bcca",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 688,
+      "decision": "reject",
+      "positivity": 55,
+      "impact": 88,
+      "audienceRelevance": 95,
+      "judgment": "Hărțile cu opt sau cincisprezece județe sunt variante PSD pentru 2028, nu organizarea nouă a României.",
+      "fingerprint": "ceefd5a9693aaa4a0729bcaebc5166982d6e47a0f825b07cad235e54365f8a9a",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 689,
+      "decision": "reject",
+      "positivity": 0,
+      "impact": 55,
+      "audienceRelevance": 62,
+      "judgment": "Întreruperea curentului înaintea răpirii din Buzău adaugă detalii unei agresiuni, fără protecție a victimei documentată.",
+      "fingerprint": "084e5a86766247da93531e65dd3e648abf370e8ea95be7d20fa9457278424cf9",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 690,
+      "decision": "reject",
+      "positivity": 38,
+      "impact": 58,
+      "audienceRelevance": 65,
+      "judgment": "Stabilirea judecării în România a suspectului căutat de FBI este pas procedural într-un caz de amenințări.",
+      "fingerprint": "29a8a21f207b11daec0b6dc67dc9350f871f7816033d25648d0ab13752ee1e8d",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 691,
+      "decision": "reject",
+      "positivity": 25,
+      "impact": 55,
+      "audienceRelevance": 75,
+      "judgment": "Atenționarea MAE privind greva portugheză din 20 noiembrie este avertisment de călătorie, deja perisabil pentru ediția următoare.",
+      "fingerprint": "9c36eb0f91e9386cabe166d5e343406ba539a542282beead7e91d64a132b0d9a",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 692,
+      "decision": "reject",
+      "positivity": 58,
+      "impact": 62,
+      "audienceRelevance": 72,
+      "judgment": "Monitorizarea prematurilor la Iași arată îngrijire necesară, dar extrasul nu identifică dotări ori rezultate clinice noi.",
+      "fingerprint": "3978e3fa2f9e3e833020cd36a3774e66706fde0a43af4402a9fc1e5ff54aa0aa",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 693,
+      "decision": "reject",
+      "positivity": 3,
+      "impact": 75,
+      "audienceRelevance": 72,
+      "judgment": "Căderea comunicațiilor interne NSA este defecțiune de securitate cu origine necunoscută, nu serviciu refăcut.",
+      "fingerprint": "c0f798cc5328825ccfab2be9876b75b661dd6dd6813b9f43b947bea2e3f9c0bd",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 694,
+      "decision": "reject",
+      "positivity": 8,
+      "impact": 92,
+      "audienceRelevance": 98,
+      "judgment": "Locul 39 din 40 pentru aerul Bucureștiului este rezultat îngrijorător, fără politică eficientă nouă de curățare.",
+      "fingerprint": "1a8e92fff11a6b8c67fd8e16616efe95391369f8f4dc4425c711594cd70462dc",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 695,
+      "decision": "candidate",
+      "positivity": 83,
+      "impact": 90,
+      "audienceRelevance": 94,
+      "judgment": "Deschiderea anunțată pe 3 decembrie pentru Tigveni–Curtea de Argeș apropie un avantaj rutier, dar tunelul nu este încă în trafic.",
+      "fingerprint": "a18cbf043354bf8c0f5de2bf171d2ba8e565e502ff46e88c67831b882f02bcc6",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 696,
+      "decision": "reject",
+      "positivity": 12,
+      "impact": 42,
+      "audienceRelevance": 68,
+      "judgment": "Avantajul inițial pierdut cu Bosnia nu schimbă înfrângerea României și nu susține o știre pozitivă sportivă.",
+      "fingerprint": "d8eda9b0b79235e054e1d06e723b6621520f7337a4cecb9e09a08799c08eae30",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 697,
+      "decision": "reject",
+      "positivity": 1,
+      "impact": 82,
+      "audienceRelevance": 68,
+      "judgment": "Reținerea a 15.000 de persoane la protestele franceze indică tensiune socială severă, fără revendicări soluționate în titlu.",
+      "fingerprint": "24e990e8866739bb86841e4fe805f5483d90a5051c100dbfd6c65adf09efa778",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 698,
+      "decision": "candidate",
+      "positivity": 85,
+      "impact": 32,
+      "audienceRelevance": 62,
+      "judgment": "Calificarea boxerului Florin Ioniță în sferturile europene U23 este o realizare românească, deși competiția continuă și medalia nu e asigurată.",
+      "fingerprint": "b7d77f114094dd463f15d19446827dc49f72444c881c40e70ebfb18bc0b82f93",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 699,
+      "decision": "reject",
+      "positivity": 15,
+      "impact": 85,
+      "audienceRelevance": 55,
+      "judgment": "Respingerea unor atacuri cu drone de către Kuweit este relatare militară într-un conflict activ, nu pace consolidată.",
+      "fingerprint": "9b03360085324304d4edebd0fc8cdd3ac621620a96d57ffdc0ee56963cdb4b2a",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 700,
+      "decision": "candidate",
+      "positivity": 87,
+      "impact": 42,
+      "audienceRelevance": 72,
+      "judgment": "Victoria CSM București la Chambéry aduce o performanță europeană românească surprinzătoare, cu verificarea importanței în calificare.",
+      "fingerprint": "be627c48acdd1b8e0376a8535e861453785a22ce290118d36fb444389420aabf",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 701,
+      "decision": "reject",
+      "positivity": 55,
+      "impact": 75,
+      "audienceRelevance": 48,
+      "judgment": "Schimbarea președintelui parlamentului israelian mută echilibrul politic, fără rezultat civil favorabil explicit.",
+      "fingerprint": "dfdabe9290e3e3c3378517bb2b557baf04dc700fcbab9f8d06b1a78d965c93a0",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 702,
+      "decision": "reject",
+      "positivity": 22,
+      "impact": 28,
+      "audienceRelevance": 48,
+      "judgment": "Înfrângerea strânsă a HC Buzău la Flensburg rămâne rezultat negativ, nu calificare sau performanță câștigată.",
+      "fingerprint": "afc11e21235a666c5b70689e434493fda93383adf2840e96114d199c7779e037",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 703,
+      "decision": "reject",
+      "positivity": 32,
+      "impact": 35,
+      "audienceRelevance": 58,
+      "judgment": "Explicația lui Hagi despre greșelile cu Bosnia este evaluare după eșec, fără schimbare realizată în echipă.",
+      "fingerprint": "0a99a8b0309ed9038acc519c94388c1a0258e5c565b69b6d5e0d4171bf0684ab",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 704,
+      "decision": "reject",
+      "positivity": 25,
+      "impact": 32,
+      "audienceRelevance": 55,
+      "judgment": "Florinel Coman avertizează asupra problemelor naționalei după înfrângere, nu anunță o redresare sportivă.",
+      "fingerprint": "643faac2b3c48ddcb8635a6d6bb485c044f321d0b96b4a2eea50ac6f45a057e7",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 705,
+      "decision": "reject",
+      "positivity": 32,
+      "impact": 28,
+      "audienceRelevance": 52,
+      "judgment": "Comentariul lui Corbu despre atenția la detalii este lecție după meci, fără rezultat nou în favoarea României.",
+      "fingerprint": "064259c4e904a7f67731ce41acf0ff5f00d2504fad0372bbaeff6d2505e883b0",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 706,
+      "decision": "reject",
+      "positivity": 86,
+      "impact": 28,
+      "audienceRelevance": 38,
+      "judgment": "Calificarea dramatică a Norvegiei în sferturi este performanță internațională cu legătură redusă la viața cititorilor români.",
+      "fingerprint": "facce35a89a531ce998423a49fe945261cc4c7f0b1bb99bf7f9ea8f3c4726cb2",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 707,
+      "decision": "reject",
+      "positivity": 8,
+      "impact": 48,
+      "audienceRelevance": 38,
+      "judgment": "Acuzarea irlandezului pentru avarierea unui avion militar american este dosar penal fără beneficiu public nou descris.",
+      "fingerprint": "80ff945338bf88f9ed9ec43aa13d768175b54d45708a05d3644f105c266bc3fe",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 708,
+      "decision": "reject",
+      "positivity": 28,
+      "impact": 32,
+      "audienceRelevance": 55,
+      "judgment": "Bîrligea explică relaxarea prematură a echipei, dar analiza nu transformă meciul pierdut într-o realizare.",
+      "fingerprint": "deec7569e104d3db55320af5326938ce2fb1576821353e07594608371c00235e",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 709,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 28,
+      "audienceRelevance": 48,
+      "judgment": "Înfrângerea Stelei acasă în Liga Campionilor la polo nu oferă o veste favorabilă sportului românesc.",
+      "fingerprint": "5d3838b23fe8e9c4e25671aa7a3af053c70086377e2ba33ca9ea9e6a8bb0ebde",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 710,
+      "decision": "reject",
+      "positivity": 12,
+      "impact": 42,
+      "audienceRelevance": 68,
+      "judgment": "Barajul pentru menținerea în Liga B este consecința înfrângerii cu Bosnia, nu promovare sau calificare pozitivă.",
+      "fingerprint": "c452da661205023625a26741017f7d4e48567194368a8e97ca21c5d53d47edf3",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 711,
+      "decision": "reject",
+      "positivity": 0,
+      "impact": 92,
+      "audienceRelevance": 65,
+      "judgment": "Loviturile SUA asupra insulei iraniene după atacurile din Bahrein reprezintă escaladare militară reciprocă.",
+      "fingerprint": "c8a289a8ce15e6356265ff9c0763f30c4addc008af3dfd8572074557aa003280",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 712,
+      "decision": "reject",
+      "positivity": 25,
+      "impact": 58,
+      "audienceRelevance": 72,
+      "judgment": "Acuzația lui Bolojan privind rostogolirea promisiunilor PSD este polemică politică, nu angajament îndeplinit.",
+      "fingerprint": "9e49c8ea8ed245305466863e477bb1ed9ca1912047bda764d06939fd5c518e3a",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 713,
+      "decision": "reject",
+      "positivity": 32,
+      "impact": 38,
+      "audienceRelevance": 58,
+      "judgment": "Clarificarea lui Bolojan despre procese și șantaj rămâne conflict intern politic fără progres de servicii ori drepturi.",
+      "fingerprint": "e7e34bc59436f377c096b9380d45b741c54d2ef07a7abf98d16d6d5d98c3f0fc",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 714,
+      "decision": "reject",
+      "positivity": 0,
+      "impact": 48,
+      "audienceRelevance": 58,
+      "judgment": "Accidentul autobuz–autoturism cu un mort la Cluj este tragedie rutieră, fără intervenție preventivă nouă.",
+      "fingerprint": "df261e01eda93d266501b8a07a4e312efa7ec2e03c24f7addf9ed693a7f256b8",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 715,
+      "decision": "reject",
+      "positivity": 12,
+      "impact": 75,
+      "audienceRelevance": 72,
+      "judgment": "Afectarea sistemelor interne de informații în mentenanță descrie o defecțiune, nu o infrastructură ameliorată confirmată.",
+      "fingerprint": "8e2f15a2142559e231372a1e1a0cd42b514c0a2c6dd438abf410ab2fd18e0cb5",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 716,
+      "decision": "reject",
+      "positivity": 62,
+      "impact": 68,
+      "audienceRelevance": 78,
+      "judgment": "Reducerea numărului de parlamentari este proiect anunțat pentru viitor de PNL, nu modificare instituțională adoptată.",
+      "fingerprint": "6af2af0a5abd4de4a9ed98616b64893e54af0a129eca724aba9c9702da1bd958",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 717,
+      "decision": "candidate",
+      "positivity": 75,
+      "impact": 88,
+      "audienceRelevance": 98,
+      "judgment": "Eliminarea IMCA de la 1 ianuarie ar ajuta firmele vizate, dar discursul premierului nu înlocuiește modificarea Codului fiscal.",
+      "fingerprint": "22c797bed74010096357574746d496118b709d9d9c534c892c7ec68098dc8c71",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 718,
+      "decision": "reject",
+      "positivity": 48,
+      "impact": 78,
+      "audienceRelevance": 85,
+      "judgment": "Cererea Vestas de excludere a componentelor chineze este poziție comercială și de securitate, nu tranziție energetică nouă realizată.",
+      "fingerprint": "6278dc1b8aa9a9199d3d4318c385219f0261ef23f0f2fa46df647528d4710c14",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 719,
+      "decision": "reject",
+      "positivity": 72,
+      "impact": 78,
+      "audienceRelevance": 85,
+      "judgment": "Finanțarea de 850 milioane susține transferul proprietății Evryo, fără modernizare nouă a distribuției sau tarife mai mici demonstrate.",
+      "fingerprint": "34e8df9e1a0a2eea6fa7eece265e00078315a9b0790501f87522b5071e6dfc3f",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 720,
+      "decision": "candidate",
+      "positivity": 78,
+      "impact": 52,
+      "audienceRelevance": 85,
+      "judgment": "Menținerea tarifelor și reducerea de miercuri păstrează accesul brașovenilor la schi, dar sunt continuarea unui avantaj existent.",
+      "fingerprint": "1ae8b69af19784ec0a79d3fe9e9471498b61af0a01dbc30069ef8385bf94a86d",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 721,
+      "decision": "reject",
+      "positivity": 52,
+      "impact": 85,
+      "audienceRelevance": 82,
+      "judgment": "Economedia precizează lipsa deciziilor NATO concrete, deci sprijinul promis nu poate fi prezentat drept capabilități noi sosite.",
+      "fingerprint": "4cc503b1fa0e427e059894d17a1c88f0ad57659f73c263dd8ed7c4a6dbde0fb0",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 722,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 55,
+      "audienceRelevance": 72,
+      "judgment": "Persistența protestului Lenau după măsurile inspectoratului confirmă nemulțumirea, nu rezolvarea siguranței în clasă.",
+      "fingerprint": "1d0d3525a746843d70d2e2153987092a76d84e55aafc118cdee2c3f136a22764",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 723,
+      "decision": "reject",
+      "positivity": 45,
+      "impact": 82,
+      "audienceRelevance": 95,
+      "judgment": "Studiul nereprezentativ despre absolvenți nu permite generalizări naționale; pilotul Angajabilitate nu dovedește încă un câștig pe piața muncii.",
+      "fingerprint": "88993d9ef8abe02478e386b010be15778b7a399c8f081f2ccee4106cf9193a79",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 724,
+      "decision": "reject",
+      "positivity": 42,
+      "impact": 78,
+      "audienceRelevance": 88,
+      "judgment": "Linia roșie declarată de Costreie împotriva tăierilor salariale nu este finanțare suplimentară ori garanție bugetară adoptată.",
+      "fingerprint": "a36b8738ab3d212f15e115ecfd6f9dd1a25a49808199c9ceca4a62e6f10319fc",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 725,
+      "decision": "candidate",
+      "positivity": 94,
+      "impact": 90,
+      "audienceRelevance": 99,
+      "judgment": "Portalul european pentru despăgubiri și instrumentul de prețuri pot oferi consumatorilor ajutor practic imediat; accesul în română și funcțiile trebuie testate.",
+      "fingerprint": "9b5d0676c32a5cf520c9b2cede46cb4518ecdccaf84a50cf0e3627a7ad13e1b2",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 726,
+      "decision": "reject",
+      "positivity": 85,
+      "impact": 22,
+      "audienceRelevance": 38,
+      "judgment": "A doua victorie a lui Alcaraz la Torino este rezultat de etapă internațională, fără calificare încă sigură ori legătură românească.",
+      "fingerprint": "17d4586de8b57eda30a153af571dafe22d668e53f7435fab82d1643bb1cb87f7",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 727,
+      "decision": "reject",
+      "positivity": 58,
+      "impact": 62,
+      "audienceRelevance": 48,
+      "judgment": "Condamnarea lui Merchant închide un dosar de complot politic american, dar nu descrie un program nou de siguranță publică.",
+      "fingerprint": "87a8f829f356dc58b3316e5c0cd58dfb286b3a53baac2ba24fe85e77d1549fce",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 728,
+      "decision": "reject",
+      "positivity": 68,
+      "impact": 62,
+      "audienceRelevance": 78,
+      "judgment": "Apelul premierului împotriva antisemitismului și xenofobiei exprimă principii, fără intervenții ori resurse educaționale noi precizate.",
+      "fingerprint": "5bd72eb79f91529ac5861e27591951bee7629e2020f03b81c8acba1f0936b4cb",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 729,
+      "decision": "reject",
+      "positivity": 75,
+      "impact": 42,
+      "audienceRelevance": 78,
+      "judgment": "Prezentarea electricelor Xiaomi la Paris pregătește intrarea pe piață, fără vânzări locale sau avantaj ambiental cuantificat.",
+      "fingerprint": "3e4170d0181bfcddb33db9439cf1d8a23e317488a9798f4ab425a0fd802547b1",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 730,
+      "decision": "candidate",
+      "positivity": 89,
+      "impact": 85,
+      "audienceRelevance": 96,
+      "judgment": "Inaugurarea institutului AI al UTCN poate extinde capacitatea românească de cercetare; trebuie verificate dotările, accesul și proiectele efectiv active.",
+      "fingerprint": "1a6a01145d47656dd7777f45ef3476e17eef3010dc3d89413206846d3e9d93a1",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 731,
+      "decision": "candidate",
+      "positivity": 82,
+      "impact": 85,
+      "audienceRelevance": 92,
+      "judgment": "Detectarea cu AI a unei vulnerabilități Java vechi ar fi utilă securității, dacă sursa tehnică arată și remedierea disponibilă.",
+      "fingerprint": "d44771d71e384dcc5fa73b9843c574b82e63379ce9d54bb44cc88a1fc411c28a",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 732,
+      "decision": "reject",
+      "positivity": 75,
+      "impact": 42,
+      "audienceRelevance": 68,
+      "judgment": "Averea potențială a fondatorilor Anthropic reflectă evaluarea companiei, nu acces nou la tehnologie sau beneficiu social verificat.",
+      "fingerprint": "5c46e385527bed53a2e898c78ee0a1296685cc85a79c01297b6186f1afd58713",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 733,
+      "decision": "reject",
+      "positivity": 35,
+      "impact": 92,
+      "audienceRelevance": 98,
+      "judgment": "Rostogolirea datoriei României și avertismentul privind costurile creditării sunt constrângeri fiscale, fără ieftinire confirmată.",
+      "fingerprint": "8ed1b528ead9b0762c76271406a3d0b4a7316bdabc4a9cf547deb9829ca66018",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    },
+    {
+      "index": 734,
+      "decision": "candidate",
+      "positivity": 75,
+      "impact": 58,
+      "audienceRelevance": 85,
+      "judgment": "Pieptenele electric pentru alopecie este cercetare preclinică pe șoareci; nu poate fi recomandat ca tratament disponibil oamenilor.",
+      "fingerprint": "503cc09db0837063e4342752fd8bc611ab2cd36e677f98e6a9b089e5bbfd3a45",
+      "assessedAt": "2026-11-21T06:27:47.495Z"
+    }
+  ]
+}

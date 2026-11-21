@@ -1,0 +1,84 @@
+{
+  "checkedAt": "2026-11-21T08:39:23.975Z",
+  "assessmentHash": "5a467a636943290d3eb8beffd74e8e91fc7a5ed8de346730045ae334569ab11f",
+  "assessed": 1775,
+  "repeatedSixWordPhrases": [
+    {
+      "phrase": "un scandal corporativ nu progres tehnologic",
+      "indices": [
+        33,
+        263
+      ]
+    },
+    {
+      "phrase": "intrarea cărților moldovenești în biblioteca parlamentului",
+      "indices": [
+        289,
+        370
+      ]
+    },
+    {
+      "phrase": "cărților moldovenești în biblioteca parlamentului european",
+      "indices": [
+        289,
+        370
+      ]
+    },
+    {
+      "phrase": "poate fi un quick hit cultural",
+      "indices": [
+        297,
+        769
+      ]
+    },
+    {
+      "phrase": "nu progres civil sau de pace",
+      "indices": [
+        427,
+        1395
+      ]
+    },
+    {
+      "phrase": "de până la 15 000 lei",
+      "indices": [
+        430,
+        678
+      ]
+    },
+    {
+      "phrase": "amânarea deciziei privind arestul lui georgescu",
+      "indices": [
+        477,
+        1477
+      ]
+    },
+    {
+      "phrase": "în liga campionilor la polo nu",
+      "indices": [
+        709,
+        1064
+      ]
+    },
+    {
+      "phrase": "plafonul cash de 50 000 lei",
+      "indices": [
+        798,
+        1090
+      ]
+    },
+    {
+      "phrase": "pe calea victoriei avantajează proprietarii dar",
+      "indices": [
+        913,
+        1399
+      ]
+    },
+    {
+      "phrase": "contractului lui felix alexa la tnb",
+      "indices": [
+        1374,
+        1410
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "reviewedAfterStaging": true,
+  "engine": "agent-browser Chromium",
+  "viewports": [
+    {"width": 1280, "height": 900, "devicePixelRatio": 2},
+    {"width": 390, "height": 844, "devicePixelRatio": 2}
+  ],
+  "pages": ["editor-proof.html", "newsletter.html"],
+  "checks": {
+    "allTenStoriesVisible": true,
+    "fourCategoriesVisible": true,
+    "sourceLinkCount": 10,
+    "scoresOnlyInEditorProof": true,
+    "newsletterHasLoadedLogo": true,
+    "newsletterHorizontalOverflow": false,
+    "proofHorizontalOverflow": false,
+    "newsletterSourceUrlsMatchFrozenSelection": true,
+    "stagedDraftMatchesProposalCopyAndScores": true
+  },
+  "inspectionNotes": "Am inspectat capturi integrale și decupaje de început pentru ambele emailuri, la 1280 și 390 CSS px. Titlurile, diacriticele, cele patru categorii, sursele, datele AFM/CJI, semnătura și nota de aprobare separată sunt lizibile. DOM-ul arată zece articole și trei note pentru fiecare în proof, fără note în newsletter; scrollWidth coincide cu viewport-ul în ambele lățimi. Analiza automată a unei imagini foarte lungi și comprimate a raportat în mod contradictoriu logo repetat și suprapunere în proof-ul îngust. Am verificat manual decupaje PNG necomprimate ale începutului și sfârșitului: există un singur logo sus și o singură notă editorială jos, fără bandă neagră sau suprapunere; HTML-ul are un singur img și nicio poziționare fixed/sticky. Nu am modificat template-ul pentru o eroare de interpretare a imaginii. Captura la 390 px este o redare Chromium îngustă, nu un telefon real sau verificare Safari.",
+  "screenshots": [
+    ".amp/in/artifacts/w47-newsletter-desktop.jpg",
+    ".amp/in/artifacts/w47-newsletter-narrow.jpg",
+    ".amp/in/artifacts/w47-proof-desktop.jpg",
+    ".amp/in/artifacts/w47-proof-narrow.jpg"
+  ],
+  "codeVerification": {
+    "command": "npm run test",
+    "passed": 104,
+    "failed": 2,
+    "baselineCommand": "node --import tsx --test tests/amp-assessment.test.ts tests/independent-proof.test.ts",
+    "baselineResult": "Same two failures reproduced from a clean git archive of origin/main without W47 editorial files; the CLI tests initialize October fixtures using the November live clock, excluding their input as stale.",
+    "failures": [
+      "CLI survives interruption, rejects a bad batch atomically, resumes and blocks unfinished proof: Duplicate, excluded, unknown or changed assessment: 0",
+      "weekly review resumes a frozen pool without replacing its schedule or another worker: expected 7 missing, actual 0"
+    ],
+    "codeChanged": false
+  },
+  "sectionOrderRevision": {
+    "editorRequest": "Start with Green Stuff rather than Local Heroes for W47 only.",
+    "firstSection": "green-stuff",
+    "sectionOrder": ["green-stuff", "local-heroes", "wins", "quick-hits"],
+    "selectionAndCopyUnchanged": true,
+    "originalProofAndEmailReceiptsUnchanged": true,
+    "additionalEmailSent": false,
+    "draftRemainsUnapproved": true,
+    "defaultHtmlAndDeliveryHashUnchanged": ["2026-W46", "2026-W47 without the override"],
+    "verification": "Newsletter and editor-proof previews inspected at 1280 and 390 CSS px, DPR 2. Both contain all ten stories, the requested four-section order, and no horizontal overflow. Publish-issue integration test verifies the same archive order in an isolated fixture, without publishing W47. The handoff integration test preserves the accepted email receipt, does not send a second email, and still rejects changed story copy. npm run check: 0 errors, 0 warnings. npm run test: 105 passed, 2 failed; the same two October-date fixture failures were reproduced on clean origin/main earlier in this run.",
+    "screenshots": [
+      ".amp/in/artifacts/w47-green-first-newsletter-desktop.jpg",
+      ".amp/in/artifacts/w47-green-first-newsletter-narrow.jpg",
+      ".amp/in/artifacts/w47-green-first-proof-desktop.jpg",
+      ".amp/in/artifacts/w47-green-first-proof-narrow.jpg"
+    ]
+  }
+}

@@ -1,0 +1,504 @@
+{
+  "assessments": [
+    {
+      "index": 1635,
+      "decision": "candidate",
+      "positivity": 94,
+      "impact": 88,
+      "audienceRelevance": 98,
+      "judgment": "Vârful eolian de 3.242 MW arată contribuție regenerabilă mare în SEN; valoarea este instantanee, nu energie zilnică sau capacitate nou instalată.",
+      "fingerprint": "f8dd2a1f2eb6032d8fb6108b567ca9f9b6dfaac39f5a220a79df73816dfbcf2b",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1636,
+      "decision": "reject",
+      "positivity": 88,
+      "impact": 78,
+      "audienceRelevance": 92,
+      "judgment": "Evaluarea Anthropic de după listare repetă un succes financiar de moment, fără produs nou sau acces suplimentar pentru public.",
+      "fingerprint": "890f53641629821580fcf76d81906b7341bfe8394c605bbba59bd04aea3ab549",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1637,
+      "decision": "reject",
+      "positivity": 62,
+      "impact": 85,
+      "audienceRelevance": 98,
+      "judgment": "Plafonul cash mai mare a trecut de Camera Deputaților, dar avertismentele BNR și riscul de evaziune împiedică prezentarea ca avantaj neechivoc.",
+      "fingerprint": "bc0dd712765c57c028ef6806c2eab16da3a974a866457d26a17ead71fdfc2f25",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1638,
+      "decision": "reject",
+      "positivity": 52,
+      "impact": 65,
+      "audienceRelevance": 85,
+      "judgment": "Confirmarea anulării tranzacției Napolact clarifică proprietatea, nu aduce automat investiții ori condiții mai bune la fabrici.",
+      "fingerprint": "dfbf7f087dcea243bda0d2eb6ef248861b40899b99f6c2f2aff9457adafb6ea9",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1639,
+      "decision": "reject",
+      "positivity": 62,
+      "impact": 85,
+      "audienceRelevance": 92,
+      "judgment": "Răspunsul ministrului despre bani pentru educație este discurs și consultare viitoare, fără finanțare suplimentară obținută la Bruxelles.",
+      "fingerprint": "4984c062a4d165a117a981db22c774191f9ef99b2ea90af646bd3dd5dbc5d3e4",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1640,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 72,
+      "audienceRelevance": 88,
+      "judgment": "A cincea zi de protest Lenau și cererea școlii online arată un conflict nerezolvat, nu revenire sigură la cursuri.",
+      "fingerprint": "b77659c102c643c90f2546e7937731e4747484fbc7b1fbabb92019617a0841e1",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1641,
+      "decision": "candidate",
+      "positivity": 94,
+      "impact": 88,
+      "audienceRelevance": 98,
+      "judgment": "Plata celor 500 de lei pe cardurile educaționale vizează beneficiarii cu eligibilitate menținută, precizare esențială pentru a nu promite tuturor încărcare imediată.",
+      "fingerprint": "6ac9c853b0e97119e3c7130882f676d9426b08a3e49ab9b6dd108928c0dd5ad1",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1642,
+      "decision": "reject",
+      "positivity": 32,
+      "impact": 75,
+      "audienceRelevance": 95,
+      "judgment": "Sindicatul cere exemple de recalculare salarială din cauza neclarităților; profesorii nu au încă o soluție administrativă uniformă.",
+      "fingerprint": "5a7bf0548ad934ae6e5291c0aa95a5a51caf9cbf7144f9d2997cf5c4f6c5fed8",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1643,
+      "decision": "reject",
+      "positivity": 38,
+      "impact": 72,
+      "audienceRelevance": 88,
+      "judgment": "Diferența de percepție dintre profesori și elevi relevă un deficit de ascultare a copiilor, nu participare școlară deja îmbunătățită.",
+      "fingerprint": "10a96034e76128521efc563421183d207291d156d7b8b2fb518dabdf4544d244",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1644,
+      "decision": "reject",
+      "positivity": 85,
+      "impact": 52,
+      "audienceRelevance": 88,
+      "judgment": "Dorința ministrului ca elevii să meargă mai mult la muzeu este îndemn, fără transport, bilete sau program nou finanțate.",
+      "fingerprint": "4d855aadfb158e1b33c96f786e3056a13aab69c58a70a5a05701d05ca46af0ed",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1645,
+      "decision": "reject",
+      "positivity": 25,
+      "impact": 72,
+      "audienceRelevance": 88,
+      "judgment": "Monitorizarea universității din Alba Iulia răspunde unor probleme de etică și management, fără corectare instituțională demonstrată încă.",
+      "fingerprint": "2b857795d338f60e97bd65eb484ae59417201b874c5a0b943b283029a9a73e20",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1646,
+      "decision": "reject",
+      "positivity": 85,
+      "impact": 85,
+      "audienceRelevance": 95,
+      "judgment": "Apelul Mînzatu pentru profesori respectați și plătiți bine este principiu de politică, nu creștere salarială adoptată la summit.",
+      "fingerprint": "b4df422dc491bfc8fecf8f935a087766dad1ed5ead92e9b5ee8ce12003ef23cd",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1647,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 85,
+      "audienceRelevance": 95,
+      "judgment": "Salariile mici și predarea în mai multe școli explică lipsa debutanților, fără o măsură nouă care să reducă povara.",
+      "fingerprint": "5a5c351bfcd818e5057529ac02b6a05166e142d2efd4854a0b7a116f2d5d83b9",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1648,
+      "decision": "reject",
+      "positivity": 78,
+      "impact": 82,
+      "audienceRelevance": 95,
+      "judgment": "Agenda summitului european reunește teme importante, dar participarea ministrului nu reprezintă rezultat concret în educație.",
+      "fingerprint": "23104fdedfe8a61b7d8a064a85164dd06c384069457f6289cf037826aff687d8",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1649,
+      "decision": "reject",
+      "positivity": 5,
+      "impact": 78,
+      "audienceRelevance": 88,
+      "judgment": "Mărturia elevei despre antisemitism documentează prejudiciu școlar, nu soluționarea anchetei sau protecție nouă verificată.",
+      "fingerprint": "b84ff7fd18753a679a8167b23e15d95d7ae35e087ea7552bc3e300629d0b646e",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1650,
+      "decision": "reject",
+      "positivity": 58,
+      "impact": 52,
+      "audienceRelevance": 85,
+      "judgment": "Apărarea inspectorului că știe situația de la catedră este răspuns retoric, nu sprijin nou pentru profesori.",
+      "fingerprint": "3e8bc1eab439c6a2453ba8cab4ebfeb986b69e682114142766a2d66a5e49887b",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1651,
+      "decision": "reject",
+      "positivity": 32,
+      "impact": 68,
+      "audienceRelevance": 88,
+      "judgment": "Replica sindicală la jurământul socratic exprimă nemulțumire față de condițiile de muncă, fără acord sau ameliorare obținută.",
+      "fingerprint": "79b8c6214a2e02a527cf6f409da65aba3c3f75b45239ff4a4663862d8c4aab01",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1652,
+      "decision": "candidate",
+      "positivity": 90,
+      "impact": 65,
+      "audienceRelevance": 96,
+      "judgment": "Rapoartele automate de absențe la școala din Covasna pot economisi muncă administrativă pentru peste cinci sute de elevi, dacă experiența este verificabilă dincolo de reclamă.",
+      "fingerprint": "62e3caa6d528b2dd7758b25750b5a6bd148a89e7d6ac244fb8a59a7ffc08e172",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1653,
+      "decision": "candidate",
+      "positivity": 90,
+      "impact": 82,
+      "audienceRelevance": 95,
+      "judgment": "Începerea plății burselor pentru septembrie și octombrie aduce bani elevilor, deși este executarea unei obligații periodice, nu program nou.",
+      "fingerprint": "831f1c6a88bbdfb22de50fa1aa058bebaa3945389bd52c670c8c750d91b33ac5",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1654,
+      "decision": "candidate",
+      "positivity": 92,
+      "impact": 82,
+      "audienceRelevance": 98,
+      "judgment": "Segmentul de creștere BVB oferă firmelor acces bursier organizat; cele 23 de companii trebuie descrise ca intrate în segment, nu neapărat listări noi.",
+      "fingerprint": "7b36b5c55bd468e5c448a76ef47ead59141372cb8385d500baa16b09bab20a3c",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1655,
+      "decision": "candidate",
+      "positivity": 90,
+      "impact": 62,
+      "audienceRelevance": 96,
+      "judgment": "Revenirea Power of Storytelling în aprilie 2027 aduce dialog despre democrație și AI, cu programul și accesul la eveniment încă de verificat.",
+      "fingerprint": "ccac0a1e07572638f9c8e2aef115b38666c5eb03bf15a9d5d15d8c294fd5b1f0",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1656,
+      "decision": "candidate",
+      "positivity": 88,
+      "impact": 58,
+      "audienceRelevance": 95,
+      "judgment": "Bootcampul a adus aproape douăzeci de fondatori români în UK pentru o săptămână; oportunitățile explorate nu sunt investiții deja atrase.",
+      "fingerprint": "b3e4834e7d914e30038c3c4cf2fa8e5709923ec59fa25fefde7cc1b4ce8fa208",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1657,
+      "decision": "reject",
+      "positivity": 92,
+      "impact": 48,
+      "audienceRelevance": 95,
+      "judgment": "Topul Deloitte recunoaște ritmul a șase companii locale, dar nu explică un produs nou ori un beneficiu distinct pentru cititor.",
+      "fingerprint": "7d72bd0d5685aef02f0ced0c1d9403cc700a021d82a529032bcac52884966063",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1658,
+      "decision": "reject",
+      "positivity": 82,
+      "impact": 55,
+      "audienceRelevance": 98,
+      "judgment": "Sfaturile despre date și adoptarea AI sunt conținut de conferință pentru afaceri, nu implementare nouă cu rezultat măsurat.",
+      "fingerprint": "1173b48883627f5b772d98182d9e3f53818c0e7e0f8d6e41b51627744f49afef",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1659,
+      "decision": "reject",
+      "positivity": 90,
+      "impact": 82,
+      "audienceRelevance": 95,
+      "judgment": "Analiza celor două decenii de fonduri europene este retrospectivă utilă, nu investiție nouă a săptămânii.",
+      "fingerprint": "7fe7f1b4821c07c9f8f3152a5c391a77b13ed4e8b26653e549feae02afab4294",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1660,
+      "decision": "reject",
+      "positivity": 12,
+      "impact": 88,
+      "audienceRelevance": 98,
+      "judgment": "Cele peste 210.000 de dosare ONRC blocate și contestarea soluției arată dificultăți serioase pentru antreprenori, fără deblocare efectivă.",
+      "fingerprint": "dee45a9e7e2ccd6cd734cdfe8e6b7d7eceb9d5388c18798ff17f5192f574ec2a",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1661,
+      "decision": "candidate",
+      "positivity": 75,
+      "impact": 88,
+      "audienceRelevance": 98,
+      "judgment": "Negocierea directă pentru Liberty după licitații eșuate creează o nouă cale de restructurare, dar nu înseamnă cumpărător găsit ori slujbe salvate.",
+      "fingerprint": "a528320a19226129ebb6ded09dec4ad58deee8c85aaa401dbf002f220335f3b1",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1662,
+      "decision": "candidate",
+      "positivity": 92,
+      "impact": 82,
+      "audienceRelevance": 98,
+      "judgment": "Lansarea Pieței de Creștere include transferul a 23 de emitenți și 14 obligațiuni, deci reconfigurare de piață, nu tot atâtea finanțări noi.",
+      "fingerprint": "71739b05388542832708100445c9559764c23d316bb935e1489e84d086b0e44b",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1663,
+      "decision": "reject",
+      "positivity": 48,
+      "impact": 72,
+      "audienceRelevance": 96,
+      "judgment": "Vânzarea Mailchimp mult sub prețul anterior schimbă proprietarul, fără beneficii de preț ori funcții promise utilizatorilor.",
+      "fingerprint": "48a9463690fd0f42da4429ec1ac9dfc29a05a82634047551c05a09c6d41cddda",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1664,
+      "decision": "reject",
+      "positivity": 65,
+      "impact": 88,
+      "audienceRelevance": 98,
+      "judgment": "Măsurile ONRC sunt propuse într-o OUG și presiunea cererilor crește, astfel că înființarea mai rapidă a firmelor nu este încă realizată.",
+      "fingerprint": "75d211a990eaee314f269f6de5f92413d37d93f5694d6ea96113f8ebfd1ef278",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1665,
+      "decision": "reject",
+      "positivity": 85,
+      "impact": 48,
+      "audienceRelevance": 85,
+      "judgment": "Comunicatul Raelectronics anunță implementarea propriei modernizări finanțate, fără produs ori efect comunitar suficient precizat.",
+      "fingerprint": "95341675a8069ad220f7562683014955af630469c738b621a94c94bedeeaad2b",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1666,
+      "decision": "reject",
+      "positivity": 42,
+      "impact": 82,
+      "audienceRelevance": 95,
+      "judgment": "Preluarea Dorna Medical ridică riscul scumpirii CT și RMN, iar numărul clinicilor cumpărate nu înseamnă acces extins.",
+      "fingerprint": "973382a441a0ae7fbda9ccd4c81c7126774c17f785cbb34187debf32123a2692",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1667,
+      "decision": "candidate",
+      "positivity": 88,
+      "impact": 85,
+      "audienceRelevance": 98,
+      "judgment": "Proiectul APIA de 18 milioane pentru aplicația fermierilor poate simplifica subvențiile, dar funcțiile sunt viitoare, nu disponibile pe telefon acum.",
+      "fingerprint": "ff5cbfb5fc86486c788a91d4a0fe0bcb2b094250d16674e5b950149bf37695cb",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1668,
+      "decision": "reject",
+      "positivity": 32,
+      "impact": 88,
+      "audienceRelevance": 98,
+      "judgment": "Cererea retragerii EU Inc arată nemulțumirea startupurilor față de compromisuri, nu adoptarea unei reforme utile.",
+      "fingerprint": "3c68da220fac634c4910304ad0d4aeca8a47c485d1b7611d32fd915e252c9851",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1669,
+      "decision": "reject",
+      "positivity": 0,
+      "impact": 98,
+      "audienceRelevance": 95,
+      "judgment": "Atacul din Krivoi Rog a ucis un copil și o paramedic și a rănit zeci de oameni, marcând deteriorare umanitară gravă.",
+      "fingerprint": "ad20564ea5250556319fee03ae168a065b7a6e69a407ee4630da73b8db7ded63",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1670,
+      "decision": "reject",
+      "positivity": 85,
+      "impact": 75,
+      "audienceRelevance": 85,
+      "judgment": "Perspectiva stabilă a Ungariei este îmbunătățire de evaluare, dar ratingul Baa2 menținut nu susține titlul că țara ar ieși acum din junk.",
+      "fingerprint": "91da943894fd8443fd3eacd9ca7d88211fa924469e1f13fc26169497110bc6eb",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1671,
+      "decision": "reject",
+      "positivity": 48,
+      "impact": 95,
+      "audienceRelevance": 85,
+      "judgment": "Ipoteza Trump că războiul nu începea sub el este afirmație contrafactuală, nu succes diplomatic verificabil.",
+      "fingerprint": "1d7c9c6c7b83e3a573d26365eac0c5cfc4869bd0070b2676fddb2b65405447b3",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1672,
+      "decision": "candidate",
+      "positivity": 85,
+      "impact": 85,
+      "audienceRelevance": 85,
+      "judgment": "Aprobarea parțială a cererii finale bulgare poate debloca peste 1,7 miliarde, cu șase jaloane neîndeplinite și plata încă viitoare.",
+      "fingerprint": "cc9819e6ee2d0af97e02603a4b0d653b6123e4e4a3198323fa2362c4ec4d7a34",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1673,
+      "decision": "reject",
+      "positivity": 5,
+      "impact": 98,
+      "audienceRelevance": 95,
+      "judgment": "Rachetele și drona căzute lângă exercițiile europene sunt risc de provocare militară, nu securitate regională consolidată.",
+      "fingerprint": "5fd3caf69eafcbf899ba16e1b94d3fbee43c62670916c9a45c9ce40f9c6d7e0b",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1674,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 82,
+      "audienceRelevance": 92,
+      "judgment": "Scăderea acțiunilor Anthropic după debut confirmă volatilitatea sectorului, nu o dezvoltare pozitivă utilă publicului.",
+      "fingerprint": "c7538d96d9614648c288d080a67c5d5e36e2109b6fb0d081273e7baa9fedab13",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1675,
+      "decision": "reject",
+      "positivity": 78,
+      "impact": 8,
+      "audienceRelevance": 35,
+      "judgment": "Predicțiile zodiacale despre musafiri și ieșiri nu sunt evenimente documentate ori informație factuală de selectat.",
+      "fingerprint": "7fc1c235a24b2a6afaefc8702fbaf4ab0f6ba5b9cc4d42d4f057894e4118f53f",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1676,
+      "decision": "reject",
+      "positivity": 90,
+      "impact": 28,
+      "audienceRelevance": 75,
+      "judgment": "Transferul lui Petru Popescu la FCSB este schimbare sportivă individuală pentru ianuarie, fără impact comunitar distinct.",
+      "fingerprint": "78eab40dee29474b98d3175e1d98e2ae907ed6b7a78e3b3d86a874fcdd71c899",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1677,
+      "decision": "reject",
+      "positivity": 42,
+      "impact": 78,
+      "audienceRelevance": 92,
+      "judgment": "Verificarea promisă a vape-urilor ieftine răspunde riscului pentru copii, dar nu confirmă analiza produselor sau retragerea celor periculoase.",
+      "fingerprint": "a058c0008000728098738578dc804039c3722919465b429a9f2a651b1c7d01be",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1678,
+      "decision": "reject",
+      "positivity": 92,
+      "impact": 65,
+      "audienceRelevance": 95,
+      "judgment": "Vânzările GTA VI anunțate de Rockstar sunt performanță comercială, de verificat față de estimările mult diferite din alte relatări.",
+      "fingerprint": "b22d2de1bcd0ce026e97040fba77d0487c877970a2249dfc5a8e3252f61a814c",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1679,
+      "decision": "reject",
+      "positivity": 12,
+      "impact": 78,
+      "audienceRelevance": 95,
+      "judgment": "Declinul Bitcoin și retragerile din ETF reflectă pierderi și aversiune la risc, fără progres economic pentru cititori.",
+      "fingerprint": "b57b1e2fa66750d79f65f439eed9ccfb3b344fd717dff4d7c10051b44268a477",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1680,
+      "decision": "reject",
+      "positivity": 35,
+      "impact": 88,
+      "audienceRelevance": 95,
+      "judgment": "Amenințarea cu taxe pentru centrele de date din afara SUA este presiune protecționistă, nu investiție europeană nouă sigură.",
+      "fingerprint": "297a528cd5fe068f675dfb0ac24c9b48df604f6a36d94ce92ae564112eca1c45",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1681,
+      "decision": "reject",
+      "positivity": 15,
+      "impact": 75,
+      "audienceRelevance": 85,
+      "judgment": "Acuzația de rusofobie și avertismentul ambasadei escaladează disputa vizelor, fără apropiere diplomatică.",
+      "fingerprint": "51cf8cf2d772605b001874569747dd73b43ef8301af45adfe5b7e7d9cffa4e35",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1682,
+      "decision": "candidate",
+      "positivity": 96,
+      "impact": 68,
+      "audienceRelevance": 96,
+      "judgment": "Expoziția cu 127 de lucrări Dalí, Chagall și de Chirico în Alba Iulia poate aduce artă rară publicului local; trebuie verificate natura lucrărilor și perioada.",
+      "fingerprint": "dc59bcda5e9c816b3a8615d5637563d0f43f5b98be6d470ff14c2893e30ed9b7",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1683,
+      "decision": "reject",
+      "positivity": 90,
+      "impact": 48,
+      "audienceRelevance": 88,
+      "judgment": "Revenirea posibilă a lui Culkin în Singur acasă este relatare condițională despre un proiect, nu film realizat sau lansare confirmată.",
+      "fingerprint": "c941852d17a50720dc07ab58aa74cae2225bb7a9ae7c5fbaad8e1dd69369fc74",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    },
+    {
+      "index": 1684,
+      "decision": "candidate",
+      "positivity": 85,
+      "impact": 88,
+      "audienceRelevance": 78,
+      "judgment": "Planul închiderii Rikers până în 2032 promite sănătate mintală și reintegrare, dar nu este închidere efectivă, iar noutatea față de planurile vechi contează.",
+      "fingerprint": "d7286fd9da5ecc5487eaf9d4ab0b06becaff94fec6e4bcc9c71f5d2a4ee61890",
+      "assessedAt": "2026-11-21T06:53:45.378Z"
+    }
+  ]
+}

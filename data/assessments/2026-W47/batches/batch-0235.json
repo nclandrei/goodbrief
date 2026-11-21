@@ -1,0 +1,504 @@
+{
+  "assessments": [
+    {
+      "index": 235,
+      "decision": "reject",
+      "positivity": 62,
+      "impact": 65,
+      "audienceRelevance": 74,
+      "judgment": "Disponibilitatea CEU pentru o revenire parțială la Budapesta este promițătoare pentru libertatea academică, dar nu reprezintă încă o revenire decisă.",
+      "fingerprint": "c67245b7a5333b41580dce1afb61d61346111ee1d833352ffc3acdd703a0c62e",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 236,
+      "decision": "reject",
+      "positivity": 8,
+      "impact": 82,
+      "audienceRelevance": 88,
+      "judgment": "Raportul CNE inventariază abuzuri și violență școlară, fără o intervenție nouă cu efect pozitiv demonstrat în extras.",
+      "fingerprint": "077eedcd5eed6197f2128d7f888f73b24b521ec3b532ad036babdb5837456772",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 237,
+      "decision": "reject",
+      "positivity": 25,
+      "impact": 65,
+      "audienceRelevance": 78,
+      "judgment": "Dezbaterea anunțată de Ștefan Pălărie pornește de la suspiciuni de favorizare la concursuri, nu de la o problemă rezolvată.",
+      "fingerprint": "9464d519d805be879f73454f4aa8587c807c4fc1f85a060725a41ac7dda61238",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 238,
+      "decision": "reject",
+      "positivity": 32,
+      "impact": 58,
+      "audienceRelevance": 70,
+      "judgment": "Apelul ministrului privind dreptul la educație răspunde conflictului de la Lenau, fără soluție confirmată de siguranță școlară.",
+      "fingerprint": "3d6d633d4d8b48330eb00cbb766945b00a50c5d9a29a1350af43c8d5e75e17f7",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 239,
+      "decision": "candidate",
+      "positivity": 68,
+      "impact": 55,
+      "audienceRelevance": 62,
+      "judgment": "Suplimentarea cu 1,2 milioane pentru UAV poate ajuta continuitatea cursurilor; trebuie verificat dacă finanțarea schimbă efectiv trecerea online decisă din lipsă de bani.",
+      "fingerprint": "ffa231ab424fcd1d545a1526a1dfbca4e5ab3277f387fd7418cab663d111f00a",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 240,
+      "decision": "reject",
+      "positivity": 78,
+      "impact": 25,
+      "audienceRelevance": 42,
+      "judgment": "Nota absolventei îi permite specializarea dorită, dar succesul individual la rezidențiat nu dovedește o schimbare de acces medical mai largă.",
+      "fingerprint": "aa66ef483735412a57de9b178889a57ebe68a6df3be87d04097dc6196b07084a",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 241,
+      "decision": "reject",
+      "positivity": 12,
+      "impact": 62,
+      "audienceRelevance": 75,
+      "judgment": "Protestul părinților și întâlnirea planificată la inspectorat arată un conflict școlar încă deschis, nu o rezolvare pozitivă.",
+      "fingerprint": "6934e3dee7de82cf7e00563bf23d90c51503995e18c43e5428ed27ce2fd8cb3a",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 242,
+      "decision": "reject",
+      "positivity": 20,
+      "impact": 62,
+      "audienceRelevance": 75,
+      "judgment": "Disputa despre obligativitatea profesorilor la examene și remunerația scăzută nu conține o îmbunătățire salarială adoptată.",
+      "fingerprint": "ddd7b0ec782647471a79ae2e556a1e2a0e4504112dab142b0faa44a74473cc35",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 243,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 78,
+      "audienceRelevance": 88,
+      "judgment": "Clasele suprapopulate și dependența de meditații plătite descriu o problemă de echitate educațională, fără soluție nouă în fragment.",
+      "fingerprint": "f77a79d644ed0aab1ac6e9455f4a3e1ad1cdfb9191b3b171623f6fee2eddd5d5",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 244,
+      "decision": "reject",
+      "positivity": 35,
+      "impact": 75,
+      "audienceRelevance": 82,
+      "judgment": "Propunerea rectorului pentru obligarea medicilor să rămână în țară este controversă de politică profesională, nu extindere realizată a îngrijirii.",
+      "fingerprint": "0a9f03f8a5e15ce8aee9e4735c4b5e52ef7a4282282ba9adcc82d88a8522252e",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 245,
+      "decision": "reject",
+      "positivity": 15,
+      "impact": 62,
+      "audienceRelevance": 78,
+      "judgment": "Mărturia profesorului despre plata cu ora insuficientă exprimă o dificultate reală, nu o veste despre condiții de muncă îmbunătățite.",
+      "fingerprint": "a681f480a0e2af5c82b68d1c83ac07e49191536c73c81d51a88f77cbd6528032",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 246,
+      "decision": "reject",
+      "positivity": 45,
+      "impact": 68,
+      "audienceRelevance": 85,
+      "judgment": "Recomandările Zitec sunt sfaturi de securitate după atacuri, fără instrument nou sau rezultat de protecție măsurat în extras.",
+      "fingerprint": "42e0103e52a5c92d2809d95b4a75fa0d7c275b4da3def178a95a6f18948c7e7a",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 247,
+      "decision": "candidate",
+      "positivity": 84,
+      "impact": 58,
+      "audienceRelevance": 78,
+      "judgment": "Cele 50 de internshipuri și stagii obținute la FinMinds sunt oportunități concrete pentru tineri, nu doar participare sau premiu simbolic.",
+      "fingerprint": "984a8ac2fc8fbb3882a365f49519ef1d81b67bae060c84a96ace6feb76d01e0d",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 248,
+      "decision": "candidate",
+      "positivity": 88,
+      "impact": 76,
+      "audienceRelevance": 92,
+      "judgment": "MODI propune o infrastructură cultural-științifică nouă pentru București; deschiderea din aprilie 2027 este viitoare, deci trebuie verificat stadiul investiției.",
+      "fingerprint": "b09018a74188d23fc8b90f5eeef987fa10c8eb752ab632e06df06b5532cba344",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 249,
+      "decision": "reject",
+      "positivity": 62,
+      "impact": 22,
+      "audienceRelevance": 55,
+      "judgment": "Comparația de performanță între două iPhone-uri este test de produse pentru cumpărători, nu un progres public ori o resursă nouă accesibilă.",
+      "fingerprint": "b3424d93fefe6eb0ffa076b379bd6af642c9477432f06c0f90f2f3c762c3d3aa",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 250,
+      "decision": "reject",
+      "positivity": 58,
+      "impact": 35,
+      "audienceRelevance": 72,
+      "judgment": "Interviul SmartBill discută diferențierea comercială într-o piață cu AI, fără inițiativă ori rezultat nou clar în extras.",
+      "fingerprint": "a97a38d28b8d47d132baa1bce26db2833baf821e502057db4c29578ba05144a3",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 251,
+      "decision": "reject",
+      "positivity": 68,
+      "impact": 48,
+      "audienceRelevance": 58,
+      "judgment": "Cifra de afaceri Quartz Matrix este bilanț pe 2025, iar creșterea produselor proprii rămâne țintă pentru următorii ani.",
+      "fingerprint": "af58d415217d0744b19dc249c3387564ff7ac3bf3bc983d39e1804973752cf39",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 252,
+      "decision": "reject",
+      "positivity": 72,
+      "impact": 28,
+      "audienceRelevance": 45,
+      "judgment": "Precomenzile laptopului pliabil Huawei în China aduc un produs nou, dar disponibilitatea locală și utilitatea publică rămân limitate.",
+      "fingerprint": "4dc224af08ae92d09a33477b69ba4edf053a722e24373d859d91e01fc69e4686",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 253,
+      "decision": "reject",
+      "positivity": 55,
+      "impact": 42,
+      "audienceRelevance": 65,
+      "judgment": "Perspectiva OLX despre traficul adus de agenți AI este strategie de platformă, fără o facilitate nouă concretă pentru utilizatori.",
+      "fingerprint": "b43ba88cedb68c927edbb857dfcc22fa6ef01463fda8ea1208588210443c8790",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 254,
+      "decision": "candidate",
+      "positivity": 78,
+      "impact": 80,
+      "audienceRelevance": 84,
+      "judgment": "Fondul Plural de un miliard de euro mărește finanțarea pentru tehnologia europeană; trebuie verificat accesul firmelor românești și stadiul investițiilor.",
+      "fingerprint": "0ee65ab015cab289150c6ae2dfcea1208c262d52fd991019bbcaa0ae49522ab6",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 255,
+      "decision": "reject",
+      "positivity": 15,
+      "impact": 82,
+      "audienceRelevance": 90,
+      "judgment": "Registrul românesc nefuncțional pentru închirieri pe termen scurt este întârziere administrativă; aplicarea europeană nu înseamnă implementare locală.",
+      "fingerprint": "b5db057b8a7956fd40299450afec822a29f4a96ad3778ae484daa5d4068f6a85",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 256,
+      "decision": "reject",
+      "positivity": 65,
+      "impact": 58,
+      "audienceRelevance": 75,
+      "judgment": "Lansarea PRIMIA MEDICAL unește servicii private existente și anunță achiziții viitoare, fără extindere concretă a accesului ori prețuri mai bune demonstrate.",
+      "fingerprint": "594b6d26d0909889c205cb249532e97251147bcf472a081e53f4dcc86f697538",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 257,
+      "decision": "candidate",
+      "positivity": 75,
+      "impact": 95,
+      "audienceRelevance": 94,
+      "judgment": "Aprobarea preliminară parțială a cererii PNRR este relevantă investițiilor, însă jaloanele neîndeplinite pentru IMM-uri limitează ce sume pot fi considerate disponibile.",
+      "fingerprint": "5d0437a03c9d19ebb49a870a8f1c73cdd7291c4741bbd5930b5cef0e5b625141",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 258,
+      "decision": "candidate",
+      "positivity": 88,
+      "impact": 72,
+      "audienceRelevance": 88,
+      "judgment": "Aplicația celor șase liceeni vizează accesibilitatea comunicării prin voce și buze; premiul este promițător, dar funcționarea pentru utilizatori reali trebuie verificată.",
+      "fingerprint": "fcbe4c94f685299dfb723e4b25858e58f37854b95f540df5eccb1fca9c25e2f0",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 259,
+      "decision": "reject",
+      "positivity": 25,
+      "impact": 60,
+      "audienceRelevance": 72,
+      "judgment": "Controalele ANAF privind bunurile personale pe firmă sunt plan de verificare fiscală, nu simplificare sau beneficiu nou pentru contribuabili.",
+      "fingerprint": "258bfd31e6e7b922a2f74eccfbd6df0df3b9f0c8d3e71ed4fdef01930da1f370",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 260,
+      "decision": "candidate",
+      "positivity": 72,
+      "impact": 45,
+      "audienceRelevance": 88,
+      "judgment": "Investițiile comune Revolut sunt o funcție nouă disponibilă românilor; utilitatea depinde de comisioane, proprietate și riscurile contului comun, nu de promovarea investiției.",
+      "fingerprint": "098bd6ea25022aea7e63a78f3479a15603b83444eab24c3d64d24732b43a9c7e",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 261,
+      "decision": "reject",
+      "positivity": 52,
+      "impact": 42,
+      "audienceRelevance": 58,
+      "judgment": "Profitul Christian Tour este bilanț comercial în contextul insolvenței AnimaWings, fără îmbunătățire a serviciilor sau protecției călătorilor demonstrată.",
+      "fingerprint": "14883e1735c70f616c612d639a7163345e377df5efc398b0ba392670d869a737",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 262,
+      "decision": "reject",
+      "positivity": 68,
+      "impact": 45,
+      "audienceRelevance": 58,
+      "judgment": "Noul campus privat din Voluntari este investiție planificată pentru 2028; anunțul nu dovedește un acces educațional mai larg în prezent.",
+      "fingerprint": "ec99ece470da9a4ca0cac22f3b986e8745db72b886d7cac25d7ad3d0ac2dcd1a",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 263,
+      "decision": "reject",
+      "positivity": 28,
+      "impact": 42,
+      "audienceRelevance": 45,
+      "judgment": "Petiția pentru readucerea lui Huang la Nvidia măsoară sprijin într-un scandal corporativ, nu progres tehnologic ori avantaj pentru public.",
+      "fingerprint": "fe03821691706c1382ca7abf96d72c0ae509a168645a6ca9feae44643580d883",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 264,
+      "decision": "reject",
+      "positivity": 1,
+      "impact": 95,
+      "audienceRelevance": 85,
+      "judgment": "Atacul cu rachete asupra podurilor din Kiev și exploziile din mai multe orașe reprezintă escaladare militară cu risc civil.",
+      "fingerprint": "76ca707f0235bad08665dc20d8c072de11af448c6c8110dac1b26a7ea762b06e",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 265,
+      "decision": "reject",
+      "positivity": 3,
+      "impact": 72,
+      "audienceRelevance": 55,
+      "judgment": "Pescarii ecuadorieni reclamă bombardarea ambarcațiunii și răni grave; procesul încă deschis nu transformă cazul într-o reparație obținută.",
+      "fingerprint": "c88e247bd33277613be2d23c4682f47b0e38550c79ac6133b9c01b23b51a5235",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 266,
+      "decision": "reject",
+      "positivity": 2,
+      "impact": 90,
+      "audienceRelevance": 65,
+      "judgment": "Presupusul plan iranian de atac radioactiv sau chimic este o amenințare de securitate nefinalizată, nu o dezvoltare pozitivă.",
+      "fingerprint": "455a02cf75412e14a6df8bcfd454c7e2f1603020f9aacebb003387abff6957ba",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 267,
+      "decision": "candidate",
+      "positivity": 87,
+      "impact": 94,
+      "audienceRelevance": 98,
+      "judgment": "Documentele CNAS electronice pot reduce drumurile și hârtiile pentru pacienți; lansarea anunțată la 1 ianuarie și tranziția de șase luni trebuie confirmate oficial.",
+      "fingerprint": "bc6f3343d958b98d100587a7c6846fc2a0ef07de3c803d3128de01be093a8efa",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 268,
+      "decision": "reject",
+      "positivity": 74,
+      "impact": 22,
+      "audienceRelevance": 25,
+      "judgment": "Victoria Germaniei cu Olanda este un rezultat de fotbal internațional, fără relevanță românească distinctivă pentru ediție.",
+      "fingerprint": "5960c1825391814d591a3317c75c7de493437bf0721d8551de2ace21e0f14fa0",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 269,
+      "decision": "reject",
+      "positivity": 28,
+      "impact": 2,
+      "audienceRelevance": 8,
+      "judgment": "Horoscopul zilei face predicții despre relații și energie fără bază verificabilă, nu oferă știri pentru selecție.",
+      "fingerprint": "5e1cc0462a3aac3fa115210fd33aa502b724da3fb5542271b257111714aaee7d",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 270,
+      "decision": "reject",
+      "positivity": 15,
+      "impact": 62,
+      "audienceRelevance": 78,
+      "judgment": "Prognoza furtunilor și temperaturilor anormale descrie riscuri meteorologice europene, fără progres climatic sau măsură benefică nouă.",
+      "fingerprint": "df7b67d6accf6ff781c7343c2e2afb34fba2d138b2ef636f1383d59929ee492a",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 271,
+      "decision": "reject",
+      "positivity": 32,
+      "impact": 58,
+      "audienceRelevance": 72,
+      "judgment": "Evaluarea lui Băsescu despre lipsa greșelilor și a acțiunilor guvernului este comentariu politic, nu rezultat concret.",
+      "fingerprint": "b28fe12d4f484651c5d6458034a587eb7e8d1a088f363a7955d7445b7d8fe2f3",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 272,
+      "decision": "reject",
+      "positivity": 55,
+      "impact": 78,
+      "audienceRelevance": 95,
+      "judgment": "Stabilizarea ori scăderea carburanților în 2027 este prognoză condiționată de petrol, nu reducere deja disponibilă șoferilor.",
+      "fingerprint": "a766d53be303846f264526a8b3a4537f590804f8028d89b21a9a81dd8c56bec5",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 273,
+      "decision": "reject",
+      "positivity": 35,
+      "impact": 62,
+      "audienceRelevance": 78,
+      "judgment": "Condițiile formulate de Băsescu pentru reforma teritorială sunt opinie asupra unei propuneri, fără schimbare administrativă realizată.",
+      "fingerprint": "e404aa9c6da44ad44cd222b730d3e4e76c4e3af1677d46b0eefb9eee046542a2",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 274,
+      "decision": "reject",
+      "positivity": 62,
+      "impact": 55,
+      "audienceRelevance": 75,
+      "judgment": "Poziția ministrului împotriva discursului xenofob este salutabilă, dar povestea personală nu însoțește o măsură nouă de integrare.",
+      "fingerprint": "2f3f916a60f02ba1a845b1442aec0a5aa527e5a2bfa23b3dc8e24c8f6d4be015",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 275,
+      "decision": "reject",
+      "positivity": 55,
+      "impact": 88,
+      "audienceRelevance": 95,
+      "judgment": "Ieftinirea gazelor din Marea Neagră este estimată pentru producția din a doua parte a lui 2027, nu un avantaj obținut acum.",
+      "fingerprint": "b73d61de8c4e657f91645ec4c79ff5eb576e18c5c6addb74591f2e51685cc3d6",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 276,
+      "decision": "reject",
+      "positivity": 58,
+      "impact": 68,
+      "audienceRelevance": 82,
+      "judgment": "Plata beneficiilor pe card este doar analizată; economiile administrative ipotetice nu dovedesc acces mai bun pentru beneficiari.",
+      "fingerprint": "0706eeb3e3a538c21fb024123a9fdaad0a6d8ffc98cdbb5e6574e4448cbe08f4",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 277,
+      "decision": "reject",
+      "positivity": 52,
+      "impact": 85,
+      "audienceRelevance": 95,
+      "judgment": "Tendința de scădere a energiei din primăvară este o estimare ministerială, nu reducere de preț confirmată pentru gospodării.",
+      "fingerprint": "dd4169351822ebcc4461defdcaa5e28a1d2dd432deb55798f66ba08f87087886",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 278,
+      "decision": "reject",
+      "positivity": 55,
+      "impact": 85,
+      "audienceRelevance": 72,
+      "judgment": "Indexarea pensiilor cu 7,3% este varianta susținută de ministru, dar nu rezultă aprobarea bugetară a majorării.",
+      "fingerprint": "00d33e734dafe6d6b4cb24340c4985e52431aae51ebd584b92c5398c82eae377",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 279,
+      "decision": "reject",
+      "positivity": 58,
+      "impact": 85,
+      "audienceRelevance": 95,
+      "judgment": "Schemele energetice și prelungirea ajutoarelor sunt în analiză; beneficiarii nu au încă reguli aprobate ori acces nou confirmat.",
+      "fingerprint": "4791519d9ae3d3fccf431000f7614b6ae0b8eb39f1b6cea5761415b0273f5db6",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 280,
+      "decision": "reject",
+      "positivity": 30,
+      "impact": 75,
+      "audienceRelevance": 58,
+      "judgment": "Sprijinul promis Ucrainei de Marine Le Pen depinde de câștigarea viitoarelor alegeri, nu de o decizie de ajutor actuală.",
+      "fingerprint": "f864468779c90dedd08f706ea42c38918e8b2188665dd0d78da6772b2847ed04",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 281,
+      "decision": "candidate",
+      "positivity": 72,
+      "impact": 88,
+      "audienceRelevance": 90,
+      "judgment": "Pornirea comercială anunțată pentru turbina Mintia ar aduce capacitate energetică nouă; trebuie verificat dacă a început și evitată etichetarea gazului drept energie regenerabilă.",
+      "fingerprint": "fcf1968daa6c0977e0fbea633180b0759ac002517468a8a2c0af7461febe73e9",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 282,
+      "decision": "reject",
+      "positivity": 5,
+      "impact": 65,
+      "audienceRelevance": 45,
+      "judgment": "Blocarea plăților tribunalului polonez amplifică o dispută instituțională, fără rezolvare pozitivă prezentată.",
+      "fingerprint": "0a4ecad0cc457fafbade80bed359bb0fed83859eadd25c98d82881a8a0f1165b",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 283,
+      "decision": "reject",
+      "positivity": 1,
+      "impact": 55,
+      "audienceRelevance": 45,
+      "judgment": "Rejudecarea cazului mamei acuzate că și-a ucis copiii rămâne relatare traumatică, nu progres de sănătate mintală demonstrat.",
+      "fingerprint": "ed13fabc07028d08505b2f6e08754d87885fe78665972c88921575bd47f79482",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    },
+    {
+      "index": 284,
+      "decision": "reject",
+      "positivity": 42,
+      "impact": 80,
+      "audienceRelevance": 50,
+      "judgment": "Posibila întâlnire Trump–Kim este sugestie diplomatică, fără acord sau reducere verificată a tensiunilor.",
+      "fingerprint": "58664b724333e3a9325c45b82cec9daa62e5db194b8b4ad05f2c0079df866843",
+      "assessedAt": "2026-11-21T06:15:30.473Z"
+    }
+  ]
+}

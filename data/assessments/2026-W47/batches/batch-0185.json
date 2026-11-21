@@ -1,0 +1,504 @@
+{
+  "assessments": [
+    {
+      "index": 185,
+      "decision": "reject",
+      "positivity": 75,
+      "impact": 32,
+      "audienceRelevance": 55,
+      "judgment": "Punctajele maxime la rezidențiat sunt rezultate individuale bune, dar nu arată extinderea serviciilor medicale ori o schimbare educațională distinctivă.",
+      "fingerprint": "4b92ec3bd8dd01a9d85b65d006f7b36e27db0c7e842fe364fc35f5c6dcf5cfcf",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 186,
+      "decision": "reject",
+      "positivity": 2,
+      "impact": 45,
+      "audienceRelevance": 48,
+      "judgment": "Controlul rutier de la Reșița s-a soldat cu violență și polițist spitalizat, fără componentă pozitivă în relatare.",
+      "fingerprint": "dd4db193d7551995e46e30dc8acb48975ca2a2388ed8098dc14f96a36fc0a85d",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 187,
+      "decision": "reject",
+      "positivity": 10,
+      "impact": 72,
+      "audienceRelevance": 75,
+      "judgment": "Acuzația lui Danileț privind neaplicarea unei hotărâri CEDO descrie conflict judiciar; extrasul lipsă nu permite verificarea speței.",
+      "fingerprint": "70627b54413e309a61f38567ac6964c22fd86472582e140c186944a57097742c",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 188,
+      "decision": "reject",
+      "positivity": 25,
+      "impact": 50,
+      "audienceRelevance": 35,
+      "judgment": "Sancțiunile împotriva femeii de afaceri ruse țin de politica de război; titlul fără extras nu aduce rezultat benefic distinct.",
+      "fingerprint": "de7a97d3a34e5cd430e9f4bc26a8e51c32b7136ae4f00c81659a2efa4c5f7c93",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 189,
+      "decision": "reject",
+      "positivity": 74,
+      "impact": 24,
+      "audienceRelevance": 30,
+      "judgment": "Debutul lui Alcaraz la ATP Finals este o victorie sportivă curentă, iar RSS nu adaugă un unghi relevant pentru România.",
+      "fingerprint": "082eb29b485f8624452482ae9aff293d65c9c079983b33ffd541f7f5bf5ae928",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 190,
+      "decision": "reject",
+      "positivity": 55,
+      "impact": 58,
+      "audienceRelevance": 62,
+      "judgment": "Afirmația CCIR că portul Constanța poate atrage companii coreene indică oportunitate comercială, nu investiție contractată sau operațională.",
+      "fingerprint": "32352195faa3272def6946fc95b2703c664ee4e0e761553ff0108760054aa29f",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 191,
+      "decision": "reject",
+      "positivity": 78,
+      "impact": 30,
+      "audienceRelevance": 22,
+      "judgment": "Afilierea Bulgariei la federația de Muaythai și găzduirea Balcanicelor sunt reușite sportive regionale, dar au interes local românesc redus.",
+      "fingerprint": "e52f0fb34a5acf4a356e2f8f636d6927d004c28eb2efe4e31285d175d4e56664",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 192,
+      "decision": "candidate",
+      "positivity": 85,
+      "impact": 48,
+      "audienceRelevance": 86,
+      "judgment": "Expoziția de aur și argint medieval la Muzeul de Istorie poate oferi o ieșire culturală concretă; lipsesc din RSS durata și condițiile de vizitare.",
+      "fingerprint": "c16692a2d39bfe405cd375f96daca9c7b745be02f8e6380bfe0a213272f9e932",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 193,
+      "decision": "reject",
+      "positivity": 45,
+      "impact": 72,
+      "audienceRelevance": 75,
+      "judgment": "Apelul ASF la creștere prin investiții este o poziție generală de politică economică, fără instrument nou anunțat în titlu.",
+      "fingerprint": "ec96372a010a5f1d8bbd7e79e634d2ac7194f2b3240e0dd3e92ec73b3dceff5f",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 194,
+      "decision": "reject",
+      "positivity": 52,
+      "impact": 42,
+      "audienceRelevance": 30,
+      "judgment": "Promisiunea premierului canadian privind limba franceză este discurs diplomatic, fără măsură realizată și cu legătură românească slabă.",
+      "fingerprint": "d993653f0c5bdab273a32e873efe548f8bb1a638eb23d891368d36515ff59348",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 195,
+      "decision": "reject",
+      "positivity": 38,
+      "impact": 65,
+      "audienceRelevance": 75,
+      "judgment": "Perspectiva FIC combină oportunități cu birocrație și impredictibilitate; nu indică investiții noi efectiv asumate în informația disponibilă.",
+      "fingerprint": "5093a18586120362a9651b41dd46738fa1cdfb5c4837c1e430a0147c6df9133f",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 196,
+      "decision": "candidate",
+      "positivity": 78,
+      "impact": 48,
+      "audienceRelevance": 72,
+      "judgment": "Modestia lui Chivu după premiul italian poate completa o recunoaștere românească, dar titlul izolat cere sursa integrală pentru context.",
+      "fingerprint": "f7421875efda87c339657394336b130cf5dbdc448eafbeb333f74e65b0e60575",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 197,
+      "decision": "reject",
+      "positivity": 28,
+      "impact": 72,
+      "audienceRelevance": 78,
+      "judgment": "Cantitatea de ambalaje pusă pe piață măsoară consum material, nu reciclare sau reducere a deșeurilor; extrasul nu oferă rezultate verzi.",
+      "fingerprint": "09b35cab026ddf9ce6742effa6ad13f32b908b7c9ad0e088de171cf9af7c61af",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 198,
+      "decision": "reject",
+      "positivity": 8,
+      "impact": 52,
+      "audienceRelevance": 58,
+      "judgment": "Proporția bicicliștilor accidentați aflați sub influența alcoolului este statistică de risc, nu progres în mobilitate sigură.",
+      "fingerprint": "7081f528a9f69c67ed09d1f0193012c9d2cfcd3f70d47126476b27b65e771d7d",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 199,
+      "decision": "reject",
+      "positivity": 25,
+      "impact": 78,
+      "audienceRelevance": 88,
+      "judgment": "Analiza critică despre finanțarea transportului public nu anunță trasee, vehicule ori calitate îmbunătățită, iar extrasul lipsește.",
+      "fingerprint": "8900b0436f5010748c20b800944ecf3cdc807208e880234e98046c80620efcde",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 200,
+      "decision": "reject",
+      "positivity": 12,
+      "impact": 35,
+      "audienceRelevance": 40,
+      "judgment": "Termenul privind arestul lui Georgescu ține de procedura unui dosar, fără veste pozitivă comunitară în informația RSS.",
+      "fingerprint": "60ea419ea4ed56c126c59f7ac2a78ed225b15928f15b84ab5b7c59291ed194b5",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 201,
+      "decision": "reject",
+      "positivity": 6,
+      "impact": 55,
+      "audienceRelevance": 25,
+      "judgment": "Deteriorarea anticipată a creditelor Sberbank descrie dificultăți economice rusești, nu o realizare de interes pentru ediție.",
+      "fingerprint": "38a66811fc8e17b1b79355226dc0d6b260e94db2b5e7cd1050c8c98f821b59b6",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 202,
+      "decision": "candidate",
+      "positivity": 82,
+      "impact": 94,
+      "audienceRelevance": 90,
+      "judgment": "Contractul BEI–Nuclearelectrica indică finanțare semnată pentru retehnologizare, un stadiu verificabil; titlul trunchiat și extrasul gol cer verificarea documentului original.",
+      "fingerprint": "ce4dd621722a7b8e95d35f547b47600f02c4ec067787f6da680706114fec3d31",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 203,
+      "decision": "candidate",
+      "positivity": 78,
+      "impact": 65,
+      "audienceRelevance": 58,
+      "judgment": "Predarea primelor două IAR-99 SM este un rezultat industrial românesc concret; relevanța trebuie cântărită fără a echivala producția militară cu beneficiu civil direct.",
+      "fingerprint": "48fd592cd0d065bf4134c237289fae5dc74e49d2926f52e0d0b61674bcf959dc",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 204,
+      "decision": "reject",
+      "positivity": 28,
+      "impact": 52,
+      "audienceRelevance": 68,
+      "judgment": "Reacția lui Abrudean solicită soluții la reforma PSD, dar nu conține o reformă adoptată ori un serviciu nou.",
+      "fingerprint": "6cac7a1c981c160c7d72b7b300bde688ef5a311877075caa99156fc95ead4a9e",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 205,
+      "decision": "reject",
+      "positivity": 68,
+      "impact": 55,
+      "audienceRelevance": 30,
+      "judgment": "Distribuirea banilor prin mecanismul FIFA este bilanț instituțional global; titlul nu arată beneficiari români ori noutate locală distinctă.",
+      "fingerprint": "dcba514c101750c9a5ac5e8723634e7e61b7f503371e16e4f13d53e7a98b480e",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 206,
+      "decision": "candidate",
+      "positivity": 86,
+      "impact": 52,
+      "audienceRelevance": 88,
+      "judgment": "Integrala cinematografică de la Elvire Popesco începe chiar pe 23 noiembrie și poate fi recomandare culturală utilă; numele regizorului și programul cer verificare.",
+      "fingerprint": "772c40a2f2db35cd70a9446e93a2eae12fc4401b2eb100ebddcf039cdffef7f2",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 207,
+      "decision": "reject",
+      "positivity": 8,
+      "impact": 78,
+      "audienceRelevance": 85,
+      "judgment": "Critica Oanei Gheorghiu privind analizele ignorate și pierderile de 16,2 miliarde descrie stagnare administrativă, nu redresare implementată.",
+      "fingerprint": "c1ade286bfff99cbc31e635c45d316546ffe13976343af002ecbca5fce194d7a",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 208,
+      "decision": "reject",
+      "positivity": 8,
+      "impact": 72,
+      "audienceRelevance": 78,
+      "judgment": "Suspendarea autorizației oprește modernizarea falezei din Galați; fragmentul nu demonstrează o alternativă de protejare ori amenajare mai bună.",
+      "fingerprint": "e5dce1b43825442a2e4289ffc0c1fa8677c4d818cb53540ad5e83b982e8850e3",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 209,
+      "decision": "reject",
+      "positivity": 48,
+      "impact": 85,
+      "audienceRelevance": 88,
+      "judgment": "Prelungirea termenelor PNRR este doar avută în vedere; intenția de a salva investiții nu confirmă finanțare ori lucrări finalizate.",
+      "fingerprint": "f6ca5ab9245ce4656e9d184272ca7a9d0a3f00d1cd1b9905d2aca3fa9ae0b2de",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 210,
+      "decision": "reject",
+      "positivity": 38,
+      "impact": 88,
+      "audienceRelevance": 92,
+      "judgment": "Suprataxa energetică și compensațiile sunt încă discutate, fără schemă adoptată sau sprijin efectiv accesibil consumatorilor vulnerabili.",
+      "fingerprint": "991b9cbe20c1390a24306ad6edc93a54ac91f32ddcfc97b9e12dd8fa1cec3179",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 211,
+      "decision": "candidate",
+      "positivity": 70,
+      "impact": 72,
+      "audienceRelevance": 88,
+      "judgment": "Respingerea suspendării sancțiunilor ROBOR obligă trei bănci la conformare; procesul pe fond și despăgubirile clienților nu sunt astfel soluționate.",
+      "fingerprint": "a0cfe033a6f11ba35d16608a2d5ba99806dc983aeb0d41bc49b6dc8ba7f82021",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 212,
+      "decision": "reject",
+      "positivity": 48,
+      "impact": 85,
+      "audienceRelevance": 95,
+      "judgment": "Reducerea dobânzilor este scenariu optimist condiționat de inflație pentru primăvară, nu o scădere decisă în prezent.",
+      "fingerprint": "f823c812042a4dd5061c8ece6de50c616158478e7856a2ef2f4de76dfb79b572",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 213,
+      "decision": "reject",
+      "positivity": 50,
+      "impact": 80,
+      "audienceRelevance": 85,
+      "judgment": "Mesajul BNR despre lipsa nevoii de bani FMI este reasigurare în contextul riscului de rating, fără rezultat economic nou.",
+      "fingerprint": "37125f8474c4314bb78d2b3846744c73a92ce5bb383f5b052fa1b0fdcfbf0022",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 214,
+      "decision": "reject",
+      "positivity": 65,
+      "impact": 30,
+      "audienceRelevance": 62,
+      "judgment": "Vânzările Decathlon de căști și echipamente descriu consum comercial retrospectiv, nu dovada reducerii accidentelor sau un program accesibil nou.",
+      "fingerprint": "15d699b44dacc7ffd86cbb0d1641ac108db3dbde7a81f7f0b204fb1236c3a318",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 215,
+      "decision": "reject",
+      "positivity": 28,
+      "impact": 88,
+      "audienceRelevance": 95,
+      "judgment": "Stabilitatea relativă promisă de sărbători coexistă cu revizuirea în sus a inflației; nu rezultă o ameliorare clară pentru gospodării.",
+      "fingerprint": "672d8052f201c103846657c9a4832b1b505a7ac870c24a01aed8dab91fef5748",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 216,
+      "decision": "reject",
+      "positivity": 30,
+      "impact": 55,
+      "audienceRelevance": 60,
+      "judgment": "Poziția patronatului despre acuzațiile de înțelegeri în licitații este apărare într-o controversă comercială, nu lucrare publică nouă.",
+      "fingerprint": "7664c6f90d3bdfe2be5eb6871dc94c3de9b5da0840c10591c1a6ce7b8e5123d4",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 217,
+      "decision": "reject",
+      "positivity": 40,
+      "impact": 78,
+      "audienceRelevance": 85,
+      "judgment": "Comasările și restructurările anunțate de Neacșu sunt direcții politice cu posibile concedieri, nu eficiență ori servicii îmbunătățite demonstrate.",
+      "fingerprint": "85f0e7224d978708a5274e66c9d63368535dd489f1666238d19b64bfe615611a",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 218,
+      "decision": "candidate",
+      "positivity": 76,
+      "impact": 95,
+      "audienceRelevance": 94,
+      "judgment": "Evaluarea preliminară PNRR confirmă multe jaloane și ținte, dar șase rămân neîndeplinite; întreaga cerere de 2,67 miliarde nu trebuie prezentată ca încasată.",
+      "fingerprint": "2dcba6443e99894caef0009db5869f3a0d790163289eb9ad76491fa895f16f24",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 219,
+      "decision": "reject",
+      "positivity": 52,
+      "impact": 80,
+      "audienceRelevance": 88,
+      "judgment": "Reducerea statistică a inflației în T3 nu echivalează cu ieftinirea bunurilor, iar explicația retrospectivă nu este un beneficiu nou disponibil.",
+      "fingerprint": "89630d8a4f0bc87798671f2c8a7df76bf5c617257aadee1c3099b809f9cc2ecb",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 220,
+      "decision": "reject",
+      "positivity": 55,
+      "impact": 48,
+      "audienceRelevance": 82,
+      "judgment": "ContAi promite verificări rapide pentru firmele notificate de ANAF, dar comparația de timp provine de la furnizor și nu este demonstrată independent.",
+      "fingerprint": "a36d5d66b81f069a90113dc91b8ba75c2b51121ce9c29ae6188eec4f0323319e",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 221,
+      "decision": "reject",
+      "positivity": 48,
+      "impact": 38,
+      "audienceRelevance": 72,
+      "judgment": "Ghidul generic despre alegerea cardului de credit este conținut comercial financiar, fără schimbare nouă ori comparație concretă în extras.",
+      "fingerprint": "0d2fc59fde127cedd86d0a523178e3d6f01b87679e859c721a8278b1e4896a33",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 222,
+      "decision": "reject",
+      "positivity": 68,
+      "impact": 45,
+      "audienceRelevance": 58,
+      "judgment": "Campusul privat Verita este planificat pentru 2028, cu lucrări încă neîncepute; extrasul nu arată acces larg ori un beneficiu public deosebit.",
+      "fingerprint": "ae09d65d2ddf3db8e9871e117d531ce70e89ad2c09a6984e73d36a2254948187",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 223,
+      "decision": "reject",
+      "positivity": 45,
+      "impact": 75,
+      "audienceRelevance": 82,
+      "judgment": "Profilul premierului în Financial Times discută intenții de reducere a deficitului și provocări politice, nu rezultate deja obținute.",
+      "fingerprint": "e8dfc346c245f23e1da412f032e53158e61be2b02fe84dd4667a84bf96c8b413",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 224,
+      "decision": "reject",
+      "positivity": 52,
+      "impact": 72,
+      "audienceRelevance": 88,
+      "judgment": "Ancheta privind scorul FICO poate conta pentru debitori, dar finalizarea abia în 2027 nu schimbă deocamdată regulile sau drepturile lor.",
+      "fingerprint": "25e767a48bc672706aab31ccad02063a539b819f27089919a493ca9437d747a7",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 225,
+      "decision": "reject",
+      "positivity": 12,
+      "impact": 72,
+      "audienceRelevance": 80,
+      "judgment": "TeraPlast semnalează efectele negative ale impredictibilității investițiilor; nu este anunțată o fabrică ori finanțare nouă.",
+      "fingerprint": "91f65e5e3f3a77dba6e67e796efafac4a14e99a96e1d0801898cb60513ecaf80",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 226,
+      "decision": "reject",
+      "positivity": 52,
+      "impact": 80,
+      "audienceRelevance": 90,
+      "judgment": "Concurența și interconectarea energetică sunt recomandări generale ale autorității, fără proiect nou aprobat ori costuri efectiv reduse în material.",
+      "fingerprint": "d09521ff7877680d404f4735ccbc66a5a8d56aa5610b4ddbe1bbea421b402968",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 227,
+      "decision": "reject",
+      "positivity": 20,
+      "impact": 88,
+      "audienceRelevance": 95,
+      "judgment": "Prognoza de inflație urcă la 7,4%, iar așteptările economice rămân pesimiste; atenuarea unui efect TVA nu schimbă sensul principal.",
+      "fingerprint": "5ce157658e888740e9a3af8f354c9f67064e37c7c21edd6cf2a10dd7207edfce",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 228,
+      "decision": "reject",
+      "positivity": 5,
+      "impact": 85,
+      "audienceRelevance": 95,
+      "judgment": "Creșterea benzinei spre 9,85 lei pe litru înseamnă presiune pe bugete și costuri de mobilitate, nu progres.",
+      "fingerprint": "d0e22b3584e67fe78ebc40789fd628362ffc384dc9537073743249c27c983239",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 229,
+      "decision": "reject",
+      "positivity": 28,
+      "impact": 78,
+      "audienceRelevance": 88,
+      "judgment": "Scăderea consumului electric al populației nu dovedește eficiență energetică sau tranziție verde fără explicația cauzelor; poate reflecta și constrângeri economice.",
+      "fingerprint": "54e7d513e3bf62c22d30c4704462aa82e51be10d7dfaff0e27294b8c76a90b87",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 230,
+      "decision": "reject",
+      "positivity": 8,
+      "impact": 80,
+      "audienceRelevance": 88,
+      "judgment": "Deteriorarea încrederii CFA și anticiparea deprecierii leului sunt perspective economice negative, fără măsură favorabilă realizată.",
+      "fingerprint": "cc5fe18525b2516c5c1cb193450adb791f8129f4df5a48ef2524226e1612d1a8",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 231,
+      "decision": "reject",
+      "positivity": 20,
+      "impact": 58,
+      "audienceRelevance": 65,
+      "judgment": "Investigația TVA de 2,1 milioane privește suspiciuni de fraudă și facturi fictive, nu recuperare confirmată ori facilități noi.",
+      "fingerprint": "b57e67cb22feb4d8d3bfde4dc83281ef1d9c41ab078d200512b233bc81697819",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 232,
+      "decision": "reject",
+      "positivity": 40,
+      "impact": 65,
+      "audienceRelevance": 58,
+      "judgment": "Competiția pentru succesiunea la BCE este o negociere de conducere, nu o decizie monetară benefică deja luată.",
+      "fingerprint": "4fae14aa6ebbcbf1bcfbfc171fa83340d0cb1c0bfa62ec14b8cb28b04150979b",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 233,
+      "decision": "reject",
+      "positivity": 22,
+      "impact": 85,
+      "audienceRelevance": 92,
+      "judgment": "Anunțarea raportului BNR anticipează inflație mai mare la final de an, fără ameliorare concretă pentru cititori.",
+      "fingerprint": "2f5cb0b20dd84d5eac2107be312c39049753061e5d677e4c15eda3ce83e45b33",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    },
+    {
+      "index": 234,
+      "decision": "reject",
+      "positivity": 15,
+      "impact": 65,
+      "audienceRelevance": 78,
+      "judgment": "Contradicția dintre evaluarea școlară și acuzațiile părinților în cazul cuțitului menține o criză de siguranță, nu o soluție validată.",
+      "fingerprint": "b562ca445ed9ca37ed5102a612d5478eb4746b66fbb41ed6dda09089602417fd",
+      "assessedAt": "2026-11-21T06:11:46.814Z"
+    }
+  ]
+}

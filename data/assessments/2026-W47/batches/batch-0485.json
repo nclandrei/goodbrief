@@ -1,0 +1,504 @@
+{
+  "assessments": [
+    {
+      "index": 485,
+      "decision": "reject",
+      "positivity": 25,
+      "impact": 88,
+      "audienceRelevance": 78,
+      "judgment": "Reacția Zelenski la distrugerea Podului Kerci evaluează un succes militar, nu un câștig civil ori diplomatic verificat.",
+      "fingerprint": "1ea5f121d43baa37496bc8c4d2e0a1d28cc975b6a00f3bec8d0eb88cc1b1eb18",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 486,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 55,
+      "audienceRelevance": 72,
+      "judgment": "Continuarea protestului Lenau arată că măsurile anunțate nu au restabilit încrederea elevilor în siguranța cursurilor.",
+      "fingerprint": "000af6b5fda44c00aaf6da0bb2073f309742b93c1916fe968dd6365b18ad326a",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 487,
+      "decision": "reject",
+      "positivity": 0,
+      "impact": 55,
+      "audienceRelevance": 62,
+      "judgment": "Răpirea și agresarea tinerei din Buzău sunt violențe grave, fără sprijin sau reparație prezentate în extras.",
+      "fingerprint": "eb08088ed53fe4a73a62fc68a6e7925803014a946dd35bd01611cd9f7ac74aa1",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 488,
+      "decision": "reject",
+      "positivity": 72,
+      "impact": 28,
+      "audienceRelevance": 65,
+      "judgment": "Cămila preistorică are valoare de curiozitate științifică, dar fragmentul nu datează o descoperire sau cercetare nouă.",
+      "fingerprint": "5685626fc2dbb64480fbf1d6162beba25869e0d0ea445df3d2e05a5b46ad9da6",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 489,
+      "decision": "reject",
+      "positivity": 58,
+      "impact": 85,
+      "audienceRelevance": 92,
+      "judgment": "Comasarea voluntară a comunelor este OUG pregătită pe surse; referendumul și beneficiile administrative nu sunt încă reguli adoptate.",
+      "fingerprint": "222f4982f554ec4df753bb9957fa357366598c90bada85f36893f37e3dded2aa",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 490,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 88,
+      "audienceRelevance": 78,
+      "judgment": "Recunoașterea rusă a daunelor Podului Crimeei confirmă distrugerea infrastructurii, fără pas spre încetarea războiului.",
+      "fingerprint": "0a954dae5bbba7fa7e1d41bbc23878451cb110f05f1ad97b10c212a64092a4c6",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 491,
+      "decision": "reject",
+      "positivity": 2,
+      "impact": 55,
+      "audienceRelevance": 72,
+      "judgment": "Cercetarea în libertate a suspectului de incendiere la fosta iubită nu stabilește protecție sau siguranță pentru victimă.",
+      "fingerprint": "b8d37878dc48c71c0132f151773c9045c80e986c0005957ef2e04e4671c988fa",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 492,
+      "decision": "reject",
+      "positivity": 0,
+      "impact": 55,
+      "audienceRelevance": 72,
+      "judgment": "Accidentul microbuzului școlar din Giurgiu trimite cinci copii la spital, fără recuperare ori măsură preventivă confirmată.",
+      "fingerprint": "4c9ed74210093d4766bf588a0cb9ee60d597c76f52fa3079056bb95cd4f23ac0",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 493,
+      "decision": "reject",
+      "positivity": 12,
+      "impact": 38,
+      "audienceRelevance": 48,
+      "judgment": "Arestarea șoferului suspectat de furtul motorinei este incident penal individual, nu schimbare a transportului sau costurilor.",
+      "fingerprint": "874f09a06548e56289af8c4417a4969cfd1ac3cb5836e5dd9af5f0a0a9712f33",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 494,
+      "decision": "reject",
+      "positivity": 5,
+      "impact": 85,
+      "audienceRelevance": 95,
+      "judgment": "Compromiterea site-urilor pentru furt crypto și infectarea iPhone-urilor reprezintă risc informatic, fără protecție nouă descrisă.",
+      "fingerprint": "08e4ef67387165ca664d4aa965d9c66a95a915a063931d91d962577209175ab1",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 495,
+      "decision": "candidate",
+      "positivity": 91,
+      "impact": 88,
+      "audienceRelevance": 98,
+      "judgment": "Programul AFM pentru stocare poate face energia solară utilizabilă și seara; înscrierea din 20 noiembrie necesită verificarea ghidului oficial.",
+      "fingerprint": "d33342d1d8b47132fc7fcaed83993ebc64a5e06cbd1b8539560c27b0821a9f26",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 496,
+      "decision": "candidate",
+      "positivity": 76,
+      "impact": 35,
+      "audienceRelevance": 84,
+      "judgment": "Mesajul atribuit lui Pattinson întărește anunțul Bond, dar confirmarea rolului trebuie verificată la sursa cinematografică originală.",
+      "fingerprint": "8d7d33993ef8c884b4464e0fe4e536296219cccae1768d2d9e563cde4273927f",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 497,
+      "decision": "reject",
+      "positivity": 28,
+      "impact": 48,
+      "audienceRelevance": 62,
+      "judgment": "Acordul de vinovăție pentru amenințările TikTok este sancționare individuală, nu intervenție nouă de protecție a discursului public.",
+      "fingerprint": "dcd0c2ed667976a914a25690200fc04818873123cb32bfafa615aec4207cc16e",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 498,
+      "decision": "candidate",
+      "positivity": 82,
+      "impact": 52,
+      "audienceRelevance": 90,
+      "judgment": "Bucharest Gaming Week oferă un eveniment cultural de comunitate și transmisiuni accesibile, cu verificarea programului rămas după weekend.",
+      "fingerprint": "8aedbf401a4f2fe974407ee4e6d37f0daf8e73a99e67806fd53a4f43d1de73eb",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 499,
+      "decision": "reject",
+      "positivity": 48,
+      "impact": 92,
+      "audienceRelevance": 95,
+      "judgment": "Calendarul rectificării bugetare este relatat pe surse, fără alocări finale sau efecte favorabile certe.",
+      "fingerprint": "da3bd26c3f2b698ac1b01c32f80a3376583ca62b5752708c0addd0425733d600",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 500,
+      "decision": "reject",
+      "positivity": 68,
+      "impact": 15,
+      "audienceRelevance": 45,
+      "judgment": "Avancronica MasterChef promovează o emisiune de concurs, nu o inițiativă culinară ori comunitară distinctă.",
+      "fingerprint": "8ac4187aecd8b8e311629ebcf49b0f48f371401b869d38cc70c5f577546a1e63",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 501,
+      "decision": "reject",
+      "positivity": 0,
+      "impact": 72,
+      "audienceRelevance": 65,
+      "judgment": "Coliziunea trenurilor pragheze a rănit zeci de pasageri și a perturbat circulația, fără redeschidere confirmată.",
+      "fingerprint": "ecfae955cc33b458585717d41f65750ed36e19fe02e8b2114805b32b50e311da",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 502,
+      "decision": "reject",
+      "positivity": 8,
+      "impact": 48,
+      "audienceRelevance": 65,
+      "judgment": "Raportul alternativ despre moartea Epstein dispută concluziile oficiale, fără rezultat de justiție nou stabilit.",
+      "fingerprint": "a6bb0171b131a70b511c99d61ab1741d29633803a84bf41d708b43cca2991e27",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 503,
+      "decision": "reject",
+      "positivity": 8,
+      "impact": 90,
+      "audienceRelevance": 85,
+      "judgment": "Ministrul descrie intensificarea amenințării cu drone asupra navelor și comerțului de lângă Sulina.",
+      "fingerprint": "0ce925c2fdca8f7ea4a2f982d6c9140d7d29d59120cb1b9c1358757145a1fa91",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 504,
+      "decision": "reject",
+      "positivity": 15,
+      "impact": 68,
+      "audienceRelevance": 82,
+      "judgment": "Avertizările ANM pentru ploi și vânt sunt informații de risc pe termen scurt, nu progres ambiental.",
+      "fingerprint": "39402d4d08b0762f5a53c6a88b3256879c8cbcdcd2cc506a83d96d6faf44b817",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 505,
+      "decision": "reject",
+      "positivity": 15,
+      "impact": 88,
+      "audienceRelevance": 78,
+      "judgment": "Prăbușirea arcadei Podului Crimeei și suspendarea traficului sunt consecințe de război, nu mobilitate îmbunătățită.",
+      "fingerprint": "3857a6fa59aa8ec6a13ea97394228cce7ef7a6b9f2dc94e9985b3f8271e88d77",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 506,
+      "decision": "reject",
+      "positivity": 72,
+      "impact": 35,
+      "audienceRelevance": 85,
+      "judgment": "Recomandarea unei gustări proteice este sfat de nutriție generală, fără studiu sau serviciu nou identificat în fragment.",
+      "fingerprint": "bbad014d2f521aa305f54f759ff88d102ab6227955b5051e7ed65bddfff066d0",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 507,
+      "decision": "reject",
+      "positivity": 1,
+      "impact": 90,
+      "audienceRelevance": 65,
+      "judgment": "Planurile atribuite Iranului pentru arme radiologice și chimice rămân relatare de amenințare, nu atentat prevenit confirmat.",
+      "fingerprint": "cb74b39a888ca4161f542aa2416700bf7d358813992ef6c4cdb67dd4e97bfb74",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 508,
+      "decision": "reject",
+      "positivity": 38,
+      "impact": 78,
+      "audienceRelevance": 85,
+      "judgment": "Reacțiile presei maghiare la reforma administrativă discută posibile consecințe etnice, fără soluție adoptată.",
+      "fingerprint": "c2a57d8ce58da5c712f158e446d59d0083549ac07f48437b8b73ba533fa8a145",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 509,
+      "decision": "reject",
+      "positivity": 42,
+      "impact": 90,
+      "audienceRelevance": 75,
+      "judgment": "Declarația Kremlinului înaintea summitului APEC este poziționare diplomatică; întâlnirea nu a produs încă un acord.",
+      "fingerprint": "2d5c41f6059d6cb488bfcbdcd86637114c995b71117997dd35cdc1cb14febecd",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 510,
+      "decision": "reject",
+      "positivity": 72,
+      "impact": 48,
+      "audienceRelevance": 85,
+      "judgment": "Demontarea falsei alarme de blackout corectează dezinformarea, dar nu aduce o infrastructură energetică nouă sau o economie realizată.",
+      "fingerprint": "5d50a0e72fc42bba86bead5a41493a833d826e9625d2bbc768024546e165ba83",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 511,
+      "decision": "reject",
+      "positivity": 74,
+      "impact": 48,
+      "audienceRelevance": 88,
+      "judgment": "Dezmințirea IGPR privind radarele este clarificare utilă, fără atac real remediat sau instrument nou de siguranță.",
+      "fingerprint": "55259e9d918e4a7bb71d48d8aedcc6c7e0bf7967de2c844fe8120a3f8bedb199",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 512,
+      "decision": "reject",
+      "positivity": 58,
+      "impact": 25,
+      "audienceRelevance": 65,
+      "judgment": "Prognoza temperaturilor de marți este informație meteorologică perisabilă, fără relevanță de progres pentru ediția de luni.",
+      "fingerprint": "85801f7f2d0135e26671d951bddd6477b76115cda715f629044dfd6af59918c3",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 513,
+      "decision": "reject",
+      "positivity": 78,
+      "impact": 38,
+      "audienceRelevance": 65,
+      "judgment": "Stația Liziba este cunoscută din 2017; descrierea trenului prin bloc nu reprezintă infrastructură recent inaugurată.",
+      "fingerprint": "e30c2d5f3c8d876a4845d6c2ee25444b3197ca23cae74f02ae16a96e976220e8",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 514,
+      "decision": "candidate",
+      "positivity": 90,
+      "impact": 97,
+      "audienceRelevance": 85,
+      "judgment": "Condițiile îndeplinite de Ucraina pentru tranșa UE pot explica sprijinul efectiv, cu verificarea separată a aprobării și virării.",
+      "fingerprint": "03d82a3868a7013d191a1b40d90559006264ddd30d524e43635438cd477b60fe",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 515,
+      "decision": "candidate",
+      "positivity": 90,
+      "impact": 85,
+      "audienceRelevance": 95,
+      "judgment": "Suspendarea în instanță a proiectului falezei Galați poate proteja 900 de arbori; trebuie spus că oprirea este provizorie, nu salvare definitivă.",
+      "fingerprint": "7e18f1dea3b427a4f2de28b1ccf1d50176113be0f5a3dd6f336e8538c38fa862",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 516,
+      "decision": "reject",
+      "positivity": 5,
+      "impact": 75,
+      "audienceRelevance": 62,
+      "judgment": "Noua avarie bancară americană restrânge accesul clienților și nu este însoțită de restabilirea serviciului.",
+      "fingerprint": "8246fa22faf0ac6aee75232b0787df3f2520cf399f0fafc99bba3874cd491ff6",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 517,
+      "decision": "reject",
+      "positivity": 72,
+      "impact": 38,
+      "audienceRelevance": 85,
+      "judgment": "Explicația fibrelor din pâinea integrală este educație alimentară permanentă, nu cercetare sau schimbare de acces nouă.",
+      "fingerprint": "ac8fb134a77e9b1ff2eb3ecf460d74cb026b58ac6015a6e69ada8b471990f937",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 518,
+      "decision": "reject",
+      "positivity": 22,
+      "impact": 58,
+      "audienceRelevance": 88,
+      "judgment": "Limitarea funcțiilor AI Apple reduce accesul utilizatorilor; fragmentul nu arată un avantaj nou de confidențialitate verificat.",
+      "fingerprint": "dd24278c01a737ba38606f7dd8591258b2f347090cf8d5e44429f323006b8dce",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 519,
+      "decision": "candidate",
+      "positivity": 92,
+      "impact": 94,
+      "audienceRelevance": 97,
+      "judgment": "Decontarea propusă pentru testări genetice în șase cancere ar extinde accesul din 2027, dar normele și tipurile exacte trebuie confirmate.",
+      "fingerprint": "4c3d65c0526e335e276475ed32452f809a744f15f9817171555008da5ceb3594",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 520,
+      "decision": "reject",
+      "positivity": 5,
+      "impact": 35,
+      "audienceRelevance": 45,
+      "judgment": "Spargerea magazinului german de aur și arestarea celor trei români sunt relatare penală, fără recuperare a bijuteriilor confirmată.",
+      "fingerprint": "f695fbef1c2815f688030feac4e88d1dbb5e3ab33ee4f2511ef9cc5998e24dca",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 521,
+      "decision": "reject",
+      "positivity": 82,
+      "impact": 8,
+      "audienceRelevance": 32,
+      "judgment": "Trofeul pisicii la SuperCat Show este spectacol de animale, fără beneficiu de conservare sau comunitate semnificativ.",
+      "fingerprint": "4896ca530c421c42245a3b238f147f01ecf9bf208a17e91703fbf8a976bcbb00",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 522,
+      "decision": "candidate",
+      "positivity": 84,
+      "impact": 32,
+      "audienceRelevance": 82,
+      "judgment": "Recordul celor o sută de nominalizări Beyoncé poate susține o scurtă recomandare muzicală, după verificarea cifrei la Recording Academy.",
+      "fingerprint": "fe893487c18f6dc00c637d828de78c1999d436fc6b9fde065d40febd86fed003",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 523,
+      "decision": "reject",
+      "positivity": 2,
+      "impact": 42,
+      "audienceRelevance": 55,
+      "judgment": "Incendiul fermei Murfatlar a distrus acoperișul locuit de un cuplu; nu sunt prezentate salvări sau reconstrucție.",
+      "fingerprint": "0ed07fa9cff357024b367f46b97431bacfeb726d528a38375f8de531cd330187",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 524,
+      "decision": "reject",
+      "positivity": 91,
+      "impact": 28,
+      "audienceRelevance": 38,
+      "judgment": "Eliberarea rechinului-balenă are final fericit, dar salvarea punctuală din Hawaii are relevanță românească slabă față de intervenții locale.",
+      "fingerprint": "b4c7b96c0ed75044d56a68a0111493c72815ea7118cb171c2a0a69bacf5c6d90",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 525,
+      "decision": "candidate",
+      "positivity": 91,
+      "impact": 35,
+      "audienceRelevance": 75,
+      "judgment": "Salvarea căpriorului din fântâna de opt metri oferă un exemplu local concret de grijă pentru fauna sălbatică.",
+      "fingerprint": "9c7f74a9ea72d2ce2a712db9ecae9714f0503c5e5406ab64eec8f004e87a5c8c",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 526,
+      "decision": "reject",
+      "positivity": 42,
+      "impact": 85,
+      "audienceRelevance": 85,
+      "judgment": "Ridicarea F-16 după detectarea dronelor este alertă de securitate, fără reducere structurală a riscului relatată.",
+      "fingerprint": "17af8108b11fb0c207160d687ccf45938b0a136a9b00a106eec7ae6c6d899eab",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 527,
+      "decision": "reject",
+      "positivity": 35,
+      "impact": 62,
+      "audienceRelevance": 78,
+      "judgment": "Acoperirea fraudei din fondurile Universității București repară contabil paguba cu bani proprii, nu confirmă recuperarea de la responsabili.",
+      "fingerprint": "635466fbe8929220834751e554aec024ff241edb7f570632d288c98e0947466e",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 528,
+      "decision": "reject",
+      "positivity": 62,
+      "impact": 38,
+      "audienceRelevance": 72,
+      "judgment": "Amenda și confiscarea mașinii sancționează abandonarea deșeurilor lângă pădure, fără curățare ori colectare alternativă documentate.",
+      "fingerprint": "88bdf51982bf76b299e23d13be3ff3350d3b7f96c9d44531548026d47a8b1ea2",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 529,
+      "decision": "reject",
+      "positivity": 8,
+      "impact": 82,
+      "audienceRelevance": 78,
+      "judgment": "Eșuarea cargoului abandonat lângă Vadu reprezintă risc de navigație și mediu, nu o operațiune de recuperare încheiată.",
+      "fingerprint": "b06d0a0fa3991125c3252e910f07effc33b782d61bb563a3522df72dfe875dc2",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 530,
+      "decision": "reject",
+      "positivity": 10,
+      "impact": 78,
+      "audienceRelevance": 65,
+      "judgment": "Pierderile marilor companii aeriene după anularea a 18.500 de zboruri sunt consecințe ale haosului tehnic.",
+      "fingerprint": "ac4be417e3dad9b38dcc9aa6fea6738daabeb3a2019b857778d9760651310895",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 531,
+      "decision": "reject",
+      "positivity": 78,
+      "impact": 22,
+      "audienceRelevance": 65,
+      "judgment": "Filmarea urșilor din Broșteni surprinde comportament natural, fără descoperire ori măsură nouă de conservare.",
+      "fingerprint": "32107ead7379f66227c0ac52b088c4a294c046963484714b77a5facd2f074c1a",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 532,
+      "decision": "reject",
+      "positivity": 8,
+      "impact": 85,
+      "audienceRelevance": 96,
+      "judgment": "Respingerea legii salariale din cauza erorilor menține blocajul transparenței, în loc să creeze drepturi noi angajaților.",
+      "fingerprint": "715a0d13e2516e2a996d20ca3ea7f4732c95adb183a80ced28efe5b84cf98057",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 533,
+      "decision": "reject",
+      "positivity": 58,
+      "impact": 28,
+      "audienceRelevance": 62,
+      "judgment": "Anunțul lotului pentru Bosnia este avancronică sportivă; rezultatul și performanța naționalei rămân necunoscute.",
+      "fingerprint": "d51ddcb0926c6af47f377dd13b79c2358c4755ae510e5d6d3194cd981ee872ff",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    },
+    {
+      "index": 534,
+      "decision": "reject",
+      "positivity": 8,
+      "impact": 82,
+      "audienceRelevance": 62,
+      "judgment": "Interceptarea avioanelor presupus rusești de Japonia și Coreea de Sud indică tensiuni regionale, nu dezescaladare.",
+      "fingerprint": "cc6445e4baba98a00defc7b4008401a183ddd942c6fdaf562cc78513a3d050a9",
+      "assessedAt": "2026-11-21T06:22:43.766Z"
+    }
+  ]
+}

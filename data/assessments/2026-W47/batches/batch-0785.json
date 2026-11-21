@@ -1,0 +1,504 @@
+{
+  "assessments": [
+    {
+      "index": 785,
+      "decision": "reject",
+      "positivity": 12,
+      "impact": 85,
+      "audienceRelevance": 88,
+      "judgment": "Sindicatele avertizează că metodologia proiectată va supraaglomera clasele în 2027–2028, fără îmbunătățire a condițiilor școlare.",
+      "fingerprint": "e020af89d95b39f691c6747e34df93c47a7ced8b44396e2b5c666fc9d295bbb0",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 786,
+      "decision": "candidate",
+      "positivity": 94,
+      "impact": 75,
+      "audienceRelevance": 96,
+      "judgment": "Vizitarea sanctuarului Parța fără programare, din 21 noiembrie, este acces cultural nou concret; reconstrucția de acum trei ani nu trebuie confundată cu noutatea.",
+      "fingerprint": "bd3c43042a8e09b24f4861ebbe5b8fa0486fdffa5e934e0d33c22a92a387255e",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 787,
+      "decision": "reject",
+      "positivity": 52,
+      "impact": 52,
+      "audienceRelevance": 72,
+      "judgment": "Eventuala interdicție a ochelarilor smart în parlamentul britanic răspunde preocupărilor de securitate, fără regulă clar adoptată în fragment.",
+      "fingerprint": "a8943cab3e4c9187ece04f62a0f4374ad4580ffe9f74893a7061b116aa7a41fd",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 788,
+      "decision": "reject",
+      "positivity": 2,
+      "impact": 92,
+      "audienceRelevance": 95,
+      "judgment": "Erorile modelelor AI care confundă civilii cu ținte militare sunt risc umanitar major, nu tehnologie mai sigură.",
+      "fingerprint": "aafddd2a64efb8641e7b8e9fe75b9d5020a1921b998b4507506984fd69a5bcb4",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 789,
+      "decision": "candidate",
+      "positivity": 85,
+      "impact": 85,
+      "audienceRelevance": 95,
+      "judgment": "Repornirea CET Vest îmbunătățește căldura bucureștenilor, dar evoluția la capetele rețelei în următoarele 24 de ore trebuie confirmată ulterior.",
+      "fingerprint": "269782ba22d1c6572b9a442d10fbd74f0d048fb7fed3872b745d4ef7854295f1",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 790,
+      "decision": "reject",
+      "positivity": 42,
+      "impact": 32,
+      "audienceRelevance": 58,
+      "judgment": "Lista posibililor adversari la baraj explică un calendar după eșec, fără victorie ori menținere deja obținută.",
+      "fingerprint": "87a988bdf3302ecaecbc17167b9d5f1087ac818c4740817209274ac6ac66247a",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 791,
+      "decision": "reject",
+      "positivity": 72,
+      "impact": 15,
+      "audienceRelevance": 55,
+      "judgment": "Obiceiurile împodobirii bradului sunt explicație sezonieră, fără inițiativă culturală sau ecologică nouă.",
+      "fingerprint": "4264284089bb72b4d43343a440e79e57db13aa3b6e6510f10cea1b23bb4c2152",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 792,
+      "decision": "reject",
+      "positivity": 65,
+      "impact": 78,
+      "audienceRelevance": 85,
+      "judgment": "Reglementarea italiană pentru minori este încă pregătită; eficiența și aplicarea restricției nu sunt stabilite.",
+      "fingerprint": "92c4ffbf70f126fc58059d31b971600301ba32149f491bdf15c9c1365385e272",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 793,
+      "decision": "reject",
+      "positivity": 62,
+      "impact": 45,
+      "audienceRelevance": 90,
+      "judgment": "Ghidul despre mucegai este sfat casnic permanent, iar eliminarea definitivă promisă necesită rezolvarea cauzelor, neprecizată în extras.",
+      "fingerprint": "234a5f6b4d0c17f88d8bbe620798e876472c068b1537700a7042c473e50ad14c",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 794,
+      "decision": "reject",
+      "positivity": 35,
+      "impact": 62,
+      "audienceRelevance": 82,
+      "judgment": "Solicitarea ANOSR de scutire de taxa turistică nu constituie încă exceptare pentru studenții din locuințe private.",
+      "fingerprint": "03edcc70b7c60faaafbb453092d30e200c084baeb120cd2f98238f24906231be",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 795,
+      "decision": "reject",
+      "positivity": 22,
+      "impact": 62,
+      "audienceRelevance": 75,
+      "judgment": "Acuzația lui Mureșan privind controlul PSD în guvern este conflict de partid, fără rezultat administrativ favorabil.",
+      "fingerprint": "852fee1c1b1c08fad3d89b4beafd77a554d4f2267e0b9043160af189dc42078f",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 796,
+      "decision": "reject",
+      "positivity": 68,
+      "impact": 58,
+      "audienceRelevance": 88,
+      "judgment": "Procedura PADROM reamintește asigurarea după seism, dar nu indică despăgubiri noi acordate ori acoperire extinsă.",
+      "fingerprint": "360c78eefa96c57fcc63f2bdfe42066f144653b3abaf0602ef96aba7855d785f",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 797,
+      "decision": "reject",
+      "positivity": 88,
+      "impact": 8,
+      "audienceRelevance": 25,
+      "judgment": "Nașterea celui de-al treilea copil al actriței este bucurie familială privată, fără relevanță publică semnificativă.",
+      "fingerprint": "dd715dcb523ee15ce0fcff3c2d66731d3fb7dd0a06e50208aa3b99e993036e0b",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 798,
+      "decision": "candidate",
+      "positivity": 78,
+      "impact": 82,
+      "audienceRelevance": 95,
+      "judgment": "Plafonul cash de 50.000 lei a trecut de Camera decizională; categoriile de tranzacții și intrarea în vigoare trebuie citite în lege.",
+      "fingerprint": "18e7be29924729bf108bd8b580223ac93118051e558c4a409d4bc3c1ae4ffcf7",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 799,
+      "decision": "reject",
+      "positivity": 5,
+      "impact": 95,
+      "audienceRelevance": 98,
+      "judgment": "Inflația anuală de 7%, cea mai mare din UE, arată scumpiri persistente în România, nu refacerea puterii de cumpărare.",
+      "fingerprint": "66aebb8bd458174c451474c65ff468a38fe2aed5a4a486681d714dec83204caf",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 800,
+      "decision": "reject",
+      "positivity": 65,
+      "impact": 12,
+      "audienceRelevance": 48,
+      "judgment": "Replica auto GTA de 1,2 milioane euro este obiect comercial de lux, fără progres de mobilitate accesibilă.",
+      "fingerprint": "4977b57e8406c85762b03e0275f8eb577e4c6a3823c3fcf5f15c0c942d6c483d",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 801,
+      "decision": "reject",
+      "positivity": 22,
+      "impact": 62,
+      "audienceRelevance": 75,
+      "judgment": "Critica Oanei Țoiu privind atribuțiile lui Neacșu continuă disputa de putere, fără soluție publică nouă.",
+      "fingerprint": "fef1e147924d021a1c661b39005928a321e0a785202a5bfb184169a3384c14f8",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 802,
+      "decision": "reject",
+      "positivity": 62,
+      "impact": 18,
+      "audienceRelevance": 65,
+      "judgment": "Recomandarea publicitară pentru săli de conferință este ofertă comercială, nu infrastructură comunitară nouă.",
+      "fingerprint": "9f1630c3df8f7ee402b47bf407bb92cd4c7884af33d433bcf08ed7e88ce2c6a9",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 803,
+      "decision": "reject",
+      "positivity": 68,
+      "impact": 12,
+      "audienceRelevance": 45,
+      "judgment": "Publicitatea despre florile învățătoarei în prima zi de școală este sfat de cumpărare fără noutate de interes general.",
+      "fingerprint": "09f29dcf3bd6e5cfa3867eb411fcfd842c4341e3b7f22d3ebfb27e10ac85238d",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 804,
+      "decision": "reject",
+      "positivity": 72,
+      "impact": 18,
+      "audienceRelevance": 65,
+      "judgment": "Avantajele nunții în extrasezon la WOW Hambar sunt promovare de locație, fără schimbare publică ori comunitară.",
+      "fingerprint": "396bef8672df0e69b4cb1111aadc451f7f4fe33a73c8cdffd34b493c0b2a3967",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 805,
+      "decision": "reject",
+      "positivity": 2,
+      "impact": 78,
+      "audienceRelevance": 95,
+      "judgment": "Blocarea conturilor a peste o sută de victime pentru escrocherii indică prejudicii digitale, fără recuperare confirmată a accesului.",
+      "fingerprint": "3004cd19ed580353dbe4668110bdb04896c954c025ee6756c6985c4b8e10e282",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 806,
+      "decision": "reject",
+      "positivity": 55,
+      "impact": 32,
+      "audienceRelevance": 75,
+      "judgment": "Interviul publicitar Alevia descrie procesul suplimentelor, fără dovezi clinice independente despre un beneficiu nou.",
+      "fingerprint": "3b1fba24ef314a0241711920f5fe83eb28ef49cd2f7ac08f890a684ee509f94f",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 807,
+      "decision": "reject",
+      "positivity": 32,
+      "impact": 75,
+      "audienceRelevance": 72,
+      "judgment": "Asigurările oficialului american că defecțiunile nu sunt atacuri nu înseamnă că serviciile afectate au fost îmbunătățite.",
+      "fingerprint": "daad877bf659a45f03110457478a46c4fcb89f66e121a8ce5e612ccf44b3e460",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 808,
+      "decision": "reject",
+      "positivity": 68,
+      "impact": 58,
+      "audienceRelevance": 78,
+      "judgment": "Condamnarea instructorului pentru agresarea partenerei sancționează o faptă gravă, dar nu introduce protecții sau servicii noi pentru victime.",
+      "fingerprint": "7a37f79a535daa6d200dce9602f14b635dc517787d4304c635139fe545819bc1",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 809,
+      "decision": "reject",
+      "positivity": 48,
+      "impact": 42,
+      "audienceRelevance": 55,
+      "judgment": "Limitarea incendiului din arest evită extinderea focului, însă relatarea rămâne un incident de siguranță provocat de un deținut.",
+      "fingerprint": "b45ceeaddf26e6c28484785d63a28ca0c3b2ec3121b25f2c87c1cce5571902b8",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 810,
+      "decision": "reject",
+      "positivity": 12,
+      "impact": 75,
+      "audienceRelevance": 85,
+      "judgment": "Codurile de viituri pentru vest și alte județe sunt alerte de pericol, nu lucrări de prevenire finalizate.",
+      "fingerprint": "48cf392f8905811f3639e84d32b92d2bea05d1233ea8724c1d3b7aad565d766e",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 811,
+      "decision": "reject",
+      "positivity": 58,
+      "impact": 55,
+      "audienceRelevance": 82,
+      "judgment": "Condamnarea hackerului phishing este un rezultat judiciar individual, fără bani recuperați ori măsuri tehnice noi precizate.",
+      "fingerprint": "5c842680c5398fae0fded28ea32f42fa0d4142648d397fb50f02bb1bf31c97c2",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 812,
+      "decision": "reject",
+      "positivity": 45,
+      "impact": 82,
+      "audienceRelevance": 85,
+      "judgment": "Extinderea coordonării lui Neacșu la ministere schimbă structura guvernamentală, dar eficiența acesteia nu este demonstrată.",
+      "fingerprint": "01cb5ffd3aa6c5ef2b38f6162beeb33313af8d9a3328efe32328002e0e37a827",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 813,
+      "decision": "reject",
+      "positivity": 42,
+      "impact": 78,
+      "audienceRelevance": 88,
+      "judgment": "Explicația seismului moderat resimțit puternic este informare tehnică după eveniment, nu consolidare sau avertizare îmbunătățită.",
+      "fingerprint": "dfcaf8e16d5ad05173006ea0b37ab0d0bd8eaf50c4ef348575405707b7475c3f",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 814,
+      "decision": "reject",
+      "positivity": 62,
+      "impact": 55,
+      "audienceRelevance": 48,
+      "judgment": "Întâmpinarea personală a lui Trump de către Xi este protocol de summit, fără acord negociat ori reducerea tensiunilor.",
+      "fingerprint": "bf0ac7cde50992360441c1ff287b6052fcd55de87c7577d22f4395edec21222e",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 815,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 62,
+      "audienceRelevance": 72,
+      "judgment": "Trimiterea în judecată pentru identități false documentează o rețea infracțională, nu integrare legitimă sau protecție nouă a refugiaților.",
+      "fingerprint": "0c9ffd68ad09ebc0a52beb6bc9e1f99dacb57f253915b7b2e1d7d0e66ad32676",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 816,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 85,
+      "audienceRelevance": 88,
+      "judgment": "Scurgerea de documente Deutsche Bank dezvăluie deficiențe și secrete, fără despăgubiri ori corecții instituționale deja obținute.",
+      "fingerprint": "c1a26c8a5aa90c944815a6a43ae0cb980e5539d84f0cb9d3a9bf51d582e82976",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 817,
+      "decision": "reject",
+      "positivity": 52,
+      "impact": 75,
+      "audienceRelevance": 95,
+      "judgment": "Cele 130 de locuințe despăgubite sunt bilanț pe 2025, în timp ce pregătirea redusă a familiilor rămâne problema actuală.",
+      "fingerprint": "c4844f9f53b5e91960c178f59195bcd8fabdd3a3f5f6fb661c76b9df9b2f3564",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 818,
+      "decision": "candidate",
+      "positivity": 88,
+      "impact": 82,
+      "audienceRelevance": 98,
+      "judgment": "Renunțarea la amenzi pentru documente uitate ar simplifica verificările rutiere; trebuie verificat dacă este lege aplicabilă sau doar proiect.",
+      "fingerprint": "4cc80a40cdff4fb807b36ddb671a9b0f771e4a9b9509cb462e68aa2b7d0f692d",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 819,
+      "decision": "reject",
+      "positivity": 58,
+      "impact": 92,
+      "audienceRelevance": 88,
+      "judgment": "Discuția ONU despre eventuala deschidere a negocierilor pentru arme autonome nu este încă tratat sau interdicție adoptată.",
+      "fingerprint": "3ba5f0f65267f11eaa4097c6d51dd015aa5f6eb9ca8f57498fa2fb97c477c986",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 820,
+      "decision": "reject",
+      "positivity": 85,
+      "impact": 92,
+      "audienceRelevance": 94,
+      "judgment": "Convergența PIB și bilanțul net UE sunt progres retrospectiv valoros, dar discursul aniversar nu prezintă o schimbare nouă a săptămânii.",
+      "fingerprint": "20863c1508e87819240d17fdccbf4db70a6e214e826cdb243ebfd570c40b2edd",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 821,
+      "decision": "reject",
+      "positivity": 38,
+      "impact": 35,
+      "audienceRelevance": 55,
+      "judgment": "Depistarea nisipului luat din Sardinia sancționează un furt natural punctual, fără refacere de habitat sau conservare nouă.",
+      "fingerprint": "bc7bd159208fff0d0b84adf1ab3280a399fa6ae5e7d4e2d99172adf8532242f9",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 822,
+      "decision": "candidate",
+      "positivity": 82,
+      "impact": 85,
+      "audienceRelevance": 92,
+      "judgment": "Vulnerabilitatea Java găsită prin AI ar putea avea valoare pentru dezvoltatori, dacă identificatorul tehnic și patchul sunt confirmate.",
+      "fingerprint": "bc7a4d93ce5a2655226a78a5ff5d3146cbd78080000011e37281f748231bd77f",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 823,
+      "decision": "reject",
+      "positivity": 0,
+      "impact": 65,
+      "audienceRelevance": 85,
+      "judgment": "Moartea tinerei după contraceptive este caz de reacție adversă, fără intervenție medicală nouă ori analiză contextuală suficientă.",
+      "fingerprint": "06429188f6516782fbe349e029167a28236b67bef14e5f6ee15994cba73342a6",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 824,
+      "decision": "reject",
+      "positivity": 0,
+      "impact": 35,
+      "audienceRelevance": 35,
+      "judgment": "Atacul câinelui asupra polițistului din Los Angeles este incident violent străin, fără rezultat favorabil pentru comunitate.",
+      "fingerprint": "a87fedc769fec1015c9c6e128422a29d97e7ea9803db7a99c66f8aa978ae7bd8",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 825,
+      "decision": "reject",
+      "positivity": 15,
+      "impact": 75,
+      "audienceRelevance": 72,
+      "judgment": "Replica ambasadorului rus după incursiunile din Moldova escaladează disputa diplomatică, nu soluționează amenințarea.",
+      "fingerprint": "854bde171f28caaa8db22227fb0545ebf93e7319a592888d8b9b92329d4c6c56",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 826,
+      "decision": "reject",
+      "positivity": 0,
+      "impact": 62,
+      "audienceRelevance": 42,
+      "judgment": "Moartea celor 19 persoane în avionul militar rus este tragedie, fără salvare sau prevenție nouă relatată.",
+      "fingerprint": "8ca34e31e43e09d6fe63ad69d85dcec1ae4ba4179e5e22b617284f69c0b0e0c5",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 827,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 88,
+      "audienceRelevance": 78,
+      "judgment": "Bottleneckul francez la producția Patriot arată o limitare industrială și stocuri reduse, nu capacitate nouă livrată.",
+      "fingerprint": "e93e6f24c68647b8901b4c4444e5aec4af936ecba01607a2d10b117a7b2caf1b",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 828,
+      "decision": "reject",
+      "positivity": 62,
+      "impact": 25,
+      "audienceRelevance": 62,
+      "judgment": "Promisiunea rejuvenării gâtului prin operație este prezentare de procedură estetică, fără studiu comparativ nou ori acces medical public.",
+      "fingerprint": "47052d0ecc84b94d2f16e10611325fc3bcaa803074fcc0105d1a9cb3d51348e7",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 829,
+      "decision": "reject",
+      "positivity": 12,
+      "impact": 92,
+      "audienceRelevance": 96,
+      "judgment": "Meta-studiul ONU–OMS descrie amenințarea perturbatorilor endocrini, fără reglementare protectoare nouă implementată.",
+      "fingerprint": "d037232b7ab15e98ca47bcfb1135ceef14658e34d0ae02ed284620b873f50464",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 830,
+      "decision": "reject",
+      "positivity": 22,
+      "impact": 82,
+      "audienceRelevance": 68,
+      "judgment": "Înregistrarea rachetei spre podul Kerci documentează un atac militar, nu schimbare favorabilă a vieții civile.",
+      "fingerprint": "916a20ad9c94e9e5f59dfb5d89b8fced83c3f50135ad8f1491607967ca4ec10a",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 831,
+      "decision": "reject",
+      "positivity": 22,
+      "impact": 78,
+      "audienceRelevance": 88,
+      "judgment": "Depunerea moțiunii contra lui Rogobete este acțiune parlamentară de opoziție, fără rezolvarea lipsei medicamentelor.",
+      "fingerprint": "dc3bcaab422f796624c8b6dfc6ca2f7bf8dfe145a77fb94d62778a6cb3bad48e",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 832,
+      "decision": "reject",
+      "positivity": 48,
+      "impact": 78,
+      "audienceRelevance": 55,
+      "judgment": "Acordul cu Filipine anunțat de Trump este contrazis de Manila, deci nu poate fi tratat ca rezultat comercial confirmat.",
+      "fingerprint": "c7b6e59c565cbfa14ed1461a108db8ff8f72fb2202c2a14172460ea78b833034",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 833,
+      "decision": "reject",
+      "positivity": 25,
+      "impact": 55,
+      "audienceRelevance": 65,
+      "judgment": "Seismul bulgar de 3,7 după Vrancea este episod natural, fără proiect de reziliență sau beneficiu concret.",
+      "fingerprint": "053c8e7eee547435986a4cee837b84ada38426a7e99e32cf7904e9110ee3c451",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    },
+    {
+      "index": 834,
+      "decision": "reject",
+      "positivity": 75,
+      "impact": 18,
+      "audienceRelevance": 58,
+      "judgment": "Rețetele de chiftele de post sunt conținut culinar util, dar nu o noutate de comunitate sau tranziție alimentară.",
+      "fingerprint": "d4918fc19857fb334ebc7ddc623959d520e8dc0b57cf4920e6a0da6009934594",
+      "assessedAt": "2026-11-21T06:30:28.879Z"
+    }
+  ]
+}

@@ -1,0 +1,504 @@
+{
+  "assessments": [
+    {
+      "index": 935,
+      "decision": "candidate",
+      "positivity": 93,
+      "impact": 90,
+      "audienceRelevance": 96,
+      "judgment": "Liniile Erasmus+ pentru mentorat și competențe oferă oportunități concrete organizațiilor educaționale; sumele europene nu sunt alocări exclusive României.",
+      "fingerprint": "233d35c3d9bba655fdc4143855c26aff3c1dee9cd65159068d93a8fbd312d2ff",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 936,
+      "decision": "reject",
+      "positivity": 78,
+      "impact": 42,
+      "audienceRelevance": 65,
+      "judgment": "Clasamentele de sustenabilitate și premiul universitar măsoară reputație instituțională, fără proiect ambiental nou concret descris.",
+      "fingerprint": "52fd5ada2195782b4fe15b894eab9b899bb543b2a9235973aa962d98ffd63723",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 937,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 68,
+      "audienceRelevance": 78,
+      "judgment": "Lipsa candidaților la conducerea școlilor din cauza salariului arată o problemă de recrutare, nu atractivitate profesională îmbunătățită.",
+      "fingerprint": "bbab71f00e661985be3972ea1c0b59bf5b0df9341ddbca06af43db77a2757271",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 938,
+      "decision": "reject",
+      "positivity": 78,
+      "impact": 78,
+      "audienceRelevance": 78,
+      "judgment": "Plata burselor pentru septembrie și octombrie este executarea unui drept existent, fără cuantum majorat ori eligibilitate extinsă.",
+      "fingerprint": "362fc59287bd76b6a16feb81609680b77e4ec35fded26ced02b311f9e978b93d",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 939,
+      "decision": "reject",
+      "positivity": 68,
+      "impact": 55,
+      "audienceRelevance": 78,
+      "judgment": "Integrarea a 4.500 de camere bancare într-un sistem AI este proiect comercial de supraveghere, fără beneficii și garanții publice explicate.",
+      "fingerprint": "ab6febaca489c558f7a67ffa91a5e0ea88e2b812f2465440a89b7f8a84374498",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 940,
+      "decision": "candidate",
+      "positivity": 78,
+      "impact": 68,
+      "audienceRelevance": 96,
+      "judgment": "Platforma The Mind oferă evaluări și recomandări pentru angajați; accesul prin firme și ce văd angajatorii trebuie clarificate înainte de recomandare.",
+      "fingerprint": "964ab95d8045e5b4d6c648f4f2ea529772875aa27da71a0958ae60468009895c",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 941,
+      "decision": "reject",
+      "positivity": 72,
+      "impact": 25,
+      "audienceRelevance": 62,
+      "judgment": "Precomenzile Huawei Osta în China sunt lansare de telefon, fără disponibilitate românească sau avantaj social distinctiv.",
+      "fingerprint": "453ddd01fa5b3bd60155b8808e5328fe4bf7d5b6c38cfc924cfa1acc2e6528f9",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 942,
+      "decision": "candidate",
+      "positivity": 80,
+      "impact": 45,
+      "audienceRelevance": 88,
+      "judgment": "eYou are utilizatori reali și o distincție europeană, dar eticheta Trusted trebuie verificată înainte de a garanta siguranța rețelei.",
+      "fingerprint": "34cd967c7bb0bb2a35d421f6006fec86d005779e2bd3c76682e7e2efa4f20f36",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 943,
+      "decision": "reject",
+      "positivity": 42,
+      "impact": 48,
+      "audienceRelevance": 85,
+      "judgment": "Toleranța antreprenorilor la întreruperi este sondaj de conferință, nu îmbunătățire a continuității serviciilor online.",
+      "fingerprint": "5570b361513a3d37af53b16309e1633e91e84c2eaccbaab546c8d5057ec8b81f",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 944,
+      "decision": "reject",
+      "positivity": 68,
+      "impact": 55,
+      "audienceRelevance": 92,
+      "judgment": "Discuția PROW despre AI în administrație este reflecție asupra prototipurilor, fără serviciu public nou pus în funcțiune.",
+      "fingerprint": "65421307d4ee03054525e630c4585296cce39775830c2caf57b063b850d0a563",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 945,
+      "decision": "candidate",
+      "positivity": 83,
+      "impact": 35,
+      "audienceRelevance": 90,
+      "judgment": "Nominalizările GTA VI pot oferi o notă culturală, dar eligibilitatea înainte de lansare și lista oficială a premiilor necesită verificare.",
+      "fingerprint": "2db430ac118a2ef39d693254bcfdaf7948369b4f58d8a9ca2b79746e049640ac",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 946,
+      "decision": "candidate",
+      "positivity": 89,
+      "impact": 78,
+      "audienceRelevance": 98,
+      "judgment": "Vânzarea pieselor originale iPhone Duo poate prelungi viața dispozitivelor și ajuta reparatorii independenți; prețurile și accesul în România sunt esențiale.",
+      "fingerprint": "ded7cff3fc0fa83cf595507507bcd3989c9768b8aaf0ffd71a78811c78452919",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 947,
+      "decision": "reject",
+      "positivity": 68,
+      "impact": 45,
+      "audienceRelevance": 88,
+      "judgment": "Sfaturile despre economisirea timpului cu AI sunt recomandări antreprenoriale generale, fără instrument nou sau rezultate independente precizate.",
+      "fingerprint": "1d219cbab29459494df8229718a733b8b5ea5f4f47108f25061b87a9db2a4e30",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 948,
+      "decision": "candidate",
+      "positivity": 84,
+      "impact": 65,
+      "audienceRelevance": 85,
+      "judgment": "Noua unitate OxyHelp de 1,5 milioane poate dubla producția locală, dar camerele de wellness nu trebuie prezentate ca tratament clinic validat.",
+      "fingerprint": "4c0c9c4630b2bf1e92c8e8d6aafe7b6df528d66de89471f2613dd9e6a8a415ef",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 949,
+      "decision": "reject",
+      "positivity": 78,
+      "impact": 62,
+      "audienceRelevance": 90,
+      "judgment": "Intenția tinerilor de a studia și lucra în România este atitudine pozitivă din sondaj, nu angajare ori retenție deja realizată.",
+      "fingerprint": "1d96a9e192a5f7963a6835c4955241db8f8236c6ed8847995be219a23d70bc27",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 950,
+      "decision": "reject",
+      "positivity": 85,
+      "impact": 32,
+      "audienceRelevance": 62,
+      "judgment": "Gala anuală IMM România premiază rezultate de afaceri, fără proiect nou cu beneficiu cititorilor identificat în extras.",
+      "fingerprint": "f59caecd4a22bf9d4241c9ac9922f17e60ef65bb2deb59a3bc3a1a7a07428cae",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 951,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 62,
+      "audienceRelevance": 78,
+      "judgment": "Schema financiară de 26 milioane identificată de ANAF este constatare de fraudă, fără recuperarea sumelor demonstrată.",
+      "fingerprint": "8cb91f64226abb8b66a9d3fb84e33412e1fabd9f89b2bece5d2a28d6ec05da30",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 952,
+      "decision": "reject",
+      "positivity": 62,
+      "impact": 72,
+      "audienceRelevance": 85,
+      "judgment": "Comunicatul despre întâlnirea Olteniei la Bruxelles discută reconversia, dar nu confirmă un apel deschis sau bani noi contractați.",
+      "fingerprint": "b66ef436195b0c43453f5711428325093472843f67b468b6642022ed20226d75",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 953,
+      "decision": "reject",
+      "positivity": 72,
+      "impact": 42,
+      "audienceRelevance": 78,
+      "judgment": "Mulțumirile ministrului pentru plata taxelor recunosc efortul IMM-urilor, fără facilitate fiscală ori finanțare nouă.",
+      "fingerprint": "43476fb050a06640e815a6f2a44d4b8a97d002d33b3c010e8ee52efd3eaa7f53",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 954,
+      "decision": "reject",
+      "positivity": 58,
+      "impact": 72,
+      "audienceRelevance": 95,
+      "judgment": "SPV-ul Inspecției Muncii ar digitaliza documentele, dar este proiect de OUG care adaugă și obligații de înrolare.",
+      "fingerprint": "2682e4429153962d756215a882a57dc0bc7069166fdbd91cf300cf98bc6a1064",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 955,
+      "decision": "reject",
+      "positivity": 58,
+      "impact": 65,
+      "audienceRelevance": 95,
+      "judgment": "Sondajul Genpact arată adoptare AI și puține rezultate financiare corelate; nu dovedește câștig general de productivitate.",
+      "fingerprint": "b062a201c89a3615819cef758f47e0601fcb7c67955d05aeb82d5bd13f0d9142",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 956,
+      "decision": "candidate",
+      "positivity": 78,
+      "impact": 58,
+      "audienceRelevance": 82,
+      "judgment": "Alianța logistică în 21 de țări poate simplifica livrările de mobilier, dar efectul asupra costurilor și calității pentru clienți nu este precizat.",
+      "fingerprint": "97ce4f0b1b40986452f41ca28e03190198f5951dc97c8a6a00d0982c85b567bd",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 957,
+      "decision": "candidate",
+      "positivity": 80,
+      "impact": 62,
+      "audienceRelevance": 92,
+      "judgment": "Livrările eAWB în afara UE extind un serviciu utilizabil de firme și persoane fizice; asistența vamală AI nu elimină taxele.",
+      "fingerprint": "e87b33662c181db12494cd886a3b9cb7f3b4fd399e617600a0654818f1db366e",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 958,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 72,
+      "audienceRelevance": 75,
+      "judgment": "Acuzația de spionaj împotriva angajaților din Silicon Valley descrie supraveghere ostilă, nu protecție nouă ori proces încheiat.",
+      "fingerprint": "9f0d8f4d58f0b5321f6a5e934eb7282b4001eb6ea8a920032b73ec300daeed8d",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 959,
+      "decision": "reject",
+      "positivity": 45,
+      "impact": 12,
+      "audienceRelevance": 28,
+      "judgment": "Profilul ginerelui lui Putin cu numele Zelensky este curiozitate de familie și investigație, fără progres public relevant.",
+      "fingerprint": "56222414fe0b31ce1d0f99a717b55723bbe517ec585310bbf28dffaa2c18e43c",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 960,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 55,
+      "audienceRelevance": 62,
+      "judgment": "Arestarea influencerului Slobozhenko privește acuzații financiare, fără prejudiciu recuperat sau condamnare definitivă.",
+      "fingerprint": "b5f559e1a0400d6dd680c6503f39e93e593276877159208a49273e113aabc79d",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 961,
+      "decision": "reject",
+      "positivity": 2,
+      "impact": 55,
+      "audienceRelevance": 65,
+      "judgment": "Focarul gastrointestinal de pe Caribbean Princess afectează 148 de persoane și nu include vindecarea sau controlul încheiat al infecției.",
+      "fingerprint": "76d1c9253b1d8a837a0e6bed775463fd3a8bd181eb674ddbe1b6fc2b5df4cadc",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 962,
+      "decision": "reject",
+      "positivity": 12,
+      "impact": 58,
+      "audienceRelevance": 58,
+      "judgment": "Disputa Italia–Ucraina privind lista Myrotvoreț este conflict diplomatic, fără repararea drepturilor ori acord nou.",
+      "fingerprint": "b9ddcb3e06ba659b37921686daf0828feb23909833ae507a94a7078e32fa1794",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 963,
+      "decision": "reject",
+      "positivity": 28,
+      "impact": 2,
+      "audienceRelevance": 8,
+      "judgment": "Predicțiile zodiacale despre relaxare și schimbări de look nu reprezintă informații de actualitate verificabile.",
+      "fingerprint": "f5c5d5397eb91675cb25bc7d4981960649f571ba2ff530e08d694f7798043453",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 964,
+      "decision": "reject",
+      "positivity": 38,
+      "impact": 55,
+      "audienceRelevance": 78,
+      "judgment": "Un muncitor a fost salvat după surpare, însă al doilea este încă căutat; nu este o operațiune încheiată cu ambii în siguranță.",
+      "fingerprint": "499664f59925867470dac9eece2b5d42b5ad1768bf22fa112ed826e2a8ea3438",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 965,
+      "decision": "reject",
+      "positivity": 38,
+      "impact": 62,
+      "audienceRelevance": 75,
+      "judgment": "Poziția lui Tomac despre majoritățile PSD–AUR este avertisment de politică externă, fără rezultat favorabil adoptat.",
+      "fingerprint": "bb10fe514fa929ce7951c34fcb84d161d7002e66b11db5e1ccb08619aee0acfa",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 966,
+      "decision": "reject",
+      "positivity": 2,
+      "impact": 55,
+      "audienceRelevance": 58,
+      "judgment": "Deschiderea anchetei Iglesias documentează acuzații grave de abuz, fără justiție stabilită sau inițiativă nouă pentru victime.",
+      "fingerprint": "54ccdaf5da7691266511e90aea0779325f70b3d6bb2ac3db02669a50ac6439ec",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 967,
+      "decision": "reject",
+      "positivity": 48,
+      "impact": 35,
+      "audienceRelevance": 78,
+      "judgment": "Interpretarea copertei Economist este exercițiu de prognoză și simboluri, nu set de evenimente viitoare deja cunoscute.",
+      "fingerprint": "656060195ee39bd1660c3be6ea0c63d70498e0bbfafea7df41c8e9703b521b6d",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 968,
+      "decision": "candidate",
+      "positivity": 95,
+      "impact": 92,
+      "audienceRelevance": 98,
+      "judgment": "Cele cinci contracte pentru Petrila finanțează salvarea și reutilizarea patrimoniului minier; complexul cultural și tehnologic nu este încă amenajat.",
+      "fingerprint": "2f5df02388cdb8a94f35bc0b84e2470a457de61b894d9ea134e835e585378484",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 969,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 78,
+      "audienceRelevance": 95,
+      "judgment": "Avertismentul Selly despre fiscalitatea evenimentelor descrie presiunea pe bilete și industrie, fără reducere de taxe obținută.",
+      "fingerprint": "3a46508d6be06a2f8115ddbfe481d7e0703644dda9be048dc07d52cb2e288af9",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 970,
+      "decision": "reject",
+      "positivity": 58,
+      "impact": 35,
+      "audienceRelevance": 38,
+      "judgment": "Disponibilitatea lui Harry de a reveni în armată este declarație personală condiționată, nu măsură de apărare sau pace.",
+      "fingerprint": "8f4ebf2604c64c9cdaf71479ff28837953ac3bb3adbb986526a779956575d077",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 971,
+      "decision": "reject",
+      "positivity": 68,
+      "impact": 65,
+      "audienceRelevance": 82,
+      "judgment": "Întâlnirea Ciocan–Mînzatu discută finanțarea culturii în viitorul buget, fără alocări sau apeluri noi confirmate.",
+      "fingerprint": "48926e5b5ed263c6ead9aa69acd2c140765507d037e918b64ff71b7e787beeed",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 972,
+      "decision": "reject",
+      "positivity": 28,
+      "impact": 88,
+      "audienceRelevance": 92,
+      "judgment": "UAIC solicită deblocarea banilor pentru trei cămine, dar finanțarea și consolidarea seismică nu sunt încă asigurate.",
+      "fingerprint": "10f4c3d592032e6c0dec2649afcf5442b5a73b8445692f8bd10f3ca75c1b6712",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 973,
+      "decision": "reject",
+      "positivity": 78,
+      "impact": 32,
+      "audienceRelevance": 72,
+      "judgment": "Campania de vot pentru târgul Craiovei promovează un clasament turistic, fără titlu nou câștigat sau acces cultural schimbat.",
+      "fingerprint": "01f8ea0edc24e892a6bf1f136abf69080d6c2dc6ec2a5f84c7da065eebddc727",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 974,
+      "decision": "candidate",
+      "positivity": 78,
+      "impact": 78,
+      "audienceRelevance": 55,
+      "judgment": "Acordul militar SUA–Venezuela marchează normalizarea bilaterală, dar beneficiile civile și relevanța pentru România sunt indirecte.",
+      "fingerprint": "e89c9c1d60c3591199e3a5ccaad3e54d4423657081fb8fa75c622197416d46f6",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 975,
+      "decision": "reject",
+      "positivity": 8,
+      "impact": 45,
+      "audienceRelevance": 58,
+      "judgment": "Dosarul după încăierarea elevelor din Timiș documentează violență școlară, fără prevenție sau mediere reușită.",
+      "fingerprint": "1087a03c06b0d048fb50d46724809e110a1dd922e200d7e8307e935d3ae96a22",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 976,
+      "decision": "reject",
+      "positivity": 48,
+      "impact": 85,
+      "audienceRelevance": 88,
+      "judgment": "Apelul lui Tomac pentru consens asupra hărții administrative este poziție politică, nu reorganizare realizată.",
+      "fingerprint": "d8050bad08cf60aab222752602374183c87fabad29d79813badc2a12d628c45e",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 977,
+      "decision": "candidate",
+      "positivity": 88,
+      "impact": 42,
+      "audienceRelevance": 75,
+      "judgment": "Victoria U-BT în EuroCup oferă o reușită românească după eșecul din tur, dar rămâne rezultat de grupă, nu trofeu.",
+      "fingerprint": "a2e0ffb2df458765bb85a56ef10ec8542dff5343f6f2803e9c4a97796e743316",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 978,
+      "decision": "reject",
+      "positivity": 48,
+      "impact": 65,
+      "audienceRelevance": 88,
+      "judgment": "Explicația lui Arafat despre lipsa Ro-Alert clarifică o decizie, fără a introduce avertizare seismică nouă sau universală.",
+      "fingerprint": "5b9b4fbcb602d1c4d162017629c6ff3edcd362a5af46574a95e1ade5ef515841",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 979,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 78,
+      "audienceRelevance": 88,
+      "judgment": "Cererile germane de restricționare a alocațiilor transfrontaliere creează incertitudine familiilor românești, nu drepturi suplimentare.",
+      "fingerprint": "bb2cdefa15111169e6d7df072016c965102008d7e8ef35db480d91d402a2b7b5",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 980,
+      "decision": "reject",
+      "positivity": 58,
+      "impact": 82,
+      "audienceRelevance": 95,
+      "judgment": "Controalele insulelor ecologice răspund instalațiilor nefuncționale; verificarea anunțată nu înseamnă colectare selectivă deja reparată.",
+      "fingerprint": "4745000ac63c796134b2aa2400fbd5e14bd5712bb3ada7ed4654fa612ed1567c",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 981,
+      "decision": "reject",
+      "positivity": 25,
+      "impact": 42,
+      "audienceRelevance": 58,
+      "judgment": "Analiza avocațială a posibilei instigări la transportul SPP este opinie juridică într-o controversă, fără hotărâre sau reformă nouă.",
+      "fingerprint": "6cae25b37c7ed74c54558d0bb6aa6758691537c0a633a5355ed2ceb98c004eb1",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 982,
+      "decision": "candidate",
+      "positivity": 86,
+      "impact": 78,
+      "audienceRelevance": 65,
+      "judgment": "Nominalizarea lui Jeffries poate pregăti o premieră de reprezentare la conducerea Camerei, dar votul intern nu este alegerea speakerului.",
+      "fingerprint": "fdd3630d0632c832b3637b495ab101c71020d1764031c68008c3f24df383223d",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 983,
+      "decision": "reject",
+      "positivity": 42,
+      "impact": 48,
+      "audienceRelevance": 45,
+      "judgment": "Interdicția cehă pentru hocheistele ruse este măsură de sancționare sportivă, fără avantaj comunitar românesc clar.",
+      "fingerprint": "b853f6978fe79583162a0e0bef587aaa87254f9481b416e53d554e27c2a5a4cc",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    },
+    {
+      "index": 984,
+      "decision": "reject",
+      "positivity": 65,
+      "impact": 38,
+      "audienceRelevance": 65,
+      "judgment": "Intervenția Salvamont pentru persoana blocată pe stâncă este în curs în fragment, fără coborâre în siguranță confirmată.",
+      "fingerprint": "28052e36a0fb31586e2dc800c3cf7e01a2e7a7cb6ca1fb2b92f61b55b68a7c08",
+      "assessedAt": "2026-11-21T06:34:46.634Z"
+    }
+  ]
+}

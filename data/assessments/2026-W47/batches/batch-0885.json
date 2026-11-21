@@ -1,0 +1,504 @@
+{
+  "assessments": [
+    {
+      "index": 885,
+      "decision": "reject",
+      "positivity": 2,
+      "impact": 82,
+      "audienceRelevance": 78,
+      "judgment": "Confirmarea oficială că nava GPL a fost lovită de proiectile documentează un atac și o pierdere maritimă.",
+      "fingerprint": "965721ae03f1215a2dcdbf88face9480034302facf8ad95302f7571b7e2e3543",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 886,
+      "decision": "candidate",
+      "positivity": 93,
+      "impact": 88,
+      "audienceRelevance": 98,
+      "judgment": "Recepția ultimelor două Coradia completează lotul de 13 pentru InterRegional; traseele și data serviciului pentru pasageri trebuie confirmate.",
+      "fingerprint": "b4f198f28f290b684551ca35c3803c820c1c03a4ff3c033da71cfc2f2608c50b",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 887,
+      "decision": "reject",
+      "positivity": 48,
+      "impact": 92,
+      "audienceRelevance": 90,
+      "judgment": "Verificarea documentelor AMEPIP pentru ținta 442 este control în curs, nu jalon PNRR validat sau bani deblocați.",
+      "fingerprint": "6883e9b90517f890afb8c31121ff1edd6ff3c5c8c68d09318b3c9a9af843fbad",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 888,
+      "decision": "reject",
+      "positivity": 72,
+      "impact": 25,
+      "audienceRelevance": 42,
+      "judgment": "Sosirea lui Pochettino la Manchester United este schimbare de antrenor străin, fără legătură românească ori rezultat obținut.",
+      "fingerprint": "e6335fb09df2b47e1def6f7e9eed9ca0947dfeac6e4b35765610e0791e9c2ee9",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 889,
+      "decision": "reject",
+      "positivity": 22,
+      "impact": 78,
+      "audienceRelevance": 78,
+      "judgment": "Vaccinarea începe după sacrificarea a peste 1.500 de animale în Gorj; controlul focarelor nu este încă demonstrat.",
+      "fingerprint": "a491cfb2f29f1ad9b9a0a63278c7c7c6b77c09664e3b94cc07859f3548899c29",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 890,
+      "decision": "reject",
+      "positivity": 0,
+      "impact": 35,
+      "audienceRelevance": 42,
+      "judgment": "Înjunghierea bărbatului în Maramureș este agresiune individuală fără salvare sau sprijin nou precizat în titlu.",
+      "fingerprint": "596e28719f249521b8316e925a3e9a88690bb9e4f6394de2451852c7fee9df56",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 891,
+      "decision": "candidate",
+      "positivity": 92,
+      "impact": 88,
+      "audienceRelevance": 99,
+      "judgment": "Instrumentul CE pentru urmărirea prețurilor promite ajutor practic consumatorilor; trebuie verificat dacă compară magazine sau doar evoluții statistice.",
+      "fingerprint": "1c56c2ec86aec5b9a2c436c35c8dca8bee7ab99b712a483827c84017ed75fdac",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 892,
+      "decision": "reject",
+      "positivity": 32,
+      "impact": 28,
+      "audienceRelevance": 48,
+      "judgment": "Îndemnul rugbyului de a învăța din eșecuri este evaluare după rezultate slabe, nu redresare sportivă realizată.",
+      "fingerprint": "ef97b5cad7ced598dd7a7dcf6c4781403d3686d98c769ff7019cc11341e7fad3",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 893,
+      "decision": "reject",
+      "positivity": 12,
+      "impact": 35,
+      "audienceRelevance": 48,
+      "judgment": "Cercetarea tânărului pentru trafic de droguri la Mamaia este dosar penal, fără prevenție ori recuperare comunitară nouă.",
+      "fingerprint": "d3fb1c26a5c2a52c79dbcf7840bce05d50475f295e311e1222c038af2eb3f8a7",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 894,
+      "decision": "reject",
+      "positivity": 65,
+      "impact": 92,
+      "audienceRelevance": 96,
+      "judgment": "Presiunile statelor pentru restricția PFAS sunt apel la accelerare; poluanții eterni nu sunt interziși prin acest demers.",
+      "fingerprint": "55e15642165dba5a15faa236e9b3f50c1fec254b256836f5d922be414aea2fa7",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 895,
+      "decision": "reject",
+      "positivity": 58,
+      "impact": 28,
+      "audienceRelevance": 48,
+      "judgment": "Ținta de a juca cel mai bun rugby contra Canadei este obiectiv înaintea partidei, nu victorie confirmată.",
+      "fingerprint": "c1ad6bcac3d5b6e3efd5232f5de4e97537e678b7b9e36025b03309ee12814dab",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 896,
+      "decision": "reject",
+      "positivity": 62,
+      "impact": 92,
+      "audienceRelevance": 98,
+      "judgment": "Grupul de lucru pentru energie este structură nouă, dar protecția consumatorilor și sprijinul industriei rămân obiective fără măsuri detaliate.",
+      "fingerprint": "87258e712b126d2876c4a7d267cb3f35d933d31b8d439fcddac7a5fa85b5552a",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 897,
+      "decision": "reject",
+      "positivity": 55,
+      "impact": 68,
+      "audienceRelevance": 78,
+      "judgment": "Închiderea Telciu–Dealul Ștefăniței pregătește reabilitarea unui viaduct; călătorii nu beneficiază încă de o linie modernizată.",
+      "fingerprint": "767278d65d5e681799d6e2565b32b7e0deb721c5ffdf3bd5dbb9fad38150f116",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 898,
+      "decision": "reject",
+      "positivity": 62,
+      "impact": 90,
+      "audienceRelevance": 95,
+      "judgment": "Publicarea proiectului acordului de mediu pentru A1 nu este emiterea sa, iar data de 2 decembrie este estimare.",
+      "fingerprint": "4f3c7ce34cf685ee7b598375d99a6c3fd15d921eb5763fd15f48e0f7dc029868",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 899,
+      "decision": "reject",
+      "positivity": 15,
+      "impact": 90,
+      "audienceRelevance": 98,
+      "judgment": "Comparația prețurilor energetice ajustate la puterea de cumpărare arată costuri ridicate, nu facturi mai mici.",
+      "fingerprint": "08ae94918af1ea9be204c28ed8887f027daa3d628f1a2327e7c526b806ff1d6c",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 900,
+      "decision": "candidate",
+      "positivity": 82,
+      "impact": 97,
+      "audienceRelevance": 85,
+      "judgment": "Propunerea CE de 45 miliarde pentru Ucraina este sprijin bugetar viitor important, distinct de o tranșă deja plătită.",
+      "fingerprint": "038e6c12e927f729a8c82980ed1ef5914905d64438a3fa910d18ad5e7adabac7",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 901,
+      "decision": "reject",
+      "positivity": 72,
+      "impact": 88,
+      "audienceRelevance": 90,
+      "judgment": "Avansul unei galerii la 83% nu descrie tronsonul A1 întreg, aflat sub 20%; actualizarea de șantier nu este deschidere rutieră.",
+      "fingerprint": "e651fed5442892c556f5ecac3504653f8a69653d4dddaf74feb7baf2f5795406",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 902,
+      "decision": "reject",
+      "positivity": 48,
+      "impact": 92,
+      "audienceRelevance": 90,
+      "judgment": "Eșantionarea a 120 de companii pentru ținta PNRR este verificare procedurală, fără concluzie favorabilă încă stabilită.",
+      "fingerprint": "b2a617ffcfb7375ba8abe94f728c6bf21f58901e89058d13a68ab8adebe423ca",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 903,
+      "decision": "reject",
+      "positivity": 78,
+      "impact": 42,
+      "audienceRelevance": 62,
+      "judgment": "Suspendarea executării impunerii de 1,2 milioane protejează temporar un contribuabil, dar nu anulează definitiv datoria ori creează un drept general.",
+      "fingerprint": "d3959d402956cfbc61e3d7426f40ef6cdf452b6153f4087a89d45d5657e0f5e6",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 904,
+      "decision": "candidate",
+      "positivity": 94,
+      "impact": 90,
+      "audienceRelevance": 99,
+      "judgment": "Ramele TS25 și TS26 au fost recepționate pentru introducerea în serviciu; utilizarea comercială efectivă și rutele InterRegional trebuie verificate separat.",
+      "fingerprint": "776c273fa0662ff429a121b9e7ca8355d3422c70034b0dbab4dd8991d3cb0acb",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 905,
+      "decision": "candidate",
+      "positivity": 78,
+      "impact": 62,
+      "audienceRelevance": 88,
+      "judgment": "FIORA5 propune tehnologie RISC-V din Oradea, dar campania de finanțare precedă primul prototip planificat abia în 2027.",
+      "fingerprint": "18ba21bdd13d7eab7afa75593932de88d7f91da9c0049fd6d22d13414760d482",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 906,
+      "decision": "reject",
+      "positivity": 78,
+      "impact": 55,
+      "audienceRelevance": 72,
+      "judgment": "Creșterea OxyHelp este bilanț pe 2025, iar noua unitate achiziționată nu dovedește încă extinderea producției sau acces medical mai larg.",
+      "fingerprint": "d40f04828c55ccbabc7d96835ce9053e0b3a1789e74f25633c8e9ce3ee864a69",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 907,
+      "decision": "reject",
+      "positivity": 72,
+      "impact": 65,
+      "audienceRelevance": 65,
+      "judgment": "Creșterea globală a fuziunilor și achizițiilor măsoară activitate financiară, fără beneficii sociale ori concurențiale demonstrate.",
+      "fingerprint": "5c7083a7be8d94e2c78de30d720d49e9ead0eaae496383311e8571d2779be98f",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 908,
+      "decision": "candidate",
+      "positivity": 89,
+      "impact": 75,
+      "audienceRelevance": 92,
+      "judgment": "Șantierul gării Herculane este restaurare concretă cu contract de 17 milioane, dar începutul din 9 noiembrie precedă săptămâna și termenul este 26 de luni.",
+      "fingerprint": "800e3acabb2a628dcfa6819da5f74abca8472d869ac76ce1140631cadd96394d",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 909,
+      "decision": "candidate",
+      "positivity": 75,
+      "impact": 72,
+      "audienceRelevance": 85,
+      "judgment": "Monitorizarea satelitară a liniilor electrice ar putea preveni avarii, dar licitația lansată nu este sistem deja operațional.",
+      "fingerprint": "69a207afcac369954d2bbb5cf2f8c9f753a6aa26aa2c7e80af177bdfc4f635a5",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 910,
+      "decision": "reject",
+      "positivity": 5,
+      "impact": 95,
+      "audienceRelevance": 98,
+      "judgment": "Datele Eurostat plasează inflația românească mult peste media UE, confirmând costuri crescute, nu bunăstare mai mare.",
+      "fingerprint": "7406b2db51926fb267203b2b0d0c73e4e451e7e6c945bd6f6014b5def17776f4",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 911,
+      "decision": "candidate",
+      "positivity": 94,
+      "impact": 92,
+      "audienceRelevance": 98,
+      "judgment": "Apelul Erasmus+ 2027 deschis organizațiilor românești oferă finanțare pentru formare și mobilitate; bugetul și eligibilitatea trebuie confirmate în ghidul CE.",
+      "fingerprint": "a3c7ec8434644450a04b09fe87be930ca25173e4d65464817a3180353cb48909",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 912,
+      "decision": "reject",
+      "positivity": 28,
+      "impact": 78,
+      "audienceRelevance": 95,
+      "judgment": "Restricțiile nocturne DN1 pentru metrou aduc blocaje actuale; tronsonul Washington–Paris nu este încă accesibil călătorilor.",
+      "fingerprint": "843688489e59a5addf77585fc3ff895b98f85d57b74f622a54dd3e27012ebb69",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 913,
+      "decision": "reject",
+      "positivity": 45,
+      "impact": 65,
+      "audienceRelevance": 88,
+      "judgment": "Chiriile comerciale mai mari pe Calea Victoriei avantajează proprietarii, dar cresc costurile afacerilor și nu sunt progres public automat.",
+      "fingerprint": "b111cd62ba8d9f6097d533ef4e48a655277bf2c04912c7cb29320ab3eaf4d678",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 914,
+      "decision": "reject",
+      "positivity": 32,
+      "impact": 62,
+      "audienceRelevance": 90,
+      "judgment": "Singurătatea decizională a fondatorilor descrisă de consultanți este problemă managerială, fără soluție aplicată cu rezultate.",
+      "fingerprint": "520a5b3c09890a2b43c9c188d1c8b9c9112b4be32f8b7128d69b6878be19d8fe",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 915,
+      "decision": "reject",
+      "positivity": 35,
+      "impact": 85,
+      "audienceRelevance": 98,
+      "judgment": "Analiza agenților AI avertizează asupra riscurilor automatizării, fără mecanism nou de securitate disponibil ori testat în extras.",
+      "fingerprint": "3df65cc061987b1a5290bda447c76e70c64b65e560a2a4f4c485175a2f958328",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 916,
+      "decision": "candidate",
+      "positivity": 80,
+      "impact": 62,
+      "audienceRelevance": 92,
+      "judgment": "Extinderea eAWB spre peste 200 de teritorii poate ușura expedierile externe; taxele și obligațiile vamale rămân aplicabile, în pofida asistenței AI.",
+      "fingerprint": "918786ea10dd77726d7e7d6178fdd95263703439b63f721d2eaad3f57b144ca1",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 917,
+      "decision": "reject",
+      "positivity": 58,
+      "impact": 68,
+      "audienceRelevance": 85,
+      "judgment": "Opinia prim-viceguvernatorului despre încrederea în plăți digitale analizează o tendință, nu lansează infrastructură sau protecții noi.",
+      "fingerprint": "6445bc82b4981b979f6e4e9475c8391589a36ade67b93e414ea94d5978d6f27b",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 918,
+      "decision": "reject",
+      "positivity": 78,
+      "impact": 45,
+      "audienceRelevance": 78,
+      "judgment": "Clarificarea că Memo 10 nu se închide păstrează un serviciu existent, fără extindere sau acces îmbunătățit demonstrat.",
+      "fingerprint": "799e54b024f1cdff19222344270f844810cbb70c29e70a7d6d51291dc0525faf",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 919,
+      "decision": "candidate",
+      "positivity": 78,
+      "impact": 68,
+      "audienceRelevance": 96,
+      "judgment": "The Mind at Work este platformă nouă pentru sănătatea angajaților; cei 20.000 de utilizatori sunt țintă, iar confidențialitatea evaluărilor contează.",
+      "fingerprint": "13e188994732adc438b66862ec1780d865323104a1b31802aa9a70b7d2039487",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 920,
+      "decision": "reject",
+      "positivity": 2,
+      "impact": 90,
+      "audienceRelevance": 98,
+      "judgment": "Scumpirea de circa 20% pentru clienții PPC în serviciu universal este cost suplimentar, nu tranziție energetică accesibilă.",
+      "fingerprint": "7e2edc8e380f98eb78adb298a81d169991df243b2a7f4ab0f115fcd20933ebe2",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 921,
+      "decision": "candidate",
+      "positivity": 92,
+      "impact": 90,
+      "audienceRelevance": 97,
+      "judgment": "Racordarea a 9.077 de prosumatori și creșterea stocării cu 5.508 instalații arată progres efectiv, măsurat pentru septembrie, nu întreaga energie consumată.",
+      "fingerprint": "45c0ac5ef335ceeefc98ec9325b9c4a3e96b234b23fca7d9611cd15006fffb0d",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 922,
+      "decision": "reject",
+      "positivity": 45,
+      "impact": 85,
+      "audienceRelevance": 96,
+      "judgment": "Creditul total în creștere coexistă cu împrumuturi locative noi mai puține; expansiunea datoriei nu dovedește accesibilitate financiară mai bună.",
+      "fingerprint": "6f05192a4fd74fd50fb8f79d842288b522b422eb404e00384a62761e3bc31060",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 923,
+      "decision": "reject",
+      "positivity": 72,
+      "impact": 82,
+      "audienceRelevance": 88,
+      "judgment": "Testarea grinzilor pe Joseni–Ditrău este etapă tehnică normală, în timp ce șantierul de circa 20% nu oferă încă traseu deschis.",
+      "fingerprint": "f6ec7d628aef56e6f4c90d70bd4be50f5bd1f741603dafe15a42df8b1934cc24",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 924,
+      "decision": "reject",
+      "positivity": 45,
+      "impact": 88,
+      "audienceRelevance": 98,
+      "judgment": "Impozitarea progresivă este idee PSD absentă de pe agenda guvernului, fără reguli noi de taxare adoptate.",
+      "fingerprint": "466f9775e0dd821f0f74d9a22309c730ef2d32908cb5aedcfbc4feb84992df6b",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 925,
+      "decision": "reject",
+      "positivity": 5,
+      "impact": 95,
+      "audienceRelevance": 95,
+      "judgment": "Datele AMEPIP contradictorii și criteriile inventate riscă penalizări PNRR, nu finanțare sigură pentru România.",
+      "fingerprint": "73092d7c80adf4f0d1b6ffd230daa971207dc4b02d3f6732cc84d1d046fe3368",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 926,
+      "decision": "reject",
+      "positivity": 38,
+      "impact": 32,
+      "audienceRelevance": 72,
+      "judgment": "Replica Theo Rose la acuzațiile de nostalgie comunistă privește controversa unui spectacol, nu un proiect cultural nou accesibil.",
+      "fingerprint": "baa826aac6434e1cc5fdfa7631db16b2c09bb570faf3888fa41e38736689788d",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 927,
+      "decision": "reject",
+      "positivity": 8,
+      "impact": 62,
+      "audienceRelevance": 85,
+      "judgment": "Reclamațiile privind absențele directorului din Focșani și relația cu inspectoarea indică un conflict de integritate nesoluționat.",
+      "fingerprint": "7aa73154c9935d83cfc944090061474dddd9732ab8d8766f32d770cabaf458d3",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 928,
+      "decision": "candidate",
+      "positivity": 78,
+      "impact": 65,
+      "audienceRelevance": 85,
+      "judgment": "Ordinul 5.959 oferă un cadru oficial pentru clase duale și cereri până la 4 decembrie, deși publicarea tardivă afectează calendarul.",
+      "fingerprint": "23e46368bd601a7a6f20027d3edbc12a859fa45d412acc1a52453160112092b0",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 929,
+      "decision": "reject",
+      "positivity": 5,
+      "impact": 85,
+      "audienceRelevance": 88,
+      "judgment": "Avertismentul sindicatelor despre clase suprapopulate și pierderea posturilor descrie deteriorare anticipată a educației.",
+      "fingerprint": "6095ea0bc39c7b9a9dcf683c81d275ee57af07ab97720842fb6950b4900792c0",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 930,
+      "decision": "reject",
+      "positivity": 28,
+      "impact": 62,
+      "audienceRelevance": 62,
+      "judgment": "Măsurile antifraudă din Coreea răspund unui caz de folosire abuzivă a AI; eficiența lor nu este încă demonstrată.",
+      "fingerprint": "56e1c8e6653aa62710b2e25c9e6c0735f91d559ba63becb0127c7b01aaad0dd8",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 931,
+      "decision": "reject",
+      "positivity": 48,
+      "impact": 82,
+      "audienceRelevance": 88,
+      "judgment": "Recunoașterea nedreptăților profesorilor și promisiunea reparării sunt limitate financiar, fără măsură concretă adoptată.",
+      "fingerprint": "912a316da83ea01808c8f937a832eafee4bfad5cd37682e2d162a3b2380f71a6",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 932,
+      "decision": "candidate",
+      "positivity": 94,
+      "impact": 88,
+      "audienceRelevance": 97,
+      "judgment": "Aderarea României la ELIXIR poate deschide cercetătorilor infrastructură de date biologice; trebuie verificat ce acces și contribuții aduce statutul oficial.",
+      "fingerprint": "afbe454637c31eec9c473278b3db7b80c13aa31babed19c8a2c4869ad41d40bb",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 933,
+      "decision": "candidate",
+      "positivity": 96,
+      "impact": 72,
+      "audienceRelevance": 99,
+      "judgment": "Pragul de o zi-lumină al Voyager 1, cu salutul românesc la bord, poate încheia ediția cu știință memorabilă, după confirmarea NASA.",
+      "fingerprint": "6c140dd222324e189b9b588add2d16983b35a27779f540bcc26ac77e1595b589",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    },
+    {
+      "index": 934,
+      "decision": "candidate",
+      "positivity": 91,
+      "impact": 45,
+      "audienceRelevance": 78,
+      "judgment": "Reușita Lucianei Focșa, după muncă în vacanțe și sprijin prin bursă, arată mobilitate educațională; rămâne de cântărit față de beneficii comunitare mai largi.",
+      "fingerprint": "6d8e2c1b5064b1df6df75cb7c2a02635ce5844a835030bea78fded5fa998447e",
+      "assessedAt": "2026-11-21T06:33:14.020Z"
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "assessments": [
+    {
+      "index": 0,
+      "decision": "reject",
+      "positivity": 2,
+      "impact": 55,
+      "audienceRelevance": 38,
+      "judgment": "Pierderea celor 40 de sateliți Amazon este un eșec tehnic și comercial, nu un progres pentru cititorii newsletterului.",
+      "fingerprint": "7deac505e1a6677a3f48ba4280165f4f620233d1a1212c759395a3eece5ad357",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 1,
+      "decision": "reject",
+      "positivity": 12,
+      "impact": 68,
+      "audienceRelevance": 65,
+      "judgment": "Reorganizarea comunelor este prezentată prin riscul diminuării reprezentării minorității maghiare; disputa nu oferă o îmbunătățire concretă deja decisă.",
+      "fingerprint": "76d4ff7066344e6830187e2c21f29dfc314e1dd3c06ddb6d036945e4f09128a4",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 2,
+      "decision": "reject",
+      "positivity": 10,
+      "impact": 65,
+      "audienceRelevance": 55,
+      "judgment": "Acordul pentru transferul solicitanților de azil respinși în Rwanda rămâne controversat și ridică probleme de drepturi, fără rezultat pozitiv demonstrat.",
+      "fingerprint": "9e5c26fa0b5addcc67257026c5ace327978cd9e82d24a39c0422a96004648d09",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 3,
+      "decision": "reject",
+      "positivity": 3,
+      "impact": 30,
+      "audienceRelevance": 40,
+      "judgment": "Accidentul cu cinci mașini și restricțiile de pe A3 sunt informații de trafic imediate, fără componentă de progres comunitar.",
+      "fingerprint": "46803cb5097d64e2cc5c98df42698eb756644c840451c1d58f9096816c0af5cd",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 4,
+      "decision": "reject",
+      "positivity": 78,
+      "impact": 28,
+      "audienceRelevance": 36,
+      "judgment": "Victoria Mirrei Andreeva este o performanță sportivă reală în relatare, dar legătura cu viața publicului român este slabă pentru selecția săptămânală.",
+      "fingerprint": "039ce7e6157e1b3de9dcecefe247525022faa68312f4e7df94e0dba08f5fe6f7",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 5,
+      "decision": "reject",
+      "positivity": 38,
+      "impact": 3,
+      "audienceRelevance": 6,
+      "judgment": "Logodna fostei partenere a lui Sinner ține de viața privată a celebrităților, nu de o schimbare utilă sau distinctivă pentru comunitate.",
+      "fingerprint": "7cb05848676c4c0a0580a6c4766b10eac00e54e92d8d812c2d865a4309d7d322",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 6,
+      "decision": "reject",
+      "positivity": 68,
+      "impact": 18,
+      "audienceRelevance": 19,
+      "judgment": "Succesul Angliei la Madrid are dramatism competițional, însă un rezultat izolat din fotbalul internațional nu adaugă relevanță suficientă ediției.",
+      "fingerprint": "bd97e8f017b6c209cc2066c718921332efae198d22d4e89a2907fed2a83ccc80",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 7,
+      "decision": "reject",
+      "positivity": 8,
+      "impact": 15,
+      "audienceRelevance": 16,
+      "judgment": "Eliminarea Italiei din Nations League este relatată ca eșec sportiv, fără contrapondere pozitivă de interes pentru cititorii români.",
+      "fingerprint": "e2fee91b4fd688ff3a094c3d52695df12001cbd417fa80ae0acd69c3683780eb",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 8,
+      "decision": "reject",
+      "positivity": 35,
+      "impact": 28,
+      "audienceRelevance": 55,
+      "judgment": "Recomandarea despre trezirile nocturne poate fi practică, dar fragmentul nu arată o descoperire sau un serviciu nou, ci sfaturi recurente.",
+      "fingerprint": "bf41aae98dd307634fd9ed32ebefba767e5c6344e5dfbca1cab17c2765696fdd",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 9,
+      "decision": "candidate",
+      "positivity": 65,
+      "impact": 20,
+      "audienceRelevance": 48,
+      "judgment": "Asteroidul descris ca mini-Lună poate oferi o curiozitate științifică accesibilă; trebuie verificate identificarea obiectului și actualitatea intervalului până în ianuarie 2027.",
+      "fingerprint": "d8b2474cb3678d39936f9227fbc306429edeb5ad1e6819727974c167871fb9ea",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 10,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 55,
+      "audienceRelevance": 58,
+      "judgment": "Accentul pe creșterea riscului de AVC dimineața este un avertisment medical, nu o noutate terapeutică ori o extindere a îngrijirii.",
+      "fingerprint": "07cde5ccbc7e54b72cb311c2ef9d9ba63ff52670e430da14339a2d455304e03a",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 11,
+      "decision": "candidate",
+      "positivity": 72,
+      "impact": 42,
+      "audienceRelevance": 80,
+      "judgment": "Modificarea televizoarelor pentru reducerea reclamelor și urmăririi oferă autonomie digitală; merită verificat ce soluție funcțională există și ce riscuri implică.",
+      "fingerprint": "3955596fa093baaf3584bc2d6c307b00a85d6053ae4ce6d0aa865a0e8fc3a89c",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 12,
+      "decision": "reject",
+      "positivity": 45,
+      "impact": 35,
+      "audienceRelevance": 65,
+      "judgment": "Aerisirea încăperilor iarna este utilă gospodăriilor, însă articolul promite recomandări sezoniere, nu o inițiativă sau un rezultat nou.",
+      "fingerprint": "ff309e3be7ef612b27a7d8bd0e83d899ebc9aa77929029f8d469fe9cc10fd5e1",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 13,
+      "decision": "reject",
+      "positivity": 50,
+      "impact": 50,
+      "audienceRelevance": 78,
+      "judgment": "Reducerea pierderilor de căldură interesează direct cititorii, dar extrasul despre obiceiurile de încălzire nu identifică o veste nouă verificabilă.",
+      "fingerprint": "62c948f9ab0e5b33f2d88e072af470267424f6dfd8d2227b3a0f1d43aafbc16b",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 14,
+      "decision": "reject",
+      "positivity": 35,
+      "impact": 35,
+      "audienceRelevance": 59,
+      "judgment": "Explicația oboselii de toamnă descrie un fenomen sezonier familiar, fără cercetare nouă, intervenție sau rezultat pozitiv concret în fragment.",
+      "fingerprint": "60507a8ef2f874bbe863045d9fedad24ee68f303cae1763356a5562f07cefc5c",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 25,
+      "decision": "reject",
+      "positivity": 3,
+      "impact": 65,
+      "audienceRelevance": 40,
+      "judgment": "Supraviețuirea unei execuții este punctul de plecare al unei analize despre pedeapsa capitală; caracterul traumatic nu devine veste bună prin simpla supraviețuire.",
+      "fingerprint": "6b46fb59bab842d23ebde47ea245df3a4527ff76d70973427b975074652a2a74",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 26,
+      "decision": "reject",
+      "positivity": 10,
+      "impact": 70,
+      "audienceRelevance": 75,
+      "judgment": "Replica Oanei Gheorghiu la acuzațiile PSD privește o controversă bugetară și politică, nu o măsură pozitivă demonstrată pentru populație.",
+      "fingerprint": "16a31c75d54dafb9d846398f00890905cb5c3dda1649d050137e9caaed2a2688",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 27,
+      "decision": "reject",
+      "positivity": 12,
+      "impact": 75,
+      "audienceRelevance": 75,
+      "judgment": "Textul cere respingerea unui plan de federalizare a Moldovei, fiind opinie geopolitică despre un risc, nu o evoluție favorabilă verificată.",
+      "fingerprint": "0f5b38302dc62804d899f8bc62eee263c28e0704d0170ca2eedd636759110790",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 28,
+      "decision": "reject",
+      "positivity": 10,
+      "impact": 20,
+      "audienceRelevance": 32,
+      "judgment": "Comparația satirică dintre târgul de Crăciun și protestul lui Georgescu urmărește ironizarea politică, nu o inițiativă culturală prezentată pe fond.",
+      "fingerprint": "fe5e1b8be4ab2bcc02be9b8c1b61527a6d5715243c21363ae2a818c23c13e01c",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 29,
+      "decision": "reject",
+      "positivity": 38,
+      "impact": 45,
+      "audienceRelevance": 65,
+      "judgment": "Declarațiile primarului Negoiță despre diferențele dintre sectoare nu indică în extras un serviciu nou sau lucrări finalizate pentru locuitori.",
+      "fingerprint": "684cc119948b6c20f10e7b7442e2b60c122c5cb8440333de12e21157b4988ec4",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 30,
+      "decision": "reject",
+      "positivity": 16,
+      "impact": 20,
+      "audienceRelevance": 55,
+      "judgment": "Anecdota fetiței ignorate în autobuz vorbește despre înstrăinare și atenție, fără un rezultat comunitar pozitiv care să susțină includerea.",
+      "fingerprint": "664201b92ddbb50368d4e75ab1a785124713abfe80fbf2f019773e3abcea63c8",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 31,
+      "decision": "candidate",
+      "positivity": 82,
+      "impact": 56,
+      "audienceRelevance": 82,
+      "judgment": "Proiectele tinerilor combină reciclarea, arta interactivă și învățarea muzicii; pot aduce varietate dacă sursa arată prototipuri distincte și utilitate demonstrabilă.",
+      "fingerprint": "93730afc3ab182b8ce16f8a7694daf3d4150a60538afd87932ede3ba1291dfb1",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 32,
+      "decision": "reject",
+      "positivity": 15,
+      "impact": 60,
+      "audienceRelevance": 70,
+      "judgment": "Cererea de suspendare a normelor TollRo este un litigiu încă nerezolvat; nu poate fi prezentată ca avantaj obținut pentru transportatori.",
+      "fingerprint": "ed776bac307a37381c762908f55d65a7b5db1eda2dc4897ca754dffb4bbe6d0b",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 33,
+      "decision": "reject",
+      "positivity": 24,
+      "impact": 45,
+      "audienceRelevance": 38,
+      "judgment": "Clarificarea Megaspeed privind funcția lui Alice Huang reprezintă reacție la un scandal corporativ, nu progres tehnologic sau beneficiu public.",
+      "fingerprint": "e1b83bd60c24453441237075f438298fba4487b4406cc727423f3cfb94b40429",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    },
+    {
+      "index": 34,
+      "decision": "reject",
+      "positivity": 2,
+      "impact": 48,
+      "audienceRelevance": 38,
+      "judgment": "Cele două incendii din Cluj au produs pagube și o victimă spitalizată; relatarea intervenției nu schimbă natura negativă a evenimentului.",
+      "fingerprint": "8909bf90442855a9c8929b207e7ff1197158ab22610762d17395f4ddcd2a6321",
+      "assessedAt": "2026-11-21T06:05:57.817Z"
+    }
+  ]
+}

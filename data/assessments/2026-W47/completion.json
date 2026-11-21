@@ -1,0 +1,14 @@
+{
+  "completedAt": "2026-11-21T07:16:44.681Z",
+  "elapsedMs": 4413193,
+  "inputHash": "941acf44215e85f324d350ca51a973e213a55ed5ab70cca11dd17010a4e5f716",
+  "assessmentHash": "5a467a636943290d3eb8beffd74e8e91fc7a5ed8de346730045ae334569ab11f",
+  "proofHash": "3ead26245d38a2fe374266b03dd8186a1b213e0ec463df5efb57ee3abc08507c",
+  "input": 1785,
+  "excluded": 10,
+  "assessed": 1775,
+  "missing": 0,
+  "missingIndices": [],
+  "candidates": 320,
+  "verified": 11
+}

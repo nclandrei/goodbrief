@@ -1,0 +1,504 @@
+{
+  "assessments": [
+    {
+      "index": 1285,
+      "decision": "reject",
+      "positivity": 5,
+      "impact": 95,
+      "audienceRelevance": 98,
+      "judgment": "Pierderea a aproape un miliard din PNRR consemnează reforme ratate; avertismentul ministrului nu recuperează finanțarea.",
+      "fingerprint": "84fd3b8bbf13855e44e6fb4ebc1d658707fa0e0ed87725bf4c8dbc9e748756cb",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1286,
+      "decision": "candidate",
+      "positivity": 85,
+      "impact": 68,
+      "audienceRelevance": 88,
+      "judgment": "Contractul virtual PepsiCo–Rezolv pe zece ani sprijină venituri pentru producția regenerabilă; nu trebuie confundat cu alimentare fizică exclusiv eoliană.",
+      "fingerprint": "3f81b0a065b1aac2d6f35e89e13acf8ea1abe6797b3c66a067b1a74d2ff77a1a",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1287,
+      "decision": "reject",
+      "positivity": 22,
+      "impact": 85,
+      "audienceRelevance": 92,
+      "judgment": "Avertismentul Boc despre absorbirea coeziunii într-un buget comun semnalează risc pentru regiuni, nu alocare locală consolidată.",
+      "fingerprint": "12ca1c40d8d1a13c74739a17c8a634e0f82896f17e264452c2505d3292479acc",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1288,
+      "decision": "reject",
+      "positivity": 82,
+      "impact": 68,
+      "audienceRelevance": 85,
+      "judgment": "Creșterea tranzacțiilor imobiliare măsoară capital investit în proprietăți, nu accesibilitatea locuințelor sau construcții noi pentru public.",
+      "fingerprint": "3e9fe799fb4e880089845ab622c853bde177f84435045461b03f1d73f3774f81",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1289,
+      "decision": "reject",
+      "positivity": 62,
+      "impact": 88,
+      "audienceRelevance": 98,
+      "judgment": "Ținta de deficit spre 5% este încă în calcul; nu arată buget adoptat ori spațiu fiscal deja câștigat.",
+      "fingerprint": "c13fcf710586a5738ae1656859e623664f28638e6ef9738f9851e7375d11f660",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1290,
+      "decision": "reject",
+      "positivity": 48,
+      "impact": 88,
+      "audienceRelevance": 95,
+      "judgment": "Rectificarea așteptată și cererile de 60 de miliarde rămân negocieri, cu răspuns european încă așteptat.",
+      "fingerprint": "fce274b7fcd67a9e74ee0ccb29b15689204c235c353f203dc13c3ad10382f33e",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1291,
+      "decision": "candidate",
+      "positivity": 92,
+      "impact": 78,
+      "audienceRelevance": 98,
+      "judgment": "Laboratorul Vodafone–UTCN oferă studenților testare AI, 5G și robotică; deschiderea și condițiile de utilizare îl pot face progres educațional concret.",
+      "fingerprint": "360b4913f50dab244de55754513a1765d71fc704d776b382dce58bfb2335cee9",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1292,
+      "decision": "reject",
+      "positivity": 62,
+      "impact": 75,
+      "audienceRelevance": 95,
+      "judgment": "Locurile vacante cresc față de trimestrul precedent, dar scad anual; cifra nu echivalează cu angajări noi și cere interpretare mixtă.",
+      "fingerprint": "1be4fd080ca200cf4845d5ed54ba33af92e8c658a135214b402aadf29d3d150a",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1293,
+      "decision": "reject",
+      "positivity": 72,
+      "impact": 78,
+      "audienceRelevance": 85,
+      "judgment": "Atlasul radicalizării este prevăzut într-un proiect de hotărâre, nu instrument preventiv deja folosit și evaluat.",
+      "fingerprint": "cf1e6bc38a78242e4bc619753eb71f170d3b7ff541295b3b3a795521ff32b5ae",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1294,
+      "decision": "reject",
+      "positivity": 25,
+      "impact": 88,
+      "audienceRelevance": 98,
+      "judgment": "Temerile președintelui pentru 2028 și reformele doar zgâriate descriu vulnerabilități, nu obiective atinse.",
+      "fingerprint": "d1b8e2c9a81ac63f7f5f9097fc99b3a40cc9b9e3c41313b09fa8ba0bc6c42377",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1295,
+      "decision": "reject",
+      "positivity": 85,
+      "impact": 82,
+      "audienceRelevance": 95,
+      "judgment": "Evaluarea de 1.500 de miliarde la listarea Anthropic testează piața AI, dar nu demonstrează folos public proporțional cu capitalizarea.",
+      "fingerprint": "4badcb668805e58c0b2589dd897642502765306c4d6d11f1f9a38a6c144f4329",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1296,
+      "decision": "reject",
+      "positivity": 25,
+      "impact": 92,
+      "audienceRelevance": 92,
+      "judgment": "Depășirea consumului de încălzire de către răcire reflectă presiune energetică și climatică, nu economie de resurse.",
+      "fingerprint": "290f3db1704a91d5c22b5482f02643dc3e58756b418c92e4006f6ad47ca4fc59",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1297,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 85,
+      "audienceRelevance": 88,
+      "judgment": "Atacul asupra Equinor a întrerupt e-mailul; producția neafectată limitează paguba, dar nu este o dezvoltare pozitivă nouă.",
+      "fingerprint": "2d2005a7276a65ec18b6c37614b38c9e8a77d614cfcd6d88dc400b5b1c9123c6",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1298,
+      "decision": "candidate",
+      "positivity": 85,
+      "impact": 82,
+      "audienceRelevance": 95,
+      "judgment": "Creșterea volumului construcțiilor poate semnala activitate economică susținută, cu diferența dintre seria brută și ajustată explicată corect.",
+      "fingerprint": "ae9d4a63b43de66abae3e61a790124533ac1c93a8f525af53e3e36227bb9a105",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1299,
+      "decision": "reject",
+      "positivity": 78,
+      "impact": 65,
+      "audienceRelevance": 88,
+      "judgment": "Încrederea relatată de premier după forum este apreciere de atmosferă; planurile investitorilor nu sunt contracte sau proiecte deschise.",
+      "fingerprint": "d704b56e2fa2a743f66cfa339ebef456e36962885ca167c2ee08318247591fde",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1300,
+      "decision": "candidate",
+      "positivity": 85,
+      "impact": 88,
+      "audienceRelevance": 85,
+      "judgment": "Aprobarea guvernamentală a proiectului de buget moldovean este pas formal pentru investiții și sprijin, nu adoptarea parlamentară finală.",
+      "fingerprint": "9090c6279703a1a97844eb01de231ff00a50639f06c01d0981cd354f9ad811ce",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1301,
+      "decision": "reject",
+      "positivity": 72,
+      "impact": 88,
+      "audienceRelevance": 88,
+      "judgment": "Renunțarea dorită la Evaluarea Națională în 2030 și schimbarea admiterii în 2034 sunt propuneri personale, nu reformă adoptată.",
+      "fingerprint": "866b06d8b93aad8917cc3a9872746a564be3f2f2d37b7f3d0641c63b3d60781a",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1302,
+      "decision": "reject",
+      "positivity": 78,
+      "impact": 75,
+      "audienceRelevance": 88,
+      "judgment": "Poziția împotriva profesorilor extremiști afirmă o limită democratică, dar nu descrie sancțiune aplicată ori procedură nouă.",
+      "fingerprint": "b3495856d7128640f808027563a4cf90cb4a6d086d902e36fac26e82ad60a5db",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1303,
+      "decision": "reject",
+      "positivity": 82,
+      "impact": 78,
+      "audienceRelevance": 92,
+      "judgment": "Refuzul declarativ al creșterii claselor poate liniști părinții, însă nu modifică normele în vigoare și nu garantează efective reduse.",
+      "fingerprint": "88b93e6f5e99f0cd848070083cfa913e212f0152bf7f0752db90cb789abee1f9",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1304,
+      "decision": "reject",
+      "positivity": 15,
+      "impact": 78,
+      "audienceRelevance": 88,
+      "judgment": "Sesizarea disciplinară și penală a profesorului antisemit este necesară, dar incidentul școlar rămâne prejudiciu cu rezultat nerezolvat.",
+      "fingerprint": "cf325dee1d51edb00400d26f3ca17ee771278cd7ff30f3573c930687b3e43c01",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1305,
+      "decision": "reject",
+      "positivity": 32,
+      "impact": 85,
+      "audienceRelevance": 92,
+      "judgment": "Cererea rezidenților pentru 1.305 locuri în plus arată formare blocată; suplimentarea nu este încă aprobată.",
+      "fingerprint": "8deecf2c2184bcc9123dabbc4626cef8cc24bf966e0cf6867955bb2467d0f94c",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1306,
+      "decision": "reject",
+      "positivity": 88,
+      "impact": 42,
+      "audienceRelevance": 88,
+      "judgment": "Prezența a șase universități într-un clasament interdisciplinar este recunoaștere, nu un rezultat de cercetare explicat cititorului.",
+      "fingerprint": "08812453bc241995a87ed0a362a9cf2aae821f2c6d7b975bef566a8767c2cb11",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1307,
+      "decision": "candidate",
+      "positivity": 95,
+      "impact": 78,
+      "audienceRelevance": 98,
+      "judgment": "Cursurile gratuite CJI despre dezinformare și AI au înscrieri până pe 29 noiembrie, deci pot oferi profesorilor o oportunitate imediat utilizabilă.",
+      "fingerprint": "173e1de135a559c823524230fadba6eb0a44aecb6a97040725b669f5ba8349d8",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1308,
+      "decision": "reject",
+      "positivity": 35,
+      "impact": 58,
+      "audienceRelevance": 78,
+      "judgment": "Solicitarea elevilor să amâne simularea corectează un calendar insuficient comunicat, dar noua dată nu este acceptată încă.",
+      "fingerprint": "447d225d3d9879f89db11d31651c8f9569153903ffc128f540a71ac1b4d103a3",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1309,
+      "decision": "reject",
+      "positivity": 18,
+      "impact": 72,
+      "audienceRelevance": 88,
+      "judgment": "Protestul continuu de la Lenau arată că montarea camerelor nu a rezolvat conflictul și siguranța percepută a elevilor.",
+      "fingerprint": "6aa471e29e86f0404cf77b960e0bef57e44f30b3eb076fcb3ed4f1451cdbeae5",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1310,
+      "decision": "reject",
+      "positivity": 38,
+      "impact": 65,
+      "audienceRelevance": 88,
+      "judgment": "Amânarea probabilă a concursului de directori și reglajele testului prelungesc incertitudinea, nu profesionalizează deja selecția.",
+      "fingerprint": "b34ad6f6de5a5c1f4b2c1ea869df717d556fb5df9ce2c2cc8749ee1fbca4ffa1",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1311,
+      "decision": "reject",
+      "positivity": 35,
+      "impact": 78,
+      "audienceRelevance": 92,
+      "judgment": "Întrebarea despre revenirea normei de 18 ore pornește de la promisiuni; extrasul nu atestă reducerea legală a sarcinii profesorilor.",
+      "fingerprint": "2745734aa48c4af1ff648db8de94d2981b5dc3597a987036ea9fa7cadf7b434a",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1312,
+      "decision": "candidate",
+      "positivity": 80,
+      "impact": 65,
+      "audienceRelevance": 92,
+      "judgment": "Publicarea calendarului oficial de mobilitate oferă predictibilitate profesorilor pentru 2027–2028, deși rămâne procedură anuală obișnuită.",
+      "fingerprint": "e387b3f8e5fb76ed978d94a21152c8d361efd31fd819423cff16bb23b680d726",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1313,
+      "decision": "reject",
+      "positivity": 80,
+      "impact": 58,
+      "audienceRelevance": 88,
+      "judgment": "Data de 14 iulie pentru Titularizare este informație profesională utilă, dar noutatea este administrativă și similară calendarului de mobilitate.",
+      "fingerprint": "c9adf4bca330b1f5f6a48539fc9e9f1d958060c43419ab5eff75af4beff22919",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1314,
+      "decision": "candidate",
+      "positivity": 94,
+      "impact": 55,
+      "audienceRelevance": 90,
+      "judgment": "Traseul Roxanei Iordache de la filologie la rezultat de vârf la medicină oferă un portret local memorabil; rămânerea în țară este intenție.",
+      "fingerprint": "e293d265110d2d2b136f6d47ff1a8edfd56d299e789ac61af9a0068a4ecaf3e7",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1315,
+      "decision": "reject",
+      "positivity": 68,
+      "impact": 72,
+      "audienceRelevance": 95,
+      "judgment": "Apelul profesorului pentru ghiduri AI indică o nevoie pedagogică, nu resurse disciplinare deja create și deschise.",
+      "fingerprint": "9065145fb2cc40a9361a3f0b44f642ce01b77e10527acc66a2be62608c2b1934",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1316,
+      "decision": "candidate",
+      "positivity": 94,
+      "impact": 68,
+      "audienceRelevance": 96,
+      "judgment": "Studiul românesc pe aproape o mie de oase de la Topolița reconstruiește alimentația preistorică și oferă cercetare locală explicabilă, nu simplă clasare.",
+      "fingerprint": "1d6ffd3b4446c74ff05ca7852ecf087b4cbd9b4c0f40c9ff4cf9b2b0b446d212",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1317,
+      "decision": "reject",
+      "positivity": 85,
+      "impact": 52,
+      "audienceRelevance": 88,
+      "judgment": "Jurământul socratic promovează îndoiala și libertatea intelectuală, dar este text propus pe Facebook, fără schimbare de formare implementată.",
+      "fingerprint": "440c3bbcff021acec1dcc1e3f5196ee8566bd7ff8b2504d463a546c10856d673",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1318,
+      "decision": "reject",
+      "positivity": 58,
+      "impact": 68,
+      "audienceRelevance": 85,
+      "judgment": "Sancțiunile pentru date școlare nereale sunt într-un proiect de metodologie; utilitatea publică depinde de adoptare și aplicare.",
+      "fingerprint": "4819380470f90b5eab996f601e38aeda2f111e7811a7edcccee0b28cabc3b248",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1319,
+      "decision": "reject",
+      "positivity": 78,
+      "impact": 48,
+      "audienceRelevance": 92,
+      "judgment": "Reflecția profesoarei despre emoția relației cu elevul este argument pedagogic, nu program ori rezultat nou demonstrat.",
+      "fingerprint": "db33242ba59fff230a9e41a2f320f0ddda75dd270415e87a770c38aa1fd8bf42",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1320,
+      "decision": "candidate",
+      "positivity": 92,
+      "impact": 78,
+      "audienceRelevance": 98,
+      "judgment": "Centrul Vodafone de la UTCN poate aduce robotica industrială în practica studenților; aceeași deschidere trebuie deduplicată cu relatările despre institut.",
+      "fingerprint": "d794e9af693b482f20fab9cdf472863419a422651f92fafd1e6ec9d7833866ea",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1321,
+      "decision": "reject",
+      "positivity": 80,
+      "impact": 28,
+      "audienceRelevance": 85,
+      "judgment": "Recenzia încărcătorului Anker recomandă un produs comercial, nu o inovație cu efect social sau ecologic documentat.",
+      "fingerprint": "933f235e33dd2b408559de4cfd83be14cb398eb6eb75df9afe57e7b59efebf1c",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1322,
+      "decision": "reject",
+      "positivity": 55,
+      "impact": 75,
+      "audienceRelevance": 96,
+      "judgment": "Riscurile accesului agenților AI sunt consiliere de securitate pentru companii, fără remediu nou lansat în extras.",
+      "fingerprint": "fa32aa31f072b225160b7100d1341e7bebdd12b2f3973ae2a211c43c606cb68b",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1323,
+      "decision": "candidate",
+      "positivity": 85,
+      "impact": 62,
+      "audienceRelevance": 92,
+      "judgment": "Intrarea Span în România poate extinde piața muncii IT, însă obiectivul de cincizeci de angajați până în 2027 nu este realizare prezentă.",
+      "fingerprint": "12e7304b4f3a558eb7ac3718b7a0616df52f16d7cbcd48c957fe1deaa780fc35",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1324,
+      "decision": "reject",
+      "positivity": 90,
+      "impact": 38,
+      "audienceRelevance": 85,
+      "judgment": "Povestea Ramonei Damian este inspirație antreprenorială, cu plecare în 2020 și fără dezvoltare săptămânală distinctă precizată.",
+      "fingerprint": "9674cb646070ce3e9b0159a847976da76ca038dffefc4395070a0c7c5b28af22",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1325,
+      "decision": "reject",
+      "positivity": 75,
+      "impact": 55,
+      "audienceRelevance": 98,
+      "judgment": "Sfaturile conferinței despre retenție și promisiuni la angajare sunt utile, dar nu introduc condiții de muncă noi verificabile.",
+      "fingerprint": "b9da4176b02c9c1f37b26d9ee2118ae21a61c07c3fca7e78f58970d2a429627e",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1326,
+      "decision": "reject",
+      "positivity": 90,
+      "impact": 35,
+      "audienceRelevance": 88,
+      "judgment": "Afacerea Gadgetry pornită în 2021 este portret de perseverență; mesajul că dorința garantează succesul trebuie evitat ca generalizare.",
+      "fingerprint": "bdb1cfa311510a5d3e2ae87637ed3a4d81fd9bcab377a2ccc259d8a5b4f9dc80",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1327,
+      "decision": "reject",
+      "positivity": 82,
+      "impact": 48,
+      "audienceRelevance": 85,
+      "judgment": "Acordul ASBIS pentru portofoliul ASUS extinde distribuția comercială, fără prețuri mai mici sau acces nou demonstrat.",
+      "fingerprint": "815c3cd7d2fb241df87433f510137f54c25679ed2b0d399aec064f0e8abba71d",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1328,
+      "decision": "reject",
+      "positivity": 78,
+      "impact": 68,
+      "audienceRelevance": 92,
+      "judgment": "Preluarea majoritară Medima de către Simago este tranzacție de proprietate, nu extindere confirmată a accesului la investigații.",
+      "fingerprint": "4351cca51946542382223bd6daecb6f2769eee0d416794221c0a758cc3396f99",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1329,
+      "decision": "reject",
+      "positivity": 25,
+      "impact": 82,
+      "audienceRelevance": 98,
+      "judgment": "Clarificările ANAF rămân insuficiente pentru rambursarea TVA potrivit consultanților; dificultatea firmelor nu este rezolvată.",
+      "fingerprint": "0997f722f575c1a3533fe59a2c136f0c0bfef51271c0296106ab7c14aa0349f2",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1330,
+      "decision": "reject",
+      "positivity": 48,
+      "impact": 62,
+      "audienceRelevance": 82,
+      "judgment": "Soluția Curții Supreme în disputa fabricii clarifică un litigiu comercial, dar nu arată revitalizarea uzinei ori beneficii pentru lucrători.",
+      "fingerprint": "da986f14031718e266571c0ba070f43be39bfaa96dc013475d7995bb17c59d03",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1331,
+      "decision": "candidate",
+      "positivity": 78,
+      "impact": 78,
+      "audienceRelevance": 98,
+      "judgment": "Garanția BID de până la 80% poate fi utilă antreprenoarelor, însă ponderea de 12% evidențiază acces slab și cere condiții concrete de aplicare.",
+      "fingerprint": "cb3fc8dcc1d4ee56b8f12a52ed4ceb784aa0c3899039f3aa4ba5328e85c92f03",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1332,
+      "decision": "reject",
+      "positivity": 85,
+      "impact": 38,
+      "audienceRelevance": 85,
+      "judgment": "Showroomul BRICO din Giurgiu adaugă consultanță pentru amenajări, dar rămâne deschidere de magazin fără avantaj public distinct.",
+      "fingerprint": "a3d8d4072132c215baf1c5d3471ae565f1744b42d5be553104355d9c9d1b52b0",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1333,
+      "decision": "reject",
+      "positivity": 85,
+      "impact": 85,
+      "audienceRelevance": 95,
+      "judgment": "Recordul IPO Anthropic privește capitalul atras și simbolul bursier, nu acces mai bun la tehnologie sau un rezultat social verificat.",
+      "fingerprint": "befc45329509a5c6b1d734af36d348d21062527274a49639cbfb7fd4cff098b8",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    },
+    {
+      "index": 1334,
+      "decision": "candidate",
+      "positivity": 82,
+      "impact": 62,
+      "audienceRelevance": 98,
+      "judgment": "Sondajul eJobs poate tempera anxietatea că AI domină angajarea, dacă eșantionul și diferența dintre priorități declarate și recrutare reală sunt clare.",
+      "fingerprint": "0dfcf77fdd3f5cfcd204171547f651825f8ab31b181dd86e2404e29b9a3cb978",
+      "assessedAt": "2026-11-21T06:44:53.280Z"
+    }
+  ]
+}
