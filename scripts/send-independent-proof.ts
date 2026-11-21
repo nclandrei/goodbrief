@@ -11,7 +11,7 @@ import {
   sendResendEmailWithRetry,
 } from './lib/resend-email.js';
 import { buildNewsletterEmail } from './lib/newsletter-email.js';
-import { MAX_SENDABLE_ARTICLE_COUNT, MIN_SENDABLE_ARTICLE_COUNT } from './lib/newsletter-policy.js';
+import { getNewsletterSectionOrder, MAX_SENDABLE_ARTICLE_COUNT, MIN_SENDABLE_ARTICLE_COUNT } from './lib/newsletter-policy.js';
 import { hash, validateAssessedSelection, type AssessmentRun } from './lib/amp-assessment.js';
 import { readJson, saveAssessmentJson } from './lib/assessment-files.js';
 import type { EditorEmailReceipt } from './lib/editor-review.js';
@@ -124,17 +124,18 @@ export function validateIndependentProof(proof: IndependentProof, raw: WeeklyBuf
   }
 }
 
-export function renderIndependentProof(proof: IndependentProof, raw: WeeklyBuffer): string {
+export function renderIndependentProof(proof: IndependentProof, raw: WeeklyBuffer, firstSection?: ArticleCategory): string {
   validateIndependentProof(proof, raw);
   const sourced = sourcedArticles(proof, raw);
-  const sections = [
-    ['local-heroes', '🌱 Local Heroes'],
-    ['wins', '🏆 Wins'],
-    ['green-stuff', '💚 Green Stuff'],
-    ['quick-hits', '✨ Quick Hits'],
-  ] as const;
+  const sectionLabels: Record<ArticleCategory, string> = {
+    'local-heroes': '🌱 Local Heroes',
+    wins: '🏆 Wins',
+    'green-stuff': '💚 Green Stuff',
+    'quick-hits': '✨ Quick Hits',
+  };
   const copy = proof.wrapperCopy;
-  const articleHtml = sections.map(([category, label]) => {
+  const articleHtml = getNewsletterSectionOrder(firstSection).map(category => {
+    const label = sectionLabels[category];
     const articles = sourced.filter((article) => article.category === category);
     if (!articles.length) return '';
     return `<h2 style="font-size:16px;color:#3d5f46;border-bottom:1px solid #e5e7eb;padding-top:16px">${label}</h2>${articles.map((article) => `

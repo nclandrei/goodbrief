@@ -127,6 +127,7 @@ export interface NewsletterDraft {
   discarded: number;
   totalProcessed: number;
   wrapperCopy?: WrapperCopy;
+  firstSection?: ArticleCategory;
   validation?: DraftValidation;
   deliveryLock?: DraftDeliveryLock;
 }

@@ -6,7 +6,7 @@ import type {
   WrapperCopy,
 } from '../types.js';
 import { getArticleDisplayTitle } from './article-title.js';
-import { MAX_SENDABLE_ARTICLE_COUNT } from './newsletter-policy.js';
+import { getNewsletterSectionOrder, MAX_SENDABLE_ARTICLE_COUNT } from './newsletter-policy.js';
 
 export const NEWSLETTER_SUBJECT = 'Good Brief – Your weekly dose de vești bune';
 export const NEWSLETTER_DELIVERY_HASH_VERSION = 'goodbrief-delivery-v1';
@@ -52,7 +52,8 @@ export function groupArticlesByCategory(
 export function renderNewsletterHtml(
   grouped: GroupedArticles,
   copy: WrapperCopy,
-  weekId: string
+  weekId: string,
+  firstSection?: ArticleCategory
 ): string {
   const brandGreen = '#3d5f46';
   const darkText = '#1f2937';
@@ -151,10 +152,7 @@ export function renderNewsletterHtml(
           <tr>
             <td style="padding: 0 24px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-                ${renderSection('local-heroes', grouped['local-heroes'])}
-                ${renderSection('wins', grouped.wins)}
-                ${renderSection('green-stuff', grouped['green-stuff'])}
-                ${renderSection('quick-hits', grouped['quick-hits'])}
+                ${getNewsletterSectionOrder(firstSection).map(category => renderSection(category, grouped[category])).join('\n                ')}
               </table>
             </td>
           </tr>
@@ -210,7 +208,7 @@ export function buildNewsletterEmail(draft: NewsletterDraft): NewsletterEmail {
 
   const articles = draft.selected.slice(0, MAX_SENDABLE_ARTICLE_COUNT);
   const grouped = groupArticlesByCategory(articles);
-  const html = renderNewsletterHtml(grouped, draft.wrapperCopy, draft.weekId);
+  const html = renderNewsletterHtml(grouped, draft.wrapperCopy, draft.weekId, draft.firstSection);
 
   return {
     subject: NEWSLETTER_SUBJECT,

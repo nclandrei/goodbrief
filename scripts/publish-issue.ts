@@ -4,7 +4,7 @@ import type { NewsletterDraft, ProcessedArticle, ArticleCategory } from './types
 import { assertDraftValidated } from './lib/draft-delivery.js';
 import { renderIssueFrontmatter } from './lib/issue-frontmatter.js';
 import { getIssuePublicationInfo } from './lib/newsletter-week.js';
-import { TARGET_SELECTED_ARTICLE_COUNT } from './lib/newsletter-policy.js';
+import { getNewsletterSectionOrder, TARGET_SELECTED_ARTICLE_COUNT } from './lib/newsletter-policy.js';
 import { resolveProjectRoot } from './lib/project-root.js';
 import { getArticleDisplayTitle } from './lib/article-title.js';
 
@@ -38,10 +38,11 @@ function generateMarkdown(
   date: string,
   displayDate: string,
   intro: string,
-  validatedAt: string
+  validatedAt: string,
+  firstSection?: ArticleCategory
 ): string {
   const grouped = groupByCategory(articles);
-  const categoryOrder: ArticleCategory[] = ['local-heroes', 'wins', 'green-stuff', 'quick-hits'];
+  const categoryOrder = getNewsletterSectionOrder(firstSection);
 
   const sections: string[] = [];
 
@@ -165,7 +166,8 @@ async function main() {
     issueInfo.date,
     issueInfo.displayDate,
     summary,
-    validatedAt
+    validatedAt,
+    draft.firstSection
   );
 
   writeFileSync(issueInfo.outputPath, markdown, 'utf-8');

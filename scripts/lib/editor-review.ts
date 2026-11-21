@@ -4,6 +4,7 @@ import { auditJudgments, hash, type AssessmentRun } from './amp-assessment.js';
 import { readJson, saveAssessmentJson } from './assessment-files.js';
 import { validateDraftFreshness } from './draft-validation.js';
 import { buildNewsletterEmail } from './newsletter-email.js';
+import { getNewsletterSectionOrder } from './newsletter-policy.js';
 import { loadHistoricalArticles } from './story-history.js';
 import { materializeIndependentDraft, renderIndependentProof, validateIndependentProof, type IndependentProof } from '../send-independent-proof.js';
 import type { NewsletterDraft, WeeklyBuffer } from '../types.js';
@@ -64,10 +65,26 @@ function sameJsonFile(path: string, value: unknown): void {
   writeFileSync(path, `${JSON.stringify(value, null, 2)}\n`, { flag: 'wx' });
 }
 
+// Section order may change after an editor receives the proof; its receipt still binds
+// every other draft field. Subscriber approval hashes the fully rendered order too.
+function reviewedDraftContent(draft: NewsletterDraft): NewsletterDraft {
+  const { firstSection, ...content } = draft;
+  getNewsletterSectionOrder(firstSection);
+  return content;
+}
+
 export async function stageEditorReview(root: string, directory: string, proof: IndependentProof, raw: WeeklyBuffer, materialize = false) {
   validateIndependentProof(proof, raw);
   validateEditorialReview(directory, proof.assessment);
   const draft = materializeIndependentDraft(proof, raw);
+  const draftPath = join(root, 'data', 'drafts', `${proof.weekId}.json`);
+  if (existsSync(draftPath)) {
+    const stored = readJson<NewsletterDraft>(draftPath);
+    if (stored.firstSection !== undefined) {
+      if (hash(reviewedDraftContent(stored)) !== hash(draft)) throw new Error(`Refusing to replace different reviewed content at ${draftPath}`);
+      draft.firstSection = stored.firstSection;
+    }
+  }
   const history = loadHistoricalArticles({ rootDir: root, currentWeekId: proof.weekId, draftLookback: 4 });
   const freshness = await validateDraftFreshness({ draft, historicalArticles: history.articles,
     recentDraftCount: history.draftArticleCount, publishedHistoryCount: history.issueArticleCount });
@@ -79,7 +96,7 @@ export async function stageEditorReview(root: string, directory: string, proof: 
     sameJsonFile(join(root, 'data', 'orb-proofs', `${proof.weekId}.json`), proof);
     sameJsonFile(join(root, 'data', 'drafts', `${proof.weekId}.json`), draft);
   }
-  const proofHtml = renderIndependentProof(proof, raw);
+  const proofHtml = renderIndependentProof(proof, raw, draft.firstSection);
   const newsletter = buildNewsletterEmail(draft);
   writeFileSync(join(directory, 'editor-proof.html'), proofHtml);
   writeFileSync(join(directory, 'newsletter.html'), newsletter.html);
@@ -99,9 +116,10 @@ export function editorReviewReady(root: string, directory: string, proof: Indepe
   const email = readJson<EditorEmailReceipt>(join(directory, 'proof-email.json'));
   const draft = readJson<NewsletterDraft>(join(root, 'data', 'drafts', `${proof.weekId}.json`));
   const expectedDraft = materializeIndependentDraft(proof, raw);
-  if (receipt.proofHash !== hash(proof) || receipt.reviewHash !== hash(review) || receipt.draftHash !== hash(draft) ||
+  const content = reviewedDraftContent(draft);
+  if (receipt.proofHash !== hash(proof) || receipt.reviewHash !== hash(review) || receipt.draftHash !== hash(content) ||
       hash(readJson(join(root, 'data', 'orb-proofs', `${proof.weekId}.json`))) !== hash(proof) ||
-      hash(draft) !== hash(expectedDraft) || draft.validation?.status !== 'failed' || draft.deliveryLock ||
+      hash(content) !== hash(expectedDraft) || draft.validation?.status !== 'failed' || draft.deliveryLock ||
       email.version !== 1 || email.kind !== 'proof' || email.status !== 'accepted' || !email.emailId ||
       email.recipientCount !== 1 || email.proofHash !== hash(proof) ||
       email.htmlHash !== hash(renderIndependentProof(proof, raw)) || receipt.emailId !== email.emailId) {
@@ -114,13 +132,14 @@ export function finishEditorReview(root: string, directory: string, proof: Indep
   const draft = readJson<NewsletterDraft>(join(root, 'data', 'drafts', `${proof.weekId}.json`));
   const review = validateEditorialReview(directory, proof.assessment);
   const email = readJson<EditorEmailReceipt>(join(directory, 'proof-email.json'));
+  const content = reviewedDraftContent(draft);
   const receipt = { completedAt: new Date().toISOString(), proofHash: hash(proof),
-    reviewHash: hash(review), draftHash: hash(draft), emailId: email.emailId };
+    reviewHash: hash(review), draftHash: hash(content), emailId: email.emailId };
   // Validate a proposed receipt before publishing the terminal marker.
   const path = join(directory, 'review-ready.json');
   if (email.version !== 1 || email.kind !== 'proof' || email.status !== 'accepted' || !email.emailId || email.recipientCount !== 1 ||
       email.proofHash !== hash(proof) || email.htmlHash !== hash(renderIndependentProof(proof, raw)) ||
-      hash(draft) !== hash(materializeIndependentDraft(proof, raw))) {
+      hash(content) !== hash(materializeIndependentDraft(proof, raw))) {
     throw new Error('The matching editor proof must be accepted and its draft must remain unapproved');
   }
   if (!existsSync(path)) saveAssessmentJson(path, receipt);

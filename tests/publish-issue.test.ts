@@ -25,7 +25,7 @@ test('publish-issue writes validation metadata for future issues', async () => {
         summary: `Future summary ${index + 1}`,
         positivity: 90,
         impact: 85,
-        category: 'wins',
+        category: index === 0 ? 'local-heroes' : index === 2 ? 'green-stuff' : index === 3 ? 'quick-hits' : 'wins',
         publishedAt: '2026-03-12T10:00:00.000Z',
         processedAt: '2026-03-14T10:00:00.000Z',
       })
@@ -33,6 +33,7 @@ test('publish-issue writes validation metadata for future issues', async () => {
     reserves: [],
     discarded: 0,
     totalProcessed: 7,
+    firstSection: 'green-stuff',
     wrapperCopy: {
       greeting: 'Salut!',
       intro: 'Intro',
@@ -92,6 +93,8 @@ validatedAt: "2026-03-09T13:30:00.000Z"
   assert.match(futureIssue, /validated: true/);
   assert.match(futureIssue, /validationSource: "validation-pipeline"/);
   assert.match(futureIssue, /validatedAt: "2026-03-14T11:00:00.000Z"/);
+  assert.deepEqual([...futureIssue.matchAll(/^## (.+)$/gm)].map(match => match[1]),
+    ['💚 Green Stuff', '🌱 Local Heroes', '🏆 Wins', '✨ Quick Hits']);
   assert.match(futureIssue, /### Titlul firesc al primei știri/);
   assert.doesNotMatch(futureIssue, /### Future story 1/);
 });

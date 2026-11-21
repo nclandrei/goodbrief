@@ -52,6 +52,21 @@ test('an editor-extended selection renders every article up to the sendable cap'
   assert.match(email.html, new RegExp(`Titlu editorial ${MAX_SENDABLE_ARTICLE_COUNT}`));
 });
 
+test('an edition can lead with Green Stuff without changing default order or its stories', () => {
+  const draft = makeDraft(7);
+  draft.selected[1].category = 'green-stuff';
+  draft.selected[3].category = 'quick-hits';
+  const original = buildNewsletterEmail(draft);
+  const reordered = buildNewsletterEmail({ ...draft, firstSection: 'green-stuff' });
+  const headings = (html: string) => [...html.matchAll(/<h2\b[^>]*>\s*([^<]+)<\/h2>/g)].map(match => match[1].trim());
+
+  assert.deepEqual(headings(original.html), ['🌱 LOCAL HEROES', '🏆 WINS', '💚 GREEN STUFF', '✨ QUICK HITS']);
+  assert.deepEqual(headings(reordered.html), ['💚 GREEN STUFF', '🌱 LOCAL HEROES', '🏆 WINS', '✨ QUICK HITS']);
+  assert.deepEqual(reordered.articles, original.articles);
+  assert.notEqual(reordered.deliverySha256, original.deliverySha256);
+  assert.throws(() => buildNewsletterEmail({ ...draft, firstSection: 'invalid' as never }), /Unsupported first newsletter section/);
+});
+
 test('selections beyond the sendable cap are truncated in draft order', () => {
   const email = buildNewsletterEmail(makeDraft(MAX_SENDABLE_ARTICLE_COUNT + 1));
 

@@ -241,6 +241,9 @@ test('weekly editor handoff requires manual review, sends once, and never approv
   const directory = join(root, 'data', 'assessments', weekId);
   const threadId = 'T-00000000-0000-0000-0000-000000000001';
   const p = proof();
+  p.selected[1].category = 'green-stuff';
+  p.selected[2].category = 'wins';
+  p.selected[3].category = 'quick-hits';
   mkdirSync(directory, { recursive: true });
   for (const [name, value] of [['input', raw], ['assessment', p.assessment], ['proposal', p]] as const) {
     writeFileSync(join(directory, `${name}.json`), JSON.stringify(value));
@@ -295,6 +298,23 @@ test('weekly editor handoff requires manual review, sends once, and never approv
 
     const receiptPath = join(directory, 'proof-email.json');
     const receipt = readFileSync(receiptPath, 'utf8');
+    draft.firstSection = 'green-stuff';
+    writeFileSync(draftPath, JSON.stringify(draft));
+    await weekly('stage', directory);
+    for (const name of ['newsletter.html', 'editor-proof.html']) {
+      const html = readFileSync(join(directory, name), 'utf8');
+      assert.deepEqual([...html.matchAll(/<h2\b[^>]*>\s*([^<]+)<\/h2>/g)].map(match => match[1].trim().toLocaleUpperCase('en')),
+        ['💚 GREEN STUFF', '🌱 LOCAL HEROES', '🏆 WINS', '✨ QUICK HITS']);
+    }
+    assert.equal(JSON.parse((await weekly('prepare', threadId, '--week', weekId)).stdout).status, 'editor-ready');
+    assert.match((await weekly('deliver', directory)).stdout, /not sending again/);
+    assert.equal(readFileSync(receiptPath, 'utf8'), receipt);
+    assert.equal(requests.length, 1);
+    const reordered = JSON.stringify(draft);
+    draft.selected[0].summary = 'Changed copy must not count as a section-order edit.';
+    writeFileSync(draftPath, JSON.stringify(draft));
+    await assert.rejects(weekly('prepare', threadId, '--week', weekId), /does not match/);
+    writeFileSync(draftPath, reordered);
     writeFileSync(receiptPath, JSON.stringify({ ...JSON.parse(receipt), status: 'sending' }));
     await assert.rejects(weekly('deliver', directory), /uncertain outcome/);
     assert.equal(requests.length, 1);
